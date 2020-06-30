@@ -1,0 +1,335 @@
+<!DOCTYPE html>
+<%
+# Copyright 2020 seL4 Project a Series of LF Projects, LLC.
+#
+# SPDX-License-Identifier: GPL-2.0-only
+
+import os, sys, datetime, cgi, time
+from ertos_nav import NavEntry
+content_dir = cfg.get('core', 'content_dir')
+rg_name = cfg.get('core', 'rg_name')
+live = cfg.get('hosts', 'live')
+stage = cfg.get('hosts', 'stage')
+
+cur_url = req.filename[len(cfg.get('core', 'content_dir')):].strip('/')
+live_url = 'http://'+live+'/'+cur_url
+stage_url = 'http://'+stage+'/' +cur_url
+
+if not cur_url.startswith('/'):
+    cur_url = '/' + cur_url        # making sure that there is a slash in front
+in_production = cfg.getboolean('core', 'production')
+on_seL4 = cfg.getboolean('core', 'seL4')
+printuri=req.unparsed_uri
+if '?' in printuri:
+   printuri += ";media=print"
+else:
+   printuri += "?media=print"
+
+
+def show_toolbox(request):
+    """
+    NICTA SAH's range: 203.143.160.0/24. That's:
+    Network:   203.143.160.0/24     11001011.10001111.10100000. 00000000
+    HostMin:   203.143.160.1        11001011.10001111.10100000. 00000001
+    HostMax:   203.143.160.254      11001011.10001111.10100000. 11111110
+    Broadcast: 203.143.160.255      11001011.10001111.10100000. 11111111
+    Hosts/Net: 254                   Class C
+    """
+
+    if request.args is not None and "internal" in request.args:
+        return True
+
+    host_ip = request.connection.client_ip
+    if "X-Real-IP" in req.headers_in:
+        host_ip = req.headers_in["X-Real-IP"]
+
+
+    # If we want to limit based on IP:
+    if host_ip.startswith('203.143.160') or \
+       host_ip.startswith('203.143.161') or \
+       host_ip.startswith('203.143.170') or \
+       host_ip.startswith('221.199.208.') or \
+       host_ip.startswith('221.199.217.') or \
+       host_ip.startswith('10.') or \
+       host_ip.startswith('2402:1800:4000:1:') or \
+       host_ip.startswith('2402:1800:4000:2:') or \
+       host_ip.startswith('2402:1800:0:10:') or \
+       host_ip.startswith('2402:1800:1:2801:'):
+        return True 
+    return not in_production;
+
+try:
+	mtime_str = time.ctime(os.path.getmtime(content_dir+'/'+cur_url.strip('/')))
+except:
+	mtime_str = "unknown"
+%>
+
+<%
+#end
+%>
+
+<html lang="en"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title><%=title%></title>
+    <meta name="author" content="CSIRO's Data61" />
+    <!-- Bootstrap core CSS -->
+    <link href="/css/bootstrap.min.css" rel="stylesheet">
+    <link href='/css/sel4.css' rel='stylesheet'>
+    <link rel="shortcut icon" href="/images/favicon.ico" />
+
+<%
+if in_production:
+    # then
+%>
+<script type="text/javascript">
+
+  var _gaq = _gaq || [];
+  _gaq.push(['_setAccount', 'UA-28050281-1']);
+  _gaq.push(['_trackPageview']);
+
+  (function() {
+    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+  })();
+
+</script>
+<%
+# end if
+%>
+
+<%
+if "user_head_content" in globals():
+
+%>
+<%=user_head_content%>
+<%
+# end if
+%>
+
+<!-- Production template -->
+</head>
+<body>
+<%
+if show_toolbox(req):
+    # then
+%>
+           <nav class="navbar navbar-inverse" role="navigation" style='border-radius: 0px'>
+                <div class='container'>
+<%
+    if in_production:
+        # then
+%>
+                <ul class="nav navbar-nav">
+                      <li><a href="<%= stage_url %>">Stage Site</a></li>
+                </ul>
+<%
+    else:
+        # else
+%>
+<%
+    # end 2nd if
+%>
+	</nav>
+<%
+# end if show_toolbox()
+%>
+
+	<div class="container">
+      <div class="header">
+        <ul class="nav nav-pills pull-right">
+<%
+def navs2lis(cur_url, dlist, level=0):
+    list_content = []
+
+    for i in dlist:
+        if type(i) == type(NavEntry()):
+            if i == NavEntry():                 # insert some space
+                list_content.append('<li style="background-image: none;">&nbsp;</li>')
+            elif i.children and i.children != []:       # there is a submenu
+                list_content.append('<!-- %s - %s/ -->' % (cur_url, i.uri))
+                # we now always expand the tree so we get the full drop down menus.
+                if cur_url.find("%s/" % i.uri) == 0 and level == 0:
+                    class_name = "active"
+                #elif level == 1:
+                #  class_name = "menu_Selected"
+                else:
+                    class_name = ""
+                #list_content.append('<li class="level-%s ">%s<ul>%s</ul></li>' % (level, i, navs2lis(cur_url,i.children, level+1)))
+                #else:
+                #    list_content.append('<li class="level-%s ">%s</li>' % (level, i))
+                if level >= 1:
+                    # don't generate submenu entries after the first level
+                    list_content.append('<li class="%s">%s</li>' % (class_name, i))
+                else:
+                    list_content.append('<li class="dropdown"><a class="dropdown-toggle" data-toggle="dropdown" href="%s">%s <span class="caret"></span></a>' % (i.uri, i.label))
+                    list_content.append('<ul class="dropdown-menu">%s</ul></li>' % navs2lis(cur_url,i.children, level+1))
+                    #list_content.append('<li class="level-%s ">%s<ul>%s</ul></li>' % (level, i, navs2lis(cur_url,i.children, level+1)))
+                    #list_content.append('<!-- classname=%s -->' % class_name)
+
+            else:
+                if cur_url.find ('%s/' % i.uri) == 0:
+                  class_name = "active"
+                else:
+                  class_name = ""
+                list_content.append('<li class="%s">%s</li>' % (class_name, i))
+        elif type(i) == type([]):
+            list_content.extend(navs2lis(cur_url,i, level+1))
+
+        else:
+            raise Exception('something is odd. type(i) == %s' % str(type(i)))
+
+    return '\n'.join(list_content)
+
+
+content_dir = cfg.get('core', 'content_dir')
+curdir = req.filename
+#if curdir.endswith('/'):   # strip ending '/'
+#    curdir = curdir[:-1]
+#else:
+curdir = os.path.dirname(req.filename)
+
+cururl = curdir[len(content_dir):]
+if not cururl.startswith('/'):
+   cururl = '/' + cururl
+
+if not cururl.endswith('/'):
+   cururl = cururl + '/'
+
+%>
+<%
+# end
+%>
+
+<!-- <%= cururl %> -->
+<%
+if cururl == '/':
+   req.write ('<li class="active">')
+else:
+   req.write ('<li>')
+
+%><a href='/'>Home</a></li>
+			<%=navs2lis(cururl,nav_urls) %>
+		</ul>
+<!--		<h3 class="muted"><a href='/'><img src='/images/sel4.png' alt='seL4' /></a></h3> -->
+
+		</div>
+		<!-- END: Menu -->
+<%
+i = 1
+doneHome = False
+crumbs = []
+for page,path in breadcrumbs:
+    if i == len(breadcrumbs):
+        class_name = "active"
+    else:
+        class_name = ""
+
+    if path.endswith('index.html') or path.endswith('home.pml') or path.endswith('home.pyl') or page == "Home":
+        continue
+    elif page.endswith('.abstract'):
+        page = page[:-len('.abstract')]
+    if not doneHome:
+        crumbs.append('<ol class="breadcrumb">')
+        crumbs.append('<li class="%s"><a href="/">%s</a>' % (class_name, 'Home') )
+        doneHome = True
+    page_upper = page.upper()
+    if page_upper == 'ERTOS':
+        page = page_upper
+    else:
+        z = page.split(" ")
+        page = ""
+        for word in z:
+            if word.isupper():
+                page += word + " "
+            else:
+                page += word.title() + " "
+        page = page.strip(" ")
+
+    crumbs.append ('<li class="' + class_name + '">')
+    if not class_name:
+        crumbs.append ('<a href="'+path+'">'+page+'</a></li>')
+    else:
+        crumbs.append (page + "</li>")
+
+    i = i + 1
+
+# FIXME: doesn't work on index...
+if i > 2:
+    req.write ('\n'.join(crumbs))
+    req.write ('</ol>')
+#end
+%>           
+
+<!-- tinymce -->
+<script type="text/javascript"
+        src="/js/tinymce/tinymce.min.js"></script>
+<script type="text/javascript">
+tinymce.init({
+    selector: "textarea",
+    remove_linebreaks: false,
+    force_p_newlines: false,
+    force_br_newlines: false,
+    forced_root_blocks: false,
+    schema: "html5",
+    apply_source_formatting: true,
+    extended_valid_elements: "script[language|type|src]",
+    protect: [
+      /(&lt;|<)[%].*[%](&gt;|>)/g //Protect PSP
+    ],
+    plugins: [
+        "advlist autolink lists link image charmap print preview anchor",
+        "searchreplace visualblocks visualchars code fullscreen",
+        "insertdatetime media nonbreaking table contextmenu paste autoresize"
+    ],
+    toolbar: "insertfile undo redo | styleselect | bold italic | alignleft aligncenter alignright alignjustify | bullist numlist outdent indent | link image",
+    toolbar2: "print preview media"
+});
+</script>
+
+
+	<div class='row-fluid'>
+        <div id="content-main">
+            <a name="content-main"></a>
+            <div class="content" style="padding-top:10ex">
+                <form method="post" action="?save"><fieldset>
+                  <textarea name="content" rows=24 style="width:100%; height:auto;">
+<%=user_content%>
+                  </textarea>
+                  <input type="submit"/>
+                  </fieldset>
+                </form>
+            </div>
+        </div>
+	</div>
+
+
+
+<div class="clearfix visible-xs" style="height:2ex"></div>
+<footer class="page-footer small pt-3" id="footer" >
+<hr style="margin-top:0px;margin-bottom:5px;border-top:2px solid #96ca50">
+  <div  class="footer-copyright text-center py-3">
+    Copyright &copy; 2020  seL4 Project a Series of LF Projects, LLC.<br/>
+      seL4 is a trademark of LF Projects, LLC.<br/>
+      For trademark usage guidelines, privacy and cookie policies,
+      and other applicable policies, as well as terms and conditions
+      governing this web site, please see
+      <a href="http://www.lfprojects.org/">www.lfprojects.org</a>
+  </div>
+  <!-- footer -->
+<%
+if on_seL4:
+%>
+  Served by Apache on Linux on seL4.
+<%
+#end
+%>
+    </div>
+ </div>
+</div>
+<!-- wrapper -->
+<script src="/js/jquery.min.js"></script>
+<script src="/js/bootstrap.min.js"></script>
+</body>
+</html>

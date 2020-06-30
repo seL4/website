@@ -1,0 +1,48 @@
+<!--
+<title>Contribute</title>
+-->
+<!--
+    Copyright 2020 seL4 Project a Series of LF Projects, LLC.
+    SPDX-License-Identifier: CC-BY-SA-4.0
+-->
+<h1 id="contribute">Contribute</h1>
+
+<p>We welcome and encourage community contribution to the sel4 platform.</p>
+
+<p>Contributions can take the form of code contributions, proof contributions, documentation contributions, and community support.</p>
+
+<h2 id="code-contributions">Code Contributions</h2>
+
+<p>We provide general guidance on contributing code to the seL4 platform as well as specific guidance on making contributions to the kernel and to user-level code.</p>
+
+<ul>
+<li><a href="https://docs.sel4.systems/processes/contributing.html">general code contribution guidance and rules</a></li>
+<li><a href="https://docs.sel4.systems/projects/sel4/kernel-contribution.html">kernel contribution</a></li>
+<!--
+<li><a href="https://docs.sel4.systems/processes/contributing.html">TODO user-level contributions</a></li>
+-->
+</ul>
+
+<p>We also provide a list of <a href="https://docs.sel4.systems/SuggestedProjects.html">suggested projects</a> to start working on, as well as an oveview of the different <a href="https://docs.sel4.systems/projects/available-user-components.html">libraries and components</a> available and what can be done to help contribute to their further development.
+
+<h2 id="proof-contributions">Proof Contributions</h2>
+
+<p>Contributing to the seL4 proofs requires a different skill set than contributing to the code, and so far we have not had many community contributions to the proofs.</p>
+
+<p>As a result, our infrastructure for proof contributions is not as mature as that for code contributions.</p>
+
+<p>We are aiming to provide more resources in the next few months. In the meantime, if you are interested in contributing to the seL4 proofs, please review the <a href="https://github.com/seL4/l4v/">actual proofs</a> and the tools and techniques used for the proofs. Then <a href="/contact/home.pml">contact us</a> to discuss ideas, plans, and options about your contributions.</p>
+
+<p>To get started, you will have to be familiar with the <a href="http://isabelle.in.tum.de/">Isabelle theorem prover</a>. Some learning resources for it are described in <a href="http://proofcraft.org/blog/proof-engineer-reading.html">this blog post</a>.
+
+<h2 id="documentation-contributions">Documentation Contributions</h2>
+
+<p>seL4 platform documentation is maintained together with the code sources, together with the proofs, or on the docsite.</p>
+
+<p>We welcome contribution to all of this documentation, and provide <a href="https://docs.sel4.systems/processes/docs-contributing.html">guidance</a> on the docsite.</p>
+
+<h2 id="community-support-contributions">Community Support Contributions</h2>
+
+<p>The <a href="/contact/home.pml">seL4 discussion and support platforms</a> are open to the community and we invite community participation, not only in asking questions, but also in answering questions and providing help.</p>
+
+<p>Please see our <a href="https://docs.sel4.systems/processes/conduct.html">Community Guidelines</a> on the docsite.</p>

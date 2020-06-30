@@ -1,0 +1,5 @@
+Pictures tagged with the licence identifier "LicenseRef-PhotoLicence" are for
+display on the sel4.systems website only.
+
+No license is granted for modifying, using, or distributing these pictures
+for any other purpose, commercially or otherwise.

@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+
+<%
+# Copyright 2020 seL4 Project a Series of LF Projects, LLC.
+#
+# SPDX-License-Identifier: GPL-2.0-only
+# 
+import os, sys, datetime, cgi
+from ertos_nav import NavEntry
+content_dir = cfg.get('core', 'content_dir')
+
+def int2datestr(i):
+    """add st/nd/rd to the end of an int"""
+    abbr = 'th'
+    if i < 11 or i > 13:
+        if str(i).endswith('1'):  abbr = 'st'
+        elif str(i).endswith('2'):  abbr = 'nd'
+        elif str(i).endswith('3'):  abbr = 'rd'
+
+    return str(i) + abbr
+
+def show_toolbox(request):
+    """
+    NICTA SAH's range: 203.143.160.0/24. That's:
+    Network:   203.143.160.0/24     11001011.10001111.10100000. 00000000
+    HostMin:   203.143.160.1        11001011.10001111.10100000. 00000001
+    HostMax:   203.143.160.254      11001011.10001111.10100000. 11111110
+    Broadcast: 203.143.160.255      11001011.10001111.10100000. 11111111
+    Hosts/Net: 254                   Class C
+    """
+    host_ip = request.get_remote_host(apache.REMOTE_NOLOOKUP)
+    if "X-Real-IP" in req.headers_in:
+        host_ip = req.headers_in["X-Real-IP"]
+
+    if host_ip.startswith('203.143.160') or \
+       host_ip.startswith('203.143.161') or \
+       host_ip.startswith('10.'):           
+        return True 
+    return False
+
+cur_url = req.filename[len(cfg.get('core', 'content_dir')):].strip('/')
+live_base = cfg.get('hosts', 'live')
+stage_base = cfg.get('hosts', 'stage')
+
+cur_url = req.filename[len(cfg.get('core', 'content_dir')):].strip('/')
+live_url = 'http://'+live_base+'/'+cur_url
+stage_url = 'http://'+stage_base+'/' +cur_url
+
+if not cur_url.startswith('/'):
+    cur_url = '/' + cur_url        # making sure that there is a slash in front
+in_production = cfg.getboolean('core', 'production')
+
+
+now = datetime.datetime.now()
+now_str = '%s %s' % (int2datestr(now.day), now.strftime('%b %Y'))
+
+
+%>
+
+
+
+<html lang="en-AU" itemscope itemtype="http://schema.org/Article">
+<head>
+    <meta charset="UTF-8">
+
+<title><%=title%> - <%=live_url%></title>
+
+
+
+</style>
+</head>
+<body>
+
+<div id="page-container-DISABLED">
+<div class="min-width">
+<div class="min-keep-padding">
+  <div class="min-container">
+    <div id="header-DISABLED">
+    </div>
+
+    <div id="topNavContainer">
+      
+      <div id="breadcrumb"> 
+<%
+for name,url in breadcrumbs:
+    if url.endswith('home.pml'): continue
+    x = name.upper()
+    if x == 'ERTOS':
+        name = x
+    else:
+        name = name.title()
+    # loop
+%>
+    <a href="<%=url%>"><%=name%></a>&nbsp;>&nbsp;
+<%
+# end loop
+%>
+
+      </div>
+      <!-- end breadcrumb -->
+      <!-- end topNavContainer -->
+    </div>
+    <div id="content-container">
+      <div id="left-colour">
+        <div id="middle-colour-DISABLED">
+          <div id="left-column">
+            <div id="left_column_padding">
+              <!-- * * * * * * * * * * * * * * * *  Left Column Content  * * * * * * * * * * * * * * * * -->
+              <!-- * * * * * * * * * * * * * * * *  //Left Column Content  * * * * * * * * * * * * * * * * -->
+              
+		<!-- start calendar navigator -->
+				<!-- end calendar navigator -->
+		
+              
+		<!-- start calendar navigator -->
+				<!-- end calendar navigator -->
+		
+            </div>
+          </div>
+          <div id="body-copy">
+            <!-- * * * * * * * * * * * * * * * *  Middle Content  * * * * * * * * * * * * * * * * -->
+
+<div id="content_div_261">
+  <div id="ertos_content">
+  <%=user_content%>
+  </div>
+</div>
+            <!-- * * * * * * * * * * * * * * * *  //Middle Content  * * * * * * * * * * * * * * * * -->
+            <div class="clear-both"></div>
+          </div>
+        </div>
+        <div id="footer">
+            Last Updated <%=now_str%>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+</div></div>
+
+</body>
+<!-- END wrapper -->
+</html>
+
+
+<%--
+<!--
+    Local Variables: ***
+    mode: nxml ***
+    End: ***
+
+vim: set nosmarttab expandtab:
+-->
+--%>

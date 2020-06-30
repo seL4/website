@@ -1,0 +1,145 @@
+<!--<title>seL4 TSC</title>-->
+<!--
+    Copyright 2020 seL4 Project a Series of LF Projects, LLC.
+    SPDX-License-Identifier: CC-BY-SA-4.0
+-->
+<h1>Technical Steering Committee</h1>
+<div>
+  <p>The Technical Steering Committee (TSC) of the seL4 Foundation is
+  responsible for overseeing all technical aspects of the seL4 project
+  (technical direction, code of conduct, procedures, workflows,
+  quality control, etc). It is made up of seL4 developers, proof engineers,
+  and technical leaders. 
+  Their role is described in detail in the
+    <a title="seL4 Foundation Technical Charter"
+       href="../Governance/seL4_Foundation_Technical_Charter.pdf">seL4
+      Foundation Technical Charter</a>.
+  </p>
+
+
+<h3>Members</h3>
+
+<div class="people_grid">
+
+  <div class="person">
+    <div class="person_pic">
+      <a href="https://trustworthy.systems/people/?cn=Matthew+Brecknell"><img src="../../images/tsc/matthew.jpg" alt="Matthew Brecknell" width="80px" /></a>
+    </div>
+    <div class="person_title">
+      <strong><a class="list_link" href="https://trustworthy.systems/people/?cn=Matthew+Brecknell">Matthew Brecknell</a></strong>
+    </div>
+  </div>
+
+  <div class="person">
+    <div class="person_pic">
+      <a href="https://trustworthy.systems/people/?cn=Ihor+Kuz"><img src="../../images/tsc/ihor.jpg" alt="Ihor Kuz" width="80px" /></a>
+    </div>
+    <div class="person_title">
+      <strong><a class="list_link" href="https://trustworthy.systems/people/?cn=Ihor+Kuz">Ihor Kuz</a></strong>
+    </div>
+  </div>
+
+  <div class="person">
+    <div class="person_pic">
+      <a href="https://trustworthy.systems/people/?cn=Gerwin+Klein"><img src="../Board/TS-Gerwin-s.jpg" alt="Gerwin Klein" width="80px" /></a>
+    </div>
+    <div class="person_title">
+      <strong><a class="list_link" href="https://trustworthy.systems/people/?cn=Gerwin+Klein">Gerwin Klein</a> (chair)</strong>
+    </div>
+  </div>
+
+  <div class="person">
+    <div class="person_pic">
+      <a href="https://trustworthy.systems/people/?cn=Rafal+Kolanski"><img src="../../images/tsc/rafal.jpg" alt="Rafal Kolanski" width="80px" /></a>
+    </div>
+    <div class="person_title">
+      <strong><a class="list_link" href="https://trustworthy.systems/people/?cn=Rafal+Kolanski">Rafal Kolanski</a></strong>
+    </div>
+  </div>
+
+  <div class="person">
+    <div class="person_pic">
+      <a href="https://trustworthy.systems/people/?cn=Corey+Lewis"><img src="../../images/tsc/corey.jpg" alt="Corey Lewis" width="80px" /></a>
+    </div>
+    <div class="person_title">
+      <strong><a class="list_link" href="https://trustworthy.systems/people/?cn=Corey+Lewis">Corey Lewis</a></strong>
+    </div>
+  </div>
+
+  <div class="person">
+    <div class="person_pic">
+      <a href="https://www.linkedin.com/in/annamlyons/"><img src="../../images/tsc/anna.png" alt="Anna Lyons=" width="80px" /></a>
+    </div>
+    <div class="person_title">
+      <strong><a class="list_link" href="https://www.linkedin.com/in/annamlyons/">Anna Lyons</a></strong>
+    </div>
+  </div>
+
+  <div class="person">
+    <div class="person_pic">
+      <a href="https://trustworthy.systems/people/?cn=Kent+Mcleod"><img src="../../images/tsc/kent.jpg" alt="Kent Mcleod" width="80px" /></a>
+    </div>
+    <div class="person_title">
+      <strong><a class="list_link" href="https://trustworthy.systems/people/?cn=Kent+Mcleod">Kent Mcleod</a></strong>
+    </div>
+  </div>
+
+  <div class="person">
+    <div class="person_pic">
+      <a href="https://trustworthy.systems/people/?cn=June+Andronick"../Board/TS-June.jpg"><img src="../Board/TS-June-s.jpg" alt="June Andronick" width="80px" /></a>
+    </div>
+    <div class="person_title">
+      <strong><a class="list_link" href="https://trustworthy.systems/people/?cn=June+Andronick">June Andronick</a></strong>
+    </div>
+  </div>
+
+  <div class="person">
+    <div class="person_pic">
+      <a href="https://trustworthy.systems/people/?cn=Kevin+Elphinstone"><img src="../../images/tsc/kevin.jpg" alt="Kevin Elphinstone" width="80px"/></a>
+    </div>
+    <div class="person_title">
+      <strong><a class="list_link" href="https://trustworthy.systems/people/?cn=Kevin+Elphinstone">Kevin Elphinstone</a></strong>
+    </div>
+  </div>
+
+  <div class="person">
+    <div class="person_pic">
+      <a href="https://trustworthy.systems/people/?cn=Gernot+Heiser"><img src="../Board/TS-Gernot-s.jpg" alt="Gernot Heiser" width="80px"/></a>
+    </div>
+    <div class="person_title">
+      <strong><a class="list_link" href="https://trustworthy.systems/people/?cn=Gernot+Heiser">Gernot Heiser</a></strong>
+    </div>
+  </div>
+
+</div>
+
+<h3>Meetings</h3>
+<p>
+After the constituting meeting, TSC meetings are planned to be public, and minutes will be
+made publicly available from this page.</p>
+<p>
+If you have an issue that you'd like to bring to the attention of the TSC,
+please email any of its members listed above.</p>
+<p>
+The following meetings and decisions have so far been recorded:</p>
+<ul>
+  <li>2020-05-20: <a href="notes/tsc-meeting-2020-05-20.pdf">Constituting meeting of
+      the TSC</a></li>
+  <li>2020-05-21: <a href="notes/vote-2020-05-21.pdf">Email vote</a> for invitation
+      to reviewer role.</li>
+</ul>
+
+<h3>Joining the TSC</h3>
+<p>
+TSC members are the technical leadership of the foundation. New members can
+join the TSC by decision (vote) of the TSC, and potential new members can be nominated
+by any current TSC member.
+</p>
+<p>
+New members are generally expected to be active current contributors with the technical
+ knowledge required for the role and a vision for the future of the seL4 ecosystem.</p>
+<p>
+There are separate roles for repository write access (Committer), organisational admin
+access (SysAdmin), and the ability to approve pull request and manage issues (Reviewer).
+</p>
+<p>If you would like to nominate someone for any of these roles, please email the chair (Gerwin Klein) of the TSC.</p>

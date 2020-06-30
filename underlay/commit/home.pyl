@@ -1,0 +1,712 @@
+#
+# Copyright 2020  seL4 Project a Series of LF Projects, LLC.
+# SPDX-License-Identifier: GPL-2.0-only
+#
+
+import string
+import sys, os, cgi
+import urllib.request, urllib.error, urllib.parse
+from mod_python import apache
+import subprocess
+from ertos import *
+from ertos_config import cfg
+from ertos_user import User
+import re
+
+# We assume people who can get to this point are more-or-less trusted; there's
+# no real attempt to make this code secure.
+
+process_env = {
+    'HOME' : '/var/www',
+    'PATH' : '/bin:/usr/bin:/usr/local/bin'
+}
+ 
+
+def get_title(req):
+    return "git commit"
+
+def get_user(req):
+    username = get_logged_in_user(req)
+    return User(login=username)
+
+def source_markup(line, char):
+    if char >= len(line):
+        # The error is at the end of the line
+        line += ' '
+
+    if char >= len(line):
+        left = line
+        centre = ""
+        right = ""
+    else:
+        left = line[:char].replace("&", "&amp;").replace("<", "&lt;").replace(">", "&gt;")
+        centre = line[char].replace("&", "&amp;").replace("<", "&lt;").replace(">", "&gt;")
+        right = line[char+1:].replace("&", "&amp;").replace("<", "&lt;").replace(">", "&gt;")
+
+    return left + '<span style="background-color:yellow;">' + \
+           '<strong>' + centre  + '</strong></span>' + right
+
+def check_filename_is_safe(filename):
+    if filename == "":
+        return -1
+    if filename[0] == "/":
+        return -2
+    if ".." in filename:
+        return -3
+    allowed = string.digits + string.ascii_letters + "/" + "_" + "-" + "." + " " + ":" + "#"
+    for ch in filename:
+        if ch not in allowed:
+            return -4
+    return 1
+
+def list_changed_files(path):
+
+    files = {}
+
+    # get the new files in the directory we are at
+    x = subprocess.run("cd %s; /usr/bin/git status -uall --porcelain=v1" % path,
+                       shell=True, env=process_env,
+                       capture_output=True, encoding='utf-8').stdout.split('\n')
+    for line in x:
+        if line.startswith("?? "):
+            file = path + line[3:]
+            files[file] = ["New file"]
+        elif line.startswith(" D "):
+            file = path + line[3:]
+            files[file] = ["Removed file"]
+        elif line.startswith(" R "):
+            file = path + line[3:]
+            files[file] = ["Renamed file"]
+
+        # get the changes
+    x = subprocess.run("cd %s; /usr/bin/git diff" % path, shell=True,
+                       capture_output=True, env=process_env,
+                       encoding='utf-8').stdout
+    last = ""
+    indiff = 0
+    for line in x.split('\n'):
+        if line.startswith("diff"):
+            last = path + line.split(" ")[2].lstrip("a/")
+            indiff = 1
+            files[last] = []
+        elif indiff == 1:
+            files[last].append(line + '\n')
+
+    return files
+
+def get_filelist(files):
+    return (" ").join(['"' + x + '"' for x in files])
+
+def git_revert(files):
+    res = ""
+
+    file_list = get_filelist(files)
+
+    cmd = 'cd %s; git status -uall --porcelain' % DIRROOT
+    x = subprocess.run(cmd, shell=True, capture_output=True,
+                       env=process_env,
+                       encoding='utf-8').stdout
+    res += cmd + "\n"
+    files_to_remove = []
+    files_to_revert = []
+    for line in x.split('\n'):
+        #res += line
+        if not line:
+            continue
+        stat = line[1]
+        file = line[3:]
+        # file not in repo that wants to be reverted? Remove it.
+        if stat == "?" and file in file_list:
+            files_to_remove.append(file)
+        # Otherwise revert it.
+        elif file in file_list:
+            files_to_revert.append(file)
+
+    if files_to_remove:
+        res += "\n"
+        rm_list = get_filelist(files_to_remove)
+        cmd = 'cd %s; /usr/bin/git clean %s' % (DIRROOT, rm_list)
+        res += cmd + "\n"
+        res += subprocess.run(["/bin/sh", "-c", cmd], capture_output=True,
+                              env=process_env,
+                              encoding='utf-8').stdout
+
+    if files_to_revert:
+        res += "\n"
+        revert_list = get_filelist(files_to_revert)
+        cmd = 'cd %s; /usr/bin/git checkout -- %s' % (DIRROOT, revert_list)
+        res += cmd + "\n"
+        res += subprocess.run(["/bin/sh", "-c", cmd], capture_output=True,
+                              env=process_env,
+                              encoding='utf-8').stdout
+    return res
+
+def git_commit(files, message, user, upstreams):
+    res = ""
+    file_list = get_filelist(files)
+
+    cmd = 'cd %s; /usr/bin/git status -uall' % DIRROOT
+    x = subprocess.run(cmd, shell=True, capture_output=True,
+                       env=process_env,
+                       encoding='utf-8').stdout
+    #res += cmd + "\n"
+    files_to_add = []
+    files_to_forget = []
+    for line in x.split('\n'):
+        if not line:
+            continue
+        #res += line
+        stat = line[1]
+        file = line[3:]
+        if stat == "?" and file in file_list:
+            files_to_add.append(file)
+        elif stat == "D" and file in file_list:
+            files_to_forget.append(file)
+
+
+    if files_to_forget:
+        res += "\n"
+        forget_list = get_filelist(files_to_forget)
+        cmd = 'cd %s; /usr/bin/git rm %s' % (DIRROOT, forget_list)
+        res += cmd + "\n"
+        x = subprocess.run(cmd, shell=True, capture_output=True,
+                           env=process_env,
+                           encoding='utf-8').stdout
+        res += x
+
+    res += "\n"
+    cmd = 'cd %s; /usr/bin/git add %s' % (DIRROOT, file_list)
+    res += cmd + "\n"
+    x = subprocess.run(cmd, shell=True, capture_output=True,
+                       env=process_env,
+                       encoding='utf-8')
+    res += x.stderr + "\n"
+    res += x.stdout
+
+    res += "\n"
+    cmd = "cd %s; /usr/bin/git commit --author '(via Web interface) %s' -m '%s' %s" % \
+        (DIRROOT, user, message, file_list)
+    res += cmd + "\n"
+    git_result = subprocess.run(cmd, shell=True, capture_output=True,
+                                env=process_env,
+                                encoding='utf-8')
+    if git_result.returncode:
+       res += git_result.stderr + "\n"
+    res += git_result.stdout + "\n"
+
+    for upstream in upstreams: 
+        cmd = "cd %s; /usr/bin/git push -4 %s master" % \
+        (DIRROOT, upstream)
+        res += cmd + "\n"
+        git_result = subprocess.run(cmd, shell=True, capture_output=True,
+                                env=process_env,
+                                encoding='utf-8')
+        if git_result.returncode:
+            res += git_result.stderr + "\n"
+        res += git_result.stdout + "\n"
+   	
+    return res
+
+def html_escape(line):
+    line = line.replace("&", "&amp;")
+    line = line.replace("<", "&lt;")
+    line = line.replace(">", "&gt;")
+    return line
+
+def commitmessage_clean(message):
+    message = message.replace("'", "")
+    return message
+
+def diff_markup(line):
+    line = html_escape(line)
+
+    if line.startswith("+"):
+        line = '<span style="background-color: #a3fe9e; width: 100%;">' + line + '</span>'
+
+    elif line.startswith("-"):
+        line = '<span style="background-color: #fcc9c9;">' + line + '</span>'
+
+    return line
+
+def button(value, name):
+    return '<button type="submit" value="%s" name="%s">%s</button>' % (value, name, value)
+
+
+def main_page(req, path):
+
+    diff_info = list_changed_files(path)
+
+    req.write("<h1>%s Web git Interface</h1>\n" % RG_ABBREV)
+
+    req.write('<form action="/internal/git/" method="POST">\n')
+
+    req.write('<table class="ertos_table" style="width: 100%;">')
+
+    req.write('<tr><th style="padding-right: 2px; width: 75px;">')
+
+    req.write(button("Commit", "operation"))
+    req.write(button("Revert", "operation"))
+
+    req.write(
+        '</th><th style="font-size: 16px; vertical-align: middle;">Working Directory: %s</th></tr>' %\
+        path)
+    req.write('<tr><td colspan="2">Make sure you select which files to commit (click on their path)</td></tr>')
+
+    req.write('<tr><td colspan="2">&nbsp;</td></tr>')
+
+    keys = list(diff_info.keys())
+    keys.sort()
+    file_id = 0
+
+    for file in keys:
+        # Print the file info.
+        req.write('<tr><th colspan="2"><table><tr><td style="padding-right: 0px;"><input type="checkbox" name="%s" id="file_%s"/></td><td style="font-size: 14px; line-height: 1.4em"><label for="file_%s">%s</label></td></tr></table></th></tr>\n' % (file, file_id, file_id, file))
+
+        # Alternate file colours.
+        req.write('<tr class="file_%s"><td style="padding-left: 15px;" colspan="2">' % file_id)
+        if file_id % 2 is 0:
+            req.write('<pre style="width:100%; ">\n')
+        else:
+            req.write('<pre class="alternate" style="width:100%; ">\n')
+
+        # Read off each line in the file's diff
+        for line in diff_info[file]:
+            if line == "New file":
+                req.write("<strong style='color:green;'>+++ %s</strong>" % line)
+                continue
+            elif line == "Removed file":
+                req.write("<strong style='color:red;'>--- %s</strong>" % line)
+                continue
+            # Split off hunks
+            if line.strip().startswith("@@ ") and line.strip().endswith(" @@"):
+                # Close the previous hunk.
+                req.write("</pre></td></tr>\n")
+
+                # Print out the hunk information.
+                req.write('<tr class="file_%s"><td colspan="2"><table><tr><td style="padding-right: 0px;"></td><td style="font-size: 14px; line-height: 1.4em"><label for="" style="font-weight:bold">%s</label></td></tr></table></td></tr>\n' % (file_id, line.strip().strip("@@").strip()))
+                req.write('<tr class="file_%s"><td style="padding-left: 15px;" colspan="2">' % (file_id))
+
+                # Alternate file colours.
+                if file_id % 2 is 0:
+                    req.write('<pre style="width:100%;">\n')
+                else:
+                    req.write('<pre class="alternate" style="width:100%;">\n')
+
+            else:
+                # Format and print out the diff line.
+                req.write("%s" % (diff_markup(line)))
+
+        # Close off the file.
+        req.write("</pre></td></tr>\n")
+        req.write('<tr><td colspan="2">&nbsp;</td></tr>\n\n')
+
+        # Increase the file ID
+        file_id += 1
+
+    # If there are no files changed...
+    if file_id is 0:
+        req.write('<tr><td colspan="2"><p>There are no changes here...</p></td></tr>')
+
+    req.write('<tr><td colspan="2">&nbsp;</td></tr>')
+
+    req.write('<tr><th style="padding-right: 2px; width: 75px;">')
+    req.write(button("Commit", "operation"))
+    req.write(button("Revert", "operation"))
+    req.write('</th><th style="font-size: 16px; vertical-align: middle;">Working Directory: %s</th></tr>' % path)
+
+    req.write('</table>')
+
+    req.write("</form>\n")
+
+    return apache.OK
+
+def confirm_commit(req, query, path):
+
+    req.write('<h1>%s Web git Interface</h1>' % RG_ABBREV)
+
+    js_checkform = '''
+<script>
+        function checkform(f){
+          if(f.comments.value == ''){
+            alert('Please enter a commit message...');
+            return false;
+          }
+          return true;
+
+        }
+</script>
+    '''
+    req.write(js_checkform)
+    req.write("<p>You have asked to commit the following files:</p>")
+
+    files = []
+    for key in query:
+        if query[key][0] == b"on":
+            files.append(key.decode('utf-8'))
+
+    req.write('<table class="ertos_table" style="width: 100%; margin-bottom: 15px;">')
+    req.write('<tr><th>File</th><th>Validation Result</th></tr>')
+
+    x = subprocess.run('cd %s; /usr/bin/git status -uall' % DIRROOT,
+                       shell=True,
+                       env=process_env,
+                       capture_output=True, encoding='utf-8').stdout
+    files_to_remove = []
+    for line in x.split('\n'):
+        if not line:
+            continue
+        stat = line[1]
+        file = line[3:]
+        if stat == "D":
+            files_to_remove.append(file)
+
+    for i, file in enumerate(files):
+        file = file[len(DIRROOT):len(file)]
+        contentroot = CONTENTROOT[len(DIRROOT):len(CONTENTROOT)]
+
+        tr = '<tr>'
+        if i % 2 != 0:
+            tr = '<tr class="alternate">'
+
+        ## only validates not .pyl files in /content, and not files being removed
+        if file.startswith(contentroot) and not file.endswith(".pyl") and \
+           file not in files_to_remove:
+            file = file[len(contentroot):len(file)]
+            while file.startswith('/'):
+                file = file[1:]
+
+            url = "http://%s/%s" % (HOSTSTAGE, file)
+            remoteurl = "https://%s/%s" % (HOSTSTAGE, file)
+
+            req.write('%s<td>%s (<a href="%s">%s</a>)</td>\n' % (tr, contentroot+"/"+file, remoteurl, remoteurl))
+
+            # Validate file
+            open_url = None
+            try:
+                open_url = urllib.request.urlopen(url)
+            except urllib.error.HTTPError as msg:
+                req.write("<td>Couldn't open url for checking: %s</td>\n" % msg)
+
+            content = ""
+            if open_url and "Content-Type" in open_url.info():
+                content = open_url.info()["Content-Type"].split(";")[0]
+            if open_url and content == "text/html":
+                data = open_url.read().decode('utf-8')
+                src_lines = data.split("\n")
+                output = subprocess.run("/usr/local/bin/validate %s" % url,
+                                        shell=True,
+                                        env=process_env,
+                                        capture_output=True,
+                                        encoding='utf-8').stdout
+                if output:
+                    req.write('<td>Didn\'t validate -- <strong>You shouldn\'t commit this!</strong></td></tr><tr><td colspan="2"><pre>')
+                    lines = output.split("\n")
+                    preceding_error = False
+                    strong = False
+                    for line in lines:
+                        matches = re.match(r'^[^:]*:([0-9]+)\.([0-9]+)-([0-9]+)\.([0-9]+):.*$', line)
+                        if matches:
+                            line_num_start = int(matches.group(1))
+                            char_start = int(matches.group(2))
+                            line_num_end = int(matches.group(3))
+                            char_end = int(matches.group(4))
+                            req.write("From Line: %d Char: %d\n to Line %d Char %d" % (line_num_start, char_start, line_num_end, char_end))
+                            req.write("%s\n" % source_markup(src_lines[line_num_start-1], char_start-1))
+                            req.write("<strong>%s</strong>\n" % line)
+                            strong = True
+                        else:
+                            if strong:
+                                req.write("<strong>")
+                            req.write("%s\n" % line)
+                            if strong:
+                                req.write("</strong>")
+
+                        # if line.startswith("Error at"):
+                        #     preceding_error = True
+                        #     bits = line.split(":")[0].split(",")
+                        #     line_num = int(bits[0].split(' ')[-1])
+                        #     char = int(bits[1].split(' ')[-1])
+                        #     req.write(u"\nLine: %d Char: %d\n" % (line_num, char))
+                        #     req.write(u"%s\n" % source_markup(src_lines[line_num-1], char-1))
+                        #     req.write(u"%s\n" % line)
+                        # elif line.startswith(u"Warning at"):
+                        #     preceding_error = False
+                        # elif preceding_error:
+                        #     req.write(u"%s\n" % line)
+                    req.write("</pre></td></tr>")
+
+                # linklint
+                linklint_dir = "%s/linklint/%s" % (CONTENTROOT, file)
+
+                try:
+                    os.stat(linklint_dir)
+                except:
+                    os.makedirs(linklint_dir)
+
+                # linklint sucks - it will close a connection and
+                # gives a lot of junk apache's error log
+                # also, it seems that the acm portal gives a 403
+                # unless we specify a sane user agent
+                # we use the print mode to get rid of the menus
+
+                url = file + '?media=print'
+
+                cmd = "/usr/local/bin/linklint -timeout 30 -doc %s -net -redirect -http -host '%s' '/%s'" % (linklint_dir, "localhost", url)
+                output = subprocess.run(cmd, shell=True,
+                                        env=process_env,
+                                        capture_output=True,
+                                        encoding='utf-8').stdout
+
+                if 'ERROR' in output:
+                    req.write('<td><strong>Page has broken links.</strong></td></tr>')
+                    link = "/linklint/%s/index.html" % (file)
+                    urllink = "/linklint/%s/urlindex.html" % (file)
+                    req.write('<tr><td colspan="2"><p>See linklint <a href="%s" target="_blank">report</a> and <a href="%s">URL report</a> for details.</p>' % (link, urllink))
+
+                    lines = output.split('\n')
+                    lines_upper = output.upper().split('\n')
+                    req.write('<pre style="margin-left: 10px;">')
+
+                    last = ""
+                    for line in lines:
+                        if re.compile('.*ok.*', re.IGNORECASE).match(line) or \
+                            re.compile('.*-----.*').match(line):
+                            pass
+                        elif line.startswith("ERROR"):
+                            req.write('<span style="color: #FF0000;">'+line+'</span>'+'\n')
+                    req.write("</pre>")
+                    req.write("</td></tr>")
+
+                else:
+                    req.write("<td><strong>Passed linklint tests</strong></td></tr>")
+
+            if open_url and content != "text/html":
+                req.write("<td>Didn't validate since content is type: %s, not text/html</td>" % content)
+                req.write("</tr>")
+        elif file in files_to_remove:
+            req.write("%s<td>%s</td><td>Will be removed</td></tr>" % (tr, file))
+        else:
+            # Anything not under content can't be validated.
+            req.write("%s<td>%s</td><td>Won't be validated until we go live</td></tr>" % (tr, file))
+
+    req.write("</table>")
+
+    req.write('<form action="/internal/git/" method="POST" onSubmit="return checkform(this);">\n')
+    req.write('<input type="hidden" name="confirm" value="1" />')
+
+    for key in query:
+        filepath = key.decode('utf-8')
+        if filepath.startswith(DIRROOT):
+            filepath = filepath[len(DIRROOT):len(filepath)]
+        req.write('<input type="hidden" name="%s" value="%s" />' % (filepath, query[key][0].decode('utf-8')))
+
+    req.write('<table class="ertos_table" style="width: 100%;">')
+    req.write('<tr><th>Commit these changes?</th></tr>')
+    req.write('<tr><td><p>If you are happy with the above, write a commit message below and press <strong>Commit</strong></p></td></tr>')
+    req.write('<tr><td><p><textarea name="comments" style="padding: 3px; width: 450px; height: 200px; font-size: 12px; color: #666; border: 1px solid #CCC;"></textarea></p></td></tr>')
+
+    req.write('<tr><th>')
+    req.write(button("Commit", "operation"))
+    req.write('</th></tr>')
+
+    req.write('</table>')
+
+    req.write("</form>")
+    return apache.OK
+
+def confirm_revert(req, query, path):
+    req.write("<p>You have asked to revert the following files:</p>")
+    files = []
+    for key in query:
+        if query[key][0] == b"on":
+            files.append(key.decode('utf-8'))
+
+    req.write("<ul>")
+    for file in files:
+        req.write("<li>%s</li>\n" % file)
+    req.write("</ul>")
+    req.write("<p>If that is ok press <strong>Revert</strong>.")
+    req.write('Otherwise hit <a href="%s">Back</a> to return to the main screen.</p>' % req.unparsed_uri)
+    req.write('<form action="/internal/git/" method="POST">\n')
+
+    for key in query:
+        filepath = key.decode('utf-8')
+        if filepath.startswith(DIRROOT):
+            filepath = filepath[len(DIRROOT):len(filepath)]
+
+        req.write('<input type="hidden" name="%s" value="%s" />' % (filepath, query[key][0].decode('utf-8')))
+
+    req.write(button("Revert", "confirm"))
+    req.write("</form>")
+    return apache.OK
+
+class UnsafeFileNameException(Exception):
+    def __init__(self, value):
+        self.filename = value
+        self.error = check_filename_is_safe(value)
+    def __str__(self):
+        string = "Invalid filename: <strong>%s</strong><br/>gives error [%s]"
+        error = ""
+        if self.error == -1:
+            error = "Invalid length"
+        elif self.error == -2:
+            error = "File is '/'"
+        elif self.error == -3:
+            error = "File name contains relative path"
+        elif self.error == -4:
+            error = "File name contains character not allowed (digits, letters, / _ - . space :)"
+        return string % (str(self.filename), error)
+
+def get_filenames(query):
+    files = []
+    for key in query:
+        if query[key][0] == b"on":
+            f = key.decode('utf-8')
+            if check_filename_is_safe(f) <= 0:
+                raise UnsafeFileNameException(f)
+            files.append(f)
+    return files
+
+def do_commit(req, query, path, upstreams):
+    # get username to put into commit message, there seems to be a race
+    # condition involved here, doing it early on in the handler avoids it
+    # mod_python docs say we need to call get_basic_auth_pw() before
+    # looking at req.connection.user. This reeks of dodginess. -AB
+
+    user = User(get_logged_in_user(req))
+    user = "%s <%s>" % (user.fullname(), user.email())
+
+    try:
+        files = get_filenames(query)
+    except UnsafeFileNameException as e:
+        req.write("Sorry, one of your files has an unsafe filename!")
+        req.write("<br/>%s" %e)
+        return apache.OK
+
+
+    message = commitmessage_clean(query[b"comments"][0].decode('utf-8'))
+
+    req.write('<h1>%s Web git Interface</h1>' % RG_ABBREV)
+    req.write('<table class="ertos_table" style="width: 100%">')
+    req.write("<tr><th>You have committed changes to the following files - (other files remain uncommitted)</th></tr>")
+
+    req.write("<tr><td>")
+    req.write("<ul>")
+    for file in files:
+        req.write("<li>%s</li>\n" % file)
+    req.write("</ul>")
+    req.write("</td></tr>")
+    req.write('<tr><td><p>git Output:</p><p>This could take some time!</p>')
+    req.flush()
+    req.write('<pre style="margin-left: 10px;">')
+
+    # Do the actual commit
+    commit_output = git_commit(files, message, user, upstreams)
+
+    req.write('%s</pre>\n' % cgi.escape(commit_output))
+    req.write("</td></tr>")
+
+    req.write('<tr><td colspan="2">&nbsp;</td></tr>')
+    req.write("<tr><th>With the following commit message:</th></tr>")
+    req.write('<tr><td><pre>%s</pre></td></tr>' % cgi.escape(message))
+
+    apache_need_restart = False
+    for f in files:
+        if f.startswith('code/') or f.endswith('.pyl'):
+            # FIXME: Change this to true if we need the server to restart.
+            apache_need_restart = False
+    if apache_need_restart:
+        req.write("<tr><th>Restarting live website:</th></tr>")
+        req.write('<tr><td class="highlight">Python handler updated, restarting apache on live site:</td></tr>\n<tr><td><pre style="margin-left: 10px;">')
+        x = subprocess.run("ssh %s 'sudo /etc/init.d/apache2 restart'"
+                           % (HOSTLIVE), Shell=true, stdout=PIPE, stderr=STDOUT,
+                           encoding='utf-8').stdout
+        req.write(x.read())
+        req.write('</pre></td></tr>')
+
+    req.write('</table>')
+
+    req.write('<a href="%s">BACK</a>' % req.unparsed_uri)
+
+    return apache.OK
+
+def do_revert(req, query, path):
+    try:
+        files = get_filenames(query)
+    except UnsafeFileNameException as e:
+        req.write("Sorry, one of your files has an unsafe filename!")
+        req.write("<br/>%s" %e)
+        return apache.OK
+
+    req.write("<p>You have reverted changes to the following files:</p>")
+    req.write("<ul>")
+    for file in files:
+        req.write("<li>%s</li>\n" % file)
+    req.write("</ul>")
+
+    req.write("git Output: <pre>%s</pre>\n" % cgi.escape(git_revert(files)))
+    req.write('<a href=%s>Back</a>' % req.unparsed_uri)
+    return apache.OK
+
+
+def handler(req, q, path=""):
+
+    cfg.read(req.get_options()['site_config'])
+    global DIRROOT, CONTENTROOT, HOSTLIVE, HOSTSTAGE, RG_ABBREV
+
+    if cfg.getboolean('core', 'production'):
+        return apache.HTTP_NOT_FOUND
+
+    # Path to website content root
+    DIRROOT = cfg.get('core', 'base_dir') + "/"
+    CONTENTROOT = cfg.get('core', 'content_dir')
+
+    # Path to the live site for auto-updating
+    HOSTURL = cfg.get('hosts', 'url')
+    HOSTSTAGE = cfg.get('hosts', 'stage')
+    HOSTLIVE = cfg.get('hosts', 'live')
+
+    RG_ABBREV = cfg.get('core', 'rg_abbrev').upper()
+
+    req.content_type = "text/html"
+    req.send_http_header()
+
+    in_production = cfg.getboolean('core', 'production')
+    if in_production:
+        req.write("This page can not be accessed from the live server.")
+        return apache.HTTP_NOT_FOUND
+
+    DIRROOT = os.path.normpath(DIRROOT) + "/"
+    query = cgi.parse_qs(req.read())
+
+    confirm = 0
+
+    # 002 - so that files created with www-data can be changed by
+    # people in the group
+    old_umask = os.umask(0o02)
+
+    if b"confirm" in query:
+        confirm = 1
+
+    http_status_code = apache.OK
+
+    if b"operation" in query:
+        if query[b"operation"][0] == b"Commit" or query[b"operation"][0] == b"b'Commit'":
+            if confirm == 1:
+                upstreams = cfg.getlist('git','upstreams')
+                http_status_code = do_commit(req, query, DIRROOT, upstreams)
+            else:
+                http_status_code = confirm_commit(req, query, DIRROOT)
+        elif query[b"operation"][0] == b"Revert":
+            if confirm == 1:
+                http_status_code = do_revert(req, query, DIRROOT)
+            else:
+                http_status_code = confirm_revert(req, query, DIRROOT)
+        else:
+            req.write("Don't know about that!\n")
+            http_status_code = apache.OK
+    else:
+        http_status_code = main_page(req, DIRROOT)
+
+    os.umask(old_umask)           # restoring umask
+    return http_status_code

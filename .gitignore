@@ -1,0 +1,7 @@
+*~
+configs/config.cfg
+content/linklint/*
+*.pylo
+*.pyc
+\#*#
+__pycache__/

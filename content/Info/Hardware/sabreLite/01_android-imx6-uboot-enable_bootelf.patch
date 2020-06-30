@@ -1,0 +1,31 @@
+diff -r eb7db924c90c -r dda7cc7034f3 include/configs/mx6q_sabrelite_android.h
+--- a/include/configs/mx6q_sabrelite_android.h	Tue Apr 16 11:55:31 2013 +1000
++++ b/include/configs/mx6q_sabrelite_android.h	Tue Apr 16 11:55:36 2013 +1000
+@@ -109,6 +109,8 @@
+ 
+ #include <config_cmd_default.h>
+ 
++#define CONFIG_CMD_ELF
++
+ #define CONFIG_CMD_PING
+ #define CONFIG_CMD_DHCP
+ #define CONFIG_CMD_MII
+diff -r eb7db924c90c -r dda7cc7034f3 lib_arm/cache.c
+--- a/lib_arm/cache.c	Tue Apr 16 11:55:31 2013 +1000
++++ b/lib_arm/cache.c	Tue Apr 16 11:55:36 2013 +1000
+@@ -34,3 +34,15 @@
+ #endif
+ 	return;
+ }
++
++int   dcache_status (void){
++	/* Always off */
++	return 0;
++}
++
++void  dcache_enable (void){
++}
++
++void  dcache_disable(void){
++}
++

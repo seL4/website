@@ -1,0 +1,71 @@
+# Copyright 2019 CSIRO
+# Copyright 2020 seL4 Project a Series of LF Projects, LLC.
+#    SPDX-License-Identifier: GPL-2.0-only
+#
+
+import os, cgi
+import subprocess
+from mod_python import apache
+from ertos import *
+from ertos_config import cfg
+
+def get_title(req):
+    return "Linklint Check"
+
+def main_page(req, query, path, root):
+
+    req.write('<h1>Web Link Checker</h1>')
+
+    req.write('<table class="ertos_table" style="width: 100%; margin-bottom: 15px;">')
+    req.write('<tr><th>File: %s</th><th>Linklint Result</th></tr>' % path)
+
+    # we use the print mode to get rid of the menus
+    path = path[len(root)+1:len(path)]
+    linklint_dir = "%s/linklint/%s/" % (root, path)
+    url = path + '?media=print'
+    cmd = ["/usr/bin/linkchecker", "-F", 'html/' + linklint_dir + '/index.html',
+           '--no-status',
+           '--no-follow-url=.*',
+           '--check-extern',
+           'http://' + cfg.get('hosts', 'stage') + "/" + url
+           ]
+    try:
+        os.stat(linklint_dir)
+    except:
+        os.makedirs(linklint_dir)
+
+
+    child = subprocess.run(cmd, capture_output=True, encoding='utf-8')
+    status = child.returncode
+    output = child.stdout + child.stderr
+    link = "/linklint/%s/index.html" % (path)
+
+    req.write('<tr><th>Linklint command is</th><td>%s</td></tr>' % " ".join(cmd))
+
+    if status != 0:
+        req.write('<td><strong>Page has broken links.</strong></td></tr>')
+        req.write('<tr><td colspan="2"><p>See linklint <a href="%s" target="_blank">linkcheck reports</a> for details ' % link)
+        lines = output.split('\n')
+        lines_upper = output.upper().split('\n')
+        req.write('<pre style="margin-left: 10px;">')
+
+        last = ""
+        for line in lines:
+            req.write(line+'\n')
+        req.write("</pre>")
+        req.write("</td></tr>")
+    else:
+        req.write("<tr><td><strong>Passed linklint tests</strong></td></tr>")
+        req.write('<tr><td>See <a href="%s">Linklint Report<a> for details</td></tr>' % link)
+    req.write('</table>')
+    return apache.OK
+
+def handler(req, q, path):
+    cfg.read(req.get_options()['site_config'])
+    CONTENTROOT = cfg.get('core', 'content_dir')
+    req.content_type = "text/html"
+    req.send_http_header()
+
+    http_status_code = main_page(req, q, path, CONTENTROOT)
+
+    return http_status_code

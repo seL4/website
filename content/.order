@@ -1,0 +1,13 @@
+# Defines an order for menu elements at this level.
+# Items listed here but not found will be ignored.
+# Items not listed here will be added alphabetically after ordered items.
+# Comments are allowed, on their own line starting with #
+# --line indicates a fine white line separator
+Home
+What is seL4?
+seL4 Foundation
+Stay in Touch
+Contribute
+Use
+Learn
+More Info

@@ -1,0 +1,107 @@
+<!--
+<title>Learn</title>
+  Copyright 2020 seL4 Project a Series of LF Projects, LLC.
+  SPDX-License-Identifier: CC-BY-SA-4.0
+-->
+<h1 id="learn-about-sel4">Learn about seL4</h1>
+
+<h2 id="docsite">Docsite</h2>
+
+<p>
+  We have a separate website for technical seL4 documentation, which
+  we call the <a href="https://docs.sel4.systems/">Docsite</a>. The
+  docsite is community maintained - its source is hosted on GitHub and
+  can be edited using standard GitHub procedures
+  as <a href="https://docs.sel4.systems/processes/docs-contributing.html">documented</a>
+  on the docsite itself.
+</p> 
+
+<h2 id="tutorials">Tutorials</h2>
+
+<p>
+  The best way to learn to use seL4 is to follow our tutorials. We
+  provide a series of hands-on tutorials that cover the basics of
+  seL4, the kernel and core library APIs, user-level frameworks, and
+  virtualisation.
+</p>
+
+<p>
+  If you want to know how to use seL4, then this is where you should
+  start. See
+  the <a href="https://docs.sel4.systems/Tutorials/">Tutorials</a>
+  page on our docsite.
+</p>
+
+<p>
+  If you prefer unstructured learning and want to dive in and explore
+  on your own then follow the links on the
+  docsite's <a href="https://docs.sel4.systems/GettingStarted.html">Getting
+    Started</a> page.
+</p>
+
+<p>
+  After getting a solid seL4 background you can move on to building
+  seL4-based systems. Next steps include working on one of
+  our <a href="https://docs.sel4.systems/SuggestedProjects.html">suggested
+  projects</a> or helping to expand
+  the <a href="https://docs.sel4.systems/projects/available-user-components.html">collection
+  of libraries and components</a> available to build seL4-based
+  systems.
+</p>
+
+<h2 id="documentation">Documentation</h2>
+
+<p>
+  We've written a lot about the seL4 kernel: from overview papers,
+  historical background, and project retrospectives, to detailed
+  documentation of the kernel API, user-level libraries and
+  components, and system frameworks.
+</p>
+
+<p>
+  Besides the kernel implementation and the systems aspects of seL4,
+  we've also written about the seL4 proofs: from overview papers
+  explaining the models and the proofs, details of proof techniques
+  developed and used for the proof, insights gained through doing the
+  proofs, to detailed documentation of the proofs themselves.
+</p>
+
+<p>
+  See
+  the <a href="https://docs.sel4.systems/projects/sel4/documentation.html">Documentation</a>
+  page on our docsite for information about all of these.
+</p>
+
+
+<h2 id="courses">Courses</h2>
+
+<p>
+  seL4 is being used as the basis of several (University-level)
+  courses, including:
+</p>
+<ul>
+  <li>
+    <p>
+      <a href="http://www.cse.unsw.edu.au/~cs9242/current/">Advanced
+      Operating Systems</a> at UNSW. This course provides an extensive
+      seL4-based assignment that teaches students how to build an
+      operating system on seL4. The course material (all lecture slides, the
+      project and related code) are publicly available. Videos of lectures covering seL4 are available from the
+      <a href="https://www.youtube.com/playlist?list=PLbSaCpDlfd6qLbEsKquVo3--0gwYBmrUV">UNSW
+	CSeLearning COMP9242 YouTube channel</a>.
+    </p>
+  </li>
+
+  <li><p>
+      <a href="https://www.cse.unsw.edu.au/~cs4161/">Advanced Topics
+      in Software Verification</a> at UNSW. While not directly about
+      seL4, this course teaches Isabelle/HOL and the program
+      verification techniques used to develop seL4's proof. Following
+      this, or a similar, course is necessary if you intend to
+      contribute to the seL4 proofs.
+  </p></li>
+
+<!--
+<li><p>Others?</p></li>
+-->
+</ul>

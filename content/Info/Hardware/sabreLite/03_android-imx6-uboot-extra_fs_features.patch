@@ -1,0 +1,52 @@
+diff -r 8007ffcf8136 -r cf814578f28b include/configs/mx6q_sabrelite_android.h
+--- a/include/configs/mx6q_sabrelite_android.h	Tue Apr 16 11:55:36 2013 +1000
++++ b/include/configs/mx6q_sabrelite_android.h	Tue Apr 16 11:55:36 2013 +1000
+@@ -23,7 +23,6 @@
+ #define __CONFIG_H
+ 
+ #include <asm/arch/mx6.h>
+-
+  /* High Level Configuration Options */
+ #define CONFIG_ARMV7	/* This is armv7 Cortex-A9 CPU core */
+ #define CONFIG_MXC
+@@ -34,6 +33,7 @@
+ #define CONFIG_MX6_CLK32	   32768
+ 
+ #define CONFIG_SKIP_RELOCATE_UBOOT
++#define CONFIG_ZERO_BOOTDELAY_CHECK
+ 
+ #define CONFIG_ARCH_CPU_INIT
+ #undef CONFIG_ARCH_MMU /* disable MMU first */
+@@ -67,6 +67,10 @@
+  */
+ #define CONFIG_MXC_UART
+ #define CONFIG_UART_BASE_ADDR   UART2_BASE_ADDR
++#define CONFIG_CMD_BDI
++#define CONFIG_CMD_BSP
++#define CONFIG_CMD_I2C
++#define CONFIG_CMD_SPI
+ 
+ /* allow to overwrite serial and ethaddr */
+ #define CONFIG_ENV_OVERWRITE
+@@ -110,6 +114,9 @@
+ #include <config_cmd_default.h>
+ 
+ #define CONFIG_CMD_ELF
++#define CONFIG_CMD_BOOTD
++#define CONFIG_CMD_CONSOLE
++#define CONFIG_CMD_SETEXPR
+ 
+ #define CONFIG_CMD_PING
+ #define CONFIG_CMD_DHCP
+@@ -235,6 +242,11 @@
+  */
+ #ifdef CONFIG_CMD_MMC
+ 	#define CONFIG_MMC
++	#define CONFIG_FS_FAT
++	#define CONFIG_FS_EXT4
++	#define CONFIG_CMD_FS_GENERIC
++	#define CONFIG_CMD_BOOTZ
++	#define CONFIG_SUPPORT_RAW_INITRD
+ 	#define CONFIG_GENERIC_MMC
+ 	#define CONFIG_IMX_MMC
+ 	#define CONFIG_SYS_FSL_USDHC_NUM        2
