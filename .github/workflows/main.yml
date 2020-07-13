@@ -17,5 +17,4 @@ jobs:
         id: 'gen_static_website'
       - name: show files
         run: |
-          ls -la
-          pwd
+          ls -lan

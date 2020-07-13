@@ -51,6 +51,12 @@ wget \
     localhost
 echo "::endgroup::"
 
+echo "::group::Show files"
+ls -lan 
+ls -lan "$OUTPUT_SNAPSHOT_DIR"
+echo "bump"
+echo "::endgroup::"
+
 echo "::group::Fix output permissions"
 chown -R 1001:116 "$OUTPUT_SNAPSHOT_DIR"
 echo "::endgroup::"
