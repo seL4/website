@@ -1,6 +1,5 @@
 #!/bin/bash
 
-set -e
 
 OUTPUT_SNAPSHOT_DIR="snapped_site"
 
@@ -48,7 +47,7 @@ wget \
     --exclude-directories pipermail \
     --no-parent \
     --directory "$OUTPUT_SNAPSHOT_DIR" \
-    localhost || true
+    localhost
 echo "::endgroup::"
 
 echo "::group::Show files"
