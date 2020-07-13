@@ -1,0 +1,19 @@
+---
+
+name: PR
+
+on:
+  pull_request:
+    types: [opened, synchronize]
+
+
+jobs:
+  snapshot:
+    name: "Static snapshot"
+    runs-on: sel4/sel4-website
+    steps:
+      - uses: actions/checkout@v2
+      - name: show files
+        run: |
+          ls -la
+
