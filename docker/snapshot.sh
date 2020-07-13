@@ -1,8 +1,10 @@
 #!/bin/bash
 
-pwd
+set -e
 
-echo "::group::Setting up apache with PR conf"
+OUTPUT_SNAPSHOT_DIR="snapped_site"
+
+echo "::group::Set up apache with PR conf"
 # Clear out any other apache confs, and install the PR's version
 rm /etc/apache2/sites-enabled/*.conf 
 cp apache/seL4.systems.conf /etc/apache2/sites-available/
@@ -21,25 +23,20 @@ sed -i '/SSLEngine on/,/<\/Directory>/d' "$CONF"
 # Now we 'enable' the site in apache
 ln -s "$CONF" /etc/apache2/sites-enabled/seL4.systems.conf
 
-cat /etc/apache2/sites-enabled/seL4.systems.conf
-
 # And pick if we're live or staged - since we're in a container, live is what we want.
 ln -s config.cfg.live configs/config.cfg
 
+# Create a symlink to point the apache content dir to this PR's dir
 rm -rf /var/www/seL4
 ln -s $PWD /var/www/seL4
-
-ls -lah 
-ls -lah configs
-
 echo "::endgroup::"
 
-echo "::group::Starting apache"
+echo "::group::Start apache"
 apachectl start
-sleep 5
+sleep 5  # just so apache has some spin-up time
 echo "::endgroup::"
 
-echo "::group::wgetting apache"
+echo "::group::Snapshot website PR"
 wget \
 	--recursive \
 	--page-requisites \
@@ -50,11 +47,10 @@ wget \
 	--exclude-domains wiki.sel4.systems,docs.sel4.systems \
 	--exclude-directories pipermail \
 	--no-parent \
+    --directory "$OUTPUT_SNAPSHOT_DIR" \
     localhost
-
 echo "::endgroup::"
 
-echo "::group::Apache logs"
-cat /var/log/apache2/*
+echo "::group::Fix output permissions"
+chown -R 1001:116 "$OUTPUT_SNAPSHOT_DIR"
 echo "::endgroup::"
-
