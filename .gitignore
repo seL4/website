@@ -5,3 +5,4 @@ content/linklint/*
 *.pyc
 \#*#
 __pycache__/
+*.swp
