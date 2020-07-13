@@ -13,7 +13,7 @@ jobs:
     runs-on: 'ubuntu-latest'
     steps:
       - uses: actions/checkout@v2
-      - uses: ./.github/workflows/
+      - uses: ./.github/actions/gen_static_website
         id: 'gen_static_website'
       - name: show files
         run: |
