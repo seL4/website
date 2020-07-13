@@ -38,17 +38,17 @@ echo "::endgroup::"
 
 echo "::group::Snapshot website PR"
 wget \
-	--recursive \
-	--page-requisites \
-	--adjust-extension \
-	--span-hosts \
-	--convert-links \
-	--domains localhost \
-	--exclude-domains wiki.sel4.systems,docs.sel4.systems \
-	--exclude-directories pipermail \
-	--no-parent \
+    --recursive \
+    --page-requisites \
+    --adjust-extension \
+    --span-hosts \
+    --convert-links \
+    --domains localhost \
+    --exclude-domains wiki.sel4.systems,docs.sel4.systems \
+    --exclude-directories pipermail \
+    --no-parent \
     --directory "$OUTPUT_SNAPSHOT_DIR" \
-    localhost
+    localhost || true
 echo "::endgroup::"
 
 echo "::group::Show files"
