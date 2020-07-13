@@ -10,10 +10,12 @@ on:
 jobs:
   snapshot:
     name: "Static snapshot"
-    runs-on: sel4/sel4-website
+    runs-on: 'ubuntu-latest'
     steps:
       - uses: actions/checkout@v2
+      - uses: ./.github/workflows/
+        id: 'gen_static_website'
       - name: show files
         run: |
           ls -la
-
+          pwd
