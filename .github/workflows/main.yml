@@ -34,3 +34,14 @@ jobs:
           force: true
           repository: LukeMondy/website_pr_hosting
           directory: snapped_site
+      - name: Leave comment with URL
+        uses: unsplash/comment-on-pr@master
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        with:
+          msg: "Check out your changes here: https://htmlpreview.github.io/?https://github.com/LukeMondy/website_pr_hosting/blob/${{ github.actor }}/localhost/index.html"
+          check_for_duplicate_msg: false
+        
+        
+        
+        
