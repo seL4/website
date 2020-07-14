@@ -30,7 +30,7 @@ jobs:
         uses: ad-m/github-push-action@master
         with:
           github_token: ${{ secrets.WEBSITE_PR_HOSTING_TOKEN }}
-          branch: ${{ github.ref }}
+          branch: ${{ github.actor }}
           force: true
           repository: LukeMondy/website_pr_hosting
           directory: snapped_site
