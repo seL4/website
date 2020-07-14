@@ -18,3 +18,19 @@ jobs:
       - name: show files
         run: |
           ls -lan
+      - name: Commit files
+        run: |
+          cd snapped_site
+          git init .
+          git add *
+          git config --local user.email "auto@sel4.systems"
+          git config --local user.name "seL4 GitHubAction"
+          git commit -m "Add changes" -a
+      - name: Push changes
+        uses: ad-m/github-push-action@master
+        with:
+          github_token: ${{ secrets.WEBSITE_PR_HOSTING_TOKEN }}
+          branch: $GITHUB_REF
+          force: true
+          repository: LukeMondy/website_pr_hosting
+          directory: snapped_site
