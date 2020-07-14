@@ -20,6 +20,7 @@ jobs:
           ls -lan
       - name: Commit files
         run: |
+          # TODO: snapped_site either needs to be a variable everywhere, or not at all.
           cd snapped_site
           git init .
           git add *
@@ -29,7 +30,11 @@ jobs:
       - name: Push changes
         uses: ad-m/github-push-action@master
         with:
+          # TODO: I believe this token gives anyone with it access to write to any of my public repos...?
+          # Not sure how to get a token to a single repo.
           github_token: ${{ secrets.WEBSITE_PR_HOSTING_TOKEN }}
+          # TODO: pick a better branch name, so people can have multiple PRs without conflict
+          # probably a good idea to assign it as a variable, if possible, so we can use it in the comment step
           branch: ${{ github.actor }}
           force: true
           repository: LukeMondy/website_pr_hosting
@@ -39,7 +44,7 @@ jobs:
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         with:
-          msg: "Check out your changes here: https://htmlpreview.github.io/?https://github.com/LukeMondy/website_pr_hosting/blob/${{ github.actor }}/localhost/index.html"
+          msg: "Review your changes [here](https://htmlpreview.github.io/?https://github.com/LukeMondy/website_pr_hosting/blob/${{ github.actor }}/localhost/index.html)"
           check_for_duplicate_msg: false
         
         
