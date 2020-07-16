@@ -16,6 +16,7 @@ RUN apt-get update -q \
         python3-dev \
         python3-lxml \
         python3-pip \
+        wget \
     && dpkg -i /tmp/libapache2-mod-python_3.5.0-1_amd64.deb \
     && apt-get clean autoclean \
     && apt-get autoremove --purge --yes \
@@ -27,26 +28,7 @@ RUN apt-get update -q \
 # Configure apache 
 RUN cd /etc/apache2 \
     # Enable required apache mods
-    && ln -s ../mods-available/expires.load mods-enabled/expires.load \
-    #
-    # Install seL4 site conf
-    && rm sites-enabled/*.conf \
-    && cp /var/www/seL4/apache/seL4.systems.conf sites-available \
-    #
-    # We need to modify the seL4 site conf to work nicely within the container
-    # 1. Delete the http component of the conf, which just redirects to 443
-    && sed -i '/^<VirtualHost _default_:80>/,/^<\/VirtualHost>/d' sites-available/seL4.systems.conf \
-    # 2. Change port 443 to 80
-    && sed -i 's/<VirtualHost _default_:443>/<VirtualHost _default_:80>/g' sites-available/seL4.systems.conf \
-    # 3. Remove SSL invokes
-    && sed -i '/SSLEngine on/,/<\/Directory>/d' sites-available/seL4.systems.conf \
-    #
-    # Now we 'enable' the site in apache
-    && ln -s ../sites-available/seL4.systems.conf sites-enabled/seL4.systems.conf \
-    #
-    # And pick if we're live or staged - since we're in a container, live is what we want.
-    && cd /var/www/seL4/configs \
-    && ln -s config.cfg.live config.cfg
+    && ln -s ../mods-available/expires.load mods-enabled/expires.load 
 
-# If no other CMD is given, run Apache
-CMD ["apachectl", "-D", "FOREGROUND"]
+COPY docker/entrypoint.sh /entrypoint.sh
+ENTRYPOINT ["/entrypoint.sh"]

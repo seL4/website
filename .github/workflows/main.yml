@@ -1,0 +1,52 @@
+---
+
+name: PR
+
+on:
+  pull_request:
+    types: [opened, synchronize]
+
+
+jobs:
+  snapshot:
+    name: "Static snapshot"
+    runs-on: 'ubuntu-latest'
+    steps:
+      - uses: actions/checkout@v2
+      - uses: ./.github/actions/gen_static_website
+        id: 'gen_static_website'
+      - name: show files
+        run: |
+          ls -lan
+      - name: Commit files
+        run: |
+          # TODO: snapped_site either needs to be a variable everywhere, or not at all.
+          cd snapped_site
+          git init .
+          git add *
+          git config --local user.email "auto@sel4.systems"
+          git config --local user.name "seL4 GitHubAction"
+          git commit -m "Add changes" -a
+      - name: Push changes
+        uses: ad-m/github-push-action@master
+        with:
+          # TODO: I believe this token gives anyone with it access to write to any of my public repos...?
+          # Not sure how to get a token to a single repo.
+          github_token: ${{ secrets.WEBSITE_PR_HOSTING_TOKEN }}
+          # TODO: pick a better branch name, so people can have multiple PRs without conflict
+          # probably a good idea to assign it as a variable, if possible, so we can use it in the comment step
+          branch: ${{ github.actor }}
+          force: true
+          repository: LukeMondy/website_pr_hosting
+          directory: snapped_site
+      - name: Leave comment with URL
+        uses: unsplash/comment-on-pr@master
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        with:
+          msg: "Review your changes [here](https://htmlpreview.github.io/?https://github.com/LukeMondy/website_pr_hosting/blob/${{ github.actor }}/localhost/index.html)"
+          check_for_duplicate_msg: false
+        
+        
+        
+        
