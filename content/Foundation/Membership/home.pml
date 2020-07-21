@@ -49,6 +49,15 @@
 <div class="sponsors">
   <div class="sponsor">
     <div class="sponsor-pic">
+      <a href="https://www.adventiumlabs.com/">
+	<img src="LOGOS/adventium-labs.svg" style="width: 200px" alt="Adventium logo">
+      </a>
+    </div>
+    <div class="sponsor-name">
+      Adventium Labs
+    </div>
+  </div>  <div class="sponsor">
+    <div class="sponsor-pic">
       <a href="https://brkawy.com">
 	<img src="LOGOS/Brkawy.png" style="width: 200px" alt="Breakaway logo">
       </a>
