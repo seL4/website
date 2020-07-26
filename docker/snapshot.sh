@@ -1,5 +1,6 @@
 #!/bin/bash
 
+set -e
 
 OUTPUT_SNAPSHOT_DIR="snapped_site"
 
@@ -38,7 +39,14 @@ apachectl start
 sleep 5  # just so apache has some spin-up time
 echo "::endgroup::"
 
+echo "::group::Test apache is running"
+wget -qO- localhost
+echo "::endgroup::"
+
 echo "::group::Snapshot website PR"
+# wget is giving bad return codes, even when things seem OK. Turn off
+# error checking for this section.
+set +e
 # Use wget to take a static snapshot of the Apache served website
 # Note that we skip sites not hosted by this website, and we skip
 # pipermail (since it's not related to the site content), and 
@@ -55,6 +63,8 @@ wget \
     --no-parent \
     --directory "$OUTPUT_SNAPSHOT_DIR" \
     localhost
+
+set -e
 echo "::endgroup::"
 
 echo "::group::Show files"
