@@ -24,6 +24,9 @@ ln -s "$CONF" /etc/apache2/sites-enabled/seL4.systems.conf
 
 # And pick if we're live or staged - since we're in a container, live is what we want.
 ln -s config.cfg.live configs/config.cfg
+# Update live config to say we're not running on seL4
+sed -i '/^seL4 = yes/c\seL4 = no' configs/config.cfg
+cat configs/config.cfg
 
 # Create a symlink to point the apache content dir to this PR's dir
 rm -rf /var/www/seL4
