@@ -2,7 +2,4 @@
 
 set -ex
 
-pwd
-bash docker/snapshot.sh
-
-
+bash docker/launcher.sh
