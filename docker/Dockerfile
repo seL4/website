@@ -4,15 +4,12 @@ FROM debian:buster
 
 COPY docker/libapache2-mod-python_3.5.0-1_amd64.deb /tmp/libapache2-mod-python_3.5.0-1_amd64.deb
 
-# This inserts the current directory as the website. This may be overridden by
-# later docker run commands.
-COPY . /var/www/seL4
-
 # Get and install dependencies required
 RUN apt-get update -q \
     && apt-get install -y --no-install-recommends \
         apache2 \
         libxml2-dev \
+        linkchecker \
         python3-dev \
         python3-lxml \
         python3-pip \
