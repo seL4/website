@@ -97,7 +97,7 @@ jobs:
   commenter:
     name: "Report results as comment"
     runs-on: 'ubuntu-latest'
-    needs: [snapshot , linkchecker, htmlvalidator]
+    needs: snapshot 
     steps:
       # TODO: in the future, when this issue is resolved: https://github.com/peaceiris/actions-gh-pages/issues/348, the link
       #       generated should be for the commit itself, not just the tip.
