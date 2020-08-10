@@ -65,8 +65,7 @@ jobs:
           deploy_key: ${{ secrets.ACTIONS_DEPLOY_KEY }}
           # TODO: make a more official repo
           external_repository: LukeMondy/website_pr_hosting
-          # TODO: pick a better branch name, so people can have multiple PRs without conflict
-          publish_branch: ${{ github.actor }}
+          publish_branch: PR_${{ github.event.number }}
           publish_dir: ./snapped_site
 
   linkchecker:
@@ -100,16 +99,18 @@ jobs:
     runs-on: 'ubuntu-latest'
     needs: [snapshot , linkchecker, htmlvalidator]
     steps:
+      # TODO: in the future, when this issue is resolved: https://github.com/peaceiris/actions-gh-pages/issues/348, the link
+      #       generated should be for the commit itself, not just the tip.
       - name: Build message
         run: |
-          echo "Preview your changes [here](https://htmlpreview.github.io/?https://github.com/LukeMondy/website_pr_hosting/blob/${{ github.actor }}/localhost/index.html)" > msg.txt
+          echo "Preview your changes [here](https://htmlpreview.github.io/?https://github.com/LukeMondy/website_pr_hosting/blob/PR_${{ github.event.number }}/localhost/index.html)" > msg.txt
           if ${{ needs.snapshot.outputs.linkchecker_failed }}; then
             echo "" >> msg.txt
-            echo "The link checker found some issues! Review them [here](https://htmlpreview.github.io/?https://github.com/LukeMondy/website_pr_hosting/blob/${{ github.actor }}/localhost/linkchecker.html)" >> msg.txt
+            echo "The link checker found some issues! Review them [here](https://htmlpreview.github.io/?https://github.com/LukeMondy/website_pr_hosting/blob/PR_${{ github.event.number }}/localhost/linkchecker.html)" >> msg.txt
           fi
           if ${{ needs.snapshot.outputs.validator_failed }}; then
             echo "" >> msg.txt
-            echo "The HTML5 validator found some issues! Review them [here](https://htmlpreview.github.io/?https://github.com/LukeMondy/website_pr_hosting/blob/${{ github.actor }}/localhost/validator.log)" >> msg.txt
+            echo "The HTML5 validator found some issues! Review them [here](https://htmlpreview.github.io/?https://github.com/LukeMondy/website_pr_hosting/blob/PR_${{ github.event.number }}/localhost/validator.log)" >> msg.txt
           fi
           export MSG=$(cat msg.txt)
           # The follow lines are to preserve newlines
