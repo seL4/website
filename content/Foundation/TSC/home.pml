@@ -23,7 +23,7 @@
 
   <div class="person">
     <div class="person_pic">
-      <a href="https://trustworthy.systems/people/?cn=Matthew+Brecknell"><img src="../../images/tsc/matthew.jpg" alt="Matthew Brecknell" width="80px" /></a>
+      <a href="https://trustworthy.systems/people/?cn=Matthew+Brecknell"><img src="../../images/tsc/matthew.jpg" alt="Matthew Brecknell" width="80" /></a>
     </div>
     <div class="person_title">
       <strong><a class="list_link" href="https://trustworthy.systems/people/?cn=Matthew+Brecknell">Matthew Brecknell</a></strong>
@@ -32,7 +32,7 @@
 
   <div class="person">
     <div class="person_pic">
-      <a href="https://trustworthy.systems/people/?cn=Ihor+Kuz"><img src="../../images/tsc/ihor.jpg" alt="Ihor Kuz" width="80px" /></a>
+      <a href="https://trustworthy.systems/people/?cn=Ihor+Kuz"><img src="../../images/tsc/ihor.jpg" alt="Ihor Kuz" width="80" /></a>
     </div>
     <div class="person_title">
       <strong><a class="list_link" href="https://trustworthy.systems/people/?cn=Ihor+Kuz">Ihor Kuz</a></strong>
@@ -41,7 +41,7 @@
 
   <div class="person">
     <div class="person_pic">
-      <a href="https://trustworthy.systems/people/?cn=Gerwin+Klein"><img src="../Board/TS-Gerwin-s.jpg" alt="Gerwin Klein" width="80px" /></a>
+      <a href="https://trustworthy.systems/people/?cn=Gerwin+Klein"><img src="../Board/TS-Gerwin-s.jpg" alt="Gerwin Klein" width="80" /></a>
     </div>
     <div class="person_title">
       <strong><a class="list_link" href="https://trustworthy.systems/people/?cn=Gerwin+Klein">Gerwin Klein</a> (chair)</strong>
@@ -50,7 +50,7 @@
 
   <div class="person">
     <div class="person_pic">
-      <a href="https://trustworthy.systems/people/?cn=Rafal+Kolanski"><img src="../../images/tsc/rafal.jpg" alt="Rafal Kolanski" width="80px" /></a>
+      <a href="https://trustworthy.systems/people/?cn=Rafal+Kolanski"><img src="../../images/tsc/rafal.jpg" alt="Rafal Kolanski" width="80" /></a>
     </div>
     <div class="person_title">
       <strong><a class="list_link" href="https://trustworthy.systems/people/?cn=Rafal+Kolanski">Rafal Kolanski</a></strong>
@@ -59,7 +59,7 @@
 
   <div class="person">
     <div class="person_pic">
-      <a href="https://trustworthy.systems/people/?cn=Corey+Lewis"><img src="../../images/tsc/corey.jpg" alt="Corey Lewis" width="80px" /></a>
+      <a href="https://trustworthy.systems/people/?cn=Corey+Lewis"><img src="../../images/tsc/corey.jpg" alt="Corey Lewis" width="80" /></a>
     </div>
     <div class="person_title">
       <strong><a class="list_link" href="https://trustworthy.systems/people/?cn=Corey+Lewis">Corey Lewis</a></strong>
@@ -68,7 +68,7 @@
 
   <div class="person">
     <div class="person_pic">
-      <a href="https://www.linkedin.com/in/annamlyons/"><img src="../../images/tsc/anna.png" alt="Anna Lyons=" width="80px" /></a>
+      <a href="https://www.linkedin.com/in/annamlyons/"><img src="../../images/tsc/anna.png" alt="Anna Lyons=" width="80" /></a>
     </div>
     <div class="person_title">
       <strong><a class="list_link" href="https://www.linkedin.com/in/annamlyons/">Anna Lyons</a></strong>
@@ -77,7 +77,7 @@
 
   <div class="person">
     <div class="person_pic">
-      <a href="https://trustworthy.systems/people/?cn=Kent+Mcleod"><img src="../../images/tsc/kent.jpg" alt="Kent Mcleod" width="80px" /></a>
+      <a href="https://trustworthy.systems/people/?cn=Kent+Mcleod"><img src="../../images/tsc/kent.jpg" alt="Kent Mcleod" width="80" /></a>
     </div>
     <div class="person_title">
       <strong><a class="list_link" href="https://trustworthy.systems/people/?cn=Kent+Mcleod">Kent Mcleod</a></strong>
@@ -86,7 +86,7 @@
 
   <div class="person">
     <div class="person_pic">
-      <a href="https://trustworthy.systems/people/?cn=June+Andronick"../Board/TS-June.jpg"><img src="../Board/TS-June-s.jpg" alt="June Andronick" width="80px" /></a>
+      <a href="https://trustworthy.systems/people/?cn=June+Andronick"../Board/TS-June.jpg"><img src="../Board/TS-June-s.jpg" alt="June Andronick" width="80" /></a>
     </div>
     <div class="person_title">
       <strong><a class="list_link" href="https://trustworthy.systems/people/?cn=June+Andronick">June Andronick</a></strong>
@@ -95,7 +95,7 @@
 
   <div class="person">
     <div class="person_pic">
-      <a href="https://trustworthy.systems/people/?cn=Kevin+Elphinstone"><img src="../../images/tsc/kevin.jpg" alt="Kevin Elphinstone" width="80px"/></a>
+      <a href="https://trustworthy.systems/people/?cn=Kevin+Elphinstone"><img src="../../images/tsc/kevin.jpg" alt="Kevin Elphinstone" width="80"/></a>
     </div>
     <div class="person_title">
       <strong><a class="list_link" href="https://trustworthy.systems/people/?cn=Kevin+Elphinstone">Kevin Elphinstone</a></strong>
@@ -104,7 +104,7 @@
 
   <div class="person">
     <div class="person_pic">
-      <a href="https://trustworthy.systems/people/?cn=Gernot+Heiser"><img src="../Board/TS-Gernot-s.jpg" alt="Gernot Heiser" width="80px"/></a>
+      <a href="https://trustworthy.systems/people/?cn=Gernot+Heiser"><img src="../Board/TS-Gernot-s.jpg" alt="Gernot Heiser" width="80"/></a>
     </div>
     <div class="person_title">
       <strong><a class="list_link" href="https://trustworthy.systems/people/?cn=Gernot+Heiser">Gernot Heiser</a></strong>

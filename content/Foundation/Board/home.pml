@@ -34,7 +34,7 @@
 <h3>Chair</h3>
 <div class="governing-container">
   <div class="governing-item-pic">
-    <a href="TS-Gernot.jpg"><img src="TS-Gernot-s.jpg" alt="Gernot Heiser" width="80px" /></a>
+    <a href="TS-Gernot.jpg"><img src="TS-Gernot-s.jpg" alt="Gernot Heiser" width="80" /></a>
   </div>
   <div class="governing-item-heading">
     <strong>
@@ -67,7 +67,7 @@
 <h3>Treasurer</h3>
 <div class="governing-container">
   <div class="governing-item-pic">
-    <a href="Ghost-Dan.jpg"><img src="Ghost-Dan-s.jpg" alt="Dan Potts" width="80px" /></a>
+    <a href="Ghost-Dan.jpg"><img src="Ghost-Dan-s.jpg" alt="Dan Potts" width="80" /></a>
   </div>
   <div class="governing-item-heading">
     <strong><a href="https://www.linkedin.com/in/daniel-potts-725142/"
@@ -90,7 +90,7 @@
 
 <div class="governing-container">
   <div class="governing-item-pic">
-    <a href="TS-June.jpg"><img src="TS-June-s.jpg" alt="June Andronick" width="80px" /></a>
+    <a href="TS-June.jpg"><img src="TS-June-s.jpg" alt="June Andronick" width="80" /></a>
   </div>
   <div class="governing-item-heading">
     <strong>
@@ -119,7 +119,7 @@
 
 <div class="governing-container">
   <div class="governing-item-pic">
-    <a href="HC-Sascha.jpg"><img src="HC-Sascha-s.jpg" alt="Sascha Kegrei&szlig;" width="80px" /></a>
+    <a href="HC-Sascha.jpg"><img src="HC-Sascha-s.jpg" alt="Sascha Kegrei&szlig;" width="80" /></a>
   </div>
   <div class="governing-item-heading">
     <strong><a href="https://www.linkedin.com/in/sascha-kegreiß-7b9883b5/" class='list_link'>Sascha Kegrei&szlig;</a></strong> <span style="color: #aaa;"><em>CTO, <a href="https://www.hensoldt-cyber.com/">HENSOLDT Cyber</a></em></span>
@@ -139,7 +139,7 @@
 <div class="governing-container">
   <div class="governing-item-pic">
     <a href="TS-Gerwin.jpg"><img src="TS-Gerwin-s.jpg" alt="Gerwin
-    Klein" width="80px" /></a>
+    Klein" width="80" /></a>
   </div>
   <div class="governing-item-heading">
     <strong><a class="list_link"
@@ -165,7 +165,7 @@
 <div class="governing-container">
   <div class="governing-item-pic">
     <a href="Galois-John.jpg"><img src="Galois-John-s.jpg" alt="John
-    Launchbury" width="80px" /></a>
+    Launchbury" width="80" /></a>
   </div>
   <div class="governing-item-heading">
     <strong><a class="list_link"
