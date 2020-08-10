@@ -22,6 +22,7 @@
   </p>
   <p>
   By <a href="../Membership/">joining</a> the adventure, you can support:
+  </p>
   <ul>
     <li>
       the funding of an on-going support of the community, maintenance of existing versions, 
@@ -42,5 +43,4 @@
        provides a vehicle to pool investements to achieves these.
     </li>
   </ul>
-  </p>
 
