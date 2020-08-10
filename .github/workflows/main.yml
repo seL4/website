@@ -59,27 +59,15 @@ jobs:
             >> "$output"
           echo "</p></body></html>" >> "$output"
 
-      - name: Commit files
-        run: |
-          cd snapped_site
-          git init .
-          git add *
-          git config --local user.email "auto@sel4.systems"
-          git config --local user.name "seL4 GitHubAction"
-          git commit -m "Add changes" -a
-
-      - name: Push changes
-        uses: ad-m/github-push-action@master
+      - name: Deploy
+        uses: peaceiris/actions-gh-pages@v3
         with:
-          # TODO: I believe this token gives anyone with it access to write to any of my public repos...?
-          # Not sure how to get a token to a single repo.
-          github_token: ${{ secrets.WEBSITE_PR_HOSTING_TOKEN }}
+          deploy_key: ${{ secrets.ACTIONS_DEPLOY_KEY }}
+          # TODO: make a more official repo
+          external_repository: LukeMondy/website_pr_hosting
           # TODO: pick a better branch name, so people can have multiple PRs without conflict
-          # probably a good idea to assign it as a variable, if possible, so we can use it in the comment step
-          branch: ${{ github.actor }}
-          force: true
-          repository: LukeMondy/website_pr_hosting
-          directory: snapped_site
+          publish_branch: ${{ github.actor }}
+          publish_dir: ./snapped_site
 
   linkchecker:
     name: "Link checker"
