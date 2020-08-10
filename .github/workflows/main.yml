@@ -6,7 +6,6 @@ on:
   pull_request:
     types: [opened, synchronize]
 
-
 jobs:
   snapshot:
     name: "Static snapshot"
@@ -29,14 +28,12 @@ jobs:
             echo "::set-output name=linkchecker_failed::false" 
           fi
 
-      - name: Fix up HTML5 validator log paths
+      - name: Fix up linkchecker log paths
         run: sed -i 's|/github/workspace/snapped_site/localhost||g' snapped_site/localhost/linkchecker.html
 
       - name: HTML5 Validator
         id: validate
-        # TODO: revert back to Cyb3r-Jak3/html5validator-action@master
-        # once my PR is merged
-        uses: LukeMondy/html5validator-action@master
+        uses: Cyb3r-Jak3/html5validator-action@master
         with:
           root: snapped_site/localhost
           format: text
@@ -62,27 +59,13 @@ jobs:
             >> "$output"
           echo "</p></body></html>" >> "$output"
 
-      - name: Commit files
-        run: |
-          cd snapped_site
-          git init .
-          git add *
-          git config --local user.email "auto@sel4.systems"
-          git config --local user.name "seL4 GitHubAction"
-          git commit -m "Add changes" -a
-
-      - name: Push changes
-        uses: ad-m/github-push-action@master
+      - name: Deploy
+        uses: peaceiris/actions-gh-pages@v3
         with:
-          # TODO: I believe this token gives anyone with it access to write to any of my public repos...?
-          # Not sure how to get a token to a single repo.
-          github_token: ${{ secrets.WEBSITE_PR_HOSTING_TOKEN }}
-          # TODO: pick a better branch name, so people can have multiple PRs without conflict
-          # probably a good idea to assign it as a variable, if possible, so we can use it in the comment step
-          branch: ${{ github.actor }}
-          force: true
-          repository: LukeMondy/website_pr_hosting
-          directory: snapped_site
+          deploy_key: ${{ secrets.ACTIONS_DEPLOY_KEY }}
+          external_repository: seL4/website_pr_hosting
+          publish_branch: PR_${{ github.event.number }}
+          publish_dir: ./snapped_site
 
   linkchecker:
     name: "Link checker"
@@ -113,18 +96,20 @@ jobs:
   commenter:
     name: "Report results as comment"
     runs-on: 'ubuntu-latest'
-    needs: [snapshot , linkchecker, htmlvalidator]
+    needs: snapshot 
     steps:
+      # TODO: in the future, when this issue is resolved: https://github.com/peaceiris/actions-gh-pages/issues/348, the link
+      #       generated should be for the commit itself, not just the tip.
       - name: Build message
         run: |
-          echo "Preview your changes [here](https://htmlpreview.github.io/?https://github.com/LukeMondy/website_pr_hosting/blob/${{ github.actor }}/localhost/index.html)" > msg.txt
+          echo "Preview your changes [here](https://htmlpreview.github.io/?https://github.com/seL4/website_pr_hosting/blob/PR_${{ github.event.number }}/localhost/index.html)" > msg.txt
           if ${{ needs.snapshot.outputs.linkchecker_failed }}; then
             echo "" >> msg.txt
-            echo "The link checker found some issues! Review them [here](https://htmlpreview.github.io/?https://github.com/LukeMondy/website_pr_hosting/blob/${{ github.actor }}/localhost/linkchecker.html)" >> msg.txt
+            echo "The link checker found some issues! Review them [here](https://htmlpreview.github.io/?https://github.com/seL4/website_pr_hosting/blob/PR_${{ github.event.number }}/localhost/linkchecker.html)" >> msg.txt
           fi
           if ${{ needs.snapshot.outputs.validator_failed }}; then
             echo "" >> msg.txt
-            echo "The HTML5 validator found some issues! Review them [here](https://htmlpreview.github.io/?https://github.com/LukeMondy/website_pr_hosting/blob/${{ github.actor }}/localhost/validator.log)" >> msg.txt
+            echo "The HTML5 validator found some issues! Review them [here](https://htmlpreview.github.io/?https://github.com/seL4/website_pr_hosting/blob/PR_${{ github.event.number }}/localhost/validator.log)" >> msg.txt
           fi
           export MSG=$(cat msg.txt)
           # The follow lines are to preserve newlines
