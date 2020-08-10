@@ -86,7 +86,7 @@
 
   <div class="person">
     <div class="person_pic">
-      <a href="https://trustworthy.systems/people/?cn=June+Andronick"../Board/TS-June.jpg"><img src="../Board/TS-June-s.jpg" alt="June Andronick" width="80" /></a>
+      <a href="https://trustworthy.systems/people/?cn=June+Andronick"><img src="../Board/TS-June-s.jpg" alt="June Andronick" width="80" /></a>
     </div>
     <div class="person_title">
       <strong><a class="list_link" href="https://trustworthy.systems/people/?cn=June+Andronick">June Andronick</a></strong>
