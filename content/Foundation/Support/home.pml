@@ -7,7 +7,6 @@
   Funding the next big steps for the seL4 project
 </h1>
 <br>
-<div>
   <p>
   Alongside growing the seL4 ecosystem, protect and promote the seL4 brand
   and provide longevity to seL4, one of the aims of the
@@ -17,8 +16,9 @@
   fund-raising to address particular needs.
   </p>
   <p>
-  <b> Together, we can change the world of critical systems, 
-      to achieve real security! </b>
+    <b> Together, we can change the world of critical systems, 
+        to achieve real security!
+    </b>
   </p>
   <p>
   By <a href="../Membership/">joining</a> the adventure, you can support:
@@ -43,5 +43,4 @@
     </li>
   </ul>
   </p>
-</div>
 
