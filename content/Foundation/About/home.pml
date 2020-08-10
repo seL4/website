@@ -29,7 +29,7 @@
 
   <strong>
   <a href="/images/mosaic-high.jpg">
-    <img src="/images/mosaic.jpg" style="width:300px; pad-left:10px;"
+    <img src="/images/mosaic.jpg" style="width:300px; padding-left:10px;"
       alt="seL4 foundation launch"
 	   align="right" /></a>
   <ul>
