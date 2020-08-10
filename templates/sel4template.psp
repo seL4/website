@@ -169,10 +169,10 @@ if show_toolbox(req):
 <li><a href="/internal">Internal</a></li> .-->
 
       </ul>
-    </div>
 <%
   # end 2nd if
 %>
+      </div>
     </nav>
 <%
 # end if show_toolbox()
