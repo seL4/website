@@ -28,7 +28,7 @@ jobs:
             echo "::set-output name=linkchecker_failed::false" 
           fi
 
-      - name: Fix up HTML5 validator log paths
+      - name: Fix up linkchecker log paths
         run: sed -i 's|/github/workspace/snapped_site/localhost||g' snapped_site/localhost/linkchecker.html
 
       - name: HTML5 Validator
