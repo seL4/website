@@ -5,7 +5,6 @@ Copyright 2020 seL4 Project a Series of LF Projects, LLC.
 <h1>
   Retrofitting and transitioning to seL4
 </h1> <br>
-<div>
   <p>
     This page discusses the issues a business will need to consider for a <b>“transition to seL4”</b>, whether creating a 
     new product or upgrading an existing product.</p> 
