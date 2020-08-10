@@ -31,10 +31,10 @@
   <a href="../Foundation/">seL4 Foundation</a>.
 </p>
 <p>
-  <img style="width: 250px; margin-left: 10px"
+  <img style="width: 250px; margin-left: 10px; float: right;"
      src="../images/trusted.svg"
-     alt="seL4 system"
-     align="right"> Being a <em>kernel</em> means it is the piece
+     alt="seL4 system" />
+     Being a <em>kernel</em> means it is the piece
      of software that runs at the heart of any software system and
      controls all accesses to resources. It provides fine-grained
      access control through <a href=

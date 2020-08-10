@@ -30,8 +30,7 @@ Copyright 2020 seL4 Project a Series of LF Projects, LLC.
   <p>Now to the considerations.</p>
   <ol>
     <li> <b>The aim: Security through isolation</b>.
-      <img src="/images/trusted.svg" style="width:300px;" alt="seL4 system"
-	   align="right" />
+      <img src="/images/trusted.svg" style="width:300px; float:right;" alt="seL4 system"/>
       <p>The first step is to identify the security and
       safety requirements of your system (what are the assets that need protecting), and the threat
       model (what are the attacks or failures that threaten those assets).</p> 

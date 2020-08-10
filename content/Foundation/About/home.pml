@@ -28,9 +28,9 @@
   </p>
 
   <a href="/images/mosaic-high.jpg">
-    <img src="/images/mosaic.jpg" style="width:300px; padding-left:10px;"
+    <img src="/images/mosaic.jpg" style="width:300px; padding-left:10px; float:right;"
       alt="seL4 foundation launch"
-	   align="right" /></a>
+	   /></a>
   <ul>
     <li><strong>Read the <a href="https://microkerneldude.wordpress.com/2020/04/07/the-sel4-foundation-what-and-why/">Blog post</a> about "The seL4 Foundation &mdash; What and Why"</strong>
     </li>
