@@ -27,24 +27,22 @@
       <a title="Membership" href="../Membership">accepting members!</a></strong>
   </p>
 
-  <strong>
   <a href="/images/mosaic-high.jpg">
     <img src="/images/mosaic.jpg" style="width:300px; padding-left:10px;"
       alt="seL4 foundation launch"
 	   align="right" /></a>
   <ul>
-    <li> Read the <a href="https://microkerneldude.wordpress.com/2020/04/07/the-sel4-foundation-what-and-why/">Blog post</a> about "The seL4 Foundation &mdash; What and Why" 
+    <li><strong>Read the <a href="https://microkerneldude.wordpress.com/2020/04/07/the-sel4-foundation-what-and-why/">Blog post</a> about "The seL4 Foundation &mdash; What and Why"</strong>
     </li>
-    <li> Read the press releases about the launch:
+    <li><strong>Read the press releases about the launch:</strong>
        <ul>
-       <li> From <a href="https://www.linuxfoundation.org/press-release/2020/04/sel4-microkernel-optimized-for-security-gets-support-of-linux-foundation/">the Linux Foundation</a>
+       <li><strong>From <a href="https://www.linuxfoundation.org/press-release/2020/04/sel4-microkernel-optimized-for-security-gets-support-of-linux-foundation/">the Linux Foundation</a></strong>
        </li>
-       <li> From <a href="https://www.csiro.au/en/News/News-releases/2020/seL4-developers-create-open-source-foundation">CSIRO's Data61</a>
+       <li><strong>From <a href="https://www.csiro.au/en/News/News-releases/2020/seL4-developers-create-open-source-foundation">CSIRO's Data61</a></strong>
        </li>
        </ul>
     </li>
   </ul>
-  </strong>
 
   <p>
     For details, please see:
