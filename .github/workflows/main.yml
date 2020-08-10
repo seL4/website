@@ -29,7 +29,7 @@ jobs:
           fi
 
       - name: Fix up linkchecker log paths
-        run: sed -i 's|/github/workspace/snapped_site/localhost||g' snapped_site/localhost/linkchecker.html
+        run: sed -i 's|/github/workspace/snapped_site/localhost||g' snapped_site/localhost/pr_checks/linkchecker.html
 
       - name: HTML5 Validator
         id: validate
@@ -37,6 +37,7 @@ jobs:
         with:
           root: snapped_site/localhost
           format: text
+          extra: --blacklist pr_checks
         continue-on-error: true
 
       - name: Check status of HTML5 validator
@@ -50,7 +51,7 @@ jobs:
 
       - name: Fix up HTML5 validator log paths
         run: |
-          output="snapped_site/localhost/validator.log"
+          output="snapped_site/localhost/pr_checks/validator.log"
           # Make some very dodgey HTML, so we can get nicer output
           echo "<html><body><p>" > "$output"
           sed 's|/github/workspace/snapped_site/localhost||g' log.log \
@@ -105,11 +106,11 @@ jobs:
           echo "Preview your changes [here](https://htmlpreview.github.io/?https://github.com/seL4/website_pr_hosting/blob/PR_${{ github.event.number }}/localhost/index.html)" > msg.txt
           if ${{ needs.snapshot.outputs.linkchecker_failed }}; then
             echo "" >> msg.txt
-            echo "The link checker found some issues! Review them [here](https://htmlpreview.github.io/?https://github.com/seL4/website_pr_hosting/blob/PR_${{ github.event.number }}/localhost/linkchecker.html)" >> msg.txt
+            echo "The link checker found some issues! Review them [here](https://htmlpreview.github.io/?https://github.com/seL4/website_pr_hosting/blob/PR_${{ github.event.number }}/localhost/pr_checks/linkchecker.html)" >> msg.txt
           fi
           if ${{ needs.snapshot.outputs.validator_failed }}; then
             echo "" >> msg.txt
-            echo "The HTML5 validator found some issues! Review them [here](https://htmlpreview.github.io/?https://github.com/seL4/website_pr_hosting/blob/PR_${{ github.event.number }}/localhost/validator.log)" >> msg.txt
+            echo "The HTML5 validator found some issues! Review them [here](https://htmlpreview.github.io/?https://github.com/seL4/website_pr_hosting/blob/PR_${{ github.event.number }}/localhost/pr_checks/validator.log)" >> msg.txt
           fi
           export MSG=$(cat msg.txt)
           # The follow lines are to preserve newlines

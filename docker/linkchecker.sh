@@ -1,6 +1,7 @@
 #!/bin/bash
 
 OUTPUT_SNAPSHOT_DIR="snapped_site"
+OUTPUT_DIR="$OUTPUT_SNAPSHOT_DIR/localhost/pr_checks"
 
 echo "::group::Run linkchecker"
 # Because of permissions issues, linkchecker can't write to a file,
@@ -8,6 +9,9 @@ echo "::group::Run linkchecker"
 # We also don't want the return code of the linkchecker to stop the 
 # whole process, so we use bad codes to touch a file, which will handle
 # errors later on
+
+mkdir -p "$OUTPUT_DIR"
+chmod go+rwx "$OUTPUT_DIR"
 
 linkchecker \
     --no-status \
@@ -17,7 +21,7 @@ linkchecker \
     --ignore-url="/lists/" \
     --check-extern \
     --output html \
-    "$OUTPUT_SNAPSHOT_DIR"/localhost/index.html > $OUTPUT_SNAPSHOT_DIR/localhost/linkchecker.html \
+    "$OUTPUT_SNAPSHOT_DIR"/localhost/index.html > $OUTPUT_DIR/linkchecker.html \
     || touch .linkchecker_failed
     
 echo "::endgroup::"
