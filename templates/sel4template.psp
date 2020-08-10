@@ -180,7 +180,7 @@ if show_toolbox(req):
 
 <div class="container">
   <div class="header" id="site-header" role="navigation" >
-    <ul class="nav-pills nav pull-right" style="bottom-margin:1ex" id="site-navigation">
+    <ul class="nav-pills nav pull-right" id="site-navigation">
       <%
 def navs2lis(cur_url, dlist, level=0):
     list_content = []
