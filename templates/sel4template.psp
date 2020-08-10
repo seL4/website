@@ -250,7 +250,7 @@ else:
         <!-- END: Menu -->
     </div>
 </div>
-<div class="container">
+<div class="container"> <!-- container -->
   <div class="row"> <!-- Breadcrumbs -->
 <%
 i = 1
@@ -287,7 +287,7 @@ if i > 1:
     req.write ('</ol>')
 #end
 %>
-    </div>
+    </div> <!-- Breadcrumbs -->
 <%
 if cururl.startswith("/Foundation"):
 %>
@@ -304,9 +304,9 @@ else:
 %>
         <%=user_content%>
 	<div class="divider"></div>
-</div>
-<!-- footer -->
-<footer class="page-footer small pt-3" id="footer" >
+</div><!-- container -->
+
+<footer class="page-footer small pt-3" id="footer" > <!-- footer -->
 <hr style="margin-top:0px;margin-bottom:5px;border-top:2px solid #96ca50">
   <div  class="footer-copyright text-center py-3">
     Copyright &copy; 2020  seL4 Project a Series of LF Projects, LLC.<br/>
@@ -323,7 +323,7 @@ if on_seL4:
 <%
 #end
 %>
-</footer>
+</footer> <!-- footer -->
 <!-- wrapper -->
 <script src="/js/jquery.min.js"></script>
 <script src="/js/bootstrap.min.js"></script>
