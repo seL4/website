@@ -24,30 +24,30 @@
 
 <p>
 Discussion about using and developing seL4 (questions, suggestions, updates, etc.)
+</p>
 <ul>
 <li><a href="/lists/listinfo/devel">Developer mailing list</a></li>
 <li><a href="https://sel4.discourse.group/">Discourse forums</a></li>
 <li><a href="https://mattermost.ts.data61.csiro.au/sel4-external/">Mattermost chat</a></li>
 <li>IRC: we used to have an IRC channel, but we no longer monitor that, so do not recommend using it.</li>
 </ul>
-</p>
 
 <p>
 RFC (request for comments) proposing new features for seL4
+</p>
 <ul>
 <li><a href="https://docs.sel4.systems/processes/rfc-process">Information about the RFC process</a></li>
 <li><a href="https://sel4.atlassian.net/browse/RFC">RFC JIRA</a></li>
 <li><a href="https://sel4.systems/lists/listinfo/rfc">RFC announcement mailing list</a></li>
 </ul>
-</p>
 
 <p>
 Github
+</p>
 <ul>
 <li><a href="https://github.com/seL4">https://github.com/seL4</a></li>
 <li><a href="https://github.com/seL4Proj">https://github.com/seL4Proj</a></li>
 </ul>
-</p>
 
 <h2>Direct Communication</h2>
 
