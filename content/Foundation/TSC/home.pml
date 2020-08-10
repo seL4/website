@@ -4,7 +4,7 @@
     SPDX-License-Identifier: CC-BY-SA-4.0
 -->
 <h1>Technical Steering Committee</h1>
-<div>
+
   <p>The Technical Steering Committee (TSC) of the seL4 Foundation is
   responsible for overseeing all technical aspects of the seL4 project
   (technical direction, code of conduct, procedures, workflows,
