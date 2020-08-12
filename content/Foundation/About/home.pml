@@ -8,7 +8,7 @@
 </h1>
 <div>
   <p>
-    We have taken an exciting step to expand the seL4
+    We have taken an exciting step to expand the seL4 yeah!
     community, by setting up the <strong>seL4 Foundation</strong>,
     similar to foundations for other open-source projects, such as
     the Linux Foundation's Cloud Native Computing Foundation,
