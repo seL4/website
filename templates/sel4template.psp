@@ -153,7 +153,6 @@ if show_toolbox(req):
 %>
         <div class="btn-group navbar-right">
           <a class='btn btn-danger navbar-btn' href='/internal/git'><span class='glyphicon glyphicon-cloud-upload'></span> Commit</a>
-          <a class="btn btn-primary navbar-btn" href="?edit"><span class='glyphicon glyphicon-pencil'></span> Edit</a>
         </div>
 
         <ul class="nav navbar-nav">
