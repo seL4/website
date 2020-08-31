@@ -5,7 +5,7 @@
 -->
 <h1>The&nbsp;seL4<sup><sup>&reg;</sup></sup> Microkernel</h1>
 <h4>
-  Security is no excuse for bad performance
+  Security is no excuse for woof performance
 </h4>
 <div style="line-height:1.3; color:#543B7B; font-size:15px; font-weight:bold;">
   <!--  <font color="#7653ac">-->
