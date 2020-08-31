@@ -4,7 +4,7 @@
 # Copyright 2020 seL4 Project a Series of LF Projects, LLC.
 #
 # SPDX-License-Identifier: GPL-2.0-only
-# 
+#
 import os, sys, datetime, cgi, time
 from ertos_nav import NavEntry
 content_dir = cfg.get('core', 'content_dir')
@@ -57,7 +57,7 @@ def show_toolbox(request):
        host_ip.startswith('2402:1800:4000:2:') or \
        host_ip.startswith('2402:1800:0:10:') or \
        host_ip.startswith('2402:1800:1:2801:'):
-          return True 
+          return True
     return not in_production;
 
 try:
@@ -183,7 +183,7 @@ if show_toolbox(req):
       <%
 def navs2lis(cur_url, dlist, level=0):
     list_content = []
-   
+
     for i in dlist:
         if type(i) == type(NavEntry()):
             if i == NavEntry():                 # insert some space
