@@ -55,7 +55,7 @@ def show_toolbox(request):
        host_ip.startswith('2402:1800:4000:2:') or \
        host_ip.startswith('2402:1800:0:10:') or \
        host_ip.startswith('2402:1800:1:2801:'):
-        return True 
+        return True
     return not in_production;
 
 try:
@@ -260,7 +260,7 @@ if i > 2:
     req.write ('\n'.join(crumbs))
     req.write ('</ol>')
 #end
-%>           
+%>
 
 <!-- tinymce -->
 <script type="text/javascript"
