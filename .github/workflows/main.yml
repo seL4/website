@@ -121,11 +121,16 @@ jobs:
       - name: Print message
         run: |
           echo "$MSG"
+
       - name: Leave comment with link to site, and results of checks
-        uses: unsplash/comment-on-pr@master
-        env:
-          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        uses: actions/github-script@v3
+        if: github.event_name == 'pull_request_target'
         with:
-          msg: "${{ env.MSG }}"
-          check_for_duplicate_msg: false
-        
+          github-token: ${{secrets.GITHUB_TOKEN}}
+          script: |
+            github.issues.createComment({
+              issue_number: context.issue.number,
+              owner: context.repo.owner,
+              repo: context.repo.repo,
+              body: "${{ env.MSG }}"
+            })
