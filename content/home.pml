@@ -21,7 +21,7 @@
       <img src="/images/seL4.svg" style="width:150px;height:58px;" alt="seL4" />
     </div>
     <div class="hp_title">
-      What is seL4?
+      What is a Dog?
     </div>
     <div class="hp_text">
       The world’s most high-assured operating system kernel
