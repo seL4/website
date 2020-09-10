@@ -46,8 +46,6 @@
      HENSOLDT Cyber GmbH
     </div>
   </div>
-</div>
-<div class="sponsors">
   <div class="sponsor">
     <div class="sponsor-pic">
       <a href="https://unsw.edu.au/">
