@@ -95,13 +95,13 @@ a.divLink {
    /*workaround to make clickable in IE */
 }
 
-.hp_pic { 
+.hp_pic {
   align-self: center;
   justify-self: center;
-  grid-area: hp_pic; 
+  grid-area: hp_pic;
 }
 
-.hp_title { 
+.hp_title {
   grid-area: hp_title;
   justify-self: center;
   align-self: center;
@@ -109,7 +109,7 @@ a.divLink {
   font-weight: bold;
 }
 
-.hp_text { 
+.hp_text {
   grid-area: hp_text;
   justify-self: center;
   margin: 10px;
@@ -153,13 +153,13 @@ a.divLink {
 }
 
 
-.person_pic { 
+.person_pic {
   align-self: center;
   justify-self: center;
-  grid-area: person_pic; 
+  grid-area: person_pic;
 }
 
-.person_title { 
+.person_title {
   grid-area: person_title;
   justify-self: center;
   align-self: center;
