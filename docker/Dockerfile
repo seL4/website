@@ -1,3 +1,9 @@
+#
+# Copyright 2020, Data61, CSIRO (ABN 41 687 119 230)
+#
+# SPDX-License-Identifier: BSD-2-Clause
+#
+
 # This Dockerfile is expected to built from the context of the whole repo, e.g.:
 #    docker build -t sel4/sel4-website -f docker/Dockerfile .
 FROM debian:buster
@@ -21,11 +27,11 @@ RUN apt-get update -q \
     # Python deps
     && pip3 install setuptools \
     && pip3 install SQLObject
-       
-# Configure apache 
+
+# Configure apache
 RUN cd /etc/apache2 \
     # Enable required apache mods
-    && ln -s ../mods-available/expires.load mods-enabled/expires.load 
+    && ln -s ../mods-available/expires.load mods-enabled/expires.load
 
 COPY docker/entrypoint.sh /entrypoint.sh
 ENTRYPOINT ["/entrypoint.sh"]

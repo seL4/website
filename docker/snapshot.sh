@@ -1,4 +1,9 @@
 #!/bin/bash
+#
+# Copyright 2020, Data61, CSIRO (ABN 41 687 119 230)
+#
+# SPDX-License-Identifier: BSD-2-Clause
+#
 
 set -e
 
@@ -6,7 +11,7 @@ OUTPUT_SNAPSHOT_DIR="snapped_site"
 
 echo "::group::Set up apache with PR conf"
 # Clear out any other apache confs, and install the PR's version
-rm /etc/apache2/sites-enabled/*.conf 
+rm /etc/apache2/sites-enabled/*.conf
 cp apache/seL4.systems.conf /etc/apache2/sites-available/
 
 CONF="/etc/apache2/sites-available/seL4.systems.conf"
@@ -49,7 +54,7 @@ echo "::group::Snapshot website PR"
 set +e
 # Use wget to take a static snapshot of the Apache served website
 # Note that we skip sites not hosted by this website, and we skip
-# pipermail (since it's not related to the site content), and 
+# pipermail (since it's not related to the site content), and
 # About/Perfomance, as it's dynamically generated on the live server
 wget \
     --recursive \
@@ -68,7 +73,7 @@ set -e
 echo "::endgroup::"
 
 echo "::group::Show files"
-ls -lan 
+ls -lan
 ls -lan "$OUTPUT_SNAPSHOT_DIR"
 echo "::endgroup::"
 
