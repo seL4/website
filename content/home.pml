@@ -1,4 +1,4 @@
-<!-- this comment is for our site template. See ertos.py 
+<!-- this comment is for our site template. See ertos.py
 <title>Home</title>
   Copyright 2020 seL4 Project a Series of LF Projects, LLC.
   SPDX-License-Identifier: CC-BY-SA-4.0
@@ -7,8 +7,7 @@
 <h4>
   Security is no excuse for bad performance
 </h4>
-<div style="line-height:1.3; color:#543B7B; font-size:15px; font-weight:bold;">
-  <!--  <font color="#7653ac">-->
+<div class="highlight">
   The benchmark for performance.<br />
   The world's most highly assured OS kernel.<br />
   Open source &amp; community-supported under the seL4 Foundation.
@@ -47,7 +46,7 @@
       <img src="/images/contacts.png" style="width:160px;height:98px;" alt="Contacts" />
     </div>
     <div class="hp_title">
-      Stay in touch 
+      Stay in touch
     </div>
     <div class="hp_text">
       Mailing lists, blog, contacts, chat
@@ -76,7 +75,7 @@
       Use
      </div>
     <div class="hp_text">
-      Build or retrofit your product to run on seL4 
+      Build or retrofit your product to run on seL4
     </div>
   </div>
 
@@ -189,7 +188,7 @@
     </p>
     <p>
       Read the white
-      paper, <a href="/Info/Docs/GD-NICTA-whitepaper.pdf">Mathematically 
+      paper, <a href="/Info/Docs/GD-NICTA-whitepaper.pdf">Mathematically
       Verified Software Kernels: Raising the Bar for High Assurance
       Implementations</a>.
     </p>

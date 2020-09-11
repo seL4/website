@@ -2,6 +2,22 @@
  * Copyright 2020 seL4 Project a Series of LF Projects, LLC.
  * SPDX-License-Identifier: GPL-2.0-only
  */
+a {
+  color: #385378 /* neutral */
+}
+
+a:hover {
+  color: #263852 /* neutralDark */
+}
+
+.nav-pills li.active a, .nav-pills li.active a:hover {
+  background-color: #385378; /* neutral */
+}
+
+.nav .open>a, .nav .open>a:focus, .nav .open>a:hover, .nav-pills li a:hover {
+  background-color: #D6DBE4; /* neutralLighter */
+}
+
 footer {
 	padding-top: 32px;
 	padding-bottom: 16px;
@@ -21,7 +37,7 @@ footer {
 }
 
 table.alttable tr:nth-child(even) {
-    background-color: #f0f0f0;
+    background-color: #D6DBE4; /* neutralLighter */
 }
 
 .nav-pills {
@@ -31,10 +47,20 @@ table.alttable tr:nth-child(even) {
 
 .breadcrumb {
     margin-bottom: 0px;
+    background-color: #EBEEF5; /* neutralLighter */
+}
+
+.breadcrumb>li+li:before {
+    color: #385378; /* neutral */
 }
 
 h1 {
     margin-bottom: 5px;
+}
+
+code {
+  color: #AC5D55; /* accent */
+  background-color: #EBEEF5; /* neutralLightest */
 }
 
 .hp_grid_container {
@@ -73,7 +99,7 @@ h1 {
   position: relative;
 }
 .homepage_item:hover {
-  background-color: #cfcfcf;
+  background-color: #D6DBE4; /* neutralLighter */
 }
 
 /* For making the whole div clickable */
@@ -149,7 +175,7 @@ a.divLink {
   position: relative;
 }
 .person:hover {
-  background-color: #cfcfcf;
+  background-color: #8897AE; /* neutralLight */
 }
 
 
@@ -166,6 +192,9 @@ a.divLink {
   font-size:1.1em;
 }
 
+.person_title_col {
+  color: #8897AE; /* neutralLight */
+}
 
 /* note the plural */
 .sponsors {
@@ -228,5 +257,12 @@ a.divLink {
 .bottom-ruler {
   margin-top: 0px;
   margin-bottom:5px;
-  border-top:2px solid #96ca50
+  border-top:2px solid #96ca50 /* logo green */
+}
+
+.highlight {
+  line-height: 1.3;
+  color:#B78B41;  /* emphasisDark */
+  font-size:15px;
+  font-weight:bold;
 }

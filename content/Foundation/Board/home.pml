@@ -39,7 +39,7 @@
   <div class="governing-item-heading">
     <strong>
       <a class="list_link" href="https://trustworthy.systems/people/?cn=Gernot+Heiser">Gernot Heiser</a></strong>
-    <span style="color: #aaa;"><em>Technology
+    <span class="person_title_col"><em>Technology
     Evangelist, <a title="TS"
     href="http://ts.data61.csiro.au/">Trustworthy Systems</a>, CSIRO's
     Data61</em></span>
@@ -71,8 +71,8 @@
   </div>
   <div class="governing-item-heading">
     <strong><a href="https://www.linkedin.com/in/daniel-potts-725142/"
-    class='list_link'>Dan Potts</a></strong> <span style="color:
-    #aaa;"><em>Engineeering Director, <a href="https://gh.st/">Ghost
+    class='list_link'>Dan Potts</a></strong>
+    <span class="person_title_col"><em>Engineeering Director, <a href="https://gh.st/">Ghost
     Locomotion</a></em></span>
   </div>
   <div class="governing-item-text">
@@ -98,7 +98,7 @@
 	 href="https://trustworthy.systems/people/?cn=June+Andronick">June
 	Andronick</a>
     </strong>
-    <span style="color:#aaa;">
+    <span class="person_title_col">
       <em>Leader, <a title="TS"
       href="http://ts.data61.csiro.au/">Trustworthy Systems</a>,
       CSIRO's Data61</em>
@@ -122,7 +122,7 @@
     <a href="HC-Sascha.jpg"><img src="HC-Sascha-s.jpg" alt="Sascha Kegrei&szlig;" width="80" /></a>
   </div>
   <div class="governing-item-heading">
-    <strong><a href="https://www.linkedin.com/in/sascha-kegreiß-7b9883b5/" class='list_link'>Sascha Kegrei&szlig;</a></strong> <span style="color: #aaa;"><em>CTO, <a href="https://www.hensoldt-cyber.com/">HENSOLDT Cyber</a></em></span>
+    <strong><a href="https://www.linkedin.com/in/sascha-kegreiß-7b9883b5/" class='list_link'>Sascha Kegrei&szlig;</a></strong> <span class="person_title_col"><em>CTO, <a href="https://www.hensoldt-cyber.com/">HENSOLDT Cyber</a></em></span>
   </div>
   <div class="governing-item-text">
     <p>
@@ -144,7 +144,7 @@
   <div class="governing-item-heading">
     <strong><a class="list_link"
     href="https://trustworthy.systems/people/?cn=Gerwin+Klein">Gerwin
-    Klein</a></strong> <span style="color: #aaa;"><em>Chief
+    Klein</a></strong> <span class="person_title_col"><em>Chief
     Scientist, <a title="TS"
     href="http://ts.data61.csiro.au/">Trustworthy Systems</a>, CSIRO's
     Data61</em></span>
@@ -170,7 +170,7 @@
   <div class="governing-item-heading">
     <strong><a class="list_link"
     href="https://en.wikipedia.org/wiki/John_Launchbury">John
-    Launchbury</a></strong> <span style="color: #aaa;"><em>Chief
+    Launchbury</a></strong> <span class="person_title_col"><em>Chief
     Scientist, <a href="https://galois.com/">Galois</a></em></span>
   </div>
   <div class="governing-item-text">

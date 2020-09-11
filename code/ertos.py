@@ -3,7 +3,7 @@
 # Copyright 2020 seL4 Project a Series of LF Projects, LLC.
 #
 # SPDX-License-Identifier: GPL-2.0-only
-# 
+#
 
 import sys, os, imp, re, string, cgi, time, traceback
 import itertools as IT
@@ -227,14 +227,14 @@ def send_menu_elements(req, bibargs, dir, todo, depth):
         if  fn[0] == '--line':
             req.write("""
                 <tr>
-                <td colspan="5" bgcolor="#FFFFFF">
+                <td colspan="5" bgcolor=white>
                 <img src="/images/spacer.gif" width="1" height="1"
                    alt="" border="0" />
                 </td>
                 </tr>
                 <tr>
                 <td colspan="5">
-                   <img src="/images/spacer.gif" height="5" width="1" 
+                   <img src="/images/spacer.gif" height="5" width="1"
                     alt="" border="0" />
                 </td>
                 </tr>
@@ -617,8 +617,8 @@ def psp_handler(req, query, messages):
     except Exception as e:
         req.send_http_header()
         req.write("Template prep failed, $s\n", str(e))
-        traceback.print_exc()        
-        return apache.OK        
+        traceback.print_exc()
+        return apache.OK
 
     req.send_http_header()
     try:
@@ -906,7 +906,7 @@ def handler(req):
         if not in_production:
             req.write("<p>Traceback:</p>")
             req.write("<p>"+tb.replace("\n", "<br />")+"</p>")
-            
+
         if in_production:
             # send webmasters a mail with the trace
             import smtplib, time
