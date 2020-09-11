@@ -1,3 +1,7 @@
+# Copyright 2020, Data61, CSIRO (ABN 41 687 119 230)
+#
+# SPDX-License-Identifier: BSD-2-Clause
+
 ---
 
 name: PR
@@ -25,7 +29,7 @@ jobs:
           if [ -e ".linkchecker_failed" ]; then
             echo "::set-output name=linkchecker_failed::true"
           else
-            echo "::set-output name=linkchecker_failed::false" 
+            echo "::set-output name=linkchecker_failed::false"
           fi
 
       - name: Fix up linkchecker log paths
@@ -46,7 +50,7 @@ jobs:
           if [ "${{ steps.validate.outputs.result }}" -eq "0" ]; then
             echo "::set-output name=validator_failed::false"
           else
-            echo "::set-output name=validator_failed::true" 
+            echo "::set-output name=validator_failed::true"
           fi
 
       - name: Fix up HTML5 validator log paths
@@ -93,11 +97,11 @@ jobs:
             exit 1
           fi
           exit 0
-        
+
   commenter:
     name: "Report results as comment"
     runs-on: 'ubuntu-latest'
-    needs: snapshot 
+    needs: snapshot
     steps:
       # TODO: in the future, when this issue is resolved: https://github.com/peaceiris/actions-gh-pages/issues/348, the link
       #       generated should be for the commit itself, not just the tip.
