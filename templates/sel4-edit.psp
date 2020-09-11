@@ -308,7 +308,7 @@ tinymce.init({
 
 <div class="clearfix visible-xs" style="height:2ex"></div>
 <footer class="page-footer small pt-3" id="footer" >
-<hr style="margin-top:0px;margin-bottom:5px;border-top:2px solid #96ca50">
+  <hr class="bottom-ruler">
   <div  class="footer-copyright text-center py-3">
     Copyright &copy; 2020  seL4 Project a Series of LF Projects, LLC.<br/>
       seL4 is a trademark of LF Projects, LLC.<br/>
