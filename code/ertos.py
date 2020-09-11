@@ -5,7 +5,14 @@
 # SPDX-License-Identifier: GPL-2.0-only
 #
 
-import sys, os, imp, re, string, cgi, time, traceback
+import sys
+import os
+import imp
+import re
+import string
+import cgi
+import time
+import traceback
 import itertools as IT
 from io import StringIO
 
@@ -32,10 +39,12 @@ try:
 except:
     pass
 
+
 def debug(s):
-# (benjl) Set log_level to 0 if you don't want crap in the log file.
+    # (benjl) Set log_level to 0 if you don't want crap in the log file.
     #apache.log_error(s, apache.APLOG_ERR)
     apache.log_error(s, apache.APLOG_DEBUG)
+
 
 def flatten(inlist, ltype=(list, tuple), maxint=sys.maxsize):
     """Flatten out a list. Stolen from:
@@ -89,7 +98,7 @@ def make_crumb_tree(req, basedir, path):
 ##    debug("Checking names: %s\n" % names_file)
     if os.path.isfile(names_file):
         for line in addresses_from_file(names_file):
-##            debug("line[0] <%s> : Name: <%s>\n" % (line[0], name))
+            ##            debug("line[0] <%s> : Name: <%s>\n" % (line[0], name))
             # Lines in .names look like "filename | crumbname | menu name"
             if line[0] == name:
                 name = line[1]
@@ -122,6 +131,7 @@ def get_ignore_list(req, dir):
     if os.path.isfile(os.path.join(basedir, ".top_ignore")):
         ignore += readfile(os.path.join(basedir, ".top_ignore"))
     return ignore
+
 
 def converttitle(title):
     """Reformat the given text for menu display."""
@@ -207,7 +217,7 @@ def send_menu_elements(req, bibargs, dir, todo, depth):
                 sortedfiles.append([fn, "--line"])
 
                 # break
-            #elif fn[1] != "" and os.path.isdir(os.path.join(dir, fn[1])):
+            # elif fn[1] != "" and os.path.isdir(os.path.join(dir, fn[1])):
             #    realfiles.append(fn)
 
         fn = list(allfiles.keys())
@@ -219,12 +229,12 @@ def send_menu_elements(req, bibargs, dir, todo, depth):
 
     for fn in sortedfiles:
         # Is this fn our current directory?
-        if  fn[0] == todo[0]:
+        if fn[0] == todo[0]:
             IN_CURRENT = 1
         else:
             IN_CURRENT = 0
 
-        if  fn[0] == '--line':
+        if fn[0] == '--line':
             req.write("""
                 <tr>
                 <td colspan="5" bgcolor=white>
@@ -243,7 +253,8 @@ def send_menu_elements(req, bibargs, dir, todo, depth):
             req.write('<tr>')
             # Indenting cell
             if depth >= 0:
-                req.write('<td colspan="%s"><img src="/images/spacer.gif" width="1" height="1" alt="" border="0" /></td>' % (1+depth))
+                req.write(
+                    '<td colspan="%s"><img src="/images/spacer.gif" width="1" height="1" alt="" border="0" /></td>' % (1+depth))
             req.write('<td colspan="%s" valign="top"> <a ' % (4-depth))
             if IN_CURRENT and ((len(todo) == 1) or (todo[1] == 'home.pml')):
                 req.write('class="nav2_on" ')
@@ -254,12 +265,13 @@ def send_menu_elements(req, bibargs, dir, todo, depth):
                 name = translate[fn[0]]
             else:
                 name = fn[0]
-                #.capitalize()
+                # .capitalize()
             req.write('href="%s">%s</a>' % (url, name))
-##            debug(str(urlparse(url)))
+# debug(str(urlparse(url)))
 
             req.write('</td></tr>\n')
-            req.write('<tr><td colspan="5"><img src="/images/spacer.gif" width="0" height="10" alt="" border="0" /></td></tr>\n')
+            req.write(
+                '<tr><td colspan="5"><img src="/images/spacer.gif" width="0" height="10" alt="" border="0" /></td></tr>\n')
 
             # If this is the current one, then we recurse now.
             if IN_CURRENT:
@@ -268,6 +280,7 @@ def send_menu_elements(req, bibargs, dir, todo, depth):
                 # if len(bar) and bar[0] does not end pml or such
                 if len(bar) and os.path.isdir(foo):
                     send_menu_elements(req, bibargs, foo, bar, depth + 1)
+
 
 def get_news_elements(item_count=6, max_title_len=80, max_story_len=350):
 
@@ -303,6 +316,7 @@ def get_news_elements(item_count=6, max_title_len=80, max_story_len=350):
 
     return news_elements
 
+
 def readfile(f):
     fh = open(f)
     output = []
@@ -311,6 +325,7 @@ def readfile(f):
         if len(line) is not 0 and line[0] != '#' and line[0] != '\n':
             output.append(line)
     return output
+
 
 def addresses_from_file(f):
     output = []
@@ -367,7 +382,6 @@ def send_menu(req, bibargs=None):
         send_menu_elements(req, bibargs, basedir, parts, 0)
 
 
-
 def parse_pml(req, text):
     splits = re.split(r'(\<execute.*)\/\>', text)
     for each in splits:
@@ -376,6 +390,7 @@ def parse_pml(req, text):
             req.write(eval(call))
         else:
             req.write("%s" % each)
+
 
 def req_to_title(req):
     basedir = cfg.get('core', "base_dir")
@@ -397,11 +412,12 @@ def req_to_title(req):
 
     return title
 
+
 class DummyPage:
     def __init__(self, req):
         self._title = "Untitled"
         self.page = []
-        self.req = req # Needed for POSTdata processing
+        self.req = req  # Needed for POSTdata processing
 
     def __getattr__(self, key):
         # I'm sure this is in GoF. Maybe the "Dodgy Hack Class Watcher" or something
@@ -431,7 +447,7 @@ def py_handler(req, query, messagens):
     f = open(req.filename, "r")
     filepath, filename = os.path.split(req.filename)
     oldpath = sys.path
-    sys.path.append(filepath) #Allow files to import from their directory - bad?
+    sys.path.append(filepath)  # Allow files to import from their directory - bad?
     module = imp.load_source(os.path.splitext(filename)[0], req.filename, f)
     sys.path = oldpath
     req.content_type = "text/html; charset=utf-8"
@@ -453,6 +469,7 @@ def py_handler(req, query, messagens):
     send_footer(req)
     return apache.OK
 
+
 def pyl_handler(req, query, messages):
     """new version of py_handler() to work with PSP templates"""
 
@@ -463,7 +480,7 @@ def pyl_handler(req, query, messages):
         f = open(req.filename, "r")
         filepath, filename = os.path.split(req.filename)
         oldpath = sys.path
-        sys.path.append(filepath) #Allow files to import from their directory - bad?
+        sys.path.append(filepath)  # Allow files to import from their directory - bad?
         module = imp.load_source(os.path.splitext(filename)[0], req.filename, f)
     except:
         req.status = apache.HTTP_NOT_FOUND
@@ -508,7 +525,6 @@ def pyl_handler(req, query, messages):
         req.write("psp failed: %s" % str(e))
         return apache.OK
 
-
     req.content_type = "text/html; charset=utf-8"
     try:
         template.run(data)
@@ -528,13 +544,14 @@ def pyx_handler(req, query, messages):
     f = open(req.filename, "r")
     filepath, filename = os.path.split(req.filename)
     oldpath = sys.path
-    sys.path.append(filepath) #Allow files to import from their directory - bad?
+    sys.path.append(filepath)  # Allow files to import from their directory - bad?
     module = imp.load_source(os.path.splitext(filename)[0], req.filename, f)
     sys.path = oldpath
 
     module.handler(req, query)
 
     return apache.OK
+
 
 def psp_handler(req, query, messages):
     req.content_type = "text/html; charset=utf-8"
@@ -580,7 +597,6 @@ def psp_handler(req, query, messages):
         title = cfg.get('core', 'titletemplate')
     else:
         title = "%s | CSIRO's Data61" % cfg.get('core', 'rg_abbrev').upper()
-
 
     if title_re:
         title_end = title_re.end()
@@ -684,6 +700,7 @@ def edit_handler(req, query, messages):
     template.run(data)
     return apache.OK
 
+
 def validate_handler(req, query, messages):
 
     path = req.filename
@@ -697,7 +714,7 @@ def validate_handler(req, query, messages):
     f = open(req.filename, "r")
     filepath, filename = os.path.split(req.filename)
     oldpath = sys.path
-    sys.path.append(filepath) #Allow files to import from their directory - bad?
+    sys.path.append(filepath)  # Allow files to import from their directory - bad?
     module = imp.load_source(os.path.splitext(filename)[0], req.filename, f)
     sys.path = oldpath
     module.handler(fakereq, query, path)
@@ -715,6 +732,7 @@ def validate_handler(req, query, messages):
 
     return apache.OK
 
+
 def save_handler(req, query, messages):
     path = req.filename
     content_dir = cfg.get('core', 'content_dir')
@@ -724,17 +742,16 @@ def save_handler(req, query, messages):
     if b'content' not in postvars:
         return apache.HTTP_NOT_FOUND
 
-
     # Editor adds <p>&nbsp;</p> if file starts with a blank line or a comment
     user_content = postvars[b'content'].pop().decode('utf-8').replace(r'<p>&nbsp;</p>', '', 1)
 
     tidy = Tidy()
     OPTIONS = {
         'wrap': 72,
-        'hide-comments' : 'no',
+        'hide-comments': 'no',
         'preserve-entities': 'yes',
-        'char-encoding' : 'utf8',
-        'indent-attributes' : 'yes',
+        'char-encoding': 'utf8',
+        'indent-attributes': 'yes',
     }
     doc = '<!DOCTYPE html><head><title>foo</title></head><body>' + user_content + '</body></html>'
     doc, errs = tidy.tidy_document(doc, options=OPTIONS)
@@ -777,7 +794,7 @@ def linklint_handler(req, query, messages):
     f = open(req.filename, "r")
     filepath, filename = os.path.split(req.filename)
     oldpath = sys.path
-    sys.path.append(filepath) #Allow files to import from their directory - bad?
+    sys.path.append(filepath)  # Allow files to import from their directory - bad?
     module = imp.load_source(os.path.splitext(filename)[0], req.filename, f)
     sys.path = oldpath
     module.handler(fakereq, query, path)
@@ -796,6 +813,7 @@ def linklint_handler(req, query, messages):
 
     return apache.OK
 
+
 def search_handler(req, query, messages):
 
     path = os.path.dirname(req.filename)
@@ -803,7 +821,7 @@ def search_handler(req, query, messages):
     f = open(req.filename, "r")
     filepath, filename = os.path.split(req.filename)
     oldpath = sys.path
-    sys.path.append(filepath) #Allow files to import from their directory - bad?
+    sys.path.append(filepath)  # Allow files to import from their directory - bad?
     module = imp.load_source(os.path.splitext(filename)[0], req.filename, f)
     sys.path = oldpath
     module.handler(fakereq, query, path)
@@ -820,12 +838,14 @@ def search_handler(req, query, messages):
 
     return apache.OK
 
+
 def get_logged_in_user(req):
-    req.get_basic_auth_pw() # Need to call this according to mod_python docs
+    req.get_basic_auth_pw()  # Need to call this according to mod_python docs
     if req.user is None:
         return None
     username = req.user.lower()
     return username
+
 
 def handler(req):
     import time
@@ -836,7 +856,7 @@ def handler(req):
 
     # reads config and set some global variables
     global base_dir, content_dir, nav_urls
-    #cfg.read(req.get_options()['site_config'])
+    # cfg.read(req.get_options()['site_config'])
 
     base_dir = cfg.get('core', 'base_dir') + "/"
     content_dir = cfg.get('core', 'content_dir') + "/"
@@ -890,11 +910,11 @@ def handler(req):
 
         tb = ""
         for line in formatted_lines:
-            tb += line +"\n"
+            tb += line + "\n"
 
         if not in_production:
             import cgitb
-            #cgitb.enable()
+            # cgitb.enable()
             cgitb.Hook(file=req).handle()
 
         sorry_text = """<html><head><title>404 Not Found | %s | Data61</title></head><body><h1>404 Not Found</h1>
@@ -909,7 +929,8 @@ def handler(req):
 
         if in_production:
             # send webmasters a mail with the trace
-            import smtplib, time
+            import smtplib
+            import time
             from email.mime.text import MIMEText
             text = """
 Problem with %s webpage at:
