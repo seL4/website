@@ -1,15 +1,14 @@
 Format: https://www.debian.org/doc/packaging-manuals/copyright-format/1.0/
 Upstream-Name: seL4.systems
 Upstream-Contact: seL4 webmaster <webmaster@seL4.systems>
-source: https://github.com/seL4/sel4.systems/
-
+source: https://github.com/seL4/website/
 
 Files: content/fonts/*
 Copyright: 2010 - 2020 GLYPHICONS® All rights reserved.
 License: MIT
   See https://glyphicons.com/old/license.html#old-halflings-bootstrap
 
-Files: content/css/bootstrap.min.css content/js/bootstrap.min.js 
+Files: content/css/bootstrap.min.css content/js/bootstrap.min.js
 Copyright: 2011-2016 Twitter, Inc
 License: MIT
   https://github.com/twbs/bootstrap/blob/master/LICENSE
@@ -49,13 +48,13 @@ Files: content/*/*.patch
 License: GPL-2.0-only
 Copyright:  2020 seL4 Project a Series of LF Projects, LLC.
 
-Files: content/images/icons/* content/robots.txt
+Files: content/images/icons/* content/robots.txt content/favicon.ico
 Copyright: 2020 seL4 Project a Series of LF Projects, LLC.
 License: CC-BY-SA-4.0
 
 Files: .gitignore
 Copyright: 2020 seL4 Project a Series of LF Projects, LLC.
-License: GPL-2.0-only
+License: BSD-2-Clause
 
 Files: content/Info/Docs/u-boot-working-rpi3-32bit-v2017.11.bin content/Info/Hardware/sabreLite/u-boot.bin
 Copyright: Wolfgang Denk and others 2019

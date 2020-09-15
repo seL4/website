@@ -24,7 +24,7 @@ class Config(ConfigParser):
     def __init__(self, basepath):
         """ Load all our config files. """
         ConfigParser.__init__(self)
-        
+
         self.basepath = basepath+"/../configs/"
         self.loaded = False
 
@@ -32,12 +32,13 @@ class Config(ConfigParser):
         if os.path.exists(confile):
             ConfigParser.read(self, confile)
         else:
-            ConfigParser.read(self,self.basepath+confile)
+            ConfigParser.read(self, self.basepath+confile)
         self.loaded = True
 
     def getlist(self, section, var):
         return self.get(section, var).split('\n')
-        
+
+
 cfg = Config(os.path.dirname(os.path.abspath(__file__)))
 
 if __name__ == '__main__':

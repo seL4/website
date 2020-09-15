@@ -8,13 +8,13 @@
 # Send email on error
 #
 
+from ertos_config import cfg
 import smtplib
 import os
 from email.mime.text import MIMEText
 from subprocess import run
 import sys
 sys.path.append(os.path.join(os.path.dirname(os.path.abspath(__file__)), "../code"))
-from ertos_config import cfg
 cfg.read('config.cfg')
 
 mailhost = cfg.get('hosts', 'mailhost')
@@ -25,18 +25,18 @@ URL = "https://%s/" % cfg.get('hosts', 'live')
 URL1 = "https://docs.%s/" % cfg.get('hosts', 'live')
 
 linklint = run(
-        [
-            '/usr/bin/linkchecker',
-            '-F',
-            'html/%s/index.html' % OUTPUTDIR,
-            '--no-status',
-            '--ignore-url="print$"'
-            '--ignore-url="/blob/"'
-            '--check-extern',
-            URL, URL1
-        ],
-        encoding='utf-8',
-        capture_output=True)
+    [
+        '/usr/bin/linkchecker',
+        '-F',
+        'html/%s/index.html' % OUTPUTDIR,
+        '--no-status',
+        '--ignore-url="print$"'
+        '--ignore-url="/blob/"'
+        '--check-extern',
+        URL, URL1
+    ],
+    encoding='utf-8',
+    capture_output=True)
 
 output = """
 Linkcheck output
