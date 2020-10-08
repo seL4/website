@@ -4,7 +4,7 @@
     SPDX-License-Identifier: CC-BY-SA-4.0
 -->
 <h1>
-  Professional Services and Produts for seL4-based Systems
+  Professional Services <br> and Products for seL4-based Systems <br>
 </h1>
 <div>
   <p>
