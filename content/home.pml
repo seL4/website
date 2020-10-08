@@ -8,7 +8,7 @@
   Security is no excuse for bad performance
 </h4>
 <div class="highlight">
-  The benchmark for performance.<br />
+  The benchmark for performance .<br />
   The world's most highly assured OS kernel.<br />
   Open source &amp; community-supported under the seL4 Foundation.
 </div>
