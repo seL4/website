@@ -183,7 +183,7 @@
       Dayton-based company developing tools for cyber-retrofitting
       security-critical systems. From 2014&ndash;17 he was Program
       Manager and then Director of the Information Innovation Office
-      (I2O) at <a href="https://darpa.mil/">DARPA</a>. He holds a PhD
+      (I2O) at <a href="https://www.darpa.mil/">DARPA</a>. He holds a PhD
       from <a href="https://www.gla.ac.uk/">Glasgow</a> and is a
       Fellow of the <a href="https://acm.org/">ACM</a>.</p>
   </div>
