@@ -59,7 +59,8 @@
   <li>
     <strong>You may</strong> use the seL4 mark to refer to the seL4
     microkernel, the seL4 Foundation, or the seL4 proofs if you use
-    them accurately. The seL4 microkernel refers to the code hosted
+    them accurately. The seL4 microkernel refers to the master branch
+    of the code hosted
     at <a href="https://github.com/seL4/seL4"
     class="uri">https://github.com/seL4/seL4</a>. The seL4 proofs
     refer to the formal mathematical proofs hosted
@@ -128,7 +129,7 @@
     <strong>You may only</strong> make use of formal verification
     claims of seL4 in relation with your product if your product
     actually uses a verified configuration of seL4.
-  </li> 
+  </li>
   <li>
     <strong>Do not</strong> add your company logo(s) to seL4
     Foundation training and marketing materials, such as official
