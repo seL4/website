@@ -128,7 +128,7 @@ jobs:
 
       - name: Leave comment with link to site, and results of checks
         uses: actions/github-script@v3
-        if: github.event_name == 'pull_request_target'
+        if: github.event_name == 'pull_request'
         with:
           github-token: ${{secrets.GITHUB_TOKEN}}
           script: |
