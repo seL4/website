@@ -7,7 +7,7 @@
 -->
 <h1 id="contribute">Contribute</h1>
 
-<p>We welcome and encourage community contribution to the sel4 platform.</p>
+<p>We welcome and encourage community contribution to the seL4 platform.</p>
 
 <p>Contributions can take the form of code contributions, proof contributions, documentation contributions, and community support.</p>
 
@@ -23,7 +23,7 @@
 -->
 </ul>
 
-<p>We also provide a list of <a href="https://docs.sel4.systems/SuggestedProjects.html">suggested projects</a> to start working on, as well as an oveview of the different <a href="https://docs.sel4.systems/projects/available-user-components.html">libraries and components</a> available and what can be done to help contribute to their further development.
+<p>We also provide a list of <a href="https://docs.sel4.systems/SuggestedProjects.html">suggested projects</a> to start working on, as well as an overview of the different <a href="https://docs.sel4.systems/projects/available-user-components.html">libraries and components</a> available and what can be done to help contribute to their further development.
 
 <h2 id="proof-contributions">Proof Contributions</h2>
 
@@ -37,7 +37,7 @@
 
 <h2 id="documentation-contributions">Documentation Contributions</h2>
 
-<p>seL4 platform documentation is maintained together with the code sources, together with the proofs, or on the docsite.</p>
+<p>seL4 platform documentation is maintained either with the code sources, with the proofs, or on the docsite.</p>
 
 <p>We welcome contribution to all of this documentation, and provide <a href="https://docs.sel4.systems/processes/docs-contributing.html">guidance</a> on the docsite.</p>
 

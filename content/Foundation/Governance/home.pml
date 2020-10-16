@@ -11,7 +11,7 @@
     The <a title="seL4 Foundation"
        href="../About">seL4 Foundation</a>&nbsp;is established as a
        project under The Linux Foundation. It is designed to
-       fullfil the key principles described&nbsp;<a title=
+       fulfill the key principles described&nbsp;<a title=
        "seL4 Foundation Key Principles pdf"
        href="seL4_Foundation_Key_Principles.pdf"
        target="_blank">here</a>&nbsp;and summarised below.
@@ -44,7 +44,7 @@
       the seL4 kernel and the seL4 ecosystem, by enabling the
       collaborative community-based development, availability and
       adoption of the seL4 kernel. This includes providing a
-      familiar structure (ie. under The Linux Foundation) for
+      familiar structure (i.e., under The Linux Foundation) for
       membership and raising funds to support its activities, and
       building the community of developers, adopters, training, and
       expertise. The seL4 Foundation will aim to represent the

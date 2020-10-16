@@ -72,7 +72,7 @@
   <div class="governing-item-heading">
     <strong><a href="https://www.linkedin.com/in/daniel-potts-725142/"
     class='list_link'>Dan Potts</a></strong>
-    <span class="person_title_col"><em>Engineeering Director, <a href="https://gh.st/">Ghost
+    <span class="person_title_col"><em>Engineering Director, <a href="https://gh.st/">Ghost
     Locomotion</a></em></span>
   </div>
   <div class="governing-item-text">
@@ -203,7 +203,7 @@
 
 <h3>Outreach Committee</h3>
 
-<p>The Outreach Committee is in charge of expanding the membership. It develops material for supporting membership recruitment. Members of the committee will work closely with existing members to make best use of their networks for strategic recuritment of members.</p>
+<p>The Outreach Committee is in charge of expanding the membership. It develops material for supporting membership recruitment. Members of the committee will work closely with existing members to make best use of their networks for strategic recruitment of members.</p>
 
 <p>Its present members are:</p>
 <ul>
