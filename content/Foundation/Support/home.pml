@@ -38,9 +38,9 @@
        <li> <b> Verification of the multicore kernel </b>
        </li>
        </ul>
-       The interest for these items is strong but the investement required 
+       The interest for these items is strong but the investment required
        is above the pain limit of most single organisation. The foundation
-       provides a vehicle to pool investements to achieves these.
+       provides a vehicle to pool investments to achieves these.
     </li>
   </ul>
 

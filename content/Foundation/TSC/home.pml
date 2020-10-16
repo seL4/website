@@ -68,7 +68,7 @@
 
   <div class="person">
     <div class="person_pic">
-      <a href="https://www.linkedin.com/in/annamlyons/"><img src="../../images/tsc/anna.png" alt="Anna Lyons=" width="80" /></a>
+      <a href="https://www.linkedin.com/in/annamlyons/"><img src="../../images/tsc/anna.png" alt="Anna Lyons" width="80" /></a>
     </div>
     <div class="person_title">
       <strong><a class="list_link" href="https://www.linkedin.com/in/annamlyons/">Anna Lyons</a></strong>
