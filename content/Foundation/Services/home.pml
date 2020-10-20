@@ -4,10 +4,11 @@
     SPDX-License-Identifier: CC-BY-SA-4.0
 -->
 <h1>
-  Foundation-endorsed and accredited Services, Trainings and Products for seL4-based Systems
+  Services, Trainings and Products <br>
+  endorsed or accredited by the Foundation
 </h1>
 <div>
-  <p>
+  <p style="padding-bottom:10px">
     seL4 is an attractive platform for building highly resilient
     systems, but to do so requires a fair degree of understanding of
     the technology. Fortunately, help is available from a growing
@@ -18,7 +19,7 @@
   <p>
     The Foundation is working with members on developing <strong>certification</strong>
     programs for services, training and products. Until these are in place, we
-    will provide <strong>provisional endorsements</strong>,
+    will provide <a href="endorsement.pml"><strong>provisional endorsements</strong></a>,
     which will lapse once the certification schemes are in place. We
     will support members with provisional endorsements in achieving full
     certification.
@@ -35,51 +36,67 @@
       <li> that a particular <strong>product</strong> is helpful to the community
            for building high-assurance seL4-based systems.
     </ul>
-  </p>  
-	
+  </p>
+  
+  <p>  
+  </p>	
 
-
-  <h2>Products</h2>
+  
+  <h2>Service Providers</h2>
   <table>
     <tr>
       <td>
-	<a href="https://acme.com">
-	  <img src="http://clipart-library.com/images/ki85ybA7T.jpg" style="width: 200px" alt="SailOS">
+	<a href="https://dornerworks.com">
+	  <img src="/Foundation/Membership/LOGOS/DornerWorks.svg" style="width: 200px" alt="DornerWorks Ltd">
 	</a>
       </td>
       <td>
-	<strong>SnailOS</strong><br/> Is a highly secure OS based on
-	cutting-edge time-dilation technology developed and marketed
-	by <a href="https://acme.com">SlugCorp</a>. It supports
-	embedded systems using Arm and RISC-V processors.<br/>
-	<font color="orange">SnailOS is provisionally endorsed on Arm
-	A59-based Rubik's Cubes.</font>
+	<strong>DornerWorks Ltd</strong><br/> Based in ... <br/>
+	<font color="orange">DornerWorks Ltd is provisionally endorsed as a trusted
+	service provider for seL4-based systems.</font>
+	<ul>
+	  <li><a href="https://dornerworks.com/something">Details of products and services</a></li>
+	  <li><a href="https://dornerworks.com">Home page</a></li>
+	</ul>
       </td>
     </tr>
-  </table>
-  
-  <h2>Services</h2>
-  <table>
+    
     <tr>
       <td>
-	<a href="https://acme.com">
-	  <img src="/Foundation/Membership/LOGOS/UNSW.svg" style="width: 200px" alt="Acme Consulting Inc">
+	<a href="https://brkawy.com">
+	  <img src="/Foundation/Membership/LOGOS/Brkawy.png" style="width: 200px" alt="Breakaway Consulting">
 	</a>
       </td>
       <td>
-	<strong>Acme Consulting Inc</strong><br/> Based in Disneyland,
-	CA, with offices in Orlando, FL, Acme provides advice on
-	designing and implementing security-critical systems on top of
-	seL4, mostly to defence customers.<br/>
-	<font color="orange">Acme is provisionally endorsed for seL4
-	systems architecture consulting.</font>
+	<strong>Breakaway Consulting</strong><br/> Based in ... <br/>
+	<font color="orange">Breakaway Consulting is provisionally endorsed as a trusted
+	service provider for seL4-based systems.</font>
 	<ul>
-	  <li><a href="Acme/">Details of products and services</a></li>
-	  <li><a href="https://acme.com">Home page</a></li>
+	  <li><a href="https://brkawy.com/something">Details of products and services</a></li>
+	  <li><a href="https://brkawy.com</a></li>
 	</ul>
       </td>
     </tr>
 
+
+    <tr>
+      <td>
+	<a href="https://cog.systems">
+	  <img src="/Foundation/Membership/LOGOS/Cog.jpg" style="width: 200px" alt="Cog Systems Inc">
+	</a>
+      </td>
+      <td>
+	<strong>Cog Systems Inc</strong><br/> Based in ... <br/>
+	<font color="orange">Cog Systems Inc is provisionally endorsed as a trusted
+	service provider for seL4-based systems.</font>
+	<ul>
+	  <li><a href="https://cog.systems/something">Details of products and services</a></li>
+	  <li><a href="https://cog.systems</a></li>
+	</ul>
+      </td>
+    </tr>
+
+<!--
     <tr>
       <td>
 	<a href="https://drivers.R.us">
@@ -101,5 +118,59 @@
       </ul>
       </td>
     </tr>
+ -->
   </table>
+
+
+  <h2>Trainings</h2>
+  <p>
+  No training has been endorsed or certified at this stage.
+  <font color="orange">Consider <a href="endorsement.pml">adding yours</a>!</font>
+  </p>
+  <!--
+  <table>
+    <tr>
+      <td>
+	<a href="https://acme.com">
+	  <img src="http://clipart-library.com/images/ki85ybA7T.jpg" style="width: 200px" alt="SailOS">
+	</a>
+      </td>
+      <td>
+	<strong>SnailOS</strong><br/> Is a highly secure OS based on
+	cutting-edge time-dilation technology developed and marketed
+	by <a href="https://acme.com">SlugCorp</a>. It supports
+	embedded systems using Arm and RISC-V processors.<br/>
+	<font color="orange">SnailOS is provisionally endorsed on Arm
+	A59-based Rubik's Cubes.</font>
+      </td>
+    </tr>
+  </table>
+  -->
+  
+  <h2>Products</h2>
+  <p>
+  No product has been endorsed or certified at this stage.
+  <font color="orange">Consider <a href="endorsement.pml">adding yours</a>!</font>
+  </p>
+  <!--
+  <table>
+    <tr>
+      <td>
+	<a href="https://acme.com">
+	  <img src="http://clipart-library.com/images/ki85ybA7T.jpg" style="width: 200px" alt="SailOS">
+	</a>
+      </td>
+      <td>
+	<strong>SnailOS</strong><br/> Is a highly secure OS based on
+	cutting-edge time-dilation technology developed and marketed
+	by <a href="https://acme.com">SlugCorp</a>. It supports
+	embedded systems using Arm and RISC-V processors.<br/>
+	<font color="orange">SnailOS is provisionally endorsed on Arm
+	A59-based Rubik's Cubes.</font>
+      </td>
+    </tr>
+  </table>
+  -->
+
+
 </div>
