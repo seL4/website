@@ -23,8 +23,8 @@
     which will lapse once the certification schemes are in place. We
     will support members with provisional endorsements in achieving full
     certification.
-  </p>  
-  <p>  
+  </p>
+  <p>
     The certification (or endorsement for now) will indicate:
     <ul>
       <li> that a particular <strong>service provider</strong> has the skills and experience
@@ -37,11 +37,11 @@
            for building high-assurance seL4-based systems.
     </ul>
   </p>
-  
-  <p>  
-  </p>	
 
-  
+  <p>
+  </p>
+
+
   <h2>Service Providers</h2>
   <p style="margin-left: 20px">
   <table>
@@ -121,14 +121,14 @@
     </tr>
   </table>
   -->
-  
+
   <h2>Products</h2>
   <p style="margin-left: 20px">
   No product has been endorsed or certified at this stage. <br>
   <font color="orange">Consider adding yours!</font> <br>
   See process  <a href="endorsement.pml">here</a>.
   </p>
- <!-- 
+ <!--
   <table>
     <tr>
       <td>

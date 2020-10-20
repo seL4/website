@@ -19,10 +19,10 @@
       <font color="orange">  &#10148 Get the endorsement of the seL4 Foundation  now!</font>
     </p>
   </strong>
-  
+
   <p style="padding-top:10px">
     The Foundation is working on developing <strong>certification</strong>
-    schemes for services, training and products. 
+    schemes for services, training and products.
     Until these are in place, we provide <strong>provisional endorsements</strong>.
     All endorsed training modules are advertised <a href="here">here</a>.
     Provisional endorsement are provided for free and to Foundation members only.
@@ -37,7 +37,7 @@
       <a title="foundation@sel4.systems"
          href= "mailto:foundation@sel4.systems">
 	foundation@sel4.systems</a>
-    </li>  
+    </li>
     <li>
       <strong>Guidelines</strong>:
       <ul>
@@ -47,11 +47,11 @@
 	    to provide high-quality services to adopters of seL4 </strong>.
 	</li>
 	<li>
-	  The provisional endorsement of an seL4 service provider will be awarded based on an assessment that the provider is: 
+	  The provisional endorsement of an seL4 service provider will be awarded based on an assessment that the provider is:
 	  <ul>
 	    <li>
 	      known and respected in the seL4 Community;
-	    </li>	  
+	    </li>
 	    <li>
 	      has demonstrated technical competence in the development of code
 	      or proofs of the seL4 kernel or software components running
@@ -60,22 +60,22 @@
 	    </li>
 	    <li>
 	      has a track record of contributions to the seL4 ecosystem.
-	    </li>	  
-	  </ul>	 
+	    </li>
+	  </ul>
 	</li>
-      </ul> 
+      </ul>
   </ul>
-  
+
   <h2>Trainings</h2>
   <ul>
     <li>
       <font color="orange"><strong>To get an interim endorsement</strong></font>:
       <ul>
 	<li>
-	  Send a request to 
+	  Send a request to
           <a title="foundation@sel4.systems"
              href= "mailto:foundation@sel4.systems">
-	    foundation@sel4.systems</a>	
+	    foundation@sel4.systems</a>
 	  <strong>at least 3 weeks before sending the actual
 	    training material</strong>;
 	</li>
@@ -98,8 +98,8 @@
 	  alone but may also include an examination of any code provided for
 	  hands-on training, at the discretion of the Foundation.
 	</li>
-      </ul>	
-    </li>  
+      </ul>
+    </li>
     <li>
       <strong>Guidelines</strong>:
       <ul>
@@ -109,7 +109,6 @@
 	    in providing useful skills for deploying the seL4 microkernel</strong>.
 	</li>
 	<li>
-	  
 	  The provisional endorsement of an seL4 training module will be
 	  awarded based on an assessment of the training material
 	  (presentation material and potentially code used in hands-on
@@ -121,12 +120,12 @@
 	    <li>
 	      it is compliant with the Foundation's Trademark Guidelines.
 	    </li>
-	  </ul>	 
+	  </ul>
 	</li>
-      </ul> 
+      </ul>
   </ul>
-  
-  
+
+
   <h2>Products</h2>
   <ul>
     <li>
@@ -135,7 +134,7 @@
       <a title="foundation@sel4.systems"
          href= "mailto:foundation@sel4.systems">
 	foundation@sel4.systems</a>
-    </li>  
+    </li>
     <li><strong>Guidelines</strong>:
       <ul>
 	<li>
@@ -165,7 +164,7 @@
 	  contact the Foundation so we can work together on developing suitable
 	  guidelines/schemes.
 	</li>
-      </ul> 
+      </ul>
   </ul>
 
 </div>
