@@ -11,12 +11,12 @@
 <div>
 
 
-  <p style="padding-top:10px">\
+  <p style="padding-top:10px">
   <strong>
     You offer professional support services for seL4-based systems? <br>
     You offer seL4 trainings? <br>
     You offer products for building high-assurance seL4-bases systems?  <br>
-    <span class=emph> &#10148 Get the endorsement of the seL4 Foundation  now!</span>\
+    <span class=emph> &#10148; Get the endorsement of the seL4 Foundation  now!</span>
   </strong>
   </p>
 

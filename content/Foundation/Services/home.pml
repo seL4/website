@@ -38,9 +38,6 @@
     </ul>
   </p>
 
-  <p>
-  </p>
-
 
   <h2>Service Providers</h2>
   <p style="margin-left: 20px">
