@@ -43,28 +43,7 @@
 
   
   <h2>Service Providers</h2>
-  <table>
-    <tr>
-      <td>
-	<a href="https://dornerworks.com">
-	  <img src="/Foundation/Membership/LOGOS/DornerWorks.svg" style="width: 200px" alt="DornerWorks Ltd">
-	</a>
-      </td>
-      <td>
-	<strong>DornerWorks Ltd</strong><br/> Based in ... <br/>
-	<font color="orange">DornerWorks Ltd is provisionally endorsed as a trusted
-	service provider for seL4-based systems.</font>
-	<ul>
-	  <li><a href="https://dornerworks.com/something">Details of products and services</a></li>
-	  <li><a href="https://dornerworks.com">Home page</a></li>
-	</ul>
-      </td>
-    </tr>
-  </table>
-
-<!--
-
-  <h2>Service Providers</h2>
+  <p style="margin-left: 20px">
   <table>
     <tr>
       <td>
@@ -94,7 +73,7 @@
 	service provider for seL4-based systems.</font>
 	<ul>
 	  <li><a href="https://brkawy.com/something">Details of products and services</a></li>
-	  <li><a href="https://brkawy.com</a></li>
+	  <li><a href="https://brkawy.com">Home page</a></li>
 	</ul>
       </td>
     </tr>
@@ -110,41 +89,20 @@
 	service provider for seL4-based systems.</font>
 	<ul>
 	  <li><a href="https://cog.systems/something">Details of products and services</a></li>
-	  <li><a href="https://cog.systems</a></li>
+	  <li><a href="https://cog.systems">Home page</a></li>
 	</ul>
       </td>
     </tr>
   </table>
-  
+  </p>
 
   <h2>Trainings</h2>
-  <p>
-  No training has been endorsed or certified at this stage.
-  <font color="orange">Consider <a href="endorsement.pml">adding yours</a>!</font>
+  <p style="margin-left: 20px">
+  No training has been endorsed or certified at this stage.<br>
+  <font color="orange">Consider adding yours!</font> <br>
+  See process  <a href="endorsement.pml">here</a>.
   </p>
-  <table>
-    <tr>
-      <td>
-	<a href="https://acme.com">
-	  <img src="http://clipart-library.com/images/ki85ybA7T.jpg" style="width: 200px" alt="SailOS">
-	</a>
-      </td>
-      <td>
-	<strong>SnailOS</strong><br/> Is a highly secure OS based on
-	cutting-edge time-dilation technology developed and marketed
-	by <a href="https://acme.com">SlugCorp</a>. It supports
-	embedded systems using Arm and RISC-V processors.<br/>
-	<font color="orange">SnailOS is provisionally endorsed on Arm
-	A59-based Rubik's Cubes.</font>
-      </td>
-    </tr>
-  </table>
-  
-  <h2>Products</h2>
-  <p>
-  No product has been endorsed or certified at this stage.
-  <font color="orange">Consider <a href="endorsement.pml">adding yours</a>!</font>
-  </p>
+  <!--
   <table>
     <tr>
       <td>
@@ -163,6 +121,44 @@
     </tr>
   </table>
   -->
+  
+  <h2>Products</h2>
+  <p style="margin-left: 20px">
+  No product has been endorsed or certified at this stage. <br>
+  <font color="orange">Consider adding yours!</font> <br>
+  See process  <a href="endorsement.pml">here</a>.
+  </p>
+ <!-- 
+  <table>
+    <tr>
+      <td>
+	<a href="https://acme.com">
+	  <img src="http://clipart-library.com/images/ki85ybA7T.jpg" style="width: 200px" alt="SailOS">
+	</a>
+      </td>
+      <td>
+	<strong>SnailOS</strong><br/> Is a highly secure OS based on
+	cutting-edge time-dilation technology developed and marketed
+	by <a href="https://acme.com">SlugCorp</a>. It supports
+	embedded systems using Arm and RISC-V processors.<br/>
+	<font color="orange">SnailOS is provisionally endorsed on Arm
+	A59-based Rubik's Cubes.</font>
+      </td>
+    </tr>
+  </table>
+-->
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 </div>
