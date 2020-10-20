@@ -53,8 +53,8 @@
       </td>
       <td>
 	<strong>DornerWorks Ltd</strong><br/> Based in ... <br/>
-	<font color="orange">DornerWorks Ltd is provisionally endorsed as a trusted
-	service provider for seL4-based systems.</font>
+	<span class=emph>DornerWorks Ltd is provisionally endorsed as a trusted
+	service provider for seL4-based systems.</span>
 	<ul>
 	  <li><a href="https://dornerworks.com/something">Details of products and services</a></li>
 	  <li><a href="https://dornerworks.com">Home page</a></li>
@@ -69,8 +69,8 @@
       </td>
       <td>
 	<strong>Breakaway Consulting</strong><br/> Based in ... <br/>
-	<font color="orange">Breakaway Consulting is provisionally endorsed as a trusted
-	service provider for seL4-based systems.</font>
+	<span class=emph>Breakaway Consulting is provisionally endorsed as a trusted
+	service provider for seL4-based systems.</span>
 	<ul>
 	  <li><a href="https://brkawy.com/something">Details of products and services</a></li>
 	  <li><a href="https://brkawy.com">Home page</a></li>
@@ -85,8 +85,8 @@
       </td>
       <td>
 	<strong>Cog Systems Inc</strong><br/> Based in ... <br/>
-	<font color="orange">Cog Systems Inc is provisionally endorsed as a trusted
-	service provider for seL4-based systems.</font>
+	<span class=emph>Cog Systems Inc is provisionally endorsed as a trusted
+	service provider for seL4-based systems.</span>
 	<ul>
 	  <li><a href="https://cog.systems/something">Details of products and services</a></li>
 	  <li><a href="https://cog.systems">Home page</a></li>
@@ -99,7 +99,7 @@
   <h2>Trainings</h2>
   <p style="margin-left: 20px">
   No training has been endorsed or certified at this stage.<br>
-  <font color="orange">Consider adding yours!</font> <br>
+  <span class=emph>Consider adding yours!</span> <br>
   See process  <a href="endorsement.pml">here</a>.
   </p>
   <!--
@@ -115,8 +115,8 @@
 	cutting-edge time-dilation technology developed and marketed
 	by <a href="https://acme.com">SlugCorp</a>. It supports
 	embedded systems using Arm and RISC-V processors.<br/>
-	<font color="orange">SnailOS is provisionally endorsed on Arm
-	A59-based Rubik's Cubes.</font>
+	<span class=emph>SnailOS is provisionally endorsed on Arm
+	A59-based Rubik's Cubes.</span>
       </td>
     </tr>
   </table>
@@ -125,7 +125,7 @@
   <h2>Products</h2>
   <p style="margin-left: 20px">
   No product has been endorsed or certified at this stage. <br>
-  <font color="orange">Consider adding yours!</font> <br>
+  <span class=emph>Consider adding yours!</span> <br>
   See process  <a href="endorsement.pml">here</a>.
   </p>
  <!--
@@ -141,8 +141,8 @@
 	cutting-edge time-dilation technology developed and marketed
 	by <a href="https://acme.com">SlugCorp</a>. It supports
 	embedded systems using Arm and RISC-V processors.<br/>
-	<font color="orange">SnailOS is provisionally endorsed on Arm
-	A59-based Rubik's Cubes.</font>
+	<span class=emph>SnailOS is provisionally endorsed on Arm
+	A59-based Rubik's Cubes.</span>
       </td>
     </tr>
   </table>

@@ -16,7 +16,7 @@
     You offer professional support services for seL4-based systems? <br>
     You offer seL4 trainings? <br>
     You offer products for building high-assurance seL4-bases systems?  <br>
-    <font color="orange">  &#10148 Get the endorsement of the seL4 Foundation  now!</font>\
+    <span class=emph> &#10148 Get the endorsement of the seL4 Foundation  now!</span>\
   </strong>
   </p>
 
@@ -32,7 +32,7 @@
   <h2>Services</h2>
   <ul>
     <li>
-      <font color="orange"><strong>To get an interim endorsement</strong></font>:
+      <span class=emph><strong>To get an interim endorsement</strong></span>:
       Send a request to
       <a title="foundation@sel4.systems"
          href= "mailto:foundation@sel4.systems">
@@ -69,7 +69,7 @@
   <h2>Trainings</h2>
   <ul>
     <li>
-      <font color="orange"><strong>To get an interim endorsement</strong></font>:
+      <span class=emph><strong>To get an interim endorsement</strong></span>:
       <ul>
 	<li>
 	  Send a request to
@@ -129,7 +129,7 @@
   <h2>Products</h2>
   <ul>
     <li>
-      <font color="orange"><strong>To get an interim endorsement</strong></font>:
+      <span class=emph><strong>To get an interim endorsement</strong></span>:
       Send a request to
       <a title="foundation@sel4.systems"
          href= "mailto:foundation@sel4.systems">
