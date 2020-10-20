@@ -18,8 +18,8 @@
   </p>
   <p>
     The Foundation is working with members on developing <strong>certification</strong>
-    programs for services, training and products. Until these are in place, we
-    will provide <a href="endorsement.pml"><strong>provisional endorsements</strong></a>,
+    schemes for services, training and products. Until these are in place, we
+    provide <a href="endorsement.pml"><strong>provisional endorsements</strong></a>,
     which will lapse once the certification schemes are in place. We
     will support members with provisional endorsements in achieving full
     certification.
