@@ -59,7 +59,7 @@ jobs:
           # Make some very dodgey HTML, so we can get nicer output
           echo "<html><body><p>" > "$output"
           sed 's|/github/workspace/snapped_site/localhost||g' log.log \
-            | sed "s|'Error:|</p><p>Error:|g" \
+            | sed "s|'ERROR:|</p><p>ERROR:|g" \
             | sed "s|', '|<br />|g" \
             >> "$output"
           echo "</p></body></html>" >> "$output"
