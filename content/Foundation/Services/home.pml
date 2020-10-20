@@ -26,6 +26,7 @@
   </p>
   <p>
     The certification (or endorsement for now) will indicate:
+  </p>
     <ul>
       <li> that a particular <strong>service provider</strong> has the skills and experience
            to provide high-quality services to adopters of seL4;
@@ -36,8 +37,7 @@
       <li> that a particular <strong>product</strong> is helpful to the community
            for building high-assurance seL4-based systems.
     </ul>
-  </p>
-
+  
 
   <h2>Service Providers</h2>
   <table style="margin-left: 20px">
