@@ -60,6 +60,28 @@
 	</ul>
       </td>
     </tr>
+  </table>
+
+<!--
+
+  <h2>Service Providers</h2>
+  <table>
+    <tr>
+      <td>
+	<a href="https://dornerworks.com">
+	  <img src="/Foundation/Membership/LOGOS/DornerWorks.svg" style="width: 200px" alt="DornerWorks Ltd">
+	</a>
+      </td>
+      <td>
+	<strong>DornerWorks Ltd</strong><br/> Based in ... <br/>
+	<font color="orange">DornerWorks Ltd is provisionally endorsed as a trusted
+	service provider for seL4-based systems.</font>
+	<ul>
+	  <li><a href="https://dornerworks.com/something">Details of products and services</a></li>
+	  <li><a href="https://dornerworks.com">Home page</a></li>
+	</ul>
+      </td>
+    </tr>
     <tr>
       <td>
 	<a href="https://brkawy.com">
@@ -93,14 +115,13 @@
       </td>
     </tr>
   </table>
-
+  
 
   <h2>Trainings</h2>
   <p>
   No training has been endorsed or certified at this stage.
   <font color="orange">Consider <a href="endorsement.pml">adding yours</a>!</font>
   </p>
-  <!--
   <table>
     <tr>
       <td>
@@ -118,14 +139,12 @@
       </td>
     </tr>
   </table>
-  -->
   
   <h2>Products</h2>
   <p>
   No product has been endorsed or certified at this stage.
   <font color="orange">Consider <a href="endorsement.pml">adding yours</a>!</font>
   </p>
-  <!--
   <table>
     <tr>
       <td>
