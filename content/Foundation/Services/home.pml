@@ -8,7 +8,7 @@
   endorsed or accredited by the Foundation
 </h1>
 <div>
-  <p style="padding-bottom:10px">
+  <p style="padding-top:10px">
     seL4 is an attractive platform for building highly resilient
     systems, but to do so requires a fair degree of understanding of
     the technology. Fortunately, help is available from a growing
@@ -96,29 +96,6 @@
       </td>
     </tr>
 
-<!--
-    <tr>
-      <td>
-	<a href="https://drivers.R.us">
-	  <img src="/Foundation/Membership/LOGOS/CSIRO.jpg" style="width: 200px" alt="Drivers'R'Us">
-	</a>
-      </td>
-      <td>
-	<strong>Drivers'R'Us</strong><br/> Based in Woolloomooloo,
-	Australia, Drivers'R'Us write seL4 device drivers
-	with <tt>cat&gt;</tt> while having breakfast. The company has
-	20 years of experience with low-performance device drivers for
-	microkernels, their products are deployed on 99% of AI-enabled
-	rubber ducks worldwide.<br/>
-	<font color="orange">Drivers'R'Us is provisionally endorsed
-	for seL4 developer training.</font>
-      <ul>
-	<li><a href="Acme/">Details of products and services</a></li>
-	<li><a href="https://drivers.R.us">Home page</a></li>
-      </ul>
-      </td>
-    </tr>
- -->
   </table>
 
 
