@@ -37,7 +37,7 @@
       <li> that a particular <strong>product</strong> is helpful to the community
            for building high-assurance seL4-based systems.
     </ul>
-  
+
 
   <h2>Service Providers</h2>
   <table style="margin-left: 20px">

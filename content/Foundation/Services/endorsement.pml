@@ -24,9 +24,9 @@
     The Foundation is working on developing <strong>certification</strong>
     schemes for services, training and products.
     Until these are in place, we provide <strong>provisional endorsements</strong>.
-    All endorsed training modules are advertised <a href="here">here</a>.
+    All endorsed training modules are advertised <a href="home.pml">here</a>.
     Provisional endorsement are provided for free and to Foundation members only.
-    More info  <a href="home">here</a>.
+    More info  <a href="home.pml">here</a>.
   </p>
 
   <h2>Services</h2>
