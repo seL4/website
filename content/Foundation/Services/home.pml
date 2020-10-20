@@ -4,25 +4,40 @@
     SPDX-License-Identifier: CC-BY-SA-4.0
 -->
 <h1>
-  Professional Services <br> and Products for seL4-based Systems <br>
+  Foundation-endorsed and accredited Services, Trainings and Products for seL4-based Systems
 </h1>
 <div>
   <p>
     seL4 is an attractive platform for building highly resilient
     systems, but to do so requires a fair degree of understanding of
     the technology. Fortunately, help is available from a growing
-    number of Foundation members offering products that ease system
-    development and assurance, and provide consulting and development
-    services around seL4.
+    number of community members offering <strong>products</strong> that ease system
+    development and assurance, and provide <strong>training</strong>, consulting and development
+    <strong>services</strong> around seL4.
   </p>
   <p>
-    The Foundation is working with members on developing certification
-    programs for products and services. Until these are in place, we
-    will provide provisional endorsements of products and services,
+    The Foundation is working with members on developing <strong>certification</strong>
+    programs for services, training and products. Until these are in place, we
+    will provide <strong>provisional endorsements</strong>,
     which will lapse once the certification schemes are in place. We
-    will members with provisional endorsements in achieving full
+    will support members with provisional endorsements in achieving full
     certification.
-  </p>
+  </p>  
+  <p>  
+    The certification (or endorsement for now) will indicate:
+    <ul>
+      <li> that a particular <strong>provider</strong> has the skills and experience
+           to provide high-quality services to adopters of seL4;
+      </li>
+      <li> that a particular <strong>training</strong> is of high quality and effective
+           in providing useful skills for deploying the seL4 microkernel;
+      </li>
+      <li> that a particular <strong>product</strong> is helpful to the community
+           for building high-assurance seL4-based systems.
+    </ul>
+  </p>  
+	
+
 
   <h2>Products</h2>
   <table>
