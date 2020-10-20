@@ -40,8 +40,7 @@
 
 
   <h2>Service Providers</h2>
-  <p style="margin-left: 20px">
-  <table>
+  <table style="margin-left: 20px">
     <tr>
       <td>
 	<a href="https://dornerworks.com">
@@ -91,7 +90,6 @@
       </td>
     </tr>
   </table>
-  </p>
 
   <h2>Trainings</h2>
   <p style="margin-left: 20px">
