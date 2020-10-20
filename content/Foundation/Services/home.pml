@@ -60,7 +60,6 @@
 	</ul>
       </td>
     </tr>
-    
     <tr>
       <td>
 	<a href="https://brkawy.com">
@@ -77,8 +76,6 @@
 	</ul>
       </td>
     </tr>
-
-
     <tr>
       <td>
 	<a href="https://cog.systems">
@@ -95,7 +92,6 @@
 	</ul>
       </td>
     </tr>
-
   </table>
 
 
