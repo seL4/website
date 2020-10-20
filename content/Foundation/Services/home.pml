@@ -27,7 +27,7 @@
   <p>  
     The certification (or endorsement for now) will indicate:
     <ul>
-      <li> that a particular <strong>provider</strong> has the skills and experience
+      <li> that a particular <strong>service provider</strong> has the skills and experience
            to provide high-quality services to adopters of seL4;
       </li>
       <li> that a particular <strong>training</strong> is of high quality and effective

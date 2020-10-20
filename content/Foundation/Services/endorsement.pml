@@ -66,7 +66,7 @@
       </ul> 
   </ul>
   
-  <h2>Training</h2>
+  <h2>Trainings</h2>
   <ul>
     <li>
       <font color="orange"><strong>To get an interim endorsement</strong></font>:
