@@ -4,8 +4,8 @@
     SPDX-License-Identifier: CC-BY-SA-4.0
 -->
 <h1>
-  Services, Trainings and Products <br>
-  endorsed or accredited by the Foundation
+  Services, Training and Products <br>
+  endorsed or certified by the Foundation
 </h1>
 <div>
   <p style="padding-top:10px">
@@ -19,9 +19,9 @@
   <p>
     The Foundation is working with members on developing <strong>certification</strong>
     schemes for services, training and products. Until these are in place, we
-    provide <a href="endorsement.pml"><strong>provisional endorsements</strong></a>,
+    provide <a href="endorsement.pml"><strong>interim endorsements</strong></a>,
     which will lapse once the certification schemes are in place. We
-    will support members with provisional endorsements in achieving full
+    will support members with interim endorsements in achieving full
     certification.
   </p>
   <p>
@@ -49,7 +49,7 @@
       </td>
       <td>
 	<strong>DornerWorks Ltd</strong><br/> Based in ... <br/>
-	<span class=emph>DornerWorks Ltd is provisionally endorsed as a trusted
+	<span class=emph>DornerWorks Ltd has received an interim endorsement as a trusted
 	service provider for seL4-based systems.</span>
 	<ul>
 	  <li><a href="https://dornerworks.com/something">Details of products and services</a></li>
@@ -65,7 +65,7 @@
       </td>
       <td>
 	<strong>Breakaway Consulting</strong><br/> Based in ... <br/>
-	<span class=emph>Breakaway Consulting is provisionally endorsed as a trusted
+	<span class=emph>Breakaway Consulting has received an interim endorsement as a trusted
 	service provider for seL4-based systems.</span>
 	<ul>
 	  <li><a href="https://brkawy.com/something">Details of products and services</a></li>
@@ -81,7 +81,7 @@
       </td>
       <td>
 	<strong>Cog Systems Inc</strong><br/> Based in ... <br/>
-	<span class=emph>Cog Systems Inc is provisionally endorsed as a trusted
+	<span class=emph>Cog Systems Inc has received an interim endorsement as a trusted
 	service provider for seL4-based systems.</span>
 	<ul>
 	  <li><a href="https://cog.systems/something">Details of products and services</a></li>
@@ -91,7 +91,7 @@
     </tr>
   </table>
 
-  <h2>Trainings</h2>
+  <h2>Training</h2>
   <p style="margin-left: 20px">
   No training has been endorsed or certified at this stage.<br>
   <span class=emph>Consider adding yours!</span> <br>

@@ -14,7 +14,7 @@
   <p style="padding-top:10px">
   <strong>
     You offer professional support services for seL4-based systems? <br>
-    You offer seL4 trainings? <br>
+    You offer seL4 training? <br>
     You offer products for building high-assurance seL4-bases systems?  <br>
     <span class=emph> &#10148; Get the endorsement of the seL4 Foundation  now!</span>
   </strong>
@@ -23,9 +23,9 @@
   <p style="padding-top:10px">
     The Foundation is working on developing <strong>certification</strong>
     schemes for services, training and products.
-    Until these are in place, we provide <strong>provisional endorsements</strong>.
+    Until these are in place, we provide <strong>interim endorsements</strong>.
     All endorsed training modules are advertised <a href="home.pml">here</a>.
-    Provisional endorsement are provided for free and to Foundation members only.
+    Interim endorsement are provided for free and to Foundation members only.
     More info  <a href="home.pml">here</a>.
   </p>
 
@@ -47,7 +47,7 @@
 	    to provide high-quality services to adopters of seL4 </strong>.
 	</li>
 	<li>
-	  The provisional endorsement of an seL4 service provider will be awarded based on an assessment that the provider is:
+	  The interim endorsement of an seL4 service provider will be awarded based on an assessment that the provider is:
 	  <ul>
 	    <li>
 	      known and respected in the seL4 Community;
@@ -66,7 +66,7 @@
       </ul>
   </ul>
 
-  <h2>Trainings</h2>
+  <h2>Training</h2>
   <ul>
     <li>
       <span class=emph><strong>To get an interim endorsement</strong></span>:
@@ -109,7 +109,7 @@
 	    in providing useful skills for deploying the seL4 microkernel</strong>.
 	</li>
 	<li>
-	  The provisional endorsement of an seL4 training module will be
+	  The interim endorsement of an seL4 training module will be
 	  awarded based on an assessment of the training material
 	  (presentation material and potentially code used in hands-on
 	  training sessions), to ensure that:
@@ -148,11 +148,11 @@
 	  seL4 products include:
 	  <ul>
 	    <li>
-	      components for seL4-based systems (eg. library, device
+	      components for seL4-based systems (e.g. library, device
 	      driver, authentication service)
 	    </li>
 	    <li>
-	      developer tools (eg. compiler, static analysis tool,
+	      developer tools (e.g. compiler, static analysis tool,
 	      IDE)
 	    </li>
 	    <li>
