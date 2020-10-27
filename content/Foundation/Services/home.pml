@@ -20,12 +20,14 @@
     The Foundation is working with members on developing <strong>certification</strong>
     schemes for services, training and products. Until these are in place, we
     provide <a href="endorsement.pml"><strong>interim endorsements</strong></a>,
-    which will lapse once the certification schemes are in place. We
+    which are based on a fast and relatively shallow
+    assessment. Interim endorsements are available to seL4 Foundation
+    members only and will lapse once the (thorough) certification schemes are in place. We
     will support members with interim endorsements in achieving full
-    certification.
+    certification. Certification will be open to anyone.
   </p>
   <p>
-    The certification (or endorsement for now) will indicate:
+    The certification (for now endorsement) will indicate:
   </p>
     <ul>
       <li> that a particular <strong>service provider</strong> has the skills and experience
@@ -49,8 +51,8 @@
       </td>
       <td>
 	<strong>DornerWorks Ltd</strong><br/> Based in ... <br/>
-	<span class=emph>DornerWorks Ltd has received an interim endorsement as a trusted
-	service provider for seL4-based systems.</span>
+	<span class=emph>DornerWorks Ltd has received <em>interim endorsement</em> as a Trusted
+	Service Provider for seL4-based systems.</span>
 	<ul>
 	  <li><a href="https://dornerworks.com/something">Details of products and services</a></li>
 	  <li><a href="https://dornerworks.com">Home page</a></li>
@@ -65,8 +67,8 @@
       </td>
       <td>
 	<strong>Breakaway Consulting</strong><br/> Based in ... <br/>
-	<span class=emph>Breakaway Consulting has received an interim endorsement as a trusted
-	service provider for seL4-based systems.</span>
+	<span class=emph>Breakaway Consulting has received <em>interim endorsement</em> as a Trusted
+	Service Provider for seL4-based systems.</span>
 	<ul>
 	  <li><a href="https://brkawy.com/something">Details of products and services</a></li>
 	  <li><a href="https://brkawy.com">Home page</a></li>
@@ -81,8 +83,8 @@
       </td>
       <td>
 	<strong>Cog Systems Inc</strong><br/> Based in ... <br/>
-	<span class=emph>Cog Systems Inc has received an interim endorsement as a trusted
-	service provider for seL4-based systems.</span>
+	<span class=emph>Cog Systems Inc has received <em>interim endorsement</em> as a Trusted
+	Service Provider for seL4-based systems.</span>
 	<ul>
 	  <li><a href="https://cog.systems/something">Details of products and services</a></li>
 	  <li><a href="https://cog.systems">Home page</a></li>
