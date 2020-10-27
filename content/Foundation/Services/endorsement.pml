@@ -4,7 +4,7 @@
     SPDX-License-Identifier: CC-BY-SA-4.0
 -->
 <h1>
-  Process and guidelines to get an interim endorsement from the Foundation
+  Process and guidelines for obtaining interim endorsement from the Foundation
 </h1>
 
 
@@ -15,8 +15,8 @@
   <strong>
     You offer professional support services for seL4-based systems? <br>
     You offer seL4 training? <br>
-    You offer products for building high-assurance seL4-bases systems?  <br>
-    <span class=emph> &#10148; Get the endorsement of the seL4 Foundation  now!</span>
+    You offer products for building high-assurance seL4-based systems?  <br>
+    <span class=emph> &#10148; Apply for endorsement of the seL4 Foundation  now!</span>
   </strong>
   </p>
 
@@ -25,15 +25,15 @@
     schemes for services, training and products.
     Until these are in place, we provide <strong>interim endorsements</strong>.
     All endorsed training modules are advertised <a href="home.pml">here</a>.
-    Interim endorsement are provided for free and to Foundation members only.
+    Interim endorsements are provided for free and to Foundation members only.
     More info  <a href="home.pml">here</a>.
   </p>
 
   <h2>Services</h2>
   <ul>
     <li>
-      <span class=emph><strong>To get an interim endorsement</strong></span>:
-      Send a request to
+      <span class=emph><strong>To request interim endorsement:</strong></span>
+      Contact
       <a title="foundation@sel4.systems"
          href= "mailto:foundation@sel4.systems">
 	foundation@sel4.systems</a>
@@ -42,7 +42,7 @@
       <strong>Guidelines</strong>:
       <ul>
 	<li>
-	  The certification (or endorsement for now) will indicate
+	  The certification (for now, interim endorsement) will indicate
 	  that a particular <strong>service provider has the skills and experience
 	    to provide high-quality services to adopters of seL4 </strong>.
 	</li>
@@ -69,10 +69,10 @@
   <h2>Training</h2>
   <ul>
     <li>
-      <span class=emph><strong>To get an interim endorsement</strong></span>:
+      <span class=emph><strong>To request interim endorsement:</strong></span>
       <ul>
 	<li>
-	  Send a request to
+	  Contact
           <a title="foundation@sel4.systems"
              href= "mailto:foundation@sel4.systems">
 	    foundation@sel4.systems</a>
@@ -86,10 +86,10 @@
 	      either an unconditional endorsement,
 	    </li>
 	    <li>
-	      or an conditional endorsement pending some required changes,
+	      or a conditional endorsement subject to some required changes,
 	    </li>
 	    <li>
-	      or a list of recommended changes for a new revised submission.
+	      or a list of recommended changes for a revised submission.
 	    </li>
 	  </ul>
 	</li>
@@ -104,7 +104,7 @@
       <strong>Guidelines</strong>:
       <ul>
 	<li>
-	  The certification (or endorsement for now) will indicate
+	  The certification (for now, interim endorsement) will indicate
 	  that a particular <strong>training is of high quality and effective
 	    in providing useful skills for deploying the seL4 microkernel</strong>.
 	</li>
@@ -129,8 +129,8 @@
   <h2>Products</h2>
   <ul>
     <li>
-      <span class=emph><strong>To get an interim endorsement</strong></span>:
-      Send a request to
+      <span class=emph><strong>To request interim endorsement</strong></span>:
+      Contact
       <a title="foundation@sel4.systems"
          href= "mailto:foundation@sel4.systems">
 	foundation@sel4.systems</a>
