@@ -23,8 +23,8 @@
     verification claims.
   </p>
   <p>
-    <strong> <emph> JOIN NOW 
-      <a title="Membership" href="../Membership">HERE!</a></emph></strong>
+    <span class=join> JOIN NOW 
+      <a title="Membership" href="../Membership/join.pml">HERE!</a></span>
   </p>
 
   <a href="/images/mosaic-high.jpg">
