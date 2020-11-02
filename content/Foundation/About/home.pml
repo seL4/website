@@ -22,7 +22,7 @@
     funds for accelerating development, and ensuring clarity of
     verification claims.
   </p>
-  <p>    
+  <p>
     <span class=join> JOIN NOW 
       <a title="Membership" href="../Membership/join.pml">HERE!</a></span>
   </p>

@@ -8,8 +8,13 @@
 </h1>
 <div>
   <p>
-    Below is the list of members of the <a title="seL4 Foundation"
-    href="../About">seL4 Foundation</a>.		   
+    <strong>The <a title="seL4 Foundation"
+		   href="../About">seL4 Foundation</a>&nbsp;is now looking for members!</strong>
+  </p>
+  <p>
+    Below is the list of members of the seL4 Foundation.
+  </p>
+  <p>
     <span class=join> Add your name to the list by joining the adventure
     <a title="Membership" href="join.pml">HERE!</a></span>
   </p>
