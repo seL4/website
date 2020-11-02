@@ -23,8 +23,8 @@
     verification claims.
   </p>
   <p>
-    <strong>NEW! The seL4 Foundation is now open for business and we are
-      <a title="Membership" href="../Membership">accepting members!</a></strong>
+    <strong> <emph> JOIN NOW 
+      <a title="Membership" href="../Membership">HERE!</a></emph></strong>
   </p>
 
   <a href="/images/mosaic-high.jpg">
