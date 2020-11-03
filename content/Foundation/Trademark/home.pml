@@ -8,7 +8,11 @@
 </h1>
 
 <p>
-  The Linux Foundation has registered seL4<sup>&reg;</sup> as a
+  We encourage the use of the <a href="logo.pml">seL4<sup>&reg;</sup> name and logo</a>
+  in your work, following the usage rules below.
+</p>
+<p>
+  The Linux Foundation has registered seL4 as a
   trademark in the United States and other countries. Please use &reg;
   with the first mention of seL4 in all materials. In addition to the
   guidelines below, the Linux Foundation Trademark Usage Guidelines,
