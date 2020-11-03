@@ -72,6 +72,10 @@
           href="../Support/">Supporting next big steps for the seL4 project</a>
     </li>
     <li>
+      <a title="Logo"
+          href="../Trademark/logo.pml">seL4 Logo</a>
+    </li>
+    <li>
       <a title="Trademark"
           href="../Trademark/">seL4 Trademark</a>
     </li>
