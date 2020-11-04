@@ -9,7 +9,9 @@
 <div>
   <p>
     Below is the list of members of the <a title="seL4 Foundation"
-    href="../About">seL4 Foundation</a>. Want to be part of teh adventure?
+    href="../About">seL4 Foundation</a>. Want to be part of the adventure?
+  </p>
+  <p>
     <span class=join> JOIN NOW
       <a title="Join" href="../Join">HERE!</a></span>
   </p>
