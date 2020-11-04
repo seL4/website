@@ -22,15 +22,18 @@
     funds for accelerating development, and ensuring clarity of
     verification claims.
   </p>
-  <p>    
-    <span class=join> JOIN NOW 
-      <a title="Membership" href="../Membership/join.pml">HERE!</a></span>
+  <p>
+    <span class=join> JOIN NOW
+      <a title="Join" href="../Join">HERE!</a></span>
   </p>
 
   <a href="/images/mosaic-high.jpg">
     <img src="/images/mosaic.jpg" style="width:300px; padding-left:10px; float:right;"
       alt="seL4 foundation launch"
 	   /></a>
+  <p>
+  To learn more about the seL4 Foundation:
+  </p>
   <ul>
     <li><strong>Read the <a href="https://microkerneldude.wordpress.com/2020/04/07/the-sel4-foundation-what-and-why/">Blog post</a> about "The seL4 Foundation &mdash; What and Why"</strong>
     </li>

@@ -9,9 +9,9 @@
 <div>
   <p>
     Below is the list of members of the <a title="seL4 Foundation"
-    href="../About">seL4 Foundation</a>.		   
-    <span class=join> Add your name to the list by joining the adventure
-    <a title="Membership" href="join.pml">HERE!</a></span>
+    href="../About">seL4 Foundation</a>. Want to be part of teh adventure?
+    <span class=join> JOIN NOW
+      <a title="Join" href="../Join">HERE!</a></span>
   </p>
 </div>
 <h2>Premium Members</h2>
@@ -113,4 +113,4 @@
     </div>
   </div>
 </div>
--->  
+-->
