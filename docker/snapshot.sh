@@ -44,6 +44,11 @@ echo "::group::Fix output permissions"
 chown -R 1001:116 "$OUTPUT_SNAPSHOT_DIR"
 echo "::endgroup::"
 
+echo "::group:: Remove canonical link refs to seL4.systems for link checking"
+find "$OUTPUT_SNAPSHOT_DIR" -name "*.html" | \
+  xargs sed -i'~' -e "s|<link href=\"https://sel4.systems/.*\" rel=canonical />||g"
+echo "::endgroup::"
+
 echo "::group::Stop apache"
 apachectl stop
 echo "::endgroup::"
