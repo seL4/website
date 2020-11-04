@@ -11,6 +11,25 @@ templating engine based on
 
 It requires a python 3 mod_python for Apache2.
 
+
+## Docker
+
+The directory `docker/` provides a docker file and some scripts to host
+the website inside a container. It is also used for GitHub pull request
+checks and preview.
+
+To use the docker container locally, install docker and run
+
+```sh
+cd docker
+make
+```
+
+This will build the container (takes a while the first time), and then
+run it such that you can preview the website on port 8080 on your local
+machine.
+
+
 ## Licences
 Files in this repository (with a few exceptions) are released under
 standard open source licences, identified by [SPDX Licence
