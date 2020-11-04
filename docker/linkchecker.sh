@@ -19,6 +19,7 @@ mkdir -p "$OUTPUT_DIR"
 chmod go+rwx "$OUTPUT_DIR"
 
 linkchecker \
+    --allow-root \
     --no-status \
     --ignore-url="print$" \
     --ignore-url="/blob/" \
