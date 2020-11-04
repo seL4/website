@@ -42,51 +42,75 @@
 
 
   <h2>Service Providers</h2>
-  <table style="margin-left: 20px">
+  <table style="margin-left: 20px" >
     <tr>
-      <td>
+      <td style="padding:15px">
 	<a href="https://dornerworks.com">
 	  <img src="/Foundation/Membership/LOGOS/DornerWorks.svg" style="width: 200px" alt="DornerWorks Ltd">
 	</a>
       </td>
       <td>
-	<strong>DornerWorks Ltd</strong><br/> Based in ... <br/>
+	<strong>DornerWorks Ltd</strong><br/>
+         Innovative companies are building products on a trusted
+         software base with the guidance of DornerWorks engineers. As
+         a founding member of the seL4 Foundation, DornerWorks can
+         accelerate the integration of seL4 as the trusted software
+         base for your products.
+        <br/>
 	<span class=emph>DornerWorks Ltd has received <em>interim endorsement</em> as a Trusted
 	Service Provider for seL4-based systems.</span>
 	<ul>
-	  <li><a href="https://dornerworks.com/something">Details of products and services</a></li>
-	  <li><a href="https://dornerworks.com">Home page</a></li>
+	  <li><a href="dornerworks.pml">Details of products and services</a></li>
+	  <li><a href="https://DornerWorks.com">https://DornerWorks.com</a></li>
+	  <li><a href="https://dornerworks.com/solutions/embedded-virtualization/sel4-microkernel/">
+	         DornerWorks seL4 Microkernel Engineering Services</a></li>
 	</ul>
       </td>
     </tr>
     <tr>
-      <td>
+      <td style="padding:15px">
 	<a href="https://brkawy.com">
 	  <img src="/Foundation/Membership/LOGOS/Brkawy.png" style="width: 200px" alt="Breakaway Consulting">
 	</a>
       </td>
       <td>
-	<strong>Breakaway Consulting</strong><br/> Based in ... <br/>
+	<strong>Breakaway Consulting</strong><br/>
+
+        Sydney-based company Breakaway Consulting offers consulting
+        services on architecture, design and implementation of
+        seL4-based systems.
+
+        Through Founder and Managing Director Ben Leslie, Breakaway
+        comes with 20 years of experience in L4 microkernels and
+        systems based on various L4 kernels. Prior to founding
+        Breakaway, Ben was a student with what is now the Trustworthy
+        Systems Group, and then VP Engineering of Open Kernel Labs.
+        <br/>
 	<span class=emph>Breakaway Consulting has received <em>interim endorsement</em> as a Trusted
 	Service Provider for seL4-based systems.</span>
 	<ul>
-	  <li><a href="https://brkawy.com/something">Details of products and services</a></li>
 	  <li><a href="https://brkawy.com">Home page</a></li>
 	</ul>
       </td>
     </tr>
     <tr>
-      <td>
+      <td style="padding:15px">
 	<a href="https://cog.systems">
 	  <img src="/Foundation/Membership/LOGOS/Cog.jpg" style="width: 200px" alt="Cog Systems Inc">
 	</a>
       </td>
       <td>
-	<strong>Cog Systems Inc</strong><br/> Based in ... <br/>
+	<strong>Cog Systems Inc</strong><br/>
+        As the leading integrator of type-1 visualization solutions
+        based on seL4, Cog leverages modularity to isolate critical
+        functions and services on connected devices.  All of this
+        is available for the IoT market with the flexibility to run
+        all applications effectively and securely.
+	<br/>
 	<span class=emph>Cog Systems Inc has received <em>interim endorsement</em> as a Trusted
 	Service Provider for seL4-based systems.</span>
 	<ul>
-	  <li><a href="https://cog.systems/something">Details of products and services</a></li>
+	  <li><a href="cog.pml">Details of products and services</a></li>
 	  <li><a href="https://cog.systems">Home page</a></li>
 	</ul>
       </td>
