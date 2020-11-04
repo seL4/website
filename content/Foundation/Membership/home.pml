@@ -8,20 +8,12 @@
 </h1>
 <div>
   <p>
-    <strong>The <a title="seL4 Foundation"
-		   href="../About">seL4 Foundation</a>&nbsp;is now looking for members!</strong>
+    Below is the list of members of the <a title="seL4 Foundation"
+    href="../About">seL4 Foundation</a>. Want to be part of the adventure?
   </p>
   <p>
-    Organisations and individuals can now join. Please review the <a title="Participation Agreement" href="Participation_Agreement_Sample.pdf">seL4 Foundation Fund Participation Agreement</a>.
-  </p>
-
-  <p>You can join
-    via the Linux Foundation's <a title="Signup page" href="https://joinnow.platform.linuxfoundation.org/?project=seL4">online signup page</a>. Note that seL4 Foundation members must be (or become) members of the Linux Foundation, the on-line process will include your Linux Foundation membership if you are not already a member.
-  </p>
-  <p>Questions? Email us at
-    <a title="foundation@sel4.systems"
-       href=
-       "mailto:foundation@sel4.systems">foundation@sel4.systems</a>
+    <span class=join> JOIN NOW
+      <a title="Join" href="../Join">HERE!</a></span>
   </p>
 </div>
 <h2>Premium Members</h2>
@@ -123,4 +115,4 @@
     </div>
   </div>
 </div>
--->  
+-->

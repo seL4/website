@@ -267,3 +267,14 @@ a.divLink {
   font-size:15px;
   font-weight:bold;
 }
+
+.emph {
+    color:#668B37;  /* greenDark */
+}
+
+
+.join {
+    color:#668B37;  /* greenDark */
+    font-size:20px;
+    font-weight: bold;
+}
