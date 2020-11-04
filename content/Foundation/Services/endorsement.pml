@@ -16,6 +16,7 @@
     You offer professional support services for seL4-based systems? <br>
     You offer seL4 training? <br>
     You offer products for building high-assurance seL4-based systems?  <br>
+    <span class=emph> &#10148; <a href="../Join">Join</a> the Foundation, and</span><br>
     <span class=emph> &#10148; Apply for endorsement of the seL4 Foundation  now!</span>
   </strong>
   </p>
