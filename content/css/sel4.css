@@ -29,6 +29,7 @@ a:hover {
 footer {
 	padding-top: 32px;
 	padding-bottom: 16px;
+  text-align: center;
 }
 
 .jumbotron {
