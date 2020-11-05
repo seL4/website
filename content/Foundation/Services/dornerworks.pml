@@ -21,7 +21,7 @@ A <a href="home.pml">Trusted Service Provider</a> for seL4-based systems
       <td>
 
          DornerWorks helps product makers turn their ideas into
-         realitywith FPGA, hardware, and embedded software engineering
+         reality with FPGA, hardware, and embedded software engineering
          expertise. We accelerate your product development and lower
          risk for adopting advanced technologies. One of our
          specialties is seL4 microkernel-based
@@ -52,7 +52,10 @@ A <a href="home.pml">Trusted Service Provider</a> for seL4-based systems
   </ul>
 </li>
 <li>
-  Guest OS and hardware portingVirtualization and hypervisor distributions
+  Guest OS and hardware porting
+</li>
+<li>
+  Virtualization and hypervisor distributions
 </li>
 <li>
   FPGA platforms
