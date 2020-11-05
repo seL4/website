@@ -27,22 +27,22 @@ a:hover {
 }
 
 footer {
-	padding-top: 32px;
-	padding-bottom: 16px;
+  padding-top: 32px;
+  padding-bottom: 16px;
   text-align: center;
 }
 
 .jumbotron {
-	/*color: #000;
-	background-image: url('/images/sel4-banner.jpg');
-	background-position: 80% 0%;*/
+  /*color: #000;
+  background-image: url('/images/sel4-banner.jpg');
+  background-position: 80% 0%;*/
 }
 
 @media print {
-	#site-navigation { display: none; }
-	#site-header a[href]:after {
-	    content: none;
-	}
+  #site-navigation { display: none; }
+  #site-header a[href]:after {
+      content: none;
+  }
 }
 
 table.alttable tr:nth-child(even) {
