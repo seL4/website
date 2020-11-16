@@ -159,7 +159,7 @@
       training session. Keep this in mind when trying to base your own
       training on AOS!
     </li>
-    
+
     </ul>
   </li>
   </ul>
@@ -170,18 +170,4 @@
   <span class=emph>Consider adding yours!</span> <br>
   See process  <a href="endorsement.pml">here</a>.
   </p>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 </div>
