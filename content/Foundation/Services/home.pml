@@ -120,11 +120,15 @@
   <h2>Training</h2>
   <p style="margin-left: 20px">
   <ul>
-  <li> <strong>AOS</strong>
+  <li> <strong>Advanced Operating Systems at UNSW</strong>
     <ul>
     <li>
-     AOS is UNSW’s Advanced Operating Systems course, given since
-     1997, and now based on seL4 and with recorded lectures.
+     COMP9424 &ldquo;Advanced Operating Systems&rdquo; (AOS) is a
+     highly advanced course at <a href="https://unsw.edu.au">UNSW
+     Sydney</a>, taught since
+     1997.</li>
+    <li>AOS has been based on seL4 for years, and as of 2020,
+     recordings of all seL4-related lectures are available on YouTube.
     </li>
     <li>
      <span class=emph>AOS has received <em>interim endorsement</em> as
@@ -146,8 +150,16 @@
 
     The source code for the project is on GitHub: <a
     href="https://github.com/SEL4PROJ/AOS-manifest">https://github.com/SEL4PROJ/AOS-manifest</a>
-
-   </li>
+    </li>
+    <li>
+      But note that this is a full-trimester course where students
+      learn about microkernels in general, and seL4 in particular, in
+      great detail. This means that the lecture material goes to much
+      greater depth than is appropriate for a day- or week-long
+      training session. Keep this in mind when trying to base your own
+      training on AOS!
+    </li>
+    
     </ul>
   </li>
   </ul>
