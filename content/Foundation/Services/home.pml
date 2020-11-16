@@ -119,29 +119,38 @@
 
   <h2>Training</h2>
   <p style="margin-left: 20px">
-  No training has been endorsed or certified at this stage.<br>
-  <span class=emph>Consider adding yours!</span> <br>
-  See process  <a href="endorsement.pml">here</a>.
-  </p>
-  <!--
-  <table>
-    <tr>
-      <td>
-	<a href="https://acme.com">
-	  <img src="http://clipart-library.com/images/ki85ybA7T.jpg" style="width: 200px" alt="SailOS">
-	</a>
-      </td>
-      <td>
-	<strong>SnailOS</strong><br/> Is a highly secure OS based on
-	cutting-edge time-dilation technology developed and marketed
-	by <a href="https://acme.com">SlugCorp</a>. It supports
-	embedded systems using Arm and RISC-V processors.<br/>
-	<span class=emph>SnailOS is provisionally endorsed on Arm
-	A59-based Rubik's Cubes.</span>
-      </td>
-    </tr>
-  </table>
-  -->
+  <ul>
+  <li> <strong>AOS</strong>
+    <ul>
+    <li>
+     AOS is UNSW’s Advanced Operating Systems course, given since
+     1997, and now based on seL4 and with recorded lectures.
+    </li>
+    <li>
+     <span class=emph>AOS has received <em>interim endorsement</em> as
+     an seL4 training.</span>
+    </li>
+    <li>
+
+    The lecture slides, and links to lecture recordings on YouTube are
+    available at <a
+    href="https://www.cse.unsw.edu.au/~cs9242/20/lectures.shtml">https://www.cse.unsw.edu.au/~cs9242/20/lectures.shtml</a>.
+    </li>
+    <li>
+
+    The project specifications for the hands-on component are at <a
+    href="https://www.cse.unsw.edu.au/~cs9242/20/project/index.shtml">https://www.cse.unsw.edu.au/~cs9242/20/project/index.shtml</a>
+
+    </li>
+    <li>
+
+    The source code for the project is on GitHub: <a
+    href="https://github.com/SEL4PROJ/AOS-manifest">https://github.com/SEL4PROJ/AOS-manifest</a>
+
+   </li>
+    </ul>
+  </li>
+  </ul>
 
   <h2>Products</h2>
   <p style="margin-left: 20px">
@@ -149,25 +158,6 @@
   <span class=emph>Consider adding yours!</span> <br>
   See process  <a href="endorsement.pml">here</a>.
   </p>
- <!--
-  <table>
-    <tr>
-      <td>
-	<a href="https://acme.com">
-	  <img src="http://clipart-library.com/images/ki85ybA7T.jpg" style="width: 200px" alt="SailOS">
-	</a>
-      </td>
-      <td>
-	<strong>SnailOS</strong><br/> Is a highly secure OS based on
-	cutting-edge time-dilation technology developed and marketed
-	by <a href="https://acme.com">SlugCorp</a>. It supports
-	embedded systems using Arm and RISC-V processors.<br/>
-	<span class=emph>SnailOS is provisionally endorsed on Arm
-	A59-based Rubik's Cubes.</span>
-      </td>
-    </tr>
-  </table>
--->
 
 
 
