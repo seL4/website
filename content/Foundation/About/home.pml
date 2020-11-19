@@ -68,6 +68,10 @@
           href="../Membership">seL4 Foundation Membership</a>
     </li>
     <li>
+      <a title="Endorsed and certified services, training and products"
+          href="../Services/">Endorsed and certified services, training and products</a>
+    </li>
+    <li>
       <a title="Supporting next big steps for the seL4 project"
           href="../Support/">Supporting next big steps for the seL4 project</a>
     </li>
