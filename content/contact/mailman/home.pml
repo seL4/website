@@ -3,5 +3,5 @@
     SPDX-License-Identifier: CC-BY-SA-4.0
 -->
 <%
-psp.redirect('/lists/listinfo/', permanent=True)
+psp.redirect('https://lists.sel4.systems/postorius/lists/', permanent=True)
 %>

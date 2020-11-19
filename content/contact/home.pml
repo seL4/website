@@ -16,7 +16,7 @@
 <h2>Information and Announcements</h2>
 
 <ul>
-<li><a href="/lists/listinfo/announce">Announce mailing list</a> announcements about seL4 (low volume list)</li>
+<li><a href="https://lists.sel4.systems/postorius/lists/announce.sel4.systems/">Announce mailing list</a> announcements about seL4 (low volume list)</li>
 <li><a href="https://microkerneldude.wordpress.com/category/sel4/">Blog</a></li>
 </ul>
 
@@ -26,7 +26,7 @@
 Discussion about using and developing seL4 (questions, suggestions, updates, etc.)
 </p>
 <ul>
-<li><a href="/lists/listinfo/devel">Developer mailing list</a></li>
+<li><a href="https://lists.sel4.systems/postorius/lists/devel.sel4.systems/">Developer mailing list</a></li>
 <li><a href="https://sel4.discourse.group/">Discourse forums</a></li>
 <li><a href="https://mattermost.ts.data61.csiro.au/sel4-external/">Mattermost chat</a></li>
 <li>IRC: we used to have an IRC channel, but we no longer monitor that, so do not recommend using it.</li>
@@ -38,7 +38,7 @@ RFC (request for comments) proposing new features for seL4
 <ul>
 <li><a href="https://docs.sel4.systems/processes/rfc-process">Information about the RFC process</a></li>
 <li><a href="https://sel4.atlassian.net/browse/RFC">RFC JIRA</a></li>
-<li><a href="https://sel4.systems/lists/listinfo/rfc">RFC announcement mailing list</a></li>
+<li><a href="https://lists.sel4.systems/postorius/lists/rfc.sel4.systems/">RFC announcement mailing list</a></li>
 </ul>
 
 <p>
