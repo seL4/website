@@ -133,7 +133,7 @@
 	1997. Since 2011 the course has been based on seL4, and as of
 	2020, recordings of all seL4-related lectures
 	are <a href="https://www.youtube.com/playlist?list=PLbSaCpDlfd6qLbEsKquVo3--0gwYBmrUV">available
-	on YouTube</a>. 
+	on YouTube</a>.
         <br/>
 	<span class=emph>UNSW's AOS has received <em>interim endorsement</em> as
 	  seL4 training.</span>
@@ -151,15 +151,15 @@
 	    The source code for the project is on
 	    GitHub: <a href="https://github.com/SEL4PROJ/AOS-manifest">https://github.com/SEL4PROJ/AOS-manifest</a>.
 	  </li>
-	  <li>
-	    But note that this is a full-trimester course where students
-	    learn about microkernels in general, and seL4 in particular, in
-	    great detail. This means that the lecture material goes to much
-	    greater depth than is appropriate for a day- or week-long
-	    training session. Keep this in mind when trying to base your own
-	    training on AOS!
-	  </li>
 	</ul>
+	<p>
+	  Note that this is a full-trimester course where students
+	  learn about microkernels in general, and seL4 in particular, in
+	  great detail. This means that the lecture material goes to much
+	  greater depth than is appropriate for a day- or week-long
+	  training session. Keep this in mind when trying to base your own
+	  training on AOS!
+	</p>
       </td>
     </tr>
   </table>
