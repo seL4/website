@@ -118,51 +118,51 @@
   </table>
 
   <h2>Training</h2>
-  <p style="margin-left: 20px">
-  <ul>
-  <li> <strong>Advanced Operating Systems at UNSW</strong>
-    <ul>
-    <li>
-     COMP9424 &ldquo;Advanced Operating Systems&rdquo; (AOS) is a
-     highly advanced course at <a href="https://unsw.edu.au">UNSW
-     Sydney</a>, taught since
-     1997.</li>
-    <li>AOS has been based on seL4 for years, and as of 2020,
-     recordings of all seL4-related lectures are available on YouTube.
-    </li>
-    <li>
-     <span class=emph>AOS has received <em>interim endorsement</em> as
-     an seL4 training.</span>
-    </li>
-    <li>
-
-    The lecture slides, and links to lecture recordings on YouTube are
-    available at <a
-    href="https://www.cse.unsw.edu.au/~cs9242/20/lectures.shtml">https://www.cse.unsw.edu.au/~cs9242/20/lectures.shtml</a>.
-    </li>
-    <li>
-
-    The project specifications for the hands-on component are at <a
-    href="https://www.cse.unsw.edu.au/~cs9242/20/project/index.shtml">https://www.cse.unsw.edu.au/~cs9242/20/project/index.shtml</a>
-
-    </li>
-    <li>
-
-    The source code for the project is on GitHub: <a
-    href="https://github.com/SEL4PROJ/AOS-manifest">https://github.com/SEL4PROJ/AOS-manifest</a>
-    </li>
-    <li>
-      But note that this is a full-trimester course where students
-      learn about microkernels in general, and seL4 in particular, in
-      great detail. This means that the lecture material goes to much
-      greater depth than is appropriate for a day- or week-long
-      training session. Keep this in mind when trying to base your own
-      training on AOS!
-    </li>
-
-    </ul>
-  </li>
-  </ul>
+  <table style="margin-left: 20px" >
+    <tr>
+      <td style="padding:15px">
+	<a href="https://unsw.edu.au">
+	  <img src="/Foundation/Membership/LOGOS/UNSW.svg"
+	  style="width: 200px" alt="UNSW Sydney">
+	</a>
+      </td>
+      <td>
+	<strong>Advanced Operating Systems at UNSW</strong><br/>
+	COMP9424 &ldquo;Advanced Operating Systems&rdquo; (AOS) is a
+	highly advanced course at UNSW Sydney, taught since
+	1997. Since 2011 the course has been based on seL4, and as of
+	2020, recordings of all seL4-related lectures
+	are <a href="https://www.youtube.com/playlist?list=PLbSaCpDlfd6qLbEsKquVo3--0gwYBmrUV">available
+	on YouTube</a>. 
+        <br/>
+	<span class=emph>UNSW's AOS has received <em>interim endorsement</em> as
+	  seL4 training.</span>
+	<ul>
+	  <li>
+	    The lecture slides, and links to lecture recordings on
+	    YouTube are available
+	    at <a href="https://www.cse.unsw.edu.au/~cs9242/20/lectures.shtml">https://www.cse.unsw.edu.au/~cs9242/20/lectures.shtml</a>.
+	  </li>
+	  <li>
+	    The project specifications for the hands-on component are
+	    at <a href="https://www.cse.unsw.edu.au/~cs9242/20/project/index.shtml">https://www.cse.unsw.edu.au/~cs9242/20/project/index.shtml</a>.
+	  </li>
+	  <li>
+	    The source code for the project is on
+	    GitHub: <a href="https://github.com/SEL4PROJ/AOS-manifest">https://github.com/SEL4PROJ/AOS-manifest</a>.
+	  </li>
+	  <li>
+	    But note that this is a full-trimester course where students
+	    learn about microkernels in general, and seL4 in particular, in
+	    great detail. This means that the lecture material goes to much
+	    greater depth than is appropriate for a day- or week-long
+	    training session. Keep this in mind when trying to base your own
+	    training on AOS!
+	  </li>
+	</ul>
+      </td>
+    </tr>
+  </table>
 
   <h2>Products</h2>
   <p style="margin-left: 20px">
