@@ -121,7 +121,7 @@ jobs:
           MSG="${MSG//'%'/'%25'}"
           MSG="${MSG//$'\n'/'%0A'}"
           MSG="${MSG//$'\r'/'%0D'}"
-          echo "::set-env name=MSG::$MSG"
+          echo "MSG=$MSG" >> $GITHUB_ENV
       - name: Print message
         run: |
           echo "$MSG"
