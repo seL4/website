@@ -103,7 +103,7 @@
   <div class="sponsor">
     <div class="sponsor-pic">
       <a href="https://www.rtx.com">
-	<img src="LOGOS/raytheontechnologies.svg" style="width: 200px" alt="Raytheon logo">
+	<img src="LOGOS/raytheontechnologies.svg" style="width: 300px" alt="Raytheon logo">
       </a>
     </div>
     <div class="sponsor-name">
