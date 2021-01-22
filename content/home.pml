@@ -13,6 +13,34 @@
   Open source &amp; community-supported under the seL4 Foundation.
 </div>
 
+
+
+
+
+<a href="news.pml">
+<div class="news">
+<div class="news-clearfix">
+  <div class="news-column news-title">
+  News
+  </div>
+
+  <div class="news-column news-content">
+    <ul>
+      <li>
+	 <strong> 30 Jan 2021: Penten joins the seL4 Foundation! </strong>
+      </li>
+      <li>
+	 <strong> 29 Jan 2021: Raytheon joins the seL4 Foundation! </strong>
+      </li>
+      <li>
+	 ...
+      </li>
+    </ul>
+  </div>
+</div>
+</div>
+</a>
+
 <div class="homepage_grid">
   <div class="homepage_item">
     <a class="divLink" href="/About/"></a>
