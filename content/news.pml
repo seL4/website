@@ -93,7 +93,7 @@
   Foundation.  Below you can find links to release notes with updates
   to other supporting projects to come before the end of the year.
 
-  Versioned Releases:
+  Versioned Releases:</p>
   <ul>
   <li>
   seL4 12.0.0 ~ <a href="https://docs.sel4.systems/releases/sel4/12.0.0">https://docs.sel4.systems/releases/sel4/12.0.0</a>
@@ -107,7 +107,7 @@
   </ul>
 
 
- </p>
+ 
 </div>
 
 <!----------------------------------------------------------->
@@ -317,7 +317,7 @@ post</a>.
    post</a> about "The seL4 Foundation &mdash; What and Why", and in
    the press releases from <a
    href="https://www.linuxfoundation.org/press-release/2020/04/sel4-microkernel-optimized-for-security-gets-support-of-linux-foundation/">the
-   Linux Foundation</a></strong> and from <a
+   Linux Foundation</a> and from <a
    href="https://www.csiro.au/en/News/News-releases/2020/seL4-developers-create-open-source-foundation">CSIRO's
    Data61</a>.
   </p>
