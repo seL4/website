@@ -73,7 +73,7 @@
   <div class="sponsor">
     <div class="sponsor-pic">
       <a href="https://cog.systems/">
-	<img src="LOGOS/Cog.jpg" style="width: 200px" alt="Cog logo">
+	<img src="LOGOS/Cog.jpg" style="width: 150px" alt="Cog logo">
       </a>
     </div>
     <div class="sponsor-name">
