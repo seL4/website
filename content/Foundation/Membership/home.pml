@@ -102,6 +102,16 @@
   </div>
   <div class="sponsor">
     <div class="sponsor-pic">
+      <a href="https://www.penten.com">
+	<img src="LOGOS/Penten.svg" style="width: 100px" alt="Penten logo">
+      </a>
+    </div>
+    <div class="sponsor-name">
+      Penten Pty Ltd
+    </div>
+  </div>
+  <div class="sponsor">
+    <div class="sponsor-pic">
       <a href="https://www.rtx.com">
 	<img src="LOGOS/raytheontechnologies.svg" style="width: 300px" alt="Raytheon logo">
       </a>
