@@ -12,24 +12,6 @@
 
 
 
-<!----------------------------------------------------------->
-
-<!--
-<div class="news-item">
-  30 Jan 2021: Penten joins the seL4 Foundation!
-</div>
-<div>
- <p>
-    blah blah blah blah blah blah blah blah blah blah blah blah blah
-    blah blah blah blah blah blah blah blah blah blah blah blah blah
-    blah blah blah blah blah blah blah blah blah blah blah blah blah
-    blah blah blah blah blah blah blah blah blah blah blah blah blah
-    blah blah blah blah blah blah blah blah blah blah blah blah blah
-    blah blah blah blah blah blah blah
- </p>
-</div>
--->
-
 
 
 <!----------------------------------------------------------->
@@ -54,6 +36,17 @@
  </p>
 </div>
 -->
+
+<!----------------------------------------------------------->
+
+<div class="news-item">
+  8 Feb 2021: Penten joins the seL4 Foundation
+</div>
+<div>
+ <p>
+    The seL4 Foundation welcomes <a href="https://www.penten.com">Penten Pty Ltd</a> as our newest member. Penten is based in Canberra, Australia, and specialises in secure communications technology and artificial intelligence. Penten has been developing seL4-based products for a number of years, some of which are in daily use in multiple defence forces.
+ </p>
+</div>
 
 <!----------------------------------------------------------->
 <div class="news-item">
