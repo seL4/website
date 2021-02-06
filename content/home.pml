@@ -32,7 +32,7 @@
       </li>
       -->
       <li>
-	 <strong> 8 Feb 2021: Penten joins the seL4 Foundation! </strong>
+	 <strong> 8 Feb 2021: Penten joins the seL4 Foundation </strong>
       </li>
       <li>
         <strong> 31 Dec 2020: seL4 YouTube Channel</strong>
