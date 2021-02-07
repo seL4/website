@@ -9,7 +9,7 @@
   responsible for overseeing all technical aspects of the seL4 project
   (technical direction, code of conduct, procedures, workflows,
   quality control, etc). It is made up of seL4 developers, proof engineers,
-  and technical leaders. 
+  and technical leaders.
   Their role is described in detail in the
     <a title="seL4 Foundation Technical Charter"
        href="../Governance/seL4_Foundation_Technical_Charter.pdf">seL4
@@ -127,6 +127,7 @@ The following meetings and decisions have so far been recorded:</p>
       the TSC</a></li>
   <li>2020-05-21: <a href="notes/vote-2020-05-21.pdf">Email vote</a> for invitation
       to reviewer role.</li>
+  <li>2021-01-29: <a href="notes/tsc-meeting-2021-01-29.pdf">2nd TSC meeting</a></li>
 </ul>
 
 <h3>Joining the TSC</h3>
