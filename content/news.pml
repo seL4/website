@@ -40,6 +40,60 @@
 <!----------------------------------------------------------->
 
 <div class="news-item">
+  11 Feb 2021: seL4 Foundation endorses service providers
+</div>
+<div>
+ <p>
+
+
+ The seL4 Foundation has commenced providing interim endorsement for
+ <strong>trusted service providers</strong> for seL4. These may apply
+ to consulting and development services as well as for training. In a
+ first step, the Foundation has given interim endorsement to the
+ following trusted service providers (in the order of approval):
+
+ <ul>
+ <li>
+   <a href="https://dornerworks.com/">DornerWorks Ltd</a>
+ </li>
+ <li>
+ <a href="https://brkawy.com/">Breakaway Consulting Pty Ltd</a>
+ </li>
+ <li>
+ <a href="https://cog.systems/">Cog Systems Inc</a>
+ </li>
+ </ul>
+
+Interim endorsement is intended to lead to full certification; the
+Foundation will work with interim endorsees and the general membership
+on developing certification schemes. <a
+href="/Foundation/Services/">More detail</a>.
+
+</p>
+
+<center>
+ <p>
+   <a href="https://dornerworks.com/.com">
+   <img src="Foundation/Membership/LOGOS/DornerWorks.svg"
+   style="width:15%; align:center; padding-left:1em"
+   alt="DornerWorks logo">
+   </a>
+   <a href="https://brkawy.com/">
+   <img src="Foundation/Membership/LOGOS/Brkawy.png"
+   style="width:15%; padding-left:1em"
+   alt="Breakaway Consulting logo">
+   </a>
+   <a href="https://cog.systems/">
+   <img src="Foundation/Membership/LOGOS/Cog.jpg"
+   style="width:15%; padding-left:1em"
+   alt="Cog logo">
+   </a>
+</center>
+</p>
+</div>
+<!----------------------------------------------------------->
+
+<div class="news-item">
   8 Feb 2021: Penten joins the seL4 Foundation
 </div>
 <div>
