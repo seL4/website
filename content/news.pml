@@ -71,11 +71,10 @@ href="/Foundation/Services/">More detail</a>.
 
 </p>
 
-<center>
- <p>
+<p>
    <a href="https://dornerworks.com/.com">
    <img src="Foundation/Membership/LOGOS/DornerWorks.svg"
-   style="width:15%; align:center; padding-left:1em"
+   style="width:15%; padding-left:1em"
    alt="DornerWorks logo">
    </a>
    <a href="https://brkawy.com/">
@@ -88,7 +87,6 @@ href="/Foundation/Services/">More detail</a>.
    style="width:15%; padding-left:1em"
    alt="Cog logo">
    </a>
-</center>
 </p>
 </div>
 <!----------------------------------------------------------->
