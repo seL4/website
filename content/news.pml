@@ -61,7 +61,7 @@
  <a href="https://cog.systems/">Cog Systems Inc</a>
  </li>
  </ul>
- 
+
  <p>
  Interim endorsement is intended to lead to full certification; the
  Foundation will work with interim endorsees and the general
