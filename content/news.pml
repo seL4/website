@@ -70,7 +70,7 @@
  </p>
 
  <p>
-   <a href="https://dornerworks.com/.com">
+   <a href="https://dornerworks.com/">
    <img src="Foundation/Membership/LOGOS/DornerWorks.svg"
    style="width:15%; padding-left:1em"
    alt="DornerWorks logo">
@@ -160,7 +160,7 @@
 <div>
  <p>
 
-  The <a href="https://www.sel4-us.org/summit2020/">3rd seL4
+  The <a href="http://www.sel4-us.org/summits/2020-summit/">3rd seL4
   Summit</a> will take place (virtually) on 15–18 November (US East
   Coast time).  The program features a tutorial and 3 days packed with
   great talks and panels.
