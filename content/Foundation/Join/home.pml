@@ -93,7 +93,7 @@
 	     style="background-image:none;background:#EBEEF5;">
           <h2 class="panel-title"><strong>General Benefits</strong></h2>
 	</div>
-        <div class="panel-body"">
+        <div class="panel-body">
 	     <ul>
 	     <li>
 	     Be associated with the world's most advanced, and most
