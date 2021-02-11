@@ -40,7 +40,7 @@
     <div class="col-xs-12 col-sm-4 col-lg-4">
       <div class="panel panel-default">
         <div class="panel-heading"
-	     style="background-image:none;background:#385378;color:white">
+	     style="background-image:none;background:#385378;color:white;">
           <h2 class="panel-title"><strong>Premium</strong></h2>
 	</div>
         <div class="panel-body">
@@ -53,7 +53,7 @@
     <div class="col-xs-12 col-sm-4 col-lg-4">
       <div class="panel panel-default">
         <div class="panel-heading"
-	     style="background-image:none;background:#8897AE;color:white">
+	     style="background-image:none;background:#8897AE;color:white;">
           <h2 class="panel-title"><strong>General</strong></h2>
 	</div>
         <div class="panel-body">One seat as a class</div>
@@ -69,7 +69,7 @@
     <div class="col-xs-12 col-sm-4 col-lg-4">
       <div class="panel panel-default">
         <div class="panel-heading"
-	     style="background-image:none;background:#D6DBE4;color:white">
+	     style="background-image:none;background:#D6DBE4;color:white;">
           <h2 class="panel-title"><strong>Associate</strong></h2>
 	 </div>
         <div class="panel-body">No voting right</div>
@@ -90,7 +90,7 @@
     <div class="col-xs-12 col-sm-12 col-lg-12">
       <div class="panel panel-default">
         <div class="panel-heading"
-	     style="background-image:none;background:#EBEEF5">
+	     style="background-image:none;background:#EBEEF5;">
           <h2 class="panel-title"><strong>General Benefits</strong></h2>
 	</div>
         <div class="panel-body"">
@@ -122,7 +122,7 @@
     <div class="col-xs-12 col-sm-3 col-lg-3">
       <div class="panel panel-default">
         <div class="panel-heading"
-	     style="background-image:none;background:#FFCA5F">
+	     style="background-image:none;background:#FFCA5F;">
           <h2 class="panel-title"><strong>Adopters</strong></h2>
 	</div>
         <div class="panel-body">
@@ -137,7 +137,7 @@
     <div class="col-xs-12 col-sm-3 col-lg-3">
       <div class="panel panel-default">
         <div class="panel-heading"
-	     style="background-image:none;background:#FFCA5F">
+	     style="background-image:none;background:#FFCA5F;">
           <h2 class="panel-title"><strong>Processor manufacturers</strong></h2>
 	</div>
         <div class="panel-body">
@@ -152,7 +152,7 @@
     <div class="col-xs-12 col-sm-3 col-lg-3">
       <div class="panel panel-default">
         <div class="panel-heading"
-	     style="background-image:none;background:#FFCA5F">
+	     style="background-image:none;background:#FFCA5F;">
           <h2 class="panel-title"><strong>Service providers</strong></h2>
 	</div>
         <div class="panel-body">
@@ -169,7 +169,7 @@
     <div class="col-xs-12 col-sm-3 col-lg-3">
       <div class="panel panel-default">
         <div class="panel-heading"
-	     style="background-image:none;background:#FFCA5F">
+	     style="background-image:none;background:#FFCA5F;">
           <h2 class="panel-title"><strong>Universities and public-sector</strong></h2>
 	</div>
         <div class="panel-body">
