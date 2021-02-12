@@ -26,16 +26,11 @@
 
   <div class="news-column news-content">
     <ul>
-      <!--
       <li>
-	 <strong> 29 Jan 2021: Raytheon joins the seL4 Foundation! </strong>
+        <strong> 11 Feb 2021: seL4 Foundation endorses service providers</strong>
       </li>
-      -->
       <li>
 	 <strong> 8 Feb 2021: Penten joins the seL4 Foundation </strong>
-      </li>
-      <li>
-        <strong> 31 Dec 2020: seL4 YouTube Channel</strong>
       </li>
       <li>
 	 More.
