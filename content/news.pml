@@ -55,6 +55,7 @@
    Service Provider to <a href="http://hensoldt-cyber.com/">HENSOLDT
    Cyber</a>, for consulting and development services for seL4-based
    systems. More on:
+</p>
 
    <ul>
    <li>
@@ -66,7 +67,6 @@
    Foundation’s Interim Endorsement program</a>.
    </li>
    </ul>
-</p>
 </div>
 <!----------------------------------------------------------->
 
