@@ -24,7 +24,7 @@
  <p>
 
    <img src="Foundation/Membership/LOGOS/raytheontechnologies.svg"
-   style="width: 400px;  padding-left:10px;  float:right"
+   style="width: 15%;  padding-left:10px;  float:right"
    alt="Raytheon logo">
 
     blah blah blah blah blah blah blah blah blah blah blah blah blah
@@ -37,6 +37,37 @@
 </div>
 -->
 
+<!----------------------------------------------------------->
+<div class="news-item">
+  19 Feb 2021: HENSOLDT Cyber receives interim endorsement
+</div>
+<div>
+ <p>
+
+   <a href="http://hensoldt-cyber.com/">
+   <img src="/Foundation/Membership/LOGOS/HENSOLDT_Cyber.svg"
+    style="width: 15%;  padding-left:10px;  float:right"
+    alt="HENSOLDT Cyber">
+   </a>
+
+   The seL4 Foundation has extended <a
+   href="/Foundation/Services/">Interim Endorsement</a> as Trusted
+   Service Provider to <a href="http://hensoldt-cyber.com/">HENSOLDT
+   Cyber</a>, for consulting and development services for seL4-based
+   systems. More on:
+
+   <ul>
+   <li>
+   <a href="/Foundation/Services/hc.pml">HENSOLDT Cyber services
+   and products</a>;
+   </li>
+   <li>
+   <a href="/Foundation/Services/endorsement.pml">the seL4
+   Foundation’s Interim Endorsement program</a>.
+   </li>
+   </ul>
+</p>
+</div>
 <!----------------------------------------------------------->
 
 <div class="news-item">
