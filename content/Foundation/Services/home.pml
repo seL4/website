@@ -115,6 +115,34 @@
 	</ul>
       </td>
     </tr>
+    <tr>
+      <td style="padding:15px">
+        <a href="http://hensoldt-cyber.com/">
+          <img src="/Foundation/Membership/LOGOS/HENSOLDT_Cyber.svg" style="width: 200px" alt="HENSOLDT Cyber">
+	</a>
+      </td>
+      <td>
+	<strong>HENSOLDT Cyber GmbH</strong><br/>
+
+        In the development of high assurance systems with military
+        grade security, HENSOLDT Cyber works intensively with the seL4
+        microkernel. As we aim to increase the usability of seL4
+        technologies, we develop user-friendly components bundled in
+        the seL4 operating system TRENTOS, providing an easy-to-use
+        basis for the development of embedded systems.  We support our
+        customers by guiding them with our seL4 experience and
+        improving their development time by advising them on the
+        correct application of the seL4 technologies.
+
+        <br/>
+	<span class=emph>HENSOLDT Cyber GmbH has received <em>interim endorsement</em> as a Trusted
+	Service Provider for seL4-based systems.</span>
+	<ul>
+	  <li><a href="hc.pml">Details of products and services</a></li>
+	  <li> <a href="http://hensoldt-cyber.com/">Home page</a></li>
+	</ul>
+      </td>
+    </tr>
   </table>
 
   <h2>Training</h2>
