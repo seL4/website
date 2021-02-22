@@ -27,10 +27,12 @@
   <div class="news-column news-content">
     <ul>
       <li>
-        <strong> 11 Feb 2021: seL4 Foundation endorses service providers</strong>
+        <strong>
+        19 Feb 2021: HENSOLDT Cyber receives interim endorsement
+        </strong>
       </li>
       <li>
-	 <strong> 8 Feb 2021: Penten joins the seL4 Foundation </strong>
+        <strong> 11 Feb 2021: seL4 Foundation endorses service providers</strong>
       </li>
       <li>
 	 More.
