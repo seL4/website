@@ -37,6 +37,35 @@
 </div>
 -->
 
+<div class="news-item">
+  4 Mar 2021: Raytheon joins the seL4 Foundation!
+</div>
+<div>
+ <p>
+   <img src="Foundation/Membership/LOGOS/raytheontechnologies.svg"
+   style="width: 15%;  padding-left:10px;  float:right"
+	alt="Raytheon logo">
+
+   The seL4 Foundation
+   welcomes <a href="https://https://www.rtx.com/">Raytheon
+   Technologies</a> as our latest member.
+ </p>
+ <p>
+   Members of the Raytheon Technologies team have been long-time core
+   participants in the seL4 ecosystem, predating the company’s
+   formation in 2020, which brought together Raytheon Company and
+   United Technologies’ aerospace businesses, Collins Aerospace and
+   Pratt &amp; Whitney. Collins Aerospace was a prime contractor in the
+   DARPA HACMS program, which demonstrated the seL4-based incremental
+   cyber retrofit of autonomous military vehicles. This was a major
+   milestone in the growth of seL4, demonstrating that it protects
+   against cyber attacks on real systems in operation. The same
+   Raytheon Technologies team now leads the follow-on DARPA CASE
+   program, aiming at designed-in cyber-resiliency, including the
+   seL4-based framework for verified initialisation and configuration
+   of systems architectures.
+ </p>
+</div>
 <!----------------------------------------------------------->
 <div class="news-item">
   19 Feb 2021: HENSOLDT Cyber receives interim endorsement
