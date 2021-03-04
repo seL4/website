@@ -18,7 +18,7 @@
 
 <!--
 <div class="news-item">
-  29 Jan 2021: Raytheon joins the seL4 Foundation!
+  29 Jan 2021: Raytheon joins the seL4 Foundation
 </div>
 <div>
  <p>
@@ -38,7 +38,7 @@
 -->
 
 <div class="news-item">
-  4 Mar 2021: Raytheon joins the seL4 Foundation!
+  4 Mar 2021: Raytheon joins the seL4 Foundation
 </div>
 <div>
  <p>
