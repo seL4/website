@@ -27,10 +27,10 @@
   <div class="news-column news-content">
     <ul>
       <li>
-      <li>
         <strong>
 	  4 Mar 2021: Raytheon joins the seL4 Foundation</strong>
       </li>
+      <li>
         <strong>
         19 Feb 2021: HENSOLDT Cyber receives interim endorsement
         </strong>
