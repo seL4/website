@@ -47,7 +47,7 @@
 	alt="Raytheon logo">
 
    The seL4 Foundation
-   welcomes <a href="https://https://www.rtx.com/">Raytheon
+   welcomes <a href="https://www.rtx.com/">Raytheon
    Technologies</a> as our latest member.
  </p>
  <p>
