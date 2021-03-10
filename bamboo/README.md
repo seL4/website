@@ -1,3 +1,8 @@
+<!--
+    Copyright 2020 seL4 Project a Series of LF Projects, LLC.
+    SPDX-License-Identifier: CC-BY-SA-4.0
+-->
+
 # CI log pages
 
 This directory contains resources and the main generation script for

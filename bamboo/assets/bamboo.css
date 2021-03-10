@@ -1,0 +1,47 @@
+/*
+ * Copyright 2020 seL4 Project a Series of LF Projects, LLC.
+ * SPDX-License-Identifier: CC-BY-SA-4.0
+ */
+
+.main {
+  margin-left: 25%;
+  margin-right: 25%;
+}
+
+h1 {
+  margin-top: 10rem;
+  padding-bottom: 2rem;
+}
+
+h2 {
+  margin-top: 4rem;
+  margin-bottom: 2rem;
+}
+
+table {
+  margin-left: 5rem;
+}
+
+tr.separate {
+  border-top: 1px dashed #8897AE;
+}
+
+td {
+  padding: 0.5rem 0.5rem 0.5rem 1rem;
+}
+
+.col1 {
+  width: 15em;
+}
+
+.col2 {
+  width: 5em;
+  text-align: center;
+}
+
+.svg-icon {
+  width: 1em;
+  height: 1em;
+  stroke: #AC5D55;
+  stroke-width: 2;
+}
