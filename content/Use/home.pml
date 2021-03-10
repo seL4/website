@@ -6,20 +6,20 @@ Copyright 2020 seL4 Project a Series of LF Projects, LLC.
   Retrofitting and transitioning to seL4
 </h1> <br>
   <p>
-    This page discusses the issues a business will need to consider for a <b>“transition to seL4”</b>, whether creating a 
-    new product or upgrading an existing product.</p> 
+    This page discusses the issues a business will need to consider for a <b>“transition to seL4”</b>, whether creating a
+    new product or upgrading an existing product.</p>
    <p>Ultimately,
     the best approach is to <a href="/contact/">contact us</a>
     to discuss your needs and aims, but
     brainstorming through the considerations described below is a good
     first step in any case. This will also give you an idea of the
-    role that seL4 can play in securing software systems across a range of 
+    role that seL4 can play in securing software systems across a range of
     industry verticals.
   </p>
   <p>
-    More information about this process is available in 
-      <a href="https://ts.data61.csiro.au/publications/csiroabstracts/Klein_AKMHF_18.abstract.pml">this article</a> or in
-      <a href="https://ts.data61.csiro.au/publications/papers/Kuz_19.abstract.pml">these slides</a>.
+    More information about this process is available in
+      <a href="https://ts.data61.csiro.au/publications/csiroabstracts/Klein_AKMHF_18.abstract">this article</a> or in
+      <a href="https://ts.data61.csiro.au/publications/papers/Kuz_19.abstract">these slides</a>.
   </p>
   <p>
     You might also have questions on the <b> licence </b> and its implications.
@@ -33,7 +33,7 @@ Copyright 2020 seL4 Project a Series of LF Projects, LLC.
       <img src="/images/trusted.svg" style="width:300px; float:right;" alt="seL4 system"/>
       <p>The first step is to identify the security and
       safety requirements of your system (what are the assets that need protecting), and the threat
-      model (what are the attacks or failures that threaten those assets).</p> 
+      model (what are the attacks or failures that threaten those assets).</p>
       <p>seL4’s power and added value lie in the proved <em>isolation</em> that
       it provides. Being an OS kernel, its duty is to control
       access to resources and communication between entities.
@@ -43,7 +43,7 @@ Copyright 2020 seL4 Project a Series of LF Projects, LLC.
       through explicitly provided channels.</p>
       <p>This first step, therefore, helps to identify what it is that
       you would like to isolate in your system. Typically this comes down to protecting some small
-      but critical component(s) that perform sensitive operations from a large and untrustworthy, but still useful, code base.</p> 
+      but critical component(s) that perform sensitive operations from a large and untrustworthy, but still useful, code base.</p>
       <p>An example is a critical control loop which takes inputs from a number of sensors, including cameras with complex drivers and image processing software.<p>
     </li>
     <li> <b> seL4-ready?</b>
@@ -68,13 +68,13 @@ Copyright 2020 seL4 Project a Series of LF Projects, LLC.
       and if the ones you need are missing,
       <a href="/contact/">contact us</a>, or better yet
       <a href="/Contribute">contribute</a>.</p>
-    </li>  
+    </li>
     <li> <b>Gradually getting there: Incremental cyber retrofit</b>
 
       <p>
       Systems are rarely built from scratch, even a new product typically incorporates significant amounts of legacy software. And frequently the aim is to increase an existing product's resilience to cyber attacks.</p>
       <p>The usual approach here is what we call an <em>incremental cyber retrofit</em>, which we describe in detail in
-      <a href="https://ts.data61.csiro.au/publications/csiroabstracts/Klein_AKMHF_18.abstract.pml">this article</a>.  In a nutshell, the idea is to gradually adapt the
+      <a href="https://ts.data61.csiro.au/publications/csiroabstracts/Klein_AKMHF_18.abstract">this article</a>.  In a nutshell, the idea is to gradually adapt the
       existing architecture.</p>
       <p>The first step is to put the complete legacy system into a virtual machine (VM) running
       on seL4. This in itself adds no security (only a little bit of overhead), but it serves as a starting point for incremental modularisation.</p>
