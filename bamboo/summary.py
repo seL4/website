@@ -33,7 +33,7 @@ def log_path(plan_key, job, build_number):
     return plan_key + "-" + job + "-" + str(build_number) + ".log"
 
 
-def page(shas, results, build_number, plan_key, output_file):
+def page(shas, names, results, build_number, plan_key, output_file):
     with open(output_file, 'w') as f:
         def pr(line):
             f.write(line)
@@ -64,7 +64,7 @@ def page(shas, results, build_number, plan_key, output_file):
             first = True
             for repo in repos:
                 pr('<tr {4}> <td class="col1"><a href="{0}">{1}</a></td> <td class="col2"><a href="{2}"><code>{3}</code></a><td> </tr>'.format(
-                    repo_link(repo), repo, link(repo, shas[repo]), short(shas[repo]), "" if first else 'class="separate"'))
+                    repo_link(names[repo]), names[repo], link(names[repo], shas[repo]), short(shas[repo]), "" if first else 'class="separate"'))
                 first = False
             pr("</table>")
 
@@ -116,6 +116,10 @@ def main():
                         dest='sha_file',
                         default='sha.properties',
                         help="File that lists repos and commits relevant for this test in REPO=SHA form.")
+    parser.add_argument('--names',
+                        dest='names_file',
+                        default='name.properties',
+                        help="File that lists repo names in REPO=NAME form.")
     parser.add_argument('-o',
                         dest='output_file',
                         default='index.html',
@@ -130,9 +134,10 @@ def main():
     args = parser.parse_args()
 
     shas = read_property_file(args.sha_file, "_SHA")
+    names = read_property_file(args.names_file, "_NAME")
     jobs = read_property_file(args.summary_file)
 
-    page(shas, jobs, args.build_number, args.plan_key, args.output_file)
+    page(shas, names, jobs, args.build_number, args.plan_key, args.output_file)
 
 
 if __name__ == '__main__':

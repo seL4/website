@@ -2,7 +2,11 @@
 # SPDX-License-Identifier: BSD-2-Clause
 
 test-run: test/output.html test/output-good.html
-	diff test/output.html test/output-good.html && echo "Test succeeded!" || echo "Test failed."
+	diff test/output.html test/output-good.html && \
+	echo "Test succeeded!" || echo "Test failed."
 
-test/output.html: test/sha.properties test/plan.success.txt summary.py
-	./summary.py -o test/output.html --commits test/sha.properties 20 TEST-PLAN test/plan.success.txt
+test/output.html: test/sha.properties test/plan.success.txt \
+	test/names.properties summary.py
+	./summary.py -o test/output.html --commits test/sha.properties \
+	             --names test/names.properties \
+				  20 TEST-PLAN test/plan.success.txt
