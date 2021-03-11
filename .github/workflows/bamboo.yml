@@ -1,0 +1,30 @@
+# Copyright 2021, Data61, CSIRO (ABN 41 687 119 230)
+#
+# SPDX-License-Identifier: BSD-2-Clause
+
+# Deploy bamboo static assets to sel4.systems
+
+name: Bamboo
+
+on:
+  push:
+    branches:
+      - master
+    paths:
+      - 'bamboo/assets/*'
+
+jobs:
+  deploy:
+    name: Deploy to seL4.systems
+    runs-on: ubuntu-latest
+    steps:
+    - uses: actions/checkout@v2
+    - uses: appleboy/scp-action@v0.1.1
+      with:
+        host: sel4.systems
+        username: ${{ secrets.USERNAME }}
+        key: ${{ secrets.KEY }}
+        passphrase: ${{ secrets.PASS }}
+        source: "bamboo/assets/*"
+        target: "public_html/"
+        strip_components: 2
