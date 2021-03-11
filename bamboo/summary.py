@@ -69,7 +69,7 @@ def page(shas, repo_names, results, job_names, build_number, plan_key, output_fi
             pr("</table>")
 
         if not results:
-            pr("<p>No test jobs.</p>")
+            pr("<h2>No test jobs.</h2>")
             return
 
         failed = []
@@ -102,7 +102,7 @@ def page(shas, repo_names, results, job_names, build_number, plan_key, output_fi
                 first = False
             pr("</tbody></table>")
         else:
-            pr("<p>All jobs failed :-(</p>")
+            pr("<h2>All jobs failed :-(</h2>")
 
         pr("</div>")
         pr("</body>")
