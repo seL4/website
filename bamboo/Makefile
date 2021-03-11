@@ -6,7 +6,7 @@ test-run: test/output.html test/output-good.html
 	echo "Test succeeded!" || echo "Test failed."
 
 test/output.html: test/sha.properties test/plan.success.txt \
-	test/names.properties summary.py
+	test/names.properties test/keys.properties summary.py
 	./summary.py -o test/output.html --commits test/sha.properties \
-	             --names test/names.properties \
+	             --names test/names.properties --keys test/keys.properties \
 				  20 TEST-PLAN test/plan.success.txt
