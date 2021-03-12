@@ -9,11 +9,18 @@ import os
 DESCRIPTION = 'Generate summary page for a single test run with multiple jobs.'
 
 
+def removesuffix(s, suffix):
+    if s.endswith(suffix):
+        return s[:len(s)-len(suffix)]
+    else:
+        return s
+
+
 def read_property_file(file, suffix=""):
     """Read a file with lines of the form KEY=VALUE, and return as dict.
        Remove optional suffix from KEY and VALUE."""
     with open(file, 'r') as f:
-        return dict(tuple(map(lambda s: s.strip().strip('"').removesuffix(suffix), line.split('=')))
+        return dict(tuple(map(lambda s: removesuffix(s.strip().strip('"'), suffix), line.split('=')))
                     for line in f.readlines() if not line.startswith('#') and line.strip())
 
 
