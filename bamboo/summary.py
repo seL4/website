@@ -10,7 +10,7 @@ DESCRIPTION = 'Generate summary page for a single test run with multiple jobs.'
 
 
 def removesuffix(s, suffix):
-    if s.endswith(suffix):
+    if len(suffix) > 0 and s.endswith(suffix):
         return s[:len(s)-len(suffix)]
     else:
         return s
