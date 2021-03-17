@@ -18,10 +18,17 @@ def removesuffix(s, suffix):
 
 def read_property_file(file, suffix=""):
     """Read a file with lines of the form KEY=VALUE, and return as dict.
-       Remove optional suffix from KEY and VALUE."""
-    with open(file, 'r') as f:
-        return dict(tuple(map(lambda s: removesuffix(s.strip().strip('"'), suffix), line.split('=')))
-                    for line in f.readlines() if not line.startswith('#') and line.strip())
+       Remove optional suffix from KEY."""
+    the_dict = {}
+    try:
+        with open(file, 'r') as f:
+            for line in f.readlines():
+                if not line.lstrip().startswith('#') and line.strip().find("=") > 0:
+                    key, value = map(lambda s: s.strip().strip('"'), line.split('=', 1))
+                    the_dict[removesuffix(key, suffix)] = value
+    except IOError:
+        print('Warning: could not read file "{0}"'.format(file))
+    return the_dict
 
 
 def repo_link(repo):
@@ -50,7 +57,7 @@ def page(shas, repo_names, results, job_names, build_number, plan_key, output_fi
         pr("<html>")
         pr("<!--")
         pr("  Copyright 2020 seL4 Project a Series of LF Projects, LLC.")
-        # cut up string so reuse tool doesn't get confused with SDPX keyword:
+        # cut up string so reuse tool doesn't get confused with SPDX keyword:
         pr("  SPDX-License"+"-Identifier: CC-BY-SA-4.0")
         pr("-->")
         pr("<head>")
@@ -68,11 +75,14 @@ def page(shas, repo_names, results, job_names, build_number, plan_key, output_fi
         if repos:
             pr("<h2>Tested commits</h2>")
             pr("<table>")
-            first = True
-            for repo in repos:
-                pr('<tr {4}> <td class="col1"><a href="{0}">{1}</a></td> <td class="col2"><a href="{2}"><code>{3}</code></a><td> </tr>'.format(
-                    repo_link(repo_names[repo]), repo_names[repo], link(repo_names[repo], shas[repo]), short(shas[repo]), "" if first else 'class="separate"'))
-                first = False
+            for index, repo in enumerate(repos):
+                separator = "" if index == 0 else 'class="separate"'
+                if repo in repo_names:
+                    pr('<tr {4}> <td class="col1"><a href="{0}">{1}</a></td> <td class="col2"><a href="{2}"><code>{3}</code></a><td> </tr>'.format(
+                        repo_link(repo_names[repo]), repo_names[repo], link(repo_names[repo], shas[repo]), short(shas[repo]), separator))
+                else:
+                    pr('<tr {2}> <td class="col1">{0}</td> <td class="col2"><code>{1}</code></a><td> </tr>'.format(
+                        repo, short(shas[repo]), separator))
             pr("</table>")
 
         if not results:
@@ -90,11 +100,9 @@ def page(shas, repo_names, results, job_names, build_number, plan_key, output_fi
         if failed:
             pr("<h2>Failed jobs</h2>")
             pr("<table><tbody>")
-            first = True
-            for job in failed:
+            for index, job in enumerate(failed):
                 pr('<tr {2}> <td class="col1"><a href="{0}">{1}</a></td> <td class="col2"><a href="{0}"><svg class="svg-icon" viewBox="0 0 20 20"><path fill="none" d="M11.469,10l7.08-7.08c0.406-0.406,0.406-1.064,0-1.469c-0.406-0.406-1.063-0.406-1.469,0L10,8.53l-7.081-7.08 c-0.406-0.406-1.064-0.406-1.469,0c-0.406,0.406-0.406,1.063,0,1.469L8.531,10L1.45,17.081c-0.406,0.406-0.406,1.064,0,1.469 c0.203,0.203,0.469,0.304,0.735,0.304c0.266,0,0.531-0.101,0.735-0.304L10,11.469l7.08,7.081c0.203,0.203,0.469,0.304,0.735,0.304 c0.267,0,0.532-0.101,0.735-0.304c0.406-0.406,0.406-1.064,0-1.469L11.469,10z"></path></svg></a></td> </tr>'.format(
-                    log_path(plan_key, job, build_number), job_names[job], "" if first else 'class="separate"'))
-                first = False
+                    log_path(plan_key, job, build_number), job_names.get(job, job), "" if index == 0 else 'class="separate"'))
             pr("</tbody></table>")
         else:
             pr("<h2>All builds successful!</h2>")
@@ -102,11 +110,9 @@ def page(shas, repo_names, results, job_names, build_number, plan_key, output_fi
         if succeeded:
             pr("<h2>Successful jobs</h2>")
             pr("<table><tbody>")
-            first = True
-            for job in succeeded:
+            for index, job in enumerate(succeeded):
                 pr('<tr {2}> <td class="col1"><a href="{0}">{1}</a></td> <td class="col2"><a href="{0}"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="#96CA50" width="2em"> <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd" /></svg></a></td> </tr>'.format(
-                    log_path(plan_key, job, build_number), job_names[job], "" if first else 'class="separate"'))
-                first = False
+                    log_path(plan_key, job, build_number), job_names.get(job, job), "" if index == 0 else 'class="separate"'))
             pr("</tbody></table>")
         else:
             pr("<h2>All jobs failed :-(</h2>")
