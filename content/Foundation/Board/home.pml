@@ -197,6 +197,8 @@
 
 <p>Its present members are:</p>
 <ul>
+  <li>June Andronick</li>
+  <li>Gernot Heiser</li>
   <li>Gerwin Klein</li>
   <li>Daniel Potts</li>
 </ul>
@@ -207,7 +209,24 @@
 
 <p>Its present members are:</p>
 <ul>
+  <li>June Andronick</li>
   <li>Gernot Heiser</li>
-  <li> John Launchbury</li>
+  <li>John Launchbury</li>
   <li>Daniel Potts</li>
+  <li>Sascha Kegrei&szlig;</li>
+</ul>
+
+
+<h3>Marketing Committee</h3>
+
+<p>The Marketing Committee is responsible for the external presentation
+of the Foundation. This includes the look-and-feel of the web site and
+presentation materials and other branding issues, social media
+presence and other media liaison.</p>
+
+<p>Its present members are:</p>
+<ul>
+  <li>June Andronick</li>
+  <li>Gernot Heiser</li>
+  <li>Gerwin Klein</li>
 </ul>
