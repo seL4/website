@@ -15,9 +15,7 @@
     The Governing Board meetings are normally held in private,
     i.e. attended by Governing Board Representatives only, although
     the Governing Board may invite others to participate. However, the
-    Governing Board meeting minutes, budgets etc. are <a title="seL4
-    Board public documents"
-    href="https://drive.google.com/open?id=1zAEOipcY_KMDxgEGtO6SyD2g9Ve2NOoP">publicly
+    Governing Board meeting minutes are <a title="Minutes/">publicly
     accessible</a>.
   </p>
 </div>
