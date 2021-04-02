@@ -7,9 +7,15 @@
 <div>
   <p>
     The Governing Board of the <a title="seL4 Foundation"
-				  href="../About/">seL4 Foundation</a> consists of representatives
-    appointed by Premium Members, a representative elected by General
-    Members, and the Chair of the Technical Steering Committee.
+				  href="../About/">seL4 Foundation</a>
+    consists of
+    <ul>
+      <li>the Founders of the seL4 technology, June Andronick, Gerwin
+	Klein and Gernot Heiser</li>
+      <li>representatives appointed by Premium Members</li>
+      <li>a representative elected by General Members,</li>
+      <li>the Chair of the Technical Steering Committee.</li>
+    </ul>
   </p>
   <p>
     The Governing Board meetings are normally held in private,
@@ -20,13 +26,6 @@
 </div>
 
 <h2>The present Governing Board</h2>
-
-<p>
-  Until a sufficient number of members are signed up, the Foundation
-  has an interim Governing Board appointed by
-  <a title="Trustworthy Systems"
-  href="https://trustworthy.systems/">Trustworthy Systems</a> (TS).
-</p>
 
 <h3>Chair</h3>
 <div class="governing-container">
@@ -43,7 +42,8 @@
   </div>
   <div class="governing-item-text">
     <p>
-      Gernot is the Founder of TS. He is also Scientia Professor and
+      Gernot is the Founder of the Trustworthy Systems Research Group
+      (TS), which created seL4. He is also Scientia Professor and
       John Lions Chair of Operating Systems
       at <a href="https://unsw.edu.au/">UNSW Sydney</a>, where he has
       been teaching operating systems and leading research on L4
@@ -63,27 +63,10 @@
 
 <h3>Treasurer</h3>
 <div class="governing-container">
-  <div class="governing-item-pic">
-    <a href="Ghost-Dan.jpg"><img src="Ghost-Dan-s.jpg" alt="Dan Potts" width="80" /></a>
-  </div>
-  <div class="governing-item-heading">
-    <strong><a href="https://www.linkedin.com/in/daniel-potts-725142/"
-    class='list_link'>Dan Potts</a></strong>
-    <span class="person_title_col"><em>Engineering Director, <a href="https://gh.st/">Ghost
-    Locomotion</a></em></span>
-  </div>
-  <div class="governing-item-text">
-    <p>
-      Dan leads software engineering at Ghost Locomotion Inc., a
-      California-based company which is converting cars to drive
-      themselves, using seL4 to keep them safe. He formerly served as
-      CEO of Cog Systems and before that as VP Engineering of Open
-      Kernel Labs. He holds a PhD
-      from <a href="https://unsw.edu.au/">UNSW Sydney</a>.</p>
-  </div>
+  <strong><em>TO DO: move new treasurer here</em></strong>
 </div>
 
-<h3>Representatives</h3>
+<h3>Other Members</h3>
 
 <div class="governing-container">
   <div class="governing-item-pic">
@@ -103,13 +86,13 @@
   </div>
   <div class="governing-item-text">
     <p>
-      June leads the TS group and was a core contributor to seL4's
+      June is a former leader of the TS group and was a core contributor to seL4's
       verification story, as well as verification work on the eChronos
       RTOS. She holds a PhD
       from <a href="https://www.universite-paris-saclay.fr/en">Paris-Saclay
       University</a>. In 2011 she was recognised by MIT Tech Review as
       a <a href="http://www2.technologyreview.com/tr35/profile.aspx?trid=1114">Top
-	Innovator under 35</a>.
+	Innovator under 35</a>. <strong><em>TO DO: update affiliation</em></strong>
     </p>
   </div>
 </div>
@@ -123,12 +106,14 @@
   </div>
   <div class="governing-item-text">
     <p>
-      Sascha leads product design and development as well as business
-      development at HENSOLDT Cyber GmbH, a Munich-based company which
+      Sascha is the representative of Premium Member HENSOLDT Cyber
+      GmbH, a Munich-based company which
       develops embedded IT products that meet the highest security
       requirements, combining an operating system based on verified seL4
       with a RISC-V processor that is protected from supply-chain
       attacks.
+      Sascha is the CTO of HENSOLDT Cyber, leading product design and
+      development as well as business development.
     </p>
   </div>
 </div>
@@ -148,41 +133,36 @@
   </div>
   <div class="governing-item-text">
     <p>
-      Gerwin leads research at TS, and is the team's formal
-      verification guru. He spends much of his time deep in the proofs
+      Gerwin lead the verification of seL4. He spends much of his time
+      deep in the proofs
       about seL4 and contributes to other verification research in
       TS. He holds a PhD from <a href="https://www.tum.de/">TU
       Munich</a> and led the original seL4 verification, which won the
       MIT-TR10 award for the top 10 emerging technologies in 2011, as
       well as the <a href="https://www.sigops.org/awards/hof/">SIGOPS
-      Hall-of-Fame award</a> in 2019.</p>
+      Hall-of-Fame award</a> in 2019.  <strong><em>TO DO: update affiliation</em></strong>
+    </p>
   </div>
 </div>
 
 <div class="governing-container">
   <div class="governing-item-pic">
-    <a href="Galois-John.jpg"><img src="Galois-John-s.jpg" alt="John
-    Launchbury" width="80" /></a>
+    <a href="Raytheon-David.jpg"><img src="Raytheon-David-s.jpg" alt="David
+    Hardin" width="80" /></a>
   </div>
   <div class="governing-item-heading">
     <strong><a class="list_link"
-    href="https://en.wikipedia.org/wiki/John_Launchbury">John
-    Launchbury</a></strong> <span class="person_title_col"><em>Chief
-    Scientist, <a href="https://galois.com/">Galois</a></em></span>
+    href="">David
+    Hardin</a></strong> <span class="person_title_col"><em>TO DO:
+    Title, <a href="https://galois.com/">Raytheon Tehnologies</a></em></span>
   </div>
+  <!--
+  https://www.linkedin.com/in/david-hardin-385a917/
+  http://loonwerks.com/people/david-hardin.html
+  -->
   <div class="governing-item-text">
     <p>
-      John is Founder and Chief Scientist at Oregon-based Galois, Inc,
-      a company employing functional programming and formal
-      verification techniques to produce cyber-hardened products. He
-      is also founder and CTO
-      of <a href="https://tangramflex.com/">Tangram Flex</a>, a
-      Dayton-based company developing tools for cyber-retrofitting
-      security-critical systems. From 2014&ndash;17 he was Program
-      Manager and then Director of the Information Innovation Office
-      (I2O) at <a href="https://www.darpa.mil/">DARPA</a>. He holds a PhD
-      from <a href="https://www.gla.ac.uk/">Glasgow</a> and is a
-      Fellow of the <a href="https://acm.org/">ACM</a>.</p>
+    </p>
   </div>
 </div>
 
@@ -190,25 +170,29 @@
 
 <h3>Compliance Committee</h3>
 
-<p>The compliance committee proposes rules and licensing conditions for the seL4 trademark, and develops certification schemes. These will undergo a consultation period with members before approval by the Board.</p>
+<p>The compliance committee proposes rules and licensing conditions
+for the seL4 trademark, and drives the Interim Endorsement scheme for
+seL4-based products and services.</p>
 
 <p>Its present members are:</p>
 <ul>
   <li>June Andronick</li>
   <li>Gernot Heiser</li>
   <li>Gerwin Klein</li>
-  <li>Daniel Potts</li>
 </ul>
 
 <h3>Outreach Committee</h3>
 
-<p>The Outreach Committee is in charge of expanding the membership. It develops material for supporting membership recruitment. Members of the committee will work closely with existing members to make best use of their networks for strategic recruitment of members.</p>
+<p>The Outreach Committee is in charge of expanding the membership. It
+develops material for supporting membership recruitment. Members of
+the committee will work closely with existing members to make best use
+of their networks for strategic recruitment of members. The Outreach
+Committee may co-opt member representatives.</p>
 
 <p>Its present members are:</p>
 <ul>
   <li>June Andronick</li>
   <li>Gernot Heiser</li>
-  <li>John Launchbury</li>
   <li>Daniel Potts</li>
   <li>Sascha Kegrei&szlig;</li>
 </ul>
