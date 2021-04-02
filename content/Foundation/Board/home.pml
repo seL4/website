@@ -8,15 +8,15 @@
   <p>
     The Governing Board of the <a title="seL4 Foundation"
 				  href="../About/">seL4 Foundation</a>
-    consists of
-    <ul>
-      <li>the Founders of the seL4 technology, June Andronick, Gerwin
-	Klein and Gernot Heiser</li>
-      <li>representatives appointed by Premium Members</li>
-      <li>a representative elected by General Members,</li>
-      <li>the Chair of the Technical Steering Committee.</li>
-    </ul>
+    consists of:
   </p>
+  <ul>
+    <li>the Founders of the seL4 technology, June Andronick, Gerwin
+      Klein and Gernot Heiser</li>
+    <li>a representative appointed by each Premium Member</li>
+    <li>a representative elected by General Members,</li>
+    <li>the Chair of the Technical Steering Committee.</li>
+  </ul>
   <p>
     The Governing Board meetings are normally held in private,
     i.e. attended by Governing Board Representatives only, although
@@ -37,8 +37,7 @@
       <a class="list_link" href="https://trustworthy.systems/people/?cn=Gernot+Heiser">Gernot Heiser</a></strong>
     <span class="person_title_col"><em>Technology
     Evangelist, <a title="TS"
-    href="http://ts.data61.csiro.au/">Trustworthy Systems</a>, CSIRO's
-    Data61</em></span>
+    href="http://ts.data61.csiro.au/">Trustworthy Systems</a></em></span>
   </div>
   <div class="governing-item-text">
     <p>
@@ -162,6 +161,7 @@
   -->
   <div class="governing-item-text">
     <p>
+      <strong><em>TBD</em></strong>
     </p>
   </div>
 </div>
