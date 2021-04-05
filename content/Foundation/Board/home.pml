@@ -42,7 +42,7 @@
   <div class="governing-item-text">
     <p>
       Gernot is the Founder of the Trustworthy Systems Research Group
-      (TS), which created seL4. He is also Scientia Professor and
+      (TS), which created seL4. He is Scientia Professor and
       John Lions Chair of Operating Systems
       at <a href="https://unsw.edu.au/">UNSW Sydney</a>, where he has
       been teaching operating systems and leading research on L4
@@ -55,7 +55,9 @@
       the <a href="https://acm.org/">ACM</a>,
       the <a href="https://ieee.org/">IEEE</a> and
       the <a href="https://atse.org.au/">Australian Academy of Technology
-	and Engineering</a> (ATSE).
+	and Engineering</a> (ATSE). Jointly with June and Gerwin he
+      won the <a href="https://www.sigops.org/awards/hof/">ACM SIGOPS
+	Hall-of-Fame award</a> in 2019.
     </p>
   </div>
 </div>
@@ -92,6 +94,28 @@
       University</a>. In 2011 she was recognised by MIT Tech Review as
       a <a href="http://www2.technologyreview.com/tr35/profile.aspx?trid=1114">Top
 	Innovator under 35</a>. <strong><em>TO DO: update affiliation</em></strong>
+    </p>
+  </div>
+</div>
+
+<div class="governing-container">
+  <div class="governing-item-pic">
+    <a href="Raytheon-David.jpg"><img src="Raytheon-David-s.jpg" alt="David
+    Hardin" width="80" /></a>
+  </div>
+  <div class="governing-item-heading">
+    <strong><a class="list_link"
+    href="">David
+    Hardin</a></strong> <span class="person_title_col"><em>TO DO:
+    Title, <a href="https://galois.com/">Raytheon Tehnologies</a></em></span>
+  </div>
+  <!--
+  https://www.linkedin.com/in/david-hardin-385a917/
+  http://loonwerks.com/people/david-hardin.html
+  -->
+  <div class="governing-item-text">
+    <p>
+      <strong><em>TBD</em></strong>
     </p>
   </div>
 </div>
@@ -140,28 +164,6 @@
       MIT-TR10 award for the top 10 emerging technologies in 2011, as
       well as the <a href="https://www.sigops.org/awards/hof/">SIGOPS
       Hall-of-Fame award</a> in 2019.  <strong><em>TO DO: update affiliation</em></strong>
-    </p>
-  </div>
-</div>
-
-<div class="governing-container">
-  <div class="governing-item-pic">
-    <a href="Raytheon-David.jpg"><img src="Raytheon-David-s.jpg" alt="David
-    Hardin" width="80" /></a>
-  </div>
-  <div class="governing-item-heading">
-    <strong><a class="list_link"
-    href="">David
-    Hardin</a></strong> <span class="person_title_col"><em>TO DO:
-    Title, <a href="https://galois.com/">Raytheon Tehnologies</a></em></span>
-  </div>
-  <!--
-  https://www.linkedin.com/in/david-hardin-385a917/
-  http://loonwerks.com/people/david-hardin.html
-  -->
-  <div class="governing-item-text">
-    <p>
-      <strong><em>TBD</em></strong>
     </p>
   </div>
 </div>
