@@ -50,24 +50,25 @@
     <div class="sponsor-name">
       Adventium Labs
     </div>
-  </div>  <div class="sponsor">
+  </div>
+  <!--
+  <div class="sponsor">
     <div class="sponsor-pic">
       <a href="https://brkawy.com">
 	<img src="LOGOS/Brkawy.png" style="width: 200px" alt="Breakaway logo">
       </a>
     </div>
-    <!--
     <div class="sponsor-name">
       Breakaway Consulting
     </div>
   </div>
+  -->
   <div class="sponsor">
     <div class="sponsor-pic">
       <a href="https://cog.systems/">
 	<img src="LOGOS/Cog.jpg" style="width: 150px" alt="Cog logo">
       </a>
     </div>
-    -->
     <div class="sponsor-name">
       Cog Systems Inc
     </div>
