@@ -16,15 +16,17 @@
     <a href="200826-minutes-signed.pdf">2<sup>nd</sup> meeting of 2020-08-26</a>
   </li>
 
-  <!-- li>
+  <li>
     <a href="201016-minutes-signed.pdf">3<sup>rd</sup> meeting of 2020-10-16</a>
-  </li -->
+  </li>
 </ul>
 
 <h2>Unconfirmed Minutes</h2>
 
+<!--
 <ul>
   <li>
-    <a href="201016-minutes-unconfirmed.pdf">3<sup>rd</sup> meeting of 2020-10-16</a>
+    <a href="210413-minutes-unconfirmed.pdf">3<sup>th</sup> meeting of 2021-04-13</a>
   </li>
 </ul>
+-->
