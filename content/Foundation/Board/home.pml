@@ -96,7 +96,7 @@
 
 <div class="governing-container">
   <div class="governing-item-pic">
-    <a href="RTX-David.jpg"><img src="RTX-David.jpg" alt="David
+    <a href="RTX-David.png"><img src="RTX-David.png" alt="David
     Hardin" width="80" /></a>
   </div>
   <div class="governing-item-heading">
