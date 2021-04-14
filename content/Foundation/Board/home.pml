@@ -40,7 +40,7 @@
       <a class="list_link" href="https://trustworthy.systems/people/?cn=Gernot+Heiser">Gernot Heiser</a></strong>
     <span class="person_title_col"><em>Technology
     Evangelist, <a title="TS"
-    href="http://ts.data61.csiro.au/">Trustworthy Systems</a></em></span>
+    href="http://trustworthy.systems/">Trustworthy Systems</a></em></span>
   </div>
   <div class="governing-item-text">
     <p>
@@ -78,8 +78,7 @@
     </strong>
     <span class="person_title_col">
       <em>Leader, <a title="TS"
-      href="http://ts.data61.csiro.au/">Trustworthy Systems</a>,
-      CSIRO's Data61</em>
+      href="http://trustworthy.systems/">Trustworthy Systems</a></em>
     </span>
   </div>
   <div class="governing-item-text">
@@ -90,7 +89,8 @@
       from <a href="https://www.universite-paris-saclay.fr/en">Paris-Saclay
       University</a>. In 2011 she was recognised by MIT Tech Review as
       a <a href="http://www2.technologyreview.com/tr35/profile.aspx?trid=1114">Top
-	Innovator under 35</a>. <strong><em>TO DO: update affiliation</em></strong>
+	Innovator under 35</a>. She is a conjoint professor
+	at <a href="https://unsw.edu.au/">UNSW Sydney</a>.
     </p>
   </div>
 </div>
@@ -154,8 +154,7 @@
     href="https://trustworthy.systems/people/?cn=Gerwin+Klein">Gerwin
     Klein</a></strong> <span class="person_title_col"><em>Chief
     Scientist, <a title="TS"
-    href="http://ts.data61.csiro.au/">Trustworthy Systems</a>, CSIRO's
-    Data61</em></span>
+    href="http://ts.data61.csiro.au/">Trustworthy Systems</a></em></span>
   </div>
   <div class="governing-item-text">
     <p>
@@ -166,7 +165,8 @@
       Munich</a> and led the original seL4 verification, which won the
       MIT-TR10 award for the top 10 emerging technologies in 2011, as
       well as the <a href="https://www.sigops.org/awards/hof/">SIGOPS
-      Hall-of-Fame award</a> in 2019.  <strong><em>TO DO: update affiliation</em></strong>
+      Hall-of-Fame award</a> in 2019. He is a conjoint professor
+	at <a href="https://unsw.edu.au/">UNSW Sydney</a>.
     </p>
   </div>
 </div>
