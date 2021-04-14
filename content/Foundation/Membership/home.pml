@@ -20,16 +20,6 @@
 <div class="sponsors">
   <div class="sponsor">
     <div class="sponsor-pic">
-      <a href="https://trustworthy.systems/">
-	<img src="LOGOS/CSIRO.jpg" style="width: 200px" alt="CSIRO's Data61">
-      </a>
-    </div>
-    <div class="sponsor-name">
-      CSIRO's Data61
-    </div>
-  </div>
-  <div class="sponsor">
-    <div class="sponsor-pic">
       <a href="http://hensoldt-cyber.com/">
 	<img src="LOGOS/HENSOLDT_Cyber.svg" style="width: 300px" alt="HENSOLDT Cyber logo">
       </a>
@@ -60,7 +50,9 @@
     <div class="sponsor-name">
       Adventium Labs
     </div>
-  </div>  <div class="sponsor">
+  </div>
+  <!--
+  <div class="sponsor">
     <div class="sponsor-pic">
       <a href="https://brkawy.com">
 	<img src="LOGOS/Brkawy.png" style="width: 200px" alt="Breakaway logo">
@@ -70,6 +62,7 @@
       Breakaway Consulting
     </div>
   </div>
+  -->
   <div class="sponsor">
     <div class="sponsor-pic">
       <a href="https://cog.systems/">
@@ -121,18 +114,27 @@
     </div>
   </div>
 </div>
-<!--
+
 <h2>Associate Members</h2>
 <div class="sponsors">
   <div class="sponsor">
     <div class="sponsor-pic">
-      <a href="https://unsw.edu.au/">
-	<img src="LOGOS/UNSW.svg" style="width: 200px" alt="UNSW logo">
+      <a href="https://trustworthy.systems/">
+	<img src="LOGOS/CSIRO.jpg" style="width: 200px" alt="CSIRO's Data61">
       </a>
     </div>
     <div class="sponsor-name">
-      UNSW Sydney
+      CSIRO's Data61
+    </div>
+  </div>
+  <div class="sponsor">
+    <div class="sponsor-pic">
+      <a href="https://riscv.org/">
+	<img src="LOGOS/RISC-V.svg" style="width: 200px" alt="RISC-V International">
+      </a>
+    </div>
+    <div class="sponsor-name">
+      RISC-V International
     </div>
   </div>
 </div>
--->
