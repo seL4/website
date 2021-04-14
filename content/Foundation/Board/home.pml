@@ -74,8 +74,7 @@
 	Andronick</a>
     </strong>
     <span class="person_title_col">
-      <em>Leader, <a title="TS"
-      href="http://trustworthy.systems/">Trustworthy Systems</a></em>
+      <em>Trustworthy Systems</em>
     </span>
   </div>
   <div class="governing-item-text">
@@ -102,7 +101,7 @@
   <div class="governing-item-heading">
     <strong><a class="list_link"
     href="">David
-    Hardin</a></strong> <span class="person_title_col"><em>Associate Director, <a href="https://galois.com/">Raytheon Tehnologies</a></em></span>
+    Hardin</a></strong> <span class="person_title_col"><em>Associate Director, <a href="https://galois.com/">Raytheon Technologies</a></em></span>
   </div>
   <!--
   https://www.linkedin.com/in/david-hardin-385a917/
@@ -149,9 +148,7 @@
   <div class="governing-item-heading">
     <strong><a class="list_link"
     href="https://trustworthy.systems/people/?cn=Gerwin+Klein">Gerwin
-    Klein</a></strong> <span class="person_title_col"><em>Chief
-    Scientist, <a title="TS"
-    href="http://ts.data61.csiro.au/">Trustworthy Systems</a></em></span>
+    Klein</a></strong> <span class="person_title_col"><em>Trustworthy Systems</em></span>
   </div>
   <div class="governing-item-text">
     <p>
@@ -196,6 +193,7 @@ Committee may co-opt member representatives.</p>
   <li>June Andronick</li>
   <li>David Hardin</li>
   <li>Gernot Heiser</li>
+  <li>Gerwin Klein</li>
   <li>Daniel Potts</li>
   <li>Sascha Kegrei&szlig;</li>
 </ul>
