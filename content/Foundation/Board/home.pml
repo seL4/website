@@ -64,12 +64,6 @@
 
 <h3>Treasurer</h3>
 <div class="governing-container">
-  <strong><em>TO DO: move new treasurer here</em></strong>
-</div>
-
-<h3>Other Members</h3>
-
-<div class="governing-container">
   <div class="governing-item-pic">
     <a href="TS-June.jpg"><img src="TS-June-s.jpg" alt="June Andronick" width="80" /></a>
   </div>
@@ -98,16 +92,17 @@
   </div>
 </div>
 
+<h3>Other Members</h3>
+
 <div class="governing-container">
   <div class="governing-item-pic">
-    <a href="Raytheon-David.jpg"><img src="Raytheon-David-s.jpg" alt="David
+    <a href="RTX-David.jpg"><img src="RTX-David.jpg" alt="David
     Hardin" width="80" /></a>
   </div>
   <div class="governing-item-heading">
     <strong><a class="list_link"
     href="">David
-    Hardin</a></strong> <span class="person_title_col"><em>TO DO:
-    Title, <a href="https://galois.com/">Raytheon Tehnologies</a></em></span>
+    Hardin</a></strong> <span class="person_title_col"><em>Associate Director, <a href="https://galois.com/">Raytheon Tehnologies</a></em></span>
   </div>
   <!--
   https://www.linkedin.com/in/david-hardin-385a917/
@@ -115,7 +110,12 @@
   -->
   <div class="governing-item-text">
     <p>
-      <strong><em>TBD</em></strong>
+      Dr. David Hardin is an Associate Director, Systems Engineering
+      at Collins Aerospace.  Dr. Hardin has significant experience in
+      the design and verification of high-assurance hardware,
+      software, and systems, and is editor of the book <em>Design and
+      Verification of Microprocessor Systems for High-Assurance
+      Applications</em>.
     </p>
   </div>
 </div>
@@ -194,6 +194,7 @@ Committee may co-opt member representatives.</p>
 <p>Its present members are:</p>
 <ul>
   <li>June Andronick</li>
+  <li>David Hardin</li>
   <li>Gernot Heiser</li>
   <li>Daniel Potts</li>
   <li>Sascha Kegrei&szlig;</li>
@@ -211,5 +212,4 @@ presence and other media liaison.</p>
 <ul>
   <li>June Andronick</li>
   <li>Gernot Heiser</li>
-  <li>Gerwin Klein</li>
 </ul>
