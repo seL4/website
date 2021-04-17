@@ -5,7 +5,7 @@
 -->
 <h1>
   Services, Training and Products <br>
-  endorsed or certified by the Foundation
+  endorsed by the Foundation
 </h1>
 <div>
   <p style="padding-top:10px">
@@ -17,27 +17,30 @@
     <strong>services</strong> around seL4.
   </p>
   <p>
-    The Foundation is working with members on developing <strong>certification</strong>
-    schemes for services, training and products. Until these are in place, we
+    The Foundation is working with members on establishing <strong>endorsement</strong>
+    schemes for services, training and products. As a first step we
+    started to
     provide <a href="endorsement.pml"><strong>interim endorsements</strong></a>,
     which are based on a fast and relatively shallow
     assessment. Interim endorsements are available to seL4 Foundation
-    members only and will lapse once the (thorough) certification schemes are in place. We
-    will support members with interim endorsements in achieving full
-    certification. Certification will be open to anyone.
+    members only and will lapse once the full endorsement scheme is in
+    place, but we expect that all interim-endorsed services and
+    products to achieve full endorsement. The endorsement scheme will
+    be open to anyone for a fee.
   </p>
   <p>
-    The certification (for now endorsement) will indicate:
+    The endorsement indicates:
   </p>
     <ul>
       <li> that a particular <strong>service provider</strong> has the skills and experience
            to provide high-quality services to adopters of seL4;
       </li>
-      <li> that a particular <strong>training</strong> is of high quality and effective
+      <li> that a particular <strong>training program</strong> is of high quality and effective
            in providing useful skills for deploying the seL4 microkernel;
       </li>
-      <li> that a particular <strong>product</strong> is helpful to the community
-           for building high-assurance seL4-based systems.
+      <li> that a particular <strong>product</strong> utilises seL4
+	capabilities correctly and is helpful to the community
+        for building high-assurance seL4-based systems.
     </ul>
 
 
@@ -194,7 +197,7 @@
 
   <h2>Products</h2>
   <p style="margin-left: 20px">
-  No product has been endorsed or certified at this stage. <br>
+  No product has been endorsed at this stage. <br>
   <span class=emph>Consider adding yours!</span> <br>
   See process  <a href="endorsement.pml">here</a>.
   </p>
