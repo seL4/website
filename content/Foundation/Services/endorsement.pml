@@ -25,7 +25,7 @@
     The Foundation is working on developing <strong>endorsement</strong>
     schemes for services, training and products.
     Until these are in place, we provide <strong>interim endorsements</strong>.
-    All endorsed training modules are advertised <a href="home.pml">here</a>.
+    All (interim) endorsed training modules and services are advertised <a href="home.pml">here</a>.
     Interim endorsements are provided for free and to Foundation members only.
     More info  <a href="home.pml">here</a>.
   </p>

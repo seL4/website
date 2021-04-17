@@ -25,7 +25,8 @@
     assessment. Interim endorsements are available to seL4 Foundation
     members only and will lapse once the full endorsement scheme is in
     place, but we expect that all interim-endorsed services and
-    products to achieve full endorsement. The endorsement scheme will
+    products will achieve full endorsement, and will support the
+    members to get there. The endorsement scheme will
     be open to anyone for a fee.
   </p>
   <p>
