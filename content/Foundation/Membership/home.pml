@@ -129,7 +129,7 @@
   </div>
   <div class="sponsor">
     <div class="sponsor-pic">
-      <a href="https://ethz.ch/">
+      <a href="https://ethz.ch/en.html">
 	<img src="LOGOS/ETH-Zurich.svg" style="width: 200px" alt="ETH Zurich">
       </a>
     </div>
