@@ -117,10 +117,8 @@ jobs:
             echo "The HTML5 validator found some issues! Review them [here](https://htmlpreview.github.io/?https://github.com/seL4/website_pr_hosting/blob/PR_${{ github.event.number }}/localhost/pr_checks/validator.log)" >> msg.txt
           fi
           export MSG=$(cat msg.txt)
-          # The follow lines are to preserve newlines
-          MSG="${MSG//'%'/'%25'}"
-          MSG="${MSG//$'\n'/'%0A'}"
-          MSG="${MSG//$'\r'/'%0D'}"
+          # The following replaces newlines with the string '\n' for the JS call further below
+          MSG="${MSG//$'\n'/'\n'}"
           echo "MSG=$MSG" >> $GITHUB_ENV
       - name: Print message
         run: |
