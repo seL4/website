@@ -24,6 +24,7 @@ linkchecker \
     --ignore-url="/blob/" \
     --ignore-url="/About/Performance" \
     --ignore-url="/lists/" \
+    --ignore-url="https://ethz.ch/en.html" \
     --check-extern \
     --output html \
     "$OUTPUT_SNAPSHOT_DIR"/localhost/index.html > $OUTPUT_DIR/linkchecker.html \
