@@ -28,12 +28,14 @@
     <ul>
       <li>
         <strong>
-	  4 Mar 2021: Raytheon joins the seL4 Foundation</strong>
-      </li>
-      <li>
+	  23 April 2021: Welcome ETH Zurich to the seL4 Foundation
+	</strong>
         <strong>
-        19 Feb 2021: HENSOLDT Cyber receives interim endorsement
-        </strong>
+	  15 April 2021: seL4 Foundation sets up crowdfunding portal
+	</strong>
+      </li>
+        <strong>
+	  4 Mar 2021: Raytheon joins the seL4 Foundation</strong>
       </li>
       <li>
 	 More.
