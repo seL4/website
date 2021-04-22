@@ -30,10 +30,13 @@
         <strong>
 	  23 April 2021: Welcome ETH Zurich to the seL4 Foundation
 	</strong>
+      </li>
+      <li>
         <strong>
 	  15 April 2021: seL4 Foundation sets up crowdfunding portal
 	</strong>
       </li>
+      <li>
         <strong>
 	  4 Mar 2021: Raytheon joins the seL4 Foundation</strong>
       </li>
