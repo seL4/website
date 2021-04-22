@@ -38,6 +38,34 @@
 -->
 
 <div class="news-item">
+  23 April 2021: ETH Zurich joins seL4 Foundation
+</div>
+<div>
+ <p>
+   <img src="Foundation/Membership/LOGOS/ETH-Zurich.svg"
+   style="width: 15%;  padding-left:10px;  float:right"
+	alt="ETH Zurich logo">
+
+   The seL4 Foundation is pleased to
+   welcome <a href="https://ethz.ch/en.html">ETH Zurich</a> as
+   associate member, a reflection of an on-going research engagement
+   of ETH with seL4.
+ </p>
+</div>
+<!----------------------------------------------------------->
+<div class="news-item">
+  15 April 2021: seL4 Foundation sets up crowdfunding portal
+</div>
+<div>
+ <p>
+   The seL4 Foundation now has an easy way for the general public to
+   support financially the development of seL4 and its open-source
+   ecosystem, using the Linux
+   Foundation's <a href="https://crowdfunding.lfx.linuxfoundation.org/projects/e94c998c-bac2-4224-b0ae-23f265fdd1a5">LFX portal</a>.
+ </p>
+</div>
+<!----------------------------------------------------------->
+<div class="news-item">
   4 Mar 2021: Raytheon joins the seL4 Foundation
 </div>
 <div>
