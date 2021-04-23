@@ -48,8 +48,8 @@
 
    The seL4 Foundation is pleased to
    welcome <a href="https://ethz.ch/en.html">ETH Zurich</a> as
-   associate member, a reflection of an on-going research engagement
-   of ETH with seL4.
+   associate member, and is looking forward to further strengthening
+   of ETH's engagement with seL4.
  </p>
 </div>
 <!----------------------------------------------------------->
