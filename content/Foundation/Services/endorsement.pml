@@ -15,17 +15,17 @@
   <strong>
     You offer professional support services for seL4-based systems? <br>
     You offer seL4 training? <br>
-    You offer products for building high-assurance seL4-based systems?  <br>
+    You offer seL4-based products?  <br>
     <span class=emph> &#10148; <a href="../Join">Join</a> the Foundation, and</span><br>
-    <span class=emph> &#10148; Apply for endorsement of the seL4 Foundation  now!</span>
+    <span class=emph> &#10148; Apply for interim endorsement of the seL4 Foundation  now!</span>
   </strong>
   </p>
 
   <p style="padding-top:10px">
-    The Foundation is working on developing <strong>certification</strong>
+    The Foundation is working on developing <strong>endorsement</strong>
     schemes for services, training and products.
     Until these are in place, we provide <strong>interim endorsements</strong>.
-    All endorsed training modules are advertised <a href="home.pml">here</a>.
+    All (interim) endorsed training modules and services are advertised <a href="home.pml">here</a>.
     Interim endorsements are provided for free and to Foundation members only.
     More info  <a href="home.pml">here</a>.
   </p>
@@ -43,12 +43,12 @@
       <strong>Guidelines</strong>:
       <ul>
 	<li>
-	  The certification (for now, interim endorsement) will indicate
+	  The (for now, interim) endorsement indicates
 	  that a particular <strong>service provider has the skills and experience
 	    to provide high-quality services to adopters of seL4 </strong>.
 	</li>
 	<li>
-	  The interim endorsement of an seL4 service provider will be awarded based on an assessment that the provider is:
+	  The interim endorsement of an seL4 service provider is awarded based on an assessment that the provider is:
 	  <ul>
 	    <li>
 	      known and respected in the seL4 Community;
@@ -84,10 +84,10 @@
 	  Within two weeks of sending the material, you will receive the Foundation's assessment, which may be:
 	  <ul>
 	    <li>
-	      either an unconditional endorsement,
+	      either an unconditional interim endorsement,
 	    </li>
 	    <li>
-	      or a conditional endorsement subject to some required changes,
+	      or a conditional interim endorsement subject to some required changes,
 	    </li>
 	    <li>
 	      or a list of recommended changes for a revised submission.
@@ -105,7 +105,7 @@
       <strong>Guidelines</strong>:
       <ul>
 	<li>
-	  The certification (for now, interim endorsement) will indicate
+	  The (for now, interim) endorsement indicates
 	  that a particular <strong>training is of high quality and effective
 	    in providing useful skills for deploying the seL4 microkernel</strong>.
 	</li>
@@ -139,7 +139,7 @@
     <li><strong>Guidelines</strong>:
       <ul>
 	<li>
-	  The certification (or endorsement for now) will indicate
+	  The (for now interim) endorsement indicates
 	  that a particular <strong>product is helpful to the community
 	    for building high-assurance seL4-based systems</strong>.
 	</li>
@@ -161,7 +161,7 @@
 	    </li>
 	  </ul>
 	<li>
-	  Community members interested in getting a product endorsed/certified should
+	  Community members interested in getting a product endorsed should
 	  contact the Foundation so we can work together on developing suitable
 	  guidelines/schemes.
 	</li>
