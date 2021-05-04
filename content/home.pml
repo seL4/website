@@ -28,6 +28,10 @@
     <ul>
       <li>
         <strong>
+	  5 May 2021: RISC-V International and seL4 Foundation Announce New Security Milestone</strong>
+      </li>
+      <li>
+        <strong>
 	  23 April 2021: Welcome ETH Zurich to the seL4 Foundation
 	</strong>
       </li>
@@ -35,10 +39,6 @@
         <strong>
 	  15 April 2021: seL4 Foundation sets up crowdfunding portal
 	</strong>
-      </li>
-      <li>
-        <strong>
-	  4 Mar 2021: Raytheon joins the seL4 Foundation</strong>
       </li>
       <li>
 	 More.

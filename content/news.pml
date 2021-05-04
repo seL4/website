@@ -38,7 +38,7 @@
 -->
 
 <div class="news-item">
-  4 May 2021: RISC-V International and seL4 Foundation Announce New Security Milestone
+  5 May 2021: RISC-V International and seL4 Foundation Announce New Security Milestone
 </div>
 <div>
  <p>
