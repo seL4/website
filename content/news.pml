@@ -47,7 +47,7 @@
 	alt="RISC-V logo">
 
    Today, the <a href="Foundation/">seL4 Foundation</a> and
-   <a "https://riscv.org">RISC-V International</a> announced that the
+   <a href="https://riscv.org">RISC-V International</a> announced that the
    verified seL4 microkernel on the RV64 architecture has been proved
    down to the executable code
    by <a href="https://data61.csiro.au">CSIRO’s Data61</a>, thanks to
