@@ -84,7 +84,7 @@
  <p>
    &ldquo;The verified seL4 microkernel forms the core of TRENTOS, our
    secure operating system for our MiG-V chip, a RISC-V processor with
-   supply chain security&rdquo;, said Sascha Kegrei&sharps&rdquo;, CTO
+   supply chain security&rdquo;, said Sascha Kegrei&szlig&rdquo;, CTO
    of HENSOLDT Cyber GmbH. &ldquo;This unique combination of hardware
    and software security can protect critical assets from advanced
    persistent cyber threats.&rdquo;
