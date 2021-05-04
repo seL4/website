@@ -47,11 +47,11 @@
 	alt="RISC-V logo">
 
    Today, the <a href="Foundation/">seL4 Foundation</a> and
-   <a https://riscv.org">RISC-V International</a> announced that the
-   verified seL4 microkernel on the RV64 architecture has been proven
+   <a "https://riscv.org">RISC-V International</a> announced that the
+   verified seL4 microkernel on the RV64 architecture has been proved
    down to the executable code
    by <a href="https://data61.csiro.au">CSIRO’s Data61</a>, thanks to
-   funding provided by <a href=""https://hensoldt-cyber.com">HENSOLDT
+   funding provided by <a href="https://hensoldt-cyber.com">HENSOLDT
    Cyber GmbH</a>. This guarantees that the seL4 microkernel on RV64
    will operate to specification even when built with an untrusted C
    compiler, GCC.
@@ -100,7 +100,7 @@
 
  <p>
    For more details on binary verification of seL4 on RISC-V
-   see <a href="http://https://microkerneldude.wordpress.com/">Gernot's
+   see <a href="https://microkerneldude.wordpress.com/">Gernot's
      blog</a>.
  </p>
 </div>
