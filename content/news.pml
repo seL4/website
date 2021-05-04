@@ -23,7 +23,7 @@
 <div>
  <p>
 
-   <img src="Foundation/Membership/LOGOS/raytheontechnologies.svg"
+   <img src="/Foundation/Membership/LOGOS/raytheontechnologies.svg"
    style="width: 15%;  padding-left:10px;  float:right"
    alt="Raytheon logo">
 
@@ -42,11 +42,11 @@
 </div>
 <div>
  <p>
-   <img src="Foundation/Membership/LOGOS/RISC-V.svg"
+   <img src="/Foundation/Membership/LOGOS/RISC-V.svg"
    style="width: 15%;  padding-left:10px;  float:right"
 	alt="RISC-V logo">
 
-   Today, the <a href="Foundation/">seL4 Foundation</a> and
+   Today, the <a href="/Foundation/">seL4 Foundation</a> and
    <a href="https://riscv.org">RISC-V International</a> announced that the
    verified seL4 microkernel on the RV64 architecture has been proved
    down to the executable code
@@ -84,7 +84,7 @@
  <p>
    &ldquo;The verified seL4 microkernel forms the core of TRENTOS, our
    secure operating system for our MiG-V chip, a RISC-V processor with
-   supply chain security&rdquo;, said Sascha Kegrei&szlig&rdquo;, CTO
+   supply chain security&rdquo;, said Sascha Kegrei&szlig;&rdquo;, CTO
    of HENSOLDT Cyber GmbH. &ldquo;This unique combination of hardware
    and software security can protect critical assets from advanced
    persistent cyber threats.&rdquo;
@@ -111,7 +111,7 @@
 </div>
 <div>
  <p>
-   <img src="Foundation/Membership/LOGOS/ETH-Zurich.svg"
+   <img src="/Foundation/Membership/LOGOS/ETH-Zurich.svg"
    style="width: 15%;  padding-left:10px;  float:right"
 	alt="ETH Zurich logo">
 
@@ -139,7 +139,7 @@
 </div>
 <div>
  <p>
-   <img src="Foundation/Membership/LOGOS/raytheontechnologies.svg"
+   <img src="/Foundation/Membership/LOGOS/raytheontechnologies.svg"
    style="width: 15%;  padding-left:10px;  float:right"
 	alt="Raytheon logo">
 
@@ -228,17 +228,17 @@
 
  <p>
    <a href="https://dornerworks.com/">
-   <img src="Foundation/Membership/LOGOS/DornerWorks.svg"
+   <img src="/Foundation/Membership/LOGOS/DornerWorks.svg"
    style="width:15%; padding-left:1em"
    alt="DornerWorks logo">
    </a>
    <a href="https://brkawy.com/">
-   <img src="Foundation/Membership/LOGOS/Brkawy.png"
+   <img src="/Foundation/Membership/LOGOS/Brkawy.png"
    style="width:15%; padding-left:1em"
    alt="Breakaway Consulting logo">
    </a>
    <a href="https://cog.systems/">
-   <img src="Foundation/Membership/LOGOS/Cog.jpg"
+   <img src="/Foundation/Membership/LOGOS/Cog.jpg"
    style="width:15%; padding-left:1em"
    alt="Cog logo">
    </a>
@@ -340,7 +340,7 @@
  <p>
 
    <a href="https://www.adventiumlabs.com">
-   <img src="Foundation/Membership/LOGOS/adventium-labs.svg"
+   <img src="/Foundation/Membership/LOGOS/adventium-labs.svg"
    style="width:40%; padding-left:1em; float:right"
    alt="Adventium Labs logo">
    </a>
@@ -451,7 +451,7 @@ post</a>.
  <p>
 
    <a href="https://brkawy.com">
-   <img src="Foundation/Membership/LOGOS/Brkawy.png"
+   <img src="/Foundation/Membership/LOGOS/Brkawy.png"
    style="width:40%; padding-left:1em; float:right"
    alt="Breakaway logo">
    </a>
