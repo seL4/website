@@ -77,8 +77,8 @@
  <p>
    &ldquo;This is another milestone for seL4, which continues to
    define the state of the art in OS security,&rdquo; added Prof
-   Gernot Heiser, Chairman of the seL4 Foundation. $ldquo;Stronger
-   aligning the two open ecosystems makes a lot of sense.rdquo;
+   Gernot Heiser, Chairman of the seL4 Foundation. &ldquo;Stronger
+   aligning the two open ecosystems makes a lot of sense.&rdquo;
  </p>
 
  <p>
