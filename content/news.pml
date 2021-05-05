@@ -101,7 +101,7 @@
  <p>
    For more details on binary verification of seL4 on RISC-V
    see Gernot's
-   blog: <a href="https://microkerneldude.wordpress.com/">seL4 on
+   blog: <a href="https://microkerneldude.wordpress.com/2021/05/05/sel4-on-risc-v-verified-to-binary-code/">seL4 on
    RISC-V Verified to Binary Code (and seL4 and RISC-V Foundations
    form an alliance)</a>.
  </p>
