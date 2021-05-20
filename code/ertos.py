@@ -7,23 +7,17 @@
 
 import sys
 import os
-import imp
 import re
-import string
-import cgi
-import time
+from importlib.machinery import SourceFileLoader
+
+from html import escape
 import traceback
-import itertools as IT
-from io import StringIO
+from mod_python import apache, psp
+import io
 
-from lxml import etree
-
-from sqlobject import OR
-#import cProfile
 from ertos_config import cfg           # site config
-from urllib.parse import urlparse, parse_qs
+from urllib.parse import parse_qs
 from ertos_nav import dir2list
-import codecs
 
 cfg.read('config.cfg')
 in_production = cfg.getboolean('core', 'production')
@@ -32,13 +26,6 @@ if not in_production:
     from tidylib import Tidy
 
 # FIXME: The entire website is very "stringly"-typed.
-
-try:
-    import mod_python
-    from mod_python import apache, psp
-except:
-    pass
-
 
 def debug(s):
     # (benjl) Set log_level to 0 if you don't want crap in the log file.
@@ -67,7 +54,7 @@ def get_breadcrumbs(req):
     """return [(name,url), ..]"""
     crumbs = []
 
-    f = open(os.path.join(content_dir, '.breadcrumbs'), "r")
+    f = io.open(os.path.join(content_dir, '.breadcrumbs'), "r", encoding='utf8')
     for line in f.readlines():
         if line.startswith('#'):
             continue
@@ -142,7 +129,6 @@ def converttitle(title):
 
 
 def send_menu_elements(req, bibargs, dir, todo, depth):
-    urlbase = req.get_options()["base_url"]
     basedir = req.get_options()["base_dir"]
     parent = dir[len(basedir):]
 
@@ -161,7 +147,7 @@ def send_menu_elements(req, bibargs, dir, todo, depth):
             if os.path.isdir(os.path.join(dir, filename)):
                 allfiles[(0, filename)] = '/%s/' % os.path.join(parent, filename)
                 # allfiles.append([filename, '/%s/' % os.path.join(parent, filename)])
-                Translate[filename] = converttitle(filename)
+                translate[filename] = converttitle(filename)
             elif os.path.isfile(os.path.join(dir, filename)):
                 allfiles[(0, filename)] = '/%s' % os.path.join(parent, filename)
                 # allfiles.append([title, '/%s' % os.path.join(parent, filename)])
@@ -176,10 +162,8 @@ def send_menu_elements(req, bibargs, dir, todo, depth):
     i = 0
     if os.path.isfile(os.path.join(dir, ".menu.py")):
         filepathname = os.path.join(dir, ".menu.py")
-        f = codecs.open(filepathname, encoding='utf-8', mode="U")
-        menu = imp.load_source('menu', filepathname, f)
+        menu = SourceFileLoader('menu', filepathname).load_module()
         sortedfiles = menu.menulist(req)
-
     elif os.path.isfile(os.path.join(dir, ".menu")):
         for line in readfile(os.path.join(dir, ".menu")):
             i += 1
@@ -282,47 +266,13 @@ def send_menu_elements(req, bibargs, dir, todo, depth):
                     send_menu_elements(req, bibargs, foo, bar, depth + 1)
 
 
-def get_news_elements(item_count=6, max_title_len=80, max_story_len=350):
-
-    # Get news file, surround it by parent tags, and then join together
-    basedir = cfg.get('core', "base_dir")
-    news = ["<xml>"]
-    news.extend(readfile(os.path.join(basedir, "content/news/home.pml")))
-    news.append("</xml>")
-    news = "\n".join(news)
-
-    # Preprocess string for ultra-conservative parser
-    news = re.sub(r"&\S*;", " ", news)
-    news = news.replace("<br>", "<br />")
-
-    parser = etree.HTMLParser()
-    tree = etree.parse(StringIO(news), parser)
-
-    news_items = []
-    for entry in tree.iter('tr'):       # Go through each row
-        for title in entry.iter('th'):  # Titles
-            txt = "".join(list(title.itertext()))
-            txt = txt[:max_title_len-3] + "..." if len(txt) > max_title_len else txt
-        for body in entry.iter('td'):   # Stories
-            txt = "".join(list(body.itertext()))
-            txt = txt[:max_story_len-3] + "..." if len(txt) > max_story_len else txt
-
-        news_items.append(txt.strip().replace('\n', ' '))
-
-        if len(news_items) >= item_count * 2:
-            break
-
-    news_elements = [news_items[i:i+2] for i in range(0, len(news_items), 2)]
-
-    return news_elements
-
 
 def readfile(f):
-    fh = open(f)
+    fh = io.open(f, 'r', encoding='utf8')
     output = []
     for line in fh:
         line = str.lstrip(line).rstrip('\n')
-        if len(line) is not 0 and line[0] != '#' and line[0] != '\n':
+        if len(line) and line[0] != '#' and line[0] != '\n':
             output.append(line)
     return output
 
@@ -357,12 +307,11 @@ def addresses_from_file(f):
 # this spills out the entries in the right hand navigation menu of the pages
 def send_menu(req, bibargs=None):
     req.write('<!-- Automated menu entries -->\n')
-    urlbase = req.get_options()["base_url"]
     basedir = req.get_options()["base_dir"]
     codedir = req.get_options()["code_dir"]
 
     if ((req.uri == "/home.pml") or (len(req.uri) == 1)):
-        f = open(os.path.join(codedir, "toplevelmenu.html"), "r")
+        f = io.open(os.path.join(codedir, "toplevelmenu.html"), "r", encoding='utf8')
         ignore = get_ignore_list(req, basedir)
         entry = ""
         if "jobs" not in ignore:
@@ -442,34 +391,6 @@ class DummyPage:
     def get_page(self):
         return ' '.join(self.page)
 
-
-def py_handler(req, query, messagens):
-    f = open(req.filename, "r")
-    filepath, filename = os.path.split(req.filename)
-    oldpath = sys.path
-    sys.path.append(filepath)  # Allow files to import from their directory - bad?
-    module = imp.load_source(os.path.splitext(filename)[0], req.filename, f)
-    sys.path = oldpath
-    req.content_type = "text/html; charset=utf-8"
-    pagedict = None
-    if "makepage" in dir(module):
-        pagedict = DummyPage(req)
-        module.makepage(pagedict)
-    elif "get_title" in dir(module):
-        title = module.get_title(req)
-    else:
-        title = req_to_title(req)
-    req.send_http_header()
-    if pagedict:
-        send_header(req, pagedict.title)
-        req.write(pagedict.get_page())
-    else:
-        send_header(req, title)
-        module.handler(req, query)
-    send_footer(req)
-    return apache.OK
-
-
 def pyl_handler(req, query, messages):
     """new version of py_handler() to work with PSP templates"""
 
@@ -477,11 +398,10 @@ def pyl_handler(req, query, messages):
     fakereq = DummyPage(req)
     fakereq.user = req.user
     try:
-        f = open(req.filename, "r")
         filepath, filename = os.path.split(req.filename)
         oldpath = sys.path
         sys.path.append(filepath)  # Allow files to import from their directory - bad?
-        module = imp.load_source(os.path.splitext(filename)[0], req.filename, f)
+        module = SourceFileLoader(filename, req.filename).load_module()
     except:
         req.status = apache.HTTP_NOT_FOUND
         return apache.OK
@@ -541,11 +461,10 @@ def pyx_handler(req, query, messages):
     """Basically calling user's handler() without setting content type
     --- for binary stuff like photos"""
 
-    f = open(req.filename, "r")
     filepath, filename = os.path.split(req.filename)
     oldpath = sys.path
     sys.path.append(filepath)  # Allow files to import from their directory - bad?
-    module = imp.load_source(os.path.splitext(filename)[0], req.filename, f)
+    module = SourceFileLoader(os.path.splitext(filename)[0], req.filename).load_module()
     sys.path = oldpath
 
     module.handler(req, query)
@@ -584,7 +503,7 @@ def psp_handler(req, query, messages):
     # some variables needed in our templates
     breadcrumbs = get_breadcrumbs(req)
 
-    f = open(req.filename, "r")
+    f = io.open(req.filename, "r", encoding='utf8')
     title_re = re.search(r"\<title\>(.*)\<\/title\>", f.read())
     f.close()
     # If the user content was a tuple, it means we specified extra data for the <head>
@@ -599,7 +518,6 @@ def psp_handler(req, query, messages):
         title = "%s | CSIRO's Data61" % cfg.get('core', 'rg_abbrev').upper()
 
     if title_re:
-        title_end = title_re.end()
         title = "%s | %s" % (title_re.groups()[0], title)
     else:
         # Default to the ugly URL
@@ -612,7 +530,7 @@ def psp_handler(req, query, messages):
 
     # See if page is requesting custom banner
     banner_img = None
-    f = open(req.filename, "r")
+    f = io.open(req.filename, "r", encoding='utf8')
     banner_re = re.search(r"\<banner\>(.*)\<\/banner\>", f.read())
     f.close()
 
@@ -669,7 +587,7 @@ def edit_handler(req, query, messages):
         req.write(sorry_text)
         return apache.HTTP_FORBIDDEN
 
-    f = open(req.filename, 'r')
+    f = io.open(req.filename, 'r', encoding='utf8')
     title_re = re.search(r"\<title\>(.*)\<\/title\>", f.read())
     f.close()
     if title_re:
@@ -680,14 +598,14 @@ def edit_handler(req, query, messages):
     # See if page is requesting custom banner
     banner_img = None
 
-    f = open(req.filename, 'r')
+    f = io.open(req.filename, 'r', encoding='utf8')
     banner_re = re.search(r"\<banner\>(.*)\<\/banner\>", f.read())
     f.close()
     if banner_re:
         banner_img = banner_re.groups()[0]
 
     breadcrumbs = get_breadcrumbs(req)
-    f = open(req.filename, "r")
+    f = io.open(req.filename, "r", encoding='utf8')
     user_content = f.read()
     f.close()
     data = dict(psp=psp, breadcrumbs=breadcrumbs, title=title, banner_img=banner_img,
@@ -711,15 +629,13 @@ def validate_handler(req, query, messages):
 
     # get string from our customized handler()
     fakereq = DummyPage(req)
-    f = open(req.filename, "r")
     filepath, filename = os.path.split(req.filename)
     oldpath = sys.path
     sys.path.append(filepath)  # Allow files to import from their directory - bad?
-    module = imp.load_source(os.path.splitext(filename)[0], req.filename, f)
+    module = SourceFileLoader(os.path.splitext(filename)[0], req.filename).load_module()
     sys.path = oldpath
     module.handler(fakereq, query, path)
     user_content = fakereq.get_page()
-    f.close()
 
     title = ("%s | Validation Check - " % cfg.get('core', 'rg_abbrev').upper()) + path
 
@@ -756,9 +672,9 @@ def save_handler(req, query, messages):
     doc = '<!DOCTYPE html><head><title>foo</title></head><body>' + user_content + '</body></html>'
     doc, errs = tidy.tidy_document(doc, options=OPTIONS)
 
-    if errs is not '':
+    if errs != '':
         req.write("<strong>Errors found</strong><br/><pre>")
-        req.write(cgi.escape(errs))
+        req.write(escape(errs))
         req.write("</pre>")
         return apache.OK
 
@@ -766,7 +682,7 @@ def save_handler(req, query, messages):
     doc = re.sub(r'^    ', '', doc, flags=re.MULTILINE)
     if path.startswith(content_dir):
         filename = path + ".new"
-        f = open(filename, "w")
+        f = io.open(filename, "w", encoding='utf8')
         f.write(doc)
         f.close()
         os.rename(filename, path)
@@ -791,11 +707,11 @@ def linklint_handler(req, query, messages):
 
     # get string from our customized handler()
     fakereq = DummyPage(req)
-    f = open(req.filename, "r")
+    f = io.open(req.filename, "r", encoding='utf8')
     filepath, filename = os.path.split(req.filename)
     oldpath = sys.path
     sys.path.append(filepath)  # Allow files to import from their directory - bad?
-    module = imp.load_source(os.path.splitext(filename)[0], req.filename, f)
+    module = SourceFileLoader(os.path.splitext(filename)[0], req.filename).load_module()
     sys.path = oldpath
     module.handler(fakereq, query, path)
     user_content = fakereq.get_page()
@@ -818,11 +734,10 @@ def search_handler(req, query, messages):
 
     path = os.path.dirname(req.filename)
     fakereq = DummyPage(req)
-    f = open(req.filename, "r")
     filepath, filename = os.path.split(req.filename)
     oldpath = sys.path
     sys.path.append(filepath)  # Allow files to import from their directory - bad?
-    module = imp.load_source(os.path.splitext(filename)[0], req.filename, f)
+    module = SourceFileLoader(os.path.splitext(filename)[0], req.filename).load_module()
     sys.path = oldpath
     module.handler(fakereq, query, path)
     user_content = fakereq.get_page()
@@ -862,12 +777,11 @@ def handler(req):
     content_dir = cfg.get('core', 'content_dir') + "/"
     in_production = cfg.getboolean('core', 'production')
 
-    d = os.path.dirname(req.filename)
     nav_urls = dir2list(content_dir)
 
     req.content_type = "text/html"
     if req.args is not None:
-        query = cgi.parse_qs(req.args)
+        query = parse_qs(req.args)
     else:
         query = {}
 
@@ -903,7 +817,7 @@ def handler(req):
 
         return res
 
-    except Exception as e:
+    except:
         # cgitb should NEVER be used on the live public site
         # it can leak internal data like usernames and passwords
         formatted_lines = traceback.format_exc().splitlines()
