@@ -27,6 +27,7 @@ if not in_production:
 
 # FIXME: The entire website is very "stringly"-typed.
 
+
 def debug(s):
     # (benjl) Set log_level to 0 if you don't want crap in the log file.
     #apache.log_error(s, apache.APLOG_ERR)
@@ -266,7 +267,6 @@ def send_menu_elements(req, bibargs, dir, todo, depth):
                     send_menu_elements(req, bibargs, foo, bar, depth + 1)
 
 
-
 def readfile(f):
     fh = io.open(f, 'r', encoding='utf8')
     output = []
@@ -390,6 +390,7 @@ class DummyPage:
 
     def get_page(self):
         return ' '.join(self.page)
+
 
 def pyl_handler(req, query, messages):
     """new version of py_handler() to work with PSP templates"""
