@@ -160,7 +160,7 @@
       </td>
       <td>
 	<strong>Advanced Operating Systems at UNSW</strong><br/>
-	COMP9424 &ldquo;Advanced Operating Systems&rdquo; (AOS) is a
+	COMP9242 &ldquo;Advanced Operating Systems&rdquo; (AOS) is a
 	highly advanced course at UNSW Sydney, taught since
 	1997. Since 2011 the course has been based on seL4, and as of
 	2020, recordings of all seL4-related lectures
