@@ -25,7 +25,7 @@ If you are an organisation and would like to post here, email <a
 
 <ul>
 <li>
-<b> Company description and position in seL4 ecosystem</b>: short (few
+<b> Company description and position in seL4 ecosystem</b>: short (a few
 sentences) description of the company's profile and its role or
 interest in the seL4 ecosystem.
 </li>
