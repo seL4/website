@@ -4,7 +4,7 @@
     SPDX-License-Identifier: CC-BY-SA-4.0
 -->
 <h1>
-  Jobs about
+  Jobs around
   <a href="home.pml">seL4</a>
 </h1>
 
