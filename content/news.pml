@@ -38,6 +38,23 @@
 -->
 
 <div class="news-item">
+  23 May 2021: New "Jobs" page on the seL4 Foundation website
+</div>
+<div>
+ <p>
+   <img src="/images/sel4-foundation-logo.svg"
+   style="width: 15%;  padding-left:10px;  float:right"
+	alt="RISC-V logo">
+
+   The community has expressed a need to more easily find seL4 experts
+   to hire. The Foundations has created a <a
+   href="/Foundation/Jobs">"Jobs in seL4 ecosystem" page</a> where
+   members can post offers for positions with seL4 expertise.
+
+ </p>
+</div>
+
+<div class="news-item">
   5 May 2021: RISC-V International and seL4 Foundation Announce New Security Milestone
 </div>
 <div>

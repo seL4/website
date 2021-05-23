@@ -87,6 +87,9 @@
       <a title="Contact the Foundation"
           href="../Contact">Contact the seL4 Foundation</a>
     </li>
+    <li>
+      <a title="Jobs in the seL4 ecosystem"
+          href="../Jobs">Jobs in the seL4 ecosystem</a>
+    </li>
   </ul>
 </div>
-
