@@ -50,8 +50,9 @@
    to hire. The Foundations has created a <a
    href="/Foundation/Jobs">"Jobs in seL4 ecosystem" page</a> where
    members can post offers for positions with seL4 expertise.
-   
+
  </p>
+</div>
 
 <div class="news-item">
   5 May 2021: RISC-V International and seL4 Foundation Announce New Security Milestone
