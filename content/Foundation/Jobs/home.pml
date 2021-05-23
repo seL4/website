@@ -18,7 +18,7 @@ The list is in chronological order, more recent at the top.
 </p>
 
 <p>
-If you are an organisation wanting to post here, email <a
+If you are an organisation and would like to post here, email <a
     href="mailto:foundation@sel4.systems"
     class="email">foundation@sel4.systems</a> with:
 </p>
