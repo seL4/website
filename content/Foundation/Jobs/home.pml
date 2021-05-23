@@ -4,13 +4,14 @@
     SPDX-License-Identifier: CC-BY-SA-4.0
 -->
 <h1>
-  Jobs around
-  <a href="home.pml">seL4</a>
+  Jobs in the <a href="../../home.pml">seL4</a> ecosystem.
 </h1>
 
 <p>
-This page matches organisations looking for seL4 expertise  and people looking for
-jobs in the seL4 ecosystem.
+
+This page matches member organisations looking for seL4 expertise and
+people looking for jobs in the seL4 ecosystem.
+
 </p>
 
 <p>
@@ -18,10 +19,12 @@ The list is in chronological order, more recent at the top.
 </p>
 
 <p>
-If you are an organisation and would like to post here, email <a
-    href="mailto:foundation@sel4.systems"
-    class="email">foundation@sel4.systems</a> with:
-</p>
+
+If you are a <a title="Membership" href="../Membership">member</a> of
+the <a title="seL4 Foundation" href="../About">seL4 Foundation!</a>
+and would like to post job offers here, email <a
+href="mailto:foundation@sel4.systems"
+class="email">foundation@sel4.systems</a> with: </p>
 
 <ul>
 <li>
