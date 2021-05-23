@@ -96,7 +96,7 @@
 
 	  <p>
 
-          Donors of $1,000 or more for that project will be here.
+          Donors of $1,000 or more for that project will be displayed here.
 	  </p>
           <!--
           <a href="https://sel4.systems/Foundation/About.html">
@@ -109,8 +109,3 @@
 	</div>
       </div>
     </div>
-
-
-
-  </div>
-</div>
