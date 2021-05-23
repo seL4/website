@@ -4,7 +4,7 @@
     SPDX-License-Identifier: CC-BY-SA-4.0
 -->
 <h1>
-  Jobs about 
+  Jobs about
   <a href="home.pml">seL4</a>
 </h1>
 
@@ -54,7 +54,7 @@ explicit description of how the job will be linked to seL4.
    <img src="/images/seL4.svg"
    style="width:30%; padding-left:1em; float:right"
    alt="seL4">
- </p> 
+ </p>
   <ul>
   <li>
     <b> Company description and position in seL4 ecosystem</b>:
