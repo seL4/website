@@ -30,7 +30,7 @@ sentences) description of the company's profile and its role or
 interest in the seL4 ecosystem.
 </li>
 <li>
-<b> Position details and link to seL4</b>: short (few sentences)
+<b> Position details and link to seL4</b>: short (a few sentences)
 description of the type of profile and expertise sought
 (systems/verification/etc, engineering/research/etc), the location,
 the number of positions open, etc. The description should include an
