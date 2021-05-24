@@ -28,7 +28,7 @@
     <ul>
       <li>
         <strong>
-	  24 May 2021: 4 concrete ways to support seL4 now
+	  24 May 2021: 4 concrete ways to support seL4 now</strong>
       </li>
       <li>
         <strong>
