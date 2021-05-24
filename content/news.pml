@@ -86,7 +86,7 @@
       <a
       href="/Foundation/Support">https://sel4.systems/Foundation/Support/</a><br>
       <a
-      href="https://crowdfunding.lfx.linuxfoundation.org/projects/e94c998c-bac2-4224-b0ae-23f265fdd1a5">https://crowdfunding.lfx.linuxfoundation.org/projects/e94c998c-bac2-4224-b0ae-23f265fdd1a5</a><br>
+      href="https://crowdfunding.lfx.linuxfoundation.org/projects/e94c998c-bac2-4224-b0ae-23f265fdd1a5">seL4 crowdfunding page</a><br>
 
       The crowd-funding platform works for large and small financial
       contributions, and contributions can be dedicated to specific
