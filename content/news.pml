@@ -81,12 +81,12 @@
     <li>
 
       <b> donations and crowdfunding, in particular towards the
-	  “continuity project".</b></br>
+	  “continuity project".</b><br>
 
       <a
-      href="/Foundation/Support">https://sel4.systems/Foundation/Support/</a></br>
+      href="/Foundation/Support">https://sel4.systems/Foundation/Support/</a><br>
       <a
-      href="https://crowdfunding.lfx.linuxfoundation.org/projects/e94c998c-bac2-4224-b0ae-23f265fdd1a5">https://crowdfunding.lfx.linuxfoundation.org/projects/e94c998c-bac2-4224-b0ae-23f265fdd1a5</a></br>
+      href="https://crowdfunding.lfx.linuxfoundation.org/projects/e94c998c-bac2-4224-b0ae-23f265fdd1a5">https://crowdfunding.lfx.linuxfoundation.org/projects/e94c998c-bac2-4224-b0ae-23f265fdd1a5</a><br>
 
       The crowd-funding platform works for large and small financial
       contributions, and contributions can be dedicated to specific
@@ -104,7 +104,7 @@
     </li>
     <li>
 
-      <b> get more members signed up to the Foundation.</b></br>
+      <b> get more members signed up to the Foundation.</b><br>
 
       <a
       href="/Foundation/Join">https://sel4.systems/Foundation/Join/</a><br>
