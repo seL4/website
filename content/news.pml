@@ -62,20 +62,22 @@
     company are dedicated to support seL4 in the future.
   </p>
   <p>
+
     With this recent news, it’s never been more important to work
     together as a community to support seL4 and the transition of the
-    support and development to the Foundation and its members.
+    support and development to the Foundation and its members. People
+    have been asking how to help. Offers of support keep coming. We
+    are looking at various options for sustainable support, with a
+    priority of keeping the team together. There are options on the
+    table that we are exploring that may allow us to do that. Please
+    help us with that, the existing TS team is the best base for
+    stable seL4 support.
   </p>
   <p>
-    People have been asking how to help. Offers of support keep
-    coming. While we keep working on further long-term support and
-    projects, there are a few things that are needed right now. <a
-    href="mailto:foundation@sel4.systems">Contact us</a> if you want
-    to discuss.
-  </p>
-  <p>
-    Here are 4 concrete things that can be done now. Spread the word
-    to people who care about seL4’s future:
+    <b> In the meantime, here are 4 concrete things that can be done
+    now. Spread the word to people who care about seL4’s future, and
+    <a href="mailto:foundation@sel4.systems">contact us</a> if you
+    want to discuss.</b>
   </p>
   <ol>
     <li>
