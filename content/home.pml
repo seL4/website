@@ -28,16 +28,15 @@
     <ul>
       <li>
         <strong>
+	  24 May 2021: 4 concrete ways to support seL4 now</strong>
+      </li>
+      <li>
+        <strong>
 	  23 May 2021: New "Jobs" page on the seL4 Foundation website</strong>
       </li>
       <li>
         <strong>
 	  5 May 2021: RISC-V International and seL4 Foundation Announce New Security Milestone</strong>
-      </li>
-      <li>
-        <strong>
-	  23 April 2021: Welcome ETH Zurich to the seL4 Foundation
-	</strong>
       </li>
       <li>
 	 More.

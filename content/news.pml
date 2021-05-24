@@ -37,6 +37,134 @@
 </div>
 -->
 
+<!----------------------------------------------------------->
+<div class="news-item">
+  24 May 2021: 4 concrete ways to support seL4 now
+</div>
+<div>
+  <p>
+    <img src="/images/sel4-foundation-logo.svg" style="width: 15%;
+    padding-left:10px; float:right" alt="RISC-V logo">
+  </p>
+  <p>
+    It has been heart-warming to see the response of the seL4
+    community to the news of the dismantlement of the Trustworthy
+    Systems group (TS), creator of seL4.
+  </p>
+
+  <p>
+    The seL4 Foundation, as well as its members and ecosystem, want to
+    reinforce their commitment to the success and support of seL4. The
+    TS team will be rebuilding at UNSW and a number of
+    Foundation-endorsed <a href="/Foundation/Services">seL4 services
+    providers</a> as well as the newly created <a
+    href="https://proofcraft.systems">Proofcraft</a> verification
+    company are dedicated to support seL4 in the future.
+  </p>
+  <p>
+
+    With this recent news, it’s never been more important to work
+    together as a community to support seL4 and the transition of the
+    support and development to the Foundation and its members. People
+    have been asking how to help. Offers of support keep coming. We
+    are looking at various options for sustainable support, with a
+    priority of keeping the team together. There are options on the
+    table that we are exploring that may allow us to do that. Please
+    help us with that, the existing TS team is the best base for
+    stable seL4 support.
+  </p>
+  <p>
+    <b> In the meantime, here are 4 concrete things that can be done
+    now. Spread the word to people who care about seL4’s future, and
+    <a href="mailto:foundation@sel4.systems">contact us</a> if you
+    want to discuss.</b>
+  </p>
+  <ol>
+    <li>
+
+      <b> donations and crowdfunding, in particular towards the
+	  “continuity project".</b><br>
+
+      <a
+      href="/Foundation/Support">https://sel4.systems/Foundation/Support/</a><br>
+      <a
+      href="https://crowdfunding.lfx.linuxfoundation.org/projects/e94c998c-bac2-4224-b0ae-23f265fdd1a5">seL4 crowdfunding page</a><br>
+
+      The crowd-funding platform works for large and small financial
+      contributions, and contributions can be dedicated to specific
+      topics. Fans are always welcome to contribute and show the
+      continued support to seL4 :), but if you know of companies that
+      would like to show financial support without a longer-term
+      commitment, this is a quick and easy mechanism to do so.<br>
+      We have set up a dedicated “continuity project” to raise funds
+      specifically targeted to the transition of the infrastructure
+      (testing, boards etc) and the immediate support needs (maintenance
+      of all configurations, libraries, releases etc) to the
+      Foundation. All donors of $1,000 and above will be listed on the
+      page above.
+
+    </li>
+    <li>
+
+      <b> get more members signed up to the Foundation.</b><br>
+
+      <a
+      href="/Foundation/Join">https://sel4.systems/Foundation/Join/</a><br>
+
+      A push to get more organisations joining in the coming weeks
+      will be a clear message of the strong support to seL4 and will
+      provide the necessary funds funds to transition more support to
+      the Foundation. Longer term, membership helps deliver on the
+      Foundation’s vision to increase usability, exposure, support,
+      education, participation, and verification of seL4. Join or help
+      spreading the word to join to your partners and customers.
+
+    </li>
+    <li>
+
+      <b> in-kind offer of expertise.</b><br>
+
+      The number of seL4 experts is growing. Active participation and
+      especially support for new users and beginners on Discourse
+      (https://sel4.discourse.group) and the mailing list will help
+      keep the community active. Likewise contributions to reviews and
+      discussion on GitHub on pull requests and issues will help to
+      keep things moving. The focus has shifted away from just D61
+      contributions in the past year already, now is the time to keep
+      the momentum up. The TS team and people in the technical
+      steering committee are working on moving testing and
+      verification infrastructure to UNSW. This will include opening
+      up the infrastructure such that members can contribute hardware
+      tests. We will send more information about this in the next few
+      weeks. Please contact Gerwin as the TSC chair if you are
+      interested in this or have additional ideas how to help.<br>
+
+      We were gearing up for the next seL4 release. This might be
+      slightly delayed by the infrastructure move, but if everything
+      comes together as planned the release will go ahead.
+
+    </li>
+    <li>
+
+      <b>jobs in the seL4 ecosystem.</b><br>
+
+      <a href="/Foundation/Jobs">
+      https://sel4.systems/Foundation/Jobs/</a><br>
+
+      While some expertise is needed to be kept within the Foundation,
+      it is also important to keep it within the community. We have
+      just set up a page for members to post jobs related to
+      seL4. This will help match seL4 experts to organisations willing
+      to build upon, develop or support seL4. Contact
+      foundation@sel4.systems to post on that page.
+
+    </li>
+  </ol>
+
+</div>
+
+
+<!----------------------------------------------------------->
 <div class="news-item">
   23 May 2021: New "Jobs" page on the seL4 Foundation website
 </div>
@@ -54,6 +182,7 @@
  </p>
 </div>
 
+<!----------------------------------------------------------->
 <div class="news-item">
   5 May 2021: RISC-V International and seL4 Foundation Announce New Security Milestone
 </div>
