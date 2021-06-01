@@ -12,7 +12,7 @@
 <div class="homepage_grid">
 
   <div class="homepage_item">
-    <a class="divLink" href="http://ts.data61.csiro.au/"></a>
+    <a class="divLink" href="../About/more-research.pml"></a>
     <div class="hp_pic">
       <img src="/images/call-graph.png" style="width:200px;" alt="seL4 call graph" />
     </div>
@@ -52,4 +52,3 @@
   </div>
 
 </div>
-
