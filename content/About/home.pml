@@ -96,4 +96,9 @@
   "http://ts.data61.csiro.au/projects/seL4/">seL4</a>, in close
   cooperation with its partners in the seL4 Foundation.
 </p>
-  
+
+<p>
+  More on TS ongoing and future <a
+  href="more-research.pml">research</a> about seL4 and trustworthy
+  systems.
+</p>
