@@ -11,7 +11,8 @@
   Alongside growing the seL4 ecosystem, protect and promote the seL4 brand
   and provide longevity to seL4, one of the aims of the
   <a href="../About/">seL4 foundation</a> is to provide an avenue for
-  funding on-going engineering as well as sharing the cost of "big-ticket"
+  funding on-going <a href="../../About/more-research.pml">research</a>,
+  on-going engineering as well as sharing the cost of "big-ticket"
   verification items, through its membership revenue, and through specific
   fund-raising to address particular needs.
 </p>
