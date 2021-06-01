@@ -4,7 +4,7 @@
     SPDX-License-Identifier: CC-BY-SA-4.0
 -->
 <h1>
-  Ongoing and future fundamental research about seL4 and trustworthy systems
+  Ongoing and future fundamental research on seL4 and trustworthy systems
 </h1>
 
 <p>
@@ -74,7 +74,7 @@
 <p>
   Much more work remains on the <i>confidentiality</i> side: Here the
   problem is to guarantee that there is no information leakage through
-  covert timing channels; this kind of leakage is a serious real-world
+  <a href="https://en.wikipedia.org/wiki/Covert_channel#Timing_Channels">covert timing channels</a>; this kind of leakage is a serious real-world
   problem, as demonstrated in the <a
   href="https://en.wikipedia.org/wiki/Spectre_(security_vulnerability)">Spectre
   attacks</a>. Timing channels have long been put into the too-hard
@@ -143,7 +143,7 @@
     services, but also the actual applications. So far, verified
     software is still more expensive to produce than the usual buggy
     stuff (although life-cycle cost is probably already
-    competitive). The Trustworthy Systems’ declared aim is to produce
+    competitive). Trustworthy Systems’ declared aim is to produce
     verified software at a cost that’s at par with traditionally
     engineered software;
   </li>
