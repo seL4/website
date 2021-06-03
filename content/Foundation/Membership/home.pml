@@ -102,6 +102,7 @@
     <div class="sponsor-name">
       Kry10 Limited
     </div>
+  </div>
   <div class="sponsor">
     <div class="sponsor-pic">
       <a href="https://www.penten.com">
