@@ -38,6 +38,38 @@
 -->
 
 <!----------------------------------------------------------->
+
+<div class="news-item">
+  7 June 2021: Kry10 the seL4 Foundation
+</div>
+<div>
+ <p>
+   <img src="/Foundation/Membership/LOGOS/Kry10.svg"
+   style="width: 15%;  padding-left:10px;  float:right"
+   alt="Kry10 logo">
+
+   The seL4 Foundation welcomes New-Zealand
+   based <a href="https://kry10.com/">Kry10</a> as our latest member.
+ </p>
+ <p>
+   &ldquo;We believe that formal methods and proven code is the only
+   viable option for software, whether it is AI, Industrial controls,
+   or really anything else. seL4 is the first, and only real practical
+   kernel to show the world how it should be done,&rdquo; says Boyd
+   Multerer, CEO and Founder of Kry10.
+ </p>
+
+ <p>
+   &ldquo;At Kry10, we are building a full-featured operating system
+   on top of the seL4 Kernel, along with tooling, services, key
+   management and more. We are aiming at industrial use, but it is
+   suitable for consumer devices and more. Combined with the Erlang
+   BEAM VM for applications, we intend to deliver systems with great
+   security and minimal downtime, even across upgrades.&rdquo;
+ </p>
+</div>
+
+<!----------------------------------------------------------->
 <div class="news-item">
   24 May 2021: 4 concrete ways to support seL4 now
 </div>

@@ -28,15 +28,14 @@
     <ul>
       <li>
         <strong>
+	  7 June 2021: Kry10 joins the seL4 Foundation</strong>
+      </li>
+        <strong>
 	  24 May 2021: 4 concrete ways to support seL4 now</strong>
       </li>
       <li>
         <strong>
 	  23 May 2021: New "Jobs" page on the seL4 Foundation website</strong>
-      </li>
-      <li>
-        <strong>
-	  5 May 2021: RISC-V International and seL4 Foundation Announce New Security Milestone</strong>
       </li>
       <li>
 	 More.
