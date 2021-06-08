@@ -62,7 +62,7 @@
   </div>
 </div>
 
-<h3>Treasurer</h3>
+<h3>CEO and Treasurer</h3>
 <div class="governing-container">
   <div class="governing-item-pic">
     <a href="TS-June.jpg"><img src="TS-June-s.jpg" alt="June Andronick" width="80" /></a>

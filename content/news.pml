@@ -40,6 +40,24 @@
 <!----------------------------------------------------------->
 
 <div class="news-item">
+  9 June 2021: seL4 Foundation appoints CEO
+</div>
+<div>
+ <p>
+
+
+    <img src="TS-June-s.jpg" alt="June Andronick" width="80"
+	 style="padding-left:10px;  float:right" />
+
+    The seL4 Foundation has appointed Dr June Andronick as (part time)
+    CEO. June, as one of the creators of seL4 is already a permanent
+    board member, also continues to fullfil the role of Treasurer.
+ </p>
+</div>
+
+<!----------------------------------------------------------->
+
+<div class="news-item">
   7 June 2021: Kry10 the seL4 Foundation
 </div>
 <div>
