@@ -46,7 +46,7 @@
  <p>
 
 
-    <img src="TS-June-s.jpg" alt="June Andronick" width="80"
+    <img src="Foundation/Board/TS-June-s.jpg" alt="June Andronick" width="80"
 	 style="padding-left:10px;  float:right" />
 
     The seL4 Foundation has appointed Dr June Andronick as (part time)
