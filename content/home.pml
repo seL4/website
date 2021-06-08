@@ -28,15 +28,15 @@
     <ul>
       <li>
         <strong>
+	  9 June 2021: seL4 Foundation appoints CEO</strong>
+      </li>
+      <li>
+        <strong>
 	  7 June 2021: Kry10 joins the seL4 Foundation</strong>
       </li>
       <li>
         <strong>
 	  24 May 2021: 4 concrete ways to support seL4 now</strong>
-      </li>
-      <li>
-        <strong>
-	  23 May 2021: New "Jobs" page on the seL4 Foundation website</strong>
       </li>
       <li>
 	 More.
