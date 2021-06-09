@@ -50,8 +50,9 @@
 	 style="padding-left:10px;  float:right" />
 
     The seL4 Foundation has appointed Dr June Andronick as (part time)
-    CEO. June, as one of the creators of seL4 is already a permanent
-    board member, also continues to fullfil the role of Treasurer.
+    CEO. June, already a permanent board member as one of the founders
+    of the seL4 technology, continues to fullfil the role of
+    Treasurer.
  </p>
 </div>
 
