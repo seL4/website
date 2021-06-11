@@ -21,7 +21,7 @@
   <div class="sponsor">
     <div class="sponsor-pic">
       <a href="http://hensoldt-cyber.com/">
-	<img src="LOGOS/HENSOLDT_Cyber.svg" style="width: 200px" alt="HENSOLDT Cyber logo">
+	<img src="LOGOS/HENSOLDT_Cyber.svg" style="width: 150px" alt="HENSOLDT Cyber logo">
       </a>
     </div>
     <div class="sponsor-name">
