@@ -30,6 +30,16 @@
   </div>
   <div class="sponsor">
     <div class="sponsor-pic">
+      <a href="http://nio.com/">
+	<img src="LOGOS/NIO.svg" style="width: 300px" alt="NIO logo">
+      </a>
+    </div>
+    <div class="sponsor-name">
+     NIO
+    </div>
+  </div>
+  <div class="sponsor">
+    <div class="sponsor-pic">
       <a href="https://unsw.edu.au/">
 	<img src="LOGOS/UNSW.svg" style="width: 200px" alt="UNSW logo">
       </a>
