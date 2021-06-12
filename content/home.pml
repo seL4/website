@@ -28,6 +28,10 @@
     <ul>
       <li>
         <strong>
+          11 June 2021: seL4 12.1.0 released
+        </strong>
+      </li>
+      <li>
 	  9 June 2021: seL4 Foundation appoints CEO</strong>
       </li>
       <li>
