@@ -86,7 +86,7 @@
 </div>
 <div>
  <p>
-    <img src="images/seL4.svg" style="width:30%; padding-left:1em; float:right" alt="seL4">
+    <img src="images/seL4.svg" style="width:15%; padding-left:1em; float:right" alt="seL4">
 
     The seL4 Foundation has released the following updates:
  </p>
