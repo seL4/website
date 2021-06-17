@@ -21,7 +21,7 @@
   <div class="sponsor">
     <div class="sponsor-pic">
       <a href="http://hensoldt-cyber.com/">
-	<img src="LOGOS/HENSOLDT_Cyber.svg" style="width: 150px" alt="HENSOLDT Cyber logo">
+	<img src="LOGOS/HENSOLDT_Cyber.svg" style="width: 186px" alt="HENSOLDT Cyber logo">
       </a>
     </div>
     <div class="sponsor-name">
@@ -31,7 +31,8 @@
   <div class="sponsor">
     <div class="sponsor-pic">
       <a href="http://nio.com/">
-	<img src="LOGOS/NIO.svg" style="width: 200px" alt="NIO logo">
+	<!-- NIO PNG has width 248, better not scale -->
+	<img src="LOGOS/NIO.png" style="width: 248px" alt="NIO logo">
       </a>
     </div>
     <div class="sponsor-name">
@@ -41,7 +42,7 @@
   <div class="sponsor">
     <div class="sponsor-pic">
       <a href="https://unsw.edu.au/">
-	<img src="LOGOS/UNSW.svg" style="width: 200px" alt="UNSW logo">
+	<img src="LOGOS/UNSW.svg" style="width: 248px" alt="UNSW logo">
       </a>
     </div>
     <div class="sponsor-name">
