@@ -47,8 +47,9 @@ explicit description of how the job will be linked to seL4.
 </li>
 </ul>
 
-<!----------------------------------------------------------->
 
+<!----------------------------------------------------------->
+<!---
 <div class="news-item">
  23 May 2021: EXAMPLE-ONLY: seL4 Systems Engineer positions open at Company X
 </div>
@@ -72,6 +73,85 @@ explicit description of how the job will be linked to seL4.
   <li>
     <b>How to apply</b>:
     <p> Link to webpage with more details and/or contact email. </p>
+  </li>
+  </ul>
+
+</div>
+-->
+
+<!----------------------------------------------------------->
+
+<div class="news-item">
+ 17 Jun 2021: NIO looking for world class experts in seL4 and OS / software platform in general
+</div>
+<div>
+ <p>
+   <img src="LOGOS/nio.png"
+   style="width:30%; padding-left:1em; float:right"
+   alt="nio">
+ </p>
+  <ul>
+  <li>
+    <b> Company description and position in seL4 ecosystem</b>:
+    <p>
+
+      NIO Inc. is a pioneer in China’s premium electric vehicle market. We
+      design, jointly manufacture, and sell smart and connected premium electric
+      vehicles, driving innovations in next generation technologies in
+      connectivity, autonomous driving and artificial intelligence. Redefining
+      user experience, we provide users with comprehensive, convenient and
+      innovative charging solutions and other user-centric service
+      offerings. NIO went public in U.S. in 2018. So far, NIO has launched 3
+      mass production vehicle models: ES8, ES6, and EC6, and accumulated
+      deliveries to users are over 120,000. Starting September, NIO will start
+      delivering to users in Norway. NIO invests heavily in in-house R&D to
+      build full-stack cutting-edge technologies around intelligent and
+      autonomous driving EV. Its engineering teams are distributed across the
+      globe, including US, UK, Germany and China. See more on the <a
+      href="https://ir.nio.com/governance/company-profile">company's
+      profile</a>.
+
+    </p>
+    <p>
+
+      Digital Systems department at NIO is missioned to develop the most
+      advanced software platform for the next-generation autonomous driving
+      vehicles in the industry from the ground up. This platform is internally
+      named NIO Vehicle Operating System (NVOS), and <b>based off seL4</b>. It
+      involves solving a wide range of technical challenges, such as seamless
+      app development on heterogeneous hardware chipsets, low-latency & high
+      throughput data processing, powerful AI framework, automobile-grade safety
+      and security guarantee, and complete toolchains to provide Android alike
+      development experience.
+
+    </p>
+  </li>
+  <li>
+    <b> Position details and link to seL4 </b>:
+    <p>
+
+      We are looking for <b>world class experts in seL4 and OS / software
+      platform in general</b>, and positions available range from NVOS Architect
+      (x5), Software Developer (x4), Software Dev Engineer in Test (x3),
+      Security Engineer in Formal Verification (x1), to Chief Software Architect
+      / Technical Fellow (x1), and are based in San Jose or Seattle in U.S.
+
+      Some job postings can be found
+      <a href="https://www.nio.com/careers/jobs?team=Digital%20Systems">here</a>
+
+
+    </p>
+  </li>
+  <li>
+    <b>How to apply</b>:
+    <p>
+
+      Please send resume to Selena Parigoris (<a title="selena.parigoris@nio.io"
+      href="mailto:selena.parigoris@nio.io">selena.parigoris@nio.io</a>) and
+      Qiyan Wang (<a title="qiyan.wang@nio.io" href="mailto:
+      qiyan.wang@nio.io">qiyan.wang@nio.io</a>)
+
+    </p>
   </li>
   </ul>
 
