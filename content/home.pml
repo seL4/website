@@ -28,20 +28,17 @@
     <ul>
       <li>
         <strong>
+	  18 Jun 2021: NIO joins the seL4 Foundation as a Premium Member
+        </strong>
+      </li>
+      <li>
+        <strong>
           11 June 2021: seL4 12.1.0 released
         </strong>
       </li>
       <li>
         <strong>
 	  9 June 2021: seL4 Foundation appoints CEO</strong>
-      </li>
-      <li>
-        <strong>
-	  7 June 2021: Kry10 joins the seL4 Foundation</strong>
-      </li>
-      <li>
-        <strong>
-	  24 May 2021: 4 concrete ways to support seL4 now</strong>
       </li>
       <li style="margin-top:0.2em;list-style-type:none">
       more...
