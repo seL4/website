@@ -148,8 +148,8 @@ explicit description of how the job will be linked to seL4.
 
       Please send resume to Selena Parigoris (<a title="selena.parigoris@nio.io"
       href="mailto:selena.parigoris@nio.io">selena.parigoris@nio.io</a>) and
-      Qiyan Wang (<a title="qiyan.wang@nio.io" href="mailto:
-      qiyan.wang@nio.io">qiyan.wang@nio.io</a>)
+      Qiyan Wang (<a title="qiyan.wang@nio.io"
+      href="mailto:qiyan.wang@nio.io">qiyan.wang@nio.io</a>)
 
     </p>
   </li>
