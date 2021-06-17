@@ -47,37 +47,37 @@
     <img src="images/seL4.svg" style="width:30%; padding-left:1em; float:right" alt="seL4">
 
     The seL4 Foundation has released the following updates:
-    <ul>
-      <li>
-        seL4 v12.1.0:
-        <a href="https://github.com/seL4/seL4/releases/tag/12.1.0">release</a>,
-        <a href="https://docs.sel4.systems/releases/sel4/12.1.0">change log</a>
-      </li>
-      <li>
-        CAmkES v3.10.0:
-        <a href="https://github.com/seL4/camkes-tool/releases/tag/camkes-3.10.0">release</a>,
-        <a href="https://docs.sel4.systems/releases/camkes/camkes-3.10.0">change log</a>
-      </li>
-      <li>
-        CapDL v0.2.1:
-        <a href="https://github.com/seL4/capdl/releases/tag/0.2.1">release</a>,
-        <a href="https://docs.sel4.systems/releases/capdl/0.2.1">change log</a>
-      </li>
-    </ul>
-    Various repositories with support libraries and tools have also been updated.
-    Please refer to the following release manifests:
-    <ul>
-      <li>
-          <a href="https://github.com/seL4/sel4test-manifest/releases/tag/12.1.0">seL4 Test</a>
-      </li>
-      <li>
-          <a href="https://github.com/seL4/sel4-tutorials-manifest/releases/tag/camkes-3.10.0">seL4 Tutorials</a>
-      </li>
-      <li>
-          <a href="https://github.com/seL4/camkes-manifest/releases/tag/camkes-3.10.0">CAmkES</a>
-      </li>
-    </ul>
  </p>
+ <ul>
+   <li>
+     seL4 v12.1.0:
+     <a href="https://github.com/seL4/seL4/releases/tag/12.1.0">release</a>,
+     <a href="https://docs.sel4.systems/releases/sel4/12.1.0">change log</a>
+   </li>
+   <li>
+     CAmkES v3.10.0:
+     <a href="https://github.com/seL4/camkes-tool/releases/tag/camkes-3.10.0">release</a>,
+     <a href="https://docs.sel4.systems/releases/camkes/camkes-3.10.0">change log</a>
+   </li>
+   <li>
+     CapDL v0.2.1:
+     <a href="https://github.com/seL4/capdl/releases/tag/0.2.1">release</a>,
+     <a href="https://docs.sel4.systems/releases/capdl/0.2.1">change log</a>
+   </li>
+ </ul>
+ Various repositories with support libraries and tools have also been updated.
+ Please refer to the following release manifests:
+ <ul>
+   <li>
+     <a href="https://github.com/seL4/sel4test-manifest/releases/tag/12.1.0">seL4 Test</a>
+   </li>
+   <li>
+     <a href="https://github.com/seL4/sel4-tutorials-manifest/releases/tag/camkes-3.10.0">seL4 Tutorials</a>
+   </li>
+   <li>
+     <a href="https://github.com/seL4/camkes-manifest/releases/tag/camkes-3.10.0">CAmkES</a>
+   </li>
+ </ul>
 </div>
 
 <!----------------------------------------------------------->
