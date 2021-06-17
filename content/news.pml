@@ -47,6 +47,7 @@
     <img src="images/seL4.svg" style="width:30%; padding-left:1em; float:right" alt="seL4">
 
     The seL4 Foundation has released the following updates:
+ </p>
     <ul>
       <li>
         seL4 v12.1.0:
@@ -77,7 +78,6 @@
           <a href="https://github.com/seL4/camkes-manifest/releases/tag/camkes-3.10.0">CAmkES</a>
       </li>
     </ul>
- </p>
 </div>
 
 <!----------------------------------------------------------->
