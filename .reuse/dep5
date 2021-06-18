@@ -44,6 +44,11 @@ License: LicenseRef-PhotoLicence
 Copyright: various 2020
   Each logo is copyright to the organisation owning that logo.
 
+Files: content/Foundation/Jobs/LOGOS/*
+License: LicenseRef-PhotoLicence
+Copyright: various 2020
+  Each logo is copyright to the organisation owning that logo.
+
 Files: content/*/*.patch
 License: GPL-2.0-only
 Copyright:  2020 seL4 Project a Series of LF Projects, LLC.
