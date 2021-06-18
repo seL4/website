@@ -43,8 +43,8 @@
         <strong>
 	  24 May 2021: 4 concrete ways to support seL4 now</strong>
       </li>
-      <li>
-	 More.
+      <li style="margin-top:0.2em;list-style-type:none">
+      more...
       </li>
     </ul>
   </div>
