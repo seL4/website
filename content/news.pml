@@ -40,11 +40,53 @@
 <!----------------------------------------------------------->
 
 <div class="news-item">
+  18 Jun 2021: NIO joins the seL4 Foundation as a Premium Member
+</div>
+<div>
+ <p>
+
+   <img src="/Foundation/Membership/LOGOS/NIO.png"
+   style="width: 15%;  padding-left:10px;  float:right"
+   alt="NIO logo">
+
+   NIO Inc.&nbsp;is a pioneer in China's premium electric vehicle
+   market. We design, jointly manufacture, and sell smart and
+   connected premium electric vehicles, driving innovations in next
+   generation technologies in connectivity, autonomous driving, and
+   artificial intelligence. Redefining user experience, we provide
+   users with comprehensive, convenient, and innovative charging
+   solutions and other user-centric service offerings. NIO went public
+   in the U.S. in 2018. So far, NIO has launched 3 mass-production vehicle
+   models: ES8, ES6, and EC6, and accumulated deliveries to users are
+   over 120,000. Starting September, NIO will start delivering to
+   users in Norway. NIO invests heavily in in-house R&amp;D to build
+   full-stack cutting-edge technologies around intelligent and
+   autonomous driving EV. Its engineering teams are distributed across
+   the globe, including US, UK, Germany and China.
+ </p>
+
+ <p>
+   The Digital Systems department at NIO is missioned to develop the
+   most advanced software platform for the next-generation autonomous
+   driving vehicles in the industry from the ground up. This platform
+   is internally named NIO Vehicle Operating System (NVOS) and based
+   off seL4. It involves solving a wide range of technical challenges,
+   such as seamless app development on heterogeneous hardware
+   chipsets, low-latency & high throughput data processing, powerful
+   AI framework, automobile-grade safety and security guarantee, and
+   complete toolchains to provide Android alike development
+   experience.
+ </p>
+</div>
+
+<!----------------------------------------------------------->
+
+<div class="news-item">
   11 June 2021: seL4 12.1.0 released
 </div>
 <div>
  <p>
-    <img src="images/seL4.svg" style="width:30%; padding-left:1em; float:right" alt="seL4">
+    <img src="images/seL4.svg" style="width:15%; padding-left:1em; float:right" alt="seL4">
 
     The seL4 Foundation has released the following updates:
  </p>
@@ -65,8 +107,12 @@
      <a href="https://docs.sel4.systems/releases/capdl/0.2.1">change log</a>
    </li>
  </ul>
- Various repositories with support libraries and tools have also been updated.
- Please refer to the following release manifests:
+
+ <p>
+   Various repositories with support libraries and tools have also been updated.
+   Please refer to the following release manifests:
+ </p>
+
  <ul>
    <li>
      <a href="https://github.com/seL4/sel4test-manifest/releases/tag/12.1.0">seL4 Test</a>
