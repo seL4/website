@@ -41,7 +41,7 @@
 	  9 June 2021: seL4 Foundation appoints CEO</strong>
       </li>
       <li style="margin-top:0.2em;list-style-type:none">
-      more...
+	more...
       </li>
     </ul>
   </div>
