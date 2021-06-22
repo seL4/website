@@ -1,4 +1,4 @@
-<!--<title>Governance</title>-->
+mv ~/<!--<title>Governance</title>-->
 <!--
     Copyright 2020 seL4 Project a Series of LF Projects, LLC.
     SPDX-License-Identifier: CC-BY-SA-4.0
@@ -136,6 +136,27 @@
       attacks.
       Sascha is the CTO of HENSOLDT Cyber, leading product design and
       development as well as business development.
+    </p>
+  </div>
+</div>
+
+<div class="governing-container">
+  <div class="governing-item-pic">
+    <a href="NIO-Qiyan.png"><img src="NIO-Qiyan-s.png" alt="Qiyan Wang" width="80" /></a>
+  </div>
+  <div class="governing-item-heading">
+    <strong><a href="https://www.linkedin.com/in/qiyan-wang-8b0b2145/" class='list_link'>Qiyan Wang</a></strong> <span class="person_title_col"><em>VP Engineering, Digital Systems of <a href="https://nio..com/">NIO</a></em></span>
+  </div>
+  <div class="governing-item-text">
+    <p>
+      Qiyan is the representative of Premium Member NIO, where he
+      leads a global R&amp;D team responsible for Vehicle Operating
+      System, Connected Vehicle Cloud, Vehicle Digital Architecture,
+      Cyber Security, and Vehicle Software Integration and
+      Validation. Prior to NIO, he worked as Principal Scientist at
+      Symantec and Exabeam. He received his PhD in Computer Science
+      from the University of Illinois at Urbana-Champaign with
+      research focus on Distributed Systems and Cyber Security.
     </p>
   </div>
 </div>
