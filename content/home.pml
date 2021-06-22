@@ -31,6 +31,7 @@
 	  22 Jun 2021: Xcalibyte joins the seL4 Foundation
         </strong>
       </li>
+      <li>
         <strong>
 	  18 Jun 2021: NIO joins the seL4 Foundation as a Premium Member
         </strong>
