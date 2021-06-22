@@ -88,7 +88,7 @@
    style="width: 15%;  padding-left:10px;  float:right"
    alt="NIO logo">
 
-   <a href="https://nio.io">NIO Inc.</a>&nbsp;is a pioneer in China's premium electric vehicle
+   <a href="https://nio.com">NIO Inc.</a>&nbsp;is a pioneer in China's premium electric vehicle
    market. We design, jointly manufacture, and sell smart and
    connected premium electric vehicles, driving innovations in next
    generation technologies in connectivity, autonomous driving, and
