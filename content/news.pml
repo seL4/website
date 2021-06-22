@@ -68,7 +68,7 @@
  </p>
 
  <p>
-   &ldquo;As we are actively working with members of the SEL4
+   &ldquo;As we are actively working with members of the seL4
    Foundation, it makes perfect sense for us to be part of the
    organisation. Our code analysis tools are being used by community
    members and we are aiming to ensure they develop high quality and
