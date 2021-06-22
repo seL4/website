@@ -74,7 +74,7 @@
 	Andronick</a>
     </strong>
     <span class="person_title_col">
-      <em>Trustworthy Systems</em>
+      <em>CEO, <a href="https://proofcraft.systems/">Proofcraft</a></em>
     </span>
   </div>
   <div class="governing-item-text">
@@ -167,7 +167,8 @@
   <div class="governing-item-heading">
     <strong><a class="list_link"
     href="https://trustworthy.systems/people/?cn=Gerwin+Klein">Gerwin
-    Klein</a></strong> <span class="person_title_col"><em>Trustworthy Systems</em></span>
+	Klein</a></strong> <span class="person_title_col"><em>CTO,
+	<a href="https://proofcraft.systems/">Proofcraft</a></em></span>
   </div>
   <div class="governing-item-text">
     <p>
