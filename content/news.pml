@@ -45,7 +45,7 @@
 <div>
  <p>
 
-   <img src="/Foundation/Membership/LOGOS/https://lixiang.com"
+   <img src="/Foundation/Membership/LOGOS/Li_Auto.svg"
    style="width: 15%;  padding-left:10px;  float:right"
    alt="Li Auto logo">
 
