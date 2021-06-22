@@ -74,7 +74,7 @@
 	Andronick</a>
     </strong>
     <span class="person_title_col">
-      <em>Trustworthy Systems</em>
+      <em>CEO, <a href="https://proofcraft.systems/">Proofcraft</a></em>
     </span>
   </div>
   <div class="governing-item-text">
@@ -142,6 +142,51 @@
 
 <div class="governing-container">
   <div class="governing-item-pic">
+    <a href="Li-Ian.png"><img src="Li-Ian-s.png" alt="Ian Xu" width="80" /></a>
+  </div>
+  <div class="governing-item-heading">
+    <strong>Ian Wu</strong> <span class="person_title_col"><em>Vice
+    President, <a href="https://lixiang.com">Li Auto</a></em></span>
+  </div>
+  <div class="governing-item-text">
+    <p>
+      Ian is the representative of Premium Member Li Auto. Much of
+      Ian's experience is design and development of networking and
+      wireless communication products. Ian leads Li Auto's Computing
+      Platform design and development including hardware, OS and
+      run-time environment.
+    </p>
+  </div>
+</div>
+
+<div class="governing-container">
+  <div class="governing-item-pic">
+    <a href="TS-Gerwin.jpg"><img src="TS-Gerwin-s.jpg" alt="Gerwin
+    Klein" width="80" /></a>
+  </div>
+  <div class="governing-item-heading">
+    <strong><a class="list_link"
+    href="https://trustworthy.systems/people/?cn=Gerwin+Klein">Gerwin
+	Klein</a></strong> <span class="person_title_col"><em>CTO,
+	<a href="https://proofcraft.systems/">Proofcraft</a></em></span>
+  </div>
+  <div class="governing-item-text">
+    <p>
+      Gerwin lead the verification of seL4. He spends much of his time
+      deep in the proofs
+      about seL4 and contributes to other verification research in
+      TS. He holds a PhD from <a href="https://www.tum.de/">TU
+      Munich</a> and led the original seL4 verification, which won the
+      MIT-TR10 award for the top 10 emerging technologies in 2011, as
+      well as the <a href="https://www.sigops.org/awards/hof/">SIGOPS
+      Hall-of-Fame award</a> in 2019. He is a conjoint professor
+	at <a href="https://unsw.edu.au/">UNSW Sydney</a>.
+    </p>
+  </div>
+</div>
+
+<div class="governing-container">
+  <div class="governing-item-pic">
     <a href="NIO-Qiyan.png"><img src="NIO-Qiyan-s.png" alt="Qiyan Wang" width="80" /></a>
   </div>
   <div class="governing-item-heading">
@@ -157,31 +202,6 @@
       Symantec and Exabeam. He received his PhD in Computer Science
       from the University of Illinois at Urbana-Champaign with
       research focus on Distributed Systems and Cyber Security.
-    </p>
-  </div>
-</div>
-
-<div class="governing-container">
-  <div class="governing-item-pic">
-    <a href="TS-Gerwin.jpg"><img src="TS-Gerwin-s.jpg" alt="Gerwin
-    Klein" width="80" /></a>
-  </div>
-  <div class="governing-item-heading">
-    <strong><a class="list_link"
-    href="https://trustworthy.systems/people/?cn=Gerwin+Klein">Gerwin
-    Klein</a></strong> <span class="person_title_col"><em>Trustworthy Systems</em></span>
-  </div>
-  <div class="governing-item-text">
-    <p>
-      Gerwin lead the verification of seL4. He spends much of his time
-      deep in the proofs
-      about seL4 and contributes to other verification research in
-      TS. He holds a PhD from <a href="https://www.tum.de/">TU
-      Munich</a> and led the original seL4 verification, which won the
-      MIT-TR10 award for the top 10 emerging technologies in 2011, as
-      well as the <a href="https://www.sigops.org/awards/hof/">SIGOPS
-      Hall-of-Fame award</a> in 2019. He is a conjoint professor
-	at <a href="https://unsw.edu.au/">UNSW Sydney</a>.
     </p>
   </div>
 </div>
