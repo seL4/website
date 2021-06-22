@@ -40,6 +40,49 @@
 <!----------------------------------------------------------->
 
 <div class="news-item">
+  23 June 2021: Li Auto joins the seL4 Foundation as Premium Member
+</div>
+<div>
+ <p>
+
+   <img src="/Foundation/Membership/LOGOS/https://lixiang.com"
+   style="width: 15%;  padding-left:10px;  float:right"
+   alt="Li Auto logo">
+
+   The seL4 Foundation
+   welcomes <a href="https://lixiang.com">Li Auto Inc.</a>&nbsp;as a Premium member.
+ </p>
+
+ <p>
+   Li Auto is an innovator in China's new energy vehicle market. The
+   Company designs, develops, manufactures, and sells premium smart
+   electric vehicles. Through innovations in product, technology, and
+   business model, the Company provides families with safe, convenient,
+   and refined products and services. Li Auto is a pioneer to
+   successfully commercialize extended-range electric vehicles in
+   China. Its first model, Li ONE, is a six-seat, large premium electric
+   SUV equipped with a range extension system and advanced smart vehicle
+   solutions. The Company started volume production of Li ONE in
+   November 2019 and released the 2021 Li ONE in May 2021. The Company
+   leverages technology to create value for its users. It concentrates
+   its in-house development efforts on its proprietary range extension
+   system, next-generation electric vehicle technology, and smart
+   vehicle solutions. Beyond Li ONE, the Company aims to expand its
+   product line by developing new vehicles, including BEVs and EREVs, to
+   target a broader consumer base.
+ </p>
+
+ <p>
+   Li Auto's team will develop a secure highly extensible real-time open
+   platform for next generation self-driving vehicles based on the
+   micro-kernel OS seL4. The platform will enable an ecosystem for
+   third party application developers.
+ </p>
+</div>
+
+<!----------------------------------------------------------->
+
+<div class="news-item">
   22 June 2021: Xcalibyte joins the seL4 Foundation
 </div>
 <div>
@@ -88,7 +131,12 @@
    style="width: 15%;  padding-left:10px;  float:right"
    alt="NIO logo">
 
-   <a href="https://nio.com">NIO Inc.</a>&nbsp;is a pioneer in China's premium electric vehicle
+   The seL4 Foundation
+   welcomes <a href="https://nio.com">NIO Inc</a> as a Premium member.
+ </p>
+
+ <p>
+   NIO is a pioneer in China's premium electric vehicle
    market. We design, jointly manufacture, and sell smart and
    connected premium electric vehicles, driving innovations in next
    generation technologies in connectivity, autonomous driving, and
