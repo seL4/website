@@ -20,12 +20,34 @@
 <div class="sponsors">
   <div class="sponsor">
     <div class="sponsor-pic">
-      <a href="http://hensoldt-cyber.com/">
+      <a href="https://hensoldt-cyber.com/">
 	<img src="LOGOS/HENSOLDT_Cyber.svg" style="width: 186px" alt="HENSOLDT Cyber logo">
       </a>
     </div>
     <div class="sponsor-name">
      HENSOLDT Cyber GmbH
+    </div>
+  </div>
+  <div class="sponsor">
+    <div class="sponsor-pic">
+      <a href="https://horizon.ai/">
+	<img src="LOGOS/Horizon_Robotics.svg" style="width: 248px"
+	     alt="Horizon Robotics logo">
+      </a>
+    </div>
+    <div class="sponsor-name">
+     Horizon Robotics
+    </div>
+  </div>
+  <div class="sponsor">
+    <div class="sponsor-pic">
+      <a href="https://lixiang.com">
+	<img src="LOGOS/Li_Auto.svg" style="width: 248px"
+	     alt="Li Auto logo">
+      </a>
+    </div>
+    <div class="sponsor-name">
+     Li Auto Inc
     </div>
   </div>
   <div class="sponsor">
@@ -107,7 +129,7 @@
   <div class="sponsor">
     <div class="sponsor-pic">
       <a href="https://kry10.com">
-	<img src="LOGOS/Kry10.svg" style="width: 200px" alt="Kry10 logo">
+	<img src="LOGOS/Kry10.svg" style="width: 250px" alt="Kry10 logo">
       </a>
     </div>
     <div class="sponsor-name">
@@ -132,6 +154,16 @@
     </div>
     <div class="sponsor-name">
       Raytheon Technologies
+    </div>
+  </div>
+  <div class="sponsor">
+    <div class="sponsor-pic">
+      <a href="https://xcalibyte.com">
+	<img src="LOGOS/xcalibyte.svg" style="width: 200px" alt="Xcalibyte logo">
+      </a>
+    </div>
+    <div class="sponsor-name">
+      Xcalibyte
     </div>
   </div>
 </div>
