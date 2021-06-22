@@ -28,6 +28,11 @@
     <ul>
       <li>
         <strong>
+	  23 Jun 2021: Li Auto joins the seL4 Foundation as a Premium Member
+        </strong>
+      </li>
+      <li>
+        <strong>
 	  22 Jun 2021: Xcalibyte joins the seL4 Foundation
         </strong>
       </li>
