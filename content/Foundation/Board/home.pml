@@ -121,47 +121,6 @@
 
 <div class="governing-container">
   <div class="governing-item-pic">
-    <a href="HC-Sascha.jpg"><img src="HC-Sascha-s.jpg" alt="Sascha Kegrei&szlig;" width="80" /></a>
-  </div>
-  <div class="governing-item-heading">
-    <strong><a href="https://www.linkedin.com/in/sascha-kegreiß-7b9883b5/" class='list_link'>Sascha Kegrei&szlig;</a></strong> <span class="person_title_col"><em>CTO, <a href="https://www.hensoldt-cyber.com/">HENSOLDT Cyber</a></em></span>
-  </div>
-  <div class="governing-item-text">
-    <p>
-      Sascha is the representative of Premium Member HENSOLDT Cyber
-      GmbH, a Munich-based company which
-      develops embedded IT products that meet the highest security
-      requirements, combining an operating system based on verified seL4
-      with a RISC-V processor that is protected from supply-chain
-      attacks.
-      Sascha is the CTO of HENSOLDT Cyber, leading product design and
-      development as well as business development.
-    </p>
-  </div>
-</div>
-
-<div class="governing-container">
-  <div class="governing-item-pic">
-    <a href="Li-Ian.png"><img src="Li-Ian-s.png" alt="Ian Xu" width="80" /></a>
-  </div>
-  <div class="governing-item-heading">
-    <strong><a href="https://www.linkedin.com/in/yingcxu/">Ian
-    Xu</a></strong> <span class="person_title_col"><em>Vice
-    President, <a href="https://lixiang.com">Li Auto</a></em></span>
-  </div>
-  <div class="governing-item-text">
-    <p>
-      Ian is the representative of Premium Member Li Auto. Much of
-      Ian's experience is design and development of networking and
-      wireless communication products. Ian leads Li Auto's Computing
-      Platform design and development including hardware, OS and
-      run-time environment.
-    </p>
-  </div>
-</div>
-
-<div class="governing-container">
-  <div class="governing-item-pic">
     <a href="TS-Gerwin.jpg"><img src="TS-Gerwin-s.jpg" alt="Gerwin
     Klein" width="80" /></a>
   </div>
@@ -188,6 +147,26 @@
 
 <div class="governing-container">
   <div class="governing-item-pic">
+    <a href="Li-Ian.png"><img src="Li-Ian-s.png" alt="Ian Xu" width="80" /></a>
+  </div>
+  <div class="governing-item-heading">
+    <strong><a href="https://www.linkedin.com/in/yingcxu/">Ian
+    Xu</a></strong> <span class="person_title_col"><em>Vice
+    President, <a href="https://lixiang.com">Li Auto</a></em></span>
+  </div>
+  <div class="governing-item-text">
+    <p>
+      Ian is the representative of Premium Member Li Auto. Much of
+      Ian's experience is design and development of networking and
+      wireless communication products. Ian leads Li Auto's Computing
+      Platform design and development including hardware, OS and
+      run-time environment.
+    </p>
+  </div>
+</div>
+
+<div class="governing-container">
+  <div class="governing-item-pic">
     <a href="NIO-Qiyan.png"><img src="NIO-Qiyan-s.png" alt="Qiyan Wang" width="80" /></a>
   </div>
   <div class="governing-item-heading">
@@ -203,6 +182,27 @@
       Symantec and Exabeam. He received his PhD in Computer Science
       from the University of Illinois at Urbana-Champaign with
       research focus on Distributed Systems and Cyber Security.
+    </p>
+  </div>
+</div>
+
+<div class="governing-container">
+  <div class="governing-item-pic">
+    <a href="HC-Sascha.jpg"><img src="HC-Sascha-s.jpg" alt="Sascha Kegrei&szlig;" width="80" /></a>
+  </div>
+  <div class="governing-item-heading">
+    <strong><a href="https://www.linkedin.com/in/sascha-kegreiß-7b9883b5/" class='list_link'>Sascha Kegrei&szlig;</a></strong> <span class="person_title_col"><em>CTO, <a href="https://www.hensoldt-cyber.com/">HENSOLDT Cyber</a></em></span>
+  </div>
+  <div class="governing-item-text">
+    <p>
+      Sascha is the representative of Premium Member HENSOLDT Cyber
+      GmbH, a Munich-based company which
+      develops embedded IT products that meet the highest security
+      requirements, combining an operating system based on verified seL4
+      with a RISC-V processor that is protected from supply-chain
+      attacks.
+      Sascha is the CTO of HENSOLDT Cyber, leading product design and
+      development as well as business development.
     </p>
   </div>
 </div>
