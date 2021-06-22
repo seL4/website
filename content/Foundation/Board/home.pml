@@ -145,7 +145,8 @@
     <a href="Li-Ian.png"><img src="Li-Ian-s.png" alt="Ian Xu" width="80" /></a>
   </div>
   <div class="governing-item-heading">
-    <strong>Ian Wu</strong> <span class="person_title_col"><em>Vice
+    <strong><a href="https://www.linkedin.com/in/yingcxu/">Ian
+    Xu</a></strong> <span class="person_title_col"><em>Vice
     President, <a href="https://lixiang.com">Li Auto</a></em></span>
   </div>
   <div class="governing-item-text">
