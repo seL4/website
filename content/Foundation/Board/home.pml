@@ -142,21 +142,19 @@ mv ~/<!--<title>Governance</title>-->
 
 <div class="governing-container">
   <div class="governing-item-pic">
-    <a href="NIO-Qiyan.png"><img src="NIO-Qiyan-s.png" alt="Qiyan Wang" width="80" /></a>
+    <a href="Li-Ian.png"><img src="Li-Ian-s.png" alt="Ian Xu" width="80" /></a>
   </div>
   <div class="governing-item-heading">
-    <strong><a href="https://www.linkedin.com/in/qiyan-wang-8b0b2145/" class='list_link'>Qiyan Wang</a></strong> <span class="person_title_col"><em>VP Engineering, Digital Systems of <a href="https://nio.com/">NIO</a></em></span>
+    <strong>Ian Wu</strong> <span class="person_title_col"><em>Vice
+    President, <a href="https://lixiang.com">Li Auto</a></em></span>
   </div>
   <div class="governing-item-text">
     <p>
-      Qiyan is the representative of Premium Member NIO, where he
-      leads a global R&amp;D team responsible for Vehicle Operating
-      System, Connected Vehicle Cloud, Vehicle Digital Architecture,
-      Cyber Security, and Vehicle Software Integration and
-      Validation. Prior to NIO, he worked as Principal Scientist at
-      Symantec and Exabeam. He received his PhD in Computer Science
-      from the University of Illinois at Urbana-Champaign with
-      research focus on Distributed Systems and Cyber Security.
+      Ian is the representative of Premium Member Li Auto. Much of
+      Ian's experience is design and development of networking and
+      wireless communication products. Ian leads Li Auto's Computing
+      Platform design and development including hardware, OS and
+      run-time environment.
     </p>
   </div>
 </div>
@@ -182,6 +180,27 @@ mv ~/<!--<title>Governance</title>-->
       well as the <a href="https://www.sigops.org/awards/hof/">SIGOPS
       Hall-of-Fame award</a> in 2019. He is a conjoint professor
 	at <a href="https://unsw.edu.au/">UNSW Sydney</a>.
+    </p>
+  </div>
+</div>
+
+<div class="governing-container">
+  <div class="governing-item-pic">
+    <a href="NIO-Qiyan.png"><img src="NIO-Qiyan-s.png" alt="Qiyan Wang" width="80" /></a>
+  </div>
+  <div class="governing-item-heading">
+    <strong><a href="https://www.linkedin.com/in/qiyan-wang-8b0b2145/" class='list_link'>Qiyan Wang</a></strong> <span class="person_title_col"><em>VP Engineering, Digital Systems of <a href="https://nio.com/">NIO</a></em></span>
+  </div>
+  <div class="governing-item-text">
+    <p>
+      Qiyan is the representative of Premium Member NIO, where he
+      leads a global R&amp;D team responsible for Vehicle Operating
+      System, Connected Vehicle Cloud, Vehicle Digital Architecture,
+      Cyber Security, and Vehicle Software Integration and
+      Validation. Prior to NIO, he worked as Principal Scientist at
+      Symantec and Exabeam. He received his PhD in Computer Science
+      from the University of Illinois at Urbana-Champaign with
+      research focus on Distributed Systems and Cyber Security.
     </p>
   </div>
 </div>
