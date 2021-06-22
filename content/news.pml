@@ -40,6 +40,45 @@
 <!----------------------------------------------------------->
 
 <div class="news-item">
+  22 June 2021: Xcalibyte joins the seL4 Foundation
+</div>
+<div>
+ <p>
+
+   <img src="/Foundation/Membership/LOGOS/xcalibyte.svg"
+   style="width: 15%;  padding-left:10px;  float:right"
+   alt="Xcalibyte logo">
+
+   The seL4 Foundation
+   welcomes <a href="https://xcalibyte.com">Xcalibyte</a> as a member.
+ </p>
+
+ <p>
+   Xcalibyte's mission is to improve the quality of software by
+   creating easy-to-use tools that help developers build and deploy
+   reliable and secure code. Founded by world-class software experts
+   with decades of experience in compiler optimization and software
+   development, Xcalibyte was established in 2018 and has offices in
+   Shenzhen, Shanghai, Beijing and Hong Kong. Xcalibyte enhances the
+   speed and accuracy of code auditing, code evaluation, and code
+   defect detection. We use advanced static code analysis to help
+   reduce costs, improve productivity, and ensure software developers
+   in China and all over the world have the proper capabilities to
+   develop better, more reliable software.
+ </p>
+
+ <p>
+   &ldquo;As we are actively working with members of the SEL4
+   Foundation, it makes perfect sense for us to be part of the
+   organisation. Our code analysis tools are being used by community
+   members and we are aiming to ensure they develop high quality and
+   secure code.&rdquo;
+ </p>
+</div>
+
+<!----------------------------------------------------------->
+
+<div class="news-item">
   18 Jun 2021: NIO joins the seL4 Foundation as a Premium Member
 </div>
 <div>
@@ -49,7 +88,7 @@
    style="width: 15%;  padding-left:10px;  float:right"
    alt="NIO logo">
 
-   NIO Inc.&nbsp;is a pioneer in China's premium electric vehicle
+   <a href="https://nio.io">NIO Inc.</a>&nbsp;is a pioneer in China's premium electric vehicle
    market. We design, jointly manufacture, and sell smart and
    connected premium electric vehicles, driving innovations in next
    generation technologies in connectivity, autonomous driving, and
