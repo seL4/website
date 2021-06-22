@@ -145,7 +145,7 @@ mv ~/<!--<title>Governance</title>-->
     <a href="NIO-Qiyan.png"><img src="NIO-Qiyan-s.png" alt="Qiyan Wang" width="80" /></a>
   </div>
   <div class="governing-item-heading">
-    <strong><a href="https://www.linkedin.com/in/qiyan-wang-8b0b2145/" class='list_link'>Qiyan Wang</a></strong> <span class="person_title_col"><em>VP Engineering, Digital Systems of <a href="https://nio..com/">NIO</a></em></span>
+    <strong><a href="https://www.linkedin.com/in/qiyan-wang-8b0b2145/" class='list_link'>Qiyan Wang</a></strong> <span class="person_title_col"><em>VP Engineering, Digital Systems of <a href="https://nio.com/">NIO</a></em></span>
   </div>
   <div class="governing-item-text">
     <p>
