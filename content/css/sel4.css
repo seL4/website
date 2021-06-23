@@ -341,3 +341,15 @@ a.divLink {
 .news-finish{
     clear:both
 }
+
+.memberlogopage h1 {
+    font-size:50px;
+}
+.memberlogopage h2 {
+    font-size:40px;
+}
+
+.memberlogopage .sponsors {
+    margin-top: 30px;
+    margin-bottom: 60px;
+}
