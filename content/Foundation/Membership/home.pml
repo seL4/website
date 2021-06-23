@@ -3,7 +3,7 @@
     Copyright 2020 seL4 Project a Series of LF Projects, LLC.
     SPDX-License-Identifier: CC-BY-SA-4.0
 -->
-<container class="memberlogopage">
+<div class="memberlogopage">
   <h1>
     seL4 Foundation Membership
   </h1>
@@ -204,4 +204,4 @@
       </div>
     </div>
   </div>
-</container>
+</div>
