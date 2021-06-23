@@ -44,6 +44,17 @@
     </div>
     <div class="sponsor">
       <div class="sponsor-pic">
+	<a href="https://jumptrading.com/">
+	  <img src="LOGOS/Jump-Trading.svg" style="width: 248px"
+	       alt="Jump Trading logo">
+	</a>
+      </div>
+      <div class="sponsor-name">
+	Jump Trading <!-- https://www.linkedin.com/company/jump-trading/ -->
+      </div>
+    </div>
+    <div class="sponsor">
+      <div class="sponsor-pic">
 	<a href="https://lixiang.com">
 	  <img src="LOGOS/Li_Auto.svg" style="width: 248px"
 	       alt="Li Auto logo">
