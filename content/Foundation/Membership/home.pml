@@ -37,7 +37,7 @@
 	  <img src="LOGOS/Horizon_Robotics.svg" style="width: 248px"
 	       alt="Horizon Robotics logo">
 	</a>
-      </div>
+      </div>
       <div class="sponsor-name">
 	Horizon Robotics
       </div>
