@@ -40,6 +40,47 @@
 <!----------------------------------------------------------->
 
 <div class="news-item">
+  23 Jun 2021: Horizon Robotics joins the seL4 Foundation
+</div>
+<div>
+ <p>
+
+   <img src="/Foundation/Membership/LOGOS/Horizon_Robotics.svg"
+   style="width: 15%;  padding-left:10px;  float:right"
+   alt="Horizon Robotics logo">
+
+   Horizon Robotics is a global leader in the development of
+   artificial intelligence computing platforms. Its mission is to make
+   driving safer and more convenient as drivers transition to
+   intelligent and self-driving vehicles. Founded in Beijing in 2015,
+   Horizon Robotics develops next-generation autonomous driving
+   technology integrating edge-AI processors, algorithms, and
+   toolkits. Horizon has reinvented the automotive-grade AI processor
+   with Horizon Journey SOC and its Brain Processing Unit AI engine
+   (Horizon BPU), to offer the ultimate balance of high-performance,
+   low power, and cost effectiveness for inference at the
+   edge. Horizon's state-of-the-art AI toolkit and model zoo enable
+   developers to optimize and deploy their own neural network models
+   to Journey BPU with ease. Horizon also offers vision perception
+   algorithms to accelerate time-to-production in the dynamic and
+   highly competitive ADAS/AD market.
+ </p>
+
+ <p>
+   The evolution of automotive E/E architecture continues
+   rapidly. With complicated hardware consolidation, software
+   consolidation and separation happen simultaneously. &ldquo;To address the
+   challenges of safety, security and realtime in autonomous software,
+   a fundamental high quality state-of-the-art microkernel is
+   needed. We are looking forward to working with members of seL4
+   Foundation to build mixed-critical platform and solution for
+   next-generation autonomous driving vehicles.&rdquo;
+ </p>
+</div>
+
+<!----------------------------------------------------------->
+
+<div class="news-item">
   23 June 2021: Li Auto joins the seL4 Foundation as Premium Member
 </div>
 <div>

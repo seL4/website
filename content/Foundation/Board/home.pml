@@ -121,6 +121,30 @@
 
 <div class="governing-container">
   <div class="governing-item-pic">
+    <a href="Horizon-Feng.jpg"><img src="Horizon-Feng-s.jpg"
+				    alt="Feng Zhou" width="80" /></a>
+  </div>
+  <div class="governing-item-heading">
+    <strong><a class="list_link"
+    href="">Feng Zhou</a></strong>
+    <span class="person_title_col"><em>Fellow, <a href="https://horizon.ai/">Horizon Robotics</a></em></span>
+  </div>
+  <div class="governing-item-text">
+    <p>
+      Dr. Feng Zhou has 15 years of academic experience (Professor and
+      Vice Chairman of Dept. of Information and Electronics
+      Engineering in Zhejiang University, China) and over 15 years of
+      industrial experience in video/image compression &amp; processing,
+      computer vision, artificial intelligence, and ASIC processor
+      architecture, Dr. Feng Zhou is experienced with the FPGA/ASIC
+      system architecture design and deep learning algorithm
+      implementation based on the FPGA/ASIC platform.</em>.
+    </p>
+  </div>
+</div>
+
+<div class="governing-container">
+  <div class="governing-item-pic">
     <a href="TS-Gerwin.jpg"><img src="TS-Gerwin-s.jpg" alt="Gerwin
     Klein" width="80" /></a>
   </div>
