@@ -138,7 +138,7 @@
       computer vision, artificial intelligence, and ASIC processor
       architecture, Dr. Feng Zhou is experienced with the FPGA/ASIC
       system architecture design and deep learning algorithm
-      implementation based on the FPGA/ASIC platform.</em>.
+      implementation based on the FPGA/ASIC platform.
     </p>
   </div>
 </div>
