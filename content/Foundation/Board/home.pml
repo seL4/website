@@ -125,8 +125,7 @@
 				    alt="Feng Zhou" width="80" /></a>
   </div>
   <div class="governing-item-heading">
-    <strong><a class="list_link"
-    href="">Feng Zhou</a></strong>
+    <strong>Feng Zhou</strong>
     <span class="person_title_col"><em>Fellow, <a href="https://horizon.ai/">Horizon Robotics</a></em></span>
   </div>
   <div class="governing-item-text">
