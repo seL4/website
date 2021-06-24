@@ -49,6 +49,11 @@
    style="width: 25%;  padding-left:10px;  float:right"
    alt="Horizon Robotics logo">
 
+   The seL4 Foundation welcomes <a href="https://horizon.ai">Horizon
+   Robotics</a>&nbsp;as a Premium member.
+ </p>
+
+ <p>
    Horizon Robotics is a global leader in the development of
    artificial intelligence computing platforms. Its mission is to make
    driving safer and more convenient as drivers transition to
