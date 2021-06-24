@@ -136,9 +136,9 @@
       Engineering in Zhejiang University, China) and over 15 years of
       industrial experience in video/image compression &amp; processing,
       computer vision, artificial intelligence, and ASIC processor
-      architecture, Dr. Feng Zhou is experienced with the FPGA/ASIC
+      architecture. Dr. Feng Zhou experience extends to the FPGA/ASIC
       system architecture design and deep learning algorithm
-      implementation based on the FPGA/ASIC platform.
+      implementation based on FPGA/ASIC platforms.
     </p>
   </div>
 </div>

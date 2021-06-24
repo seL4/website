@@ -46,7 +46,7 @@
  <p>
 
    <img src="/Foundation/Membership/LOGOS/Horizon_Robotics.svg"
-   style="width: 15%;  padding-left:10px;  float:right"
+   style="width: 25%;  padding-left:10px;  float:right"
    alt="Horizon Robotics logo">
 
    Horizon Robotics is a global leader in the development of
@@ -87,7 +87,7 @@
  <p>
 
    <img src="/Foundation/Membership/LOGOS/Li_Auto.svg"
-   style="width: 15%;  padding-left:10px;  float:right"
+   style="width: 20%;  padding-left:10px;  float:right"
    alt="Li Auto logo">
 
    The seL4 Foundation
