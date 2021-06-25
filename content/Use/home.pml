@@ -18,8 +18,8 @@ Copyright 2020 seL4 Project a Series of LF Projects, LLC.
   </p>
   <p>
     More information about this process is available in
-      <a href="https://ts.data61.csiro.au/publications/csiroabstracts/Klein_AKMHF_18.abstract">this article</a> or in
-      <a href="https://ts.data61.csiro.au/publications/papers/Kuz_19.abstract">these slides</a>.
+      <a href="https://trustworthy.systems/publications/csiroabstracts/Klein_AKMHF_18.abstract">this article</a> or in
+      <a href="https://trustworthy.systems/publications/papers/Kuz_19.abstract">these slides</a>.
   </p>
   <p>
     You might also have questions on the <b> licence </b> and its implications.
@@ -74,7 +74,7 @@ Copyright 2020 seL4 Project a Series of LF Projects, LLC.
       <p>
       Systems are rarely built from scratch, even a new product typically incorporates significant amounts of legacy software. And frequently the aim is to increase an existing product's resilience to cyber attacks.</p>
       <p>The usual approach here is what we call an <em>incremental cyber retrofit</em>, which we describe in detail in
-      <a href="https://ts.data61.csiro.au/publications/csiroabstracts/Klein_AKMHF_18.abstract">this article</a>.  In a nutshell, the idea is to gradually adapt the
+      <a href="https://trustworthy.systems/publications/csiroabstracts/Klein_AKMHF_18.abstract">this article</a>.  In a nutshell, the idea is to gradually adapt the
       existing architecture.</p>
       <p>The first step is to put the complete legacy system into a virtual machine (VM) running
       on seL4. This in itself adds no security (only a little bit of overhead), but it serves as a starting point for incremental modularisation.</p>
