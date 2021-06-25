@@ -21,7 +21,7 @@
     </div>
     <div class="hp_text">
       Learn about the research about seL4 happening
-      in the Trustworthy Systems group at CSIRO's Data61
+      in the Trustworthy Systems group
     </div>
   </div>
 

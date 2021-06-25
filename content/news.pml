@@ -911,7 +911,7 @@ post</a>.
    style="width:30%; padding-left:1em; float:right"
    alt="seL4 foundation launch" />
 
-   The <a href="https://ts.data61.csiro.au">Trustworthy Systems
+   The <a href="https://trustworthy.systems">Trustworthy Systems
    group</a> is excited to announce the creation of the <a
    href="/Foundation/">seL4 Foundation</a>. Its aim is to provide a
    neutral and independent organisation to ensure the longevity of

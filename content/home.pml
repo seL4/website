@@ -203,7 +203,7 @@
 </p>
 <p>
     <a class="btn btn-lg btn-success"
-	href="https://blog.ts.data61.csiro.au">Blog</a>
+	href="https://blog.trustworthy.systems">Blog</a>
 </p>
 </div>
 </div>
@@ -243,10 +243,9 @@
     <p>
       Meanwhile, if you're interested in learning more about seL4,
       please check out <a href="About">about seL4</a>, or the
-      <a href="http://ts.data61.csiro.au/projects/seL4">Data61 seL4
-      project site</a>. More generally, you can find out about
-      <a href="http://ts.data61.csiro.au//">Data61's
-      trustworthy systems activities</a>.
+      <a href="http://trustworthy.systems/projects/seL4">TS seL4
+      project site</a>. More generally, you can find out about the
+      <a href="http://trustworthy.systems//">Trustworthy Systems Group's activities</a>.
     </p>
     <p>
       If you would like to learn how to build a system on seL4, you
@@ -261,7 +260,7 @@
     </h3>
     <p>
       If you need professional support for your seL4-based project,
-      the <a href="http://trustworthy.systems/">Trustworthy Systems</a> team at Data61 will be happy to provide it directly or in cooperation with one of our industry partners. Please <a href="/contact/">contact us</a> with an
+      the <a href="http://trustworthy.systems/">Trustworthy Systems</a> team will be happy to provide it directly or in cooperation with one of our industry partners. Please <a href="/contact/">contact us</a> with an
       indication of your needs.
     </p>
   </div>

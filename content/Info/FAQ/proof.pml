@@ -314,10 +314,9 @@
 <p>
   Even after binary and security proofs, we are still just at the
   beginning of verifying entire systems. See our <a href=
-  "http://ts.data61.csiro.au/projects/TS/">current research
-  projects</a> for more things to come. Contact Data61 if you would
+  "http://trustworthy.systems/projects/TS/">current research
+  projects</a> for more things to come. Contact TS if you would
   like to collaborate, for instance by connecting your formally
   verified application to the seL4 proof, or by building an entire
   verified system.
 </p>
-  

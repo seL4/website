@@ -82,18 +82,18 @@
 </p>
 <p>
   In 2009, the seL4 kernel was a scientific breakthrough result
-  from the <a href="http://ts.data61.csiro.au/">Trustworthy Systems
+  from the <a href="http://trustworthy.systems/">Trustworthy Systems
   group</a> (TS) that showed that high-performance kernels are
   within the realm of formal verification. Today, seL4 is part of
   an ecosystem supporting active use in various domains including
   automotive, aviation, infrastructure, medical, and defence. A key
   highlight demonstrating its fit for real-world deployment was in
   the DARPA-funded <a href=
-  "http://ts.data61.csiro.au/projects/TS/SMACCM/">HACMS</a>
+  "http://trustworthy.systems/projects/TS/SMACCM/">HACMS</a>
   program, where seL4 was used to protect an autonomous helicopter
   against cyber-attacks. TS continues to push the state of the art
   of operating systems through <a href=
-  "http://ts.data61.csiro.au/projects/seL4/">seL4</a>, in close
+  "http://trustworthy.systems/projects/seL4/">seL4</a>, in close
   cooperation with its partners in the seL4 Foundation.
 </p>
 

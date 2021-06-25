@@ -80,7 +80,7 @@
           the transition of the infrastructure (testing, boards etc)
           and the immediate support needs (maintenance of all
           configurations, libraries, releases etc) to the Foundation
-          (following CSIRO’s Data61 decision to cease the Trustworthy
+          (following CSIRO’s decision to wind up the Trustworthy
           Systems group).
 	  </p>
 	  <p>

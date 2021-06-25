@@ -41,7 +41,7 @@
        <ul>
        <li><strong>From <a href="https://www.linuxfoundation.org/press-release/2020/04/sel4-microkernel-optimized-for-security-gets-support-of-linux-foundation/">the Linux Foundation</a></strong>
        </li>
-       <li><strong>From <a href="https://www.csiro.au/en/News/News-releases/2020/seL4-developers-create-open-source-foundation">CSIRO's Data61</a></strong>
+       <li><strong>From <a href="https://www.csiro.au/en/News/News-releases/2020/seL4-developers-create-open-source-foundation">CSIRO</a></strong>
        </li>
        </ul>
     </li>

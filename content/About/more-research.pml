@@ -13,7 +13,7 @@
   there’s plenty of fundamental research work left on seL4 itself, and
   there is far more research left on how to achieve real-world
   trustworthy computer systems. More on both below, describing the
-  <a href="https://ts.data61.csiro.au">Trustworthy Systems group</a>'s
+  <a href="https://trustworthy.systems">Trustworthy Systems group</a>'s
   research agenda (as of May 2021),
   looking for further funding to tackle these challenges. This is
   largely extracted from this <a
