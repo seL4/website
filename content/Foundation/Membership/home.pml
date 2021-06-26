@@ -1,4 +1,4 @@
-<!--<title>About</title>-->
+<!--<title>Membership</title>-->
 <!--
     Copyright 2020 seL4 Project a Series of LF Projects, LLC.
     SPDX-License-Identifier: CC-BY-SA-4.0
@@ -10,7 +10,7 @@
   <div>
     <p>
       Below is the list of members of the
-      <a title="seL4 Foundation" href="../About">
+      <a title="seL4 Foundation" href="../">
 	seL4 Foundation</a>.  Want to be part of the adventure?
     </p>
     <p>

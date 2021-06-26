@@ -10,7 +10,7 @@
   <p>
     Become part of the <a title="Membership"
     href="../Membership">members</a> who have already joined the <a
-    title="seL4 Foundation" href="../About">seL4 Foundation!</a>.
+    title="seL4 Foundation" href="../">seL4 Foundation!</a>.
   </p>
   <p><span class=join>
     Joining is an easy process via the Linux Foundation's <a

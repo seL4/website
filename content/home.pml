@@ -191,7 +191,7 @@
 </p>
 <p>
     <a class="btn btn-lg btn-success"
-       href="/Foundation/About/"><b>The seL4 Foundation</b></a>
+       href="/Foundation/"><b>The seL4 Foundation</b></a>
 </p>
 <p>
     <a class="btn btn-lg btn-success"

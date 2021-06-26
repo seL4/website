@@ -9,7 +9,7 @@
 <div>
   <p>
     The <a title="seL4 Foundation"
-       href="../About">seL4 Foundation</a>&nbsp;is established as a
+       href="../">seL4 Foundation</a>&nbsp;is established as a
        project under The Linux Foundation. It is designed to
        fulfill the key principles described&nbsp;<a title=
        "seL4 Foundation Key Principles pdf"

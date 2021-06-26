@@ -7,7 +7,7 @@
 <div>
   <p>
     The Governing Board of the <a title="seL4 Foundation"
-				  href="../About/">seL4 Foundation</a>
+				  href="../">seL4 Foundation</a>
     consists of:
   </p>
   <ul>
