@@ -21,7 +21,7 @@ The list is in chronological order, more recent at the top.
 <p>
 
 If you are a <a title="Membership" href="../Membership">member</a> of
-the <a title="seL4 Foundation" href="../About">seL4 Foundation!</a>
+the <a title="seL4 Foundation" href="../">seL4 Foundation!</a>
 and would like to post job offers here, email <a
 href="mailto:foundation@sel4.systems"
 class="email">foundation@sel4.systems</a> with: </p>

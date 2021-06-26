@@ -10,7 +10,7 @@
 <p>
   Alongside growing the seL4 ecosystem, protect and promote the seL4 brand
   and provide longevity to seL4, one of the aims of the
-  <a href="../About/">seL4 foundation</a> is to provide an avenue for
+  <a href="../">seL4 foundation</a> is to provide an avenue for
   funding on-going <a href="../../About/more-research.pml">research</a>,
   on-going engineering as well as sharing the cost of "big-ticket"
   verification items, through its membership revenue, and through specific
@@ -100,7 +100,7 @@
           Donors of $1,000 or more for that project will be displayed here.
 	  </p>
           <!--
-          <a href="https://sel4.systems/Foundation/About.html">
+          <a href="https://sel4.systems/Foundation/">
           <img src="/images/sel4-foundation-logo.svg"
                style="width: 15%;  padding-left:10px;"
 	       alt="RISC-V logo">
