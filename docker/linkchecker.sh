@@ -25,7 +25,7 @@ linkchecker \
     --ignore-url="/About/Performance" \
     --ignore-url="/lists/" \
     --ignore-url="https://ethz.ch/en.html" \
-    --ignore-url="https://horizon.ai/" \
+    --ignore-url="https://horizon.ai" \
     --check-extern \
     --output html \
     "$OUTPUT_SNAPSHOT_DIR"/localhost/index.html > $OUTPUT_DIR/linkchecker.html \
