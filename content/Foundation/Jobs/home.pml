@@ -82,6 +82,68 @@ explicit description of how the job will be linked to seL4.
 <!----------------------------------------------------------->
 
 <div class="news-item">
+ 28 Jun 2021: DornerWorks looking for a Senior Firmware Engineer to develop hypervisor functionality and build expertise in seL4
+</div>
+<div>
+ <p>
+   <img src="../Membership/LOGOS/DornerWorks.svg"
+   style="width:30%; padding-left:1em; float:right"
+   alt="DornerWorks">
+ </p>
+  <ul>
+  <li>
+    <b> Company description and position in seL4 ecosystem</b>:
+    <p>
+
+
+      DornerWorks is an seL4 Foundation founding member, a leading contributor
+      to the open source project, provides integration services, training, and
+      tools to accelerate/support the growth of seL4 globally. Gregg Wildes is
+      also on the board of directors for the US (seL4 focused) trusted computing
+      COE.
+
+    </p>
+  </li>
+  <li>
+    <b> Position details and link to seL4 </b>:
+    <p>
+
+      DornerWorks, a leader in embedded systems engineering, is growing and
+      seeks a <b>Senior Firmware Engineer</b> to join our team.  Our Separation
+      Technology team is pioneering the use of hypervisors and virtualization in
+      the embedded space. Using hypervisors in embedded applications is
+      relatively new, and our outstanding team is partnering with vendors and
+      customers to apply this novel technology to new products.  Demand for our
+      expertise continues to grow, and we are seeking top-notch technical minds
+      who are comfortable blazing a trail in this emerging technology. As you
+      develop hypervisor functionality, you will become an expert in the open
+      source ecosystems around Xen Project hypervisor, Linux, and the <b>seL4
+      micro-kernel</b> as you gain advanced understanding of cutting-edge
+      system-on-chips (SoC).  This position is located in Grand Rapids,
+      Michigan; however, we are open to remote employees as well.
+
+    </p>
+  </li>
+  <li>
+    <b>How to apply</b>:
+    <p>
+
+       Please visit <a
+       href="https://dornerworks.com/careers-at-dornerworks/">https://dornerworks.com/careers-at-dornerworks/</a>
+       or contact Deb DeVries at <a title="deb.devries@dornerworks.com"
+       href="mailto:deb.devries@dornerworks.com">deb.devries@dornerworks.com</a>.
+
+    </p>
+  </li>
+  </ul>
+
+
+
+</div>
+
+<!----------------------------------------------------------->
+
+<div class="news-item">
  17 Jun 2021: NIO looking for world class experts in seL4 and OS / software platform in general
 </div>
 <div>
