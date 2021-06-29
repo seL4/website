@@ -28,17 +28,17 @@
     <ul>
       <li>
         <strong>
+	  29 Jun 2021: Jump Trading joins the seL4 Foundation as a Premium Member
+        </strong>
+      </li>
+      <li>
+        <strong>
 	  25 Jun 2021: Horizon Robotics joins the seL4 Foundation as a Premium Member
         </strong>
       </li>
       <li>
         <strong>
 	  23 Jun 2021: Li Auto joins the seL4 Foundation as a Premium Member
-        </strong>
-      </li>
-      <li>
-        <strong>
-	  22 Jun 2021: Xcalibyte joins the seL4 Foundation
         </strong>
       </li>
       <li style="margin-top:0.2em;list-style-type:none">

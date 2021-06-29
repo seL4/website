@@ -190,6 +190,34 @@
 
 <div class="governing-container">
   <div class="governing-item-pic">
+    <a href="Jump-Matt.jpg"><img src="Jump-Matt-s.jpg" alt="Matthew Grosvenor" width="80" /></a>
+  </div>
+  <div class="governing-item-heading">
+    <strong><a href="https://www.linkedin.com/in/matthew-p-grosvenor-855a2228/">Dr
+    Matthew
+    P. Grosvenor</a></strong> <span class="person_title_col"><em>Software
+    Engineer, <a href="https://jumptrading.com">Jump Trading</a></em></span>
+  </div>
+  <div class="governing-item-text">
+    <p>
+      Matthew is the representative of Premium Member Jump Trading,
+      where he specializes on measurement and optimization of
+      high-performance and low-latency network systems. He holds a
+      doctorate in computer science from the University of Cambridge
+      where his research work focused on techniques for managing and
+      mitigating latency variance in hyper-scale datacenter
+      networks. He is also a former member of the Trustworthy Systems
+      research group. For his honors project, Matt worked on capability
+      allocation/deallocation techniques using the seL4 capability
+      system. Matthew maintains a strong interest in facilitating and
+      performing research, particularly in the areas of
+      high-performance, and high-assurance systems.
+    </p>
+  </div>
+</div>
+
+<div class="governing-container">
+  <div class="governing-item-pic">
     <a href="NIO-Qiyan.png"><img src="NIO-Qiyan-s.png" alt="Qiyan Wang" width="80" /></a>
   </div>
   <div class="governing-item-heading">
