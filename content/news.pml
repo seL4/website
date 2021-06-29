@@ -49,6 +49,11 @@
    style="width: 20%;  padding-left:10px;  float:right"
    alt="Jump Trading logo">
 
+   The seL4 Foundation welcomes <a href="https://jumptrading.com/">Jump
+   Trading</a>&nbsp;as a Premium member.
+ </p>
+
+ <p>
     Jump is a research-based organization that is committed to
     applying cutting edge technology to trading global financial
     markets. Jump has the full spectrum of technology challenges from
