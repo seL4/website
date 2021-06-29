@@ -24,7 +24,7 @@
  <p>
 
    <img src="/Foundation/Membership/LOGOS/raytheontechnologies.svg"
-   style="width: 15%;  padding-left:10px;  float:right"
+   style="width: 20%;  padding-left:10px;  float:right"
    alt="Raytheon logo">
 
     blah blah blah blah blah blah blah blah blah blah blah blah blah
@@ -36,6 +36,29 @@
  </p>
 </div>
 -->
+
+<!----------------------------------------------------------->
+
+<div class="news-item">
+  29 July 2021: Jump Trading joins the seL4 Foundation as a Premium Member
+</div>
+<div>
+ <p>
+
+   <img src="/Foundation/Membership/LOGOS/Jump-Trading.svg"
+   style="width: 20%;  padding-left:10px;  float:right"
+   alt="Jump Trading logo">
+
+    Jump is a research-based organization that is committed to
+    applying cutting edge technology to trading global financial
+    markets. Jump has the full spectrum of technology challenges from
+    machine learning models and HPC at massive scale to cybersecurity
+    and trusted compute requirements that come from being a major
+    market participant in many asset classes. Jump was founded in 1999
+    and has over 20 global offices including Sydney, Shanghai and
+    Singapore in Asia.
+ </p>
+</div>
 
 <!----------------------------------------------------------->
 
