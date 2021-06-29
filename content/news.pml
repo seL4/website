@@ -40,7 +40,7 @@
 <!----------------------------------------------------------->
 
 <div class="news-item">
-  29 July 2021: Jump Trading joins the seL4 Foundation as a Premium Member
+  29 July 2021: Jump Trading joins the seL4 Foundation
 </div>
 <div>
  <p>
@@ -50,7 +50,7 @@
    alt="Jump Trading logo">
 
    The seL4 Foundation welcomes <a href="https://jumptrading.com/">Jump
-   Trading</a>&nbsp;as a Premium member.
+   Trading</a> as a Premium Member.
  </p>
 
  <p>
@@ -78,7 +78,7 @@
    alt="Horizon Robotics logo">
 
    The seL4 Foundation welcomes <a href="https://horizon.ai">Horizon
-   Robotics</a>&nbsp;as a Premium member.
+   Robotics</a> as a Premium Member.
  </p>
 
  <p>
@@ -114,7 +114,7 @@
 <!----------------------------------------------------------->
 
 <div class="news-item">
-  23 June 2021: Li Auto joins the seL4 Foundation as Premium Member
+  23 June 2021: Li Auto joins the seL4 Foundation
 </div>
 <div>
  <p>
@@ -124,7 +124,7 @@
    alt="Li Auto logo">
 
    The seL4 Foundation
-   welcomes <a href="https://lixiang.com">Li Auto Inc.</a>&nbsp;as a Premium member.
+   welcomes <a href="https://lixiang.com">Li Auto Inc.</a>&nbsp;as a Premium Member.
  </p>
 
  <p>
@@ -196,7 +196,7 @@
 <!----------------------------------------------------------->
 
 <div class="news-item">
-  18 Jun 2021: NIO joins the seL4 Foundation as a Premium Member
+  18 Jun 2021: NIO joins the seL4 Foundation
 </div>
 <div>
  <p>
