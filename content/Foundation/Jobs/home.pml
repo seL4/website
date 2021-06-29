@@ -86,15 +86,14 @@ explicit description of how the job will be linked to seL4.
 </div>
 <div>
  <p>
-   <img src="../Membership/LOGOS/DornerWorks.svg"
-   style="width:30%; padding-left:1em; float:right"
+   <img src="../Membership/LOGOS/DornerWorks.png"
+   style="width:28%; padding-left:1em; float:right"
    alt="DornerWorks">
  </p>
   <ul>
   <li>
     <b> Company description and position in seL4 ecosystem</b>:
     <p>
-
 
       DornerWorks is an seL4 Foundation founding member, a leading contributor
       to the open source project, provides integration services, training, and
@@ -148,8 +147,8 @@ explicit description of how the job will be linked to seL4.
 </div>
 <div>
  <p>
-   <img src="LOGOS/nio.png"
-   style="width:30%; padding-left:1em; float:right"
+   <img src="../Membership/LOGOS/NIO.png"
+   style="width:28%; padding-left:1em; float:right"
    alt="nio">
  </p>
   <ul>
