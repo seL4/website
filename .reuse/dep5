@@ -64,3 +64,7 @@ License: BSD-2-Clause
 Files: content/Info/Docs/u-boot-working-rpi3-32bit-v2017.11.bin content/Info/Hardware/sabreLite/u-boot.bin
 Copyright: Wolfgang Denk and others 2019
 License: GPL-2.0-only
+
+Files: content/security.asc
+Copyright: 2021 seL4 Project a Series of LF Projects, LLC.
+License: CC-BY-4.0
