@@ -49,35 +49,40 @@
     seL4 Board. The new Board Members are:
   </p>
 
-  <ul>
-    <li value="">
-      <div class="governing-item-pic">
+  <table>
+    <tr>
+      <td>
 	<a href="Foundation/Board/Horizon-Feng.jpg"><img
 						      src="Foundation/Board/Horizon-Feng-s.jpg"
-					alt="Dr Feng Zhou" width="80" /></a>
-      Dr. Feng Zhou represents <a href="https://horizon.ai/">Horizon
-      Robotics</a>, where he is a Fellow. He has 15 years of academic
-      as well as 15 years of industry experience in video/image
-      compression &amp; processing, computer vision, artificial
-      intelligence, and ASIC processor architecture.
-      </div>
-    </li>
+					alt="Dr Feng Zhou" width="80"
+						      /></a>
+      </td>
+      <td>
+	Dr. Feng Zhou represents <a href="https://horizon.ai/">Horizon
+	  Robotics</a>, where he is a Fellow. He has 15 years of academic
+	as well as 15 years of industry experience in video/image
+	compression &amp; processing, computer vision, artificial
+	intelligence, and ASIC processor architecture.
+      </td>
+    </tr>
 
-    <li>
-      <div class="governing-item-pic">
+    <tr>
+      <td>
 	<a href="Foundation/Board/Li-Ian.png"><img
 					src="Foundation/Board/Li-Ian-s.png"
 					alt="Ian Xu" width="80" /></a>
-      Ian Xu represents <a href="https://lixiang.com/">Li Auto</a>,
-      where he serves as Vice President, leading Computing
-      Platform design and development including hardware, OS and
-      run-time environment. His experience is in the design and
-      development of networking and wireless communication products.
-      </div>
-    </li>
+      </td>
+      <td>
+	Ian Xu represents <a href="https://lixiang.com/">Li Auto</a>,
+	where he serves as Vice President, leading Computing
+	Platform design and development including hardware, OS and
+	run-time environment. His experience is in the design and
+	development of networking and wireless communication products.
+      </td>
+    </tr>
 
-    <li>
-      <div class="governing-item-pic">
+    <tr>
+      <td>
 	<a href="Foundation/Board/Jump-Matt.jpg"><img
 					src="Foundation/Board/Jump-Matt-s.jpg"
 					alt="Dr Matthew P. Grosvenor" width="80" /></a>
@@ -87,29 +92,25 @@
 	high-performance and low-latency network systems. Matthew is a
 	former member of the Trustworthy Systems research group that
 	developed seL4.
-      </div>
-    </li>
+      </td>
+    </tr>
 
-    <li>
-      <table>
-	<tr>
-	<td>
-	  <a href="Foundation/Board/NIO-Qiyan.png"><img
-						     src="Foundation/Board/NIO-Qiyan-s.png"
-						     alt="Qiyan Wang"
-						     width="80" /></a>
-	</td>
-	<td>
-	  Qiyan Wang represents <a href="https://nio.com/">NIO</a>, where he
-	  leads a global R&amp;D team responsible for Vehicle Operating
-	  System, Connected Vehicle Cloud, Vehicle Digital Architecture,
-	  Cyber Security, and Vehicle Software Integration and
-	  Validation.
-	</td>
-	</tr>
-      </table>
-    </li>
-  </ul>
+    <tr>
+      <td>
+	<a href="Foundation/Board/NIO-Qiyan.png"><img
+						   src="Foundation/Board/NIO-Qiyan-s.png"
+						   alt="Qiyan Wang"
+						   width="80" /></a>
+      </td>
+      <td>
+	Qiyan Wang represents <a href="https://nio.com/">NIO</a>, where he
+	leads a global R&amp;D team responsible for Vehicle Operating
+	System, Connected Vehicle Cloud, Vehicle Digital Architecture,
+	Cyber Security, and Vehicle Software Integration and
+	Validation.
+      </td>
+    </tr>
+  </table>
 
   <p>
     The four new members, join five continuing members on
