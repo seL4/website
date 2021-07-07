@@ -40,6 +40,80 @@
 <!----------------------------------------------------------->
 
 <div class="news-item">
+  7 July 2021: Welcome new Board Members
+</div>
+<div>
+  <p>
+    With four new Premium Members joining the seL4 Foundation during
+    the past few weeks, we now welcome their representatives on the
+    seL4 Board. The new Board Members are:
+  </p>
+
+  <ul>
+    <li>
+      <div class="governing-item-pic">
+	<a href="Foundation/Board/Horizon-Feng.jpg"><img
+						      				      					src="Foundation/Board/Horizon-Feng-s.jpg"
+					alt="Dr Feng Zhou" width="80" /></a>
+      </div>
+      Dr. Feng Zhou represents <a href="https://horizon.ai/">Horizon
+      Robotics</a>, where he is a Fellow. He has 15 years of academic
+      as well as 15 years of industry experience in video/image
+      compression &amp; processing, computer vision, artificial
+      intelligence, and ASIC processor architecture.
+    </li>
+
+    <li>
+      <div class="governing-item-pic">
+	<a href="Foundation/Board/Li-Ian.png"><img
+					src="Li-Ian-s.png"
+					alt="Ian Xu" width="80" /></a>
+      </div>
+      Ian Xu represents <a href="https://lixiang.com/">Li Auto</a>,
+      where he serves as Vice President, leading Computing
+      Platform design and development including hardware, OS and
+      run-time environment. His experience is in the design and
+      development of networking and wireless communication products.
+    </li>
+
+    <li>
+      <div class="governing-item-pic">
+	<a href="Foundation/Board/Jump-Matt.jpg"><img
+					src="Jump-Matt-s.jpg"
+					alt="Dr Matthew P. Grosvenor" width="80" /></a>
+      </div>
+      Dr Matthew P. Grosvenor
+      represents <a href="https://jumptrading.com/">Jump Trading</a>,
+      where he specializes on measurement and optimization of
+      high-performance and low-latency network systems. Matthew is a
+      former member of the Trustworthy Systems research group that
+      developed seL4.
+    </li>
+
+    <li>
+      <div class="governing-item-pic">
+	<a href="Foundation/Board/NIO-Qiyan.png"><img
+					src="NIO-Qiyan-s.png"
+					alt="Qiyan Wang" width="80" /></a>
+      </div>
+      Qiyan Wang represents <a href="https://nio.com/">NIO</a>, where he
+      leads a global R&amp;D team responsible for Vehicle Operating
+      System, Connected Vehicle Cloud, Vehicle Digital Architecture,
+      Cyber Security, and Vehicle Software Integration and
+      Validation.
+    </li>
+  </ul>
+
+  <p>
+    The four new members, join five continuing members on
+    the <a href="Foundation/Board/">seL4 Board</a>, taking the size of
+    the Board to nine.
+  </p>
+</div>
+
+<!----------------------------------------------------------->
+
+<div class="news-item">
   29 July 2021: Jump Trading joins the seL4 Foundation
 </div>
 <div>
