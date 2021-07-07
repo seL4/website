@@ -49,7 +49,7 @@
     seL4 Board. The new Board Members are:
   </p>
 
-  <table>
+  <table cellpadding="10">
     <tr>
       <td>
 	<a href="Foundation/Board/Horizon-Feng.jpg"><img
