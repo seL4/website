@@ -49,13 +49,14 @@
     seL4 Board. The new Board Members are:
   </p>
 
-  <table cellpadding="10">
+  <table>
     <tr>
       <td>
 	<a href="Foundation/Board/Horizon-Feng.jpg"><img
 						      src="Foundation/Board/Horizon-Feng-s.jpg"
 					alt="Dr Feng Zhou" width="80"
 						      /></a>
+	&nbsp;
       </td>
       <td>
 	Dr. Feng Zhou represents <a href="https://horizon.ai/">Horizon
@@ -71,6 +72,7 @@
 	<a href="Foundation/Board/Li-Ian.png"><img
 					src="Foundation/Board/Li-Ian-s.png"
 					alt="Ian Xu" width="80" /></a>
+	&nbsp;
       </td>
       <td>
 	Ian Xu represents <a href="https://lixiang.com/">Li Auto</a>,
@@ -85,7 +87,9 @@
       <td>
 	<a href="Foundation/Board/Jump-Matt.jpg"><img
 					src="Foundation/Board/Jump-Matt-s.jpg"
-					alt="Dr Matthew P. Grosvenor" width="80" /></a>
+					alt="Dr Matthew P. Grosvenor"
+					width="80" /></a>
+	&nbsp;
       </td>
       <td>
 	Dr Matthew P. Grosvenor
@@ -110,6 +114,7 @@
 	System, Connected Vehicle Cloud, Vehicle Digital Architecture,
 	Cyber Security, and Vehicle Software Integration and
 	Validation.
+	&nbsp;
       </td>
     </tr>
   </table>
