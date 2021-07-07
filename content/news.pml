@@ -53,7 +53,7 @@
     <li>
       <div class="governing-item-pic">
 	<a href="Foundation/Board/Horizon-Feng.jpg"><img
-						      				      					src="Foundation/Board/Horizon-Feng-s.jpg"
+						      src="Foundation/Board/Horizon-Feng-s.jpg"
 					alt="Dr Feng Zhou" width="80" /></a>
       </div>
       Dr. Feng Zhou represents <a href="https://horizon.ai/">Horizon
