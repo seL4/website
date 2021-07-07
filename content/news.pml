@@ -81,13 +81,13 @@
 	<a href="Foundation/Board/Jump-Matt.jpg"><img
 					src="Foundation/Board/Jump-Matt-s.jpg"
 					alt="Dr Matthew P. Grosvenor" width="80" /></a>
+	Dr Matthew P. Grosvenor
+	represents <a href="https://jumptrading.com/">Jump Trading</a>,
+	where he specializes on measurement and optimization of
+	high-performance and low-latency network systems. Matthew is a
+	former member of the Trustworthy Systems research group that
+	developed seL4.
       </div>
-      Dr Matthew P. Grosvenor
-      represents <a href="https://jumptrading.com/">Jump Trading</a>,
-      where he specializes on measurement and optimization of
-      high-performance and low-latency network systems. Matthew is a
-      former member of the Trustworthy Systems research group that
-      developed seL4.
     </li>
 
     <li>
@@ -95,12 +95,12 @@
 	<a href="Foundation/Board/NIO-Qiyan.png"><img
 					src="Foundation/Board/NIO-Qiyan-s.png"
 					alt="Qiyan Wang" width="80" /></a>
+	Qiyan Wang represents <a href="https://nio.com/">NIO</a>, where he
+	leads a global R&amp;D team responsible for Vehicle Operating
+	System, Connected Vehicle Cloud, Vehicle Digital Architecture,
+	Cyber Security, and Vehicle Software Integration and
+	Validation.
       </div>
-      Qiyan Wang represents <a href="https://nio.com/">NIO</a>, where he
-      leads a global R&amp;D team responsible for Vehicle Operating
-      System, Connected Vehicle Cloud, Vehicle Digital Architecture,
-      Cyber Security, and Vehicle Software Integration and
-      Validation.
     </li>
   </ul>
 
