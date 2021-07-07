@@ -31,6 +31,7 @@
 	  8 Jul 2021: Second State joins the seL4 Foundation
         </strong>
       </li>
+      <li>
         <strong>
 	  7 Jul 2021: seL4 Foundation welcomes new Board Members
         </strong>
