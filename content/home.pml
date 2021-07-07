@@ -33,12 +33,12 @@
       </li>
       <li>
         <strong>
-	  29 Jun 2021: Jump Trading joins the seL4 Foundation as a Premium Member
+	  7 Jul 2021: seL4 Foundation welcomes new Board Members
         </strong>
       </li>
       <li>
         <strong>
-	  25 Jun 2021: Horizon Robotics joins the seL4 Foundation as a Premium Member
+	  29 Jun 2021: Jump Trading joins the seL4 Foundation as a Premium Member
         </strong>
       </li>
       <li style="margin-top:0.2em;list-style-type:none">
