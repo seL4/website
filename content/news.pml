@@ -92,6 +92,7 @@
 
     <li>
       <table>
+	<tr>
 	<td>
 	  <a href="Foundation/Board/NIO-Qiyan.png"><img
 						     src="Foundation/Board/NIO-Qiyan-s.png"
@@ -105,6 +106,7 @@
 	  Cyber Security, and Vehicle Software Integration and
 	  Validation.
 	</td>
+	</tr>
       </table>
     </li>
   </ul>
