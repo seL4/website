@@ -66,7 +66,7 @@
     <li>
       <div class="governing-item-pic">
 	<a href="Foundation/Board/Li-Ian.png"><img
-					src="Li-Ian-s.png"
+					src="Foundation/Board/Li-Ian-s.png"
 					alt="Ian Xu" width="80" /></a>
       </div>
       Ian Xu represents <a href="https://lixiang.com/">Li Auto</a>,
@@ -79,7 +79,7 @@
     <li>
       <div class="governing-item-pic">
 	<a href="Foundation/Board/Jump-Matt.jpg"><img
-					src="Jump-Matt-s.jpg"
+					src="Foundation/Board/Jump-Matt-s.jpg"
 					alt="Dr Matthew P. Grosvenor" width="80" /></a>
       </div>
       Dr Matthew P. Grosvenor
@@ -93,7 +93,7 @@
     <li>
       <div class="governing-item-pic">
 	<a href="Foundation/Board/NIO-Qiyan.png"><img
-					src="NIO-Qiyan-s.png"
+					src="Foundation/Board/NIO-Qiyan-s.png"
 					alt="Qiyan Wang" width="80" /></a>
       </div>
       Qiyan Wang represents <a href="https://nio.com/">NIO</a>, where he
