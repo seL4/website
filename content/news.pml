@@ -50,7 +50,7 @@
   </p>
 
   <ul>
-    <li>
+    <li value="">
       <div class="governing-item-pic">
 	<a href="Foundation/Board/Horizon-Feng.jpg"><img
 						      src="Foundation/Board/Horizon-Feng-s.jpg"
@@ -90,7 +90,7 @@
       </div>
     </li>
 
-    <li value="">
+    <li>
       <table>
 	<tr>
 	<td>
