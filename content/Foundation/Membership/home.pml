@@ -172,6 +172,17 @@
     </div>
     <div class="sponsor">
       <div class="sponsor-pic">
+	<a href="https://secondstate.io">
+	  <img src="LOGOS/secondstate.svg" style="width: 200px"
+	  alt="Second State logo">
+	</a>
+      </div>
+      <div class="sponsor-name">
+	Second State
+      </div>
+    </div>
+    <div class="sponsor">
+      <div class="sponsor-pic">
 	<a href="https://xcalibyte.com">
 	  <img src="LOGOS/xcalibyte.svg" style="width: 200px" alt="Xcalibyte logo">
 	</a>
