@@ -91,14 +91,21 @@
     </li>
 
     <li>
-	<a href="Foundation/Board/NIO-Qiyan.png"><img
-					src="Foundation/Board/NIO-Qiyan-s.png"
-					alt="Qiyan Wang" width="80" /></a>
-	Qiyan Wang represents <a href="https://nio.com/">NIO</a>, where he
-	leads a global R&amp;D team responsible for Vehicle Operating
-	System, Connected Vehicle Cloud, Vehicle Digital Architecture,
-	Cyber Security, and Vehicle Software Integration and
-	Validation.
+      <table>
+	<td>
+	  <a href="Foundation/Board/NIO-Qiyan.png"><img
+						     src="Foundation/Board/NIO-Qiyan-s.png"
+						     alt="Qiyan Wang"
+						     width="80" /></a>
+	</td>
+	<td>
+	  Qiyan Wang represents <a href="https://nio.com/">NIO</a>, where he
+	  leads a global R&amp;D team responsible for Vehicle Operating
+	  System, Connected Vehicle Cloud, Vehicle Digital Architecture,
+	  Cyber Security, and Vehicle Software Integration and
+	  Validation.
+	</td>
+      </table>
     </li>
   </ul>
 
