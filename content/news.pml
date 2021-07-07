@@ -90,7 +90,7 @@
       </div>
     </li>
 
-    <li val="">
+    <li value="">
       <table>
 	<tr>
 	<td>
