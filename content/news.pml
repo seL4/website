@@ -56,7 +56,7 @@
 						      src="Foundation/Board/Horizon-Feng-s.jpg"
 					alt="Dr Feng Zhou" width="80"
 						      /></a>
-	&nbsp;
+	&nbsp; &nbsp;
       </td>
       <td>
 	Dr. Feng Zhou represents <a href="https://horizon.ai/">Horizon
@@ -72,7 +72,7 @@
 	<a href="Foundation/Board/Li-Ian.png"><img
 					src="Foundation/Board/Li-Ian-s.png"
 					alt="Ian Xu" width="80" /></a>
-	&nbsp;
+	&nbsp; &nbsp;
       </td>
       <td>
 	Ian Xu represents <a href="https://lixiang.com/">Li Auto</a>,
@@ -89,7 +89,7 @@
 					src="Foundation/Board/Jump-Matt-s.jpg"
 					alt="Dr Matthew P. Grosvenor"
 					width="80" /></a>
-	&nbsp;
+	&nbsp; &nbsp;
       </td>
       <td>
 	Dr Matthew P. Grosvenor
@@ -114,13 +114,13 @@
 	System, Connected Vehicle Cloud, Vehicle Digital Architecture,
 	Cyber Security, and Vehicle Software Integration and
 	Validation.
-	&nbsp;
+	&nbsp; &nbsp;
       </td>
     </tr>
   </table>
 
   <p>
-    The four new members, join five continuing members on
+    The four new members join five continuing members on
     the <a href="Foundation/Board/">seL4 Board</a>, taking the size of
     the Board to nine.
   </p>
