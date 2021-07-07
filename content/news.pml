@@ -40,6 +40,27 @@
 <!----------------------------------------------------------->
 
 <div class="news-item">
+  8 July 2021: Second State joins the seL4 Foundation
+</div>
+<div>
+ <p>
+
+   <img src="/Foundation/Membership/LOGOS/secondstate.svg"
+   style="width: 15%;  padding-left:10px;  float:right"
+   alt="Xcalibyte logo">
+
+   The seL4 Foundation
+   welcomes <a href="https://secondstate.io">Second State</a> as a member.
+ </p>
+
+ <p>
+   Second State blah blah blah...
+ </p>
+</div>
+
+<!----------------------------------------------------------->
+
+<div class="news-item">
   7 July 2021: Welcome new Board Members
 </div>
 <div>
