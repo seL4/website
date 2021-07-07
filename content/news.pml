@@ -86,6 +86,8 @@
 	<a href="Foundation/Board/Jump-Matt.jpg"><img
 					src="Foundation/Board/Jump-Matt-s.jpg"
 					alt="Dr Matthew P. Grosvenor" width="80" /></a>
+      </td>
+      <td>
 	Dr Matthew P. Grosvenor
 	represents <a href="https://jumptrading.com/">Jump Trading</a>,
 	where he specializes on measurement and optimization of
