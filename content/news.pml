@@ -64,7 +64,7 @@
  </p>
 
  <p>
-   Second State is currently porting WasmEdge to seL4. It will be on of the
+   Second State is currently porting WasmEdge to seL4. It will be one of the
    first software runtimes in the seL4 ecosystem. By working with
    members in the seL4 Foundation, Second State aims to create a
    real-time software sandbox for automotive and industrial (ie smart
