@@ -54,7 +54,21 @@
  </p>
 
  <p>
-   Second State blah blah blah...
+   Second State is the creator and maintainer of WasmEdge, a CNCF /
+   Linux Foundation project, which provides a high-performance,
+   lightweight, cross-platform, polyglot, and secure software
+   runtime/sandbox for edge computing. Based on the WebAssembly
+   standard, WasmEdge could be 100 times faster than Docker and hypervisor-based
+   solutions. It supports multiple programming languages, including
+   DSLs, and can be embedded into multiple hosting environments.
+ </p>
+
+ <p>
+   Second State is currently porting WasmEdge to seL4. It will be on of the
+   first software runtimes in the seL4 ecosystem. By working with
+   members in the seL4 Foundation, Second State aims to create a
+   real-time software sandbox for automotive and industrial (ie smart
+   factories) applications.
  </p>
 </div>
 
