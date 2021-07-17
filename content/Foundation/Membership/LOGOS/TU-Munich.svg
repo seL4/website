@@ -1,55 +1,14 @@
-<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<?xml version="1.0" encoding="utf-8"?>
 <!-- Generator: Adobe Illustrator 16.0.0, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
-
-<svg
-   version="1.1"
-   id="Ebene_1"
-   x="0px"
-   y="0px"
-   width="149px"
-   height="114px"
-   viewBox="-16.014 -31 149 114"
-   enable-background="new -16.014 -31 149 114"
-   xml:space="preserve"
-   sodipodi:docname="TU-Munich.svg"
-   inkscape:version="1.1 (c4e8f9e, 2021-05-24)"
-   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
-   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
-   xmlns="http://www.w3.org/2000/svg"
-   xmlns:svg="http://www.w3.org/2000/svg"><defs
-   id="defs11"><clipPath
-     clipPathUnits="userSpaceOnUse"
-     id="clipPath146"><rect
-       style="opacity:0.64"
-       id="rect148"
-       width="73"
-       height="38"
-       x="21.986"
-       y="7" /></clipPath></defs><sodipodi:namedview
-   id="namedview9"
-   pagecolor="#ffffff"
-   bordercolor="#666666"
-   borderopacity="1.0"
-   inkscape:pageshadow="2"
-   inkscape:pageopacity="0.0"
-   inkscape:pagecheckerboard="0"
-   showgrid="false"
-   inkscape:zoom="5.8508772"
-   inkscape:cx="74.518741"
-   inkscape:cy="35.293853"
-   inkscape:window-width="1073"
-   inkscape:window-height="743"
-   inkscape:window-x="159"
-   inkscape:window-y="65"
-   inkscape:window-maximized="0"
-   inkscape:current-layer="Ebene_1" />
-<title
-   id="title2">TUM_Web_Logo_blau</title>
-<desc
-   id="desc4">TUM</desc>
-<path
-   fill="#3070b3"
-   d="m 49.986,7 v 31 h 8 V 7 h 37 v 38 h -7 V 14 h -8 v 31 h -7 V 14 h -8 v 31 h -22 V 14 h -7 v 31 h -7 V 14 h -7 V 7 Z"
-   id="path6"
-   clip-path="url(#clipPath146)" />
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<svg version="1.1" id="Ebene_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+	 width="149px" height="114px" viewBox="-16.014 -31 149 114" enable-background="new -16.014 -31 149 114" xml:space="preserve">
+<title>TUM_Web_Logo_blau</title>
+<desc>TUM</desc>
+<defs>
+  <clipPath id="cut-off-margins">
+    <rect x="38" y="38" width="73" height="38" />
+  </clipPath>
+</defs>
+<path fill="#3070B3" d="M49.986,7v31h8V7h37v38h-7V14h-8v31h-7V14h-8v31h-22V14h-7v31h-7V14h-7V7H49.986z"/>
 </svg>
