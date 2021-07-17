@@ -1,16 +1,10 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!-- Generator: Adobe Illustrator 16.0.0, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
 <!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
-<svg version="1.1" id="Ebene_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+<svg version="1.1" id="Ebene_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="24px" y="7px"
 	 width="73px" height="38px" viewBox="24 7 111 45">
 <title>TUM_Web_Logo_blau</title>
 <desc>TUM</desc>
-<defs>
-  <clipPath id="cut-off-margins">
-    <rect x="24" y="7" width="73" height="38" />
-  </clipPath>
-</defs>
 <path fill="#3070B3"
-      d="M49.986,7v31h8V7h37v38h-7V14h-8v31h-7V14h-8v31h-22V14h-7v31h-7V14h-7V7H49.986z"
-      clip-path="url(#cut-off-margins)"/>
+      d="M49.986,7v31h8V7h37v38h-7V14h-8v31h-7V14h-8v31h-22V14h-7v31h-7V14h-7V7H49.986z"/>
 </svg>
