@@ -40,6 +40,25 @@
 <!----------------------------------------------------------->
 
 <div class="news-item">
+  13 July 2021: TU Munich joins seL4 Foundation
+</div>
+<div>
+ <p>
+   <img src="/Foundation/Membership/LOGOS/TU-Munich.svg"
+   style="width: 15%;  padding-left:10px;  float:right"
+	alt="TU Munich logo">
+
+   The seL4 Foundation is pleased to
+   welcome <a href="https://www.tum.de/en">ETH Zurich</a> as
+   Associate Member. The TUM, home of the Isabelle theorem prover used
+   in the verification of seL4, has been a collaborator of the
+   Trustworthy Systems team for many years.
+ </p>
+</div>
+
+<!----------------------------------------------------------->
+
+<div class="news-item">
   8 July 2021: Second State joins the seL4 Foundation
 </div>
 <div>
