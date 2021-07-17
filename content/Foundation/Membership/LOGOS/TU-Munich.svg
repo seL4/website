@@ -7,8 +7,10 @@
 <desc>TUM</desc>
 <defs>
   <clipPath id="cut-off-margins">
-    <rect x="38" y="38" width="73" height="38" />
+    <rect x="24" y="7" width="73" height="38" />
   </clipPath>
 </defs>
-<path fill="#3070B3" d="M49.986,7v31h8V7h37v38h-7V14h-8v31h-7V14h-8v31h-22V14h-7v31h-7V14h-7V7H49.986z"/>
+<path fill="#3070B3"
+      d="M49.986,7v31h8V7h37v38h-7V14h-8v31h-7V14h-8v31h-22V14h-7v31h-7V14h-7V7H49.986z"
+      clip-path="url(#cut-off-margins)"/>
 </svg>
