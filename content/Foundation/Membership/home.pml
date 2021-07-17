@@ -228,8 +228,7 @@
     <div class="sponsor">
       <div class="sponsor-pic">
 	<a href="https://www.tum.de/en">
-	  <!-- img src="LOGOS/TU-Munich.svg" style="width: 200px" alt="TU Munich" -->
-	  <img src="http://gernot-heiser.org/Stuff/TU-Munich.svg" style="width: 200px" alt="TU Munich">
+	  <img src="LOGOS/TU-Munich.svg" style="width: 120px" alt="TU Munich">
 	</a>
       </div>
       <div class="sponsor-name">
