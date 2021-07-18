@@ -49,7 +49,7 @@
 	alt="TU Munich logo">
 
    The seL4 Foundation is pleased to
-   welcome <a href="https://www.tum.de/en">ETH Zurich</a> as
+   welcome <a href="https://www.tum.de/en">Technical University of Munich</a> as
    Associate Member. The TUM, home of the Isabelle theorem prover used
    in the verification of seL4, has been a collaborator of the
    Trustworthy Systems team for many years.
