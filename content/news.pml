@@ -102,7 +102,7 @@
 <div>
  <p>
    <img src="/Foundation/Membership/LOGOS/RISC-V.svg"
-   style="width: 15%;  padding-left:10px;  float:right"
+   style="width: 20%;  padding-left:10px;  float:right"
 	alt="RISC-V logo">
 
    The assurance story for <a href="https://sel4.systems">seL4</a>
