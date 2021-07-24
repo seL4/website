@@ -27,11 +27,11 @@
   <div class="news-column news-content">
     <ul>
       <li>
-      <li>
         <strong>
 	  2 Aug 2021: Kansas State University joins the seL4 Foundation as an Associate Member
         </strong>
       </li>
+      <li>
         <strong>
 	  29 Jul 2021: Happy seL4 day!
         </strong>
