@@ -139,7 +139,10 @@
    Arm32 architecture. It is now also established for RISC-V
    architecture, making it the only 64-bit architecture with an OS
    with such a comprehensive verification and security story. We thank
-   Ryan Barry, main author of these proofs!
+   <a href="https://trustworthy.systems/people/?cn=Ryan+Barry">Ryan
+   Barry</a> of Trustworthy Systems, main author of these proofs! We
+   also gratefully acknowledge funding from the Australian Reseach
+   Council through grant DP190103743 which has enabled this work.
  </p>
 
  <p>
