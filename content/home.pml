@@ -27,6 +27,11 @@
   <div class="news-column news-content">
     <ul>
       <li>
+      <li>
+        <strong>
+	  28 Jul 2021: Proof that seL4 enforces integrity established for RISC-V
+        </strong>
+      </li>
         <strong>
 	  13 Jul 2021: TU Munich joins the seL4 Foundation as an Associate Member
         </strong>
@@ -34,11 +39,6 @@
       <li>
         <strong>
 	  8 Jul 2021: Second State joins the seL4 Foundation
-        </strong>
-      </li>
-      <li>
-        <strong>
-	  7 Jul 2021: seL4 Foundation welcomes new Board Members
         </strong>
       </li>
       <li style="margin-top:0.2em;list-style-type:none">

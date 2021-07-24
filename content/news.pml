@@ -40,6 +40,60 @@
 <!----------------------------------------------------------->
 
 <div class="news-item">
+  28 July 2021: Proof that seL4 enforces integrity established for RISC-V
+</div>
+<div>
+ <p>
+   <img src="/Foundation/Membership/LOGOS/RISC-V.svg"
+   style="width: 15%;  padding-left:10px;  float:right"
+	alt="RISC-V logo">
+
+   The assurance story for <a href="https://sel4.systems">seL4</a>
+   on <a href="https://riscv.org">RISC-V</a> keeps building. We first
+   formally proved <em>functional
+   correctness</em>: <a href="https://microkerneldude.wordpress.com/2020/06/09/sel4-is-verified-on-risc-v/">that
+   the seL4 C code on RISC-V platforms behaves exactly as its
+   specification says</a>. We then established <em>binary
+   correctness</em>: <a href="https://microkerneldude.wordpress.com/2021/05/05/sel4-on-risc-v-verified-to-binary-code/">that
+   the machine code running on the processor behaves exactly as the C
+   code, and by extension, as the specification says</a>. We now have
+   established the crucial <strong>integrity</strong> property for
+   seL4 on RISC-V: that the specification, and by extension the kernel
+   binary, prevents an application running on top from modifying data
+   without authorisation. In seL4 speak: seL4 provably enforces
+   capability-based access control.
+ </p>
+
+ <p>
+   &ldquo;The integrity property is crucial for security: it is key to
+   enforce the <strong>isolation</strong> of components running on top
+   of the kernel&rdquo;, says Gerwin Klein, seL4 verification expert
+   and chair of the seL4 Foundation technical steering
+   committee. &ldquo;This is what allows critical components, like the
+   network controller that has access to software-controlled brakes in
+   a modern car, to securely run alongside untrusted software, like
+   the entertainment system. With proved integrity, you know that an
+   attack on or from a vulnerable untrusted part of the system cannot
+   compromise the critical parts.&rdquo;
+ </p>
+
+ <p>
+   Integrity had been proved in the original seL4 verification on the
+   Arm32 architecture. It is now also established for RISC-V
+   architecture, making it the only 64-bit architecture with an OS
+   with such a comprehensive verification and security story. We thank
+   Ryan Barry, main author of these proofs!
+ </p>
+
+ <p>
+   <a href="https://github.com/seL4/l4v/tree/master/proof/access-control">The
+   proof can be found on GitHub.</a>
+ </p>
+</div>
+
+<!----------------------------------------------------------->
+
+<div class="news-item">
   13 July 2021: TU Munich joins seL4 Foundation
 </div>
 <div>
