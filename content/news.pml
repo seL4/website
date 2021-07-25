@@ -134,6 +134,10 @@
    compromise the critical parts.&rdquo;
  </p>
 
+   <img src="/images/arc-logo.svg"
+   style="width: 20%;  padding-left:10px;  float:right"
+	alt="ARC logo">
+
  <p>
    Integrity had been proved in the original seL4 verification on the
    Arm32 architecture. It is now also established for RISC-V
@@ -141,8 +145,9 @@
    with such a comprehensive verification and security story. We thank
    <a href="https://trustworthy.systems/people/?cn=Ryan+Barry">Ryan
    Barry</a> of Trustworthy Systems, main author of these proofs! We
-   also gratefully acknowledge funding from the Australian Reseach
-   Council through grant DP190103743 which has enabled this work.
+   also gratefully acknowledge funding from the
+   ="https://arc.gov.au>Australian Reseach Council</a> through grant
+   DP190103743 which has enabled this work.
  </p>
 
  <p>
