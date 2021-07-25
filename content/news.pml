@@ -146,7 +146,7 @@
    <a href="https://trustworthy.systems/people/?cn=Ryan+Barry">Ryan
    Barry</a> of Trustworthy Systems, main author of these proofs! We
    also gratefully acknowledge funding from the
-   <a href="https://arc.gov.au>Australian Reseach Council</a> through grant
+   <a href="https://arc.gov.au">Australian Reseach Council</a> through grant
    DP190103743 which has enabled this work.
  </p>
 
