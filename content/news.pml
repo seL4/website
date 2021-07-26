@@ -72,7 +72,7 @@
    committee. &ldquo;This is what allows critical components, like the
    network controller that has access to software-controlled brakes in
    a modern car, to securely run alongside untrusted software, like
-   the entertainment system. With proved integrity, you know that an
+   the entertainment system. With integrity proved, you know that an
    attack on or from a vulnerable untrusted part of the system cannot
    compromise the critical parts.&rdquo;
  </p>
@@ -84,7 +84,7 @@
  <p>
    Integrity had been proved in the original seL4 verification on the
    Arm32 architecture. It is now also established for RISC-V
-   architecture, making it the only 64-bit architecture with an OS
+   architecture, making it the only 64-bit architecture that has an OS
    with such a comprehensive verification and security story. We thank
    <a href="https://trustworthy.systems/people/?cn=Ryan+Barry">Ryan
    Barry</a> of Trustworthy Systems, main author of these proofs! We
