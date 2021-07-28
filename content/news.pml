@@ -40,6 +40,45 @@
 <!----------------------------------------------------------->
 
 <div class="news-item">
+  29 July 2021: Happy seL4 day!
+</div>
+<div>
+ <p>
+   <img src="/images/sel4-birthdaycake.png"
+   style="width: 15%;  padding-left:10px;  float:right"
+   alt="seL4 birthday cake">
+
+   On 29th July 2009, the original functional correctness proof of seL4 was
+   completed, a widely-recognised research breakthrough and the first big
+   milestone in seL4's history.  We obviously had a party then, and have since
+   celebrated its anniversary, calling it, tongue-in-cheek, “International Proof
+   Day”.
+ </p>
+ <p>
+   On the fifth anniversary we open-sourced seL4, which was another major
+   milestone, which we referred to as “seL4 Freedom Day”.
+ </p>
+ <p>
+   Today marks the 12th anniversary of the proof, and the 7th anniversary of
+   open-sourcing, and from now on we’ll refer to the date simply as "seL4 Day”.
+ </p>
+ <p>
+   The seL4 community is now definitely global. Still we would normally have a
+   physical party in Sydney, but won’t be able to due to the renewed Covid-19
+   restrictions – so we’ll all be remote ;-)
+ </p>
+ <div class="highlight">
+  <img src="images/seL4.svg" style="width:15%; padding-left:1em;" alt="seL4"><p>
+   Happy seL4 Day everyone!</p>
+ </div>
+ <p>
+ A virtual toast to you all, and a big thank-you to
+   all for your continued support!
+ </p>
+</div>
+<!----------------------------------------------------------->
+
+<div class="news-item">
   13 July 2021: TU Munich joins seL4 Foundation
 </div>
 <div>
