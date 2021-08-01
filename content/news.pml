@@ -37,6 +37,24 @@
 </div>
 -->
 
+<div class="news-item">
+  2 August 2021: Kansas State University joins seL4 Foundation
+</div>
+<div>
+ <p>
+   <img src="/Foundation/Membership/LOGOS/kansas-state.svg"
+   style="width: 15%;  padding-left:10px;  float:right"
+	alt="KSU logo">
+
+   The seL4 Foundation is pleased to
+   welcome <a href="https://www.k-state.edu/">Kansas State
+   University</a> as Associate Member. KSU has for years been
+   collaborating for years on seL4-based projects with a number of
+   Foundation members under multiple DARPA projects and we are looking
+   forward to their continued involvement.
+ </p>
+</div>
+
 <!----------------------------------------------------------->
 
 <div class="news-item">
