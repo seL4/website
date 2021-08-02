@@ -217,6 +217,17 @@
     </div>
     <div class="sponsor">
       <div class="sponsor-pic">
+	<a href="https://www.k-state.edu/">
+	  <img src="LOGOS/kansas-state.svg" style="width: 200px"
+	  alt="Kansas State">
+	</a>
+      </div>
+      <div class="sponsor-name">
+	Kansas State University
+      </div>
+    </div>
+    <div class="sponsor">
+      <div class="sponsor-pic">
 	<a href="https://riscv.org/">
 	  <img src="LOGOS/RISC-V.svg" style="width: 200px" alt="RISC-V International">
 	</a>
