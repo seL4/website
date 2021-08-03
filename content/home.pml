@@ -28,17 +28,17 @@
     <ul>
       <li>
         <strong>
+	  4 Aug 2021: Proof that seL4 enforces integrity established for RISC-V
+        </strong>
+      </li>
+      <li>
+        <strong>
 	  2 Aug 2021: Kansas State University joins the seL4 Foundation as an Associate Member
         </strong>
       </li>
       <li>
         <strong>
 	  29 Jul 2021: Happy seL4 day!
-        </strong>
-      </li>
-      <li>
-        <strong>
-	  13 Jul 2021: TU Munich joins the seL4 Foundation as an Associate Member
         </strong>
       </li>
       <li style="margin-top:0.2em;list-style-type:none">
