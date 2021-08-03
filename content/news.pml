@@ -94,8 +94,10 @@
  </p>
 
  <p>
+   See <a href="https://microkerneldude.wordpress.com/2021/08/04/sel4-integrity-enforcement-proved-for-risc-v/">Gernot's
+   blog</a> for more details.
    <a href="https://github.com/seL4/l4v/tree/master/proof/access-control">The
-   proof can be found on GitHub.</a>
+   proof is available on GitHub.</a>
  </p>
 </div>
 
