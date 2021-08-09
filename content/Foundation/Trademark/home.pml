@@ -12,12 +12,12 @@
   in your work, following the usage rules below.
 </p>
 <p>
-  The Linux Foundation has registered seL4 as a
+  The Linux Foundation Projects (LF Projects, LLC) has registered seL4 as a
   trademark in the United States and other countries. Please use &reg;
   with the first mention of seL4 in all materials. In addition to the
-  guidelines below, the Linux Foundation Trademark Usage Guidelines,
+  guidelines below, the Trademark Usage Guidelines of the LF Projects, LLC,
   available at
-  <a href="https://www.linuxfoundation.org/trademark-usage/">www.linuxfoundation.org/trademark-usage</a>,
+  <a href="https://lfprojects.org/policies/trademark-policy/">https://lfprojects.org/policies/trademark-policy/</a>,
   also apply to any use of the seL4 trademarks and logos.</p>
 <h2 id="needed-approvals">Needed Approvals</h2>
 <ul>
@@ -42,7 +42,7 @@
 <h2 id="compliance-rules">Compliance Rules</h2>
 <p>
   The usage guidelines
-  at <a href="https://www.linuxfoundation.org/trademark-usage/">www.linuxfoundation.org/trademark-usage</a>
+  at <a href="https://lfprojects.org/policies/trademark-policy/">https://lfprojects.org/policies/trademark-policy/</a>
   apply to the seL4 mark and logos. In addition:
 </p>
 <p>
@@ -201,8 +201,8 @@
 </p>
 <h2 id="updates">Updates</h2>
 <p>
-  The seL4 Foundation and/or Linux Foundation may release new versions
-  of the seL4 trademark guidelines or The Linux Foundation Trademark
+  The seL4 Foundation and/or Linux Foundation Projects may release new versions
+  of the seL4 trademark guidelines or The Linux Foundation Projects Trademark
   Usage Guidelines from time to time.
 </p>
 
