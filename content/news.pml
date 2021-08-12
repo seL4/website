@@ -66,7 +66,7 @@
    <a href="https://twitter.com/raymondrichards/status/1424230000144826372">defeated
    the hackers</a>
    comprehensively. As <a href="https://twitter.com/DARPA/status/1424752441900339200">DARPA
-     said:</a> &ldquo;Formal methods FTW!&rdquo; (for the win).
+     said:</a> &ldquo;Formal methods FTW!&rdquo;
    </p>
 </div>
 
