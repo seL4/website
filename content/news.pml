@@ -49,7 +49,7 @@
    style="width: 20%;  padding-left:10px;  float:right"
    alt="SMACCMcopter">
 
-   On 6 August <a href="https://darpa.mil">DARPA</a> brought the
+   On 6 August <a href="https://www.darpa.mil">DARPA</a> brought the
    &ldquo;SMACCMcopter&rdquo;
    to <a href="https://aerospacevillage.org/category/defcon/">DEF&nbsp;CON</a>
    and invited the assembled hacker elite to attack it. The
