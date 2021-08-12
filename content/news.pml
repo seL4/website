@@ -40,6 +40,39 @@
 <!----------------------------------------------------------->
 
 <div class="news-item">
+  13 August 2021: seL4 protects world's most secure drone from DEFCON hackers
+</div>
+<div>
+ <p>
+
+   <img src="/images/smaccmcopter.png"
+   style="width: 20%;  padding-left:10px;  float:right"
+   alt="SMACCMcopter">
+
+   On 6 August <a href="https://www.darpa.mil">DARPA</a> brought the
+   &ldquo;SMACCMcopter&rdquo;
+   to <a href="https://aerospacevillage.org/category/defcon/">DEF&nbsp;CON</a>
+   and invited the assembled hacker elite to attack it. The
+   SMACCMcopter was the <em>research vehicle</em> of the Air Team at
+   DARPA's <a href="https://www.darpa.mil/program/high-assurance-cyber-military-systems">HACMS</a>
+   program. The Trustworthy Systems
+   team <a href="https://trustworthy.systems/projects/TS/SMACCM/">worked
+   with project partners</a> to deploy seL4 and leverage formal
+   methods to protect the drone from cyber attacks.
+ </p>
+
+ <p>
+   The result? Predictably, sel4's verified security enforcement
+   <a href="https://twitter.com/raymondrichards/status/1424230000144826372">defeated
+   the hackers</a>
+   comprehensively. As <a href="https://twitter.com/DARPA/status/1424752441900339200">DARPA
+     said:</a> &ldquo;Formal methods FTW!&rdquo; (for the win).
+   </p>
+</div>
+
+<!----------------------------------------------------------->
+
+<div class="news-item">
   28 July 2021: Proof that seL4 enforces integrity established for RISC-V
 </div>
 <div>
