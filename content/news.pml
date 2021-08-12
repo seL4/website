@@ -45,9 +45,9 @@
 <div>
  <p>
 
-   <img src="/images/smaccmcopter.png"
-   style="width: 20%;  padding-left:10px;  float:right"
-   alt="SMACCMcopter">
+   <img src="/images/smaccmcopter-defcon.jpg"
+   style="width: 50%;  padding-left:10px;  float:right"
+   alt="SMACCMcopter at DEF CON">
 
    On 6 August <a href="https://www.darpa.mil">DARPA</a> brought the
    &ldquo;SMACCMcopter&rdquo;
