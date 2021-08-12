@@ -225,12 +225,82 @@
 	</p>
       </td>
     </tr>
+    <tr>
+      <td style="padding:15px">
+        <a href="http://hensoldt-cyber.com/">
+          <img src="/Foundation/Membership/LOGOS/HENSOLDT_Cyber.svg"
+	  style="width: 200px" alt="HENSOLDT Cyber">
+	</a>
+      </td>
+      <td>
+	<strong>TRENTOS training</strong><br/>
+	This course introduces the fundamental aspects of TRENTOS, a novel
+	seL4-based secure embedded operating system developed by <a
+	href="https://hensoldt-cyber.com/">HENSOLDT Cyber</a>. The course is
+	split in a lecture part, which covers the theoretical background
+	including the basic aspects of seL4 and CAmkES, and a practical part
+	that provides a basic case in order to teach participants how to create
+	their very first TRENTOS application.
+        <br/>
+	<span class=emph>HENSOLDT Cyber's TRENTOS training has received <em>interim endorsement</em> as
+	  seL4 training.</span>
+        <br/>
+        To access the training, please email <a title="info@hensoldt-cyber.com"
+        href="mailto:info@hensoldt-cyber.com">info@hensoldt-cyber.com</a>.  A
+        request can also be submitted through HENSOLDT Cyber's website <a
+        href="https://hensoldt-cyber.com/contact/">contact form</a>.
+      </td>
+    </tr>
   </table>
 
+
   <h2>Products</h2>
-  <p style="margin-left: 20px">
-  No product has been endorsed at this stage. <br>
-  <span class=emph>Consider adding yours!</span> <br>
-  See process  <a href="endorsement.pml">here</a>.
-  </p>
+  <table style="margin-left: 20px" >
+    <tr>
+      <td style="padding:15px">
+        <a href="http://hensoldt-cyber.com/">
+          <img src="/Foundation/Membership/LOGOS/HENSOLDT_Cyber.svg"
+	  style="width: 200px" alt="HENSOLDT Cyber">
+	</a>
+      </td>
+      <td>
+	<strong>TRENTOS</strong><br/>
+
+        TRENTOS is an seL4-based operating system. With the Trusted Entity
+        Operating System (TRENTOS), HENSOLDT Cyber addresses secure IT right
+        from the start, by building upon the proven seL4 software ecosystem and
+        consequently relying on trusted open-source components.  With the
+        TRENTOS SDK, HENSOLDT Cyber provides a complete development environment
+        that equips a developer with all the tools required for building,
+        testing and finally deploying TRENTOS-based systems to the real world.
+        The SDK hereby contains the actual operating system (OS) source code,
+        consisting of seL4, CAmkES and TRENTOS, but also offers a collection of
+        additional resources designed to make developer’s work easier by
+        increasing efficiency and reducing complexity.
+        <br/>
+        For more information about TRENTOS, see <a
+	href="https://hensoldt-cyber.com/">HENSOLDT Cyber</a>'s blog posts:
+	<ul>
+	  <li>
+          <a
+          href="https://hensoldt-cyber.com/2021/07/07/trentos-a-secure-operating-system-on-top-of-sel4-camkes/">TRENTOS
+          – A secure operating system on top of seL4 & CAmkES</a>
+	  </li>
+	  <li>
+          <a
+          href="https://hensoldt-cyber.com/2021/07/16/trentos-sdk-the-trentos-development-environment/">TRENTOS
+          SDK – the TRENTOS development environment</a>
+	  </li>
+	</ul>
+	<span class=emph>HENSOLDT Cyber's TRENTOS product and SDK has received
+	<em>interim endorsement</em> from the Foundation.</span>
+        <br/>
+        To access TRENTOS, please email <a title="info@hensoldt-cyber.com"
+        href="mailto:info@hensoldt-cyber.com">info@hensoldt-cyber.com</a>.  A
+        request can also be submitted through HENSOLDT Cyber's website <a
+        href="https://hensoldt-cyber.com/contact/">contact form</a>.
+      </td>
+    </tr>
+  </table>
+
 </div>
