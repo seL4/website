@@ -266,14 +266,14 @@
       <td>
 	<strong>TRENTOS</strong><br/>
 
-        TRENTOS is an seL4-based operating system. With the Trusted Entity
-        Operating System (TRENTOS), HENSOLDT Cyber addresses secure IT right
-        from the start, by building upon the proven seL4 software ecosystem and
-        consequently relying on trusted open-source components.  With the
+        With the Trusted Entity Operating System (TRENTOS), HENSOLDT
+        Cyber provides secure IT from the bottom up, by building upon
+        the mathematically proved seL4 microkernel and its software ecosystem and
+        trusted open-source components.  With the
         TRENTOS SDK, HENSOLDT Cyber provides a complete development environment
         that equips a developer with all the tools required for building,
-        testing and finally deploying TRENTOS-based systems to the real world.
-        The SDK hereby contains the actual operating system (OS) source code,
+        testing and deploying TRENTOS-based systems to the real world.
+        The SDK contains the actual operating system (OS) source code,
         consisting of seL4, CAmkES and TRENTOS, but also offers a collection of
         additional resources designed to make developer’s work easier by
         increasing efficiency and reducing complexity.
