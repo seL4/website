@@ -40,6 +40,40 @@
 <!----------------------------------------------------------->
 
 <div class="news-item">
+  18 August 2021: Lotus Cars joins the seL4 Foundation
+</div>
+<div>
+ <p>
+
+   <img src="/Foundation/Membership/LOGOS/LotusCarsTechnology.svg"
+        style="width: 15%;  padding-left:10px;  float:right"
+        alt="Lotus Cars logo">
+
+   Lotus is a leader in the Global Premium Sport Car market. We stand
+   out as a brand dedicated to pure driving experience. Committed to
+   advancing technology with precision and passion, Lotus continues to
+   spearhead research into areas such as autonomous driving,
+   connectivity, intelligence, electrification. Emira, Evija, Evora
+   are representative models that in recent years drive Lotus’
+   world-wide reputation. Going forward, Lotus’ approach will be based
+   on the principle of “EAS-IP” (Electrify, Amplify, Simplify,
+   Intensify and Personify), a globally R&amp;D strategy, and
+   excellent autonomous driving solutions to create a novel,
+   technology-based driving experience for future global users.
+ </p>
+
+ <p>
+   In joining the seL4 Foundation, Lotus is committed to the
+   development and deployment of the seL4 microkernel in the field of
+   autonomous driving, advance Lotus' automotive operating system to
+   meet the overall functional safety goals of the system, and realize
+   the launch of safe and reliable autonomous driving products.
+ </p>
+</div>
+
+<!----------------------------------------------------------->
+
+<div class="news-item">
   13 August 2021: seL4 protects world's most secure drone from DEFCON hackers
 </div>
 <div>
@@ -68,6 +102,66 @@
    comprehensively. As <a href="https://twitter.com/DARPA/status/1424752441900339200">DARPA
      said:</a> &ldquo;Formal methods FTW!&rdquo;
    </p>
+</div>
+
+<!----------------------------------------------------------->
+
+<div class="news-item">
+  2 August 2021: Kansas State University joins seL4 Foundation
+</div>
+<div>
+ <p>
+   <img src="/Foundation/Membership/LOGOS/kansas-state.svg"
+   style="width: 15%;  padding-left:10px;  float:right"
+	alt="KSU logo">
+
+   The seL4 Foundation is pleased to
+   welcome <a href="https://www.k-state.edu/">Kansas State
+   University</a> as Associate Member. KSU has for years been
+   collaborating for years on seL4-based projects with a number of
+   Foundation members under multiple DARPA projects and we are looking
+   forward to their continued involvement.
+ </p>
+</div>
+
+<!----------------------------------------------------------->
+
+<div class="news-item">
+  29 July 2021: Happy seL4 day!
+</div>
+<div>
+ <p>
+   <img src="/images/sel4-birthdaycake.png"
+   style="width: 15%;  padding-left:10px;  float:right"
+   alt="seL4 birthday cake">
+
+   On 29th July 2009, the original functional correctness proof of seL4 was
+   completed, a widely-recognised research breakthrough and the first big
+   milestone in seL4's history.  We obviously had a party then, and have since
+   celebrated its anniversary, calling it, tongue-in-cheek, “International Proof
+   Day”.
+ </p>
+ <p>
+   On the fifth anniversary we open-sourced seL4, which was another major
+   milestone, which we referred to as “seL4 Freedom Day”.
+ </p>
+ <p>
+   Today marks the 12th anniversary of the proof, and the 7th anniversary of
+   open-sourcing, and from now on we’ll refer to the date simply as "seL4 Day”.
+ </p>
+ <p>
+   The seL4 community is now definitely global. Still we would normally have a
+   physical party in Sydney, but won’t be able to due to the renewed Covid-19
+   restrictions – so we’ll all be remote ;-)
+ </p>
+ <div class="highlight">
+  <img src="images/seL4.svg" style="width:15%; padding-left:1em;" alt="seL4"><p>
+   Happy seL4 Day everyone!</p>
+ </div>
+ <p>
+ A virtual toast to you all, and a big thank-you to
+   all for your continued support!
+ </p>
 </div>
 
 <!----------------------------------------------------------->
@@ -131,66 +225,6 @@
    blog</a> for more details.
    <a href="https://github.com/seL4/l4v/tree/master/proof/access-control">The
    proof is available on GitHub.</a>
- </p>
-</div>
-
-<!----------------------------------------------------------->
-
-<div class="news-item">
-  2 August 2021: Kansas State University joins seL4 Foundation
-</div>
-<div>
- <p>
-   <img src="/Foundation/Membership/LOGOS/kansas-state.svg"
-   style="width: 15%;  padding-left:10px;  float:right"
-	alt="KSU logo">
-
-   The seL4 Foundation is pleased to
-   welcome <a href="https://www.k-state.edu/">Kansas State
-   University</a> as Associate Member. KSU has for years been
-   collaborating for years on seL4-based projects with a number of
-   Foundation members under multiple DARPA projects and we are looking
-   forward to their continued involvement.
- </p>
-</div>
-
-<!----------------------------------------------------------->
-
-<div class="news-item">
-  29 July 2021: Happy seL4 day!
-</div>
-<div>
- <p>
-   <img src="/images/sel4-birthdaycake.png"
-   style="width: 15%;  padding-left:10px;  float:right"
-   alt="seL4 birthday cake">
-
-   On 29th July 2009, the original functional correctness proof of seL4 was
-   completed, a widely-recognised research breakthrough and the first big
-   milestone in seL4's history.  We obviously had a party then, and have since
-   celebrated its anniversary, calling it, tongue-in-cheek, “International Proof
-   Day”.
- </p>
- <p>
-   On the fifth anniversary we open-sourced seL4, which was another major
-   milestone, which we referred to as “seL4 Freedom Day”.
- </p>
- <p>
-   Today marks the 12th anniversary of the proof, and the 7th anniversary of
-   open-sourcing, and from now on we’ll refer to the date simply as "seL4 Day”.
- </p>
- <p>
-   The seL4 community is now definitely global. Still we would normally have a
-   physical party in Sydney, but won’t be able to due to the renewed Covid-19
-   restrictions – so we’ll all be remote ;-)
- </p>
- <div class="highlight">
-  <img src="images/seL4.svg" style="width:15%; padding-left:1em;" alt="seL4"><p>
-   Happy seL4 Day everyone!</p>
- </div>
- <p>
- A virtual toast to you all, and a big thank-you to
-   all for your continued support!
  </p>
 </div>
 
