@@ -374,7 +374,7 @@
 <!----------------------------------------------------------->
 
 <div class="news-item">
-  29 July 2021: Jump Trading joins the seL4 Foundation
+  29 June 2021: Jump Trading joins the seL4 Foundation
 </div>
 <div>
  <p>
