@@ -49,6 +49,11 @@
         style="width: 15%;  padding-left:10px;  float:right"
         alt="Lotus Cars logo">
 
+   The seL4 Foundation
+   welcomes <a href="https://www.lotuscars.com/">Lotus Cars</a>.
+ </p>
+
+ <p>
    Lotus is a leader in the Global Premium Sport Car market. We stand
    out as a brand dedicated to pure driving experience. Committed to
    advancing technology with precision and passion, Lotus continues to
