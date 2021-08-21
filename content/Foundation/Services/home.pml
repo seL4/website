@@ -147,6 +147,36 @@
 	</ul>
       </td>
     </tr>
+
+    <tr>
+      <td style="padding:15px">
+        <a href="http://unsw.edu.au/">
+          <img src="/Foundation/Membership/LOGOS/UNSW.svg"
+          style="width: 200px" alt="UNSW Sydney">
+	</a>
+      </td>
+      <td>
+	<strong>UNSW Sydney</strong><br/>
+
+        The Trustworthy Systems (TS) team is the creator of seL4 and
+        the seL4 Foundation, and for a long time was the sole source
+        of support. With the seL4 Foundation now in place, TS at its
+        new home at UNSW, TS can now focus on seL4-related research
+        and driving development, leaving engineering mostly to other
+        ecosystem players. However, is happy to take on research and
+        consultancy contracts, as well as providing engineering
+        services should no commercial player be available.
+
+        <br/>
+	<span class=emph>UNSW has received <em>interim endorsement</em> as a Trusted
+	Service Provider for seL4-based systems.</span>
+	<ul>
+	  <li><a href="https://trustworthy.systems/engagement/services/">Details of services</a></li>
+	  <li> <a href="https://trustworthy.systems/">Trustworthy Systems home page</a></li>
+	  <li> <a href="https://www.unsw.edu.au/">UNSW home page</a></li>
+	</ul>
+      </td>
+    </tr>
   </table>
 
   <h2>Training</h2>
