@@ -160,12 +160,13 @@
 
         The Trustworthy Systems (TS) team is the creator of seL4 and
         the seL4 Foundation, and for a long time was the sole source
-        of support. With the seL4 Foundation now in place, TS at its
+        of support. With the seL4 Foundation now in place, and at its
         new home at UNSW, TS can now focus on seL4-related research
         and driving development, leaving engineering mostly to other
-        ecosystem players. However, is happy to take on research and
+        ecosystem players. However, TS happy to take on research and
         consultancy contracts, as well as providing engineering
-        services should no commercial player be available.
+        (systems and verification) services when no commercial player
+        is available.
 
         <br/>
 	<span class=emph>UNSW has received <em>interim endorsement</em> as a Trusted
