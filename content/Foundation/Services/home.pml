@@ -249,7 +249,7 @@
         href="mailto:info@hensoldt-cyber.com">info@hensoldt-cyber.com</a>
         or use
         the <a href="https://hensoldt-cyber.com/consultancy-and-training/">contact
-        form on HENSOLDT Cyber's website.
+        form</a> on HENSOLDT Cyber's website.
       </td>
     </tr>
   </table>
