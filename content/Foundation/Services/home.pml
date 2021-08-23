@@ -246,9 +246,10 @@
 	  seL4 training.</span>
         <br/>
         To access the training, please email <a title="info@hensoldt-cyber.com"
-        href="mailto:info@hensoldt-cyber.com">info@hensoldt-cyber.com</a>.  A
-        request can also be submitted through HENSOLDT Cyber's website <a
-        href="https://hensoldt-cyber.com/contact/">contact form</a>.
+        href="mailto:info@hensoldt-cyber.com">info@hensoldt-cyber.com</a>
+        or use
+        the <a href="https://hensoldt-cyber.com/consultancy-and-training/">contact
+        form on HENSOLDT Cyber's website.
       </td>
     </tr>
   </table>
