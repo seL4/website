@@ -40,6 +40,43 @@
 <!----------------------------------------------------------->
 
 <div class="news-item">
+  25 Aug 2021: seL4 Foundation awards interim endorsement to
+  TRENTOS&nbsp;OS and training
+</div>
+<div>
+ <p>
+
+   <a href="http://hensoldt-cyber.com/">
+   <img src="/Foundation/Membership/LOGOS/HENSOLDT_Cyber.svg"
+    style="width: 15%;  padding-left:10px;  float:right"
+    alt="HENSOLDT Cyber">
+   </a>
+
+    The seL4 has awarded <strong>interim endorsement</strong> to the
+    seL4-based <a href="https://hensoldt-cyber.com/2021/07/07/trentos-a-secure-operating-system-on-top-of-sel4-camkes/">TRENTOS
+    secure operating system</a> from Foundation member HENSOLDT
+    Cyber. This is the first time a product is endorsed, and marks a
+    new milestone for the Foundation and the growth of the seL4
+   ecosystem.
+ </p>
+
+ <p>
+   HENSOLDT Cyber's training module for TRENTOS has also received
+   interim endorsement, which constitutes another milestone as the
+   first endorsed training provided from outside the Trustworthy
+   Systems group.
+ </p>
+
+ <p>
+   Details on interim-endorsed services and products are on
+   our <a href="https://sel4.systems/Foundation/Services/">services
+   and products page</a>.
+ </p>
+</div>
+
+<!----------------------------------------------------------->
+
+<div class="news-item">
   18 August 2021: Lotus Cars joins the seL4 Foundation
 </div>
 <div>
