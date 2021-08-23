@@ -28,17 +28,17 @@
     <ul>
       <li>
         <strong>
+	  25 Aug 2021: Interim endorsement for TRENTOS&nbsp;OS and training
+        </strong>
+      </li>
+      <li>
+        <strong>
 	  18 Aug 2021: Lotus Cars joins the seL4 Foundation
         </strong>
       </li>
       <li>
         <strong>
 	  13 Aug 2021: seL4 protects world's most secure drone from DEFCON hackers
-        </strong>
-      </li>
-      <li>
-        <strong>
-	  4 Aug 2021: Proof that seL4 enforces integrity established for RISC-V
         </strong>
       </li>
       <li style="margin-top:0.2em;list-style-type:none">
