@@ -208,16 +208,6 @@
   <div class="sponsors">
     <div class="sponsor">
       <div class="sponsor-pic">
-	<a href="https://trustworthy.systems/">
-	  <img src="LOGOS/CSIRO.jpg" style="width: 200px" alt="CSIRO's Data61">
-	</a>
-      </div>
-      <div class="sponsor-name">
-	CSIRO's Data61
-      </div>
-    </div>
-    <div class="sponsor">
-      <div class="sponsor-pic">
 	<a href="https://ethz.ch/en.html">
 	  <img src="LOGOS/ETH-Zurich.svg" style="width: 200px" alt="ETH Zurich">
 	</a>
