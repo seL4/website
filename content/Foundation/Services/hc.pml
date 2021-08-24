@@ -98,48 +98,48 @@ A <a href="home.pml">Trusted Service Provider</a> for seL4-based systems
 	  </li>
 	</ul>
       </li>
+    </ul>
+  </li>
+  <li>
+    TRENTOS Training
+    <ul>
       <li>
-	TRENTOS Training
-	<ul>
-	  <li>
-	    Introduction of the fundamental aspects of TRENTOS, a
-	    novel, seL4-based, secure embedded operating system
-	    developed by HENSOLDT Cyber;
-	  </li>
-	  <li>
-	    Background and basics of seL4 and CAmkES;
-	  </li>
-	  <li>
-	    Creating your first TRENTOS application.
-	  </li>
-	  <li>
-	    The module will be taught by Sebastian Eckl, an seL4 and
-	    TRENTOS expert.
-	  </li>
-	</ul>
+	Introduction of the fundamental aspects of TRENTOS, a
+	novel, seL4-based, secure embedded operating system
+	developed by HENSOLDT Cyber;
       </li>
       <li>
-	TRENTOS SDK
-	<ul>
-	  <li>
-	    TRENTOS is a seL4-based operating system.
-	  </li>
-	  <li>
-	    It provides a complete development environment that equips
-	    a developer with all the tools required for building,
-	    testing and deploying TRENTOS-based systems to the real
-	    world.
-	  </li>
-	  <li>
-	    The SDK contains the actual operating system (OS) source
-	    code, consisting of seL4, CAmkES and TRENTOS, but also
-	    offers a collection of additional resources designed to
-	    make developer's work easier by increasing efficiency and
-	    reducing complexity.
-	  </li>
-	</ul>
+	Background and basics of seL4 and CAmkES;
+      </li>
+      <li>
+	Creating your first TRENTOS application.
+      </li>
+      <li>
+	The module will be taught by Sebastian Eckl, an seL4 and
+	TRENTOS expert.
       </li>
     </ul>
+  </li>
+  <li>
+    TRENTOS SDK
+    <ul>
+      <li>
+	TRENTOS is a seL4-based operating system.
+      </li>
+      <li>
+	It provides a complete development environment that equips
+	a developer with all the tools required for building,
+	testing and deploying TRENTOS-based systems to the real
+	world.
+      </li>
+      <li>
+	The SDK contains the actual operating system (OS) source
+	code, consisting of seL4, CAmkES and TRENTOS, but also
+	offers a collection of additional resources designed to
+	make developer's work easier by increasing efficiency and
+	reducing complexity.
+      </li>
+	</ul>
   </li>
 </ul>
 
