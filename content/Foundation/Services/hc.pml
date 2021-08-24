@@ -32,7 +32,9 @@ A <a href="home.pml">Trusted Service Provider</a> for seL4-based systems
       application of the seL4 technologies.<br>
 
 	<span class=emph>HENSOLDT Cyber GmbH has received <em>interim endorsement</em> as a Trusted
-	Service Provider for seL4-based systems.</span>
+	Service Provider for seL4-based systems and for our training
+	offering for seL4. Our TRENTOS operating system has received
+	interim endorsement as a seL4 product as well.</span>
 	<ul>
 	  <li> <a href="http://hensoldt-cyber.com/">Home page</a></li>
 	</ul>
