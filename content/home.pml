@@ -28,7 +28,7 @@
     <ul>
       <li>
         <strong>
-	  25 Aug 2021: Interim endorsement for TRENTOS&nbsp;OS and training
+	  25 Aug 2021: Interim endorsement for HENSOLDT Cyber's TRENTOS&nbsp;OS and training
         </strong>
       </li>
       <li>
