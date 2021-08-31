@@ -28,7 +28,7 @@
     <ul>
       <li>
         <strong>
-	  31 Aug 2021: Ghost donates $30k to seL4 Foundation
+	  31 Aug 2021: Ghost donates to the seL4 Foundation
         </strong>
       </li>
       <li>
