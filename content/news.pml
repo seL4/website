@@ -23,9 +23,11 @@
 <div>
  <p>
 
-   <img src="/Foundation/Membership/LOGOS/raytheontechnologies.svg"
-   style="width: 20%;  padding-left:10px;  float:right"
-   alt="Raytheon logo">
+   <a href="https://www.rtx.com/">
+     <img src="/Foundation/Membership/LOGOS/raytheontechnologies.svg"
+	  style="width: 20%;  padding-left:10px;  float:right"
+	  alt="Raytheon logo"/>
+   </a>
 
     blah blah blah blah blah blah blah blah blah blah blah blah blah
     blah blah blah blah blah blah blah blah blah blah blah blah blah
@@ -45,11 +47,13 @@
 <div>
  <p>
 
-   <img src="/Foundation/Membership/LOGOS/GHOST.svg"
-   style="width: 20%;  padding-left:10px;  float:right"
-   alt="Ghost logo">
+   <a href="https://driveghost.com/">
+     <img src="/Foundation/Membership/LOGOS/GHOST.svg"
+	  style="width: 20%;  padding-left:10px;  float:right"
+	  alt="Ghost logo" />
+   </a>
 
-   The seL4 Foundation thanks <a href=https://gh.st>Ghost</a> for its
+   The seL4 Foundation thanks <a href="https://driveghost.com/">Ghost</a> for its
    generous contribution.  Ghost's commitment strengthens the seL4
    Foundation's mission to continue advancing the ecosystem, the code
    base, and the verification efforts of seL4, the world's most
@@ -83,7 +87,7 @@
     alt="HENSOLDT Cyber">
    </a>
 
-    The seL4 has awarded <strong>interim endorsement</strong> to the
+    The seL4 Foundation has awarded <strong>interim endorsement</strong> to the
     seL4-based <a href="https://hensoldt-cyber.com/2021/07/07/trentos-a-secure-operating-system-on-top-of-sel4-camkes/">TRENTOS
     secure operating system</a> from Foundation member HENSOLDT
     Cyber. This is the first time a product is endorsed, and marks a
@@ -113,9 +117,11 @@
 <div>
  <p>
 
-   <img src="/Foundation/Membership/LOGOS/LotusCarsTechnology.svg"
-        style="width: 15%;  padding-left:10px;  float:right"
-        alt="Lotus Cars logo">
+   <a href="https://www.lotuscars.com/">
+     <img src="/Foundation/Membership/LOGOS/LotusCarsTechnology.svg"
+          style="width: 15%;  padding-left:10px;  float:right"
+          alt="Lotus Cars logo"/>
+   </a>
 
    The seL4 Foundation
    welcomes <a href="https://www.lotuscars.com/">Lotus Cars</a>.
@@ -152,9 +158,11 @@
 <div>
  <p>
 
-   <img src="/images/smaccmcopter-defcon.jpg"
-   style="width: 50%;  padding-left:10px;  float:right"
-   alt="SMACCMcopter at DEF CON">
+   <a href="https://trustworthy.systems/projects/TS/SMACCM/">
+     <img src="/images/smaccmcopter-defcon.jpg"
+	  style="width: 50%;  padding-left:10px;  float:right"
+	  alt="SMACCMcopter at DEF CON" />
+   </a>
 
    On 6 August <a href="https://www.darpa.mil">DARPA</a> brought the
    &ldquo;SMACCMcopter&rdquo;
@@ -183,10 +191,12 @@
   2 August 2021: Kansas State University joins seL4 Foundation
 </div>
 <div>
- <p>
-   <img src="/Foundation/Membership/LOGOS/kansas-state.svg"
-   style="width: 15%;  padding-left:10px;  float:right"
-	alt="KSU logo">
+  <p>
+    <a href="https://www.k-state.edu/">
+      <img src="/Foundation/Membership/LOGOS/kansas-state.svg"
+	   style="width: 15%;  padding-left:10px;  float:right"
+	   alt="KSU logo" />
+    </a>
 
    The seL4 Foundation is pleased to
    welcome <a href="https://www.k-state.edu/">Kansas State
@@ -243,10 +253,12 @@
   28 July 2021: Proof that seL4 enforces integrity established for RISC-V
 </div>
 <div>
- <p>
-   <img src="/Foundation/Membership/LOGOS/RISC-V.svg"
-   style="width: 20%;  padding-left:10px;  float:right"
-	alt="RISC-V logo">
+  <p>
+    <a href="https://riscv.org">
+      <img src="/Foundation/Membership/LOGOS/RISC-V.svg"
+	   style="width: 20%;  padding-left:10px;  float:right"
+	   alt="RISC-V logo" />
+    </a>
 
    The assurance story for <a href="https://sel4.systems">seL4</a>
    on <a href="https://riscv.org">RISC-V</a> keeps building. We first
@@ -277,9 +289,11 @@
    compromise the critical parts.&rdquo;
  </p>
 
+ <a href="https://arc.gov.au">
    <img src="/images/arc-logo.svg"
-   style="width: 20%;  padding-left:10px;  float:right"
-	alt="ARC logo">
+	style="width: 20%;  padding-left:10px;  float:right"
+	alt="ARC logo" />
+ </a>
 
  <p>
    Integrity had been proved in the original seL4 verification on the
@@ -307,10 +321,12 @@
   13 July 2021: TU Munich joins seL4 Foundation
 </div>
 <div>
- <p>
-   <img src="/Foundation/Membership/LOGOS/TU-Munich.svg"
-   style="width: 15%;  padding-left:10px;  float:right"
-	alt="TU Munich logo">
+  <p>
+    <a href="https://www.tum.de/en">
+      <img src="/Foundation/Membership/LOGOS/TU-Munich.svg"
+	   style="width: 15%;  padding-left:10px;  float:right"
+	   alt="TU Munich logo" />
+    </a>
 
    The seL4 Foundation is pleased to
    welcome <a href="https://www.tum.de/en">Technical University of Munich</a> as
@@ -328,9 +344,11 @@
 <div>
  <p>
 
-   <img src="/Foundation/Membership/LOGOS/secondstate.svg"
-   style="width: 15%;  padding-left:10px;  float:right"
-   alt="Xcalibyte logo">
+   <a href="https://secondstate.io">
+     <img src="/Foundation/Membership/LOGOS/secondstate.svg"
+	  style="width: 15%;  padding-left:10px;  float:right"
+	  alt="Xcalibyte logo" />
+   </a>
 
    The seL4 Foundation
    welcomes <a href="https://secondstate.io">Second State</a> as a member.
@@ -452,9 +470,11 @@
 <div>
  <p>
 
-   <img src="/Foundation/Membership/LOGOS/Jump-Trading.svg"
-   style="width: 20%;  padding-left:10px;  float:right"
-   alt="Jump Trading logo">
+   <a href="https://jumptrading.com/">
+     <img src="/Foundation/Membership/LOGOS/Jump-Trading.svg"
+	  style="width: 20%;  padding-left:10px;  float:right"
+	  alt="Jump Trading logo" />
+   </a>
 
    The seL4 Foundation welcomes <a href="https://jumptrading.com/">Jump
    Trading</a> as a Premium Member.
@@ -480,9 +500,11 @@
 <div>
  <p>
 
-   <img src="/Foundation/Membership/LOGOS/Horizon_Robotics.svg"
-   style="width: 25%;  padding-left:10px;  float:right"
-   alt="Horizon Robotics logo">
+   <a href="https://horizon.ai">
+     <img src="/Foundation/Membership/LOGOS/Horizon_Robotics.svg"
+	  style="width: 25%;  padding-left:10px;  float:right"
+	  alt="Horizon Robotics logo" />
+   </a>
 
    The seL4 Foundation welcomes <a href="https://horizon.ai">Horizon
    Robotics</a> as a Premium Member.
@@ -526,9 +548,11 @@
 <div>
  <p>
 
-   <img src="/Foundation/Membership/LOGOS/Li_Auto.svg"
-   style="width: 20%;  padding-left:10px;  float:right"
-   alt="Li Auto logo">
+   <a href="https://lixiang.com">
+     <img src="/Foundation/Membership/LOGOS/Li_Auto.svg"
+	  style="width: 20%;  padding-left:10px;  float:right"
+	  alt="Li Auto logo" />
+   </a>
 
    The seL4 Foundation
    welcomes <a href="https://lixiang.com">Li Auto Inc.</a>&nbsp;as a Premium Member.
@@ -569,9 +593,11 @@
 <div>
  <p>
 
-   <img src="/Foundation/Membership/LOGOS/xcalibyte.svg"
-   style="width: 15%;  padding-left:10px;  float:right"
-   alt="Xcalibyte logo">
+   <a href="https://xcalibyte.com">
+     <img src="/Foundation/Membership/LOGOS/xcalibyte.svg"
+	  style="width: 15%;  padding-left:10px;  float:right"
+	  alt="Xcalibyte logo">
+   </a>
 
    The seL4 Foundation
    welcomes <a href="https://xcalibyte.com">Xcalibyte</a> as a member.
@@ -608,9 +634,11 @@
 <div>
  <p>
 
-   <img src="/Foundation/Membership/LOGOS/NIO.png"
-   style="width: 15%;  padding-left:10px;  float:right"
-   alt="NIO logo">
+   <a href="https://nio.com">
+     <img src="/Foundation/Membership/LOGOS/NIO.png"
+	  style="width: 15%;  padding-left:10px;  float:right"
+	  alt="NIO logo" />
+   </a>
 
    The seL4 Foundation
    welcomes <a href="https://nio.com">NIO Inc</a> as a Premium member.
@@ -653,8 +681,11 @@
   11 June 2021: seL4 12.1.0 released
 </div>
 <div>
- <p>
-    <img src="images/seL4.svg" style="width:15%; padding-left:1em; float:right" alt="seL4">
+  <p>
+    <a href="https://sel4.systems">
+      <img src="images/seL4.svg" style="width:15%; padding-left:1em;
+	   float:right" alt="seL4" />
+    </a>
 
     The seL4 Foundation has released the following updates:
  </p>
@@ -702,9 +733,10 @@
 <div>
  <p>
 
-
-    <img src="/Foundation/Board/TS-June-s.jpg" alt="June Andronick" width="80"
-	 style="padding-left:10px;  float:right" />
+   <a href="https://sel4.foundation">
+     <img src="/Foundation/Board/TS-June-s.jpg" alt="June Andronick" width="80"
+	  style="padding-left:10px;  float:right" />
+   </a>
 
     The seL4 Foundation has appointed Dr June Andronick as (part time)
     CEO. June, already a permanent board member as one of the founders
@@ -719,10 +751,12 @@
   7 June 2021: Kry10 the seL4 Foundation
 </div>
 <div>
- <p>
-   <img src="/Foundation/Membership/LOGOS/Kry10.svg"
-   style="width: 15%;  padding-left:10px;  float:right"
-   alt="Kry10 logo">
+  <p>
+    <a href="https://kry10.com/">
+      <img src="/Foundation/Membership/LOGOS/Kry10.svg"
+	   style="width: 15%;  padding-left:10px;  float:right"
+	   alt="Kry10 logo" />
+    </a>
 
    The seL4 Foundation welcomes New-Zealand
    based <a href="https://kry10.com/">Kry10</a> as our latest member.
@@ -750,11 +784,13 @@
   24 May 2021: 4 concrete ways to support seL4 now
 </div>
 <div>
+
   <p>
-    <img src="/images/sel4-foundation-logo.svg" style="width: 15%;
-    padding-left:10px; float:right" alt="RISC-V logo">
-  </p>
-  <p>
+    <a href="https://sel4.foundation">
+      <img src="/images/sel4-foundation-logo.svg" style="width: 15%;
+	   padding-left:10px; float:right" alt="seL4 Foundation logo" />
+    </a>
+
     It has been heart-warming to see the response of the seL4
     community to the news of the dismantlement of the Trustworthy
     Systems group (TS), creator of seL4.
@@ -791,7 +827,7 @@
     <li>
 
       <b> donations and crowdfunding, in particular towards the
-	  “continuity project".</b><br>
+	  &ldquo;continuity project&rdquo;.</b><br>
 
       <a
       href="/Foundation/Support">https://sel4.systems/Foundation/Support/</a><br>
@@ -877,16 +913,17 @@
   23 May 2021: New "Jobs" page on the seL4 Foundation website
 </div>
 <div>
- <p>
-   <img src="/images/sel4-foundation-logo.svg"
-   style="width: 15%;  padding-left:10px;  float:right"
-	alt="RISC-V logo">
+  <p>
+    <a href="https://sel4.foundation">
+      <img src="/images/sel4-foundation-logo.svg"
+	   style="width: 15%;  padding-left:10px;  float:right"
+	   alt="RISC-V logo" />
+    </a>
 
    The community has expressed a need to more easily find seL4 experts
    to hire. The Foundations has created a <a
    href="/Foundation/Jobs">"Jobs in seL4 ecosystem" page</a> where
    members can post offers for positions with seL4 expertise.
-
  </p>
 </div>
 
@@ -895,10 +932,12 @@
   5 May 2021: RISC-V International and seL4 Foundation Announce New Security Milestone
 </div>
 <div>
- <p>
-   <img src="/Foundation/Membership/LOGOS/RISC-V.svg"
-   style="width: 15%;  padding-left:10px;  float:right"
-	alt="RISC-V logo">
+  <p>
+    <a href="https://riscv.org">
+      <img src="/Foundation/Membership/LOGOS/RISC-V.svg"
+	   style="width: 15%;  padding-left:10px;  float:right"
+	   alt="RISC-V logo" />
+    </a>
 
    Today, the <a href="/Foundation/">seL4 Foundation</a> and
    <a href="https://riscv.org">RISC-V International</a> announced that the
@@ -966,10 +1005,12 @@
   23 April 2021: ETH Zurich joins seL4 Foundation
 </div>
 <div>
- <p>
-   <img src="/Foundation/Membership/LOGOS/ETH-Zurich.svg"
-   style="width: 15%;  padding-left:10px;  float:right"
-	alt="ETH Zurich logo">
+  <p>
+    <a href="https://ethz.ch/en.html">
+      <img src="/Foundation/Membership/LOGOS/ETH-Zurich.svg"
+	   style="width: 15%;  padding-left:10px;  float:right"
+	   alt="ETH Zurich logo" />
+    </a>
 
    The seL4 Foundation is pleased to
    welcome <a href="https://ethz.ch/en.html">ETH Zurich</a> as
@@ -994,10 +1035,12 @@
   4 Mar 2021: Raytheon joins the seL4 Foundation
 </div>
 <div>
- <p>
-   <img src="/Foundation/Membership/LOGOS/raytheontechnologies.svg"
-   style="width: 15%;  padding-left:10px;  float:right"
-	alt="Raytheon logo">
+  <p>
+    <a href="https://www.rtx.com/">
+      <img src="/Foundation/Membership/LOGOS/raytheontechnologies.svg"
+	   style="width: 15%;  padding-left:10px;  float:right"
+	   alt="Raytheon logo" />
+    </a>
 
    The seL4 Foundation
    welcomes <a href="https://www.rtx.com/">Raytheon
@@ -1025,11 +1068,10 @@
 </div>
 <div>
  <p>
-
    <a href="http://hensoldt-cyber.com/">
-   <img src="/Foundation/Membership/LOGOS/HENSOLDT_Cyber.svg"
-    style="width: 15%;  padding-left:10px;  float:right"
-    alt="HENSOLDT Cyber">
+     <img src="/Foundation/Membership/LOGOS/HENSOLDT_Cyber.svg"
+	  style="width: 15%;  padding-left:10px;  float:right"
+	  alt="HENSOLDT Cyber" />
    </a>
 
    The seL4 Foundation has extended <a
@@ -1106,7 +1148,13 @@
   8 Feb 2021: Penten joins the seL4 Foundation
 </div>
 <div>
- <p>
+  <p>
+    <a href="https://www.penten.com/">
+     <img src="/Foundation/Membership/LOGOS/Penten.svg"
+	  style="width: 20%;  padding-left:10px;  float:right"
+	  alt="Penten logo" />
+   </a>
+
     The seL4 Foundation welcomes <a href="https://www.penten.com">Penten Pty Ltd</a> as our newest member. Penten is based in Canberra, Australia, and specialises in secure communications technology and artificial intelligence. Penten has been developing seL4-based products for a number of years, some of which are in daily use in multiple defence forces.
  </p>
 </div>
@@ -1138,12 +1186,11 @@
 <div>
  <p>
 
-
-   <img src="/images/seL4.svg"
-   style="width:30%; padding-left:1em; float:right"
-   alt="seL4">
-
-
+   <a href="https://sel4.systems">
+     <img src="/images/seL4.svg"
+	  style="width:30%; padding-left:1em; float:right"
+	  alt="seL4" />
+   </a>
 
   Announcing the releases of seL4, CAmkES and CapDL under the seL4
   Foundation.  Below you can find links to release notes with updates
@@ -1196,9 +1243,9 @@
  <p>
 
    <a href="https://www.adventiumlabs.com">
-   <img src="/Foundation/Membership/LOGOS/adventium-labs.svg"
-   style="width:40%; padding-left:1em; float:right"
-   alt="Adventium Labs logo">
+     <img src="/Foundation/Membership/LOGOS/adventium-labs.svg"
+	  style="width:40%; padding-left:1em; float:right"
+	  alt="Adventium Labs logo" />
    </a>
 
   We’re happy to announce the newest member of the seL4 Foundation:
@@ -1224,21 +1271,31 @@
 <div>
  <p>
 
-RISC-V (RV64) is the third ISA with verified seL4. The functional
-correctness proof of seL4 on the RV64 ISA has
-completed. Congratulations to the awesome Proof Engineering Team of
-the Trustworthy Systems group on achieving this major milestone for
-seL4! And many thanks to HENSOLDT Cyber for making it possible.
+    <a href="https://riscv.org">
+      <img src="/Foundation/Membership/LOGOS/RISC-V.svg"
+	   style="width: 15%;  padding-left:10px;  float:right"
+	   alt="RISC-V logo" />
+    </a>
 
-What we have now is the refinement proof from the seL4 formal spec to the C
-implementation, putting RV64 on the same level as x64 in terms of seL4 verification. The
-binary verification, which extends this refinement to the binary code of the kernel is
-progressing, stay tuned for more news on that in the foreseeable future.
+    RISC-V (RV64) is the third ISA with verified seL4. The functional
+    correctness proof of seL4 on the RV64 ISA has
+    completed. Congratulations to the awesome Proof Engineering Team of
+    the Trustworthy Systems group on achieving this major milestone for
+    seL4! And many thanks to HENSOLDT Cyber for making it possible.
+ </p>
 
-More on this in this <a
-href="https://microkerneldude.wordpress.com/2020/06/09/sel4-is-verified-on-risc-v/">blog
-post</a>.
+ <p>
+   What we have now is the refinement proof from the seL4 formal spec
+   to the C implementation, putting RV64 on the same level as x64 in
+   terms of seL4 verification. The binary verification, which extends
+   this refinement to the binary code of the kernel is progressing,
+   stay tuned for more news on that in the foreseeable future.
+ </p>
 
+ <p>
+   More on this in this <a
+			  href="https://microkerneldude.wordpress.com/2020/06/09/sel4-is-verified-on-risc-v/">blog
+     post</a>.
  </p>
 </div>
 
@@ -1251,22 +1308,31 @@ post</a>.
 <div>
  <p>
 
-  Yet another contribution of UNSW Sydney to the seL4 community: This
-  year Gernot Heiser is making the seL4-related videos from his UNSW
-  Advanced Operating Systems class freely available. You’ll find them
-  at the <a
-  href="https://www.youtube.com/playlist?list=PLbSaCpDlfd6qLbEsKquVo3--0gwYBmrUV">UNSW
-  CSeLearning COMP9242 YouTube channel</a>.
+    <a href="https://www.unsw.edu.au">
+      <img src="/Foundation/Membership/LOGOS/UNSW.svg"
+	   style="width: 15%;  padding-left:10px;  float:right"
+	   alt="UNSW logo" />
+    </a>
 
+  Yet another contribution of <a href="https://www.unsw.edu.au">UNSW
+  Sydney</a> to the seL4 community: This year Gernot Heiser is making
+  the seL4-related videos from his UNSW Advanced Operating Systems
+  class freely available. You’ll find them at
+  the <a href="https://www.youtube.com/playlist?list=PLbSaCpDlfd6qLbEsKquVo3--0gwYBmrUV">UNSW
+      CSeLearning COMP9242 YouTube channel</a>.
+ </p>
+
+ <p>
   At present there are the first two modules, which provide some
   background on microkernels and seL4, and discuss the seL4 API. More
   material will show up over the next two months.
+ </p>
 
+ <p>
   The complete course material, including all lecture slides, the
   project spec and code, are available, as always, from the <a
   href="https://www.cse.unsw.edu.au/~cs9242/current/">COMP9042 web
   site</a>.
-
  </p>
 </div>
 
