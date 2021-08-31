@@ -42,7 +42,7 @@
 <!----------------------------------------------------------->
 
 <div class="news-item">
-  31 Aug 2021: Ghost donates $30k to seL4 Foundation
+  31 Aug 2021: Ghost donates to the seL4 Foundation
 </div>
 <div>
  <p>
@@ -1220,7 +1220,7 @@
 <div>
  <p>
 
-  The <a href="http://www.sel4-us.org/summits/2020-summit/">3rd seL4
+  The <a href="https://trustedcomputingcoe.org/summits/2020-summit/">3rd seL4
   Summit</a> will take place (virtually) on 15–18 November (US East
   Coast time).  The program features a tutorial and 3 days packed with
   great talks and panels.
