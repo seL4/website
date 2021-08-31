@@ -28,17 +28,17 @@
     <ul>
       <li>
         <strong>
+	  31 Aug 2021: Ghost donates $30k to seL4 Foundation
+        </strong>
+      </li>
+      <li>
+        <strong>
 	  25 Aug 2021: Interim endorsement for HENSOLDT Cyber's TRENTOS&nbsp;OS and training
         </strong>
       </li>
       <li>
         <strong>
 	  18 Aug 2021: Lotus Cars joins the seL4 Foundation
-        </strong>
-      </li>
-      <li>
-        <strong>
-	  13 Aug 2021: seL4 protects world's most secure drone from DEFCON hackers
         </strong>
       </li>
       <li style="margin-top:0.2em;list-style-type:none">

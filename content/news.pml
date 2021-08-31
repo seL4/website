@@ -40,6 +40,37 @@
 <!----------------------------------------------------------->
 
 <div class="news-item">
+  31 Aug 2021: Ghost donates $30k to seL4 Foundation
+</div>
+<div>
+ <p>
+
+   <img src="/Foundation/Membership/LOGOS/GHOST.svg"
+   style="width: 20%;  padding-left:10px;  float:right"
+   alt="Ghost logo">
+
+   The seL4 Foundation thanks <a href=https://gh.st>Ghost</a> for its
+   generous contribution.  Ghost's commitment strengthens the seL4
+   Foundation's mission to continue advancing the ecosystem, the code
+   base, and the verification efforts of seL4, the world's most
+   advanced and highly assured operating-system kernel.
+ </p>
+
+ <p>
+   As a founding member of the Foundation, Ghost is developing
+   self-driving cars using seL4, aiming to make the first formally
+   proven safety-critical system on the road into a reality for
+   millions of drivers.
+ </p>
+
+ <p>
+   We warmly thank Ghost for its continued support!
+ </p>
+</div>
+
+<!----------------------------------------------------------->
+
+<div class="news-item">
   25 Aug 2021: seL4 Foundation awards interim endorsement to
   TRENTOS&nbsp;OS and training
 </div>
