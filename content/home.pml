@@ -17,7 +17,7 @@
 
 
 
-<a href="news.pml">
+<a href="news-21.pml">
 <div class="news">
 <div class="news-clearfix">
   <div class="news-column news-title">
