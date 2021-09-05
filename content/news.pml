@@ -1160,7 +1160,7 @@
 </div>
 
 <div class="news-finish">
-  <p>
+  <p class="news-title">
     Older news: <a href="news-20.pml">2020</a>
   </p>
 </div>
