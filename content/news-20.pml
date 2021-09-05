@@ -10,9 +10,9 @@
   <a href="/Foundation">seL4 Foundation</a>
 </h1>
 
-<p class="news-title">2020 News</p>
+<p class="news-title">2020&nbsp;News</p>
 
-<p><strong>See the <a href="news.pml">latest news</a></p>
+<p><strong>See the <a href="news.pml">latest news</a></strong></p>
 
 <!----------------------------------------------------------->
 <div class="news-item">

@@ -1159,8 +1159,11 @@
  </p>
 </div>
 
+<p>
+</p>
+
 <div class="news-finish">
   <p class="news-title">
-    Older news: <a href="news-20.pml">2020</a>
+    Older&nbsp;news:&nbsp;<a href="news-20.pml">2020</a>
   </p>
 </div>
