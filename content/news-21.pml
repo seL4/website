@@ -1159,8 +1159,8 @@
  </p>
 </div>
 
-<p>
-</p>
+<div class="news-item">
+</div>
 
 <div class="news-finish">
   <p class="news-title">
