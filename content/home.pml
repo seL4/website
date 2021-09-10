@@ -28,17 +28,17 @@
     <ul>
       <li>
         <strong>
+	  10 Sep 2021: Xcalibyte webinar by Gernot Heiser on seL4 on Sep 16, 2021
+        </strong>
+      </li>
+      <li>
+        <strong>
 	  31 Aug 2021: Ghost donates to the seL4 Foundation
         </strong>
       </li>
       <li>
         <strong>
 	  25 Aug 2021: Interim endorsement for HENSOLDT Cyber's TRENTOS&nbsp;OS and training
-        </strong>
-      </li>
-      <li>
-        <strong>
-	  18 Aug 2021: Lotus Cars joins the seL4 Foundation
         </strong>
       </li>
       <li style="margin-top:0.2em;list-style-type:none">
