@@ -42,6 +42,34 @@
 <!----------------------------------------------------------->
 
 <div class="news-item">
+  10 Sep 2021: Xcalibyte webinar by Gernot Heiser on seL4 on Sep 16, 2021
+</div>
+<div>
+ <p>
+
+   <a href="https://xcalibyte.com">
+     <img src="/Foundation/Membership/LOGOS/xcalibyte.svg"
+	  style="width: 15%;  padding-left:10px;  float:right"
+	  alt="Xcalibyte logo">
+   </a>
+
+   Xcalibyte, a member of the seL4 Foundation, is hosting a webinar on Sep 16,
+   2021, given by Gernot Heiser, seL4 Foundation Chairman & Scientia Professor,
+   UNSW Sydney, and Yuning Liang, CEO & co-founder, Xcalibyte. The topic will be
+   ‘The seL4 Microkernel: Proved Security for Cyberphysical Systems’.
+
+</p>
+<p>
+
+   To register: <a
+   href="https://www.bagevent.com/event/7771850">https://www.bagevent.com/event/7771850</a>.
+
+ </p>
+</div>
+
+<!----------------------------------------------------------->
+
+<div class="news-item">
   31 Aug 2021: Ghost donates to the seL4 Foundation
 </div>
 <div>
@@ -347,7 +375,7 @@
    <a href="https://secondstate.io">
      <img src="/Foundation/Membership/LOGOS/secondstate.svg"
 	  style="width: 15%;  padding-left:10px;  float:right"
-	  alt="Xcalibyte logo" />
+	  alt="Second state logo" />
    </a>
 
    The seL4 Foundation
