@@ -24,7 +24,7 @@ files =  sorted([f for f in listdir(newsdir) if re.match(r'^20[0-9][0-9]\.pml$',
 reflist = []
 for x in files:
     link = '/news/' + x[:4]
-    reflist.append('<a href="%s">%s<a>' % (link, x[:4]))
+    reflist.append('<a href="%s">%s</a>' % (link, x[:4]))
 reflist = ' '.join(reflist)
 %>
 Older News: <%=reflist%>
