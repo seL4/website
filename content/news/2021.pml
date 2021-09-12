@@ -698,7 +698,7 @@ Older News: <%=reflist%>
 <div>
   <p>
     <a href="https://sel4.systems">
-      <img src="images/seL4.svg" style="width:15%; padding-left:1em;
+      <img src="/images/seL4.svg" style="width:15%; padding-left:1em;
 	   float:right" alt="seL4" />
     </a>
 
