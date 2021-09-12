@@ -200,7 +200,7 @@
  <p>
 
    <a href="/About/seL4-whitepaper.pdf">
-   <img src="About/whitepaper.svg"
+   <img src="/About/whitepaper.svg"
    style="width:15%; padding-left:1em; padding-bottom:1em; float:right"
    alt="seL4 Whitepaper">
    </a>
