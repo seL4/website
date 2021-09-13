@@ -56,6 +56,34 @@ Older News: <%=reflist%>
 
 <!----------------------------------------------------------->
 <div class="news-item">
+  14 Sep 2021: Proofcraft joins the seL4 Foundation
+</div>
+<div>
+ <p>
+
+   <a href="https://proofcraft.systems">
+     <img src="/Foundation/Membership/LOGOS/proofcraft.svg"
+	  style="width: 20%;  padding-left:10px;  float:right"
+	  alt="Proofcraft logo">
+   </a>
+
+   The seL4 Foundation is pleased to welcome Proofcraft!
+</p>
+<p>
+
+  Founded by the seL4 verification leaders, <a
+  href="https://proofcraft.systems">Proofcraft</a> offers commercial support,
+  verification projects, training or consulting about formal verification in
+  general, and involving seL4 specifically. By applying mathematical
+  machine-checked software verification, Proofcraft increases critical software
+  systems' reliability, safety and security, for a verified future!
+
+</p>
+
+</div>
+
+<!----------------------------------------------------------->
+<div class="news-item">
   10 Sep 2021: Xcalibyte webinar by Gernot Heiser on seL4 on Sep 16, 2021
 </div>
 <div>
