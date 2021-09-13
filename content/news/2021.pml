@@ -387,7 +387,7 @@ Older News: <%=reflist%>
    <a href="https://secondstate.io">
      <img src="/Foundation/Membership/LOGOS/secondstate.svg"
 	  style="width: 15%;  padding-left:10px;  float:right"
-	  alt="Xcalibyte logo" />
+	  alt="Second State logo" />
    </a>
 
    The seL4 Foundation
