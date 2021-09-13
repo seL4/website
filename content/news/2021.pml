@@ -73,7 +73,7 @@ Older News: <%=reflist%>
 
   Founded by the seL4 verification leaders, <a
   href="https://proofcraft.systems">Proofcraft</a> offers commercial support,
-  verification projects, training or consulting about formal verification in
+  verification projects, training and consulting on formal verification in
   general, and involving seL4 specifically. By applying mathematical
   machine-checked software verification, Proofcraft increases critical software
   systems' reliability, safety and security, for a verified future!
