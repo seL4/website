@@ -67,7 +67,7 @@ Older News: <%=reflist%>
 	  alt="Proofcraft logo">
    </a>
 
-   The seL4 Foundation is pleased to welcome Proofcraft!
+   The seL4 Foundation is pleased to welcome Proofcraft.
 </p>
 <p>
 
