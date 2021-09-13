@@ -75,7 +75,7 @@ Older News: <%=reflist%>
 </p>
 <p>
    To register: <a
-   href="https://www.bagevent.com/event/7771850">https://www.bagevent.com/event/7771850</a>.
+   href="http://xcalscan.mikecrm.com/Uw4y9HU">http://xcalscan.mikecrm.com/Uw4y9HU</a>.
  </p>
 </div>
 
