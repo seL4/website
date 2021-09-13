@@ -28,7 +28,7 @@
     <ul>
       <li>
         <strong>
-	  14 Sep 2021: Proofcraft joins the seL4 Foundation!
+	  14 Sep 2021: Proofcraft joins the seL4 Foundation
         </strong>
       </li>
       <li>
