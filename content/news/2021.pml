@@ -71,7 +71,7 @@ Older News: <%=reflist%>
     Foundation have grown a lot. This has led to concerns that the
     broader participation might have the potential to undermine the
     integrity of seL4. In his latest
-    blog, <a href="https://microkerneldude.wordpress.com/2021/09/27/where-is-sel4-heading/">Gernot
+    blog, <a href="https://microkerneldude.wordpress.com/2021/09/28/where-is-sel4-heading/">Gernot
     explains why there is no reason for such concern</a>. seL4's open
     governance and technical leadership is based on technical merit
     and established trust, not money.
