@@ -12,9 +12,11 @@
   in your work, following the usage rules below.
 </p>
 <p>
-  The Linux Foundation Projects (LF Projects, LLC) has registered seL4 as a
+  The Linux Foundation Projects (LF Projects, LLC) has applied to register the
+  seL4 trademark in the United States and other countries.
+  <!--registered seL4 as a
   trademark in the United States and other countries. Please use &reg;
-  with the first mention of seL4 in all materials. In addition to the
+  with the first mention of seL4 in all materials. --> In addition to the
   guidelines below, the Trademark Usage Guidelines of the LF Projects, LLC,
   available at
   <a href="https://lfprojects.org/policies/trademark-policy/">https://lfprojects.org/policies/trademark-policy/</a>,
@@ -205,5 +207,3 @@
   of the seL4 trademark guidelines or The Linux Foundation Projects Trademark
   Usage Guidelines from time to time.
 </p>
-
-
