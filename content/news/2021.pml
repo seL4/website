@@ -55,7 +55,7 @@ Older News: <%=reflist%>
 -->
 
 <div class="news-item">
-  28 July 2021: Gernot explains why seL4 is and remains safe
+  28 September 2021: Gernot explains why seL4 is and remains safe
 </div>
 <div>
  <p>
