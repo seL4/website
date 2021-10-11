@@ -23,12 +23,16 @@
   <li>
     <a href="210413-minutes-signed.pdf">4<sup>th</sup> meeting of 2021-04-13</a>
   </li>
+
+  <li>
+    <a href="210609-minutes-signed.pdf">5<sup>th</sup> meeting of 2021-06-09</a>
+  </li>
 </ul>
 
 <h2>Unconfirmed Minutes</h2>
 
 <ul>
   <li>
-    <a href="210609-minutes-unconfirmed.pdf">5<sup>th</sup> meeting of 2021-06-09</a>
+    <a href="211006-minutes-unconfirmed.pdf">6<sup>th</sup> meeting of 2021-10-06</a>
   </li>
 </ul>
