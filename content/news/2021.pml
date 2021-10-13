@@ -54,6 +54,39 @@ Older News: <%=reflist%>
 </div>
 -->
 
+<!----------------------------------------------------------->
+<div class="news-item">
+  14 October 2021: Proofcraft receives interim endorsement as a Trusted Service Provider
+</div>
+<div>
+  <p>
+
+   <a href="https://proofcraft.systems">
+     <img src="/Foundation/Membership/LOGOS/proofcraft.svg"
+	  style="width: 20%;  padding-left:10px;  float:right"
+	  alt="Proofcraft logo">
+   </a>
+
+   The seL4 Foundation has awarded <a href="/Foundation/Services/">Interim
+   Endorsement</a> to <a href="https://proofcraft.systems">Proofcraft</a> as a
+   Trusted Service Provider for commercial support, verification projects,
+   training and consulting on formal verification of seL4 and seL4-based
+   systems.
+
+  </p>
+  <p>
+
+   Formal verification is what makes seL4 unique. As seL4 code evolves, so must
+   its formal proofs, and as more systems are built on seL4, there is an
+   increased need to ensure correct configuration and initialisation, and
+   correctness of critical components. Proofcraft is here to help. More on our
+   <a href="/Foundation/Services/">services and products page</a>.
+
+ </p>
+</div>
+
+
+<!----------------------------------------------------------->
 <div class="news-item">
   28 September 2021: Gernot explains why seL4 is and remains safe
 </div>
