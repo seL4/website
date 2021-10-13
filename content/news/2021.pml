@@ -71,16 +71,8 @@ Older News: <%=reflist%>
    Endorsement</a> to <a href="https://proofcraft.systems">Proofcraft</a> as a
    Trusted Service Provider for commercial support, verification projects,
    training and consulting on formal verification of seL4 and seL4-based
-   systems.
-
-  </p>
-  <p>
-
-   Formal verification is what makes seL4 unique. As seL4 code evolves, so must
-   its formal proofs, and as more systems are built on seL4, there is an
-   increased need to ensure correct configuration and initialisation, and
-   correctness of critical components. Proofcraft is here to help. More on our
-   <a href="/Foundation/Services/">services and products page</a>.
+   systems. More on our <a href="/Foundation/Services/">services and products
+   page</a>.
 
  </p>
 </div>
