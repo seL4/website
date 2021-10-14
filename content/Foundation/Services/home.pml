@@ -178,6 +178,45 @@
 	</ul>
       </td>
     </tr>
+    <tr>
+      <td style="padding:15px">
+        <a href="https://proofcraft.systems">
+        <img src="/Foundation/Membership/LOGOS/proofcraft.svg"
+	  style="width: 200px" alt="Proofcraft">
+	</a>
+      </td>
+      <td>
+	<strong>Proofcraft Pty Ltd</strong><br/>
+
+        Formal verification is what makes seL4 unique. With increasing uptake
+        and adoption, seL4 is evolving, supporting more platforms,
+        architectures, configurations, and features. An increasing number of
+        high assurance systems are built with seL4 as a trustworthy foundation.
+
+	As seL4 code evolves, so must its formal proofs. As more systems are
+	built on seL4, there is an increased need to ensure correct
+	configuration and initialisation, and correctness of critical
+	components.
+
+        Proofcraft is here to help. Founded by the seL4 verification leaders, it
+        offers commercial support, verification projects, training and
+        consulting on formal verification in general, and involving seL4
+        specifically.
+
+	By applying mathematical machine-checked software verification,
+	Proofcraft increases critical software systems' reliability, safety and
+	security, for a verified future.
+
+        <br/>
+	<span class=emph>Proofcraft has received <em>interim endorsement</em> as a Trusted
+	Service Provider for seL4-based systems.</span>
+	<ul>
+	  <li><a href="https://proofcraft.systems">Home page</a></li>
+	  <li>Contact: <a title="contact@proofcraft.systems"
+              href="mailto:contact@proofcraft.systems">contact@proofcraft.systems</a>
+	</ul>
+      </td>
+    </tr>
   </table>
 
   <h2>Training</h2>
