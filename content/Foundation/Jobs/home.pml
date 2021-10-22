@@ -82,6 +82,91 @@ explicit description of how the job will be linked to seL4.
 <!----------------------------------------------------------->
 
 <div class="news-item">
+ 25 Oct 2021: HENSOLDT Cyber is looking for researchers in formal verification,
+ cryptography experts, and software/hardware engineers with a focus on
+  embedded Systems
+</div>
+<div>
+ <p>
+   <img src="../Membership/LOGOS/HENSOLDT_Cyber.svg"
+        alt="HENSOLDT Cyber"
+        style="width:28%; padding-left: 1em; float: right">
+ </p>
+  <ul>
+  <li>
+    <b>Company description and position in seL4 ecosystem</b>:
+    <p>
+      HENSOLDT Cyber is a joint venture between Secure Elements GmbH and
+      HENSOLDT Holding Germany GmbH. We are a founding member in the seL4
+      Foundation and also member of the RISC-V foundation. Our mission is
+      establishing a paradigm shift to cyber security, we advocate <b>secure IT
+      instead of IT security</b>. We combine the know-how of more than one
+      hundred years of experience in high-performance technology in the fields
+      of defense and aerospace. We build systems that are secure from the ground
+      up, combining innovative physical protection with mathematical proofs of
+      software correctness to achieve true trustworthiness. We offer
+      <b>Security Made in Germany</b>.
+      <br>
+      Optimized for use in industrial, aerospace and defense applications, our
+      customers can expect high quality military-grade security, safety
+      critical, user-friendly and flexible solutions. Our products have been
+      designed to ensure the integrity of embedded systems at the core: the
+      operating system and the processor.
+      <br>
+      The operating system TRENTOS is a revolution in cyber security based on
+      the seL4 microkernel and CAmkES. We developed this highly secure operating
+      system for IoT devices and cyber physical systems. seL4 provides strict
+      isolation of components, with communication restricted to explicitly
+      enabled channels, ensuring clarity of information flows. Mathematical
+      proofs of implementation correctness of seL4 as well as critical
+      components guarantee system integrity under all operating conditions.
+      <br>
+      Our MiG-V is a RISC-V based general purpose processor targeting
+      high-security use cases. The core's logic encryption prevents the
+      insertion of hardware trojans through production. Running seL4 from ROM
+      prevents any kernel modifications to achieve ensures highest security
+      levels.
+      <br>
+      The combination of MiG-V and TRENTOS gives HENSOLDT Cyber full control of
+      the design and production chain. The MiG-V SoC can be used together with
+      the formally verified seL4 microkernel hosted in the chip's internal ROM
+      to create an ultra-secure solution.
+    </p>
+  </li>
+  <li>
+    <b>Position details and link to seL4</b>:
+    <p>
+      In order to fulfill our mission, we are expanding our teams in Engineering
+      (junior/senior level) and Research (PhD program and post-doc).
+      <br>
+      We are looking for the following profiles with focus on seL4 for our
+      office in the south of Munich or remote, Germany-wide:
+    </p>
+    <ul>
+      <li><b>Software Developers and Architects</b> (18)</li>
+      <li><b>Hardware Developers and Architects</b> (3)</li>
+      <li><b>Formal Verification Researchers and Engineers</b> (16)</li>
+      <li><b>Cryptography Experts (Developers and Researchers)</b> (6)</li>
+    </ul>
+    <p>
+      <!-- need a paragraph here for stylistic reasons, even if empty -->
+    </p>
+  </li>
+  <li>
+    <b>How to apply</b>:
+    <p>
+       Please visit <a
+       href="https://hensoldt-cyber.com/job-offers">https://hensoldt-cyber.com/job-offers</a>
+       or contact Daniela Kagerer at <a title="daniela.kagerer@hensoldt-cyber.com"
+       href="mailto:daniela.kagerer@hensoldt-cyber.com">daniela.kagerer@hensoldt-cyber.com</a>.
+    </p>
+  </li>
+  </ul>
+</div>
+
+<!----------------------------------------------------------->
+
+<div class="news-item">
  28 Jun 2021: DornerWorks looking for a Senior Firmware Engineer to develop hypervisor functionality and build expertise in seL4
 </div>
 <div>
