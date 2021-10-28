@@ -64,7 +64,7 @@ Discussion about using and developing seL4 (questions, suggestions, updates, etc
       <ul>
         <li>Sydney: Wed, Dec 1, 8am</li>
         <li>Central Europe: Tue, Nov 31, 10pm</li>
-        <li>US East Coast: Tue, Nov 31, 2pm</li>
+        <li>US Pacific Time: Tue, Nov 31, 2pm</li>
       </ul>
     </li>
   </ul>
