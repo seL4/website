@@ -33,6 +33,42 @@ Discussion about using and developing seL4 (questions, suggestions, updates, etc
 <li><a href="https://sel4.discourse.group/">Discourse forums</a></li>
 <li><a href="https://mattermost.trustworthy.systems/sel4-external/">Mattermost chat</a></li>
 <li>IRC: we used to have an IRC channel, but we no longer monitor that, so do not recommend using it.</li>
+<li>
+  We are also hosting an <a href="https://unsw.zoom.us/j/82640784431">open video
+  chat</a> every two weeks (Tuesday afternoon/evening US/EU, Wednesday morning
+  Asia/Australia) to bring seL4 developers together. There is no strict agenda,
+  anybody can join for technical discussions about seL4, related repositories
+  and projects, or general questions and answers. Members from the technical
+  steering committee (TSC) will try to be there, but these are not TSC meetings
+  where formal decisions are made.<br>
+  The next sessions are:
+  <ul>
+    <li>
+      Topic: seL4 boot code
+      <ul>
+        <li>Sydney: Wed, Nov 3, 8am</li>
+        <li>Central Europe: Tue, Nov 2, 10pm</li>
+        <li>US East Coast: Tue, Nov 2, 2pm</li>
+      </ul>
+    </li>
+    <li>
+      Topic: <i>open</i>
+      <ul>
+        <li>Sydney: Wed, Nov 17, 8am</li>
+        <li>Central Europe: Tue, Nov 16, 10pm</li>
+        <li>US East Coast: Tue, Nov 16, 2pm</li>
+      </ul>
+    </li>
+    <li>
+      Topic: <i>open</i>
+      <ul>
+        <li>Sydney: Wed, Dec 1, 8am</li>
+        <li>Central Europe: Tue, Nov 31, 10pm</li>
+        <li>US East Coast: Tue, Nov 31, 2pm</li>
+      </ul>
+    </li>
+  </ul>
+</li>
 </ul>
 
 <p>
