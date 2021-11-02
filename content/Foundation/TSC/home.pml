@@ -128,6 +128,12 @@ The following meetings and decisions have so far been recorded:</p>
   <li>2020-05-21: <a href="notes/vote-2020-05-21.pdf">Email vote</a> for invitation
       to reviewer role.</li>
   <li>2021-01-29: <a href="notes/tsc-meeting-2021-01-29.pdf">2nd TSC meeting</a></li>
+  <li>2021-02-12: <a href="notes/tsc-meeting-2021-02-12.pdf">3rd TSC meeting</a></li>
+  <li>2021-05-27: <a href="notes/vote-2021-05-27.pdf">Email vote</a> for invitation
+      to committer role.</li>
+  <li>2021-08-18: <a href="notes/vote-2021-08-18.pdf">Email vote</a> for interim endorsement.</li>
+  <li>2021-09-29: <a href="notes/vote-2021-09-29.pdf">Email vote</a> for interim endorsement.</li>
+  <li>2021-09-30: <a href="notes/vote-2021-09-30.pdf">Email vote</a> to approve <a href="https://sel4.atlassian.net/browse/RFC-8">RFC-8</a>.</li>
 </ul>
 
 <h3>Joining the TSC</h3>
