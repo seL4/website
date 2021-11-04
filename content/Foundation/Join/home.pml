@@ -59,10 +59,10 @@
         <div class="panel-body">One seat as a class</div>
         <div class="panel-footer">
 	Based on number of employees:<br>
-	USD 30K (5000+) <br>
-	USD 25K (500-4999)<br>
-	USD 10K (100-499)<br>
-	USD 3K (0-99)
+	USD 30K (5000+) <br> <!-- USD 30K (5000+) -->
+	USD 20K (2000-4999)<br> <!-- USD 20K (500-4999) -->
+	USD 10K (500-499)<br>  <!-- USD 10K (100-499) -->
+	USD 3K (0-499)	       <!-- USD 3K (0-99) -->
         </div>
       </div>
     </div>
