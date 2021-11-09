@@ -17,8 +17,7 @@ echo "::group::Snapshot website PR"
 set +e
 # Use wget to take a static snapshot of the Apache served website
 # Note that we skip sites not hosted by this website, and we skip
-# pipermail (since it's not related to the site content), and
-# About/Perfomance, as it's dynamically generated on the live server
+# pipermail (since it's not related to the site content)
 wget \
     --recursive \
     --page-requisites \
@@ -27,7 +26,7 @@ wget \
     --convert-links \
     --domains localhost \
     --exclude-domains wiki.sel4.systems,docs.sel4.systems \
-    --exclude-directories pipermail,About/Performance \
+    --exclude-directories pipermail \
     --no-parent \
     --directory "$OUTPUT_SNAPSHOT_DIR" \
     localhost

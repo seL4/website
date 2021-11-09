@@ -22,7 +22,6 @@ linkchecker \
     --no-status \
     --ignore-url="print$" \
     --ignore-url="/blob/" \
-    --ignore-url="/About/Performance" \
     --ignore-url="/lists/" \
     --ignore-url="https://ethz.ch/en.html" \
     --ignore-url="https://horizon.ai" \
