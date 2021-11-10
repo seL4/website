@@ -10,7 +10,7 @@ body {
 }
 
 a {
-  color: #56749F; // #4E74A7;
+  color: #56749F;
 }
 
 a:hover {
@@ -352,4 +352,44 @@ a.divLink {
 .memberlogopage .sponsors {
     margin-top: 30px;
     margin-bottom: 60px;
+}
+
+table.data-table {
+    border-collapse: collapse;
+    width: 100%;
+    word-wrap: break-word;
+    border-width: 0px;
+}
+
+.data-table tr {
+    border-width: 0px;
+}
+
+.data-table th {
+    padding: 1ex 2ex 1ex 2ex;
+    border-style: solid none solid none;
+    border-color: black;
+    border-width: 2px;
+}
+
+.data-table td, td.data-table-right {
+    padding: 0.8ex 2ex 0.8ex 2ex;
+}
+
+td.data-table-right {
+    text-align: right;
+}
+
+td.data-table-right, td.data-mean, td.data-stddev {
+    word-wrap: normal;
+    white-space: nowrap;
+}
+
+td.data-mean {
+    padding: 0.8ex 0ex 0.8ex 2.5ex;
+    text-align: right;
+}
+
+td.data-stddev {
+  padding: 0.8ex 1.5ex 0.8ex 1ex;
 }
