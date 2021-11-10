@@ -49,7 +49,7 @@ the same core.</li>
   </tr>  <tr>
     <td>x86_64</td>
     <td class="data-table-right">64</td>
-    <td>i7-4770/Skylake (without meltdown mitigation)</td>
+    <td>i7-6700/Skylake (without meltdown mitigation)</td>
     <td class="data-table-right">3.4 GHz</td>
     <td class="data-mean">1247</td>
     <td class="data-stddev">(188)</td>
@@ -166,7 +166,7 @@ docker file repository</a></p><h3>Default</h3>
   </tr>  <tr>
     <td>x86_64</td>
     <td class="data-table-right">64</td>
-    <td>i7-4770/Skylake</td>
+    <td>i7-6700/Skylake</td>
     <td class="data-table-right">3.4 GHz</td>
     <td>gcc GNU 8.4.0</td>
     <td>init-build.sh -DKernelSkimWindow=FALSE -DFASTPATH=TRUE -DHARDWARE=TRUE -DFAULT=TRUE -DPLATFORM=x86_64</td>
