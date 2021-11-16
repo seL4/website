@@ -612,7 +612,7 @@ Older News: <%=reflist%>
 <!----------------------------------------------------------->
 
 <div class="news-item">
-  <a name="horizon">
+  <a name="horizon-20210623">
     23 Jun 2021: Horizon Robotics joins the seL4 Foundation
   </a>
 </div>
