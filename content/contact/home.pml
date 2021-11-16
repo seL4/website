@@ -46,27 +46,21 @@ The next sessions are:
 </p>
 <ul>
   <li>
-    Topic: seL4 boot code
+    Topics: feedback seL4 Core Platform
     <ul>
-      <li>Sydney: Wed, Nov 3, 8am</li>
-      <li>Central Europe: Tue, Nov 2, 10pm</li>
-      <li>US Pacific Time: Tue, Nov 2, 2pm</li>
-    </ul>
-  </li>
-  <li>
-    Topic: <i>open</i>
-    <ul>
-      <li>Sydney: Wed, Nov 17, 8am</li>
-      <li>Central Europe: Tue, Nov 16, 10pm</li>
-      <li>US Pacific Time: Tue, Nov 16, 2pm</li>
-    </ul>
-  </li>
-  <li>
-    Topic: <i>open</i>
-    <ul>
+      <li>UTC: Tue, Nov 30, 9pm</li>
       <li>Sydney: Wed, Dec 1, 8am</li>
       <li>Central Europe: Tue, Nov 30, 10pm</li>
-      <li>US Pacific Time: Tue, Nov 30, 2pm</li>
+      <li>US Pacific Time: Tue, Nov 30, 1pm</li>
+    </ul>
+  </li>
+  <li>
+    Topics: (open)
+    <ul>
+      <li>UTC: Tue, Dec 14, 9pm</li>
+      <li>Sydney: Wed, Dec 15, 8am</li>
+      <li>Central Europe: Tue, Dec 14, 10pm</li>
+      <li>US Pacific Time: Tue, Dec 14, 1pm</li>
     </ul>
   </li>
 </ul>
