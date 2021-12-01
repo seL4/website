@@ -28,7 +28,7 @@
     <ul>
       <li>
         <strong>
-	  1 Dec 2021: Proof that seL4 enforces confidentiality established for RISC-V
+	  2 Dec 2021: Proof that seL4 enforces confidentiality established for RISC-V
         </strong>
       </li>
       <li>

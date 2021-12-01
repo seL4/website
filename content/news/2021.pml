@@ -56,7 +56,7 @@ Older News: <%=reflist%>
 
 <!----------------------------------------------------------->
 <div class="news-item">
-  1 December 2021: Proof that seL4 enforces confidentiality established for RISC-V
+  2 December 2021: Proof that seL4 enforces confidentiality established for RISC-V
 </div>
 <div>
   <p>
@@ -89,8 +89,7 @@ Older News: <%=reflist%>
    confidentiality, integrity and availability. While integrity ensures there is
    no unauthorised interference with private data, confidentiality ensures there
    is no unauthorised access to private data”, says Gernot Heiser, chair of the
-   seL4 Foundation board, and John Lions Chair, Scientia Professor at UNSW
-   Sydney.
+   seL4 Foundation.
 </p>
 
 
@@ -102,7 +101,7 @@ Older News: <%=reflist%>
 
 <p>
    We thank <a href="https://trustworthy.systems/people/?cn=Ryan+Barry">Ryan
-   Barry</a> of the Trustworthy Systems group, main author of these proofs! We
+   Barry</a> of the Trustworthy Systems group at UNSW, main author of these proofs! We
    also gratefully acknowledge funding from the <a
    href="https://arc.gov.au">Australian Reseach Council</a> through grant
    DP190103743 which has enabled this work. The proof is available on <a
