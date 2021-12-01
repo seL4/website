@@ -85,7 +85,7 @@ Older News: <%=reflist%>
 </p>
 <p>
 
-   "This complete the 3 big CIA security properties for seL4 on RISC-V:
+   "This completes the 3 big CIA security properties for seL4 on RISC-V:
    confidentiality, integrity and availability. While integrity ensures there is
    no unauthorised interference with private data, confidentiality ensures there
    is no unauthorised access to private data”, says Gernot Heiser, chair of the
