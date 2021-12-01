@@ -70,7 +70,7 @@ Older News: <%=reflist%>
 
 <p>
 
-   Last July, we announced that the assurance story for <a
+   In July, we announced that the assurance story for <a
    href="https://sel4.systems">seL4</a> on <a
    href="https://riscv.org">RISC-V</a> keeps building, with the completion of
    the proof that <a href="#integrity-on-risc-v">seL4 enforces integrity</a>,
