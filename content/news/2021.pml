@@ -56,6 +56,66 @@ Older News: <%=reflist%>
 
 <!----------------------------------------------------------->
 <div class="news-item">
+  2 December 2021: Proof that seL4 enforces confidentiality established for RISC-V
+</div>
+<div>
+  <p>
+
+    <a href="https://riscv.org">
+      <img src="/Foundation/Membership/LOGOS/RISC-V.svg"
+	   style="width: 20%;  padding-left:10px;  float:right"
+	   alt="RISC-V logo" />
+    </a>
+ </p>
+
+<p>
+
+   In July, we announced that the assurance story for <a
+   href="https://sel4.systems">seL4</a> on <a
+   href="https://riscv.org">RISC-V</a> keeps building, with the completion of
+   the proof that <a href="#integrity-on-risc-v">seL4 enforces integrity</a>,
+   following the earlier proofs of functional correctness and binary correctness
+   for seL4 on RISC-V.
+
+</p>
+<p>
+   The next step in the assurance stack is now also completed for RISC-V with
+   the proof that seL4 enforces confidentiality, i.e. that seL4 provably
+   enforces information flow control, when it is correctly configured to do so.
+</p>
+<p>
+
+   "This completes the 3 big CIA security properties for seL4 on RISC-V:
+   confidentiality, integrity and availability. While integrity ensures there is
+   no unauthorised interference with private data, confidentiality ensures there
+   is no unauthorised access to private data”, says Gernot Heiser, chair of the
+   seL4 Foundation.
+</p>
+
+
+ <a href="https://arc.gov.au">
+   <img src="/images/arc-logo.svg"
+	style="width: 20%;  padding-left:10px;  float:right"
+	alt="ARC logo" />
+ </a>
+
+<p>
+   We thank <a href="https://trustworthy.systems/people/?cn=Ryan+Barry">Ryan
+   Barry</a> of the Trustworthy Systems group at UNSW, main author of these proofs! We
+   also gratefully acknowledge funding from the <a
+   href="https://arc.gov.au">Australian Reseach Council</a> through grant
+   DP190103743 which has enabled this work. The proof is available on <a
+   href="https://github.com/seL4/l4v/tree/master/proof/infoflow#readme">GitHub.</a>
+
+</p>
+
+
+
+
+</div>
+
+<!----------------------------------------------------------->
+<div class="news-item">
   14 October 2021: Proofcraft receives interim endorsement as a Trusted Service Provider
 </div>
 <div>
@@ -367,7 +427,7 @@ Older News: <%=reflist%>
 <!----------------------------------------------------------->
 
 <div class="news-item">
-  28 July 2021: Proof that seL4 enforces integrity established for RISC-V
+  <a id="integrity-on-risc-v">28 July 2021: Proof that seL4 enforces integrity established for RISC-V</a>
 </div>
 <div>
   <p>
