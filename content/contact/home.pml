@@ -46,23 +46,33 @@ The next sessions are:
 </p>
 <ul>
   <li>
-    Topics: feedback seL4 Core Platform
+    Tue, Dec 14, 9pm (UTC), Topics: (open)
     <ul>
-      <li>UTC: Tue, Nov 30, 9pm</li>
-      <li>Sydney: Wed, Dec 1, 8am</li>
-      <li>Central Europe: Tue, Nov 30, 10pm</li>
-      <li>US Pacific Time: Tue, Nov 30, 1pm</li>
-    </ul>
-  </li>
-  <li>
-    Topics: (open)
-    <ul>
-      <li>UTC: Tue, Dec 14, 9pm</li>
       <li>Sydney: Wed, Dec 15, 8am</li>
       <li>Central Europe: Tue, Dec 14, 10pm</li>
       <li>US Pacific Time: Tue, Dec 14, 1pm</li>
     </ul>
   </li>
+  <li>
+    No meeting due to holiday break on Tue, Dec 28, 9pm (UTC)
+  </li>
+  <li>
+    Tue, Jan 11, 9pm (UTC), Topics: (open)
+    <ul>
+      <li>Sydney: Wed, Jan 12, 8am</li>
+      <li>Central Europe: Tue, Jan 11, 10pm</li>
+      <li>US Pacific Time: Tue, Jan 11, 1pm</li>
+    </ul>
+  </li>
+  <li>
+    Tue, Jan 25, 9pm (UTC), Topics: (open)
+    <ul>
+      <li>Sydney: Wed, Jan 26, 8am</li>
+      <li>Central Europe: Tue, Jan 25, 10pm</li>
+      <li>US Pacific Time: Tue, Jan 25, 1pm</li>
+    </ul>
+  </li>
+
 </ul>
 <p>
 RFC (request for comments) proposing new features for seL4
