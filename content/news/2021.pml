@@ -642,7 +642,7 @@ Older News: <%=reflist%>
 <!----------------------------------------------------------->
 
 <div class="news-item">
-  <a id="member-jump">29 June 2021: Jump Trading joins the seL4 Foundation
+  <a id="member-jump">29 June 2021: Jump Trading joins the seL4 Foundation</a>
 </div>
 <div>
  <p>
@@ -673,7 +673,7 @@ Older News: <%=reflist%>
 
 <div class="news-item">
   <a name="horizon-20210623">
-    23 Jun 2021: Horizon Robotics joins the seL4 Foundation</a>
+    <a id="member-horizon">23 Jun 2021: Horizon Robotics joins the seL4 Foundation</a>
   </a>
 </div>
 <div>
