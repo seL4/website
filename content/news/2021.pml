@@ -767,7 +767,7 @@ Older News: <%=reflist%>
 <!----------------------------------------------------------->
 
 <div class="news-item">
-  <a id="member-xclaibyte">22 June 2021: Xcalibyte joins the seL4 Foundation</a>
+  <a id="member-xcalibyte">22 June 2021: Xcalibyte joins the seL4 Foundation</a>
 </div>
 <div>
  <p>
