@@ -28,17 +28,17 @@
     <ul>
       <li>
         <strong>
+	  16 Dec 2021: Technology Innovation Institute joins the seL4 Foundation
+        </strong>
+      </li>
+      <li>
+        <strong>
 	  2 Dec 2021: Proof that seL4 enforces confidentiality established for RISC-V
         </strong>
       </li>
       <li>
         <strong>
 	  14 Oct 2021: Proofcraft receives interim endorsement as a Trusted Service Provider
-        </strong>
-      </li>
-      <li>
-        <strong>
-	  28 Sep 2021: Gernot explains why seL4 is and remains safe
         </strong>
       </li>
       <li style="margin-top:0.2em;list-style-type:none">

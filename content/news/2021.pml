@@ -53,6 +53,37 @@ Older News: <%=reflist%>
  </p>
 </div>
 -->
+<!----------------------------------------------------------->
+<div class="news-item" id="risc-v-infoflow">
+  16 December 2021: Technology Innovation Institute joins the seL4 Foundation
+</div>
+<div>
+  <p>
+
+    <a href="https://www.tii.ae">
+      <img src="/Foundation/Membership/LOGOS/TII.jpg"
+	   style="width: 20%;  padding-left:10px;  float:right"
+	   alt="TII logo" />
+    </a>
+
+   The seL4 Foundation is pleased to welcome the Technology Innovation
+   Institute.
+  </p>
+
+  <p>
+
+  Technology Innovation Institute’s (TII) Secure Systems Research Centre (SSRC)
+  has obtained seL4 Foundation membership that will enable the Centre to
+  participate in and contribute to driving the open source for a robust
+  hypervisor technology. The critical technology will help build a secure
+  software stack for many edge devices, such as secure communicators and
+  drones. Through the membership, TII will research, contribute to and advance
+  next-generation high-end edge device environments that focus on resilience,
+  isolation, trust, and security.
+
+  </p>
+
+</div>
 
 <!----------------------------------------------------------->
 <div class="news-item" id="risc-v-infoflow">

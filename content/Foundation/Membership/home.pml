@@ -204,6 +204,17 @@
     </div>
     <div class="sponsor">
       <div class="sponsor-pic">
+	<a href="https://www.tii.ae">
+	  <img src="LOGOS/TII.jpg" style="width: 200px"
+	  alt="TII logo">
+	</a>
+      </div>
+      <div class="sponsor-name">
+	Technology Innovation Institute
+      </div>
+    </div>
+    <div class="sponsor">
+      <div class="sponsor-pic">
 	<a href="https://xcalibyte.com">
 	  <img src="LOGOS/xcalibyte.svg" style="width: 200px" alt="Xcalibyte logo">
 	</a>
