@@ -54,7 +54,7 @@ Older News: <%=reflist%>
 </div>
 -->
 <!----------------------------------------------------------->
-<div class="news-item" id="risc-v-infoflow">
+<div class="news-item" id="member-tii">
   16 December 2021: Technology Innovation Institute joins the seL4 Foundation
 </div>
 <div>
