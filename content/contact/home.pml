@@ -46,33 +46,30 @@ The next sessions are:
 </p>
 <ul>
   <li>
-    Tue, Dec 14, 9pm (UTC), Topics: (open)
+    <b>Wed, Jan 26</b>, 9pm (UTC), Topics: (open)<br>
+    <b>Meeting moved for one day because there is a public holiday (Australia Day) in Sydney</b>
     <ul>
-      <li>Sydney: Wed, Dec 15, 8am</li>
-      <li>Central Europe: Tue, Dec 14, 10pm</li>
-      <li>US Pacific Time: Tue, Dec 14, 1pm</li>
+      <li>Sydney: Thu, Jan 27, 8am </li>
+      <li>Central Europe: Wed, Jan 26, 10pm</li>
+      <li>US Pacific Time: Wed, Jan 26, 1pm</li>
     </ul>
   </li>
   <li>
-    No meeting due to holiday break on Tue, Dec 28, 9pm (UTC)
-  </li>
-  <li>
-    Tue, Jan 11, 9pm (UTC), Topics: (open)
+    Tue, Feb 8, 9pm (UTC), Topics: (open)
     <ul>
-      <li>Sydney: Wed, Jan 12, 8am</li>
-      <li>Central Europe: Tue, Jan 11, 10pm</li>
-      <li>US Pacific Time: Tue, Jan 11, 1pm</li>
+      <li>Sydney: Wed, Feb 7, 8am</li>
+      <li>Central Europe: Tue, Feb 8, 10pm</li>
+      <li>US Pacific Time: Tue, Feb 8, 1pm</li>
     </ul>
   </li>
   <li>
-    Tue, Jan 25, 9pm (UTC), Topics: (open)
+    Tue, Feb 22, 9pm (UTC), Topics: (open)
     <ul>
-      <li>Sydney: Wed, Jan 26, 8am</li>
-      <li>Central Europe: Tue, Jan 25, 10pm</li>
-      <li>US Pacific Time: Tue, Jan 25, 1pm</li>
+      <li>Sydney: Wed, Feb 23, 8am</li>
+      <li>Central Europe: Tue, Feb 22, 10pm</li>
+      <li>US Pacific Time: Tue, Feb 22, 1pm</li>
     </ul>
   </li>
-
 </ul>
 <p>
 RFC (request for comments) proposing new features for seL4
