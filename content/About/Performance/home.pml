@@ -29,56 +29,56 @@ the same core.</li>
     <td class="data-table-right">32</td>
     <td>A9/i.MX6/Sabre</td>
     <td class="data-table-right">1.0 GHz</td>
-    <td class="data-mean">631</td>
-    <td class="data-stddev">(14)</td>
-    <td class="data-mean">318</td>
-    <td class="data-stddev">(1)</td>
-    <td class="data-mean">337</td>
-    <td class="data-stddev">(1)</td>
+    <td class="data-mean">634</td>
+    <td class="data-stddev">(15)</td>
+    <td class="data-mean">317</td>
+    <td class="data-stddev">(2)</td>
+    <td class="data-mean">336</td>
+    <td class="data-stddev">(3)</td>
   </tr>  <tr>
     <td>x86_64</td>
     <td class="data-table-right">64</td>
     <td>i7-4770/Haswell</td>
     <td class="data-table-right">3.4 GHz</td>
-    <td class="data-mean">1749</td>
-    <td class="data-stddev">(270)</td>
-    <td class="data-mean">626</td>
-    <td class="data-stddev">(3)</td>
-    <td class="data-mean">635</td>
+    <td class="data-mean">1779</td>
+    <td class="data-stddev">(278)</td>
+    <td class="data-mean">624</td>
+    <td class="data-stddev">(1)</td>
+    <td class="data-mean">636</td>
     <td class="data-stddev">(2)</td>
   </tr>  <tr>
     <td>x86_64</td>
     <td class="data-table-right">64</td>
     <td>i7-6700/Skylake (without meltdown mitigation)</td>
     <td class="data-table-right">3.4 GHz</td>
-    <td class="data-mean">1242</td>
-    <td class="data-stddev">(214)</td>
-    <td class="data-mean">383</td>
-    <td class="data-stddev">(2)</td>
-    <td class="data-mean">381</td>
-    <td class="data-stddev">(3)</td>
+    <td class="data-mean">1298</td>
+    <td class="data-stddev">(196)</td>
+    <td class="data-mean">382</td>
+    <td class="data-stddev">(4)</td>
+    <td class="data-mean">387</td>
+    <td class="data-stddev">(4)</td>
   </tr>  <tr>
     <td>Armv8a</td>
     <td class="data-table-right">64</td>
     <td>A57/Tx1/Jetson</td>
     <td class="data-table-right">1.9 GHz</td>
-    <td class="data-mean">864</td>
-    <td class="data-stddev">(20)</td>
-    <td class="data-mean">394</td>
-    <td class="data-stddev">(7)</td>
+    <td class="data-mean">863</td>
+    <td class="data-stddev">(23)</td>
+    <td class="data-mean">397</td>
+    <td class="data-stddev">(11)</td>
     <td class="data-mean">402</td>
-    <td class="data-stddev">(1)</td>
+    <td class="data-stddev">(0)</td>
   </tr>  <tr>
     <td>RV64IMAC</td>
     <td class="data-table-right">64</td>
     <td>U54-MC/SiFive Freedom U540/Hifive</td>
     <td class="data-table-right">1.5 GHz</td>
-    <td class="data-mean">1161</td>
-    <td class="data-stddev">(54)</td>
-    <td class="data-mean">621</td>
-    <td class="data-stddev">(59)</td>
-    <td class="data-mean">511</td>
-    <td class="data-stddev">(69)</td>
+    <td class="data-mean">1193</td>
+    <td class="data-stddev">(102)</td>
+    <td class="data-mean">626</td>
+    <td class="data-stddev">(70)</td>
+    <td class="data-mean">531</td>
+    <td class="data-stddev">(86)</td>
   </tr></table>
 
 <h2>MCS</h2>
@@ -96,21 +96,21 @@ the same core.</li>
     <td class="data-table-right">32</td>
     <td>A9/i.MX6/Sabre</td>
     <td class="data-table-right">1.0 GHz</td>
-    <td class="data-mean">839</td>
-    <td class="data-stddev">(16)</td>
+    <td class="data-mean">851</td>
+    <td class="data-stddev">(28)</td>
     <td class="data-mean">324</td>
     <td class="data-stddev">(2)</td>
-    <td class="data-mean">364</td>
-    <td class="data-stddev">(6)</td>
+    <td class="data-mean">361</td>
+    <td class="data-stddev">(2)</td>
   </tr>  <tr>
     <td>x86_64</td>
     <td class="data-table-right">64</td>
     <td>i7-4770/Haswell</td>
     <td class="data-table-right">3.4 GHz</td>
-    <td class="data-mean">2155</td>
-    <td class="data-stddev">(452)</td>
+    <td class="data-mean">2057</td>
+    <td class="data-stddev">(458)</td>
     <td class="data-mean">630</td>
-    <td class="data-stddev">(2)</td>
+    <td class="data-stddev">(3)</td>
     <td class="data-mean">644</td>
     <td class="data-stddev">(3)</td>
   </tr>  <tr>
@@ -118,23 +118,23 @@ the same core.</li>
     <td class="data-table-right">64</td>
     <td>A57/Tx1/Jetson</td>
     <td class="data-table-right">1.9 GHz</td>
-    <td class="data-mean">971</td>
+    <td class="data-mean">994</td>
     <td class="data-stddev">(7)</td>
     <td class="data-mean">403</td>
-    <td class="data-stddev">(1)</td>
-    <td class="data-mean">421</td>
-    <td class="data-stddev">(4)</td>
+    <td class="data-stddev">(0)</td>
+    <td class="data-mean">430</td>
+    <td class="data-stddev">(5)</td>
   </tr>  <tr>
     <td>RV64IMAC</td>
     <td class="data-table-right">64</td>
     <td>U54-MC/SiFive Freedom U540/Hifive</td>
     <td class="data-table-right">1.5 GHz</td>
-    <td class="data-mean">3419</td>
-    <td class="data-stddev">(72)</td>
-    <td class="data-mean">639</td>
-    <td class="data-stddev">(118)</td>
-    <td class="data-mean">598</td>
-    <td class="data-stddev">(35)</td>
+    <td class="data-mean">3457</td>
+    <td class="data-stddev">(122)</td>
+    <td class="data-mean">590</td>
+    <td class="data-stddev">(63)</td>
+    <td class="data-mean">588</td>
+    <td class="data-stddev">(15)</td>
   </tr></table>
 
 <h2>Compilation Details</h2>
@@ -226,4 +226,4 @@ docker file repository</a></p><h3>Default</h3>
   </tr></table>
 
 <h2>Source Code</h2>
-<p>This page was generated on 2022-01-18 for sel4bench-manifest <a href="https://github.com/seL4/sel4bench-manifest/blob/4863e28181aa283000445a11353eee8c0911a3c6/default.xml">4863e281</a>.</p>
+<p>This page was generated on 2022-01-19 for sel4bench-manifest <a href="https://github.com/seL4/sel4bench-manifest/blob/fe6debffcc489386ce91d25560b623d2c9ce19c6/default.xml">fe6debff</a>.</p>
