@@ -23,10 +23,19 @@
 
   <div class="person">
     <div class="person_pic">
-      <a href="https://trustworthy.systems/people/?cn=Matthew+Brecknell"><img src="../../images/tsc/matthew.jpg" alt="Matthew Brecknell" width="80" /></a>
+      <a href="https://au.linkedin.com/in/yanyan-shen-1495547"><img src="../../images/tsc/yanyan.jpg" alt="Yanyan Shen" width="80" /></a>
     </div>
     <div class="person_title">
-      <strong><a class="list_link" href="https://trustworthy.systems/people/?cn=Matthew+Brecknell">Matthew Brecknell</a></strong>
+      <strong><a class="list_link" href="https://au.linkedin.com/in/yanyan-shen-1495547">Yanyan Shen</a></strong>
+    </div>
+  </div>
+
+  <div class="person">
+    <div class="person_pic">
+      <a href="https://matthew.brecknell.net/"><img src="../../images/tsc/matthew.jpg" alt="Matthew Brecknell" width="80" /></a>
+    </div>
+    <div class="person_title">
+      <strong><a class="list_link" href="https://matthew.brecknell.net/">Matthew Brecknell</a></strong>
     </div>
   </div>
 
