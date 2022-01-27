@@ -217,6 +217,36 @@
 	</ul>
       </td>
     </tr>
+    <tr>
+      <td style="padding:15px">
+        <a href="https://kry10.com">
+        <img src="/Foundation/Membership/LOGOS/Kry10.svg"
+	  style="width: 200px" alt="Proofcraft">
+	</a>
+      </td>
+      <td>
+	<strong>Proofcraft Pty Ltd</strong><br/>
+
+        Kry10 offers support to enable seL4-based secure projects to be
+        affordable, maintainable, and remotely manageable. Kry10 offers a
+        full-featured operating system on top of the seL4 kernel, along with
+        tooling, services, key management and more. The Kry10 Platform is a fast
+        and easy way to build highly secure, next-generation cyber-physical
+        devices. We leverage the verification of seL4 to bring you a secure,
+        self-healing, truly dynamic system with minimal downtime, even during
+        upgrades. Whether you are working on national assets, vehicles or
+        sensors on a wall, you require deep confidence and easy to use
+        tools. Come talk to us.
+
+        <br/>
+	<span class=emph>Kry10 has received <em>interim endorsement</em> as a Trusted
+	Service Provider for seL4-based systems.</span>
+	<ul>
+	  <li><a href="https://kry10.com">Home page</a></li>
+	  <li><a href="https://kry10.com/contact">Contact</a>
+	</ul>
+      </td>
+    </tr>
   </table>
 
   <h2>Training</h2>
