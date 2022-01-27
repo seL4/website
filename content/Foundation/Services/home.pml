@@ -225,7 +225,7 @@
 	</a>
       </td>
       <td>
-	<strong>Proofcraft Pty Ltd</strong><br/>
+	<strong>Kry10 Limited</strong><br/>
 
         Kry10 offers support to enable seL4-based secure projects to be
         affordable, maintainable, and remotely manageable. Kry10 offers a
