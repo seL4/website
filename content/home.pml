@@ -26,6 +26,11 @@
 
   <div class="news-column news-content">
     <ul>
+    <li>
+        <strong>
+	  28 Jan 2022: Kry10 receives interim endorsement as a Trusted Service Provider
+        </strong>
+      </li>
       <li>
         <strong>
 	  16 Dec 2021: Technology Innovation Institute joins the seL4 Foundation
@@ -34,11 +39,6 @@
       <li>
         <strong>
 	  2 Dec 2021: Proof that seL4 enforces confidentiality established for RISC-V
-        </strong>
-      </li>
-      <li>
-        <strong>
-	  14 Oct 2021: Proofcraft receives interim endorsement as a Trusted Service Provider
         </strong>
       </li>
       <li style="margin-top:0.2em;list-style-type:none">
