@@ -61,7 +61,7 @@
          accelerate the integration of seL4 as the trusted software
          base for your products.
         <br/>
-	<span class=emph>DornerWorks Ltd has received <em>interim endorsement</em> as a Trusted
+	<span class="emph">DornerWorks Ltd has received <em>interim endorsement</em> as a Trusted
 	Service Provider for seL4-based systems.</span>
 	<ul>
 	  <li><a href="dornerworks.pml">Details of products and services</a></li>
@@ -90,7 +90,7 @@
         Breakaway, Ben was a student with what is now the Trustworthy
         Systems Group, and then VP Engineering of Open Kernel Labs.
         <br/>
-	<span class=emph>Breakaway Consulting has received <em>interim endorsement</em> as a Trusted
+	<span class="emph">Breakaway Consulting has received <em>interim endorsement</em> as a Trusted
 	Service Provider for seL4-based systems.</span>
 	<ul>
 	  <li><a href="https://brkawy.com">Home page</a></li>
@@ -111,7 +111,7 @@
         is available for the IoT market with the flexibility to run
         all applications effectively and securely.
 	<br/>
-	<span class=emph>Cog Systems Inc has received <em>interim endorsement</em> as a Trusted
+	<span class="emph">Cog Systems Inc has received <em>interim endorsement</em> as a Trusted
 	Service Provider for seL4-based systems.</span>
 	<ul>
 	  <li><a href="cog.pml">Details of products and services</a></li>
@@ -139,7 +139,7 @@
         correct application of the seL4 technologies.
 
         <br/>
-	<span class=emph>HENSOLDT Cyber GmbH has received <em>interim endorsement</em> as a Trusted
+	<span class="emph">HENSOLDT Cyber GmbH has received <em>interim endorsement</em> as a Trusted
 	Service Provider for seL4-based systems.</span>
 	<ul>
 	  <li><a href="hc.pml">Details of products and services</a></li>
@@ -169,7 +169,7 @@
         is available.
 
         <br/>
-	<span class=emph>UNSW has received <em>interim endorsement</em> as a Trusted
+	<span class="emph">UNSW has received <em>interim endorsement</em> as a Trusted
 	Service Provider for seL4-based systems.</span>
 	<ul>
 	  <li><a href="https://trustworthy.systems/engagement/services/">Details of services</a></li>
@@ -208,7 +208,7 @@
 	security, for a verified future.
 
         <br/>
-	<span class=emph>Proofcraft has received <em>interim endorsement</em> as a Trusted
+	<span class="emph">Proofcraft has received <em>interim endorsement</em> as a Trusted
 	Service Provider for seL4-based systems.</span>
 	<ul>
 	  <li><a href="https://proofcraft.systems">Home page</a></li>
@@ -239,7 +239,7 @@
         tools. Come talk to us.
 
         <br/>
-	<span class=emph>Kry10 has received <em>interim endorsement</em> as a Trusted
+	<span class="emph">Kry10 has received <em>interim endorsement</em> as a Trusted
 	Service Provider for seL4-based systems.</span>
 	<ul>
 	  <li><a href="https://kry10.com">Home page</a></li>
@@ -267,7 +267,7 @@
 	are <a href="https://www.youtube.com/playlist?list=PLbSaCpDlfd6qLbEsKquVo3--0gwYBmrUV">available
 	on YouTube</a>.
         <br/>
-	<span class=emph>UNSW's AOS has received <em>interim endorsement</em> as
+	<span class="emph">UNSW's AOS has received <em>interim endorsement</em> as
 	  seL4 training.</span>
 	<ul>
 	  <li>
@@ -311,7 +311,7 @@
 	that provides a basic case in order to teach participants how to create
 	their very first TRENTOS application.
         <br/>
-	<span class=emph>HENSOLDT Cyber's TRENTOS training has received <em>interim endorsement</em> as
+	<span class="emph">HENSOLDT Cyber's TRENTOS training has received <em>interim endorsement</em> as
 	  seL4 training.</span>
         <br/>
         To access the training, please email <a title="info@hensoldt-cyber.com"
@@ -362,7 +362,7 @@
           SDK – the TRENTOS development environment</a>
 	  </li>
 	</ul>
-	<span class=emph>HENSOLDT Cyber's TRENTOS product and SDK has received
+	<span class="emph">HENSOLDT Cyber's TRENTOS product and SDK has received
 	<em>interim endorsement</em> from the Foundation.</span>
         <br/>
         To access TRENTOS, please email <a title="info@hensoldt-cyber.com"
