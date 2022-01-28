@@ -221,7 +221,7 @@
       <td style="padding:15px">
         <a href="https://kry10.com">
         <img src="/Foundation/Membership/LOGOS/Kry10.svg"
-	  style="width: 200px" alt="Proofcraft">
+	  style="width: 200px" alt="Kry10">
 	</a>
       </td>
       <td>
