@@ -65,7 +65,7 @@
    <li>location, venue, access, transport</li>
    <li>indicative financial plan and expected fee</li>
    <li>details of the venue: # of rooms, # days, and any social events</li>
-   <li>details for hybrid and recording capabilities<li>
+   <li>details for hybrid and recording capabilities</li>
    <li>back-up plan for a fully virtual event, as may be required by the situation (e.g. pandemic related travel restrictions)</li>
    <li>optionally, a webpage to be hosted on the Foundation's website with the bid information, e.g. as a pull request on <a href="https://github.com/seL4">https://github.com/seL4</a>.</li>
   </ul>
