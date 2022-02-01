@@ -55,7 +55,7 @@ Older News: <%=reflist%>
 -->
 
 <!----------------------------------------------------------->
-<div class="news-item" id="member-tii">
+<div class="news-item" id="summit-bid-host">
   1 February 2022: Call for bids to host the seL4 Summit 2022!
 </div>
 <div>
@@ -96,7 +96,7 @@ Older News: <%=reflist%>
 
 
 <!----------------------------------------------------------->
-<div class="news-item" id="member-tii">
+<div class="news-item" id="kry10-endorsement">
   28 January 2022: Kry10 receives interim endorsement as a Trusted Service Provider
 </div>
 <div>
