@@ -4,14 +4,16 @@
     SPDX-License-Identifier: CC-BY-SA-4.0
 -->
 <h1>
-  seL4 Foundation Summit 2022: Call for Bids
+  seL4 Summit 2022: Call for Bids
 </h1>
 <div>
   <p>
    The seL4 Summit 2022 will be the fourth edition of the international summit on the seL4 microkernel, the world's most highly assured OS kernel.
   </p>
   <p>
-   <strong>We are now calling for bids to host the seL4 Summit 2022.</strong>
+   <strong>We are now calling for bids to host the seL4 Summit 2022.
+  </p>
+  <p> Bids should be sent to  <a title="summit@sel4.systems"   href="mailto:summit@sel4.systems">summit@sel4.systems</a> before 22 February 2022.</strong>
   </p>
 
   <h3>
@@ -26,7 +28,7 @@
   <p>
    The seL4 Foundation now aims to host the summit on a different continent each year, as far as possible. For 2022, we therefore solicit bids from prospective hosts with a preference for location outside of North America.
   </p>
-  <p>
+
   <h3>
    Principles and process
   </h3>
