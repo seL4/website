@@ -46,7 +46,7 @@
    In the future instances, the call for bids will ideally occur 2 months before the previous summit, in order for the bids for year N+1 to be presented at the summit in year N. As the 2022 summit is the first to be organised by the seL4 Foundation, the <strong>call for bids are done now, and will close on 22 February 2022</strong>.
   </p>
   <p>
-   We would like to aim for a in-person event, with the option of recordings of the talks being available after the summit. A back-up plan for a virtual or hybrid event in case of pandemic-related travel restrictions should be defined as part of the bid application.
+    We would like to aim for a hybrid in-person/online event, pre-dominantly in-person, with the option of recordings of the talks being available after the summit. A back-up plan for a virtual event in case of pandemic-related travel restrictions should be defined as part of the bid application.
   </p>
   <h3>
    Date
@@ -65,7 +65,8 @@
    <li>location, venue, access, transport</li>
    <li>indicative financial plan and expected fee</li>
    <li>details of the venue: # of rooms, # days, and any social events</li>
-   <li>a plan for hybrid/virtual, as may be required by the situation (e.g. pandemic related travel restrictions)</li>
+   <li>details for hybrid and recording capabilities<li>
+   <li>back-up plan for a fully virtual event, as may be required by the situation (e.g. pandemic related travel restrictions)</li>
    <li>optionally, a webpage to be hosted on the Foundation's website with the bid information, e.g. as a pull request on <a href="https://github.com/seL4">https://github.com/seL4</a>.</li>
   </ul>
  <p>
