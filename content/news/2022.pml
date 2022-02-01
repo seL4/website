@@ -55,6 +55,38 @@ Older News: <%=reflist%>
 -->
 
 <!----------------------------------------------------------->
+<div class="news-item" id="member-ncsc">
+  2 February 2022: NCSC joins the seL4 Foundation
+</div>
+<div>
+
+  <p>
+    <a href="https://www.ncsc.gov.uk/">
+      <img src="/Foundation/Membership/LOGOS/ncsc.png"
+	   style="width: 20%;  padding-left:10px;  float:right"
+	   alt="NCSC" />
+    </a>
+
+    The seL4 Foundation is pleased to welcome the UK’s <a href="https://www.ncsc.gov.uk">National Cyber Security Centre (NCSC)</a>.
+    </p>
+    <p>
+
+    The NCSC, the UK’s technical authority on cyber security, uses the seL4
+    Microkernel to enforce separation in a number of high-assurance
+    situations. The government organisation is actively exploring research
+    opportunities to further develop its seL4 use cases.  NCSC Technical
+    Director Dr Ian Levy said: "We’re pleased to join the seL4 Foundation. seL4
+    is some of the most highly assured software and its development plays an
+    important role in the next generation of high-assurance devices. We support
+    the long-term stability of the seL4 microkernel ecosystem and are looking at
+    opportunities to develop our use cases for it."
+  </p>
+
+</div>
+<div class="news-finish">
+</div>
+
+<!----------------------------------------------------------->
 <div class="news-item" id="summit-bid-host">
   1 February 2022: Call for bids to host the seL4 Summit 2022!
 </div>
