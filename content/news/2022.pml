@@ -53,6 +53,48 @@ Older News: <%=reflist%>
  </p>
 </div>
 -->
+
+<!----------------------------------------------------------->
+<div class="news-item" id="member-tii">
+  1 February 2022: Call for bids to host the seL4 Summit 2022!
+</div>
+<div>
+
+  <p>
+    <a href="/Foundation/Summit/">
+      <img src="/images/seL4.svg"
+	   style="width: 20%;  padding-left:10px;  float:right"
+	   alt="seL4 summit" />
+    </a>
+
+  The seL4 Foundation will be organising the fourth edition of the seL4 Summit,
+  in October 2022.
+  </p>
+  <p>
+  A Program Committee will be in charge of the technical side (more on that
+  soon) and an Hosting Team will be in charge of organising the event.
+  </p>
+  <p>
+  <strong> We are now calling for bids to be the Host team for the seL4 Summit 2022!
+  </strong>
+  </p>
+  <p>
+  <strong>
+  
+  Bids should be sent to <a title="summit@sel4.systems"
+  href="mailto:summit@sel4.systems">summit@sel4.systems</a> before 22 February
+  2022.
+  </strong>
+  <p>
+  <p>
+  More information <a href="/Foundation/Summit/">here</a>.
+  </p>
+
+</div>
+<div class="news-finish">
+</div>
+
+
 <!----------------------------------------------------------->
 <div class="news-item" id="member-tii">
   28 January 2022: Kry10 receives interim endorsement as a Trusted Service Provider
