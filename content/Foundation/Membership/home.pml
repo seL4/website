@@ -251,7 +251,7 @@
     <div class="sponsor">
       <div class="sponsor-pic">
 	<a href="https://www.ncsc.gov.uk/">
-	  <img src="LOGOS/ncsc.png" style="width: 200px" alt="NCSC">
+	  <img src="LOGOS/NCSC.png" style="width: 200px" alt="NCSC">
 	</a>
       </div>
       <div class="sponsor-name">

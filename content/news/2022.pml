@@ -62,7 +62,7 @@ Older News: <%=reflist%>
 
   <p>
     <a href="https://www.ncsc.gov.uk/">
-      <img src="/Foundation/Membership/LOGOS/ncsc.png"
+      <img src="/Foundation/Membership/LOGOS/NCSC.png"
 	   style="width: 20%;  padding-left:10px;  float:right"
 	   alt="NCSC" />
     </a>
