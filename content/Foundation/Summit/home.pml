@@ -73,7 +73,7 @@
  </p>
    <ul>
     <li><a href ="http://easyconferences.eu/itp2021bid/">http://easyconferences.eu/itp2021bid/</a></li>
-    <li><a href="https://web.cecs.pdx.edu/~apt/itp2019bid/">https://web.cecs.pdx.edu/~apt/itp2019bid/</li></a>
+    <li><a href="https://web.cecs.pdx.edu/~apt/itp2019bid/">https://web.cecs.pdx.edu/~apt/itp2019bid/</a></li>
    </ul>
   <h3>
    Deadline
