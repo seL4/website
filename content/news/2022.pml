@@ -80,7 +80,7 @@ Older News: <%=reflist%>
   </p>
   <p>
   <strong>
-  
+
   Bids should be sent to <a title="summit@sel4.systems"
   href="mailto:summit@sel4.systems">summit@sel4.systems</a> before 22 February
   2022.
