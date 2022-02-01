@@ -1,6 +1,6 @@
 <!--<title>Summit</title>-->
 <!--
-    Copyright 2020 seL4 Project a Series of LF Projects, LLC.
+    Copyright 2022 seL4 Project a Series of LF Projects, LLC.
     SPDX-License-Identifier: CC-BY-SA-4.0
 -->
 <h1>
