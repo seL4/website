@@ -59,7 +59,7 @@
   </h3>
   <p>
    Bids should be sent to <a title="summit@sel4.systems"   href="mailto:summit@sel4.systems">summit@sel4.systems</a> and should include at least the following information:
- </P
+ </p>
   <ul>
    <li>details (name, contact and experience) of the hosting team, with an identified Chair</li>
    <li>location, venue, access, transport</li>
@@ -70,11 +70,11 @@
   </ul>
  <p>
    For examples of websites of winning bids for conferences in related areas, see e.g.
+ </p>
    <ul>
     <li><a href ="http://easyconferences.eu/itp2021bid/">http://easyconferences.eu/itp2021bid/</a></li>
     <li><a href="https://web.cecs.pdx.edu/~apt/itp2019bid/">https://web.cecs.pdx.edu/~apt/itp2019bid/</li></a>
    </ul>
-  </p>
   <h3>
    Deadline
   </h3>
