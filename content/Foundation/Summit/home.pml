@@ -11,9 +11,10 @@
    The seL4 Summit 2022 will be the fourth edition of the international summit on the seL4 microkernel, the world's most highly assured OS kernel.
   </p>
   <p>
-   <strong>We are now calling for bids to host the seL4 Summit 2022.
+   <strong>We are now calling for bids to host the seL4 Summit 2022.</strong>
   </p>
-  <p> Bids should be sent to  <a title="summit@sel4.systems"   href="mailto:summit@sel4.systems">summit@sel4.systems</a> before 22 February 2022.</strong>
+  <p>
+  <strong>Bids should be sent to  <a title="summit@sel4.systems"   href="mailto:summit@sel4.systems">summit@sel4.systems</a> before 22 February 2022.</strong>
   </p>
 
   <h3>
