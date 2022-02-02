@@ -250,6 +250,16 @@
     </div>
     <div class="sponsor">
       <div class="sponsor-pic">
+	<a href="https://www.ncsc.gov.uk/">
+	  <img src="LOGOS/NCSC.png" style="width: 200px" alt="NCSC">
+	</a>
+      </div>
+      <div class="sponsor-name">
+	NCSC
+      </div>
+    </div>
+    <div class="sponsor">
+      <div class="sponsor-pic">
 	<a href="https://riscv.org/">
 	  <img src="LOGOS/RISC-V.svg" style="width: 200px" alt="RISC-V International">
 	</a>
