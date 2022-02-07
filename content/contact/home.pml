@@ -46,18 +46,9 @@ The next sessions are:
 </p>
 <ul>
   <li>
-    <b>Wed, Jan 26</b>, 9pm (UTC), Topics: (open)<br>
-    <b>Meeting moved for one day because there is a public holiday (Australia Day) in Sydney</b>
-    <ul>
-      <li>Sydney: Thu, Jan 27, 8am </li>
-      <li>Central Europe: Wed, Jan 26, 10pm</li>
-      <li>US Pacific Time: Wed, Jan 26, 1pm</li>
-    </ul>
-  </li>
-  <li>
     Tue, Feb 8, 9pm (UTC), Topics: (open)
     <ul>
-      <li>Sydney: Wed, Feb 7, 8am</li>
+      <li>Sydney: Wed, Feb 9, 8am</li>
       <li>Central Europe: Tue, Feb 8, 10pm</li>
       <li>US Pacific Time: Tue, Feb 8, 1pm</li>
     </ul>
@@ -68,6 +59,14 @@ The next sessions are:
       <li>Sydney: Wed, Feb 23, 8am</li>
       <li>Central Europe: Tue, Feb 22, 10pm</li>
       <li>US Pacific Time: Tue, Feb 22, 1pm</li>
+    </ul>
+  </li>
+  <li>
+    Tue, Mar 8, 9pm (UTC), Topics: (open)
+    <ul>
+      <li>Sydney: Wed, Mar 9, 8am</li>
+      <li>Central Europe: Tue, Mar 8, 10pm</li>
+      <li>US Pacific Time: Tue, Mar 8, 1pm</li>
     </ul>
   </li>
 </ul>
