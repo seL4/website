@@ -288,7 +288,12 @@ if i > 1:
 %>
     </div> <!-- Breadcrumbs -->
 <%
-if cururl.startswith("/Foundation"):
+if cur_url.startswith("/Foundation/Summit"):
+%>
+  <a href='/'><img style="width:20%; padding-top:5px; vertical-align:top;float:right; margin:10px;"
+                     src='/images/sel4-summit-logo.svg' alt='seL4 summit logo' /></a>
+<%
+elif cur_url.startswith("/Foundation"):
 %>
     <a href='/'><img style="width:20%; padding-top:5px; vertical-align:top;float:right; margin:10px;"
                      src='/images/sel4-foundation-logo.svg' alt='seL4 foundation logo' />
