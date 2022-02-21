@@ -69,7 +69,6 @@ The next sessions are:
       <li>US Pacific Time: Tue, Mar 22, 2pm</li>
     </ul>
   </li>
-  
 </ul>
 <p>
 RFC (request for comments) proposing new features for seL4
