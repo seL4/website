@@ -46,14 +46,6 @@ The next sessions are:
 </p>
 <ul>
   <li>
-    Tue, Feb 8, 9pm (UTC), Topics: (open)
-    <ul>
-      <li>Sydney: Wed, Feb 9, 8am</li>
-      <li>Central Europe: Tue, Feb 8, 10pm</li>
-      <li>US Pacific Time: Tue, Feb 8, 1pm</li>
-    </ul>
-  </li>
-  <li>
     Tue, Feb 22, 9pm (UTC), Topics: (open)
     <ul>
       <li>Sydney: Wed, Feb 23, 8am</li>
@@ -67,6 +59,14 @@ The next sessions are:
       <li>Sydney: Wed, Mar 9, 8am</li>
       <li>Central Europe: Tue, Mar 8, 10pm</li>
       <li>US Pacific Time: Tue, Mar 8, 1pm</li>
+    </ul>
+  </li>
+  <li>
+    Tue, Mar 22, 9pm (UTC), Topics: (open)
+    <ul>
+      <li>Sydney: Wed, Mar 23, 8am</li>
+      <li>Central Europe: Tue, Mar 22, 10pm</li>
+      <li>US Pacific Time: Tue, Mar 22, 2pm</li>
     </ul>
   </li>
 </ul>
