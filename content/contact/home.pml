@@ -58,7 +58,7 @@ The next sessions are:
     <ul>
       <li>Sydney: Wed, Mar 23, 8am</li>
       <li>Central Europe: Tue, Mar 22, 10pm</li>
-      <li>US Pacific Time: Tue, Mar 22, 2pm</li>
+      <li>US Pacific Time: Tue, Mar 22, 1pm</li>
     </ul>
   </li>
   <li>
