@@ -25,7 +25,7 @@ The Program Committee is in charge of the technical side of the seL4 Summit (con
 
   <div class="person">
     <div class="person_pic">
-      <a href=""><img src="../Summit/Darren.jpg" alt="Darren Cofer" width="80" /></a>
+      <a href=""><img src="../../images/summit/darren.jpg" alt="Darren Cofer" width="80" /></a>
     </div>
     <div class="person_title">
       <strong><a class="list_link" href="">Darren Coffer (co-chair)</a></strong>
@@ -37,7 +37,7 @@ The Program Committee is in charge of the technical side of the seL4 Summit (con
       <a href="https://www.linkedin.com/in/annamlyons/"><img src="../../images/tsc/anna.png" alt="Anna Lyons" width="80" /></a>
     </div>
     <div class="person_title">
-      <strong><a class="list_link" href="https://www.linkedin.com/in/annamlyons/">Anna Lyons (TBC)</a></strong>
+      <strong><a class="list_link" href="https://www.linkedin.com/in/annamlyons/">Anna Lyons</a></strong>
     </div>
   </div>
 
