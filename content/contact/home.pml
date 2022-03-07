@@ -64,7 +64,6 @@ The next sessions are:
   <li>
     Tue, Apr 5, Time TBC, Topics: (open)
   </li>
-  
 </ul>
 <p>
 RFC (request for comments) proposing new features for seL4
