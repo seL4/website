@@ -43,7 +43,7 @@ The Program Committee is in charge of the technical side of the seL4 Summit (con
 
   <div class="person">
     <div class="person_pic">
-      <a href=""><img src="../../images/summit/axel.png" alt="Axel Heider" width="80" /></a>
+      <a href="https://www.linkedin.com/in/axelheider"><img src="../../images/summit/axel.png" alt="Axel Heider" width="80" /></a>
     </div>
     <div class="person_title">
       <strong><a class="list_link" href="">Axel Heider</a></strong>
@@ -106,7 +106,7 @@ The Program Committee is in charge of the technical side of the seL4 Summit (con
 
   <div class="person">
     <div class="person_pic">
-      <a href=""><img src="../../images/summit/robbie.jpg" alt="Robert (Robbie) VanVossen" width="80"/></a>
+      <a href=""><img src="../../images/summit/robbie.png" alt="Robert (Robbie) VanVossen" width="80"/></a>
     </div>
     <div class="person_title">
       <strong><a class="list_link" href=""></a>Robert (Robbie) VanVossen</strong>
