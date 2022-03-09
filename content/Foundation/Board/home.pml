@@ -239,21 +239,14 @@
 
 <div class="governing-container">
   <div class="governing-item-pic">
-    <a href="HC-Sascha.jpg"><img src="HC-Sascha-s.jpg" alt="Sascha Kegrei&szlig;" width="80" /></a>
+    <a href="HC-Olivier-s.jpg"><img src="HC-Olivier-s.jpg" alt="Olivier;" width="80" /></a>
   </div>
   <div class="governing-item-heading">
-    <strong><a href="https://www.linkedin.com/in/sascha-kegreiß-7b9883b5/" class='list_link'>Sascha Kegrei&szlig;</a></strong> <span class="person_title_col"><em>CTO, <a href="https://www.hensoldt-cyber.com/">HENSOLDT Cyber</a></em></span>
+    <strong><a href="https://de.linkedin.com/in/olivier-engelkes-6393b1a" class='list_link'>Olivier Engelkes</a></strong> <span class="person_title_col"><em>CTO, <a href="https://www.hensoldt-cyber.com/">HENSOLDT Cyber</a></em></span>
   </div>
   <div class="governing-item-text">
     <p>
-      Sascha is the representative of Premium Member HENSOLDT Cyber
-      GmbH, a Munich-based company which
-      develops embedded IT products that meet the highest security
-      requirements, combining an operating system based on verified seL4
-      with a RISC-V processor that is protected from supply-chain
-      attacks.
-      Sascha is the CTO of HENSOLDT Cyber, leading product design and
-      development as well as business development.
+      Olivier is the representative of Premium Member HENSOLDT Cyber GmbH, a Munich-based company which develops embedded IT products that meet the highest security requirements, combining an operating system based on verified seL4 with a RISC-V processor that is protected from supply-chain attacks. Olivier is HENSOLDT Cybers Head of Engineering. With a background in Computer Science, he carried out engineering projects for the road, the air, for tracks and for space. He is focused on safety and security critical embedded systems with hard real time constraints - from the initial design ideas up to the fully certified commissioning. His objective at HENSOLDT Cyber is to employ seL4 and RISC-V based technologies to answer the challenge of ever more stringent industrial requirements on safety and security for cutting edge applications.
     </p>
   </div>
 </div>
@@ -287,7 +280,7 @@ Committee may co-opt member representatives.</p>
   <li>David Hardin</li>
   <li>Gernot Heiser</li>
   <li>Daniel Potts</li>
-  <li>Sascha Kegrei&szlig;</li>
+  <li>Olivier Engelkes</li>
 </ul>
 
 
