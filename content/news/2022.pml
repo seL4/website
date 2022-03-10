@@ -55,6 +55,35 @@ Older News: <%=reflist%>
 -->
 
 <!----------------------------------------------------------->
+<div class="news-item" id="board-member-olivier">
+  11 March 2022: Olivier Engelkes joins seL4 Foundation Board
+</div>
+<div>
+
+  <p>
+    The seL4 Foundation is pleased to welcome the Hensoldt Cyber’s <a href=""https://de.linkedin.com/in/olivier-engelkes-6393b1a">Olivier Engelkes</a> as its latest Board Member.
+    </p>
+    <p>
+  </p>
+  <table>
+    <tr>
+      <td>
+	<a href="/Foundation/Board/HC-Olivier.jpg"><img
+						      src="/Foundation/Board/HC-Olivier-s.jpg"
+					alt="Olivier Engelkes" width="80"
+						      /></a>
+	&nbsp; &nbsp;
+      </td>
+      <td>
+      Olivier is the representative of Premium Member HENSOLDT Cyber GmbH, a Munich-based company which develops embedded IT products that meet the highest security requirements, combining an operating system based on verified seL4 with a RISC-V processor that is protected from supply-chain attacks. Olivier is HENSOLDT Cyber's Head of Engineering.
+	    </td>
+    </tr>
+  </table>
+
+</div>
+<div class="news-finish">
+</div>
+
 <div class="news-item" id="member-ncsc">
   2 February 2022: NCSC joins the seL4 Foundation
 </div>
