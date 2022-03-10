@@ -280,7 +280,6 @@ Committee may co-opt member representatives.</p>
   <li>David Hardin</li>
   <li>Gernot Heiser</li>
   <li>Daniel Potts</li>
-  <li>Olivier Engelkes</li>
 </ul>
 
 
