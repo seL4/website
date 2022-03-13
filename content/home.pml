@@ -28,7 +28,7 @@
     <ul>
       <li>
         <strong>
-	        11 Mar 2022: Hendsolt Cyber's Olivier Engelkes joins seL4 Foundation Board
+	        14 Mar 2022: Olivier Engelkes is Hensoldt Cyber's new representative on the seL4 Board
         </strong>
       </li>
       <li>
