@@ -74,7 +74,7 @@ Older News: <%=reflist%>
   </p>
   <p>
       Olivier is  Head of Engineering at HENSOLDT Cyber GmbH, <a href="../Foundation/Membership">premium member</a> of the seL4 Foundation and Munich-based company which develops embedded IT products that meet the highest security requirements, combining an operating system based on verified seL4 with a RISC-V processor that is protected from supply-chain attacks. Olivier replaces Sascha Kegrei&szlig; as HENSOLDT Cyber's representative on the
-      <a href="../Foundation/Board">seL4 Foundation Board</a>. 
+      <a href="../Foundation/Board">seL4 Foundation Board</a>.
   </p>
 
 </div>
