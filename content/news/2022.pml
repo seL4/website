@@ -60,25 +60,22 @@ Older News: <%=reflist%>
 </div>
 <div>
 
+    <a href="https://de.linkedin.com/in/olivier-engelkes-6393b1a">
+      <img src="/Foundation/Board/HC-Olivier.jpg"
+	   style="width: 20%;  padding-left:10px;  float:right"
+	   alt="Olivier Engelkes" />
+    </a>
+
+
   <p>
-    The seL4 Foundation is pleased to welcome <a href="https://de.linkedin.com/in/olivier-engelkes-6393b1a">Olivier Engelkes</a> as Hensoldt Cyber's new representative on the seL4 Board.
+    The seL4 Foundation is pleased to welcome <a href="https://de.linkedin.com/in/olivier-engelkes-6393b1a">Olivier Engelkes</a> as Hensoldt Cyber's new representative on the <a href="../Foundation/Board">seL4 Foundation Board</a>.
     </p>
     <p>
   </p>
-  <table>
-    <tr>
-      <td>
-	<a href="/Foundation/Board/HC-Olivier.jpg"><img
-						      src="/Foundation/Board/HC-Olivier-s.jpg"
-					alt="Olivier Engelkes" width="80"
-						      /></a>
-	&nbsp; &nbsp;
-      </td>
-      <td>
-      Olivier is the representative of Premium Member HENSOLDT Cyber GmbH, a Munich-based company which develops embedded IT products that meet the highest security requirements, combining an operating system based on verified seL4 with a RISC-V processor that is protected from supply-chain attacks. Olivier is HENSOLDT Cyber's Head of Engineering.
-	    </td>
-    </tr>
-  </table>
+  <p>
+      Olivier is  Head of Engineering at HENSOLDT Cyber GmbH, <a href="../Foundation/Membership">premium member</a> of the seL4 Foundation and Munich-based company which develops embedded IT products that meet the highest security requirements, combining an operating system based on verified seL4 with a RISC-V processor that is protected from supply-chain attacks. Olivier replaces Sascha Kegrei&szlig; as HENSOLDT Cyber's representative on the
+      <a href="../Foundation/Board">seL4 Foundation Board</a>. </td>
+  </p>
 
 </div>
 <div class="news-finish">
