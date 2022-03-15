@@ -28,6 +28,11 @@
     <ul>
       <li>
         <strong>
+	        14 Mar 2022: Olivier Engelkes is Hensoldt Cyber's new representative on the seL4 Board
+        </strong>
+      </li>
+      <li>
+        <strong>
 	   2 Feb 2022: NCSC joins the seL4 Foundation
         </strong>
       </li>
@@ -36,12 +41,7 @@
 	  1 Feb 2022: Call for bids to host the seL4 Summit 2022!
         </strong>
       </li>
-      <li>
-        <strong>
-	  28 Jan 2022: Kry10 receives interim endorsement as a Trusted Service Provider
-        </strong>
-      </li>
-      <li style="margin-top:0.2em;list-style-type:none">
+       <li style="margin-top:0.2em;list-style-type:none">
 	more...
       </li>
     </ul>
