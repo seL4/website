@@ -60,39 +60,35 @@ Older News: <%=reflist%>
 </div>
 <div>
 
-<!--
-    <a href="">
-      <img src=""
+
+    <a href="../Foundation/Summit">
+      <img src="../images/sel4-summit-logo.svg"
 	   style="width: 20%;  padding-left:10px;  float:right"
-	   alt="PC for seL4 Summit 2022" />
+	   alt="seL4 Summit 2022" />
     </a>
--->
 
   <p>
 
     The seL4 Foundation is very excited to have gathered a top notch team of
-    people to serve as PC members for the seL4 summit 2022. The PC gathers seL4
-    users, contributors, committers, experts, advocates, researchers,
-    and engineers, across the seL4 ecosystem.
-
-    <strong>Meet them <a href="../Foundation/Summit"> here</a> and stay tuned for the Call for Presentation soon!</strong>
+    people to serve as <a href="../Foundation/Summit">PC members for the seL4
+    summit 2022</a>. They come from across the the seL4 ecosystem: users,
+    contributors, committers, experts, advocates, researchers, and engineers.
 
   </p>
+  <p>
 
-  <ul>
-  <li> Anna Lyons (Ghost Locomotion)</li>
-  <li> Axel Heider (Hensoldt Cyber)</li>
-  <li> Darren Cofer (Raytheon), co-chair</li>
-  <li> Gernot Heiser (UNSW)</li>
-  <li> Ihor Kuz (Kry10)</li>
-  <li> John Launchbury (Galois)</li>
-  <li> June Andronick (Proofcraft), co-chair</li>
-  <li> Kent McLeod (Kry10)</li>
-  <li> Nick Spinale (formerly Arm)</li>
-  <li> Perry Alexander (U of Kansas)</li>
-  <li> Robert (Robbie) VanVossen (Dornerworks)</li>
-  <li> Todd Carpenter (Adventium Labs)</li>
-  </ul>
+    <strong>Stay tuned for the Call for Presentation soon!</strong>
+
+  </p>
+  <p style="text-align: center;">
+
+    <a href="../Foundation/Summit">
+      <img src="../images/summit/pc22.png"
+	   style="width: 60%;  padding-left:10px; "
+	   alt="PC for seL4 Summit 2022" />
+    </a>
+
+  </p>
 
 
 </div>
