@@ -56,7 +56,7 @@ Older News: <%=reflist%>
 
 <!----------------------------------------------------------->
 <div class="news-item" id="summit-pc">
-  19 March 2022: Meet the Program Committee of the seL4 summit 2022!
+  18 March 2022: Meet the Program Committee of the seL4 summit 2022!
 </div>
 <div>
 
