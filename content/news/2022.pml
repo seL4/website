@@ -55,6 +55,47 @@ Older News: <%=reflist%>
 -->
 
 <!----------------------------------------------------------->
+<div class="news-item" id="summit-pc">
+  18 March 2022: Meet the Program Committee of the seL4 summit 2022!
+</div>
+<div>
+
+
+    <a href="../Foundation/Summit">
+      <img src="../images/sel4-summit-logo.svg"
+	   style="width: 20%;  padding-left:10px;  float:right"
+	   alt="seL4 Summit 2022" />
+    </a>
+
+  <p>
+
+    The seL4 Foundation is excited to have gathered a top notch team of
+    people to serve as <a href="../Foundation/Summit">PC members for the seL4
+    summit 2022</a>. They come from across the the seL4 ecosystem: users,
+    contributors, committers, experts, advocates, researchers, and engineers.
+
+  </p>
+  <p>
+
+    <strong>Stay tuned for the Call for Presentation soon!</strong>
+
+  </p>
+  <p style="text-align: center;">
+
+    <a href="../Foundation/Summit">
+      <img src="../images/summit/pc22.png"
+	   style="width: 60%;  padding-left:10px; "
+	   alt="PC for seL4 Summit 2022" />
+    </a>
+
+  </p>
+
+
+</div>
+<div class="news-finish">
+</div>
+
+<!----------------------------------------------------------->
 <div class="news-item" id="board-member-olivier">
   14 March 2022: Olivier Engelkes is Hensoldt Cyber's new representative on the seL4 Board
 </div>
@@ -81,6 +122,7 @@ Older News: <%=reflist%>
 <div class="news-finish">
 </div>
 
+<!----------------------------------------------------------->
 <div class="news-item" id="member-ncsc">
   2 February 2022: NCSC joins the seL4 Foundation
 </div>
