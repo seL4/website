@@ -69,7 +69,7 @@ Older News: <%=reflist%>
 
   <p>
 
-    The seL4 Foundation is very excited to have gathered a top notch team of
+    The seL4 Foundation is excited to have gathered a top notch team of
     people to serve as <a href="../Foundation/Summit">PC members for the seL4
     summit 2022</a>. They come from across the the seL4 ecosystem: users,
     contributors, committers, experts, advocates, researchers, and engineers.
