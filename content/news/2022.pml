@@ -55,6 +55,51 @@ Older News: <%=reflist%>
 -->
 
 <!----------------------------------------------------------->
+<div class="news-item" id="summit-pc">
+  19 March 2022: Meet the Program Committee of the seL4 summit 2022!
+</div>
+<div>
+
+<!--
+    <a href="">
+      <img src=""
+	   style="width: 20%;  padding-left:10px;  float:right"
+	   alt="PC for seL4 Summit 2022" />
+    </a>
+-->
+
+  <p>
+
+    The seL4 Foundation is very excited to have gathered a top notch team of
+    people to serve as PC members for the seL4 summit 2022. The PC gathers seL4
+    users, contributors, committers, experts, advocates, researchers,
+    and engineers, across the seL4 ecosystem.
+
+    <strong>Meet them <a href="../Foundation/Summit"> here</a> and stay tuned for the Call for Presentation soon!</strong>
+
+  </p>
+
+  <ul>
+  <li> Anna Lyons (Ghost Locomotion)</li>
+  <li> Axel Heider (Hensoldt Cyber)</li>
+  <li> Darren Cofer (Raytheon), co-chair</li>
+  <li> Gernot Heiser (UNSW)</li>
+  <li> Ihor Kuz (Kry10)</li>
+  <li> John Launchbury (Galois)</li>
+  <li> June Andronick (Proofcraft), co-chair</li>
+  <li> Kent McLeod (Kry10)</li>
+  <li> Nick Spinale (formerly Arm)</li>
+  <li> Perry Alexander (U of Kansas)</li>
+  <li> Robert (Robbie) VanVossen (Dornerworks)</li>
+  <li> Todd Carpenter (Adventium Labs)</li>
+  </ul>
+
+
+</div>
+<div class="news-finish">
+</div>
+
+<!----------------------------------------------------------->
 <div class="news-item" id="board-member-olivier">
   14 March 2022: Olivier Engelkes is Hensoldt Cyber's new representative on the seL4 Board
 </div>
@@ -81,6 +126,7 @@ Older News: <%=reflist%>
 <div class="news-finish">
 </div>
 
+<!----------------------------------------------------------->
 <div class="news-item" id="member-ncsc">
   2 February 2022: NCSC joins the seL4 Foundation
 </div>
