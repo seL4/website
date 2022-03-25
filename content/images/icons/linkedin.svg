@@ -2,20 +2,20 @@
 <!-- Created with Inkscape (http://www.inkscape.org/) -->
 
 <svg
-   width="210mm"
-   height="297mm"
-   viewBox="0 0 210 297"
+   width="11.200694mm"
+   height="9.5249996mm"
+   viewBox="0 0 11.200694 9.5249996"
    version="1.1"
-   id="svg1007"
-   sodipodi:docname="linkedin-clear.svg"
+   id="svg5"
    inkscape:version="1.1.1 (3bf5ae0d25, 2021-09-20)"
+   sodipodi:docname="linkedindrawing.svg"
    xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
    xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
    xmlns:xlink="http://www.w3.org/1999/xlink"
    xmlns="http://www.w3.org/2000/svg"
    xmlns:svg="http://www.w3.org/2000/svg">
   <sodipodi:namedview
-     id="namedview1009"
+     id="namedview7"
      pagecolor="#ffffff"
      bordercolor="#666666"
      borderopacity="1.0"
@@ -25,8 +25,8 @@
      inkscape:document-units="mm"
      showgrid="false"
      inkscape:zoom="1.8116734"
-     inkscape:cx="378.93143"
-     inkscape:cy="561.63543"
+     inkscape:cx="89.972065"
+     inkscape:cy="75.89668"
      inkscape:window-width="1920"
      inkscape:window-height="1001"
      inkscape:window-x="-9"
@@ -34,14 +34,15 @@
      inkscape:window-maximized="1"
      inkscape:current-layer="layer1" />
   <defs
-     id="defs1004" />
+     id="defs2" />
   <g
      inkscape:label="Layer 1"
      inkscape:groupmode="layer"
-     id="layer1">
+     id="layer1"
+     transform="translate(-78.24559,-125.64)">
     <image
-       width="53.763332"
-       height="45.720001"
+       width="11.200694"
+       height="9.5249996"
        preserveAspectRatio="none"
        xlink:href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAnsAAAIcCAYAAACOxWh1AAAACXBIWXMAAC4jAAAuIwF4pT92AAAg
 AElEQVR4nO3dzXEbSZ7w4ZyJvkuvBdTeFidxLBDHAITogajT1m3YFohtwbBvuA1lwVILA5qyYMgT
@@ -191,8 +192,8 @@ e/PKqN/0Jryc+RUAWN99eX1dJ0T4obTI+Y67ityVe/9qh4GsL+V5wVpXBh889tp2UN8AAABdSURB
 VAAA2mDmsbN1pljrdFeeD2xk+xexBwAwZ2bxxGlDewh/KVvBXDW5CCSJPQCAp5VFFaflmbvjLePv
 Ye75yUYDb5bYAwDYwMx6g+kCjFVy0D0+Q3mw5ydTSv8foyEK3BaDSLAAAAAASUVORK5CYII=
 "
-       id="image12480"
-       x="73.377274"
-       y="125.73937" />
+       id="image832"
+       x="78.24559"
+       y="125.64" />
   </g>
 </svg>
