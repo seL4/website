@@ -159,7 +159,7 @@ We solicit proposals on any seL4-related topic, in particular in the areas of:
     virtualisation
     </li>
     <li>
-    new hardware features or architectures, or proposals for hardware features, that could be interesting for seL4, would work well with or improve seL4, could enable or broaden the scope of formal reasoning (e.g. about time protection)
+    new/proposed hardware features or architectures, which could also enable or broaden the scope of formal reasoning (e.g. about time protection)
     </li>
     <li>
     seL4 in embedded processors on FPGAs, and impact of assured separation
