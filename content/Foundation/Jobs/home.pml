@@ -213,7 +213,7 @@ explicit description of how the job will be linked to seL4.
     <p>
 
        Please visit <a
-       href="https://dornerworks.com/careers-at-dornerworks/">https://dornerworks.com/careers-at-dornerworks/</a>
+       href="https://dornerworks.com/careers/">https://dornerworks.com/careers/</a>
        or contact Deb DeVries at <a title="deb.devries@dornerworks.com"
        href="mailto:deb.devries@dornerworks.com">deb.devries@dornerworks.com</a>.
 
