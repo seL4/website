@@ -72,6 +72,10 @@
           href="Services/">Endorsed and certified services, training and products</a>
     </li>
     <li>
+      <a title="seL4 Summit"
+          href="Summit/">The seL4 Summit</a>
+    </li>
+    <li>
       <a title="Supporting next big steps for the seL4 project"
           href="Support/">Supporting next big steps for the seL4 project</a>
     </li>
