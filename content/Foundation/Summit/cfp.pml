@@ -82,12 +82,12 @@
 
 
 <div>
-<p>
 
 
   <h3>
   Topics:
   </h3>
+<p>
 We solicit proposals on any seL4-related topic, in particular in the areas of:
 </p>
   <ul>
