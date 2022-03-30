@@ -313,9 +313,7 @@ Other News: <%=reflist%>
    post</a> about "The seL4 Foundation &mdash; What and Why", and in
    the press releases from <a
    href="https://www.linuxfoundation.org/press-release/2020/04/sel4-microkernel-optimized-for-security-gets-support-of-linux-foundation/">the
-   Linux Foundation</a> and from <a
-   href="https://www.csiro.au/en/News/News-releases/2020/seL4-developers-create-open-source-foundation">CSIRO's
-   Data61</a>.
+   Linux Foundation</a>.
   </p>
 </div>
 <div class="news-finish">
