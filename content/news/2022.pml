@@ -54,6 +54,46 @@ Older News: <%=reflist%>
 </div>
 -->
 
+
+<!----------------------------------------------------------->
+<div class="news-item" id="summit-cfp">
+  30 March 2022: The Call for Presentations for the seL4 summit 2022 is out!
+</div>
+<div>
+
+
+    <a href="../Foundation/Summit">
+      <img src="../images/sel4-summit-logo.svg"
+	   style="width: 20%;  padding-left:10px;  float:right"
+	   alt="seL4 Summit 2022" />
+    </a>
+
+<div class="highlight" >
+
+  <h3>
+  We are <a href="../Foundation/Summit/cfp">calling for proposals to present</a> at the <a
+  href="../Foundation/Summit">seL4 Summit 2022</a>.
+  </h3>
+  <p>Share your seL4 work </p>
+  <p>Share your seL4 experience </p>
+  <p>Share your seL4 thoughts </p>
+  <p>Share your seL4 questions </p>
+</div>
+
+
+  <p>
+
+  Check the full <a href="../Foundation/Summit/cfp">Call For Presentations</a>.  To propose a talk,
+  send an abstract of <strong>one page or less</strong> <strong>by Monday 9th of
+  May 2022</strong> to <a title="summit@sel4.systems"
+  href="mailto:summit@sel4.systems">summit@sel4.systems</a>.  </p>
+
+
+</div>
+<div class="news-finish">
+</div>
+
+
 <!----------------------------------------------------------->
 <div class="news-item" id="summit-pc">
   18 March 2022: Meet the Program Committee of the seL4 summit 2022!
