@@ -22,7 +22,7 @@
     Note that seL4 Foundation members must be (or become) members of the Linux Foundation. The on-line process will include your Linux Foundation membership if you are not already a member.
   </p>
   <p>
-  You can review the <a title="Participation Agreement" href="Participation_Agreement_Sample.pdf">seL4 Foundation Fund Participation Agreement</a>.
+  You can review the <a title="Participation Agreement" href="Directed_Fund_Participation_Agreement.pdf">seL4 Foundation Directed Fund Participation Agreement</a>.
   </p>
   <p>Questions? Email us at
     <a title="foundation@sel4.systems"
@@ -60,9 +60,9 @@
         <div class="panel-footer">
 	Based on number of employees:<br>
 	USD 30K (5000+) <br> <!-- USD 30K (5000+) -->
-	USD 20K (2000-4999)<br> <!-- USD 20K (500-4999) -->
-	USD 10K (500-1999)<br>  <!-- USD 10K (100-499) -->
-	USD 3K (0-499)	       <!-- USD 3K (0-99) -->
+	USD 20K (500-4999)<br> <!-- USD 20K (500-4999) -->
+	USD 10K (100-499)<br>  <!-- USD 10K (100-499) -->
+	USD 3K (0-99)	       <!-- USD 3K (0-99) -->
         </div>
       </div>
     </div>
@@ -181,6 +181,4 @@
 
   </div>
 </div>
-
-
 </div>
