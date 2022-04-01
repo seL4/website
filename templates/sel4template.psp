@@ -131,6 +131,8 @@ if "user_head_content" in globals():
 <!-- Production template -->
   </head>
   <body>
+  <div id="page-container"><!--to put footer at bottom of page-->
+    <div id="content-wrap"><!--to put footer at bottom of page-->
 <%
 if show_toolbox(req):
   # then
@@ -356,5 +358,7 @@ if on_seL4:
 <!-- wrapper -->
 <script src="/js/jquery.min.js"></script>
 <script src="/js/bootstrap.min.js"></script>
+</div><!--content-wrap-->
+</div><!--page-container-->
 </body>
 </html>
