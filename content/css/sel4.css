@@ -48,10 +48,10 @@ footer {
 
 @media screen and (max-width:906px) {
   footer {
-      height: 150px;
+      height: 180px;
     }
     content-wrap{
-      padding-bottom: 150px;
+      padding-bottom: 180px;
     }
   }
 
