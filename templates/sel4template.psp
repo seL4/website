@@ -132,7 +132,7 @@ if "user_head_content" in globals():
   </head>
   <body>
   <div id="page-container"><!--to put footer at bottom of page-->
-    <div id="content-wrap"><!--to put footer at bottom of page-->
+  <div id="content-wrap"><!--to put footer at bottom of page-->
 <%
 if show_toolbox(req):
   # then
