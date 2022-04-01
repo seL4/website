@@ -312,26 +312,26 @@ else:
 <div class="divider"></div>
 </div><!-- container -->
 
-<footer class="page-footer small pt-3" id="footer" > <!-- footer -->
+<footer class="page-footer small pt-3" id="footer"> <!-- footer -->
   <div class="container">
+    <!-- for mobile screens -->
+    <div class="text-center visible-xs">
+    <a href="https://twitter.com/sel4foundation"><img style="height:36px; padding-right:5px; padding-top:2px; padding-bottom:2px;" src="/images/icons/twitter.svg" alt="twitter icon"></a>
+      <a href="https://www.youtube.com/channel/UCIqVY1XFPOPIZ1z2A9TrmMA/featured"><img style="height:36px; padding-top:2px; padding-bottom:2px;" src="/images/icons/youtube.svg" alt="youtube icon"></a>
+      <a href="https://www.linkedin.com/company/sel4"><img style="height:36px; padding-left:5px; padding-top:2px; padding-bottom:2px;" src="/images/icons/linkedin.svg" alt="linkedin icon"></a>
+      <br>
+      <br>
+    Copyright &copy; 2022 seL4 Project a Series of LF Projects, LLC.<br/>
+      seL4 is a trademark of LF Projects, LLC.<br/>
+      For trademark usage guidelines, privacy and cookie policies,
+      and other applicable policies, as well as terms and conditions
+      governing this web site, please see
+      <a href="http://www.lfprojects.org/">www.lfprojects.org</a>
+      and the <a href="/Foundation/Trademark/">trademark guidelines</a>.
+    </div>
     <div class="row">
-      <!-- for mobile screens -->
-      <div class="text-center visible-xs">
-      <a href="https://twitter.com/sel4foundation"><img style="height:36px; padding-right:5px; padding-top:2px; padding-bottom:2px;" src="/images/icons/twitter.svg" alt="twitter icon"></a>
-        <a href="https://www.youtube.com/channel/UCIqVY1XFPOPIZ1z2A9TrmMA/featured"><img style="height:36px; padding-top:2px; padding-bottom:2px;" src="/images/icons/youtube.svg" alt="youtube icon"></a>
-        <a href="https://www.linkedin.com/company/sel4"><img style="height:36px; padding-left:5px; padding-top:2px; padding-bottom:2px;" src="/images/icons/linkedin.svg" alt="linkedin icon"></a>
-        <br>
-        <br>
-      Copyright &copy; 2022 seL4 Project a Series of LF Projects, LLC.<br/>
-        seL4 is a trademark of LF Projects, LLC.<br/>
-        For trademark usage guidelines, privacy and cookie policies,
-        and other applicable policies, as well as terms and conditions
-        governing this web site, please see
-        <a href="http://www.lfprojects.org/">www.lfprojects.org</a>
-        and the <a href="/Foundation/Trademark/">trademark guidelines</a>.
-      </div>
       <!-- for screens larger than mobiles -->
-      <div class="col-xs-6 hidden-xs">
+      <div class="col-xs-6">
         Copyright &copy; 2022 seL4 Project a Series of LF Projects, LLC.<br/>
         seL4 is a trademark of LF Projects, LLC.<br/>
         For trademark usage guidelines, privacy and cookie policies,
@@ -340,7 +340,7 @@ else:
         <a href="http://www.lfprojects.org/">www.lfprojects.org</a>
         and the <a href="/Foundation/Trademark/">trademark guidelines</a>.
       </div>
-      <div class="col-xs-6 text-right hidden-xs">
+      <div class="col-xs-6 text-right">
         <a href="https://twitter.com/sel4foundation"><img style="height:36px; padding-right:5px; padding-top:2px; padding-bottom:2px;" src="/images/icons/twitter.svg" alt="twitter icon"></a>
         <a href="https://www.youtube.com/channel/UCIqVY1XFPOPIZ1z2A9TrmMA/featured"><img style="height:36px; padding-top:2px; padding-bottom:2px;" src="/images/icons/youtube.svg" alt="youtube icon"></a>
         <a href="https://www.linkedin.com/company/sel4"><img style="height:36px; padding-left:5px; padding-top:2px; padding-bottom:2px;" src="/images/icons/linkedin.svg" alt="linkedin icon"></a>
