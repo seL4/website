@@ -7,13 +7,14 @@
   seL4 Summit 2022
 </h1>
 
+
 <div class="highlight">
 
   <h3>
    Latest News
   </h3>
   <ul>
-  <li> Coming up: call for presentation and important dates &mdash;stay tuned!</li>
+  <li> 30 Mar 2022: <a href="./cfp">Call For Presentation</a>! </li>
   <li> 16 Mar 2022:  Meet the summit 2022 PC members! </li>
   <li> 1 Feb 2022: Call for bids to host the seL4 Summit 2022!</li>
   </ul>
@@ -41,6 +42,7 @@
 
   </p>
 
+
   <h3>
    Location
   </h3>
@@ -52,11 +54,29 @@
 
 
   <h3>
-   Date
+   Important Dates:
   </h3>
+  <ul>
+  <li> Abstracts due: 9th of May 2022</li>
+  <li> Notification of decisions: 30th of May 2022 </li>
+  <li> Summit: aiming for week of 10th of October 2022 (TBC) </li>
+  </ul>
+
+  <h3>
+   Call for Presentations
+  </h3>
+
+
+  <div class="highlight">
   <p>
-   We are aiming for <strong>October 2022</strong>. Exact dates to be confirmed soon.
+
+  Check the <a href="./cfp">CFP</a>.  To propose a talk, send an abstract of
+  <strong>one page or less</strong> <strong>by Monday 9th of May 2022</strong>
+  to <a title="summit@sel4.systems"
+  href="mailto:summit@sel4.systems">summit@sel4.systems</a>.
+
   </p>
+  </div>
 
   <h3>
    Principles

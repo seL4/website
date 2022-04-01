@@ -37,13 +37,7 @@
   <ul>
     <li><strong>Read the <a href="https://microkerneldude.wordpress.com/2020/04/07/the-sel4-foundation-what-and-why/">Blog post</a> about "The seL4 Foundation &mdash; What and Why"</strong>
     </li>
-    <li><strong>Read the press releases about the launch:</strong>
-       <ul>
-       <li><strong>From <a href="https://www.linuxfoundation.org/press-release/2020/04/sel4-microkernel-optimized-for-security-gets-support-of-linux-foundation/">the Linux Foundation</a></strong>
-       </li>
-       <li><strong>From <a href="https://www.csiro.au/en/News/News-releases/2020/seL4-developers-create-open-source-foundation">CSIRO</a></strong>
-       </li>
-       </ul>
+    <li><strong>Read the <a href="https://www.linuxfoundation.org/press-release/2020/04/sel4-microkernel-optimized-for-security-gets-support-of-linux-foundation/">press releases about the launch from the Linux Foundation</a></strong>
     </li>
   </ul>
 
@@ -70,6 +64,10 @@
     <li>
       <a title="Endorsed and certified services, training and products"
           href="Services/">Endorsed and certified services, training and products</a>
+    </li>
+    <li>
+      <a title="seL4 Summit"
+          href="Summit/">The seL4 Summit</a>
     </li>
     <li>
       <a title="Supporting next big steps for the seL4 project"

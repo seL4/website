@@ -131,6 +131,8 @@ if "user_head_content" in globals():
 <!-- Production template -->
   </head>
   <body>
+  <div id="page-container"><!--to put footer at bottom of page-->
+  <div id="content-wrap"><!--to put footer at bottom of page-->
 <%
 if show_toolbox(req):
   # then
@@ -306,25 +308,44 @@ else:
 <%
 # end if
 %>
-        <%=user_content%>
-	<div class="divider"></div>
+<%=user_content%>
+<div class="divider"></div>
 </div><!-- container -->
 
-<footer class="page-footer small pt-3" id="footer" > <!-- footer -->
-  <hr class="bottom-ruler">
-  <div class="footer-social-media-links-right">
-    <a href="https://twitter.com/sel4foundation"><img style="height:100%; padding-right:5px; padding-top:2px; padding-bottom:2px;" src="/images/icons/twitter.png" alt="twitter icon"></a>
-    <a href="https://www.youtube.com/channel/UCIqVY1XFPOPIZ1z2A9TrmMA/featured"><img style="height:100%; padding-top:2px; padding-bottom:2px;" src="/images/icons/youtube.png" alt="youtube icon"></a>
-    <a href="https://www.linkedin.com/company/sel4"><img style="height:100%; padding-left:5px; padding-top:2px; padding-bottom:2px;" src="/images/icons/linkedin.png" alt="linkedin icon"></a>
-  </div>
-  <div  class="footer-copyright text-center py-3">
-    Copyright &copy; 2022  seL4 Project a Series of LF Projects, LLC.<br/>
+<footer class="page-footer small pt-3" id="footer"> <!-- footer -->
+  <div class="container">
+    <!-- for mobile screens -->
+    <div class="text-center visible-xs">
+    <a href="https://twitter.com/sel4foundation"><img style="height:36px; padding-right:5px; padding-top:2px; padding-bottom:2px;" src="/images/icons/twitter.svg" alt="twitter icon"></a>
+      <a href="https://www.youtube.com/channel/UCIqVY1XFPOPIZ1z2A9TrmMA/featured"><img style="height:36px; padding-top:2px; padding-bottom:2px;" src="/images/icons/youtube.svg" alt="youtube icon"></a>
+      <a href="https://www.linkedin.com/company/sel4"><img style="height:36px; padding-left:5px; padding-top:2px; padding-bottom:2px;" src="/images/icons/linkedin.svg" alt="linkedin icon"></a>
+      <br>
+      <br>
+    Copyright &copy; 2022 seL4 Project a Series of LF Projects, LLC.<br/>
       seL4 is a trademark of LF Projects, LLC.<br/>
       For trademark usage guidelines, privacy and cookie policies,
       and other applicable policies, as well as terms and conditions
       governing this web site, please see
       <a href="http://www.lfprojects.org/">www.lfprojects.org</a>
       and the <a href="/Foundation/Trademark/">trademark guidelines</a>.
+    </div>
+    <div class="row">
+      <!-- for screens larger than mobiles -->
+      <div class="col-xs-6 hidden-xs">
+        Copyright &copy; 2022 seL4 Project a Series of LF Projects, LLC.<br/>
+        seL4 is a trademark of LF Projects, LLC.<br/>
+        For trademark usage guidelines, privacy and cookie policies,
+        and other applicable policies, as well as terms and conditions
+        governing this web site, please see
+        <a href="http://www.lfprojects.org/">www.lfprojects.org</a>
+        and the <a href="/Foundation/Trademark/">trademark guidelines</a>.
+      </div>
+      <div class="col-xs-6 text-right hidden-xs">
+        <a href="https://twitter.com/sel4foundation"><img style="height:36px; padding-right:5px; padding-top:2px; padding-bottom:2px;" src="/images/icons/twitter.svg" alt="twitter icon"></a>
+        <a href="https://www.youtube.com/channel/UCIqVY1XFPOPIZ1z2A9TrmMA/featured"><img style="height:36px; padding-top:2px; padding-bottom:2px;" src="/images/icons/youtube.svg" alt="youtube icon"></a>
+        <a href="https://www.linkedin.com/company/sel4"><img style="height:36px; padding-left:5px; padding-top:2px; padding-bottom:2px;" src="/images/icons/linkedin.svg" alt="linkedin icon"></a>
+      </div>
+    </div>
   </div>
 <%
 if on_seL4:
@@ -337,5 +358,7 @@ if on_seL4:
 <!-- wrapper -->
 <script src="/js/jquery.min.js"></script>
 <script src="/js/bootstrap.min.js"></script>
+</div><!--content-wrap-->
+</div><!--page-container-->
 </body>
 </html>
