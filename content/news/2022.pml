@@ -67,11 +67,11 @@ Older News: <%=reflist%>
     </a>
   <p>
     Our second Annual General Meeting (AGM) 6 April 2022. As our membership now is truly global, covering New Zealand, Australia, China, the Middle East, Central and Western Europe, the US East, Central and West coasts, there is no time that is not in the middle of the night for some members. Hence we will hold the AGM in two sessions:
+    </p>
     <ul>
       <li>2022-04-06 07:00–08:30 UTC</li>
       <li>2022-04-06 23:00 – 2022-04-07 00:30 UTC</li>
     </ul>
-  </p>
 </div>
 <div class="news-finish">
 </div>
