@@ -172,8 +172,6 @@ Older News: <%=reflist%>
   <p>
     The seL4 Foundation is pleased to welcome <a href="https://de.linkedin.com/in/olivier-engelkes-6393b1a">Olivier Engelkes</a> as Hensoldt Cyber's new representative on the <a href="../Foundation/Board">seL4 Foundation Board</a>.
     </p>
-    <p>
-  </p>
   <p>
       Olivier is  Head of Engineering at HENSOLDT Cyber GmbH, <a href="../Foundation/Membership">premium member</a> of the seL4 Foundation and Munich-based company which develops embedded IT products that meet the highest security requirements, combining an operating system based on verified seL4 with a RISC-V processor that is protected from supply-chain attacks. Olivier replaces Sascha Kegrei&szlig; as HENSOLDT Cyber's representative on the
       <a href="../Foundation/Board">seL4 Foundation Board</a>.
@@ -246,7 +244,7 @@ Older News: <%=reflist%>
   href="mailto:summit@sel4.systems">summit@sel4.systems</a> before 22 February
   2022.
   </strong>
-  <p>
+  </p>
   <p>
   More information <a href="/Foundation/Summit/">here</a>.
   </p>
