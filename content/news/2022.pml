@@ -70,6 +70,7 @@ Older News: <%=reflist%>
     <ul>
       <li>2022-04-06 07:00–08:30 UTC</li>
       <li>2022-04-06 23:00 – 2022-04-07 00:30 UTC</li>
+    </ul>
   </p>
 </div>
 <div class="news-finish">
