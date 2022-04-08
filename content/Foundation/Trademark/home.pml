@@ -13,7 +13,7 @@
 </p>
 <p>
    The Linux Foundation has registered seL4<sup>&reg;</sup> as a
-  trademark in the United States. The Linux Foundation Projects (LF Projects, LLC) has also applied to register the seL4 trademark in other countries.
+  trademark in the United States and other countries.
   <!--registered seL4 as a
   trademark in the United States and other countries. Please use &reg;
   with the first mention of seL4 in all materials. --> In addition to the
