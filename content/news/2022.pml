@@ -56,6 +56,27 @@ Older News: <%=reflist%>
 
 
 <!----------------------------------------------------------->
+<div class="news-item" id="agm-2022">
+  6 April 2022: Our second annual AGM to be held 6 April 2022
+</div>
+<div>
+    <a href="../Foundation/Summit">
+      <img src="../images/sel4-foundation-logo.svg"
+	   style="width: 20%;  padding-left:10px;  float:right"
+	   alt="seL4 Foundation"/>
+    </a>
+  <p>
+    Our second Annual General Meeting (AGM) 6 April 2022. As our membership now is truly global, covering New Zealand, Australia, China, the Middle East, Central and Western Europe, the US East, Central and West coasts, there is no time that is not in the middle of the night for some members. Hence we will hold the AGM in two sessions:
+    </p>
+    <ul>
+      <li>2022-04-06 07:00–08:30 UTC</li>
+      <li>2022-04-06 23:00 – 2022-04-07 00:30 UTC</li>
+    </ul>
+</div>
+<div class="news-finish">
+</div>
+
+<!----------------------------------------------------------->
 <div class="news-item" id="summit-cfp">
   30 March 2022: The Call for Presentations for the seL4 summit 2022 is out!
 </div>
@@ -151,8 +172,6 @@ Older News: <%=reflist%>
   <p>
     The seL4 Foundation is pleased to welcome <a href="https://de.linkedin.com/in/olivier-engelkes-6393b1a">Olivier Engelkes</a> as Hensoldt Cyber's new representative on the <a href="../Foundation/Board">seL4 Foundation Board</a>.
     </p>
-    <p>
-  </p>
   <p>
       Olivier is  Head of Engineering at HENSOLDT Cyber GmbH, <a href="../Foundation/Membership">premium member</a> of the seL4 Foundation and Munich-based company which develops embedded IT products that meet the highest security requirements, combining an operating system based on verified seL4 with a RISC-V processor that is protected from supply-chain attacks. Olivier replaces Sascha Kegrei&szlig; as HENSOLDT Cyber's representative on the
       <a href="../Foundation/Board">seL4 Foundation Board</a>.
@@ -225,7 +244,7 @@ Older News: <%=reflist%>
   href="mailto:summit@sel4.systems">summit@sel4.systems</a> before 22 February
   2022.
   </strong>
-  <p>
+  </p>
   <p>
   More information <a href="/Foundation/Summit/">here</a>.
   </p>
