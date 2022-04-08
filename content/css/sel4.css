@@ -47,13 +47,13 @@ footer {
 }
 
 @media screen and (max-width:906px) {
-  footer {
-      height: 180px;
-    }
-    content-wrap{
-      padding-bottom: 180px;
-    }
+  #content-wrap{
+    padding-bottom: 180px;
   }
+  footer {
+    height: 180px;
+  }
+}
 
 .jumbotron {
   /*color: #000;
