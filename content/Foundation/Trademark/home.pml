@@ -12,8 +12,10 @@
   in your work, following the usage rules below.
 </p>
 <p>
-  The Linux Foundation Projects (LF Projects, LLC) has applied to register the
-  seL4 trademark in the United States and other countries.
+   The Linux Foundation has registered seL4<sup>&reg;</sup> as a
+  trademark in the United States. Please use &reg;
+  with the first mention of seL4 in all materials.
+  The Linux Foundation Projects (LF Projects, LLC) has also applied to register the seL4 trademark in other countries.
   <!--registered seL4 as a
   trademark in the United States and other countries. Please use &reg;
   with the first mention of seL4 in all materials. --> In addition to the
