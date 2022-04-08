@@ -66,8 +66,8 @@ Older News: <%=reflist%>
 	   alt="seL4"/>
     </a>
     <p>
-    The Linux Foundation has registered seL4<sup>&reg;</sup> as a trademark in the United States and other countries. We encourage the use of the <a href="../Foundation/Trademark/logo.pml" alt="seL4 Logo">seL4<sup>&reg;</sup> name and logo</a>
-  in your work, following the usage rules <a href="../Foundation/Trademark/" alt="seL4 Trademark">here</a>.
+    The Linux Foundation has registered seL4<sup>&reg;</sup> as a trademark in the United States and other countries. We encourage the use of the <a href="../Foundation/Trademark/logo.pml">seL4<sup>&reg;</sup> name and logo</a>
+  in your work, following the usage rules <a href="../Foundation/Trademark/">here</a>.
     </p>
 </div>
 <div class="news-finish">
