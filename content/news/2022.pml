@@ -57,7 +57,7 @@ Older News: <%=reflist%>
 
 <!----------------------------------------------------------->
 <div class="news-item" id="tm-2022">
-  8 April 2022: seL4<sup>&reg;</sup> is officially a registered trademark
+    11 April 2022: The seL4<sup>&reg;</sup> trademark is now registered in the US
 </div>
 <div>
     <a href="../">
