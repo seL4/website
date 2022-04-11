@@ -56,6 +56,25 @@ Older News: <%=reflist%>
 
 
 <!----------------------------------------------------------->
+<div class="news-item" id="tm-2022">
+    11 April 2022: The seL4<sup>&reg;</sup> trademark is now registered in the US
+</div>
+<div>
+    <a href="../">
+      <img src="/images/seL4.svg"
+	   style="width: 20%;  padding-left:10px;  float:right"
+	   alt="seL4"/>
+    </a>
+    <p>
+    The Linux Foundation has registered seL4<sup>&reg;</sup> as a trademark in the United States and other countries. We encourage the use of the <a href="../Foundation/Trademark/logo.pml">seL4<sup>&reg;</sup> name and logo</a>
+  in your work, following the usage rules <a href="../Foundation/Trademark/">here</a>.
+    </p>
+</div>
+<div class="news-finish">
+</div>
+
+
+<!----------------------------------------------------------->
 <div class="news-item" id="agm-2022">
   6 April 2022: Our second annual AGM to be held 6 April 2022
 </div>

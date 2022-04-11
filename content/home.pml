@@ -26,6 +26,11 @@
 
   <div class="news-column news-content">
     <ul>
+    <li>
+        <strong>
+	11 April 2022: The seL4<sup>&reg;</sup> trademark is now registered in the US
+        </strong>
+      </li>
       <li>
         <strong>
 	6 Apr 2022: Our second annual AGM to be held 6 April 2022
@@ -36,12 +41,7 @@
 	30 Mar 2022: The Call for Presentations for the seL4 summit 2022 is out!
         </strong>
       </li>
-      <li>
-        <strong>
-	18 Mar 2022: Meet the Program Committee of the seL4 summit 2022!
-        </strong>
-      </li>
-       <li style="margin-top:0.2em;list-style-type:none">
+      <li style="margin-top:0.2em;list-style-type:none">
 	more...
       </li>
     </ul>

@@ -13,10 +13,8 @@
 </p>
 <p>
    The Linux Foundation has registered seL4<sup>&reg;</sup> as a
-  trademark in the United States and other countries.
-  <!--registered seL4 as a
   trademark in the United States and other countries. Please use &reg;
-  with the first mention of seL4 in all materials. --> In addition to the
+  with the first mention of seL4 in all materials. In addition to the
   guidelines below, the Trademark Usage Guidelines of the LF Projects, LLC,
   available at
   <a href="https://lfprojects.org/policies/trademark-policy/">https://lfprojects.org/policies/trademark-policy/</a>,
