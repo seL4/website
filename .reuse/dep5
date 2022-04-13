@@ -57,7 +57,16 @@ Files: content/*/*.patch
 License: GPL-2.0-only
 Copyright:  2020 seL4 Project a Series of LF Projects, LLC.
 
-Files: content/images/icons/* content/robots.txt content/favicon.ico
+Files:
+  content/images/icons/android*.png
+  content/images/icons/apple*.png
+  content/images/icons/mstile*.png
+  content/images/icons/favicon*.png
+  content/images/icons/favicon.ico
+  content/images/icons/manifest.json
+  content/images/icons/browserconfig.xml
+  content/favicon.ico
+  content/robots.txt
 Copyright: 2020 seL4 Project a Series of LF Projects, LLC.
 License: CC-BY-SA-4.0
 

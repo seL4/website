@@ -311,7 +311,7 @@ else:
 <%=user_content%>
 <div class="divider"></div>
 </div><!-- container -->
-
+</div><!--content-wrap-->
 <footer class="page-footer small pt-3" id="footer"> <!-- footer -->
   <div class="container">
     <!-- for mobile screens -->
@@ -358,7 +358,6 @@ if on_seL4:
 <!-- wrapper -->
 <script src="/js/jquery.min.js"></script>
 <script src="/js/bootstrap.min.js"></script>
-</div><!--content-wrap-->
 </div><!--page-container-->
 </body>
 </html>
