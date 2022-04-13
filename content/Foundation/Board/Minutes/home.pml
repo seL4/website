@@ -37,6 +37,6 @@
 
 <ul>
   <li>
-    <a href="2202-minutes-unconfirmed.pdf">7<sup>th</sup> meeting of 2021-02</a>
+    <a href="2202-minutes-unconfirmed.pdf">7<sup>th</sup> meeting of 2022-02</a>
   </li>
 </ul>
