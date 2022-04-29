@@ -57,7 +57,7 @@ Older News: <%=reflist%>
 
 <!----------------------------------------------------------->
 <div class="news-item" id="summit-venue">
-    29 April 2022: The seL4 Summit 2022 will be in Munich, Germany, on 10-11-12 Oct 2022
+    29 April 2022: The seL4 Summit 2022 will be in Munich, Germany, on 10-12 Oct 2022
 </div>
 <div>
     <a href="../Foundation/Summit">

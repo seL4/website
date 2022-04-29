@@ -7,7 +7,7 @@
   seL4 Summit 2022
 </h1>
 <h4>
-Munich, Germany (hybrid), 10-11-12 Oct 2022
+Munich, Germany (hybrid), 10-12 Oct 2022
 </h4>
 
 
@@ -21,7 +21,7 @@ Munich, Germany (hybrid), 10-11-12 Oct 2022
  <div>
   <ul>
   <li> <div class="highlight">
-    29 Apr 2022: Location & date confirmed: Munich, Germany (hybrid), 10-11-12 Oct 2022
+    29 Apr 2022: Location & date confirmed: Munich, Germany (hybrid), 10-12 Oct 2022
   </div> </li>
   <li> <div class="highlight">
     30 Mar 2022: <a href="./cfp">Call For Presentation</a>, deadline 9th of May 2022
@@ -72,7 +72,7 @@ Munich, Germany (hybrid), 10-11-12 Oct 2022
   <ul>
   <li> Abstracts due: 9th of May 2022</li>
   <li> Notification of decisions: 30th of May 2022 </li>
-  <li> Summit: 10-11-12 October 2022  </li>
+  <li> Summit: 10-12 October 2022  </li>
   </ul>
 
   <h3>

@@ -15,7 +15,7 @@
   <ul>
   <li> Abstracts due: 9th of May 2022</li>
   <li> Notification of decisions: 30th of May 2022 </li>
-  <li> Summit: 10-11-12 October 2022, Munich, Germany (hybrid)  </li>
+  <li> Summit: 10-12 October 2022, Munich, Germany (hybrid)  </li>
   </ul>
 </div>
 
@@ -61,7 +61,7 @@
 
   <p>
 
-  The seL4 summit 2022 will be in Munich, Germany, on 10-11-12 October 2022.
+  The seL4 summit 2022 will be in Munich, Germany, on 10-12 October 2022.
 
   </p>
 
