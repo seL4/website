@@ -56,6 +56,54 @@ Older News: <%=reflist%>
 
 
 <!----------------------------------------------------------->
+<div class="news-item" id="summit-venue">
+    29 April 2022: The seL4 Summit 2022 will be in Munich, Germany, on 10-11-12 Oct 2022
+</div>
+<div>
+    <a href="../Foundation/Summit">
+      <img src="../images/sel4-summit-logo.svg"
+	   style="width: 20%;  padding-left:10px;  float:right"
+	   alt="seL4 Summit 2022" />
+    </a>
+
+    <p>
+    It is our pleasure to confirm that the <a href="../Foundation/Summit">seL4
+    Summit 2022</a> will be in:
+    </p>
+
+    <div class="highlight"><p>Munich, Germany in the week of Oct 10th, 2022</p></div>
+
+    <p>
+
+    It will be hosted by seL4 Foundation member
+    <a href="http://hensoldt-cyber.com/">Hensoldt Cyber</a>.
+    It will be a hybrid in-person/online event.
+    <strong>If you'd like to propose a talk to be delivered
+    remotely, please notify it in the submission.</strong>
+
+    </p>
+
+
+    <p>
+    Remember that you have until Monday 9th of May 2022 to
+    <a href="../Foundation/Summit/cfp">propose a talk</a>.
+    </p>
+
+    <div class="highlight" style="text-align: center">
+    <p>Share your seL4 work </p>
+    <p>Share your seL4 experience </p>
+    <p>Share your seL4 thoughts </p>
+    <p>Share your seL4 questions </p>
+    </div>
+
+
+
+</div>
+<div class="news-finish">
+</div>
+
+
+<!----------------------------------------------------------->
 <div class="news-item" id="tm-2022">
     11 April 2022: The seL4<sup>&reg;</sup> trademark is now registered in the US
 </div>
@@ -79,7 +127,7 @@ Older News: <%=reflist%>
   6 April 2022: Our second annual AGM to be held 6 April 2022
 </div>
 <div>
-    <a href="../Foundation/Summit">
+    <a href="../Foundation/">
       <img src="../images/sel4-foundation-logo.svg"
 	   style="width: 20%;  padding-left:10px;  float:right"
 	   alt="seL4 Foundation"/>
