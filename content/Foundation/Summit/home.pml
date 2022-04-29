@@ -6,6 +6,9 @@
 <h1>
   seL4 Summit 2022
 </h1>
+<h4>
+Munich, Germany (hybrid), 10-12 Oct 2022
+</h4>
 
 
 <div class="highlight">
@@ -13,8 +16,16 @@
   <h3>
    Latest News
   </h3>
+</div>
+
+ <div>
   <ul>
-  <li> 30 Mar 2022: <a href="./cfp">Call For Presentation</a>! </li>
+  <li> <div class="highlight">
+    29 Apr 2022: Location & date confirmed: Munich, Germany (hybrid), 10-12 Oct 2022
+  </div> </li>
+  <li> <div class="highlight">
+    30 Mar 2022: <a href="./cfp">Call For Presentation</a>, deadline 9th of May 2022
+  </div> </li>
   <li> 16 Mar 2022:  Meet the summit 2022 PC members! </li>
   <li> 1 Feb 2022: Call for bids to host the seL4 Summit 2022!</li>
   </ul>
@@ -48,7 +59,9 @@
   </h3>
   <p>
 
-  We are aiming for <strong>Europe, likely Germany</strong>. Exact location to be confirmed soon.
+  The seL4 summit 2022 will be in <strong>Munich, Germany</strong>. It will be a
+  hybrid in-person/online event. If you would like to propose a talk to be
+  delivered remotely, please notify it in the submission.
 
   </p>
 
@@ -59,7 +72,7 @@
   <ul>
   <li> Abstracts due: 9th of May 2022</li>
   <li> Notification of decisions: 30th of May 2022 </li>
-  <li> Summit: aiming for week of 10th of October 2022 (TBC) </li>
+  <li> Summit: 10-12 October 2022  </li>
   </ul>
 
   <h3>
@@ -73,7 +86,9 @@
   Check the <a href="./cfp">CFP</a>.  To propose a talk, send an abstract of
   <strong>one page or less</strong> <strong>by Monday 9th of May 2022</strong>
   to <a title="summit@sel4.systems"
-  href="mailto:summit@sel4.systems">summit@sel4.systems</a>.
+  href="mailto:summit@sel4.systems">summit@sel4.systems</a>.  If you would like
+  to propose a talk to be delivered remotely, please notify it in the
+  submission.
 
   </p>
   </div>
