@@ -14,7 +14,8 @@
    Latest News
   </h3>
   <ul>
-  <li> 30 Mar 2022: <a href="./cfp">Call For Presentation</a>! </li>
+  <li> 29 Apr 2022: Location confirmed for Munich, Germany and dates 10-11-12 Oct 2022
+  <li> 30 Mar 2022: <a href="./cfp">Call For Presentation</a>, deadline 9th of May 2022  </li>
   <li> 16 Mar 2022:  Meet the summit 2022 PC members! </li>
   <li> 1 Feb 2022: Call for bids to host the seL4 Summit 2022!</li>
   </ul>
@@ -48,7 +49,7 @@
   </h3>
   <p>
 
-  We are aiming for <strong>Europe, likely Germany</strong>. Exact location to be confirmed soon.
+  The seL4 summit 2022 will be in  <strong>Munich, Germany</strong>. 
 
   </p>
 
@@ -59,7 +60,7 @@
   <ul>
   <li> Abstracts due: 9th of May 2022</li>
   <li> Notification of decisions: 30th of May 2022 </li>
-  <li> Summit: aiming for week of 10th of October 2022 (TBC) </li>
+  <li> Summit: 10-11-12 October 2022  </li>
   </ul>
 
   <h3>
