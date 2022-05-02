@@ -43,6 +43,10 @@ Files: content/images/summit/*
 Copyright: various
 License: LicenseRef-PhotoLicence
 
+Filets: content/news/*
+Copyright: various
+Licence: LicenseRef-Trademark
+
 Files: content/Foundation/Membership/LOGOS/*
 License: LicenseRef-PhotoLicence
 Copyright: various 2020
