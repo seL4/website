@@ -46,27 +46,27 @@ The next sessions are:
 </p>
 <ul>
   <li>
-    Wed, Apr 6, 7am (UTC), Topics: (open)
-    <ul>
-      <li>Sydney: Wed, Apr 6, 5pm</li>
-      <li>Central Europe: Wed, Apr 6, 9am</li>
-      <li>US Pacific Time: Wed, Apr 6, 12 midnight</li>
-    </ul>
-  </li>
-  <li>
-    Tue, Apr 19, 10pm (UTC), Topics: (open)
-    <ul>
-      <li>Sydney: Wed, Apr 20, 8am</li>
-      <li>Central Europe: Wed, Apr 20, 12 midnight</li>
-      <li>US Pacific Time: Tue, Apr 19, 3pm</li>
-    </ul>
-  </li>
-  <li>
     Wed, May 4, 7am (UTC), Topics: (open)
     <ul>
       <li>Sydney: Wed, May 4, 5pm</li>
       <li>Central Europe: Wed, May 4, 9am</li>
       <li>US Pacific Time: Wed, May 4, 12 midnight</li>
+    </ul>
+  </li>
+  <li>
+    Tue, May 17, 10pm (UTC), Topics: (open)
+    <ul>
+      <li>Sydney: Wed, May 18, 8am</li>
+      <li>Central Europe: Wed, May 18, 12 midnight</li>
+      <li>US Pacific Time: Tue, May 17, 3pm</li>
+    </ul>
+  </li>
+  <li>
+    Wed, Jun 1, 7am (UTC), Topics: (open)
+    <ul>
+      <li>Sydney: Wed, Jun 1, 5pm</li>
+      <li>Central Europe: Wed, Jun 1, 9am</li>
+      <li>US Pacific Time: Wed, Jun 1, 12 midnight</li>
     </ul>
   </li>
 </ul>
