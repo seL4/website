@@ -35,13 +35,13 @@ Files: content/Foundation/Board/*.jpg  content/Foundation/Board/*.png
 Copyright:  2020 seL4 Project a Series of LF Projects, LLC.
 License: LicenseRef-PhotoLicence
 
-Files: content/images/summit/*
+Files: content/images/tsc/*
 Copyright: various
 License: LicenseRef-PhotoLicence
 
-Filets: content/news/*
+Files: content/images/summit/*
 Copyright: various
-Licence: LicenseRef-Trademark
+License: LicenseRef-PhotoLicence
 
 Files: content/Foundation/Membership/LOGOS/*
 License: LicenseRef-PhotoLicence
