@@ -30,22 +30,26 @@
 </p>
 <ul>
   <li>
-    the funding of an on-going support of the community, maintenance of existing versions,
+    The funding of an on-going support of the community, maintenance of existing versions,
     improvements of the infrastructure (in particular the automation of the seL4 verification
     framework), evolution of the kernel, and, importantly, development of the ecosystem.
   </li>
   <li>
-    the funding of big-ticket items that are crucial to our aim of making seL4 ubiquitous.
+    The funding of big-ticket items that are crucial to our aim of making seL4 ubiquitous.
     The biggest of these are:
     <ul>
       <li> <b> Verification of the 64-bit Arm kernel </b>
       </li>
       <li> <b> Verification of the multicore kernel </b>
       </li>
+      <li> <b> Completion of the verification of MCS </b>
+      </li>
     </ul>
     The interest for these items is strong but the investment required
-    is above the pain limit of most single organisation. The foundation
-    provides a vehicle to pool investments to achieves these.
+    is above the pain limit of most single organisations. The foundation
+    provides a vehicle to pool investments to achieve these.
+    <br>
+     These three projects are open for donations, and we have started receiving partial funding to tackle them. If you would like to contribute to this pooled investement, please do so with a donation marked specifically for one of these projects. Please <a href="mailto:foundation@sel4.systems">contact us</a> and we'll assist you through the process.
   </li>
 </ul>
 
