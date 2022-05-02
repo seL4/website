@@ -57,7 +57,7 @@ Older News: <%=reflist%>
 
 <!----------------------------------------------------------->
 <div class="news-item" id="cfp-reminder">
-    2 May 2022: Last call for presentations for the seL4 Summit 2022!
+    2 May 2022: One week left to propose a talk at the seL4 summit 2022!
 </div>
 <p>
 A reminder that you have until Monday 9th of May 2022 to <a href="../Foundation/Summit/cfp">propose a talk</a> for the seL4 Summit 2022.

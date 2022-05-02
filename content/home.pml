@@ -28,7 +28,7 @@
     <ul>
     <li>
       <strong>
-  2 May 2022: Last call for presentations for the seL4 Summit 2022
+  2 May 2022: One week left to propose a talk at the seL4 summit 2022!
       </strong>
     </li>
       <li>
