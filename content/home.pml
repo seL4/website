@@ -26,6 +26,11 @@
 
   <div class="news-column news-content">
     <ul>
+    <li>
+      <strong>
+  2 May 2022: Last call for presentations for the seL4 Summit 2022
+      </strong>
+    </li>
       <li>
         <strong>
 	29 Apr 2022: The seL4 Summit 2022 will be in Munich, Germany, on 10-12 Oct 2022
@@ -34,11 +39,6 @@
       <li>
         <strong>
 	11 Apr 2022: The seL4<sup>&reg;</sup> trademark is now registered in the US
-        </strong>
-      </li>
-      <li>
-        <strong>
-	6 Apr 2022: Our second annual AGM to be held 6 April 2022
         </strong>
       </li>
       <li style="margin-top:0.2em;list-style-type:none">
