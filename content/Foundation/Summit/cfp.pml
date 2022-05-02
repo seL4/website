@@ -15,7 +15,7 @@
   <ul>
   <li> Abstracts due: 9th of May 2022</li>
   <li> Notification of decisions: 30th of May 2022 </li>
-  <li> Summit: aiming for week of 10th of October 2022 (TBC) </li>
+  <li> Summit: 10-12 October 2022, Munich, Germany (hybrid)  </li>
   </ul>
 </div>
 
@@ -26,7 +26,7 @@
   </h3>
   <p>
 
-  The <a href="../">seL4 summit</a> aims at gathering the seL4 community to
+  The <a href="./">seL4 summit</a> aims at gathering the seL4 community to
   <strong>learn</strong>, <strong>share</strong>, and <strong>connect</strong>:
   </p>
   <ul>
@@ -61,9 +61,7 @@
 
   <p>
 
-  The seL4 summit 2022 is planned to happen in October 2022 in Europe (exact
-  time and location to be confirmed, aiming for the week 10-14 October in
-  Munich, Germany), organised by the seL4 Foundation.
+  The seL4 summit 2022 will be in Munich, Germany, on 10-12 October 2022.
 
   </p>
 
@@ -208,7 +206,8 @@ We solicit proposals on any seL4-related topic, in particular in the areas of:
   href="mailto:summit@sel4.systems">summit@sel4.systems</a>. Abstracts and
   nomination paragraphs should indicate why the talk fits in the seL4 summit
   scope. Notifications of accepted presentations will be made by Monday 30th May
-  2022.
+  2022.  <strong> If you would like to propose a talk to be delivered remotely, please
+  notify it in the submission.</strong>
 
   </p>
 

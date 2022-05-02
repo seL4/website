@@ -31,7 +31,6 @@
   <li>
     <a href="211006-minutes-signed.pdf">6<sup>th</sup> meeting of 2021-10-06</a>
   </li>
-
   <li>
     <a href="2202-minutes-signed.pdf">7<sup>th</sup> meeting of 2022-02</a>
   </li>
