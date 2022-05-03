@@ -56,6 +56,18 @@ Older News: <%=reflist%>
 
 
 <!----------------------------------------------------------->
+<div class="news-item" id="cfp-reminder">
+    2 May 2022: One week left to propose a talk at the seL4 summit 2022!
+</div>
+<p>
+A reminder that you have until Monday 9th of May 2022 to <a href="../Foundation/Summit/cfp">propose a talk</a> for the seL4 Summit 2022.
+</p>
+<p>
+    <video width="320" height="240" controls>
+      <source src="sel4-summit-last-call.mp4" type="video/mp4">
+      Your browser does not support the video tag.
+    </video>
+</p>
 <div class="news-item" id="summit-venue">
     29 April 2022: The seL4 Summit 2022 will be in Munich, Germany, on 10-12 Oct 2022
 </div>
