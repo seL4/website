@@ -261,6 +261,11 @@ a.divLink {
   font-size:1.2em;
 }
 
+span.founding-member-name {
+  font-weight: bold;
+  font-size:.8em;
+}
+
 .governing-container {
   display: grid;
   grid-template-columns: 30px auto;

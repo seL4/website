@@ -30,7 +30,7 @@
       <div class="sponsor-name">
 	      HENSOLDT Cyber GmbH
       <br>
-        <strong>Founding member</strong>
+        <span class="founding-member-name">Founding member</span>
       </div>
     </div>
     <div class="sponsor">
@@ -86,7 +86,7 @@
       <div class="sponsor-name">
 	      UNSW Sydney
         <br>
-        <strong>Founding member</strong>
+        <span class="founding-member-name">Founding member</span>
       </div>
     </div>
   </div>
@@ -123,7 +123,7 @@
       <div class="sponsor-name">
         Cog Systems Inc
         <br>
-        <strong>Founding member</strong>
+        <span class="founding-member-name">Founding member</span>
       </div>
     </div>
     <div class="sponsor">
@@ -135,7 +135,7 @@
       <div class="sponsor-name">
         DornerWorks Ltd
         <br>
-        <strong>Founding member</strong>
+        <span class="founding-member-name">Founding member</span>
       </div>
     </div>
     <div class="sponsor">
@@ -147,7 +147,7 @@
       <div class="sponsor-name">
         Ghost Locomotion Inc
         <br>
-        <strong>Founding member</strong>
+        <span class="founding-member-name">Founding member</span>
       </div>
     </div>
     <div class="sponsor">
