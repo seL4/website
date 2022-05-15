@@ -46,14 +46,6 @@ The next sessions are:
 </p>
 <ul>
   <li>
-    Wed, May 4, 7am (UTC), Topics: (open)
-    <ul>
-      <li>Sydney: Wed, May 4, 5pm</li>
-      <li>Central Europe: Wed, May 4, 9am</li>
-      <li>US Pacific Time: Wed, May 4, 12 midnight</li>
-    </ul>
-  </li>
-  <li>
     Tue, May 17, 10pm (UTC), Topics: (open)
     <ul>
       <li>Sydney: Wed, May 18, 8am</li>
@@ -69,6 +61,15 @@ The next sessions are:
       <li>US Pacific Time: Wed, Jun 1, 12 midnight</li>
     </ul>
   </li>
+  <li>
+    Tue, Jun 14, 10pm (UTC), Topics: (open)
+    <ul>
+      <li>Sydney: Wed, Jun 15, 8am</li>
+      <li>Central Europe: Wed, Jun 15, midnight</li>
+      <li>US Pacific Time: Tue, Jun 14, 3pm</li>
+    </ul>
+  </li>
+
 </ul>
 <p>
 RFC (request for comments) proposing new features for seL4
