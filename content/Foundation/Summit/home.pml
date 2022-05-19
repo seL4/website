@@ -37,13 +37,13 @@ Munich, Germany (hybrid), 10-12 Oct 2022
   About
   </h3>
   <p>
-   The seL4 Summit 2022 is be the fourth edition of the international summit on
+   The seL4 Summit 2022 is the fourth edition of the international summit on
    the <a href="../../About">seL4 microkernel</a>, the world's most highly
    assured OS kernel.
   </p>
   <p>
    The first three seL4 Summits were organised by the <a
-   href="https://trustedcomputingcoe.org/summits/">Trusted Computed Center of
+   href="https://trustedcomputingcoe.org/summits/">Trusted Computing Center of
    Excellence</a>, and were hosted in the US.
   </p>
   <p>
