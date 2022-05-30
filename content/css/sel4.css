@@ -383,6 +383,20 @@ span.founding-member-name {
     margin-bottom: 60px;
 }
 
+table.endorsement-table {
+    margin-left: 20px;
+}
+
+.endorsement-table tr{
+    margin-top: 10px;
+}
+
+.endorsement-table td{
+    padding: 10px;
+    padding-top: 30px;
+    vertical-align: top;
+}
+
 table.data-table {
     border-collapse: collapse;
     width: 100%;
