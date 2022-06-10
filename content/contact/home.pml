@@ -46,14 +46,6 @@ The next sessions are:
 </p>
 <ul>
   <li>
-    Wed, Jun 1, 7am (UTC), Topics: (open)
-    <ul>
-      <li>Sydney: Wed, Jun 1, 5pm</li>
-      <li>Central Europe: Wed, Jun 1, 9am</li>
-      <li>US Pacific Time: Wed, Jun 1, 12 midnight</li>
-    </ul>
-  </li>
-  <li>
     Tue, Jun 14, 10pm (UTC), Topics: (open)
     <ul>
       <li>Sydney: Wed, Jun 15, 8am</li>
@@ -67,6 +59,14 @@ The next sessions are:
       <li>Sydney: Wed, Jun 29, 5pm</li>
       <li>Central Europe: Wed, Jun 29, 9am</li>
       <li>US Pacific Time: Wed, Jun 29, 12 midnight</li>
+    </ul>
+  </li>
+  <li>
+    Tue, Jul 12, 10pm (UTC), Topics: (open)
+    <ul>
+      <li>Sydney: Wed, Jul 13, 8am</li>
+      <li>Central Europe: Wed, Jul 13, midnight</li>
+      <li>US Pacific Time: Tue, Jul 12, 3pm</li>
     </ul>
   </li>
 </ul>
