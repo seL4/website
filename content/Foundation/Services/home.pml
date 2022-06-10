@@ -38,9 +38,9 @@
          base for your products.
         <br/>
         <br>
-	      DornerWorks Ltd is a trusted services provider for:
+	      DornerWorks Ltd is an Endorsed Services provider for:
         <ul>
-          <li>systems: kernel architecture port</li>
+          <li>systems:  kernel platform port</li>
           <li>systems: user-level OS (VM)</li>
           <li>systems: application</li>
         </ul>
@@ -90,9 +90,8 @@
         all applications effectively and securely.
 	<br/>
   <br>
-	Cog Systems Inc is a Trusted Service Provider for:
+	Cog Systems Inc is an Endorsed Service Provider for:
         <ul>
-          <li>systems: kernel architecture port</li>
           <li>systems: user-level OS (VM)</li>
           <li>systems: applications</li>
         </ul>
@@ -120,10 +119,10 @@
 
         <br/>
         <br>
-	HENSOLDT Cyber GmbH is a Trusted Service Provider for seL4-based systems in operating systems:
+	HENSOLDT Cyber GmbH is an Endorsed Service Provider for seL4-based systems in operating systems:
         <ul>
-          <li>systems: kernel architecture port</li>
-          <li>systems: user-level OS (TRENTOS and CAmkES)</li>
+          <li>systems: kernel platform port</li>
+          <li>systems: user-level OS (TRENTOS, CAmkES)</li>
           <li>systems: applications</li>
           <li>verification: user-level OS</li>
           <li>verification: applications</li>
@@ -154,10 +153,10 @@
         is available.
     <br>
     <br>
-    Trustworthy Systems specialises is a trusted service proider for:
+    Trustworthy Systems specialises is an Endorsed Service proider for:
     <ul>
       <li>systems: kernel</li>
-      <li>systems: kernel port architecture</li>
+      <li>systems: kernel platform port</li>
       <li>systems: user-level OS</li>
       <li>verification: user-level OS (seL4CP)</li>
     </ul>
@@ -198,7 +197,7 @@
 	Proofcraft is a Trusted	Service Provider for:
     <ul>
       <li>systems: kernel</li>
-      <li>systems: kernel port architecture</li>
+      <li>systems: kernel platform port</li>
       <li>verification: kernel</li>
       <li>verification: user-level OS</li>
       <li>verification: applications</li>
@@ -231,14 +230,14 @@
 
         <br/>
         <br>
-	Kry10 is a Trusted Service Provider for:
+	Kry10 is an Endorsed Service Provider for:
   <ul>
       <li>systems: kernel</li>
-      <li>systems: kernel port architecture</li>
-      <li>systems: user-level OS</li>
+      <li>systems: kernel platform port</li>
+      <li>systems: user-level OS (Kry10 OS, CAmkES)</li>
       <li>systems: applications</li>
       <li>verification: kernel</li>
-      <li>verification: user-level OS (seL4CP)</li>
+      <li>verification: user-level OS</li>
       <li>verification: applications</li>
     </ul>
   For further information, visit <a href="https://kry10.com">Kry10</a> or <a href="https://kry10.com/contact">contact</a> us.
