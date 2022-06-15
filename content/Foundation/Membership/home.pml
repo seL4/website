@@ -220,7 +220,7 @@
         </a>
       </div>
       <div class="sponsor-name">
-      	Technology Innovation Institute
+        Technology Innovation Institute
       </div>
     </div>
     <div class="sponsor">
@@ -230,7 +230,7 @@
         </a>
       </div>
        <div class="sponsor-name">
-	      Xcalibyte
+          Xcalibyte
       </div>
     </div>
     <div class="sponsor">
@@ -240,10 +240,9 @@
         </a>
       </div>
       <div class="sponsor-name">
-      	  LatticeX
+          LatticeX
       </div>
     </div>
-
   </div>
 
   <h2>Associate Members</h2>

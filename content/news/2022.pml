@@ -59,14 +59,12 @@ Older News: <%=reflist%>
   15 June 2022: LatticeX joins the seL4 Foundation
 </div>
 <div>
-
   <p>
     <a href="https://latticex.foundation/home">
       <img src="/Foundation/Membership/LOGOS/latticex.png"
 	   style="width: 20%;  padding-left:10px;  float:right"
 	   alt="LatticeX" />
     </a>
-
     The seL4 Foundation is pleased to welcome <a href="https://latticex.foundation/home">Lattice X</a>.
     <br>
     <br>
@@ -76,15 +74,15 @@ Older News: <%=reflist%>
     LatticeX is the vision of large-scale distributed network supporting the expansive economy activities and broader business applications where users can recognize the sovereignty and privacy of their own data, and leverage the ecosystem of sophisticated computing technologies to collaboratively unearth the value of data and benefit from data-value transactions throughout.
     <br>
     <br>
-
     "We are so glad to join seL4 foundation. Hopefully, we can specialise seL4 technology into the web 3.0 domain from cross chain bridge node OS to hardware wallet OS for improving their security and stability."
     </p>
     <p>
   </p>
-
 </div>
 <div class="news-finish">
 </div>
+
+
 <!----------------------------------------------------------->
 <div class="news-item" id="cfp-reminder">
     2 May 2022: One week left to propose a talk at the seL4 summit 2022!
