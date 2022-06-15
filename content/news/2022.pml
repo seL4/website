@@ -74,7 +74,7 @@ Older News: <%=reflist%>
     LatticeX is the vision of large-scale distributed network supporting the expansive economy activities and broader business applications where users can recognize the sovereignty and privacy of their own data, and leverage the ecosystem of sophisticated computing technologies to collaboratively unearth the value of data and benefit from data-value transactions throughout.
     <br>
     <br>
-    Yuning Liang of the LatticeX Foundation said: "We are so glad to join seL4 foundation. Hopefully, we can specialise seL4 technology into the web 3.0 domain from cross chain bridge node OS to hardware wallet OS for improving their security and stability."
+    Yuning Liang, LatticeX Foundation Security Advisor said: "We are so glad to join seL4 foundation. Hopefully, we can specialise seL4 technology into the web 3.0 domain from cross chain bridge node OS to hardware wallet OS for improving their security and stability."
     </p>
     <p>
   </p>
