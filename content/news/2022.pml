@@ -55,7 +55,7 @@ Older News: <%=reflist%>
 -->
 
 
-<div class="news-item" id="member-ncsc">
+<div class="news-item" id="member-latticex">
   15 June 2022: LatticeX joins the seL4 Foundation
 </div>
 <div>
