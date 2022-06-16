@@ -28,7 +28,7 @@
     <ul>
      <li>
         <strong>
-          15 June 2022: LatticeX joins the seL4 Foundation
+          17 June 2022: LatticeX joins the seL4 Foundation
         </strong>
       </li>
       <li>
