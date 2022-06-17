@@ -7,7 +7,7 @@
   HENSOLDT Cyber GmbH
 </h1>
 <h3>
-A <a href="home.pml">Trusted Service Provider</a> for seL4-based systems
+An Endorsed Service Provider</a> for seL4-based systems
 </h3>
 <div>
 
@@ -30,14 +30,18 @@ A <a href="home.pml">Trusted Service Provider</a> for seL4-based systems
       customers by guiding them with our seL4 experience and improving
       their development time by advising them on the correct
       application of the seL4 technologies.<br>
-
-	<span class=emph>HENSOLDT Cyber GmbH has received <em>interim endorsement</em> as a Trusted
-	Service Provider for seL4-based systems and for our training
-	offering for seL4. Our TRENTOS operating system has received
-	interim endorsement as a seL4 product as well.</span>
-	<ul>
-	  <li> <a href="http://hensoldt-cyber.com/">Home page</a></li>
-	</ul>
+    <ul>
+	    <li> <a href="http://hensoldt-cyber.com/">Home page</a></li>
+	  </ul>
+    HENSOLDT Cyber GmbH is an Endorsed Service Provider for seL4-based systems in operating systems:
+    <ul>
+      <li>systems: kernel platform port</li>
+      <li>systems: user-level OS (TRENTOS, CAmkES)</li>
+      <li>systems: applications</li>
+      <li>verification: user-level OS</li>
+      <li>verification: applications</li>
+    </ul>
+    Additionally, the seL4 Foundation assessed and endorsed HENSOLDT Cyber GmbH's TRENTOS training and product.
       </td>
     </tr>
   </table>

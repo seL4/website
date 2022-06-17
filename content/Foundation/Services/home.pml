@@ -15,13 +15,27 @@
     services around seL4.
   </p>
   <p>
-    The Foundation is working with members on establishing endorsement
-    schemes for services. The endorsement indicates that a particular service provider has the skills and experience to provide high-quality services to adopters of seL4.
+    The type of services that the member has expertise on and is being endorsed for, are described in detail, and taken from a template list of services, namely:
+  </p>
+  <ul>
+    <li>systems: kernel</li>
+    <li>systems: kernel platform ports</li>
+    <li>systems: user-level OS</li>
+    <li>systems: applications</li>
+    <li>verification: kernel</li>
+    <li>verification: user-level OS</li>
+    <li>verification: applications</li>
+  </ul>
+  <p>
+    Endorsement in one of the category above means that the member has one or multiple people in-house who have that expertise and have already contributed in this area. This is reviewed annually.
   </p>
   <p>
-    The endorsement scheme is open to all members of the seL4 Foundation, and is reviewed annually.
+    Each category can have qualifiers/examples, which can be suggested by the member, eg "user-level OS (VM)” or “user-level OS (CAMkES).”
   </p>
-  <h2>Trusted Service Providers</h2>
+  <p>
+    The endorsement of services is limited to members and provided for free.
+  </p>
+  <h2>Endorsed Service Providers</h2>
   <table class="endorsement-table">
     <tr>
       <td>
@@ -38,7 +52,7 @@
          base for your products.
         <br/>
         <br>
-	      DornerWorks Ltd is an Endorsed Services provider for:
+	      DornerWorks Ltd is an Endorsed Services Provider for:
         <ul>
           <li>systems:  kernel platform port</li>
           <li>systems: user-level OS (VM)</li>

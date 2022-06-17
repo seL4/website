@@ -7,7 +7,7 @@
   Cog
 </h1>
 <h3>
-A <a href="home.pml">Trusted Service Provider</a> for seL4-based systems
+An Endorsed Service Provider for seL4-based systems
 </h3>
 <div>
 
@@ -45,11 +45,15 @@ A <a href="home.pml">Trusted Service Provider</a> for seL4-based systems
       available for the IoT market with the flexibility to run all
       applications effectively and securely.<br>
 
-	<span class=emph>Cog Systems Inc has received <em>interim endorsement</em> as a Trusted
-	Service Provider for seL4-based systems.</span>
 	<ul>
 	  <li><a href="https://cog.systems">Home page</a></li>
 	</ul>
+  Cog Systems Inc is an Endorsed Service Provider for:
+        <ul>
+          <li>systems: user-level OS (VM)</li>
+          <li>systems: applications</li>
+        </ul>
+
       </td>
     </tr>
   </table>

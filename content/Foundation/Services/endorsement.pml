@@ -3,6 +3,8 @@
     Copyright 2020 seL4 Project a Series of LF Projects, LLC.
     SPDX-License-Identifier: CC-BY-SA-4.0
 -->
+
+<!-- delete this page
 <h1>
   Process and guidelines for obtaining interim endorsement from the Foundation
 </h1>
@@ -169,3 +171,4 @@
   </ul>
 
 </div>
+-->

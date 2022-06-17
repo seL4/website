@@ -7,7 +7,7 @@
   DornerWorks
 </h1>
 <h3>
-A <a href="home.pml">Trusted Service Provider</a> for seL4-based systems
+An Endorsed Service Provider for seL4-based systems
 </h3>
 
 <div>
@@ -28,50 +28,41 @@ A <a href="home.pml">Trusted Service Provider</a> for seL4-based systems
          development. DornerWorks, a founding member of the seL4
          Foundation, can accelerate integration of seL4 as the trusted
          software base for your products.
-
         <br/>
-	<span class=emph>DornerWorks Ltd has received <em>interim endorsement</em> as a Trusted
-	Service Provider for seL4-based systems.</span>
-	<ul>
-	  <li><a href="https://DornerWorks.com">https://DornerWorks.com</a></li>
+  <ul>
+	  <li><a href="https://DornerWorks.com">Home page</a></li>
 	  <li><a href="https://dornerworks.com/solutions/embedded-virtualization/sel4-microkernel/">
 	         DornerWorks seL4 Microkernel Engineering Services</a></li>
 	</ul>
+  DornerWorks Ltd is an Endorsed Services Provider for:
+  <ul>
+    <li>systems:  kernel platform port</li>
+    <li>systems: user-level OS (VM)</li>
+    <li>systems: application</li>
+  </ul>
       </td>
     </tr>
   </table>
 
-<h2> Services</h2>
+<h2>DornerWorks Ltd Services</h2>
 
 <ul>
-<li>
-  seL4 Microkernel
+  <li>seL4 Microkernel</li>
   <ul>
-  <li> Configuration, integration, customization, and system optimization
-  </li>
+    <li>Configuration, integration, customization, and system optimization</li>
   </ul>
-</li>
-<li>
-  Guest OS and hardware porting
-</li>
-<li>
-  Virtualization and hypervisor distributions
-</li>
-<li>
-  FPGA platforms
+  <li>Guest OS and hardware porting</li>
+  <li>Virtualization and hypervisor distributions</li>
+  <li>FPGA platforms</li>
   <ul>
-  <li> Hardware based acceleration </li>
-  <li> FPGA IP </li>
-  <li> High-speed video</li>
-  <li> DSP </li>
-  <li> Synchronized networking </li>
+    <li>Hardware based acceleration</li>
+    <li>FPGA IP</li>
+    <li>High-speed video</li>
+    <li>DSP</li>
+    <li>Synchronized networking</li>
   </ul>
-<li>
-  Connected products for IoT
-</li>
-<li>
-  Medical device product development
-</li>
+  <li>Connected products for IoT</li>
+  <li>Medical device product development</li>
 </ul>
 
 <h2> Industries </h2>
