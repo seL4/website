@@ -48,21 +48,25 @@ An Endorsed Service Provider for seL4-based systems
 
 <ul>
   <li>seL4 Microkernel</li>
-  <ul>
-    <li>Configuration, integration, customization, and system optimization</li>
-  </ul>
+    <li class="none">
+      <ul>
+        <li>Configuration, integration, customization, and system optimization</li>
+      </ul>
+    </li>
   <li>Guest OS and hardware porting</li>
   <li>Virtualization and hypervisor distributions</li>
   <li>FPGA platforms</li>
-  <ul>
-    <li>Hardware based acceleration</li>
-    <li>FPGA IP</li>
-    <li>High-speed video</li>
-    <li>DSP</li>
-    <li>Synchronized networking</li>
-  </ul>
-    <li>Connected products for IoT</li>
-    <li>Medical device product development</li>
+  <li class="none">
+    <ul>
+      <li>Hardware based acceleration</li>
+      <li>FPGA IP</li>
+      <li>High-speed video</li>
+      <li>DSP</li>
+      <li>Synchronized networking</li>
+    </ul>
+  </li>
+  <li>Connected products for IoT</li>
+  <li>Medical device product development</li>
 </ul>
 
 <h2> Industries </h2>
