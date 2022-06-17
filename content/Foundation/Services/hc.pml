@@ -7,7 +7,7 @@
   HENSOLDT Cyber GmbH
 </h1>
 <h3>
-An Endorsed Service Provider</a> for seL4-based systems
+An Endorsed Service Provider for seL4-based systems
 </h3>
 <div>
 

@@ -216,7 +216,7 @@
       <li>verification: user-level OS</li>
       <li>verification: applications</li>
     </ul>
-  For further information, visit <a href="https://proofcraft.systems">Proofcraft</a></li>
+  For further information, visit <a href="https://proofcraft.systems">Proofcraft</a>
 	  or email <a title="contact@proofcraft.systems"
               href="mailto:contact@proofcraft.systems">contact@proofcraft.systems</a>.
       </td>
