@@ -61,8 +61,9 @@ An Endorsed Service Provider for seL4-based systems
     <li>DSP</li>
     <li>Synchronized networking</li>
   </ul>
-  <li>Connected products for IoT</li>
-  <li>Medical device product development</li>
+    <li>Connected products for IoT</li>
+    <li>Medical device product development</li>
+  </ul>
 </ul>
 
 <h2> Industries </h2>
