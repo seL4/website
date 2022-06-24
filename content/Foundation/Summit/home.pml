@@ -72,11 +72,11 @@ Munich, Germany (hybrid), 10-12 Oct 2022
     Program
   </h3>
 
-  <p>
   <div class="highlight">
-    The summit program <a href="program.pml">Program</a> is now available <mark> make news item]</mark>.
-  </div>
+  <p>
+    The summit program <a href="program.pml">Program</a> is now available <mark>[make news item]</mark>.
   </p>
+  </div>
 
   <h3>
    Important Dates:

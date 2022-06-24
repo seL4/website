@@ -35,7 +35,7 @@ Munich, Germany (hybrid), 10-12 Oct 2022
     <th colspan="2">Day 2&emsp;11 October 2022</th>
   </tr>
   <tr><td>9:00 - 9:50</td><td><strong>Keynote: Kry10 Secure Platform</strong><br>Boyd Multerer, Kry10</td></tr>
-  <tr><td>9:50 - 10:00</td><td><emph>(videos and/or prez of summit 23)</emph></td></tr>
+  <tr><td>9:50 - 10:00</td><td><em>(videos and/or prez of summit 23)</em></td></tr>
   <tr><td>10:15 - 10:45</td><td><strong>seL4 and BEAM: a match made in Erlang</strong><br>Ihor Kuz, Kry10</td></tr>
   <tr><td>10:45 - 11:15</td><td><strong>Security framework for mixed-critical use-cases</strong><br>Jorge Pereira</td></tr>
   <tr><td>11:15 - 11:45</td><td><strong>Rust support in seL4 userspace: Present and future lightning talk + discussion</strong><br>Nick Spinale</td></tr>
@@ -47,21 +47,21 @@ Munich, Germany (hybrid), 10-12 Oct 2022
   <tr><td>15:30 - 15:45</td><td><strong>Safety-critical Voice Communication System (MCS, SMP, VM)</strong><br>Indan Zupanic, MEP</td></tr>
   <tr><td>15:45 - 16:00</td><td><strong>Make seL4 an ASIL-D Certified System</strong><br>Yuning Liang, Xcalibyte</td></tr>
   <tr><td>16:00 - 16:15</td><td><strong>VM Composer teaser (TBC)</strong><br>Robbie VanVossen, DornerWorks</td></tr>
-  <tr><td>16:15 - 17:00</td><td><strong>Funding agencies: priorities and vision</td></tr>
+  <tr><td>16:15 - 17:00</td><td><strong>Funding agencies: priorities and vision</strong></td></tr>
   <tr>
     <th colspan="2">Day 3&emsp;12 October 2022</th>
   </tr>
   <tr><td>9:00 - 9:45</td><td><strong>Overview: seL4 principles, abstractions and use</strong><br>Gernot Heiser, seL4 Foundation</td></tr>
   <tr><td>9:45 - 10:00</td><td><strong>Overview: what's verified, what's not, and what does it mean?</strong><br>June Andronick, seL4 Foundation</td></tr>
   <tr><td>10:00 - 10:45</td><td><strong>Overview: seL4 GitHub tests</strong><br>Gerwin Klein, seL4 Foundation</td></tr>
-  <tr><td>11:00 - 11:15</td><td><strong>Discussion teaser, suggest BoFs</td></tr>
+  <tr><td>11:00 - 11:15</td><td><strong>Discussion teaser, suggest BoFs</strong></td></tr>
   <tr><td>Room 1<br>11:15 - 12:00</td><td><strong>seL4 Mainlining: Experiences, Challenges, and Solutions</strong><br>Robbie VanVossen & Chris Guikema, DornerWorks</td></tr>
   <tr><td>Room 2<br>11:15 - 12:00</td><td><strong>BoF</strong></td></tr>
   <tr><td>Room 1<br>12:45 - 13:30</td><td><strong>Lightning talk+ discussion: seL4 Microkernel for virtualization use-cases “The importance of a standard VMM”</strong><br>Everton de Matos, TII+Cog</td></tr>
   <tr><td>Room 2<br>12:45 - 13:30</td><td><strong>BoF</strong></td></tr>
   <tr><td>Room 1<br>13:30 - 14:15</td><td><strong>Lightening talk+ discussion:Improving embedded DevOps with seL4 VMM</strong><br>Robbie VanVossen, DornerWorks"</td></tr>
   <tr><td>Room 2<br>13:30 - 14:15</td><td><strong>BoF</strong></td></tr>
-  <tr><td>Room 1<br>14:15 - 15:00</td><td><strong>Lightening talk+ discussion: teaching, led by Hensoldt Cyber</td></tr>
+  <tr><td>Room 1<br>14:15 - 15:00</td><td><strong>Lightening talk+ discussion: teaching, led by Hensoldt Cyber</strong></td></tr>
   <tr><td>Room 2<br>14:15 - 15:00</td><td><strong>BoF</strong></td></tr>
   <tr><td>15:15 - 16:00</td><td><strong>BoFs Report Back</strong></td></tr>
   <tr><td>16:00 - 16:15</td><td><strong>Training overview/teasers</strong></td></tr>
