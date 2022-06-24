@@ -422,3 +422,25 @@ td.data-mean {
 td.data-stddev {
   padding: 0.8ex 1.5ex 0.8ex 1ex;
 }
+
+table.summit-talks {
+  border-collapse: collapse;
+  width: 100%;
+}
+
+#summit-talks td, #summit-talks th {
+  border: 1px solid #ddd;
+  padding: 8px;
+}
+
+#summit-talks tr:nth-child(even){background-color: #f2f2f2;}
+
+#summit-talks tr:hover {background-color: #ddd;}
+
+#summit-talks th {
+  padding-top: 12px;
+  padding-bottom: 12px;
+  text-align: left;
+  background-color: #96CA4F;
+  color: white;
+}

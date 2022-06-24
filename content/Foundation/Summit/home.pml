@@ -21,11 +21,14 @@ Munich, Germany (hybrid), 10-12 Oct 2022
  <div>
   <ul>
   <li> <div class="highlight">
+    24 Jun 2022: Program confirmed!
+  </div> </li>
+  <li>
     29 Apr 2022: Location & date confirmed: Munich, Germany (hybrid), 10-12 Oct 2022
-  </div> </li>
-  <li> <div class="highlight">
+  </li>
+  <li>
     30 Mar 2022: <a href="./cfp">Call For Presentation</a>, deadline 9th of May 2022
-  </div> </li>
+  </li>
   <li> 16 Mar 2022:  Meet the summit 2022 PC members! </li>
   <li> 1 Feb 2022: Call for bids to host the seL4 Summit 2022!</li>
   </ul>
@@ -65,6 +68,15 @@ Munich, Germany (hybrid), 10-12 Oct 2022
 
   </p>
 
+  <h3>
+    Program
+  </h3>
+
+  <p>
+  <div class="highlight">
+    The summit program <a href="program.pml">Program</a> is now available <mark> make news item]</mark>.
+  </div>
+  </p>
 
   <h3>
    Important Dates:
@@ -79,8 +91,6 @@ Munich, Germany (hybrid), 10-12 Oct 2022
    Call for Presentations
   </h3>
 
-
-  <div class="highlight">
   <p>
 
   Check the <a href="./cfp">CFP</a>.  To propose a talk, send an abstract of
@@ -91,7 +101,6 @@ Munich, Germany (hybrid), 10-12 Oct 2022
   submission.
 
   </p>
-  </div>
 
   <h3>
    Principles
