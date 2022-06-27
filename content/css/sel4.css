@@ -433,7 +433,7 @@ table.summit-talks {
   padding: 8px;
 }
 
-#summit-talks tr:nth-child(even){background-color: #f2f2f2;}
+td.break {background-color: #D6DBE4;}
 
 #summit-talks tr:hover {background-color: #ddd;}
 
