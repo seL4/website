@@ -55,7 +55,7 @@ Older News: <%=reflist%>
 -->
 
 <!----------------------------------------------------------->
-<div class="news-item" id="cfp-reminder">
+<div class="news-item" id="program-online">
     30 June 2022: The seL4 summit Program is available!
 </div>
 <div>
