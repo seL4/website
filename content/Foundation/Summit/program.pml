@@ -22,14 +22,16 @@ All times are local time in Munich, Germany (UTC+2).
     <th colspan="3">Day 1&emsp;10 October 2022</th>
   </tr>
   <tr><td>9:00 - 9:10</td> <td>Announcements</td>  <td><em>Welcome</em></td></tr>
-  <tr><td>9:10 - 10:00</td><td>Keynote</td> <td><strong>seL4 research</strong><br>Gernot Heiser, UNSW</td></tr>
+  <tr><td>9:10 - 10:00</td><td>Keynote</td> <td><strong>seL4 research update</strong><br>Gernot Heiser, UNSW</td></tr>
   <tr><td class="break" colspan="3">Break</td></tr>
   <tr><td>10:15 - 10:45</td><td>Talk</td><td><strong>Verification Roadmap</strong><br>Rafal Kolanski, Gerwin Klein & June Andronick, Proofcraft</td></tr>
   <tr><td>10:45 - 11:15</td><td>Talk</td><td><strong>Explaining the seL4 integrity theorems</strong><br>Matthew Brecknell, Kry10</td></tr>
   <tr><td>11:15 - 11:45</td><td>Discussion</td><td><strong>AMA (Ask Me Anything)</strong> with the Foundation TSC</td></tr>
   <tr><td class="break" colspan="3">Break</td></tr>
-  <tr><td>12:45 - 13:15</td><td>Talk</td><td><strong> The seL4 Core Platform (seL4CP)</strong><br>UNSW</td></tr>
-  <tr><td>13:15 - 13:45</td><td>Talk</td><td><strong>The seL4 Device Driver Framework (sDDF)</strong><br>UNSW</td></tr>
+  <tr><td>12:45 - 13:15</td><td>Talk</td><td><strong> The seL4 Core
+  Platform (seL4CP)</strong><br>TBD, UNSW</td></tr>
+  <tr><td>13:15 - 13:45</td><td>Talk</td><td><strong>The seL4 Device
+  Driver Framework (sDDF)</strong><br>Lucy Parker, UNSW</td></tr>
   <tr><td>13:45 - 14:30</td><td>Talk & Discussion</td><td><strong>Multiprocessing on seL4 with verified kernels</strong><br>Kent McLeod, Kry10</td></tr>
   <tr><td class="break" colspan="3">Break</td></tr>
   <tr><td>15:00 - 15:30</td><td>Talk</td><td><strong>Using QEMU to extend seL4 VirtIO support</strong><br>Hannu Lyytinen & Markku Ahvenjärvi, TII</td></tr>
@@ -91,7 +93,8 @@ All times are local time in Munich, Germany (UTC+2).
   <tr><td>10:15 - 10:45</td><td>Bootcamp</td><td><strong>CAMkES</strong><br>Sebastian Eckl, Hensoldt Cyber</td></tr>
   <tr><td>10:45 - 12:00</td><td>Bootcamp</td><td><strong>TRENTOS</strong><br>Sebastian Eckl, Hensoldt Cyber</td></tr>
   <tr><td class="break" colspan="3">Break</td></tr>
-  <tr><td>12:45 - 14:30</td><td>Bootcamp</td><td><strong>The seL4 Core Platform (seL4CP)</strong><br>UNSW</td></tr>
+  <tr><td>12:45 - 14:30</td><td>Bootcamp</td><td><strong>The seL4 Core
+  Platform (seL4CP)</strong><br>TBD, UNSW</td></tr>
   <tr><td>14:30 - 15:15</td><td>Bootcamp</td><td><strong>VM Composer: The easy button for virtualized seL4-based systems</strong><br> Chris Guikema & Robbie VanVossen, DornerWorks</td></tr>
   <tr><td class="break" colspan="3">Break</td></tr>
   <tr><td>15:30 - 16:45</td><td>Bootcamp</td><td><strong>BriefCASE Tutorial</strong><br>Darren Cofer, Isaac Amundson (Collins Aerospace)</td></tr>
