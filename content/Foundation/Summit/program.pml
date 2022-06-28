@@ -64,22 +64,18 @@ All times are local time in Munich, Germany (UTC+2).
   <tr><td>10:00 - 10:45</td><td>Plenary</td><td><strong>Overview: seL4 GitHub tests</strong><br>Gerwin Klein, seL4 Foundation</td></tr>
   <tr><td>11:00 - 11:15</td><td>Announcements</td><td><em>Discussion teaser and suggestions for Birds of a Feather</em></td></tr>
   <tr><td class="break" colspan="3">Break</td></tr>
-
-
   <tr><td rowspan="2">11:15 - 12:00</td>
-      <td>Room 1:<br> Talk & Discussion</td><td><strong>seL4 Mainlining: Experiences, Challenges, and Solutions</strong><br>Robbie VanVossen & Chris Guikema, DornerWorks</td></tr>
+      <td>Room 1:<br> Talk & Discussion</td><td><strong>seL4 Mainlining: Experiences, Challenges, and Solutions</strong><br>Robbie VanVossen & Chris Guikema, DornerWorks</td>
       <td>Room 2:<br> BoF</td><td><strong>Birds of a Feather of a topic to be suggested</strong></td></tr>
-
   <tr><td class="break" colspan="3">Break</td></tr>
   <tr><td rowspan="2">12:45 - 13:30</td>
-      <td>Room 1:<br> Talk & Discussion</td><td><strong>seL4 Microkernel for virtualization use-cases “The importance of a standard VMM”</strong><br>Everton de Matos, TII+Cog</td></tr>
+      <td>Room 1:<br> Talk & Discussion</td><td><strong>seL4 Microkernel for virtualization use-cases “The importance of a standard VMM”</strong><br>Everton de Matos, TII+Cog</td>
       <td>Room 2:<br>BoF</td><td><strong>Birds of a Feather of a topic to be suggested</strong></td></tr>
-
   <tr><td rowspan="2">13:30 - 14:15</td>
-      <td>Room 1:<br> Talk & Discussion</td><td><strong>Improving embedded DevOps with seL4 VMM</strong><br>Robbie VanVossen, DornerWorks"</td></tr>
+      <td>Room 1:<br> Talk & Discussion</td><td><strong>Improving embedded DevOps with seL4 VMM</strong><br>Robbie VanVossen, DornerWorks"</td>
       <td>Room 2:<br> BoF</td><td><strong>Birds of a Feather of a topic to be suggested</strong></td></tr>
   <tr><td rowspan="2">14:15 - 15:00</td>
-      <td>Room 1:<br> Talk & Discussion</td><td><strong>Experience teaching seL4</strong><br>Hensoldt Cyber</td></tr>
+      <td>Room 1:<br> Talk & Discussion</td><td><strong>Experience teaching seL4</strong><br>Hensoldt Cyber</td>
       <td>Room 2:<br> BoF</td><td><strong>Birds of a Feather of a topic to be suggested</strong></td></tr>
   <tr><td class="break" colspan="3">Break</td></tr>
   <tr><td>15:15 - 16:00</td><td>Plenary</td><td><strong>BoFs Report Back</strong></td></tr>
