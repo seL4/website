@@ -7,7 +7,7 @@
   seL4 Summit 2022
 </h1>
 <h4>
-Munich, Germany (hybrid), 10-12 Oct 2022
+Munich, Germany (hybrid), 10-13 Oct 2022
 </h4>
 
 
@@ -21,13 +21,13 @@ Munich, Germany (hybrid), 10-12 Oct 2022
  <div>
   <ul>
   <li> <div class="highlight">
-    24 Jun 2022: Program confirmed!
+    30 Jun 2022: The <a href="program.pml">Program</a> is now available!
   </div> </li>
   <li>
-    29 Apr 2022: Location & date confirmed: Munich, Germany (hybrid), 10-12 Oct 2022
+    29 Apr 2022: Location & date confirmed: Munich, Germany (hybrid), 10-13 Oct 2022
   </li>
   <li>
-    30 Mar 2022: <a href="./cfp">Call For Presentation</a>, deadline 9th of May 2022
+    30 Mar 2022:  <a href="./cfp">Call For Presentation</a>, deadline 9th of May 2022
   </li>
   <li> 16 Mar 2022:  Meet the summit 2022 PC members! </li>
   <li> 1 Feb 2022: Call for bids to host the seL4 Summit 2022!</li>
@@ -58,35 +58,46 @@ Munich, Germany (hybrid), 10-12 Oct 2022
 
 
   <h3>
-   Location
-  </h3>
-  <p>
-
-  The seL4 summit 2022 will be in <strong>Munich, Germany</strong>. It will be a
-  hybrid in-person/online event. If you would like to propose a talk to be
-  delivered remotely, please notify it in the submission.
-
-  </p>
-
-  <h3>
     Program
   </h3>
 
   <div class="highlight">
   <p>
-    The summit program <a href="program.pml">Program</a> is now available <mark>[make news item]</mark>.
+    The seL4 summit <a href="program.pml">Program</a> is now available!
+  </p>
+  </div>
+  <div>
+  <p>
+
+    We have an amazing line-up of cool seL4 work, with a combination of
+    technical research and development, experience reports of seL4 in the field,
+    technical discussions and Birds-of-a-feather sessions, as well as a whole
+    day of seL4 bootcamp with tutorials and training.
+
   </p>
   </div>
 
+  <h3>
+   Location
+  </h3>
+  <p>
+
+  The seL4 summit 2022 will be in <strong>Munich, Germany</strong>. It will be a
+  hybrid in-person/online event.
+  </p>
+
+
+<!--
   <h3>
    Important Dates:
   </h3>
   <ul>
   <li> Abstracts due: 9th of May 2022</li>
   <li> Notification of decisions: 30th of May 2022 </li>
-  <li> Summit: 10-12 October 2022  </li>
+  <li> Summit: 10-13 October 2022  </li>
   </ul>
-
+-->
+<!--
   <h3>
    Call for Presentations
   </h3>
@@ -101,6 +112,7 @@ Munich, Germany (hybrid), 10-12 Oct 2022
   submission.
 
   </p>
+-->
 
   <h3>
    Principles
@@ -123,10 +135,10 @@ Munich, Germany (hybrid), 10-12 Oct 2022
   <p>
 
   The <strong>Hosting Team</strong> is in charge of organising the event (venue,
-  finances, catering, local arrangements).  The Hosting Team is aimed to be
+  finances, catering, local arrangements).  <!--The Hosting Team is aimed to be
   selected through an open bid process by the seL4 Foundation board. The call
   for bids ideally occurs 2 months before the previous summit, in order for the
-  bids for year N+1 to be presented at the summit in year N.
+  bids for year N+1 to be presented at the summit in year N.-->
 
   </p>
 

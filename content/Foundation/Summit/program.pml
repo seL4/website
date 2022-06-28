@@ -62,8 +62,8 @@ All times are local time in Munich, Germany (UTC+2).
   <tr><td>9:00 - 9:45</td><td>Plenary</td><td><strong>Overview: seL4 principles, abstractions and use</strong><br>Gernot Heiser, seL4 Foundation</td></tr>
   <tr><td>9:45 - 10:00</td><td>Plenary</td><td><strong>Overview: what's verified, what's not, and what does it mean?</strong><br>June Andronick, seL4 Foundation</td></tr>
   <tr><td>10:00 - 10:45</td><td>Plenary</td><td><strong>Overview: seL4 GitHub tests</strong><br>Gerwin Klein, seL4 Foundation</td></tr>
-  <tr><td>11:00 - 11:15</td><td>Announcements</td><td><em>Discussion teaser and suggestions for Birds of a Feather</em></td></tr>
   <tr><td class="break" colspan="3">Break</td></tr>
+  <tr><td>11:00 - 11:15</td><td>Announcements</td><td><em>Discussion teaser and suggestions for Birds of a Feather</em></td></tr>
   <tr><td rowspan="2">11:15 - 12:00</td>
       <td>Room 1:<br> Talk & Discussion</td><td><strong>seL4 Mainlining: Experiences, Challenges, and Solutions</strong><br>Robbie VanVossen & Chris Guikema, DornerWorks</td></tr>
   <tr><td>Room 2:<br> BoF</td><td><strong>Birds of a Feather of a topic to be suggested</strong></td></tr>
@@ -82,7 +82,7 @@ All times are local time in Munich, Germany (UTC+2).
   <tr><td>16:00 - 16:15</td><td>Announcements</td><td><em>Bootcamp overview</em></td></tr>
   <tr><td>16:15 - 16:30</td><td>Plenary</td><td><strong>seL4 Summit and TCCOE - An Overview</strong><br>Jason Li & Ray Richards</td></tr>
   <tr><td>16:30 - 16:45</td><td>Plenary</td><td><strong>seL4 Foundation: overview, update and vision</strong><br> June Andronick, seL4 Foundation</td></tr>
-  <tr><td>16:45 - 17:00</td><td>Announcements</td><td><em>Concluding remarks/summit'23</em></td></tr>
+  <tr><td>16:45 - 17:00</td><td>Announcements</td><td><em>Concluding remarks</em></td></tr>
  <tr>
     <th colspan="3">Day 4 (Bootcamp)&emsp;13 October 2022</th>
   </tr>
