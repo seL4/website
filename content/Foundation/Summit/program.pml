@@ -48,7 +48,7 @@ All times are local time in Munich, Germany (UTC+2).
   <tr><td class="break" colspan="3">Break</td></tr>
   <tr><td>12:45 - 13:15</td><td>Talk</td><td><strong>Trustworthy Board Management Controllers</strong><br>Daniel Schwyn & Ben Fiedler, ETH</td></tr>
   <tr><td>13:15 - 13:45</td><td>Talk</td><td><strong>Early Experiences Proving the Correctness of a Network Stack Implementation</strong><br>Alain Kägi et al, Lewis & Clark College</td></tr>
-  <tr><td>13:45 - 14:15</td><td>Talk</td><td><strong>CASE overviewCyber Assured Systems Engineering</strong><br>Darren Cofer, Collins Aerospace</td></tr>
+  <tr><td>13:45 - 14:15</td><td>Talk</td><td><strong>CASE overview: Cyber Assured Systems Engineering</strong><br>Darren Cofer, Collins Aerospace</td></tr>
   <tr><td>14:15 - 14:45</td><td>Talk</td><td><strong>A Verified Architecture for Trustworthy Remote Attestation</strong><br>Grant Jurgensen, The University of Kansas</td></tr>
   <tr><td class="break" colspan="3">Break</td></tr>
   <tr><td>15:15 - 15:30</td><td>Experience report</td><td><strong>FerrOS, unikernel on Rust</strong><br>Nathan Aschbacher, Auxon</td></tr>
