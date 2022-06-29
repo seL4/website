@@ -54,6 +54,40 @@ Older News: <%=reflist%>
 </div>
 -->
 
+<!----------------------------------------------------------->
+<div class="news-item" id="program-online">
+    30 June 2022: The seL4 summit Program is available!
+</div>
+<div>
+
+  <p>
+    <a href="/Foundation/Summit/">
+      <img src="/images/sel4-summit-logo.svg"
+	   style="width: 20%;  padding-left:10px;  float:right"
+	   alt="seL4 summit" />
+    </a>
+
+    Have a look at the <a href="../Foundation/Summit/program">seL4 summit Program</a>!
+    We have an amazing line-up of cool seL4 work, with a combination of
+    technical research and development, experience reports of seL4 in the field,
+    technical discussions and Birds-of-a-feather sessions, as well as a whole
+    day of seL4 bootcamp with tutorials and training.
+
+  <p style="text-align: center;">
+
+    <a href="../Foundation/Summit/program">
+      <img src="../images/summit/program.svg"
+	   style="width: 70%;  padding-left:10px; "
+	   alt="seL4 Summit program" />
+    </a>
+
+  </p>
+</div>
+<div class="news-finish">
+</div>
+
+<!----------------------------------------------------------->
+
 
 <div class="news-item" id="member-latticex">
   17 June 2022: LatticeX joins the seL4 Foundation

@@ -26,6 +26,11 @@
 
   <div class="news-column news-content">
     <ul>
+      <li>
+        <strong>
+          30 Jun 2022: The seL4 summit Program is available!
+        </strong>
+      </li>
      <li>
         <strong>
           17 June 2022: LatticeX joins the seL4 Foundation
@@ -34,11 +39,6 @@
       <li>
         <strong>
           2 May 2022: One week left to propose a talk at the seL4 summit 2022!
-        </strong>
-      </li>
-      <li>
-        <strong>
-          29 Apr 2022: The seL4 Summit 2022 will be in Munich, Germany, on 10-12 Oct 2022
         </strong>
       </li>
       <li style="margin-top:0.2em;list-style-type:none">
