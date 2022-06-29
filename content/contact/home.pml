@@ -21,6 +21,7 @@
 <li>Twitter: <a href="https://twitter.com/seL4Foundation/">@seL4Foundation</a></li>
 <li>YouTube: <a href="https://www.youtube.com/channel/UCIqVY1XFPOPIZ1z2A9TrmMA">The seL4 Microkernel</a></li>
 <li><a href="https://microkerneldude.wordpress.com/category/sel4/">Blog</a></li>
+<li><a href="https://calendar.google.com/calendar/u/0?cid=NXNybzFhaGtodDNsb2NuaGRxMnFmbDhndGNAZ3JvdXAuY2FsZW5kYXIuZ29vZ2xlLmNvbQ">Google calendar feed</a> for seL4 Foundation events and dates</li>
 </ul>
 
 <h2>Development</h2>
@@ -42,7 +43,8 @@ agenda, anybody can join for technical discussions about seL4, related
 repositories and projects, or general questions and answers. Members from the
 technical steering committee (TSC) will try to be there, but these are not
 TSC meetings where formal decisions are made.<br>
-The next sessions are:
+A <a href="https://calendar.google.com/calendar/u/0?cid=NXNybzFhaGtodDNsb2NuaGRxMnFmbDhndGNAZ3JvdXAuY2FsZW5kYXIuZ29vZ2xlLmNvbQ">calendar
+feed</a> is available. The next sessions are:
 </p>
 <ul>
   <li>
