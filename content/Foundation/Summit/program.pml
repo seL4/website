@@ -24,7 +24,7 @@ All times are local time in Munich, Germany (UTC+2).
   <tr><td>9:00 - 9:10</td> <td>Announcements</td>  <td><em>Welcome</em></td></tr>
   <tr><td>9:10 - 10:00</td><td>Keynote</td> <td><strong>seL4 research update</strong><br>Gernot Heiser, UNSW</td></tr>
   <tr><td class="break" colspan="3">Break</td></tr>
-  <tr><td>10:15 - 10:45</td><td>Talk</td><td><strong>Verification Roadmap</strong><br>Rafal Kolanski, Gerwin Klein & June Andronick, Proofcraft</td></tr>
+  <tr><td>10:15 - 10:45</td><td>Talk</td><td><strong>seL4 verification roadmap</strong><br>Rafal Kolanski, Gerwin Klein & June Andronick, Proofcraft</td></tr>
   <tr><td>10:45 - 11:15</td><td>Talk</td><td><strong>Explaining the seL4 integrity theorems</strong><br>Matthew Brecknell, Kry10</td></tr>
   <tr><td>11:15 - 11:45</td><td>Discussion</td><td><strong>AMA (Ask Me Anything)</strong> with the Foundation TSC</td></tr>
   <tr><td class="break" colspan="3">Break</td></tr>
@@ -36,8 +36,8 @@ All times are local time in Munich, Germany (UTC+2).
   <tr><td class="break" colspan="3">Break</td></tr>
   <tr><td>15:00 - 15:30</td><td>Talk</td><td><strong>Using QEMU to extend seL4 VirtIO support</strong><br>Hannu Lyytinen & Markku Ahvenjärvi, TII</td></tr>
   <tr><td>15:30 - 16:00</td><td>Talk</td><td><strong>QEMU as prototyping platform for seL4 systems</strong><br>Axel Heider, Hensoldt Cyber</td></tr>
-  <tr><td>16:00 - 16:30</td><td>Talk</td><td><strong>Porting U-Boot Drivers to seL4</strong><br>Mark Jenkinson & Stephen Williams, Capgemini</td></tr>
-  <tr><td>16:30 - 17:00</td><td>Talk</td><td><strong>fence.t: Hardware Support for Preventing Microarchitectural Timing Channels</strong><br>Nils Wistoff, ETH</td></tr>
+  <tr><td>16:00 - 16:30</td><td>Talk</td><td><strong>Porting U-Boot drivers to seL4</strong><br>Mark Jenkinson & Stephen Williams, Capgemini</td></tr>
+  <tr><td>16:30 - 17:00</td><td>Talk</td><td><strong>fence.t: Hardware support for preventing microarchitectural timing channels</strong><br>Nils Wistoff, ETH</td></tr>
   <tr>
     <th colspan="3">Day 2&emsp;11 October 2022</th>
   </tr>
@@ -48,14 +48,14 @@ All times are local time in Munich, Germany (UTC+2).
   <tr><td>10:45 - 11:15</td><td>Talk</td><td><strong>Security framework for mixed-critical use-cases</strong><br>Jorge Pereira</td></tr>
   <tr><td>11:15 - 11:45</td><td>Talk & Discussion</td><td><strong>Rust support in seL4 userspace: Present and future</strong><br>Nick Spinale</td></tr>
   <tr><td class="break" colspan="3">Break</td></tr>
-  <tr><td>12:45 - 13:15</td><td>Talk</td><td><strong>Trustworthy Board Management Controllers</strong><br>Daniel Schwyn & Ben Fiedler, ETH</td></tr>
-  <tr><td>13:15 - 13:45</td><td>Talk</td><td><strong>Early Experiences Proving the Correctness of a Network Stack Implementation</strong><br>Alain Kägi et al, Lewis & Clark College</td></tr>
+  <tr><td>12:45 - 13:15</td><td>Talk</td><td><strong>Trustworthy board management controllers</strong><br>Daniel Schwyn & Ben Fiedler, ETH</td></tr>
+  <tr><td>13:15 - 13:45</td><td>Talk</td><td><strong>Early experiences proving the correctness of a network stack implementation</strong><br>Alain Kägi et al, Lewis & Clark College</td></tr>
   <tr><td>13:45 - 14:15</td><td>Talk</td><td><strong>CASE overview: Cyber Assured Systems Engineering</strong><br>Darren Cofer, Collins Aerospace</td></tr>
-  <tr><td>14:15 - 14:45</td><td>Talk</td><td><strong>A Verified Architecture for Trustworthy Remote Attestation</strong><br>Grant Jurgensen, The University of Kansas</td></tr>
+  <tr><td>14:15 - 14:45</td><td>Talk</td><td><strong>A Verified architecture for trustworthy remote attestation</strong><br>Grant Jurgensen, The University of Kansas</td></tr>
   <tr><td class="break" colspan="3">Break</td></tr>
   <tr><td>15:15 - 15:30</td><td>Experience report</td><td><strong>FerrOS, unikernel on Rust</strong><br>Nathan Aschbacher, Auxon</td></tr>
-  <tr><td>15:30 - 15:45</td><td>Experience report</td><td><strong>Safety-critical Voice Communication System (MCS, SMP, VM)</strong><br>Indan Zupanic, MEP</td></tr>
-  <tr><td>15:45 - 16:00</td><td>Experience report</td><td><strong>Make seL4 an ASIL-D Certified System</strong><br>Yuning Liang, Xcalibyte</td></tr>
+  <tr><td>15:30 - 15:45</td><td>Experience report</td><td><strong>Safety-critical voice communication system (MCS, SMP, VM)</strong><br>Indan Zupanic, MEP</td></tr>
+  <tr><td>15:45 - 16:00</td><td>Experience report</td><td><strong>Make seL4 an ASIL-D certified system</strong><br>Yuning Liang, Xcalibyte</td></tr>
   <tr><td>16:00 - 16:15</td><td>Teaser</td><td><strong>VM Composer</strong><br>Robbie VanVossen, DornerWorks</td></tr>
   <tr><td>16:15 - 17:00</td><td>Panel & Discussion</td><td><strong>Funding agencies: priorities and vision</strong></td></tr>
   <tr>
@@ -67,22 +67,22 @@ All times are local time in Munich, Germany (UTC+2).
   <tr><td class="break" colspan="3">Break</td></tr>
   <tr><td>11:00 - 11:15</td><td>Announcements</td><td><em>Discussion teaser and suggestions for Birds of a Feather</em></td></tr>
   <tr><td rowspan="2">11:15 - 12:00</td>
-      <td>Room 1:<br> Talk & Discussion</td><td><strong>seL4 Mainlining: Experiences, Challenges, and Solutions</strong><br>Robbie VanVossen & Chris Guikema, DornerWorks</td></tr>
-  <tr><td>Room 2:<br> BoF</td><td><strong>Birds of a Feather of a topic to be suggested</strong></td></tr>
+      <td>Room 1:<br> Talk & Discussion</td><td><strong>seL4 mainlining: Experiences, challenges, and solutions</strong><br>Robbie VanVossen & Chris Guikema, DornerWorks</td></tr>
+  <tr><td>Room 2:<br> BoF</td><td><strong>Birds of a Feather on a topic to be suggested</strong></td></tr>
   <tr><td class="break" colspan="3">Break</td></tr>
   <tr><td rowspan="2">12:45 - 13:30</td>
-      <td>Room 1:<br> Talk & Discussion</td><td><strong>seL4 Microkernel for virtualization use-cases “The importance of a standard VMM”</strong><br>Everton de Matos, TII+Cog</td></tr>
-  <tr><td>Room 2:<br>BoF</td><td><strong>Birds of a Feather of a topic to be suggested</strong></td></tr>
+      <td>Room 1:<br> Talk & Discussion</td><td><strong>seL4 microkernel for virtualization use-cases “The importance of a standard VMM”</strong><br>Everton de Matos, TII+Cog</td></tr>
+  <tr><td>Room 2:<br>BoF</td><td><strong>Birds of a Feather on a topic to be suggested</strong></td></tr>
   <tr><td rowspan="2">13:30 - 14:15</td>
       <td>Room 1:<br> Talk & Discussion</td><td><strong>Improving embedded DevOps with seL4 VMM</strong><br>Robbie VanVossen, DornerWorks"</td></tr>
-  <tr><td>Room 2:<br> BoF</td><td><strong>Birds of a Feather of a topic to be suggested</strong></td></tr>
+  <tr><td>Room 2:<br> BoF</td><td><strong>Birds of a Feather on a topic to be suggested</strong></td></tr>
   <tr><td rowspan="2">14:15 - 15:00</td>
       <td>Room 1:<br> Talk & Discussion</td><td><strong>Experience teaching seL4</strong><br>Hensoldt Cyber</td></tr>
-  <tr><td>Room 2:<br> BoF</td><td><strong>Birds of a Feather of a topic to be suggested</strong></td></tr>
+  <tr><td>Room 2:<br> BoF</td><td><strong>Birds of a Feather on a topic to be suggested</strong></td></tr>
   <tr><td class="break" colspan="3">Break</td></tr>
-  <tr><td>15:15 - 16:00</td><td>Plenary</td><td><strong>BoFs Report Back</strong></td></tr>
+  <tr><td>15:15 - 16:00</td><td>Plenary</td><td><strong>BoFs report back</strong></td></tr>
   <tr><td>16:00 - 16:15</td><td>Announcements</td><td><em>Bootcamp overview</em></td></tr>
-  <tr><td>16:15 - 16:30</td><td>Plenary</td><td><strong>seL4 Summit and TCCOE - An Overview</strong><br>Jason Li & Ray Richards</td></tr>
+  <tr><td>16:15 - 16:30</td><td>Plenary</td><td><strong>seL4 summit and TCCOE - An Overview</strong><br>Jason Li & Ray Richards</td></tr>
   <tr><td>16:30 - 16:45</td><td>Plenary</td><td><strong>seL4 Foundation: overview, update and vision</strong><br> June Andronick, seL4 Foundation</td></tr>
   <tr><td>16:45 - 17:00</td><td>Announcements</td><td><em>Concluding remarks</em></td></tr>
  <tr>
