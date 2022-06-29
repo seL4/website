@@ -45,7 +45,8 @@ All times are local time in Munich, Germany (UTC+2).
   <tr><td>9:50 - 10:00</td><td>Announcements</td><td><em>Foundation announcements</em></td></tr>
   <tr><td class="break" colspan="3">Break</td></tr>
   <tr><td>10:15 - 10:45</td><td>Talk</td><td><strong>seL4 and BEAM: a match made in Erlang</strong><br>Ihor Kuz, Kry10</td></tr>
-  <tr><td>10:45 - 11:15</td><td>Talk</td><td><strong>Security framework for mixed-critical use-cases</strong><br>Jorge Pereira</td></tr>
+  <tr><td>10:45 - 11:15</td><td>Talk</td><td>TBD<!-- strong>Security
+  framework for mixed-critical use-cases</strong><br>Jorge Pereira --></td></tr>
   <tr><td>11:15 - 11:45</td><td>Talk & Discussion</td><td><strong>Rust support in seL4 userspace: Present and future</strong><br>Nick Spinale</td></tr>
   <tr><td class="break" colspan="3">Break</td></tr>
   <tr><td>12:45 - 13:15</td><td>Talk</td><td><strong>Trustworthy board management controllers</strong><br>Daniel Schwyn & Ben Fiedler, ETH</td></tr>
