@@ -12,7 +12,7 @@ Munich, Germany (hybrid), 10-12 Oct 2022
 
 
 <h3>
-   Program
+   Preliminary Program
 </h3>
 
 All times are local time in Munich, Germany (UTC+2).
