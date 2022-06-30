@@ -32,10 +32,10 @@
 
   <div class="person">
     <div class="person_pic">
-      <a href="https://matthew.brecknell.net/"><img src="../../images/tsc/matthew.jpg" alt="Matthew Brecknell" width="80" /></a>
+      <a href="https://www.linkedin.com/in/mbrcknl"><img src="../../images/tsc/matthew.jpg" alt="Matthew Brecknell" width="80" /></a>
     </div>
     <div class="person_title">
-      <strong><a class="list_link" href="https://matthew.brecknell.net/">Matthew Brecknell</a></strong>
+      <strong><a class="list_link" href="https://www.linkedin.com/in/mbrcknl">Matthew Brecknell</a></strong>
     </div>
   </div>
 
