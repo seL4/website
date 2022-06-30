@@ -28,6 +28,7 @@ linkchecker \
     --ignore-url="https://horizon.ai" \
     --ignore-url="https://nio.com" \
     --ignore-url="https://lixiang.com" \
+    --ignore-url="https://rtx.com" \
     --check-extern \
     --output html \
     "$OUTPUT_SNAPSHOT_DIR"/localhost/index.html > $OUTPUT_DIR/linkchecker.html \
