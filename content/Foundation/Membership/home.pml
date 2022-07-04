@@ -32,7 +32,7 @@
       <br>
         <span class="founding-member-name">Founding member</span>
         <br>
-        <span class="services-member-name">Endorsed Services Provider</span>
+        <span class="services-member-name">Endorsed Service Provider</span>
       </div>
     </div>
     <div class="sponsor">
@@ -90,7 +90,7 @@
         <br>
         <span class="founding-member-name">Founding member</span>
         <br>
-        <span class="services-member-name">Endorsed Services Provider</span>
+        <span class="services-member-name">Endorsed Service Provider</span>
       </div>
     </div>
   </div>
@@ -129,7 +129,7 @@
         <br>
         <span class="founding-member-name">Founding member</span>
         <br>
-        <span class="services-member-name">Endorsed Services Provider</span>
+        <span class="services-member-name">Endorsed Service Provider</span>
       </div>
     </div>
     <div class="sponsor">
@@ -143,7 +143,7 @@
         <br>
         <span class="founding-member-name">Founding member</span>
         <br>
-        <span class="services-member-name">Endorsed Services Provider</span>
+        <span class="services-member-name">Endorsed Service Provider</span>
       </div>
     </div>
     <div class="sponsor">
@@ -167,7 +167,7 @@
       <div class="sponsor-name">
 	      Kry10 Limited
         <br>
-        <span class="services-member-name">Endorsed Services Provider</span>
+        <span class="services-member-name">Endorsed Service Provider</span>
       </div>
     </div>
     <div class="sponsor">
@@ -200,7 +200,7 @@
       <div class="sponsor-name">
         Proofcraft Pty Ltd
         <br>
-        <span class="services-member-name">Endorsed Services Provider</span>
+        <span class="services-member-name">Endorsed Service Provider</span>
       </div>
     </div>
     <div class="sponsor">
