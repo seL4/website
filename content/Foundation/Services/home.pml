@@ -1,4 +1,4 @@
-<!--<title>Services</title>-->
+<!--<title>Endorsed Service Providers</title>-->
 <!--
     Copyright 2020 seL4 Project a Series of LF Projects, LLC.
     SPDX-License-Identifier: CC-BY-SA-4.0
@@ -15,26 +15,12 @@
     services around seL4.
   </p>
   <p>
-    The type of services that the member has expertise on and is being endorsed for, are described in detail, and taken from a template list of services, namely:
-  </p>
-  <ul>
-    <li>systems: kernel</li>
-    <li>systems: kernel platform ports</li>
-    <li>systems: user-level OS</li>
-    <li>systems: applications</li>
-    <li>verification: kernel</li>
-    <li>verification: user-level OS</li>
-    <li>verification: applications</li>
-  </ul>
-  <p>
-    Endorsement in one of the category above means that the member has one or multiple people in-house who have that expertise and have already contributed in this area. This is reviewed annually.
+   <strong>Below are the seL4 Service Providers that are endorsed by the seL4 Foundation</strong>
   </p>
   <p>
-    Each category can have qualifiers/examples, which can be suggested by the member, eg "user-level OS (VM)” or “user-level OS (CAMkES).”
+  If you are a member and would like to be endorsed, ou can find more information on the <a href="endorsement.pml">endorsement scheme</a>. If you are not a member yet, you can <a href="../Join">join the seL4 Foundation</a>.
   </p>
-  <p>
-    The endorsement of services is limited to members and provided for free.
-  </p>
+
   <h2>Endorsed Service Providers</h2>
   <table class="endorsement-table">
     <tr>

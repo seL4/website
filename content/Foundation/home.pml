@@ -62,8 +62,8 @@
           href="Membership">seL4 Foundation Membership</a>
     </li>
     <li>
-      <a title="Endorsed services"
-          href="Services/">Endorsed services</a>
+      <a title="Endorsed Service Providers"
+          href="Services/">Endorsed Service Providers</a>
     </li>
     <li>
       <a title="seL4 Summit"

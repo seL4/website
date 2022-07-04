@@ -1,4 +1,4 @@
-<!--<title>Cog</title>-->
+<!--<title>HENSOLDT Cyber</title>-->
 <!--
     Copyright 2020 seL4 Project a Series of LF Projects, LLC.
     SPDX-License-Identifier: CC-BY-SA-4.0
@@ -12,8 +12,8 @@ An Endorsed Service Provider for seL4-based systems
 <div>
 
 
-  <table style="margin-left: 20px">
-      <tr>
+<table style="margin-left: 20px">
+    <tr>
       <td style="padding:15px">
         <a href="http://hensoldt-cyber.com/">
           <img src="/Foundation/Membership/LOGOS/HENSOLDT_Cyber.svg" style="width: 200px" alt="HENSOLDT Cyber">
@@ -41,10 +41,10 @@ An Endorsed Service Provider for seL4-based systems
       <li>verification: user-level OS</li>
       <li>verification: applications</li>
     </ul>
-    Additionally, the seL4 Foundation assessed and endorsed HENSOLDT Cyber GmbH's TRENTOS training and product.
-      </td>
-    </tr>
-  </table>
+    Additionally, the seL4 Foundation previously assessed and endorsed HENSOLDT Cyber GmbH's TRENTOS training and product.
+    </td>
+  </tr>
+</table>
 
 
 
