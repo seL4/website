@@ -266,6 +266,11 @@ span.founding-member-name {
   font-size:.8em;
 }
 
+span.services-member-name {
+  font-weight: bold;
+  font-size:.8em;
+}
+
 .governing-container {
   display: grid;
   grid-template-columns: 30px auto;

@@ -31,6 +31,8 @@
 	      HENSOLDT Cyber GmbH
       <br>
         <span class="founding-member-name">Founding member</span>
+        <br>
+        <span class="services-member-name">Endorsed Services Provider</span>
       </div>
     </div>
     <div class="sponsor">
@@ -87,6 +89,8 @@
 	      UNSW Sydney
         <br>
         <span class="founding-member-name">Founding member</span>
+        <br>
+        <span class="services-member-name">Endorsed Services Provider</span>
       </div>
     </div>
   </div>
@@ -124,6 +128,8 @@
         Cog Systems Inc
         <br>
         <span class="founding-member-name">Founding member</span>
+        <br>
+        <span class="services-member-name">Endorsed Services Provider</span>
       </div>
     </div>
     <div class="sponsor">
@@ -136,6 +142,8 @@
         DornerWorks Ltd
         <br>
         <span class="founding-member-name">Founding member</span>
+        <br>
+        <span class="services-member-name">Endorsed Services Provider</span>
       </div>
     </div>
     <div class="sponsor">
@@ -157,7 +165,9 @@
 	</a>
       </div>
       <div class="sponsor-name">
-	Kry10 Limited
+	      Kry10 Limited
+        <br>
+        <span class="services-member-name">Endorsed Services Provider</span>
       </div>
     </div>
     <div class="sponsor">
@@ -188,7 +198,9 @@
 	</a>
       </div>
       <div class="sponsor-name">
-	Proofcraft Pty Ltd
+        Proofcraft Pty Ltd
+        <br>
+        <span class="services-member-name">Endorsed Services Provider</span>
       </div>
     </div>
     <div class="sponsor">
