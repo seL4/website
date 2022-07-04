@@ -54,8 +54,8 @@ All times are local time in Munich, Germany (UTC+2).
   <tr><td>13:45 - 14:15</td><td>Talk</td><td><strong>CASE overview: Cyber Assured Systems Engineering</strong><br>Darren Cofer, Collins Aerospace</td></tr>
   <tr><td>14:15 - 14:45</td><td>Talk</td><td><strong>A Verified architecture for trustworthy remote attestation</strong><br>Grant Jurgensen, The University of Kansas</td></tr>
   <tr><td class="break" colspan="3">Break</td></tr>
-  <tr><td>15:15 - 15:30</td><td>Experience report</td><td><strong>FerrOS, unikernel on Rust</strong><br>Nathan Aschbacher, Auxon</td></tr>
-  <tr><td>15:30 - 15:45</td><td>Experience report</td><td><strong>Safety-critical voice communication system (MCS, SMP, VM)</strong><br>Indan Zupanic, MEP</td></tr>
+  <tr><td>15:15 - 15:30</td><td>Experience report</td><td><strong>FerrOS: Rust-y unikernels on seL4 w/ compile-time assurances</strong><br>Zack Pierce, Auxon</td></tr>
+  <tr><td>15:30 - 15:45</td><td>Experience report</td><td><strong>Safety-critical voice communication system (MCS, SMP, VM)</strong><br>Indan Zupancic, MEP</td></tr>
   <tr><td>15:45 - 16:00</td><td>Experience report</td><td><strong>Make seL4 an ASIL-D certified system</strong><br>Yuning Liang, Xcalibyte</td></tr>
   <tr><td>16:00 - 16:15</td><td>Teaser</td><td><strong>VM Composer</strong><br>Robbie VanVossen, DornerWorks</td></tr>
   <tr><td>16:15 - 17:00</td><td>Panel & Discussion</td><td><strong>Funding agencies: priorities and vision</strong></td></tr>
