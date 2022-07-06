@@ -75,7 +75,7 @@ All times are local time in Munich, Germany (UTC+2).
       <td>Room 1:<br> Talk & Discussion</td><td><strong>seL4 microkernel for virtualization use-cases “The importance of a standard VMM”</strong><br>Everton de Matos, TII+Cog</td></tr>
   <tr><td>Room 2:<br>BoF</td><td><strong>Birds of a Feather on a topic to be suggested</strong></td></tr>
   <tr><td rowspan="2">13:30 - 14:15</td>
-      <td>Room 1:<br> Talk & Discussion</td><td><strong>Improving embedded DevOps with seL4 VMM</strong><br>Robbie VanVossen, DornerWorks"</td></tr>
+      <td>Room 1:<br> Talk & Discussion</td><td><strong>Improving embedded DevOps with seL4 VMM</strong><br>Robbie VanVossen, DornerWorks</td></tr>
   <tr><td>Room 2:<br> BoF</td><td><strong>Birds of a Feather on a topic to be suggested</strong></td></tr>
   <tr><td rowspan="2">14:15 - 15:00</td>
       <td>Room 1:<br> Talk & Discussion</td><td><strong>Experience teaching seL4</strong><br>Hensoldt Cyber</td></tr>

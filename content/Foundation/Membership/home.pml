@@ -10,12 +10,11 @@
   <div>
     <p>
       Below is the list of members of the
-      <a title="seL4 Foundation" href="../">
-	seL4 Foundation</a>.  Want to be part of the adventure?
+      <a title="seL4 Foundation" href="../">seL4 Foundation</a>.  Want to be part of the adventure?
     </p>
     <p>
       <span class=join> JOIN NOW
-	<a title="Join" href="../Join">HERE!</a>
+	      <a title="Join" href="../Join">HERE!</a>
       </span>
     </p>
   </div>
@@ -23,74 +22,79 @@
   <div class="sponsors">
     <div class="sponsor">
       <div class="sponsor-pic">
-	<a href="https://hensoldt-cyber.com/">
-	  <img src="LOGOS/HENSOLDT_Cyber.svg" style="width: 186px" alt="HENSOLDT Cyber logo">
-	</a>
+        <a href="https://hensoldt-cyber.com/">
+          <img src="LOGOS/HENSOLDT_Cyber.svg" style="width: 186px" alt="HENSOLDT Cyber logo">
+        </a>
       </div>
       <div class="sponsor-name">
-	      HENSOLDT Cyber GmbH
-      <br>
-        <span class="founding-member-name">Founding member</span>
+        HENSOLDT Cyber GmbH
+      </div>
+      <div class="sponsor-info">
+        Founding member
         <br>
-        <span class="services-member-name">Endorsed Service Provider</span>
+        Endorsed Service Provider
       </div>
     </div>
     <div class="sponsor">
       <div class="sponsor-pic">
-	<a href="https://horizon.ai/">
-	  <img src="LOGOS/Horizon_Robotics.svg" style="width: 248px"
-	       alt="Horizon Robotics logo">
-	</a>
+        <a href="https://horizon.ai/">
+          <img src="LOGOS/Horizon_Robotics.svg" style="width: 248px"
+              alt="Horizon Robotics logo">
+        </a>
       </div>
       <div class="sponsor-name">
-	Horizon Robotics
+        Horizon Robotics
       </div>
+      <div class="sponsor-info"></div>
     </div>
     <div class="sponsor">
       <div class="sponsor-pic">
-	<a href="https://jumptrading.com/">
-	  <img src="LOGOS/Jump-Trading.svg" style="width: 248px"
-	       alt="Jump Trading logo">
-	</a>
+        <a href="https://jumptrading.com/">
+          <img src="LOGOS/Jump-Trading.svg" style="width: 248px"
+              alt="Jump Trading logo">
+        </a>
       </div>
       <div class="sponsor-name">
-	Jump Trading <!-- https://www.linkedin.com/company/jump-trading/ -->
+        Jump Trading <!-- https://www.linkedin.com/company/jump-trading/ -->
       </div>
     </div>
     <div class="sponsor">
       <div class="sponsor-pic">
-	<a href="https://lixiang.com">
-	  <img src="LOGOS/Li_Auto.svg" style="width: 248px"
-	       alt="Li Auto logo">
-	</a>
+        <a href="https://lixiang.com">
+          <img src="LOGOS/Li_Auto.svg" style="width: 248px"
+              alt="Li Auto logo">
+        </a>
       </div>
       <div class="sponsor-name">
-	Li Auto Inc
+	      Li Auto Inc
       </div>
+      <div class="sponsor-info"></div>
     </div>
     <div class="sponsor">
       <div class="sponsor-pic">
-	<a href="http://nio.com/">
-	  <!-- NIO PNG has width 248, better not scale -->
-	  <img src="LOGOS/NIO.png" style="width: 248px" alt="NIO logo">
-	</a>
+          <a href="http://nio.com/">
+            <!-- NIO PNG has width 248, better not scale -->
+            <img src="LOGOS/NIO.png" style="width: 248px" alt="NIO logo">
+          </a>
       </div>
       <div class="sponsor-name">
-	NIO
+	      NIO
       </div>
+      <div class="sponsor-info"></div>
     </div>
     <div class="sponsor">
       <div class="sponsor-pic">
-	<a href="https://unsw.edu.au/">
-	  <img src="LOGOS/UNSW.svg" style="width: 248px" alt="UNSW logo">
-	</a>
+        <a href="https://unsw.edu.au/">
+          <img src="LOGOS/UNSW.svg" style="width: 248px" alt="UNSW logo">
+        </a>
       </div>
       <div class="sponsor-name">
 	      UNSW Sydney
+      </div>
+      <div class="sponsor-info">
+        Founding member
         <br>
-        <span class="founding-member-name">Founding member</span>
-        <br>
-        <span class="services-member-name">Endorsed Service Provider</span>
+        Endorsed Service Provider
       </div>
     </div>
   </div>
@@ -98,13 +102,14 @@
   <div class="sponsors">
     <div class="sponsor">
       <div class="sponsor-pic">
-	<a href="https://www.adventiumlabs.com/">
-	  <img src="LOGOS/adventium-labs.svg" style="width: 200px" alt="Adventium logo">
-	</a>
+        <a href="https://www.adventiumlabs.com/">
+          <img src="LOGOS/adventium-labs.svg" style="width: 200px" alt="Adventium logo">
+        </a>
       </div>
       <div class="sponsor-name">
-	Adventium Labs
+	      Adventium Labs
       </div>
+      <div class="sponsor-info"></div>
     </div>
     <!--
     <div class="sponsor">
@@ -114,115 +119,125 @@
 	  </a>
        </div>
        <div class="sponsor-name">
-	 Breakaway Consulting
+	       Breakaway Consulting
        </div>
+       <div class="sponsor-info"></div>
     </div>
      -->
     <div class="sponsor">
       <div class="sponsor-pic">
-	<a href="https://cog.systems/">
-	  <img src="LOGOS/Cog.jpg" style="width: 150px" alt="Cog logo">
-	</a>
+        <a href="https://cog.systems/">
+          <img src="LOGOS/Cog.jpg" style="width: 150px" alt="Cog logo">
+        </a>
       </div>
       <div class="sponsor-name">
         Cog Systems Inc
+      </div>
+      <div class="sponsor-info">
+        Founding member
         <br>
-        <span class="founding-member-name">Founding member</span>
-        <br>
-        <span class="services-member-name">Endorsed Service Provider</span>
+        Endorsed Service Provider
       </div>
     </div>
     <div class="sponsor">
-      <div class="sponsor-pic">
-	<a href="https://dornerworks.com/">
-	  <img src="LOGOS/DornerWorks.svg" style="width: 200px" alt="DornerWorks logo">
-	</a>
-      </div>
-      <div class="sponsor-name">
-        DornerWorks Ltd
-        <br>
-        <span class="founding-member-name">Founding member</span>
-        <br>
-        <span class="services-member-name">Endorsed Service Provider</span>
-      </div>
+        <div class="sponsor-pic">
+          <a href="https://dornerworks.com/">
+            <img src="LOGOS/DornerWorks.svg" style="width: 200px" alt="DornerWorks logo">
+          </a>
+        </div>
+        <div class="sponsor-name">
+          DornerWorks Ltd
+        </div>
+        <div class="sponsor-info">
+          Founding member
+          <br>
+          Endorsed Service Provider
+        </div>
     </div>
     <div class="sponsor">
       <div class="sponsor-pic">
-	<a href="https://gh.st/">
-	  <img src="LOGOS/GHOST.svg" style="width: 200px" alt="Ghost logo">
-	</a>
+        <a href="https://gh.st/">
+          <img src="LOGOS/GHOST.svg" style="width: 200px" alt="Ghost logo">
+        </a>
       </div>
       <div class="sponsor-name">
         Ghost Locomotion Inc
-        <br>
-        <span class="founding-member-name">Founding member</span>
+      </div>
+      <div class="sponsor-info">
+          Founding member
       </div>
     </div>
     <div class="sponsor">
       <div class="sponsor-pic">
-	<a href="https://kry10.com">
-	  <img src="LOGOS/Kry10.svg" style="width: 250px" alt="Kry10 logo">
-	</a>
+        <a href="https://kry10.com">
+          <img src="LOGOS/Kry10.svg" style="width: 250px" alt="Kry10 logo">
+        </a>
       </div>
       <div class="sponsor-name">
 	      Kry10 Limited
-        <br>
-        <span class="services-member-name">Endorsed Service Provider</span>
+      </div>
+      <div class="sponsor-info">
+        Endorsed Service Provider
       </div>
     </div>
     <div class="sponsor">
       <div class="sponsor-pic">
-	<a href="https://www.lotuscars.com/">
-	  <img src="LOGOS/LotusCarsTechnology.svg"
-	       style="width: 200px" alt="Lotus Cars logo">
-	</a>
+        <a href="https://www.lotuscars.com/">
+          <img src="LOGOS/LotusCarsTechnology.svg"
+              style="width: 200px" alt="Lotus Cars logo">
+        </a>
       </div>
       <div class="sponsor-name">
-	Lotus Cars
+        Lotus Cars
       </div>
+      <div class="sponsor-info"></div>
     </div>
     <div class="sponsor">
       <div class="sponsor-pic">
-	<a href="https://www.penten.com">
-	  <img src="LOGOS/Penten.svg" style="width: 200px" alt="Penten logo">
-	</a>
+        <a href="https://www.penten.com">
+          <img src="LOGOS/Penten.svg" style="width: 200px" alt="Penten logo">
+        </a>
       </div>
       <div class="sponsor-name">
-	Penten Pty Ltd
+	      Penten Pty Ltd
       </div>
+      <div class="sponsor-info"></div>
     </div>
     <div class="sponsor">
       <div class="sponsor-pic">
-	<a href="https://proofcraft.systems">
-	  <img src="LOGOS/proofcraft.svg" style="width: 200px" alt="Proofcraft logo">
-	</a>
+        <a href="https://proofcraft.systems">
+          <img src="LOGOS/proofcraft.svg" style="width: 200px" alt="Proofcraft logo">
+        </a>
       </div>
       <div class="sponsor-name">
         Proofcraft Pty Ltd
-        <br>
-        <span class="services-member-name">Endorsed Service Provider</span>
+      </div>
+      <div class="sponsor-info">
+        Endorsed Service Provider
       </div>
     </div>
     <div class="sponsor">
       <div class="sponsor-pic">
-	<a href="https://www.rtx.com">
-	  <img src="LOGOS/raytheontechnologies.svg" style="width: 280px" alt="Raytheon logo">
-	</a>
+        <a href="https://www.rtx.com">
+          <img src="LOGOS/raytheontechnologies.svg" style="width: 280px" alt="Raytheon logo">
+        </a>
       </div>
       <div class="sponsor-name">
-	Raytheon Technologies
+	      Raytheon Technologies
       </div>
+      <div class="sponsor-info"></div>
     </div>
     <div class="sponsor">
       <div class="sponsor-pic">
-	<a href="https://secondstate.io">
-	  <img src="LOGOS/secondstate.svg" style="width: 200px"
-	  alt="Second State logo">
-	</a>
+        <a href="https://secondstate.io">
+          <img src="LOGOS/secondstate.svg" style="width: 200px"
+          alt="Second State logo">
+        </a>
       </div>
       <div class="sponsor-name">
-	Second State
+	      Second State
       </div>
+      <div class="sponsor-info"></div>
     </div>
     <div class="sponsor">
       <div class="sponsor-pic">
@@ -234,6 +249,7 @@
       <div class="sponsor-name">
         Technology Innovation Institute
       </div>
+      <div class="sponsor-info"></div>
     </div>
     <div class="sponsor">
       <div class="sponsor-pic">
@@ -244,6 +260,7 @@
        <div class="sponsor-name">
           Xcalibyte
       </div>
+      <div class="sponsor-info"></div>
     </div>
     <div class="sponsor">
       <div class="sponsor-pic">
@@ -254,6 +271,7 @@
       <div class="sponsor-name">
           LatticeX
       </div>
+      <div class="sponsor-info"></div>
     </div>
   </div>
 
@@ -261,54 +279,59 @@
   <div class="sponsors">
     <div class="sponsor">
       <div class="sponsor-pic">
-	<a href="https://ethz.ch/en.html">
-	  <img src="LOGOS/ETH-Zurich.svg" style="width: 200px" alt="ETH Zurich">
-	</a>
+        <a href="https://ethz.ch/en.html">
+          <img src="LOGOS/ETH-Zurich.svg" style="width: 200px" alt="ETH Zurich">
+        </a>
       </div>
       <div class="sponsor-name">
-	ETH Zurich
+	      ETH Zurich
       </div>
+      <div class="sponsor-info"></div>
     </div>
     <div class="sponsor">
       <div class="sponsor-pic">
-	<a href="https://www.k-state.edu/">
-	  <img src="LOGOS/kansas-state.svg" style="width: 200px"
-	  alt="Kansas State">
-	</a>
+        <a href="https://www.k-state.edu/">
+          <img src="LOGOS/kansas-state.svg" style="width: 200px"
+          alt="Kansas State">
+        </a>
       </div>
       <div class="sponsor-name">
-	Kansas State University
+	      Kansas State University
       </div>
+      <div class="sponsor-info"></div>
     </div>
     <div class="sponsor">
       <div class="sponsor-pic">
-	<a href="https://www.ncsc.gov.uk/">
-	  <img src="LOGOS/NCSC.png" style="width: 200px" alt="NCSC">
-	</a>
+        <a href="https://www.ncsc.gov.uk/">
+          <img src="LOGOS/NCSC.png" style="width: 200px" alt="NCSC">
+        </a>
       </div>
       <div class="sponsor-name">
-	NCSC
+        NCSC
       </div>
+      <div class="sponsor-info"></div>
     </div>
     <div class="sponsor">
       <div class="sponsor-pic">
-	<a href="https://riscv.org/">
-	  <img src="LOGOS/RISC-V.svg" style="width: 200px" alt="RISC-V International">
-	</a>
+        <a href="https://riscv.org/">
+          <img src="LOGOS/RISC-V.svg" style="width: 200px" alt="RISC-V International">
+        </a>
       </div>
       <div class="sponsor-name">
-	RISC-V International
+        RISC-V International
       </div>
+      <div class="sponsor-info"></div>
     </div>
     <div class="sponsor">
       <div class="sponsor-pic">
-	<a href="https://www.tum.de/en">
-	  <img src="LOGOS/TU-Munich.svg" style="width: 120px" alt="TU Munich">
-	</a>
+        <a href="https://www.tum.de/en">
+          <img src="LOGOS/TU-Munich.svg" style="width: 120px" alt="TU Munich">
+        </a>
       </div>
       <div class="sponsor-name">
-	TU Munich
+        TU Munich
       </div>
+      <div class="sponsor-info"></div>
     </div>
   </div>
 </div>
