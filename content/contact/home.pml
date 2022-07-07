@@ -21,8 +21,18 @@
 <li>Twitter: <a href="https://twitter.com/seL4Foundation/">@seL4Foundation</a></li>
 <li>YouTube: <a href="https://www.youtube.com/channel/UCIqVY1XFPOPIZ1z2A9TrmMA">The seL4 Microkernel</a></li>
 <li><a href="https://microkerneldude.wordpress.com/category/sel4/">Blog</a></li>
-<li><a href="https://calendar.google.com/calendar/u/0?cid=NXNybzFhaGtodDNsb2NuaGRxMnFmbDhndGNAZ3JvdXAuY2FsZW5kYXIuZ29vZ2xlLmNvbQ">Google calendar feed</a> for seL4 Foundation events and dates</li>
+<li><a href="https://calendar.google.com/calendar/u/0?cid=NXNybzFhaGtodDNsb2NuaGRxMnFmbDhndGNAZ3JvdXAuY2FsZW5kYXIuZ29vZ2xlLmNvbQ">Google calendar feed</a> for seL4 Foundation events and dates
+</li>
 </ul>
+
+<p id="calendar-container" style="text-align:center; padding:2ex 0 2ex 0;"></p>
+
+<!-- use js to display calendar in client-local time zone -->
+<script type="text/javascript">
+const timezone = Intl.DateTimeFormat().resolvedOptions().timeZone
+const html = `<iframe src="https://calendar.google.com/calendar/embed?wkst=1&showTitle=0&showCalendars=0&ctz=${timezone}&showPrint=0&showTz=1&bgcolor=%23ffffff&mode=AGENDA&src=NXNybzFhaGtodDNsb2NuaGRxMnFmbDhndGNAZ3JvdXAuY2FsZW5kYXIuZ29vZ2xlLmNvbQ" style="height:40ex; width:60%; border:0;"></iframe>`
+document.getElementById('calendar-container').innerHTML = html;
+</script>
 
 <h2>Development</h2>
 
@@ -44,34 +54,9 @@ repositories and projects, or general questions and answers. Members from the
 technical steering committee (TSC) will try to be there, but these are not
 TSC meetings where formal decisions are made.<br>
 A <a href="https://calendar.google.com/calendar/u/0?cid=NXNybzFhaGtodDNsb2NuaGRxMnFmbDhndGNAZ3JvdXAuY2FsZW5kYXIuZ29vZ2xlLmNvbQ">calendar
-feed</a> is available. The next sessions are:
+feed</a> is available.
 </p>
-<ul>
-  <li>
-    Tue, Jul 12, 10pm (UTC), Topics: (open)
-    <ul>
-      <li>Sydney: Wed, Jul 13, 8am</li>
-      <li>Central Europe: Wed, Jul 13, midnight</li>
-      <li>US Pacific Time: Tue, Jul 12, 3pm</li>
-    </ul>
-  </li>
-  <li>
-    Wed, Jul 26, 7am (UTC), Topics: (open)
-    <ul>
-      <li>Sydney: Wed, Jun 29, 5pm</li>
-      <li>Central Europe: Wed, Jun 29, 9am</li>
-      <li>US Pacific Time: Wed, Jun 29, 12 midnight</li>
-    </ul>
-  </li>
-  <li>
-    Tue, Aug 10, 10pm (UTC), Topics: (open)
-    <ul>
-      <li>Sydney: Wed, Jun 15, 8am</li>
-      <li>Central Europe: Wed, Jun 15, midnight</li>
-      <li>US Pacific Time: Tue, Jun 14, 3pm</li>
-    </ul>
-  </li>
-</ul>
+
 <p>
 RFC (request for comments) proposing new features for seL4
 </p>
