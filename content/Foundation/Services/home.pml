@@ -1,54 +1,30 @@
-<!--<title>Services</title>-->
+<!--<title>Endorsed Service Providers</title>-->
 <!--
     Copyright 2020 seL4 Project a Series of LF Projects, LLC.
     SPDX-License-Identifier: CC-BY-SA-4.0
 -->
 <h1>
-  Services, Training and Products <br>
-  endorsed by the Foundation
+  Services endorsed by the Foundation
 </h1>
 <div>
   <p style="padding-top:10px">
     seL4 is an attractive platform for building highly resilient
     systems, but to do so requires a fair degree of understanding of
     the technology. Fortunately, help is available from a growing
-    number of community members offering <strong>products</strong> that ease system
-    development and assurance, and provide <strong>training</strong>, consulting and development
-    <strong>services</strong> around seL4.
+    number of community members offering consulting and development
+    services around seL4.
   </p>
   <p>
-    The Foundation is working with members on establishing <strong>endorsement</strong>
-    schemes for services, training and products. As a first step we
-    started to
-    provide <a href="endorsement.pml"><strong>interim endorsements</strong></a>,
-    which are based on a fast and relatively shallow
-    assessment. Interim endorsements are available to seL4 Foundation
-    members only and will lapse once the full endorsement scheme is in
-    place, but we expect that all interim-endorsed services and
-    products will achieve full endorsement, and will support the
-    members to get there. The endorsement scheme will
-    be open to anyone for a fee.
+   <strong>Below are the seL4 Service Providers that are endorsed by the seL4 Foundation</strong>
   </p>
   <p>
-    The endorsement indicates:
+  If you are a member and would like to be endorsed, ou can find more information on the <a href="endorsement.pml">endorsement scheme</a>. If you are not a member yet, you can <a href="../Join">join the seL4 Foundation</a>.
   </p>
-    <ul>
-      <li> that a particular <strong>service provider</strong> has the skills and experience
-           to provide high-quality services to adopters of seL4;
-      </li>
-      <li> that a particular <strong>training program</strong> is of high quality and effective
-           in providing useful skills for deploying the seL4 microkernel;
-      </li>
-      <li> that a particular <strong>product</strong> utilises seL4
-	capabilities correctly and is helpful to the community
-        for building high-assurance seL4-based systems.
-    </ul>
 
-
-  <h2>Service Providers</h2>
-  <table style="margin-left: 20px" >
+  <h2>Endorsed Service Providers</h2>
+  <table class="endorsement-table">
     <tr>
-      <td style="padding:15px">
+      <td>
 	<a href="https://dornerworks.com">
 	  <img src="/Foundation/Membership/LOGOS/DornerWorks.svg" style="width: 200px" alt="DornerWorks Ltd">
 	</a>
@@ -61,18 +37,19 @@
          accelerate the integration of seL4 as the trusted software
          base for your products.
         <br/>
-	<span class="emph">DornerWorks Ltd has received <em>interim endorsement</em> as a Trusted
-	Service Provider for seL4-based systems.</span>
-	<ul>
-	  <li><a href="dornerworks.pml">Details of products and services</a></li>
-	  <li><a href="https://DornerWorks.com">https://DornerWorks.com</a></li>
-	  <li><a href="https://dornerworks.com/solutions/embedded-virtualization/sel4-microkernel/">
-	         DornerWorks seL4 Microkernel Engineering Services</a></li>
-	</ul>
+        <br>
+	      DornerWorks Ltd is an Endorsed Services Provider for:
+        <ul>
+          <li>systems:  kernel platform port</li>
+          <li>systems: user-level OS (VM)</li>
+          <li>systems: application</li>
+        </ul>
+    Further details available on <a href="dornerworks.pml">services</a> and <a href="https://dornerworks.com/solutions/embedded-virtualization/sel4-microkernel/">seL4 Microkernel Engineering Services</a>.
       </td>
     </tr>
+    <!--
     <tr>
-      <td style="padding:15px">
+      <td>
 	<a href="https://brkawy.com">
 	  <img src="/Foundation/Membership/LOGOS/Brkawy.png" style="width: 200px" alt="Breakaway Consulting">
 	</a>
@@ -97,8 +74,9 @@
 	</ul>
       </td>
     </tr>
+    -->
     <tr>
-      <td style="padding:15px">
+      <td>
 	<a href="https://cog.systems">
 	  <img src="/Foundation/Membership/LOGOS/Cog.jpg" style="width: 200px" alt="Cog Systems Inc">
 	</a>
@@ -111,16 +89,17 @@
         is available for the IoT market with the flexibility to run
         all applications effectively and securely.
 	<br/>
-	<span class="emph">Cog Systems Inc has received <em>interim endorsement</em> as a Trusted
-	Service Provider for seL4-based systems.</span>
-	<ul>
-	  <li><a href="cog.pml">Details of products and services</a></li>
-	  <li><a href="https://cog.systems">Home page</a></li>
-	</ul>
+  <br>
+	Cog Systems Inc is an Endorsed Service Provider for:
+        <ul>
+          <li>systems: user-level OS (VM)</li>
+          <li>systems: applications</li>
+        </ul>
+	  See <a href="cog.pml">services</a> or visit <a href="https://cog.systems">Cog</a> for further information.
       </td>
     </tr>
     <tr>
-      <td style="padding:15px">
+      <td>
         <a href="http://hensoldt-cyber.com/">
           <img src="/Foundation/Membership/LOGOS/HENSOLDT_Cyber.svg" style="width: 200px" alt="HENSOLDT Cyber">
 	</a>
@@ -139,17 +118,22 @@
         correct application of the seL4 technologies.
 
         <br/>
-	<span class="emph">HENSOLDT Cyber GmbH has received <em>interim endorsement</em> as a Trusted
-	Service Provider for seL4-based systems.</span>
-	<ul>
-	  <li><a href="hc.pml">Details of products and services</a></li>
-	  <li> <a href="http://hensoldt-cyber.com/">Home page</a></li>
-	</ul>
+        <br>
+	HENSOLDT Cyber GmbH is an Endorsed Service Provider for seL4-based systems in operating systems:
+        <ul>
+          <li>systems: kernel platform port</li>
+          <li>systems: user-level OS (TRENTOS, CAmkES)</li>
+          <li>systems: applications</li>
+          <li>verification: user-level OS</li>
+          <li>verification: applications</li>
+        </ul>
+  Refer to <a href="hc.pml">services</a> or <a href="http://hensoldt-cyber.com/">Hensolt-cyber</a> for details.
+
       </td>
     </tr>
 
     <tr>
-      <td style="padding:15px">
+      <td>
         <a href="http://unsw.edu.au/">
           <img src="/Foundation/Membership/LOGOS/UNSW.svg"
           style="width: 200px" alt="UNSW Sydney">
@@ -161,25 +145,26 @@
         The Trustworthy Systems (TS) team is the creator of seL4 and
         the seL4 Foundation, and for a long time was the sole source
         of support. With the seL4 Foundation now in place, and at its
-        new home at UNSW, TS can now focus on seL4-related research
+        new home at UNSW, TS is now focusing on seL4-related research
         and driving development, leaving engineering mostly to other
-        ecosystem players. However, TS happy to take on research and
+        ecosystem players. However, TS is happy to take on research and
         consultancy contracts, as well as providing engineering
         (systems and verification) services when no commercial player
         is available.
-
-        <br/>
-	<span class="emph">UNSW has received <em>interim endorsement</em> as a Trusted
-	Service Provider for seL4-based systems.</span>
-	<ul>
-	  <li><a href="https://trustworthy.systems/engagement/services/">Details of services</a></li>
-	  <li> <a href="https://trustworthy.systems/">Trustworthy Systems home page</a></li>
-	  <li> <a href="https://www.unsw.edu.au/">UNSW home page</a></li>
-	</ul>
+    <br>
+    <br>
+    Trustworthy Systems specialises is an Endorsed Service proider for:
+    <ul>
+      <li>systems: kernel</li>
+      <li>systems: kernel platform port</li>
+      <li>systems: user-level OS</li>
+      <li>verification: user-level OS (seL4CP)</li>
+    </ul>
+	  For more information, see <a href="https://trustworthy.systems/engagement/services/">services</a>, <a href="https://trustworthy.systems/">Trustworthy Systems</a> and <a href="https://www.unsw.edu.au/">UNSW</a>.
       </td>
     </tr>
     <tr>
-      <td style="padding:15px">
+      <td>
         <a href="https://proofcraft.systems">
         <img src="/Foundation/Membership/LOGOS/proofcraft.svg"
 	  style="width: 200px" alt="Proofcraft">
@@ -208,17 +193,22 @@
 	security, for a verified future.
 
         <br/>
-	<span class="emph">Proofcraft has received <em>interim endorsement</em> as a Trusted
-	Service Provider for seL4-based systems.</span>
-	<ul>
-	  <li><a href="https://proofcraft.systems">Home page</a></li>
-	  <li>Contact: <a title="contact@proofcraft.systems"
-              href="mailto:contact@proofcraft.systems">contact@proofcraft.systems</a>
-	</ul>
+        <br>
+	Proofcraft is a Trusted	Service Provider for:
+    <ul>
+      <li>systems: kernel</li>
+      <li>systems: kernel platform port</li>
+      <li>verification: kernel</li>
+      <li>verification: user-level OS</li>
+      <li>verification: applications</li>
+    </ul>
+  For further information, visit <a href="https://proofcraft.systems">Proofcraft</a>
+	  or email <a title="contact@proofcraft.systems"
+              href="mailto:contact@proofcraft.systems">contact@proofcraft.systems</a>.
       </td>
     </tr>
     <tr>
-      <td style="padding:15px">
+      <td>
         <a href="https://kry10.com">
         <img src="/Foundation/Membership/LOGOS/Kry10.svg"
 	  style="width: 200px" alt="Kry10">
@@ -239,16 +229,23 @@
         tools. Come talk to us.
 
         <br/>
-	<span class="emph">Kry10 has received <em>interim endorsement</em> as a Trusted
-	Service Provider for seL4-based systems.</span>
-	<ul>
-	  <li><a href="https://kry10.com">Home page</a></li>
-	  <li><a href="https://kry10.com/contact">Contact</a>
-	</ul>
-      </td>
+        <br>
+	Kry10 is an Endorsed Service Provider for:
+  <ul>
+      <li>systems: kernel</li>
+      <li>systems: kernel platform port</li>
+      <li>systems: user-level OS (Kry10 OS, CAmkES)</li>
+      <li>systems: applications</li>
+      <li>verification: kernel</li>
+      <li>verification: user-level OS</li>
+      <li>verification: applications</li>
+    </ul>
+  For further information, visit <a href="https://kry10.com">Kry10</a> or <a href="https://kry10.com/contact">contact</a> us.
+	    </td>
     </tr>
   </table>
 
+<!--
   <h2>Training</h2>
   <table style="margin-left: 20px" >
     <tr>
@@ -372,5 +369,5 @@
       </td>
     </tr>
   </table>
-
+-->
 </div>
