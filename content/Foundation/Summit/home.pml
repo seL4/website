@@ -35,6 +35,46 @@ Munich, Germany (hybrid), 10-13 Oct 2022
 </div>
 
 
+<div class="summitpage_grid">
+  <div class="summitpage_item">
+    <a class="divLink" href="/About/"></a>
+    <div class="sp_title">
+      About
+    </div>
+  </div>
+  <div class="summitpage_item">
+    <a class="divLink" href="/About/"></a>
+    <div class="sp_title">
+      Program
+    </div>
+  </div>
+  <div class="summitpage_item">
+    <a class="divLink" href="/About/"></a>
+      <div class="sp_title">
+        Location
+      </div>
+  </div>
+  <div class="summitpage_item">
+    <a class="divLink" href="/About/"></a>
+    <div class="sp_title">
+      Registration
+    </div>
+  </div>
+  <div class="summitpage_item">
+    <a class="divLink" href="/About/"></a>
+    <div class="sp_title">
+      Program Committee
+    </div>
+  </div>
+  <div class="summitpage_item">
+    <a class="divLink" href="/About/"></a>
+    <div class="sp_title">
+      Principles
+    </div>
+  </div>
+</div>
+
+
 <div>
   <h3>
   About

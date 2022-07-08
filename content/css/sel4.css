@@ -450,6 +450,49 @@ table.summit-talks {
   padding: 8px;
 }
 
+.summitpage_grid {
+  display: grid;
+  display: inline-grid;
+  grid-template-columns: auto;
+  margin: 20px;
+  padding: 20px;
+  gap: 20px;
+}
+
+@media screen and (min-width: 60em) {
+  .summitpage_grid {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+.summitpage_item {
+  display: grid;
+  grid-template-columns: 150px;
+  grid-template-rows: 80px;
+  grid-template-areas: "sp_title";
+  grid-row-gap: 50px;
+  align-content: center;
+  justify-self: center;
+  padding: 20px;
+  border-radius: 10px;
+  background-color: #96CA4F;
+
+  /* For making the whole div clickable */
+  cursor: pointer;
+  position: relative;
+}
+.summitpage_item:hover {
+  background-color: #668B37;
+}
+.sp_title {
+  grid-area: sp_title;
+  justify-self: center;
+  align-self: center;
+  font-size: 2em;
+  color: white;
+  text-align: center;
+}
+
 td.break {background-color: #D6DBE4;}
 
 #summit-talks tr:hover {background-color: #ddd;}
