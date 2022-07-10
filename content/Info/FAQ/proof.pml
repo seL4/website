@@ -24,8 +24,8 @@
   following:
 </p>
 <p>
-  <b>The binary code of the ARM version of the seL4 microkernel
-  correctly implements the behaviour described in its abstract
+  <b>The binary code of the ARM and RISCV64 versions of the seL4 microkernel
+  correctly implement the behaviour described in its abstract
   specification and nothing more. Furthermore, the specification
   and the seL4 binary satisfy the classic security properties
   called <em>integrity</em> and <em>confidentiality</em>.</b>
@@ -75,7 +75,8 @@
   <li>
     <b>Assembly:</b> the seL4 kernel, like all operating system
     kernels, contains some assembly code, about 340 lines of ARM
-    assembly in our case. For seL4, this concerns mainly entry to
+    assembly in our case, and a similar amount for the RISCV64 version.
+    For seL4, this concerns mainly entry to
     and exit from the kernel, as well as direct hardware accesses.
     For the proof, we assume this code is correct.
   </li>
@@ -314,7 +315,7 @@
 <p>
   Even after binary and security proofs, we are still just at the
   beginning of verifying entire systems. See our <a href=
-  "http://trustworthy.systems/projects/TS/">current research
+  "http://trustworthy.systems/">current research
   projects</a> for more things to come. Contact TS if you would
   like to collaborate, for instance by connecting your formally
   verified application to the seL4 proof, or by building an entire
