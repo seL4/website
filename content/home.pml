@@ -28,17 +28,17 @@
     <ul>
       <li>
         <strong>
+          <span style="background-color:yellow">18 Jul 2022: Register for the seL4 summit 2022!</span>
+        </strong>
+      </li>
+      <li>
+        <strong>
           30 Jun 2022: The seL4 summit Program is available!
         </strong>
       </li>
      <li>
         <strong>
           17 June 2022: LatticeX joins the seL4 Foundation
-        </strong>
-      </li>
-      <li>
-        <strong>
-          2 May 2022: One week left to propose a talk at the seL4 summit 2022!
         </strong>
       </li>
       <li style="margin-top:0.2em;list-style-type:none">

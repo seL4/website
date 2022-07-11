@@ -56,6 +56,22 @@ Older News: <%=reflist%>
 
 <!----------------------------------------------------------->
 <div class="news-item" id="program-online">
+    18 July 2022: Register for the seL4 summit!
+</div>
+<div>
+
+  <p>
+    <a href="/Foundation/Summit/">
+      <img src="/images/sel4-summit-logo.svg"
+	   style="width: 20%;  padding-left:10px;  float:right"
+	   alt="seL4 summit" />
+    </a>
+
+    <span style="background-color:yellow">Call for participation...</span>
+</div>
+
+<!----------------------------------------------------------->
+<div class="news-item" id="program-online">
     30 June 2022: The seL4 summit Program is available!
 </div>
 <div>
@@ -131,7 +147,7 @@ A reminder that you have until Monday 9th of May 2022 to <a href="../Foundation/
     </video>
 </p>
 <div class="news-item" id="summit-venue">
-    29 April 2022: The seL4 Summit 2022 will be in Munich, Germany, on 10-12 Oct 2022
+    29 April 2022: The seL4 Summit 2022 will be in Munich, Germany, on 10-13 Oct 2022
 </div>
 <div>
     <a href="../Foundation/Summit">
