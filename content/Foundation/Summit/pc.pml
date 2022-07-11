@@ -124,4 +124,3 @@ Munich, Germany (hybrid), 10-13 Oct 2022
     </div>
   </div>
 </div>
-

@@ -19,7 +19,7 @@ Munich, Germany (hybrid), 10-13 Oct 2022
 </div>
 <div>
   <ul>
-    <div class="highlight"><li>18 Jul 2022: Call for Participation: <a href="https://hensoldt-cyber.com/sel4-summit-2022/">Register</a> for the seL4 summit!</li></div>
+    <li><div class="highlight">18 Jul 2022: Call for Participation: <a href="https://hensoldt-cyber.com/sel4-summit-2022/">Register</a> for the seL4 summit!</div></li>
     <li>30 Jun 2022: The <a href="program.pml">Program</a> is now available!</li>
     <li>29 Apr 2022: Location & date confirmed: Munich, Germany (hybrid), 10-13 Oct 2022</li>
     <li>30 Mar 2022: <a href="./cfp">Call For Presentation</a>, deadline 9th of May 2022</li>
