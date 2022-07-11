@@ -55,7 +55,7 @@ Older News: <%=reflist%>
 -->
 
 <!----------------------------------------------------------->
-<div class="news-item" id="program-online">
+<div class="news-item" id="summit-register">
     18 July 2022: Register for the seL4 summit!
 </div>
 <div>
