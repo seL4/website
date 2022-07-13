@@ -11,8 +11,8 @@ Munich, Germany (hybrid), 10-13 Oct 2022
 </h4>
 
 
+<!--
 <div class="highlight">
-
   <h3>
    Latest News
   </h3>
@@ -27,7 +27,199 @@ Munich, Germany (hybrid), 10-13 Oct 2022
     <li>1 Feb 2022: Call for bids to host the seL4 Summit 2022!</li>
   </ul>
 </div>
+-->
 
+<div class="summit_div">
+  <ul>
+    <li><a href="#summit-about">About</a></li>
+    <li><a href="#summit-location">Host</a></li>
+    <li><a href="#summit-register">Register</a></li>
+    <li><a href="#summit-program">Program</a></li>
+    <li><a href="#summit-pc">Program Committee</a></li>
+    <li><a href="#summit-contact">Contact</a></li>
+  </ul>
+</div>
+
+<div class="summit_div">
+  <h3 id="summit-about">
+    About
+  </h3>
+  <p>
+    The seL4 Summit 2022 is the fourth edition of the international summit on the <a href="../../About">seL4 microkernel</a>, the world's most highly assured OS kernel.
+  </p>
+  <p>
+    The first three seL4 Summits were organised by the <a href="https://trustedcomputingcoe.org/summits/">Trusted Computing Center of
+    Excellence</a>, and were hosted in the US.
+  </p>
+  <p>
+    The seL4 Summit 2022 is the first to be organised by the <a href="../">seL4 Foundation</a>, established in 2020.
+  </p>
+  <p>
+    Summit organisation and hosting is based on these <a href="principles">principles</a>.
+  </p>
+</div>
+
+<div class="summit_div">
+  <h3 id="summit-location">
+    Location & Host
+  </h3>
+  <p>
+    The seL4 Summit 2022 will be held in Munich, Germany (hybrid), 10-13 Oct 2022.
+  </p>
+  <p>
+    It is being hosted by HENSOLDT Cyber GmbH, a Munich-based company which develops embedded IT products that meet the highest security requirements, combining an operating system based on verified seL4 with a RISC-V processor that is protected from supply-chain attacks.
+  </p>
+  <p>
+    To learn more, including information on the location, please visit <a href="https://hensoldt-cyber.com/sel4-summit-2022/">Hensoldt CYBER</a>.
+  </p>
+</div>
+
+<div class="summit_div">
+  <h3 id="summit-register">
+    Registration
+  </h3>
+  <p>
+      Registration for the summit will open soon on the <a href="https://hensoldt-cyber.com/sel4-summit-2022/">Hensoldt CYBER's summit page</a>.
+  </p>
+</div>
+
+<div class="summit_div">
+  <h3 id="summit-program">
+    Program
+  </h3>
+  <p>
+    We have an amazing <a href="program.pml">line-up</a> of cool seL4 work, with a combination of technical research and development, experience reports of seL4 in the field, technical discussions and Birds-of-a-feather sessions, as well as a whole day of seL4 bootcamp with tutorials and training.
+  </p>
+</div>
+
+<div class="summit_div">
+  <h3 id="summit-pc">
+    Program committee
+  </h3>
+</div>
+
+<div class="people_grid">
+
+  <div class="person">
+    <div class="person_pic">
+      <a href="https://proofcraft.systems/#june"><img src="../Board/TS-June-s.jpg" alt="June Andronick" width="80" /></a>
+    </div>
+    <div class="person_title">
+      <strong><a class="list_link" href="https://proofcraft.systems/#june">June Andronick<br /> (co-chair)</a></strong>
+    </div>
+  </div>
+
+  <div class="person">
+    <div class="person_pic">
+      <a href="http://loonwerks.com/people/darren-cofer.html"><img src="../../images/summit/darren.jpg" alt="Darren Cofer" width="80" /></a>
+    </div>
+    <div class="person_title">
+      <strong><a class="list_link" href="http://loonwerks.com/people/darren-cofer.html">Darren Cofer <br /> (co-chair)</a></strong>
+    </div>
+  </div>
+
+  <div class="person">
+    <div class="person_pic">
+      <a href="https://www.linkedin.com/in/annamlyons/"><img src="../../images/tsc/anna.png" alt="Anna Lyons" width="80" /></a>
+    </div>
+    <div class="person_title">
+      <strong><a class="list_link" href="https://www.linkedin.com/in/annamlyons/">Anna Lyons</a></strong>
+    </div>
+  </div>
+
+  <div class="person">
+    <div class="person_pic">
+      <a href="https://www.linkedin.com/in/axelheider"><img src="../../images/summit/axel.png" alt="Axel Heider" width="80" /></a>
+    </div>
+    <div class="person_title">
+      <strong><a class="list_link" href="https://www.linkedin.com/in/axelheider">Axel Heider</a></strong>
+    </div>
+  </div>
+
+  <div class="person">
+    <div class="person_pic">
+      <a href="https://trustworthy.systems/people/?cn=Gernot+Heiser"><img src="../Board/TS-Gernot-s.jpg" alt="Gernot Heiser" width="80"/></a>
+    </div>
+    <div class="person_title">
+      <strong><a class="list_link" href="https://trustworthy.systems/people/?cn=Gernot+Heiser">Gernot Heiser</a></strong>
+    </div>
+  </div>
+
+  <div class="person">
+    <div class="person_pic">
+      <a href="https://trustworthy.systems/people/?cn=Ihor+Kuz"><img src="../../images/tsc/ihor.jpg" alt="Ihor Kuz" width="80" /></a>
+    </div>
+    <div class="person_title">
+      <strong><a class="list_link" href="https://trustworthy.systems/people/?cn=Ihor+Kuz">Ihor Kuz</a></strong>
+    </div>
+  </div>
+
+  <div class="person">
+    <div class="person_pic">
+      <a href="https://en.wikipedia.org/wiki/John_Launchbury"><img src="../../images/summit/john.jpg" alt="John Launchbury" width="80"/></a>
+    </div>
+    <div class="person_title">
+      <strong><a class="list_link" href="https://en.wikipedia.org/wiki/John_Launchbury">John Launchbury</a></strong>
+    </div>
+  </div>
+
+  <div class="person">
+    <div class="person_pic">
+      <a href="https://www.linkedin.com/in/kent-mcleod-1703a757"><img src="../../images/tsc/kent.jpg" alt="Kent Mcleod" width="80" /></a>
+    </div>
+    <div class="person_title">
+      <strong><a class="list_link" href="https://www.linkedin.com/in/kent-mcleod-1703a757">Kent Mcleod</a></strong>
+    </div>
+  </div>
+
+  <div class="person">
+    <div class="person_pic">
+      <a href="https://nickspinale.com"><img src="../../images/summit/nick.jpg" alt="Nick Spinale" width="80"/></a>
+    </div>
+    <div class="person_title">
+      <strong><a class="list_link" href="https://nickspinale.com">Nick Spinale</a></strong>
+    </div>
+  </div>
+
+  <div class="person">
+    <div class="person_pic">
+      <a href="https://perry.alexander.name"><img src="../../images/summit/perry.jpg" alt="Perry Alexander" width="80"/></a>
+    </div>
+    <div class="person_title">
+      <strong><a class="list_link" href="https://perry.alexander.name">Perry Alexander</a></strong>
+    </div>
+  </div>
+
+  <div class="person">
+    <div class="person_pic">
+      <a href="https://www.linkedin.com/in/robbie-vanvossen-gr/"><img src="../../images/summit/robbie.png" alt="Robbie VanVossen" width="80"/></a>
+    </div>
+    <div class="person_title">
+      <strong><a class="list_link" href="https://www.linkedin.com/in/robbie-vanvossen-gr/">Robbie VanVossen</a></strong>
+    </div>
+  </div>
+
+  <div class="person">
+    <div class="person_pic">
+      <a href="https://www.adventiumlabs.com/team-member/todd-carpenter"><img src="../../images/summit/todd.jpg" alt="Todd Carpenter" width="80"/></a>
+    </div>
+    <div class="person_title">
+      <strong><a class="list_link" href="https://www.adventiumlabs.com/team-member/todd-carpenter">Todd Carpenter</a></strong>
+    </div>
+  </div>
+</div>
+
+
+<div class="summit_div">
+  <h3 id="summit-contact">
+    Contact
+  </h3>
+  <p>
+    If you have questions, please do not hesitate to contact the seL4 Foundation summit team at: <a title="summit@sel4.systems"   href="mailto:summit@sel4.systems">summit@sel4.systems</a>.
+  </p>
+</div>
+
+<!--
 <div class="summitpage_grid">
   <div class="summitpage_item">
     <a class="divLink" href="about.pml"></a>
@@ -66,7 +258,7 @@ Munich, Germany (hybrid), 10-13 Oct 2022
     </div>
   </div>
 </div>
-
+-->
 <!--
   <h3>
    Important Dates:
@@ -93,14 +285,3 @@ Munich, Germany (hybrid), 10-13 Oct 2022
 
   </p>
 -->
-
-
-<h3>
-   Contact
-</h3>
-<div>
-  <p>
-   If you have questions, please do not hesitate to contact the seL4 Foundation summit team at: <a title="summit@sel4.systems"   href="mailto:summit@sel4.systems">summit@sel4.systems</a>.
-  </p>
-
-</div>

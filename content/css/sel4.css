@@ -493,6 +493,10 @@ table.summit-talks {
   text-align: center;
 }
 
+.summit_div{
+  padding-top: 10px;
+}
+
 td.break {background-color: #D6DBE4;}
 
 #summit-talks tr:hover {background-color: #ddd;}

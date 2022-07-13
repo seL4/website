@@ -16,12 +16,6 @@ Munich, Germany (hybrid), 10-13 Oct 2022
 
 <div>
   <p>
-    We have an amazing line-up of cool seL4 work, with a combination of
-    technical research and development, experience reports of seL4 in the field,
-    technical discussions and Birds-of-a-feather sessions, as well as a whole
-    day of seL4 bootcamp with tutorials and training.
-  </p>
-  <p>
     All times are local time in Munich, Germany (UTC+2).
   </p>
 </div>
