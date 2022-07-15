@@ -56,18 +56,32 @@ Older News: <%=reflist%>
 
 <!----------------------------------------------------------->
 <div class="news-item" id="summit-register">
-    18 July 2022: Register for the seL4 summit!
+    18 July 2022: Register for the seL4 summit 2022!
 </div>
 <div>
-
-  <p>
-    <a href="/Foundation/Summit/">
-      <img src="/images/sel4-summit-logo.svg"
-	   style="width: 20%;  padding-left:10px;  float:right"
+  <a href="/Foundation/Summit/">
+    <img src="/images/sel4-summit-logo.svg"
+    style="width: 20%;  padding-left:10px;  float:right"
 	   alt="seL4 summit" />
-    </a>
-
-    <span style="background-color:yellow">Call for participation...</span>
+  </a>
+  <p>
+    This hybrid event will be held in Munich, Germany, 10-13 October 2022.
+  </p>
+  <p>
+    The seL4 summit will cover the complete seL4 ecosystem, consisting of the verified microkernel, as well as all seL4-related technology, tools, infrastructure, products, projects, and people.
+  </p>
+  <p>
+    Tickets include:
+  </p>
+  <ul>
+    <li>Participation in the 3-day conference, including talks, keynotes, seL4 updates & discussions</li>
+    <li>A one-day bootcamp with workshops and trainings</li>
+    <li>Networking with other seL4 experts and enthusiasts</li>
+  </ul>
+  <div
+  <p class="highlight">
+    <a href="https://hensoldt-cyber.com/sel4-summit-2022/">Register</a> for the seL4 Summit 2022!
+  </p>
 </div>
 
 <!----------------------------------------------------------->
