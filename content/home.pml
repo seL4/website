@@ -28,7 +28,7 @@
     <ul>
       <li>
         <strong>
-          <span style="background-color:yellow">18 Jul 2022: Register for the seL4 summit 2022!</span>
+          18 Jul 2022: Register for the seL4 summit 2022!
         </strong>
       </li>
       <li>

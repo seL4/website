@@ -78,7 +78,6 @@ Older News: <%=reflist%>
     <li>A one-day bootcamp with workshops and trainings</li>
     <li>Networking with other seL4 experts and enthusiasts</li>
   </ul>
-  <div
   <p class="highlight">
     <a href="https://hensoldt-cyber.com/sel4-summit-2022/">Register</a> for the seL4 Summit 2022!
   </p>
