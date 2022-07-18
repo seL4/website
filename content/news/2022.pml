@@ -77,6 +77,7 @@ Older News: <%=reflist%>
     <li>Participation in the 3-day conference, including talks, keynotes, seL4 updates & discussions</li>
     <li>A one-day bootcamp with workshops and trainings</li>
     <li>Networking with other seL4 experts and enthusiasts</li>
+    <li>Participation in the mentoring program (for students and junior engineers)</li>
   </ul>
   <p class="highlight">
     <a href="https://hensoldt-cyber.com/sel4-summit-2022/">Register</a> for the seL4 Summit 2022!
