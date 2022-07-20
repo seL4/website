@@ -34,6 +34,7 @@ Munich, Germany (hybrid), 10-13 Oct 2022
     <li><a href="#summit-about">About</a></li>
     <li><a href="#summit-location">Host</a></li>
     <li><a href="#summit-register">Register</a></li>
+    <li><a href="#summit-mentoring">Mentorship Program</a></li>
     <li><a href="#summit-program">Program</a></li>
     <li><a href="#summit-pc">Program Committee</a></li>
     <li><a href="#summit-contact">Contact</a></li>
@@ -80,6 +81,23 @@ Munich, Germany (hybrid), 10-13 Oct 2022
   </h3>
   <p>
       Registration for the summit will open soon on the <a href="https://hensoldt-cyber.com/sel4-summit-2022/">Hensoldt CYBER's summit page</a>.
+  </p>
+  <p>
+    Tickets include:
+  </p>
+  <ul>
+    <li>Participation in the 3-day conference, including talks, keynotes, seL4 updates & discussions</li>
+    <li>A one-day bootcamp with workshops and trainings</li>
+    <li>Networking with other seL4 experts and enthusiasts</li>
+    <li>Participation in the mentoring program (for students and junior engineers)</li>
+  </ul>
+</div>
+<div class="summit-div">
+  <h3 id="summit-mentoring">
+    Mentorship Program
+  </h3>
+  <p>
+  As part of the registration process, attendees have the opportunity to opt-in to a new, informal mentorship program. The purpose of this program is to foster mentorship relationships within the seL4 community. The program committee will match students and junior engineers who wish to participate as mentees with volunteer mentors. Participating attendees will be introduced to their counterparts during the summit, and will carry on afterwards with whatever level of involvement suits both parties. Mentors are welcome to volunteer for any level of involvement.
   </p>
 </div>
 
