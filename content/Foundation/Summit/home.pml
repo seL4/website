@@ -80,7 +80,7 @@ Munich, Germany (hybrid), 10-13 Oct 2022
     Registration
   </h3>
   <p>
-      Registration for the summit will open soon on the <a href="https://hensoldt-cyber.com/sel4-summit-2022/">Hensoldt CYBER's summit page</a>.
+      Registration for the summit is open on <a href="https://hensoldt-cyber.com/sel4-summit-2022/">Hensoldt CYBER's summit page</a>.
   </p>
   <p>
     Tickets include:
