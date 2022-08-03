@@ -11,52 +11,57 @@ Munich, Germany (hybrid), 10-13 Oct 2022
 </h4>
 
 
+<!--
 <div class="highlight">
-
   <h3>
    Latest News
   </h3>
 </div>
-
- <div>
+<div>
   <ul>
-  <li> <div class="highlight">
-    30 Jun 2022: The <a href="program.pml">Program</a> is now available!
-  </div> </li>
-  <li>
-    29 Apr 2022: Location & date confirmed: Munich, Germany (hybrid), 10-13 Oct 2022
-  </li>
-  <li>
-    30 Mar 2022:  <a href="./cfp">Call For Presentation</a>, deadline 9th of May 2022
-  </li>
-  <li> 16 Mar 2022:  Meet the summit 2022 PC members! </li>
-  <li> 1 Feb 2022: Call for bids to host the seL4 Summit 2022!</li>
+    <li><div class="highlight">18 Jul 2022: Call for Participation: <a href="https://hensoldt-cyber.com/sel4-summit-2022/">Register</a> for the seL4 summit!</div></li>
+    <li>30 Jun 2022: The <a href="program.pml">Program</a> is now available!</li>
+    <li>29 Apr 2022: Location & date confirmed: Munich, Germany (hybrid), 10-13 Oct 2022</li>
+    <li>30 Mar 2022: <a href="./cfp">Call For Presentation</a>, deadline 9th of May 2022</li>
+    <li>16 Mar 2022: Meet the summit 2022 PC members! </li>
+    <li>1 Feb 2022: Call for bids to host the seL4 Summit 2022!</li>
+  </ul>
+</div>
+-->
+
+<div class="summit_div">
+  <ul>
+    <li><a href="#summit-about">About</a></li>
+    <li><a href="#summit-location">Host</a></li>
+    <li><a href="#summit-register">Register</a></li>
+    <li><a href="#summit-mentoring">Mentorship Program</a></li>
+    <li><a href="#summit-program">Program</a></li>
+    <li><a href="#summit-pc">Program Committee</a></li>
+    <li><a href="#summit-contact">Contact</a></li>
   </ul>
 </div>
 
-
-<div>
-  <h3>
-  About
+<div class="summit_div">
+  <h3 id="summit-about">
+    About
   </h3>
   <p>
-   The seL4 Summit 2022 is the fourth edition of the international summit on
-   the <a href="../../About">seL4 microkernel</a>, the world's most highly
-   assured OS kernel.
+    The seL4 Summit 2022 is the fourth edition of the international summit on the <a href="../../About">seL4 microkernel</a>, the world's most highly assured OS kernel.
   </p>
   <p>
-   The first three seL4 Summits were organised by the <a
-   href="https://trustedcomputingcoe.org/summits/">Trusted Computing Center of
-   Excellence</a>, and were hosted in the US.
+    The first three seL4 Summits were organised by the <a href="https://trustedcomputingcoe.org/summits/">Trusted Computing Center of
+    Excellence</a>, and were hosted in the US.
   </p>
   <p>
-
-   The seL4 Summit 2022 is the first to be organised by the <a href="../">seL4
-   Foundation</a>, established in 2020.
-
+    The seL4 Summit 2022 is the first to be organised by the <a href="../">seL4 Foundation</a>, established in 2020.
   </p>
+  <p>
+    Summit organisation and hosting is based on these <a href="principles">principles</a>.
+  </p>
+</div>
 
-  <h3>
+<div class="summit_div">
+  <h3 id="summit-location">
     Location & Host
   </h3>
   <p>
@@ -66,18 +71,21 @@ Munich, Germany (hybrid), 10-13 Oct 2022
     It is being hosted by HENSOLDT Cyber GmbH, a Munich-based company which develops embedded IT products that meet the highest security requirements, combining an operating system based on verified seL4 with a RISC-V processor that is protected from supply-chain attacks.
   </p>
   <p>
-    To learn more please visit <a href="https://hensoldt-cyber.com/sel4-summit-2022/">Hensoldt CYBER</a>.
+    To learn more, including information on the location, please visit <a href="https://hensoldt-cyber.com/sel4-summit-2022/">Hensoldt CYBER</a>.
   </p>
-  <div class="highlight">
-    <h3>
-      Registration and tickets - coming soon!
+</div>
+
+<div class="summit_div">
+   <div class="highlight">
+    <h3 id="summit-register">
+      Registration - coming soon!
     </h3>
   </div>
   <p>
-    This hybrid event will be held in Munich, Germany, 10-13 October 2022. The seL4 summit will cover the complete seL4 ecosystem, consisting of the verified microkernel, as well as all seL4-related technology, tools, infrastructure, products, projects, and people.
+      Registration for the summit will open soon on <a href="https://hensoldt-cyber.com/sel4-summit-2022/">Hensoldt CYBER's summit page</a>.
   </p>
   <p>
-    Tickets will include:
+    Tickets include:
   </p>
   <ul>
     <li>Participation in the 3-day conference, including talks, keynotes, seL4 updates & discussions</li>
@@ -85,104 +93,30 @@ Munich, Germany (hybrid), 10-13 Oct 2022
     <li>Networking with other seL4 experts and enthusiasts</li>
     <li>Participation in the mentoring program (for students and junior engineers)</li>
   </ul>
-
-  <h4>
-    Mentorship program
-  </h4>
+</div>
+<div class="summit-div">
+  <h3 id="summit-mentoring">
+    Mentorship Program
+  </h3>
   <p>
-    As part of the registration process, attendees have the opportunity to opt-in to a new, informal mentorship program. The purpose of this program is to foster mentorship relationships within the seL4 community. The program committee will match students and junior engineers who wish to participate as mentees with volunteer mentors. Participating attendees will be introduced to their counterparts during the summit, and will carry on afterwards with whatever level of involvement suits both parties. Mentors are welcome to volunteer for any level of involvement.
+  As part of the registration process, attendees have the opportunity to opt-in to a new, informal mentorship program. The purpose of this program is to foster mentorship relationships within the seL4 community. The program committee will match students and junior engineers who wish to participate as mentees with volunteer mentors. Participating attendees will be introduced to their counterparts during the summit, and will carry on afterwards with whatever level of involvement suits both parties. Mentors are welcome to volunteer for any level of involvement.
   </p>
-  <p>
-    Attendees will be given the option to partake in the mentorship program as part of the registration process.
-  </p>
+</div>
 
-
-  <h3>
+<div class="summit_div">
+  <h3 id="summit-program">
     Program
   </h3>
-
-  <div class="highlight">
   <p>
-    The seL4 summit <a href="program.pml">Program</a> is now available!
+    We have an amazing <a href="program.pml">line-up</a> of cool seL4 work, with a combination of technical research and development, experience reports of seL4 in the field, technical discussions and Birds-of-a-feather sessions, as well as a whole day of seL4 bootcamp with tutorials and training.
   </p>
-  </div>
-  <div>
-  <p>
+</div>
 
-    We have an amazing line-up of cool seL4 work, with a combination of
-    technical research and development, experience reports of seL4 in the field,
-    technical discussions and Birds-of-a-feather sessions, as well as a whole
-    day of seL4 bootcamp with tutorials and training.
-
-  </p>
-  </div>
-
-<!--
-  <h3>
-   Important Dates:
+<div class="summit_div">
+  <h3 id="summit-pc">
+    Program committee
   </h3>
-  <ul>
-  <li> Abstracts due: 9th of May 2022</li>
-  <li> Notification of decisions: 30th of May 2022 </li>
-  <li> Summit: 10-13 October 2022  </li>
-  </ul>
--->
-<!--
-  <h3>
-   Call for Presentations
-  </h3>
-
-  <p>
-
-  Check the <a href="./cfp">CFP</a>.  To propose a talk, send an abstract of
-  <strong>one page or less</strong> <strong>by Monday 9th of May 2022</strong>
-  to <a title="summit@sel4.systems"
-  href="mailto:summit@sel4.systems">summit@sel4.systems</a>.  If you would like
-  to propose a talk to be delivered remotely, please notify it in the
-  submission.
-
-  </p>
--->
-
-  <h3>
-   Principles
-  </h3>
-
-  <p>
-
-  An open <strong>call for presentation</strong> invites submissions of short
-  abstracts about cool work on seL4.
-
-  </p>
-
-  <p>
-
-  The <strong>Program Committee</strong> is in charge of the technical content
-  (reviewing submission, selecting invited speakers, defining the program).
-
-  </p>
-
-  <p>
-
-  The <strong>Hosting Team</strong> is in charge of organising the event (venue,
-  finances, catering, local arrangements).  <!--The Hosting Team is aimed to be
-  selected through an open bid process by the seL4 Foundation board. The call
-  for bids ideally occurs 2 months before the previous summit, in order for the
-  bids for year N+1 to be presented at the summit in year N.-->
-
-  </p>
-
-  <p>
-
-  The <strong>location</strong> is aimed to be on a different continent each
-  year, as far as possible, with a hybrid in-person/online event.
-  </p>
-
-
-  <h3>
-   Program Committee
-  </h3>
-
+</div>
 
 <div class="people_grid">
 
@@ -296,36 +230,78 @@ Munich, Germany (hybrid), 10-13 Oct 2022
 </div>
 
 
-<!--
+<div class="summit_div">
+  <h3 id="summit-contact">
+    Contact
+  </h3>
+  <p>
+    If you have questions, please do not hesitate to contact the seL4 Foundation summit team at: <a title="summit@sel4.systems"   href="mailto:summit@sel4.systems">summit@sel4.systems</a>.
+  </p>
+</div>
 
-<div class="homepage_grid">
-  <div class="homepage_item">
-    <a class="divLink" href="about"></a>
-    <div class="hp_pic">
-      <img src="/images/sel4-summit-about-band.svg" style="width:200px;" alt="seL4 summit" />
-    </div>
-    <div>
-      Learn more about the annual seL4 Summit.
+<!--
+<div class="summitpage_grid">
+  <div class="summitpage_item">
+    <a class="divLink" href="about.pml"></a>
+    <div class="sp_title">
+      About
     </div>
   </div>
-
-  <div class="homepage_item">
-    <a class="divLink" href="pc"></a>
-    <div class="hp_pic">
-      <img src="/images/sel4-summit-pc-band.svg" style="width:200px;" alt="seL4 Foundation" />
+  <div class="summitpage_item">
+    <a class="divLink" href="program.pml"></a>
+    <div class="sp_title">
+      Program
     </div>
-    <div>
-      About our program committee.
+  </div>
+  <div class="summitpage_item">
+    <a class="divLink" href="location.pml"></a>
+      <div class="sp_title">
+        Location
+      </div>
+  </div>
+  <div class="summitpage_item">
+    <a class="divLink" href="registration.pml"></a>
+    <div class="sp_title">
+      Registration
+    </div>
+  </div>
+  <div class="summitpage_item">
+    <a class="divLink" href="pc.pml"></a>
+    <div class="sp_title">
+      Program Committee
+    </div>
+  </div>
+  <div class="summitpage_item">
+    <a class="divLink" href="principles.pml"></a>
+    <div class="sp_title">
+      Principles
     </div>
   </div>
 </div>
 -->
-
+<!--
   <h3>
-   Contact
+   Important Dates:
   </h3>
-  <p>
-   If you have questions, please do not hesitate to contact the seL4 Foundation summit team at: <a title="summit@sel4.systems"   href="mailto:summit@sel4.systems">summit@sel4.systems</a>.
-  </p>
+  <ul>
+  <li> Abstracts due: 9th of May 2022</li>
+  <li> Notification of decisions: 30th of May 2022 </li>
+  <li> Summit: 10-13 October 2022  </li>
+  </ul>
+-->
+<!--
+  <h3>
+   Call for Presentations
+  </h3>
 
-</div>
+  <p>
+
+  Check the <a href="./cfp">CFP</a>.  To propose a talk, send an abstract of
+  <strong>one page or less</strong> <strong>by Monday 9th of May 2022</strong>
+  to <a title="summit@sel4.systems"
+  href="mailto:summit@sel4.systems">summit@sel4.systems</a>.  If you would like
+  to propose a talk to be delivered remotely, please notify it in the
+  submission.
+
+  </p>
+-->
