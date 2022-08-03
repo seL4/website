@@ -28,7 +28,7 @@
     <ul>
       <li>
         <strong>
-          4 Aug 2022: Google joins the seL4 Foundation!
+          4 Aug 2022: Google joins the seL4 Foundation
         </strong>
       </li>
       <li>
