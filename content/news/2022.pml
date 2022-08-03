@@ -61,7 +61,7 @@ Older News: <%=reflist%>
 <div>
 
   <p>
-    <a href="https:google.com">
+    <a href="https://www.google.com/">
       <img src="/Foundation/Membership/LOGOS/google-short.svg" style="width: 20%;  padding-left:10px;  float:right" alt="Google" />
      </a>
 
