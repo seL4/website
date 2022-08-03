@@ -37,7 +37,7 @@ All times are local time in Munich, Germany (UTC+2).
   <tr><td>15:00 - 15:30</td><td>Talk</td><td><strong>Using QEMU to extend seL4 VirtIO support</strong><br>Hannu Lyytinen & Markku Ahvenjärvi, TII</td></tr>
   <tr><td>15:30 - 16:00</td><td>Talk</td><td><strong>QEMU as prototyping platform for seL4 systems</strong><br>Axel Heider, Hensoldt Cyber</td></tr>
   <tr><td>16:00 - 16:30</td><td>Talk</td><td><strong>Porting U-Boot drivers to seL4</strong><br>Mark Jenkinson & Stephen Williams, Capgemini</td></tr>
-  <tr><td>16:30 - 17:00</td><td>Talk</td><td><strong>fence.t: Hardware support for preventing microarchitectural timing channels</strong><br>Nils Wistoff, ETH</td></tr>
+  <tr><td>16:30 - 17:00</td><td>Talk</td><td><strong>fence.t: hardware support for preventing microarchitectural timing channels</strong><br>Nils Wistoff, ETH</td></tr>
   <tr>
     <th colspan="3">Day 2&emsp;11 October 2022</th>
   </tr>
@@ -47,12 +47,12 @@ All times are local time in Munich, Germany (UTC+2).
   <tr><td>10:15 - 10:45</td><td>Talk</td><td><strong>seL4 and BEAM: a match made in Erlang</strong><br>Ihor Kuz, Kry10</td></tr>
   <tr><td>10:45 - 11:15</td><td>Talk</td><td>TBD<!-- strong>Security
   framework for mixed-critical use-cases</strong><br>Jorge Pereira --></td></tr>
-  <tr><td>11:15 - 11:45</td><td>Talk & Discussion</td><td><strong>Rust support in seL4 userspace: Present and future</strong><br>Nick Spinale</td></tr>
+  <tr><td>11:15 - 11:45</td><td>Talk & Discussion</td><td><strong>Rust support in seL4 userspace: present and future</strong><br>Nick Spinale</td></tr>
   <tr><td class="break" colspan="3">Break</td></tr>
   <tr><td>12:45 - 13:15</td><td>Talk</td><td><strong>Trustworthy board management controllers</strong><br>Daniel Schwyn & Ben Fiedler, ETH</td></tr>
   <tr><td>13:15 - 13:45</td><td>Talk</td><td><strong>Early experiences proving the correctness of a network stack implementation</strong><br>Alain Kägi et al, Lewis & Clark College</td></tr>
   <tr><td>13:45 - 14:15</td><td>Talk</td><td><strong>CASE overview: Cyber Assured Systems Engineering</strong><br>Darren Cofer, Collins Aerospace</td></tr>
-  <tr><td>14:15 - 14:45</td><td>Talk</td><td><strong>A Verified architecture for trustworthy remote attestation</strong><br>Grant Jurgensen, The University of Kansas</td></tr>
+  <tr><td>14:15 - 14:45</td><td>Talk</td><td><strong>A verified architecture for trustworthy remote attestation</strong><br>Grant Jurgensen, The University of Kansas</td></tr>
   <tr><td class="break" colspan="3">Break</td></tr>
   <tr><td>15:15 - 15:30</td><td>Experience report</td><td><strong>FerrOS: Rust-y unikernels on seL4 w/ compile-time assurances</strong><br>Zack Pierce, Auxon</td></tr>
   <tr><td>15:30 - 15:45</td><td>Experience report</td><td><strong>Safety-critical voice communication system (MCS, SMP, VM)</strong><br>Indan Zupancic, MEP</td></tr>
@@ -68,7 +68,7 @@ All times are local time in Munich, Germany (UTC+2).
   <tr><td class="break" colspan="3">Break</td></tr>
   <tr><td>11:00 - 11:15</td><td>Announcements</td><td><em>Discussion teaser and suggestions for Birds of a Feather</em></td></tr>
   <tr><td rowspan="2">11:15 - 12:00</td>
-      <td>Room 1:<br> Talk & Discussion</td><td><strong>seL4 mainlining: Experiences, challenges, and solutions</strong><br>Robbie VanVossen & Chris Guikema, DornerWorks</td></tr>
+      <td>Room 1:<br> Talk & Discussion</td><td><strong>seL4 mainlining: experiences, challenges, and solutions</strong><br>Robbie VanVossen & Chris Guikema, DornerWorks</td></tr>
   <tr><td>Room 2:<br> BoF</td><td><strong>Birds of a Feather on a topic to be suggested</strong></td></tr>
   <tr><td class="break" colspan="3">Break</td></tr>
   <tr><td rowspan="2">12:45 - 13:30</td>
@@ -83,7 +83,7 @@ All times are local time in Munich, Germany (UTC+2).
   <tr><td class="break" colspan="3">Break</td></tr>
   <tr><td>15:15 - 16:00</td><td>Plenary</td><td><strong>BoFs report back</strong></td></tr>
   <tr><td>16:00 - 16:15</td><td>Announcements</td><td><em>Bootcamp overview</em></td></tr>
-  <tr><td>16:15 - 16:30</td><td>Plenary</td><td><strong>seL4 summit and TCCOE - An Overview</strong><br>Jason Li & Ray Richards</td></tr>
+  <tr><td>16:15 - 16:30</td><td>Plenary</td><td><strong>seL4 Summit and TCCOE - an overview</strong><br>Jason Li & Ray Richards</td></tr>
   <tr><td>16:30 - 16:45</td><td>Plenary</td><td><strong>seL4 Foundation: overview, update and vision</strong><br> June Andronick, seL4 Foundation</td></tr>
   <tr><td>16:45 - 17:00</td><td>Announcements</td><td><em>Concluding remarks</em></td></tr>
  <tr>
@@ -95,10 +95,10 @@ All times are local time in Munich, Germany (UTC+2).
   <tr><td>10:45 - 12:00</td><td>Bootcamp</td><td><strong>TRENTOS</strong><br>Sebastian Eckl, Hensoldt Cyber</td></tr>
   <tr><td class="break" colspan="3">Break</td></tr>
   <tr><td>12:45 - 14:30</td><td>Bootcamp</td><td><strong>The seL4 Core
-  Platform (seL4CP)</strong><br>TBD, UNSW</td></tr>
-  <tr><td>14:30 - 15:15</td><td>Bootcamp</td><td><strong>VM Composer: The easy button for virtualized seL4-based systems</strong><br> Chris Guikema & Robbie VanVossen, DornerWorks</td></tr>
+  Platform (seL4CP)</strong><br>Ivan Velickovic & Peter Chubb, UNSW</td></tr>
+  <tr><td>14:30 - 15:15</td><td>Bootcamp</td><td><strong>VM Composer: the easy button for virtualized seL4-based systems</strong><br> Chris Guikema & Robbie VanVossen, DornerWorks</td></tr>
   <tr><td class="break" colspan="3">Break</td></tr>
-  <tr><td>15:30 - 16:45</td><td>Bootcamp</td><td><strong>BriefCASE Tutorial</strong><br>Darren Cofer, Isaac Amundson (Collins Aerospace)</td></tr>
+  <tr><td>15:30 - 16:45</td><td>Bootcamp</td><td><strong>BriefCASE tutorial</strong><br>Darren Cofer, Isaac Amundson (Collins Aerospace)</td></tr>
   <tr><td>16:45 - 17:00</td><td>Plenary</td><td><em>Concluding remarks</em></td></tr>
 </table>
 <div><br></div>
