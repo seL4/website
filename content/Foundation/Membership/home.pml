@@ -169,6 +169,18 @@
     </div>
     <div class="sponsor">
       <div class="sponsor-pic">
+        <a href="https://www.google.com/">
+          <img src="LOGOS/google.svg" style="width: 200px" alt="Google logo">
+        </a>
+      </div>
+      <div class="sponsor-name">
+        Google LLC
+      </div>
+      <div class="sponsor-info">
+      </div>
+    </div>
+    <div class="sponsor">
+      <div class="sponsor-pic">
         <a href="https://kry10.com">
           <img src="LOGOS/Kry10.svg" style="width: 250px" alt="Kry10 logo">
         </a>
