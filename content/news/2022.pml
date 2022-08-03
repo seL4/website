@@ -56,7 +56,7 @@ Older News: <%=reflist%>
 
 <!----------------------------------------------------------->
 <div class="news-item" id="member-google">
-    4 August 2022: Google joins the seL4 Foundation!
+    4 August 2022: Google joins the seL4 Foundation
 </div>
 <div>
 
@@ -65,7 +65,10 @@ Older News: <%=reflist%>
       <img src="/Foundation/Membership/LOGOS/google-short.svg" style="width: 20%;  padding-left:10px;  float:right" alt="Google" />
      </a>
 
-   The seL4 Foundation is pleased to welcome Google as our latest member! We are excited to see their interest in seL4 and look forward to seeing their work with seL4.
+   The seL4 Foundation is pleased to welcome <a href="https://www.google.com/">Google</a> as our latest member.
+    <br>
+    <br>
+    We are excited to see their interest in seL4 and look forward to seeing their work with seL4.
   </p>
 </div>
 <div class="news-finish">
