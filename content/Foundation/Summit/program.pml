@@ -87,7 +87,7 @@ All times are local time in Munich, Germany (UTC+2).
   <tr><td>16:30 - 16:45</td><td>Plenary</td><td><strong>seL4 Foundation: overview, update and vision</strong><br> June Andronick, seL4 Foundation</td></tr>
   <tr><td>16:45 - 17:00</td><td>Announcements</td><td><em>Concluding remarks</em></td></tr>
  <tr>
-    <th colspan="3">Day 4 (Bootcamp)&emsp;13 October 2022</th>
+    <th colspan="3">Day 4 (Bootcamp, on-site participants only)&emsp;13 October 2022</th>
   </tr>
   <tr><td>9:00 - 10:00</td><td>Bootcamp</td><td><strong>seL4 from zero to hello-world</strong></td></tr>
   <tr><td class="break" colspan="3">Break</td></tr>
