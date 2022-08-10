@@ -4,11 +4,6 @@
     SPDX-License-Identifier: CC-BY-SA-4.0
 -->
 
-<!--<title>Summit program</title>-->
-<!--
-    Copyright 2022 seL4 Project a Series of LF Projects, LLC.
-    SPDX-License-Identifier: CC-BY-SA-4.0
--->
 <h1>
   seL4 Summit 2022
 </h1>
@@ -22,7 +17,7 @@ Munich, Germany (hybrid), 10-13 Oct 2022
 </h3>
 
 
-<%@ include file="abstracts/seL4-rsearch-update.pml" %>
+<%@ include file="abstracts/seL4-research-update.pml" %>
 <%@ include file="abstracts/seL4-verification-roadmap.pml" %>
 <%@ include file="abstracts/seL4CP.pml" %>
 <%@ include file="abstracts/sDDF.pml" %>
