@@ -90,13 +90,11 @@ Munich, Germany (hybrid), 10-13 Oct 2022
     <li>Networking with other seL4 experts and enthusiasts</li>
     <li>Participation in the mentoring program (for students and junior engineers)</li>
   </ul>
-  <p>
     <div class="highlight" style="text-align: center">
       <a href="https://hopin.com/events/sel4-summit-2022/registration">
         Register for the summit
       </a>
     </div>
-  </p>
 </div>
 <div class="summit-div">
   <h3 id="summit-mentoring">
