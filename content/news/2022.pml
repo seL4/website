@@ -91,7 +91,7 @@ Older News: <%=reflist%>
 </p>
 <a href="https://hopin.com/events/sel4-summit-2022/registration">
   <div class="highlight" style="text-align: center">
-    Register for the seL4 Summit 2022!</a>
+    Register for the seL4 Summit 2022!
   </div>
 </a>
 
