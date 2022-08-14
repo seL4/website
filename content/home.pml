@@ -28,7 +28,7 @@
     <ul>
        <li>
         <strong>
-          12 Aug 2022: Register for the seL4 Summit!
+          15 Aug 2022: Register for the seL4 Summit!
         </strong>
       </li>
       <li>
