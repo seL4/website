@@ -63,4 +63,3 @@ Munich, Germany (hybrid), 10-13 Oct 2022
 
 <div class="summit-abstract" id="VM-Composer-bootcamp"><%@ include file="abstracts/VM-Composer-bootcamp.pml" %></div>
 <div class="summit-abstract" id="BriefCASE-tutorial"><%@ include file="abstracts/BriefCASE-tutorial.pml" %></div>
-
