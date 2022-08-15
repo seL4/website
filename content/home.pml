@@ -26,6 +26,11 @@
 
   <div class="news-column news-content">
     <ul>
+       <li>
+        <strong>
+          15 Aug 2022: Register for the seL4 Summit!
+        </strong>
+      </li>
       <li>
         <strong>
           4 Aug 2022: Google joins the seL4 Foundation
@@ -34,11 +39,6 @@
       <li>
         <strong>
           30 Jun 2022: The seL4 summit Program is available!
-        </strong>
-      </li>
-     <li>
-        <strong>
-          17 June 2022: LatticeX joins the seL4 Foundation
         </strong>
       </li>
       <li style="margin-top:0.2em;list-style-type:none">

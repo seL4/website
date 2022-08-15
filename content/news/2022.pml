@@ -55,6 +55,51 @@ Older News: <%=reflist%>
 -->
 
 <!----------------------------------------------------------->
+<div class="news-item" id="registration-open">
+    15 August 2022: Register for the seL4 Summit!
+</div>
+<div>
+
+  <p>
+    <a href="/Foundation/Summit/">
+      <img src="/images/sel4-summit-logo.svg"
+	   style="width: 20%;  padding-left:10px;  float:right"
+	   alt="seL4 summit" />
+    </a>
+</p>
+<p>
+  This hybrid event will be held in Munich, Germany, 10-13 October 2022.
+</p>
+<p>
+  The seL4 summit will cover the complete seL4 ecosystem, consisting of the verified microkernel, as well as all seL4-related technology, tools, infrastructure, products, projects, and people.
+</p>
+<p>
+  <strong>Tickets include:</strong>
+</p>
+<ul>
+  <li>Participation in the 3-day conference, including talks, keynotes, seL4 updates & discussions</li>
+  <li>A one-day bootcamp with workshops and trainings</li>
+  <li>Networking with other seL4 experts and enthusiasts</li>
+  <li>Participation in the mentoring program (for students and junior engineers)</li>
+</ul>
+
+<p>
+  <strong>Mentorship program</strong>
+</p>
+<p>
+  As part of the registration process, attendees have the opportunity to opt-in to a new, informal mentorship program. The purpose of this program is to foster mentorship relationships within the seL4 community. The program committee will match students and junior engineers who wish to participate as mentees with volunteer mentors. Participating attendees will be introduced to their counterparts during the summit, and will carry on afterwards with whatever level of involvement suits both parties. Mentors are welcome to volunteer for any level of involvement.
+</p>
+<a href="https://hopin.com/events/sel4-summit-2022/registration">
+  <div class="highlight" style="text-align: center">
+    Register for the seL4 Summit 2022!
+  </div>
+</a>
+
+</div>
+<div class="news-finish">
+</div>
+
+<!----------------------------------------------------------->
 <div class="news-item" id="member-google">
     4 August 2022: Google joins the seL4 Foundation
 </div>
