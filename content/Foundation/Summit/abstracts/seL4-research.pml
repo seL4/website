@@ -1,5 +1,5 @@
 <h4 class="summit-abstract-title">
-    seL4 research update
+    State of seL4-related research
 </h4>
 <p class="summit-abstract-type">
     Keynote
