@@ -29,7 +29,7 @@ All times are local time in Munich, Germany (UTC+2).
   <tr><td>11:15 - 11:45</td><td>Discussion</td><td><strong>AMA (Ask Me Anything)</strong> with the Foundation TSC</td></tr>
   <tr><td class="break" colspan="3">Break</td></tr>
   <tr><td>12:45 - 13:15</td><td>Talk</td><td><strong> The seL4 Core
-  Platform (seL4CP)</strong><br>TBD, UNSW</td></tr>
+  Platform (seL4CP)</strong><br>Zoltan Kocsis, UNSW</td></tr>
   <tr><td>13:15 - 13:45</td><td>Talk</td><td><strong>The seL4 Device
   Driver Framework (sDDF)</strong><br>Lucy Parker, UNSW</td></tr>
   <tr><td>13:45 - 14:30</td><td>Talk & Discussion</td><td><strong>Multiprocessing on seL4 with verified kernels</strong><br>Kent McLeod, Kry10</td></tr>
