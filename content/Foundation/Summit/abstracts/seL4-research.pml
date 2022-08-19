@@ -1,3 +1,8 @@
+<!--<title>Summit abstracts</title>-->
+<!--
+    Copyright 2022, seL4 summit authors (see abstracts)
+    SPDX-License-Identifier: CC-BY-SA-4.0
+-->
 <h4 class="summit-abstract-title">
     State of seL4-related research
 </h4>

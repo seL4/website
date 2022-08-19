@@ -1,3 +1,8 @@
+<!--<title>Summit abstracts</title>-->
+<!--
+    Copyright 2022, seL4 summit authors (see abstracts)
+    SPDX-License-Identifier: CC-BY-SA-4.0
+-->
 <h4 class="summit-abstract-title">
     VM Composer: the easy button for virtualized seL4-based systems
 </h4>

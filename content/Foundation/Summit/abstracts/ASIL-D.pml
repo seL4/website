@@ -1,3 +1,8 @@
+<!--<title>Summit abstract</title>-->
+<!--
+    Copyright 2022, seL4 summit authors (see abstracts)
+    SPDX-License-Identifier: CC-BY-SA-4.0
+-->
 <h4 class="summit-abstract-title">
     Make seL4 an ASIL-D Certified System
 </h4>
