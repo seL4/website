@@ -7,7 +7,6 @@
     Rust support in seL4 userspace: Present and future
 </h4>
 <p class="summit-abstract-type">
-
 </p>
 <p class="summit-abstract-presenter">
     Nick Spinale

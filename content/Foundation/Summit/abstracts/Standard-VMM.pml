@@ -4,7 +4,7 @@
     SPDX-License-Identifier: CC-BY-SA-4.0
 -->
 <h4 class="summit-abstract-title">
-    seL4 microkernel for virtualization use-cases “The importance of a standard VMM”
+    seL4 microkernel for virtualization use-cases "The importance of a standard VMM"
 </h4>
 <p class="summit-abstract-type">
     Talk & Discussion
