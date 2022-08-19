@@ -33,7 +33,7 @@ Munich, Germany (hybrid), 10-13 Oct 2022
   <ul>
     <li><a href="#summit-about">About</a></li>
     <li><a href="#summit-location">Host</a></li>
-    <li><a href="#summit-register">Register</a></li>
+    <li><a href="#summit-registration">Registration</a></li>
     <li><a href="#summit-mentoring">Mentorship Program</a></li>
     <li><a href="program.pml">Program</a></li>
     <li><a href="#summit-pc">Program Committee</a></li>
@@ -71,16 +71,20 @@ Munich, Germany (hybrid), 10-13 Oct 2022
     It is being hosted by HENSOLDT Cyber GmbH, a Munich-based company which develops embedded IT products that meet the highest security requirements, combining an operating system based on verified seL4 with a RISC-V processor that is protected from supply-chain attacks.
   </p>
   <p>
-    To learn more, including information on the location, please visit <a href="https://hensoldt-cyber.com/sel4-summit-2022/">Hensoldt CYBER</a>.
+    To learn more, including information on the venue, location, and registration, please visit <a href="https://hensoldt-cyber.com/sel4-summit-2022/">the host's summit webpage</a>.
+  </p>
+    <p>
+    For questions regarding location, venue, and registration, please contact <a title="summit.cyber@hensoldt.net" href="mailto:summit.cyber@hensoldt.net">summit.cyber@hensoldt.net</a>.
   </p>
 </div>
 
 <div class="summit_div">
-   <div class="highlight">
-    <h3 id="summit-register">
-      Register for the seL4 Summit!
-    </h3>
-  </div>
+  <h3 id="summit-registration">
+    Registration
+  </h3>
+  <p>
+    Information regarding location, venue and registration is available on <a href="https://hensoldt-cyber.com/sel4-summit-2022/">the host's summit webpage</a>.
+  </p>
   <p>
     Tickets include:
   </p>
@@ -90,11 +94,14 @@ Munich, Germany (hybrid), 10-13 Oct 2022
     <li>Networking with other seL4 experts and enthusiasts</li>
     <li>Participation in the mentoring program (for students and junior engineers)</li>
   </ul>
-    <div class="highlight" style="text-align: center">
-      <a href="https://hopin.com/events/sel4-summit-2022/registration">
-        Register for the summit
-      </a>
-    </div>
+  <div class="highlight" style="text-align: center; padding-top:10px; padding-bottom:10px">
+    <a href="https://hopin.com/events/sel4-summit-2022/registration">
+      Register for the summit
+    </a>
+  </div>
+  <p>
+    For questions regarding location, venue, and registration, please contact <a title="summit.cyber@hensoldt.net" href="mailto:summit.cyber@hensoldt.net">summit.cyber@hensoldt.net</a>.
+  </p>
 </div>
 <div class="summit-div">
   <h3 id="summit-mentoring">
@@ -237,7 +244,10 @@ Munich, Germany (hybrid), 10-13 Oct 2022
     Contact
   </h3>
   <p>
-    If you have questions, please do not hesitate to contact the seL4 Foundation summit team at: <a title="summit@sel4.systems"   href="mailto:summit@sel4.systems">summit@sel4.systems</a>.
+    For questions regarding location, venue, and registration, please contact <a title="summit.cyber@hensoldt.net" href="mailto:summit.cyber@hensoldt.net">summit.cyber@hensoldt.net</a>.
+  </p>
+  <p>
+    For all other questions, please contact <a title="summit@sel4.systems"   href="mailto:summit@sel4.systems">summit@sel4.systems</a>.
   </p>
 </div>
 
