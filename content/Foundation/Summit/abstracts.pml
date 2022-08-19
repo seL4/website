@@ -1,6 +1,6 @@
 <!--<title>Summit abstracts</title>-->
 <!--
-    Copyright 2022 seL4 Project a Series of LF Projects, LLC.
+    Copyright 2022, seL4 summit authors (see abstracts)
     SPDX-License-Identifier: CC-BY-SA-4.0
 -->
 
@@ -42,7 +42,7 @@ Munich, Germany (hybrid), 10-13 Oct 2022
 <div class="summit-abstract" id="ASIL-D"><%@ include file="abstracts/ASIL-D.pml" %></div>
 <div class="summit-abstract" id="VM-Composer"><%@ include file="abstracts/VM-Composer.pml" %></div>
 
-<!--<div class="summit-abstract" id=""><%@ include file="abstracts/Funding-agencies.pml" %></div>-->
+<!--<div class="summit-abstract" id="Funding-agencies"><%@ include file="abstracts/Funding-agencies.pml" %></div>-->
 
 <!--<div class="summit-abstract" id="seL4-principles-abstractions"><%@ include file="abstracts/seL4-principles-abstractions.pml" %></div>-->
 
