@@ -158,6 +158,23 @@
   </div>
 
   <div class="homepage_item">
+    <a class="divLink" href="/Foundation/Summit/"></a>
+    <div class="hp_pic">
+      <img src="/images/sel4-summit-logo.svg" style="width:200px" alt="seL4 Summit" />
+    </div>
+    <div class="hp_title">
+      seL4 Summit
+    </div>
+    <div class="hp_text">
+      The annual summit organised by the seL4 Foundation.
+    </div>
+  </div>
+
+  <div class="homepage_item">
+  <!-- empty placeholder, to center next item-->
+  </div>
+
+  <div class="homepage_item">
     <a class="divLink" href="/Info/"></a>
     <div class="hp_pic">
       <img src="/images/more_info.png" style="width:80px;height:95px;" alt="More info" />

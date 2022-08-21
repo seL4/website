@@ -75,7 +75,7 @@ Munich, Germany (hybrid), 10-13 Oct 2022
     To learn more, including information on the venue, location, and registration, please visit <a href="https://hensoldt-cyber.com/sel4-summit-2022/">the host's summit webpage</a>.
   </p>
     <p>
-    For questions regarding location, venue, and registration, please contact <a title="summit.cyber@hensoldt.net" href="mailto:summit.cyber@hensoldt.net">summit.cyber@hensoldt.net</a>.
+    For questions regarding location, venue, and registration, please contact <a title="sel4summit.cyber@hensoldt.net" href="mailto:sel4summit.cyber@hensoldt.net">sel4summit.cyber@hensoldt.net</a>.
   </p>
 </div>
 
@@ -101,7 +101,7 @@ Munich, Germany (hybrid), 10-13 Oct 2022
     </a>
   </div>
   <p>
-    For questions regarding location, venue, and registration, please contact <a title="summit.cyber@hensoldt.net" href="mailto:summit.cyber@hensoldt.net">summit.cyber@hensoldt.net</a>.
+    For questions regarding location, venue, and registration, please contact <a title="sel4summit.cyber@hensoldt.net" href="mailto:sel4summit.cyber@hensoldt.net">sel4summit.cyber@hensoldt.net</a>.
   </p>
 </div>
 <div class="summit-div">
@@ -245,7 +245,7 @@ Munich, Germany (hybrid), 10-13 Oct 2022
     Contact
   </h3>
   <p>
-    For questions regarding location, venue, and registration, please contact <a title="summit.cyber@hensoldt.net" href="mailto:summit.cyber@hensoldt.net">summit.cyber@hensoldt.net</a>.
+    For questions regarding location, venue, and registration, please contact <a title="sel4summit.cyber@hensoldt.net" href="mailto:sel4summit.cyber@hensoldt.net">sel4summit.cyber@hensoldt.net</a>.
   </p>
   <p>
     For all other questions, please contact <a title="summit@sel4.systems"   href="mailto:summit@sel4.systems">summit@sel4.systems</a>.
