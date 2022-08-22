@@ -9,8 +9,8 @@
 <p class="summit-abstract-type">
     Talk
 </p>
-<p class="summit-abstract-presenter">
-    Nils Wistoff, ETH
+<p class="summit-abstract-author">
+    Presented by Nils Wistoff, <span class="summit-abstract-affiliation">ETH</span>
 </p>
 <p>
     Microarchitectural timing channels enable information transfer between security domains that are supposed to be isolated, bypassing the operating system's security boundaries. They result from shared microarchitectural state that depends on execution in one security domain and impacts timing in another. Since modern ISAs do not specify timing behaviour, they are insufficient to address these channels.

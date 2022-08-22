@@ -9,8 +9,8 @@
 <p class="summit-abstract-type">
     Experience report
 </p>
-<p class="summit-abstract-presenter">
-    Indan Zupancic, MEP
+<p class="summit-abstract-author">
+    Presented by Indan Zupancic, <span class="summit-abstract-affiliation">MEP</span>
 </p>
 <p>
 </p>

@@ -9,8 +9,8 @@
 <p class="summit-abstract-type">
     Talk
 </p>
-<p class="summit-abstract-presenter">
-    Rafal Kolanski, Gerwin Klein & June Andronick, Proofcraft
+<p class="summit-abstract-author">
+    Presented by Rafal Kolanski, Gerwin Klein & June Andronick, <span class="summit-abstract-affiliation">Proofcraft</span>
 </p>
 <p>
     Verification makes seL4 unique. With increasing adoption, seL4 is evolving to support more platforms, architectures, configurations, and features, meaning its formal proofs must evolve as well. Proofcraft is committed to keep this evolution alive. In this talk, we will present the status of the seL4 verification roadmap.

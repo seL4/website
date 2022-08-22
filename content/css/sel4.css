@@ -469,10 +469,18 @@ h4.summit-abstract-title{
 p.summit-abstract-type{
   font-style: italic;
 }
-p.summit-abstract-presenter{
-  font-weight: bold;
+p.summit-abstract-author{
+  font-weight: normal;
+}
+span.summit-abstract-presenter{
+  color: black;
+  text-decoration: underline;
+}
+span.summit-abstract-affiliation{
+  font-style: normal;
+  color:#808080;
 }
 div.summit-abstract{
   padding-top: 5px;
-  padding-bottom: 5px;
+  padding-bottom: 10px;
 }

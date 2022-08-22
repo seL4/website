@@ -9,8 +9,8 @@
 <p class="summit-abstract-type">
     Talk
 </p>
-<p class="summit-abstract-presenter">
-    Ihor Kuz, Kry10
+<p class="summit-abstract-author">
+    Presented by Ihor Kuz, <span class="summit-abstract-affiliation">Kry10</span>
 </p>
 <p>
     When building secure and robust systems, the general strategy is to "prevent, contain, and recover". Ideally we <strong>prevent</strong> problems (like errors and vulnerabilities) from occurring in the first place, <strong>contain</strong> the effects of any problems that do occur, and <strong>recover</strong> from those problems by repairing any damage and ensuring the problems do not happen again in the future.

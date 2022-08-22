@@ -9,8 +9,8 @@
 <p class="summit-abstract-type">
     Talk
 </p>
-<p class="summit-abstract-presenter">
-    Grant Jurgensen, The University of Kansas
+<p class="summit-abstract-author">
+    Presented by Grant Jurgensen, <span class="summit-abstract-affiliation">The University of Kansas</span>
 </p>
 <p>
     Remote attestation is a process where one digital system gathers and provides evidence of its state and/or identity to an external system. The external system appraises the attestation evidence to make judgments over the attesting system. For this process to be successful, the appraiser must find the attestation evidence to be convincingly trustworthy. Remote attestation is difficult to make trustworthy due to the appraiser’s limited access to the attestation target. In contrast to local attestation, the appraising system is unable to directly observe and oversee the attestation target. In this work, we present a system architecture design and prototype implementation that we claim enables trustworthy remote attestation.

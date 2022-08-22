@@ -9,8 +9,8 @@
 <p class="summit-abstract-type">
     Plenary
 </p>
-<p class="summit-abstract-presenter">
-    Gerwin Klein, Proofcraft
+<p class="summit-abstract-author">
+    Presented by Gerwin Klein, <span class="summit-abstract-affiliation">Proofcraft</span>
 </p>
 <p>
     The seL4 foundation manages a collection of over 55 repositories in the seL4 GitHub organisation.

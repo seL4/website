@@ -27,15 +27,12 @@ Munich, Germany (hybrid), 10-13 Oct 2022
 <div class="summit-abstract" id="fence-t"><%@ include file="abstracts/fence-t.pml" %><a href="program.pml#fence-t">See this talk in the program</a></div>
 <div class="summit-abstract" id="Kry10-Secure-Platform"><%@ include file="abstracts/Kry10-Secure-Platform.pml" %><a href="program.pml#Kry10-Secure-Platform">See this talk in the program</a></div>
 <div class="summit-abstract" id="seL4-BEAM"><%@ include file="abstracts/seL4-BEAM.pml" %><a href="program.pml#seL4-BEAM">See this talk in the program</a></div>
-
-<!--Rust-support-->
-
+<div class="summit-abstract" id="Rust-support"><%@ include file="abstracts/Rust-support.pml" %><a href="program.pml#Rust-support">See this talk in the program</a></div>
 <div class="summit-abstract" id="Trustworthy-board-management"><%@ include file="abstracts/Trustworthy-board-management.pml" %><a href="program.pml#Trustworthy-board-management">See this talk in the program</a></div>
 <div class="summit-abstract" id="Network-stack-implementation"><%@ include file="abstracts/Network-stack-implementation.pml" %><a href="program.pml#Network-stack-implementation">See this talk in the program</a></div>
 <div class="summit-abstract" id="CASE-overview"><%@ include file="abstracts/CASE-overview.pml" %><a href="program.pml#CASE-overview">See this talk in the program</a></div>
 <div class="summit-abstract" id="Verified-architecture"><%@ include file="abstracts/Verified-architecture.pml" %><a href="program.pml#Verified-architecture">See this talk in the program</a></div>
-
-<!--FerrOS-->
+<div class="summit-abstract" id="FerrOS"><%@ include file="abstracts/FerrOS.pml" %><a href="program.pml#FerrOS">See this talk in the program</a></div>
 
 <!--Safety-critical-voice.-->
 

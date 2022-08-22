@@ -9,6 +9,6 @@
 <p class="summit-abstract-type">
     Plenary
 </p>
-<p class="summit-abstract-presenter">
-    Gernot Heiser, seL4 Foundation
+<p class="summit-abstract-author">
+    Presented by Gernot Heiser, <span class="summit-abstract-affiliation">seL4 Foundation</span>
 </p>

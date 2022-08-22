@@ -9,8 +9,8 @@
 <p class="summit-abstract-type">
     Talk & Discussion
 </p>
-<p class="summit-abstract-presenter">
-    Everton de Matos, TII+Cog
+<p class="summit-abstract-author">
+    Presented by Everton de Matos, in collaboration with Jason Sebranek, <span class="summit-abstract-affiliation">TII+Cog</span>
 </p>
 
 <p>

@@ -9,8 +9,8 @@
 <p class="summit-abstract-type">
     Talk
 </p>
-<p class="summit-abstract-presenter">
-    Mark Jenkinson & Stephen Williams, Capgemini
+<p class="summit-abstract-author">
+    Presented by Mark Jenkinson, in collaboration with Stephen Williams, <span class="summit-abstract-affiliation">Capgemini</span>
 </p>
 <p>
     Our work has been aimed towards easing the overheads for new users to adopt seL4. To support this, we have developed a relatively quick and easy method for providing a high level of driver coverage for an i.MX8MQ-based board (Avnet MaaXBoard). The approach implements a framework to support the U-Boot Driver Model, a standard model employed by U-Boot for defining and interfacing to device drivers. With that framework implemented, the drivers already available in U-Boot (which comprise a very large set) can be made available within seL4 with either limited or zero code changes to the driver itself.

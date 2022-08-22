@@ -9,6 +9,6 @@
 <p class="summit-abstract-type">
     Bootcamp
 </p>
-<p class="summit-abstract-presenter">
-    Ivan Velickovic & Peter Chubb, UNSW
+<p class="summit-abstract-author">
+    Presented by Ivan Velickovic in collaboration with Peter Chubb, <span class="summit-abstract-affiliation">UNSW</span>
 </p>

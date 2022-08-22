@@ -9,6 +9,6 @@
 <p class="summit-abstract-type">
     Panel & discussion
 </p>
-<p class="summit-abstract-presenter">
-    DARPA, CygerAgentur, NCSC, ...
+<p class="summit-abstract-author">
+    <span class="summit-abstract-affiliation">DARPA, CygerAgentur, NCSC, ...</span>
 </p>

@@ -9,8 +9,8 @@
 <p class="summit-abstract-type">
     Keynote
 </p>
-<p class="summit-abstract-presenter">
-    Gernot Heiser, UNSW
+<p class="summit-abstract-author">
+    Presented by Gernot Heiser, <span class="summit-abstract-affiliation">UNSW</span>
 </p>
 <p>
 I will provide an overview of the seL4-related research activities of the Trustworthy Systems group at UNSW, and how they relate to each other and the overall seL4 vision. Some of these activities will be covered in more detail in the afternoon session (seL4 Core Platform and seL4 Device Driver Framework), so I will mostly provide context for them and focus on the activities that will not be discussed further. These include:

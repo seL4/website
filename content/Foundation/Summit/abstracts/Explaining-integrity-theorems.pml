@@ -9,8 +9,8 @@
 <p class="summit-abstract-type">
     Talk
 </p>
-<p class="summit-abstract-presenter">
-    Matt Brecknell, Kry10
+<p class="summit-abstract-author">
+    Presented by Matt Brecknell, <span class="summit-abstract-affiliation">Kry10</span>
 </p>
 <p>
     Kry10 is building a cost-effective platform for connected devices, with extreme security and reliability. We choose to build on seL4 because its capability model gives us the mechanisms, and its verification gives us the confidence that we need. But how do we understand what the verification says about how we should use seL4's mechanisms to build secure systems?

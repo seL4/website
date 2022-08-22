@@ -9,8 +9,8 @@
 <p class="summit-abstract-type">
     Keynote
 </p>
-<p class="summit-abstract-presenter">
-    Boyd Multerer, Kry10
+<p class="summit-abstract-author">
+    Presented by Boyd Multerer, <span class="summit-abstract-affiliation">Kry10</span>
 </p>
 <p>
     The Kry10 Secure Platform is a new seL4-based platform that brings security and reliability to industrial connected devices. The platform is based on a philosophy of "Trust but Isolate" - build trusted software to the best quality, but isolate it so that if problems do occur, they cannot spread to the rest of the system.

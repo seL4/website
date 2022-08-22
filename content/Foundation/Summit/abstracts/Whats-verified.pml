@@ -9,8 +9,8 @@
 <p class="summit-abstract-type">
     Plenary
 </p>
-<p class="summit-abstract-presenter">
-    June Andronick, Proofcraft
+<p class="summit-abstract-author">
+    Presented by June Andronick, <span class="summit-abstract-affiliation">Proofcraft</span>
 </p>
 <p>
     seL4 is commonly referred to as "the most verified microkernel". While this statement is true, the notion of being “verified” requires careful handling to ensure appropriate expectations and valid claims. seL4’s verification is its key differentiator. Inappropriate claims will damage its reputation and could have serious consequences in real systems.

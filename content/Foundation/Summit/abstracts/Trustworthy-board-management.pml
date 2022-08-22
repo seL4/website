@@ -9,8 +9,8 @@
 <p class="summit-abstract-type">
     Talk
 </p>
-<p class="summit-abstract-presenter">
-    Daniel Schwyn & Ben Fiedler, ETH
+<p class="summit-abstract-author">
+    Presented by Daniel Schwyn & Ben Fiedler, in collaboration with Michael Giardino, David Cock & Timothy Roscoe, <span class="summit-abstract-affiliation">ETH</span>
 </p>
 <p>
     Most modern computing platforms are so complex that they need a separate embedded system to manage them. These systems are referred to as (Base-)Board Management Controllers or BMCs. BMCs handle power and clock distribution and sequencing, firmware for other components on the board, and usually offer remote management capabilities (e.g. console access and firmware updates). This makes them the root of trust in such systems.

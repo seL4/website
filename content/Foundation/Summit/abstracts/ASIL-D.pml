@@ -9,9 +9,8 @@
 <p class="summit-abstract-type">
     Experience report
 </p>
-<p class="summit-abstract-presenter">
-    Yuning Liang, Xcalibyte
-</p>
+<p class="summit-abstract-author">
+    Presented by Yuning Liang, <span class="summit-abstract-affiliation">Xcalibyte</span>
 <p>
     A few important criteria have to be satisfied for a piece of software system before becoming ASIL-D certified, two of those are MISRA coding standard and Code Coverage.
 </p>

@@ -9,6 +9,6 @@
 <p class="summit-abstract-type">
     Plenary
 </p>
-<p class="summit-abstract-presenter">
-    Jason Li & Ray Richards
+<p class="summit-abstract-author">
+    Presented by Jason Li & Ray Richards, <span class="summit-abstract-affiliation">TCCOE</span>
 </p>
