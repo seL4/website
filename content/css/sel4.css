@@ -461,7 +461,9 @@ td.break {background-color: #D6DBE4;}
   background-color: #96CA4F;
   color: white;
 }
-
+.summit-abstract-link{
+  font-weight: bold;
+}
 h4.summit-abstract-title{
   background-color: #96CA4F;
   color: white;
