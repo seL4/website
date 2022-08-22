@@ -62,7 +62,7 @@ Munich, Germany (hybrid), 10-13 Oct 2022
     <td>12:45 - 13:15</td>
     <td>Talk</td>
     <td><a class="summit-abstract-link" href="abstracts.pml#seL4CP"> The seL4 Core
-  Platform (seL4CP)<br><span class="summit-abstract-presenter">Zoltan Kocsis</span>,
+  Platform (seL4CP)<br><span class="summit-abstract-presenter">Zoltan Kocsis</span></a>,
     <span class="summit-abstract-affiliation">UNSW</span></td>
   </tr>
   <tr id="sDDF">
@@ -146,7 +146,7 @@ Munich, Germany (hybrid), 10-13 Oct 2022
   <tr id="Trustworthy-board-management">
     <td>12:45 - 13:15</td>
     <td>Talk</td>
-    <td><a class="summit-abstract-link" href="abstracts.pml#Trustworthy-board-management">Trustworthy board management controllers<br></strong><span class="summit-abstract-presenter">Daniel Schwyn</span>, <span class="summit-abstract-presenter">Ben Fiedler</span></a>, Michael Giardino, David Cock & Timothy Roscoe,
+    <td><a class="summit-abstract-link" href="abstracts.pml#Trustworthy-board-management">Trustworthy board management controllers<br><span class="summit-abstract-presenter">Daniel Schwyn</span>, <span class="summit-abstract-presenter">Ben Fiedler</span></a>, Michael Giardino, David Cock & Timothy Roscoe,
     <span class="summit-abstract-affiliation">ETH</span></td>
   </tr>
   <tr id="Network-stack-implementation">
@@ -314,7 +314,7 @@ Munich, Germany (hybrid), 10-13 Oct 2022
     <td>16:15 - 16:30</td>
     <td>Plenary</td>
     <td><strong>seL4 Summit and TCCOE - an overview</strong><br><span class="summit-abstract-presenter">Jason Li</span> & <span class="summit-abstract-presenter">Ray Richards</span>,
-    <span class="summit-abstract-affiliation">TCCOE</span></td>
+    <span class="summit-abstract-affiliation">TCCOE</span>
     </td>
   </tr>
 
