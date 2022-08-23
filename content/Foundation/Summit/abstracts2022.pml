@@ -27,8 +27,8 @@ Munich, Germany (hybrid), 10-13 Oct 2022
 <div class="summit-abstract" id="a-fence-t"><%@ include file="abstracts/fence-t.pml" %><a href="program.pml#p-fence-t">See this talk in the program</a></div>
 <div class="summit-abstract" id="a-Kry10-Secure-Platform"><%@ include file="abstracts/Kry10-Secure-Platform.pml" %><a href="program.pml#p-Kry10-Secure-Platform">See this talk in the program</a></div>
 <div class="summit-abstract" id="a-seL4-BEAM"><%@ include file="abstracts/seL4-BEAM.pml" %><a href="program.pml#p-seL4-BEAM">See this talk in the program</a></div>
-<div class="summit-abstract" id="a-Rust-support"><%@ include file="abstracts/Rust-support.pml" %><a href="program.pml#p-Rust-support">See this talk in the program</a></div>
 <div class="summit-abstract" id="a-Trustworthy-board-management"><%@ include file="abstracts/Trustworthy-board-management.pml" %><a href="program.pml#p-Trustworthy-board-management">See this talk in the program</a></div>
+<div class="summit-abstract" id="a-Rust-support"><%@ include file="abstracts/Rust-support.pml" %><a href="program.pml#p-Rust-support">See this talk in the program</a></div>
 <div class="summit-abstract" id="a-Network-stack-implementation"><%@ include file="abstracts/Network-stack-implementation.pml" %><a href="program.pml#p-Network-stack-implementation">See this talk in the program</a></div>
 <div class="summit-abstract" id="a-CASE-overview"><%@ include file="abstracts/CASE-overview.pml" %><a href="program.pml#p-CASE-overview">See this talk in the program</a></div>
 <div class="summit-abstract" id="a-Verified-architecture"><%@ include file="abstracts/Verified-architecture.pml" %><a href="program.pml#p-Verified-architecture">See this talk in the program</a></div>

@@ -128,10 +128,12 @@ Munich, Germany (hybrid), 10-13 Oct 2022
     <td><a class="summit-abstract-link" href="abstracts2022#a-seL4-BEAM">seL4 and BEAM: a match made in Erlang<br><span class="summit-abstract-presenter">Ihor Kuz</span></a>,
     <span class="summit-abstract-affiliation">Kry10</span></td>
   </tr>
-  <tr>
+
+  <tr id="p-Trustworthy-board-management">
     <td>10:45 - 11:15</td>
     <td>Talk</td>
-    <td>TBD</td>
+    <td><a class="summit-abstract-link" href="abstracts2022#a-Trustworthy-board-management">Trustworthy board management controllers<br><span class="summit-abstract-presenter">Daniel Schwyn</span>, <span class="summit-abstract-presenter">Ben Fiedler</span></a>, Michael Giardino, David Cock & Timothy Roscoe,
+    <span class="summit-abstract-affiliation">ETH</span></td>
   </tr>
 
   <tr id="p-Rust-support">
@@ -143,25 +145,19 @@ Munich, Germany (hybrid), 10-13 Oct 2022
     <td class="break" colspan="3">Break</td>
   </tr>
 
-  <tr id="p-Trustworthy-board-management">
-    <td>12:45 - 13:15</td>
-    <td>Talk</td>
-    <td><a class="summit-abstract-link" href="abstracts2022#a-Trustworthy-board-management">Trustworthy board management controllers<br><span class="summit-abstract-presenter">Daniel Schwyn</span>, <span class="summit-abstract-presenter">Ben Fiedler</span></a>, Michael Giardino, David Cock & Timothy Roscoe,
-    <span class="summit-abstract-affiliation">ETH</span></td>
-  </tr>
   <tr id="p-Network-stack-implementation">
-    <td>13:15 - 13:45</td>
+    <td>12:45 - 13:15</td>
     <td>Talk</td>
     <td><a class="summit-abstract-link" href="abstracts2022#a-Network-stack-implementation">Early experiences proving the correctness of a network stack implementation<br><span class="summit-abstract-presenter">Alain Kägi</span></a>, Aubrey Birdwell, Caitlyn Wilde, Jens Mache & Richard Weiss, <span class="summit-abstract-affiliation">Lewis & Clark College</span></td>
   </tr>
   <tr id="p-CASE-overview">
-    <td>13:45 - 14:15</td>
+    <td>13:15 - 13:45</td>
     <td>Talk</td>
     <td><a class="summit-abstract-link" href="abstracts2022#a-CASE-overview">CASE overview: Cyber Assured Systems Engineering<br><span class="summit-abstract-presenter">Darren Cofer</span></a>,
     <span class="summit-abstract-affiliation">Collins Aerospace</span></td>
   </tr>
   <tr id="p-Verified-architecture">
-    <td>14:15 - 14:45</td>
+    <td>13:45 - 14:15</td>
     <td>Talk</td>
     <td><a class="summit-abstract-link" href="abstracts2022#a-Verified-architecture">A verified architecture for trustworthy remote attestation<br><span class="summit-abstract-presenter">Grant Jurgensen</span></a>,
     <span class="summit-abstract-affiliation">The University of Kansas</span></td>
@@ -170,54 +166,58 @@ Munich, Germany (hybrid), 10-13 Oct 2022
     <td class="break" colspan="3">Break</td>
   </tr>
   <tr id="p-FerrOS">
-    <td>15:15 - 15:30</td>
+    <td>14:45 - 15:00</td>
     <td>Experience report</td>
     <td><a class="summit-abstract-link" href="abstracts2022#a-FerrOS">FerrOS: Rust-y unikernels on seL4 w/ compile-time assurances<br><span class="summit-abstract-presenter">Zack Pierce</span></a>,
     <span class="summit-abstract-affiliation">Auxon</span></td>
   </tr>
 
   <!--<tr id="p-Safety-critical-voice">
-    <td>15:30 - 15:45</td>
+    <td>15:00 - 15:15</td>
     <td>Experience report</td>
     <td><a class="summit-abstract-link" href="abstracts2022#a-Safety-critical-voice">Safety-critical voice communication system (MCS, SMP, VM)<br><span class="summit-abstract-presenter">Indan Zupancic</span></a>,
     <span class="summit-abstract-affiliation">MEP</span></td>
   </tr>-->
 
   <tr>
-    <td>15:30 - 15:45</td>
+    <td>15:00 - 15:15</td>
     <td>Experience report</td>
     <td><strong>Safety-critical voice communication system (MCS, SMP, VM)</strong><br>Indan Zupancic,
     <span class="summit-abstract-affiliation">MEP</span></td>
   </tr>
 
   <tr id="p-ASIL-D">
-    <td>15:45 - 16:00</td>
+    <td>15:15 - 15:30</td>
     <td>Experience report</td>
     <td><a class="summit-abstract-link" href="abstracts2022#a-ASIL-D">Make seL4 an ASIL-D certified system<br><span class="summit-abstract-presenter">Yuning Liang</span></a>,
     <span class="summit-abstract-affiliation">Xcalibyte</span></td>
   </tr>
   <tr id="p-VM-Composer">
-    <td>16:00 - 16:15</td>
+    <td>15:30 - 15:45</td>
     <td>Teaser</td>
     <td><a class="summit-abstract-link" href="abstracts2022#a-VM-Composer">VM Composer<br><span class="summit-abstract-presenter">Robbie VanVossen</span></a>,
     <span class="summit-abstract-affiliation">DornerWorks</span></td>
   </tr>
 
   <!--<tr id="p-Funding-agencies">
-    <td>16:15 - 17:00</td>
+    <td>15:45 - 17:00</td>
     <td>Panel & Discussion</td>
     <td><a class="summit-abstract-link" href="abstracts2022#a-Funding-agencies">Funding agencies: priorities and vision</a><br>Inc. <span class="summit-abstract-affiliation">DARPA</span>, <span class="summit-abstract-affiliation">CygerAgentur</span>, <span class="summit-abstract-affiliation">NCSC</span></td>
   </tr>-->
 
   <tr>
-    <td>16:15 - 17:00</td>
+    <td>15:45 - 17:00</td>
     <td>Panel & Discussion</td>
     <td><strong>Funding agencies: priorities and vision</strong><br>Inc. <span class="summit-abstract-affiliation">DARPA</span>, <span class="summit-abstract-affiliation">CygerAgentur</span>, <span class="summit-abstract-affiliation">NCSC</span></td>
   </tr>
 
+
+  <tr>
+    <td colspan="3" style="text-align: center;"><em>Banquet Dinner 18:30 - 20:30</em></td>
+  </tr>
+
   <tr>
     <th colspan="3">Day 3&emsp;12 October 2022</th>
-
   </tr>
 
   <!--<tr id="p-seL4-principles-abstractions">
