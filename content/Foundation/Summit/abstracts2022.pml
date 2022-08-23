@@ -15,7 +15,7 @@ Munich, Germany (hybrid), 10-13 Oct 2022
 <h3>
    Abstracts
 </h3>
-<div class="summit-abstract" id="a-seL4-research"><%@ include file="abstracts/seL4-research.pml" %><a href="program.pml#p-seL4-research">See this talk in the program</a></div>
+<div class="summit-abstract" id="a-seL4-research"><%@ include file="abstracts/seL4-research.pml" %><a href="program#p-seL4-research">See this talk in the program</a></div>
 <div class="summit-abstract" id="a-seL4-verification-roadmap"><%@ include file="abstracts/seL4-verification-roadmap.pml" %><a href="program.pml#p-seL4-verification-roadmap">See this talk in the program</a></div>
 <div class="summit-abstract" id="a-explaining-integrity-theorems"><%@ include file="abstracts/Explaining-integrity-theorems.pml" %><a href="program.pml#p-explaining-integrity-theorems">See this talk in the program</a></div>
 <div class="summit-abstract" id="a-seL4CP"><%@ include file="abstracts/seL4CP.pml" %><a href="program.pml#p-seL4CP">See this talk in the program</a></div>
