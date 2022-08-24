@@ -1,0 +1,22 @@
+<!--<title>Summit abstract</title>-->
+<!--
+    Copyright 2022, seL4 summit authors (see abstracts)
+    SPDX-License-Identifier: CC-BY-SA-4.0
+-->
+<h4 class="summit-abstract-title">
+    Make seL4 an ASIL-D Certified System
+</h4>
+<p class="summit-abstract-type">
+    Experience report
+</p>
+<p class="summit-abstract-author">
+    Presented by Yuning Liang, <span class="summit-abstract-affiliation">Xcalibyte</span>
+<p>
+    A few important criteria have to be satisfied for a piece of software system before becoming ASIL-D certified, two of those are MISRA coding standard and Code Coverage.
+</p>
+<p>
+    First, MISRA is an important coding standard for automotive industry. Making seL4 source code MISRA compliant is a key point to boost the adoption of seL4 in automotive industry. In this talk, we’ll present a joint work from us and our partners, how to make seL4 code MISRA compliant, who has chosen seL4 as the fundamental kernel for their OS product. We’ll discuss typical implementation issues which don’t follow MISRA guidance, the fixes and impacts on proofs.
+</p>
+<p>
+    Second, Code Coverage has been an important metric to measure the code quality in automotive industry. Although seL4 is a formally proven, Code Coverage is still important for two reasons. One is Code Coverage can work orthogonally with formal proof to assure the code quality. The other is Code Coverage rate is key metric in many certifications. We’d like to share our work regarding measure seL4 kernel code coverage. We will present the measuring results and ways we have tried to improve code coverage rate.
+</p>

@@ -461,3 +461,28 @@ td.break {background-color: #D6DBE4;}
   background-color: #96CA4F;
   color: white;
 }
+.summit-abstract-link{
+  font-weight: bold;
+}
+h4.summit-abstract-title{
+  background-color: #96CA4F;
+  color: white;
+}
+p.summit-abstract-type{
+  font-style: italic;
+}
+p.summit-abstract-author{
+  font-weight: normal;
+}
+span.summit-abstract-presenter{
+  color: black;
+  text-decoration: underline;
+}
+span.summit-abstract-affiliation{
+  font-style: normal;
+  color:#808080;
+}
+div.summit-abstract{
+  padding-top: 5px;
+  padding-bottom: 10px;
+}

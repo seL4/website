@@ -1,0 +1,17 @@
+<!--<title>Summit abstracts</title>-->
+<!--
+    Copyright 2022, seL4 summit authors (see abstracts)
+    SPDX-License-Identifier: CC-BY-SA-4.0
+-->
+<h4 class="summit-abstract-title">
+    Multiprocessing on seL4 with verified kernels
+</h4>
+<p class="summit-abstract-type">
+    Talk & Discussion
+</p>
+<p class="summit-abstract-author">
+    Presented by Kent McLeod, <span class="summit-abstract-affiliation">Kry10</span>
+</p>
+<p>
+        Verified multicore seL4 seem too far away? Think again, this talk presents a simple multikernel approach to achieve this goal that is attainable using the verified unicore kernel we already have. While this solution does not provide all the benefits of a single system image it allows us to build static systems on a verified seL4 using multiple cores today. This talk will detail how to construct such a system, the work involved and examples of how it can be used.
+</p>

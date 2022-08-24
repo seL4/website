@@ -1,0 +1,16 @@
+<!--<title>Summit abstracts</title>-->
+<!--
+    Copyright 2022, seL4 summit authors (see abstracts)
+    SPDX-License-Identifier: CC-BY-SA-4.0
+-->
+<h4 class="summit-abstract-title">
+    Safety-critical voice communication system (MCS, SMP, VM)
+</h4>
+<p class="summit-abstract-type">
+    Experience report
+</p>
+<p class="summit-abstract-author">
+    Presented by Indan Zupancic, <span class="summit-abstract-affiliation">MEP</span>
+</p>
+<p>
+</p>
