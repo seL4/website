@@ -213,7 +213,7 @@ Munich, Germany (hybrid), 10-13 Oct 2022
 
 
   <tr>
-    <td colspan="3" style="text-align: center;"><em>Banquet Dinner 18:30 - 20:30</em></td>
+    <td colspan="3" style="text-align: center;"><em>Banquet Dinner</em></td>
   </tr>
 
   <tr>
