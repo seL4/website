@@ -344,7 +344,7 @@ Munich, Germany (hybrid), 10-13 Oct 2022
     <td>9:00 - 10:00</td>
     <td>Bootcamp</td>
     <td><strong>seL4 from zero to hello-world</strong>
-      <br>Ihor Kuz and Ivan Velickovic
+      <br>Ihor Kuz
     </td>
   </tr>
   <tr>
