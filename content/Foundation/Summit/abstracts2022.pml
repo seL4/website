@@ -55,8 +55,8 @@ Munich, Germany (hybrid), 10-13 Oct 2022
 <div class="summit-abstract" id="a-seL4-Foundation"><%@ include file="abstracts/seL4-Foundation.pml" %><a href="program.pml#p-seL4-Foundation">See this talk in the program</a></div>
 <div class="summit-abstract" id="a-CAmkES"><%@ include file="abstracts/CAmkES.pml" %><a href="program.pml#p-CAmkES">See this talk in the program</a></div>
 <div class="summit-abstract" id="a-TRENTOS"><%@ include file="abstracts/TRENTOS.pml" %><a href="program.pml#p-TRENTOS">See this talk in the program</a></div>
+<div class="summit-abstract" id="a-seL4CP-bootcamp"><%@ include file="abstracts/seL4CP-bootcamp.pml" %><a href="program.pml#p-seL4CP-bootcamp">See this talk in the program</a></div>
 
-<!--seL4CP-bootcamp-->
 
 <div class="summit-abstract" id="a-VM-Composer-bootcamp"><%@ include file="abstracts/VM-Composer-bootcamp.pml" %><a href="program.pml#p-VM-Composer-bootcamp">See this talk in the program</a></div>
 <div class="summit-abstract" id="a-BriefCASE-tutorial"><%@ include file="abstracts/BriefCASE-tutorial.pml" %><a href="program.pml#p-BriefCASE-tutorial">See this talk in the program</a></div>

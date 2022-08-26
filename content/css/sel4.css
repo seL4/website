@@ -114,6 +114,12 @@ code {
   }
 }
 
+@media (max-width: 60em) {
+  .hidden-mobile.homepage_item {
+    display: none;
+  }
+}
+
 .homepage_item {
   display: grid;
   grid-template-columns: 1fr;

@@ -31,6 +31,7 @@ Munich, Germany (hybrid), 10-13 Oct 2022
 
 <div class="summit_div">
   <ul>
+    <li><a href="#summit-news">Latest News</a></li>
     <li><a href="#summit-about">About</a></li>
     <li><a href="#summit-location">Host</a></li>
     <li><a href="#summit-registration">Registration</a></li>
@@ -39,6 +40,38 @@ Munich, Germany (hybrid), 10-13 Oct 2022
     <li><a href="abstracts2022">Abstracts</a></li>
     <li><a href="#summit-pc">Program Committee</a></li>
     <li><a href="#summit-contact">Contact</a></li>
+  </ul>
+</div>
+
+<div class="summit_div">
+  <div class="highlight">
+    <h3 id="summit-news">
+      Latest News
+    </h3>
+  </div>
+  <div class="highlight">
+    <p><strong>
+    seL4 summit: more info on hobbyist ticket, hotel booking, bootcamp and more
+    </strong></p>
+  </div>
+  <p>
+    A few pieces of information and clarification regarding the seL4 summit:
+  </p>
+  <ul>
+    <li><strong>Hobbyist tickets</strong> are available if you’re an seL4 enthusiast working on seL4 outside of your paid job and financing your participation to the summit on your own: <a href="https://hopin.com/events/sel4-summit-2022/registration">hopin.com/events/sel4-summit-2022/registration</a>.
+    </li>
+    <li><strong>The seL4 bootcamp</strong>, offered to on-site participants on the 4th day, with hands-on training on various seL4 technologies, will be at the <strong>Edison Park conference centre</strong>, which is 900m / 10min walking distance for the INFINITY hotel where the rest of the summit is happening.
+    </li>
+    <li><strong>The location of both the summit and the bootcamp</strong> are close to the airport (4 S-Bahn stops, 20min) and a bit further away from the city (9 stops, 25min to Hauptbahnhof).
+    </li>
+    <li><strong>The booking of rooms at the INFINITY hotel</strong> happens in 2 stages: your registration at the summit allows you to book for the 2 nights of the 10th and 11th of October (confirmation emails for these 2 nights will shortly be sent to people who registered for them). To extend your stay for extra nights before and after these 2 nights, you can use the following special link: <a href="https://book.passkey.com/event/50375651/owner/1468684/home">book.passkey.com/event/50375651/owner/1468684/home</a> (you need to use the link twice, once for the nights before and once for the nights after). The total payment for all nights will be made onsite at the hotel.
+    </li>
+    <li><strong>For the nights after the seL4 summit</strong>, the INFINITY hotel is booked out from the 13th of October. We will shortly post suggestions of alternative hotels for these nights on the <a href="https://hensoldt-cyber.com/sel4-summit-2022/">host's website</a>.
+    </li>
+    <li><strong>If you’re interested in supporting by sponsoring the seL4 summit</strong> and getting free passes and promotion opportunities, please contact <a title="summit@sel4.systems"   href="mailto:summit@sel4.systems">summit@sel4.systems</a>.
+    </li>
+    <li><strong>If you have any questions</strong> regarding location, venue, and registration, please contact  <a title="sel4summit.cyber@hensoldt.net" href="mailto:sel4summit.cyber@hensoldt.net">sel4summit.cyber@hensoldt.net</a>. For all other questions, please contact <a title="summit@sel4.systems"   href="mailto:summit@sel4.systems">summit@sel4.systems</a>.
+    </li>
   </ul>
 </div>
 
