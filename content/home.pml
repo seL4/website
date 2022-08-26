@@ -170,8 +170,9 @@
     </div>
   </div>
 
-  <div class="homepage_item">
+  <div class="hidden-mobile homepage_item">
   <!-- empty placeholder, to center next item-->
+  <!-- hide on mobiles for seamless flow ton next div-->
   </div>
 
   <div class="homepage_item">

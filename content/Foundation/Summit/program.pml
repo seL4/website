@@ -202,18 +202,18 @@ Munich, Germany (hybrid), 10-13 Oct 2022
   <!--<tr id="p-Funding-agencies">
     <td>15:45 - 17:00</td>
     <td>Panel & Discussion</td>
-    <td><a class="summit-abstract-link" href="abstracts2022#a-Funding-agencies">Funding agencies: priorities and vision</a><br>Inc. <span class="summit-abstract-affiliation">DARPA</span>, <span class="summit-abstract-affiliation">CygerAgentur</span>, <span class="summit-abstract-affiliation">NCSC</span></td>
+    <td><a class="summit-abstract-link" href="abstracts2022#a-Funding-agencies">Funding agencies: priorities and vision</a><br>Inc. <span class="summit-abstract-affiliation">DARPA</span>, <span class="summit-abstract-affiliation">CyberAgentur</span>, <span class="summit-abstract-affiliation">NCSC</span></td>
   </tr>-->
 
   <tr>
     <td>15:45 - 17:00</td>
     <td>Panel & Discussion</td>
-    <td><strong>Funding agencies: priorities and vision</strong><br>Inc. <span class="summit-abstract-affiliation">DARPA</span>, <span class="summit-abstract-affiliation">CygerAgentur</span>, <span class="summit-abstract-affiliation">NCSC</span></td>
+    <td><strong>Funding agencies: priorities and vision</strong><br>Inc. <span class="summit-abstract-affiliation">DARPA</span>, <span class="summit-abstract-affiliation">CyberAgentur</span>, <span class="summit-abstract-affiliation">NCSC</span></td>
   </tr>
 
 
   <tr>
-    <td colspan="3" style="text-align: center;"><em>Banquet Dinner</em></td>
+    <td colspan="3" style="text-align: center;"><em>Traditional Bavarian Dinner</em></td>
   </tr>
 
   <tr>
@@ -343,7 +343,9 @@ Munich, Germany (hybrid), 10-13 Oct 2022
   <tr>
     <td>9:00 - 10:00</td>
     <td>Bootcamp</td>
-    <td><strong>seL4 from zero to hello-world</strong></td>
+    <td><strong>seL4 from zero to hello-world</strong>
+      <br>Ihor Kuz and Ivan Velickovic
+    </td>
   </tr>
   <tr>
     <td class="break" colspan="3">Break</td>
@@ -351,7 +353,7 @@ Munich, Germany (hybrid), 10-13 Oct 2022
   <tr id="p-CAmkES">
     <td>10:15 - 10:45</td>
     <td>Bootcamp</td>
-    <td><a class="summit-abstract-link" href="abstracts2022#a-CAmkES">CAMkES<br><span class="summit-abstract-presenter">Sebastian Eckl</span>,</a>
+    <td><a class="summit-abstract-link" href="abstracts2022#a-CAmkES">CAmkES<br><span class="summit-abstract-presenter">Sebastian Eckl</span>,</a>
     <span class="summit-abstract-affiliation">HENSOLDT Cyber</span></td>
   </tr>
   <tr id="p-TRENTOS">
@@ -364,18 +366,11 @@ Munich, Germany (hybrid), 10-13 Oct 2022
     <td class="break" colspan="3">Break</td>
   </tr>
 
-  <tr>
-    <td>12:45 - 14:30</td>
-    <td>Bootcamp</td>
-    <td><strong>The seL4 Core Platform (seL4CP)</strong><br><span class="summit-abstract-presenter">Ivan Velickovic</span> & Peter Chubb,
-    <span class="summit-abstract-affiliation">UNSW</span></td>
-  </tr>
-
-  <!--<tr id="p-seL4CP-bootcamp">
+  <tr id="p-seL4CP-bootcamp">
     <td>12:45 - 14:30</td>
     <td>Bootcamp</td>
     <td><a class="summit-abstract-link" href="abstracts2022#a-seL4CP-bootcamp">The seL4 Core Platform (seL4CP)<br><span class="summit-abstract-presenter">Ivan Velickovic</span></a> & Peter Chubb, <span class="summit-abstract-affiliation">UNSW</span></td>
-  </tr>-->
+  </tr>
 
   <tr id="p-VM-Composer-bootcamp">
     <td>14:30 - 15:15</td>
