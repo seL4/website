@@ -104,6 +104,11 @@ Munich, Germany (hybrid), 10-13 Oct 2022
     <td><a class="summit-abstract-link" href="abstracts2022#a-fence-t">fence.t: hardware support for preventing microarchitectural timing channels<br><span class="summit-abstract-presenter">Nils Wistoff</span></a>,
     <span class="summit-abstract-affiliation">ETH</span></td>
   </tr>
+
+    <tr>
+    <td colspan="3" style="text-align: center;"><em>Traditional Bavarian Dinner 19:00 - 22:30</em></td>
+  </tr>
+
   <tr>
     <th colspan="3">Day 2&emsp;11 October 2022</th>
 
@@ -192,12 +197,23 @@ Munich, Germany (hybrid), 10-13 Oct 2022
     <td><a class="summit-abstract-link" href="abstracts2022#a-ASIL-D">Make seL4 an ASIL-D certified system<br><span class="summit-abstract-presenter">Yuning Liang</span></a>,
     <span class="summit-abstract-affiliation">Xcalibyte</span></td>
   </tr>
-  <tr id="p-VM-Composer">
+
+  <tr>
     <td>15:30 - 15:45</td>
-    <td>Teaser</td>
-    <td><a class="summit-abstract-link" href="abstracts2022#a-VM-Composer">VM Composer<br><span class="summit-abstract-presenter">Robbie VanVossen</span></a>,
-    <span class="summit-abstract-affiliation">DornerWorks</span></td>
+    <td>Plenary</td>
+    <td><strong>seL4 Summit and TCCOE - an overview</strong>
+    <br><span class="summit-abstract-presenter">Renato Levy</span>, Jason Li & <span class="summit-abstract-presenter">Ray Richards</span>,
+    <span class="summit-abstract-affiliation">TCCOE</span>
+    </td>
   </tr>
+
+ <!--<tr id="p-TCCOE">
+    <td>15:30 - 15:45</td>
+    <td>Plenary</td>
+    <td><a class="summit-abstract-link" href="abstracts2022#a-TCCOE">seL4 Summit and TCCOE - an overview</a>
+    <td><strong>seL4 Summit and TCCOE - an overview</strong><br><span class="summit-abstract-presenter">Renato Levy</span>, Jason Li & <span class="summit-abstract-presenter">Ray Richards</span>,
+    <span class="summit-abstract-affiliation">TCCOE</span></td>
+  </tr>-->
 
   <!--<tr id="p-Funding-agencies">
     <td>15:45 - 17:00</td>
@@ -209,11 +225,6 @@ Munich, Germany (hybrid), 10-13 Oct 2022
     <td>15:45 - 17:00</td>
     <td>Panel & Discussion</td>
     <td><strong>Funding agencies: priorities and vision</strong><br>Inc. <span class="summit-abstract-affiliation">DARPA</span>, <span class="summit-abstract-affiliation">CyberAgentur</span>, <span class="summit-abstract-affiliation">NCSC</span></td>
-  </tr>
-
-
-  <tr>
-    <td colspan="3" style="text-align: center;"><em>Traditional Bavarian Dinner</em></td>
   </tr>
 
   <tr>
@@ -310,20 +321,12 @@ Munich, Germany (hybrid), 10-13 Oct 2022
     <td><em>Bootcamp overview</em></td>
   </tr>
 
-  <tr>
+  <tr id="p-VM-Composer">
     <td>16:15 - 16:30</td>
-    <td>Plenary</td>
-    <td><strong>seL4 Summit and TCCOE - an overview</strong><br><span class="summit-abstract-presenter">Jason Li</span> & <span class="summit-abstract-presenter">Ray Richards</span>,
-    <span class="summit-abstract-affiliation">TCCOE</span>
-    </td>
+    <td>Teaser</td>
+    <td><a class="summit-abstract-link" href="abstracts2022#a-VM-Composer">VM Composer<br><span class="summit-abstract-presenter">Robbie VanVossen</span></a>,
+    <span class="summit-abstract-affiliation">DornerWorks</span></td>
   </tr>
-
-  <!--<tr id="p-TCCOE">
-    <td>16:15 - 16:30</td>
-    <td>Plenary</td>
-    <td><a class="summit-abstract-link" href="abstracts2022#a-TCCOE">seL4 Summit and TCCOE - an overview<span class="summit-abstract-presenter"><br>Jason Li</span> & <span class="summit-abstract-presenter">Ray Richards</span></a>,
-    <span class="summit-abstract-affiliation">TCCOE</span></td>
-  </tr>-->
 
   <tr id="p-seL4-Foundation">
     <td>16:30 - 16:45</td>
@@ -367,13 +370,13 @@ Munich, Germany (hybrid), 10-13 Oct 2022
   </tr>
 
   <tr id="p-seL4CP-bootcamp">
-    <td>12:45 - 14:30</td>
+    <td>13:00 - 14:45</td>
     <td>Bootcamp</td>
     <td><a class="summit-abstract-link" href="abstracts2022#a-seL4CP-bootcamp">The seL4 Core Platform (seL4CP)<br><span class="summit-abstract-presenter">Ivan Velickovic</span></a> & Peter Chubb, <span class="summit-abstract-affiliation">UNSW</span></td>
   </tr>
 
   <tr id="p-VM-Composer-bootcamp">
-    <td>14:30 - 15:15</td>
+    <td>14:45 - 15:30</td>
     <td>Bootcamp</td>
     <td><a class="summit-abstract-link" href="abstracts2022#a-VM-Composer-bootcamp">VM Composer: the easy button for virtualized seL4-based systems<br><span class="summit-abstract-presenter">Chris Guikema</span> & <span class="summit-abstract-presenter">Robbie VanVossen</span></a>,
     <span class="summit-abstract-affiliation">Dornerworks</span></td>
@@ -382,13 +385,13 @@ Munich, Germany (hybrid), 10-13 Oct 2022
     <td class="break" colspan="3">Break</td>
   </tr>
   <tr id="p-BriefCASE-tutorial">
-    <td>15:30 - 16:45</td>
+    <td>15:45 - 17:00</td>
     <td>Bootcamp</td>
     <td><a class="summit-abstract-link" href="abstracts2022#a-BriefCASE-tutorial">BriefCASE tutorial<br><span class="summit-abstract-presenter">Isaac Amundson</span> & <span class="summit-abstract-presenter">Darren Cofer</span></a>,
     <span class="summit-abstract-affiliation">Collins Aerospace</span></td>
   </tr>
   <tr>
-    <td>16:45 - 17:00</td>
+    <td>17:00 - 17:05</td>
     <td>Plenary</td>
     <td><em>Concluding remarks</em></td>
   </tr>
