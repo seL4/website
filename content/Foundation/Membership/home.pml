@@ -241,18 +241,6 @@
     </div>
     <div class="sponsor">
       <div class="sponsor-pic">
-        <a href="https://secondstate.io">
-          <img src="LOGOS/secondstate.svg" style="width: 200px"
-          alt="Second State logo">
-        </a>
-      </div>
-      <div class="sponsor-name">
-	      Second State
-      </div>
-      <div class="sponsor-info"></div>
-    </div>
-    <div class="sponsor">
-      <div class="sponsor-pic">
         <a href="https://spacemit.com/">
           <img src="LOGOS/SpacemiT.svg"
               style="width: 200px" alt="SpacemiT">
