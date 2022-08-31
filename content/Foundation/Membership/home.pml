@@ -253,6 +253,18 @@
     </div>
     <div class="sponsor">
       <div class="sponsor-pic">
+        <a href="https://spacemit.com/">
+          <img src="LOGOS/SpacemiT.svg"
+              style="width: 200px" alt="SpacemiT">
+        </a>
+      </div>
+      <div class="sponsor-name">
+        SpacemiT
+      </div>
+      <div class="sponsor-info"></div>
+    </div>
+    <div class="sponsor">
+      <div class="sponsor-pic">
         <a href="https://www.tii.ae">
           <img src="LOGOS/TII.jpg" style="width: 200px"
           alt="TII logo">

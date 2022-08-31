@@ -26,7 +26,12 @@
 
   <div class="news-column news-content">
     <ul>
-       <li>
+      <li>
+        <strong>
+          31 Aug 2022: SpacemiT joins the seL4 Foundation
+        </strong>
+      </li>
+      <li>
         <strong>
           15 Aug 2022: Register for the seL4 Summit!
         </strong>
@@ -34,11 +39,6 @@
       <li>
         <strong>
           4 Aug 2022: Google joins the seL4 Foundation
-        </strong>
-      </li>
-      <li>
-        <strong>
-          30 Jun 2022: The seL4 summit Program is available!
         </strong>
       </li>
       <li style="margin-top:0.2em;list-style-type:none">
