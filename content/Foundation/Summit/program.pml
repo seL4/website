@@ -200,7 +200,7 @@ Munich, Germany (hybrid), 10-13 Oct 2022
 
   <tr>
     <td>15:30 - 15:45</td>
-    <td>Plenary</td>
+    <td>Experience report</td>
     <td><strong>seL4 Summit and TCCOE - an overview</strong>
     <br><span class="summit-abstract-presenter">Renato Levy</span>, Jason Li & <span class="summit-abstract-presenter">Ray Richards</span>,
     <span class="summit-abstract-affiliation">TCCOE</span>
