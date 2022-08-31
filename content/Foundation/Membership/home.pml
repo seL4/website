@@ -241,13 +241,13 @@
     </div>
     <div class="sponsor">
       <div class="sponsor-pic">
-        <a href="https://secondstate.io">
-          <img src="LOGOS/secondstate.svg" style="width: 200px"
-          alt="Second State logo">
+        <a href="https://spacemit.com/en/">
+          <img src="LOGOS/SpacemiT.svg"
+              style="width: 200px" alt="SpacemiT">
         </a>
       </div>
       <div class="sponsor-name">
-	      Second State
+        SpacemiT
       </div>
       <div class="sponsor-info"></div>
     </div>
