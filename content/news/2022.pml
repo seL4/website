@@ -55,7 +55,7 @@ Older News: <%=reflist%>
 -->
 
 <!----------------------------------------------------------->
-<div class="news-item" id="registration-open">
+<div class="news-item" id="member-spacemit">
     31 August 2022: SpacemiT joins the seL4 Foundation
 </div>
 <div>
@@ -75,7 +75,7 @@ Older News: <%=reflist%>
 </div>
 
 <!----------------------------------------------------------->
-<div class="news-item" id="member-spacemit">
+<div class="news-item" id="registration-open">
     15 August 2022: Register for the seL4 Summit!
 </div>
 <div>
