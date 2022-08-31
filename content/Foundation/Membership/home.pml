@@ -241,7 +241,7 @@
     </div>
     <div class="sponsor">
       <div class="sponsor-pic">
-        <a href="https://spacemit.com/">
+        <a href="https://spacemit.com/en/">
           <img src="LOGOS/SpacemiT.svg"
               style="width: 200px" alt="SpacemiT">
         </a>

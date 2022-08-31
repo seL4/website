@@ -60,13 +60,16 @@ Older News: <%=reflist%>
 </div>
 <div>
   <p>
-  <a href="https://spacemit.com/">
+  <a href="https://spacemit.com/en/">
       <img src="/Foundation/Membership/LOGOS/SpacemiT.svg" style="width: 20%;  padding-left:10px;  float:right" alt="SpacemiT" />
   </a>
   </p>
-<p>
-  SpacemiT, a semiconductor innovation company focusing on high-performance RISC-V architecture chips, announced that it has officially joined the seL4 Foundation. SpacemiT will work closely with seL4 to promote RISC-V+seL4 and will also focus on the security and performance of the operating system, thus assuring confidence in the security of the RISC-V architecture.
-</p>
+  <p>
+    The seL4 Foundation welcomes <a href="https://spacemit.com/en/">SpacemiT</a> as a member.
+  </p>
+  <p>
+    SpacemiT, a semiconductor innovation company focusing on high-performance RISC-V architecture chips, announced that it has officially joined the seL4 Foundation. SpacemiT will work closely with seL4 to promote RISC-V+seL4 and will also focus on the security and performance of the operating system, thus assuring confidence in the security of the RISC-V architecture.
+  </p>
 </div>
 <div class="news-finish">
 </div>
