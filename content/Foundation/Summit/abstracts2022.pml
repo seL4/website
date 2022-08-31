@@ -37,7 +37,8 @@ Munich, Germany (hybrid), 10-13 Oct 2022
 <!--Safety-critical-voice.-->
 
 <div class="summit-abstract" id="a-ASIL-D"><%@ include file="abstracts/ASIL-D.pml" %><a href="program.pml#p-ASIL-D">See this talk in the program</a></div>
-<div class="summit-abstract" id="a-VM-Composer"><%@ include file="abstracts/VM-Composer.pml" %><a href="program.pml#p-VM-Composer">See this talk in the program</a></div>
+
+<!--TCCOE-->
 
 <!--Funding-agencies-->
 
@@ -49,9 +50,7 @@ Munich, Germany (hybrid), 10-13 Oct 2022
 <div class="summit-abstract" id="a-Standard-VMM"><%@ include file="abstracts/Standard-VMM.pml" %><a href="program.pml#p-Standard-VMM">See this talk in the program</a></div>
 <div class="summit-abstract" id="a-Improving-embedded-DevOps"><%@ include file="abstracts/Improving-embedded-DevOps.pml" %><a href="program.pml#p-Improving-embedded-DevOps">See this talk in the program</a></div>
 <div class="summit-abstract" id="a-Experience-teaching-seL4"><%@ include file="abstracts/Experience-teaching-seL4.pml" %><a href="program.pml#p-Experience-teaching-seL4">See this talk in the program</a></div>
-
-<!--TCCOE-->
-
+<div class="summit-abstract" id="a-VM-Composer"><%@ include file="abstracts/VM-Composer.pml" %><a href="program.pml#p-VM-Composer">See this talk in the program</a></div>
 <div class="summit-abstract" id="a-seL4-Foundation"><%@ include file="abstracts/seL4-Foundation.pml" %><a href="program.pml#p-seL4-Foundation">See this talk in the program</a></div>
 <div class="summit-abstract" id="a-CAmkES"><%@ include file="abstracts/CAmkES.pml" %><a href="program.pml#p-CAmkES">See this talk in the program</a></div>
 <div class="summit-abstract" id="a-TRENTOS"><%@ include file="abstracts/TRENTOS.pml" %><a href="program.pml#p-TRENTOS">See this talk in the program</a></div>

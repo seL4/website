@@ -66,7 +66,7 @@ Munich, Germany (hybrid), 10-13 Oct 2022
     </li>
     <li><strong>The booking of rooms at the INFINITY hotel</strong> happens in 2 stages: your registration at the summit allows you to book for the 2 nights of the 10th and 11th of October (confirmation emails for these 2 nights will shortly be sent to people who registered for them). To extend your stay for extra nights before and after these 2 nights, you can use the following special link: <a href="https://book.passkey.com/event/50375651/owner/1468684/home">book.passkey.com/event/50375651/owner/1468684/home</a> (you need to use the link twice, once for the nights before and once for the nights after). The total payment for all nights will be made onsite at the hotel.
     </li>
-    <li><strong>For the nights after the seL4 summit</strong>, the INFINITY hotel is booked out from the 13th of October. We will shortly post suggestions of alternative hotels for these nights on the <a href="https://hensoldt-cyber.com/sel4-summit-2022/">host's website</a>.
+    <li><strong>For the nights after the seL4 summit</strong>, the INFINITY hotel is booked out from the 13th of October. Suggestions of alternative hotels for these nights are available <a href="seL4-Summit_Useful-Info.pdf">here</a>.
     </li>
     <li><strong>If you’re interested in supporting by sponsoring the seL4 summit</strong> and getting free passes and promotion opportunities, please contact <a title="summit@sel4.systems"   href="mailto:summit@sel4.systems">summit@sel4.systems</a>.
     </li>
@@ -107,7 +107,10 @@ Munich, Germany (hybrid), 10-13 Oct 2022
   <p>
     To learn more, including information on the venue, location, and registration, please visit <a href="https://hensoldt-cyber.com/sel4-summit-2022/">the host's summit webpage</a>.
   </p>
-    <p>
+  <p>
+    More information about hotels, public transportation, and some highlights in Munich, can be found <a href="seL4-Summit_Useful-Info.pdf">here</a>.
+  </p>
+  <p>
     For questions regarding location, venue, and registration, please contact <a title="sel4summit.cyber@hensoldt.net" href="mailto:sel4summit.cyber@hensoldt.net">sel4summit.cyber@hensoldt.net</a>.
   </p>
 </div>
