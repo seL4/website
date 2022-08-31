@@ -72,7 +72,7 @@ Older News: <%=reflist%>
 </div>
 
 <!----------------------------------------------------------->
-<div class="news-item" id="registration-open">
+<div class="news-item" id="member-spacemit">
     15 August 2022: Register for the seL4 Summit!
 </div>
 <div>
