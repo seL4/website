@@ -55,6 +55,30 @@ Older News: <%=reflist%>
 -->
 
 <!----------------------------------------------------------->
+<div class="news-item" id="summit-horizon">
+    7 Spetember 2022: Thanks Horizon Robotics for sponsoring the seL4 Summit 2022
+</div>
+<div>
+  <p>
+    <a href="https://horizon.ai/">
+    <img src="/Foundation/Membership/LOGOS/Horizon_Robotics.svg" style="width: 20%;  padding-left:10px;  float:right"
+              alt="Horizon Robotics logo">
+        </a>
+  </p>
+  <p>
+    The seL4 Foundation thanks <a href="https://horizon.ai/">Horizon Robotics</a> for becoming a seL4 Summit 2022 sponsor.
+  </p>
+  <p>
+    Horizon Robotics is a global leader in the development of artificial intelligence computing platforms. Its mission is to make driving safer and more convenient as drivers transition to intelligent and self-driving vehicles.
+  </p>
+  <p>
+    Premium member of the seL4 Foundation, Horizon works with members of seL4 Foundation to build mixed-critical platform and solution for next-generation autonomous driving vehicles.
+  </p>
+</div>
+<div class="news-finish">
+</div>
+
+<!----------------------------------------------------------->
 <div class="news-item" id="member-spacemit">
     31 August 2022: SpacemiT joins the seL4 Foundation
 </div>
