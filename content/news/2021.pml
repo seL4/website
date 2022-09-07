@@ -131,7 +131,7 @@ Older News: <%=reflist%>
  </a>
 
 <p>
-   We thank <a href="https://trustworthy.systems/people/?cn=Ryan+Barry">Ryan
+   We thank <a href="https://trustworthy.systems/people/?alumni=True">Ryan
    Barry</a> of the Trustworthy Systems group at UNSW, main author of these proofs! We
    also gratefully acknowledge funding from the <a
    href="https://arc.gov.au">Australian Reseach Council</a> through grant

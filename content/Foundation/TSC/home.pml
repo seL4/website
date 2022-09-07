@@ -68,10 +68,10 @@
 
   <div class="person">
     <div class="person_pic">
-      <a href="https://trustworthy.systems/people/?cn=Corey+Lewis"><img src="../../images/tsc/corey.jpg" alt="Corey Lewis" width="80" /></a>
+      <a href="https://trustworthy.systems/people/?alumni=True"><img src="../../images/tsc/corey.jpg" alt="Corey Lewis" width="80" /></a>
     </div>
     <div class="person_title">
-      <strong><a class="list_link" href="https://trustworthy.systems/people/?cn=Corey+Lewis">Corey Lewis</a></strong>
+      <strong><a class="list_link" href="https://trustworthy.systems/people/?alumni=True">Corey Lewis</a></strong>
     </div>
   </div>
 
@@ -86,10 +86,10 @@
 
   <div class="person">
     <div class="person_pic">
-      <a href="https://trustworthy.systems/people/?cn=Kent+Mcleod"><img src="../../images/tsc/kent.jpg" alt="Kent Mcleod" width="80" /></a>
+      <a href="https://trustworthy.systems/people/?alumni=True"><img src="../../images/tsc/kent.jpg" alt="Kent Mcleod" width="80" /></a>
     </div>
     <div class="person_title">
-      <strong><a class="list_link" href="https://trustworthy.systems/people/?cn=Kent+Mcleod">Kent Mcleod</a></strong>
+      <strong><a class="list_link" href="https://trustworthy.systems/people/?alumni=True">Kent Mcleod</a></strong>
     </div>
   </div>
 

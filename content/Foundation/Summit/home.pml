@@ -40,7 +40,7 @@ Munich, Germany (hybrid), 10-13 Oct 2022
     <li><a href="abstracts2022">Abstracts</a></li>
     <li><a href="#summit-pc">Program Committee</a></li>
     <li><a href="#summit-contact">Contact</a></li>
-    <li><a href="#summit-sponsors">Sponsors</al></li>
+    <li><a href="#summit-sponsors">Sponsors</a></li>
   </ul>
 </div>
 
