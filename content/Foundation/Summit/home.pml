@@ -303,7 +303,7 @@ Munich, Germany (hybrid), 10-13 Oct 2022
       <div class="sponsor-info"></div>
     </div>
     <p>
-    Cntact <a title="summit@sel4.systems" href="mailto:summit@sel4.systems">summit@sel4.systems</a> if you are interested in sponsoring the seL4 summit 2022.
+    Contact <a title="summit@sel4.systems" href="mailto:summit@sel4.systems">summit@sel4.systems</a> if you are interested in sponsoring the seL4 summit 2022.
     </p>
 </div>
 
