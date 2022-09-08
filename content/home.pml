@@ -28,7 +28,7 @@
     <ul>
       <li>
         <strong>
-          7 Sep 2022: Thanks Horizon Robotics for sponsoring the seL4 Summit 2022
+          9 Sep 2022: Thanks Horizon Robotics for sponsoring the seL4 Summit 2022
         </strong>
       </li>
       <li>
