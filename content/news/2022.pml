@@ -56,7 +56,7 @@ Older News: <%=reflist%>
 
 <!----------------------------------------------------------->
 <div class="news-item" id="summit-horizon">
-    7 Spetember 2022: Thanks Horizon Robotics for sponsoring the seL4 Summit 2022
+    7 September 2022: Thanks Horizon Robotics for sponsoring the seL4 Summit 2022
 </div>
 <div>
   <p>
