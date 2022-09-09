@@ -254,6 +254,12 @@ a.divLink {
 
 }
 
+@media (max-width: 60em) {
+  .hidden-sponsor-mobile {
+    display: none;
+  }
+}
+
 .sponsor-pic {
   align-self: center;
   justify-self: center;

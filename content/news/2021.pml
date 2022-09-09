@@ -131,7 +131,7 @@ Older News: <%=reflist%>
  </a>
 
 <p>
-   We thank <a href="https://trustworthy.systems/people/?cn=Ryan+Barry">Ryan
+   We thank <a href="https://trustworthy.systems/people/?alumni=True">Ryan
    Barry</a> of the Trustworthy Systems group at UNSW, main author of these proofs! We
    also gratefully acknowledge funding from the <a
    href="https://arc.gov.au">Australian Reseach Council</a> through grant
@@ -504,7 +504,7 @@ Older News: <%=reflist%>
    Arm32 architecture. It is now also established for RISC-V
    architecture, making it the only 64-bit architecture that has an OS
    with such a comprehensive verification and security story. We thank
-   <a href="https://trustworthy.systems/people/?cn=Ryan+Barry">Ryan
+   <a href="https://trustworthy.systems/people/?alumni=True">Ryan
    Barry</a> of Trustworthy Systems, main author of these proofs! We
    also gratefully acknowledge funding from the
    <a href="https://arc.gov.au">Australian Reseach Council</a> through grant

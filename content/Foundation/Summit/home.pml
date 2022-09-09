@@ -39,6 +39,7 @@ Munich, Germany (hybrid), 10-13 Oct 2022
     <li><a href="program">Program</a></li>
     <li><a href="abstracts2022">Abstracts</a></li>
     <li><a href="#summit-pc">Program Committee</a></li>
+    <li><a href="#summit-sponsors">Sponsors</a></li>
     <li><a href="#summit-contact">Contact</a></li>
   </ul>
 </div>
@@ -277,6 +278,37 @@ Munich, Germany (hybrid), 10-13 Oct 2022
 
 
 <div class="summit_div">
+  <h3 id="summit-sponsors">
+    Sponsors
+  </h3>
+  <p>
+    We are grateful to the following sponsors for their financial support of the seL4 summit 2022.
+  </p>
+</div>
+<div class="sponsors">
+  <div class="hidden-sponsor-mobile">
+    <!--placeholder to center hoizon on large screen-->
+    </div>
+    <div class="sponsor">
+    <div class="sponsor-pic">
+      <a href="https://horizon.ai/">
+        <img src="../Membership/LOGOS/Horizon_Robotics.svg" style="width: 248px"
+            alt="Horizon Robotics logo">
+      </a>
+    </div>
+    <div class="sponsor-name">
+      Horizon Robotics
+    </div>
+    <div class="sponsor-info">Bronze sponsor</div>
+    </div>
+</div>
+<div class="summit-div" style="padding-top:30px">
+  <p>
+    Contact <a title="summit@sel4.systems" href="mailto:summit@sel4.systems">summit@sel4.systems</a> if you are interested in sponsoring the seL4 summit 2022.
+  </p>
+</div>
+
+<div class="summit_div">
   <h3 id="summit-contact">
     Contact
   </h3>
@@ -284,9 +316,11 @@ Munich, Germany (hybrid), 10-13 Oct 2022
     For questions regarding location, venue, and registration, please contact <a title="sel4summit.cyber@hensoldt.net" href="mailto:sel4summit.cyber@hensoldt.net">sel4summit.cyber@hensoldt.net</a>.
   </p>
   <p>
-    For all other questions, please contact <a title="summit@sel4.systems"   href="mailto:summit@sel4.systems">summit@sel4.systems</a>.
+    For all other questions, please contact <a title="summit@sel4.systems" href="mailto:summit@sel4.systems">summit@sel4.systems</a>.
   </p>
 </div>
+
+
 
 <!--
 <div class="summitpage_grid">
