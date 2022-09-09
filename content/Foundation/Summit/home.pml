@@ -282,10 +282,13 @@ Munich, Germany (hybrid), 10-13 Oct 2022
     Sponsors
   </h3>
   <p>
-    We are grateful the following sponsors for their financial contributions to support the seL4 summit 2022.
+    We are grateful to the following sponsors for their financial support of the seL4 summit 2022.
   </p>
 </div>
 <div class="sponsors">
+  <div class="hidden-sponsor-mobile">
+    <!--placeholder to center hoizon on large screen-->
+    </div>
     <div class="sponsor">
     <div class="sponsor-pic">
       <a href="https://horizon.ai/">
