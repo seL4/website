@@ -215,16 +215,15 @@ Munich, Germany (hybrid), 10-13 Oct 2022
     <span class="summit-abstract-affiliation">TCCOE</span></td>
   </tr>-->
 
-  <!--<tr id="p-Funding-agencies">
+  <tr id="p-Funding-agencies">
     <td>15:45 - 17:00</td>
     <td>Panel & Discussion</td>
-    <td><a class="summit-abstract-link" href="abstracts2022#a-Funding-agencies">Funding agencies: priorities and vision</a><br>Inc. <span class="summit-abstract-affiliation">DARPA</span>, <span class="summit-abstract-affiliation">CyberAgentur</span>, <span class="summit-abstract-affiliation">NCSC</span></td>
-  </tr>-->
-
-  <tr>
-    <td>15:45 - 17:00</td>
-    <td>Panel & Discussion</td>
-    <td><strong>Funding agencies: priorities and vision</strong><br>Inc. <span class="summit-abstract-affiliation">DARPA</span>, <span class="summit-abstract-affiliation">CyberAgentur</span>, <span class="summit-abstract-affiliation">NCSC</span></td>
+    <td><a class="summit-abstract-link" href="abstracts2022#a-Funding-agencies">Funding agencies: priorities and vision</a>
+    <br>
+    <a class="summit-abstract-link" href="abstracts2022#a-Funding-agencies"><span class="summit-abstract-presenter">Kathleen Fisher</span></a>, <span class="summit-abstract-affiliation">DARPA</span>
+    <br><a class="summit-abstract-link" href="abstracts2022#a-Funding-agencies"><span class="summit-abstract-presenter">Sebastian Jester</span></a>, <span class="summit-abstract-affiliation">Cyberagentur</span>
+    <br><a class="summit-abstract-link" href="abstracts2022#a-Funding-agencies"><span class="summit-abstract-presenter">Paul Waller</span></a>, <span class="summit-abstract-affiliation">NCSC</span>
+    <br><a class="summit-abstract-link" href="abstracts2022#a-Funding-agencies"><span class="summit-abstract-presenter">Dr. Shreekant (Ticky) Thakkar</span></a>, <span class="summit-abstract-affiliation">TII</span></td>
   </tr>
 
   <tr>
@@ -331,7 +330,7 @@ Munich, Germany (hybrid), 10-13 Oct 2022
   <tr id="p-seL4-Foundation">
     <td>16:30 - 16:45</td>
     <td>Plenary</td>
-    <td><a class="summit-abstract-link" href="abstracts2022#a-seL4-Foundation">seL4 Foundation: overview, update and vision<br><span class="summit-abstract-presenter"> June Andronick</span></a>,
+    <td><a class="summit-abstract-link" href="abstracts2022#a-seL4-Foundation">seL4 Foundation: overview, update and vision<br><span class="summit-abstract-presenter">June Andronick</span></a>,
     <span class="summit-abstract-affiliation">seL4 Foundation</span></td>
   </tr>
   <tr>
@@ -341,13 +340,13 @@ Munich, Germany (hybrid), 10-13 Oct 2022
   </tr>
  <tr>
     <th colspan="3">Day 4 (Bootcamp, on-site participants only)&emsp;13 October 2022</th>
-
   </tr>
-  <tr>
+  <tr id="p-zero-hello-world">
     <td>9:00 - 10:00</td>
     <td>Bootcamp</td>
-    <td><strong>seL4 from zero to hello-world</strong>
-      <br>Ihor Kuz
+    <td><a class="summit-abstract-link" href="abstracts2022#a-zero-hello-world">seL4: from zero to hello world<br>
+      <span class="summit-abstract-presenter">Ihor Kuz</span></a>,
+    <span class="summit-abstract-affiliation">Kry10</span></td>
     </td>
   </tr>
   <tr>
@@ -370,13 +369,13 @@ Munich, Germany (hybrid), 10-13 Oct 2022
   </tr>
 
   <tr id="p-seL4CP-bootcamp">
-    <td>13:00 - 14:45</td>
+    <td>13:00 - 14:30</td>
     <td>Bootcamp</td>
     <td><a class="summit-abstract-link" href="abstracts2022#a-seL4CP-bootcamp">The seL4 Core Platform (seL4CP)<br><span class="summit-abstract-presenter">Ivan Velickovic</span></a> & Peter Chubb, <span class="summit-abstract-affiliation">UNSW</span></td>
   </tr>
 
   <tr id="p-VM-Composer-bootcamp">
-    <td>14:45 - 15:30</td>
+    <td>14:30 - 15:15</td>
     <td>Bootcamp</td>
     <td><a class="summit-abstract-link" href="abstracts2022#a-VM-Composer-bootcamp">VM Composer: the easy button for virtualized seL4-based systems<br><span class="summit-abstract-presenter">Chris Guikema</span> & <span class="summit-abstract-presenter">Robbie VanVossen</span></a>,
     <span class="summit-abstract-affiliation">Dornerworks</span></td>
@@ -385,7 +384,7 @@ Munich, Germany (hybrid), 10-13 Oct 2022
     <td class="break" colspan="3">Break</td>
   </tr>
   <tr id="p-BriefCASE-tutorial">
-    <td>15:45 - 17:00</td>
+    <td>15:30 - 17:00</td>
     <td>Bootcamp</td>
     <td><a class="summit-abstract-link" href="abstracts2022#a-BriefCASE-tutorial">BriefCASE tutorial<br><span class="summit-abstract-presenter">Isaac Amundson</span> & <span class="summit-abstract-presenter">Darren Cofer</span></a>,
     <span class="summit-abstract-affiliation">Collins Aerospace</span></td>

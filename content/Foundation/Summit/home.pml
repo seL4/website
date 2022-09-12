@@ -36,6 +36,8 @@ Munich, Germany (hybrid), 10-13 Oct 2022
     <li><a href="#summit-location">Host</a></li>
     <li><a href="#summit-registration">Registration</a></li>
     <li><a href="#summit-mentoring">Mentorship Program</a></li>
+    <li><a href="#summit-invited-speakers">Invited Speakers</a></li>
+    <li><a href="#summit-panellists">Panellists</a></li>
     <li><a href="program">Program</a></li>
     <li><a href="abstracts2022">Abstracts</a></li>
     <li><a href="#summit-pc">Program Committee</a></li>
@@ -149,6 +151,92 @@ Munich, Germany (hybrid), 10-13 Oct 2022
   As part of the registration process, attendees have the opportunity to opt-in to a new, informal mentorship program. The purpose of this program is to foster mentorship relationships within the seL4 community. The program committee will match students and junior engineers who wish to participate as mentees with volunteer mentors. Participating attendees will be introduced to their counterparts during the summit, and will carry on afterwards with whatever level of involvement suits both parties. Mentors are welcome to volunteer for any level of involvement.
   </p>
 </div>
+
+<div class="summit_div">
+  <h3 id="summit-invited-speakers">
+    Invited Speakers
+  </h3>
+</div>
+<div class="speakers_grid">
+  <div class="speaker">
+    <div class="speaker_pic">
+      <a href="https://trustworthy.systems/people/?cn=Gernot+Heiser"><img src="images/gernot.jpg" alt="Gernot Heiser" width="150"/></a>
+    </div>
+    <div class="speaker_title" style="text-align:center">
+      <strong>Gernot Heiser</strong>
+      <br>
+      UNSW
+    </div>
+    <div class="speaker_talk">
+      <a class="summit-abstract-link" href="abstracts2022#a-seL4-research">State of seL4-related research</a>
+    </div>
+  </div>
+  <div class="speaker">
+    <div class="speaker_pic">
+      <a href=""><img src="images/boyd.jpg" alt="Boyd Multerer" width="150"></a>
+    </div>
+    <div class="speaker_title" style="text-align:center">
+      <strong>Boyd Multerer</strong>
+      <br>
+      Kry10
+    </div>
+    <div class="speaker_talk">
+      <a class="summit-abstract-link" href="abstracts2022#a-Kry10-Secure-Platform">Kry10 Secure Platform</a>
+    </div>
+  </div>
+</div>
+
+<div class="summit_div">
+  <h3 id="summit-panellists">
+    Panelists
+  </h3>
+  <p>
+    We are very fortunate to welcome four leaders at major funding agencies to participate in a session <a href="abstracts2022#a-Funding-agencies"><strong>Funding agencies: priorities and vision</strong></a>. They will each give their views on the priorities and vision of their agency in terms of high-assurance systems.
+  </p>
+</div>
+<div class="speakers_grid">
+  <div class="speaker">
+    <div class="speaker_pic">
+      <a href="https://www.darpa.mil/staff/dr-kathleen-fisher"><img src="images/kathleen.jpg" alt="Kathleen Fisher" width="150"/></a>
+    </div>
+    <div class="speaker_title" style="text-align:center">
+      <strong>Kathleen Fisher</strong>
+      <br>
+      DARPA
+    </div>
+  </div>
+  <div class="speaker">
+    <div class="speaker_pic">
+      <img src="images/cyberagentur.png" alt="Cyberagentur" width="150"/>
+    </div>
+    <div class="speaker_title" style="text-align:center">
+      <strong>Sebastian Jester</strong>
+      <br>
+      Cyberagentur
+    </div>
+  </div>
+  <div class="speaker">
+    <div class="speaker_pic">
+      <img src="images/paul.jpg" alt="Paul Waller" width="150"/>
+    </div>
+    <div class="speaker_title" style="text-align:center">
+      <strong>Paul Waller</strong>
+      <br>
+      NCSC
+    </div>
+  </div>
+  <div class="speaker">
+    <div class="speaker_pic">
+      <img src="../Membership/LOGOS/TII.jpg" alt="TII" width="150"/>
+    </div>
+    <div class="speaker_title" style="text-align:center">
+      <strong>Shreekant (Ticky) Thakkar</strong>
+      <br>
+      TII
+    </div>
+  </div>
+</div>
+
 
 <div class="summit_div">
   <h3 id="summit-program">
