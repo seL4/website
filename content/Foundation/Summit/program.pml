@@ -347,7 +347,6 @@ Munich, Germany (hybrid), 10-13 Oct 2022
     <td><a class="summit-abstract-link" href="abstracts2022#a-zero-hello-world">seL4: from zero to hello world<br>
       <span class="summit-abstract-presenter">Ihor Kuz</span></a>,
     <span class="summit-abstract-affiliation">Kry10</span></td>
-    </td>
   </tr>
   <tr>
     <td class="break" colspan="3">Break</td>
