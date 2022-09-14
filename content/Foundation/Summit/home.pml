@@ -160,7 +160,7 @@ Munich, Germany (hybrid), 10-13 Oct 2022
 <div class="speakers_grid">
   <div class="speaker">
     <div class="speaker_pic">
-      <a href="https://trustworthy.systems/people/?cn=Gernot+Heiser"><img src="images/gernot.jpg" alt="Gernot Heiser" width="150"/></a>
+      <a href="https://trustworthy.systems/people/?cn=Gernot+Heiser"><img src="../../images/summit/gernot.jpg" alt="Gernot Heiser" width="150"/></a>
     </div>
     <div class="speaker_title" style="text-align:center">
       <strong>Gernot Heiser</strong>
@@ -197,7 +197,7 @@ Munich, Germany (hybrid), 10-13 Oct 2022
 <div class="speakers_grid">
   <div class="speaker">
     <div class="speaker_pic">
-      <a href="https://www.darpa.mil/staff/dr-kathleen-fisher"><img src="images/kathleen.jpg" alt="Kathleen Fisher" width="150"/></a>
+      <a href="https://www.darpa.mil/staff/dr-kathleen-fisher"><img src="../../images/summit/kathleen.jpg" alt="Kathleen Fisher" width="150"/></a>
     </div>
     <div class="speaker_title" style="text-align:center">
       <strong>Kathleen Fisher</strong>
@@ -207,7 +207,7 @@ Munich, Germany (hybrid), 10-13 Oct 2022
   </div>
   <div class="speaker">
     <div class="speaker_pic">
-      <img src="images/cyberagentur.png" alt="Cyberagentur" width="150"/>
+      <img src="../../images/summit/cyberagentur.png" alt="Cyberagentur" width="150"/>
     </div>
     <div class="speaker_title" style="text-align:center">
       <strong>Sebastian Jester</strong>
@@ -217,7 +217,7 @@ Munich, Germany (hybrid), 10-13 Oct 2022
   </div>
   <div class="speaker">
     <div class="speaker_pic">
-      <img src="images/paul.jpg" alt="Paul Waller" width="150"/>
+      <img src="../../images/summit/paul.jpg" alt="Paul Waller" width="150"/>
     </div>
     <div class="speaker_title" style="text-align:center">
       <strong>Paul Waller</strong>
