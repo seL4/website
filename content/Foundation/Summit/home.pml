@@ -173,7 +173,7 @@ Munich, Germany (hybrid), 10-13 Oct 2022
   </div>
   <div class="speaker">
     <div class="speaker_pic">
-      <a href=""><img src="images/boyd.jpg" alt="Boyd Multerer" width="150"></a>
+      <a href=""><img src="../Membership/LOGOS/Kry10.svg" alt="Boyd Multerer" width="150"></a>
     </div>
     <div class="speaker_title" style="text-align:center">
       <strong>Boyd Multerer</strong>
