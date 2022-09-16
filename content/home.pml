@@ -28,17 +28,17 @@
     <ul>
       <li>
         <strong>
+          16 Sep 2022: Thanks Dornerworks for sponsoring the seL4 Summit 2022
+        </strong>
+      </li>
+      <li>
+        <strong>
           9 Sep 2022: Thanks Horizon Robotics for sponsoring the seL4 Summit 2022
         </strong>
       </li>
       <li>
         <strong>
           31 Aug 2022: SpacemiT joins the seL4 Foundation
-        </strong>
-      </li>
-      <li>
-        <strong>
-          15 Aug 2022: Register for the seL4 Summit!
         </strong>
       </li>
       <li style="margin-top:0.2em;list-style-type:none">

@@ -240,7 +240,7 @@ a.divLink {
   grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
   /*grid-template-columns: repeat(3, 1fr);*/
   /*grid-template-rows: repeat(3, 1fr);*/
-  grid-column-gap: 10px;
+  grid-column-gap: 30px;
   grid-row-gap: 40px;
 }
 
@@ -248,7 +248,7 @@ a.divLink {
   display: grid;
   grid-template-columns: 1fr;
   grid-template-rows: 1fr 0.25fr 0.25fr;
-  grid-column-gap: 15px;
+  grid-column-gap: 25px;
   grid-row-gap: 10px;
   align-content: center;
 

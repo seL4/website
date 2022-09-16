@@ -52,30 +52,7 @@ Munich, Germany (hybrid), 10-13 Oct 2022
       Latest News
     </h3>
   </div>
-  <div class="highlight">
-    <p><strong>
-    seL4 summit: more info on hobbyist ticket, hotel booking, bootcamp and more
-    </strong></p>
-  </div>
-  <p>
-    A few pieces of information and clarification regarding the seL4 summit:
-  </p>
-  <ul>
-    <li><strong>Hobbyist tickets</strong> are available if you’re an seL4 enthusiast working on seL4 outside of your paid job and financing your participation to the summit on your own: <a href="https://hopin.com/events/sel4-summit-2022/registration">hopin.com/events/sel4-summit-2022/registration</a>.
-    </li>
-    <li><strong>The seL4 bootcamp</strong>, offered to on-site participants on the 4th day, with hands-on training on various seL4 technologies, will be at the <strong>Edison Park conference centre</strong>, which is 900m / 10min walking distance for the INFINITY hotel where the rest of the summit is happening.
-    </li>
-    <li><strong>The location of both the summit and the bootcamp</strong> are close to the airport (4 S-Bahn stops, 20min) and a bit further away from the city (9 stops, 25min to Hauptbahnhof).
-    </li>
-    <li><strong>The booking of rooms at the INFINITY hotel</strong> happens in 2 stages: your registration at the summit allows you to book for the 2 nights of the 10th and 11th of October (confirmation emails for these 2 nights will shortly be sent to people who registered for them). To extend your stay for extra nights before and after these 2 nights, you can use the following special link: <a href="https://book.passkey.com/event/50375651/owner/1468684/home">book.passkey.com/event/50375651/owner/1468684/home</a> (you need to use the link twice, once for the nights before and once for the nights after). The total payment for all nights will be made onsite at the hotel.
-    </li>
-    <li><strong>For the nights after the seL4 summit</strong>, the INFINITY hotel is booked out from the 13th of October. Suggestions of alternative hotels for these nights are available <a href="seL4-Summit_Useful-Info.pdf">here</a>.
-    </li>
-    <li><strong>If you’re interested in supporting by sponsoring the seL4 summit</strong> and getting free passes and promotion opportunities, please contact <a title="summit@sel4.systems"   href="mailto:summit@sel4.systems">summit@sel4.systems</a>.
-    </li>
-    <li><strong>If you have any questions</strong> regarding location, venue, and registration, please contact  <a title="sel4summit.cyber@hensoldt.net" href="mailto:sel4summit.cyber@hensoldt.net">sel4summit.cyber@hensoldt.net</a>. For all other questions, please contact <a title="summit@sel4.systems"   href="mailto:summit@sel4.systems">summit@sel4.systems</a>.
-    </li>
-  </ul>
+  We are very fortunate to welcome four leaders at major funding agencies to participate in a session <a href="#summit-panellists">Funding agencies: priorities and vision</a>: Kathleen Fisher, DARPA; Paul Waller, NCSC; Sebastian Jester, Cyberagentur; and Shreekant (Ticky) Thakkar, TII. They will each give their views on the priorities and vision of their agency in terms of high-assurance systems.
 </div>
 
 <div class="summit_div">
@@ -116,6 +93,18 @@ Munich, Germany (hybrid), 10-13 Oct 2022
   <p>
     For questions regarding location, venue, and registration, please contact <a title="sel4summit.cyber@hensoldt.net" href="mailto:sel4summit.cyber@hensoldt.net">sel4summit.cyber@hensoldt.net</a>.
   </p>
+  <p>
+    A few pieces of information regarding location:
+  </p>
+ <ul>
+    <li><strong>The location of both the summit and the bootcamp</strong> are close to the airport (4 S-Bahn stops, 20min) and a bit further away from the city (9 stops, 25min to Hauptbahnhof).
+    </li>
+    <li><strong>The booking of rooms at the INFINITY hotel</strong> happens in 2 stages: your registration at the summit allows you to book for the 2 nights of the 10th and 11th of October (confirmation emails for these 2 nights will shortly be sent to people who registered for them). To extend your stay for extra nights before and after these 2 nights, you can use the following special link: <a href="https://book.passkey.com/event/50375651/owner/1468684/home">book.passkey.com/event/50375651/owner/1468684/home</a> (you need to use the link twice, once for the nights before and once for the nights after). The total payment for all nights will be made onsite at the hotel.
+    </li>
+    <li><strong>For the nights after the seL4 summit</strong>, the INFINITY hotel is booked out from the 13th of October. Suggestions of alternative hotels for these nights are available <a href="seL4-Summit_Useful-Info.pdf">here</a>.
+    </li>
+  </ul>
+
 </div>
 
 <div class="summit_div">
@@ -133,6 +122,15 @@ Munich, Germany (hybrid), 10-13 Oct 2022
     <li>A one-day bootcamp with workshops and trainings</li>
     <li>Networking with other seL4 experts and enthusiasts</li>
     <li>Participation in the mentoring program (for students and junior engineers)</li>
+  </ul>
+  <p>
+    Further information:
+  </p>
+   <ul>
+    <li><strong>Hobbyist tickets</strong> are available if you’re an seL4 enthusiast working on seL4 outside of your paid job and financing your participation to the summit on your own: <a href="https://hopin.com/events/sel4-summit-2022/registration">hopin.com/events/sel4-summit-2022/registration</a>.
+    </li>
+    <li><strong>The seL4 bootcamp</strong>, offered to on-site participants on the 4th day, with hands-on training on various seL4 technologies, will be at the <strong>Edison Park conference centre</strong>, which is 900m / 10min walking distance for the INFINITY hotel where the rest of the summit is happening.
+    </li>
   </ul>
   <div class="highlight" style="text-align: center; padding-top:10px; padding-bottom:10px">
     <a href="https://hopin.com/events/sel4-summit-2022/registration">
@@ -207,22 +205,22 @@ Munich, Germany (hybrid), 10-13 Oct 2022
   </div>
   <div class="speaker">
     <div class="speaker_pic">
-      <img src="../../images/summit/cyberagentur.png" alt="Cyberagentur" width="150"/>
-    </div>
-    <div class="speaker_title" style="text-align:center">
-      <strong>Sebastian Jester</strong>
-      <br>
-      Cyberagentur
-    </div>
-  </div>
-  <div class="speaker">
-    <div class="speaker_pic">
       <img src="../../images/summit/paul.jpg" alt="Paul Waller" width="150"/>
     </div>
     <div class="speaker_title" style="text-align:center">
       <strong>Paul Waller</strong>
       <br>
       NCSC
+    </div>
+  </div>
+  <div class="speaker">
+    <div class="speaker_pic">
+      <img src="../../images/summit/cyberagentur.png" alt="Cyberagentur" width="150"/>
+    </div>
+    <div class="speaker_title" style="text-align:center">
+      <strong>Sebastian Jester</strong>
+      <br>
+      Cyberagentur
     </div>
   </div>
   <div class="speaker">
@@ -374,8 +372,17 @@ Munich, Germany (hybrid), 10-13 Oct 2022
   </p>
 </div>
 <div class="sponsors">
-  <div class="hidden-sponsor-mobile">
-    <!--placeholder to center hoizon on large screen-->
+  <div class="sponsor">
+    <div class="sponsor-pic">
+      <a href="https://dornerworks.com/">
+        <img src="../Membership/LOGOS/DornerWorks.svg" style="width: 248px"
+            alt="DornerWorks logo">
+      </a>
+    </div>
+    <div class="sponsor-name">
+      DornerWorks
+    </div>
+    <div class="sponsor-info">Bronze sponsor</div>
     </div>
     <div class="sponsor">
     <div class="sponsor-pic">
