@@ -68,8 +68,5 @@
     <span class="summit-abstract-affiliation"><strong>TII</strong></span>
 </p>
 <p>
-    TII summary to be added...
-</p>
-<p>
-    Bio to be added
+    Dr. Shreekant (Ticky) Thakkar to give update on TII.
 </p>
