@@ -11,24 +11,6 @@ Munich, Germany (hybrid), 10-13 Oct 2022
 </h4>
 
 
-<!--
-<div class="highlight">
-  <h3>
-   Latest News
-  </h3>
-</div>
-<div>
-  <ul>
-    <li><div class="highlight">18 Jul 2022: Call for Participation: <a href="https://hensoldt-cyber.com/sel4-summit-2022/">Register</a> for the seL4 summit!</div></li>
-    <li>30 Jun 2022: The <a href="program.pml">Program</a> is now available!</li>
-    <li>29 Apr 2022: Location & date confirmed: Munich, Germany (hybrid), 10-13 Oct 2022</li>
-    <li>30 Mar 2022: <a href="./cfp">Call For Presentation</a>, deadline 9th of May 2022</li>
-    <li>16 Mar 2022: Meet the summit 2022 PC members! </li>
-    <li>1 Feb 2022: Call for bids to host the seL4 Summit 2022!</li>
-  </ul>
-</div>
--->
-
 <div class="summit_div">
   <ul>
     <li><a href="#summit-news">Latest News</a></li>
@@ -37,7 +19,6 @@ Munich, Germany (hybrid), 10-13 Oct 2022
     <li><a href="#summit-registration">Registration</a></li>
     <li><a href="#summit-mentoring">Mentorship Program</a></li>
     <li><a href="#summit-invited-speakers">Invited Speakers</a></li>
-    <li><a href="#summit-panellists">Panellists</a></li>
     <li><a href="program">Program</a></li>
     <li><a href="abstracts2022">Abstracts</a></li>
     <li><a href="#summit-pc">Program Committee</a></li>
@@ -52,7 +33,51 @@ Munich, Germany (hybrid), 10-13 Oct 2022
       Latest News
     </h3>
   </div>
-  We are very fortunate to welcome four leaders at major funding agencies to participate in a session <a href="#summit-panellists">Funding agencies: priorities and vision</a>: Kathleen Fisher, DARPA; Paul Waller, NCSC; Sebastian Jester, Cyberagentur; and Shreekant (Ticky) Thakkar, TII. They will each give their views on the priorities and vision of their agency in terms of high-assurance systems.
+  <p>
+    We are very fortunate to welcome four leaders at major funding agencies to participate in a session <a href="abstracts2022#a-Funding-agencies"><strong>Funding agencies: priorities and vision</strong></a>. They will each give their views on the priorities and vision of their agency in terms of high-assurance systems.
+  </p>
+</div>
+<div class="speakers_grid">
+  <div class="speaker">
+    <div class="speaker_pic">
+      <a href="https://www.darpa.mil/staff/dr-kathleen-fisher"><img src="../../images/summit/kathleen.jpg" alt="Kathleen Fisher" width="150"/></a>
+    </div>
+    <div class="speaker_title" style="text-align:center">
+      <a href="abstracts2022#a-Funding-agencies-darpa">Kathleen Fisher</a>
+      <br>
+      DARPA
+    </div>
+  </div>
+  <div class="speaker">
+    <div class="speaker_pic">
+      <img src="../../images/summit/paul.jpg" alt="Paul Waller" width="150"/>
+    </div>
+    <div class="speaker_title" style="text-align:center">
+      <a href="abstracts2022#a-Funding-agencies-ncsc">Paul Waller</a>
+      <br>
+      NCSC
+    </div>
+  </div>
+  <div class="speaker">
+    <div class="speaker_pic">
+      <img src="../../images/summit/cyberagentur.png" alt="Cyberagentur" width="150"/>
+    </div>
+    <div class="speaker_title" style="text-align:center">
+      <a href="abstracts2022#a-Funding-agencies-cyberagentur">Sebastian Jester</a>
+      <br>
+      Cyberagentur
+    </div>
+  </div>
+  <div class="speaker">
+    <div class="speaker_pic">
+      <img src="../Membership/LOGOS/TII.jpg" alt="TII" width="150"/>
+    </div>
+    <div class="speaker_title" style="text-align:center">
+      <a href="abstracts2022#a-Funding-agencies-tii">Shreekant (Ticky) Thakkar</a>
+      <br>
+      TII
+    </div>
+  </div>
 </div>
 
 <div class="summit_div">
@@ -180,57 +205,6 @@ Munich, Germany (hybrid), 10-13 Oct 2022
     </div>
     <div class="speaker_talk">
       <a class="summit-abstract-link" href="abstracts2022#a-Kry10-Secure-Platform">Kry10 Secure Platform</a>
-    </div>
-  </div>
-</div>
-
-<div class="summit_div">
-  <h3 id="summit-panellists">
-    Panelists
-  </h3>
-  <p>
-    We are very fortunate to welcome four leaders at major funding agencies to participate in a session <a href="abstracts2022#a-Funding-agencies"><strong>Funding agencies: priorities and vision</strong></a>. They will each give their views on the priorities and vision of their agency in terms of high-assurance systems.
-  </p>
-</div>
-<div class="speakers_grid">
-  <div class="speaker">
-    <div class="speaker_pic">
-      <a href="https://www.darpa.mil/staff/dr-kathleen-fisher"><img src="../../images/summit/kathleen.jpg" alt="Kathleen Fisher" width="150"/></a>
-    </div>
-    <div class="speaker_title" style="text-align:center">
-      <strong>Kathleen Fisher</strong>
-      <br>
-      DARPA
-    </div>
-  </div>
-  <div class="speaker">
-    <div class="speaker_pic">
-      <img src="../../images/summit/paul.jpg" alt="Paul Waller" width="150"/>
-    </div>
-    <div class="speaker_title" style="text-align:center">
-      <strong>Paul Waller</strong>
-      <br>
-      NCSC
-    </div>
-  </div>
-  <div class="speaker">
-    <div class="speaker_pic">
-      <img src="../../images/summit/cyberagentur.png" alt="Cyberagentur" width="150"/>
-    </div>
-    <div class="speaker_title" style="text-align:center">
-      <strong>Sebastian Jester</strong>
-      <br>
-      Cyberagentur
-    </div>
-  </div>
-  <div class="speaker">
-    <div class="speaker_pic">
-      <img src="../Membership/LOGOS/TII.jpg" alt="TII" width="150"/>
-    </div>
-    <div class="speaker_title" style="text-align:center">
-      <strong>Shreekant (Ticky) Thakkar</strong>
-      <br>
-      TII
     </div>
   </div>
 </div>

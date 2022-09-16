@@ -28,7 +28,7 @@
     <ul>
       <li>
         <strong>
-          16 Sep 2022: Thanks Dornerworks for sponsoring the seL4 Summit 2022
+          19 Sep 2022: Thanks DornerWorks for sponsoring the seL4 Summit 2022
         </strong>
       </li>
       <li>

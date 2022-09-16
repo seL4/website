@@ -56,7 +56,7 @@ Older News: <%=reflist%>
 
 <!----------------------------------------------------------->
 <div class="news-item" id="summit-dornerworks">
-    16 September 2022: Thanks DornerWorks for sponsoring the seL4 Summit 2022
+    19 September 2022: Thanks DornerWorks for sponsoring the seL4 Summit 2022
 </div>
 <div>
   <p>
