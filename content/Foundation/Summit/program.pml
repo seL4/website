@@ -219,18 +219,14 @@ Munich, Germany (hybrid), 10-13 Oct 2022
     <td>15:45 - 17:00</td>
     <td>Panel & Discussion</td>
     <td><a class="summit-abstract-link" href="abstracts2022#a-Funding-agencies">Funding agencies: priorities and vision</a>
-    <div  id="p-Funding-agencies-darpa">
-      <a class="summit-abstract-link" href="abstracts2022#a-Funding-agencies-darpa"><span class="summit-abstract-presenter">Kathleen Fisher</span></a>, <span class="summit-abstract-affiliation">DARPA</span>
-    </div>
-    <div  id="p-Funding-agencies-ncsc">
-      <a class="summit-abstract-link" href="abstracts2022#a-Funding-agencies-ncsc"><span class="summit-abstract-presenter">Paul Waller</span></a>, <span class="summit-abstract-affiliation">NCSC</span>
-    </div>
-    <div  id="p-Funding-agencies-cyberagentur">
-      <a class="summit-abstract-link" href="abstracts2022#a-Funding-agencies-cyberagentur"><span class="summit-abstract-presenter">Sebastian Jester</span></a>, <span class="summit-abstract-affiliation">Cyberagentur</span>
-    </div>
-    <div  id="p-Funding-agencies-tii">
-      <a class="summit-abstract-link" href="abstracts2022#a-Funding-agencies-tii"><span class="summit-abstract-presenter">Dr. Shreekant (Ticky) Thakkar</span></a>, <span class="summit-abstract-affiliation">TII</span></td>
-    </div>
+    <br>
+    <a class="summit-abstract-link" href="abstracts2022#a-Funding-agencies-darpa" id="p-Funding-agencies-darpa"><span class="summit-abstract-presenter">Kathleen Fisher</span></a>, <span class="summit-abstract-affiliation">DARPA</span>
+    <br>
+    <a class="summit-abstract-link" href="abstracts2022#a-Funding-agencies-ncsc" id="p-Funding-agencies-ncsc"><span class="summit-abstract-presenter">Paul Waller</span></a>, <span class="summit-abstract-affiliation">NCSC</span>
+    <br>
+    <a class="summit-abstract-link" href="abstracts2022#a-Funding-agencies-cyberagentur" id="p-Funding-agencies-cyberagentur"><span class="summit-abstract-presenter">Sebastian Jester</span></a>, <span class="summit-abstract-affiliation">Cyberagentur</span>
+    <br>
+    <a class="summit-abstract-link" href="abstracts2022#a-Funding-agencies-tii"  id="p-Funding-agencies-tii"><span class="summit-abstract-presenter">Dr. Shreekant (Ticky) Thakkar</span></a>, <span class="summit-abstract-affiliation">TII</span></td>
   </tr>
 
   <tr>
