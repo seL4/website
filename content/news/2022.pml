@@ -55,6 +55,33 @@ Older News: <%=reflist%>
 -->
 
 <!----------------------------------------------------------->
+<div class="news-item" id="summit-dornerworks">
+    19 September 2022: Thanks DornerWorks for sponsoring the seL4 Summit 2022
+</div>
+<div>
+  <p>
+    <a href="https://dornerworks.com/">
+    <img src="/Foundation/Membership/LOGOS/DornerWorks.svg" style="width: 20%;  padding-left:10px;  float:right"
+              alt="DornerWorks logo">
+        </a>
+  </p>
+  <p>
+    The seL4 Foundation thanks <a href="https://dornerworks.com/">DornerWorks</a> for becoming a Bronze sponsor of the <a href="/Foundation/Summit/">seL4 Summit 2022</a>.
+  </p>
+  <p>
+    <a href="https://dornerworks.com/">DornerWorks</a> helps product makers turn their ideas into reality with FPGA, hardware, and embedded software engineering expertise. Among other areas, DornerWorks specialises in seL4 microkernel-based development.
+  </p>
+  <p>
+    Innovative companies are building products on a trusted software base with the guidance of DornerWorks engineers. As a founding member of the seL4 Foundation, DornerWorks can accelerate the integration of seL4 as the trusted software base for your products.
+  </p>
+  <p>
+    If you are interesting in sponsoring the seL4 summit 2022, please contact <a title="summit@sel4.systems" href="mailto:summit@sel4.systems">summit@sel4.systems</a>.
+  </p>
+</div>
+<div class="news-finish">
+</div>
+
+<!----------------------------------------------------------->
 <div class="news-item" id="summit-horizon">
     9 September 2022: Thanks Horizon Robotics for sponsoring the seL4 Summit 2022
 </div>

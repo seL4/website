@@ -312,7 +312,7 @@ Other News: <%=reflist%>
    href="https://microkerneldude.wordpress.com/2020/04/07/the-sel4-foundation-what-and-why/">Blog
    post</a> about "The seL4 Foundation &mdash; What and Why", and in
    the press releases from <a
-   href="https://www.linuxfoundation.org/press-release/2020/04/sel4-microkernel-optimized-for-security-gets-support-of-linux-foundation/">the
+   href="https://www.linuxfoundation.org/press/press-release/sel4-microkernel-optimized-for-security-gets-support-of-linux-foundation">the
    Linux Foundation</a>.
   </p>
 </div>

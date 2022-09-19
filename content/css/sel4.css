@@ -240,7 +240,7 @@ a.divLink {
   grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
   /*grid-template-columns: repeat(3, 1fr);*/
   /*grid-template-rows: repeat(3, 1fr);*/
-  grid-column-gap: 10px;
+  grid-column-gap: 30px;
   grid-row-gap: 40px;
 }
 
@@ -248,7 +248,7 @@ a.divLink {
   display: grid;
   grid-template-columns: 1fr;
   grid-template-rows: 1fr 0.25fr 0.25fr;
-  grid-column-gap: 15px;
+  grid-column-gap: 25px;
   grid-row-gap: 10px;
   align-content: center;
 
@@ -497,4 +497,56 @@ span.summit-abstract-affiliation{
 div.summit-abstract{
   padding-top: 5px;
   padding-bottom: 10px;
+}
+
+/*note the plural*/
+.speakers_grid {
+  display: grid;
+  display: inline-grid;
+  grid-template-columns: auto;
+  /*grid-column-gap: 10px;
+  grid-row-gap: 10px;*/
+}
+
+@media screen and (min-width: 60em) {
+  .speakers_grid {
+    grid-template-columns: repeat(4, 300px);
+  }
+}
+
+.speaker {
+  display: grid;
+  grid-template-columns: 1fr;
+  /*grid-template-rows: 1fr 0.25fr 0.9fr;*/
+  grid-template-rows: 200px 20px 30px;
+  grid-template-areas: "speaker_pic" "speaker_title" "speaker_talk";
+  grid-row-gap: 20px;
+  align-content: center;
+  justify-self: center;
+  padding: 20px;
+  border-radius: 10px;
+}
+
+.speaker_pic {
+  align-self: center;
+  justify-self: center;
+  grid-area: speaker_pic;
+}
+
+.speaker_title {
+  grid-area: speaker_title;
+  justify-self: center;
+  align-self: center;
+  font-size:1.1em;
+}
+
+.speaker_title {
+  grid-area: speaker_title;
+  justify-self: center;
+  align-self: center;
+  font-size:1.1em;
+}
+
+.speaker_title_col {
+  color: #8897AE; /* neutralLight */
 }

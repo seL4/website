@@ -9,6 +9,6 @@
 <p class="summit-abstract-type">
     Panel & discussion
 </p>
-<p class="summit-abstract-author">
-    <span class="summit-abstract-affiliation">DARPA, CygerAgentur, NCSC, ...</span>
+<p>
+    We are very fortunate to welcome four leaders at major funding agencies to participate in a session <strong>Funding agencies: priorities and vision</strong>. They will each give their views on the priorities and vision of their agency in terms of high-assurance systems.
 </p>

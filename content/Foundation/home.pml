@@ -37,7 +37,7 @@
   <ul>
     <li><strong>Read the <a href="https://microkerneldude.wordpress.com/2020/04/07/the-sel4-foundation-what-and-why/">Blog post</a> about "The seL4 Foundation &mdash; What and Why"</strong>
     </li>
-    <li><strong>Read the <a href="https://www.linuxfoundation.org/press-release/2020/04/sel4-microkernel-optimized-for-security-gets-support-of-linux-foundation/">press releases about the launch from the Linux Foundation</a></strong>
+    <li><strong>Read the <a href="https://www.linuxfoundation.org/press/press-release/sel4-microkernel-optimized-for-security-gets-support-of-linux-foundation">press releases about the launch from the Linux Foundation</a></strong>
     </li>
   </ul>
 
