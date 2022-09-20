@@ -4,7 +4,7 @@
     SPDX-License-Identifier: CC-BY-SA-4.0
 -->
 <h4 class="summit-abstract-title">
-    VM Composer
+    DornerWorks’ VM Composer
 </h4>
 <p class="summit-abstract-type">
     Teaser
