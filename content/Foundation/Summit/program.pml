@@ -233,17 +233,10 @@ Munich, Germany (hybrid), 10-13 Oct 2022
     <th colspan="3">Day 3&emsp;12 October 2022</th>
   </tr>
 
-  <!--<tr id="p-seL4-principles-abstractions">
+  <tr id="p-seL4-principles-abstractions">
     <td>9:00 - 9:45</td>
     <td>Plenary</td>
     <td><a class="summit-abstract-link" href="abstracts2022#a-seL4-principles-abstractions">Overview: seL4 principles, abstractions and use<br><span class="summit-abstract-presenter">Gernot Heiser</span></a>,
-    <span class="summit-abstract-affiliation">seL4 Foundation</span></td>
-  </tr>-->
-
-  <tr>
-    <td>9:00 - 9:45</td>
-    <td>Plenary</td>
-    <td><strong>Overview: seL4 principles, abstractions and use</strong><br><span class="summit-abstract-presenter">Gernot Heiser</span>,
     <span class="summit-abstract-affiliation">seL4 Foundation</span></td>
   </tr>
 
