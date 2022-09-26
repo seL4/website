@@ -69,7 +69,7 @@ Older News: <%=reflist%>
       <img src="../../images/summit/brad.jpg" alt="William “Brad” Martin" width="150"/>
     </div>
     <div class="speaker_title" style="text-align:center">
-      <a href="abstracts2022#a-Funding-agencies-darpa">William “Brad” Martin</a>
+      <a href="/Foundation/Summit/abstracts2022#a-Funding-agencies-darpa">William “Brad” Martin</a>
       <br>
       DARPA
     </div>
@@ -79,7 +79,7 @@ Older News: <%=reflist%>
       <img src="../../images/summit/paul.jpg" alt="Paul Waller" width="150"/>
     </div>
     <div class="speaker_title" style="text-align:center">
-      <a href="abstracts2022#a-Funding-agencies-ncsc">Paul Waller</a>
+      <a href="/Foundation/Summit/abstracts2022#a-Funding-agencies-ncsc">Paul Waller</a>
       <br>
       NCSC
     </div>
@@ -89,7 +89,7 @@ Older News: <%=reflist%>
       <img src="../../images/summit/cyberagentur.png" alt="Cyberagentur" width="150"/>
     </div>
     <div class="speaker_title" style="text-align:center">
-      <a href="abstracts2022#a-Funding-agencies-cyberagentur">Sebastian Jester</a>
+      <a href="/Foundation/Summit/abstracts2022#a-Funding-agencies-cyberagentur">Sebastian Jester</a>
       <br>
       Cyberagentur
     </div>
@@ -99,7 +99,7 @@ Older News: <%=reflist%>
       <img src="../Foundation/Membership/LOGOS/TII.jpg" alt="TII" width="150"/>
     </div>
     <div class="speaker_title" style="text-align:center">
-      <a href="abstracts2022#a-Funding-agencies-tii">Shreekant (Ticky) Thakkar</a>
+      <a href="/Foundation/Summit/abstracts2022#a-Funding-agencies-tii">Shreekant (Ticky) Thakkar</a>
       <br>
       TII
     </div>
