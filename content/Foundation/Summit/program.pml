@@ -220,7 +220,7 @@ Munich, Germany (hybrid), 10-13 Oct 2022
     <td>Panel & Discussion</td>
     <td><a class="summit-abstract-link" href="abstracts2022#a-Funding-agencies">Funding agencies: priorities and vision</a>
     <br>
-    <a class="summit-abstract-link" href="abstracts2022#a-Funding-agencies-darpa" id="p-Funding-agencies-darpa"><span class="summit-abstract-presenter">Kathleen Fisher</span></a>, <span class="summit-abstract-affiliation">DARPA</span>
+    <a class="summit-abstract-link" href="abstracts2022#a-Funding-agencies-darpa" id="p-Funding-agencies-darpa"><span class="summit-abstract-presenter">William “Brad” Martin</span></a>, <span class="summit-abstract-affiliation">DARPA</span>
     <br>
     <a class="summit-abstract-link" href="abstracts2022#a-Funding-agencies-ncsc" id="p-Funding-agencies-ncsc"><span class="summit-abstract-presenter">Paul Waller</span></a>, <span class="summit-abstract-affiliation">NCSC</span>
     <br>

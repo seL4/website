@@ -56,7 +56,7 @@ Older News: <%=reflist%>
 
 <!----------------------------------------------------------->
 <div class="news-item" id="summit-panellists">
-    23 September 2022: Panellists for seL4 summit announced
+    26 September 2022: Panellists for seL4 summit announced
 </div>
 <div>
   <p>
@@ -66,10 +66,10 @@ Older News: <%=reflist%>
 <div class="speakers_grid">
   <div class="speaker">
     <div class="speaker_pic">
-      <a href="https://www.darpa.mil/staff/dr-kathleen-fisher"><img src="../../images/summit/kathleen.jpg" alt="Kathleen Fisher" width="150"/></a>
+      <img src="../../images/summit/brad.jpg" alt="William “Brad” Martin" width="150"/>
     </div>
     <div class="speaker_title" style="text-align:center">
-      <a href="abstracts2022#a-Funding-agencies-darpa">Kathleen Fisher</a>
+      <a href="abstracts2022#a-Funding-agencies-darpa">William “Brad” Martin</a>
       <br>
       DARPA
     </div>

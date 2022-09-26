@@ -28,7 +28,7 @@
     <ul>
       <li>
         <strong>
-          23 Sep 2022: Panellists for seL4 summit announced
+          26 Sep 2022: Panellists for seL4 summit announced
         </strong>
       </li>
       <li>
