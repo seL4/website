@@ -40,10 +40,10 @@ Munich, Germany (hybrid), 10-13 Oct 2022
 <div class="speakers_grid">
   <div class="speaker">
     <div class="speaker_pic">
-      <a href="https://www.darpa.mil/staff/dr-kathleen-fisher"><img src="../../images/summit/kathleen.jpg" alt="Kathleen Fisher" width="150"/></a>
+      <img src="../../images/summit/brad.jpg" alt="William “Brad” Martin" width="150"/></a>
     </div>
     <div class="speaker_title" style="text-align:center">
-      <a href="abstracts2022#a-Funding-agencies-darpa">Kathleen Fisher</a>
+      <a href="abstracts2022#a-Funding-agencies-darpa">William “Brad” Martin</a>
       <br>
       DARPA
     </div>
@@ -155,6 +155,8 @@ Munich, Germany (hybrid), 10-13 Oct 2022
     <li><strong>Hobbyist tickets</strong> are available if you’re an seL4 enthusiast working on seL4 outside of your paid job and financing your participation to the summit on your own: <a href="https://hopin.com/events/sel4-summit-2022/registration">hopin.com/events/sel4-summit-2022/registration</a>.
     </li>
     <li><strong>The seL4 bootcamp</strong>, offered to on-site participants on the 4th day, with hands-on training on various seL4 technologies, will be at the <strong>Edison Park conference centre</strong>, which is 900m / 10min walking distance for the INFINITY hotel where the rest of the summit is happening.
+    <br>
+    Registration for the bootcamp is part of the conference registration. However, <strong>registration for the bootcamp will close on 3 October 2022</strong>, to help us finalise venue and catering arrangements.
     </li>
   </ul>
   <div class="highlight" style="text-align: center; padding-top:10px; padding-bottom:10px">

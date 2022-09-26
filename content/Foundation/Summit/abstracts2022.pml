@@ -46,9 +46,8 @@ Munich, Germany (hybrid), 10-13 Oct 2022
 <div class="summit-abstract" id="a-Funding-agencies-cyberagentur"><%@ include file="abstracts/Funding-agencies-cyberagentur.pml" %></div>
 <div class="summit-abstract" id="a-Funding-agencies-tii"><%@ include file="abstracts/Funding-agencies-tii.pml" %></div>
 <a href="program.pml#p-Funding-agencies">See this talk in the program</a>
-
-<!--seL4-principles-abstractions-->
-
+<div class="summit-abstract" id="a-seL4-principles-abstractions"><%@ include file="abstracts/seL4-principles-abstractions.pml" %></div>
+<a href="program.pml#p-seL4-principles-abstractions">See this talk in the program</a>
 <div class="summit-abstract" id="a-Whats-verified"><%@ include file="abstracts/Whats-verified.pml" %><a href="program.pml#p-Whats-verified">See this talk in the program</a></div>
 <div class="summit-abstract" id="a-GitHub-tests"><%@ include file="abstracts/GitHub-tests.pml" %><a href="program.pml#p-GitHub-tests">See this talk in the program</a></div>
 <div class="summit-abstract" id="a-seL4-mainlining"><%@ include file="abstracts/seL4-mainlining.pml" %><a href="program.pml#p-seL4-mainlining">See this talk in the program</a></div>

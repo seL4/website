@@ -4,7 +4,7 @@
     SPDX-License-Identifier: CC-BY-SA-4.0
 -->
 <h4 class="summit-abstract-title">
-    VM Composer: the easy button for virtualized seL4-based systems
+    DornerWorks’ VM Composer: the easy button for virtualized seL4-based systems
 </h4>
 <p class="summit-abstract-type">
     Bootcamp

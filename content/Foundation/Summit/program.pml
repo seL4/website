@@ -220,7 +220,7 @@ Munich, Germany (hybrid), 10-13 Oct 2022
     <td>Panel & Discussion</td>
     <td><a class="summit-abstract-link" href="abstracts2022#a-Funding-agencies">Funding agencies: priorities and vision</a>
     <br>
-    <a class="summit-abstract-link" href="abstracts2022#a-Funding-agencies-darpa" id="p-Funding-agencies-darpa"><span class="summit-abstract-presenter">Kathleen Fisher</span></a>, <span class="summit-abstract-affiliation">DARPA</span>
+    <a class="summit-abstract-link" href="abstracts2022#a-Funding-agencies-darpa" id="p-Funding-agencies-darpa"><span class="summit-abstract-presenter">William “Brad” Martin</span></a>, <span class="summit-abstract-affiliation">DARPA</span>
     <br>
     <a class="summit-abstract-link" href="abstracts2022#a-Funding-agencies-ncsc" id="p-Funding-agencies-ncsc"><span class="summit-abstract-presenter">Paul Waller</span></a>, <span class="summit-abstract-affiliation">NCSC</span>
     <br>
@@ -233,17 +233,10 @@ Munich, Germany (hybrid), 10-13 Oct 2022
     <th colspan="3">Day 3&emsp;12 October 2022</th>
   </tr>
 
-  <!--<tr id="p-seL4-principles-abstractions">
+  <tr id="p-seL4-principles-abstractions">
     <td>9:00 - 9:45</td>
     <td>Plenary</td>
     <td><a class="summit-abstract-link" href="abstracts2022#a-seL4-principles-abstractions">Overview: seL4 principles, abstractions and use<br><span class="summit-abstract-presenter">Gernot Heiser</span></a>,
-    <span class="summit-abstract-affiliation">seL4 Foundation</span></td>
-  </tr>-->
-
-  <tr>
-    <td>9:00 - 9:45</td>
-    <td>Plenary</td>
-    <td><strong>Overview: seL4 principles, abstractions and use</strong><br><span class="summit-abstract-presenter">Gernot Heiser</span>,
     <span class="summit-abstract-affiliation">seL4 Foundation</span></td>
   </tr>
 
@@ -326,7 +319,7 @@ Munich, Germany (hybrid), 10-13 Oct 2022
   <tr id="p-VM-Composer">
     <td>16:15 - 16:30</td>
     <td>Teaser</td>
-    <td><a class="summit-abstract-link" href="abstracts2022#a-VM-Composer">VM Composer<br><span class="summit-abstract-presenter">Robbie VanVossen</span></a>,
+    <td><a class="summit-abstract-link" href="abstracts2022#a-VM-Composer">DornerWorks’ VM Composer<br><span class="summit-abstract-presenter">Robbie VanVossen</span></a>,
     <span class="summit-abstract-affiliation">DornerWorks</span></td>
   </tr>
 
@@ -379,7 +372,7 @@ Munich, Germany (hybrid), 10-13 Oct 2022
   <tr id="p-VM-Composer-bootcamp">
     <td>14:30 - 15:15</td>
     <td>Bootcamp</td>
-    <td><a class="summit-abstract-link" href="abstracts2022#a-VM-Composer-bootcamp">VM Composer: the easy button for virtualized seL4-based systems<br><span class="summit-abstract-presenter">Chris Guikema</span> & <span class="summit-abstract-presenter">Robbie VanVossen</span></a>,
+    <td><a class="summit-abstract-link" href="abstracts2022#a-VM-Composer-bootcamp">DornerWorks’ VM Composer: the easy button for virtualized seL4-based systems<br><span class="summit-abstract-presenter">Chris Guikema</span> & <span class="summit-abstract-presenter">Robbie VanVossen</span></a>,
     <span class="summit-abstract-affiliation">Dornerworks</span></td>
   </tr>
   <tr>

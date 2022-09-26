@@ -55,6 +55,60 @@ Older News: <%=reflist%>
 -->
 
 <!----------------------------------------------------------->
+<div class="news-item" id="summit-panellists">
+    26 September 2022: Panellists for seL4 summit announced
+</div>
+<div>
+  <p>
+    We are very fortunate to welcome four leaders at major funding agencies to participate in a session <a href="../Foundation/Summit/abstracts2022#a-Funding-agencies"><strong>Funding agencies: priorities and vision</strong></a> at the <a href="/Foundation/Summit/">seL4 summit</a>. They will each give their views on the priorities and vision of their agency in terms of high-assurance systems.
+  </p>
+</div>
+<div class="speakers_grid">
+  <div class="speaker">
+    <div class="speaker_pic">
+      <img src="../../images/summit/brad.jpg" alt="William “Brad” Martin" width="150"/>
+    </div>
+    <div class="speaker_title" style="text-align:center">
+      <a href="/Foundation/Summit/abstracts2022#a-Funding-agencies-darpa">William “Brad” Martin</a>
+      <br>
+      DARPA
+    </div>
+  </div>
+  <div class="speaker">
+    <div class="speaker_pic">
+      <img src="../../images/summit/paul.jpg" alt="Paul Waller" width="150"/>
+    </div>
+    <div class="speaker_title" style="text-align:center">
+      <a href="/Foundation/Summit/abstracts2022#a-Funding-agencies-ncsc">Paul Waller</a>
+      <br>
+      NCSC
+    </div>
+  </div>
+  <div class="speaker">
+    <div class="speaker_pic">
+      <img src="../../images/summit/cyberagentur.png" alt="Cyberagentur" width="150"/>
+    </div>
+    <div class="speaker_title" style="text-align:center">
+      <a href="/Foundation/Summit/abstracts2022#a-Funding-agencies-cyberagentur">Sebastian Jester</a>
+      <br>
+      Cyberagentur
+    </div>
+  </div>
+  <div class="speaker">
+    <div class="speaker_pic">
+      <img src="../Foundation/Membership/LOGOS/TII.jpg" alt="TII" width="150"/>
+    </div>
+    <div class="speaker_title" style="text-align:center">
+      <a href="/Foundation/Summit/abstracts2022#a-Funding-agencies-tii">Shreekant (Ticky) Thakkar</a>
+      <br>
+      TII
+    </div>
+  </div>
+</div>
+<div class="news-finish">
+</div>
+
+<!----------------------------------------------------------->
 <div class="news-item" id="summit-dornerworks">
     19 September 2022: Thanks DornerWorks for sponsoring the seL4 Summit 2022
 </div>
