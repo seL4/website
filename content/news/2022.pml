@@ -60,7 +60,7 @@ Older News: <%=reflist%>
 </div>
 <div>
   <p>
-    We are very fortunate to welcome four leaders at major funding agencies to participate in a session <a href="../Foundation/Summit/abstracts2022#a-Funding-agencies"><strong>Funding agencies: priorities and vision</strong></a>. They will each give their views on the priorities and vision of their agency in terms of high-assurance systems.
+    We are very fortunate to welcome four leaders at major funding agencies to participate in a session <a href="../Foundation/Summit/abstracts2022#a-Funding-agencies"><strong>Funding agencies: priorities and vision</strong></a> at the <a href="/Foundation/Summit/">seL4 summit</a>. They will each give their views on the priorities and vision of their agency in terms of high-assurance systems.
   </p>
 </div>
 <div class="speakers_grid">
