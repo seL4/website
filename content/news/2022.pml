@@ -288,12 +288,12 @@ Older News: <%=reflist%>
 </div>
 <div>
   <p>
-    <a href="https://latticex.foundation/home">
+    <a href="https://latticex.foundation/">
       <img src="/Foundation/Membership/LOGOS/latticex.png"
 	   style="width: 20%;  padding-left:10px;  float:right"
 	   alt="LatticeX" />
     </a>
-    The seL4 Foundation is pleased to welcome <a href="https://latticex.foundation/home">Lattice X</a>.
+    The seL4 Foundation is pleased to welcome <a href="https://latticex.foundation/">Lattice X</a>.
     <br>
     <br>
     LatticeX Foundation cultivates academic research, technology advancements and industrial applications in the fields that foster the development of LatticeX ecosystem.
