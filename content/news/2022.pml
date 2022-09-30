@@ -71,7 +71,7 @@ Older News: <%=reflist%>
     <div class="speaker_title" style="text-align:center">
       <a href="/Foundation/Summit/abstracts2022#a-Funding-agencies-darpa">William “Brad” Martin</a>
       <br>
-      DARPA
+      <a href="https://www.darpa.mil/">DARPA</a>
     </div>
   </div>
   <div class="speaker">
@@ -81,7 +81,7 @@ Older News: <%=reflist%>
     <div class="speaker_title" style="text-align:center">
       <a href="/Foundation/Summit/abstracts2022#a-Funding-agencies-ncsc">Paul Waller</a>
       <br>
-      NCSC
+      <a href="https://www.ncsc.gov.uk/">NCSC</a>
     </div>
   </div>
   <div class="speaker">
@@ -91,7 +91,7 @@ Older News: <%=reflist%>
     <div class="speaker_title" style="text-align:center">
       <a href="/Foundation/Summit/abstracts2022#a-Funding-agencies-cyberagentur">Sebastian Jester</a>
       <br>
-      Cyberagentur
+      <a href="https://www.cyberagentur.de/">Cyberagentur</a>
     </div>
   </div>
   <div class="speaker">
@@ -101,7 +101,7 @@ Older News: <%=reflist%>
     <div class="speaker_title" style="text-align:center">
       <a href="/Foundation/Summit/abstracts2022#a-Funding-agencies-tii">Shreekant (Ticky) Thakkar</a>
       <br>
-      TII
+      <a href="https://www.tii.ae/">TII</a>
     </div>
   </div>
 </div>

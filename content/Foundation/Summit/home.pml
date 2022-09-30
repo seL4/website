@@ -40,12 +40,12 @@ Munich, Germany (hybrid), 10-13 Oct 2022
 <div class="speakers_grid">
   <div class="speaker">
     <div class="speaker_pic">
-      <img src="../../images/summit/brad.jpg" alt="William “Brad” Martin" width="150"/></a>
+      <img src="../../images/summit/brad.jpg" alt="William “Brad” Martin" width="150"/>
     </div>
     <div class="speaker_title" style="text-align:center">
       <a href="abstracts2022#a-Funding-agencies-darpa">William “Brad” Martin</a>
       <br>
-      DARPA
+      <a href="https://www.darpa.mil/">DARPA</a>
     </div>
   </div>
   <div class="speaker">
@@ -55,7 +55,7 @@ Munich, Germany (hybrid), 10-13 Oct 2022
     <div class="speaker_title" style="text-align:center">
       <a href="abstracts2022#a-Funding-agencies-ncsc">Paul Waller</a>
       <br>
-      NCSC
+      <a href="https://www.ncsc.gov.uk/">NCSC</a>
     </div>
   </div>
   <div class="speaker">
@@ -65,7 +65,7 @@ Munich, Germany (hybrid), 10-13 Oct 2022
     <div class="speaker_title" style="text-align:center">
       <a href="abstracts2022#a-Funding-agencies-cyberagentur">Sebastian Jester</a>
       <br>
-      Cyberagentur
+      <a href="https://www.cyberagentur.de/">Cyberagentur</a>
     </div>
   </div>
   <div class="speaker">
@@ -75,7 +75,7 @@ Munich, Germany (hybrid), 10-13 Oct 2022
     <div class="speaker_title" style="text-align:center">
       <a href="abstracts2022#a-Funding-agencies-tii">Shreekant (Ticky) Thakkar</a>
       <br>
-      TII
+      <a href="https://www.tii.ae/">TII</a>
     </div>
   </div>
 </div>
