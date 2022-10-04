@@ -71,7 +71,7 @@ Older News: <%=reflist%>
     <div class="speaker_title" style="text-align:center">
       <a href="/Foundation/Summit/abstracts2022#a-Funding-agencies-darpa">William “Brad” Martin</a>
       <br>
-      DARPA
+      <a href="https://www.darpa.mil/">DARPA</a>
     </div>
   </div>
   <div class="speaker">
@@ -81,7 +81,7 @@ Older News: <%=reflist%>
     <div class="speaker_title" style="text-align:center">
       <a href="/Foundation/Summit/abstracts2022#a-Funding-agencies-ncsc">Paul Waller</a>
       <br>
-      NCSC
+      <a href="https://www.ncsc.gov.uk/">NCSC</a>
     </div>
   </div>
   <div class="speaker">
@@ -91,7 +91,7 @@ Older News: <%=reflist%>
     <div class="speaker_title" style="text-align:center">
       <a href="/Foundation/Summit/abstracts2022#a-Funding-agencies-cyberagentur">Sebastian Jester</a>
       <br>
-      Cyberagentur
+      <a href="https://www.cyberagentur.de/">Cyberagentur</a>
     </div>
   </div>
   <div class="speaker">
@@ -101,7 +101,7 @@ Older News: <%=reflist%>
     <div class="speaker_title" style="text-align:center">
       <a href="/Foundation/Summit/abstracts2022#a-Funding-agencies-tii">Shreekant (Ticky) Thakkar</a>
       <br>
-      TII
+      <a href="https://www.tii.ae/">TII</a>
     </div>
   </div>
 </div>
@@ -288,12 +288,12 @@ Older News: <%=reflist%>
 </div>
 <div>
   <p>
-    <a href="https://latticex.foundation/home">
+    <a href="https://latticex.foundation/">
       <img src="/Foundation/Membership/LOGOS/latticex.png"
 	   style="width: 20%;  padding-left:10px;  float:right"
 	   alt="LatticeX" />
     </a>
-    The seL4 Foundation is pleased to welcome <a href="https://latticex.foundation/home">Lattice X</a>.
+    The seL4 Foundation is pleased to welcome <a href="https://latticex.foundation/">Lattice X</a>.
     <br>
     <br>
     LatticeX Foundation cultivates academic research, technology advancements and industrial applications in the fields that foster the development of LatticeX ecosystem.

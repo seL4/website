@@ -171,35 +171,21 @@ Munich, Germany (hybrid), 10-13 Oct 2022
     <td class="break" colspan="3">Break</td>
   </tr>
   <tr id="p-FerrOS">
-    <td>14:45 - 15:00</td>
+    <td>14:45 - 15:05</td>
     <td>Experience report</td>
     <td><a class="summit-abstract-link" href="abstracts2022#a-FerrOS">FerrOS: Rust-y unikernels on seL4 w/ compile-time assurances<br><span class="summit-abstract-presenter">Zack Pierce</span></a>,
     <span class="summit-abstract-affiliation">Auxon</span></td>
   </tr>
 
-  <!--<tr id="p-Safety-critical-voice">
-    <td>15:00 - 15:15</td>
-    <td>Experience report</td>
-    <td><a class="summit-abstract-link" href="abstracts2022#a-Safety-critical-voice">Safety-critical voice communication system (MCS, SMP, VM)<br><span class="summit-abstract-presenter">Indan Zupancic</span></a>,
-    <span class="summit-abstract-affiliation">MEP</span></td>
-  </tr>-->
-
-  <tr>
-    <td>15:00 - 15:15</td>
-    <td>Experience report</td>
-    <td><strong>Safety-critical voice communication system (MCS, SMP, VM)</strong><br>Indan Zupancic,
-    <span class="summit-abstract-affiliation">MEP</span></td>
-  </tr>
-
   <tr id="p-ASIL-D">
-    <td>15:15 - 15:30</td>
+    <td>15:05 - 15:25</td>
     <td>Experience report</td>
     <td><a class="summit-abstract-link" href="abstracts2022#a-ASIL-D">Make seL4 an ASIL-D certified system<br><span class="summit-abstract-presenter">Yuning Liang</span></a>,
     <span class="summit-abstract-affiliation">Xcalibyte</span></td>
   </tr>
 
   <tr>
-    <td>15:30 - 15:45</td>
+    <td>15:25 - 15:45</td>
     <td>Experience report</td>
     <td><strong>seL4 Summit and TCCOE - an overview</strong>
     <br><span class="summit-abstract-presenter">Renato Levy</span>, Jason Li & <span class="summit-abstract-presenter">Ray Richards</span>,
@@ -208,7 +194,7 @@ Munich, Germany (hybrid), 10-13 Oct 2022
   </tr>
 
  <!--<tr id="p-TCCOE">
-    <td>15:30 - 15:45</td>
+    <td>15:25 - 15:45</td>
     <td>Plenary</td>
     <td><a class="summit-abstract-link" href="abstracts2022#a-TCCOE">seL4 Summit and TCCOE - an overview</a>
     <td><strong>seL4 Summit and TCCOE - an overview</strong><br><span class="summit-abstract-presenter">Renato Levy</span>, Jason Li & <span class="summit-abstract-presenter">Ray Richards</span>,
