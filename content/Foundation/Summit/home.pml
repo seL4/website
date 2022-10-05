@@ -40,7 +40,7 @@ Munich, Germany (hybrid), 10-13 Oct 2022
 <div class="speakers_grid">
   <div class="speaker">
     <div class="speaker_pic">
-      <img src="../../images/summit/brad.jpg" alt="William “Brad” Martin" width="150"/>
+      <img src="../../images/summit/brad.jpg" alt="William “Brad” Martin" width="140"/>
     </div>
     <div class="speaker_title" style="text-align:center">
       <a href="abstracts2022#a-Funding-agencies-darpa">William “Brad” Martin</a>
@@ -50,7 +50,7 @@ Munich, Germany (hybrid), 10-13 Oct 2022
   </div>
   <div class="speaker">
     <div class="speaker_pic">
-      <img src="../../images/summit/paul.jpg" alt="Paul Waller" width="150"/>
+      <img src="../../images/summit/paul.jpg" alt="Paul Waller" width="140"/>
     </div>
     <div class="speaker_title" style="text-align:center">
       <a href="abstracts2022#a-Funding-agencies-ncsc">Paul Waller</a>
@@ -60,7 +60,7 @@ Munich, Germany (hybrid), 10-13 Oct 2022
   </div>
   <div class="speaker">
     <div class="speaker_pic">
-      <img src="../../images/summit/cyberagentur.png" alt="Cyberagentur" width="150"/>
+      <img src="../../images/summit/cyberagentur.png" alt="Cyberagentur" width="140"/>
     </div>
     <div class="speaker_title" style="text-align:center">
       <a href="abstracts2022#a-Funding-agencies-cyberagentur">Sebastian Jester</a>
@@ -70,7 +70,7 @@ Munich, Germany (hybrid), 10-13 Oct 2022
   </div>
   <div class="speaker">
     <div class="speaker_pic">
-      <img src="../Membership/LOGOS/TII.jpg" alt="TII" width="150"/>
+      <img src="../../images/summit/ticky.jpg" alt="Dr. Shreekant (Ticky) Thakkar" width="140"/>
     </div>
     <div class="speaker_title" style="text-align:center">
       <a href="abstracts2022#a-Funding-agencies-tii">Shreekant (Ticky) Thakkar</a>
@@ -198,7 +198,7 @@ Munich, Germany (hybrid), 10-13 Oct 2022
   </div>
   <div class="speaker">
     <div class="speaker_pic">
-      <a href=""><img src="../Membership/LOGOS/Kry10.svg" alt="Boyd Multerer" width="150"></a>
+      <a href=""><img src="../../images/summit/boyd.jpg" alt="Boyd Multerer" width="150"></a>
     </div>
     <div class="speaker_title" style="text-align:center">
       <strong>Boyd Multerer</strong>
