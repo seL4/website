@@ -18,28 +18,32 @@ Munich, Germany (hybrid), 10-13 Oct 2022
 <p>
   All times are local time in Munich, Germany (UTC+2).
   <br>
+  Session chairs in <em>italics</em>.
 </p>
 <table id="summit-talks">
   <tr>
-    <th colspan="3">Day 1&emsp;10 October 2022</th>
+    <th colspan="4">Day 1&emsp;10 October 2022</th>
   </tr>
   <tr>
     <td>9:00 - 9:10</td>
+    <td class="summit_chair">Darren Cofer &<br> June Andronick</td>
     <td>Announcements</td>
     <td><em>Welcome</em></td>
   </tr>
   <tr id="p-seL4-research">
     <td>9:10 - 10:00</td>
+    <td class="summit_chair">Darren Cofer</td>
     <td>Keynote</td>
     <td><a class="summit-abstract-link" href="abstracts2022#a-seL4-research">State of seL4-related research<br><span class="summit-abstract-presenter">Gernot Heiser</span></a>,
     <span class="summit-abstract-affiliation">UNSW</span>
     </td>
   </tr>
   <tr>
-    <td class="break" colspan="3">Break</td>
+    <td class="break" colspan="4">Break</td>
   </tr>
   <tr id="p-seL4-verification-roadmap">
     <td>10:15 - 10:45</td>
+    <td class="summit_chair" rowspan="2">Nick Spinale</td>
     <td>Talk</td>
     <td><a class="summit-abstract-link" href="abstracts2022#a-seL4-verification-roadmap">seL4 verification roadmap<br><span class="summit-abstract-presenter">Rafal Kolanski</span>, <span class="summit-abstract-presenter">Gerwin Klein</span> & <span class="summit-abstract-presenter">June Andronick</span></a>,
     <span class="summit-abstract-affiliation">Proofcraft</span></td>
@@ -52,14 +56,16 @@ Munich, Germany (hybrid), 10-13 Oct 2022
   </tr>
   <tr>
     <td>11:15 - 11:45</td>
+    <td class="summit_chair">Darren Cofer</td>
     <td>Discussion</td>
     <td><strong>AMA (Ask Me Anything)</strong> with the Foundation TSC</td>
   </tr>
   <tr>
-    <td class="break" colspan="3">Break</td>
+    <td class="break" colspan="4">Break</td>
   </tr>
   <tr id="p-seL4CP">
     <td>12:45 - 13:15</td>
+    <td class="summit_chair" rowspan="3">Robbie VanVossen</td>
     <td>Talk</td>
     <td><a class="summit-abstract-link" href="abstracts2022#a-seL4CP"> The seL4 Core
   Platform (seL4CP)<br><span class="summit-abstract-presenter">Zoltan Kocsis</span></a>,
@@ -78,10 +84,11 @@ Munich, Germany (hybrid), 10-13 Oct 2022
     <span class="summit-abstract-affiliation">Kry10</span></td>
   </tr>
   <tr>
-    <td class="break" colspan="3">Break</td>
+    <td class="break" colspan="4">Break</td>
   </tr>
   <tr id="p-QEMU-extend-VirtIO">
     <td>15:00 - 15:30</td>
+    <td class="summit_chair" rowspan="4">Ihor Kuz</td>
     <td>Talk</td>
     <td><a class="summit-abstract-link" href="abstracts2022#a-QEMU-extend-VirtIO">Using QEMU to extend seL4 VirtIO support<br><span class="summit-abstract-presenter">Hannu Lyytinen</span></a> & Markku Ahvenjärvi,
     <span class="summit-abstract-affiliation">TII</span></td>
@@ -106,29 +113,32 @@ Munich, Germany (hybrid), 10-13 Oct 2022
   </tr>
 
     <tr>
-    <td colspan="3" style="text-align: center;"><em>Traditional Bavarian Dinner 19:00 - 22:30</em></td>
+    <td colspan="4" style="text-align: center;"><em>Traditional Bavarian Dinner 19:00 - 22:30</em></td>
   </tr>
 
   <tr>
-    <th colspan="3">Day 2&emsp;11 October 2022</th>
+    <th colspan="4">Day 2&emsp;11 October 2022</th>
 
   </tr>
   <tr id="p-Kry10-Secure-Platform">
     <td>9:00 - 9:50</td>
+    <td class="summit_chair">June Andronick</td>
     <td>Keynote</td>
     <td><a class="summit-abstract-link" href="abstracts2022#a-Kry10-Secure-Platform">Kry10 Secure Platform<br><span class="summit-abstract-presenter">Boyd Multerer</span></a>,
     <span class="summit-abstract-affiliation">Kry10</span></td>
   </tr>
   <tr>
     <td>9:50 - 10:00</td>
+    <td class="summit_chair">June Andronick <br>& Darren Cofer</td>
     <td>Announcements</td>
     <td><em>Foundation announcements</em></td>
   </tr>
   <tr>
-    <td class="break" colspan="3">Break</td>
+    <td class="break" colspan="4">Break</td>
   </tr>
   <tr id="p-seL4-BEAM">
     <td>10:15 - 10:45</td>
+    <td class="summit_chair" rowspan="3">Gerwin Klein</td>
     <td>Talk</td>
     <td><a class="summit-abstract-link" href="abstracts2022#a-seL4-BEAM">seL4 and BEAM: a match made in Erlang<br><span class="summit-abstract-presenter">Ihor Kuz</span></a>,
     <span class="summit-abstract-affiliation">Kry10</span></td>
@@ -147,11 +157,12 @@ Munich, Germany (hybrid), 10-13 Oct 2022
     <td><a class="summit-abstract-link" href="abstracts2022#a-Rust-support">Rust support in seL4 userspace: present and future<br><span class="summit-abstract-presenter">Nick Spinale</span></a></td>
   </tr>
   <tr>
-    <td class="break" colspan="3">Break</td>
+    <td class="break" colspan="4">Break</td>
   </tr>
 
   <tr id="p-Network-stack-implementation">
     <td>12:45 - 13:15</td>
+    <td class="summit_chair" rowspan="3">Rafal Kolanski</td>
     <td>Talk</td>
     <td><a class="summit-abstract-link" href="abstracts2022#a-Network-stack-implementation">Early experiences proving the correctness of a network stack implementation<br><span class="summit-abstract-presenter">Alain Kägi</span></a>, Aubrey Birdwell, Caitlyn Wilde, Jens Mache & Richard Weiss, <span class="summit-abstract-affiliation">Lewis & Clark College</span></td>
   </tr>
@@ -168,10 +179,11 @@ Munich, Germany (hybrid), 10-13 Oct 2022
     <span class="summit-abstract-affiliation">The University of Kansas</span></td>
   </tr>
   <tr>
-    <td class="break" colspan="3">Break</td>
+    <td class="break" colspan="4">Break</td>
   </tr>
   <tr id="p-FerrOS">
     <td>14:45 - 15:05</td>
+    <td class="summit_chair" rowspan="3">Kent McLeod</td>
     <td>Experience report</td>
     <td><a class="summit-abstract-link" href="abstracts2022#a-FerrOS">FerrOS: Rust-y unikernels on seL4 w/ compile-time assurances<br><span class="summit-abstract-presenter">Zack Pierce</span></a>,
     <span class="summit-abstract-affiliation">Auxon</span></td>
@@ -186,7 +198,7 @@ Munich, Germany (hybrid), 10-13 Oct 2022
 
   <tr>
     <td>15:25 - 15:45</td>
-    <td>Experience report</td>
+    <td class="summit_chair"></td>
     <td><strong>seL4 Summit and TCCOE - an overview</strong>
     <br><span class="summit-abstract-presenter">Renato Levy</span>, Jason Li & <span class="summit-abstract-presenter">Ray Richards</span>,
     <span class="summit-abstract-affiliation">TCCOE</span>
@@ -195,6 +207,7 @@ Munich, Germany (hybrid), 10-13 Oct 2022
 
  <!--<tr id="p-TCCOE">
     <td>15:25 - 15:45</td>
+    <td class="summit_chair"></td>
     <td>Plenary</td>
     <td><a class="summit-abstract-link" href="abstracts2022#a-TCCOE">seL4 Summit and TCCOE - an overview</a>
     <td><strong>seL4 Summit and TCCOE - an overview</strong><br><span class="summit-abstract-presenter">Renato Levy</span>, Jason Li & <span class="summit-abstract-presenter">Ray Richards</span>,
@@ -203,6 +216,7 @@ Munich, Germany (hybrid), 10-13 Oct 2022
 
   <tr id="p-Funding-agencies">
     <td>15:45 - 17:00</td>
+    <td class="summit_chair">Gernot Heiser</td>
     <td>Panel & Discussion</td>
     <td><a class="summit-abstract-link" href="abstracts2022#a-Funding-agencies">Funding agencies: priorities and vision</a>
     <br>
@@ -216,11 +230,12 @@ Munich, Germany (hybrid), 10-13 Oct 2022
   </tr>
 
   <tr>
-    <th colspan="3">Day 3&emsp;12 October 2022</th>
+    <th colspan="4">Day 3&emsp;12 October 2022</th>
   </tr>
 
   <tr id="p-seL4-principles-abstractions">
     <td>9:00 - 9:45</td>
+    <td class="summit_chair" rowspan="3">Matt Brecknell</td>
     <td>Plenary</td>
     <td><a class="summit-abstract-link" href="abstracts2022#a-seL4-principles-abstractions">Overview: seL4 principles, abstractions and use<br><span class="summit-abstract-presenter">Gernot Heiser</span></a>,
     <span class="summit-abstract-affiliation">seL4 Foundation</span></td>
@@ -239,15 +254,17 @@ Munich, Germany (hybrid), 10-13 Oct 2022
     <span class="summit-abstract-affiliation">Proofcraft</span></td>
   </tr>
   <tr>
-    <td class="break" colspan="3">Break</td>
+    <td class="break" colspan="4">Break</td>
   </tr>
   <tr>
     <td>11:00 - 11:15</td>
+    <td class="summit_chair">Anna Lyons</td>
     <td>Announcements</td>
     <td><em>Discussion teaser and suggestions for Birds of a Feather</em></td>
   </tr>
   <tr>
     <td rowspan="2">11:15 - 12:00</td>
+    <td class="summit_chair" rowspan="2">Anna Lyons</td>
       <td id="p-seL4-mainlining">Room 1:<br> Talk & Discussion</td>
     <td><a class="summit-abstract-link" href="abstracts2022#a-seL4-mainlining">seL4 mainlining: experiences, challenges, and solutions<br><span class="summit-abstract-presenter">Robbie VanVossen</span> & <span class="summit-abstract-presenter">Chris Guikema</span></a>,
     <span class="summit-abstract-affiliation">DornerWorks</span></td>
@@ -257,10 +274,11 @@ Munich, Germany (hybrid), 10-13 Oct 2022
     <td><strong>Birds of a Feather on a topic to be suggested</strong></td>
   </tr>
   <tr>
-    <td class="break" colspan="3">Break</td>
+    <td class="break" colspan="4">Break</td>
   </tr>
   <tr>
     <td rowspan="2">12:45 - 13:30</td>
+    <td class="summit_chair" rowspan="6"><span style="font-style:normal">Room 1:</span><br>Axel Heider<br><br><span style="font-style:normal">Room 2:</span><br>self-organised</td>
       <td id="p-Standard-VMM">Room 1:<br> Talk & Discussion</td>
     <td><a class="summit-abstract-link" href="abstracts2022#a-Standard-VMM">seL4 microkernel for virtualization use-cases “The importance of a standard VMM”<br><span class="summit-abstract-presenter">Everton de Matos</span></a> & Jason Sebranek, <span class="summit-abstract-affiliation">TII+Cog</span></td>
   </tr>
@@ -271,7 +289,7 @@ Munich, Germany (hybrid), 10-13 Oct 2022
   <tr>
     <td rowspan="2">13:30 - 14:15</td>
       <td id="p-Improving-embedded-DevOps">Room 1:<br> Talk & Discussion</td>
-    <td><a class="summit-abstract-link" href="abstracts2022#a-Improving-embedded-DevOps">Improving embedded DevOps with seL4 VMM<br><span class="summit-abstract-presenter">Robbie VanVossen</span></a>,
+      <td><a class="summit-abstract-link" href="abstracts2022#a-Improving-embedded-DevOps">Improving embedded DevOps with seL4 VMM<br><span class="summit-abstract-presenter">Robbie VanVossen</span></a>,
     <span class="summit-abstract-affiliation">DornerWorks</span></td>
   </tr>
   <tr>
@@ -280,7 +298,7 @@ Munich, Germany (hybrid), 10-13 Oct 2022
   </tr>
   <tr>
     <td rowspan="2">14:15 - 15:00</td>
-      <td id="p-Experience-teaching-seL4">Room 1:<br> Talk & Discussion</td>
+    <td id="p-Experience-teaching-seL4">Room 1:<br> Talk & Discussion</td>
     <td><a class="summit-abstract-link" href="abstracts2022#a-Experience-teaching-seL4">Experience teaching seL4<br><span class="summit-abstract-presenter">Sebastian Eckl</span></a>,
     <span class="summit-abstract-affiliation">HENSOLDT Cyber</span></td>
   </tr>
@@ -289,21 +307,24 @@ Munich, Germany (hybrid), 10-13 Oct 2022
     <td><strong>Birds of a Feather on a topic to be suggested</strong></td>
   </tr>
   <tr>
-    <td class="break" colspan="3">Break</td>
+    <td class="break" colspan="4">Break</td>
   </tr>
   <tr>
     <td>15:15 - 16:00</td>
+    <td class="summit_chair">Gernot Heiser</td>
     <td>Plenary</td>
     <td><strong>BoFs report back</strong></td>
   </tr>
   <tr>
     <td>16:00 - 16:15</td>
+    <td class="summit_chair">Gernot Heiser</td>
     <td>Announcements</td>
     <td><em>Bootcamp overview</em></td>
   </tr>
 
   <tr id="p-VM-Composer">
     <td>16:15 - 16:30</td>
+    <td class="summit_chair" rowspan="2">Gernot Heiser</td>
     <td>Teaser</td>
     <td><a class="summit-abstract-link" href="abstracts2022#a-VM-Composer">DornerWorks’ VM Composer<br><span class="summit-abstract-presenter">Robbie VanVossen</span></a>,
     <span class="summit-abstract-affiliation">DornerWorks</span></td>
@@ -317,61 +338,69 @@ Munich, Germany (hybrid), 10-13 Oct 2022
   </tr>
   <tr>
     <td>16:45 - 17:00</td>
+    <td class="summit_chair">Darren Cofer, <br>June Andronick<br>& Gernot Heiser</td>
     <td>Announcements</td>
     <td><em>Concluding remarks</em></td>
   </tr>
  <tr>
-    <th colspan="3">Day 4 (Bootcamp, on-site participants only)&emsp;13 October 2022</th>
+    <th colspan="4">Day 4 (Bootcamp, on-site participants only)&emsp;13 October 2022</th>
   </tr>
   <tr id="p-zero-hello-world">
     <td>9:00 - 10:00</td>
+    <td class="summit_chair">Axel Heider</td>
     <td>Bootcamp</td>
     <td><a class="summit-abstract-link" href="abstracts2022#a-zero-hello-world">seL4: from zero to hello world<br>
       <span class="summit-abstract-presenter">Ihor Kuz</span></a>,
     <span class="summit-abstract-affiliation">Kry10</span></td>
   </tr>
   <tr>
-    <td class="break" colspan="3">Break</td>
+    <td class="break" colspan="4">Break</td>
   </tr>
   <tr id="p-CAmkES">
     <td>10:15 - 10:45</td>
+    <td class="summit_chair">Axel Heider</td>
     <td>Bootcamp</td>
     <td><a class="summit-abstract-link" href="abstracts2022#a-CAmkES">CAmkES<br><span class="summit-abstract-presenter">Sebastian Eckl</span>,</a>
     <span class="summit-abstract-affiliation">HENSOLDT Cyber</span></td>
   </tr>
   <tr id="p-TRENTOS">
     <td>10:45 - 12:00</td>
+    <td class="summit_chair">Axel Heider</td>
     <td>Bootcamp</td>
     <td><a class="summit-abstract-link" href="abstracts2022#a-TRENTOS">TRENTOS<br><span class="summit-abstract-presenter">Sebastian Eckl</span></a>,
     <span class="summit-abstract-affiliation">HENSOLDT Cyber</span></td>
   </tr>
   <tr>
-    <td class="break" colspan="3">Break</td>
+    <td class="break" colspan="4">Break</td>
   </tr>
 
   <tr id="p-seL4CP-bootcamp">
     <td>13:00 - 14:30</td>
+    <td class="summit_chair">Axel Heider</td>
     <td>Bootcamp</td>
     <td><a class="summit-abstract-link" href="abstracts2022#a-seL4CP-bootcamp">The seL4 Core Platform (seL4CP)<br><span class="summit-abstract-presenter">Ivan Velickovic</span></a> & Peter Chubb, <span class="summit-abstract-affiliation">UNSW</span></td>
   </tr>
 
   <tr id="p-VM-Composer-bootcamp">
     <td>14:30 - 15:15</td>
+    <td class="summit_chair">Axel Heider</td>
     <td>Bootcamp</td>
     <td><a class="summit-abstract-link" href="abstracts2022#a-VM-Composer-bootcamp">DornerWorks’ VM Composer: the easy button for virtualized seL4-based systems<br><span class="summit-abstract-presenter">Chris Guikema</span> & <span class="summit-abstract-presenter">Robbie VanVossen</span></a>,
     <span class="summit-abstract-affiliation">Dornerworks</span></td>
   </tr>
   <tr>
-    <td class="break" colspan="3">Break</td>
+    <td class="break" colspan="4">Break</td>
   </tr>
   <tr id="p-BriefCASE-tutorial">
     <td>15:30 - 17:00</td>
+    <td class="summit_chair">Axel Heider</td>
     <td>Bootcamp</td>
     <td><a class="summit-abstract-link" href="abstracts2022#a-BriefCASE-tutorial">BriefCASE tutorial<br><span class="summit-abstract-presenter">Isaac Amundson</span> & <span class="summit-abstract-presenter">Darren Cofer</span></a>,
     <span class="summit-abstract-affiliation">Collins Aerospace</span></td>
   </tr>
   <tr>
     <td>17:00 - 17:05</td>
+    <td class="summit_chair">June Andronick<br>& Darren Cofer</td>
     <td>Plenary</td>
     <td><em>Concluding remarks</em></td>
   </tr>

@@ -55,6 +55,39 @@ Older News: <%=reflist%>
 -->
 
 <!----------------------------------------------------------->
+<div class="news-item" id="summit-xcalibyte">
+    7 October 2022: Thanks Xcalibyte for sponsoring the seL4 Summit 2022
+</div>
+<div>
+  <p>
+   <a href="https://xcalibyte.com">
+     <img src="/Foundation/Membership/LOGOS/xcalibyte.svg"
+	  style="width: 15%;  padding-left:10px;  float:right"
+	  alt="Xcalibyte logo">
+   </a>
+  </p>
+  <p>
+    The seL4 Foundation thanks <a href="https://xcalibyte.com">Xcalibyte</a> for becoming a Bronze sponsor of the <a href="/Foundation/Summit/">seL4 Summit 2022</a>.
+  </p>
+  <p>
+    Xcalibyte's mission is to improve the quality of software by
+   creating easy-to-use tools that help developers build and deploy
+   reliable and secure code. Founded by world-class software experts
+   with decades of experience in compiler optimization and software
+   development, Xcalibyte was established in 2018 and has offices in
+   Shenzhen, Shanghai, Beijing and Hong Kong. Xcalibyte enhances the
+   speed and accuracy of code auditing, code evaluation, and code
+   defect detection. We use advanced static code analysis to help
+   reduce costs, improve productivity, and ensure software developers
+   in China and all over the world have the proper capabilities to
+   develop better, more reliable software.
+  </p>
+</div>
+<div class="news-finish">
+</div>
+
+
+<!----------------------------------------------------------->
 <div class="news-item" id="summit-panellists">
     26 September 2022: Panellists for seL4 summit announced
 </div>
