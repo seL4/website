@@ -372,6 +372,19 @@ Munich, Germany (hybrid), 10-13 Oct 2022
     </div>
     <div class="sponsor-info">Bronze sponsor</div>
     </div>
+    <div class="sponsor">
+    <div class="sponsor-pic">
+    <a href="https://xcalibyte.com">
+     <img src="/Foundation/Membership/LOGOS/xcalibyte.svg"
+	  style="width: 80%;  padding-left:10px;  float:right"
+	  alt="Xcalibyte logo">
+     </a>
+    </div>
+    <div class="sponsor-name">
+      Xcalibyte
+    </div>
+    <div class="sponsor-info">Bronze sponsor</div>
+    </div>
 </div>
 <div class="summit-div" style="padding-top:30px">
   <p>
