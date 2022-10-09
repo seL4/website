@@ -183,7 +183,7 @@ Older News: <%=reflist%>
     The seL4 Foundation thanks <a href="https://horizon.ai/">Horizon Robotics</a> for becoming a Bronze sponsor of the <a href="/Foundation/Summit/">seL4 Summit 2022</a>.
   </p>
   <p>
-    Horizon Robotics is a global leader in the development of artificial intelligence computing platforms. Its mission is to make driving safer and more convenient as drivers transition to intelligent and self-driving vehicles.
+    Horizon Robotics is a leading provider of computing platforms for smart vehicles with the mission to make human life safer and better.
   </p>
   <p>
     Premium member of the seL4 Foundation, Horizon works with members of seL4 Foundation to build mixed-critical platform and solution for next-generation autonomous driving vehicles.
