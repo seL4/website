@@ -55,6 +55,24 @@ Older News: <%=reflist%>
 -->
 
 <!----------------------------------------------------------->
+<div class="news-item" id="gday-kataos">
+    21 October 2022: G’Day KataOS
+</div>
+<div>
+  <a href="https://www.google.com/">
+    <img src="/Foundation/Membership/LOGOS/google-short.svg" style="width: 20%;  padding-left:10px;  float:right" alt="Google" />
+  </a>
+  <p>
+   The seL4 Foundation welcomes the <a href="https://opensource.googleblog.com/2022/10/announcing-kataos-and-sparrow.html">open-sourcing of core components of KataOS</a> created by our Member <a href="https://google.com">Google</a>. KataOS is based on seL4 and implemented mostly in the <a href="https://www.rust-lang.org">Rust programming language</a>. KataOS is to be combined with a secure hardware platform on the RISC-V architecture.
+  </p>
+  <p>
+  This is an exciting addition to the seL4 ecosystem that will ease deployment of seL4-based systems. It also adds improved support for <a href="https://antmicro.com/blog/2022/08/running-rust-programs-in-sel4/">running Rust programs on seL4</a>, which is a hot topic in the seL4 community.
+</div>
+<div class="news-finish">
+</div>
+
+
+<!----------------------------------------------------------->
 <div class="news-item" id="summit-xcalibyte">
     7 October 2022: Thanks Xcalibyte for sponsoring the seL4 Summit 2022
 </div>
