@@ -58,7 +58,7 @@ Munich, Germany (hybrid), 10-13 Oct 2022
     <td>Talk</td>
     <td><a class="summit-abstract-link" href="abstracts2022#a-explaining-integrity-theorems">Explaining the seL4 integrity theorems<br><span class="summit-abstract-presenter">Matt Brecknell</span></a>,
     <span class="summit-abstract-affiliation">Kry10</span></td>
-    <td><a href="" target="_blank"><span class="highlight">Gernot to add to YouTube</span><img src="../../images/icons/youtube_nobckgnd.svg" class="youtube_icon" alt="YouTube icon"></a></td>
+    <td><a href="https://www.youtube.com/watch?v=fyF9w_CsCEU" target="_blank"><img src="../../images/icons/youtube_nobckgnd.svg" class="youtube_icon" alt="YouTube icon"></a></td>
     <td><a href="slides/d1_04_Explaining the seL4 integrity theorems_Matt Brecknell.pdf"><img src="../../images/icons/slides.gif"></td>
   </tr>
   <tr>
@@ -66,7 +66,7 @@ Munich, Germany (hybrid), 10-13 Oct 2022
     <td class="summit_chair">Darren Cofer</td>
     <td>Discussion</td>
     <td><strong>AMA (Ask Me Anything)</strong> with the Foundation TSC</td>
-    <td><a href="" target="_blank"><span class="highlight">Need consent forms</span><img src="../../images/icons/youtube_nobckgnd.svg" class="youtube_icon" alt="YouTube icon"></a></td>
+    <td><!--a href="https://youtu.be/lA8arVI-Mgw" target="_blank"><span class="highlight">Need consent forms</span><img src="../../images/icons/youtube_nobckgnd.svg" class="youtube_icon" alt="YouTube icon"></a--></td>
     <td></td>
   </tr>
   <tr>
@@ -95,7 +95,7 @@ Munich, Germany (hybrid), 10-13 Oct 2022
     <td>Talk & Discussion</td>
     <td><a class="summit-abstract-link" href="abstracts2022#a-Multiprocessing-verified-kernels">Multiprocessing on seL4 with verified kernels<br><span class="summit-abstract-presenter">Kent McLeod</span></a>,
     <span class="summit-abstract-affiliation">Kry10</span></td>
-      <td><a href="" target="_blank"><span class="highlight">Gernot to add to YouTube</span><img src="../../images/icons/youtube_nobckgnd.svg" class="youtube_icon" alt="YouTube icon"></a></td>
+      <td><a href="https://youtu.be/ooIPe4wRMKk" target="_blank"><img src="../../images/icons/youtube_nobckgnd.svg" class="youtube_icon" alt="YouTube icon"></a></td>
     <td><a href="slides/d1_07_Multiprocessing on seL4 with verified kernels_Kent Mcleod.pdf"><img src="../../images/icons/slides.gif"></td>
   </tr>
   <tr>
@@ -115,7 +115,7 @@ Munich, Germany (hybrid), 10-13 Oct 2022
     <td>Talk</td>
     <td><a class="summit-abstract-link" href="abstracts2022#a-QEMU-prototyping-platform">QEMU as prototyping platform for seL4 systems<br><span class="summit-abstract-presenter">Axel Heider</span></a>,
     <span class="summit-abstract-affiliation">HENSOLDT Cyber</span></td>
-      <td><a href="https://www.youtube.com/watch?v=R-HNQK1uA7c" target="_blank"><span class="highlight">Need consent form</span><img src="../../images/icons/youtube_nobckgnd.svg" class="youtube_icon" alt="YouTube icon"></a></td>
+      <td><a href="https://www.youtube.com/watch?v=R-HNQK1uA7c" target="_blank"><img src="../../images/icons/youtube_nobckgnd.svg" class="youtube_icon" alt="YouTube icon"></a></td>
     <td><a href="slides/d1_09_QEMU as prototyping platform for seL4 systems_Axel Heider.pdf"><img src="../../images/icons/slides.gif"></td>
   </tr>
   <tr id="p-Porting-U-Boot">
@@ -169,7 +169,7 @@ Munich, Germany (hybrid), 10-13 Oct 2022
     <td>Talk</td>
     <td><a class="summit-abstract-link" href="abstracts2022#a-seL4-BEAM">seL4 and BEAM: a match made in Erlang<br><span class="summit-abstract-presenter">Ihor Kuz</span></a>,
     <span class="summit-abstract-affiliation">Kry10</span></td>
-      <td><a href="" target="_blank"><span class="highlight">Gernot to add to YouTube</span><img src="../../images/icons/youtube_nobckgnd.svg" class="youtube_icon" alt="YouTube icon"></a></td>
+      <td><a href="https://youtu.be/owmvgUwBlJ0" target="_blank"><img src="../../images/icons/youtube_nobckgnd.svg" class="youtube_icon" alt="YouTube icon"></a></td>
     <td><a href="slides/d2_03_seL4 and BEAM a match made in Erlang_Ihor.pdf"><img src="../../images/icons/slides.gif"></td>
   </tr>
 
@@ -198,7 +198,7 @@ Munich, Germany (hybrid), 10-13 Oct 2022
     <td class="summit_chair" rowspan="3">Rafal Kolanski</td>
     <td>Talk</td>
     <td><a class="summit-abstract-link" href="abstracts2022#a-Network-stack-implementation">Early experiences proving the correctness of a network stack implementation<br><span class="summit-abstract-presenter">Alain Kägi</span></a>, Aubrey Birdwell, Caitlyn Wilde, Jens Mache & Richard Weiss, <span class="summit-abstract-affiliation">Lewis & Clark College</span></td>
-      <td><a href="" target="_blank"><span class="highlight">Gernot to add to YouTube</span><img src="../../images/icons/youtube_nobckgnd.svg" class="youtube_icon" alt="YouTube icon"></a></td>
+      <td><!--a href="https://youtu.be/linRvpquOrg" target="_blank"><img src="../../images/icons/youtube_nobckgnd.svg" class="youtube_icon" alt="YouTube icon"></a--></td>
     <td><a href="slides/d2_06_Early experiences proving the correctness of a network stack implementation_Alain Kägi.pdf"><img src="../../images/icons/slides.gif"></td>
   </tr>
   <tr id="p-CASE-overview">
@@ -206,7 +206,7 @@ Munich, Germany (hybrid), 10-13 Oct 2022
     <td>Talk</td>
     <td><a class="summit-abstract-link" href="abstracts2022#a-CASE-overview">CASE overview: Cyber Assured Systems Engineering<br><span class="summit-abstract-presenter">Darren Cofer</span></a>,
     <span class="summit-abstract-affiliation">Collins Aerospace</span></td>
-      <td><a href="" target="_blank"><span class="highlight">Gernot to add to YouTube</span><img src="../../images/icons/youtube_nobckgnd.svg" class="youtube_icon" alt="YouTube icon"></a></td>
+    <td><a href="https://youtu.be/SY9GHV_5agM" target="_blank"><img src="../../images/icons/youtube_nobckgnd.svg" class="youtube_icon" alt="YouTube icon"></a></td>
     <td><a href="slides/d2_07_CASE overview Cyber Assured Systems Engineering_Darren Cofer.pdf"><img src="../../images/icons/slides.gif"></td>
   </tr>
   <tr id="p-Verified-architecture">
@@ -214,7 +214,7 @@ Munich, Germany (hybrid), 10-13 Oct 2022
     <td>Talk</td>
     <td><a class="summit-abstract-link" href="abstracts2022#a-Verified-architecture">A verified architecture for trustworthy remote attestation<br><span class="summit-abstract-presenter">Grant Jurgensen</span></a>,
     <span class="summit-abstract-affiliation">The University of Kansas</span></td>
-      <td><a href="" target="_blank"><img src="../../images/icons/youtube_nobckgnd.svg" class="youtube_icon" alt="YouTube icon"></a></td>
+    <td><!--a href="https://youtu.be/gZxnyTbtb7Q" target="_blank"><img src="../../images/icons/youtube_nobckgnd.svg" class="youtube_icon" alt="YouTube icon"></a--></td>
     <td><a href="slides/d2_08_A verified architecture for trustworthy remote attestation_Grant Jurgenson.pdf"><img src="../../images/icons/slides.gif"></td>
   </tr>
   <tr>
@@ -235,18 +235,18 @@ Munich, Germany (hybrid), 10-13 Oct 2022
     <td>Experience report</td>
     <td><a class="summit-abstract-link" href="abstracts2022#a-ASIL-D">Make seL4 an ASIL-D certified system<br><span class="summit-abstract-presenter">Yuning Liang</span></a>,
     <span class="summit-abstract-affiliation">Xcalibyte</span></td>
-      <td><a href="" target="_blank"><img src="../../images/icons/youtube_nobckgnd.svg" class="youtube_icon" alt="YouTube icon"><span class="highlight">no video</span></a></td>
-    <td><a href="slides/"><img src="../../images/icons/slides.gif"><span class="highlight">no slides</span></td>
+      <td><!--a href="https://youtu.be/x69C4SVRbKo" target="_blank"><img src="../../images/icons/youtube_nobckgnd.svg" class="youtube_icon" alt="YouTube icon"></a--></td>
+    <td><!--a href="slides/"><img src="../../images/icons/slides.gif"><span class="highlight">no slides</span--></td>
   </tr>
 
   <tr>
     <td>15:25 - 15:45</td>
-    <td class="summit_chair"></td>
+    <td>Experience report</td>
     <td><strong>seL4 Summit and TCCOE - an overview</strong>
     <br><span class="summit-abstract-presenter">Renato Levy</span>, Jason Li & <span class="summit-abstract-presenter">Ray Richards</span>,
     <span class="summit-abstract-affiliation">TCCOE</span>
     </td>
-      <td><a href="" target="_blank"><img src="../../images/icons/youtube_nobckgnd.svg" class="youtube_icon" alt="YouTube icon"><span class="highlight">need consent form</span></a></td>
+      <td><!--a href="https://youtu.be/z5CPcjkZ64g" target="_blank"><img src="../../images/icons/youtube_nobckgnd.svg" class="youtube_icon" alt="YouTube icon"></a--></td>
     <td><a href="slides/d2_11_seL4 Summit and TCCOE - an overview_Renato Levy.pdf"><img src="../../images/icons/slides.gif"></td>
   </tr>
 
@@ -263,7 +263,7 @@ Munich, Germany (hybrid), 10-13 Oct 2022
     <a class="summit-abstract-link" href="abstracts2022#a-Funding-agencies-cyberagentur" id="p-Funding-agencies-cyberagentur"><span class="summit-abstract-presenter">Sebastian Jester</span></a>, <span class="summit-abstract-affiliation">Cyberagentur</span>
     <br>
     <a class="summit-abstract-link" href="abstracts2022#a-Funding-agencies-tii"  id="p-Funding-agencies-tii"><span class="summit-abstract-presenter">Dr. Shreekant (Ticky) Thakkar</span></a>, <span class="summit-abstract-affiliation">TII</span></td>
-      <td><a href="" target="_blank"><img src="../../images/icons/youtube_nobckgnd.svg" class="youtube_icon" alt="YouTube icon"><span class="highlight">Need consent forms</span></a></td>
+      <td><!--a href="https://youtu.be/ycoUg3pP40k" target="_blank"><img src="../../images/icons/youtube_nobckgnd.svg" class="youtube_icon" alt="YouTube icon"></a--></td>
     <td>
       <a href="slides/d2_12_funding_agencies_03_Brad_Martin.pdf"><br><img src="../../images/icons/slides.gif">
       <br><br>
@@ -311,6 +311,8 @@ Munich, Germany (hybrid), 10-13 Oct 2022
     <td class="summit_chair">Anna Lyons</td>
     <td>Announcements</td>
     <td><em>Discussion teaser and suggestions for Birds of a Feather</em></td>
+    <td></td>
+    <td></td>
   </tr>
   <tr>
     <td rowspan="2">11:15 - 12:00</td>
@@ -324,6 +326,8 @@ Munich, Germany (hybrid), 10-13 Oct 2022
   <tr>
     <td>Room 2:<br> BoF</td>
     <td><strong>Birds of a Feather on a topic to be suggested</strong></td>
+    <td></td>
+    <td></td>
   </tr>
   <tr>
     <td class="break" colspan="6">Break</td>
@@ -339,6 +343,8 @@ Munich, Germany (hybrid), 10-13 Oct 2022
   <tr>
     <td>Room 2:<br>BoF</td>
     <td><strong>Birds of a Feather on a topic to be suggested</strong></td>
+    <td></td>
+    <td></td>
   </tr>
   <tr>
     <td rowspan="2">13:30 - 14:15</td>
@@ -351,18 +357,22 @@ Munich, Germany (hybrid), 10-13 Oct 2022
   <tr>
     <td>Room 2:<br> BoF</td>
     <td><strong>Birds of a Feather on a topic to be suggested</strong></td>
+    <td></td>
+    <td></td>
   </tr>
   <tr>
     <td rowspan="2">14:15 - 15:00</td>
     <td id="p-Experience-teaching-seL4">Room 1:<br> Talk & Discussion</td>
     <td><a class="summit-abstract-link" href="abstracts2022#a-Experience-teaching-seL4">Experience teaching seL4<br><span class="summit-abstract-presenter">Sebastian Eckl</span></a>,
     <span class="summit-abstract-affiliation">HENSOLDT Cyber</span></td>
-      <td><a href="" target="_blank"><img src="../../images/icons/youtube_nobckgnd.svg" class="youtube_icon" alt="YouTube icon"></a><span class="highlight">Need consent forms</span></td>
+      <td><!--a href="https://youtu.be/5xl7e0J9_3A" target="_blank"><img src="../../images/icons/youtube_nobckgnd.svg" class="youtube_icon" alt="YouTube icon"></a--></td>
     <td><a href="slides/d3_07_Experience teaching seL4.pdf"><img src="../../images/icons/slides.gif"></td>
   </tr>
   <tr>
     <td>Room 2:<br> BoF</td>
     <td><strong>Birds of a Feather on a topic to be suggested</strong></td>
+    <td></td>
+    <td></td>
   </tr>
   <tr>
     <td class="break" colspan="6">Break</td>
@@ -372,12 +382,16 @@ Munich, Germany (hybrid), 10-13 Oct 2022
     <td class="summit_chair">Gernot Heiser</td>
     <td>Plenary</td>
     <td><strong>BoFs report back</strong></td>
+    <td></td>
+    <td></td>
   </tr>
   <tr>
     <td>16:00 - 16:15</td>
     <td class="summit_chair">Gernot Heiser</td>
     <td>Announcements</td>
     <td><em>Bootcamp overview</em></td>
+    <td></td>
+    <td></td>
   </tr>
 
   <tr id="p-VM-Composer">
@@ -416,6 +430,8 @@ Munich, Germany (hybrid), 10-13 Oct 2022
     <td><a class="summit-abstract-link" href="abstracts2022#a-zero-hello-world">seL4: from zero to hello world<br>
       <span class="summit-abstract-presenter">Ihor Kuz</span></a>,
     <span class="summit-abstract-affiliation">Kry10</span></td>
+    <td></td>
+    <td></td>
   </tr>
   <tr>
     <td class="break" colspan="6">Break</td>
@@ -426,6 +442,8 @@ Munich, Germany (hybrid), 10-13 Oct 2022
     <td>Bootcamp</td>
     <td><a class="summit-abstract-link" href="abstracts2022#a-CAmkES">CAmkES<br><span class="summit-abstract-presenter">Sebastian Eckl</span>,</a>
     <span class="summit-abstract-affiliation">HENSOLDT Cyber</span></td>
+    <td></td>
+    <td></td>
   </tr>
   <tr id="p-TRENTOS">
     <td>10:45 - 12:00</td>
@@ -433,6 +451,8 @@ Munich, Germany (hybrid), 10-13 Oct 2022
     <td>Bootcamp</td>
     <td><a class="summit-abstract-link" href="abstracts2022#a-TRENTOS">TRENTOS<br><span class="summit-abstract-presenter">Sebastian Eckl</span></a>,
     <span class="summit-abstract-affiliation">HENSOLDT Cyber</span></td>
+    <td></td>
+    <td></td>
   </tr>
   <tr>
     <td class="break" colspan="6">Break</td>
@@ -443,6 +463,8 @@ Munich, Germany (hybrid), 10-13 Oct 2022
     <td class="summit_chair">Axel Heider</td>
     <td>Bootcamp</td>
     <td><a class="summit-abstract-link" href="abstracts2022#a-seL4CP-bootcamp">The seL4 Core Platform (seL4CP)<br><span class="summit-abstract-presenter">Ivan Velickovic</span></a> & Peter Chubb, <span class="summit-abstract-affiliation">UNSW</span></td>
+    <td></td>
+    <td></td>
   </tr>
 
   <tr id="p-VM-Composer-bootcamp">
@@ -451,6 +473,8 @@ Munich, Germany (hybrid), 10-13 Oct 2022
     <td>Bootcamp</td>
     <td><a class="summit-abstract-link" href="abstracts2022#a-VM-Composer-bootcamp">DornerWorks’ VM Composer: the easy button for virtualized seL4-based systems<br><span class="summit-abstract-presenter">Chris Guikema</span> & <span class="summit-abstract-presenter">Robbie VanVossen</span></a>,
     <span class="summit-abstract-affiliation">Dornerworks</span></td>
+    <td></td>
+    <td></td>
   </tr>
   <tr>
     <td class="break" colspan="6">Break</td>
@@ -461,12 +485,16 @@ Munich, Germany (hybrid), 10-13 Oct 2022
     <td>Bootcamp</td>
     <td><a class="summit-abstract-link" href="abstracts2022#a-BriefCASE-tutorial">BriefCASE tutorial<br><span class="summit-abstract-presenter">Isaac Amundson</span> & <span class="summit-abstract-presenter">Darren Cofer</span></a>,
     <span class="summit-abstract-affiliation">Collins Aerospace</span></td>
+    <td></td>
+    <td></td>
   </tr>
   <tr>
     <td>17:00 - 17:05</td>
     <td class="summit_chair">June Andronick<br>& Darren Cofer</td>
     <td>Plenary</td>
     <td><em>Concluding remarks</em></td>
+    <td></td>
+    <td></td>
   </tr>
 </table>
 <div><br></div>
