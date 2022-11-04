@@ -16,9 +16,10 @@ Munich, Germany (hybrid), 10-13 Oct 2022
     <li><a href="#summit-news">Latest News</a></li>
     <li><a href="#summit-about">About</a></li>
     <li><a href="#summit-location">Host</a></li>
-    <li><a href="#summit-registration">Registration</a></li>
-    <li><a href="#summit-mentoring">Mentorship Program</a></li>
+<!--    <li><a href="#summit-registration">Registration</a></li>
+    <li><a href="#summit-mentoring">Mentorship Program</a></li-->
     <li><a href="#summit-invited-speakers">Invited Speakers</a></li>
+    <li><a href="#summit-panellists">Panellists</a></li>
     <li><a href="program">Program</a></li>
     <li><a href="abstracts2022">Abstracts</a></li>
     <li><a href="#summit-pc">Program Committee</a></li>
@@ -178,7 +179,7 @@ Munich, Germany (hybrid), 10-13 Oct 2022
 </div>
 
 <div class="summit_div">
-  <h3 id="summit-news">
+  <h3 id="summit-panellists">
     Panellists
   </h3>
   <p>

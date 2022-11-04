@@ -79,7 +79,7 @@ Munich, Germany (hybrid), 10-13 Oct 2022
   Platform (seL4CP)<br><span class="summit-abstract-presenter">Zoltan Kocsis</span></a>,
     <span class="summit-abstract-affiliation">UNSW</span></td>
       <td><a href="https://www.youtube.com/watch?v=kRI4VQRSB_w" target="_blank"><img src="../../images/icons/youtube_nobckgnd.svg" class="youtube_icon" alt="YouTube icon"></a></td>
-    <td><a href="slides/d1_05_The_seL4_Core_Platform_(seL4CP)_Zoltan _Kocsis.pdf"><img src="../../images/icons/slides.svg" alt="slides icon"></td>
+    <td><a href="slides/d1_05_The_seL4_Core_Platform_(seL4CP)_Zoltan_Kocsis.pdf"><img src="../../images/icons/slides.svg" alt="slides icon"></td>
   </tr>
   <tr id="p-sDDF">
     <td>13:15 - 13:45</td>
