@@ -28,7 +28,7 @@ Munich, Germany (hybrid), 10-13 Oct 2022
     <td>Announcements</td>
     <td><em>Welcome</em></td>
     <td><a href="https://www.youtube.com/watch?v=U3BsMeb_I6g" target="_blank"><img src="../../images/icons/youtube_nobckgnd.svg" class="youtube_icon" alt="YouTube icon"></a></td>
-    <td><a href="slides/d1_01_Welcome_June Andronick.pdf"><img src="../../images/icons/slides.svg" alt="slides icon"></a></td>
+    <td><a href="slides/d1_01_Welcome_June_Andronick.pdf"><img src="../../images/icons/slides.svg" alt="slides icon"></a></td>
   </tr>
   <tr id="p-seL4-research">
     <td>9:10 - 10:00</td>
