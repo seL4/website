@@ -234,7 +234,7 @@ Munich, Germany (hybrid), 10-13 Oct 2022
     <td>Experience report</td>
     <td><a class="summit-abstract-link" href="abstracts2022#a-ASIL-D">Make seL4 an ASIL-D certified system<br><span class="summit-abstract-presenter">Yuning Liang</span></a>,
     <span class="summit-abstract-affiliation">Xcalibyte</span></td>
-      <td><a href="https://youtu.be/x69C4SVRbKo" target="_blank"><img src="../../images/icons/youtube_nobckgnd.svg" class="youtube_icon" alt="YouTube icon"></a--></td>
+      <td><a href="https://youtu.be/x69C4SVRbKo" target="_blank"><img src="../../images/icons/youtube_nobckgnd.svg" class="youtube_icon" alt="YouTube icon"></a></td>
     <td><a href="slides/d2_10_Make_seL4_an_ASIL-D_certified_system_Yuning_Liang.pdf"><img src="../../images/icons/slides.svg" alt="slides icon"></a></td>
   </tr>
 
@@ -264,9 +264,9 @@ Munich, Germany (hybrid), 10-13 Oct 2022
     <a class="summit-abstract-link" href="abstracts2022#a-Funding-agencies-tii"  id="p-Funding-agencies-tii"><span class="summit-abstract-presenter">Dr. Shreekant (Ticky) Thakkar</span></a>, <span class="summit-abstract-affiliation">TII</span></td>
       <td><!--a href="https://youtu.be/ycoUg3pP40k" target="_blank"><img src="../../images/icons/youtube_nobckgnd.svg" class="youtube_icon" alt="YouTube icon"></a--></td>
     <td>
-      <a href="slides/d2_12_funding_agencies_03_Brad_Martin.pdf"><br><img src="../../images/icons/slides.svg" alt="slides icon">
+      <a href="slides/d2_12_funding_agencies_03_Brad_Martin.pdf"><br><img src="../../images/icons/slides.svg" alt="slides icon"></a>
       <br><br>
-      <a href="slides/d2_12_funding_agencies_01_Sebastian_Jester.pdf"><br><img src="../../images/icons/slides.svg" alt="slides icon">
+      <a href="slides/d2_12_funding_agencies_01_Sebastian_Jester.pdf"><br><img src="../../images/icons/slides.svg" alt="slides icon"></a>
       <br>
     </td>
   </tr>
