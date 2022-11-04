@@ -95,7 +95,7 @@ Munich, Germany (hybrid), 10-13 Oct 2022
     <td><a class="summit-abstract-link" href="abstracts2022#a-Multiprocessing-verified-kernels">Multiprocessing on seL4 with verified kernels<br><span class="summit-abstract-presenter">Kent McLeod</span></a>,
     <span class="summit-abstract-affiliation">Kry10</span></td>
       <td><a href="https://youtu.be/ooIPe4wRMKk" target="_blank"><img src="../../images/icons/youtube_nobckgnd.svg" class="youtube_icon" alt="YouTube icon"></a></td>
-    <td><a href="slides/d1_07_Multiprocessing on seL4 with verified kernels_Kent Mcleod.pdf"><img src="../../images/icons/slides.svg" alt="slides icon"></td>
+    <td><a href="slides/d1_07_Multiprocessing_on_seL4_with_verified_kernels_Kent_Mcleod.pdf"><img src="../../images/icons/slides.svg" alt="slides icon"></td>
   </tr>
   <tr>
     <td class="break" colspan="6">Break</td>
@@ -186,7 +186,7 @@ Munich, Germany (hybrid), 10-13 Oct 2022
     <td>Talk & Discussion</td>
     <td><a class="summit-abstract-link" href="abstracts2022#a-Rust-support">Rust support in seL4 userspace: present and future<br><span class="summit-abstract-presenter">Nick Spinale</span></a></td>
       <td><a href="https://www.youtube.com/watch?v=FXB4hGZUilU" target="_blank"><img src="../../images/icons/youtube_nobckgnd.svg" class="youtube_icon" alt="YouTube icon"></a></td>
-    <td><a href="slides/d2_05_Rust support in seL4 userspace present and future_Nick Spinale.pdf"><img src="../../images/icons/slides.svg" alt="slides icon"></td>
+    <td><a href="slides/d2_05_Rust_support_in_seL4_userspace_present_and_future_Nick_Spinale.pdf"><img src="../../images/icons/slides.svg" alt="slides icon"></td>
   </tr>
   <tr>
     <td class="break" colspan="6">Break</td>
@@ -198,7 +198,7 @@ Munich, Germany (hybrid), 10-13 Oct 2022
     <td>Talk</td>
     <td><a class="summit-abstract-link" href="abstracts2022#a-Network-stack-implementation">Early experiences proving the correctness of a network stack implementation<br><span class="summit-abstract-presenter">Alain Kägi</span></a>, Aubrey Birdwell, Caitlyn Wilde, Jens Mache & Richard Weiss, <span class="summit-abstract-affiliation">Lewis & Clark College</span></td>
       <td><a href="https://youtu.be/linRvpquOrg" target="_blank"><img src="../../images/icons/youtube_nobckgnd.svg" class="youtube_icon" alt="YouTube icon"></a></td>
-    <td><a href="slides/d2_06_Early experiences proving the correctness of a network stack implementation_Alain Kägi.pdf"><img src="../../images/icons/slides.svg" alt="slides icon"></td>
+    <td><a href="slides/d2_06_Early_experiences_proving_the_correctness_of_a_network_stack_implementation_Alain_Kägi.pdf"><img src="../../images/icons/slides.svg" alt="slides icon"></td>
   </tr>
   <tr id="p-CASE-overview">
     <td>13:15 - 13:45</td>
@@ -206,7 +206,7 @@ Munich, Germany (hybrid), 10-13 Oct 2022
     <td><a class="summit-abstract-link" href="abstracts2022#a-CASE-overview">CASE overview: Cyber Assured Systems Engineering<br><span class="summit-abstract-presenter">Darren Cofer</span></a>,
     <span class="summit-abstract-affiliation">Collins Aerospace</span></td>
     <td><a href="https://youtu.be/SY9GHV_5agM" target="_blank"><img src="../../images/icons/youtube_nobckgnd.svg" class="youtube_icon" alt="YouTube icon"></a></td>
-    <td><a href="slides/d2_07_CASE overview Cyber Assured Systems Engineering_Darren Cofer.pdf"><img src="../../images/icons/slides.svg" alt="slides icon"></td>
+    <td><a href="slides/d2_07_CASE_overview_Cyber_Assured_Systems_Engineering_Darren_Cofer.pdf"><img src="../../images/icons/slides.svg" alt="slides icon"></td>
   </tr>
   <tr id="p-Verified-architecture">
     <td>13:45 - 14:15</td>
@@ -214,7 +214,7 @@ Munich, Germany (hybrid), 10-13 Oct 2022
     <td><a class="summit-abstract-link" href="abstracts2022#a-Verified-architecture">A verified architecture for trustworthy remote attestation<br><span class="summit-abstract-presenter">Grant Jurgensen</span></a>,
     <span class="summit-abstract-affiliation">The University of Kansas</span></td>
     <td><!--a href="https://youtu.be/gZxnyTbtb7Q" target="_blank"><img src="../../images/icons/youtube_nobckgnd.svg" class="youtube_icon" alt="YouTube icon"></a--></td>
-    <td><a href="slides/d2_08_A verified architecture for trustworthy remote attestation_Grant Jurgenson.pdf"><img src="../../images/icons/slides.svg" alt="slides icon"></td>
+    <td><a href="slides/d2_08_A_verified_architecture_for_trustworthy_remote_attestation_Grant_Jurgenson.pdf"><img src="../../images/icons/slides.svg" alt="slides icon"></td>
   </tr>
   <tr>
     <td class="break" colspan="6">Break</td>
@@ -226,7 +226,7 @@ Munich, Germany (hybrid), 10-13 Oct 2022
     <td><a class="summit-abstract-link" href="abstracts2022#a-FerrOS">FerrOS: Rust-y unikernels on seL4 w/ compile-time assurances<br><span class="summit-abstract-presenter">Zack Pierce</span></a>,
     <span class="summit-abstract-affiliation">Auxon</span></td>
     <td><a href="https://www.youtube.com/watch?v=osepBlSQjY8&t=4s" target="_blank"><img src="../../images/icons/youtube_nobckgnd.svg" class="youtube_icon" alt="YouTube icon"></a></td>
-    <td><a href="slides/d2_09_FerrOS Rust-y unikernels on seL4 w compile-time assurances_Zack Pierce.pdf"><img src="../../images/icons/slides.svg" alt="slides icon"></td>
+    <td><a href="slides/d2_09_FerrOS_Rust-y_unikernels_on_seL4_w_compile-time_assurances_Zack_Pierce.pdf"><img src="../../images/icons/slides.svg" alt="slides icon"></td>
   </tr>
 
   <tr id="p-ASIL-D">
@@ -235,7 +235,7 @@ Munich, Germany (hybrid), 10-13 Oct 2022
     <td><a class="summit-abstract-link" href="abstracts2022#a-ASIL-D">Make seL4 an ASIL-D certified system<br><span class="summit-abstract-presenter">Yuning Liang</span></a>,
     <span class="summit-abstract-affiliation">Xcalibyte</span></td>
       <td><a href="https://youtu.be/x69C4SVRbKo" target="_blank"><img src="../../images/icons/youtube_nobckgnd.svg" class="youtube_icon" alt="YouTube icon"></a--></td>
-    <td><a href="slides/d2_10_Make seL4 an ASIL-D certified system_Yuning Liang.pdf"><img src="../../images/icons/slides.svg" alt="slides icon"></td>
+    <td><a href="slides/d2_10_Make_seL4_an_ASIL-D_certified_system_Yuning_Liang.pdf"><img src="../../images/icons/slides.svg" alt="slides icon"></td>
   </tr>
 
   <tr>
@@ -246,7 +246,7 @@ Munich, Germany (hybrid), 10-13 Oct 2022
     <span class="summit-abstract-affiliation">TCCOE</span>
     </td>
       <td><a href="https://youtu.be/z5CPcjkZ64g" target="_blank"><img src="../../images/icons/youtube_nobckgnd.svg" class="youtube_icon" alt="YouTube icon"></a></td>
-    <td><a href="slides/d2_11_seL4 Summit and TCCOE - an overview_Renato Levy.pdf"><img src="../../images/icons/slides.svg" alt="slides icon"></td>
+    <td><a href="slides/d2_11_seL4_Summit_and_TCCOE_-_an_overview_Renato_Levy.pdf"><img src="../../images/icons/slides.svg" alt="slides icon"></td>
   </tr>
 
   <tr id="p-Funding-agencies">
@@ -283,7 +283,7 @@ Munich, Germany (hybrid), 10-13 Oct 2022
     <td><a class="summit-abstract-link" href="abstracts2022#a-seL4-principles-abstractions">Overview: seL4 principles, abstractions and use<br><span class="summit-abstract-presenter">Gernot Heiser</span></a>,
     <span class="summit-abstract-affiliation">seL4 Foundation</span></td>
     <td><a href="https://www.youtube.com/watch?v=xszOcZnR_lg" target="_blank"><img src="../../images/icons/youtube_nobckgnd.svg" class="youtube_icon" alt="YouTube icon"></a></td>
-    <td><a href="slides/d3_01_Overview seL4 principles, abstractions and use_Gernot Heiser.pdf"><img src="../../images/icons/slides.svg" alt="slides icon"></td>
+    <td><a href="slides/d3_01_Overview_seL4_principles,_abstractions_and_use_Gernot_Heiser.pdf"><img src="../../images/icons/slides.svg" alt="slides icon"></td>
   </tr>
 
   <tr id="p-Whats-verified">
@@ -292,7 +292,7 @@ Munich, Germany (hybrid), 10-13 Oct 2022
     <td><a class="summit-abstract-link" href="abstracts2022#a-Whats-verified">Overview: what's verified, what's not, and what does it mean?<br><span class="summit-abstract-presenter">June Andronick</span></a>,
     <span class="summit-abstract-affiliation">seL4 Foundation</span></td>
       <td><a href="https://www.youtube.com/watch?v=zUpq3c0_b_s" target="_blank"><img src="../../images/icons/youtube_nobckgnd.svg" class="youtube_icon" alt="YouTube icon"></a></td>
-    <td><a href="slides/d3_02_Overview what's verified, what's not, and what does it mean_June Andronick.pdf"><img src="../../images/icons/slides.svg" alt="slides icon"></td>
+    <td><a href="slides/d3_02_Overview_what's_verified,_what's_not,_and_what_does_it_mean_June_Andronick.pdf"><img src="../../images/icons/slides.svg" alt="slides icon"></td>
   </tr>
   <tr id="p-GitHub-tests">
     <td>10:00 - 10:45</td>
@@ -300,7 +300,7 @@ Munich, Germany (hybrid), 10-13 Oct 2022
     <td><a class="summit-abstract-link" href="abstracts2022#a-GitHub-tests">The seL4 GitHub test suite<br><span class="summit-abstract-presenter">Gerwin Klein</span></a>,
     <span class="summit-abstract-affiliation">Proofcraft</span></td>
     <td><a href="https://www.youtube.com/watch?v=5LlXQUjefTc" target="_blank"><img src="../../images/icons/youtube_nobckgnd.svg" class="youtube_icon" alt="YouTube icon"></a></td>
-    <td><a href="slides/d3_03_The seL4 GitHub test suite_Gerwin Klein.pdf"><img src="../../images/icons/slides.svg" alt="slides icon"></td>
+    <td><a href="slides/d3_03_The_seL4_GitHub_test_suite_Gerwin_Klein.pdf"><img src="../../images/icons/slides.svg" alt="slides icon"></td>
   </tr>
   <tr>
     <td class="break" colspan="6">Break</td>
@@ -320,7 +320,7 @@ Munich, Germany (hybrid), 10-13 Oct 2022
     <td><a class="summit-abstract-link" href="abstracts2022#a-seL4-mainlining">seL4 mainlining: experiences, challenges, and solutions<br><span class="summit-abstract-presenter">Robbie VanVossen</span> & <span class="summit-abstract-presenter">Chris Guikema</span></a>,
     <span class="summit-abstract-affiliation">DornerWorks</span></td>
       <td><a href="https://www.youtube.com/watch?v=OBrSov78KcY" target="_blank"><img src="../../images/icons/youtube_nobckgnd.svg" class="youtube_icon" alt="YouTube icon"></a></td>
-    <td><a href="slides/d3_04_seL4 mainlining experiences, challenges, and solutions_Robbie.pdf"><img src="../../images/icons/slides.svg" alt="slides icon"></td>
+    <td><a href="slides/d3_04_seL4_mainlining_experiences,_challenges,_and_solutions_Robbie.pdf"><img src="../../images/icons/slides.svg" alt="slides icon"></td>
   </tr>
   <tr>
     <td>Room 2:<br> BoF</td>
@@ -337,7 +337,7 @@ Munich, Germany (hybrid), 10-13 Oct 2022
       <td id="p-Standard-VMM">Room 1:<br> Talk & Discussion</td>
     <td><a class="summit-abstract-link" href="abstracts2022#a-Standard-VMM">seL4 microkernel for virtualization use-cases “The importance of a standard VMM”<br><span class="summit-abstract-presenter">Everton de Matos</span></a> & Jason Sebranek, <span class="summit-abstract-affiliation">TII+Cog</span></td>
     <td><a href="https://www.youtube.com/watch?v=j0mcjByf6PM" target="_blank"><img src="../../images/icons/youtube_nobckgnd.svg" class="youtube_icon" alt="YouTube icon"></a></td>
-    <td><a href="slides/d3_05_seL4 microkernel for virtualization use-cases “The importance of a standard VMM”.pdf"><img src="../../images/icons/slides.svg" alt="slides icon"></td>
+    <td><a href="slides/d3_05_seL4_microkernel_for_virtualization_use-cases_“The_importance_of_a_standard_VMM”.pdf"><img src="../../images/icons/slides.svg" alt="slides icon"></td>
   </tr>
   <tr>
     <td>Room 2:<br>BoF</td>
@@ -351,7 +351,7 @@ Munich, Germany (hybrid), 10-13 Oct 2022
       <td><a class="summit-abstract-link" href="abstracts2022#a-Improving-embedded-DevOps">Improving embedded DevOps with seL4 VMM<br><span class="summit-abstract-presenter">Robbie VanVossen</span></a>,
     <span class="summit-abstract-affiliation">DornerWorks</span></td>
     <td><a href="https://www.youtube.com/watch?v=rocLV9xl2MQ" target="_blank"><img src="../../images/icons/youtube_nobckgnd.svg" class="youtube_icon" alt="YouTube icon"></a></td>
-    <td><a href="slides/d3_06_Improving embedded DevOps with seL4 VMM.pdf"><img src="../../images/icons/slides.svg" alt="slides icon"></td>
+    <td><a href="slides/d3_06_Improving_embedded_DevOps_with_seL4_VMM.pdf"><img src="../../images/icons/slides.svg" alt="slides icon"></td>
   </tr>
   <tr>
     <td>Room 2:<br> BoF</td>
@@ -365,7 +365,7 @@ Munich, Germany (hybrid), 10-13 Oct 2022
     <td><a class="summit-abstract-link" href="abstracts2022#a-Experience-teaching-seL4">Experience teaching seL4<br><span class="summit-abstract-presenter">Sebastian Eckl</span></a>,
     <span class="summit-abstract-affiliation">HENSOLDT Cyber</span></td>
     <td><a href="https://youtu.be/5xl7e0J9_3A" target="_blank"><img src="../../images/icons/youtube_nobckgnd.svg" class="youtube_icon" alt="YouTube icon"></a></td>
-    <td><a href="slides/d3_07_Experience teaching seL4.pdf"><img src="../../images/icons/slides.svg" alt="slides icon"></td>
+    <td><a href="slides/d3_07_Experience_teaching_seL4.pdf"><img src="../../images/icons/slides.svg" alt="slides icon"></td>
   </tr>
   <tr>
     <td>Room 2:<br> BoF</td>
@@ -400,7 +400,7 @@ Munich, Germany (hybrid), 10-13 Oct 2022
     <td><a class="summit-abstract-link" href="abstracts2022#a-VM-Composer">DornerWorks’ VM Composer<br><span class="summit-abstract-presenter">Robbie VanVossen</span></a>,
     <span class="summit-abstract-affiliation">DornerWorks</span></td>
     <td><a href="https://www.youtube.com/watch?v=r6b1ehTQCHI&t=1s" target="_blank"><img src="../../images/icons/youtube_nobckgnd.svg" class="youtube_icon" alt="YouTube icon"></a></td>
-    <td><a href="slides/d3_08_DornerWorks’ VM Composer.pdf"><img src="../../images/icons/slides.svg" alt="slides icon"></td>
+    <td><a href="slides/d3_08_DornerWorks’_VM_Composer.pdf"><img src="../../images/icons/slides.svg" alt="slides icon"></td>
   </tr>
 
   <tr id="p-seL4-Foundation">
@@ -409,7 +409,7 @@ Munich, Germany (hybrid), 10-13 Oct 2022
     <td><a class="summit-abstract-link" href="abstracts2022#a-seL4-Foundation">seL4 Foundation: overview, update and vision<br><span class="summit-abstract-presenter">June Andronick</span></a>,
     <span class="summit-abstract-affiliation">seL4 Foundation</span></td>
     <td><a href="https://www.youtube.com/watch?v=ABqQqgf6ez8" target="_blank"><img src="../../images/icons/youtube_nobckgnd.svg" class="youtube_icon" alt="YouTube icon"></a></td>
-    <td><a href="slides/d3_09_seL4 Foundation overview, update and vision.pdf"><img src="../../images/icons/slides.svg" alt="slides icon"></td>
+    <td><a href="slides/d3_09_seL4_Foundation_overview,_update_and_vision.pdf"><img src="../../images/icons/slides.svg" alt="slides icon"></td>
   </tr>
   <tr>
     <td>16:45 - 17:00</td>
