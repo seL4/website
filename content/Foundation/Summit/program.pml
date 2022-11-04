@@ -107,7 +107,7 @@ Munich, Germany (hybrid), 10-13 Oct 2022
     <td><a class="summit-abstract-link" href="abstracts2022#a-QEMU-extend-VirtIO">Using QEMU to extend seL4 VirtIO support<br><span class="summit-abstract-presenter">Hannu Lyytinen</span></a> & Markku Ahvenjärvi,
     <span class="summit-abstract-affiliation">TII</span></td>
       <td><a href="https://www.youtube.com/watch?v=qjtY2O1ViGs" target="_blank"><img src="../../images/icons/youtube_nobckgnd.svg" class="youtube_icon" alt="YouTube icon"></a></td>
-    <td><a href="slides/d1_08_Using QEMU to extend seL4 VirtIO support_Hannu Lyytinen.pdf"><img src="../../images/icons/slides.svg" alt="slides icon"></td>
+    <td><a href="slides/d1_08_Using_QEMU_to_extend_seL4_VirtIO_support_Hannu_Lyytinen.pdf"><img src="../../images/icons/slides.svg" alt="slides icon"></td>
   </tr>
   <tr id="p-QEMU-prototyping-platform">
     <td>15:30 - 16:00</td>
@@ -115,7 +115,7 @@ Munich, Germany (hybrid), 10-13 Oct 2022
     <td><a class="summit-abstract-link" href="abstracts2022#a-QEMU-prototyping-platform">QEMU as prototyping platform for seL4 systems<br><span class="summit-abstract-presenter">Axel Heider</span></a>,
     <span class="summit-abstract-affiliation">HENSOLDT Cyber</span></td>
       <td><a href="https://www.youtube.com/watch?v=R-HNQK1uA7c" target="_blank"><img src="../../images/icons/youtube_nobckgnd.svg" class="youtube_icon" alt="YouTube icon"></a></td>
-    <td><a href="slides/d1_09_QEMU as prototyping platform for seL4 systems_Axel Heider.pdf"><img src="../../images/icons/slides.svg" alt="slides icon"></td>
+    <td><a href="slides/d1_09_QEMU_as_prototyping_platform_for_seL4_systems_Axel_Heider.pdf"><img src="../../images/icons/slides.svg" alt="slides icon"></td>
   </tr>
   <tr id="p-Porting-U-Boot">
     <td>16:00 - 16:30</td>
@@ -123,7 +123,7 @@ Munich, Germany (hybrid), 10-13 Oct 2022
     <td><a class="summit-abstract-link" href="abstracts2022#a-Porting-U-Boot">Porting U-Boot drivers to seL4<br><span class="summit-abstract-presenter">Mark Jenkinson</span> & <span class="summit-abstract-presenter">Stephen Williams</span></a>,
     <span class="summit-abstract-affiliation">Capgemini</span></td>
       <td><a href="https://www.youtube.com/watch?v=FfdrOKder_U" target="_blank"><img src="../../images/icons/youtube_nobckgnd.svg" class="youtube_icon" alt="YouTube icon"></a></td>
-    <td><a href="slides/d1_10_Porting U-Boot drivers to seL4_Mark Jenkinson & Stephen Williams.pdf"><img src="../../images/icons/slides.svg" alt="slides icon"></td>
+    <td><a href="slides/d1_10_Porting_U-Boot_drivers_to_seL4_Mark_Jenkinson_&_Stephen_Williams.pdf"><img src="../../images/icons/slides.svg" alt="slides icon"></td>
   </tr>
   <tr id="p-fence-t">
     <td>16:30 - 17:00</td>
@@ -131,7 +131,7 @@ Munich, Germany (hybrid), 10-13 Oct 2022
     <td><a class="summit-abstract-link" href="abstracts2022#a-fence-t">fence.t: hardware support for preventing microarchitectural timing channels<br><span class="summit-abstract-presenter">Nils Wistoff</span></a>,
     <span class="summit-abstract-affiliation">ETH</span></td>
       <td><a href="https://www.youtube.com/watch?v=tLcum9YksJM" target="_blank"><img src="../../images/icons/youtube_nobckgnd.svg" class="youtube_icon" alt="YouTube icon"></a></td>
-    <td><a href="slides/d1_11_fence.t hardware support for preventing microarchitectural timing channels_Nils Wistoff.pdf"><img src="../../images/icons/slides.svg" alt="slides icon"></td>
+    <td><a href="slides/d1_11_fence.t_hardware_support_for_preventing_microarchitectural_timing_channels_Nils_Wistoff.pdf"><img src="../../images/icons/slides.svg" alt="slides icon"></td>
   </tr>
 
     <tr>
@@ -149,7 +149,7 @@ Munich, Germany (hybrid), 10-13 Oct 2022
     <td><a class="summit-abstract-link" href="abstracts2022#a-Kry10-Secure-Platform">Kry10 Secure Platform<br><span class="summit-abstract-presenter">Boyd Multerer</span></a>,
     <span class="summit-abstract-affiliation">Kry10</span></td>
       <td><a href="https://www.youtube.com/watch?v=YG5BaoB24eA" target="_blank"><img src="../../images/icons/youtube_nobckgnd.svg" class="youtube_icon" alt="YouTube icon"></a></td>
-    <td><a href="slides/d2_01_Kry10 Secure Platform_Boyd Multerer.pdf"><img src="../../images/icons/slides.svg" alt="slides icon"></td>
+    <td><a href="slides/d2_01_Kry10_Secure_Platform_Boyd_Multerer.pdf"><img src="../../images/icons/slides.svg" alt="slides icon"></td>
   </tr>
   <tr>
     <td>9:50 - 10:00</td>
@@ -157,7 +157,7 @@ Munich, Germany (hybrid), 10-13 Oct 2022
     <td>Announcements</td>
     <td><em>Foundation announcements</em></td>
       <td><a href="https://www.youtube.com/watch?v=WeTeq68pWvY" target="_blank"><img src="../../images/icons/youtube_nobckgnd.svg" class="youtube_icon" alt="YouTube icon"></a></td>
-    <td><a href="slides/d2_02_Foundation announcements.pdf"><img src="../../images/icons/slides.svg" alt="slides icon"></td>
+    <td><a href="slides/d2_02_Foundation_announcements.pdf"><img src="../../images/icons/slides.svg" alt="slides icon"></td>
   </tr>
   <tr>
     <td class="break" colspan="6">Break</td>
@@ -169,7 +169,7 @@ Munich, Germany (hybrid), 10-13 Oct 2022
     <td><a class="summit-abstract-link" href="abstracts2022#a-seL4-BEAM">seL4 and BEAM: a match made in Erlang<br><span class="summit-abstract-presenter">Ihor Kuz</span></a>,
     <span class="summit-abstract-affiliation">Kry10</span></td>
       <td><a href="https://youtu.be/owmvgUwBlJ0" target="_blank"><img src="../../images/icons/youtube_nobckgnd.svg" class="youtube_icon" alt="YouTube icon"></a></td>
-    <td><a href="slides/d2_03_seL4 and BEAM a match made in Erlang_Ihor.pdf"><img src="../../images/icons/slides.svg" alt="slides icon"></td>
+    <td><a href="slides/d2_03_seL4_and_BEAM_a_match_made_in_Erlang_Ihor.pdf"><img src="../../images/icons/slides.svg" alt="slides icon"></td>
   </tr>
 
   <tr id="p-Trustworthy-board-management">
@@ -178,7 +178,7 @@ Munich, Germany (hybrid), 10-13 Oct 2022
     <td><a class="summit-abstract-link" href="abstracts2022#a-Trustworthy-board-management">Trustworthy board management controllers<br><span class="summit-abstract-presenter">Daniel Schwyn</span>, <span class="summit-abstract-presenter">Ben Fiedler</span></a>, Michael Giardino, David Cock & Timothy Roscoe,
     <span class="summit-abstract-affiliation">ETH</span></td>
       <td><a href="https://www.youtube.com/watch?v=mCYxdn4bWw4" target="_blank"><img src="../../images/icons/youtube_nobckgnd.svg" class="youtube_icon" alt="YouTube icon"></a></td>
-    <td><a href="slides/d2_04_Trustworthy board management controllers_Daniel Schwyn, Ben Fiedler.pdf              "><img src="../../images/icons/slides.svg" alt="slides icon"></td>
+    <td><a href="slides/d2_04_Trustworthy_board_management_controllers_Daniel_Schwyn,_Ben_Fiedler.pdf              "><img src="../../images/icons/slides.svg" alt="slides icon"></td>
   </tr>
 
   <tr id="p-Rust-support">
