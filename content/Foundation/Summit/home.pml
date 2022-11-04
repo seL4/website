@@ -34,50 +34,14 @@ Munich, Germany (hybrid), 10-13 Oct 2022
     </h3>
   </div>
   <p>
-    We are very fortunate to welcome four leaders at major funding agencies to participate in a session <a href="abstracts2022#a-Funding-agencies"><strong>Funding agencies: priorities and vision</strong></a>. They will each give their views on the priorities and vision of their agency in terms of high-assurance systems.
+    The videos and slides of the seL4 summit 2022 have been published!
   </p>
-</div>
-<div class="speakers_grid">
-  <div class="speaker">
-    <div class="speaker_pic">
-      <img src="../../images/summit/brad.jpg" alt="William “Brad” Martin" width="140"/>
-    </div>
-    <div class="speaker_title" style="text-align:center">
-      <a href="abstracts2022#a-Funding-agencies-darpa">William “Brad” Martin</a>
-      <br>
-      <a href="https://www.darpa.mil/">DARPA</a>
-    </div>
-  </div>
-  <div class="speaker">
-    <div class="speaker_pic">
-      <img src="../../images/summit/paul.jpg" alt="Paul Waller" width="140"/>
-    </div>
-    <div class="speaker_title" style="text-align:center">
-      <a href="abstracts2022#a-Funding-agencies-ncsc">Paul Waller</a>
-      <br>
-      <a href="https://www.ncsc.gov.uk/">NCSC</a>
-    </div>
-  </div>
-  <div class="speaker">
-    <div class="speaker_pic">
-      <img src="../../images/summit/cyberagentur.png" alt="Cyberagentur" width="140"/>
-    </div>
-    <div class="speaker_title" style="text-align:center">
-      <a href="abstracts2022#a-Funding-agencies-cyberagentur">Sebastian Jester</a>
-      <br>
-      <a href="https://www.cyberagentur.de/">Cyberagentur</a>
-    </div>
-  </div>
-  <div class="speaker">
-    <div class="speaker_pic">
-      <img src="../../images/summit/ticky.jpg" alt="Dr. Shreekant (Ticky) Thakkar" width="140"/>
-    </div>
-    <div class="speaker_title" style="text-align:center">
-      <a href="abstracts2022#a-Funding-agencies-tii">Shreekant (Ticky) Thakkar</a>
-      <br>
-      <a href="https://www.tii.ae/">TII</a>
-    </div>
-  </div>
+  <p>
+    Thanks to all the speakers for making the seL4 summit 2022 a great success. Links to the videos and slides are available on the summit <a href="program">Program</a> and <a href="abstracts2022">Abstracts</a> pages.
+  </p>
+  <p>
+    Videos can also be found on the <a href="https://www.youtube.com/channel/UCIqVY1XFPOPIZ1z2A9TrmMA" target="_blank">seL4 YouTube channel</a>.
+  </p>
 </div>
 
 <div class="summit_div">
@@ -85,14 +49,14 @@ Munich, Germany (hybrid), 10-13 Oct 2022
     About
   </h3>
   <p>
-    The seL4 Summit 2022 is the fourth edition of the international summit on the <a href="../../About">seL4 microkernel</a>, the world's most highly assured OS kernel.
+    The seL4 Summit 2022 was the fourth edition of the international summit on the <a href="../../About">seL4 microkernel</a>, the world's most highly assured OS kernel.
   </p>
   <p>
     The first three seL4 Summits were organised by the <a href="https://trustedcomputingcoe.org/summits/">Trusted Computing Center of
     Excellence</a>, and were hosted in the US.
   </p>
   <p>
-    The seL4 Summit 2022 is the first to be organised by the <a href="../">seL4 Foundation</a>, established in 2020.
+    The seL4 Summit 2022 was the first to be organised by the <a href="../">seL4 Foundation</a>, established in 2020.
   </p>
   <p>
     Summit organisation and hosting is based on these <a href="principles">principles</a>.
@@ -104,11 +68,13 @@ Munich, Germany (hybrid), 10-13 Oct 2022
     Location & Host
   </h3>
   <p>
-    The seL4 Summit 2022 will be held in Munich, Germany (hybrid), 10-13 Oct 2022.
+    The seL4 Summit 2022 was held in Munich, Germany (hybrid), 10-13 Oct 2022.
   </p>
   <p>
-    It is being hosted by HENSOLDT Cyber GmbH, a Munich-based company which develops embedded IT products that meet the highest security requirements, combining an operating system based on verified seL4 with a RISC-V processor that is protected from supply-chain attacks.
+    It was hosted by HENSOLDT Cyber GmbH, a Munich-based company which develops embedded IT products that meet the highest security requirements, combining an operating system based on verified seL4 with a RISC-V processor that is protected from supply-chain attacks.
   </p>
+</div>
+<!--
   <p>
     To learn more, including information on the venue, location, and registration, please visit <a href="https://hensoldt-cyber.com/sel4-summit-2022/">the host's summit webpage</a>.
   </p>
@@ -175,7 +141,7 @@ Munich, Germany (hybrid), 10-13 Oct 2022
   <p>
   As part of the registration process, attendees have the opportunity to opt-in to a new, informal mentorship program. The purpose of this program is to foster mentorship relationships within the seL4 community. The program committee will match students and junior engineers who wish to participate as mentees with volunteer mentors. Participating attendees will be introduced to their counterparts during the summit, and will carry on afterwards with whatever level of involvement suits both parties. Mentors are welcome to volunteer for any level of involvement.
   </p>
-</div>
+</div-->
 
 <div class="summit_div">
   <h3 id="summit-invited-speakers">
@@ -211,6 +177,56 @@ Munich, Germany (hybrid), 10-13 Oct 2022
   </div>
 </div>
 
+<div class="summit_div">
+  <h3 id="summit-news">
+    Panellists
+  </h3>
+  <p>
+    We are very fortunate to welcome four leaders at major funding agencies to participate in a session <a href="abstracts2022#a-Funding-agencies"><strong>Funding agencies: priorities and vision</strong></a>. They will each give their views on the priorities and vision of their agency in terms of high-assurance systems.
+  </p>
+</div>
+<div class="speakers_grid">
+  <div class="speaker">
+    <div class="speaker_pic">
+      <img src="../../images/summit/brad.jpg" alt="William “Brad” Martin" width="140"/>
+    </div>
+    <div class="speaker_title" style="text-align:center">
+      <a href="abstracts2022#a-Funding-agencies-darpa">William “Brad” Martin</a>
+      <br>
+      <a href="https://www.darpa.mil/">DARPA</a>
+    </div>
+  </div>
+  <div class="speaker">
+    <div class="speaker_pic">
+      <img src="../../images/summit/paul.jpg" alt="Paul Waller" width="140"/>
+    </div>
+    <div class="speaker_title" style="text-align:center">
+      <a href="abstracts2022#a-Funding-agencies-ncsc">Paul Waller</a>
+      <br>
+      <a href="https://www.ncsc.gov.uk/">NCSC</a>
+    </div>
+  </div>
+  <div class="speaker">
+    <div class="speaker_pic">
+      <img src="../../images/summit/cyberagentur.png" alt="Cyberagentur" width="140"/>
+    </div>
+    <div class="speaker_title" style="text-align:center">
+      <a href="abstracts2022#a-Funding-agencies-cyberagentur">Sebastian Jester</a>
+      <br>
+      <a href="https://www.cyberagentur.de/">Cyberagentur</a>
+    </div>
+  </div>
+  <div class="speaker">
+    <div class="speaker_pic">
+      <img src="../../images/summit/ticky.jpg" alt="Dr. Shreekant (Ticky) Thakkar" width="140"/>
+    </div>
+    <div class="speaker_title" style="text-align:center">
+      <a href="abstracts2022#a-Funding-agencies-tii">Shreekant (Ticky) Thakkar</a>
+      <br>
+      <a href="https://www.tii.ae/">TII</a>
+    </div>
+  </div>
+</div>
 
 <div class="summit_div">
   <h3 id="summit-program">

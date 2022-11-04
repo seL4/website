@@ -13,7 +13,6 @@ Munich, Germany (hybrid), 10-13 Oct 2022
 <h3>
    Preliminary Program
 </h3>
-
 <p>
   All times are local time in Munich, Germany (UTC+2).
   <br>
@@ -39,7 +38,7 @@ Munich, Germany (hybrid), 10-13 Oct 2022
     <span class="summit-abstract-affiliation">UNSW</span>
     </td>
     <td><a href="https://www.youtube.com/watch?v=C3nOjXhyPfk" target="_blank"><img src="../../images/icons/youtube_nobckgnd.svg" class="youtube_icon" alt="YouTube icon"></a></td>
-    <td><a href="slides/d1_02_State of seL4-related research_Gernot Heiser.pdf"><img src="../../images/icons/slides.svg" alt="slides icon"></td>
+    <td><a href="slides/d1_02_State_of_seL4-related_research_Gernot_Heiser.pdf"><img src="../../images/icons/slides.svg" alt="slides icon"></td>
   </tr>
   <tr>
     <td class="break" colspan="6">Break</td>
@@ -51,7 +50,7 @@ Munich, Germany (hybrid), 10-13 Oct 2022
     <td><a class="summit-abstract-link" href="abstracts2022#a-seL4-verification-roadmap">seL4 verification roadmap<br><span class="summit-abstract-presenter">Rafal Kolanski</span>, <span class="summit-abstract-presenter">Gerwin Klein</span> & <span class="summit-abstract-presenter">June Andronick</span></a>,
     <span class="summit-abstract-affiliation">Proofcraft</span></td>
     <td><a href="https://www.youtube.com/watch?v=lvmjXO1jTec" target="_blank"><img src="../../images/icons/youtube_nobckgnd.svg" class="youtube_icon" alt="YouTube icon"></a></td>
-    <td><a href="slides/d1_03_seL4 verification roadmap_Proofcraft.pdf"><img src="../../images/icons/slides.svg" alt="slides icon"></td>
+    <td><a href="slides/d1_03_seL4_verification-roadmap_Proofcraft.pdf"><img src="../../images/icons/slides.svg" alt="slides icon"></td>
   </tr>
   <tr id="p-explaining-integrity-theorems">
     <td>10:45 - 11:15</td>
@@ -59,7 +58,7 @@ Munich, Germany (hybrid), 10-13 Oct 2022
     <td><a class="summit-abstract-link" href="abstracts2022#a-explaining-integrity-theorems">Explaining the seL4 integrity theorems<br><span class="summit-abstract-presenter">Matt Brecknell</span></a>,
     <span class="summit-abstract-affiliation">Kry10</span></td>
     <td><a href="https://www.youtube.com/watch?v=fyF9w_CsCEU" target="_blank"><img src="../../images/icons/youtube_nobckgnd.svg" class="youtube_icon" alt="YouTube icon"></a></td>
-    <td><a href="slides/d1_04_Explaining the seL4 integrity theorems_Matt Brecknell.pdf"><img src="../../images/icons/slides.svg" alt="slides icon"></td>
+    <td><a href="slides/d1_04_Explaining_the_seL4_integrity_theorems_Matt_Brecknell.pdf"><img src="../../images/icons/slides.svg" alt="slides icon"></td>
   </tr>
   <tr>
     <td>11:15 - 11:45</td>
@@ -80,7 +79,7 @@ Munich, Germany (hybrid), 10-13 Oct 2022
   Platform (seL4CP)<br><span class="summit-abstract-presenter">Zoltan Kocsis</span></a>,
     <span class="summit-abstract-affiliation">UNSW</span></td>
       <td><a href="https://www.youtube.com/watch?v=kRI4VQRSB_w" target="_blank"><img src="../../images/icons/youtube_nobckgnd.svg" class="youtube_icon" alt="YouTube icon"></a></td>
-    <td><a href="slides/d1_05_The seL4 Core Platform (seL4CP)_Zoltan Kocsis.pdf"><img src="../../images/icons/slides.svg" alt="slides icon"></td>
+    <td><a href="slides/d1_05_The_seL4_Core_Platform_(seL4CP)_Zoltan _Kocsis.pdf"><img src="../../images/icons/slides.svg" alt="slides icon"></td>
   </tr>
   <tr id="p-sDDF">
     <td>13:15 - 13:45</td>
@@ -88,7 +87,7 @@ Munich, Germany (hybrid), 10-13 Oct 2022
     <td><a class="summit-abstract-link" href="abstracts2022#a-sDDF">The seL4 Device Driver Framework (sDDF)<br><span class="summit-abstract-presenter">Lucy Parker</span></a>,
     <span class="summit-abstract-affiliation">UNSW</span></td>
       <td><a href="https://www.youtube.com/watch?v=INBEKSkAiTA" target="_blank"><img src="../../images/icons/youtube_nobckgnd.svg" class="youtube_icon" alt="YouTube icon"></a></td>
-    <td><a href="slides/d1_06_The seL4 Device Driver Framework (sDDF)_Lucy Parker.pdf"><img src="../../images/icons/slides.svg" alt="slides icon"></td>
+    <td><a href="slides/d1_06_The_seL4_Device_Driver_Framework_(sDDF)_Lucy_Parker.pdf"><img src="../../images/icons/slides.svg" alt="slides icon"></td>
   </tr>
   <tr id="p-Multiprocessing-verified-kernels">
     <td>13:45 - 14:30</td>
@@ -235,8 +234,8 @@ Munich, Germany (hybrid), 10-13 Oct 2022
     <td>Experience report</td>
     <td><a class="summit-abstract-link" href="abstracts2022#a-ASIL-D">Make seL4 an ASIL-D certified system<br><span class="summit-abstract-presenter">Yuning Liang</span></a>,
     <span class="summit-abstract-affiliation">Xcalibyte</span></td>
-      <td><!--a href="https://youtu.be/x69C4SVRbKo" target="_blank"><img src="../../images/icons/youtube_nobckgnd.svg" class="youtube_icon" alt="YouTube icon"></a--></td>
-    <td><!--a href="slides/"><img src="../../images/icons/slides.svg" alt="slides icon"><span class="highlight">no slides</span--></td>
+      <td><a href="https://youtu.be/x69C4SVRbKo" target="_blank"><img src="../../images/icons/youtube_nobckgnd.svg" class="youtube_icon" alt="YouTube icon"></a--></td>
+    <td><a href="slides/d2_10_Make seL4 an ASIL-D certified system_Yuning Liang.pdf"><img src="../../images/icons/slides.svg" alt="slides icon"></td>
   </tr>
 
   <tr>
@@ -365,7 +364,7 @@ Munich, Germany (hybrid), 10-13 Oct 2022
     <td id="p-Experience-teaching-seL4">Room 1:<br> Talk & Discussion</td>
     <td><a class="summit-abstract-link" href="abstracts2022#a-Experience-teaching-seL4">Experience teaching seL4<br><span class="summit-abstract-presenter">Sebastian Eckl</span></a>,
     <span class="summit-abstract-affiliation">HENSOLDT Cyber</span></td>
-    <td><!--a href="https://youtu.be/5xl7e0J9_3A" target="_blank"><img src="../../images/icons/youtube_nobckgnd.svg" class="youtube_icon" alt="YouTube icon"></a--></td>
+    <td><a href="https://youtu.be/5xl7e0J9_3A" target="_blank"><img src="../../images/icons/youtube_nobckgnd.svg" class="youtube_icon" alt="YouTube icon"></a></td>
     <td><a href="slides/d3_07_Experience teaching seL4.pdf"><img src="../../images/icons/slides.svg" alt="slides icon"></td>
   </tr>
   <tr>
@@ -498,3 +497,8 @@ Munich, Germany (hybrid), 10-13 Oct 2022
   </tr>
 </table>
 <div><br></div>
+
+<p>
+<strong><br>Acknowledgement: </strong>
+<a href="https://www.flaticon.com/free-icons/explanation" title="explanation icons">Slide icons create by Syahrul Hidayatullah - Flaticon</a>
+</p>
