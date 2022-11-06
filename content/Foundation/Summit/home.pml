@@ -35,13 +35,7 @@ Munich, Germany (hybrid), 10-13 Oct 2022
     </h3>
   </div>
   <p>
-    The videos and slides of the seL4 summit 2022 have been published!
-  </p>
-  <p>
-    Thanks to all the speakers for making the seL4 summit 2022 a great success. Links to the videos and slides are available on the summit <a href="program">Program</a> and <a href="abstracts2022">Abstracts</a> pages.
-  </p>
-  <p>
-    Videos can also be found on the <a href="https://www.youtube.com/channel/UCIqVY1XFPOPIZ1z2A9TrmMA" target="_blank">seL4 YouTube channel</a>.
+        Videos of the seL4 summit 2022 are now available on the <a href="https://www.youtube.com/channel/UCIqVY1XFPOPIZ1z2A9TrmMA" target="_blank">seL4 YouTube channel</a>! Links and slides can be found on the summit <a href="program">Program</a> and <a href="abstracts2022">Abstracts</a> pages. Thanks to all the speakers for making the seL4 summit 2022 a great success!
   </p>
 </div>
 
@@ -404,20 +398,20 @@ Munich, Germany (hybrid), 10-13 Oct 2022
     </div>
 </div>
 <div class="summit-div" style="padding-top:30px">
-  <p>
+  <!--p>
     Contact <a title="summit@sel4.systems" href="mailto:summit@sel4.systems">summit@sel4.systems</a> if you are interested in sponsoring the seL4 summit 2022.
-  </p>
+  </p-->
 </div>
 
 <div class="summit_div">
   <h3 id="summit-contact">
     Contact
   </h3>
-  <p>
+  <!--p>
     For questions regarding location, venue, and registration, please contact <a title="sel4summit.cyber@hensoldt.net" href="mailto:sel4summit.cyber@hensoldt.net">sel4summit.cyber@hensoldt.net</a>.
-  </p>
+  </p-->
   <p>
-    For all other questions, please contact <a title="summit@sel4.systems" href="mailto:summit@sel4.systems">summit@sel4.systems</a>.
+    For any questions regarding the summit, please contact <a title="summit@sel4.systems" href="mailto:summit@sel4.systems">summit@sel4.systems</a>.
   </p>
 </div>
 

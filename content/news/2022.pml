@@ -55,6 +55,25 @@ Older News: <%=reflist%>
 -->
 
 <!----------------------------------------------------------->
+<div class="news-item" id="summit-videos">
+    7 November 2022: The videos and slides of the seL4 summit 2022 are available online
+</div>
+<div>
+  <a href="/Foundation/Summit/">
+    <img src="/images/sel4-summit-logo.svg"
+    style="width: 20%;  padding-left:10px;  float:right"
+    alt="seL4 summit" />
+  </a>
+  <p>
+    Videos of the seL4 summit 2022 are now available on the <a href="https://www.youtube.com/channel/UCIqVY1XFPOPIZ1z2A9TrmMA" target="_blank">seL4 YouTube channel</a>! Links and slides can be found on the summit <a href="../Foundation/Summit/program">Program</a> and <a href="../Foundation/Summit/abstracts2022">Abstracts</a> pages. Thanks to all the speakers for making the seL4 summit 2022 a great success!
+  </p>
+</div>
+<div class="news-finish">
+</div>
+
+
+
+<!----------------------------------------------------------->
 <div class="news-item" id="gday-kataos">
     21 October 2022: G’Day KataOS
 </div>
