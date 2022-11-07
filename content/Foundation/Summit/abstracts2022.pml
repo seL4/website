@@ -133,8 +133,8 @@ Munich, Germany (hybrid), 10-13 Oct 2022
 <div class="summit-abstract" id="a-Funding-agencies-darpa"><%@ include file="abstracts/Funding-agencies-darpa.pml" %></div>
 <div class="summit-abstract" id="a-Funding-agencies-ncsc"><%@ include file="abstracts/Funding-agencies-ncsc.pml" %></div>
 <div class="summit-abstract" id="a-Funding-agencies-cyberagentur"><%@ include file="abstracts/Funding-agencies-cyberagentur.pml" %></div>
-<div class="summit-abstract" id="a-Funding-agencies-tii"><%@ include file="abstracts/Funding-agencies-tii.pml" %></div><!--a href="https://youtu.be/ycoUg3pP40k" target="_blank"><img src="../../images/icons/youtube_nobckgnd.svg" class="youtube_icon" alt="YouTube icon"></a-->
-<a href="program.pml#p-Funding-agencies">See this talk in the program</a>
+<div class="summit-abstract" id="a-Funding-agencies-tii"><%@ include file="abstracts/Funding-agencies-tii.pml" %></div><a href="https://youtu.be/ycoUg3pP40k" target="_blank"><img src="../../images/icons/youtube_nobckgnd.svg" class="youtube_icon" alt="YouTube icon"></a>
+<br><a href="program.pml#p-Funding-agencies">See this talk in the program</a>
 <div class="summit-abstract" id="a-seL4-principles-abstractions"><%@ include file="abstracts/seL4-principles-abstractions.pml" %></div><a href="https://www.youtube.com/watch?v=xszOcZnR_lg" target="_blank"><img src="../../images/icons/youtube_nobckgnd.svg" class="youtube_icon" alt="YouTube icon"></a>
 &nbsp;&nbsp;
 <a href="slides/d3_01_Overview_seL4_principles,_abstractions_and_use_Gernot_Heiser.pdf"><img src="../../images/icons/slides.svg" alt="slides icon"></a>
