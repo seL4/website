@@ -34,15 +34,18 @@
   <li>
     <a href="2202-minutes-signed.pdf">7<sup>th</sup> meeting of 2022-02</a>
   </li>
-  <li>
+  <!--li>
     <a href="2204-minutes-signed.pdf">8<sup>th</sup> meeting of 2022-02</a>
-  </li>
+  </li-->
 </ul>
 
 <h2>Unconfirmed Minutes</h2>
 
 <ul>
   <li>
-    <a href="221013-minutes-unconfirmed.pdf">9<sup>th</sup> meeting of 2022-10-13</a>
+    <a href="2204-minutes-unconfirmed.pdf">8<sup>th</sup> meeting of 2022-10-13</a>
   </li>
+  <!--li>
+    <a href="221013-minutes-unconfirmed.pdf">9<sup>th</sup> meeting of 2022-10-13</a>
+  </li-->
 </ul>
