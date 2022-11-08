@@ -11,7 +11,7 @@ Munich, Germany (hybrid), 10-13 Oct 2022
 </h4>
 
 <h3>
-   Preliminary Program
+   Program
 </h3>
 <p>
   All times are local time in Munich, Germany (UTC+2).
@@ -65,7 +65,7 @@ Munich, Germany (hybrid), 10-13 Oct 2022
     <td class="summit_chair">Darren Cofer</td>
     <td>Discussion</td>
     <td><strong>AMA (Ask Me Anything)</strong> with the Foundation TSC</td>
-    <td><!--a href="https://youtu.be/lA8arVI-Mgw" target="_blank"><span class="highlight">Need consent forms</span><img src="../../images/icons/youtube_nobckgnd.svg" class="youtube_icon" alt="YouTube icon"></a--></td>
+    <td><a href="https://youtu.be/lA8arVI-Mgw" target="_blank"><img src="../../images/icons/youtube_nobckgnd.svg" class="youtube_icon" alt="YouTube icon"></a></td>
     <td></td>
   </tr>
   <tr>

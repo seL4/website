@@ -41,7 +41,7 @@ Other News: <%=reflist%>
  <p>
 
   There is now a <a
-  href="https://www.youtube.com/channel/UCIqVY1XFPOPIZ1z2A9TrmMA/about">YouTube
+  href="https://www.youtube.com/@seL4">YouTube
   channel</a> run by the seL4 Foundation. It presently has two
   playlists, one with the recordings of the seL4 material from this
   year’s UNSW Advanced Operating Systems course, and one with seL4
