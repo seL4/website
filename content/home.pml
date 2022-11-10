@@ -28,7 +28,7 @@
     <ul>
       <li>
         <strong>
-          9 Nov 2022: The videos and slides of the seL4 summit 2022 are available online
+          11 Nov 2022: The videos and slides of the seL4 summit 2022 are available online
         </strong>
       </li>
       <li>

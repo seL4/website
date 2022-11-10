@@ -56,7 +56,7 @@ Older News: <%=reflist%>
 
 <!----------------------------------------------------------->
 <div class="news-item" id="summit-videos">
-    9 November 2022: The videos and slides of the seL4 summit 2022 are available online
+    11 November 2022: The videos and slides of the seL4 summit 2022 are available online
 </div>
 <div>
   <a href="/Foundation/Summit/">
