@@ -18,3 +18,6 @@
 <p>
     William Martin currently serves as a program manager in the Information Innovation Office at DARPA. He joined DARPA from the National Security Agency (NSA), where he served in a variety of roles, most recently as acting technical director and cybersecurity subject matter expert of the Laboratory for Advanced Cybersecurity Research. His research interests include formal methods, domain-specific languages, system analysis, and trustworthy artificial intelligence.
 </p>
+<p>
+    <a href="slides/d2_12_funding_agencies_03_Brad_Martin.pdf"><br><img src="../../images/icons/slides.svg" alt="slides icon"><br></a>
+</p>
