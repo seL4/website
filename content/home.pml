@@ -28,7 +28,7 @@
     <ul>
       <li>
         <strong>
-          9 Dec 2022: seL4 features in the Linux Foundation’s 2022 Annual report
+          12 Dec 2022: seL4 features in the Linux Foundation’s 2022 Annual report
         </strong>
       </li>
       <li>
