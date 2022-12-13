@@ -59,7 +59,7 @@ Older News: <%=reflist%>
     14 December 2022: seL4 features in the Linux Foundation’s 2022 Annual report
 </div>
 <div style="margin: auto; width: 50%;">
-    <a href = "https://www.linuxfoundation.org/resources/publications/linux-foundation-annual-report-2022?hsLang=en" alt="lf annual report 2022">
+    <a href = "https://www.linuxfoundation.org/resources/publications/linux-foundation-annual-report-2022?hsLang=en">
     <img src="/images/lf-annual-report.png"
     style="width: 70%;"
     alt="LF annual report" />
