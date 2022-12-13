@@ -28,17 +28,17 @@
     <ul>
       <li>
         <strong>
+          14 Dec 2022: seL4 features in the Linux Foundation’s 2022 Annual report
+        </strong>
+      </li>
+      <li>
+        <strong>
           11 Nov 2022: The videos and slides of the seL4 summit 2022 are available online
         </strong>
       </li>
       <li>
         <strong>
           21 Oct 2022: G’Day KataOS
-        </strong>
-      </li>
-      <li>
-        <strong>
-          7 Oct 2022: Thanks Xcalibyte for sponsoring the seL4 Summit 2022
         </strong>
       </li>
       <li style="margin-top:0.2em;list-style-type:none">
