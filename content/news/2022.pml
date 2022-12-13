@@ -56,7 +56,7 @@ Older News: <%=reflist%>
 
 <!----------------------------------------------------------->
 <div class="news-item" id="lf-annual-report">
-    12 December 2022: seL4 features in the Linux Foundation’s 2022 Annual report
+    14 December 2022: seL4 features in the Linux Foundation’s 2022 Annual report
 </div>
 <div style="margin: auto; width: 50%;">
     <img src="/images/lf-annual-report.png"
