@@ -146,6 +146,8 @@ The following meetings and decisions have so far been recorded:</p>
   <li>2021-12-16: <a href="notes/vote-2021-12-16.pdf">Email vote</a> to invite Yanyan Shen to the TSC.</li>
   <li>2021-12-17: <a href="notes/tsc-meeting-2021-12-17.pdf">4th TSC meeting</a>.</li>
   <li>2022-04-14: <a href="notes/vote-2022-04-14.pdf">Email vote</a> to approve <a href="https://sel4.atlassian.net/browse/RFC-8">RFC-10</a>.</li>
+  <li>2022-12-15: <a href="notes/vote-2022-12-15.pdf">Email vote</a> to invite Indan Zupancic as Reviewer.</li>
+  <li>2022-12-16: <a href="notes/tsc-meeting-2022-12-16.pdf">5th TSC meeting</a>.</li>
 </ul>
 
 <h3>Joining the TSC</h3>
