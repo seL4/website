@@ -18,7 +18,7 @@
 <ul>
 <li><a href="https://lists.sel4.systems/postorius/lists/announce.sel4.systems/">Announce mailing list</a> announcements about seL4 (low volume list)</li>
 <li>LinkedIn: <a href="https://www.linkedin.com/company/sel4/">seL4 Foundation</a></li>
-<li>Twitter: <a href="https://twitter.com/seL4Foundation/">@seL4Foundation</a></li>
+<li>Mastodon: <a href="https://fosstodon.org/@sel4">[Mastadon handle]</a><br>We are suspending our use of Twitter until further notice. We will instead provide updates on Mastodon.</li>
 <li>YouTube: <a href="https://www.youtube.com/@seL4">The seL4 Microkernel</a></li>
 <li><a href="https://microkerneldude.wordpress.com/category/sel4/">Blog</a></li>
 <li><a href="https://calendar.google.com/calendar/u/0?cid=NXNybzFhaGtodDNsb2NuaGRxMnFmbDhndGNAZ3JvdXAuY2FsZW5kYXIuZ29vZ2xlLmNvbQ">Google calendar feed</a> for seL4 Foundation events and dates
