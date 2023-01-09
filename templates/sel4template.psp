@@ -316,7 +316,7 @@ else:
   <div class="container">
     <!-- for mobile screens -->
     <div class="text-center visible-xs">
-    <a href="https://twitter.com/sel4foundation"><img style="height:36px; padding-right:5px; padding-top:2px; padding-bottom:2px;" src="/images/icons/twitter.svg" alt="twitter icon"></a>
+    <a href="https://fosstodon.org/@sel4"><img style="height:36px; padding-right:5px; padding-top:2px; padding-bottom:2px;" src="/images/icons/mastodon.svg" alt="mastodon icon"></a>
       <a href="https://www.youtube.com/@seL4"><img style="height:36px; padding-top:2px; padding-bottom:2px;" src="/images/icons/youtube.svg" alt="youtube icon"></a>
       <a href="https://www.linkedin.com/company/sel4"><img style="height:36px; padding-left:5px; padding-top:2px; padding-bottom:2px;" src="/images/icons/linkedin.svg" alt="linkedin icon"></a>
       <br>
@@ -341,7 +341,7 @@ else:
         and the <a href="/Foundation/Trademark/">trademark guidelines</a>.
       </div>
       <div class="col-xs-6 text-right hidden-xs">
-        <a href="https://twitter.com/sel4foundation"><img style="height:36px; padding-right:5px; padding-top:2px; padding-bottom:2px;" src="/images/icons/twitter.svg" alt="twitter icon"></a>
+        <a href="https://fosstodon.org/@sel4"><img style="height:36px; padding-right:5px; padding-top:2px; padding-bottom:2px;" src="/images/icons/mastodon.svg" alt="mastodon icon"></a>
         <a href="https://www.youtube.com/@seL4"><img style="height:36px; padding-top:2px; padding-bottom:2px;" src="/images/icons/youtube.svg" alt="youtube icon"></a>
         <a href="https://www.linkedin.com/company/sel4"><img style="height:36px; padding-left:5px; padding-top:2px; padding-bottom:2px;" src="/images/icons/linkedin.svg" alt="linkedin icon"></a>
       </div>
