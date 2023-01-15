@@ -268,6 +268,8 @@ Munich, Germany (hybrid), 10-13 Oct 2022
       <br><br>
       <a href="slides/d2_12_funding_agencies_01_Sebastian_Jester.pdf"><br><img src="../../images/icons/slides.svg" alt="slides icon"></a>
       <br>
+      <a href="slides/d2_12_funding_agencies_04_Shreekant_Thakkar.pdf"><br><img src="../../images/icons/slides.svg" alt="slides icon"></a>
+      <br>
     </td>
   </tr>
 

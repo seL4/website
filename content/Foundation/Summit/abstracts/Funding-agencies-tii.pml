@@ -21,3 +21,6 @@
     <a href="https://www.tii.ae/team/dr-shreekant-ticky-thakkar">Dr Shreekant (Ticky) Thakkar</a> is Chief Research Officer at the Secure Systems Research Centre at the Technology Innovation Institute (TII), a cutting-edge UAE-based scientific research Centre and Adjunct Research Professor at Khalifa University. In this role, he is
 responsible for carrying out advanced research that is driving end-to-end security and resilience in cyber physical and autonomous systems of systems (swarm of drones). These includes secure technologies in silicon, edge and mobile and cloud platforms working with open-source ecosystems (Dronecode, RISC-V, Linux, Apache, ROS) and research institutions across USA, Europe, and UAE.
 </p>
+<p>
+    <a href="slides/d2_12_funding_agencies_04_Shreekant_Thakkar.pdf"><br><img src="../../images/icons/slides.svg" alt="slides icon"></a>
+</p>
