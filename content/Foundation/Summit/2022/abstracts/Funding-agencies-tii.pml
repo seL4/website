@@ -22,5 +22,5 @@
 responsible for carrying out advanced research that is driving end-to-end security and resilience in cyber physical and autonomous systems of systems (swarm of drones). These includes secure technologies in silicon, edge and mobile and cloud platforms working with open-source ecosystems (Dronecode, RISC-V, Linux, Apache, ROS) and research institutions across USA, Europe, and UAE.
 </p>
 <p>
-    <a href="slides/d2_12_funding_agencies_04_Shreekant_Thakkar.pdf"><br><img src="../../images/icons/slides.svg" alt="slides icon"></a>
+    <a href="slides/d2_12_funding_agencies_04_Shreekant_Thakkar.pdf"><br><img src="../../../images/icons/slides.svg" alt="slides icon"></a>
 </p>
