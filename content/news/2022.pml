@@ -80,7 +80,7 @@ Older News: <%=reflist%>
     alt="seL4 summit" />
   </a>
   <p>
-    Videos of the seL4 summit 2022 are now available on the <a href="https://www.youtube.com/@seL4" target="_blank">seL4 YouTube channel</a>! Links and slides can be found on the summit <a href="../Foundation/Summit/program">Program</a> and <a href="../Foundation/Summit/abstracts2022">Abstracts</a> pages. Thanks to all the speakers for making the seL4 summit 2022 a great success!
+    Videos of the seL4 summit 2022 are now available on the <a href="https://www.youtube.com/@seL4" target="_blank">seL4 YouTube channel</a>! Links and slides can be found on the summit <a href="../Foundation/Summit/2022/program">Program</a> and <a href="../Foundation/Summit/2022/abstracts2022">Abstracts</a> pages. Thanks to all the speakers for making the seL4 summit 2022 a great success!
   </p>
 </div>
 <div class="news-finish">
@@ -345,7 +345,7 @@ Older News: <%=reflist%>
 	   alt="seL4 summit" />
     </a>
 
-    Have a look at the <a href="../Foundation/Summit/program">seL4 summit Program</a>!
+    Have a look at the <a href="../Foundation/Summit/2022/program">seL4 summit Program</a>!
     We have an amazing line-up of cool seL4 work, with a combination of
     technical research and development, experience reports of seL4 in the field,
     technical discussions and Birds-of-a-feather sessions, as well as a whole
@@ -353,7 +353,7 @@ Older News: <%=reflist%>
 
   <p style="text-align: center;">
 
-    <a href="../Foundation/Summit/program">
+    <a href="../Foundation/Summit/2022/program">
       <img src="../images/summit/program.svg"
 	   style="width: 70%;  padding-left:10px; "
 	   alt="seL4 Summit program" />
@@ -400,7 +400,7 @@ Older News: <%=reflist%>
     2 May 2022: One week left to propose a talk at the seL4 summit 2022!
 </div>
 <p>
-A reminder that you have until Monday 9th of May 2022 to <a href="../Foundation/Summit/cfp">propose a talk</a> for the seL4 Summit 2022.
+A reminder that you have until Monday 9th of May 2022 to <a href="../Foundation/Summit/2022/cfp">propose a talk</a> for the seL4 Summit 2022.
 </p>
 <p>
     <video width="320" height="240" controls>
@@ -438,7 +438,7 @@ A reminder that you have until Monday 9th of May 2022 to <a href="../Foundation/
 
     <p>
     Remember that you have until Monday 9th of May 2022 to
-    <a href="../Foundation/Summit/cfp">propose a talk</a>.
+    <a href="../Foundation/Summit/2022/cfp">propose a talk</a>.
     </p>
 
     <div class="highlight" style="text-align: center">
@@ -511,7 +511,7 @@ A reminder that you have until Monday 9th of May 2022 to <a href="../Foundation/
 <div class="highlight" >
 
   <h3>
-  We are <a href="../Foundation/Summit/cfp">calling for proposals to present</a> at the <a
+  We are <a href="../Foundation/Summit/2022/cfp">calling for proposals to present</a> at the <a
   href="../Foundation/Summit">seL4 Summit 2022</a>.
   </h3>
   <p>Share your seL4 work </p>
@@ -523,7 +523,7 @@ A reminder that you have until Monday 9th of May 2022 to <a href="../Foundation/
 
   <p>
 
-  Check the full <a href="../Foundation/Summit/cfp">Call For Presentations</a>.  To propose a talk,
+  Check the full <a href="../Foundation/Summit/2022/cfp">Call For Presentations</a>.  To propose a talk,
   send an abstract of <strong>one page or less</strong> <strong>by Monday 9th of
   May 2022</strong> to <a title="summit@sel4.systems"
   href="mailto:summit@sel4.systems">summit@sel4.systems</a>.  </p>

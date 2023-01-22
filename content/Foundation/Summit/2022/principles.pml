@@ -1,13 +1,13 @@
 <!--<title>Principles</title>-->
 <!--
-    Copyright 2023 seL4 Project a Series of LF Projects, LLC.
+    Copyright 2022 seL4 Project a Series of LF Projects, LLC.
     SPDX-License-Identifier: CC-BY-SA-4.0
 -->
 <h1>
-  seL4 Summit 2023
+  seL4 Summit 2022
 </h1>
 <h4>
-[Location and date TBC]
+Munich, Germany (hybrid), 10-13 Oct 2022
 </h4>
 
 <h3>
