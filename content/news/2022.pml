@@ -74,7 +74,7 @@ Older News: <%=reflist%>
     11 November 2022: The videos and slides of the seL4 summit 2022 are available online
 </div>
 <div>
-  <a href="/Foundation/Summit/">
+  <a href="/Foundation/Summit/2022">
     <img src="/images/sel4-summit-logo.svg"
     style="width: 20%;  padding-left:10px;  float:right"
     alt="seL4 summit" />
@@ -118,7 +118,7 @@ Older News: <%=reflist%>
    </a>
   </p>
   <p>
-    The seL4 Foundation thanks <a href="https://xcalibyte.com">Xcalibyte</a> for becoming a Bronze sponsor of the <a href="/Foundation/Summit/">seL4 Summit 2022</a>.
+    The seL4 Foundation thanks <a href="https://xcalibyte.com">Xcalibyte</a> for becoming a Bronze sponsor of the <a href="/Foundation/Summit/2022">seL4 Summit 2022</a>.
   </p>
   <p>
     Xcalibyte's mission is to improve the quality of software by
@@ -144,7 +144,7 @@ Older News: <%=reflist%>
 </div>
 <div>
   <p>
-    We are very fortunate to welcome four leaders at major funding agencies to participate in a session <a href="../Foundation/Summit/abstracts2022#a-Funding-agencies"><strong>Funding agencies: priorities and vision</strong></a> at the <a href="/Foundation/Summit/">seL4 summit</a>. They will each give their views on the priorities and vision of their agency in terms of high-assurance systems.
+    We are very fortunate to welcome four leaders at major funding agencies to participate in a session <a href="../Foundation/Summit/2022/abstracts2022#a-Funding-agencies"><strong>Funding agencies: priorities and vision</strong></a> at the <a href="/Foundation/Summit/2022/">seL4 summit</a>. They will each give their views on the priorities and vision of their agency in terms of high-assurance systems.
   </p>
 </div>
 <div class="speakers_grid">
@@ -153,7 +153,7 @@ Older News: <%=reflist%>
       <img src="../../images/summit/brad.jpg" alt="William “Brad” Martin" width="140"/>
     </div>
     <div class="speaker_title" style="text-align:center">
-      <a href="/Foundation/Summit/abstracts2022#a-Funding-agencies-darpa">William “Brad” Martin</a>
+      <a href="/Foundation/Summit/2022/abstracts2022#a-Funding-agencies-darpa">William “Brad” Martin</a>
       <br>
       <a href="https://www.darpa.mil/">DARPA</a>
     </div>
@@ -163,7 +163,7 @@ Older News: <%=reflist%>
       <img src="../../images/summit/paul.jpg" alt="Paul Waller" width="140"/>
     </div>
     <div class="speaker_title" style="text-align:center">
-      <a href="/Foundation/Summit/abstracts2022#a-Funding-agencies-ncsc">Paul Waller</a>
+      <a href="/Foundation/Summit/2022/abstracts2022#a-Funding-agencies-ncsc">Paul Waller</a>
       <br>
       <a href="https://www.ncsc.gov.uk/">NCSC</a>
     </div>
@@ -173,7 +173,7 @@ Older News: <%=reflist%>
       <img src="../../images/summit/cyberagentur.png" alt="Cyberagentur" width="140"/>
     </div>
     <div class="speaker_title" style="text-align:center">
-      <a href="/Foundation/Summit/abstracts2022#a-Funding-agencies-cyberagentur">Sebastian Jester</a>
+      <a href="/Foundation/Summit/2022/abstracts2022#a-Funding-agencies-cyberagentur">Sebastian Jester</a>
       <br>
       <a href="https://www.cyberagentur.de/">Cyberagentur</a>
     </div>
@@ -183,7 +183,7 @@ Older News: <%=reflist%>
       <img src="../../images/summit/ticky.jpg" alt="Dr. Shreekant (Ticky) Thakkar" width="140"/>
     </div>
     <div class="speaker_title" style="text-align:center">
-      <a href="/Foundation/Summit/abstracts2022#a-Funding-agencies-tii">Shreekant (Ticky) Thakkar</a>
+      <a href="/Foundation/Summit/2022/abstracts2022#a-Funding-agencies-tii">Shreekant (Ticky) Thakkar</a>
       <br>
       <a href="https://www.tii.ae/">TII</a>
     </div>
@@ -204,7 +204,7 @@ Older News: <%=reflist%>
         </a>
   </p>
   <p>
-    The seL4 Foundation thanks <a href="https://dornerworks.com/">DornerWorks</a> for becoming a Bronze sponsor of the <a href="/Foundation/Summit/">seL4 Summit 2022</a>.
+    The seL4 Foundation thanks <a href="https://dornerworks.com/">DornerWorks</a> for becoming a Bronze sponsor of the <a href="/Foundation/Summit/2022/">seL4 Summit 2022</a>.
   </p>
   <p>
     <a href="https://dornerworks.com/">DornerWorks</a> helps product makers turn their ideas into reality with FPGA, hardware, and embedded software engineering expertise. Among other areas, DornerWorks specialises in seL4 microkernel-based development.
@@ -231,7 +231,7 @@ Older News: <%=reflist%>
         </a>
   </p>
   <p>
-    The seL4 Foundation thanks <a href="https://horizon.ai/">Horizon Robotics</a> for becoming a Bronze sponsor of the <a href="/Foundation/Summit/">seL4 Summit 2022</a>.
+    The seL4 Foundation thanks <a href="https://horizon.ai/">Horizon Robotics</a> for becoming a Bronze sponsor of the <a href="/Foundation/Summit/2022/">seL4 Summit 2022</a>.
   </p>
   <p>
     Horizon Robotics is a leading provider of computing platforms for smart vehicles with the mission to make human life safer and better.
@@ -273,7 +273,7 @@ Older News: <%=reflist%>
 <div>
 
   <p>
-    <a href="/Foundation/Summit/">
+    <a href="/Foundation/Summit/2022/">
       <img src="/images/sel4-summit-logo.svg"
 	   style="width: 20%;  padding-left:10px;  float:right"
 	   alt="seL4 summit" />
@@ -339,7 +339,7 @@ Older News: <%=reflist%>
 <div>
 
   <p>
-    <a href="/Foundation/Summit/">
+    <a href="/Foundation/Summit/2022/">
       <img src="/images/sel4-summit-logo.svg"
 	   style="width: 20%;  padding-left:10px;  float:right"
 	   alt="seL4 summit" />
@@ -412,14 +412,14 @@ A reminder that you have until Monday 9th of May 2022 to <a href="../Foundation/
     29 April 2022: The seL4 Summit 2022 will be in Munich, Germany, on 10-12 Oct 2022
 </div>
 <div>
-    <a href="../Foundation/Summit">
+    <a href="../Foundation/Summit/2022/">
       <img src="../images/sel4-summit-logo.svg"
 	   style="width: 20%;  padding-left:10px;  float:right"
 	   alt="seL4 Summit 2022" />
     </a>
 
     <p>
-    It is our pleasure to confirm that the <a href="../Foundation/Summit">seL4
+    It is our pleasure to confirm that the <a href="../Foundation/Summit/2022/">seL4
     Summit 2022</a> will be in:
     </p>
 
@@ -502,7 +502,7 @@ A reminder that you have until Monday 9th of May 2022 to <a href="../Foundation/
 <div>
 
 
-    <a href="../Foundation/Summit">
+    <a href="../Foundation/Summit/2022/">
       <img src="../images/sel4-summit-logo.svg"
 	   style="width: 20%;  padding-left:10px;  float:right"
 	   alt="seL4 Summit 2022" />
@@ -541,7 +541,7 @@ A reminder that you have until Monday 9th of May 2022 to <a href="../Foundation/
 <div>
 
 
-    <a href="../Foundation/Summit">
+    <a href="../Foundation/Summit/2022/">
       <img src="../images/sel4-summit-logo.svg"
 	   style="width: 20%;  padding-left:10px;  float:right"
 	   alt="seL4 Summit 2022" />
@@ -550,7 +550,7 @@ A reminder that you have until Monday 9th of May 2022 to <a href="../Foundation/
   <p>
 
     The seL4 Foundation is excited to have gathered a top notch team of
-    people to serve as <a href="../Foundation/Summit">PC members for the seL4
+    people to serve as <a href="../Foundation/Summit/2022">PC members for the seL4
     summit 2022</a>. They come from across the the seL4 ecosystem: users,
     contributors, committers, experts, advocates, researchers, and engineers.
 
@@ -562,7 +562,7 @@ A reminder that you have until Monday 9th of May 2022 to <a href="../Foundation/
   </p>
   <p style="text-align: center;">
 
-    <a href="../Foundation/Summit">
+    <a href="../Foundation/Summit/2022">
       <img src="../images/summit/pc22.png"
 	   style="width: 60%;  padding-left:10px; "
 	   alt="PC for seL4 Summit 2022" />
@@ -639,7 +639,7 @@ A reminder that you have until Monday 9th of May 2022 to <a href="../Foundation/
 <div>
 
   <p>
-    <a href="/Foundation/Summit/">
+    <a href="/Foundation/Summit/2022/">
       <img src="/images/seL4.svg"
 	   style="width: 20%;  padding-left:10px;  float:right"
 	   alt="seL4 summit" />
@@ -665,7 +665,7 @@ A reminder that you have until Monday 9th of May 2022 to <a href="../Foundation/
   </strong>
   </p>
   <p>
-  More information <a href="/Foundation/Summit/">here</a>.
+  More information <a href="/Foundation/Summit/2022/">here</a>.
   </p>
 
 </div>

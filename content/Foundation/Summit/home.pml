@@ -48,7 +48,7 @@ seL4 Summit 2023, [Location TBC]
     Excellence</a>, and were hosted in the US.
   </p>
   <p>
-    The seL4 Summit 2022 will be the second to be organised by the <a href="../">seL4 Foundation</a>, established in 2020. The first was <a href="/2022">summit 2022</a>, which was held in Munich, Germany.
+    The seL4 Summit 2022 will be the second to be organised by the <a href="../">seL4 Foundation</a>, established in 2020. The first was <a href="2022/">summit 2022</a>, which was held in Munich, Germany.
   </p>
   <p>
     Summit organisation and hosting is based on these <a href="principles">principles</a>.
