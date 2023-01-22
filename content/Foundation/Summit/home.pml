@@ -10,7 +10,7 @@
 Previous summits: <a href="2022/">2022</a>
 </p>
 <h4>
-seL4 Summit 2023, Minneapolis, USA
+seL4 Summit 2023, [Location TBC]
 </h4>
 
 
@@ -60,7 +60,7 @@ seL4 Summit 2023, Minneapolis, USA
     Location
   </h3>
   <p>
-    The seL4 Summit 2023 will be held in Minneapolis, USA. Dates and venue to be confirmed.
+    The seL4 Summit 2023 will be held in [Location TBC]. Dates and venue to be confirmed.
   </p>
 </div>
 
@@ -79,25 +79,25 @@ seL4 Summit 2023, Minneapolis, USA
     <div class="person_title">
       <strong><a class="list_link" href="http://loonwerks.com/people/darren-cofer.html">Darren Cofer <br /> (co-chair)</a></strong>
     </div>
-  </div>
+  </div-->
 
-  <div class="person">
+  <!--div class="person">
     <div class="person_pic">
       <a href="https://trustworthy.systems/people/?cn=Ihor+Kuz"><img src="../../images/tsc/ihor.jpg" alt="Ihor Kuz" width="80" /></a>
     </div>
     <div class="person_title">
       <strong><a class="list_link" href="https://trustworthy.systems/people/?cn=Ihor+Kuz">Ihor Kuz <br /> (co-chair)</a></strong>
     </div>
-  </div>
+  </div-->
 
-  <div class="person">
+  <!--div class="person">
     <div class="person_pic">
       <a href="https://proofcraft.systems/#june"><img src="../Board/TS-June-s.jpg" alt="June Andronick" width="80" /></a>
     </div>
     <div class="person_title">
       <strong><a class="list_link" href="https://proofcraft.systems/#june">June Andronic</a></strong>
     </div>
-  </div>
+  </div-->
 
   <!--div class="person">
     <div class="person_pic">
@@ -186,9 +186,6 @@ seL4 Summit 2023, Minneapolis, USA
   <h3 id="summit-contact">
     Contact
   </h3>
-  <!--p>
-    For questions regarding location, venue, and registration, please contact <a title="sel4summit.cyber@hensoldt.net" href="mailto:sel4summit.cyber@hensoldt.net">sel4summit.cyber@hensoldt.net</a>.
-  </p-->
   <p>
     For any questions regarding the summit, please contact <a title="summit@sel4.systems" href="mailto:summit@sel4.systems">summit@sel4.systems</a>.
   </p>
