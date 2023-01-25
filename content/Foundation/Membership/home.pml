@@ -60,18 +60,6 @@
     </div>
     <div class="sponsor">
       <div class="sponsor-pic">
-        <a href="https://lixiang.com">
-          <img src="LOGOS/Li_Auto.svg" style="width: 248px"
-              alt="Li Auto logo">
-        </a>
-      </div>
-      <div class="sponsor-name">
-	      Li Auto Inc
-      </div>
-      <div class="sponsor-info"></div>
-    </div>
-    <div class="sponsor">
-      <div class="sponsor-pic">
           <a href="http://nio.com/">
             <!-- NIO PNG has width 248, better not scale -->
             <img src="LOGOS/NIO.png" style="width: 248px" alt="NIO logo">
