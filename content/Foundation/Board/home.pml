@@ -170,26 +170,6 @@
 
 <div class="governing-container">
   <div class="governing-item-pic">
-    <a href="Li-Ian.png"><img src="Li-Ian-s.png" alt="Ian Xu" width="80" /></a>
-  </div>
-  <div class="governing-item-heading">
-    <strong><a href="https://www.linkedin.com/in/yingcxu/">Ian
-    Xu</a></strong> <span class="person_title_col"><em>Vice
-    President, <a href="https://lixiang.com">Li Auto</a></em></span>
-  </div>
-  <div class="governing-item-text">
-    <p>
-      Ian is the representative of Premium Member Li Auto. Much of
-      Ian's experience is design and development of networking and
-      wireless communication products. Ian leads Li Auto's Computing
-      Platform design and development including hardware, OS and
-      run-time environment.
-    </p>
-  </div>
-</div>
-
-<div class="governing-container">
-  <div class="governing-item-pic">
     <a href="Jump-Matt.jpg"><img src="Jump-Matt-s.jpg" alt="Matthew Grosvenor" width="80" /></a>
   </div>
   <div class="governing-item-heading">
