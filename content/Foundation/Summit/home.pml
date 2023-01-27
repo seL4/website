@@ -45,12 +45,12 @@ seL4 Summit 2023, [Location TBC]
   </p>
   <p>
     It aims to gather all the seL4 community to learn, share, and connect:
+  </p>
     <ul>
       <li>learn about the seL4 technology, its latest progress, use, successes, challenges, plans;</li>
       <li>share exciting seL4 development, research, experience, application in the real world;</li>
       <li>connect with other seL4 developers, users, providers, customers, supporters, potential partners and enthusiasts.</li>
     </ul>
-  </p>
   <p>
     The seL4 Summit is organised by the <a href="../">seL4 Foundation</a>, in a location aimed to be on a different continent each year, as far as possible.
   </p>
