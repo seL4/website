@@ -41,17 +41,21 @@ seL4 Summit 2023, [Location TBC]
     About
   </h3>
   <p>
-    The seL4 Summit 2023 will be the fifth edition of the international summit on the <a href="../../About">seL4 microkernel</a>, the world's most highly assured OS kernel.
+    The seL4 Summit is the annual international summit on the <a href="../../About">seL4 microkernel</a>, the world's most highly assured OS kernel, as well as on all seL4-related technology, tools, infrastructure, products, projects, and people.
   </p>
   <p>
-    The first three seL4 Summits were organised by the <a href="https://trustedcomputingcoe.org/summits/">Trusted Computing Center of
-    Excellence</a>, and were hosted in the US.
+    It aims to gather all the seL4 community to learn, share, and connect:
+    <ul>
+      <li>learn about the seL4 technology, its latest progress, use, successes, challenges, plans;</li>
+      <li>share exciting seL4 development, research, experience, application in the real world;</li>
+      <li>connect with other seL4 developers, users, providers, customers, supporters, potential partners and enthusiasts.</li>
+    </ul>
   </p>
   <p>
-    The seL4 Summit 2022 will be the second to be organised by the <a href="../">seL4 Foundation</a>, established in 2020. The first was <a href="2022/">summit 2022</a>, which was held in Munich, Germany.
+    The seL4 Summit is organised by the <a href="../">seL4 Foundation</a>, in a location aimed to be on a different continent each year, as far as possible.
   </p>
   <p>
-    Summit organisation and hosting is based on these <a href="principles">principles</a>.
+    An open call for presentations invites submissions of short abstracts about cool work on seL4, and a Program Committee made of a wide range of representatives of the seL4 community is in charge of the technical content (reviewing submission, selecting invited speakers, defining the program).
   </p>
 </div>
 
