@@ -19,8 +19,7 @@ seL4 Summit 2023, [Location TBC]
     <li><a href="#summit-news">Latest News</a></li>
     <li><a href="#summit-about">About</a></li>
     <li><a href="#summit-location">Location</a></li>
-<!--    <li><a href="#summit-registration">Registration</a></li>-->
-    <li><a href="#summit-pc">Program Committee</a></li>
+    <!--li><a href="#summit-pc">Program Committee</a></li-->
     <li><a href="#summit-contact">Contact</a></li>
   </ul>
 </div>
@@ -68,122 +67,122 @@ seL4 Summit 2023, [Location TBC]
   </p>
 </div>
 
-<div class="summit_div">
+<!--div class="summit_div">
   <h3 id="summit-pc">
     Program committee
   </h3>
 </div>
 
-<p>TBC</p>
 <div class="people_grid">
-  <!--div class="person">
+  <div class="person">
     <div class="person_pic">
       <a href="http://loonwerks.com/people/darren-cofer.html"><img src="../../images/summit/darren.jpg" alt="Darren Cofer" width="80" /></a>
     </div>
     <div class="person_title">
       <strong><a class="list_link" href="http://loonwerks.com/people/darren-cofer.html">Darren Cofer <br /> (co-chair)</a></strong>
     </div>
-  </div-->
+  </div>
 
-  <!--div class="person">
+  <div class="person">
     <div class="person_pic">
       <a href="https://trustworthy.systems/people/?cn=Ihor+Kuz"><img src="../../images/tsc/ihor.jpg" alt="Ihor Kuz" width="80" /></a>
     </div>
     <div class="person_title">
       <strong><a class="list_link" href="https://trustworthy.systems/people/?cn=Ihor+Kuz">Ihor Kuz <br /> (co-chair)</a></strong>
     </div>
-  </div-->
+  </div>
 
-  <!--div class="person">
-    <div class="person_pic">
-      <a href="https://proofcraft.systems/#june"><img src="../Board/TS-June-s.jpg" alt="June Andronick" width="80" /></a>
-    </div>
-    <div class="person_title">
-      <strong><a class="list_link" href="https://proofcraft.systems/#june">June Andronic</a></strong>
-    </div>
-  </div-->
-
-  <!--div class="person">
-    <div class="person_pic">
-      <a href="https://www.linkedin.com/in/annamlyons/"><img src="../../images/tsc/anna.png" alt="Anna Lyons" width="80" /></a>
-    </div>
-    <div class="person_title">
-      <strong><a class="list_link" href="https://www.linkedin.com/in/annamlyons/">Anna Lyons</a></strong>
-    </div>
-  </div-->
-
-  <!--div class="person">
-    <div class="person_pic">
-      <a href="https://www.linkedin.com/in/axelheider"><img src="../../images/summit/axel.png" alt="Axel Heider" width="80" /></a>
-    </div>
-    <div class="person_title">
-      <strong><a class="list_link" href="https://www.linkedin.com/in/axelheider">Axel Heider</a></strong>
-    </div>
-  </div-->
-
-  <!--div class="person">
-    <div class="person_pic">
-      <a href="https://trustworthy.systems/people/?cn=Gernot+Heiser"><img src="../Board/TS-Gernot-s.jpg" alt="Gernot Heiser" width="80"/></a>
-    </div>
-    <div class="person_title">
-      <strong><a class="list_link" href="https://trustworthy.systems/people/?cn=Gernot+Heiser">Gernot Heiser</a></strong>
-    </div>
-  </div-->
-
-  <!--div class="person">
-    <div class="person_pic">
-      <a href="https://en.wikipedia.org/wiki/John_Launchbury"><img src="../../images/summit/john.jpg" alt="John Launchbury" width="80"/></a>
-    </div>
-    <div class="person_title">
-      <strong><a class="list_link" href="https://en.wikipedia.org/wiki/John_Launchbury">John Launchbury</a></strong>
-    </div>
-  </div-->
-
-  <!--div class="person">
-    <div class="person_pic">
-      <a href="https://www.linkedin.com/in/kent-mcleod-1703a757"><img src="../../images/tsc/kent.jpg" alt="Kent Mcleod" width="80" /></a>
-    </div>
-    <div class="person_title">
-      <strong><a class="list_link" href="https://www.linkedin.com/in/kent-mcleod-1703a757">Kent Mcleod</a></strong>
-    </div>
-  </div-->
-
-  <!--div class="person">
-    <div class="person_pic">
-      <a href="https://nickspinale.com"><img src="../../images/summit/nick.jpg" alt="Nick Spinale" width="80"/></a>
-    </div>
-    <div class="person_title">
-      <strong><a class="list_link" href="https://nickspinale.com">Nick Spinale</a></strong>
-    </div>
-  </div-->
-
-  <!--div class="person">
+  <div class="person">
     <div class="person_pic">
       <a href="https://perry.alexander.name"><img src="../../images/summit/perry.jpg" alt="Perry Alexander" width="80"/></a>
     </div>
     <div class="person_title">
       <strong><a class="list_link" href="https://perry.alexander.name">Perry Alexander</a></strong>
     </div>
-  </div-->
+  </div>
 
-  <!--div class="person">
+  <div class="person">
     <div class="person_pic">
-      <a href="https://www.linkedin.com/in/robbie-vanvossen-gr/"><img src="../../images/summit/robbie.png" alt="Robbie VanVossen" width="80"/></a>
+      <a href="https://proofcraft.systems/#june"><img src="../Board/TS-June-s.jpg" alt="June Andronick" width="80" /></a>
     </div>
     <div class="person_title">
-      <strong><a class="list_link" href="https://www.linkedin.com/in/robbie-vanvossen-gr/">Robbie VanVossen</a></strong>
+      <strong><a class="list_link" href="https://proofcraft.systems/#june">June Andronic</a></strong>
     </div>
-  </div-->
+  </div>
 
-  <!--div class="person">
+  <div class="person">
     <div class="person_pic">
       <a href="https://www.adventiumlabs.com/team-member/todd-carpenter"><img src="../../images/summit/todd.jpg" alt="Todd Carpenter" width="80"/></a>
     </div>
     <div class="person_title">
       <strong><a class="list_link" href="https://www.adventiumlabs.com/team-member/todd-carpenter">Todd Carpenter</a></strong>
     </div>
-  </div-->
-</div>
+  </div>
+
+  <div class="person">
+    <div class="person_pic">
+      <a href=""><img src="../../images/summit/alison.jpg" alt="Alison Felizzi" width="80"/></a>
+    </div>
+    <div class="person_title">
+      <strong><a class="list_link" href="">Alison Felizzi</a></strong>
+    </div>
+  </div>
+
+  <div class="person">
+    <div class="person_pic">
+      <a href="https://www.linkedin.com/in/axelheider"><img src="../../images/summit/axel.png" alt="Axel Heider" width="80" /></a>
+    </div>
+    <div class="person_title">
+      <strong><a class="list_link" href="https://www.linkedin.com/in/axelheider">Axel Heider</a></strong>
+    </div>
+  </div>
+
+  <div class="person">
+    <div class="person_pic">
+      <a href="https://trustworthy.systems/people/?cn=Gernot+Heiser"><img src="../Board/TS-Gernot-s.jpg" alt="Gernot Heiser" width="80"/></a>
+    </div>
+    <div class="person_title">
+      <strong><a class="list_link" href="https://trustworthy.systems/people/?cn=Gernot+Heiser">Gernot Heiser</a></strong>
+    </div>
+  </div>
+
+  <div class="person">
+    <div class="person_pic">
+      <a href="https://trustworthy.systems/people/?cn=Lucy+Parker"><img src="../../images/summit/lucy.jpg" alt="Lucy Parker" width="80"/></a>
+    </div>
+    <div class="person_title">
+      <strong><a class="list_link" href="https://trustworthy.systems/people/?cn=Lucy+Parker">Lucy Parker</a></strong>
+    </div>
+  </div>
+
+  <div class="person">
+    <div class="person_pic">
+      <a href="https://nickspinale.com"><img src="../../images/summit/nick.jpg" alt="Nick Spinale" width="80"/></a>
+    </div>
+    <div class="person_title">
+      <strong><a class="list_link" href="https://nickspinale.com">Nick Spinale</a></strong>
+    </div>
+  </div>
+
+  <div class="person">
+    <div class="person_pic">
+      <a href="https://www.linkedin.com/in/robbie-vanvossen-gr/"><img src="../../images/summit/robbie.png" alt="Robbie VanVossen" width="80"/></a>
+    </div>
+    <div class="person_title">
+      <strong><a class="list_link" href="https://www.linkedin.com/in/robbie-vanvossen-gr/">Robbie VanVossen [?]</a></strong>
+    </div>
+  </div>
+
+  <div class="person">
+    <div class="person_pic">
+      <a href=""><img src="" alt="" width="80"/></a>
+    </div>
+    <div class="person_title">
+      <strong><a class="list_link" href="">Martin [?]</a></strong>
+    </div>
+  </div>
+</div-->
+
 
 
 <div class="summit_div">
