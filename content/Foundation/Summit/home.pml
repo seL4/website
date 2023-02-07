@@ -32,13 +32,13 @@ seL4 Summit 2023, Minneapolis, USA
     </h3>
   </div>
   <p>
-    It is our pleasure to confirm that the <a href="../Foundation/Summit/">seL4Summit 2023</a> will be in:
+    It is our pleasure to confirm that the seL4Summit 2023 will be in:<p>
   <div class="highlight">Minneapolis, USA, Sept/Oct 2023 (dates TBC).</div>
     <video width="320" height="240" controls>
         <source src="summit_summit-2023_comms_sel4-summit23-location.m4v" type="video/mp4">
         Your browser does not support the video tag.
       </video>
-  </p>
+
   <p>
     The summit will be hosted by the <a href="https://www.linuxfoundation.org/">Linux Foundation</a>, and will be an in-person event.
   </p>
