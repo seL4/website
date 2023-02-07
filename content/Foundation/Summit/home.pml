@@ -10,8 +10,9 @@
 Previous summits: <a href="2022/">2022</a>
 </p>
 <h4>
-seL4 Summit 2023, [Location TBC]
+seL4 Summit 2023, Minneapolis, USA
 </h4>
+<p>Sept/Oct 2023, dates TBC</p>
 
 
 <div class="summit_div">
@@ -19,7 +20,7 @@ seL4 Summit 2023, [Location TBC]
     <li><a href="#summit-news">Latest News</a></li>
     <li><a href="#summit-about">About</a></li>
     <li><a href="#summit-location">Location</a></li>
-    <!--li><a href="#summit-pc">Program Committee</a></li-->
+    <li><a href="#summit-pc">Program Committee</a></li>
     <li><a href="#summit-contact">Contact</a></li>
   </ul>
 </div>
@@ -31,7 +32,27 @@ seL4 Summit 2023, [Location TBC]
     </h3>
   </div>
   <p>
-    TBD
+    It is our pleasure to confirm that the <a href="../Foundation/Summit/">seL4Summit 2023</a> will be in:
+  <div class="highlight">Minneapolis, USA, Sept/Oct 2023 (dates TBC).</div>
+    <video width="320" height="240" controls>
+        <source src="summit_summit-2023_comms_sel4-summit23-location.m4v" type="video/mp4">
+        Your browser does not support the video tag.
+      </video>
+  </p>
+  <p>
+    The summit will be hosted by the <a href="https://www.linuxfoundation.org/">Linux Foundation</a>, and will be an in-person event.
+  </p>
+  <p>
+    It will focus on four core areas:
+  </p>
+  <ul>
+    <li>seL4 work</li>
+    <li>seL4 experience</li>
+    <li>seL4 thoughts</li>
+    <li>seL4 questions</li>
+  </ul>
+  <p>
+    We will announce a Call for Presentation in the coming weeks. Stay tuned!
   </p>
 </div>
 
@@ -63,16 +84,20 @@ seL4 Summit 2023, [Location TBC]
     Location
   </h3>
   <p>
-    The seL4 Summit 2023 will be held in [Location TBC]. Dates and venue to be confirmed.
+    The seL4 Summit 2023 will be held in Minneapolis, USA, Sept/Oct 2023. Dates and venue to be confirmed.
   </p>
 </div>
 
-<!--div class="summit_div">
+<div class="summit_div">
   <h3 id="summit-pc">
     Program committee
   </h3>
+  <p>
+    Coming soon!
+  </p>
 </div>
 
+<!--
 <div class="people_grid">
   <div class="person">
     <div class="person_pic">
@@ -121,10 +146,10 @@ seL4 Summit 2023, [Location TBC]
 
   <div class="person">
     <div class="person_pic">
-      <a href=""><img src="../../images/summit/alison.jpg" alt="Alison Felizzi" width="80"/></a>
+      <img src="../../images/summit/alison.jpg" alt="Alison Felizzi" width="80"/>
     </div>
     <div class="person_title">
-      <strong><a class="list_link" href="">Alison Felizzi</a></strong>
+      <strong>Alison Felizzi</strong>
     </div>
   </div>
 
@@ -178,7 +203,7 @@ seL4 Summit 2023, [Location TBC]
       <a href=""><img src="" alt="" width="80"/></a>
     </div>
     <div class="person_title">
-      <strong><a class="list_link" href="">Martin [?]</a></strong>
+      <strong><a class="list_link" href="">Martin (NCSC)</a></strong>
     </div>
   </div>
 </div-->
