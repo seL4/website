@@ -32,10 +32,11 @@ seL4 Summit 2023, Minneapolis, USA
     </h3>
   </div>
   <p>
-    It is our pleasure to confirm that the seL4 Summit 2023 will be in:</p>
+    It is our pleasure to confirm that the seL4 Summit 2023 will be in:
+    </p>
   <div class="highlight">Minneapolis, USA, Sept/Oct 2023 (dates TBC).</div>
     <video width="320" height="240" controls>
-        <source src="summit_summit-2023_comms_sel4-summit23-location.m4v" type="video/mp4">
+        <source src="summit-2023-location.m4v" type="video/mp4">
         Your browser does not support the video tag.
       </video>
 
@@ -110,10 +111,10 @@ seL4 Summit 2023, Minneapolis, USA
 
   <div class="person">
     <div class="person_pic">
-      <a href="https://trustworthy.systems/people/?cn=Ihor+Kuz"><img src="../../images/tsc/ihor.jpg" alt="Ihor Kuz" width="80" /></a>
+      <a href="www.ikuz.org"><img src="../../images/tsc/ihor.jpg" alt="Ihor Kuz" width="80" /></a>
     </div>
     <div class="person_title">
-      <strong><a class="list_link" href="https://trustworthy.systems/people/?cn=Ihor+Kuz">Ihor Kuz <br /> (co-chair)</a></strong>
+      <strong><a class="list_link" href=" www.ikuz.org">Ihor Kuz <br /> (co-chair)</a></strong>
     </div>
   </div>
 

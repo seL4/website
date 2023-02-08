@@ -65,11 +65,11 @@ Older News: <%=reflist%>
     alt="seL4 summit" />
     </a>
     <p>
-      It is our pleasure to confirm that the <a href="../Foundation/Summit/">seL4 Summit 2023</a> will be in:</p>
+      It is our pleasure to confirm that the <a href="../Foundation/Summit/">seL4 Summit 2023</a> will be in:
+    </p>
       <div class="highlight">Minneapolis, USA, Sept/Oct 2023 (dates TBC).</div>
-    <p>
       <video width="320" height="240" controls>
-        <source src="../Foundation/Summit/summit23-location.m4v" type="video/mp4">
+        <source src="../Foundation/Summit/summit-2023-location.m4v" type="video/mp4">
         Your browser does not support the video tag.
       </video>
   <p>
