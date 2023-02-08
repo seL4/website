@@ -97,8 +97,8 @@ seL4 Summit 2023, Minneapolis, USA
   </p>
 </div>
 
-<!--
-<div class="people_grid">
+
+<!--div class="people_grid">
   <div class="person">
     <div class="person_pic">
       <a href="http://loonwerks.com/people/darren-cofer.html"><img src="../../images/summit/darren.jpg" alt="Darren Cofer" width="80" /></a>
@@ -200,12 +200,13 @@ seL4 Summit 2023, Minneapolis, USA
 
   <div class="person">
     <div class="person_pic">
-      <a href=""><img src="" alt="" width="80"/></a>
+      <a href="https://www.ncsc.gov.uk/"><img src="../../images/summit/person-pc.svg" alt="NCSC" width="80"/></a>
     </div>
     <div class="person_title">
-      <strong><a class="list_link" href="">Martin (NCSC)</a></strong>
+      <strong><a class="list_link" href="https://www.ncsc.gov.uk/">Martin (NCSC)</a></strong>
     </div>
   </div>
+
 </div-->
 
 
