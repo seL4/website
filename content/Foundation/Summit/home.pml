@@ -35,10 +35,10 @@ seL4 Summit 2023, Minneapolis, USA
     It is our pleasure to confirm that the seL4 Summit 2023 will be in:
     </p>
   <div class="highlight">Minneapolis, USA, Sept/Oct 2023 (dates TBC).</div>
-    <video width="320" height="240" controls>
+    <!--video width="320" height="240" controls>
         <source src="summit-2023-location.m4v" type="video/mp4">
         Your browser does not support the video tag.
-      </video>
+      </video-->
 
   <p>
     The summit will be hosted by the <a href="https://www.linuxfoundation.org/">Linux Foundation</a>, and will be an in-person event.
