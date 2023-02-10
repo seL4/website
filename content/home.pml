@@ -28,17 +28,17 @@
     <ul>
       <li>
         <strong>
+          13 Feb 2023: meet the Program Committee of the seL4 summit 2023
+        </strong>
+      </li>
+      <li>
+        <strong>
           10 Feb 2023: the seL4 summit 2023 will be held in Minneapolis, USA
         </strong>
       </li>
       <li>
         <strong>
           14 Dec 2022: seL4 features in the Linux Foundation’s 2022 Annual report
-        </strong>
-      </li>
-      <li>
-        <strong>
-          11 Nov 2022: The videos and slides of the seL4 summit 2022 are available online
         </strong>
       </li>
       <li style="margin-top:0.2em;list-style-type:none">
