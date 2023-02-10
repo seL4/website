@@ -4,11 +4,8 @@
     SPDX-License-Identifier: CC-BY-SA-4.0
 -->
 <h1>
-  seL4 Summit 2023
+  seL4 Summit
 </h1>
-<h4>
-[Location and date TBC]
-</h4>
 
 <h3>
    Principles
