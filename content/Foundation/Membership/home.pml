@@ -169,7 +169,7 @@
     </div>
     <div class="sponsor">
       <div class="sponsor-pic">
-        <a href="https://kry10.com">
+        <a href="https://www.kry10.com/">
           <img src="LOGOS/Kry10.svg" style="width: 250px" alt="Kry10 logo">
         </a>
       </div>

@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Created with Inkscape (http://www.inkscape.org/) -->
+
+<svg
+   width="80.433334mm"
+   height="80.433334mm"
+   viewBox="0 0 80.433334 80.433334"
+   version="1.1"
+   id="svg5"
+   inkscape:version="1.1.1 (3bf5ae0d25, 2021-09-20)"
+   sodipodi:docname="person-pc.svg"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:svg="http://www.w3.org/2000/svg">
+  <sodipodi:namedview
+     id="namedview7"
+     pagecolor="#ffffff"
+     bordercolor="#666666"
+     borderopacity="1.0"
+     inkscape:pageshadow="2"
+     inkscape:pageopacity="0.0"
+     inkscape:pagecheckerboard="0"
+     inkscape:document-units="mm"
+     showgrid="false"
+     inkscape:zoom="0.66368547"
+     inkscape:cx="125.81261"
+     inkscape:cy="158.96084"
+     inkscape:window-width="1920"
+     inkscape:window-height="1001"
+     inkscape:window-x="-9"
+     inkscape:window-y="-9"
+     inkscape:window-maximized="1"
+     inkscape:current-layer="layer1"
+     fit-margin-top="0"
+     fit-margin-left="0"
+     fit-margin-right="0"
+     fit-margin-bottom="0" />
+  <defs
+     id="defs2">
+    <clipPath
+       id="clip0">
+      <rect
+         x="456"
+         y="298"
+         width="304"
+         height="304"
+         id="rect101" />
+    </clipPath>
+    <clipPath
+       id="clip0-8">
+      <rect
+         x="456"
+         y="298"
+         width="304"
+         height="304"
+         id="rect204" />
+    </clipPath>
+  </defs>
+  <g
+     inkscape:label="Layer 1"
+     inkscape:groupmode="layer"
+     id="layer1"
+     transform="translate(-57.853132,-106.48937)">
+    <g
+       clip-path="url(#clip0-8)"
+       transform="matrix(0.26458333,0,0,0.26458333,-62.796866,27.643542)"
+       id="g217">
+      <path
+         d="m 536.418,571.561 c -15.723,-33.646 3.803,-71.693 43.613,-84.982 39.809,-13.288 84.828,3.214 100.551,36.86 7.199,15.405 7.225,32.544 0.073,47.965 z"
+         fill="#96ca4f"
+         fill-rule="evenodd"
+         id="path209" />
+      <path
+         d="m 471,450 c 0,-75.663 61.337,-137 137,-137 75.663,0 137,61.337 137,137 0,75.663 -61.337,137 -137,137 -75.663,0 -137,-61.337 -137,-137 z"
+         stroke="#ffffff"
+         stroke-width="30"
+         stroke-miterlimit="8"
+         fill="none"
+         fill-rule="evenodd"
+         id="path211" />
+      <path
+         d="m 575.5,434 c 0,-18.502 14.998,-33.5 33.5,-33.5 18.502,0 33.5,14.998 33.5,33.5 0,18.502 -14.998,33.5 -33.5,33.5 -18.502,0 -33.5,-14.998 -33.5,-33.5 z"
+         stroke="#96ca4f"
+         stroke-width="16.6667"
+         stroke-miterlimit="8"
+         fill="#96ca4f"
+         fill-rule="evenodd"
+         id="path213" />
+      <path
+         d="m 487.5,450 c 0,-67.103 54.397,-121.5 121.5,-121.5 67.103,0 121.5,54.397 121.5,121.5 0,67.103 -54.397,121.5 -121.5,121.5 -67.103,0 -121.5,-54.397 -121.5,-121.5 z"
+         stroke="#96ca4f"
+         stroke-width="16.6667"
+         stroke-miterlimit="8"
+         fill="none"
+         fill-rule="evenodd"
+         id="path215" />
+    </g>
+  </g>
+</svg>

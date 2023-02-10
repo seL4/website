@@ -84,7 +84,7 @@
       RTOS. She holds a PhD
       from <a href="https://www.universite-paris-saclay.fr/en">Paris-Saclay
       University</a>. In 2011 she was recognised by MIT Tech Review as
-      a <a href="http://www2.technologyreview.com/tr35/profile.aspx?trid=1114">Top
+      a <a href="https://www.technologyreview.com/innovator/june-andronick">Top
 	Innovator under 35</a>. She is a conjoint professor
 	at <a href="https://unsw.edu.au/">UNSW Sydney</a>.
     </p>

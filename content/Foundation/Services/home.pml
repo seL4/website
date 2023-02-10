@@ -209,7 +209,7 @@
     </tr>
     <tr>
       <td>
-        <a href="https://kry10.com">
+        <a href="https://www.kry10.com/">
         <img src="/Foundation/Membership/LOGOS/Kry10.svg"
 	  style="width: 200px" alt="Kry10">
 	</a>
@@ -240,7 +240,7 @@
       <li>verification: user-level OS</li>
       <li>verification: applications</li>
     </ul>
-  For further information, visit <a href="https://kry10.com">Kry10</a> or <a href="https://kry10.com/contact">contact</a> us.
+  For further information, visit <a href="https://www.kry10.com/">Kry10</a> or <a href="https://www.kry10.com/contact">contact</a> us.
 	    </td>
     </tr>
   </table>

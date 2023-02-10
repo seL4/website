@@ -956,14 +956,14 @@ Older News: <%=reflist%>
 </div>
 <div>
   <p>
-    <a href="https://kry10.com/">
+    <a href="https://www.kry10.com/">
       <img src="/Foundation/Membership/LOGOS/Kry10.svg"
 	   style="width: 15%;  padding-left:10px;  float:right"
 	   alt="Kry10 logo" />
     </a>
 
    The seL4 Foundation welcomes New-Zealand
-   based <a href="https://kry10.com/">Kry10</a> as our latest member.
+   based <a href="https://www.kry10.com/">Kry10</a> as our latest member.
  </p>
  <p>
    &ldquo;We believe that formal methods and proven code is the only
