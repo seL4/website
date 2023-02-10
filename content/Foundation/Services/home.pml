@@ -209,7 +209,7 @@
     </tr>
     <tr>
       <td>
-        <a href="https://kry10.com">
+        <a href="https://www.kry10.com/">
         <img src="/Foundation/Membership/LOGOS/Kry10.svg"
 	  style="width: 200px" alt="Kry10">
 	</a>

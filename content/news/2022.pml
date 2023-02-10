@@ -679,7 +679,7 @@ A reminder that you have until Monday 9th of May 2022 to <a href="../Foundation/
 </div>
 <div>
   <p>
-    <a href="https://kry10.com">
+    <a href="https://www.kry10.com/">
       <img src="/Foundation/Membership/LOGOS/Kry10.svg"
 	   style="width: 20%;  padding-left:10px;  float:right"
 	   alt="Kry10 logo" />
