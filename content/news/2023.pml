@@ -56,23 +56,19 @@ Older News: <%=reflist%>
 
 <!----------------------------------------------------------->
 <div class="news-item" id="summit-2023-minneapolis">
-    8 February 2023: the seL4 summit 2023 will be held in Minneapolis, USA
+    10 February 2023: the seL4 summit 2023 will be held in Minneapolis, USA
 </div>
 <div>
-    <a href = "../Foundation/Summit">
+  <a href = "../Foundation/Summit">
     <img src="/images/sel4-summit-logo.svg"
     style="width: 30%; float:right"
     alt="seL4 summit" />
-    </a>
-    <p>
-      It is our pleasure to confirm that the <a href="../Foundation/Summit/">seL4 Summit 2023</a> will be in:
-    </p>
-      <div class="highlight">Minneapolis, USA, Sept/Oct 2023 (dates TBC).</div>
-      <!--video width="320" height="240" controls>
-        <source src="../Foundation/Summit/summit-2023-location.m4v" type="video/mp4">
-        Your browser does not support the video tag.
-      </video-->
+  </a>
   <p>
+    It is our pleasure to confirm that the <a href="../Foundation/Summit/">seL4 Summit 2023</a> will be in:
+  </p>
+  <p>
+    <br>
     The summit will be hosted by the <a href="https://www.linuxfoundation.org/">Linux Foundation</a>, and will be an in-person event.
   </p>
   <p>
@@ -89,6 +85,5 @@ Older News: <%=reflist%>
   </p>
 </div>
 
-</div>
 <div class="news-finish">
 </div>
