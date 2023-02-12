@@ -41,7 +41,11 @@ Sept/Oct 2023, dates TBC
       <a href="http://loonwerks.com/people/darren-cofer.html"><img src="../../../images/summit/darren.jpg" alt="Darren Cofer" width="80" /></a>
     </div>
     <div class="person_title">
-      <strong><a class="list_link" href="http://loonwerks.com/people/darren-cofer.html">Darren Cofer <br /> (co-chair)</a></strong>
+      <strong><a href="http://loonwerks.com/people/darren-cofer.html">Darren Cofer
+      <br>(co-chair)</a></strong>
+    </div>
+    <div class="person_affiliation">
+      Raytheon
     </div>
   </div>
 
@@ -50,7 +54,12 @@ Sept/Oct 2023, dates TBC
       <a href="http://www.ikuz.org"><img src="../../../images/tsc/ihor.jpg" alt="Ihor Kuz" width="80" /></a>
     </div>
     <div class="person_title">
-      <strong><a class="list_link" href="http://www.ikuz.org">Ihor Kuz <br /> (co-chair)</a></strong>
+      <strong><a href="http://www.ikuz.org">Ihor Kuz
+       <br>
+       (co-chair)</a></strong>
+    </div>
+    <div class="person_affiliation">
+      Kry10
     </div>
   </div>
 
@@ -59,7 +68,10 @@ Sept/Oct 2023, dates TBC
       <a href="https://perry.alexander.name"><img src="../../../images/summit/perry.jpg" alt="Perry Alexander" width="80"/></a>
     </div>
     <div class="person_title">
-      <strong><a class="list_link" href="https://perry.alexander.name">Perry Alexander</a></strong>
+      <strong><a href="https://perry.alexander.name">Perry Alexander</a></strong>
+    </div>
+    <div class="person_affiliation">
+      U of Kansas
     </div>
   </div>
 
@@ -68,7 +80,10 @@ Sept/Oct 2023, dates TBC
       <a href="https://proofcraft.systems/#june"><img src="../../Board/TS-June-s.jpg" alt="June Andronick" width="80" /></a>
     </div>
     <div class="person_title">
-      <strong><a class="list_link" href="https://proofcraft.systems/#june">June Andronic</a></strong>
+      <strong><a href="https://proofcraft.systems/#june">June Andronick</a></strong>
+    </div>
+    <div class="person_affiliation">
+      Proofcraft
     </div>
   </div>
 
@@ -77,16 +92,22 @@ Sept/Oct 2023, dates TBC
       <a href="https://galois.com/team/todd-carpenter/"><img src="../../../images/summit/todd.jpg" alt="Todd Carpenter" width="80"/></a>
     </div>
     <div class="person_title">
-      <strong><a class="list_link" href="https://galois.com/team/todd-carpenter/">Todd Carpenter</a></strong>
+      <strong><a href="https://galois.com/team/todd-carpenter/">Todd Carpenter</a></strong>
+    </div>
+    <div class="person_affiliation">
+      Galois Inc
     </div>
   </div>
 
-  <div class="person">
+  <div class="person_no_link">
     <div class="person_pic">
       <img src="../../../images/summit/alison.jpg" alt="Alison Felizzi" width="80"/>
     </div>
     <div class="person_title">
       <strong>Alison Felizzi</strong>
+    </div>
+    <div class="person_affiliation">
+      Kry10
     </div>
   </div>
 
@@ -95,7 +116,10 @@ Sept/Oct 2023, dates TBC
       <a href="https://www.linkedin.com/in/axelheider"><img src="../../../images/summit/axel.png" alt="Axel Heider" width="80" /></a>
     </div>
     <div class="person_title">
-      <strong><a class="list_link" href="https://www.linkedin.com/in/axelheider">Axel Heider</a></strong>
+      <strong><a href="https://www.linkedin.com/in/axelheider">Axel Heider</a></strong>
+    </div>
+    <div class="person_affiliation">
+      Hensoldt Cyber
     </div>
   </div>
 
@@ -104,7 +128,10 @@ Sept/Oct 2023, dates TBC
       <a href="https://trustworthy.systems/people/?cn=Gernot+Heiser"><img src="../../Board/TS-Gernot-s.jpg" alt="Gernot Heiser" width="80"/></a>
     </div>
     <div class="person_title">
-      <strong><a class="list_link" href="https://trustworthy.systems/people/?cn=Gernot+Heiser">Gernot Heiser</a></strong>
+      <strong><a href="https://trustworthy.systems/people/?cn=Gernot+Heiser">Gernot Heiser</a></strong>
+    </div>
+    <div class="person_affiliation">
+      UNSW
     </div>
   </div>
 
@@ -113,7 +140,10 @@ Sept/Oct 2023, dates TBC
       <a href="https://trustworthy.systems/people/?cn=Lucy+Parker"><img src="../../../images/summit/lucy.jpg" alt="Lucy Parker" width="80"/></a>
     </div>
     <div class="person_title">
-      <strong><a class="list_link" href="https://trustworthy.systems/people/?cn=Lucy+Parker">Lucy Parker</a></strong>
+      <strong><a href="https://trustworthy.systems/people/?cn=Lucy+Parker">Lucy Parker</a></strong>
+    </div>
+    <div class="person_affiliation">
+      UNSW
     </div>
   </div>
 
@@ -122,7 +152,10 @@ Sept/Oct 2023, dates TBC
       <a href="https://nickspinale.com"><img src="../../../images/summit/nick.jpg" alt="Nick Spinale" width="80"/></a>
     </div>
     <div class="person_title">
-      <strong><a class="list_link" href="https://nickspinale.com">Nick Spinale</a></strong>
+      <strong><a href="https://nickspinale.com">Nick Spinale</a></strong>
+    </div>
+    <div class="person_affiliation">
+      Colias Group
     </div>
   </div>
 
@@ -131,16 +164,23 @@ Sept/Oct 2023, dates TBC
       <a href="https://www.linkedin.com/in/robbie-vanvossen-gr/"><img src="../../../images/summit/robbie.png" alt="Robbie VanVossen" width="80"/></a>
     </div>
     <div class="person_title">
-      <strong><a class="list_link" href="https://www.linkedin.com/in/robbie-vanvossen-gr/">Robbie VanVossen</a></strong>
+      <strong><a href="https://www.linkedin.com/in/robbie-vanvossen-gr/">Robbie VanVossen</a></strong>
+    </div>
+    <div class="person_affiliation">
+      Dornerworks
     </div>
   </div>
+
 
   <div class="person">
     <div class="person_pic">
       <a href="https://www.ncsc.gov.uk/"><img src="../../../images/summit/person-pc.svg" alt="NCSC" width="80"/></a>
     </div>
     <div class="person_title">
-      <strong><a class="list_link" href="https://www.ncsc.gov.uk/">Martin (NCSC)</a></strong>
+      <strong><a href="https://www.ncsc.gov.uk/">Martin (NCSC)</a></strong>
+    </div>
+    <div class="person_affiliation">
+      NCSC
     </div>
   </div>
 
