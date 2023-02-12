@@ -192,7 +192,7 @@ Sept/Oct 2023, dates TBC
     About
   </h3>
   <p>
-    The seL4 Summit is the annual international summit on the <a href="../../About">seL4 microkernel</a>, the world's most highly assured OS kernel, as well as on all seL4-related technology, tools, infrastructure, products, projects, and people.
+    The seL4 Summit is the annual international summit on the <a href="../../../About">seL4 microkernel</a>, the world's most highly assured OS kernel, as well as on all seL4-related technology, tools, infrastructure, products, projects, and people.
   </p>
   <p>
     It aims to gather all the seL4 community to learn, share, and connect:
@@ -203,7 +203,7 @@ Sept/Oct 2023, dates TBC
       <li>connect with other seL4 developers, users, providers, customers, supporters, potential partners and enthusiasts.</li>
     </ul>
   <p>
-    The seL4 Summit is organised by the <a href="../">seL4 Foundation</a>, in a location aimed to be on a different continent each year, as far as possible.
+    The seL4 Summit is organised by the <a href="../../../Foundation">seL4 Foundation</a>, in a location aimed to be on a different continent each year, as far as possible.
   </p>
   <p>
     An open call for presentations invites submissions of short abstracts about cool work on seL4, and a Program Committee made of a wide range of representatives of the seL4 community is in charge of the technical content (reviewing submission, selecting invited speakers, defining the program).

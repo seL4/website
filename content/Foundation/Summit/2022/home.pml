@@ -41,7 +41,7 @@ Munich, Germany (hybrid), 10-13 Oct 2022
     Excellence</a>, and were hosted in the US.
   </p>
   <p>
-    The seL4 Summit 2022 was the first to be organised by the <a href="../../">seL4 Foundation</a>, established in 2020.
+    The seL4 Summit 2022 was the first to be organised by the <a href="../../../Foundation">seL4 Foundation</a>, established in 2020.
   </p>
   <p>
     Summit organisation and hosting is based on these <a href="principles">principles</a>.
