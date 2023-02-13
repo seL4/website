@@ -32,7 +32,7 @@ Sept/Oct 2023, dates TBC
     </h3>
   </div>
   <p>
-    It is our pleasure to present the program committee for the seL4 Summit 2023. Our awesome team come from various parts of the seL4 ecosystem: users, contributors, committers, experts, advocates, researchers, and engineers.
+    It is our pleasure to present the program committee for the seL4 Summit 2023. Our awesome team comes from various parts of the seL4 ecosystem: users, contributors, committers, experts, advocates, researchers, and engineers.
   </p>
 </div>
 <div class="people_grid">

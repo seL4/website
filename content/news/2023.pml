@@ -56,7 +56,7 @@ Older News: <%=reflist%>
 
 <!----------------------------------------------------------->
 <div class="news-item" id="summit-2023-pc">
-    13 February 2023: meet the Program Committee of the seL4 summit 2023
+    13 February 2023: Meet the Program Committee of the seL4 summit 2023
 </div>
 <div>
     <a href = "../Foundation/Summit">
@@ -66,7 +66,7 @@ Older News: <%=reflist%>
     </a>
     <p>
       We are thrilled to announce our program committee for the <a href="../Foundation/Summit/">seL4 Summit 2023</a>.
-      Our awesome team come from various parts of the seL4 ecosystem: users, contributors, committers, experts, advocates, researchers, and engineers.
+      Our awesome team comes from various parts of the seL4 ecosystem: users, contributors, committers, experts, advocates, researchers, and engineers.
     </p>
 </div>
 <div class="people_grid">
@@ -224,7 +224,7 @@ Older News: <%=reflist%>
 
 <!----------------------------------------------------------->
 <div class="news-item" id="summit-2023-minneapolis">
-    10 February 2023: the seL4 summit 2023 will be held in Minneapolis, USA
+    10 February 2023: The seL4 summit 2023 will be held in Minneapolis, USA
 </div>
 <div>
     <a href = "../Foundation/Summit">

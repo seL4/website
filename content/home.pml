@@ -28,12 +28,12 @@
     <ul>
       <li>
         <strong>
-          13 Feb 2023: meet the Program Committee of the seL4 summit 2023
+          13 Feb 2023: Meet the Program Committee of the seL4 summit 2023
         </strong>
       </li>
       <li>
         <strong>
-          10 Feb 2023: the seL4 summit 2023 will be held in Minneapolis, USA
+          10 Feb 2023: The seL4 summit 2023 will be held in Minneapolis, USA
         </strong>
       </li>
       <li>
