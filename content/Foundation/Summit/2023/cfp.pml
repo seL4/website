@@ -4,7 +4,7 @@
     SPDX-License-Identifier: CC-BY-SA-4.0
 -->
 <h1>
-  Call For Presentations for the seL4 Summit 2023
+  Call For Proposals for the seL4 Summit 2023
 </h1>
 
 <div>
@@ -61,27 +61,15 @@
 
   <p>
 
-  The seL4 summit 2023 will be in [TBC].
+  The seL4 summit 2023 will be in Minneapolis, USA.
 
   </p>
 
-</div>
-<div class="highlight" style="text-align: center">
-
-  <h3>
-  We are calling for proposals to present at the seL4 Summit 2023.
-  </h3>
-  <p>Share your seL4 work </p>
-  <p>Share your seL4 experience </p>
-  <p>Share your seL4 thoughts </p>
-  <p>Share your seL4 questions </p>
 </div>
 
 
 
 <div>
-
-
   <h3>
   Topics:
   </h3>
@@ -209,13 +197,6 @@ We solicit proposals on any seL4-related topic, in particular in the areas of:
   </p>
 
 </div>
-
-
-
-
-
-
-
 
 
 
