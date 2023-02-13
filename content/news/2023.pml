@@ -61,11 +61,11 @@ Older News: <%=reflist%>
 <div>
     <a href = "../Foundation/Summit">
     <img src="/images/sel4-summit-logo.svg"
-    style="width: 30%; float:right"
+    style="width: 15%; float:right"
     alt="seL4 summit" />
     </a>
     <p>
-      We are thrilled that you announce our program committee for the <a href="../Foundation/Summit/">seL4 Summit 2023</a>.
+      We are thrilled to announce our program committee for the <a href="../Foundation/Summit/">seL4 Summit 2023</a>.
       Our awesome team come from various parts of the seL4 ecosystem: users, contributors, committers, experts, advocates, researchers, and engineers.
     </p>
 </div>
@@ -229,7 +229,7 @@ Older News: <%=reflist%>
 <div>
     <a href = "../Foundation/Summit">
     <img src="/images/sel4-summit-logo.svg"
-    style="width: 30%; float:right"
+    style="width: 15%; float:right"
     alt="seL4 summit" />
     </a>
     <p>
