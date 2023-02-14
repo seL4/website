@@ -31,18 +31,17 @@ Sept/Oct 2023, dates TBC
       Latest News
     </h3>
   </div>
-    <div class="highlight" style="text-align: center">
-
-  <h3>
-   We are calling for proposals to present at the seL4 Summit 2023.
+  <h3 class="highlight">
+   Call For Presentations for the seL4 Summit 2023
   </h3>
-    <p>Share your seL4 work </p>
-    <p>Share your seL4 experience </p>
-    <p>Share your seL4 thoughts </p>
-    <p>Share your seL4 questions </p>
-    <p>
-      <a href="cfp">More information</a>
-    </p>
+  <ul>
+  <li>Share your seL4 work</li>
+  <li>Share your seL4 experience</li>
+  <li>Share your seL4 thoughts</li>
+  </ul>
+  <p>
+    Check the full <a href="../Foundation/Summit/2023/cfp">Call For Presentations</a>. To propose a talk, upload an abstract of one page or less by Friday 31 March 2023 to the submission portal (opening soon).
+  </p>
 </div>
 
 

@@ -4,7 +4,7 @@
     SPDX-License-Identifier: CC-BY-SA-4.0
 -->
 <h1>
-  Call For Proposals for the seL4 Summit 2023
+  Call For Presentations for the seL4 Summit 2023
 </h1>
 
 <div>
@@ -13,9 +13,9 @@
    Important Dates:
   </h3>
   <ul>
-  <li> Abstracts due: TBD</li>
-  <li> Notification of decisions: TBD </li>
-  <li> Summit: TBD</li>
+  <li> Abstracts due: 31 March 2023</li>
+  <li> Notification of decisions: 15 May 2023 </li>
+  <li> Summit: September/October 2023 (TBD)</li>
   </ul>
 </div>
 
@@ -190,9 +190,9 @@ We solicit proposals on any seL4-related topic, in particular in the areas of:
   If you would like to propose a talk (or nominate someone else to be invited to
   do so), please upload an abstract of <strong>one page or less</strong> for your
   proposed talk (or a one paragraph description of your nominee’s proposed talk)
-  <strong>by [Date TBC]</strong> to ..[link to submission portal]. Abstracts and
+  <strong>by 31 March 2023</strong> to ..<strong>[link to submission portal]</strong>. Abstracts and
   nomination paragraphs should indicate why the talk fits in the seL4 summit
-  scope. Notifications of accepted presentations will be made by [TBC].</strong>
+  scope. Notifications of accepted presentations will be made by <strong>15 May 2023</strong>.
 
   </p>
 

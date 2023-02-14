@@ -55,6 +55,29 @@ Older News: <%=reflist%>
 -->
 
 <!----------------------------------------------------------->
+<div class="news-item" id="summit-2023-cfp">
+    17 February 2023: Call For Presentations for the seL4 Summit 2023
+</div>
+<div>
+  <a href = "../Foundation/Summit">
+    <img src="/images/sel4-summit-logo.svg"
+    style="width: 15%; float:right"
+    alt="seL4 summit" />
+  </a>
+  <h3 class="highlight">
+   Call For Presentations for the seL4 Summit 2023
+  </h3>
+  <ul>
+  <li>Share your seL4 work</li>
+  <li>Share your seL4 experience</li>
+  <li>Share your seL4 thoughts</li>
+  </ul>
+  <p>
+    Check the full <a href="../Foundation/Summit/2023/cfp">Call For Presentations</a>. To propose a talk, upload an abstract of one page or less by Friday 31 March 2023 to the submission portal (opening soon).
+  </p>
+</div>
+
+<!----------------------------------------------------------->
 <div class="news-item" id="summit-2023-pc">
     13 February 2023: Meet the Program Committee of the seL4 summit 2023
 </div>
