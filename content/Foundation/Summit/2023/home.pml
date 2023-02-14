@@ -40,7 +40,7 @@ Sept/Oct 2023, dates TBC
   <li>Share your seL4 thoughts</li>
   </ul>
   <p>
-    Check the full <a href="../Foundation/Summit/2023/cfp">Call For Presentations</a>. To propose a talk, upload an abstract of one page or less by Friday 31 March 2023 to the submission portal (opening soon).
+    Check the full <a href="cfp">Call For Presentations</a>. To propose a talk, upload an abstract of one page or less by Friday 31 March 2023 to the submission portal (opening soon).
   </p>
 </div>
 
