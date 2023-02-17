@@ -44,7 +44,7 @@
   <li>
 
   <strong>connect</strong> with other seL4 developers, users, providers,
-  supporters, potential partners
+  supporters, potential partners, and enthusiasts.
 
   </li>
   </ul>

@@ -56,7 +56,7 @@ Older News: <%=reflist%>
 
 <!----------------------------------------------------------->
 <div class="news-item" id="summit-2023-cfp">
-    20 February 2023: Call For Presentations for the seL4 Summit 2023
+    20 February 2023: <a href="../Foundation/Summit/2023/cfp">Call For Presentations</a> for the seL4 Summit 2023
 </div>
 <div>
   <a href = "../Foundation/Summit">

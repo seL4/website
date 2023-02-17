@@ -32,7 +32,7 @@ Sept/Oct 2023, dates TBC
     </h3>
   </div>
   <h3 class="highlight">
-   Call For Presentations for the seL4 Summit 2023
+   <a href="cfp">Call For Presentations</a> for the seL4 Summit 2023
   </h3>
   <ul>
   <li>Share your seL4 work</li>
