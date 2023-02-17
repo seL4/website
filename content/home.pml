@@ -28,7 +28,7 @@
     <ul>
       <li>
         <strong>
-          20 Feb 2023: Call For Presentations for the seL4 summit 2023
+          20 Feb 2023: Call For Presentations for the seL4 summit 2023!
         </strong>
       </li>
       <li>

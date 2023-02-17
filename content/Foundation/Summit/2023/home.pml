@@ -15,7 +15,7 @@ Sept/Oct 2023, dates TBC
 
 <div class="summit_div">
   <ul>
-    <li><a href="#summit-news">Latest News</a></li>
+    <li><a href="#summit-news">Latest News: Call for Presentations</a></li>
     <li><a href="#summit-about">About</a></li>
     <!--li><a href="../principles/">Principles</a></li-->
     <li><a href="#summit-location">Location</a></li>
@@ -40,7 +40,7 @@ Sept/Oct 2023, dates TBC
   <li>Share your seL4 thoughts</li>
   </ul>
   <p>
-    Check the full <a href="cfp">Call For Presentations</a>. To propose a talk, upload an abstract of one page or less by 10 April 2023 to the <a href="cfp">submission portal</a>.
+    Check the full <a href="cfp">Call For Presentations</a>. To propose a talk, upload an abstract of one page or less by <strong>10 April 2023</strong> to the <strong><a href="submit">submission portal</a></strong>.
   </p>
 </div>
 

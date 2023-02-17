@@ -56,7 +56,7 @@ Older News: <%=reflist%>
 
 <!----------------------------------------------------------->
 <div class="news-item" id="summit-2023-cfp">
-    20 February 2023: <a href="../Foundation/Summit/2023/cfp">Call For Presentations</a> for the seL4 Summit 2023
+    20 February 2023: <a href="../Foundation/Summit/2023/cfp">Call For Presentations</a> for the <a href="../Foundation/Summit/">seL4 Summit 2023</a>
 </div>
 <div>
   <a href = "../Foundation/Summit">
@@ -65,7 +65,7 @@ Older News: <%=reflist%>
     alt="seL4 summit" />
   </a>
   <h3 class="highlight">
-   Call For Presentations for the seL4 Summit 2023
+   <a href="../Foundation/Summit/2023/cfp">Call For Presentations</a> for the <a href="../Foundation/Summit/">seL4 Summit 2023</a>
   </h3>
   <ul>
   <li>Share your seL4 work</li>

@@ -187,8 +187,7 @@ We solicit proposals on any seL4-related topic, in particular in the areas of:
   <p>
 
   If you would like to propose a talk, please upload an abstract of <strong>one page or less</strong> for your
-  proposed talk <strong>by 10 April 2023</strong> on the <strong><a href="submit">submission portal</a></strong>. Abstracts and
-  nomination paragraphs should indicate why the talk fits in the seL4 summit
+  proposed talk <strong>by 10 April 2023</strong> on the <strong><a href="submit">submission portal</a></strong>. Abstracts should indicate why the talk fits in the seL4 summit
   scope. Notifications of accepted presentations will be made by 2 June 2023.
 
   </p>
