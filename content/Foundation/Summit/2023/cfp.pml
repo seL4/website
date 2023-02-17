@@ -8,21 +8,20 @@
 </h1>
 
 <div>
-
   <h3>
    Important Dates:
   </h3>
   <ul>
-  <li> Abstracts due: 31 March 2023</li>
-  <li> Notification of decisions: 15 May 2023 </li>
-  <li> Summit: September/October 2023 (TBD)</li>
+  <li><strong>Abstracts due: 10 April 2023</strong></li>
+  <li>Notification of decisions: 2 June 2023 </li>
+  <li>Summit: September/October 2023 (TBD)</li>
   </ul>
 </div>
 
 
 <div>
   <h3>
-   Overview:
+   Overview
   </h3>
   <p>
 
@@ -71,7 +70,7 @@
 
 <div>
   <h3>
-  Topics:
+  Topics
   </h3>
 <p>
 We solicit proposals on any seL4-related topic, in particular in the areas of:
@@ -183,17 +182,18 @@ We solicit proposals on any seL4-related topic, in particular in the areas of:
 
 <div>
   <h3>
-  Submission:
+  Submission
   </h3>
   <p>
 
-  If you would like to propose a talk (or nominate someone else to be invited to
-  do so), please upload an abstract of <strong>one page or less</strong> for your
-  proposed talk (or a one paragraph description of your nominee’s proposed talk)
-  <strong>by 31 March 2023</strong> to ..<strong>[link to submission portal]</strong>. Abstracts and
+  If you would like to propose a talk, please upload an abstract of <strong>one page or less</strong> for your
+  proposed talk <strong>by 10 April 2023</strong> on the <strong><a href="submit">submission portal</a></strong>. Abstracts and
   nomination paragraphs should indicate why the talk fits in the seL4 summit
-  scope. Notifications of accepted presentations will be made by <strong>15 May 2023</strong>.
+  scope. Notifications of accepted presentations will be made by 2 June 2023.
 
+  </p>
+  <p>
+    If you'd love to hear about some specific work from other people in the community, we encourage you to reach out to them to incite them to submit a proposal :-) else you can also let us know at <a title="summit@sel4.systems"   href="mailto:summit@sel4.systems">summit@sel4.systems</a>.
   </p>
 
 </div>
