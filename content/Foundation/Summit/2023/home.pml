@@ -15,7 +15,7 @@ Sept/Oct 2023, dates TBC
 
 <div class="summit_div">
   <ul>
-    <li><a href="#summit-news">Latest News</a></li>
+    <li><a href="#summit-news">Latest News: Call for Presentations</a></li>
     <li><a href="#summit-about">About</a></li>
     <!--li><a href="../principles/">Principles</a></li-->
     <li><a href="#summit-location">Location</a></li>
@@ -31,8 +31,62 @@ Sept/Oct 2023, dates TBC
       Latest News
     </h3>
   </div>
+  <h3 class="highlight">
+   <a href="cfp">Call For Presentations</a> for the seL4 Summit 2023
+  </h3>
+  <ul>
+  <li>Share your seL4 work</li>
+  <li>Share your seL4 experience</li>
+  <li>Share your seL4 thoughts</li>
+  </ul>
   <p>
-    It is our pleasure to present the program committee for the seL4 Summit 2023. Our awesome team comes from various parts of the seL4 ecosystem: users, contributors, committers, experts, advocates, researchers, and engineers.
+    Check the full <a href="cfp">Call For Presentations</a>. To propose a talk, upload an abstract of one page or less by <strong>10 April 2023</strong> to the <strong><a href="submit">submission portal</a></strong>.
+  </p>
+</div>
+
+
+<div class="summit_div">
+  <h3 id="summit-about">
+    About
+  </h3>
+  <p>
+    The seL4 Summit is the annual international summit on the <a href="../../../About">seL4 microkernel</a>, the world's most highly assured OS kernel, as well as on all seL4-related technology, tools, infrastructure, products, projects, and people.
+  </p>
+  <p>
+    It aims to gather all the seL4 community to learn, share, and connect:
+  </p>
+    <ul>
+      <li>learn about the seL4 technology, its latest progress, use, successes, challenges, plans;</li>
+      <li>share exciting seL4 development, research, experience, application in the real world;</li>
+      <li>connect with other seL4 developers, users, providers, customers, supporters, potential partners and enthusiasts.</li>
+    </ul>
+  <p>
+    The seL4 Summit is organised by the <a href="../../../Foundation">seL4 Foundation</a>, in a location aimed to be on a different continent each year, as far as possible.
+  </p>
+  <p>
+    An open call for presentations invites submissions of short abstracts about cool work on seL4, and a Program Committee made of a wide range of representatives of the seL4 community is in charge of the technical content (reviewing submission, selecting invited speakers, defining the program).
+  </p>
+</div>
+
+<div class="summit_div">
+  <h3 id="summit-location">
+    Location
+  </h3>
+  <p>
+    The seL4 Summit 2023 will be held in Minneapolis, USA, Sept/Oct 2023. Dates and venue to be confirmed.
+  </p>
+  <p>
+    The summit will be hosted by the <a href="https://www.linuxfoundation.org/">Linux Foundation</a>, and will be an in-person event.
+  </p>
+</div>
+
+<div class="summit_div">
+  <h3 id="summit-pc">
+    Program committee
+  </h3>
+  <p>
+<p>
+    Our awesome team comes from various parts of the seL4 ecosystem: users, contributors, committers, experts, advocates, researchers, and engineers.
   </p>
 </div>
 <div class="people_grid">
@@ -186,50 +240,6 @@ Sept/Oct 2023, dates TBC
 
 </div>
 
-
-<div class="summit_div">
-  <h3 id="summit-about">
-    About
-  </h3>
-  <p>
-    The seL4 Summit is the annual international summit on the <a href="../../../About">seL4 microkernel</a>, the world's most highly assured OS kernel, as well as on all seL4-related technology, tools, infrastructure, products, projects, and people.
-  </p>
-  <p>
-    It aims to gather all the seL4 community to learn, share, and connect:
-  </p>
-    <ul>
-      <li>learn about the seL4 technology, its latest progress, use, successes, challenges, plans;</li>
-      <li>share exciting seL4 development, research, experience, application in the real world;</li>
-      <li>connect with other seL4 developers, users, providers, customers, supporters, potential partners and enthusiasts.</li>
-    </ul>
-  <p>
-    The seL4 Summit is organised by the <a href="../../../Foundation">seL4 Foundation</a>, in a location aimed to be on a different continent each year, as far as possible.
-  </p>
-  <p>
-    An open call for presentations invites submissions of short abstracts about cool work on seL4, and a Program Committee made of a wide range of representatives of the seL4 community is in charge of the technical content (reviewing submission, selecting invited speakers, defining the program).
-  </p>
-</div>
-
-<div class="summit_div">
-  <h3 id="summit-location">
-    Location
-  </h3>
-  <p>
-    The seL4 Summit 2023 will be held in Minneapolis, USA, Sept/Oct 2023. Dates and venue to be confirmed.
-  </p>
-  <p>
-    The summit will be hosted by the <a href="https://www.linuxfoundation.org/">Linux Foundation</a>, and will be an in-person event.
-  </p>
-</div>
-
-<!--div class="summit_div">
-  <h3 id="summit-pc">
-    Program committee
-  </h3>
-  <p>
-    Coming soon!
-  </p>
-</div-->
 
 
 
