@@ -19,7 +19,7 @@ Sept/Oct 2023, dates TBC
     <li><a href="#summit-about">About</a></li>
     <!--li><a href="../principles/">Principles</a></li-->
     <li><a href="#summit-location">Location</a></li>
-    <li><a href="#summit-news">Program Committee</a></li>
+    <li><a href="#summit-pc">Program Committee</a></li>
     <li><a href="#summit-contact">Contact</a></li>
     <li>Other summit editions: <a href="../2022/">2022</a></li>
   </ul>

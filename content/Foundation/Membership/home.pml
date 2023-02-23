@@ -180,6 +180,18 @@
         Endorsed Service Provider
       </div>
     </div>
+        <div class="sponsor">
+      <div class="sponsor-pic">
+        <a href="https://latticex.foundation/">
+          <img src="LOGOS/latticex.png" style="width: 200px" alt="LatticeX logo">
+        </a>
+      </div>
+      <div class="sponsor-name">
+          LatticeX
+      </div>
+      <div class="sponsor-info"></div>
+    </div>
+
     <div class="sponsor">
       <div class="sponsor-pic">
         <a href="https://www.lotuscars.com/">
@@ -259,17 +271,6 @@
       </div>
        <div class="sponsor-name">
           Xcalibyte
-      </div>
-      <div class="sponsor-info"></div>
-    </div>
-    <div class="sponsor">
-      <div class="sponsor-pic">
-        <a href="https://latticex.foundation/">
-          <img src="LOGOS/latticex.png" style="width: 200px" alt="LatticeX logo">
-        </a>
-      </div>
-      <div class="sponsor-name">
-          LatticeX
       </div>
       <div class="sponsor-info"></div>
     </div>
