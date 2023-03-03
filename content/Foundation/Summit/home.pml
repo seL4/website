@@ -4,7 +4,7 @@
 #
 # this has to happen before any content that
 # might otherwise be sent to the client.
-# Redirect to latest summit
+# Redirect to summit 2022 for old links
 
 #psp.redirect('/Foundation/Summit/2023/')
 %>
