@@ -136,6 +136,7 @@ code {
   cursor: pointer;
   position: relative;
 }
+
 .homepage_item:hover {
   background-color: #D6DBE4; /* neutralLighter */
 }
@@ -180,6 +181,9 @@ a.divLink {
   text-align: center;
 }
 
+.summit_item{
+  grid-template-rows: 350px;
+}
 
 .people_grid {
   display: grid;
