@@ -27,6 +27,4 @@ Sept/Oct 2023, dates TBC
   </p>
 </div>
 
-
-
 <script type="text/javascript" src="https://form.jotform.com/jsform/230467570792059"></script>

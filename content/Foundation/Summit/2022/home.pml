@@ -52,12 +52,9 @@ Munich, Germany (hybrid), 10-13 Oct 2022
   <h3 id="summit-location">
     Location & Host
   </h3>
-  <p>
-    The seL4 Summit 2022 was held in Munich, Germany (hybrid), 10-13 Oct 2022.
-  </p>
-  <p>
-    It was hosted by HENSOLDT Cyber GmbH, a Munich-based company which develops embedded IT products that meet the highest security requirements, combining an operating system based on verified seL4 with a RISC-V processor that is protected from supply-chain attacks.
-  </p>
+    <p>
+      The seL4 Summit 2022 was <a href="https://hensoldt-cyber.com/sel4-summit-2022/">held in Munich, Germany (hybrid), 10-13 Oct 2022, hosted by HENSOLDT Cyber GmbH.</a>
+    </p>
 </div>
 <!--
   <p>
