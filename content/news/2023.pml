@@ -56,7 +56,7 @@ Older News: <%=reflist%>
 
 <!----------------------------------------------------------->
 <div class="news-item" id="member-autoware">
-  20 March 2023: The Autoware Foundation joins the seL4 Foundation
+  22 March 2023: The Autoware Foundation joins the seL4 Foundation
 </div>
 <div>
   <a href = "https://www.autoware.org/">
@@ -65,7 +65,7 @@ Older News: <%=reflist%>
     alt="Autoware Foundation" />
   </a>
   <p>
-  The seL4 Foundation welcomes <a href = "https://www.autoware.org/">the Autoware Foundation</a> as a member.
+  The seL4 Foundation welcomes <a href = "https://www.autoware.org/">the Autoware Foundation</a> as a <a href="/Foundation/Membership">member</a>.
   </p>
   <p>
     The Autoware Foundation hosts the Autoware Project, the world’s leading open-source software project for autonomous driving.

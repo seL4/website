@@ -28,7 +28,7 @@
     <ul>
       <li>
         <strong>
-          20 Mar 2023: The Autoware Foundation joins the seL4 Foundation
+          22 Mar 2023: The Autoware Foundation joins the seL4 Foundation
         </strong>
       </li>
       <li>
