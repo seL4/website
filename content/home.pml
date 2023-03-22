@@ -28,17 +28,17 @@
     <ul>
       <li>
         <strong>
+          22 Mar 2023: The Autoware Foundation joins the seL4 Foundation
+        </strong>
+      </li>
+      <li>
+        <strong>
           20 Feb 2023: Call For Presentations for the seL4 summit 2023!
         </strong>
       </li>
       <li>
         <strong>
           13 Feb 2023: Meet the Program Committee of the seL4 summit 2023
-        </strong>
-      </li>
-      <li>
-        <strong>
-          10 Feb 2023: The seL4 summit 2023 will be held in Minneapolis, USA
         </strong>
       </li>
       <li style="margin-top:0.2em;list-style-type:none">

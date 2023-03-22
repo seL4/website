@@ -22,21 +22,6 @@
   <div class="sponsors">
     <div class="sponsor">
       <div class="sponsor-pic">
-        <a href="https://hensoldt-cyber.com/">
-          <img src="LOGOS/HENSOLDT_Cyber.svg" style="width: 186px" alt="HENSOLDT Cyber logo">
-        </a>
-      </div>
-      <div class="sponsor-name">
-        HENSOLDT Cyber GmbH
-      </div>
-      <div class="sponsor-info">
-        Founding member
-        <br>
-        Endorsed Service Provider
-      </div>
-    </div>
-    <div class="sponsor">
-      <div class="sponsor-pic">
         <a href="https://horizon.ai/">
           <img src="LOGOS/Horizon_Robotics.svg" style="width: 248px"
               alt="Horizon Robotics logo">
@@ -169,6 +154,21 @@
     </div>
     <div class="sponsor">
       <div class="sponsor-pic">
+        <a href="https://hensoldt-cyber.com/">
+          <img src="LOGOS/HENSOLDT_Cyber.svg" style="width: 186px" alt="HENSOLDT Cyber logo">
+        </a>
+      </div>
+      <div class="sponsor-name">
+        HENSOLDT Cyber GmbH
+      </div>
+      <div class="sponsor-info">
+        Founding member
+        <br>
+        Endorsed Service Provider
+      </div>
+    </div>
+    <div class="sponsor">
+      <div class="sponsor-pic">
         <a href="https://www.kry10.com/">
           <img src="LOGOS/Kry10.svg" style="width: 250px" alt="Kry10 logo">
         </a>
@@ -278,6 +278,17 @@
 
   <h2>Associate Members</h2>
   <div class="sponsors">
+    <div class="sponsor">
+      <div class="sponsor-pic">
+        <a href="">
+          <img src="LOGOS/autoware.svg" style="width: 200px" alt="Autoware Foundation">
+        </a>
+      </div>
+      <div class="sponsor-name">
+	      Autoware Foundation
+      </div>
+      <div class="sponsor-info"></div>
+    </div>
     <div class="sponsor">
       <div class="sponsor-pic">
         <a href="https://ethz.ch/en.html">
