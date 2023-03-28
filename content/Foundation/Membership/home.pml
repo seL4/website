@@ -129,19 +129,6 @@
     </div>
     <div class="sponsor">
       <div class="sponsor-pic">
-        <a href="https://gh.st/">
-          <img src="LOGOS/GHOST.svg" style="width: 200px" alt="Ghost logo">
-        </a>
-      </div>
-      <div class="sponsor-name">
-        Ghost Locomotion Inc
-      </div>
-      <div class="sponsor-info">
-          Founding member
-      </div>
-    </div>
-    <div class="sponsor">
-      <div class="sponsor-pic">
         <a href="https://www.google.com/">
           <img src="LOGOS/google.svg" style="width: 200px" alt="Google logo">
         </a>
