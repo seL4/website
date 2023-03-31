@@ -1,4 +1,4 @@
-<!--<title>Endorsed Service Providers</title>-->
+<!--<title>Commercial Support</title>-->
 <!--
     Copyright 2020 seL4 Project a Series of LF Projects, LLC.
     SPDX-License-Identifier: CC-BY-SA-4.0
@@ -18,7 +18,7 @@
    <strong>Below are the seL4 Service Providers that are endorsed by the seL4 Foundation</strong>
   </p>
   <p>
-  If you are a member and would like to be endorsed, ou can find more information on the <a href="endorsement.pml">endorsement scheme</a>. If you are not a member yet, you can <a href="../Join">join the seL4 Foundation</a>.
+  If you are a member and would like to be endorsed, you can find more information on the <a href="endorsement.pml">endorsement scheme</a>. If you are not a member yet, you can <a href="../Join">join the seL4 Foundation</a>.
   </p>
 
   <h2>Endorsed Service Providers</h2>
