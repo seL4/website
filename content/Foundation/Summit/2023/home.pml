@@ -36,7 +36,7 @@ Minneapolis, USA
    <a href="cfp">Call For Presentations</a> for the seL4 Summit 2023
   </h3>
   <p>
-    The Call for Presentations has been extended: <strike>10 April 2023</strike> 24 April 2023.
+    The Call for Presentations has been extended: <s>10 April 2023</s> 24 April 2023.
   </p>
   <ul>
   <li>Share your seL4 work</li>
@@ -53,8 +53,8 @@ Minneapolis, USA
     Important Dates
   </h3>
   <ul>
-    <li><strong>Abstracts due: <strike>10 April 2023</strike> 24 April 2023</strong></li>
-    <li>Notification of decisions: <strike>2 June 2023</strike> 9 June 2023 </li>
+    <li><strong>Abstracts due: <s>10 April 2023</s> 24 April 2023</strong></li>
+    <li>Notification of decisions: <s>2 June 2023</s> 9 June 2023 </li>
     <li>Summit: 19-21 September 2023 (date TBD)</li>
   </ul>
 </div>
