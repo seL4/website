@@ -91,15 +91,15 @@
   </div>
 
   <div class="homepage_item">
-    <a class="divLink" href="/Contribute/"></a>
+    <a class="divLink" href="/Foundation/Services/"></a>
     <div class="hp_pic">
-      <img src="/images/contributing.jpg" style="width:200px;height:75px" alt="Contribute" />
+      <img src="/images/services.png" style="width:110px;height:110px" alt="Contribute" />
     </div>
     <div class="hp_title">
-      Contribute
+      Commercial Support
     </div>
     <div class="hp_text">
-       Contributing code, documentation, proofs
+       Endorsed service providers for seL4
     </div>
   </div>
 
@@ -137,7 +137,7 @@
       <img src="/images/support.png" style="width:150px;height:87px;" alt="Support" />
     </div>
     <div class="hp_title">
-      Want to support?
+      Support seL4
     </div>
     <div class="hp_text">
       Funding the next big steps for the seL4 project
@@ -170,9 +170,17 @@
     </div>
   </div>
 
-  <div class="hidden-mobile homepage_item">
-  <!-- empty placeholder, to center next item-->
-  <!-- hide on mobiles for seamless flow ton next div-->
+  <div class="homepage_item">
+    <a class="divLink" href="/Contribute/"></a>
+    <div class="hp_pic">
+      <img src="/images/contributing.jpg" style="width:200px;height:75px" alt="Contribute" />
+    </div>
+    <div class="hp_title">
+      Contribute
+    </div>
+    <div class="hp_text">
+       Contributing code, documentation, proofs
+    </div>
   </div>
 
   <div class="homepage_item">
