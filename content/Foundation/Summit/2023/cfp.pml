@@ -12,9 +12,9 @@
    Important Dates:
   </h3>
   <ul>
-  <li><strong>Abstracts due: 10 April 2023</strong></li>
-  <li>Notification of decisions: 2 June 2023 </li>
-  <li>Summit: September/October 2023 (TBD)</li>
+   <li><strong>Abstracts due: <strike>10 April 2023</strike> 24 April 2023</strong></li>
+   <li>Notification of decisions: <strike>2 June 2023</strike> 9 June 2023 </li>
+   <li>Summit: 19-21 September 2023 (date TBD)</li>
   </ul>
 </div>
 
@@ -187,7 +187,7 @@ We solicit proposals on any seL4-related topic, in particular in the areas of:
   <p>
 
   If you would like to propose a talk, please upload an abstract of <strong>one page or less</strong> for your
-  proposed talk <strong>by 10 April 2023</strong> on the <strong><a href="submit">submission portal</a></strong>. Abstracts should indicate why the talk fits in the seL4 summit
+  proposed talk <strong>by 24 April 2023</strong> on the <strong><a href="submit">submission portal</a></strong>. Abstracts should indicate why the talk fits in the seL4 summit
   scope. Notifications of accepted presentations will be made by 2 June 2023.
 
   </p>

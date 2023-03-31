@@ -10,7 +10,7 @@
 Minneapolis, USA
 </h4>
 <h4>
-Sept/Oct 2023, dates TBC
+19-21 September 2023 (date TBC)
 </h4>
 
 <div>
@@ -18,9 +18,9 @@ Sept/Oct 2023, dates TBC
    Important Dates:
   </h3>
   <ul>
-    <li><strong>Abstracts due: 10 April 2023</strong></li>
-    <li>Notification of decisions: 2 June 2023 </li>
-    <li>Summit: September/October 2023 (TBD)</li>
+    <li><strong>Abstracts due: <strike>10 April 2023</strike> 24 April 2023</strong></li>
+    <li>Notification of decisions: <strike>2 June 2023</strike> 9 June 2023 </li>
+    <li>Summit: 19-21 September 2023 (date TBD)</li>
   </ul>
   <p>
     Further information on the <a href="cfp">Call for Presentations</a>.

@@ -10,12 +10,13 @@
 Minneapolis, USA
 </h4>
 <h4>
-Sept/Oct 2023, dates TBC
+  19 - 21 September 2023 (date TBC)
 </h4>
 
 <div class="summit_div">
   <ul>
-    <li><a href="#summit-news">Latest News: Call for Presentations</a></li>
+    <li><a href="cfp">Latest News: Call for Presentations - extended deadline!</a></li>
+    <li><a href="#summit-important-dates">Important Dates</a></li>
     <li><a href="#summit-about">About</a></li>
     <!--li><a href="../principles/">Principles</a></li-->
     <li><a href="#summit-location">Location</a></li>
@@ -34,16 +35,29 @@ Sept/Oct 2023, dates TBC
   <h3 class="highlight">
    <a href="cfp">Call For Presentations</a> for the seL4 Summit 2023
   </h3>
+  <p>
+    The Call for Presentations has been extended: <strike>10 April 2023</strike> 24 April 2023.
+  </p>
   <ul>
   <li>Share your seL4 work</li>
   <li>Share your seL4 experience</li>
   <li>Share your seL4 thoughts</li>
   </ul>
   <p>
-    Check the full <a href="cfp">Call For Presentations</a>. To propose a talk, upload an abstract of one page or less by <strong>10 April 2023</strong> to the <strong><a href="submit">submission portal</a></strong>.
+    Check the full <a href="cfp">Call For Presentations</a>. To propose a talk, upload an abstract of one page or less by <strong>24 April 2023</strong> to the <strong><a href="submit">submission portal</a></strong>.
   </p>
 </div>
 
+<div class="summit_div">
+  <h3 id="summit-important-dates">
+    Important Dates
+  </h3>
+  <ul>
+    <li><strong>Abstracts due: <strike>10 April 2023</strike> 24 April 2023</strong></li>
+    <li>Notification of decisions: <strike>2 June 2023</strike> 9 June 2023 </li>
+    <li>Summit: 19-21 September 2023 (date TBD)</li>
+  </ul>
+</div>
 
 <div class="summit_div">
   <h3 id="summit-about">
@@ -73,7 +87,7 @@ Sept/Oct 2023, dates TBC
     Location
   </h3>
   <p>
-    The seL4 Summit 2023 will be held in Minneapolis, USA, Sept/Oct 2023. Dates and venue to be confirmed.
+    The seL4 Summit 2023 will be held in Minneapolis, USA, 19 - 21 September 2023 (TBC). Dates and venue to be confirmed.
   </p>
   <p>
     The summit will be hosted by the <a href="https://www.linuxfoundation.org/">Linux Foundation</a>, and will be an in-person event.
