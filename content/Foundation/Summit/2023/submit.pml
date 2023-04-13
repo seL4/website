@@ -10,7 +10,7 @@
 Minneapolis, USA
 </h4>
 <h4>
-19-21 September 2023 (date TBC)
+19-21 September 2023
 </h4>
 
 <div>

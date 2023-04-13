@@ -10,12 +10,12 @@
 Minneapolis, USA
 </h4>
 <h4>
-  19 - 21 September 2023 (date TBC)
+  19 - 21 September 2023
 </h4>
 
 <div class="summit_div">
   <ul>
-    <li><a href="cfp">Latest News: Call for Presentations - extended deadline!</a></li>
+    <li><a href="#summit-news">Latest News: Dates and venue confirmed</a></li>
     <li><a href="#summit-important-dates">Important Dates</a></li>
     <li><a href="#summit-about">About</a></li>
     <!--li><a href="../principles/">Principles</a></li-->
@@ -33,18 +33,19 @@ Minneapolis, USA
     </h3>
   </div>
   <h3 class="highlight">
-   <a href="cfp">Call For Presentations</a> for the seL4 Summit 2023
+    Dates and venue confirmed for the seL4 Summit 2023
   </h3>
-  <p>
-    The Call for Presentations has been extended: <s>10 April 2023</s> 24 April 2023.
+   <p>
+    The seL4 Summit 2023 will be held <strong>19 - 21 September 2023 at the <a href="https://www.elliotparkhotel.com/">Elliot Park Hotel</a>, Minneapolis, USA</strong>.
   </p>
-  <ul>
-  <li>Share your seL4 work</li>
-  <li>Share your seL4 experience</li>
-  <li>Share your seL4 thoughts</li>
-  </ul>
   <p>
-    Check the full <a href="cfp">Call For Presentations</a>. To propose a talk, upload an abstract of one page or less by <strong>24 April 2023</strong> to the <strong><a href="submit">submission portal</a></strong>.
+    The summit will be hosted by the <a href="https://www.linuxfoundation.org/">Linux Foundation</a>, and will be an in-person event.
+  </p>
+  <p>
+    Registration details to follow soon!
+  </p>
+  <p>
+    Remember that you have until <strong>24 April 2022</strong> to <a href="cfp">propose a talk</a>. To propose a talk, upload an abstract of one page or less to the <strong><a href="submit">submission portal</a></strong>.
   </p>
 </div>
 
@@ -55,7 +56,7 @@ Minneapolis, USA
   <ul>
     <li><strong>Abstracts due: <s>10 April 2023</s> 24 April 2023</strong></li>
     <li>Notification of decisions: <s>2 June 2023</s> 9 June 2023 </li>
-    <li>Summit: 19-21 September 2023 (date TBD)</li>
+    <li>Summit: 19-21 September 2023</li>
   </ul>
 </div>
 
@@ -87,7 +88,7 @@ Minneapolis, USA
     Location
   </h3>
   <p>
-    The seL4 Summit 2023 will be held in Minneapolis, USA, 19 - 21 September 2023 (TBC). Dates and venue to be confirmed.
+    The seL4 Summit 2023 will be held in Minneapolis, USA, 19 - 21 September 2023, at the <a href="https://www.elliotparkhotel.com/">Elliot Park Hotel</a>.
   </p>
   <p>
     The summit will be hosted by the <a href="https://www.linuxfoundation.org/">Linux Foundation</a>, and will be an in-person event.
