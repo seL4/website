@@ -14,7 +14,7 @@
   <ul>
    <li><strong>Abstracts due: <s>10 April 2023</s> 24 April 2023</strong></li>
    <li>Notification of decisions: <s>2 June 2023</s> 9 June 2023 </li>
-   <li>Summit: 19-21 September 2023 (date TBD)</li>
+   <li>Summit: 19-21 September 2023</li>
   </ul>
 </div>
 

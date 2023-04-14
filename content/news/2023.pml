@@ -55,6 +55,31 @@ Older News: <%=reflist%>
 -->
 
 <!----------------------------------------------------------->
+<div class="news-item" id="summit-2023-venue">
+    14 April 2023: Dates and venue confirmed for the <a href="../Foundation/Summit/2023/">seL4 summit 2023</a>.
+</div>
+<div>
+  <a href = "../Foundation/Summit">
+    <img src="/images/sel4-summit-logo.svg"
+    style="width: 15%; float:right"
+    alt="seL4 summit" />
+  </a>
+  <p>
+    The <a href="../Foundation/Summit/2023">seL4 Summit 2023</a> will be held <strong>19 - 21 September 2023 at the <a href="https://www.elliotparkhotel.com/">Elliot Park Hotel</a>, Minneapolis, USA</strong>.
+  </p>
+  <p>
+    The summit will be hosted by the Linux Foundation, and will be an in-person event.
+  </p>
+  <p>
+    Registration details to follow soon!
+  </p>
+  <p>
+    Remember that you have until <strong>24 April 2022</strong> to <a href="../Foundation/Summit/2023/cfp">propose a talk</a>. To propose a talk, upload an abstract of one page or less to the <strong><a href="../Foundation/Summit/2023/submit">submission portal</a></strong>.
+  </p>
+</div>
+
+
+<!----------------------------------------------------------->
 <div class="news-item" id="member-autoware">
   22 March 2023: The Autoware Foundation joins the seL4 Foundation
 </div>
