@@ -6,5 +6,5 @@
 # might otherwise be sent to the client.
 # Redirect to summit 2022 for old links
 
-psp.redirect('/Foundation/Summit/2022/cfp')
+psp.redirect('/Foundation/Summit/2023/cfp')
 %>
