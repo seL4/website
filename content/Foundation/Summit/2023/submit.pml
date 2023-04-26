@@ -25,6 +25,10 @@ Minneapolis, USA
   <p>
     Further information on the <a href="cfp">Call for Presentations</a>.
   </p>
+  <p>
+    Summit submissions are now closed. Please contact <a title="summit@sel4.systems" href="mailto:summit@sel4.systems">summit@sel4.systems</a> if you have any questions.
+  </p>
 </div>
 
-<script type="text/javascript" src="https://form.jotform.com/jsform/230467570792059"></script>
+
+<!--script type="text/javascript" src="https://form.jotform.com/jsform/230467570792059"></script-->
