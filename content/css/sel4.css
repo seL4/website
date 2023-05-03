@@ -480,6 +480,10 @@ td.data-stddev {
   padding: 0.8ex 1.5ex 0.8ex 1ex;
 }
 
+td.monospace {
+  font-family: monospace;
+}
+
 table.summit-talks {
   border-collapse: collapse;
   width: 100%;
