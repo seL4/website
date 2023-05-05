@@ -15,11 +15,11 @@ Minneapolis, USA
 
 <div class="summit_div">
   <ul>
-    <li><a href="#summit-news">Latest News: Dates and venue confirmed</a></li>
+    <li><a href="#summit-news">Latest News: Register for the summit</a></li>
     <li><a href="#summit-important-dates">Important Dates</a></li>
     <li><a href="#summit-about">About</a></li>
     <!--li><a href="../principles/">Principles</a></li-->
-    <li><a href="#summit-location">Location</a></li>
+    <li><a href="#summit-location">Location and Venue</a></li>
     <li><a href="#summit-pc">Program Committee</a></li>
     <li><a href="#summit-contact">Contact</a></li>
     <li>Other summit editions: <a href="../2022/">2022</a></li>
@@ -33,19 +33,24 @@ Minneapolis, USA
     </h3>
   </div>
   <h3 class="highlight">
-    Dates and venue confirmed for the seL4 Summit 2023
+    Register for the summit
   </h3>
-   <p>
-    The seL4 Summit 2023 will be held <strong>19 - 21 September 2023 at the <a href="https://www.elliotparkhotel.com/">Elliot Park Hotel</a>, Minneapolis, USA</strong>.
+  <p>
+    The seL4 summit will cover the complete seL4 ecosystem, consisting of the verified microkernel, as well as all seL4-related technology, tools, infrastructure, products, projects, and people.
   </p>
   <p>
-    The summit will be hosted by the <a href="https://www.linuxfoundation.org/">Linux Foundation</a>, and will be an in-person event.
+    Tickets include:
+  </p>
+  <ul>
+    <li>Participation in the 3-day conference, including talks, keynotes, seL4 updates & discussions</li>
+    <li>Networking with other seL4 experts and enthusiasts</li>
+    <li>Reception and Dinner</li>
+  </ul>
+  <p>
+    <strong><a href="https://events.linuxfoundation.org/sel4-summit/">Register here</a></strong>
   </p>
   <p>
-    Registration details to follow soon!
-  </p>
-  <p>
-    Remember that you have until <strong>24 April 2022</strong> to <a href="cfp">propose a talk</a>. To propose a talk, upload an abstract of one page or less to the <strong><a href="submit">submission portal</a></strong>.
+    The early bird cut-off date is 18 August 2023.
   </p>
 </div>
 
@@ -85,7 +90,7 @@ Minneapolis, USA
 
 <div class="summit_div">
   <h3 id="summit-location">
-    Location
+    Location and Venue
   </h3>
   <p>
     The seL4 Summit 2023 will be held in Minneapolis, USA, 19 - 21 September 2023, at the <a href="https://www.elliotparkhotel.com/">Elliot Park Hotel</a>.

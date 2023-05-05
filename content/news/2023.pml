@@ -55,6 +55,39 @@ Older News: <%=reflist%>
 -->
 
 <!----------------------------------------------------------->
+<div class="news-item" id="summit-2023-register">
+    8 May 2023: Register for the seL4 summit 2023
+</div>
+<div>
+  <a href = "../Foundation/Summit">
+    <img src="/images/sel4-summit-logo.svg"
+    style="width: 15%; float:right"
+    alt="seL4 summit" />
+  </a>
+  <p>
+    The seL4 summit 2023 will be held in Minneapolis, USA, 19 - 21 September 2023.
+  </p>
+  <p>
+    The seL4 summit will cover the complete seL4 ecosystem, consisting of the verified microkernel, as well as all seL4-related technology, tools, infrastructure, products, projects, and people.
+  </p>
+  <p>
+  <p>
+    Tickets include:
+  </p>
+  <ul>
+    <li>Participation in the 3-day conference, including talks, keynotes, seL4 updates & discussions</li>
+    <li>Networking with other seL4 experts and enthusiasts</li>
+    <li>Reception and Dinner</li>
+  </ul>
+  <p>
+    <strong><a href="https://events.linuxfoundation.org/sel4-summit/">Register here</a></strong>
+  </p>
+  <p>
+    The early bird cut-off date is 18 August 2023.
+  </p>
+</div>
+
+<!----------------------------------------------------------->
 <div class="news-item" id="acm-award">
     5 May 2023: seL4 receives the ACM Software System Award!
 </div>
