@@ -28,17 +28,17 @@
     <ul>
       <li>
         <strong>
+          5 May 2023: seL4 receives the ACM Software System Award!
+        </strong>
+      </li>
+      <li>
+        <strong>
            14 Apr 2023: Dates and venue confirmed for the seL4 summit 2023
           </strong>
         </li>
       <li>
         <strong>
           22 Mar 2023: The Autoware Foundation joins the seL4 Foundation
-        </strong>
-      </li>
-      <li>
-        <strong>
-          20 Feb 2023: Call For Presentations for the seL4 summit 2023!
         </strong>
       </li>
       <li style="margin-top:0.2em;list-style-type:none">
