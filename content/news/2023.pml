@@ -55,6 +55,28 @@ Older News: <%=reflist%>
 -->
 
 <!----------------------------------------------------------->
+<div class="news-item" id="acm-award">
+    5 May 2023: seL4 receives the ACM Software System Award!
+</div>
+<div>
+  <a href = "https://awards.acm.org/software-system">
+    <img src="/images/acm-2023.svg"
+    style="width: 40%; float:right;"
+    alt="ACM Award Winners" />
+  </a>
+  <p>
+  The <a href= "https://awards.acm.org/software-system">2022 ACM Software System Award</a> recognises seL4 as the first industrial-strength, high-performance operating system to have been the subject of a complete, mechanically-checked proof of full functional correctness, proofs of enforcement of the core security properties of integrity and confidentiality, a proof to the binary code of the kernel, and the first sound and complete worst-case execution-time analysis of a protected mode OS.
+  </p>
+  <p>
+    The award, recognising the development of a software system that has had a lasting influence, goes to Gernot Heiser, University of New South Wales; Gerwin Klein, Proofcraft; Harvey Tuch, Google; Kevin Elphinstone, University of New South Wales; June Andronick, Proofcraft; David Cock, ETH Zurich; Philip Derrin, Qualcomm; Dhammika Elkaduwe, University of Peradeniya; Kai Engelhardt; Toby Murray, University of Melbourne; Rafal Kolanski, Proofcraft; Michael Norrish, Australian National University; Thomas Sewell, University of Cambridge; and Simon Winwood, Galois.
+  </p>
+  <p>
+    We are committed to make sure that seL4's recognised "lasting influence" live on for the decades ahead!
+  </p>
+</div>
+
+
+<!----------------------------------------------------------->
 <div class="news-item" id="summit-2023-venue">
     14 April 2023: Dates and venue confirmed for the <a href="../Foundation/Summit/2023/">seL4 summit 2023</a>.
 </div>
