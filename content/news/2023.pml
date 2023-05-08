@@ -56,7 +56,7 @@ Older News: <%=reflist%>
 
 <!----------------------------------------------------------->
 <div class="news-item" id="summit-2023-register">
-    8 May 2023: Register for the seL4 summit 2023
+    10 May 2023: Register for the seL4 summit 2023
 </div>
 <div>
   <a href = "../Foundation/Summit">
