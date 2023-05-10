@@ -65,7 +65,7 @@ Older News: <%=reflist%>
     alt="seL4 summit" />
   </a>
   <p>
-    The seL4 summit 2023 will be held in Minneapolis, USA, 19 - 21 September 2023.
+    The <a href = "../Foundation/Summit/2023">seL4 summit 2023</a> will be held in Minneapolis, USA, 19 - 21 September 2023.
   </p>
   <p>
     The seL4 summit will cover the complete seL4 ecosystem, consisting of the verified microkernel, as well as all seL4-related technology, tools, infrastructure, products, projects, and people.
