@@ -18,6 +18,7 @@ Minneapolis, USA
     <li><a href="#summit-news">Latest News: Register for the summit</a></li>
     <li><a href="#summit-important-dates">Important Dates</a></li>
     <li><a href="#summit-about">About</a></li>
+    <li><a href="cfp">Call for Presentations</a></li>
     <!--li><a href="../principles/">Principles</a></li-->
     <li><a href="#summit-location">Location and Venue</a></li>
     <li><a href="#summit-pc">Program Committee</a></li>
