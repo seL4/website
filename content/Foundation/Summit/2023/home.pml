@@ -94,10 +94,10 @@ Minneapolis, USA
     Location and Venue
   </h3>
   <p>
-    The seL4 Summit 2023 will be held in Minneapolis, USA, 19 - 21 September 2023, at the <a href="https://www.elliotparkhotel.com/">Elliot Park Hotel</a>.
+    The seL4 Summit 2023 will be held in Minneapolis, USA, 19 - 21 September 2023, at the Elliot Park Hotel. The summit will be hosted by the <a href="https://www.linuxfoundation.org/">Linux Foundation</a>, and will be an in-person event.
   </p>
   <p>
-    The summit will be hosted by the <a href="https://www.linuxfoundation.org/">Linux Foundation</a>, and will be an in-person event.
+    <strong><a href="https://events.linuxfoundation.org/sel4-summit/">Hotel bookings and summit registration</a></strong>
   </p>
 </div>
 
