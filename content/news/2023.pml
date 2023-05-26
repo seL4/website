@@ -56,7 +56,7 @@ Older News: <%=reflist%>
 
 <!----------------------------------------------------------->
 <div class="news-item" id="galois-joins-foundation">
-    26 May 2023: Galois joins the seL4 Foundation
+    29 May 2023: Galois joins the seL4 Foundation
 </div>
 <div>
   <a href = "https://galois.com/">

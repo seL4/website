@@ -123,7 +123,7 @@
         </a>
       </div>
       <div class="sponsor-name">
-	      Galois
+	      Galois Inc
       </div>
       <div class="sponsor-info"></div>
     </div>
