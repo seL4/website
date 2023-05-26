@@ -73,17 +73,6 @@
   </div>
   <h2>General Members</h2>
   <div class="sponsors">
-    <div class="sponsor">
-      <div class="sponsor-pic">
-        <a href="https://www.adventiumlabs.com/">
-          <img src="LOGOS/adventium-labs.svg" style="width: 200px" alt="Adventium logo">
-        </a>
-      </div>
-      <div class="sponsor-name">
-	      Adventium Labs
-      </div>
-      <div class="sponsor-info"></div>
-    </div>
     <!--
     <div class="sponsor">
        <div class="sponsor-pic">
@@ -126,6 +115,17 @@
           <br>
           Endorsed Service Provider
         </div>
+    </div>
+    <div class="sponsor">
+      <div class="sponsor-pic">
+        <a href="https://galois.com/">
+          <img src="LOGOS/galois-logo.svg" style="width: 200px" alt="Galois logo">
+        </a>
+      </div>
+      <div class="sponsor-name">
+	      Galois
+      </div>
+      <div class="sponsor-info"></div>
     </div>
     <div class="sponsor">
       <div class="sponsor-pic">
