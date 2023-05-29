@@ -28,7 +28,7 @@
     <ul>
       <li>
         <strong>
-           29 May 2023: Galois joins the seL4 Foundation
+           29 May 2023: Galois now part of the seL4 Foundation
           </strong>
         </li>
       <li>
