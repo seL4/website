@@ -56,7 +56,7 @@ Older News: <%=reflist%>
 
 <!----------------------------------------------------------->
 <div class="news-item" id="galois-joins-foundation">
-    29 May 2023: Galois joins the seL4 Foundation
+    29 May 2023: Galois now part of the seL4 Foundation
 </div>
 <div>
   <a href = "https://galois.com/">
@@ -65,7 +65,7 @@ Older News: <%=reflist%>
     alt="Galois logo" />
   </a>
   <p>
-    Galois recently acquired Adventium Labs, long term members of the seL4 Foundation. Galois develops technology to guarantee the trustworthiness of systems where failure is unacceptable. They apply cutting edge computer science and mathematics to advance the state of the art in software and hardware trustworthiness. The seL4 Foundation welcomes its latest member and looks forward to our continuing collaboration.
+    We are pleased to have Galois now part of the seL4 Foundation, following its acquisition of Adventium labs, which has been a member since 2020 and user of seL4 technologies for years before that. Galois develops technology to guarantee the trustworthiness of systems where failure is unacceptable. They apply cutting edge computer science and mathematics to advance the state of the art in software and hardware trustworthiness.  The seL4 Foundation looks forward to our continuing collaboration.
   </p>
 </div>
 

@@ -167,7 +167,8 @@
         Endorsed Service Provider
       </div>
     </div>
-        <div class="sponsor">
+    <!--
+      <div class="sponsor">
       <div class="sponsor-pic">
         <a href="https://latticex.foundation/">
           <img src="LOGOS/latticex.png" style="width: 200px" alt="LatticeX logo">
@@ -178,6 +179,7 @@
       </div>
       <div class="sponsor-info"></div>
     </div>
+    -->
 
     <div class="sponsor">
       <div class="sponsor-pic">
