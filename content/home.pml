@@ -28,6 +28,11 @@
     <ul>
       <li>
         <strong>
+           29 May 2023: Galois now part of the seL4 Foundation
+          </strong>
+        </li>
+      <li>
+        <strong>
           10 May 2023: Register for the seL4 summit 2023
         </strong>
       </li>
@@ -36,11 +41,6 @@
           5 May 2023: seL4 receives the ACM Software System Award!
         </strong>
       </li>
-      <li>
-        <strong>
-           14 Apr 2023: Dates and venue confirmed for the seL4 summit 2023
-          </strong>
-        </li>
       <li style="margin-top:0.2em;list-style-type:none">
         more...
       </li>

@@ -73,31 +73,7 @@
   </div>
   <h2>General Members</h2>
   <div class="sponsors">
-    <div class="sponsor">
-      <div class="sponsor-pic">
-        <a href="https://www.adventiumlabs.com/">
-          <img src="LOGOS/adventium-labs.svg" style="width: 200px" alt="Adventium logo">
-        </a>
-      </div>
-      <div class="sponsor-name">
-	      Adventium Labs
-      </div>
-      <div class="sponsor-info"></div>
-    </div>
-    <!--
-    <div class="sponsor">
-       <div class="sponsor-pic">
-          <a href="https://brkawy.com">
-	    <img src="LOGOS/Brkawy.png" style="width: 200px" alt="Breakaway logo">
-	  </a>
-       </div>
-       <div class="sponsor-name">
-	       Breakaway Consulting
-       </div>
-       <div class="sponsor-info"></div>
-    </div>
-     -->
-    <div class="sponsor">
+   <div class="sponsor">
       <div class="sponsor-pic">
         <a href="https://cog.systems/">
           <img src="LOGOS/Cog.jpg" style="width: 150px" alt="Cog logo">
@@ -126,6 +102,17 @@
           <br>
           Endorsed Service Provider
         </div>
+    </div>
+    <div class="sponsor">
+      <div class="sponsor-pic">
+        <a href="https://galois.com/">
+          <img src="LOGOS/galois-logo.svg" style="width: 200px" alt="Galois logo">
+        </a>
+      </div>
+      <div class="sponsor-name">
+	      Galois Inc
+      </div>
+      <div class="sponsor-info"></div>
     </div>
     <div class="sponsor">
       <div class="sponsor-pic">
@@ -167,18 +154,6 @@
         Endorsed Service Provider
       </div>
     </div>
-        <div class="sponsor">
-      <div class="sponsor-pic">
-        <a href="https://latticex.foundation/">
-          <img src="LOGOS/latticex.png" style="width: 200px" alt="LatticeX logo">
-        </a>
-      </div>
-      <div class="sponsor-name">
-          LatticeX
-      </div>
-      <div class="sponsor-info"></div>
-    </div>
-
     <div class="sponsor">
       <div class="sponsor-pic">
         <a href="https://www.lotuscars.com/">
