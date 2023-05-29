@@ -65,7 +65,7 @@ Older News: <%=reflist%>
     alt="Galois logo" />
   </a>
   <p>
-    We are pleased to have <a href="https://galois.com/">Galois</a> now part of the seL4 Foundation, following its acquisition of Adventium labs, which has been a <a href= "/Foundation/Membership/">member</a> since 2020 and user of seL4 technologies for years before that. Galois develops technology to guarantee the trustworthiness of systems where failure is unacceptable. They apply cutting edge computer science and mathematics to advance the state of the art in software and hardware trustworthiness.  The seL4 Foundation looks forward to our continuing collaboration.
+    We are pleased to have <a href="https://galois.com/">Galois</a> now part of the seL4 Foundation, following its acquisition of Adventium labs, which has been a <a href="/Foundation/Membership/">member</a> since 2020 and user of seL4 technologies for years before that. Galois develops technology to guarantee the trustworthiness of systems where failure is unacceptable. They apply cutting edge computer science and mathematics to advance the state of the art in software and hardware trustworthiness.  The seL4 Foundation looks forward to our continuing collaboration.
   </p>
 </div>
 
