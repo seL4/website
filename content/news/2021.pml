@@ -32,7 +32,7 @@ Older News: <%=reflist%>
 </div>
 
 <!--
-<div class="news-item" id="brief-unique-anchor-name">
+<div class="news-item tag-link" id="brief-unique-anchor-name">
   29 Jan 2021: Raytheon joins the seL4 Foundation
 </div>
 <div>
@@ -54,7 +54,8 @@ Older News: <%=reflist%>
 </div>
 -->
 <!----------------------------------------------------------->
-<div class="news-item" id="member-tii">
+<div class="news-item tag-link" id="member-tii">
+  <a href="#member-tii"><span class="tag-span"># </span></a>
   16 December 2021: Technology Innovation Institute joins the seL4 Foundation
 </div>
 <div>
@@ -86,7 +87,8 @@ Older News: <%=reflist%>
 </div>
 
 <!----------------------------------------------------------->
-<div class="news-item" id="risc-v-infoflow">
+<div class="news-item tag-link" id="risc-v-infoflow">
+  <a href="#risc-v-infoflow"><span class="tag-span"># </span></a>
   2 December 2021: Proof that seL4 enforces confidentiality established for RISC-V
 </div>
 <div>
@@ -142,7 +144,8 @@ Older News: <%=reflist%>
 </div>
 
 <!----------------------------------------------------------->
-<div class="news-item" id="proofcraft-end-service">
+<div class="news-item tag-link" id="proofcraft-end-service">
+  <a href="#proofcraft-end-service"><span class="tag-span"># </span></a>
   14 October 2021: Proofcraft receives interim endorsement as a Trusted Service Provider
 </div>
 <div>
@@ -166,7 +169,8 @@ Older News: <%=reflist%>
 
 
 <!----------------------------------------------------------->
-<div class="news-item" id="sel4-is-safe">
+<div class="news-item tag-link" id="sel4-is-safe">
+  <a href="#sel4-is-safe"><span class="tag-span"># </span></a>
   28 September 2021: Gernot explains why seL4 is and remains safe
 </div>
 <div>
@@ -191,7 +195,8 @@ Older News: <%=reflist%>
 </div>
 
 <!----------------------------------------------------------->
-<div class="news-item" id="member-proofcraft">
+<div class="news-item tag-link" id="member-proofcraft">
+  <a href="#member-proofcraft"><span class="tag-span"># </span></a>
   14 Sep 2021: Proofcraft joins the seL4 Foundation
 </div>
 <div>
@@ -219,7 +224,8 @@ Older News: <%=reflist%>
 </div>
 
 <!----------------------------------------------------------->
-<div class="news-item" id="webinar-xcalibyte">
+<div class="news-item tag-link" id="webinar-xcalibyte">
+  <a href="#webinar-xcalibyte"><span class="tag-span"># </span></a>
   10 Sep 2021: Xcalibyte webinar by Gernot Heiser on seL4 on Sep 16, 2021
 </div>
 <div>
@@ -245,7 +251,8 @@ Older News: <%=reflist%>
 
 <!----------------------------------------------------------->
 
-<div class="news-item" id="donation-ghost">
+<div class="news-item tag-link" id="donation-ghost">
+  <a href="#donation-ghost"><span class="tag-span"># </span></a>
   31 Aug 2021: Ghost donates to the seL4 Foundation
 </div>
 <div>
@@ -278,7 +285,8 @@ Older News: <%=reflist%>
 
 <!----------------------------------------------------------->
 
-<div class="news-item" id="endorse-trentos">
+<div class="news-item tag-link" id="endorse-trentos">
+  <a href="#endorse-trentos"><span class="tag-span"># </span></a>
   25 Aug 2021: seL4 Foundation awards interim endorsement to
   TRENTOS&nbsp;OS and training
 </div>
@@ -315,7 +323,8 @@ Older News: <%=reflist%>
 
 <!----------------------------------------------------------->
 
-<div class="news-item" id="member-lotus">
+<div class="news-item tag-link" id="member-lotus">
+  <a href="#member-lotus"><span class="tag-span"># </span></a>
   18 August 2021: Lotus Cars joins the seL4 Foundation
 </div>
 <div>
@@ -356,7 +365,8 @@ Older News: <%=reflist%>
 
 <!----------------------------------------------------------->
 
-<div class="news-item" id="defcon">
+<div class="news-item tag-link" id="defcon">
+  <a href="#defcon"><span class="tag-span"># </span></a>
   13 August 2021: seL4 protects world's most secure drone from DEFCON hackers
 </div>
 <div>
@@ -391,7 +401,8 @@ Older News: <%=reflist%>
 
 <!----------------------------------------------------------->
 
-<div class="news-item" id="member-ksu">
+<div class="news-item tag-link" id="member-ksu">
+  <a href="#member-ksu"><span class="tag-span"># </span></a>
   2 August 2021: Kansas State University joins seL4 Foundation
 </div>
 <div>
@@ -413,7 +424,8 @@ Older News: <%=reflist%>
 
 <!----------------------------------------------------------->
 
-<div class="news-item" id="sel4-day">
+<div class="news-item tag-link" id="sel4-day">
+  <a href="#sel4-day"><span class="tag-span"># </span></a>
   29 July 2021: Happy seL4 day!
 </div>
 <div>
@@ -453,7 +465,8 @@ Older News: <%=reflist%>
 
 <!----------------------------------------------------------->
 
-<div class="news-item" id="integrity-on-risc-v">
+<div class="news-item tag-link" id="integrity-on-risc-v">
+  <a href="#integrity-on-risc-v"><span class="tag-span"># </span></a>
   28 July 2021: Proof that seL4 enforces integrity established for RISC-V
 </div>
 <div>
@@ -521,7 +534,8 @@ Older News: <%=reflist%>
 
 <!----------------------------------------------------------->
 
-<div class="news-item" id="member-tum">
+<div class="news-item tag-link" id="member-tum">
+  <a href="#member-tum"><span class="tag-span"># </span></a>
   13 July 2021: TU Munich joins seL4 Foundation
 </div>
 <div>
@@ -542,7 +556,8 @@ Older News: <%=reflist%>
 
 <!----------------------------------------------------------->
 
-<div class="news-item" id="member-second-state">
+<div class="news-item tag-link" id="member-second-state">
+  <a href="#member-second-state"><span class="tag-span"># </span></a>
   8 July 2021: Second State joins the seL4 Foundation
 </div>
 <div>
@@ -579,7 +594,8 @@ Older News: <%=reflist%>
 
 <!----------------------------------------------------------->
 
-<div class="news-item" id="board-new">
+<div class="news-item tag-link" id="board-new">
+  <a href="#board-new"><span class="tag-span"># </span></a>
   7 July 2021: Welcome new Board Members
 </div>
 <div>
@@ -668,7 +684,8 @@ Older News: <%=reflist%>
 
 <!----------------------------------------------------------->
 
-<div class="news-item" id="member-jump">
+<div class="news-item tag-link" id="member-jump">
+  <a href="#member-jump"><span class="tag-span"># </span></a>
   29 June 2021: Jump Trading joins the seL4 Foundation
 </div>
 <div>
@@ -698,7 +715,8 @@ Older News: <%=reflist%>
 
 <!----------------------------------------------------------->
 
-<div class="news-item" id="horizon-20210623">
+<div class="news-item tag-link" id="horizon-20210623">
+  <a href="#horizon-20210623"><span class="tag-span"># </span></a>
   23 Jun 2021: Horizon Robotics joins the seL4 Foundation
 </div>
 <div>
@@ -746,7 +764,8 @@ Older News: <%=reflist%>
 
 <!----------------------------------------------------------->
 
-<div class="news-item" id="member-li-auto">
+<div class="news-item tag-link" id="member-li-auto">
+  <a href="#member-li-auto"><span class="tag-span"># </span></a>
   23 June 2021: Li Auto joins the seL4 Foundation
 </div>
 <div>
@@ -791,7 +810,8 @@ Older News: <%=reflist%>
 
 <!----------------------------------------------------------->
 
-<div class="news-item" id="member-xcalibyte">
+<div class="news-item tag-link" id="member-xcalibyte">
+  <a href="#member-xcalibyte"><span class="tag-span"># </span></a>
   22 June 2021: Xcalibyte joins the seL4 Foundation
 </div>
 <div>
@@ -832,7 +852,8 @@ Older News: <%=reflist%>
 
 <!----------------------------------------------------------->
 
-<div class="news-item" id="member-nio">
+<div class="news-item tag-link" id="member-nio">
+  <a href="#member-nio"><span class="tag-span"># </span></a>
   18 Jun 2021: NIO joins the seL4 Foundation
 </div>
 <div>
@@ -881,7 +902,8 @@ Older News: <%=reflist%>
 
 <!----------------------------------------------------------->
 
-<div class="news-item" id="sel4-12-1-0">
+<div class="news-item tag-link" id="sel4-12-1-0">
+  <a href="#sel4-12-1-0"><span class="tag-span"># </span></a>
   11 June 2021: seL4 12.1.0 released
 </div>
 <div>
@@ -931,7 +953,8 @@ Older News: <%=reflist%>
 
 <!----------------------------------------------------------->
 
-<div class="news-item" id="ceo">
+<div class="news-item tag-link" id="ceo">
+  <a href="#ceo"><span class="tag-span"># </span></a>
   9 June 2021: seL4 Foundation appoints CEO
 </div>
 <div>
@@ -951,7 +974,8 @@ Older News: <%=reflist%>
 
 <!----------------------------------------------------------->
 
-<div class="news-item" id="member-kry10">
+<div class="news-item tag-link" id="member-kry10">
+  <a href="#member-kry10"><span class="tag-span"># </span></a>
   7 June 2021: Kry10 the seL4 Foundation
 </div>
 <div>
@@ -984,7 +1008,8 @@ Older News: <%=reflist%>
 </div>
 
 <!----------------------------------------------------------->
-<div class="news-item" id="sel4-support">
+<div class="news-item tag-link" id="sel4-support">
+  <a href="#sel4-support"><span class="tag-span"># </span></a>
   24 May 2021: 4 concrete ways to support seL4 now
 </div>
 <div>
@@ -1113,7 +1138,8 @@ Older News: <%=reflist%>
 
 
 <!----------------------------------------------------------->
-<div class="news-item" id="jobs-page">
+<div class="news-item tag-link" id="jobs-page">
+  <a href="#jobs-page"><span class="tag-span"># </span></a>
   23 May 2021: New "Jobs" page on the seL4 Foundation website
 </div>
 <div>
@@ -1132,7 +1158,8 @@ Older News: <%=reflist%>
 </div>
 
 <!----------------------------------------------------------->
-<div class="news-item" id="member-risc-v">
+<div class="news-item tag-link" id="member-risc-v">
+  <a href="#member-risc-v"><span class="tag-span"># </span></a>
   5 May 2021: RISC-V International and seL4 Foundation Announce New Security Milestone
 </div>
 <div>
@@ -1205,7 +1232,8 @@ Older News: <%=reflist%>
 </div>
 <!----------------------------------------------------------->
 
-<div class="news-item" id="member-eth">
+<div class="news-item tag-link" id="member-eth">
+  <a href="#member-eth"><span class="tag-span"># </span></a>
   23 April 2021: ETH Zurich joins seL4 Foundation
 </div>
 <div>
@@ -1223,7 +1251,8 @@ Older News: <%=reflist%>
  </p>
 </div>
 <!----------------------------------------------------------->
-<div class="news-item" id="crowdfunding">
+<div class="news-item tag-link" id="crowdfunding">
+  <a href="#crowdfunding"><span class="tag-span"># </span></a>
   15 April 2021: seL4 Foundation sets up crowdfunding portal
 </div>
 <div>
@@ -1234,8 +1263,11 @@ Older News: <%=reflist%>
    Foundation's <a href="https://crowdfunding.lfx.linuxfoundation.org/projects/e94c998c-bac2-4224-b0ae-23f265fdd1a5">LFX portal</a>.
  </p>
 </div>
+
+
 <!----------------------------------------------------------->
-<div class="news-item" id="member-raytheon">
+<div class="news-item tag-link" id="member-raytheon">
+  <a href="#member-raytheon"><span class="tag-span"># </span></a>
   4 Mar 2021: Raytheon joins the seL4 Foundation
 </div>
 <div>
@@ -1267,7 +1299,8 @@ Older News: <%=reflist%>
  </p>
 </div>
 <!----------------------------------------------------------->
-<div class="news-item" id="endors-hc-service">
+<div class="news-item tag-link" id="endors-hc-service">
+  <a href="#endors-hc-service"><span class="tag-span"># </span></a>
   19 Feb 2021: HENSOLDT Cyber receives interim endorsement
 </div>
 <div>
@@ -1298,7 +1331,8 @@ Older News: <%=reflist%>
 </div>
 <!----------------------------------------------------------->
 
-<div class="news-item" id="end-services">
+<div class="news-item tag-link" id="end-services">
+  <a href="#end-services"><span class="tag-span"># </span></a>
   11 Feb 2021: seL4 Foundation endorses service providers
 </div>
 <div>
@@ -1348,7 +1382,8 @@ Older News: <%=reflist%>
 </div>
 <!----------------------------------------------------------->
 
-<div class="news-item" id="member-penten">
+<div class="news-item tag-link" id="member-penten">
+  <a href="#member-penten"><span class="tag-span"># </span></a>
   8 Feb 2021: Penten joins the seL4 Foundation
 </div>
 <div>

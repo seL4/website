@@ -34,7 +34,8 @@ Other News: <%=reflist%>
 <!----------------------------------------------------------->
 
 <!----------------------------------------------------------->
-<div class="news-item">
+<div class="news-item tag-link" id="seL4-youtube">
+  <a href="#seL4-youtube"><span class="tag-span"># </span></a>
  31 Dec 2020: seL4 YouTube Channel
 </div>
 <div>
@@ -54,7 +55,8 @@ Other News: <%=reflist%>
 
 
 <!----------------------------------------------------------->
-<div class="news-item">
+<div class="news-item tag-link" id="seL4-12-0-0-release">
+  <a href="#seL4-12-0-0-release"><span class="tag-span"># </span></a>
  9 Nov 2020: seL4 12.0.0 release
 </div>
 <div>
@@ -88,7 +90,8 @@ Other News: <%=reflist%>
 </div>
 
 <!----------------------------------------------------------->
-<div class="news-item">
+<div class="news-item tag-link" id="summit-2020-dates">
+  <a href="#summit-2020-dates"><span class="tag-span"># </span></a>
  15 Oct 2020: 3rd seL4 summit to take place on 15-18 Nov
 </div>
 <div>
@@ -110,7 +113,8 @@ Other News: <%=reflist%>
 </div>
 
 <!----------------------------------------------------------->
-<div class="news-item">
+<div class="news-item tag-link" id="adventium-joins">
+  <a href="#adventium-joins"><span class="tag-span"># </span></a>
  22 Jul 2020: Adventium Labs joins the seL4 Foundation!
 </div>
 <div>
@@ -139,7 +143,8 @@ Other News: <%=reflist%>
 </div>
 
 <!----------------------------------------------------------->
-<div class="news-item">
+<div class="news-item tag-link" id="functional-correctness-proof-riscv">
+  <a href="#functional-correctness-proof-riscv"><span class="tag-span"># </span></a>
   9 Jun 2020: functional correctness proof of seL4 RISC-V
 </div>
 <div>
@@ -176,7 +181,8 @@ Other News: <%=reflist%>
 
 
 <!----------------------------------------------------------->
-<div class="news-item">
+<div class="news-item tag-link" id="unsw-seL4-teaching-videos">
+  <a href="#unsw-seL4-teaching-videos"><span class="tag-span"># </span></a>
   2 Jun 2020: UNSW seL4 teaching videos available
 </div>
 <div>
@@ -211,7 +217,8 @@ Other News: <%=reflist%>
 </div>
 
 <!----------------------------------------------------------->
-<div class="news-item">
+<div class="news-item tag-link" id="foundation-whitepaper">
+  <a href="#foundation-whitepaper"><span class="tag-span"># </span></a>
   25 May 2020: seL4 Foundation whitepaper released
 </div>
 <div>
@@ -240,7 +247,8 @@ Other News: <%=reflist%>
 </div>
 
 <!----------------------------------------------------------->
-<div class="news-item">
+<div class="news-item tag-link" id="breakaway-joins">
+  <a href="#breakaway-joins"><span class="tag-span"># </span></a>
   9 Jun 2020: Breakaway Consulting joins the seL4 Foundation!
 </div>
 <div>
@@ -275,7 +283,8 @@ Other News: <%=reflist%>
 
 <!----------------------------------------------------------->
 
-<div class="news-item">
+<div class="news-item tag-link" id="foundation-launch">
+  <a href="#foundation-launch"><span class="tag-span"># </span></a>
   7 Apr 2020: Launch of the seL4 Foundation
 </div>
 

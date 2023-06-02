@@ -32,7 +32,7 @@ Older News: <%=reflist%>
 </div>
 
 <!--
-<div class="news-item" id="brief-unique-anchor-name">
+<div class="news-item tag-link" id="brief-unique-anchor-name">
   29 Jan 2021: Raytheon joins the seL4 Foundation
 </div>
 <div>
@@ -55,8 +55,9 @@ Older News: <%=reflist%>
 -->
 
 <!----------------------------------------------------------->
-<div class="news-item" id="lf-annual-report">
-    14 December 2022: seL4 features in the Linux Foundation’s 2022 Annual report
+<div class="news-item tag-link" id="lf-annual-report">
+  <a href="#lf-annual-report"><span class="tag-span"># </span></a>
+  14 December 2022: seL4 features in the Linux Foundation’s 2022 Annual report
 </div>
 <div style="margin: auto; width: 50%;">
     <a href = "https://www.linuxfoundation.org/resources/publications/linux-foundation-annual-report-2022?hsLang=en">
@@ -70,8 +71,9 @@ Older News: <%=reflist%>
 
 
 <!----------------------------------------------------------->
-<div class="news-item" id="summit-videos">
-    11 November 2022: The videos and slides of the seL4 summit 2022 are available online
+<div class="news-item tag-link" id="summit-videos">
+  <a href="#summit-videos"><span class="tag-span"># </span></a>
+  11 November 2022: The videos and slides of the seL4 summit 2022 are available online
 </div>
 <div>
   <a href="/Foundation/Summit/2022">
@@ -88,8 +90,9 @@ Older News: <%=reflist%>
 
 
 <!----------------------------------------------------------->
-<div class="news-item" id="gday-kataos">
-    21 October 2022: G’Day KataOS
+<div class="news-item tag-link" id="gday-kataos">
+  <a href="#gday-kataos"><span class="tag-span"># </span></a>
+  21 October 2022: G’Day KataOS
 </div>
 <div>
   <a href="https://www.google.com/">
@@ -106,8 +109,9 @@ Older News: <%=reflist%>
 
 
 <!----------------------------------------------------------->
-<div class="news-item" id="summit-xcalibyte">
-    7 October 2022: Thanks Xcalibyte for sponsoring the seL4 Summit 2022
+<div class="news-item tag-link" id="summit-xcalibyte">
+  <a href="#summit-xcalibyte"><span class="tag-span"># </span></a>
+  7 October 2022: Thanks Xcalibyte for sponsoring the seL4 Summit 2022
 </div>
 <div>
   <p>
@@ -139,8 +143,9 @@ Older News: <%=reflist%>
 
 
 <!----------------------------------------------------------->
-<div class="news-item" id="summit-panellists">
-    26 September 2022: Panellists for seL4 summit announced
+<div class="news-item tag-link" id="summit-panellists">
+  <a href="#summit-panellists"><span class="tag-span"># </span></a>
+  26 September 2022: Panellists for seL4 summit announced
 </div>
 <div>
   <p>
@@ -193,8 +198,9 @@ Older News: <%=reflist%>
 </div>
 
 <!----------------------------------------------------------->
-<div class="news-item" id="summit-dornerworks">
-    19 September 2022: Thanks DornerWorks for sponsoring the seL4 Summit 2022
+<div class="news-item tag-link" id="summit-dornerworks">
+  <a href="#summit-dornerworks"><span class="tag-span"># </span></a>
+  19 September 2022: Thanks DornerWorks for sponsoring the seL4 Summit 2022
 </div>
 <div>
   <p>
@@ -220,8 +226,9 @@ Older News: <%=reflist%>
 </div>
 
 <!----------------------------------------------------------->
-<div class="news-item" id="summit-horizon">
-    9 September 2022: Thanks Horizon Robotics for sponsoring the seL4 Summit 2022
+<div class="news-item tag-link" id="summit-horizon">
+  <a href="#summit-horizon"><span class="tag-span"># </span></a>
+  9 September 2022: Thanks Horizon Robotics for sponsoring the seL4 Summit 2022
 </div>
 <div>
   <p>
@@ -247,8 +254,9 @@ Older News: <%=reflist%>
 </div>
 
 <!----------------------------------------------------------->
-<div class="news-item" id="member-spacemit">
-    31 August 2022: SpacemiT joins the seL4 Foundation
+<div class="news-item tag-link" id="member-spacemit">
+  <a href="#member-spacemit"><span class="tag-span"># </span></a>
+  31 August 2022: SpacemiT joins the seL4 Foundation
 </div>
 <div>
   <p>
@@ -267,8 +275,9 @@ Older News: <%=reflist%>
 </div>
 
 <!----------------------------------------------------------->
-<div class="news-item" id="registration-open">
-    15 August 2022: Register for the seL4 Summit!
+<div class="news-item tag-link" id="registration-open">
+  <a href="#registration-open"><span class="tag-span"># </span></a>
+  15 August 2022: Register for the seL4 Summit!
 </div>
 <div>
 
@@ -312,8 +321,9 @@ Older News: <%=reflist%>
 </div>
 
 <!----------------------------------------------------------->
-<div class="news-item" id="member-google">
-    4 August 2022: Google joins the seL4 Foundation
+<div class="news-item tag-link" id="member-google">
+  <a href="#member-google"><span class="tag-span"># </span></a>
+  4 August 2022: Google joins the seL4 Foundation
 </div>
 <div>
 
@@ -333,8 +343,9 @@ Older News: <%=reflist%>
 
 
 <!----------------------------------------------------------->
-<div class="news-item" id="program-online">
-    30 June 2022: The seL4 summit Program is available!
+<div class="news-item tag-link" id="program-online">
+  <a href="#program-online"><span class="tag-span"># </span></a>
+  30 June 2022: The seL4 summit Program is available!
 </div>
 <div>
 
@@ -367,7 +378,8 @@ Older News: <%=reflist%>
 <!----------------------------------------------------------->
 
 
-<div class="news-item" id="member-latticex">
+<div class="news-item tag-link" id="member-latticex">
+  <a href="#member-latticex"><span class="tag-span"># </span></a>
   17 June 2022: LatticeX joins the seL4 Foundation
 </div>
 <div>
@@ -396,8 +408,9 @@ Older News: <%=reflist%>
 
 
 <!----------------------------------------------------------->
-<div class="news-item" id="cfp-reminder">
-    2 May 2022: One week left to propose a talk at the seL4 summit 2022!
+<div class="news-item tag-link" id="cfp-reminder">
+  <a href="#cfp-reminder"><span class="tag-span"># </span></a>
+  2 May 2022: One week left to propose a talk at the seL4 summit 2022!
 </div>
 <p>
 A reminder that you have until Monday 9th of May 2022 to <a href="../Foundation/Summit/2022/cfp">propose a talk</a> for the seL4 Summit 2022.
@@ -408,8 +421,12 @@ A reminder that you have until Monday 9th of May 2022 to <a href="../Foundation/
       Your browser does not support the video tag.
     </video>
 </p>
-<div class="news-item" id="summit-venue">
-    29 April 2022: The seL4 Summit 2022 will be in Munich, Germany, on 10-12 Oct 2022
+
+
+<!----------------------------------------------------------->
+<div class="news-item tag-link" id="summit-venue">
+  <a href="#summit-venue"><span class="tag-span"># </span></a>
+  29 April 2022: The seL4 Summit 2022 will be in Munich, Germany, on 10-12 Oct 2022
 </div>
 <div>
     <a href="../Foundation/Summit/2022/">
@@ -456,8 +473,9 @@ A reminder that you have until Monday 9th of May 2022 to <a href="../Foundation/
 
 
 <!----------------------------------------------------------->
-<div class="news-item" id="tm-2022">
-    11 April 2022: The seL4<sup>&reg;</sup> trademark is now registered in the US
+<div class="news-item tag-link" id="tm-2022">
+  <a href="#tm-2022"><span class="tag-span"># </span></a>
+  11 April 2022: The seL4<sup>&reg;</sup> trademark is now registered in the US
 </div>
 <div>
     <a href="../">
@@ -475,7 +493,8 @@ A reminder that you have until Monday 9th of May 2022 to <a href="../Foundation/
 
 
 <!----------------------------------------------------------->
-<div class="news-item" id="agm-2022">
+<div class="news-item tag-link" id="agm-2022">
+  <a href="#agm-2022"><span class="tag-span"># </span></a>
   6 April 2022: Our second annual AGM to be held 6 April 2022
 </div>
 <div>
@@ -496,7 +515,8 @@ A reminder that you have until Monday 9th of May 2022 to <a href="../Foundation/
 </div>
 
 <!----------------------------------------------------------->
-<div class="news-item" id="summit-cfp">
+<div class="news-item tag-link" id="summit-cfp">
+  <a href="#summit-cfp"><span class="tag-span"># </span></a>
   30 March 2022: The Call for Presentations for the seL4 summit 2022 is out!
 </div>
 <div>
@@ -535,7 +555,8 @@ A reminder that you have until Monday 9th of May 2022 to <a href="../Foundation/
 
 
 <!----------------------------------------------------------->
-<div class="news-item" id="summit-pc">
+<div class="news-item tag-link" id="summit-pc">
+  <a href="#summit-pc"><span class="tag-span"># </span></a>
   18 March 2022: Meet the Program Committee of the seL4 summit 2022!
 </div>
 <div>
@@ -576,7 +597,8 @@ A reminder that you have until Monday 9th of May 2022 to <a href="../Foundation/
 </div>
 
 <!----------------------------------------------------------->
-<div class="news-item" id="board-member-olivier">
+<div class="news-item tag-link" id="board-member-olivier">
+  <a href="#board-member-olivier"><span class="tag-span"># </span></a>
   14 March 2022: Olivier Engelkes is Hensoldt Cyber's new representative on the seL4 Board
 </div>
 <div>
@@ -601,7 +623,8 @@ A reminder that you have until Monday 9th of May 2022 to <a href="../Foundation/
 </div>
 
 <!----------------------------------------------------------->
-<div class="news-item" id="member-ncsc">
+<div class="news-item tag-link" id="member-ncsc">
+  <a href="#member-ncsc"><span class="tag-span"># </span></a>
   2 February 2022: NCSC joins the seL4 Foundation
 </div>
 <div>
@@ -633,7 +656,8 @@ A reminder that you have until Monday 9th of May 2022 to <a href="../Foundation/
 </div>
 
 <!----------------------------------------------------------->
-<div class="news-item" id="summit-bid-host">
+<div class="news-item tag-link" id="summit-bid-host">
+  <a href="#summit-bid-host"><span class="tag-span"># </span></a>
   1 February 2022: Call for bids to host the seL4 Summit 2022!
 </div>
 <div>
@@ -674,7 +698,8 @@ A reminder that you have until Monday 9th of May 2022 to <a href="../Foundation/
 
 
 <!----------------------------------------------------------->
-<div class="news-item" id="kry10-endorsement">
+<div class="news-item tag-link" id="kry10-endorsement">
+  <a href="#kry10-endorsement"><span class="tag-span"># </span></a>
   28 January 2022: Kry10 receives interim endorsement as a Trusted Service Provider
 </div>
 <div>
