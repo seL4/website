@@ -393,10 +393,20 @@ a.divLink {
   line-height: 80%;
 }
 
+.tag-link {
+  width: 6em
+}
+
+.tag-span{
+  display: none;
+}
+.tag-link:hover span {
+  display: inline;
+}
+
 .news-content {
   width: auto;
 }
-
 
 .news-item {
   width: auto;
@@ -408,6 +418,10 @@ a.divLink {
   background-color: #D6DBE4; /* neutralLighter */
   font-weight: bold;
   clear: both;
+}
+.news-item:hover + .hide-tag{
+  display: block;
+  color: green;
 }
 
 .news-finish{

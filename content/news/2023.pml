@@ -32,8 +32,8 @@ Older News: <%=reflist%>
 </div>
 
 <!--
-<div class="news-item" id="brief-unique-anchor-name">
-  29 Jan 2021: Raytheon joins the seL4 Foundation
+<div class="news-item tag-link" id="brief-unique-anchor-name">
+  <a href="#brief-unique-anchor-name"><span class="tag-span"># </span></a> 29 Jan 2021: Raytheon joins the seL4 Foundation
 </div>
 <div>
  <p>
@@ -54,9 +54,10 @@ Older News: <%=reflist%>
 </div>
 -->
 
+
 <!----------------------------------------------------------->
-<div class="news-item" id="galois-joins-foundation">
-    29 May 2023: Galois now part of the seL4 Foundation
+<div class="news-item tag-link" id="galois-joins-foundation">
+  <a href="#galois-joins-foundation"><span class="tag-span"># </span></a> 29 May 2023: Galois now part of the seL4 Foundation
 </div>
 <div>
   <a href = "https://galois.com/">
@@ -71,7 +72,8 @@ Older News: <%=reflist%>
 
 
 <!----------------------------------------------------------->
-<div class="news-item" id="summit-2023-register">
+<div class="news-item tag-link" id="summit-2023-register">
+    <a href="#summit-2023-register"><span class="tag-span"># </span></a>
     10 May 2023: Register for the seL4 summit 2023
 </div>
 <div>
@@ -104,7 +106,8 @@ Older News: <%=reflist%>
 </div>
 
 <!----------------------------------------------------------->
-<div class="news-item" id="acm-award">
+<div class="news-item tag-link" id="acm-award">
+    <a href="#acm-award"><span class="tag-span"># </span></a>
     5 May 2023: seL4 receives the ACM Software System Award!
 </div>
 <div>
@@ -126,7 +129,8 @@ Older News: <%=reflist%>
 
 
 <!----------------------------------------------------------->
-<div class="news-item" id="summit-2023-venue">
+<div class="news-item tag-link" id="summit-2023-venue">
+    <a href="#summit-2023-venue"><span class="tag-span"># </span></a>
     14 April 2023: Dates and venue confirmed for the <a href="../Foundation/Summit/2023/">seL4 summit 2023</a>.
 </div>
 <div>
@@ -151,7 +155,8 @@ Older News: <%=reflist%>
 
 
 <!----------------------------------------------------------->
-<div class="news-item" id="member-autoware">
+<div class="news-item tag-link" id="member-autoware">
+  <a href="#member-autoware"><span class="tag-span"># </span></a>
   22 March 2023: The Autoware Foundation joins the seL4 Foundation
 </div>
 <div>
@@ -172,8 +177,9 @@ Older News: <%=reflist%>
 </div>
 
 <!----------------------------------------------------------->
-<div class="news-item" id="summit-2023-cfp">
-    20 February 2023: <a href="../Foundation/Summit/2023/cfp">Call For Presentations</a> for the <a href="../Foundation/Summit/">seL4 Summit 2023</a>
+<div class="news-item tag-link" id="summit-2023-cfp">
+  <a href="#summit-2023-cfp"><span class="tag-span"># </span></a>
+  20 February 2023: <a href="../Foundation/Summit/2023/cfp">Call For Presentations</a> for the <a href="../Foundation/Summit/">seL4 Summit 2023</a>
 </div>
 <div>
   <a href = "../Foundation/Summit">
@@ -195,8 +201,9 @@ Older News: <%=reflist%>
 </div>
 
 <!----------------------------------------------------------->
-<div class="news-item" id="summit-2023-pc">
-    13 February 2023: Meet the Program Committee of the seL4 summit 2023
+<div class="news-item tag-link" id="summit-2023-pc">
+  <a href="#summit-2023-pc"><span class="tag-span"># </span></a>
+  13 February 2023: Meet the Program Committee of the seL4 summit 2023
 </div>
 <div>
     <a href = "../Foundation/Summit">
@@ -363,8 +370,9 @@ Older News: <%=reflist%>
 
 
 <!----------------------------------------------------------->
-<div class="news-item" id="summit-2023-minneapolis">
-    10 February 2023: The seL4 summit 2023 will be held in Minneapolis, USA
+<div class="news-item tag-link" id="summit-2023-minneapolis">
+  <a href="#summit-2023-minneapolis"><span class="tag-span"># </span></a>
+ 10 February 2023: The seL4 summit 2023 will be held in Minneapolis, USA
 </div>
 <div>
     <a href = "../Foundation/Summit">
