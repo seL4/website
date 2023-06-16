@@ -56,6 +56,32 @@ Older News: <%=reflist%>
 
 
 <!----------------------------------------------------------->
+<div class="news-item tag-link" id="summit-2023-keynotes">
+  <a href="#summit-2023-keynotes"><span class="tag-span"># </span></a> 19 June 2023: Keynotes for seL4 summit 2023 announced
+</div>
+<div>
+<p>
+    We are pleased to announce two keynotes for the seL4 summit 2023.
+  </p>
+  <p>
+    <img src="/Foundation/Membership/LOGOS/NCSC.png"
+    style="width: 35%; float:right"
+    alt="NCSC logo" />
+    <strong>Gage B</strong> ... add bio
+  </p>
+  <p>
+    <img src="../../../images/summit/sam-security-photo.jpg"
+    style="width: 15%; float:right"
+    alt="Sam Leffler" />
+    <strong>Sam Leffler</strong> has worked at Google for nearly 15 years. He was part of the original team that developed ChromeOS and the ChromeBook, was responsible for the networking components of Project Loon, and worked on various infrastructure projects before joining Project Sparrow to help build the CantripOS embedded operating system.
+  </p>
+  <p>
+    Prior to joining Google he was an independent contractor focused on wireless networking and operating systems. Before contracting he worked for VMware, Silicon Graphics, Pixar, Lucasfilm, and the Computer System Research Group (CSR) at UC Berkeley where he was responsible for the 4.2BSD release of the UNIX operating system. At CSRG he co-designed and implemented many of the facilities found in contemporary UNIX systems including sockets, networking support (IP/TCP), reliable signals, and more.
+  </p>
+</div>
+
+
+<!----------------------------------------------------------->
 <div class="news-item tag-link" id="galois-joins-foundation">
   <a href="#galois-joins-foundation"><span class="tag-span"># </span></a> 29 May 2023: Galois now part of the seL4 Foundation
 </div>

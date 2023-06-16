@@ -15,11 +15,12 @@ Minneapolis, USA
 
 <div class="summit_div">
   <ul>
-    <li><a href="#summit-news">Latest News: Register for the summit</a></li>
+    <li><a href="#summit-news">Latest News: Keynotes announcedRegister for the summit</a></li>
     <li><a href="#summit-important-dates">Important Dates</a></li>
     <li><a href="#summit-about">About</a></li>
     <li><a href="cfp">Call for Presentations</a></li>
     <!--li><a href="../principles/">Principles</a></li-->
+    <li><a href="#summit-registration">Registration</a></li>
     <li><a href="#summit-location">Location and Venue</a></li>
     <li><a href="#summit-pc">Program Committee</a></li>
     <li><a href="#summit-contact">Contact</a></li>
@@ -34,24 +35,25 @@ Minneapolis, USA
     </h3>
   </div>
   <h3 class="highlight">
-    Register for the summit
+    Keynotes announced
   </h3>
   <p>
-    The seL4 summit will cover the complete seL4 ecosystem, consisting of the verified microkernel, as well as all seL4-related technology, tools, infrastructure, products, projects, and people.
+    We are pleased to announce two keynotes for the seL4 summit 2023.
   </p>
   <p>
-    Tickets include:
-  </p>
-  <ul>
-    <li>Participation in the 3-day conference, including talks, keynotes, seL4 updates & discussions</li>
-    <li>Networking with other seL4 experts and enthusiasts</li>
-    <li>Reception and Dinner</li>
-  </ul>
-  <p>
-    <strong><a href="https://events.linuxfoundation.org/sel4-summit/">Register here</a></strong>
+    <img src="../../Membership/LOGOS/NCSC.png"
+    style="width: 35%; float:right"
+    alt="NCSC logo" />
+    <strong>Gage B</strong> ... add bio
   </p>
   <p>
-    The early bird cut-off date is 18 August 2023.
+    <img src="../../../images/summit/sam-security-photo.jpg"
+    style="width: 15%; float:right"
+    alt="Sam Leffler" />
+    <strong>Sam Leffler</strong> has worked at Google for nearly 15 years. He was part of the original team that developed ChromeOS and the ChromeBook, was responsible for the networking components of Project Loon, and worked on various infrastructure projects before joining Project Sparrow to help build the CantripOS embedded operating system.
+  </p>
+  <p>
+    Prior to joining Google he was an independent contractor focused on wireless networking and operating systems. Before contracting he worked for VMware, Silicon Graphics, Pixar, Lucasfilm, and the Computer System Research Group (CSR) at UC Berkeley where he was responsible for the 4.2BSD release of the UNIX operating system. At CSRG he co-designed and implemented many of the facilities found in contemporary UNIX systems including sockets, networking support (IP/TCP), reliable signals, and more.
   </p>
 </div>
 
@@ -60,8 +62,9 @@ Minneapolis, USA
     Important Dates
   </h3>
   <ul>
-    <li><strong>Abstracts due: <s>10 April 2023</s> 24 April 2023</strong></li>
+    <li>Abstracts due: <s>10 April 2023</s> 24 April 2023</li>
     <li>Notification of decisions: <s>2 June 2023</s> 9 June 2023 </li>
+    <li><strong>Early bird cut-off: 18 August 2023</strong></li>
     <li>Summit: 19-21 September 2023</li>
   </ul>
 </div>
@@ -86,6 +89,29 @@ Minneapolis, USA
   </p>
   <p>
     An open call for presentations invites submissions of short abstracts about cool work on seL4, and a Program Committee made of a wide range of representatives of the seL4 community is in charge of the technical content (reviewing submission, selecting invited speakers, defining the program).
+  </p>
+</div>
+
+<div class="summit_div">
+  <h3 id="summit-registration">
+    Registration
+  </h3>
+  <p>
+   The seL4 summit will cover the complete seL4 ecosystem, consisting of the verified microkernel, as well as all seL4-related technology, tools, infrastructure, products, projects, and people.
+  </p>
+  <p>
+    Tickets include:
+  </p>
+  <ul>
+    <li>Participation in the 3-day conference, including talks, keynotes, seL4 updates & discussions</li>
+    <li>Networking with other seL4 experts and enthusiasts</li>
+    <li>Reception and Dinner</li>
+  </ul>
+  <p>
+    <strong><a href="https://events.linuxfoundation.org/sel4-summit/">Hotel bookings and summit registration</a></strong>
+  </p>
+  <p>
+    The early bird cut-off date is 18 August 2023.
   </p>
 </div>
 
