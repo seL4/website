@@ -59,19 +59,21 @@ Older News: <%=reflist%>
 <div class="news-item tag-link" id="summit-2023-keynotes">
   <a href="#summit-2023-keynotes"><span class="tag-span"># </span></a> 19 June 2023: Keynotes for seL4 summit 2023 announced
 </div>
-<div>
-<p>
+<div class="row" style="margin-left:5px; margin-right:5px">
+  <p>
     We are pleased to announce two keynotes for the seL4 summit 2023.
   </p>
   <p>
-    <img src="/Foundation/Membership/LOGOS/NCSC.png"
-    style="width: 35%; float:right"
+  <img src="/Foundation/Membership/LOGOS/NCSC.png"
+    style="width: 25%; float:right; margin-left:0px"
     alt="NCSC logo" />
-    <strong>Gage B</strong> ... add bio
+    <strong>Gage</strong> is an Assurance Lead in NCSC with expertise in cryptography, software assurance and verification. He is part of a larger team that seeks to provide assurance and articulate risk for a wide range of products and customers. Whilst he is not a product developer himself, he has been responsible for presenting assurance cases for products that rely on seL4 to uphold security requirements.
   </p>
+  </div>
+  <div class="row" style="margin-left:5px; margin-right:5px">
   <p>
     <img src="../../../images/summit/sam-security-photo.jpg"
-    style="width: 15%; float:right"
+    style="width: 15%; float:right; margin-left:100px"
     alt="Sam Leffler" />
     <strong>Sam Leffler</strong> has worked at Google for nearly 15 years. He was part of the original team that developed ChromeOS and the ChromeBook, was responsible for the networking components of Project Loon, and worked on various infrastructure projects before joining Project Sparrow to help build the CantripOS embedded operating system.
   </p>
