@@ -62,7 +62,7 @@ Older News: <%=reflist%>
 <div>
   <div class="row" style="margin-left:0px; margin-right:0px">
   <p>
-    We are pleased to announce that the two keynotes for the <a href="../Foundation/Summit/2023">seL4 summit 2023</a> will be Gage from NCSC and Sam Leffler from Google! Gage will talk about <a href="../Foundation/Summit/2023#abstract-gage">Scoping assurance activities with seL4</a> and Sam about <a href="../Foundation/Summit/2023#abstract-sam">"CantripOS: An OS for Ambient ML Applications</a>.
+    We are pleased to announce that the two keynotes for the <a href="../Foundation/Summit/2023">seL4 summit 2023</a> will be Gage from NCSC and Sam Leffler from Google! Gage will talk about <a href="../Foundation/Summit/2023#abstract-gage">Scoping assurance activities with seL4</a> and Sam about <a href="../Foundation/Summit/2023#abstract-sam">CantripOS: An OS for Ambient ML Applications</a>.
   </p>
   <a href="https://www.ncsc.gov.uk/">
     <img src="/Foundation/Membership/LOGOS/NCSC.png"

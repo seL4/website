@@ -51,7 +51,7 @@ Minneapolis, USA
     <strong>Gage</strong> is an Assurance Lead in NCSC with expertise in cryptography, software assurance and verification. He is part of a larger team that seeks to provide assurance and articulate risk for a wide range of products and customers. Whilst he is not a product developer himself, he has been responsible for presenting assurance cases for products that rely on seL4 to uphold security requirements.
   </p>
   <p>
-    Gage will talk about "Scoping assurance activities with seL4".
+    Gage will talk about "Scoping assurance activities with seL4"
   </p>
   <p>
     In both the safety and security industries, high levels of product assurance are sought to mitigate the risk of product failure. Often this means that software developers need to demonstrate that all functions do what they are supposed to do, the product does not do anything it is not supposed to do, and that the product is free from all known bugs and vulnerabilities.
