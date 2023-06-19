@@ -15,11 +15,12 @@ Minneapolis, USA
 
 <div class="summit_div">
   <ul>
-    <li><a href="#summit-news">Latest News: Register for the summit</a></li>
+    <li><a href="#summit-news">Latest News: Keynotes announced</a></li>
     <li><a href="#summit-important-dates">Important Dates</a></li>
     <li><a href="#summit-about">About</a></li>
     <li><a href="cfp">Call for Presentations</a></li>
     <!--li><a href="../principles/">Principles</a></li-->
+    <li><a href="#summit-registration">Registration</a></li>
     <li><a href="#summit-location">Location and Venue</a></li>
     <li><a href="#summit-pc">Program Committee</a></li>
     <li><a href="#summit-contact">Contact</a></li>
@@ -34,24 +35,49 @@ Minneapolis, USA
     </h3>
   </div>
   <h3 class="highlight">
-    Register for the summit
+    Keynotes announced
   </h3>
   <p>
-    The seL4 summit will cover the complete seL4 ecosystem, consisting of the verified microkernel, as well as all seL4-related technology, tools, infrastructure, products, projects, and people.
+    We are pleased to announce that the two keynotes for the seL4 summit 2023 will be <strong>Gage from NCSC</strong> and <strong>Sam Leffler from Google</strong>!
+  </p>
+  <p style="margin-top:25px">
+    <img src="/Foundation/Membership/LOGOS/NCSC.png"
+      style="width: 25%; float:right"
+      alt="NCSC logo" />
+    <strong>Gage</strong> is an Assurance Lead in NCSC with expertise in cryptography, software assurance and verification. He is part of a larger team that seeks to provide assurance and articulate risk for a wide range of products and customers. Whilst he is not a product developer himself, he has been responsible for presenting assurance cases for products that rely on seL4 to uphold security requirements.
   </p>
   <p>
-    Tickets include:
+    <strong>Gage's keynote will be about "Scoping assurance activities with seL4"</strong>
   </p>
-  <ul>
-    <li>Participation in the 3-day conference, including talks, keynotes, seL4 updates & discussions</li>
-    <li>Networking with other seL4 experts and enthusiasts</li>
-    <li>Reception and Dinner</li>
-  </ul>
-  <p>
-    <strong><a href="https://events.linuxfoundation.org/sel4-summit/">Register here</a></strong>
+  <h5 id="abstract-gage" class="keynote">Abstract</h5>
+  <p class="keynote">
+    In both the safety and security industries, high levels of product assurance are sought to mitigate the risk of product failure. Often this means that software developers need to demonstrate that all functions do what they are supposed to do, the product does not do anything it is not supposed to do, and that the product is free from all known bugs and vulnerabilities.
   </p>
+  <p class="keynote">
+    Whilst none of these requirements have trivial solutions, testing does a reasonable job of checking the correctness of functions. Similarly, taking advantage of tooling (such as static analysis, dynamic analysis), tracking the discovery of bugs and vulnerabilities, and having a refined software patching process helps to mitigate the presence of bugs and vulnerabilities.
+  </p>
+  <p class="keynote">
+    However, it is much less obvious how one can gain confidence that the software has no unintended functionality without checking the entire software implementation. Even then, the scope of what you need to check is potentially unbounded (we’re looking for the unknown unknowns after all), issues will still be missed, and the resource requirements are high.
+  </p>
+  <p class="keynote">
+    In this talk, I will describe how basing a software product on seL4 facilitates the scoping of this no unintended functionality problem, and in turn, reduces the amount of effort required when it comes to demonstrating assurance of a security product. By walking through an example, we’ll observe the assurance benefits of component isolation, data flow control, how seL4 helps to direct where we should focus our assurance efforts, and any caveats we should be aware of.
+  </p>
+  <p class="keynote">
+    Accepting that the assurance effort should be commensurate with the criticality of the security product, my hope is that this presentation provides a sliding scale of seL4 features we should seek to take advantage of, be it for articulating an assurance case, or conducting an independent assessment.
+  </p>
+  <p style="margin-top:25px">
+   <img src="../../../images/summit/sam-security-photo.jpg"
+    style="width: 15%; float:right"
+    alt="Sam Leffler" />
+    <strong>Sam Leffler</strong> has worked at Google for nearly 15 years. He was part of the original team that developed ChromeOS and the ChromeBook, was responsible for the networking components of Project Loon, and worked on various infrastructure projects before joining Project Sparrow to help build the CantripOS embedded operating system. Prior to joining Google he was an independent contractor focused on wireless networking and operating systems. Before contracting he worked for VMware, Silicon Graphics, Pixar, Lucasfilm, and the Computer System Research Group (CSR) at UC Berkeley where he was responsible for the 4.2BSD release of the UNIX operating system. At CSRG he co-designed and implemented many of the facilities found in contemporary UNIX systems including sockets, networking support (IP/TCP), reliable signals, and more.
+  </p>
+
   <p>
-    The early bird cut-off date is 18 August 2023.
+    <strong>Sam's keynote will be about "CantripOS: An OS for Ambient ML Applications"</strong>
+  </p>
+  <h5 class="keynote" id="abstract-sam">Abstract</h5>
+  <p class="keynote" style="margin-bottom:35px">
+    CantripOS is an open source operating system purpose-built to run ML workloads for embedded systems. It is being developed as part of Google’s project Sparrow, whose charter is to build a low-power embedded platform for ML applications with a focus on security and privacy. CantripOS is built in the <a href="https://www.rust-lang.org/">Rust programming language</a>, runs under the <a href="https://sel4.systems/Info/Docs/seL4-manual-12.1.0.pdf">seL4 microkernel</a>, and uses a modified <a href="https://docs.sel4.systems/projects/camkes/">CAmkES framework</a>. This allows CantripOS to run dynamically loaded applications in a controlled sandbox, while still retaining the benefits of a statically designed system. This paper describes the system design, modifications made to seL4 and CAmkES, and future directions. All the work described here is publicly available on <a href="https://github.com/AmbiML/sparrow-manifest">GitHub</a>.
   </p>
 </div>
 
@@ -60,8 +86,9 @@ Minneapolis, USA
     Important Dates
   </h3>
   <ul>
-    <li><strong>Abstracts due: <s>10 April 2023</s> 24 April 2023</strong></li>
+    <li>Abstracts due: <s>10 April 2023</s> 24 April 2023</li>
     <li>Notification of decisions: <s>2 June 2023</s> 9 June 2023 </li>
+    <li><strong>Early bird cut-off: 18 August 2023</strong></li>
     <li>Summit: 19-21 September 2023</li>
   </ul>
 </div>
@@ -86,6 +113,29 @@ Minneapolis, USA
   </p>
   <p>
     An open call for presentations invites submissions of short abstracts about cool work on seL4, and a Program Committee made of a wide range of representatives of the seL4 community is in charge of the technical content (reviewing submission, selecting invited speakers, defining the program).
+  </p>
+</div>
+
+<div class="summit_div">
+  <h3 id="summit-registration">
+    Registration
+  </h3>
+  <p>
+   The seL4 summit will cover the complete seL4 ecosystem, consisting of the verified microkernel, as well as all seL4-related technology, tools, infrastructure, products, projects, and people.
+  </p>
+  <p>
+    Tickets include:
+  </p>
+  <ul>
+    <li>Participation in the 3-day conference, including talks, keynotes, seL4 updates & discussions</li>
+    <li>Networking with other seL4 experts and enthusiasts</li>
+    <li>Reception and Dinner</li>
+  </ul>
+  <p>
+    <strong><a href="https://events.linuxfoundation.org/sel4-summit/">Hotel bookings and summit registration</a></strong>
+  </p>
+  <p>
+    The early bird cut-off date is 18 August 2023.
   </p>
 </div>
 
