@@ -69,7 +69,7 @@ Older News: <%=reflist%>
       style="width: 20%; float:right;"
       alt="NCSC logo" />
   </a>
-  </p>
+  <p>
     <strong>Gage</strong> is an Assurance Lead in NCSC with expertise in cryptography, software assurance and verification. He is part of a larger team that seeks to provide assurance and articulate risk for a wide range of products and customers. Whilst he is not a product developer himself, he has been responsible for presenting assurance cases for products that rely on seL4 to uphold security requirements.
   </p>
   </div>
@@ -85,6 +85,7 @@ Older News: <%=reflist%>
   <p>
     Prior to joining Google he was an independent contractor focused on wireless networking and operating systems. Before contracting he worked for VMware, Silicon Graphics, Pixar, Lucasfilm, and the Computer System Research Group (CSR) at UC Berkeley where he was responsible for the 4.2BSD release of the UNIX operating system. At CSRG he co-designed and implemented many of the facilities found in contemporary UNIX systems including sockets, networking support (IP/TCP), reliable signals, and more.
   </p>
+  </div>
 </div>
 
 
