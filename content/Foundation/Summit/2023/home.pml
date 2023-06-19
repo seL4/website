@@ -15,7 +15,7 @@ Minneapolis, USA
 
 <div class="summit_div">
   <ul>
-    <li><a href="#summit-news">Latest News: Keynotes announcedRegister for the summit</a></li>
+    <li><a href="#summit-news">Latest News: Keynotes announced</a></li>
     <li><a href="#summit-important-dates">Important Dates</a></li>
     <li><a href="#summit-about">About</a></li>
     <li><a href="cfp">Call for Presentations</a></li>
@@ -38,27 +38,53 @@ Minneapolis, USA
     Keynotes announced
   </h3>
   <p>
-    We are pleased to announce two keynotes for the seL4 summit 2023.
+    We are pleased to announce that the two keynotes for the seL4 summit 2023 will be Gage from NCSC and Sam Leffler from Google!
   </p>
-  <div class="row" style="margin-left:5px; margin-right:5px">
-  <p>
   <img src="/Foundation/Membership/LOGOS/NCSC.png"
-    style="width: 25%; float:right; margin-left:0px"
-    alt="NCSC logo" />
+      style="width: 25%;"
+      alt="NCSC logo" />
+    <img src="../../../images/summit/sam-security-photo.jpg"
+    style="width: 15%; padding-left:10px"
+    alt="Sam Leffler" />
+
+  <p id="abstract-gage">
     <strong>Gage</strong> is an Assurance Lead in NCSC with expertise in cryptography, software assurance and verification. He is part of a larger team that seeks to provide assurance and articulate risk for a wide range of products and customers. Whilst he is not a product developer himself, he has been responsible for presenting assurance cases for products that rely on seL4 to uphold security requirements.
   </p>
-  </div>
-  <div class="row" style="margin-left:5px; margin-right:5px">
   <p>
-    <img src="../../../images/summit/sam-security-photo.jpg"
-    style="width: 15%; float:right; margin-left:100px"
-    alt="Sam Leffler" />
+    Gage will talk about "Scoping assurance activities with seL4".
+  </p>
+  <p>
+    In both the safety and security industries, high levels of product assurance are sought to mitigate the risk of product failure. Often this means that software developers need to demonstrate that all functions do what they are supposed to do, the product does not do anything it is not supposed to do, and that the product is free from all known bugs and vulnerabilities.
+  </p>
+  <p>
+    Whilst none of these requirements have trivial solutions, testing does a reasonable job of checking the correctness of functions. Similarly, taking advantage of tooling (such as static analysis, dynamic analysis), tracking the discovery of bugs and vulnerabilities, and having a refined software patching process helps to mitigate the presence of bugs and vulnerabilities.
+  </p>
+  <p>
+    However, it is much less obvious how one can gain confidence that the software has no unintended functionality without checking the entire software implementation. Even then, the scope of what you need to check is potentially unbounded (we’re looking for the unknown unknowns after all), issues will still be missed, and the resource requirements are high.
+  </p>
+  <p>
+    In this talk, I will describe how basing a software product on seL4 facilitates the scoping of this no unintended functionality problem, and in turn, reduces the amount of effort required when it comes to demonstrating assurance of a security product. By walking through an example, we’ll observe the assurance benefits of component isolation, data flow control, how seL4 helps to direct where we should focus our assurance efforts, and any caveats we should be aware of.
+  </p>
+  <p>
+    Accepting that the assurance effort should be commensurate with the criticality of the security product, my hope is that this presentation provides a sliding scale of seL4 features we should seek to take advantage of, be it for articulating an assurance case, or conducting an independent assessment.
+  </p>
     <strong>Sam Leffler</strong> has worked at Google for nearly 15 years. He was part of the original team that developed ChromeOS and the ChromeBook, was responsible for the networking components of Project Loon, and worked on various infrastructure projects before joining Project Sparrow to help build the CantripOS embedded operating system.
   </p>
   <p>
     Prior to joining Google he was an independent contractor focused on wireless networking and operating systems. Before contracting he worked for VMware, Silicon Graphics, Pixar, Lucasfilm, and the Computer System Research Group (CSR) at UC Berkeley where he was responsible for the 4.2BSD release of the UNIX operating system. At CSRG he co-designed and implemented many of the facilities found in contemporary UNIX systems including sockets, networking support (IP/TCP), reliable signals, and more.
   </p>
-  </div>
+  <p id="abstract-sam">
+    Sam will talk about "CantripOS: An OS for Ambient ML Applications"
+  </p>
+  <p>
+    CantripOS is an open source operating system purpose-built to run ML workloads for embedded systems. It is being developed as part of Google’s project Sparrow, whose charter is to build a low-power embedded platform for ML applications with a focus on security and privacy. CantripOS is built in the Rust programming language [1], runs under the seL4 microkernel [2], and uses a modified CAmkES framework [3]. This allows CantripOS to run dynamically loaded applications in a controlled sandbox, while still retaining the benefits of a statically designed system. This paper describes the system design, modifications made to seL4 and CAmkES, and future directions. All the work described here is publicly available on GitHub [4].
+  </p>
+  <ol>
+    <li>https://www.rust-lang.org/</li>
+    <li>https://sel4.systems/Info/Docs/seL4-manual-12.1.0.pdf</li>
+    <li>https://docs.sel4.systems/projects/camkes/</li>
+    <li>https://github.com/AmbiML/sparrow-manifest</li>
+  </ol>
 </div>
 
 <div class="summit_div">
