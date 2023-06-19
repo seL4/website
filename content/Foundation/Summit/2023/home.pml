@@ -40,13 +40,13 @@ Minneapolis, USA
   <p>
     We are pleased to announce that the two keynotes for the seL4 summit 2023 will be <strong>Gage from NCSC</strong> and <strong>Sam Leffler from Google</strong>!
   </p>
-  <p>
+  <p style="margin-top:25px">
     <img src="/Foundation/Membership/LOGOS/NCSC.png"
       style="width: 25%; float:right"
       alt="NCSC logo" />
     <strong>Gage</strong> is an Assurance Lead in NCSC with expertise in cryptography, software assurance and verification. He is part of a larger team that seeks to provide assurance and articulate risk for a wide range of products and customers. Whilst he is not a product developer himself, he has been responsible for presenting assurance cases for products that rely on seL4 to uphold security requirements.
   </p>
-  <p style="margin-top:40px">
+  <p>
     <strong>Gage's keynote will be about "Scoping assurance activities with seL4"</strong>
   </p>
   <h5 id="abstract-gage" class="keynote">Abstract</h5>
@@ -65,7 +65,7 @@ Minneapolis, USA
   <p class="keynote">
     Accepting that the assurance effort should be commensurate with the criticality of the security product, my hope is that this presentation provides a sliding scale of seL4 features we should seek to take advantage of, be it for articulating an assurance case, or conducting an independent assessment.
   </p>
-  <p style="margin-top:40px">
+  <p style="margin-top:25px">
    <img src="../../../images/summit/sam-security-photo.jpg"
     style="width: 15%; float:right"
     alt="Sam Leffler" />
@@ -76,15 +76,9 @@ Minneapolis, USA
     <strong>Sam's keynote will be about "CantripOS: An OS for Ambient ML Applications"</strong>
   </p>
   <h5 class="keynote" id="abstract-sam">Abstract</h5>
-  <p class="keynote">
-    CantripOS is an open source operating system purpose-built to run ML workloads for embedded systems. It is being developed as part of Google’s project Sparrow, whose charter is to build a low-power embedded platform for ML applications with a focus on security and privacy. CantripOS is built in the Rust programming language [1], runs under the seL4 microkernel [2], and uses a modified CAmkES framework [3]. This allows CantripOS to run dynamically loaded applications in a controlled sandbox, while still retaining the benefits of a statically designed system. This paper describes the system design, modifications made to seL4 and CAmkES, and future directions. All the work described here is publicly available on GitHub [4].
+  <p class="keynote" style="margin-bottom:35px">
+    CantripOS is an open source operating system purpose-built to run ML workloads for embedded systems. It is being developed as part of Google’s project Sparrow, whose charter is to build a low-power embedded platform for ML applications with a focus on security and privacy. CantripOS is built in the <a href="https://www.rust-lang.org/">Rust programming language</a>, runs under the <a href="https://sel4.systems/Info/Docs/seL4-manual-12.1.0.pdf">seL4 microkernel</a>, and uses a modified <a href="https://docs.sel4.systems/projects/camkes/">CAmkES framework</a>. This allows CantripOS to run dynamically loaded applications in a controlled sandbox, while still retaining the benefits of a statically designed system. This paper describes the system design, modifications made to seL4 and CAmkES, and future directions. All the work described here is publicly available on <a href="https://github.com/AmbiML/sparrow-manifest">GitHub</a>.
   </p>
-  <ol class="keynote">
-    <li class="keynote">https://www.rust-lang.org/</li>
-    <li class="keynote">https://sel4.systems/Info/Docs/seL4-manual-12.1.0.pdf</li>
-    <li class="keynote">https://docs.sel4.systems/projects/camkes/</li>
-    <li class="keynote">https://github.com/AmbiML/sparrow-manifest</li>
-  </ol>
 </div>
 
 <div class="summit_div">
