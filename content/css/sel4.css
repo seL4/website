@@ -607,3 +607,13 @@ div.summit-abstract{
 .previous-summit-links{
   padding: 5px;
 }
+
+h5.keynote{
+  font-weight: bold;
+}
+p.keynote {
+  text-indent: 20px;
+}
+ol.keynote {
+  margin-bottom: 50px;
+}

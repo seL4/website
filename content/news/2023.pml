@@ -62,7 +62,7 @@ Older News: <%=reflist%>
 <div>
   <div class="row" style="margin-left:0px; margin-right:0px">
   <p>
-    We are pleased to announce that the two keynotes for the <a href="../Foundation/Summit/2023">seL4 summit 2023</a> will be Gage from NCSC and Sam Leffler from Google! Gage will talk about <a href="../Foundation/Summit/2023#abstract-gage">Scoping assurance activities with seL4</a> and Sam about <a href="../Foundation/Summit/2023#abstract-sam">CantripOS: An OS for Ambient ML Applications</a>.
+    We are pleased to announce that the two keynotes for the <a href="../Foundation/Summit/2023">seL4 summit 2023</a> will be <strong>Gage from NCSC</strong> and <strong>Sam Leffler from Google</strong>! Gage will talk about <a href="../Foundation/Summit/2023#abstract-gage">Scoping assurance activities with seL4</a> and Sam about <a href="../Foundation/Summit/2023#abstract-sam">CantripOS: An OS for Ambient ML Applications</a>.
   </p>
   <a href="https://www.ncsc.gov.uk/">
     <img src="/Foundation/Membership/LOGOS/NCSC.png"
@@ -80,10 +80,7 @@ Older News: <%=reflist%>
     alt="Google logo" />
   </a>
   <p>
-    <strong>Sam Leffler</strong> has worked at Google for nearly 15 years. He was part of the original team that developed ChromeOS and the ChromeBook, was responsible for the networking components of Project Loon, and worked on various infrastructure projects before joining Project Sparrow to help build the CantripOS embedded operating system.
-  </p>
-  <p>
-    Prior to joining Google he was an independent contractor focused on wireless networking and operating systems. Before contracting he worked for VMware, Silicon Graphics, Pixar, Lucasfilm, and the Computer System Research Group (CSR) at UC Berkeley where he was responsible for the 4.2BSD release of the UNIX operating system. At CSRG he co-designed and implemented many of the facilities found in contemporary UNIX systems including sockets, networking support (IP/TCP), reliable signals, and more.
+    <strong>Sam Leffler</strong> has worked at Google for nearly 15 years. He was part of the original team that developed ChromeOS and the ChromeBook, was responsible for the networking components of Project Loon, and worked on various infrastructure projects before joining Project Sparrow to help build the CantripOS embedded operating system. Prior to joining Google he was an independent contractor focused on wireless networking and operating systems. Before contracting he worked for VMware, Silicon Graphics, Pixar, Lucasfilm, and the Computer System Research Group (CSR) at UC Berkeley where he was responsible for the 4.2BSD release of the UNIX operating system. At CSRG he co-designed and implemented many of the facilities found in contemporary UNIX systems including sockets, networking support (IP/TCP), reliable signals, and more.
   </p>
   </div>
 </div>
