@@ -28,6 +28,11 @@
     <ul>
       <li>
         <strong>
+          23 Jun 2023:  The seL4 summit Program is available
+        </strong>
+      </li>
+      <li>
+        <strong>
           19 Jun 2023: Keynotes for seL4 summit 2023 announced
         </strong>
       </li>
@@ -36,11 +41,6 @@
            29 May 2023: Galois now part of the seL4 Foundation
           </strong>
         </li>
-      <li>
-        <strong>
-          10 May 2023: Register for the seL4 summit 2023
-        </strong>
-      </li>
       <li style="margin-top:0.2em;list-style-type:none">
         more...
       </li>
