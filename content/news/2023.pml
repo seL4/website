@@ -60,7 +60,6 @@ Older News: <%=reflist%>
   <a href="#summit-program-2023"><span class="tag-span"># </span></a> 23 June 2023: The seL4 summit Program is available!
 </div>
 <div>
-<div>
   <a href = "../Foundation/Summit">
     <img src="/images/sel4-summit-logo.svg"
     style="width: 15%; float:right"

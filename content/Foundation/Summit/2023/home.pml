@@ -44,7 +44,7 @@ Minneapolis, USA
     technical research and development, experience reports of seL4 in the field,
     technical discussions and Birds-of-a-feather sessions, as well as a seL4 bootcamp training session.
   </p>
-
+</div>
 
 <div class="summit_div">
   <h3 id="summit-important-dates">
