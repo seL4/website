@@ -67,9 +67,16 @@ Older News: <%=reflist%>
   </a>
   <p>
   Have a look at the <a href="https://sel4summit2023.sched.com/">seL4 summit Program</a>!
-    We have an great line-up of intersting seL4 work, with a combination of
+    We have a great line-up of intersting seL4 work, with a combination of
     technical research and development, experience reports of seL4 in the field,
-    technical discussions and Birds-of-a-feather sessions, as well as a seL4 bootcamp training session.
+    technical discussions and birds-of-a-feather sessions, as well as a training
+    session on getting started with seL4.
+  </p>
+  <p style="text-align: center; padding:20px">
+  <a href = "https://sel4summit2023.sched.com/">
+    <img src="/images/summit/program-at-a-glance-2023.svg"
+    alt="seL4 summit 2023 program" />
+  </a>
   </p>
 </div>
 
