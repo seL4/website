@@ -56,6 +56,32 @@ Older News: <%=reflist%>
 
 
 <!----------------------------------------------------------->
+<div class="news-item tag-link" id="summit-program-2023">
+  <a href="#summit-program-2023"><span class="tag-span"># </span></a> 23 June 2023: The seL4 summit Program is available!
+</div>
+<div>
+  <a href = "../Foundation/Summit">
+    <img src="/images/sel4-summit-logo.svg"
+    style="width: 15%; float:right"
+    alt="seL4 summit" />
+  </a>
+  <p>
+  Have a look at the <a href="https://sel4summit2023.sched.com/">program</a> of the <a href="../Foundation/Summit/2023">seL4 summit 2023</a>!
+    We have a great line-up of interesting seL4 work, with a combination of
+    technical research and development, experience reports of seL4 in the field,
+    technical discussions and birds-of-a-feather sessions, as well as a training
+    session on getting started with seL4.
+  </p>
+  <p style="text-align: center; padding:20px">
+  <a href = "https://sel4summit2023.sched.com/">
+    <img src="/images/summit/program-at-a-glance-2023.svg"
+    alt="seL4 summit 2023 program" />
+  </a>
+  </p>
+</div>
+
+
+<!----------------------------------------------------------->
 <div class="news-item tag-link" id="summit-2023-keynotes">
   <a href="#summit-2023-keynotes"><span class="tag-span"># </span></a> 19 June 2023: Keynotes for seL4 summit 2023 announced
 </div>
