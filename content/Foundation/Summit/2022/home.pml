@@ -327,10 +327,10 @@ Munich, Germany (hybrid), 10-13 Oct 2022
 
   <div class="person">
     <div class="person_pic">
-      <a href="https://www.adventiumlabs.com/team-member/todd-carpenter"><img src="../../../images/summit/todd.jpg" alt="Todd Carpenter" width="80"/></a>
+      <a href="https://galois.com/team/todd-carpenter/"><img src="../../../images/summit/todd.jpg" alt="Todd Carpenter" width="80"/></a>
     </div>
     <div class="person_title">
-      <strong><a class="list_link" href="https://www.adventiumlabs.com/team-member/todd-carpenter">Todd Carpenter</a></strong>
+      <strong><a class="list_link" href="https://galois.com/team/todd-carpenter/">Todd Carpenter</a></strong>
     </div>
   </div>
 </div>
