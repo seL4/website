@@ -85,6 +85,10 @@ Older News: <%=reflist%>
    initialisation and configuration of systems architectures.
   </p>
   <p>
+   The <a href="/Foundation/Summit/2023">seL4 Summit 2023</a> will take place in
+   Minneapolis, home town of this Collins Aerospace team involved in seL4.
+  </p>
+  <p>
     See <a
     href="https://events.linuxfoundation.org/sel4-summit/sponsor/">here</a> if
     you are interested in sponsoring the seL4 summit 2023.
