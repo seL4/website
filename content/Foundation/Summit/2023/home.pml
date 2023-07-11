@@ -346,7 +346,6 @@ Minneapolis, USA
     We are grateful to the following sponsors for their financial support of the seL4 summit 2023.
   </p>
 </div>
-<div class="sponsors">
   <div class="sponsor">
     <div class="sponsor-pic">
       <a href="https://www.nio.com">
@@ -357,16 +356,30 @@ Minneapolis, USA
     <div class="sponsor-name">
       NIO
     </div>
-    <div class="sponsor-info"><div class="highlight">Gold sponsor</div></div>
+    <div class="sponsor-info"><div class="highlight">Gold sponsor</div>
     </div>
   </div>
-  <div class="summit-div" style="padding-top:30px">
+  <div class="sponsor">
+    <div class="sponsor-pic">
+      <a href="https://www.collinsaerospace.com">
+        <img src="../../Membership/LOGOS/Collins_Aerospace_Logo.svg" style="width: 250px"
+            alt="Collins Aerospace logo">
+      </a>
+    </div>
+    <div class="sponsor-name">
+      Collins Aerospace
+    </div>
+    <div class="sponsor-info">Silver sponsor
+    </div>
+  </div>
+
+<div class="summit-div" style="padding-top:30px">
   <p>
     See <a
     href="https://events.linuxfoundation.org/sel4-summit/sponsor/">here</a> if
     you are interested in sponsoring the seL4 summit 2023.
   </p>
-  </div>
+</div>
 
 
 <div class="summit_div">
