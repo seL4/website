@@ -63,7 +63,7 @@ Older News: <%=reflist%>
   <p>
    <a href="https://www.collinsaerospace.com">
      <img src="/Foundation/Membership/LOGOS/Collins_Aerospace_Logo.svg"
-	  style="width: 15%;  padding-left:10px;  float:right"
+	  style="width: 25%;  padding-left:10px;  float:right"
 	  alt="Collins Aerospace logo">
    </a>
   </p>
