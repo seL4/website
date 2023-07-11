@@ -54,6 +54,72 @@ Older News: <%=reflist%>
 </div>
 -->
 
+<!----------------------------------------------------------->
+<div class="news-item tag-link" id="sponsor23-collins">
+  <a href="#sponsor23-collins"><span class="tag-span"># </span></a> 11 July 2023: Thanks Collins Aerospace for being Silver Sponsor of the seL4 Summit 2023
+</div>
+<div>
+
+  <p>
+   <a href="https://www.collinsaerospace.com">
+     <img src="/Foundation/Membership/LOGOS/Collins_Aerospace_Logo.svg"
+	  style="width: 15%;  padding-left:10px;  float:right"
+	  alt="Collins Aerospace logo">
+   </a>
+  </p>
+  <p>
+    The seL4 Foundation thanks <a href="https://www.collinsaerospace.com">Collins Aerospace</a> for
+    becoming a Silver sponsor of the <a href="/Foundation/Summit/2023">seL4 Summit
+    2023</a>.
+  </p>
+  <p>
+   <a href="https://www.collinsaerospace.com">Collins Aerospace</a>, part of
+   seL4 Foundation member <a href="https://www.rtx.com">Raytheon
+   Technologies</a>, has been a long-time core participant in the seL4
+   ecosystem. It was a prime contractor in the DARPA HACMS program, which
+   demonstrated the seL4-based incremental cyber retrofit of autonomous military
+   vehicles. This was a major milestone in the growth of seL4, demonstrating
+   that it protects against cyber attacks on real systems in operation. The same
+   team also led the follow-on DARPA CASE program, aiming at designed-in
+   cyber-resiliency, including the seL4-based framework for verified
+   initialisation and configuration of systems architectures.
+  </p>
+
+</div>
+
+<!----------------------------------------------------------->
+<div class="news-item tag-link" id="sponsor23-nio">
+  <a href="#sponsor23-nio"><span class="tag-span"># </span></a> 11 July 2023: Thanks NIO for being Gold Sponsor of the seL4 Summit 2023
+</div>
+<div>
+
+  <p>
+   <a href="https://www.nio.com">
+     <img src="/Foundation/Membership/LOGOS/NIO.svg"
+	  style="width: 15%;  padding-left:10px;  float:right"
+	  alt="NIO logo">
+   </a>
+  </p>
+  <p>
+    The seL4 Foundation thanks <a href="https://www.nio.com">NIO</a> for
+    becoming our first Gold sponsor of the <a href="/Foundation/Summit/2023">seL4 Summit
+    2023</a>.
+  </p>
+  <p>
+
+   <a href="https://www.nio.com">NIO</a> is a global EV company funded in 2015
+   and that went public in the U.S. in 2018. NIO emphasizes user experience and
+   technology innovation.
+
+   NIO is a strong
+   supporter of seL4 and a premium member of the seL4 Foundation. It has been
+   investing heavily on building a full-fledge software platform for modern
+   vehicles based on seL4.
+
+  </p>
+
+</div>
+
 
 <!----------------------------------------------------------->
 <div class="news-item tag-link" id="summit-program-2023">

@@ -28,19 +28,19 @@
     <ul>
       <li>
         <strong>
+          11 Jul 2023: Thanks Collins Aerospace for being Silver Sponsor of the seL4 Summit 2023
+        </strong>
+      </li>
+      <li>
+        <strong>
+           11 Jul 2023: Thanks NIO for being Gold Sponsor of the seL4 Summit 2023
+          </strong>
+        </li>
+      <li>
+        <strong>
           23 Jun 2023:  The seL4 summit Program is available
         </strong>
       </li>
-      <li>
-        <strong>
-          19 Jun 2023: Keynotes for seL4 summit 2023 announced
-        </strong>
-      </li>
-      <li>
-        <strong>
-           29 May 2023: Galois now part of the seL4 Foundation
-          </strong>
-        </li>
       <li style="margin-top:0.2em;list-style-type:none">
         more...
       </li>
