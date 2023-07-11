@@ -84,6 +84,11 @@ Older News: <%=reflist%>
    cyber-resiliency, including the seL4-based framework for verified
    initialisation and configuration of systems architectures.
   </p>
+  <p>
+    See <a
+    href="https://events.linuxfoundation.org/sel4-summit/sponsor/">here</a> if
+    you are interested in sponsoring the seL4 summit 2023.
+  </p>
 
 </div>
 
@@ -106,16 +111,16 @@ Older News: <%=reflist%>
     2023</a>.
   </p>
   <p>
-
    <a href="https://www.nio.com">NIO</a> is a global EV company funded in 2015
    and that went public in the U.S. in 2018. NIO emphasizes user experience and
-   technology innovation.
-
-   NIO is a strong
-   supporter of seL4 and a premium member of the seL4 Foundation. It has been
-   investing heavily on building a full-fledge software platform for modern
-   vehicles based on seL4.
-
+   technology innovation.  NIO is a strong supporter of seL4 and a premium
+   member of the seL4 Foundation. It has been investing heavily on building a
+   full-fledge software platform for modern vehicles based on seL4.
+  </p>
+  <p>
+    See <a
+    href="https://events.linuxfoundation.org/sel4-summit/sponsor/">here</a> if
+    you are interested in sponsoring the seL4 summit 2023.
   </p>
 
 </div>
