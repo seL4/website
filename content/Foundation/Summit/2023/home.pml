@@ -13,54 +13,40 @@ Minneapolis, USA
   19 - 21 September 2023
 </h4>
 
+
+<div class="summit_div">
+<div class="highlight">
+<h4></h4>
+<h4>Latest News: <a href="#summit-sponsors">Sponsors</a></h4>
+</div>
+<p></p>
+</div>
+
 <div class="summit_div">
   <ul>
-    <li><a href="#summit-news">Latest News: Keynotes announced</a></li>
     <li><a href="#summit-important-dates">Important Dates</a></li>
     <li><a href="#summit-about">About</a></li>
-    <li><a href="cfp">Call for Presentations</a></li>
     <!--li><a href="../principles/">Principles</a></li-->
     <li><a href="#summit-registration">Registration</a></li>
     <li><a href="#summit-location">Location and Venue</a></li>
     <li><a href="#summit-keynotes">Keynotes</a></li>
+    <li><a href="#summit-program">Program</a></li>
     <li><a href="#summit-pc">Program Committee</a></li>
+    <li><a href="cfp">Call for Presentations</a></li>
+    <li><a href="#summit-sponsors">Sponsors</a></li>
     <li><a href="#summit-contact">Contact</a></li>
     <li>Other summit editions: <a href="../2022/">2022</a></li>
   </ul>
 </div>
 
-<div class="summit_div">
-  <div class="highlight">
-    <h3 id="summit-news">
-      Latest News
-    </h3>
-  </div>
-  <h3 class="highlight">
-    Program available
-  </h3>
-  <p>
-    Have a look at the <a href="https://sel4summit2023.sched.com/">seL4 summit Program</a>!
-    We have a great line-up of intersting seL4 work, with a combination of
-    technical research and development, experience reports of seL4 in the field,
-    technical discussions and birds-of-a-feather sessions, as well as a training
-    session on getting started with seL4.
-  </p>
-  <p style="text-align: center; padding:20px">
-  <a href = "https://sel4summit2023.sched.com/">
-    <img src="/images/summit/program-at-a-glance-2023.svg"
-    alt="seL4 summit 2023 program" />
-  </a>
-  </p>
-
-</div>
 
 <div class="summit_div">
   <h3 id="summit-important-dates">
     Important Dates
   </h3>
   <ul>
-    <li>Abstracts due: <s>10 April 2023</s> 24 April 2023</li>
-    <li>Notification of decisions: <s>2 June 2023</s> 9 June 2023 </li>
+    <li><s>Abstracts due: 24 April 2023</s></li>
+    <li><s>Notification of decisions: 9 June 2023</s> </li>
     <li><strong>Early bird cut-off: 18 August 2023</strong></li>
     <li>Summit: 19-21 September 2023</li>
   </ul>
@@ -94,7 +80,10 @@ Minneapolis, USA
     Registration
   </h3>
   <p>
-   The seL4 summit will cover the complete seL4 ecosystem, consisting of the verified microkernel, as well as all seL4-related technology, tools, infrastructure, products, projects, and people.
+    Registrations are now open <strong><a href="https://events.linuxfoundation.org/sel4-summit/">here</a></strong>.
+  </p>
+  <p>
+    The early bird cut-off date is 18 August 2023.
   </p>
   <p>
     Tickets include:
@@ -104,12 +93,6 @@ Minneapolis, USA
     <li>Networking with other seL4 experts and enthusiasts</li>
     <li>Reception and Dinner</li>
   </ul>
-  <p>
-    <strong><a href="https://events.linuxfoundation.org/sel4-summit/">Hotel bookings and summit registration</a></strong>
-  </p>
-  <p>
-    The early bird cut-off date is 18 August 2023.
-  </p>
 </div>
 
 <div class="summit_div">
@@ -117,10 +100,11 @@ Minneapolis, USA
     Location and Venue
   </h3>
   <p>
-    The seL4 Summit 2023 will be held in Minneapolis, USA, 19 - 21 September 2023, at the Elliot Park Hotel. The summit will be hosted by the <a href="https://www.linuxfoundation.org/">Linux Foundation</a>, and will be an in-person event. There will be no option for a live remote participation but the event will be recorded and all talks (for which the presenter accepted to be recorded) will be made available shortly after the summit on the <a href="https://www.youtube.com/@seL4">seL4 YouTube channel</a>.
+  All information about <strong>location and hotels</strong> can be found
+  <strong><a href="https://events.linuxfoundation.org/sel4-summit/">here</a></strong>.
   </p>
   <p>
-    <strong><a href="https://events.linuxfoundation.org/sel4-summit/">Hotel bookings and summit registration</a></strong>
+    The seL4 Summit 2023 will be held in Minneapolis, USA, 19 - 21 September 2023, at the Elliot Park Hotel. The summit will be hosted by the <a href="https://www.linuxfoundation.org/">Linux Foundation</a>, and will be an in-person event. There will be no option for a live remote participation but the event will be recorded and all talks (for which the presenter accepted to be recorded) will be made available shortly after the summit on the <a href="https://www.youtube.com/@seL4">seL4 YouTube channel</a>.
   </p>
 </div>
 
@@ -170,6 +154,26 @@ Minneapolis, USA
   <p class="keynote" style="margin-bottom:35px">
     CantripOS is an open source operating system purpose-built to run ML workloads for embedded systems. It is being developed as part of Google’s project Sparrow, whose charter is to build a low-power embedded platform for ML applications with a focus on security and privacy. CantripOS is built in the <a href="https://www.rust-lang.org/">Rust programming language</a>, runs under the <a href="https://sel4.systems/Info/Docs/seL4-manual-12.1.0.pdf">seL4 microkernel</a>, and uses a modified <a href="https://docs.sel4.systems/projects/camkes/">CAmkES framework</a>. This allows CantripOS to run dynamically loaded applications in a controlled sandbox, while still retaining the benefits of a statically designed system. This paper describes the system design, modifications made to seL4 and CAmkES, and future directions. All the work described here is publicly available on <a href="https://github.com/AmbiML/sparrow-manifest">GitHub</a>.
   </p>
+</div>
+
+<div class="summit_div">
+  <h3 id="summit-program">
+      Program
+  </h3>
+  <p>
+    Have a look at the <a href="https://sel4summit2023.sched.com/">seL4 summit Program</a>!
+    We have a great line-up of interesting seL4 work, with a combination of
+    technical research and development, experience reports of seL4 in the field,
+    technical discussions and birds-of-a-feather sessions, as well as a training
+    session on getting started with seL4.
+  </p>
+  <p style="text-align: center; padding:20px">
+  <a href = "https://sel4summit2023.sched.com/">
+    <img src="/images/summit/program-at-a-glance-2023.svg"
+    alt="seL4 summit 2023 program" />
+  </a>
+  </p>
+
 </div>
 
 <div class="summit_div">
@@ -334,7 +338,48 @@ Minneapolis, USA
 
 
 
+<div class="summit_div">
+  <h3 id="summit-sponsors">
+    Sponsors
+  </h3>
+  <p>
+    We are grateful to the following sponsors for their financial support of the seL4 summit 2023.
+  </p>
+</div>
+  <div class="sponsor">
+    <div class="sponsor-pic">
+      <a href="https://www.nio.com">
+        <img src="../../Membership/LOGOS/NIO.svg" style="width: 350px"
+            alt="NIO logo">
+      </a>
+    </div>
+    <div class="sponsor-name">
+      NIO
+    </div>
+    <div class="sponsor-info"><div class="highlight">Gold sponsor</div>
+    </div>
+  </div>
+  <div class="sponsor">
+    <div class="sponsor-pic">
+      <a href="https://www.collinsaerospace.com">
+        <img src="../../Membership/LOGOS/Collins_Aerospace_Logo.svg" style="width: 250px"
+            alt="Collins Aerospace logo">
+      </a>
+    </div>
+    <div class="sponsor-name">
+      Collins Aerospace
+    </div>
+    <div class="sponsor-info">Silver sponsor
+    </div>
+  </div>
 
+<div class="summit-div" style="padding-top:30px">
+  <p>
+    See <a
+    href="https://events.linuxfoundation.org/sel4-summit/sponsor/">here</a> if
+    you are interested in sponsoring the seL4 summit 2023.
+  </p>
+</div>
 
 
 <div class="summit_div">

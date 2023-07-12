@@ -232,7 +232,7 @@ explicit description of how the job will be linked to seL4.
 </div>
 <div>
  <p>
-   <img src="../Membership/LOGOS/NIO.png"
+   <img src="../Membership/LOGOS/NIO.svg"
    style="width:28%; padding-left:1em; float:right"
    alt="nio">
  </p>

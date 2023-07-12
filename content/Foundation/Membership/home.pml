@@ -47,7 +47,7 @@
       <div class="sponsor-pic">
           <a href="http://nio.com/">
             <!-- NIO PNG has width 248, better not scale -->
-            <img src="LOGOS/NIO.png" style="width: 248px" alt="NIO logo">
+            <img src="LOGOS/NIO.svg" style="width: 248px" alt="NIO logo">
           </a>
       </div>
       <div class="sponsor-name">

@@ -860,7 +860,7 @@ Older News: <%=reflist%>
  <p>
 
    <a href="https://nio.com">
-     <img src="/Foundation/Membership/LOGOS/NIO.png"
+     <img src="/Foundation/Membership/LOGOS/NIO.svg"
 	  style="width: 15%;  padding-left:10px;  float:right"
 	  alt="NIO logo" />
    </a>
