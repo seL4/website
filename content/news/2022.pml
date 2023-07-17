@@ -532,7 +532,7 @@ A reminder that you have until Monday 9th of May 2022 to <a href="../Foundation/
 
   <h3>
   We are <a href="../Foundation/Summit/2022/cfp">calling for proposals to present</a> at the <a
-  href="../Foundation/Summit">seL4 Summit 2022</a>.
+  href="../Foundation/Summit/2022/">seL4 Summit 2022</a>.
   </h3>
   <p>Share your seL4 work </p>
   <p>Share your seL4 experience </p>

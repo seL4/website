@@ -191,7 +191,10 @@ def navs2lis(cur_url, dlist, level=0):
             if i == NavEntry():                 # insert some space
                 list_content.append('<li style="background-image: none;">&nbsp;</li>')
             elif i.children and i.children != []:       # there is a submenu
-                list_content.append('<!-- %s - %s -->' % (cur_url, i.uri))
+                if "Found" in i.uri:
+                  list_content.append('<!-- %s - %s -->' % (cur_url, i.uri,))
+                else:
+                  list_content.append('<!-- %s - %s -->' % (cur_url, i.uri,))
                 # we now always expand the tree so we get the full drop down menus.
                 if cur_url.find(i.uri) == 0 and level == 0:
                     class_name = "active"
@@ -200,6 +203,8 @@ def navs2lis(cur_url, dlist, level=0):
 
                 if level >= 1:
                     # don't generate submenu entries after the first level
+                    if "Summit" in i.label:
+                      i.uri = "/Foundation/Summit/2023" #hack to point summit page to correct year
                     list_content.append('<li class="%s">%s</li>' % (class_name, i))
                 else:
                     list_content.append('<li class="dropdown %s"><a class="dropdown-toggle" data-toggle="dropdown" href="%s">%s <span class="caret"></span></a>' % (class_name, i.uri, i.label))
