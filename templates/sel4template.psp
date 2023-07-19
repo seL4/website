@@ -203,8 +203,6 @@ def navs2lis(cur_url, dlist, level=0):
 
                 if level >= 1:
                     # don't generate submenu entries after the first level
-                    if "Summit" in i.label:
-                      i.uri = "/Foundation/Summit/2023" #hack to point summit page to correct year
                     list_content.append('<li class="%s">%s</li>' % (class_name, i))
                 else:
                     list_content.append('<li class="dropdown %s"><a class="dropdown-toggle" data-toggle="dropdown" href="%s">%s <span class="caret"></span></a>' % (class_name, i.uri, i.label))
