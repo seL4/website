@@ -292,8 +292,8 @@ Older News: <%=reflist%>
   22 March 2023: The Autoware Foundation joins the seL4 Foundation
 </div>
 <div>
-  <a href = "autoware.org/">
-    <img src="/Foundation/Membership/LOGOS/www.autoware.svg"
+  <a href = "www.autoware.org/">
+    <img src="/Foundation/Membership/LOGOS/autoware.svg"
     style="width: 15%; float:right"
     alt="Autoware Foundation" />
   </a>
