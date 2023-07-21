@@ -35,7 +35,7 @@ Minneapolis, USA
     <li><a href="cfp">Call for Presentations</a></li>
     <li><a href="#summit-sponsors">Sponsors</a></li>
     <li><a href="#summit-contact">Contact</a></li>
-    <li>Other summit editions: <a href="../2022/">2022</a></li>
+    <li>Other summit editions: <a href="../2022/">2022</a> <a href="../">all</a></li>
   </ul>
 </div>
 
