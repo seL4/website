@@ -135,7 +135,7 @@ Older News: <%=reflist%>
   <a href="#summit-program-2023"><span class="tag-span"># </span></a> 23 June 2023: The seL4 summit Program is available!
 </div>
 <div>
-  <a href = "../Foundation/Summit">
+  <a href = "../Foundation/Summit/2023">
     <img src="/images/sel4-summit-logo.svg"
     style="width: 15%; float:right"
     alt="seL4 summit" />
@@ -209,7 +209,7 @@ Older News: <%=reflist%>
     10 May 2023: Register for the seL4 summit 2023
 </div>
 <div>
-  <a href = "../Foundation/Summit">
+  <a href = "../Foundation/Summit/2023">
     <img src="/images/sel4-summit-logo.svg"
     style="width: 15%; float:right"
     alt="seL4 summit" />
@@ -266,7 +266,7 @@ Older News: <%=reflist%>
     14 April 2023: Dates and venue confirmed for the <a href="../Foundation/Summit/2023/">seL4 summit 2023</a>.
 </div>
 <div>
-  <a href = "../Foundation/Summit">
+  <a href = "../Foundation/Summit/2023">
     <img src="/images/sel4-summit-logo.svg"
     style="width: 15%; float:right"
     alt="seL4 summit" />
@@ -292,13 +292,13 @@ Older News: <%=reflist%>
   22 March 2023: The Autoware Foundation joins the seL4 Foundation
 </div>
 <div>
-  <a href = "https://www.autoware.org/">
+  <a href = "https://autoware.org/">
     <img src="/Foundation/Membership/LOGOS/autoware.svg"
     style="width: 15%; float:right"
     alt="Autoware Foundation" />
   </a>
   <p>
-  The seL4 Foundation welcomes <a href = "https://www.autoware.org/">the Autoware Foundation</a> as a <a href="/Foundation/Membership">member</a>.
+  The seL4 Foundation welcomes <a href = "https://autoware.org/">the Autoware Foundation</a> as a <a href="/Foundation/Membership">member</a>.
   </p>
   <p>
     The Autoware Foundation hosts the Autoware Project, the world’s leading open-source software project for autonomous driving.
@@ -311,16 +311,16 @@ Older News: <%=reflist%>
 <!----------------------------------------------------------->
 <div class="news-item tag-link" id="summit-2023-cfp">
   <a href="#summit-2023-cfp"><span class="tag-span"># </span></a>
-  20 February 2023: <a href="../Foundation/Summit/2023/cfp">Call For Presentations</a> for the <a href="../Foundation/Summit/">seL4 Summit 2023</a>
+  20 February 2023: <a href="../Foundation/Summit/2023/cfp">Call For Presentations</a> for the <a href="../Foundation/Summit/2023">seL4 Summit 2023</a>
 </div>
 <div>
-  <a href = "../Foundation/Summit">
+  <a href = "../Foundation/Summit/2023">
     <img src="/images/sel4-summit-logo.svg"
     style="width: 15%; float:right"
     alt="seL4 summit" />
   </a>
   <h3 class="highlight">
-   <a href="../Foundation/Summit/2023/cfp">Call For Presentations</a> for the <a href="../Foundation/Summit/">seL4 Summit 2023</a>
+   <a href="../Foundation/Summit/2023/cfp">Call For Presentations</a> for the <a href="../Foundation/Summit/2023">seL4 Summit 2023</a>
   </h3>
   <ul>
   <li>Share your seL4 work</li>
@@ -338,13 +338,13 @@ Older News: <%=reflist%>
   13 February 2023: Meet the Program Committee of the seL4 summit 2023
 </div>
 <div>
-    <a href = "../Foundation/Summit">
+    <a href = "../Foundation/Summit/2023">
     <img src="/images/sel4-summit-logo.svg"
     style="width: 15%; float:right"
     alt="seL4 summit" />
     </a>
     <p>
-      We are thrilled to announce our program committee for the <a href="../Foundation/Summit/">seL4 Summit 2023</a>.
+      We are thrilled to announce our program committee for the <a href="../Foundation/Summit/2023">seL4 Summit 2023</a>.
       Our awesome team comes from various parts of the seL4 ecosystem: users, contributors, committers, experts, advocates, researchers, and engineers.
     </p>
 </div>
@@ -507,13 +507,13 @@ Older News: <%=reflist%>
  10 February 2023: The seL4 summit 2023 will be held in Minneapolis, USA
 </div>
 <div>
-    <a href = "../Foundation/Summit">
+    <a href = "../Foundation/Summit/2023">
     <img src="/images/sel4-summit-logo.svg"
     style="width: 15%; float:right"
     alt="seL4 summit" />
     </a>
     <p>
-      It is our pleasure to confirm that the <a href="../Foundation/Summit/">seL4 Summit 2023</a> will be in:
+      It is our pleasure to confirm that the <a href="../Foundation/Summit/2023">seL4 Summit 2023</a> will be in:
     </p>
       <div class="highlight">Minneapolis, USA, Sept/Oct 2023 (dates TBC).</div>
   <p>

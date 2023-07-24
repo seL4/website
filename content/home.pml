@@ -158,7 +158,7 @@
   </div>
 
   <div class="homepage_item">
-    <a class="divLink" href="/Foundation/Summit/"></a>
+    <a class="divLink" href="/Foundation/Summit/2023/"></a>
     <div class="hp_pic">
       <img src="/images/sel4-summit-logo.svg" style="width:200px" alt="seL4 Summit" />
     </div>

@@ -101,10 +101,7 @@ def make_crumb_tree(req, basedir, path):
     if parent == '/':
         return [(converttitle(name), path)]
     x = make_crumb_tree(req, basedir, parent)
-    if origname in ignore:
-        pass
-    else:
-        x.append((converttitle(name), path))
+    x.append((converttitle(name), path))
     return x
 
 
