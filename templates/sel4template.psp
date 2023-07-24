@@ -75,7 +75,7 @@ except:
     <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <title><%=title%></title>
-    <meta name="author" content="CSIRO's Data61" />
+    <meta name="author" content="seL4 Foundation" />
     <link href="<%=live_url%>" rel=canonical />
     <link href="/css/bootstrap.min.css" rel="stylesheet">
     <link href="/css/sel4.css" rel="stylesheet">

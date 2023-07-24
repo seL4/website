@@ -513,7 +513,7 @@ def psp_handler(req, query, messages):
     if cfg.has_option('core', 'titletemplate'):
         title = cfg.get('core', 'titletemplate')
     else:
-        title = "%s | CSIRO's Data61" % cfg.get('core', 'rg_abbrev').upper()
+        title = "%s | seL4" % cfg.get('core', 'rg_abbrev').upper()
 
     if title_re:
         title = "%s | %s" % (title_re.groups()[0], title)
