@@ -55,6 +55,37 @@ Older News: <%=reflist%>
 -->
 
 <!----------------------------------------------------------->
+<div class="news-item tag-link" id="sponsor23-kry10">
+  <a href="#sponsor23-kry10"><span class="tag-span"># </span></a> 2 August 2023: Thanks Kry10 for being Gold Sponsor of the seL4 Summit 2023
+</div>
+<div>
+
+  <p>
+   <a href="https://www.kry10.com/">
+     <img src="/Foundation/Membership/LOGOS/Kry10.svg"
+	  style="width: 25%;  padding-left:10px;  float:right"
+	  alt="Kry10 logo">
+   </a>
+  </p>
+  <p>
+    The seL4 Foundation thanks <a href="https://www.kry10.com/">Kry10</a> for
+    becoming a Gold sponsor of the <a href="/Foundation/Summit/2023">seL4 Summit
+    2023</a>.
+  </p>
+  <p>
+    Kry10 offers a full-featured operating system on top of the seL4 kernel, along with tooling, services, key management and more. The Kry10 Platform is a fast and easy way to build highly secure, next-generation cyber-physical devices. It leverages the verification of seL4 to provide a secure, self-healing, truly dynamic system with minimal downtime, even during upgrades.
+  </p>
+  <p>
+    Kry10 is an <a href="/Foundation/Services/">Endorsed Service Provider</a> of the seL4 Foundation, offering support to enable seL4-based secure projects to be affordable, maintainable, and remotely manageable.
+  </p>
+  <p>
+    See <a href="https://events.linuxfoundation.org/sel4-summit/sponsor/">here</a> if
+    you are interested in sponsoring the seL4 summit 2023.
+  </p>
+
+</div>
+
+<!----------------------------------------------------------->
 <div class="news-item tag-link" id="sponsor23-collins">
   <a href="#sponsor23-collins"><span class="tag-span"># </span></a> 11 July 2023: Thanks Collins Aerospace for being Silver Sponsor of the seL4 Summit 2023
 </div>

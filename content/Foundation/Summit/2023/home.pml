@@ -346,10 +346,24 @@ Minneapolis, USA
     We are grateful to the following sponsors for their financial support of the seL4 summit 2023.
   </p>
 </div>
+<div class="sponsors">
   <div class="sponsor">
     <div class="sponsor-pic">
+      <a href="https://www.kry10.com/">
+        <img src="../../Membership/LOGOS/Kry10.svg" style="width: 250px"
+            alt="Kry10 logo">
+      </a>
+    </div>
+    <div class="sponsor-name">
+      Kry10
+    </div>
+    <div class="sponsor-info"><div class="highlight">Gold sponsor</div>
+    </div>
+  </div>
+   <div class="sponsor">
+    <div class="sponsor-pic">
       <a href="https://www.nio.com">
-        <img src="../../Membership/LOGOS/NIO.svg" style="width: 350px"
+        <img src="../../Membership/LOGOS/NIO.svg" style="width: 250px"
             alt="NIO logo">
       </a>
     </div>
@@ -359,10 +373,12 @@ Minneapolis, USA
     <div class="sponsor-info"><div class="highlight">Gold sponsor</div>
     </div>
   </div>
+</div>
+<div class="sponsors">
   <div class="sponsor">
     <div class="sponsor-pic">
       <a href="https://www.collinsaerospace.com">
-        <img src="../../Membership/LOGOS/Collins_Aerospace_Logo.svg" style="width: 250px"
+        <img src="../../Membership/LOGOS/Collins_Aerospace_Logo.svg" style="width: 200px"
             alt="Collins Aerospace logo">
       </a>
     </div>
@@ -372,6 +388,7 @@ Minneapolis, USA
     <div class="sponsor-info">Silver sponsor
     </div>
   </div>
+</div>
 
 <div class="summit-div" style="padding-top:30px">
   <p>

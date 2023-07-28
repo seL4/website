@@ -28,6 +28,11 @@
     <ul>
       <li>
         <strong>
+          2 Aug 2023:  Thanks Kry10 for being Gold Sponsor of the seL4 Summit 2023
+        </strong>
+      </li>
+      <li>
+        <strong>
           11 Jul 2023: Thanks Collins Aerospace for being Silver Sponsor of the seL4 Summit 2023
         </strong>
       </li>
@@ -35,11 +40,6 @@
         <strong>
            11 Jul 2023: Thanks NIO for being Gold Sponsor of the seL4 Summit 2023
           </strong>
-        </li>
-      <li>
-        <strong>
-          23 Jun 2023:  The seL4 summit Program is available
-        </strong>
       </li>
       <li style="margin-top:0.2em;list-style-type:none">
         more...

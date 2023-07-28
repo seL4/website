@@ -270,6 +270,7 @@ a.divLink {
   /*grid-template-rows: repeat(3, 1fr);*/
   grid-column-gap: 30px;
   grid-row-gap: 40px;
+  padding-top: 35px;
 }
 
 .sponsor {
