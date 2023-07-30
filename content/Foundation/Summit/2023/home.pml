@@ -374,7 +374,7 @@ Minneapolis, USA
     </div>
   </div>
 </div>
-<div class="sponsors">
+<div class="sponsored">
   <div class="sponsor">
     <div class="sponsor-pic">
       <a href="https://www.collinsaerospace.com">
