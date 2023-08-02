@@ -270,6 +270,8 @@ a.divLink {
   /*grid-template-rows: repeat(3, 1fr);*/
   grid-column-gap: 30px;
   grid-row-gap: 40px;
+  margin: auto;
+  width: 50%;
 }
 
 .sponsor {
@@ -292,6 +294,7 @@ a.divLink {
   align-self: center;
   justify-self: center;
   grid-area: 1 / 1 / 2 / 2;
+  padding-top: 30px;
 }
 
 .sponsor-name {
