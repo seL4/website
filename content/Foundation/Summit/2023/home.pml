@@ -346,7 +346,7 @@ Minneapolis, USA
     We are grateful to the following sponsors for their financial support of the seL4 summit 2023.
   </p>
 </div>
-<div class="sponsors">
+<div class="sponsors-2">
   <div class="sponsor">
     <div class="sponsor-pic">
       <a href="https://www.kry10.com/">
@@ -374,7 +374,7 @@ Minneapolis, USA
     </div>
   </div>
 </div>
-<div class="sponsored">
+<div class="sponsors-1">
   <div class="sponsor">
     <div class="sponsor-pic">
       <a href="https://www.collinsaerospace.com">
