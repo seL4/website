@@ -55,6 +55,31 @@ Older News: <%=reflist%>
 -->
 
 <!----------------------------------------------------------->
+<div class="news-item tag-link" id="sponsor23-tii">
+  <a href="#sponsor23-tii"><span class="tag-span"># </span></a> 25 August 2023: Thanks TII for being Gold Sponsor of the seL4 Summit 2023
+</div>
+<div>
+
+  <p>
+   <a href="https://www.tii.ae">
+     <img src="/Foundation/Membership/LOGOS/TII.jpg"
+	  style="width: 25%;  padding-left:10px; float:right"
+	  alt="TII logo">
+   </a>
+  </p>
+  <p>
+    The seL4 Foundation thanks <a href="https://www.tii.ae/">TII</a> for
+    becoming a Gold sponsor of the <a href="/Foundation/Summit/2023">seL4 Summit
+    2023</a>.
+  </p>
+  <p>
+
+    The Technology Innovation Institute’s (<a href="https://www.tii.ae/">TII</a>) Secure Systems Research Centre (<a href="https://www.tii.ae/secure-systems">SSRC</a>) aims to drive end-to-end security and resilience in cyber-physical and autonomous systems that will ensure safety. The research center adopts an applied research approach, emphasizing practical applications. By employing seL4 as both a microkernel and a hypervisor, SSRC seamlessly aligns its dedication to security with the foundational technology crucial to achieving its objectives. This critical technology forms the cornerstone of secure software stacks for diverse edge devices, including secure communicators and drones. TII's research not only contributes to but propels the evolution of cutting-edge high-end edge device environments. TII's SSRC focus centers on resilience, isolation, trust, and security, all with the intention of fostering a more secure digital landscape.
+  </p>
+
+</div>
+
+<!----------------------------------------------------------->
 <div class="news-item tag-link" id="sponsor23-kry10">
   <a href="#sponsor23-kry10"><span class="tag-span"># </span></a> 2 August 2023: Thanks Kry10 for being Gold Sponsor of the seL4 Summit 2023
 </div>
