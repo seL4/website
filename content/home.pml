@@ -28,7 +28,7 @@
     <ul>
       <li>
         <strong>
-           25 Aug 2023: Thanks TII for being Gold Sponsor of the seL4 Summit 2023
+           28 Aug 2023: Thanks TII for being Gold Sponsor of the seL4 Summit 2023
           </strong>
       </li>
       <li>

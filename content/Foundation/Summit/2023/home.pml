@@ -402,7 +402,13 @@ Minneapolis, USA
     </div>
   </div>
 </div>
-
+<div class="summit_div">
+  <p>
+    Email us at <a href="mailto:summit@sel4.systems">summit@sel4.systems</a>
+    if you are interested in sponsoring the seL4 summit. More on sponsorship <a
+    href="https://events.linuxfoundation.org/sel4-summit/sponsor/">here</a>.
+  </p>
+</div>
 
 <div class="summit_div">
   <h3 id="summit-contact">
@@ -425,7 +431,7 @@ Minneapolis, USA
   Check the <a href="./cfp">CFP</a>.  To propose a talk, send an abstract of
   <strong>one page or less</strong> <strong>by Monday 9th of May 2022</strong>
   to <a title="summit@sel4.systems"
-  href="mailto:summit@sel4.systems">summit@sel4.systems</a>.  If you would like
+  <a href="mailto:summit@sel4.systems">summit@sel4.systems</a>.  If you would like
   to propose a talk to be delivered remotely, please notify it in the
   submission.
 
