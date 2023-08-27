@@ -631,6 +631,9 @@ div.summit-abstract{
   padding: 5px;
 }
 
+.summit_div{
+  padding-top: 10px;
+}
 h5.keynote{
   font-weight: bold;
 }

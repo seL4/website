@@ -47,8 +47,8 @@ Minneapolis, USA
   <ul>
     <li><s>Abstracts due: 24 April 2023</s></li>
     <li><s>Notification of decisions: 9 June 2023</s> </li>
-    <li><strong>Early bird cut-off: 18 August 2023</strong></li>
-    <li>Summit: 19-21 September 2023</li>
+    <li><s>Early bird cut-off: 18 August 2023</s></li>
+    <li><strong>Summit: 19-21 September 2023</strong></li>
   </ul>
 </div>
 
@@ -346,7 +346,20 @@ Minneapolis, USA
     We are grateful to the following sponsors for their financial support of the seL4 summit 2023.
   </p>
 </div>
-<div class="sponsors-2">
+<div class="sponsors">
+  <div class="sponsor">
+    <div class="sponsor-pic">
+      <a href="https://www.tii.ae/">
+        <img src="../../Membership/LOGOS/TII.jpg" style="width: 250px"
+            alt="TII logo">
+      </a>
+    </div>
+    <div class="sponsor-name">
+      TII
+    </div>
+    <div class="sponsor-info"><div class="highlight">Gold sponsor</div>
+    </div>
+  </div>
   <div class="sponsor">
     <div class="sponsor-pic">
       <a href="https://www.kry10.com/">
@@ -389,15 +402,13 @@ Minneapolis, USA
     </div>
   </div>
 </div>
-
-<div class="summit-div" style="padding-top:30px">
+<div class="summit_div">
   <p>
-    See <a
-    href="https://events.linuxfoundation.org/sel4-summit/sponsor/">here</a> if
-    you are interested in sponsoring the seL4 summit 2023.
+    Email us at <a href="mailto:summit@sel4.systems">summit@sel4.systems</a>
+    if you are interested in sponsoring the seL4 summit. More on sponsorship <a
+    href="https://events.linuxfoundation.org/sel4-summit/sponsor/">here</a>.
   </p>
 </div>
-
 
 <div class="summit_div">
   <h3 id="summit-contact">
@@ -420,7 +431,7 @@ Minneapolis, USA
   Check the <a href="./cfp">CFP</a>.  To propose a talk, send an abstract of
   <strong>one page or less</strong> <strong>by Monday 9th of May 2022</strong>
   to <a title="summit@sel4.systems"
-  href="mailto:summit@sel4.systems">summit@sel4.systems</a>.  If you would like
+  <a href="mailto:summit@sel4.systems">summit@sel4.systems</a>.  If you would like
   to propose a talk to be delivered remotely, please notify it in the
   submission.
 
