@@ -47,8 +47,8 @@ Minneapolis, USA
   <ul>
     <li><s>Abstracts due: 24 April 2023</s></li>
     <li><s>Notification of decisions: 9 June 2023</s> </li>
-    <li><strong>Early bird cut-off: 18 August 2023</strong></li>
-    <li>Summit: 19-21 September 2023</li>
+    <li><s>Early bird cut-off: 18 August 2023</s></li>
+    <li><strong>Summit: 19-21 September 2023</strong></li>
   </ul>
 </div>
 
