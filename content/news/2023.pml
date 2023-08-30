@@ -55,6 +55,29 @@ Older News: <%=reflist%>
 -->
 
 <!----------------------------------------------------------->
+<div class="news-item tag-link" id="sponsor23-dinner-nio">
+  <a href="#panellists23"><span class="tag-span"># </span></a> Thanks NIO for sponsoring the seL4 Summit 2023 reception and dinner
+</div>
+<div>
+  <p>
+   <a href="https://www.nio.com">
+     <img src="/Foundation/Membership/LOGOS/NIO.svg"
+	  style="width: 15%;  padding-left:10px;  float:right"
+	  alt="NIO logo">
+   </a>
+  </p>
+  <p>
+    The seL4 Foundation thanks <a href="https://www.nio.com">NIO</a> for sponsoring both the reception and dinner for the <a href="/Foundation/Summit/2023">seL4 Summit
+    2023</a>. NIO is also a <a href="#sponsor23-nio">gold sponsor</a> of the summit.
+  </p>
+  <p>
+    Email us at <a href="mailto:summit@sel4.systems">summit@sel4.systems</a>
+    if you are interested in sponsoring the seL4 summit. More on sponsorship <a
+    href="https://events.linuxfoundation.org/sel4-summit/sponsor/">here</a>.
+  </p>
+</div>
+
+<!----------------------------------------------------------->
 <div class="news-item tag-link" id="panellists23">
   <a href="#panellists23"><span class="tag-span"># </span></a> 30 August 2023: Panellists for seL4 summit announced
 </div>

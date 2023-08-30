@@ -465,6 +465,36 @@ Minneapolis, USA
     </div>
   </div>
 </div>
+<div class="sponsors-1">
+  <div class="sponsor">
+    <div class="sponsor-pic">
+      <a href="https://www.nio.com">
+        <img src="../../Membership/LOGOS/NIO.svg" style="width: 200px"
+            alt="NIO logo">
+      </a>
+    </div>
+     <div class="sponsor-name">
+      NIO
+    </div>
+    <div class="sponsor-info">Reception
+    </div>
+  </div>
+</div>
+<div class="sponsors-1">
+  <div class="sponsor">
+    <div class="sponsor-pic">
+      <a href="https://www.nio.com">
+        <img src="../../Membership/LOGOS/NIO.svg" style="width: 200px"
+            alt="NIO logo">
+      </a>
+    </div>
+     <div class="sponsor-name">
+      NIO
+    </div>
+    <div class="sponsor-info">Dinner
+    </div>
+  </div>
+</div>
 <div class="summit_div">
   <p>
     Email us at <a href="mailto:summit@sel4.systems">summit@sel4.systems</a>
