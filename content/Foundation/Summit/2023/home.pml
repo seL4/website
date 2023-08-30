@@ -17,7 +17,7 @@ Minneapolis, USA
 <div class="summit_div">
 <div class="highlight">
 <h4></h4>
-<h4>Latest News: <a href="#summit-sponsors">Sponsors</a></h4>
+<h4>Latest News: <a href="#summit-panellists">Panellists</a></h4>
 </div>
 <p></p>
 </div>
@@ -30,6 +30,7 @@ Minneapolis, USA
     <li><a href="#summit-registration">Registration</a></li>
     <li><a href="#summit-location">Location and Venue</a></li>
     <li><a href="#summit-keynotes">Keynotes</a></li>
+    <li><a href="#summit-panellists">Panellists</a></li>
     <li><a href="#summit-program">Program</a></li>
     <li><a href="#summit-pc">Program Committee</a></li>
     <li><a href="cfp">Call for Presentations</a></li>
@@ -154,6 +155,68 @@ Minneapolis, USA
   <p class="keynote" style="margin-bottom:35px">
     CantripOS is an open source operating system purpose-built to run ML workloads for embedded systems. It is being developed as part of Google’s project Sparrow, whose charter is to build a low-power embedded platform for ML applications with a focus on security and privacy. CantripOS is built in the <a href="https://www.rust-lang.org/">Rust programming language</a>, runs under the <a href="https://sel4.systems/Info/Docs/seL4-manual-12.1.0.pdf">seL4 microkernel</a>, and uses a modified <a href="https://docs.sel4.systems/projects/camkes/">CAmkES framework</a>. This allows CantripOS to run dynamically loaded applications in a controlled sandbox, while still retaining the benefits of a statically designed system. This paper describes the system design, modifications made to seL4 and CAmkES, and future directions. All the work described here is publicly available on <a href="https://github.com/AmbiML/sparrow-manifest">GitHub</a>.
   </p>
+</div>
+
+<div class="summit_div">
+  <h3 id="summit-panellists">
+      Panellists
+  </h3>
+  <p>
+    <p>
+    We are very fortunate to welcome five industry leaders to participate at the <a href="/Foundation/Summit/2023">seL4 Summit 2023</a>, in a session <a href="https://events.linuxfoundation.org/sel4-summit/program/schedule/">OS on seL4: so many options!</a>. Gapfruit, Kry10, Magnetite (MIT), and UNSW will present their views on the priorities and vision for their OS on seL4. The panel will be moderated by Todd Carpenter from Galois.
+  </p>
+
+  <div class="speakers_grid5">
+    <div class="speaker">
+      <div class="speaker_pic">
+        <img src="../../../images/summit/sid.jpg" alt="Sid Hussmann" height="100"/>
+      </div>
+      <div class="speaker_title" style="text-align:center">
+        Sid Hussmann
+        <br>
+        <a href="https://www.gapfruit.com/">Gapfruit</a>
+      </div>
+    </div>
+    <div class="speaker">
+      <div class="speaker_pic">
+        <img src="../../../images/tsc/kent.jpg" alt="Kent McLeod" height="100"/>
+      </div>
+      <div class="speaker_title" style="text-align:center">
+        Kent McLeod
+        <br>
+        <a href="https://www.kry10.com/">Kry10</a>
+      </div>
+    </div>
+    <div class="speaker">
+      <div class="speaker_pic">
+        <img src="../../../images/summit/juliana.jpeg" alt="Juliana Furgala" height="100"/>
+      </div>
+      <div class="speaker_title" style="text-align:center">
+        Juliana Furgala
+        <br>
+        <a href="https://www.ll.mit.edu/r-d/cyber-security-and-information-sciences/secure-resilient-systems-and-technology">MIT Lincoln Laboratory</a>
+      </div>
+    </div>
+    <div class="speaker">
+      <div class="speaker_pic">
+        <img src="../../Board/TS-Gernot-s.jpg" alt="Gernot Heiser" height="100"/>
+      </div>
+      <div class="speaker_title" style="text-align:center">
+        Gernot Heiser
+        <br>
+        <a href="https://trustworthy.systems/about/">Trustworthy Systems UNSW</a>
+      </div>
+    </div>
+    <div class="speaker">
+      <div class="speaker_pic">
+        <img src="../../../images/summit/todd.jpg" alt="Todd Carpenter" height="100"/>
+      </div>
+      <div class="speaker_title" style="text-align:center">
+        Todd Carpenter, Moderator <br>
+        <a href="https://galois.com/">Galois</a>
+      </div>
+    </div>
+  </div>
 </div>
 
 <div class="summit_div">

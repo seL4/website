@@ -586,6 +586,19 @@ div.summit-abstract{
   }
 }
 
+/*for 5-col grid*/
+.speakers_grid5 {
+  display: grid;
+  display: inline-grid;
+  grid-template-columns: auto;
+}
+
+@media screen and (min-width: 80em) {
+  .speakers_grid5 {
+    grid-template-columns: repeat(5, 220px);
+  }
+}
+
 .speaker {
   display: grid;
   grid-template-columns: 1fr;

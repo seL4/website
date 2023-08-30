@@ -55,11 +55,72 @@ Older News: <%=reflist%>
 -->
 
 <!----------------------------------------------------------->
+<div class="news-item tag-link" id="panellists23">
+  <a href="#panellists23"><span class="tag-span"># </span></a> 30 August 2023: Panellists for seL4 summit announced
+</div>
+<div>
+  <p>
+    We are very fortunate to welcome five industry leaders to participate at the <a href="/Foundation/Summit/2023">seL4 Summit 2023</a>, in a session <a href="https://events.linuxfoundation.org/sel4-summit/program/schedule/">OS on seL4: so many options!</a>. Gapfruit, Kry10, Magnetite (MIT), and UNSW will present their views on the priorities and vision for their OS on seL4. The panel will be moderated by Todd Carpenter from Galois.
+  </p>
+
+  <div class="speakers_grid5">
+    <div class="speaker">
+      <div class="speaker_pic">
+        <img src="../../images/summit/sid.jpg" alt="Sid Hussmann" height="100"/>
+      </div>
+      <div class="speaker_title" style="text-align:center">
+        Sid Hussmann
+        <br>
+        <a href="https://www.gapfruit.com/">Gapfruit</a>
+      </div>
+    </div>
+    <div class="speaker">
+      <div class="speaker_pic">
+        <img src="../../images/tsc/kent.jpg" alt="Kent McLeod" height="100"/>
+      </div>
+      <div class="speaker_title" style="text-align:center">
+        Kent McLeod
+        <br>
+        <a href="https://www.kry10.com/">Kry10</a>
+      </div>
+    </div>
+    <div class="speaker">
+      <div class="speaker_pic">
+        <img src="../../images/summit/juliana.jpeg" alt="Juliana Furgala" height="100"/>
+      </div>
+      <div class="speaker_title" style="text-align:center">
+        Juliana Furgala
+        <br>
+        <a href="https://www.ll.mit.edu/r-d/cyber-security-and-information-sciences/secure-resilient-systems-and-technology">MIT Lincoln Laboratory</a>
+      </div>
+    </div>
+    <div class="speaker">
+      <div class="speaker_pic">
+        <img src="../Foundation/Board/TS-Gernot-s.jpg" alt="Gernot Heiser" height="100"/>
+      </div>
+      <div class="speaker_title" style="text-align:center">
+        Gernot Heiser
+        <br>
+        <a href="https://trustworthy.systems/about/">Trustworthy Systems UNSW</a>
+      </div>
+    </div>
+    <div class="speaker">
+      <div class="speaker_pic">
+        <img src="../../images/summit/todd.jpg" alt="Todd Carpenter" height="100"/>
+      </div>
+      <div class="speaker_title" style="text-align:center">
+        Todd Carpenter, Moderator <br>
+        <a href="https://galois.com/">Galois</a>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!----------------------------------------------------------->
 <div class="news-item tag-link" id="sponsor23-tii">
   <a href="#sponsor23-tii"><span class="tag-span"># </span></a> 28 August 2023: Thanks TII for being Gold Sponsor of the seL4 Summit 2023
 </div>
 <div>
-
   <p>
    <a href="https://www.tii.ae">
      <img src="/Foundation/Membership/LOGOS/TII.jpg"
@@ -113,7 +174,6 @@ Older News: <%=reflist%>
   </p>
 
 </div>
-
 <!----------------------------------------------------------->
 <div class="news-item tag-link" id="sponsor23-collins">
   <a href="#sponsor23-collins"><span class="tag-span"># </span></a> 11 July 2023: Thanks Collins Aerospace for being Silver Sponsor of the seL4 Summit 2023

@@ -28,17 +28,17 @@
     <ul>
       <li>
         <strong>
-           28 Aug 2023: Thanks TII for being Gold Sponsor of the seL4 Summit 2023
+          30 Aug 2023: Panellists for seL4 summit announced
           </strong>
       </li>
       <li>
         <strong>
-          2 Aug 2023:  Thanks Kry10 for being Gold Sponsor of the seL4 Summit 2023
+           28 Aug 2023: Thanks TII for being Gold Sponsor of the seL4 Summit 2023
         </strong>
       </li>
       <li>
         <strong>
-          11 Jul 2023: Thanks Collins Aerospace for being Silver Sponsor of the seL4 Summit 2023
+          2 Aug 2023:  Thanks Kry10 for being Gold Sponsor of the seL4 Summit 2023
         </strong>
       </li>
       <li style="margin-top:0.2em;list-style-type:none">
