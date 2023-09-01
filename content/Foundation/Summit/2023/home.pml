@@ -17,7 +17,7 @@ Minneapolis, USA
 <div class="summit_div">
 <div class="highlight">
 <h4></h4>
-<h4>Latest News: <a href="#summit-panellists">Panellists</a></h4>
+<h4>Latest News: <a href="#summit-sponsors">Sponsors</a></h4>
 </div>
 <p></p>
 </div>
