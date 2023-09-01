@@ -17,7 +17,7 @@ Minneapolis, USA
 <div class="summit_div">
 <div class="highlight">
 <h4></h4>
-<h4>Latest News: <a href="#summit-panellists">Panellists</a></h4>
+<h4>Latest News: <a href="#summit-sponsors">Sponsors</a></h4>
 </div>
 <p></p>
 </div>
@@ -462,6 +462,36 @@ Minneapolis, USA
       Collins Aerospace
     </div>
     <div class="sponsor-info">Silver sponsor
+    </div>
+  </div>
+</div>
+<div class="sponsors-1">
+  <div class="sponsor">
+    <div class="sponsor-pic">
+      <a href="https://www.nio.com">
+        <img src="../../Membership/LOGOS/NIO.svg" style="width: 200px"
+            alt="NIO logo">
+      </a>
+    </div>
+     <div class="sponsor-name">
+      NIO
+    </div>
+    <div class="sponsor-info">Reception
+    </div>
+  </div>
+</div>
+<div class="sponsors-1">
+  <div class="sponsor">
+    <div class="sponsor-pic">
+      <a href="https://www.nio.com">
+        <img src="../../Membership/LOGOS/NIO.svg" style="width: 200px"
+            alt="NIO logo">
+      </a>
+    </div>
+     <div class="sponsor-name">
+      NIO
+    </div>
+    <div class="sponsor-info">Dinner
     </div>
   </div>
 </div>

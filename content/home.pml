@@ -28,17 +28,17 @@
     <ul>
       <li>
         <strong>
+          1 Sep 2023: Thanks NIO for sponsoring the seL4 Summit 2023 reception and dinner
+        </strong>
+      </li>
+      <li>
+        <strong>
           30 Aug 2023: Panellists for seL4 summit announced
           </strong>
       </li>
       <li>
         <strong>
            28 Aug 2023: Thanks TII for being Gold Sponsor of the seL4 Summit 2023
-        </strong>
-      </li>
-      <li>
-        <strong>
-          2 Aug 2023:  Thanks Kry10 for being Gold Sponsor of the seL4 Summit 2023
         </strong>
       </li>
       <li style="margin-top:0.2em;list-style-type:none">
