@@ -56,7 +56,7 @@ Older News: <%=reflist%>
 
 <!----------------------------------------------------------->
 <div class="news-item tag-link" id="sponsor23-dinner-nio">
-  <a href="#panellists23"><span class="tag-span"># </span></a> Thanks NIO for sponsoring the seL4 Summit 2023 reception and dinner
+  <a href="#sponsor23-dinner-nio"><span class="tag-span"># </span></a> Thanks NIO for sponsoring the seL4 Summit 2023 reception and dinner
 </div>
 <div>
   <p>
