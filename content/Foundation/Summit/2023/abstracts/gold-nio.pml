@@ -1,0 +1,17 @@
+<!--<title>Summit abstract</title>-->
+<!--
+    Copyright 2023, seL4 summit authors (see abstracts)
+    SPDX-License-Identifier: CC-BY-SA-4.0
+-->
+<h4 class="summit-abstract-title">
+
+</h4>
+<p class="summit-abstract-type">
+    Gold Sponsor Talk
+</p>
+<p class="summit-abstract-author">
+    Presented by Qiyan Wang, <span class="summit-abstract-affiliation">NIO</span>
+</p>
+<p>
+This talk provides a brief introduction of NIO – a global smart EV company, and discusses how automotive industry evolves towards software defined vehicle, and how OS could play a key role in this transition, and shares what NIO’s vision and progress of building a vehicle OS using seL4.
+</p>

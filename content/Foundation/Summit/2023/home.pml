@@ -32,6 +32,7 @@ Minneapolis, USA
     <li><a href="#summit-keynotes">Keynotes</a></li>
     <li><a href="#summit-panellists">Panellists</a></li>
     <li><a href="#summit-program">Program</a></li>
+    <li><a href="abstracts2023">Abstracts</a></li>
     <li><a href="#summit-pc">Program Committee</a></li>
     <li><a href="cfp">Call for Presentations</a></li>
     <li><a href="#summit-sponsors">Sponsors</a></li>
@@ -223,6 +224,9 @@ Minneapolis, USA
   <h3 id="summit-program">
       Program
   </h3>
+    <p class="highlight">
+    <a href="program">Program</a> for archiving purposes
+  </p>
   <p>
     Have a look at the <a href="https://sel4summit2023.sched.com/">seL4 summit Program</a>!
     We have a great line-up of interesting seL4 work, with a combination of
@@ -236,7 +240,6 @@ Minneapolis, USA
     alt="seL4 summit 2023 program" />
   </a>
   </p>
-
 </div>
 
 <div class="summit_div">

@@ -1,0 +1,20 @@
+<!--<title>Summit abstract</title>-->
+<!--
+    Copyright 2023, seL4 summit authors (see abstracts)
+    SPDX-License-Identifier: CC-BY-SA-4.0
+-->
+<h4 class="summit-abstract-title">
+System Information Flow Analysis
+</h4>
+<p class="summit-abstract-type">
+    Talk
+</p>
+<p class="summit-abstract-author">
+    Presented by Ihor Kuz, <span class="summit-abstract-affiliation">Kry10</span>
+</p>
+<p>
+Most seL4 systems are multi-server systems - consisting of numerous user-level components that communicate amongst each other. These systems often rely on isolation and restricted communication between components to provide assurance about security and safety properties while minimising the trust put into individual components. For such assurance it is usually necessary to analyse the information and control flow in the systems in order to get an understanding of the isolation (or protection) domains and how the system could behave at runtime. This is something that we are interested in doing for the seL4-based Kry10 OS as well.
+</p>
+<p>
+There has been past work looking at analysing static seL4-based systems for various information flow properties, but Kry10 OS is a more dynamic system. This presentation will discuss the problem space of analysing information and control flow in multi-server systems and present options and solutions (both formal and informal) for doing this for static and dynamic seL4-based systems. We will also discuss how such analyses contribute to overall system assurance cases and how they relate to kernel and user-level component proofs.
+</p>

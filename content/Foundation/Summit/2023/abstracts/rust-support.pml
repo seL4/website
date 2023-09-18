@@ -1,0 +1,17 @@
+<!--<title>Summit abstract</title>-->
+<!--
+    Copyright 2023, seL4 summit authors (see abstracts)
+    SPDX-License-Identifier: CC-BY-SA-4.0
+-->
+<h4 class="summit-abstract-title">
+Rust support in seL4 userspace: update and roadmap
+</h4>
+<p class="summit-abstract-type">
+    Talk
+</p>
+<p class="summit-abstract-author">
+    Presented by Nick Spinale, <span class="summit-abstract-affiliation">Colias Group</span>
+</p>
+<p>
+The Rust programming language and ecosystem provide memory safety and enhance developer productivity even at lower levels of the software stack. This talk outlines our efforts, funded by the seL4 Foundation, to apply Rust to seL4 userspace and facilitate its use in the seL4 software ecosystem. This talk will cover new bodies of Rust code related to libsel4, the seL4 Core Platform, and CapDL; information about how to integrate, extend, and contribute to this work; and our vision and roadmap moving forward.
+</p>

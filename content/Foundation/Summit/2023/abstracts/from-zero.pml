@@ -1,0 +1,23 @@
+<!--<title>Summit abstract</title>-->
+<!--
+    Copyright 2023, seL4 summit authors (see abstracts)
+    SPDX-License-Identifier: CC-BY-SA-4.0
+-->
+<h4 class="summit-abstract-title">
+From Zero to a Native xHCl Driver
+</h4>
+<p class="summit-abstract-type">
+    Talk
+</p>
+<p class="summit-abstract-author">
+    Presented by Josh Felmeden, <span class="summit-abstract-affiliation">Capgemini Engineering</span>
+</p>
+<p>
+At the 2022 seL4 summit, our colleagues presented a framework allowing u-boot drivers to be used in seL4. This submission presents follow on work, with the goal of improving seL4 USB support. Specifically, by writing a native xHCI driver and stack for use in seL4.
+</p>
+<p>
+We use the Avnet MaaXBoard as our development board although our intention is to make the driver easily portable to other platforms. Our approach has been to port an existing xHCI USB stack from the NetBSD operating system into the Microkit framework, changing as little code as possible.
+</p>
+<p>
+We also present an experience report detailing our development with seL4 as a team who had no prior experience with it.
+</p>
