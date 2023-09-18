@@ -148,6 +148,9 @@ The following meetings and decisions have so far been recorded:</p>
   <li>2022-04-14: <a href="notes/vote-2022-04-14.pdf">Email vote</a> to approve <a href="https://sel4.atlassian.net/browse/RFC-8">RFC-10</a>.</li>
   <li>2022-12-15: <a href="notes/vote-2022-12-15.pdf">Email vote</a> to invite Indan Zupancic as Reviewer.</li>
   <li>2022-12-16: <a href="notes/tsc-meeting-2022-12-16.pdf">5th TSC meeting</a>.</li>
+  <li>2023-05-30: <a href="notes/vote-2023-05-30.pdf">Email vote</a> to drop support for Cogent.</li>
+  <li>2023-07-17: <a href="notes/vote-2023-07-17.pdf">Email vote</a> to invite Indan Zupancic and Ivan Velickovic as Committers, as well as Alwin Joshy as Reviewer.</li>
+  <li>2023-09-12: <a href="notes/tsc-meeting-2023-09-12.pdf">6th TSC meeting</a>.</li>
 </ul>
 
 <h3>Joining the TSC</h3>
