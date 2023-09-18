@@ -1,0 +1,90 @@
+<!--<title>Summit abstract</title>-->
+<!--
+    Copyright 2023, seL4 summit authors (see abstracts)
+    SPDX-License-Identifier: CC-BY-SA-4.0
+-->
+<h4 class="summit-abstract-title">
+    <td><a class="summit-abstract-link" href="abstracts2023#a-panel">OS on seL4: so many options!<br>
+</h4>
+<p class="summit-abstract-type">
+    Panel
+</p>
+<p class="summit-abstract-author">
+Gernot Heiser
+</p>
+<p>
+Professor, Trustworthy Systems
+</p>
+<p>
+Leader, Trustworthy Systems at UNSW Sydney
+</p>
+<p>
+Chairman, seL4 Foundation
+</p>
+<p class="summit-abstract-author">
+Sid Hussmann
+<p>
+CTO, Gapfruit
+</p>
+<p>
+In my first job as an industrial automation engineer, I loved how disciplines came together: Electronics, mechanics, programming, and robotics - like Lego, using building blocks to create something new.
+</p>
+<p>
+After my studies in Electrical Engineering and Computer Science, I worked for three years in research of HW/SW co-design for IoT systems. Since 2011, I have been in the defense security industry, first as a firmware engineer and later as a lead systems architect.
+</p>
+<p>
+I was responsible for a framework for various security products: 100G link encryption, VPN, VoIP, and secure radio communication. I was also part of a team that developed a secure notebook for governmental agencies, including a new operating system for highly classified information.
+</p>
+<p>
+In 2018 I co-founded Gapfruit to bring academic security research to real-world products.
+</p>
+<p>
+I still love to create.
+</p>
+<p class="summit-abstract-author">
+Kent McLeod
+</p>
+<p>
+KOS engineering lead, Kry10
+</p>
+<p>
+Kent is an operating-systems engineer specialized in formally verifiable trustworthy systems using seL4. His interests include systems engineering and how using different operating system architectures can help construct trustworthy applications.
+</p>
+<p>
+His work at Kry10 is focused on designing and developing the new Kry10 secure platform which includes a new device operating system, KOS, that leverages seL4 and the BEAM to make it easier to build and maintain embedded software that still needs to be secure and robust even if it’s connected to the internet.
+He previously worked at the Trustworthy Systems Research Group where he helped oversee the technical development of seL4 as an OS engineer. He is currently a member of the seL4 Foundation’s technical steering committee.
+</p>
+<p class="summit-abstract-author">
+Juliana Furgala
+</p>
+<p>
+Cybersecurity Researcher, MIT Lincoln Laboratory
+</p>
+<p>
+Juliana Furgala is an associate technical staff member in the Secure Resilient Systems and Technology Group. Currently she is researching secure and recoverable satellite systems. Interested in the pursuit of technology built with security in mind, she aims to develop lasting technology that can stand the test of adversaries, not just the test of time. Her recently published research focuses on the needs of embedded and real-time systems, specifically related to operating system development.
+</p>
+<p>
+To lower the barrier of entry into STEM fields, she is involved in a variety of academic and outreach efforts. One such activity was founding LL EduCATE, a volunteer group that develops accessible, hands-on courses to introduce middle and high school students to the possibilities of STEM. The first course, an Introduction to Engineering Concepts was created for both independent student study and collaborations with educators.
+ </p>
+<p>
+Juliana received her BS degree in computer science in 2019 from Tufts University. She is currently pursuing an MS degree in cybersecurity at Georgia Institute of Technology.
+</p>
+<p class="summit-abstract-author">
+Todd Carpenter
+</p>
+<p>
+Principal Scientist, Galois, Inc
+</p>
+<p>
+Todd's research is focused on tools and techniques to develop safe,
+secure, real-time, and dependable systems built on solid foundations. He
+has designed and specified system architectures, hardware, and software,
+and has developed tools, standards, and processes for enhancing design
+flows.
+</p>
+<p>
+Galois develops technology to guarantee the trustworthiness of systems
+where failure is unacceptable. We apply cutting edge computer science
+and mathematics to advance the state of the art in software and hardware
+trustworthiness.
+</p>

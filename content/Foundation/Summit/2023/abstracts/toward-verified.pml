@@ -1,0 +1,22 @@
+<!--<title>Summit abstract</title>-->
+<!--
+    Copyright 2023, seL4 summit authors (see abstracts)
+    SPDX-License-Identifier: CC-BY-SA-4.0
+-->
+<h4 class="summit-abstract-title">
+Toward a Verified, Minimal IPv6 Network Stack Implementation
+<p class="summit-abstract-type">
+    Talk
+</p>
+<p class="summit-abstract-author">
+    Presented by Alain Kagi, <span class="summit-abstract-affiliation">Lewis & Clark College</span>
+</p>
+<p>
+We are completing the implementation of a minimal, pure IPv6 network stack optimized to run on IoT endpoints connected to a network through a Layer 2 Ethernet interface. This implementation supports only the minimal set of protocols (IEEE 802.3, ICMP, IP, and UDP) to provide efficient UDP-based communication between an IoT endpoint and any other host.
+</p>
+<p>
+We believe our implementation will provide high performance and reliability through a strict application of separation of concerns and elimination of all unnecessary data copies while keeping the codebase amenable to verification.
+</p>
+<p>
+In this talk, we report on our progress implementing and verifying this networking stack.
+</p>

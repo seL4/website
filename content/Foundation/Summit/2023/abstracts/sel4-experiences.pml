@@ -1,0 +1,17 @@
+<!--<title>Summit abstract</title>-->
+<!--
+    Copyright 2023, seL4 summit authors (see abstracts)
+    SPDX-License-Identifier: CC-BY-SA-4.0
+-->
+<h4 class="summit-abstract-title">
+seL4: Experiences, Improvements and Optimizations
+</h4>
+<p class="summit-abstract-type">
+    Talk
+</p>
+<p class="summit-abstract-author">
+    Presented by Chris Guikema, <span class="summit-abstract-affiliation">DornerWorks</span>
+</p>
+<p>
+Sandboxing legacy code provides a low barrier approach for developers to start implementing systems in the seL4 ecosystem. However, these legacy applications often need to communicate with each other to function properly. seL4 provides a means of communication between virtual machines via a software implementation of an ethernet device called virtio-net, which currently suffers from performance and stability problems. These performance and stability issues present a barrier to adoption of seL4 for multiple markets. DornerWorks will present an overview of the seL4 virtio-net implementation, the challenges using it, how DornerWorks improved it in the mainline, and performance benchmarks which include our IP solution to increase performance by a factor of 40.
+</p>
