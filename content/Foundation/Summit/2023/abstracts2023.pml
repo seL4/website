@@ -25,8 +25,8 @@
 <div class="summit-abstract" id="a-reducing-reliance"><%@ include file="abstracts/reducing-reliance.pml" %>
 <br><a href="program#p-reducing-reliance">See this talk in the program</a></div>
 
-<div class="summit-abstract" id="a-efficent-smp"><%@ include file="abstracts/efficent-smp.pml" %>
-<br><a href="program#p-efficent-smp">See this talk in the program</a></div>
+<div class="summit-abstract" id="a-efficient-smp"><%@ include file="abstracts/efficient-smp.pml" %>
+<br><a href="program#p-efficient-smp">See this talk in the program</a></div>
 
 <div class="summit-abstract" id="a-system-information"><%@ include file="abstracts/system-information.pml" %>
 <br><a href="program#p-system-information">See this talk in the program</a></div>
@@ -84,3 +84,23 @@
 
 <div class="summit-abstract" id="a-gold-tii"><%@ include file="abstracts/gold-tii.pml" %>
 <br><a href="program#p-gold-tii">See this talk in the program</a></div>
+
+<div class="summit-abstract" id="a-sig-community"><%@ include file="abstracts/sig-community.pml" %>
+<br><a href="program#p-sig-community">See this talk in the program</a></div>
+
+<div class="summit-abstract" id="a-sel4-virtualization"><%@ include file="abstracts/sel4-virtualization.pml" %>
+<br><a href="program#p-sel4-virtualization">See this talk in the program</a></div>
+
+<div class="summit-abstract" id="a-building-commercial"><%@ include file="abstracts/building-commercial.pml" %>
+<br><a href="program#p-building-commercial">See this talk in the program</a></div>
+
+<div class="summit-abstract" id="a-sel4-riscv"><%@ include file="abstracts/sel4-riscv.pml" %>
+<br><a href="program#p-sel4-riscv">See this talk in the program</a></div>
+
+<div class="summit-abstract" id="a-integration-hypervisor"><%@ include file="abstracts/integration-hypervisor.pml" %>
+<br><a href="program#p-integration-hypervisor">See this talk in the program</a></div>
+
+<div class="summit-abstract" id="a-trustworthy-measurements"><%@ include file="abstracts/trustworthy-measurements.pml" %>
+<br><a href="program#p-trustworthy-measurements">See this talk in the program</a></div>
+
+
