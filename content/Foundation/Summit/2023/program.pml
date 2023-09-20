@@ -40,11 +40,11 @@
   <tr>
     <td class="break" colspan="4">Break</td>
   </tr>
-  <tr id="p-dynamic-seL4">
+  <tr id="p-dynamic-sel4">
     <td>10:15 - 10:45</td>
     <td class="summit_chair" rowspan="2">Gerwin Klein</td>
     <td>Talk</td>
-    <td><a class="summit-abstract-link" href="abstracts2023#a-dynamic-seL4">Dynamic seL4 based systems: designing for verifiability<br><span class="summit-abstract-presenter">Matthew Brecknell</span></a>,
+    <td><a class="summit-abstract-link" href="abstracts2023#a-dynamic-sel4">Dynamic seL4 based systems: designing for verifiability<br><span class="summit-abstract-presenter">Matthew Brecknell</span></a>,
     <span class="summit-abstract-affiliation">Kry10</span>
     </td>
   </tr>
@@ -66,10 +66,10 @@
     <span class="summit-abstract-affiliation">Proofcraft</span>
     </td>
   </tr>
-  <tr id="p-efficent-smp">
+  <tr id="p-efficient-smp">
     <td>12:00 - 12:30</td>
     <td>Talk</td>
-    <td><a class="summit-abstract-link" href="abstracts2023#a-efficent-smp">More multiprocessing on seL4: Are efficient SMP virtual machines possible on verifiable seL4 kernels?<br><span class="summit-abstract-presenter">Kent McLeod</span></a>,
+    <td><a class="summit-abstract-link" href="abstracts2023#a-efficient-smp">More multiprocessing on seL4: Are efficient SMP virtual machines possible on verifiable seL4 kernels?<br><span class="summit-abstract-presenter">Kent McLeod</span></a>,
     <span class="summit-abstract-affiliation">Kry10</span>
     </td>
   </tr>
@@ -348,10 +348,10 @@
     <span class="summit-abstract-affiliation">German Aerospace Center</span>
     </td>
   </tr>
-  <tr id="p-trustworthy-Measurements">
+  <tr id="p-trustworthy-measurements">
     <td>11:00 - 11:15</td>
     <td>Talk</td>
-    <td><a class="summit-abstract-link" href="abstracts2023#a-trustworthy-Measurements">Trustworthy Measurements of a Linux Kernel and Layered Attestation via the seL4<br><span class="summit-abstract-presenter">Michael Neises</span></a>,
+    <td><a class="summit-abstract-link" href="abstracts2023#a-trustworthy-measurements">Trustworthy Measurements of a Linux Kernel and Layered Attestation via the seL4<br><span class="summit-abstract-presenter">Michael Neises</span></a>,
     <span class="summit-abstract-affiliation">University of Kansas</span>
     </td>
   </tr>
