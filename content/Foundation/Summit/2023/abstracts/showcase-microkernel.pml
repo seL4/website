@@ -4,7 +4,7 @@
     SPDX-License-Identifier: CC-BY-SA-4.0
 -->
 <h4 class="summit-abstract-title">
->Showcase: Microkernel OS, TPMs, and WASM in Ilo T Environments
+    Showcase: Microkernel OS, TPMs, and WASM in Ilo T Environments
 </h4>
 <p class="summit-abstract-type">
     Talk

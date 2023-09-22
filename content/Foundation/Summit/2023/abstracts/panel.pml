@@ -4,7 +4,7 @@
     SPDX-License-Identifier: CC-BY-SA-4.0
 -->
 <h4 class="summit-abstract-title">
-    <td><a class="summit-abstract-link" href="abstracts2023#a-panel">OS on seL4: so many options!<br>
+    OS on seL4: so many options!<br>
 </h4>
 <p class="summit-abstract-type">
     Panel
