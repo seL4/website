@@ -10,7 +10,7 @@
     Talk
 </p>
 <p class="summit-abstract-author">
-    Presented by Markku Ahvenjarvi, <span class="summit-abstract-affiliation">TII</span>
+    Presented by Markku Ahvenjärvi, <span class="summit-abstract-affiliation">TII</span>
 </p>
 <p>
 Virtualization enables multiple virtual machines (VMs) to operate on a single physical machine, each with its own operating system, applications, and data, while sharing the underlying physical resources of the host machine. seL4 is a microkernel-based operating system that provides a high-assurance, secure, and efficient platform for the deployment of critical systems. It can be utilized as a hypervisor, providing a minimal and scalable infrastructure for virtualized environments, making it well-suited for use in embedded and real-time systems and high-assurance security-critical systems that require virtualization.

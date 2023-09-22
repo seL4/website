@@ -4,20 +4,14 @@
     SPDX-License-Identifier: CC-BY-SA-4.0
 -->
 <h4 class="summit-abstract-title">
-    seL4 on Arm Morello
+    seL4 VMM on the RISC-V Rocket Chip
 </h4>
 <p class="summit-abstract-type">
     Talk
 </p>
 <p class="summit-abstract-author">
-    Presented by Martin Atkins, <span class="summit-abstract-affiliation">Mission Critical Applications</span>
+    Presented by Robbie VanVossen, <span class="summit-abstract-affiliation">DornerWorks</span>
 </p>
 <p>
-seL4 has a formally-proven kernel, but the safe and secure operation of a system built on seL4 depends on the correct operation of the user-level tasks that implement the system policies, services, and device drivers needed by the application, as well as on the correct operation of the application tasks. Running an seL4 system on a processor with CHERI extensions brings the extra assurance of the capability architecture to these user-level tasks, and thus increases the assurance of the overall application.
-</p>
-<p>
-Our project builds on initial work done at Arm Research to port the seL4 kernel to the Arm Morello CHERI processor. The project aims to support a mixture of user-level tasks compiled as Hybrid code (that is, where capabilities are explicitly defined in the source code), and PureCap code (that is, where all pointers are dereferenced as capabilities). The seL4 user-level libraries must be ported to support these compilation options. SeL4 virtual machines will also be extended to support capability-aware operating systems, such as CheriBSD4, Morello Android5, and Morello Linux6.
-</p>
-<p>
-This paper will report on the progress of the project, and discuss the requirements and design options for the communication of CHERI capabilities between seL4 tasks, and the implications this has on the seL4 IPC mechanisms.
+    The royalty-free, open-source RISC-V is an ideal ISA for the high-assurance seL4 microkernel since the formal proof requires definitive understanding of its underlying architecture. DornerWorks’ use-case generally utilizes virtualization with seL4 to provide a secure platform which allows for cyber-retrofit, rapid deployment, and cyber resilience. Virtualization is an area where RISC-V is immature. The hypervisor (H) extension has been ratified, but there are still no commercially available silicon processors that support the extension. The Rocket Chip is a soft-core RISC-V implementation which can be instantiated on an FPGA and is essentially equivalent to a real silicon processor. DornerWorks bridged the gap between the seL4 VMM running on QEMU and running on actual silicon by getting a seL4 VMM running, for the first time, on a Rocket Chip instantiation which has the hypervisor extensions implemented. This presentation will provide an overview of the Rocket Chip, the RISC-V H extension, the effort that went into getting the seL4 VMM to run on Rocket Chip, and thoughts on the next steps for seL4 virtualization on RISC-V platforms.
 </p>

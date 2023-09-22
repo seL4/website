@@ -4,7 +4,7 @@
     SPDX-License-Identifier: CC-BY-SA-4.0
 -->
 <h4 class="summit-abstract-title">
-
+    Secure Systems in Focus: Challenges, Solutions, and Future Directions
 </h4>
 <p class="summit-abstract-type">
     Gold Sponsor Talk

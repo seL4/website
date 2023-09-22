@@ -562,6 +562,11 @@ span.summit-abstract-presenter{
   color: black;
   text-decoration: underline;
 }
+span.summit-abstract-presenter-bold{
+  color: black;
+  text-decoration: underline;
+  font-weight: bold;
+}
 span.summit-abstract-affiliation{
   font-style: normal;
   color:#808080;
@@ -569,6 +574,12 @@ span.summit-abstract-affiliation{
 div.summit-abstract{
   padding-top: 5px;
   padding-bottom: 10px;
+}
+
+div.summit-abstract-tbd{
+  padding-top: 5px;
+  padding-bottom: 10px;
+  background-color: yellow;
 }
 
 /*note the plural*/
