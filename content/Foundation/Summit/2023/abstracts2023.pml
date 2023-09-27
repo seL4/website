@@ -13,7 +13,7 @@
 <h3>
    Abstracts
 </h3>
-<div class="summit-abstract-tbd" id="a-scoping-assurance"><%@ include file="abstracts/scoping-assurance.pml" %>
+<div class="summit-abstract" id="a-scoping-assurance"><%@ include file="abstracts/scoping-assurance.pml" %>
 <a href="https://www.youtube.com/watch?" target="_blank"><img src="../../../images/icons/youtube_nobckgnd.svg" class="youtube_icon" alt="YouTube icon"></a>
 &nbsp;&nbsp;
 <a href="slides/day1-01-gage.pdf"><img src="../../../images/icons/slides.svg" alt="slides icon"></a>
@@ -88,7 +88,7 @@
 <div class="summit-abstract-tbd" id="a-sel4-foundation"><%@ include file="abstracts/sel4-foundation.pml" %>
 <a href="https://www.youtube.com/watch?" target="_blank"><img src="../../../images/icons/youtube_nobckgnd.svg" class="youtube_icon" alt="YouTube icon"></a>
 &nbsp;&nbsp;
-<a href="slides/.pdf"><img src="../../../images/icons/slides.svg" alt="slides icon"></a>
+<a href="slides/day1-12-andronick.pdf"><img src="../../../images/icons/slides.svg" alt="slides icon"></a>
 <br><a href="program#p-sel4-foundation">See this talk in the program</a></div>
 
 <div class="summit-abstract-tbd" id="a-gold-kry10"><%@ include file="abstracts/gold-kry10.pml" %>
@@ -106,7 +106,7 @@
 <div class="summit-abstract-tbd" id="a-magnetite"><%@ include file="abstracts/magnetite.pml" %>
 <a href="https://www.youtube.com/watch?" target="_blank"><img src="../../../images/icons/youtube_nobckgnd.svg" class="youtube_icon" alt="YouTube icon"></a>
 &nbsp;&nbsp;
-<a href="slides/.pdf"><img src="../../../images/icons/slides.svg" alt="slides icon"></a>
+<a href="slides/day2-02-furgala.pdf"><img src="../../../images/icons/slides.svg" alt="slides icon"></a>
 <br><a href="program#p-magnetite">See this talk in the program</a></div>
 
 <div class="summit-abstract-tbd" id="a-showcase-microkernel"><%@ include file="abstracts/showcase-microkernel.pml" %>

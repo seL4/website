@@ -38,7 +38,7 @@
     <td><a class="summit-abstract-link" href="abstracts2023#a-scoping-assurance">Scoping assurance activities with seL4<br><span class="summit-abstract-presenter">Gage B</span></a>,
     <span class="summit-abstract-affiliation">NCSC</span>
     </td>
-    <td bgcolor="yellow"><a href="https://www.youtube.com/watch" target="_blank"><img src="../../../images/icons/youtube_nobckgnd.svg" class="youtube_icon" alt="YouTube icon"></a></td>
+    <td></td>
     <td><a href="slides/day1-01-gage.pdf"><img src="../../../images/icons/slides.svg" alt="slides icon"></a></td>
   </tr>
   <tr>
@@ -167,7 +167,7 @@
     <span class="summit-abstract-affiliation">seL4 Foundation</span>
     </td>
     <td bgcolor="yellow"><a href="https://www.youtube.com/watch" target="_blank"><img src="../../../images/icons/youtube_nobckgnd.svg" class="youtube_icon" alt="YouTube icon"></a></td>
-    <td bgcolor="yellow"><a href="slides/.pdf"><img src="../../../images/icons/slides.svg" alt="slides icon"></a></td>
+    <td><a href="slides/day1-12-andronick.pdf"><img src="../../../images/icons/slides.svg" alt="slides icon"></a></td>
   </tr>
   <tr>
     <td class="break" colspan="6">Break</td>
@@ -221,7 +221,7 @@
     <span class="summit-abstract-affiliation">MIT Lincoln Laboratory</span>
     </td>
     <td bgcolor="yellow"><a href="https://www.youtube.com/watch" target="_blank"><img src="../../../images/icons/youtube_nobckgnd.svg" class="youtube_icon" alt="YouTube icon"></a></td>
-    <td bgcolor="yellow"><a href="slides/.pdf"><img src="../../../images/icons/slides.svg" alt="slides icon"></a></td>
+    <td><a href="slides/day2-02-furgala.pdf"><img src="../../../images/icons/slides.svg" alt="slides icon"></a></td>
   </tr>
   <tr id="p-showcase-microkernel">
     <td>10:45 - 11:15</td>
@@ -383,6 +383,13 @@
     <span class="summit-abstract-presenter">Kent McLeod</span>,
     <span class="summit-abstract-affiliation"></span>Kry10</a>
     </td>
+    <td bgcolor="yellow"><a href="https://www.youtube.com/watch" target="_blank"><img src="../../../images/icons/youtube_nobckgnd.svg" class="youtube_icon" alt="YouTube icon"></a></td>
+    <td bgcolor="yellow">
+      <a href="slides/.pdf"><img src="../../../images/icons/slides.svg" alt="slides icon"></a><br>
+      <a href="slides/.pdf"><img src="../../../images/icons/slides.svg" alt="slides icon"></a><br>
+      <a href="slides/.pdf"><img src="../../../images/icons/slides.svg" alt="slides icon"></a><br>
+      <a href="slides/.pdf"><img src="../../../images/icons/slides.svg" alt="slides icon"></a>
+    </td>
   </tr>
   <tr id="p-sel4-virtualization">
     <td>9:30 - 10:00</td>
@@ -390,11 +397,11 @@
     <td><a class="summit-abstract-link" href="abstracts2023#a-sel4-virtualization">seL4 Virtualization (ARMv8 Edge Device) Guest OS Performance & HA Recovery<br><span class="summit-abstract-presenter">Lei Mao</span></a>,
     <span class="summit-abstract-affiliation">Horizon Robotics</span>
     </td>
-    <td bgcolor="yellow"><a href="https://www.youtube.com/watch" target="_blank"><img src="../../../images/icons/youtube_nobckgnd.svg" class="youtube_icon" alt="YouTube icon"></a></td>
-    <td bgcolor="yellow"><a href="slides/.pdf"><img src="../../../images/icons/slides.svg" alt="slides icon"></a></td>
+    <td></td>
+    <td></td>
   </tr>
   <tr>
-    <td class="break" colspan="3">Break</td>
+    <td class="break" colspan="6">Break</td>
   </tr>
   <tr id="p-building-commercial">
     <td>10:15 - 10:30</td>
@@ -433,6 +440,8 @@
     <td>Plenary</td>
     <td>BoFs teasers
     </td>
+    <td></td>
+    <td></td>
   </tr>
   <tr>
     <td>11:45 - 12:30</td>
@@ -442,11 +451,15 @@
     </td>
     <td>BoF Room 1
     </td>
+    <td></td>
+    <td></td>
   </tr>
   <tr>
     <td>11:45 - 12:30</td>
     <td>BoF Room 2
     </td>
+    <td></td>
+    <td></td>
   </tr>
   <tr>
     <td class="break" colspan="6">Lunch</td>
@@ -459,11 +472,15 @@
     </td>
     <td>BoF Room 1
     </td>
+    <td></td>
+    <td></td>
   </tr>
   <tr>
     <td>13:30 - 14:15</td>
     <td>BoF Room 2
     </td>
+    <td></td>
+    <td></td>
   </tr>
   <tr>
   <tr>
@@ -472,6 +489,8 @@
     <td>Plenary</td>
     <td>Report from BoFs + Discussion
     </td>
+    <td></td>
+    <td></td>
   </tr>
   <tr>
     <td class="break" colspan="6">Break</td>
