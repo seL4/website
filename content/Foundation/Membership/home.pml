@@ -311,7 +311,7 @@
     <div class="sponsor">
       <div class="sponsor-pic">
         <a href="https://ku.edu/">
-          <img src="LOGOS/" style="width: 120px" alt="University of Kansas">
+          <img src="LOGOS/universityofkansas.svg" style="width: 120px" alt="University of Kansas">
         </a>
       </div>
       <div class="sponsor-name">
@@ -319,5 +319,4 @@
       </div>
       <div class="sponsor-info"></div>
     </div>
-  </div>
 </div>

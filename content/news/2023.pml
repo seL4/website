@@ -61,8 +61,8 @@ Older News: <%=reflist%>
 <div>
   <p>
    <a href="https://ku.edu/">
-     <img src="/Foundation/Membership/LOGOS/"
-	  style="width: 15%;  padding-left:10px;  float:right"
+     <img src="/Foundation/Membership/LOGOS/universityofkansas.svg"
+	  style="width: 10%;  padding-left:10px;  float:right"
 	  alt="KU logo">
    </a>
   </p>
