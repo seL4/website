@@ -127,7 +127,7 @@
     <span class="summit-abstract-affiliation">UNSW</span>
     </td>
     <td bgcolor="yellow"><a href="https://www.youtube.com/watch" target="_blank"><img src="../../../images/icons/youtube_nobckgnd.svg" class="youtube_icon" alt="YouTube icon"></a></td>
-    <td bgcolor="yellow"><a href="slides/.pdf"><img src="../../../images/icons/slides.svg" alt="slides icon"></a></td>
+    <td><a href="slides/day1-09-heiser.pdf"><img src="../../../images/icons/slides.svg" alt="slides icon"></a></td>
   </tr>
   <tr>
     <td class="break" colspan="6">Break</td>
@@ -245,14 +245,14 @@
     <td bgcolor="yellow"><a href="https://www.youtube.com/watch" target="_blank"><img src="../../../images/icons/youtube_nobckgnd.svg" class="youtube_icon" alt="YouTube icon"></a></td>
     <td><a href="slides/day2-04-spinale.pdf"><img src="../../../images/icons/slides.svg" alt="slides icon"></a></td>
   </tr>
-  <tr id="p-sel4-core">
+  <tr id="p-sel4-microkit">
     <td>12:00 - 12:30</td>
     <td>Talk</td>
-    <td><a class="summit-abstract-link" href="abstracts2023#a-sel4-core">The seL4 Core Platform<br><span class="summit-abstract-presenter">Ivan Velickovic</span></a>,
+    <td><a class="summit-abstract-link" href="abstracts2023#a-sel4-microkit">The seL4 Microkit<br><span class="summit-abstract-presenter">Ivan Velickovic</span></a>,
     <span class="summit-abstract-affiliation">UNSW</span>
     </td>
     <td bgcolor="yellow"><a href="https://www.youtube.com/watch" target="_blank"><img src="../../../images/icons/youtube_nobckgnd.svg" class="youtube_icon" alt="YouTube icon"></a></td>
-    <td bgcolor="yellow"><a href="slides/.pdf"><img src="../../../images/icons/slides.svg" alt="slides icon"></a></td>
+    <td><a href="slides/day2-05-velickovic.pdf"><img src="../../../images/icons/slides.svg" alt="slides icon"></a></td>
   </tr>
   <tr>
     <td class="break" colspan="6">Lunch</td>
@@ -312,7 +312,7 @@
     <td><a href="slides/day2-09-atkins.pdf"><img src="../../../images/icons/slides.svg" alt="slides icon"></a></td>
   </tr>
   <tr>
-    <td class="break" colspan="3">Break</td>
+    <td class="break" colspan="6">Break</td>
   </tr>
   <tr id="p-incremental-assurance">
     <td>16:00 - 16:30</td>

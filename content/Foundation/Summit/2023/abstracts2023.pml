@@ -64,7 +64,7 @@
 <div class="summit-abstract-tbd" id="a-rd-update"><%@ include file="abstracts/rd-update.pml" %>
 <a href="https://www.youtube.com/watch?" target="_blank"><img src="../../../images/icons/youtube_nobckgnd.svg" class="youtube_icon" alt="YouTube icon"></a>
 &nbsp;&nbsp;
-<a href="slides/.pdf"><img src="../../../images/icons/slides.svg" alt="slides icon"></a>
+<a href="slides/day1-09-heiser.pdf"><img src="../../../images/icons/slides.svg" alt="slides icon"></a>
 <br><a href="program#p-rd-update">See this talk in the program</a></div>
 
 <div class="summit-abstract-tbd" id="a-sel4-experiences"><%@ include file="abstracts/sel4-experiences.pml" %>
@@ -121,11 +121,11 @@
 <a href="slides/day2-04-spinale.pdf"><img src="../../../images/icons/slides.svg" alt="slides icon"></a>
 <br><a href="program#p-rust-support">See this talk in the program</a></div>
 
-<div class="summit-abstract-tbd" id="a-sel4-core"><%@ include file="abstracts/sel4-core.pml" %>
+<div class="summit-abstract-tbd" id="a-sel4-microkit"><%@ include file="abstracts/sel4-microkit.pml" %>
 <a href="https://www.youtube.com/watch?" target="_blank"><img src="../../../images/icons/youtube_nobckgnd.svg" class="youtube_icon" alt="YouTube icon"></a>
 &nbsp;&nbsp;
-<a href="slides/.pdf"><img src="../../../images/icons/slides.svg" alt="slides icon"></a>
-<br><a href="program#p-sel4-core">See this talk in the program</a></div>
+<a href="slides/day2-05-velickovic.pdf"><img src="../../../images/icons/slides.svg" alt="slides icon"></a>
+<br><a href="program#p-sel4-microkit">See this talk in the program</a></div>
 
 <div class="summit-abstract-tbd" id="a-leveraging-rust"><%@ include file="abstracts/leveraging-rust.pml" %>
 <a href="https://www.youtube.com/watch?" target="_blank"><img src="../../../images/icons/youtube_nobckgnd.svg" class="youtube_icon" alt="YouTube icon"></a>
