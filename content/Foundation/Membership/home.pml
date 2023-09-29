@@ -55,21 +55,6 @@
       </div>
       <div class="sponsor-info"></div>
     </div>
-    <div class="sponsor">
-      <div class="sponsor-pic">
-        <a href="https://unsw.edu.au/">
-          <img src="LOGOS/UNSW.svg" style="width: 248px" alt="UNSW logo">
-        </a>
-      </div>
-      <div class="sponsor-name">
-	      UNSW Sydney
-      </div>
-      <div class="sponsor-info">
-        Founding member
-        <br>
-        Endorsed Service Provider
-      </div>
-    </div>
   </div>
   <h2>General Members</h2>
   <div class="sponsors">
@@ -308,4 +293,19 @@
       <div class="sponsor-info"></div>
     </div>
   </div>
+      <div class="sponsor">
+      <div class="sponsor-pic">
+        <a href="https://unsw.edu.au/">
+          <img src="LOGOS/UNSW.svg" style="width: 248px" alt="UNSW logo">
+        </a>
+      </div>
+      <div class="sponsor-name">
+	      UNSW Sydney
+      </div>
+      <div class="sponsor-info" style="padding-bottom:20px">
+        Founding member
+        <br>
+        Endorsed Service Provider
+      </div>
+    </div>
 </div>
