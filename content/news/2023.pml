@@ -55,8 +55,25 @@ Older News: <%=reflist%>
 -->
 
 <!----------------------------------------------------------->
+<div class="news-item tag-link" id="member-ku">
+  <a href="#member-ku"><span class="tag-span"># </span></a> 4 October 2023: University of Kansas joins seL4 Foundation
+</div>
+<div>
+  <p>
+   <a href="https://ku.edu/">
+     <img src="/Foundation/Membership/LOGOS/"
+	  style="width: 15%;  padding-left:10px;  float:right"
+	  alt="KU logo">
+   </a>
+  </p>
+  <p>
+    The seL4 Foundation is pleased to welcome <a href="https://ku.edu/">The University of Kansas</a> as Associate Member. KU has collaborated with the seL4 Foundation on seL4-based projects with a number of Foundation members, including the DARPA CASE project. We look forward to their continued involvement.
+  </p>
+</div>
+
+<!----------------------------------------------------------->
 <div class="news-item tag-link" id="sponsor23-dinner-nio">
-  <a href="#sponsor23-dinner-nio"><span class="tag-span"># </span></a> Thanks NIO for sponsoring the seL4 Summit 2023 reception and dinner
+  <a href="#sponsor23-dinner-nio"><span class="tag-span"># </span></a> 1 September 2023: Thanks NIO for sponsoring the seL4 Summit 2023 reception and dinner
 </div>
 <div>
   <p>
