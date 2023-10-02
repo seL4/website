@@ -28,8 +28,8 @@
     <td class="summit_chair">Darren Cofer &<br> Ihor Kuz</td>
     <td>Announcements</td>
     <td><em>Welcome</em></td>
-    <td bgcolor="yellow"><a href="https://www.youtube.com/watch" target="_blank"><img src="../../../images/icons/youtube_nobckgnd.svg" class="youtube_icon" alt="YouTube icon"></a></td>
-    <td bgcolor="yellow"><a href="slides/.pdf"><img src="../../../images/icons/slides.svg" alt="slides icon"></a></td>
+    <td><a href="https://youtu.be/xkb9yyxUK3M?si=4LLe7WYkdTVywcNv" target="_blank"><img src="../../../images/icons/youtube_nobckgnd.svg" class="youtube_icon" alt="YouTube icon"></a></td>
+    <td><a href="slides/day1-00-cofer.pdf"><img src="../../../images/icons/slides.svg" alt="slides icon"></a></td>
   </tr>
   <tr id="p-scoping-assurance">
     <td>9:10 - 10:00</td>
@@ -51,7 +51,7 @@
     <td><a class="summit-abstract-link" href="abstracts2023#a-dynamic-sel4">Dynamic seL4 based systems: designing for verifiability<br><span class="summit-abstract-presenter">Matthew Brecknell</span></a>,
     <span class="summit-abstract-affiliation">Kry10</span>
     </td>
-    <td bgcolor="yellow"><a href="https://www.youtube.com/watch" target="_blank"><img src="../../../images/icons/youtube_nobckgnd.svg" class="youtube_icon" alt="YouTube icon"></a></td>
+    <td><a href="https://youtu.be/KTxz_UGGldA?si=ZmPV1JP5hmhaNZel" target="_blank"><img src="../../../images/icons/youtube_nobckgnd.svg" class="youtube_icon" alt="YouTube icon"></a></td>
     <td bgcolor="yellow"><a href="slides/"><img src="../../../images/icons/slides.svg" alt="slides icon"></a></td>
   </tr>
   <tr id="p-formally-stepping">
@@ -60,7 +60,7 @@
     <td><a class="summit-abstract-link" href="abstracts2023#a-formally-stepping">Formally Stepping Into The Unverified World<br><span class="summit-abstract-presenter">Sandy Frost</span></a>,
     <span class="summit-abstract-affiliation">Los Alamos National Laboratory</span>
     </td>
-    <td bgcolor="yellow"><a href="https://www.youtube.com/watch" target="_blank"><img src="../../../images/icons/youtube_nobckgnd.svg" class="youtube_icon" alt="YouTube icon"></a></td>
+    <td><a href="https://youtu.be/tpooLn2aJJ4?si=v3HLLkrDN2ikdNa6" target="_blank"><img src="../../../images/icons/youtube_nobckgnd.svg" class="youtube_icon" alt="YouTube icon"></a></td>
     <td><a href="slides/day1-03-frost.pdf"><img src="../../../images/icons/slides.svg" alt="slides icon"></a></td>
   </tr>
   <tr>
@@ -73,7 +73,7 @@
     <td><a class="summit-abstract-link" href="abstracts2023#a-reducing-reliance">Reducing the reliance on verification experts for seL4 proofs<br><span class="summit-abstract-presenter">Gerwin Klein</span></a>,
     <span class="summit-abstract-affiliation">Proofcraft</span>
     </td>
-    <td bgcolor="yellow"><a href="https://www.youtube.com/watch" target="_blank"><img src="../../../images/icons/youtube_nobckgnd.svg" class="youtube_icon" alt="YouTube icon"></a></td>
+    <td><a href="https://youtu.be/bxlE5AiQQXU?si=_n9CYMSfSGELmckg" target="_blank"><img src="../../../images/icons/youtube_nobckgnd.svg" class="youtube_icon" alt="YouTube icon"></a></td>
     <td><a href="slides/day1-04-klein.pdf"><img src="../../../images/icons/slides.svg" alt="slides icon"></a></td>
   </tr>
   <tr id="p-efficient-smp">
@@ -82,7 +82,7 @@
     <td><a class="summit-abstract-link" href="abstracts2023#a-efficient-smp">More multiprocessing on seL4: Are efficient SMP virtual machines possible on verifiable seL4 kernels?<br><span class="summit-abstract-presenter">Kent McLeod</span></a>,
     <span class="summit-abstract-affiliation">Kry10</span>
     </td>
-    <td bgcolor="yellow"><a href="https://www.youtube.com/watch" target="_blank"><img src="../../../images/icons/youtube_nobckgnd.svg" class="youtube_icon" alt="YouTube icon"></a></td>
+    <td><a href="https://youtu.be/PE7cLQ1OTqM?si=mm5mZHFut1EZNDWd" target="_blank"><img src="../../../images/icons/youtube_nobckgnd.svg" class="youtube_icon" alt="YouTube icon"></a></td>
     <td bgcolor="yellow"><a href="slides/.pdf"><img src="../../../images/icons/slides.svg" alt="slides icon"></a></td>
   </tr>
   <tr>
@@ -95,8 +95,8 @@
     <td><a class="summit-abstract-link" href="abstracts2023#a-system-information">System Information Flow Analysis<br><span class="summit-abstract-presenter">Ihor Kuz</span></a>,
     <span class="summit-abstract-affiliation">Kry10</span>
     </td>
-    <td bgcolor="yellow"><a href="https://www.youtube.com/watch" target="_blank"><img src="../../../images/icons/youtube_nobckgnd.svg" class="youtube_icon" alt="YouTube icon"></a></td>
-    <td bgcolor="yellow"><a href="slides/.pdf"><img src="../../../images/icons/slides.svg" alt="slides icon"></a></td>
+    <td><a href="https://youtu.be/yk-8tb3ssHw?si=Z4QU0C0qlaSqLnut" target="_blank"><img src="../../../images/icons/youtube_nobckgnd.svg" class="youtube_icon" alt="YouTube icon"></a></td>
+    <td><a href="slides/day1-06-kuz.pdf"><img src="../../../images/icons/slides.svg" alt="slides icon"></a></td>
   </tr>
   <tr id="p-advancements-virtualization">
     <td>14:00 - 14:30</td>
@@ -104,7 +104,7 @@
     <td><a class="summit-abstract-link" href="abstracts2023#a-advancements-virtualization">Advancements for Virtualization Support in seL4:CAmkES and seL4cp<br><span class="summit-abstract-presenter">Markku Ahvenjärvi</span></a>,
     <span class="summit-abstract-affiliation">TII</span>
     </td>
-    <td bgcolor="yellow"><a href="https://www.youtube.com/watch" target="_blank"><img src="../../../images/icons/youtube_nobckgnd.svg" class="youtube_icon" alt="YouTube icon"></a></td>
+    <td><a href="https://youtu.be/GlHMxTiD3wo?si=WlS_9tPEi7BtUqdL" target="_blank"><img src="../../../images/icons/youtube_nobckgnd.svg" class="youtube_icon" alt="YouTube icon"></a></td>
     <td><a href="slides/day1-07-ahvenjärvi.pdf"><img src="../../../images/icons/slides.svg" alt="slides icon"></a></td>
   </tr>
   <tr>
@@ -117,7 +117,7 @@
     <td><a class="summit-abstract-link" href="abstracts2023#a-sel4-device">The seL4 Device Driver Framework<br><span class="summit-abstract-presenter">Lucy Parker</span></a>,
     <span class="summit-abstract-affiliation">UNSW</span>
     </td>
-    <td bgcolor="yellow"><a href="https://www.youtube.com/watch" target="_blank"><img src="../../../images/icons/youtube_nobckgnd.svg" class="youtube_icon" alt="YouTube icon"></a></td>
+    <td><a href="https://youtu.be/gDXsnBhNiQM?si=mgxC5xNNWiH0wabe" target="_blank"><img src="../../../images/icons/youtube_nobckgnd.svg" class="youtube_icon" alt="YouTube icon"></a></td>
     <td><a href="slides/day1-08-parker.pdf"><img src="../../../images/icons/slides.svg" alt="slides icon"></a></td>
   </tr>
   <tr id="p-rd-update">
@@ -126,7 +126,7 @@
     <td><a class="summit-abstract-link" href="abstracts2023#a-rd-update">R&D Update from TS<br><span class="summit-abstract-presenter">Gernot Heiser</span></a>,
     <span class="summit-abstract-affiliation">UNSW</span>
     </td>
-    <td bgcolor="yellow"><a href="https://www.youtube.com/watch" target="_blank"><img src="../../../images/icons/youtube_nobckgnd.svg" class="youtube_icon" alt="YouTube icon"></a></td>
+    <td><a href="https://youtu.be/D6SRIUMAZAA?si=a9jKZXa97uDQgLJY" target="_blank"><img src="../../../images/icons/youtube_nobckgnd.svg" class="youtube_icon" alt="YouTube icon"></a></td>
     <td><a href="slides/day1-09-heiser.pdf"><img src="../../../images/icons/slides.svg" alt="slides icon"></a></td>
   </tr>
   <tr>
@@ -139,7 +139,7 @@
     <td><a class="summit-abstract-link" href="abstracts2023#a-sel4-experiences">seL4: Experiences, Improvements and Optimizations<br><span class="summit-abstract-presenter">Chris Guikema</span></a>,
     <span class="summit-abstract-affiliation">DornerWorks</span>
     </td>
-    <td bgcolor="yellow"><a href="https://www.youtube.com/watch" target="_blank"><img src="../../../images/icons/youtube_nobckgnd.svg" class="youtube_icon" alt="YouTube icon"></a></td>
+    <td><a href="https://youtu.be/bCRNTrZ9gx8?si=jA3paaa7efTwlG0M" target="_blank"><img src="../../../images/icons/youtube_nobckgnd.svg" class="youtube_icon" alt="YouTube icon"></a></td>
     <td><a href="slides/day1-10-guikema.pdf"><img src="../../../images/icons/slides.svg" alt="slides icon"></a></td>
   </tr>
   <tr id="p-from-zero">
@@ -148,7 +148,7 @@
     <td><a class="summit-abstract-link" href="abstracts2023#a-from-zero">From Zero to a Native xHCl Driver<br><span class="summit-abstract-presenter">Josh Felmeden</span></a>,
     <span class="summit-abstract-affiliation">Capgemini Engineering</span>
     </td>
-    <td bgcolor="yellow"><a href="https://www.youtube.com/watch" target="_blank"><img src="../../../images/icons/youtube_nobckgnd.svg" class="youtube_icon" alt="YouTube icon"></a></td>
+    <td><a href="https://youtu.be/ih3oxRS8PAU?si=m-PtD8uXo8OOzx0-" target="_blank"><img src="../../../images/icons/youtube_nobckgnd.svg" class="youtube_icon" alt="YouTube icon"></a></td>
     <td><a href="slides/day1-11-felmeden.pdf"><img src="../../../images/icons/slides.svg" alt="slides icon"></a></td>
   </tr>
   <tr id="p-crashing-for">
@@ -157,16 +157,16 @@
     <td><a class="summit-abstract-link" href="abstracts2023#a-crashing-for">Crashing For Reliability<br><span class="summit-abstract-presenter">Ihor Kuz</span></a>,
     <span class="summit-abstract-affiliation">Kry10</span>
     </td>
-    <td bgcolor="yellow"><a href="https://www.youtube.com/watch" target="_blank"><img src="../../../images/icons/youtube_nobckgnd.svg" class="youtube_icon" alt="YouTube icon"></a></td>
+    <td><a href="https://youtu.be/9oxfqS6gUik?si=9ersOF3-REmUiR_k" target="_blank"><img src="../../../images/icons/youtube_nobckgnd.svg" class="youtube_icon" alt="YouTube icon"></a></td>
     <td><a href="slides/day1-12-kuz.pdf"><img src="../../../images/icons/slides.svg" alt="slides icon"></a></td>
   </tr>
   <tr id="p-sel4-foundation">
     <td>16:45 - 17:00</td>
     <td>Update</td>
-    <td><a class="summit-abstract-link" href="abstracts2023#a-sel4-foundation">seL4 Foundation update<br><span class="summit-abstract-presenter">June Andronick</span></a>,
+    <td>seL4 Foundation update<br><span class="summit-abstract-presenter">June Andronick</span></a>,
     <span class="summit-abstract-affiliation">seL4 Foundation</span>
     </td>
-    <td bgcolor="yellow"><a href="https://www.youtube.com/watch" target="_blank"><img src="../../../images/icons/youtube_nobckgnd.svg" class="youtube_icon" alt="YouTube icon"></a></td>
+    <td><a href="https://youtu.be/eQNbS_p0DUY?si=Ald103RagN7dlNKs" target="_blank"><img src="../../../images/icons/youtube_nobckgnd.svg" class="youtube_icon" alt="YouTube icon"></a></td>
     <td><a href="slides/day1-12-andronick.pdf"><img src="../../../images/icons/slides.svg" alt="slides icon"></a></td>
   </tr>
   <tr>
@@ -179,7 +179,7 @@
     <td><a class="summit-abstract-link" href="abstracts2023#a-gold-kry10">Building a Platform for Critical Devices in the “Real World”<br><span class="summit-abstract-presenter">Boyd Multerer</span></a>,
     <span class="summit-abstract-affiliation">Kry10</span>
     </td>
-    <td bgcolor="yellow"><a href="https://www.youtube.com/watch" target="_blank"><img src="../../../images/icons/youtube_nobckgnd.svg" class="youtube_icon" alt="YouTube icon"></a></td>
+    <td><a href="https://youtu.be/kUWmockNkUY?si=22QhHV2woeubBgXj" target="_blank"><img src="../../../images/icons/youtube_nobckgnd.svg" class="youtube_icon" alt="YouTube icon"></a></td>
     <td bgcolor="yellow"><a href="slides/.pdf"><img src="../../../images/icons/slides.svg" alt="slides icon"></a></td>
   </tr>
   <tr>
@@ -198,7 +198,7 @@
     <td><a class="summit-abstract-link" href="abstracts2023#a-cantripos">CantripOS: An OS for Ambient ML Applications<br><span class="summit-abstract-presenter">Sam Leffler</span></a>,
     <span class="summit-abstract-affiliation">Google</span>
     </td>
-    <td bgcolor="yellow"><a href="https://www.youtube.com/watch" target="_blank"><img src="../../../images/icons/youtube_nobckgnd.svg" class="youtube_icon" alt="YouTube icon"></a></td>
+    <td><a href="https://youtu.be/yITE9AvlohY?si=zHtRHuyqaYdk_yCj" target="_blank"><img src="../../../images/icons/youtube_nobckgnd.svg" class="youtube_icon" alt="YouTube icon"></a></td>
     <td><a href="slides/day2-01-leffler.pdf"><img src="../../../images/icons/slides.svg" alt="slides icon"></a></td>
   </tr>
   <tr id="p-announcements">
@@ -207,9 +207,9 @@
     <td><br><span class="summit-abstract-presenter"></span></a>
     <span class="summit-abstract-affiliation"></span>
     </td>
-    <td bgcolor="yellow"><a href="https://www.youtube.com/watch" target="_blank"><img src="../../../images/icons/youtube_nobckgnd.svg" class="youtube_icon" alt="YouTube icon"></a></td>
-    <td bgcolor="yellow"><a href="slides/.pdf"><img src="../../../images/icons/slides.svg" alt="slides icon"></a></td>
-  </tr>
+    <td><a href="https://youtu.be/_3fV1dteao8?si=dSOW9x_7vUvLHOb1" target="_blank"><img src="../../../images/icons/youtube_nobckgnd.svg" class="youtube_icon" alt="YouTube icon"></a></td>
+    <td></td>
+    </tr>
   <tr>
     <td class="break" colspan="6">Break</td>
   </tr>
@@ -220,7 +220,7 @@
     <td><a class="summit-abstract-link" href="abstracts2023#a-magnetite">Magnetite: Rust-Based OS Services for seL4<br><span class="summit-abstract-presenter">Juliana Furgala</span></a>,
     <span class="summit-abstract-affiliation">MIT Lincoln Laboratory</span>
     </td>
-    <td bgcolor="yellow"><a href="https://www.youtube.com/watch" target="_blank"><img src="../../../images/icons/youtube_nobckgnd.svg" class="youtube_icon" alt="YouTube icon"></a></td>
+    <td><a href="https://youtu.be/O66mgVMAA6E?si=Me6zb6t7DqCi57On" target="_blank"><img src="../../../images/icons/youtube_nobckgnd.svg" class="youtube_icon" alt="YouTube icon"></a></td>
     <td><a href="slides/day2-02-furgala.pdf"><img src="../../../images/icons/slides.svg" alt="slides icon"></a></td>
   </tr>
   <tr id="p-showcase-microkernel">
@@ -229,7 +229,7 @@
     <td><a class="summit-abstract-link" href="abstracts2023#a-showcase-microkernel">Showcase: Microkernel OS, TPMs, and WASM in Ilo T Environments<br><span class="summit-abstract-presenter">Sid Hussmann</span></a>,
     <span class="summit-abstract-affiliation">Gapfruit</span>
     </td>
-    <td bgcolor="yellow"><a href="https://www.youtube.com/watch" target="_blank"><img src="../../../images/icons/youtube_nobckgnd.svg" class="youtube_icon" alt="YouTube icon"></a></td>
+    <td><a href="https://youtu.be/Kp-PsRZbbCc?si=_jYcxJgbgoLY3Hsr" target="_blank"><img src="../../../images/icons/youtube_nobckgnd.svg" class="youtube_icon" alt="YouTube icon"></a></td>
     <td><a href="slides/day2-03-hussman.pdf"><img src="../../../images/icons/slides.svg" alt="slides icon"></a></td>
   </tr>
   <tr>
@@ -242,7 +242,7 @@
     <td><a class="summit-abstract-link" href="abstracts2023#a-rust-support">Rust support in seL4 userspace: update and roadmap<br><span class="summit-abstract-presenter">Nick Spinale</span></a>,
     <span class="summit-abstract-affiliation">Colias Group</span>
     </td>
-    <td bgcolor="yellow"><a href="https://www.youtube.com/watch" target="_blank"><img src="../../../images/icons/youtube_nobckgnd.svg" class="youtube_icon" alt="YouTube icon"></a></td>
+    <td><a href="https://youtu.be/J17lC124_9s?si=m0QguvsgDXOTlrtz" target="_blank"><img src="../../../images/icons/youtube_nobckgnd.svg" class="youtube_icon" alt="YouTube icon"></a></td>
     <td><a href="slides/day2-04-spinale.pdf"><img src="../../../images/icons/slides.svg" alt="slides icon"></a></td>
   </tr>
   <tr id="p-sel4-microkit">
@@ -251,7 +251,7 @@
     <td><a class="summit-abstract-link" href="abstracts2023#a-sel4-microkit">The seL4 Microkit<br><span class="summit-abstract-presenter">Ivan Velickovic</span></a>,
     <span class="summit-abstract-affiliation">UNSW</span>
     </td>
-    <td bgcolor="yellow"><a href="https://www.youtube.com/watch" target="_blank"><img src="../../../images/icons/youtube_nobckgnd.svg" class="youtube_icon" alt="YouTube icon"></a></td>
+    <td><a href="https://youtu.be/QWMyvFuJ-WQ?si=aN9vwOjgYmNsJ37w" target="_blank"><img src="../../../images/icons/youtube_nobckgnd.svg" class="youtube_icon" alt="YouTube icon"></a></td>
     <td><a href="slides/day2-05-velickovic.pdf"><img src="../../../images/icons/slides.svg" alt="slides icon"></a></td>
   </tr>
   <tr>
@@ -264,7 +264,7 @@
     <td><a class="summit-abstract-link" href="abstracts2023#a-leveraging-rust">Leveraging Rust for Core Platform<br><span class="summit-abstract-presenter">Ben Hamlin</span></a>,
     <span class="summit-abstract-affiliation">Galois</span>
     </td>
-    <td bgcolor="yellow"><a href="https://www.youtube.com/watch" target="_blank"><img src="../../../images/icons/youtube_nobckgnd.svg" class="youtube_icon" alt="YouTube icon"></a></td>
+    <td><a href="https://youtu.be/TeF0f0YcDOw?si=eCZA1ryWFpBZi5UR" target="_blank"><img src="../../../images/icons/youtube_nobckgnd.svg" class="youtube_icon" alt="YouTube icon"></a></td>
     <td><a href="slides/day2-06-hamlin.pdf"><img src="../../../images/icons/slides.svg" alt="slides icon"></a></td>
   </tr>
   <tr id="p-panel">
