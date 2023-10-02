@@ -278,16 +278,7 @@
     <span class="summit-abstract-presenter-bold">Juliana Furgala</span>,
     <span class="summit-abstract-affiliation">MIT Lincoln Laboratory</a>
     </td>
-    <td bgcolor="yellow"><a href="https://www.youtube.com/watch" target="_blank"><img src="../../../images/icons/youtube_nobckgnd.svg" class="youtube_icon" alt="YouTube icon"></a></td>
-    <td bgcolor="yellow">
-      <a href="slides/.pdf"><img src="../../../images/icons/slides.svg" alt="slides icon"></a>
-      <br>
-      <a href="slides/.pdf"><img src="../../../images/icons/slides.svg" alt="slides icon"></a>
-      <br>
-      <a href="slides/.pdf"><img src="../../../images/icons/slides.svg" alt="slides icon"></a>
-      <br>
-      <a href="slides/.pdf"><img src="../../../images/icons/slides.svg" alt="slides icon"></a>
-    </td>
+    <td><a href="https://www.youtube.com/watch" target="_blank"><img src="../../../images/icons/youtube_nobckgnd.svg" class="youtube_icon" alt="YouTube icon"></a></td>
   </tr>
   <tr>
     <td class="break" colspan="6">Break</td>
@@ -384,12 +375,7 @@
     <span class="summit-abstract-affiliation"></span>Kry10</a>
     </td>
     <td bgcolor="yellow"><a href="https://www.youtube.com/watch" target="_blank"><img src="../../../images/icons/youtube_nobckgnd.svg" class="youtube_icon" alt="YouTube icon"></a></td>
-    <td bgcolor="yellow">
-      <a href="slides/.pdf"><img src="../../../images/icons/slides.svg" alt="slides icon"></a><br>
-      <a href="slides/.pdf"><img src="../../../images/icons/slides.svg" alt="slides icon"></a><br>
-      <a href="slides/.pdf"><img src="../../../images/icons/slides.svg" alt="slides icon"></a><br>
-      <a href="slides/.pdf"><img src="../../../images/icons/slides.svg" alt="slides icon"></a>
-    </td>
+    <td></td>
   </tr>
   <tr id="p-sel4-virtualization">
     <td>9:30 - 10:00</td>
