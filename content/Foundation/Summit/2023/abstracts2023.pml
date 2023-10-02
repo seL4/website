@@ -176,7 +176,6 @@
 <div class="summit-abstract-tbd" id="a-sig-community"><%@ include file="abstracts/sig-community.pml" %>
 <a href="https://www.youtube.com/watch?" target="_blank"><img src="../../../images/icons/youtube_nobckgnd.svg" class="youtube_icon" alt="YouTube icon"></a>
 &nbsp;&nbsp;
-<a href="slides/.pdf"><img src="../../../images/icons/slides.svg" alt="slides icon"></a>
 <br><a href="program#p-sig-community">See this talk in the program</a></div>
 
 <div class="summit-abstract-tbd" id="a-sel4-virtualization"><%@ include file="abstracts/sel4-virtualization.pml" %>
