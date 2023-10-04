@@ -31,18 +31,28 @@
   <li>
     <a href="211006-minutes-signed.pdf">6<sup>th</sup> meeting of 2021-10-06</a>
   </li>
+
   <li>
     <a href="2202-minutes-signed.pdf">7<sup>th</sup> meeting of 2022-02</a>
   </li>
+
   <li>
     <a href="2204-minutes-signed.pdf">8<sup>th</sup> meeting of 2022-04</a>
   </li>
+
+  <li>
+    <a href="221013-minutes-signed.pdf">9<sup>th</sup> meeting of 2022-10-13</a>
+  </li>
+
+  <li>
+    <a href="2305-minutes-signed.pdf">10<sup>th</sup> meeting of 2022-05</a>
+  </li>
 </ul>
 
-<h2>Unconfirmed Minutes</h2>
+<!--h2>Unconfirmed Minutes</h2>
 
 <ul>
   <li>
-    <a href="221013-minutes-unconfirmed.pdf">9<sup>th</sup> meeting of 2022-10-13</a>
+
   </li>
-</ul>
+</ul-->
