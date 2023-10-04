@@ -56,13 +56,13 @@ Older News: <%=reflist%>
 
 <!----------------------------------------------------------->
 <div class="news-item tag-link" id="member-ku">
-  <a href="#member-ku"><span class="tag-span"># </span></a> 4 October 2023: University of Kansas joins seL4 Foundation
+  <a href="#member-ku"><span class="tag-span"># </span></a> 11 October 2023: University of Kansas joins seL4 Foundation
 </div>
 <div>
   <p>
    <a href="https://ku.edu/">
-     <img src="/Foundation/Membership/LOGOS/universityofkansas.svg"
-	  style="width: 10%;  padding-left:10px;  float:right"
+     <img src="/Foundation/Membership/LOGOS/ku.svg"
+	  style="width: 20%;  padding-left:10px;  float:right"
 	  alt="KU logo">
    </a>
   </p>
