@@ -67,7 +67,7 @@ Older News: <%=reflist%>
    </a>
   </p>
   <p>
-    The seL4 Foundation is pleased to welcome <a href="https://ku.edu/">The University of Kansas</a> as Associate Member. KU has collaborated with a number of seL4 Foundation members along the years, including in the DARPA CASE project which produced a set of formal methods tools that can be applied throughout the design and build process to create seL4-based high-assurance cyber-resilient systems.
+    The seL4 Foundation is pleased to welcome <a href="https://ku.edu/">The University of Kansas</a> as Associate Member. KU has collaborated with a number of seL4 Foundation members along the years, including in the DARPA CASE project, which produced a set of formal methods tools that can be applied throughout the design and build process to create seL4-based high-assurance cyber-resilient systems.
   </p>
 </div>
 
