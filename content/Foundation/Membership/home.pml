@@ -307,7 +307,6 @@
       </div>
       <div class="sponsor-info"></div>
     </div>
-  </div>
     <div class="sponsor">
       <div class="sponsor-pic">
         <a href="https://ku.edu/">
@@ -319,4 +318,5 @@
       </div>
       <div class="sponsor-info"></div>
     </div>
+  </div>
 </div>
