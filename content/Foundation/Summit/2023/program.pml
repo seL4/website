@@ -278,7 +278,8 @@
     <span class="summit-abstract-presenter-bold">Juliana Furgala</span>,
     <span class="summit-abstract-affiliation">MIT Lincoln Laboratory</a>
     </td>
-    <td><a href="https://www.youtube.com/watch" target="_blank"><img src="../../../images/icons/youtube_nobckgnd.svg" class="youtube_icon" alt="YouTube icon"></a></td>
+    <td><a href="https://youtu.be/e7-laSU2NS0?si=zP-36-6VWKaIM0xP" target="_blank"><img src="../../../images/icons/youtube_nobckgnd.svg" class="youtube_icon" alt="YouTube icon"></a></td>
+    <td></td>
   </tr>
   <tr>
     <td class="break" colspan="6">Break</td>
@@ -290,7 +291,7 @@
     <td><a class="summit-abstract-link" href="abstracts2023#a-sel4-vmm">seL4 VMM on the RISC-V Rocket Chip<br><span class="summit-abstract-presenter">Robbie VanVossen</span></a>,
     <span class="summit-abstract-affiliation">DornerWorks</span>
     </td>
-    <td bgcolor="yellow"><a href="https://www.youtube.com/watch" target="_blank"><img src="../../../images/icons/youtube_nobckgnd.svg" class="youtube_icon" alt="YouTube icon"></a></td>
+    <td><a href="https://youtu.be/YtTM0jn4iN0?si=gG1o6Ygq6vYjWbkF" target="_blank"><img src="../../../images/icons/youtube_nobckgnd.svg" class="youtube_icon" alt="YouTube icon"></a></td>
     <td><a href="slides/day2-08-vanvossen.pdf"><img src="../../../images/icons/slides.svg" alt="slides icon"></a></td>
   </tr>
   <tr id="p-sel4-arm">
@@ -299,7 +300,7 @@
     <td><a class="summit-abstract-link" href="abstracts2023#a-sel4-arm">seL4 on Arm Morello<br><span class="summit-abstract-presenter">Martin Atkins</span></a>,
     <span class="summit-abstract-affiliation">Mission Critical Applications</span>
     </td>
-    <td bgcolor="yellow"><a href="https://www.youtube.com/watch" target="_blank"><img src="../../../images/icons/youtube_nobckgnd.svg" class="youtube_icon" alt="YouTube icon"></a></td>
+    <td><a href="https://youtu.be/YeBqmRWQWrI?si=WNTDVL0iIODbOtL3" target="_blank"><img src="../../../images/icons/youtube_nobckgnd.svg" class="youtube_icon" alt="YouTube icon"></a></td>
     <td><a href="slides/day2-09-atkins.pdf"><img src="../../../images/icons/slides.svg" alt="slides icon"></a></td>
   </tr>
   <tr>
@@ -312,7 +313,7 @@
     <td><a class="summit-abstract-link" href="abstracts2023#a-incremental-assurance">Incremental assurance for a Rust network stack<br><span class="summit-abstract-presenter">Michal Podhradsky</span></a>,
     <span class="summit-abstract-affiliation">Galois</span>
     </td>
-    <td bgcolor="yellow"><a href="https://www.youtube.com/watch" target="_blank"><img src="../../../images/icons/youtube_nobckgnd.svg" class="youtube_icon" alt="YouTube icon"></a></td>
+    <td><a href="https://youtu.be/uLA6bbDzGyI?si=e9G9h2eZ_4oVjxo_" target="_blank"><img src="../../../images/icons/youtube_nobckgnd.svg" class="youtube_icon" alt="YouTube icon"></a></td>
     <td><a href="slides/day2-10-podhradsky.pdf"><img src="../../../images/icons/slides.svg" alt="slides icon"></a></td>
   </tr>
   <tr id="p-toward-verified">
@@ -321,8 +322,8 @@
     <td><a class="summit-abstract-link" href="abstracts2023#a-toward-verified">Toward a Verified, Minimal IPv6 Network Stack Implementation<br><span class="summit-abstract-presenter">Wyeth Greenlaw Rollins</span></a>,
     <span class="summit-abstract-affiliation">Lewis & Clark College</span>
     </td>
-    <td bgcolor="yellow"><a href="https://www.youtube.com/watch" target="_blank"><img src="../../../images/icons/youtube_nobckgnd.svg" class="youtube_icon" alt="YouTube icon"></a></td>
-    <td bgcolor="yellow"><a href="slides/.pdf"><img src="../../../images/icons/slides.svg" alt="slides icon"></a></td>
+    <td><a href="https://youtu.be/rkuqmizZjbw?si=ojlp7FRRoduiOXIQ" target="_blank"><img src="../../../images/icons/youtube_nobckgnd.svg" class="youtube_icon" alt="YouTube icon"></a></td>
+    <td><a href="slides/day2-11-rollins.pdf"><img src="../../../images/icons/slides.svg" alt="slides icon"></a></td>
   </tr>
   <tr id="p-iommu">
     <td>16:45 - 17:00</td>
@@ -330,7 +331,7 @@
     <td><a class="summit-abstract-link" href="abstracts2023#a-iommu">IOMMU (take the ARM SMMUv3 for instance) solution for seL4<br><span class="summit-abstract-presenter">Lei Mao</span></a>,
     <span class="summit-abstract-affiliation">Horizon Robotics</span>
     </td>
-    <td bgcolor="yellow"><a href="https://www.youtube.com/watch" target="_blank"><img src="../../../images/icons/youtube_nobckgnd.svg" class="youtube_icon" alt="YouTube icon"></a></td>
+    <td><a href="https://youtu.be/83NvRf4zsJQ?si=FohEFUf2QCvGPiWk" target="_blank"><img src="../../../images/icons/youtube_nobckgnd.svg" class="youtube_icon" alt="YouTube icon"></a></td>
     <td><a href="slides/day2-12-mao.pdf"><img src="../../../images/icons/slides.svg" alt="slides icon"></a></td>
   </tr>
   <tr id="p-gold-nio">
@@ -340,7 +341,7 @@
     <td><a class="summit-abstract-link" href="abstracts2023#a-gold-nio">OS for Software Defined Vehicle<br><span class="summit-abstract-presenter">Qiyan Wang</span></a>,
     <span class="summit-abstract-affiliation">NIO</span>
     </td>
-    <td bgcolor="yellow"><a href="https://www.youtube.com/watch" target="_blank"><img src="../../../images/icons/youtube_nobckgnd.svg" class="youtube_icon" alt="YouTube icon"></a></td>
+    <td><a href="https://youtu.be/HfvX2VbWp6c?si=TpCsq8GtYme0SY12" target="_blank"><img src="../../../images/icons/youtube_nobckgnd.svg" class="youtube_icon" alt="YouTube icon"></a></td>
     <td bgcolor="yellow"><a href="slides/.pdf"><img src="../../../images/icons/slides.svg" alt="slides icon"></a></td>
   </tr>
   <tr id="p-gold-tii">
@@ -349,8 +350,8 @@
     <td><a class="summit-abstract-link" href="abstracts2023#a-gold-tii">Secure Systems in Focus: Challenges, Solutions, and Future Directions<br><span class="summit-abstract-presenter">Everton de Matos</span></a>,
     <span class="summit-abstract-affiliation">TII</span>
     </td>
-    <td bgcolor="yellow"><a href="https://www.youtube.com/watch" target="_blank"><img src="../../../images/icons/youtube_nobckgnd.svg" class="youtube_icon" alt="YouTube icon"></a></td>
-    <td bgcolor="yellow"><a href="slides/.pdf"><img src="../../../images/icons/slides.svg" alt="slides icon"></a></td>
+    <td><a href="https://youtu.be/NrtkpOHv8-k?si=ig8c4umBXrd5Y1cI" target="_blank"><img src="../../../images/icons/youtube_nobckgnd.svg" class="youtube_icon" alt="YouTube icon"></a></td>
+    <td><a href="slides/day2-14-dematos.pdf"><img src="../../../images/icons/slides.svg" alt="slides icon"></a></td>
   </tr>
   <tr>
     <td class="break" colspan="6">Break</td>
@@ -374,7 +375,7 @@
     <span class="summit-abstract-presenter">Kent McLeod</span>,
     <span class="summit-abstract-affiliation"></span>Kry10</a>
     </td>
-    <td bgcolor="yellow"><a href="https://www.youtube.com/watch" target="_blank"><img src="../../../images/icons/youtube_nobckgnd.svg" class="youtube_icon" alt="YouTube icon"></a></td>
+    <td><a href="https://youtu.be/Z8TK83qx0NY?si=Yy8GpNi1KHEWYbwl" target="_blank"><img src="../../../images/icons/youtube_nobckgnd.svg" class="youtube_icon" alt="YouTube icon"></a></td>
     <td></td>
   </tr>
   <tr id="p-sel4-virtualization">
@@ -396,7 +397,7 @@
     <td><a class="summit-abstract-link" href="abstracts2023#a-building-commercial">Building a Commercial Virtualized Mobile Device with seL4 - Part 2<br><span class="summit-abstract-presenter">Jason Sebranek</span></a>,
     <span class="summit-abstract-affiliation">Cog Systems</span>
     </td>
-    <td bgcolor="yellow"><a href="https://www.youtube.com/watch" target="_blank"><img src="../../../images/icons/youtube_nobckgnd.svg" class="youtube_icon" alt="YouTube icon"></a></td>
+    <td><a href="https://youtu.be/pC2KdpTPstI?si=u9_u0RJ0xnyrfM14" target="_blank"><img src="../../../images/icons/youtube_nobckgnd.svg" class="youtube_icon" alt="YouTube icon"></a></td>
     <td><a href="slides/day3-03-sebranek.pdf"><img src="../../../images/icons/slides.svg" alt="slides icon"></a></td>
   </tr>
   <tr id="p-sel4-riscv">
@@ -405,8 +406,8 @@
     <td><a class="summit-abstract-link" href="abstracts2023#a-sel4-riscv">seL4 on RISC-V: Building a Trusted Execution Environment<br><span class="summit-abstract-presenter">Everton de Matos</span></a>,
     <span class="summit-abstract-affiliation">TII</span>
     </td>
-    <td bgcolor="yellow"><a href="https://www.youtube.com/watch" target="_blank"><img src="../../../images/icons/youtube_nobckgnd.svg" class="youtube_icon" alt="YouTube icon"></a></td>
-    <td bgcolor="yellow"><a href="slides/.pdf"><img src="../../../images/icons/slides.svg" alt="slides icon"></a></td>
+    <td><a href="https://youtu.be/7L-hLbxCkCc?si=52JqDj12s7tLqKa0" target="_blank"><img src="../../../images/icons/youtube_nobckgnd.svg" class="youtube_icon" alt="YouTube icon"></a></td>
+    <td><a href="slides/day3-04-dematos.pdf"><img src="../../../images/icons/slides.svg" alt="slides icon"></a></td>
   </tr>
   <tr id="p-trustworthy-measurements">
     <td>10:45 - 11:00</td>
@@ -414,7 +415,7 @@
     <td><a class="summit-abstract-link" href="abstracts2023#a-trustworthy-measurements">Trustworthy Measurements of a Linux Kernel and Layered Attestation via the seL4<br><span class="summit-abstract-presenter">Michael Neises</span></a>,
     <span class="summit-abstract-affiliation">University of Kansas</span>
     </td>
-    <td bgcolor="yellow"><a href="https://www.youtube.com/watch" target="_blank"><img src="../../../images/icons/youtube_nobckgnd.svg" class="youtube_icon" alt="YouTube icon"></a></td>
+    <td><a href="https://youtu.be/tGRQFvVnmVU?si=Mhz7ofjOE7DDCZcR" target="_blank"><img src="../../../images/icons/youtube_nobckgnd.svg" class="youtube_icon" alt="YouTube icon"></a></td>
     <td><a href="slides/day3-05-neises.pdf"><img src="../../../images/icons/slides.svg" alt="slides icon"></a></td>
   </tr>
   <tr>
@@ -488,8 +489,8 @@
     <td>A quick start to seL4 with the Core Platform<br><span class="summit-abstract-presenter">Ivan Velickovic</span>,
     <span class="summit-abstract-affiliation">UNSW</span>
     </td>
-    <td bgcolor="yellow"><a href="https://www.youtube.com/watch" target="_blank"><img src="../../../images/icons/youtube_nobckgnd.svg" class="youtube_icon" alt="YouTube icon"></a></td>
-    <td bgcolor="yellow"><a href="slides/.pdf"><img src="../../../images/icons/slides.svg" alt="slides icon"></a></td>
+    <td></td>
+    <td></td>
   </tr>
 </table>
 <br>

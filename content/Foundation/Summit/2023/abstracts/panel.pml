@@ -10,21 +10,16 @@
     Panel
 </p>
 <p class="summit-abstract-author">
-Gernot Heiser
-</p>
-<p>
-Professor, Trustworthy Systems
-</p>
-<p>
-Leader, Trustworthy Systems at UNSW Sydney
+<br>
+<span class="summit-abstract-affiliation">Gernot Heiser, Leader, Trustworthy Systems at UNSW Sydney </span>
 </p>
 <p>
 Chairman, seL4 Foundation
 </p>
 <p class="summit-abstract-author">
-Sid Hussmann
-<p>
-CTO, Gapfruit
+<br>
+<span class="summit-abstract-affiliation">
+Sid Hussmann, CTO, Gapfruit</span>
 </p>
 <p>
 In my first job as an industrial automation engineer, I loved how disciplines came together: Electronics, mechanics, programming, and robotics - like Lego, using building blocks to create something new.
@@ -42,10 +37,9 @@ In 2018 I co-founded Gapfruit to bring academic security research to real-world 
 I still love to create.
 </p>
 <p class="summit-abstract-author">
-Kent McLeod
-</p>
-<p>
-KOS engineering lead, Kry10
+<br>
+<span class="summit-abstract-affiliation">
+Kent McLeod, KOS engineering lead, Kry10</span>
 </p>
 <p>
 Kent is an operating-systems engineer specialized in formally verifiable trustworthy systems using seL4. His interests include systems engineering and how using different operating system architectures can help construct trustworthy applications.
@@ -55,10 +49,9 @@ His work at Kry10 is focused on designing and developing the new Kry10 secure pl
 He previously worked at the Trustworthy Systems Research Group where he helped oversee the technical development of seL4 as an OS engineer. He is currently a member of the seL4 Foundation’s technical steering committee.
 </p>
 <p class="summit-abstract-author">
-Juliana Furgala
-</p>
-<p>
-Cybersecurity Researcher, MIT Lincoln Laboratory
+<br>
+<span class="summit-abstract-affiliation">
+Juliana Furgala, Cybersecurity Researcher, MIT Lincoln Laboratory</span>
 </p>
 <p>
 Juliana Furgala is an associate technical staff member in the Secure Resilient Systems and Technology Group. Currently she is researching secure and recoverable satellite systems. Interested in the pursuit of technology built with security in mind, she aims to develop lasting technology that can stand the test of adversaries, not just the test of time. Her recently published research focuses on the needs of embedded and real-time systems, specifically related to operating system development.
@@ -69,11 +62,13 @@ To lower the barrier of entry into STEM fields, she is involved in a variety of 
 <p>
 Juliana received her BS degree in computer science in 2019 from Tufts University. She is currently pursuing an MS degree in cybersecurity at Georgia Institute of Technology.
 </p>
-<p class="summit-abstract-author">
-Todd Carpenter
+
+<p class="summit-abstract-type">
+<br>Moderator
 </p>
-<p>
-Principal Scientist, Galois, Inc
+<p class="summit-abstract-author">
+<span class="summit-abstract-affiliation">
+Todd Carpenter, Principal Scientist, Galois, Inc</span>
 </p>
 <p>
 Todd's research is focused on tools and techniques to develop safe,

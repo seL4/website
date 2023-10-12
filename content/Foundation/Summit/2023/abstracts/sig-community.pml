@@ -13,10 +13,8 @@
     This session will include a community update from Kent McLeod, Kry10, and SIG updates from Matt Brecknell, Kry10, Yanyan Shen, NIO, and Everton DeMatos, TII. There will also be opportunity for discussion.
 </p>
 <p class="summit-abstract-author">
-    Kent McLeod
-</p>
-<p>
-    KOS engineering lead, Kry10
+    <br><span="summit-abstract-affiliation">
+    Kent McLeod, KOS engineering lead, Kry10</span>
 </p>
 <p>
     Kent is an operating-systems engineer specialized in formally verifiable trustworthy systems using seL4. His interests include systems engineering and how using different operating system architectures can help construct trustworthy applications.
@@ -28,19 +26,15 @@
     He previously worked at the Trustworthy Systems Research Group where he helped oversee the technical development of seL4 as an OS engineer. He is currently a member of the seL4 Foundation’s technical steering committee.
 </p>
 <p class="summit-abstract-author">
-    Matthew Brecknell
-</p>
-<p>
-    Verification Engineer, Kry10
+    <br><span="summit-abstract-affiliation">
+    Matthew Brecknell, Verification Engineer, Kry10</span>
 </p>
 <p>
     Matthew is a formal verification practitioner. He has made significant contributions to the seL4 verification story, and is a member of the seL4 Foundation Technical Steering Committee. At Kry10, Matthew is developing the next generation of high-assurance remotely-managed seL4-based devices.
 <p>
 <p class="summit-abstract-author">
-    Everton de Matos
-</p>
-<p>
-    TII
+    <br><span="summit-abstract-affiliation">
+    Everton de Matos, TII</span>
 </p>
 <p>
     Everton de Matos serves as Lead Security Research Engineer at the Technology Innovation Institute (TII) within the Secure Systems Research Center (SSRC). He earned his Ph.D. in Computer Science from the Pontifical Catholic University of Rio Grande do Sul (PUCRS). During his doctoral studies, he was honored with a Fulbright scholarship, allowing him to further his research at the University of Southern California (USC). Presently, Everton's focus lies in security for embedded systems, specifically within the context of the seL4 Microkernel. He boasts numerous contributions to significant conferences and journals. His primary areas of interest encompass embedded systems security, the Internet of Things, virtualization, and context-aware security.

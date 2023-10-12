@@ -125,56 +125,55 @@
 <a href="slides/day2-06-hamlin.pdf"><img src="../../../images/icons/slides.svg" alt="slides icon"></a>
 <br><a href="program#p-leveraging-rust">See this talk in the program</a></div>
 
-<div class="summit-abstract-tbd" id="a-panel"><%@ include file="abstracts/panel.pml" %>
-<a href="https://www.youtube.com/watch?" target="_blank"><img src="../../../images/icons/youtube_nobckgnd.svg" class="youtube_icon" alt="YouTube icon"></a>
-&nbsp;&nbsp;
-<a href="slides/.pdf"><img src="../../../images/icons/slides.svg" alt="slides icon"></a>
-<br><a href="program#p-panel">See this talk in the program</a></div>
+<div class="summit-abstract" id="a-panel"><%@ include file="abstracts/panel.pml" %>
+<a href="https://youtu.be/e7-laSU2NS0?si=zP-36-6VWKaIM0xP" target="_blank"><img src="../../../images/icons/youtube_nobckgnd.svg" class="youtube_icon" alt="YouTube icon"></a>
+<br>
+<a href="program#p-panel">See this talk in the program</a></div>
 
-<div class="summit-abstract-tbd" id="a-sel4-vmm"><%@ include file="abstracts/sel4-vmm.pml" %>
-<a href="https://www.youtube.com/watch?" target="_blank"><img src="../../../images/icons/youtube_nobckgnd.svg" class="youtube_icon" alt="YouTube icon"></a>
+<div class="summit-abstract" id="a-sel4-vmm"><%@ include file="abstracts/sel4-vmm.pml" %>
+<a href="https://youtu.be/YtTM0jn4iN0?si=gG1o6Ygq6vYjWbkF" target="_blank"><img src="../../../images/icons/youtube_nobckgnd.svg" class="youtube_icon" alt="YouTube icon"></a>
 &nbsp;&nbsp;
 <a href="slides/day2-08-vanvossen.pdf"><img src="../../../images/icons/slides.svg" alt="slides icon"></a>
 <br><a href="program#p-sel4-vmm">See this talk in the program</a></div>
 
-<div class="summit-abstract-tbd" id="a-sel4-arm"><%@ include file="abstracts/sel4-arm.pml" %>
-<a href="https://www.youtube.com/watch?" target="_blank"><img src="../../../images/icons/youtube_nobckgnd.svg" class="youtube_icon" alt="YouTube icon"></a>
+<div class="summit-abstract" id="a-sel4-arm"><%@ include file="abstracts/sel4-arm.pml" %>
+<a href="https://youtu.be/YeBqmRWQWrI?si=WNTDVL0iIODbOtL3" target="_blank"><img src="../../../images/icons/youtube_nobckgnd.svg" class="youtube_icon" alt="YouTube icon"></a>
 &nbsp;&nbsp;
 <a href="slides/day2-09-atkins.pdf"><img src="../../../images/icons/slides.svg" alt="slides icon"></a>
 <br><a href="program#p-sel4-arm">See this talk in the program</a></div>
 
-<div class="summit-abstract-tbd" id="a-incremental-assurance"><%@ include file="abstracts/incremental-assurance.pml" %>
-<a href="https://www.youtube.com/watch?" target="_blank"><img src="../../../images/icons/youtube_nobckgnd.svg" class="youtube_icon" alt="YouTube icon"></a>
+<div class="summit-abstract" id="a-incremental-assurance"><%@ include file="abstracts/incremental-assurance.pml" %>
+<a href="https://youtu.be/uLA6bbDzGyI?si=e9G9h2eZ_4oVjxo_" target="_blank"><img src="../../../images/icons/youtube_nobckgnd.svg" class="youtube_icon" alt="YouTube icon"></a>
 &nbsp;&nbsp;
 <a href="slides/day2-10-podhradsky.pdf"><img src="../../../images/icons/slides.svg" alt="slides icon"></a>
 <br><a href="program#p-incremental-assurance">See this talk in the program</a></div>
 
-<div class="summit-abstract-tbd" id="a-iommu"><%@ include file="abstracts/iommu.pml" %>
-<a href="https://www.youtube.com/watch?" target="_blank"><img src="../../../images/icons/youtube_nobckgnd.svg" class="youtube_icon" alt="YouTube icon"></a>
+<div class="summit-abstract" id="a-iommu"><%@ include file="abstracts/iommu.pml" %>
+<a href="https://youtu.be/83NvRf4zsJQ?si=FohEFUf2QCvGPiWk" target="_blank"><img src="../../../images/icons/youtube_nobckgnd.svg" class="youtube_icon" alt="YouTube icon"></a>
 &nbsp;&nbsp;
 <a href="slides/day2-12-mao.pdf"><img src="../../../images/icons/slides.svg" alt="slides icon"></a>
 <br><a href="program#p-iommu">See this talk in the program</a></div>
 
-<div class="summit-abstract-tbd" id="a-toward-verified"><%@ include file="abstracts/toward-verified.pml" %>
-<a href="https://www.youtube.com/watch?" target="_blank"><img src="../../../images/icons/youtube_nobckgnd.svg" class="youtube_icon" alt="YouTube icon"></a>
+<div class="summit-abstract" id="a-toward-verified"><%@ include file="abstracts/toward-verified.pml" %>
+<a href="https://youtu.be/rkuqmizZjbw?si=ojlp7FRRoduiOXIQ" target="_blank"><img src="../../../images/icons/youtube_nobckgnd.svg" class="youtube_icon" alt="YouTube icon"></a>
 &nbsp;&nbsp;
-<a href="slides/.pdf"><img src="../../../images/icons/slides.svg" alt="slides icon"></a>
+<a href="slides/day2-11-rollins.pdf"><img src="../../../images/icons/slides.svg" alt="slides icon"></a>
 <br><a href="program#p-toward-verified">See this talk in the program</a></div>
 
 <div class="summit-abstract-tbd" id="a-gold-nio"><%@ include file="abstracts/gold-nio.pml" %>
-<a href="https://www.youtube.com/watch?" target="_blank"><img src="../../../images/icons/youtube_nobckgnd.svg" class="youtube_icon" alt="YouTube icon"></a>
+<a href="https://youtu.be/HfvX2VbWp6c?si=TpCsq8GtYme0SY12" target="_blank"><img src="../../../images/icons/youtube_nobckgnd.svg" class="youtube_icon" alt="YouTube icon"></a>
 &nbsp;&nbsp;
 <a href="slides/.pdf"><img src="../../../images/icons/slides.svg" alt="slides icon"></a>
 <br><a href="program#p-gold-nio">See this talk in the program</a></div>
 
-<div class="summit-abstract-tbd" id="a-gold-tii"><%@ include file="abstracts/gold-tii.pml" %>
-<a href="https://www.youtube.com/watch?" target="_blank"><img src="../../../images/icons/youtube_nobckgnd.svg" class="youtube_icon" alt="YouTube icon"></a>
+<div class="summit-abstract" id="a-gold-tii"><%@ include file="abstracts/gold-tii.pml" %>
+<a href="https://youtu.be/NrtkpOHv8-k?si=ig8c4umBXrd5Y1cI" target="_blank"><img src="../../../images/icons/youtube_nobckgnd.svg" class="youtube_icon" alt="YouTube icon"></a>
 &nbsp;&nbsp;
-<a href="slides/.pdf"><img src="../../../images/icons/slides.svg" alt="slides icon"></a>
+<a href="slides/day2-14-dematos.pdf"><img src="../../../images/icons/slides.svg" alt="slides icon"></a>
 <br><a href="program#p-gold-tii">See this talk in the program</a></div>
 
-<div class="summit-abstract-tbd" id="a-sig-community"><%@ include file="abstracts/sig-community.pml" %>
-<a href="https://www.youtube.com/watch?" target="_blank"><img src="../../../images/icons/youtube_nobckgnd.svg" class="youtube_icon" alt="YouTube icon"></a>
+<div class="summit-abstract" id="a-sig-community"><%@ include file="abstracts/sig-community.pml" %>
+<a href="https://youtu.be/Z8TK83qx0NY?si=Yy8GpNi1KHEWYbwl" target="_blank"><img src="../../../images/icons/youtube_nobckgnd.svg" class="youtube_icon" alt="YouTube icon"></a>
 &nbsp;&nbsp;
 <br><a href="program#p-sig-community">See this talk in the program</a></div>
 
@@ -184,20 +183,20 @@
 <a href="slides/.pdf"><img src="../../../images/icons/slides.svg" alt="slides icon"></a>
 <br><a href="program#p-sel4-virtualization">See this talk in the program</a></div>
 
-<div class="summit-abstract-tbd" id="a-building-commercial"><%@ include file="abstracts/building-commercial.pml" %>
-<a href="https://www.youtube.com/watch?" target="_blank"><img src="../../../images/icons/youtube_nobckgnd.svg" class="youtube_icon" alt="YouTube icon"></a>
+<div class="summit-abstract" id="a-building-commercial"><%@ include file="abstracts/building-commercial.pml" %>
+<a href="https://youtu.be/pC2KdpTPstI?si=u9_u0RJ0xnyrfM14" target="_blank"><img src="../../../images/icons/youtube_nobckgnd.svg" class="youtube_icon" alt="YouTube icon"></a>
 &nbsp;&nbsp;
 <a href="slides/day3-03-sebranek.pdf"><img src="../../../images/icons/slides.svg" alt="slides icon"></a>
 <br><a href="program#p-building-commercial">See this talk in the program</a></div>
 
-<div class="summit-abstract-tbd" id="a-sel4-riscv"><%@ include file="abstracts/sel4-riscv.pml" %>
-<a href="https://www.youtube.com/watch?" target="_blank"><img src="../../../images/icons/youtube_nobckgnd.svg" class="youtube_icon" alt="YouTube icon"></a>
+<div class="summit-abstract" id="a-sel4-riscv"><%@ include file="abstracts/sel4-riscv.pml" %>
+<a href="https://youtu.be/7L-hLbxCkCc?si=52JqDj12s7tLqKa0" target="_blank"><img src="../../../images/icons/youtube_nobckgnd.svg" class="youtube_icon" alt="YouTube icon"></a>
 &nbsp;&nbsp;
-<a href="slides/.pdf"><img src="../../../images/icons/slides.svg" alt="slides icon"></a>
+<a href="slides/day3-04-dematos.pdf"><img src="../../../images/icons/slides.svg" alt="slides icon"></a>
 <br><a href="program#p-sel4-riscv">See this talk in the program</a></div>
 
-<div class="summit-abstract-tbd" id="a-trustworthy-measurements"><%@ include file="abstracts/trustworthy-measurements.pml" %>
-<a href="https://www.youtube.com/watch?" target="_blank"><img src="../../../images/icons/youtube_nobckgnd.svg" class="youtube_icon" alt="YouTube icon"></a>
+<div class="summit-abstract" id="a-trustworthy-measurements"><%@ include file="abstracts/trustworthy-measurements.pml" %>
+<a href="https://youtu.be/tGRQFvVnmVU?si=Mhz7ofjOE7DDCZcR" target="_blank"><img src="../../../images/icons/youtube_nobckgnd.svg" class="youtube_icon" alt="YouTube icon"></a>
 &nbsp;&nbsp;
 <a href="slides/day3-05-neises.pdf"><img src="../../../images/icons/slides.svg" alt="slides icon"></a>
 <br><a href="program#p-trustworthy-measurements">See this talk in the program</a></div>
