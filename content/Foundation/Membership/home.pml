@@ -307,5 +307,16 @@
       </div>
       <div class="sponsor-info"></div>
     </div>
+    <div class="sponsor">
+      <div class="sponsor-pic">
+        <a href="https://ku.edu/">
+          <img src="LOGOS/ku-institute.svg" style="width: 200px" alt="KU Institute for Information Sciences logo">
+        </a>
+      </div>
+      <div class="sponsor-name">
+        University of Kansas
+      </div>
+      <div class="sponsor-info"></div>
+    </div>
   </div>
 </div>
