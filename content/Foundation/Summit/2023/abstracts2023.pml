@@ -17,10 +17,10 @@
 <a href="slides/day1-01-gage.pdf"><img src="../../../images/icons/slides.svg" alt="slides icon"></a>
 <br><a href="program#p-scoping-assurance">See this talk in the program</a></div>
 
-<div class="summit-abstract-tbd" id="a-dynamic-sel4"><%@ include file="abstracts/dynamic-sel4.pml" %>
+<div class="summit-abstract" id="a-dynamic-sel4"><%@ include file="abstracts/dynamic-sel4.pml" %>
 <a href="https://youtu.be/KTxz_UGGldA?si=ZmPV1JP5hmhaNZel" target="_blank"><img src="../../../images/icons/youtube_nobckgnd.svg" class="youtube_icon" alt="YouTube icon"></a>
 &nbsp;&nbsp;
-<a href="slides/.pdf"><img src="../../../images/icons/slides.svg" alt="slides icon"></a>
+<a href="slides/day1-02-brecknell.pdf"><img src="../../../images/icons/slides.svg" alt="slides icon"></a>
 <br><a href="program#p-dynamic-sel4">See this talk in the program</a></div>
 
 <div class="summit-abstract" id="a-formally-stepping"><%@ include file="abstracts/formally-stepping.pml" %>
@@ -35,10 +35,10 @@
 <a href="slides/day1-04-klein.pdf"><img src="../../../images/icons/slides.svg" alt="slides icon"></a>
 <br><a href="program#p-reducing-reliance">See this talk in the program</a></div>
 
-<div class="summit-abstract-tbd" id="a-efficient-smp"><%@ include file="abstracts/efficient-smp.pml" %>
+<div class="summit-abstract" id="a-efficient-smp"><%@ include file="abstracts/efficient-smp.pml" %>
 <a href="https://youtu.be/PE7cLQ1OTqM?si=mm5mZHFut1EZNDWd" target="_blank"><img src="../../../images/icons/youtube_nobckgnd.svg" class="youtube_icon" alt="YouTube icon"></a>
 &nbsp;&nbsp;
-<a href="slides/.pdf"><img src="../../../images/icons/slides.svg" alt="slides icon"></a>
+<a href="slides/day1-05-mcleod.pdf"><img src="../../../images/icons/slides.svg" alt="slides icon"></a>
 <br><a href="program#p-efficient-smp">See this talk in the program</a></div>
 
 <div class="summit-abstract" id="a-system-information"><%@ include file="abstracts/system-information.pml" %>
@@ -83,10 +83,10 @@
 <a href="slides/day1-12-kuz.pdf"><img src="../../../images/icons/slides.svg" alt="slides icon"></a>
 <br><a href="program#p-crashing-for">See this talk in the program</a></div>
 
-<div class="summit-abstract-tbd" id="a-gold-kry10"><%@ include file="abstracts/gold-kry10.pml" %>
+<div class="summit-abstract" id="a-gold-kry10"><%@ include file="abstracts/gold-kry10.pml" %>
 <a href="https://youtu.be/kUWmockNkUY?si=22QhHV2woeubBgXj" target="_blank"><img src="../../../images/icons/youtube_nobckgnd.svg" class="youtube_icon" alt="YouTube icon"></a>
 &nbsp;&nbsp;
-<a href="slides/.pdf"><img src="../../../images/icons/slides.svg" alt="slides icon"></a>
+<a href="slides/day1-13-multerer.pdf"><img src="../../../images/icons/slides.svg" alt="slides icon"></a>
 <br><a href="program#p-gold-kry10">See this talk in the program</a></div>
 
 <div class="summit-abstract" id="a-cantripos"><%@ include file="abstracts/cantripos.pml" %>
@@ -160,10 +160,9 @@
 <a href="slides/day2-11-rollins.pdf"><img src="../../../images/icons/slides.svg" alt="slides icon"></a>
 <br><a href="program#p-toward-verified">See this talk in the program</a></div>
 
-<div class="summit-abstract-tbd" id="a-gold-nio"><%@ include file="abstracts/gold-nio.pml" %>
+<div class="summit-abstract" id="a-gold-nio"><%@ include file="abstracts/gold-nio.pml" %>
 <a href="https://youtu.be/HfvX2VbWp6c?si=TpCsq8GtYme0SY12" target="_blank"><img src="../../../images/icons/youtube_nobckgnd.svg" class="youtube_icon" alt="YouTube icon"></a>
 &nbsp;&nbsp;
-<a href="slides/.pdf"><img src="../../../images/icons/slides.svg" alt="slides icon"></a>
 <br><a href="program#p-gold-nio">See this talk in the program</a></div>
 
 <div class="summit-abstract" id="a-gold-tii"><%@ include file="abstracts/gold-tii.pml" %>
@@ -177,10 +176,8 @@
 &nbsp;&nbsp;
 <br><a href="program#p-sig-community">See this talk in the program</a></div>
 
-<div class="summit-abstract-tbd" id="a-sel4-virtualization"><%@ include file="abstracts/sel4-virtualization.pml" %>
+<div class="summit-abstract" id="a-sel4-virtualization"><%@ include file="abstracts/sel4-virtualization.pml" %>
 <a href="https://www.youtube.com/watch?" target="_blank"><img src="../../../images/icons/youtube_nobckgnd.svg" class="youtube_icon" alt="YouTube icon"></a>
-&nbsp;&nbsp;
-<a href="slides/.pdf"><img src="../../../images/icons/slides.svg" alt="slides icon"></a>
 <br><a href="program#p-sel4-virtualization">See this talk in the program</a></div>
 
 <div class="summit-abstract" id="a-building-commercial"><%@ include file="abstracts/building-commercial.pml" %>

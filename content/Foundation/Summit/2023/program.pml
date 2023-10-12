@@ -52,7 +52,7 @@
     <span class="summit-abstract-affiliation">Kry10</span>
     </td>
     <td><a href="https://youtu.be/KTxz_UGGldA?si=ZmPV1JP5hmhaNZel" target="_blank"><img src="../../../images/icons/youtube_nobckgnd.svg" class="youtube_icon" alt="YouTube icon"></a></td>
-    <td bgcolor="yellow"><a href="slides/"><img src="../../../images/icons/slides.svg" alt="slides icon"></a></td>
+    <td><a href="slides/day1-02-brecknell.pdf"><img src="../../../images/icons/slides.svg" alt="slides icon"></a></td>
   </tr>
   <tr id="p-formally-stepping">
     <td>10:45 - 11:15</td>
@@ -83,7 +83,7 @@
     <span class="summit-abstract-affiliation">Kry10</span>
     </td>
     <td><a href="https://youtu.be/PE7cLQ1OTqM?si=mm5mZHFut1EZNDWd" target="_blank"><img src="../../../images/icons/youtube_nobckgnd.svg" class="youtube_icon" alt="YouTube icon"></a></td>
-    <td bgcolor="yellow"><a href="slides/.pdf"><img src="../../../images/icons/slides.svg" alt="slides icon"></a></td>
+    <td><a href="slides/day1-05-mcleod.pdf"><img src="../../../images/icons/slides.svg" alt="slides icon"></a></td>
   </tr>
   <tr>
     <td class="break" colspan="6">Lunch</td>
@@ -180,7 +180,7 @@
     <span class="summit-abstract-affiliation">Kry10</span>
     </td>
     <td><a href="https://youtu.be/kUWmockNkUY?si=22QhHV2woeubBgXj" target="_blank"><img src="../../../images/icons/youtube_nobckgnd.svg" class="youtube_icon" alt="YouTube icon"></a></td>
-    <td bgcolor="yellow"><a href="slides/.pdf"><img src="../../../images/icons/slides.svg" alt="slides icon"></a></td>
+    <td><a href="slides/day1-13-multerer.pdf"><img src="../../../images/icons/slides.svg" alt="slides icon"></a></td>
   </tr>
   <tr>
     <td class="break" colspan="6">Break</td>
@@ -342,7 +342,7 @@
     <span class="summit-abstract-affiliation">NIO</span>
     </td>
     <td><a href="https://youtu.be/HfvX2VbWp6c?si=TpCsq8GtYme0SY12" target="_blank"><img src="../../../images/icons/youtube_nobckgnd.svg" class="youtube_icon" alt="YouTube icon"></a></td>
-    <td bgcolor="yellow"><a href="slides/.pdf"><img src="../../../images/icons/slides.svg" alt="slides icon"></a></td>
+    <td></td>
   </tr>
   <tr id="p-gold-tii">
     <td>17:15 - 17:30</td>

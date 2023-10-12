@@ -17,17 +17,17 @@ Minneapolis, USA
 <div class="summit_div">
 <div class="highlight">
 <h4></h4>
-<h4>Latest News: <a href="#summit-sponsors">Sponsors</a></h4>
+<h4>Latest News: <a href="#summit-abstracts">Videos, Slides and Abstracts</a></h4>
 </div>
 <p></p>
 </div>
 
 <div class="summit_div">
   <ul>
-    <li><a href="#summit-important-dates">Important Dates</a></li>
+    <!--li><a href="#summit-important-dates">Important Dates</a></li-->
     <li><a href="#summit-about">About</a></li>
     <!--li><a href="../principles/">Principles</a></li-->
-    <li><a href="#summit-registration">Registration</a></li>
+    <!--li><a href="#summit-registration">Registration</a></li-->
     <li><a href="#summit-location">Location and Venue</a></li>
     <li><a href="#summit-keynotes">Keynotes</a></li>
     <li><a href="#summit-panellists">Panellists</a></li>
@@ -42,7 +42,7 @@ Minneapolis, USA
 </div>
 
 
-<div class="summit_div">
+<!--div class="summit_div">
   <h3 id="summit-important-dates">
     Important Dates
   </h3>
@@ -52,7 +52,7 @@ Minneapolis, USA
     <li><s>Early bird cut-off: 18 August 2023</s></li>
     <li><strong>Summit: 19-21 September 2023</strong></li>
   </ul>
-</div>
+</div-->
 
 <div class="summit_div">
   <h3 id="summit-about">
@@ -77,7 +77,7 @@ Minneapolis, USA
   </p>
 </div>
 
-<div class="summit_div">
+<!--div class="summit_div">
   <h3 id="summit-registration">
     Registration
   </h3>
@@ -95,7 +95,17 @@ Minneapolis, USA
     <li>Networking with other seL4 experts and enthusiasts</li>
     <li>Reception and Dinner</li>
   </ul>
+</div-->
+
+<div class="summit_div">
+  <h3 id="summit-abstracts">
+    Videos, Slides and Abstracts
+  </h3>
+  <p>
+    Videos of the seL4 summit 2023 are now available on the <a href="https://www.youtube.com/@seL4" target="_blank">seL4 YouTube channel</a>! Links and slides can be found on the summit <a href="program">Program</a> and <a href="abstracts2023">Abstracts</a> pages. Thanks to all the speakers for making the seL4 summit 2023 a great success!
+  </p>
 </div>
+
 
 <div class="summit_div">
   <h3 id="summit-location">
