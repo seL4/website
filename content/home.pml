@@ -28,7 +28,7 @@
     <ul>
       <li>
         <strong>
-           11 Oct 2023: University of Kansas joins seL4 Foundation
+           13 Oct 2023: University of Kansas joins seL4 Foundation
         </strong>
       </li>
       <li>
