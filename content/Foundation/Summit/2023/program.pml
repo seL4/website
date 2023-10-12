@@ -23,7 +23,6 @@
     <th colspan="6">Day 1&emsp;19 September 2023</th>
   </tr>
   <tr>
-    <tr>
     <td>9:00 - 9:10</td>
     <td class="summit_chair">Darren Cofer &<br> Ihor Kuz</td>
     <td>Announcements</td>
@@ -163,7 +162,7 @@
   <tr id="p-sel4-foundation">
     <td>16:45 - 17:00</td>
     <td>Update</td>
-    <td>seL4 Foundation update<br><span class="summit-abstract-presenter">June Andronick</span></a>,
+    <td>seL4 Foundation update<br><span class="summit-abstract-presenter">June Andronick</span>,
     <span class="summit-abstract-affiliation">seL4 Foundation</span>
     </td>
     <td><a href="https://youtu.be/eQNbS_p0DUY?si=Ald103RagN7dlNKs" target="_blank"><img src="../../../images/icons/youtube_nobckgnd.svg" class="youtube_icon" alt="YouTube icon"></a></td>
@@ -204,7 +203,7 @@
   <tr id="p-announcements">
     <td>9:50 - 10:00</td>
     <td>Announcements</td>
-    <td><br><span class="summit-abstract-presenter"></span></a>
+    <td><br><span class="summit-abstract-presenter"></span>
     <span class="summit-abstract-affiliation"></span>
     </td>
     <td><a href="https://youtu.be/_3fV1dteao8?si=dSOW9x_7vUvLHOb1" target="_blank"><img src="../../../images/icons/youtube_nobckgnd.svg" class="youtube_icon" alt="YouTube icon"></a></td>
@@ -276,7 +275,7 @@
     <span class="summit-abstract-affiliation">Gapfruit</span><br>
     <span class="summit-abstract-presenter-bold">Kent McLeod</span>, <span class="summit-abstract-affiliation">Kry10</span><br>
     <span class="summit-abstract-presenter-bold">Juliana Furgala</span>,
-    <span class="summit-abstract-affiliation">MIT Lincoln Laboratory</a>
+    <span class="summit-abstract-affiliation">MIT Lincoln Laboratory</span></a>
     </td>
     <td><a href="https://youtu.be/e7-laSU2NS0?si=zP-36-6VWKaIM0xP" target="_blank"><img src="../../../images/icons/youtube_nobckgnd.svg" class="youtube_icon" alt="YouTube icon"></a></td>
     <td></td>
@@ -373,7 +372,7 @@
     <span class="summit-abstract-presenter">Everton de Matos</span>,
     <span class="summit-abstract-affiliation">TII</span><br>
     <span class="summit-abstract-presenter">Kent McLeod</span>,
-    <span class="summit-abstract-affiliation"></span>Kry10</a>
+    <span class="summit-abstract-affiliation"></span>Kry10</span></a>
     </td>
     <td><a href="https://youtu.be/Z8TK83qx0NY?si=Yy8GpNi1KHEWYbwl" target="_blank"><img src="../../../images/icons/youtube_nobckgnd.svg" class="youtube_icon" alt="YouTube icon"></a></td>
     <td></td>

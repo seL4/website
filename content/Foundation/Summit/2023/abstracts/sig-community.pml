@@ -31,7 +31,7 @@
 </p>
 <p>
     Matthew is a formal verification practitioner. He has made significant contributions to the seL4 verification story, and is a member of the seL4 Foundation Technical Steering Committee. At Kry10, Matthew is developing the next generation of high-assurance remotely-managed seL4-based devices.
-<p>
+</p>
 <p class="summit-abstract-author">
     <br><span="summit-abstract-affiliation">
     Everton de Matos, TII</span>
