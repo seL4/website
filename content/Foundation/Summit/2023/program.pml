@@ -391,7 +391,7 @@
   </tr>
   <tr id="p-building-commercial">
     <td>10:15 - 10:30</td>
-    <td class="summit_chair" rowspan="4">Ihor Kuz</td>
+    <td class="summit_chair" rowspan="3">Ihor Kuz</td>
     <td>Talk</td>
     <td><a class="summit-abstract-link" href="abstracts2023#a-building-commercial">Building a Commercial Virtualized Mobile Device with seL4 - Part 2<br><span class="summit-abstract-presenter">Jason Sebranek</span></a>,
     <span class="summit-abstract-affiliation">Cog Systems</span>

@@ -12,7 +12,6 @@
 <p>
     This session will include a community update from Kent McLeod, Kry10, and SIG updates from Matt Brecknell, Kry10, Yanyan Shen, NIO, and Everton DeMatos, TII. There will also be opportunity for discussion.
 </p>
-hi
 <p><br>
     <span class="summit-abstract-affiliation">Kent McLeod, KOS engineering lead, Kry10</span>
 </p>

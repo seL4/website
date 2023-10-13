@@ -197,4 +197,3 @@
 &nbsp;&nbsp;
 <a href="slides/day3-05-neises.pdf"><img src="../../../images/icons/slides.svg" alt="slides icon"></a>
 <br><a href="program#p-trustworthy-measurements">See this talk in the program</a></div>
-
