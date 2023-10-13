@@ -208,7 +208,7 @@
     </td>
     <td><a href="https://youtu.be/_3fV1dteao8?si=dSOW9x_7vUvLHOb1" target="_blank"><img src="../../../images/icons/youtube_nobckgnd.svg" class="youtube_icon" alt="YouTube icon"></a></td>
     <td></td>
-    </tr>
+  </tr>
   <tr>
     <td class="break" colspan="6">Break</td>
   </tr>
@@ -372,7 +372,7 @@
     <span class="summit-abstract-presenter">Everton de Matos</span>,
     <span class="summit-abstract-affiliation">TII</span><br>
     <span class="summit-abstract-presenter">Kent McLeod</span>,
-    <span class="summit-abstract-affiliation"></span>Kry10</span></a>
+    <span class="summit-abstract-affiliation">Kry10</span></a>
     </td>
     <td><a href="https://youtu.be/Z8TK83qx0NY?si=Yy8GpNi1KHEWYbwl" target="_blank"><img src="../../../images/icons/youtube_nobckgnd.svg" class="youtube_icon" alt="YouTube icon"></a></td>
     <td></td>
@@ -468,7 +468,6 @@
     <td></td>
     <td></td>
   </tr>
-  <tr>
   <tr>
     <td>14:15 - 14:30</td>
     <td class="summit_chair">Darren Cofer<br>& Ihor Kuz</td>
