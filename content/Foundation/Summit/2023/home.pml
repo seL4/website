@@ -15,32 +15,24 @@ Minneapolis, USA
 
 
 <div class="summit_div">
-<div class="highlight">
-<h4></h4>
-<h4>Latest News: <a href="#summit-abstracts">Videos, Slides and Abstracts</a></h4>
-</div>
-<p></p>
-</div>
-
-<div class="summit_div">
   <ul>
     <!--li><a href="#summit-important-dates">Important Dates</a></li-->
     <li><a href="#summit-about">About</a></li>
-    <!--li><a href="../principles/">Principles</a></li-->
     <!--li><a href="#summit-registration">Registration</a></li-->
-    <li><a href="#summit-location">Location and Venue</a></li>
-    <li><a href="#summit-keynotes">Keynotes</a></li>
-    <li><a href="#summit-panellists">Panellists</a></li>
-    <li><a href="program">Program</a></li>
-    <li><a href="abstracts2023">Abstracts</a></li>
-    <li><a href="#summit-pc">Program Committee</a></li>
+    <li><a href="#summit-location">Location & Host</a></li>
     <li><a href="cfp">Call for Presentations</a></li>
+    <li><a href="#summit-keynote-speakers">Keynote Speakers</a></li>
+    <li><a href="#summit-panellists">Panellists</a></li>
+    <li><a href="#summit-program">Program, Abstracts, Slides and Videos</a></li>
+    <li><a href="#summit-pc">Program Committee</a></li>
     <li><a href="#summit-sponsors">Sponsors</a></li>
     <li><a href="#summit-contact">Contact</a></li>
-    <li><a href="../">All summits</a></li>
   </ul>
 </div>
 
+<div class="summit_div">
+  <a href="../">All summits</a>
+</div>
 
 <!--div class="summit_div">
   <h3 id="summit-important-dates">
@@ -98,74 +90,54 @@ Minneapolis, USA
 </div-->
 
 <div class="summit_div">
-  <h3 id="summit-abstracts">
-    Videos, Slides and Abstracts
-  </h3>
-  <p>
-    Videos of the seL4 summit 2023 are now available on the <a href="https://www.youtube.com/@seL4" target="_blank">seL4 YouTube channel</a>! Links and slides can be found on the summit <a href="program">Program</a> and <a href="abstracts2023">Abstracts</a> pages. Thanks to all the speakers for making the seL4 summit 2023 a great success!
-  </p>
-</div>
-
-
-<div class="summit_div">
   <h3 id="summit-location">
-    Location and Venue
+    Location & Host
   </h3>
   <p>
-  All information about <strong>location and hotels</strong> can be found
-  <strong><a href="https://events.linuxfoundation.org/sel4-summit/">here</a></strong>.
-  </p>
-  <p>
-    The seL4 Summit 2023 will be held in Minneapolis, USA, 19 - 21 September 2023, at the Elliot Park Hotel. The summit will be hosted by the <a href="https://www.linuxfoundation.org/">Linux Foundation</a>, and will be an in-person event. There will be no option for a live remote participation but the event will be recorded and all talks (for which the presenter accepted to be recorded) will be made available shortly after the summit on the <a href="https://www.youtube.com/@seL4">seL4 YouTube channel</a>.
+    The seL4 Summit 2023 was held in Minneapolis, USA, 19 - 21 September 2023, at the Elliot Park Hotel. The summit was hosted by the <a href="https://events.linuxfoundation.org/sel4-summit/">Linux Foundation</a>.
   </p>
 </div>
 
 <div class="summit_div">
-  <h3 id="summit-keynotes">
-    Keynotes
+  <h3 id="summit-keynote-speakers">
+    Keynote Speakers
   </h3>
-  <p>
-    We are pleased to announce that the two keynotes for the seL4 summit 2023 will be <strong>Gage from NCSC</strong> and <strong>Sam Leffler from Google</strong>!
-  </p>
-  <p style="margin-top:25px">
-    <img src="/Foundation/Membership/LOGOS/NCSC.png"
-      style="width: 25%; float:right"
-      alt="NCSC logo" />
-    <strong>Gage</strong> is an Assurance Lead in NCSC with expertise in cryptography, software assurance and verification. He is part of a larger team that seeks to provide assurance and articulate risk for a wide range of products and customers. Whilst he is not a product developer himself, he has been responsible for presenting assurance cases for products that rely on seL4 to uphold security requirements.
-  </p>
-  <p>
-    <strong>Gage's keynote will be about "Scoping assurance activities with seL4"</strong>
-  </p>
-  <h5 id="abstract-gage" class="keynote">Abstract</h5>
-  <p class="keynote">
-    In both the safety and security industries, high levels of product assurance are sought to mitigate the risk of product failure. Often this means that software developers need to demonstrate that all functions do what they are supposed to do, the product does not do anything it is not supposed to do, and that the product is free from all known bugs and vulnerabilities.
-  </p>
-  <p class="keynote">
-    Whilst none of these requirements have trivial solutions, testing does a reasonable job of checking the correctness of functions. Similarly, taking advantage of tooling (such as static analysis, dynamic analysis), tracking the discovery of bugs and vulnerabilities, and having a refined software patching process helps to mitigate the presence of bugs and vulnerabilities.
-  </p>
-  <p class="keynote">
-    However, it is much less obvious how one can gain confidence that the software has no unintended functionality without checking the entire software implementation. Even then, the scope of what you need to check is potentially unbounded (we’re looking for the unknown unknowns after all), issues will still be missed, and the resource requirements are high.
-  </p>
-  <p class="keynote">
-    In this talk, I will describe how basing a software product on seL4 facilitates the scoping of this no unintended functionality problem, and in turn, reduces the amount of effort required when it comes to demonstrating assurance of a security product. By walking through an example, we’ll observe the assurance benefits of component isolation, data flow control, how seL4 helps to direct where we should focus our assurance efforts, and any caveats we should be aware of.
-  </p>
-  <p class="keynote">
-    Accepting that the assurance effort should be commensurate with the criticality of the security product, my hope is that this presentation provides a sliding scale of seL4 features we should seek to take advantage of, be it for articulating an assurance case, or conducting an independent assessment.
-  </p>
-  <p style="margin-top:25px">
-   <img src="../../../images/summit/sam-security-photo.jpg"
-    style="width: 15%; float:right"
-    alt="Sam Leffler" />
-    <strong>Sam Leffler</strong> has worked at Google for nearly 15 years. He was part of the original team that developed ChromeOS and the ChromeBook, was responsible for the networking components of Project Loon, and worked on various infrastructure projects before joining Project Sparrow to help build the CantripOS embedded operating system. Prior to joining Google he was an independent contractor focused on wireless networking and operating systems. Before contracting he worked for VMware, Silicon Graphics, Pixar, Lucasfilm, and the Computer System Research Group (CSR) at UC Berkeley where he was responsible for the 4.2BSD release of the UNIX operating system. At CSRG he co-designed and implemented many of the facilities found in contemporary UNIX systems including sockets, networking support (IP/TCP), reliable signals, and more.
-  </p>
-
-  <p>
-    <strong>Sam's keynote will be about "CantripOS: An OS for Ambient ML Applications"</strong>
-  </p>
-  <h5 class="keynote" id="abstract-sam">Abstract</h5>
-  <p class="keynote" style="margin-bottom:35px">
-    CantripOS is an open source operating system purpose-built to run ML workloads for embedded systems. It is being developed as part of Google’s project Sparrow, whose charter is to build a low-power embedded platform for ML applications with a focus on security and privacy. CantripOS is built in the <a href="https://www.rust-lang.org/">Rust programming language</a>, runs under the <a href="https://sel4.systems/Info/Docs/seL4-manual-12.1.0.pdf">seL4 microkernel</a>, and uses a modified <a href="https://docs.sel4.systems/projects/camkes/">CAmkES framework</a>. This allows CantripOS to run dynamically loaded applications in a controlled sandbox, while still retaining the benefits of a statically designed system. This paper describes the system design, modifications made to seL4 and CAmkES, and future directions. All the work described here is publicly available on <a href="https://github.com/AmbiML/sparrow-manifest">GitHub</a>.
-  </p>
+</div>
+  <div class="speakers_grid">
+    <div class="speaker">
+      <div class="speaker_pic">
+        <a href="https://www.ncsc.gov.uk/">
+          <img src="/Foundation/Membership/LOGOS/NCSC.png" style="width: 200px" alt="NCSC logo" />
+        </a>
+      </div>
+      <div class="speaker_title" style="text-align:center">
+        <strong>Gage</strong>
+        <br>
+        NCSC
+      </div>
+      <a class="summit-abstract-link" href="abstracts2023#a-scoping-assurance">
+        <div class="speaker_talk" style="text-align:center">
+          Scoping assurance activities with seL4
+        </div>
+      </a>
+    </div>
+  <div class="speaker">
+      <div class="speaker_pic">
+        <a href="https://www.google.com/">
+          <img src="../../../images/summit/sam-security-photo.jpg" style="width: 200px" alt="Sam Leffler" />
+        </a>
+      </div>
+      <div class="speaker_title" style="text-align:center">
+        <strong>Sam Leffler</strong>
+        <br>
+        Google
+      </div>
+      <a class="summit-abstract-link" href="abstracts2023#a-cantripos">
+        <div class="speaker_talk" style="text-align:center">
+          CantripOS: An OS for Ambient ML Applications
+        </div>
+      </a>
+    </div>
 </div>
 
 <div class="summit_div">
@@ -174,7 +146,7 @@ Minneapolis, USA
   </h3>
   <p>
     <p>
-    We are very fortunate to welcome five industry leaders to participate at the <a href="/Foundation/Summit/2023">seL4 Summit 2023</a>, in a session <a href="https://events.linuxfoundation.org/sel4-summit/program/schedule/">OS on seL4: so many options!</a>. Gapfruit, Kry10, Magnetite (MIT), and UNSW will present their views on the priorities and vision for their OS on seL4. The panel will be moderated by Todd Carpenter from Galois.
+    We were very fortunate to welcome five industry leaders to participate at the <a href="/Foundation/Summit/2023">seL4 Summit 2023</a>, in a session <a href="https://events.linuxfoundation.org/sel4-summit/program/schedule/">OS on seL4: so many options!</a>. Gapfruit, Kry10, Magnetite (MIT), and UNSW presented their views on the priorities and vision for their OS on seL4. The panel was moderated by Todd Carpenter from Galois.
   </p>
 
   <div class="speakers_grid5">
@@ -228,6 +200,15 @@ Minneapolis, USA
       </div>
     </div>
   </div>
+</div>
+
+<div class="summit_div">
+  <h3 id="summit-program">
+    Program, Abstracts, Slides and Videos
+  </h3>
+  <p>
+    Videos of the seL4 summit 2023 are available on the <a href="https://www.youtube.com/@seL4" target="_blank">seL4 YouTube channel</a>! Links and slides can be found on the summit <a href="program">Program</a> and <a href="abstracts2023">Abstracts</a> pages. Thanks to all the speakers for making the seL4 summit 2023 a great success!
+  </p>
 </div>
 
 <div class="summit_div">
@@ -404,7 +385,7 @@ Minneapolis, USA
   <div class="sponsor">
     <div class="sponsor-pic">
       <a href="https://www.tii.ae/">
-        <img src="../../Membership/LOGOS/TII.jpg" style="width: 250px"
+        <img src="../../Membership/LOGOS/TII.jpg" style="width: 150px"
             alt="TII logo">
       </a>
     </div>
@@ -417,7 +398,7 @@ Minneapolis, USA
   <div class="sponsor">
     <div class="sponsor-pic">
       <a href="https://www.kry10.com/">
-        <img src="../../Membership/LOGOS/Kry10.svg" style="width: 250px"
+        <img src="../../Membership/LOGOS/Kry10.svg" style="width: 150px"
             alt="Kry10 logo">
       </a>
     </div>
@@ -430,7 +411,7 @@ Minneapolis, USA
    <div class="sponsor">
     <div class="sponsor-pic">
       <a href="https://www.nio.com">
-        <img src="../../Membership/LOGOS/NIO.svg" style="width: 250px"
+        <img src="../../Membership/LOGOS/NIO.svg" style="width: 150px"
             alt="NIO logo">
       </a>
     </div>
@@ -441,11 +422,11 @@ Minneapolis, USA
     </div>
   </div>
 </div>
-<div class="sponsors-1">
+<div class="sponsors" style="padding-top:60px">
   <div class="sponsor">
     <div class="sponsor-pic">
       <a href="https://www.collinsaerospace.com">
-        <img src="../../Membership/LOGOS/Collins_Aerospace_Logo.svg" style="width: 200px"
+        <img src="../../Membership/LOGOS/Collins_Aerospace_Logo.svg" style="width: 150px"
             alt="Collins Aerospace logo">
       </a>
     </div>
@@ -456,11 +437,11 @@ Minneapolis, USA
     </div>
   </div>
 </div>
-<div class="sponsors-1">
+<div class="sponsors" style="padding-top:60px">
   <div class="sponsor">
     <div class="sponsor-pic">
       <a href="https://www.nio.com">
-        <img src="../../Membership/LOGOS/NIO.svg" style="width: 200px"
+        <img src="../../Membership/LOGOS/NIO.svg" style="width: 150px"
             alt="NIO logo">
       </a>
     </div>
@@ -471,11 +452,11 @@ Minneapolis, USA
     </div>
   </div>
 </div>
-<div class="sponsors-1">
+<div class="sponsors" style="padding-top:60px">
   <div class="sponsor">
     <div class="sponsor-pic">
       <a href="https://www.nio.com">
-        <img src="../../Membership/LOGOS/NIO.svg" style="width: 200px"
+        <img src="../../Membership/LOGOS/NIO.svg" style="width: 150px"
             alt="NIO logo">
       </a>
     </div>
@@ -486,13 +467,6 @@ Minneapolis, USA
     </div>
   </div>
 </div>
-<div class="summit_div">
-  <p>
-    Email us at <a href="mailto:summit@sel4.systems">summit@sel4.systems</a>
-    if you are interested in sponsoring the seL4 summit. More on sponsorship <a
-    href="https://events.linuxfoundation.org/sel4-summit/sponsor/">here</a>.
-  </p>
-</div>
 
 <div class="summit_div">
   <h3 id="summit-contact">
@@ -502,22 +476,3 @@ Minneapolis, USA
     For any questions regarding the summit, please contact <a title="summit@sel4.systems" href="mailto:summit@sel4.systems">summit@sel4.systems</a>.
   </p>
 </div>
-
-
-
-<!--
-  <h3>
-   Call for Presentations
-  </h3>
-
-  <p>
-
-  Check the <a href="./cfp">CFP</a>.  To propose a talk, send an abstract of
-  <strong>one page or less</strong> <strong>by Monday 9th of May 2022</strong>
-  to <a title="summit@sel4.systems"
-  <a href="mailto:summit@sel4.systems">summit@sel4.systems</a>.  If you would like
-  to propose a talk to be delivered remotely, please notify it in the
-  submission.
-
-  </p>
--->

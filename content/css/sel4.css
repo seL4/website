@@ -193,12 +193,29 @@ a.divLink {
   grid-row-gap: 10px;*/
 }
 
-@media screen and (min-width: 60em) {
+@media screen and (min-width: 400px) {
+  .people_grid {
+    grid-template-columns: repeat(1, 200px);
+  }
+}
+
+@media screen and (min-width: 400px) and (max-width:600px) {
+  .people_grid {
+    grid-template-columns: repeat(2, 200px);
+  }
+}
+
+@media screen and (min-width: 600px) and (max-width: 800px) {
+  .people_grid {
+    grid-template-columns: repeat(3, 200px);
+  }
+}
+
+@media screen and (min-width: 800px){
   .people_grid {
     grid-template-columns: repeat(4, 200px);
   }
 }
-
 
 .person {
   display: grid;
@@ -266,12 +283,28 @@ a.divLink {
 .sponsors {
   display: grid;
   grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
-  grid-template-columns: repeat(3, 1fr);
-  /*grid-template-rows: repeat(4, 1fr);*/
-  grid-column-gap: 30px;
-  grid-row-gap: 40px;
+  grid-column-gap: 50px;
   width: auto;
 }
+
+@media screen and (min-width: 500px) {
+  .sponsors {
+    grid-template-columns: repeat(1, 200px);
+  }
+}
+
+@media screen and (min-width: 500px) and (max-width:700px) {
+  .sponsors {
+    grid-template-columns: repeat(2, 200px);
+  }
+}
+
+@media screen and (min-width: 700px){
+  .sponsors {
+    grid-template-columns: repeat(3, 200px);
+  }
+}
+
 
 .sponsor {
   display: grid;
@@ -280,29 +313,7 @@ a.divLink {
   grid-column-gap: 25px;
   grid-row-gap: 10px;
   align-content: center;
-
 }
-
-/* 2-col grid*/
-.sponsors-2 {
-  display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
-  grid-template-columns: repeat(2, 1fr);
-  /*grid-template-rows: repeat(3, 1fr);*/
-  grid-column-gap: 30px;
-  grid-row-gap: 40px;
-  width: auto;
-}
-/* 1-col grid*/
-.sponsors-1 {
-  display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
-  grid-template-columns: repeat(1, 1fr);
-  grid-column-gap: 30px;
-  grid-row-gap: 40px;
-  width: auto;
-}
-
 
 @media (max-width: 60em) {
   .hidden-sponsor-mobile {
@@ -645,6 +656,13 @@ div.summit-abstract-tbd{
 
 .speaker_title_col {
   color: #8897AE; /* neutralLight */
+}
+
+.speaker_talk {
+  grid-area: speaker_talk;
+  justify-self: center;
+  align-self: center;
+  font-size:1.1em;
 }
 
 .youtube_icon{

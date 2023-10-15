@@ -18,15 +18,17 @@ Munich, Germany (hybrid), 10-13 Oct 2022
     <li><a href="cfp">Call for Presentations</a></li>
 <!--    <li><a href="#summit-registration">Registration</a></li>
     <li><a href="#summit-mentoring">Mentorship Program</a></li-->
-    <li><a href="#summit-invited-speakers">Invited Speakers</a></li>
+    <li><a href="#summit-keynote-speakers">Keynote Speakers</a></li>
     <li><a href="#summit-panellists">Panellists</a></li>
-    <li><a href="program">Program</a></li>
-    <li><a href="abstracts2022">Abstracts</a></li>
+    <li><a href="#summit-program">Program, Abstracts, Slides and Videos</a></li>
     <li><a href="#summit-pc">Program Committee</a></li>
     <li><a href="#summit-sponsors">Sponsors</a></li>
     <li><a href="#summit-contact">Contact</a></li>
-    <li><a href="../">All summits</a></li>
   </ul>
+</div>
+
+<div class="summit_div">
+  <a href="../">All summits</a>
 </div>
 
 <div class="summit_div">
@@ -125,8 +127,8 @@ Munich, Germany (hybrid), 10-13 Oct 2022
 </div-->
 
 <div class="summit_div">
-  <h3 id="summit-invited-speakers">
-    Invited Speakers
+  <h3 id="summit-keynote-speakers">
+    Keynote Speakers
   </h3>
 </div>
 <div class="speakers_grid">
@@ -139,20 +141,21 @@ Munich, Germany (hybrid), 10-13 Oct 2022
       <br>
       UNSW
     </div>
-    <div class="speaker_talk">
+    <div class="speaker_talk" style="text-align:center">
       <a class="summit-abstract-link" href="abstracts2022#a-seL4-research">State of seL4-related research</a>
     </div>
   </div>
   <div class="speaker">
     <div class="speaker_pic">
-      <a href=""><img src="../../../images/summit/boyd.jpg" alt="Boyd Multerer" width="150"></a>
+      <a href="https://www.kry10.com/"><img src="../../../images/summit/boyd.jpg" alt="Boyd Multerer" width="150">
+      </a>
     </div>
     <div class="speaker_title" style="text-align:center">
       <strong>Boyd Multerer</strong>
       <br>
       Kry10
     </div>
-    <div class="speaker_talk">
+    <div class="speaker_talk" style="text-align:center">
       <a class="summit-abstract-link" href="abstracts2022#a-Kry10-Secure-Platform">Kry10 Secure Platform</a>
     </div>
   </div>
@@ -163,7 +166,7 @@ Munich, Germany (hybrid), 10-13 Oct 2022
     Panellists
   </h3>
   <p>
-    We are very fortunate to welcome four leaders at major funding agencies to participate in a session <a href="abstracts2022#a-Funding-agencies"><strong>Funding agencies: priorities and vision</strong></a>. They will each give their views on the priorities and vision of their agency in terms of high-assurance systems.
+    We were very fortunate to welcome four leaders at major funding agencies to participate in a session <a href="abstracts2022#a-Funding-agencies"><strong>Funding agencies: priorities and vision</strong></a>. They each gave their views on the priorities and vision of their agency in terms of high-assurance systems.
   </p>
 </div>
 <div class="speakers_grid">
@@ -211,10 +214,10 @@ Munich, Germany (hybrid), 10-13 Oct 2022
 
 <div class="summit_div">
   <h3 id="summit-program">
-    Program
+    Program, Abstracts, Slides and Videos
   </h3>
   <p>
-    We have an amazing <a href="program.pml">line-up</a> of cool seL4 work, with a combination of technical research and development, experience reports of seL4 in the field, technical discussions and Birds-of-a-feather sessions, as well as a whole day of seL4 bootcamp with tutorials and training.
+    Videos of the seL4 summit 2022 are available on the <a href="https://www.youtube.com/@seL4" target="_blank">seL4 YouTube channel</a>! Links and slides can be found on the summit <a href="program">Program</a> and <a href="abstracts2022">Abstracts</a> pages. Thanks to all the speakers for making the seL4 summit 2022 a great success!
   </p>
 </div>
 
@@ -348,7 +351,7 @@ Munich, Germany (hybrid), 10-13 Oct 2022
   <div class="sponsor">
     <div class="sponsor-pic">
       <a href="https://dornerworks.com/">
-        <img src="../../Membership/LOGOS/DornerWorks.svg" style="width: 248px"
+        <img src="../../Membership/LOGOS/DornerWorks.svg" style="width: 150px"
             alt="DornerWorks logo">
       </a>
     </div>
@@ -360,7 +363,7 @@ Munich, Germany (hybrid), 10-13 Oct 2022
     <div class="sponsor">
     <div class="sponsor-pic">
       <a href="https://horizon.ai/">
-        <img src="../../Membership/LOGOS/Horizon_Robotics.svg" style="width: 248px"
+        <img src="../../Membership/LOGOS/Horizon_Robotics.svg" style="width: 150px"
             alt="Horizon Robotics logo">
       </a>
     </div>
@@ -373,7 +376,7 @@ Munich, Germany (hybrid), 10-13 Oct 2022
     <div class="sponsor-pic">
     <a href="https://xcalibyte.com">
      <img src="../../Membership/LOGOS/xcalibyte.svg"
-	  style="width: 80%;  padding-left:10px;  float:right"
+	  style="width: 150px;  padding-left:10px;  float:right"
 	  alt="Xcalibyte logo">
      </a>
     </div>

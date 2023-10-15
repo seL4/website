@@ -66,7 +66,7 @@ Older News: <%=reflist%>
     alt="seL4 summit" />
   </a>
   <p>
-    Videos of the seL4 summit 2023 are now available on the <a href="https://www.youtube.com/@seL4" target="_blank">seL4 YouTube channel</a>! Links and slides can be found on the summit <a href="../Foundation/Summit/2023/program">Program</a> and <a href="../Foundation/Summit/2023/abstracts2023">Abstracts</a> pages. Thanks to all the speakers for making the seL4 summit 2023 a great success!
+    Videos of the <a href="/Foundation/Summit/2023">seL4 summit 2023</a> are now available on the <a href="https://www.youtube.com/@seL4" target="_blank">seL4 YouTube channel</a>! Links and slides can be found on the summit <a href="../Foundation/Summit/2023/program">Program</a> and <a href="../Foundation/Summit/2023/abstracts2023">Abstracts</a> pages. Thanks to all the speakers for making the seL4 summit 2023 a great success!
   </p>
 </div>
 <div class="news-finish">
