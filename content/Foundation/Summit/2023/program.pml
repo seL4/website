@@ -344,7 +344,7 @@
     <span class="summit-abstract-affiliation">NIO</span>
     </td>
     <td><a href="https://youtu.be/HfvX2VbWp6c?si=TpCsq8GtYme0SY12" target="_blank"><img src="../../../images/icons/youtube_nobckgnd.svg" class="youtube_icon" alt="YouTube icon"></a></td>
-    <td><a href="slides/day2-13-wang.pdf"><img src="../../../images/icons/slides.svg" alt="slides icon"></td>
+    <td><a href="slides/day2-13-wang.pdf"><img src="../../../images/icons/slides.svg" alt="slides icon"></a></td>
   </tr>
   <tr id="p-gold-tii">
     <td>17:15 - 17:30</td>
