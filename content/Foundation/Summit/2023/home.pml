@@ -19,7 +19,7 @@ Minneapolis, USA
     <!--li><a href="#summit-important-dates">Important Dates</a></li-->
     <li><a href="#summit-about">About</a></li>
     <!--li><a href="#summit-registration">Registration</a></li-->
-    <li><a href="#summit-location">Location & Host</a></li>
+    <li><a href="#summit-location">Location & Venue</a></li>
     <li><a href="cfp">Call for Presentations</a></li>
     <li><a href="#summit-keynote-speakers">Keynote Speakers</a></li>
     <li><a href="#summit-panellists">Panellists</a></li>
@@ -91,10 +91,10 @@ Minneapolis, USA
 
 <div class="summit_div">
   <h3 id="summit-location">
-    Location & Host
+    Location & Venue
   </h3>
   <p>
-    The seL4 Summit 2023 was held in Minneapolis, USA, 19 - 21 September 2023, at the Elliot Park Hotel. The summit was hosted by the <a href="https://events.linuxfoundation.org/sel4-summit/">Linux Foundation</a>.
+    The seL4 Summit 2023 was held in Minneapolis, USA, 19 - 21 September 2023, at the Elliot Park Hotel. The summit was organised by the <a href="https://events.linuxfoundation.org/sel4-summit/">Linux Foundation</a>.
   </p>
 </div>
 
@@ -103,7 +103,7 @@ Minneapolis, USA
     Keynote Speakers
   </h3>
 </div>
-  <div class="speakers_grid">
+  <div class="keynotes_grid">
     <div class="speaker">
       <div class="speaker_pic">
         <a href="https://www.ncsc.gov.uk/">
@@ -124,7 +124,7 @@ Minneapolis, USA
   <div class="speaker">
       <div class="speaker_pic">
         <a href="https://www.google.com/">
-          <img src="../../../images/summit/sam-security-photo.jpg" style="width: 200px" alt="Sam Leffler" />
+          <img src="../../../images/summit/sam-security-photo.jpg" style="width: 150px" alt="Sam Leffler" />
         </a>
       </div>
       <div class="speaker_title" style="text-align:center">
@@ -149,7 +149,7 @@ Minneapolis, USA
     We were very fortunate to welcome five industry leaders to participate at the <a href="/Foundation/Summit/2023">seL4 Summit 2023</a>, in a session <a href="https://events.linuxfoundation.org/sel4-summit/program/schedule/">OS on seL4: so many options!</a>. Gapfruit, Kry10, Magnetite (MIT), and UNSW presented their views on the priorities and vision for their OS on seL4. The panel was moderated by Todd Carpenter from Galois.
   </p>
 
-  <div class="speakers_grid5">
+  <div class="speakers_grid">
     <div class="speaker">
       <div class="speaker_pic">
         <img src="../../../images/summit/sid.jpg" alt="Sid Hussmann" height="100"/>

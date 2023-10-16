@@ -193,7 +193,7 @@ a.divLink {
   grid-row-gap: 10px;*/
 }
 
-@media screen and (min-width: 400px) {
+@media screen and (max-width: 400px) {
   .people_grid {
     grid-template-columns: repeat(1, 200px);
   }
@@ -284,10 +284,12 @@ a.divLink {
   display: grid;
   grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
   grid-column-gap: 50px;
-  width: auto;
+  align-items: center;
+  justify-items: center; /* adjusted */
+  width: 100%;
 }
 
-@media screen and (min-width: 500px) {
+@media screen and (max-width: 500px) {
   .sponsors {
     grid-template-columns: repeat(1, 200px);
   }
@@ -594,6 +596,22 @@ div.summit-abstract-tbd{
 }
 
 /*note the plural*/
+.keynotes_grid {
+  display: grid;
+  display: inline-grid;
+  grid-template-columns: 1fr 1fr;
+  /*grid-column-gap: 10px;
+  grid-row-gap: 10px;*/
+}
+
+@media screen and (max-width: 400px) {
+  .keynotes_grid {
+    grid-template-columns: repeat(1, 200px);
+  }
+}
+
+
+/*note the plural*/
 .speakers_grid {
   display: grid;
   display: inline-grid;
@@ -602,22 +620,27 @@ div.summit-abstract-tbd{
   grid-row-gap: 10px;*/
 }
 
-@media screen and (min-width: 60em) {
+@media screen and (max-width: 400px) {
   .speakers_grid {
-    grid-template-columns: repeat(4, 300px);
+    grid-template-columns: repeat(1, 200px);
   }
 }
 
-/*for 5-col grid*/
-.speakers_grid5 {
-  display: grid;
-  display: inline-grid;
-  grid-template-columns: auto;
+@media screen and (min-width: 400px) and (max-width:600px) {
+  .speakers_grid {
+    grid-template-columns: repeat(2, 200px);
+  }
 }
 
-@media screen and (min-width: 80em) {
-  .speakers_grid5 {
-    grid-template-columns: repeat(5, 220px);
+@media screen and (min-width: 600px) and (max-width: 800px) {
+  .speakers_grid {
+    grid-template-columns: repeat(3, 200px);
+  }
+}
+
+@media screen and (min-width: 800px){
+  .speakers_grid {
+    grid-template-columns: repeat(4, 200px);
   }
 }
 
