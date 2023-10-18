@@ -28,7 +28,7 @@
     <ul>
       <li>
         <strong>
-          16 Oct 2023: The videos and slides of the seL4 summit 2023 are available online
+          18 Oct 2023: The videos and slides of the seL4 summit 2023 are available online
           </strong>
       </li>
       <li>

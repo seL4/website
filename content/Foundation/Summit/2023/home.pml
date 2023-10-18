@@ -422,7 +422,7 @@ Minneapolis, USA
     </div>
   </div>
 </div>
-<div class="sponsors" style="padding-top:60px">
+<div class="sponsors-1" style="padding-top:60px">
   <div class="sponsor">
     <div class="sponsor-pic">
       <a href="https://www.collinsaerospace.com">
@@ -437,7 +437,7 @@ Minneapolis, USA
     </div>
   </div>
 </div>
-<div class="sponsors" style="padding-top:60px">
+<div class="sponsors-1" style="padding-top:60px">
   <div class="sponsor">
     <div class="sponsor-pic">
       <a href="https://www.nio.com">
@@ -452,7 +452,7 @@ Minneapolis, USA
     </div>
   </div>
 </div>
-<div class="sponsors" style="padding-top:60px">
+<div class="sponsors-1" style="padding-top:60px">
   <div class="sponsor">
     <div class="sponsor-pic">
       <a href="https://www.nio.com">

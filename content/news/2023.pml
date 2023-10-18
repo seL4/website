@@ -57,7 +57,7 @@ Older News: <%=reflist%>
 <!----------------------------------------------------------->
 <div class="news-item tag-link" id="summit-videos">
   <a href="#summit-videos"><span class="tag-span"># </span></a>
-  16 October 2023: The videos and slides of the seL4 summit 2023 are available online
+  18 October 2023: The videos and slides of the seL4 summit 2023 are available online
 </div>
 <div>
   <a href="/Foundation/Summit/2023">
@@ -121,7 +121,7 @@ Older News: <%=reflist%>
     We are very fortunate to welcome five industry leaders to participate at the <a href="/Foundation/Summit/2023">seL4 Summit 2023</a>, in a session <a href="https://events.linuxfoundation.org/sel4-summit/program/schedule/">OS on seL4: so many options!</a>. Gapfruit, Kry10, Magnetite (MIT), and UNSW will present their views on the priorities and vision for their OS on seL4. The panel will be moderated by Todd Carpenter from Galois.
   </p>
 
-  <div class="speakers_grid5">
+  <div class="speakers_grid">
     <div class="speaker">
       <div class="speaker_pic">
         <img src="../../images/summit/sid.jpg" alt="Sid Hussmann" height="100"/>

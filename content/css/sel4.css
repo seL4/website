@@ -282,10 +282,10 @@ a.divLink {
 /* note the plural */
 .sponsors {
   display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+  grid-template-columns: auto;
   grid-column-gap: 50px;
   align-items: center;
-  justify-items: center; /* adjusted */
+  justify-content: center; /* adjusted */
   width: 100%;
 }
 
