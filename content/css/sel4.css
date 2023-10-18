@@ -307,6 +307,16 @@ a.divLink {
   }
 }
 
+/*single sponsor*/
+sponsors-1 {
+  display: grid;
+  grid-template-columns: auto;
+  grid-column-gap: 50px;
+  align-items: center;
+  justify-content: center; /* adjusted */
+  width: 100%;
+}
+
 
 .sponsor {
   display: grid;

@@ -166,7 +166,7 @@
 <div class="summit-abstract" id="a-gold-nio"><%@ include file="abstracts/gold-nio.pml" %>
 <a href="https://youtu.be/HfvX2VbWp6c?si=TpCsq8GtYme0SY12" target="_blank"><img src="../../../images/icons/youtube_nobckgnd.svg" class="youtube_icon" alt="YouTube icon"></a>
 &nbsp;&nbsp;
-<a href="slides/day2-13-wang.pdf"><img src="../../../images/icons/slides.svg" alt="slides icon">
+<a href="slides/day2-13-wang.pdf"><img src="../../../images/icons/slides.svg" alt="slides icon"></a>
 <br><a href="program#p-gold-nio">See this talk in the program</a></div>
 
 <div class="summit-abstract" id="a-gold-tii"><%@ include file="abstracts/gold-tii.pml" %>
