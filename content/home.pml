@@ -28,6 +28,11 @@
     <ul>
       <li>
         <strong>
+          18 Oct 2023: The videos and slides of the seL4 summit 2023 are available online
+          </strong>
+      </li>
+      <li>
+        <strong>
            13 Oct 2023: University of Kansas joins seL4 Foundation
         </strong>
       </li>
@@ -35,11 +40,6 @@
         <strong>
           1 Sep 2023: Thanks NIO for sponsoring the seL4 Summit 2023 reception and dinner
         </strong>
-      </li>
-      <li>
-        <strong>
-          30 Aug 2023: Panellists for seL4 summit announced
-          </strong>
       </li>
       <li style="margin-top:0.2em;list-style-type:none">
         more...
@@ -158,7 +158,7 @@
   </div>
 
   <div class="homepage_item">
-    <a class="divLink" href="/Foundation/Summit/2023/"></a>
+    <a class="divLink" href="/Foundation/Summit/"></a>
     <div class="hp_pic">
       <img src="/images/sel4-summit-logo.svg" style="width:200px" alt="seL4 Summit" />
     </div>

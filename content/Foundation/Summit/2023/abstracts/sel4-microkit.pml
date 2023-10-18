@@ -1,0 +1,22 @@
+<!--<title>Summit abstract</title>-->
+<!--
+    Copyright 2023, seL4 summit authors (see abstracts)
+    SPDX-License-Identifier: CC-BY-SA-4.0
+-->
+<h4 class="summit-abstract-title">
+The seL4 Microkit
+</h4>
+<p class="summit-abstract-type">
+    Talk
+</p>
+<p class="summit-abstract-author">
+    Presented by Ivan Velickovic, <span class="summit-abstract-affiliation">UNSW</span>
+</p>
+<p>
+The seL4 Microkit is an operating system framework on top of seL4 that aims to provide minimal abstractions to make it easier to build statically structured systems on seL4, while still leveraging the kernel’s benefits of security and performance. Since the 2022 seL4 Summit, seL4CP has become more mature and is seeing wider use. At Trustworthy Systems, seL4CP is the basis of much of our work, including the seL4 Device Driver Framework and other OS services such as a virtual machine monitor. The goal of this talk is to give you an understanding of seL4CP and surrounding developments by covering three topics:
+</p>
+<ul>
+<li> An introduction to seL4CP and its concepts, and how they map onto seL4 primitives.
+</li><li> How the seL4CP has progressed over the past year and how it can now be used to create more complex systems.
+</li><li> An update on the verification story of seL4CP, which includes the functional correctness of the seL4CP library and runtime code as well as the verified mapping from seL4CP system description to CapDL.
+</ul>

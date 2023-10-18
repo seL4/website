@@ -1,0 +1,17 @@
+<!--<title>Summit abstract</title>-->
+<!--
+    Copyright 2023, seL4 summit authors (see abstracts)
+    SPDX-License-Identifier: CC-BY-SA-4.0
+-->
+<h4 class="summit-abstract-title">
+The seL4 Device Driver Framework
+</h4>
+<p class="summit-abstract-type">
+    Talk
+</p>
+<p class="summit-abstract-author">
+    Presented by Lucy Parker, <span class="summit-abstract-affiliation">UNSW</span>
+</p>
+<p>
+A lack of a good approach to I/O is one of the primary barriers to uptake for seL4. Unfortunately, there’s a distinct lack of guidance, along with too many poor performing solutions that don’t make good use of seL4. We believe a thoughtful design can, and should, demonstrate performance competitive with Linux. We present such a design in the seL4 Device Driver framework (sDDF). Its simple design prioritises a strong separation of concerns by using multiple isolated components, each with a single task in the pipeline, that communicate via a low-overhead, asynchronous transport layer. It’s presently focused on networking systems, and comparison against Linux already shows that simplicity wins. This talk will revisit the design of the sDDF, and discuss ongoing work to further evaluate and optimise the framework for device sharing.
+</p>

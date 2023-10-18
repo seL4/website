@@ -1,0 +1,17 @@
+<!--<title>Summit abstract</title>-->
+<!--
+    Copyright 2023, seL4 summit authors (see abstracts)
+    SPDX-License-Identifier: CC-BY-SA-4.0
+-->
+<h4 class="summit-abstract-title">
+Magnetite: Rust-Based OS Services for seL4
+</h4>
+<p class="summit-abstract-type">
+    Talk
+</p>
+<p class="summit-abstract-author">
+    Presented by Juliana Furgala, <span class="summit-abstract-affiliation">MIT Lincoln Laboratory</span>
+</p>
+<p>
+What if the isolation that seL4 provides could be applied at a fine-grained level to individual processes? Frequently seL4 is used as a hypervisor but at MIT Lincoln Laboratory, we explored the potential of seL4 as a foundational block in a new security-focused operating system. Magnetite is a suite of performant, secure-by-design, real-time OS services built upon the formally-verified microkernel seL4 and written in Rust, a memory-safe language. Magnetite offers a feature-rich API for both legacy C and new Rust applications to engage with its variety of resource types, which extend seL4’s capability-based system to provide common OS services. Magnetite is built upon the Principle of Least Privilege (PoLP) to limit trust and time of trust, and also adheres to strong isolation properties with self-contained processes and system services, and isolated domains known as silos.
+</p>

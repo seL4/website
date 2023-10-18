@@ -55,6 +55,24 @@ Older News: <%=reflist%>
 -->
 
 <!----------------------------------------------------------->
+<div class="news-item tag-link" id="summit-videos">
+  <a href="#summit-videos"><span class="tag-span"># </span></a>
+  18 October 2023: The videos and slides of the seL4 summit 2023 are available online
+</div>
+<div>
+  <a href="/Foundation/Summit/2023">
+    <img src="/images/sel4-summit-logo.svg"
+    style="width: 20%;  padding-left:10px;  float:right"
+    alt="seL4 summit" />
+  </a>
+  <p>
+    Videos of the <a href="/Foundation/Summit/2023">seL4 summit 2023</a> are now available on the <a href="https://www.youtube.com/@seL4" target="_blank">seL4 YouTube channel</a>! Links and slides can be found on the summit <a href="../Foundation/Summit/2023/program">Program</a> and <a href="../Foundation/Summit/2023/abstracts2023">Abstracts</a> pages. Thanks to all the speakers for making the seL4 summit 2023 a great success!
+  </p>
+</div>
+<div class="news-finish">
+</div>
+
+<!----------------------------------------------------------->
 <div class="news-item tag-link" id="member-ku">
   <a href="#member-ku"><span class="tag-span"># </span></a> 13 October 2023: University of Kansas joins seL4 Foundation
 </div>
@@ -103,7 +121,7 @@ Older News: <%=reflist%>
     We are very fortunate to welcome five industry leaders to participate at the <a href="/Foundation/Summit/2023">seL4 Summit 2023</a>, in a session <a href="https://events.linuxfoundation.org/sel4-summit/program/schedule/">OS on seL4: so many options!</a>. Gapfruit, Kry10, Magnetite (MIT), and UNSW will present their views on the priorities and vision for their OS on seL4. The panel will be moderated by Todd Carpenter from Galois.
   </p>
 
-  <div class="speakers_grid5">
+  <div class="speakers_grid">
     <div class="speaker">
       <div class="speaker_pic">
         <img src="../../images/summit/sid.jpg" alt="Sid Hussmann" height="100"/>

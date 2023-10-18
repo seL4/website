@@ -7,7 +7,10 @@
   seL4 Summit 2022
 </h1>
 <h4>
-Munich, Germany (hybrid), 10-13 Oct 2022
+  Munich, Germany (hybrid)
+</h4>
+<h4>
+  10-13 Oct 2022
 </h4>
 
 <h3>

@@ -1,0 +1,17 @@
+<!--<title>Summit abstract</title>-->
+<!--
+    Copyright 2023, seL4 summit authors (see abstracts)
+    SPDX-License-Identifier: CC-BY-SA-4.0
+-->
+<h4 class="summit-abstract-title">
+CantripOS: An OS for Ambient ML Applications
+</h4>
+<p class="summit-abstract-type">
+    Keynote
+</p>
+<p class="summit-abstract-author">
+    Presented by Sam Leffler, <span class="summit-abstract-affiliation">Google</span>
+</p>
+<p>
+CantripOS is an open source operating system purpose-built to run ML workloads for embedded systems. It is being developed as part of Google’s project Sparrow, whose charter is to build a low-power embedded platform for ML applications with a focus on security and privacy. CantripOS is built in the Rust programming language1, runs under the seL4 microkernel2, and uses a modified CAmkES framework3. This allows CantripOS to run dynamically loaded applications in a controlled sandbox, while still retaining the benefits of a statically designed system. This paper describes the system design, modifications made to seL4 and CAmkES, and future directions. All the work described here is publicly available on GitHub4.
+</p>
