@@ -246,7 +246,6 @@ Committee may co-opt member representatives.</p>
   <li>June Andronick</li>
   <li>David Hardin</li>
   <li>Gernot Heiser</li>
-  <li>Daniel Potts</li>
 </ul>
 
 
