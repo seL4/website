@@ -55,6 +55,17 @@ Older News: <%=reflist%>
 -->
 
 <!----------------------------------------------------------->
+<div class="news-item tag-link" id="microkit">
+  <a href="#microkit"><span class="tag-span"># </span></a>
+  20 November 2023: seL4 Microkit officially supported by the seL4 Foundation
+</div>
+<div>
+  <p>
+     The <a href="https://docs.sel4.systems/projects/microkit/">seL4 Microkit</a>, formerly known as the Core Platform, is an operating system framework on top of seL4 provides a small set of simple abstractions that ease the design and implementation of statically structured systems on seL4, while still leveraging the kernel’s benefits of security and performance. The Microkit is distributed as an SDK that integrates with the developer’s build system of choice, significantly reducing the barrier to entry for new users of seL4.
+  </p>
+</div>
+
+<!----------------------------------------------------------->
 <div class="news-item tag-link" id="support-rust">
   <a href="#support-rust"><span class="tag-span"># </span></a>
     15 November 2023: Support for Rust in seL4 userspace now available
@@ -76,6 +87,7 @@ Older News: <%=reflist%>
     The overall outcome will be to allow people to write safer user-level code on top of seL4 without needing full formal verification, with a language that is receiving increasing interest and that aligns extremely well with security and safety critical embedded systems programming.
   </p>
 </div>
+
 
 <!----------------------------------------------------------->
 <div class="news-item tag-link" id="mcs-xcalibyte">
@@ -119,7 +131,8 @@ Older News: <%=reflist%>
       alt="Proofcraft logo" />
   </a>
 </p>
-</div>
+
+
 
 <!----------------------------------------------------------->
 <div class="news-item tag-link" id="summit-videos">

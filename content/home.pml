@@ -28,18 +28,18 @@
     <ul>
       <li>
         <strong>
-          15 Nov 2023: Support for Rust in seL4 userspace now available
-        </strong>
-      </li>
-    <li>
-        <strong>
-          6 Nov 2023: Progress on MCS verification thanks to XCalibyte donation
+          20 Nov 2023: seL4 Microkit officially supported by the seL4 Foundation
         </strong>
       </li>
       <li>
         <strong>
-          18 Oct 2023: The videos and slides of the seL4 summit 2023 are available online
-          </strong>
+          15 Nov 2023: Support for Rust in seL4 userspace now available
+        </strong>
+      </li>
+      <li>
+        <strong>
+          6 Nov 2023: Progress on MCS verification thanks to XCalibyte donation
+        </strong>
       </li>
       <li style="margin-top:0.2em;list-style-type:none">
         more...
