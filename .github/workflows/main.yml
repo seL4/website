@@ -18,7 +18,7 @@ jobs:
       linkchecker_failed: ${{ steps.linkchecker_status.outputs.linkchecker_failed }}
       validator_failed:   ${{ steps.validator_status.outputs.validator_failed }}
     steps:
-      - uses: actions/checkout@v2
+      - uses: actions/checkout@v4
 
       - uses: ./.github/actions/gen_static_website
         id: 'gen_static_website'
@@ -125,12 +125,12 @@ jobs:
           echo "$MSG"
 
       - name: Leave comment with link to site, and results of checks
-        uses: actions/github-script@v3
+        uses: actions/github-script@v6
         if: github.event_name == 'pull_request'
         with:
           github-token: ${{secrets.GITHUB_TOKEN}}
           script: |
-            github.issues.createComment({
+            github.rest.issues.createComment({
               issue_number: context.issue.number,
               owner: context.repo.owner,
               repo: context.repo.repo,
