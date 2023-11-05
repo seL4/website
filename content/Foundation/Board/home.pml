@@ -246,6 +246,8 @@ Committee may co-opt member representatives.</p>
   <li>June Andronick</li>
   <li>David Hardin</li>
   <li>Gernot Heiser</li>
+  <li>Boyd Multerer, Founder and CEO at <a href="https://www.kry10.com/">Kry10 Limited</a></li>
+  <li>Gregg Wildes, Innovation Director at <a href="https://dornerworks.com/">DornerWorks</a></li>
 </ul>
 
 
