@@ -89,11 +89,11 @@ Older News: <%=reflist%>
     <img src="/Foundation/Membership/LOGOS/xcalibyte.svg"
       style="width: 18%; padding-left:1em;"
       alt="XCalibyte logo" />
+  </a>
   <a href="https://proofcraft.systems">
     <img src="/Foundation/Membership/LOGOS/proofcraft.svg"
       style="width: 20%; padding-left:1em;"
       alt="Proofcraft logo" />
-  </a>
   </a>
 </p>
 
