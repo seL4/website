@@ -55,6 +55,53 @@ Older News: <%=reflist%>
 -->
 
 <!----------------------------------------------------------->
+<div class="news-item tag-link" id="mcs-xcalibyte">
+  <a href="#mcs-xcalibyte"><span class="tag-span"># </span></a>
+  6 November 2023: Progress on MCS verification thanks to XCalibyte donation
+</div>
+<div>
+
+<p>
+  Foundation member <a href="https://proofcraft.systems">Proofcraft</a> has
+  delivered a <a href="https://proofcraft.systems/news-2023/#2023-11-06">work
+  package towards the verification of the MCS variant of seL4</a>.
+</p>
+
+<p>
+  Having earlier started the design-to-code refinement proof of MCS seL4, funded
+  by the Foundation, Proofcraft has now delivered the completion of the proof
+  framework, setting up all the infrastructure and hierarchy of theorems about
+  the approximately 500 C functions of the kernel.
+</p>
+
+<p>
+  This was made possible by a generous donation from Foundation member <a
+  href="https://xcalibyte.com">XCalibyte</a>, for which the seL4 Foundation is
+  very grateful. We are looking for <a
+  href="https://sel4.systems/Foundation/Support/">further funding</a> that will
+  allow completion of the verification of the MCS variant. Once verified, MCS
+  will become the default configuration of seL4, bringing the highest levels of
+  assurance to mixed-criticality real-time systems.
+</p>
+
+<p style="text-align: center; padding:20px">
+  <a href="https://xcalibyte.com">
+    <img src="/Foundation/Membership/LOGOS/xcalibyte.svg"
+      style="width: 18%; padding-left:1em;"
+      alt="XCalibyte logo" />
+  <a href="https://proofcraft.systems">
+    <img src="/Foundation/Membership/LOGOS/proofcraft.svg"
+      style="width: 20%; padding-left:1em;"
+      alt="Proofcraft logo" />
+  </a>
+  </a>
+</p>
+
+</div>
+<div class="news-finish">
+</div>
+
+<!----------------------------------------------------------->
 <div class="news-item tag-link" id="summit-videos">
   <a href="#summit-videos"><span class="tag-span"># </span></a>
   18 October 2023: The videos and slides of the seL4 summit 2023 are available online
