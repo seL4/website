@@ -28,6 +28,11 @@
     <ul>
       <li>
         <strong>
+          15 Nov 2023: Support for Rust now available on seL4
+        </strong>
+      </li>
+    <li>
+        <strong>
           6 Nov 2023: Progress on MCS verification thanks to XCalibyte donation
         </strong>
       </li>
@@ -35,11 +40,6 @@
         <strong>
           18 Oct 2023: The videos and slides of the seL4 summit 2023 are available online
           </strong>
-      </li>
-      <li>
-        <strong>
-           13 Oct 2023: University of Kansas joins seL4 Foundation
-        </strong>
       </li>
       <li style="margin-top:0.2em;list-style-type:none">
         more...
