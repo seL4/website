@@ -60,6 +60,12 @@ Older News: <%=reflist%>
     15 November 2023: Support for Rust now available on seL4
 </div>
 <div>
+  <a href="https://www.rust-lang.org/">
+    <img src="/images/rust-logo-blk.svg"
+    style="width: 20%;  padding-left:10px;  float:right"
+    alt="Rust logo" />
+  </a>
+
   <p>
   For the last year, Nick Spinale, funded by the seL4 Foundation, has been developing support for the Rust programming language in seL4 userspace.
   </p>
