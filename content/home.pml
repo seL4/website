@@ -28,7 +28,7 @@
     <ul>
       <li>
         <strong>
-          15 Nov 2023: Support for Rust now available on seL4
+          15 Nov 2023: Support for Rust in seL4 userspace now available
         </strong>
       </li>
     <li>

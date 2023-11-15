@@ -57,7 +57,7 @@ Older News: <%=reflist%>
 <!----------------------------------------------------------->
 <div class="news-item tag-link" id="support-rust">
   <a href="#support-rust"><span class="tag-span"># </span></a>
-    15 November 2023: Support for Rust now available on seL4
+    15 November 2023: Support for Rust in seL4 userspace now available
 </div>
 <div>
   <a href="https://www.rust-lang.org/">
@@ -70,10 +70,7 @@ Older News: <%=reflist%>
   For the last year, Nick Spinale, funded by the seL4 Foundation, has been developing support for the Rust programming language in seL4 userspace.
   </p>
   <p>
-    Nick has created a comprehensive language support infrastructure that integrates well with the rest of the seL4 ecosystem (capDL, Microkit, sel4test) and also integrates well with what Rust programmers would expect from the language side. This work has now been accepted by the seL4 Foundation <a href="/Foundation/TSC">Technical Steering Committee</a> and can be found on <a href="https://github.com/seL4/rust-sel4">GitHub</a>. Nick’s talk at the recent seL4 summit is on <a href="https://youtu.be/J17lC124_9s?si=e8nDp-x8OLq6h1dO">seL4’s Youtube channel</a>. A demo system that uses the device driver framework is available on <a href="https://github.com/seL4/rust-microkit-http-server-demo">GitHub</a>.
-  </p>
-  <p>
-    Stay tuned for more work in this area, including asynchronous programming in Rust and library support from the Rust ecosystem to show how to implement a small web server.
+    Nick has created a comprehensive language support infrastructure that integrates well with the rest of the seL4 ecosystem (capDL, Microkit, sel4test) and also integrates well with what Rust programmers would expect from the language side. This work has now been accepted by the seL4 Foundation <a href="/Foundation/TSC">Technical Steering Committee</a> and can be found on <a href="https://github.com/seL4/rust-sel4">GitHub</a>. Nick’s talk at the recent seL4 summit is on <a href="https://youtu.be/J17lC124_9s?si=e8nDp-x8OLq6h1dO">seL4’s Youtube channel</a>. A demo system that uses the device driver framework, asynchronous programming in Rust and library support from the Rust ecosystem to implement a small web server is available on <a href="https://github.com/seL4/rust-microkit-http-server-demo">GitHub</a>.
   </p>
   <p>
     The overall outcome will be to allow people to write safer user-level code on top of seL4 without needing full formal verification, with a language that is receiving increasing interest and that aligns extremely well with security and safety critical embedded systems programming.
