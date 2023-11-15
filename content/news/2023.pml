@@ -55,6 +55,29 @@ Older News: <%=reflist%>
 -->
 
 <!----------------------------------------------------------->
+<div class="news-item tag-link" id="support-rust">
+  <a href="#support-rust"><span class="tag-span"># </span></a>
+    15 November 2023: Support for Rust in seL4 userspace now available
+</div>
+<div>
+  <a href="https://www.rust-lang.org/">
+    <img src="/images/rust-logo-blk.svg"
+    style="width: 20%;  padding-left:10px;  float:right"
+    alt="Rust logo" />
+  </a>
+
+  <p>
+  For the last year, Nick Spinale, funded by the seL4 Foundation, has been developing support for the Rust programming language in seL4 userspace.
+  </p>
+  <p>
+    Nick has created a comprehensive language support infrastructure that integrates well with the rest of the seL4 ecosystem (capDL, Microkit, sel4test) and also integrates well with what Rust programmers would expect from the language side. This work has now been accepted by the seL4 Foundation <a href="/Foundation/TSC">Technical Steering Committee</a> and can be found on <a href="https://github.com/seL4/rust-sel4">GitHub</a>. Nick’s talk at the recent seL4 summit is on <a href="https://youtu.be/J17lC124_9s?si=e8nDp-x8OLq6h1dO">seL4’s Youtube channel</a>. A demo system that uses the device driver framework, asynchronous programming in Rust and library support from the Rust ecosystem to implement a small web server is available on <a href="https://github.com/seL4/rust-microkit-http-server-demo">GitHub</a>.
+  </p>
+  <p>
+    The overall outcome will be to allow people to write safer user-level code on top of seL4 without needing full formal verification, with a language that is receiving increasing interest and that aligns extremely well with security and safety critical embedded systems programming.
+  </p>
+</div>
+
+<!----------------------------------------------------------->
 <div class="news-item tag-link" id="mcs-xcalibyte">
   <a href="#mcs-xcalibyte"><span class="tag-span"># </span></a>
   6 November 2023: Progress on MCS verification thanks to XCalibyte donation
@@ -96,9 +119,6 @@ Older News: <%=reflist%>
       alt="Proofcraft logo" />
   </a>
 </p>
-
-</div>
-<div class="news-finish">
 </div>
 
 <!----------------------------------------------------------->
@@ -115,8 +135,6 @@ Older News: <%=reflist%>
   <p>
     Videos of the <a href="/Foundation/Summit/2023">seL4 summit 2023</a> are now available on the <a href="https://www.youtube.com/@seL4" target="_blank">seL4 YouTube channel</a>! Links and slides can be found on the summit <a href="../Foundation/Summit/2023/program">Program</a> and <a href="../Foundation/Summit/2023/abstracts2023">Abstracts</a> pages. Thanks to all the speakers for making the seL4 summit 2023 a great success!
   </p>
-</div>
-<div class="news-finish">
 </div>
 
 <!----------------------------------------------------------->
