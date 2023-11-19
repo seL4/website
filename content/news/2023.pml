@@ -65,9 +65,9 @@ Older News: <%=reflist%>
       <img src="/Foundation/Membership/LOGOS/Brkawy.png" style="width: 200px; padding:20px; float: right" alt="Breakaway Consulting logo">
     </a>
     <div class="style:clear:both"></div>
-    <a href="https://unsw.edu.au/">
-    <img src="/Foundation/Membership/LOGOS/UNSW.svg" style="width: 200px; padding:20px; float: right" alt="UNSW logo">
-    </a>
+      <a href="https://unsw.edu.au/">
+      <img src="/Foundation/Membership/LOGOS/UNSW.svg" style="width: 200px; padding:20px; float: right" alt="UNSW logo">
+      </a>
   </div>
   <p>
      The <a href="https://docs.sel4.systems/projects/microkit/">seL4 Microkit</a>, formerly known as the Core Platform, is an operating system framework on top of seL4 provides a small set of simple abstractions that ease the design and implementation of statically structured systems on seL4, while still leveraging the kernel’s benefits of security and performance. The Microkit is distributed as an SDK that integrates with the developer’s build system of choice, significantly reducing the barrier to entry for new users of seL4.
@@ -143,7 +143,7 @@ Older News: <%=reflist%>
       alt="Proofcraft logo" />
   </a>
 </p>
-
+</div>
 
 
 <!----------------------------------------------------------->
