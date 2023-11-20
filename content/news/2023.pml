@@ -55,6 +55,29 @@ Older News: <%=reflist%>
 -->
 
 <!----------------------------------------------------------->
+<div class="news-item tag-link" id="microkit">
+  <a href="#microkit"><span class="tag-span"># </span></a>
+  20 November 2023: seL4 Microkit officially supported by the seL4 Foundation
+</div>
+<div class="news-text-container">
+  <div id="floated-imgs">
+    <a href="https://brkawy.com/">
+      <img src="/Foundation/Membership/LOGOS/Brkawy.png" style="width: 200px; padding:20px; float: right" alt="Breakaway Consulting logo">
+    </a>
+    <div class="style:clear:both"></div>
+      <a href="https://unsw.edu.au/">
+      <img src="/Foundation/Membership/LOGOS/UNSW.svg" style="width: 200px; padding:20px; float: right" alt="UNSW logo">
+      </a>
+  </div>
+  <p>
+     The <a href="https://docs.sel4.systems/projects/microkit/">seL4 Microkit</a>, formerly known as the Core Platform, is an operating system framework on top of seL4 provides a small set of simple abstractions that ease the design and implementation of statically structured systems on seL4, while still leveraging the kernel’s benefits of security and performance. The Microkit is distributed as an SDK that integrates with the developer’s build system of choice, significantly reducing the barrier to entry for new users of seL4.
+  </p>
+  <p>
+    The seL4 Microkit was developed in collaboration between <a href="https://brkawy.com/">Breakaway Consulting Pty Ltd</a> and <a href="https://trustworthy.systems/">Trustworthy Systems, UNSW</a>, and is now an official <a href="/Foundation"> seL4 Foundation</a> project, making it part of the seL4 eco-system.
+  </p>
+</div>
+
+<!----------------------------------------------------------->
 <div class="news-item tag-link" id="support-rust">
   <a href="#support-rust"><span class="tag-span"># </span></a>
     15 November 2023: Support for Rust in seL4 userspace now available
@@ -76,6 +99,7 @@ Older News: <%=reflist%>
     The overall outcome will be to allow people to write safer user-level code on top of seL4 without needing full formal verification, with a language that is receiving increasing interest and that aligns extremely well with security and safety critical embedded systems programming.
   </p>
 </div>
+
 
 <!----------------------------------------------------------->
 <div class="news-item tag-link" id="mcs-xcalibyte">
@@ -120,6 +144,7 @@ Older News: <%=reflist%>
   </a>
 </p>
 </div>
+
 
 <!----------------------------------------------------------->
 <div class="news-item tag-link" id="summit-videos">

@@ -474,6 +474,12 @@ sponsors-1 {
     clear:both
 }
 
+.news-text-container{
+  overflow: hidden;
+}
+#floated-imgs { float: right; }
+#floated-imgs img {display: block; }
+
 .memberlogopage h1 {
     font-size:50px;
 }
