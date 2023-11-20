@@ -28,17 +28,17 @@
     <ul>
       <li>
         <strong>
+          24 Nov 2023: NIO announces seL4-based SkyOS operating system
+        </strong>
+      </li>
+      <li>
+        <strong>
           20 Nov 2023: seL4 Microkit officially supported by the seL4 Foundation
         </strong>
       </li>
       <li>
         <strong>
           15 Nov 2023: Support for Rust in seL4 userspace now available
-        </strong>
-      </li>
-      <li>
-        <strong>
-          6 Nov 2023: Progress on MCS verification thanks to XCalibyte donation
         </strong>
       </li>
       <li style="margin-top:0.2em;list-style-type:none">
