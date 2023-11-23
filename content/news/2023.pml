@@ -61,9 +61,11 @@ Older News: <%=reflist%>
     24 November 2023: NIO announces seL4-based SkyOS operating system
 </div>
 <div class="news-text-container">
-     <img src="/Foundation/Membership/LOGOS/NIO.svg"
-   style="width:200px; padding-left:1.5em; float:right"
-   alt="nio">
+    <a href="https://nio.com/">
+       <img src="/Foundation/Membership/LOGOS/NIO.svg"
+       style="width:200px; padding-left:1.5em; float:right"
+      alt="nio">
+    </a>
   <p>
     We are excited to share that <a href="https://nio.com/">NIO</a> recently unveiled their <a href="https://www.linkedin.com/posts/qiyan-wang-8b0b2145_skyos-was-unveiled-to-the-public-for-the-activity-7110702765789642752-Iys0">seL4-based SkyOS operating system</a>, designed for Software Defined Vehicles, which they have been working on relentlessly for the past two years. At the <a href="/Foundation/Summit/2023">seL4 Summit 2023</a> Qiyan Wang, NIO’s Global VP of Digital Systems, <a href="https://www.youtube.com/watch?v=HfvX2VbWp6c&list=PLtoQeavghzr2qwDaad0hhsBBJMjkX_o4O&index=28" target="_blank">announced that NIO cars based on seL4 are planned for next year!</a>
   </p>
