@@ -1,82 +1,12 @@
 <!DOCTYPE html>
-
-<%
-# Copyright 2020 seL4 Project a Series of LF Projects, LLC.
-#
-# SPDX-License-Identifier: GPL-2.0-only
-#
-import os, sys, datetime, cgi, time
-from ertos_nav import NavEntry
-content_dir = cfg.get('core', 'content_dir')
-rg_name = cfg.get('core', 'rg_name')
-
-live_base = cfg.get('hosts', 'live')
-stage_base = cfg.get('hosts', 'stage')
-
-cur_url = req.filename[len(cfg.get('core', 'content_dir')):].strip('/')
-live_url = 'https://'+live_base+'/'+cur_url
-stage_url = 'http://'+stage_base+'/' +cur_url
-
-if not cur_url.startswith('/'):
-    cur_url = '/' + cur_url        # making sure that there is a slash in front
-in_production = cfg.getboolean('core', 'production')
-on_seL4 = cfg.getboolean('core', 'seL4')
-printuri=req.unparsed_uri
-if '?' in printuri:
-   printuri += ";media=print"
-else:
-   printuri += "?media=print"
-
-
-def show_toolbox(request):
-    """
-    NICTA SAH's range: 203.143.160.0/24. That's:
-    Network:   203.143.160.0/24     11001011.10001111.10100000. 00000000
-    HostMin:   203.143.160.1        11001011.10001111.10100000. 00000001
-    HostMax:   203.143.160.254      11001011.10001111.10100000. 11111110
-    Broadcast: 203.143.160.255      11001011.10001111.10100000. 11111111
-    Hosts/Net: 254                   Class C
-    """
-
-    if request.args is not None and "internal" in request.args:
-        return True
-
-    host_ip = request.connection.client_ip
-    if "X-Real-IP" in req.headers_in:
-        host_ip = req.headers_in["X-Real-IP"]
-
-
-    # If we want to limit based on IP:
-    if host_ip.startswith('203.143.160') or \
-       host_ip.startswith('203.143.161') or \
-       host_ip.startswith('203.143.170') or \
-       host_ip.startswith('221.199.208.') or \
-       host_ip.startswith('221.199.217.') or \
-       host_ip.startswith('10.') or \
-       host_ip.startswith('2402:1800:4000:1:') or \
-       host_ip.startswith('2402:1800:4000:2:') or \
-       host_ip.startswith('2402:1800:0:10:') or \
-       host_ip.startswith('2402:1800:1:2801:'):
-          return True
-    return not in_production;
-
-try:
-    mtime_str = time.ctime(os.path.getmtime(content_dir+'/'+cur_url.strip('/')))
-except:
-    mtime_str = "unknown"
-%>
-
-<%
-#end
-%>
-
+<!-- Copyright 2020 seL4 Project a Series of LF Projects, LLC. SPDX-License-Identifier: GPL-2.0-only -->
 <html lang="en">
   <head>
     <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title><%=title%></title>
+    <title>{{ page.title }} | {{ site.title }}</title>
     <meta name="author" content="seL4 Foundation" />
-    <link href="<%=live_url%>" rel=canonical />
+    <link rel="canonical" href="{{ site.url }}{{ page.url | replace:'index.html',''}}">
     <link href="/css/bootstrap.min.css" rel="stylesheet">
     <link href="/css/sel4.css" rel="stylesheet">
 
@@ -99,209 +29,45 @@ except:
     <meta name="msapplication-wide310x150logo" content="/images/icons/mstile-310x150.png" />
     <meta name="msapplication-square310x310logo" content="/images/icons/mstile-310x310.png" />
     <link rel="shortcut icon" href="/images/icons/favicon.ico" />
-<%
-if in_production:
-    # then
-%>
-    <script defer data-domain="sel4.systems" src="https://analytics.sel4.systems/js/script.js"></script>
-<%
-# end if
-%>
+{% if jekyll.environment == "production" %}
+    <script type="text/javascript">
+      var _gaq = _gaq || [];
+      _gaq.push(['_setAccount', {{ site.google_analytics }}]);
+      _gaq.push(['_trackPageview']);
 
+      (function() {
+          var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+          ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+          var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+      })();
 
+    </script>
+{% endif %}
 
-<%
-if "user_head_content" in globals():
-%>
-<%=user_head_content%>
-<%
-# end if
-%>
-
-<!-- Production template -->
+{% if page.user_head_content %}
+	{{ page.user_head_content | markdownify }} <!-- iz: TODO: Check if markdownify is necessary -->
+{% endif %}
   </head>
   <body>
   <div id="page-container"><!--to put footer at bottom of page-->
   <div id="content-wrap"><!--to put footer at bottom of page-->
-<%
-if show_toolbox(req):
-  # then
-%>
-    <nav class="navbar navbar-inverse" role="navigation" style='border-radius: 0px'>
-      <div class='container'>
-<%
-  if in_production:
-       # then
-%>
-        <ul class="nav navbar-nav">
-          <li><a href="<%= stage_url %>">Stage
-              Site</a></li>
-          <li><a href="/awstats">Statistics</a></li>
-          <li><a href="/server-status?refresh=10">Status</a></li>
-        </ul>
-<%
-  else:
-       # else in_production
-%>
-        <div class="btn-group navbar-right">
-          <a class='btn btn-danger navbar-btn' href='/internal/git'><span class='glyphicon glyphicon-cloud-upload'></span> Commit</a>
-        </div>
 
-        <ul class="nav navbar-nav">
-          <li>
-            <div class='btn-group'><a class="btn btn-default navbar-btn" href="?validate">Validate</a>
-              <a class="btn btn-default navbar-btn"
-                 href="?linklint">Linklint</a>
-            </div>
-          </li>
-          <li><a href="<%= live_url %>">Live Site</a></li>
-          <!--          <a class="btn btn-default navbar-btn" href="/internal/bibtex">Update Bib</a></div></li>
-                        <li><a href="/internal/docs">Editing Help</a></li>
-<li><a href="/internal">Internal</a></li> .-->
-
-      </ul>
-<%
-  # end 2nd if
-%>
-      </div>
-    </nav>
-<%
-# end if show_toolbox()
-%>
-
-<div class="container">
-  <div class="header" id="site-header" role="navigation" >
-    <ul class="nav-pills nav pull-right" id="site-navigation">
-      <%
-def navs2lis(cur_url, dlist, level=0):
-    list_content = []
-
-    for i in dlist:
-        if type(i) == type(NavEntry()):
-            if i == NavEntry():                 # insert some space
-                list_content.append('<li style="background-image: none;">&nbsp;</li>')
-            elif i.children and i.children != []:       # there is a submenu
-                if "Found" in i.uri:
-                  list_content.append('<!-- %s - %s -->' % (cur_url, i.uri,))
-                else:
-                  list_content.append('<!-- %s - %s -->' % (cur_url, i.uri,))
-                # we now always expand the tree so we get the full drop down menus.
-                if cur_url.find(i.uri) == 0 and level == 0:
-                    class_name = "active"
-                else:
-                    class_name = ""
-
-                if level >= 1:
-                    # don't generate submenu entries after the first level
-                    list_content.append('<li class="%s">%s</li>' % (class_name, i))
-                else:
-                    list_content.append('<li class="dropdown %s"><a class="dropdown-toggle" data-toggle="dropdown" href="%s">%s <span class="caret"></span></a>' % (class_name, i.uri, i.label))
-                    list_content.append('<ul class="dropdown-menu">%s</ul></li>' % navs2lis(cur_url,i.children, level+1))
-                    #list_content.append('<li class="level-%s ">%s<ul>%s</ul></li>' % (level, i, navs2lis(cur_url,i.children, level+1)))
-                    #list_content.append('<!-- classname=%s -->' % class_name)
-
-            else:
-                if cur_url.find(i.uri) == 0:
-                  class_name = "active"
-                else:
-                  class_name = ""
-                list_content.append('<li class="%s">%s</li>' % (class_name, i))
-        elif type(i) == type([]):
-            list_content.extend(navs2lis(cur_url,i, level+1))
-
-        else:
-            raise Exception('something is odd. type(i) == %s' % str(type(i)))
-
-    return '\n'.join(list_content)
-
-content_dir = cfg.get('core', 'content_dir')
-curdir = os.path.dirname(req.filename)
-
-cururl = curdir[len(content_dir):]
-if not cururl.startswith('/'):
-   cururl = '/' + cururl
-
-if not cururl.endswith('/'):
-   cururl = cururl + '/'
-%>
-<%
-# end
-%>
-
-<!-- <%= cururl %> -->
-<%
-if cururl == '/':
-  req.write ('<li class="active">')
-else:
-    req.write ('<li>')
-%>
-<%
-#
-%>
-<a href='/'>Home</a></li>
-<%=navs2lis(cururl, nav_urls) %>
-         </ul>
-        <!-- END: Menu -->
-    </div>
-</div>
-<div class="container"> <!-- container -->
-  <div class="row"> <!-- Breadcrumbs -->
-<%
-i = 1
-doneHome = False
-crumbs = []
-
-crumbs.append('<ol class="breadcrumb">')
-crumbs.append('<li class="%s"><a href="/">%s</a>' % ('', 'Home') )
-
-for page, path in breadcrumbs:
-    req.write('<!-- %s, %s -->\n' % (page, path))
-    if i == len(breadcrumbs):
-        class_name = "active"
-    else:
-        class_name = ""
-
-    if path.endswith('index.html') or path.endswith('home.pml') or path.endswith('home.pyl') or page == "Home":
-        continue
-    elif page.endswith('.abstract'):
-        page = page[:-len('.abstract')]
-        crumbs.append('<ol class="breadcrumb">')
-        crumbs.append('<li class="%s"><a href="/">%s</a>' % (class_name, 'Home') )
-    crumbs.append('<li class="' + class_name + '">')
-    if not class_name:
-        crumbs.append('<a href="'+path+'">'+page+'</a></li>')
-    else:
-        crumbs.append(page + "</li>")
-
-    i = i + 1
-
-# FIXME: doesn't work on index...
-if i > 1:
-    req.write ('\n'.join(crumbs))
-    req.write ('</ol>')
-#end
-%>
-    </div> <!-- Breadcrumbs -->
-<%
-if cur_url.startswith("/Foundation/Summit"):
-%>
+{% include menu.html %}
+{% include breadcrumbs.html %}
+{% if page.url contains "/Foundation/Summit" %}
   <a href='/Foundation/Summit'><img style="width:20%; padding-top:5px; vertical-align:top;float:right; margin:10px;"
                      src='/images/sel4-summit-logo.svg' alt='seL4 summit logo' /></a>
-<%
-elif cur_url.startswith("/Foundation"):
-%>
+{% elsif page.url contains "/Foundation" %}
     <a href='/'><img style="width:20%; padding-top:5px; vertical-align:top;float:right; margin:10px;"
                      src='/images/sel4-foundation-logo.svg' alt='seL4 foundation logo' />
     </a>
-<%
-else:
-%>
+{% else %}
     <a href='/'><img style="width:20%; margin-top:20px; vertical-align:top;float:right; margin:10px;"
                      src='/images/logo-text-white.svg' alt='seL4' /></a>
-<%
-# end if
-%>
-<%=user_content%>
+{% endif %}
+<!-- iz: content -->
+{{ content }}
+<!-- iz: end content -->
 <div class="divider"></div>
 </div><!-- container -->
 </div><!--content-wrap-->
@@ -340,13 +106,9 @@ else:
       </div>
     </div>
   </div>
-<%
-if on_seL4:
-%>
+{% if site.on_seL4 %}
   Served by Apache on Linux on seL4.
-<%
-#end
-%>
+{% endif %}
 </footer> <!-- footer -->
 <!-- wrapper -->
 <script src="/js/jquery.min.js"></script>
@@ -354,3 +116,5 @@ if on_seL4:
 </div><!--page-container-->
 </body>
 </html>
+<!-- vim: set ft=html.liquid: -->
+

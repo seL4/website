@@ -1,0 +1,46 @@
+
+
+<!-- iz: Orig: --> {% if false %}
+
+<div class="container"> <!-- container -->
+  <div class="row"> <!-- Breadcrumbs -->
+<%
+i = 1
+doneHome = False
+crumbs = []
+
+crumbs.append('<ol class="breadcrumb">')
+crumbs.append('<li class="%s"><a href="/">%s</a>' % ('', 'Home') )
+
+for page, path in breadcrumbs:
+    req.write('<!-- %s, %s -->\n' % (page, path))
+    if i == len(breadcrumbs):
+        class_name = "active"
+    else:
+        class_name = ""
+
+    if path.endswith('index.html') or path.endswith('home.pml') or path.endswith('home.pyl') or page == "Home":
+        continue
+    elif page.endswith('.abstract'):
+        page = page[:-len('.abstract')]
+        crumbs.append('<ol class="breadcrumb">')
+        crumbs.append('<li class="%s"><a href="/">%s</a>' % (class_name, 'Home') )
+    crumbs.append('<li class="' + class_name + '">')
+    if not class_name:
+        crumbs.append('<a href="'+path+'">'+page+'</a></li>')
+    else:
+        crumbs.append(page + "</li>")
+
+    i = i + 1
+
+# FIXME: doesn't work on index...
+if i > 1:
+    req.write ('\n'.join(crumbs))
+    req.write ('</ol>')
+#end
+%>
+    </div> <!-- Breadcrumbs -->
+
+{% endif %}
+<!-- vim: set ft=html.liquid: -->
+
