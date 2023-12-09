@@ -1,0 +1,97 @@
+# Welcome to Jekyll!
+#
+# This config file is meant for settings that affect your whole blog, values
+# which you are expected to set up once and rarely edit after that. If you find
+# yourself editing this file very often, consider using Jekyll's data files
+# feature for the data you need to update frequently.
+#
+# For technical reasons, this file is *NOT* reloaded automatically when you use
+# 'bundle exec jekyll serve'. If you change this file, please restart the server process.
+#
+# If you need help with YAML syntax, here are some quick references for you:
+# https://learn-the-web.algonquindesign.ca/topics/markdown-yaml-cheat-sheet/#yaml
+# https://learnxinyminutes.com/docs/yaml/
+#
+# Site settings
+# These are used to personalize your new site. If you look in the HTML files,
+# you will see them accessed via {{ site.title }}, {{ site.email }}, and so on.
+# You can create any custom variable you would like, and they will be accessible
+# in the templates via {{ site.myvariable }}.
+
+title: Your awesome title
+email: your-email@example.com
+description: >- # this means to ignore newlines until "baseurl:"
+  Write an awesome description for your new site here. You can edit this
+  line in _config.yml. It will appear in your document head meta (for
+  Google search results) and in your feed.xml site description.
+baseurl: "" # the subpath of your site, e.g. /blog
+url: "https://sel4.systems"
+static_url: "https://sel4.systems"
+git_repo: https://github.com/seL4/website
+github_username: seL4
+
+# Build settings
+theme: minima
+markdown: Kramdown
+
+plugins:
+  # Sets the page title to the first heading.  Removes need for title to be set in every file
+  - jekyll-titles-from-headings
+  # Converts markdown relative links to valid html urls.
+  - jekyll-relative-links
+  # Default includes .md files to be templated without needing the --- front matter.
+  - jekyll-optional-front-matter
+  # Adds a sitemap.xml to site for webcrawlers
+  - jekyll-sitemap
+  # Adds a table of contents to top of page if toc: true is set in the front matter.
+  - jekyll-toc
+  # Allow multiple urls to redirect to a single page
+  - jekyll-redirect-from
+  - jekyll-remote-theme
+
+kramdown:
+  input: GFM
+
+breadcrumbs:
+  root:
+    hide: false  # show breadcrumbs on root/home page
+    image: false # Show image or title text
+
+optional_front_matter:
+# Set this to false if you want .md files to be accessible also
+  remove_originals: true
+
+# Exclude from processing.
+# The following items will not be processed, by default.
+# Any item listed under the `exclude:` key here will be automatically added to
+# the internal "default list".
+#
+# Excluded items can be processed by explicitly listing the directories or
+# their entries' file path in the `include:` list.
+#
+# exclude:
+#   - .sass-cache/
+#   - .jekyll-cache/
+#   - gemfiles/
+#   - Gemfile
+#   - Gemfile.lock
+#   - node_modules/
+#   - vendor/bundle/
+#   - vendor/cache/
+#   - vendor/gems/
+#   - vendor/ruby/
+exclude:
+  - Gemfile
+  - Gemfile.lock
+  - dependencies
+  - Makefile
+  - README.md
+  - LICENSES
+  - apache # TODO: Remove all these when done.
+  - bin
+  - code
+  - configs
+  - docker
+  - templates
+  - underlay
+
