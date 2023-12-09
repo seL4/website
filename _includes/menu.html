@@ -1,0 +1,93 @@
+<div class="container">
+  <div class="header" id="site-header" role="navigation" >
+    <ul class="nav-pills nav pull-right" id="site-navigation">
+      <!-- iz: TODO navigation list/menu -->
+<a href='/'>Home</a></li>
+<!-- %=navs2lis(cururl, nav_urls) % -->
+         </ul>
+        <!-- END: Menu -->
+    </div>
+</div>
+
+
+<!-- iz: Orig: --> {% if false %}
+
+<div class="container">
+  <div class="header" id="site-header" role="navigation" >
+    <ul class="nav-pills nav pull-right" id="site-navigation">
+      <%
+def navs2lis(cur_url, dlist, level=0):
+    list_content = []
+
+    for i in dlist:
+        if type(i) == type(NavEntry()):
+            if i == NavEntry():                 # insert some space
+                list_content.append('<li style="background-image: none;">&nbsp;</li>')
+            elif i.children and i.children != []:       # there is a submenu
+                if "Found" in i.uri:
+                  list_content.append('<!-- %s - %s -->' % (cur_url, i.uri,))
+                else:
+                  list_content.append('<!-- %s - %s -->' % (cur_url, i.uri,))
+                # we now always expand the tree so we get the full drop down menus.
+                if cur_url.find(i.uri) == 0 and level == 0:
+                    class_name = "active"
+                else:
+                    class_name = ""
+
+                if level >= 1:
+                    # don't generate submenu entries after the first level
+                    list_content.append('<li class="%s">%s</li>' % (class_name, i))
+                else:
+                    list_content.append('<li class="dropdown %s"><a class="dropdown-toggle" data-toggle="dropdown" href="%s">%s <span class="caret"></span></a>' % (class_name, i.uri, i.label))
+                    list_content.append('<ul class="dropdown-menu">%s</ul></li>' % navs2lis(cur_url,i.children, level+1))
+                    #list_content.append('<li class="level-%s ">%s<ul>%s</ul></li>' % (level, i, navs2lis(cur_url,i.children, level+1)))
+                    #list_content.append('<!-- classname=%s -->' % class_name)
+
+            else:
+                if cur_url.find(i.uri) == 0:
+                  class_name = "active"
+                else:
+                  class_name = ""
+                list_content.append('<li class="%s">%s</li>' % (class_name, i))
+        elif type(i) == type([]):
+            list_content.extend(navs2lis(cur_url,i, level+1))
+
+        else:
+            raise Exception('something is odd. type(i) == %s' % str(type(i)))
+
+    return '\n'.join(list_content)
+
+content_dir = cfg.get('core', 'content_dir')
+curdir = os.path.dirname(req.filename)
+
+cururl = curdir[len(content_dir):]
+if not cururl.startswith('/'):
+   cururl = '/' + cururl
+
+if not cururl.endswith('/'):
+   cururl = cururl + '/'
+%>
+<%
+# end
+%>
+
+ <%= cururl %>
+<%
+if cururl == '/':
+  req.write ('<li class="active">')
+else:
+    req.write ('<li>')
+%>
+<%
+#
+%>
+<a href='/'>Home</a></li>
+<%=navs2lis(cururl, nav_urls) %>
+         </ul>
+        <!-- END: Menu -->
+    </div>
+</div>
+
+{% endif %}
+<!-- vim: set ft=html.liquid: -->
+
