@@ -1,8 +1,7 @@
 *~
-configs/config.cfg
-content/linklint/*
-*.pylo
-*.pyc
-\#*#
-__pycache__/
 *.swp
+_site
+.sass-cache
+.jekyll-cache
+.jekyll-metadata
+vendor
