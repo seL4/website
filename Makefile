@@ -1,40 +1,47 @@
-# Copyright 2020 seL4 Project a Series of LF Projects, LLC.
+# Copyright 2023 seL4 Project a Series of LF Projects, LLC.
 # SPDX-License-Identifier: BSD-2-Clause
+SHELL := bash
+.SHELLFLAGS := -eu -o pipefail -c
+.ONESHELL:
+MAKEFLAGS += --warn-undefined-variables --no-builtin-rules
+.DELETE_ON_ERROR:
+.SUFFIXES:
+.PHONY: help build serve debug clean doctor update
 
-default: serve
+help:
+	@echo -e "Usage: make <target>. Available seL4 website targets:\n\
+		\n\
+		build       Generate the static files and put them in _site/.\n\
+		serve       Host site locally on port 4000 for previewing before commit.\n\
+		debug       Host the development version of the site for local testing.\n\
+		clean       Remove generated files.\n\
+		doctor      Run jekyll doctor to check configuration.\n\
+		update      Updates all Ruby Gem versions to the newest available.\n\
+		help        This help text.\n"
 
-.PHONY: ruby_deps serve build doctor clean check_liquid_syntax check_html_output
+.jekyll-cache/ruby_deps: Gemfile Gemfile.lock
+	@bundle install
+	@mkdir -p .jekyll-cache/
+	@touch $@
 
-ruby_deps: Gemfile Gemfile.lock
-	bundle install
+JEKYLL_ENV := production
 
-# Rules for local serving of the site using jekyll.
-# Supports docker or running using local environment.
-# The _production versions run with JEKYLL_ENV=production which will show additional content.
-JEKYLL_ENV:=development
+build serve: .jekyll-cache/ruby_deps
+	JEKYLL_ENV=$(JEKYLL_ENV) bundle exec jekyll $@
 
-# --host 0.0.0.0 serves on all interfaces, so that docker can export
-# the connection; also works locally
-serve build: ruby_deps
-	@JEKYLL_ENV=$(JEKYLL_ENV) bundle exec jekyll $@
+debug: JEKYLL_ENV := development
+debug: serve
 
 clean doctor:
 	@bundle exec jekyll $@
 
-LIQUID_CUSTOM_TAGS := continue
-LIQUID_LINTER_FILES := '*.html' '*.md'
-LIQUID_LINTER_CMDLINE := liquid-linter $(LIQUID_CUSTOM_TAGS:%=--custom-tag %)
+update:
+	@bundle update
 
-# Liquid syntax linting check.
-# If it is complaining about unknown custom tags -> add them to the list above.
-# Requires `liquid-linter` to be installed.
-# git ls-files won't list any files that are untracked
-check_liquid_syntax:
-	git ls-files $(LIQUID_LINTER_FILES) | xargs $(LIQUID_LINTER_CMDLINE)
+compare:
+	# TODO: Cat all files into one blob so we can compare across file renames
+	# Do this for both _sel4.systems-orig/ and _site/.
 
-# Output html checking using tidy.
-# Any warnings or errors will be printed to stdout
-# Requires `tidy` to be installed.
-check_html_output: build
-	find _site/ -iname "*.html"| xargs -l tidy -q --drop-empty-elements n -e
+convert:
+	# TODO: Rename files, convert links and other common PSP.
 
