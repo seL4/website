@@ -38,10 +38,28 @@ clean doctor:
 update:
 	@bundle update
 
-compare:
-	# TODO: Cat all files into one blob so we can compare across file renames
-	# Do this for both _sel4.systems-orig/ and _site/.
+# Collect all PLM files:
+FROM := $(shell find content -type f -name '*.pml')
+
+# Add Jekyll front matter to all PLM files:
+PLM2JEKYLL1 := $(foreach f,$(FROM), sed -i '1s;^;---\n---\n;' $(f);)
+
+# Convert PSP .pml links"
+EXP2 := 's/<%@ include file="\(.*\).pml" *%>/{% include \1.html %}/'
+PLM2JEKYLL2 := $(foreach f,$(FROM), sed -i $(EXP2) $(f);)
+
+# Convert all other PSP links"
+EXP3 := 's/<%@ include file="\(.*\)" *%>/{% include \1 %}/'
+PLM2JEKYLL3 := $(foreach f,$(FROM), sed -i $(EXP3) $(f);)
+
+# Rename all .plm files to .html:
+MVALL := $(foreach f,$(FROM), git mv $(f) $(basename $(f)).html;)
 
 convert:
-	# TODO: Rename files, convert links and other common PSP.
+	@$(PLM2JEKYLL1)
+	@$(PLM2JEKYLL2)
+	@$(PLM2JEKYLL3)
+	@git commit -s -m "Automated plm to jekyll" content/
+	@$(MVALL)
+	@git commit -s -m "Automated rename from .plm to .html" content/
 
