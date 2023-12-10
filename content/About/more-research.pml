@@ -1,3 +1,5 @@
+---
+---
 <!--<title>Ongoing and future fundamental research about seL4 and trustworthy systems</title> -->
 <!--
     Copyright 2020 seL4 Project a Series of LF Projects, LLC.
