@@ -63,3 +63,7 @@ convert:
 	@$(MVALL)
 	@git commit -s -m "Automated rename from .plm to .html" content/
 
+F2 := $(shell find . -path ./vendor -prune -o -name 'home.html' -print)
+fix_home:
+	$(foreach f,$(F2), git mv $(f) $(dir $(f))index.html;)
+
