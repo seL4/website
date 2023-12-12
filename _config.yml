@@ -64,6 +64,8 @@ breadcrumbs:
     hide: false  # show breadcrumbs on root/home page
     image: false # Show image or title text
 
+strict_front_matter: true
+
 optional_front_matter:
 # Set this to false if you want .md files to be accessible also
   remove_originals: true

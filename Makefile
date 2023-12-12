@@ -6,7 +6,7 @@ SHELL := bash
 MAKEFLAGS += --warn-undefined-variables --no-builtin-rules
 .DELETE_ON_ERROR:
 .SUFFIXES:
-.PHONY: help build serve debug clean doctor update
+.PHONY: help build serve debug clean doctor update fix-home get-orig get-jekyll-blob get-orig-blob compare
 
 help:
 	@echo -e "Usage: make <target>. Available seL4 website targets:\n\
@@ -71,44 +71,47 @@ EXCLUDES := pdf mp4 png jpg jpeg svg ico gif zip bin license licence eot woff wo
 comma := ,
 empty:=
 space := $(empty) $(empty)
-WGET := wget -r -np -R $(subst $(space),$(comma),$(EXCLUDES))
+WGET := wget -r -np --mirror -R $(subst $(space),$(comma),$(EXCLUDES))
 
 # For comparison with _site: (Add -k option for local viewing instead)
 get-orig:
-	@$(WGET) http://sel4.systems/ -P .jekyll-cache/orig
-	@echo "Downloaded sel4.systems to .jekyll-cache/orig"
+	@$(WGET) http://sel4.systems/ -P .orig
+	@echo "Downloaded sel4.systems to .orig"
 
 # Concatenates all files into one blob so we can compare across file renames:
 get-orig-blob:
-	$(WGET) http://sel4.systems/ -O .jekyll-cache/orig-blob &
-	@echo "Downloaded sel4.systems to .jekyll-cache/orig-blob"
+	$(WGET) http://sel4.systems/ -O .orig-blob
+	@echo "Downloaded sel4.systems to .orig-blob"
 
 get-jekyll-blob:
 	echo "Please run 'make serve' in another terminal"
-	$(WGET) localhost:4000 -O .jekyll-cache/jekyll-blob
-	echo "Downloaded localhost:4000 to .jekyll-cache/jekyll-blob"
+	$(WGET) localhost:4000 -O .jekyll-blob
+	echo "Downloaded localhost:4000 to .jekyll-blob"
 
 FIND := find . -type f $(addprefix ! -name *.,$(EXCLUDES))
 CMD := echo
 
 compare: #build
-	@(cd _sel4.systems-orig/ && $(FIND) ! -name '*.pml*' | sort | xargs -I x $(CMD) "x") > _all_orig.txt
-	@(cd _site/ && $(FIND) | sort | xargs -I x $(CMD) "x") > _all_jekyll.txt
-	@sed -i _all_jekyll.txt -e 's_content/__' -e 's/\<home\>/index/' #-e 's/\<pml\>/html/'
-	@diff -u _all_orig.txt _all_jekyll.txt | less
+	@(cd .orig/sel4.systems && $(FIND) ! -name '*.pml*' | sort | xargs -I x $(CMD) "x") > .all_orig.txt
+	@(cd _site/ && $(FIND) | sort | xargs -I x $(CMD) "x") > .all_jekyll.txt
+	@diff -u .all_orig.txt .all_jekyll.txt | less
 
 ##############################################################################################################
 # TODO:
 # - Navigation menu
 # - Breadcrumbs
 # - Permanent redirects:
-# 	About/seL4/index.html-psp.redirect('/About/')
-#	Foundation/Summit/index.html-#psp.redirect('/Foundation/Summit/2023/')
-#	Foundation/Summit/program.html-psp.redirect('/Foundation/Summit/2022/program')
-#	Foundation/Summit/cfp.html-psp.redirect('/Foundation/Summit/2023/cfp')
-#	Foundation/Summit/abstracts2022.html-psp.redirect('/Foundation/Summit/2022/abstracts2022')
-#	Info/Docs/index.html-psp.redirect("https://docs.sel4.systems/Documentation", permanent=True)
-#	contact/mailman/index.html-psp.redirect('https://lists.sel4.systems/postorius/lists/', permanent=True)
+#   	all .pml -> .html with .htaccess and mod_alias:
+#   	RedirectMatch permanent ^(.*)/home.pml$ $1/index.html
+#   	RedirectMatch permanent ^(.*).pml$ $1.html
+#	Redirect permanent /Info/Docs/index.html https://docs.sel4.systems/Documentation
+#	or
+#	<meta http-equiv="refresh" content="0; url="...">
+#	<link rel="canonical" href="..." />
+#  See also https://developers.google.com/search/docs/crawling-indexing/301-redirects#metarefresh
+#  https://stackoverflow.com/questions/51178289/permanently-redirect-jekyll-pages-to-external-site-without-markdown
+#
+#	Or add redirect_from: to all html files.
 #
 # - News
 #	Convert to posts?
