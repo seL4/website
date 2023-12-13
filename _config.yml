@@ -26,7 +26,7 @@ description: "The seL4 main website.  Pull requests are welcome."
 url: "https://sel4.systems"
 static_url: "https://sel4.systems"
 baseurl: "" # the subpath of your site, e.g. /blog
-google_analytics: "UA-117737473-1"
+google_analytics: UA-117737473-1
 git_repo: https://github.com/seL4/website
 github_username: seL4
 on_seL4: false
