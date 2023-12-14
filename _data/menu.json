@@ -1,0 +1,41 @@
+[
+	["/", "Home"],
+	["/About/", "What is seL4?", [
+			["/About/", "What is seL4?"],
+			["/About/Performance/", "Performance"],
+			["/About/seL4-whitepaper.pdf", "Whitepaper"]
+		]
+	],
+	["/Foundation/", "seL4 Foundation", [
+			["/Foundation/", "About the seL4 Foundation"],
+			["/Foundation/Governance/"],
+			["/Foundation/Board/", "Governing Board"],
+			["/Foundation/TSC/"],
+			["/Foundation/Membership/"],
+			["/Foundation/Join/", "Join the Foundation now!"],
+			["/Foundation/Services/", "Commercial Support"],
+			["/Foundation/Summit/", "seL4 Summit"],
+			["/Foundation/Support/", "Support Us"],
+			["/Foundation/Trademark/"],
+			["/Foundation/Jobs/", "Jobs in the seL4 ecosystem"],
+			["/Foundation/Contact/", "Contact the seL4 Foundation"],
+			["/Foundation/Summit/"]
+		]
+	],
+	["/contact/", "Stay in Touch"],
+	["/Contribute/", "Contribute", [
+			["/Contribute/"],
+			["https://github.com/seL4", "GitHub"]
+		]
+	],
+	["/Use/"],
+	["/Learn/"],
+	["/Info/", "More Info", [
+			["/Info/", "More Info"],
+			["https://docs.sel4.systems/projects/sel4/frequently-asked-questions.html", "FAQ"],
+			["https://docs.sel4.systems/projects/roadmap.html", "Roadmap"],
+			["/Info/more-research.html", "Research"]
+		]
+	],
+	["/news/", "News"]
+]
