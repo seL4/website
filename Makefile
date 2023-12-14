@@ -6,7 +6,7 @@ SHELL := bash
 MAKEFLAGS += --warn-undefined-variables --no-builtin-rules
 .DELETE_ON_ERROR:
 .SUFFIXES:
-.PHONY: help build serve debug clean doctor update fix-home get-orig get-jekyll-blob get-orig-blob compare
+.PHONY: help build serve debug clean doctor checklinks update fix-home get-orig get-jekyll-blob get-orig-blob compare
 
 help:
 	@echo -e "Usage: make <target>. Available seL4 website targets:\n\
@@ -16,6 +16,7 @@ help:
 		debug       Host the development version of the site for local testing.\n\
 		clean       Remove generated files.\n\
 		doctor      Run jekyll doctor to check configuration.\n\
+		checklinks  Runs html-proofer to check for broken links.\n\
 		update      Updates all Ruby Gem versions to the newest available.\n\
 		help        This help text.\n"
 
@@ -34,6 +35,9 @@ debug: serve
 
 clean doctor:
 	@bundle exec jekyll $@
+
+checklinks:
+	@bundle exec htmlproofer --disable-external=false --enforce-https=false --only-4xx _site
 
 update:
 	@bundle update
