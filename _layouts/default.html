@@ -52,7 +52,14 @@
   <div id="page-container"><!--to put footer at bottom of page-->
   <div id="content-wrap"><!--to put footer at bottom of page-->
 
+<div class="container">
+  <div class="header" id="site-header" role="navigation" >
+    <ul class="nav-pills nav pull-right" id="site-navigation">
+{%- assign menu = site.data.menu -%}
 {% include menu.html %}
+    </ul>
+  </div>
+</div>
 {% include breadcrumbs.html %}
 {% if page.url contains "/Foundation/Summit" %}
   <a href='/Foundation/Summit'><img style="width:20%; padding-top:5px; vertical-align:top;float:right; margin:10px;"
@@ -65,9 +72,7 @@
     <a href='/'><img style="width:20%; margin-top:20px; vertical-align:top;float:right; margin:10px;"
                      src='/images/logo-text-white.svg' alt='seL4' /></a>
 {% endif %}
-<!-- iz: content -->
 {{ content }}
-<!-- iz: end content -->
 <div class="divider"></div>
 </div><!-- container -->
 </div><!--content-wrap-->
@@ -116,5 +121,4 @@
 </div><!--page-container-->
 </body>
 </html>
-{% if false %}<!-- vim: set ft=html.liquid: -->{% endif %}
 

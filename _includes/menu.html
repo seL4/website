@@ -1,132 +1,30 @@
-<div class="container">
-  <div class="header" id="site-header" role="navigation" >
-    <ul class="nav-pills nav pull-right" id="site-navigation">
-      
-
-
-<!-- /Foundation/Board/ -->
-<li>
-
-<a href='/'>Home</a></li>
-<!-- /Foundation/Board/ - /About/ -->
-<li class="dropdown "><a class="dropdown-toggle" data-toggle="dropdown" href="/About/">What is seL4? <span class="caret"></span></a>
-<ul class="dropdown-menu"><li class=""><a href="/About/">What is seL4?</a></li>
-<li class=""><a href="/About/Performance/">Performance</a></li>
-<li class=""><a href="/About/seL4-whitepaper.pdf">Whitepaper</a></li></ul></li>
-<!-- /Foundation/Board/ - /Foundation/ -->
-<li class="dropdown active"><a class="dropdown-toggle" data-toggle="dropdown" href="/Foundation/">seL4 Foundation <span class="caret"></span></a>
-<ul class="dropdown-menu"><li class=""><a href="/Foundation/.">About the seL4 Foundation</a></li>
-<li class=""><a href="/Foundation/Governance/">Governance</a></li>
-<!-- /Foundation/Board/ - /Foundation/Board/ -->
-<li class=""><a href="/Foundation/Board/">Governing Board</a></li>
-<!-- /Foundation/Board/ - /Foundation/TSC/ -->
-<li class=""><a href="/Foundation/TSC/">TSC</a></li>
-<!-- /Foundation/Board/ - /Foundation/Membership/ -->
-<li class=""><a href="/Foundation/Membership/">Membership</a></li>
-<li class=""><a href="/Foundation/Join/">Join the Foundation now!</a></li>
-<li class=""><a href="/Foundation/Services/">Commercial Support</a></li>
-<li class=""><a href="/Foundation/Summit/">seL4 Summit</a></li>
-<li class=""><a href="/Foundation/Support/">Support Us</a></li>
-<li class=""><a href="/Foundation/Trademark/">Trademark</a></li>
-<li class=""><a href="/Foundation/Jobs/">Jobs in the seL4 ecosystem</a></li>
-<li class=""><a href="/Foundation/Contact/">Contact the seL4 Foundation</a></li>
-<!-- /Foundation/Board/ - /Foundation/Summit/ -->
-<li class=""><a href="/Foundation/Summit/">Summit</a></li></ul></li>
-<li class=""><a href="/contact/">Stay in Touch</a></li>
-<!-- /Foundation/Board/ - /Contribute/ -->
-<li class="dropdown "><a class="dropdown-toggle" data-toggle="dropdown" href="/Contribute/">Contribute <span class="caret"></span></a>
-<ul class="dropdown-menu"><li class=""><a href="/Contribute/">Contribute</a></li>
-<li class=""><a href="https://github.com/seL4">GitHub</a></li></ul></li>
-<li class=""><a href="/Use/">Use</a></li>
-<li class=""><a href="/Learn/">Learn</a></li>
-<!-- /Foundation/Board/ - /Info/ -->
-<li class="dropdown "><a class="dropdown-toggle" data-toggle="dropdown" href="/Info/">More Info <span class="caret"></span></a>
-<ul class="dropdown-menu"><li class=""><a href="/Info/">More Info</a></li>
-<li class=""><a href="https://docs.sel4.systems/projects/sel4/frequently-asked-questions.html">FAQ</a></li>
-<li class=""><a href="https://docs.sel4.systems/projects/roadmap.html">Roadmap</a></li>
-<li class=""><a href="/Info/../About/more-research.html">Research</a></li></ul></li>
-<li class=""><a href="/news/">News</a></li>
-         </ul>
-        <!-- END: Menu -->
-    </div>
-</div>
-
-{% if false %} <!-- iz: Orig: -->
-
-<div class="container">
-  <div class="header" id="site-header" role="navigation" >
-    <ul class="nav-pills nav pull-right" id="site-navigation">
-      <%
-def navs2lis(cur_url, dlist, level=0):
-    list_content = []
-
-    for i in dlist:
-        if type(i) == type(NavEntry()):
-            if i == NavEntry():                 # insert some space
-                list_content.append('<li style="background-image: none;">&nbsp;</li>')
-            elif i.children and i.children != []:       # there is a submenu
-                if "Found" in i.uri:
-                  list_content.append('<!-- %s - %s -->' % (cur_url, i.uri,))
-                else:
-                  list_content.append('<!-- %s - %s -->' % (cur_url, i.uri,))
-                # we now always expand the tree so we get the full drop down menus.
-                if cur_url.find(i.uri) == 0 and level == 0:
-                    class_name = "active"
-                else:
-                    class_name = ""
-
-                if level >= 1:
-                    # don't generate submenu entries after the first level
-                    list_content.append('<li class="%s">%s</li>' % (class_name, i))
-                else:
-                    list_content.append('<li class="dropdown %s"><a class="dropdown-toggle" data-toggle="dropdown" href="%s">%s <span class="caret"></span></a>' % (class_name, i.uri, i.label))
-                    list_content.append('<ul class="dropdown-menu">%s</ul></li>' % navs2lis(cur_url,i.children, level+1))
-                    #list_content.append('<li class="level-%s ">%s<ul>%s</ul></li>' % (level, i, navs2lis(cur_url,i.children, level+1)))
-                    #list_content.append('<!-- classname=%s -->' % class_name)
-
-            else:
-                if cur_url.find(i.uri) == 0:
-                  class_name = "active"
-                else:
-                  class_name = ""
-                list_content.append('<li class="%s">%s</li>' % (class_name, i))
-        elif type(i) == type([]):
-            list_content.extend(navs2lis(cur_url,i, level+1))
-
-        else:
-            raise Exception('something is odd. type(i) == %s' % str(type(i)))
-
-    return '\n'.join(list_content)
-
-content_dir = cfg.get('core', 'content_dir')
-curdir = os.path.dirname(req.filename)
-
-cururl = curdir[len(content_dir):]
-if not cururl.startswith('/'):
-   cururl = '/' + cururl
-
-if not cururl.endswith('/'):
-   cururl = cururl + '/'
-%>
-<%
-# end
-%>
-
- <%= cururl %>
-<%
-if cururl == '/':
-  req.write ('<li class="active">')
-else:
-    req.write ('<li>')
-%>
-<%
-#
-%>
-<a href='/'>Home</a></li>
-<%=navs2lis(cururl, nav_urls) %>
-         </ul>
-        <!-- END: Menu -->
-    </div>
-</div>
-
-<!-- vim: set ft=html.liquid: -->{% endif %}
+{%-	for n in menu -%}
+{%-		assign url = n[0] -%}
+{%-		assign name = n[1] -%}
+{%-		assign submenu = n[2] -%}
+{%-		unless name -%}
+{%-			assign name = url | split: "/" | last -%}
+{%-		endunless -%}
+{%-		if page.url == url -%}
+{%-			assign active = 'active' -%}
+{%-		else -%}
+{%-			assign active = '' -%}
+{%-		endif -%}
+{%-		if submenu %}
+{%-			if page.url contains url -%}
+{%-				assign active = 'active' -%}
+{%-			endif -%}
+		<li class="dropdown {{ active }}"><a class="dropdown-toggle" data-toggle="dropdown" href="
+		{{- url }}">{{ name }} <span class="caret"></span></a>
+{%-		else %}
+		<li class="{{ active }}"><a href="{{ url }}">{{ name }}</a>
+{%-		endif -%}
+{%-		if submenu %}
+		<ul class="dropdown-menu">
+{%-			assign menu = submenu -%}
+{%			include menu.html %}
+		</ul>
+{%-		endif -%}
+		</li>
+{%- endfor -%}
+{%- comment %} vim: set ft=html.liquid: ts=4 {% endcomment -%}
