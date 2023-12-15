@@ -1,0 +1,24 @@
+---
+# Copyright 2023 seL4 Project a Series of LF Projects, LLC.
+# SPDX-License-Identifier: CC-BY-SA-4.0
+layout: default
+---
+{%- assign newest_url = site.pages | where: "layout", "news" | map: "name" | sort | last -%}
+{%- assign newest_year = newest_url | split: "." | first -%}
+<div class="row">
+ <div class="col">
+  <h1>
+    News about
+    <a href="/">seL4</a>
+    and the
+    <a href="/Foundation">seL4 Foundation</a>
+  </h1>
+ </div>
+ <div class="col">
+Older News:  
+{% for i in (2020..newest_year) -%}
+<a href="/news/{{ i }}">{{ i }}</a> 
+{% endfor %}
+ </div>
+</div>
+{{ content }}
