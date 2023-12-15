@@ -18,8 +18,7 @@
 			["/Foundation/Support/", "Support Us"],
 			["/Foundation/Trademark/"],
 			["/Foundation/Jobs/", "Jobs in the seL4 ecosystem"],
-			["/Foundation/Contact/", "Contact the seL4 Foundation"],
-			["/Foundation/Summit/"]
+			["/Foundation/Contact/", "Contact the seL4 Foundation"]
 		]
 	],
 	["/contact/", "Stay in Touch"],
