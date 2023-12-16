@@ -15,10 +15,7 @@ layout: default
   </h1>
  </div>
  <div class="col">
-Older News:  
-{% for i in (2020..newest_year) -%}
-<a href="/news/{{ i }}">{{ i }}</a> 
-{% endfor %}
+Older News:  {% for i in (2020..newest_year) -%}<a href="/news/{{ i }}">{{ i }}</a> {% endfor %}
  </div>
 </div>
 {{ content }}
