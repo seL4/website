@@ -44,4 +44,3 @@ checklinks:
 
 update:
 	@bundle update
-
