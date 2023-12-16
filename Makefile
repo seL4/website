@@ -36,8 +36,11 @@ debug: serve
 clean doctor:
 	@bundle exec jekyll $@
 
+HTMLPROOFEROPT := --swap-urls '^https\://sel4.systems:http\://localhost\:4000'
+HTMLPROOFEROPT += --enforce-https=false --only-4xx --disable-external=false
+
 checklinks:
-	@bundle exec htmlproofer --disable-external=false --enforce-https=false --only-4xx _site
+	@bundle exec htmlproofer $(HTMLPROOFEROPT) _site
 
 update:
 	@bundle update
