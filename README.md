@@ -5,12 +5,16 @@
 
 # seL4 Website
 
-The [seL4.systems](https://sel4.systems) website is built on a
-templating engine based on
-[PSP](http://modpython.org/live/mod_python-3.3.1/doc-html/pyapi-psp.html)
+The [seL4.systems](https://sel4.systems) website is built with the
+static site generator [Jekyll](https://jekyllrb.com), which uses
+the Liquid templating engine.
 
-It requires a python 3 mod_python for Apache2.
+## Build
 
+Running `make build` will generate the pages and put them into the
+`_site/` directory. To preview the website locally, run `make serve`
+for the production build and `make debug` for the development build.
+See `make help` for all options.
 
 ## Docker
 
