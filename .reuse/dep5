@@ -3,74 +3,74 @@ Upstream-Name: seL4.systems
 Upstream-Contact: seL4 webmaster <webmaster@seL4.systems>
 source: https://github.com/seL4/website/
 
-Files: content/fonts/*
+Files: fonts/*
 Copyright: 2010 - 2020 GLYPHICONS® All rights reserved.
 License: MIT
   See https://glyphicons.com/old/license.html#old-halflings-bootstrap
 
-Files: content/css/bootstrap.min.css content/js/bootstrap.min.js
+Files: css/bootstrap.min.css js/bootstrap.min.js
 Copyright: 2011-2016 Twitter, Inc
 License: MIT
   https://github.com/twbs/bootstrap/blob/master/LICENSE
 
-Files: content/js/jquery.min.js
+Files: js/jquery.min.js
 Copyright: 2020 The JQuery Foundation <https://jquery.org>
 License: MIT
 
 
-Files: content/js/tinymce/*
+Files: js/tinymce/*
 Copyright: 2020 Tiny Technologies Inc
 License: LGPL-2.1-only
   https://tiny.cloud
 
-Files: */.names */.order */.menu */.breadcrumbs */.ignore
+Files: _data/* _includes/*
+Copyright: 2023 seL4 Project a Series of LF Projects, LLC.
+License: CC-BY-SA-4.0
+
+Files: */*.pdf About/whitepaper.svg
 Copyright: 2020 seL4 Project a Series of LF Projects, LLC.
 License: CC-BY-SA-4.0
 
-Files: */*.pdf content/About/whitepaper.svg
-Copyright: 2020 seL4 Project a Series of LF Projects, LLC.
-License: CC-BY-SA-4.0
-
-Files: content/Foundation/Board/*.jpg  content/Foundation/Board/*.png
+Files: Foundation/Board/*.jpg  Foundation/Board/*.png
 Copyright:  2020 seL4 Project a Series of LF Projects, LLC.
 License: LicenseRef-PhotoLicence
 
-Files: content/images/tsc/*
+Files: images/tsc/*
 Copyright: various
 License: LicenseRef-PhotoLicence
 
-Files: content/images/summit/*
+Files: images/summit/*
 Copyright: various
 License: LicenseRef-PhotoLicence
 
-Files: content/images/acm*
+Files: images/acm*
 Copyright: various
 License: LicenseRef-PhotoLicence
 
-Files: content/Foundation/Membership/LOGOS/*
+Files: Foundation/Membership/LOGOS/*
 License: LicenseRef-PhotoLicence
 Copyright: various 2020
   Each logo is copyright to the organisation owning that logo.
 
-Files: content/Foundation/Jobs/LOGOS/*
+Files: Foundation/Jobs/LOGOS/*
 License: LicenseRef-PhotoLicence
 Copyright: various 2020
   Each logo is copyright to the organisation owning that logo.
 
-Files: content/*/*.patch
+Files: */*.patch
 License: GPL-2.0-only
 Copyright:  2020 seL4 Project a Series of LF Projects, LLC.
 
 Files:
-  content/images/icons/android*.png
-  content/images/icons/apple*.png
-  content/images/icons/mstile*.png
-  content/images/icons/favicon*.png
-  content/images/icons/favicon.ico
-  content/images/icons/manifest.json
-  content/images/icons/browserconfig.xml
-  content/favicon.ico
-  content/robots.txt
+  images/icons/android*.png
+  images/icons/apple*.png
+  images/icons/mstile*.png
+  images/icons/favicon*.png
+  images/icons/favicon.ico
+  images/icons/manifest.json
+  images/icons/browserconfig.xml
+  favicon.ico
+  robots.txt
 Copyright: 2020 seL4 Project a Series of LF Projects, LLC.
 License: CC-BY-SA-4.0
 
@@ -78,10 +78,10 @@ Files: .gitignore
 Copyright: 2020 seL4 Project a Series of LF Projects, LLC.
 License: BSD-2-Clause
 
-Files: content/Info/Docs/u-boot-working-rpi3-32bit-v2017.11.bin content/Info/Hardware/sabreLite/u-boot.bin
+Files: Info/Docs/u-boot-working-rpi3-32bit-v2017.11.bin Info/Hardware/sabreLite/u-boot.bin
 Copyright: Wolfgang Denk and others 2019
 License: GPL-2.0-only
 
-Files: content/security.asc
+Files: security.asc
 Copyright: 2021 seL4 Project a Series of LF Projects, LLC.
 License: CC-BY-4.0
