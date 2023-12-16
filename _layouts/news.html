@@ -3,7 +3,7 @@
 # SPDX-License-Identifier: CC-BY-SA-4.0
 layout: default
 ---
-{%- assign newest_url = site.pages | where: "layout", "news" | map: "name" | sort | last -%}
+{%- assign newest_url = site.pages | where: "layout", "news" | map: "name" | sort | pop | last -%}
 {%- assign newest_year = newest_url | split: "." | first -%}
 <div class="row">
  <div class="col">
