@@ -12,21 +12,13 @@ source "https://rubygems.org"
 # Happy Jekylling!
 gem "jekyll"
 gem "html-proofer"
-# This is the default theme for new Jekyll sites. You may change this to anything you like.
-#gem "minima"
 
 # If you want to use GitHub Pages, remove the "gem "jekyll"" above and
 # uncomment the line below. To upgrade, run `bundle update github-pages`.
 # gem "github-pages", group: :jekyll_plugins
 # If you have any plugins, put them here!
 group :jekyll_plugins do
-  gem "jekyll-titles-from-headings"
-  gem "jekyll-relative-links"
-  gem "jekyll-optional-front-matter"
   gem "jekyll-sitemap"
-  gem 'jekyll-toc'
   gem 'jekyll-redirect-from'
-  gem 'jekyll-remote-theme'
-  #gem "jekyll-sass-converter", "~> 2.0" # TODO: Prevent 3.0 untill sass errors in minima there are fixed
 end
 
