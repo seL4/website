@@ -6,7 +6,7 @@ SHELL := bash
 MAKEFLAGS += --warn-undefined-variables --no-builtin-rules
 .DELETE_ON_ERROR:
 .SUFFIXES:
-.PHONY: help build serve debug clean doctor checklinks update fix-home get-orig get-jekyll-blob get-orig-blob compare
+.PHONY: help build serve debug clean doctor checklinks update get-orig get-jekyll-blob get-orig-blob compare
 
 help:
 	@echo -e "Usage: make <target>. Available seL4 website targets:\n\
@@ -42,35 +42,6 @@ checklinks:
 update:
 	@bundle update
 
-# Collect all PLM files:
-FROM := $(shell find content -type f -name '*.pml')
-
-# Add Jekyll front matter to all PLM files:
-PLM2JEKYLL1 := $(foreach f,$(FROM), sed -i '1s;^;---\n---\n;' $(f);)
-
-# Convert PSP .pml links"
-EXP2 := 's/<%@ include file="\(.*\).pml" *%>/{% include \1.html %}/'
-PLM2JEKYLL2 := $(foreach f,$(FROM), sed -i $(EXP2) $(f);)
-
-# Convert all other PSP links"
-EXP3 := 's/<%@ include file="\(.*\)" *%>/{% include \1 %}/'
-PLM2JEKYLL3 := $(foreach f,$(FROM), sed -i $(EXP3) $(f);)
-
-# Rename all .plm files to .html:
-MVALL := $(foreach f,$(FROM), git mv $(f) $(basename $(f)).html;)
-
-convert:
-	@$(PLM2JEKYLL1)
-	@$(PLM2JEKYLL2)
-	@$(PLM2JEKYLL3)
-	@git commit -s -m "Automated plm to jekyll" content/
-	@$(MVALL)
-	@git commit -s -m "Automated rename from .plm to .html" content/
-
-F2 := $(shell find . -path ./vendor -prune -o -name 'home.html' -print)
-fix-home:
-	$(foreach f,$(F2), git mv $(f) $(dir $(f))index.html;)
-
 EXCLUDES := pdf mp4 png jpg jpeg svg ico gif zip bin license licence eot woff woff2 ttf eot? patch abstracts
 comma := ,
 empty:=
@@ -95,31 +66,13 @@ get-jekyll-blob:
 FIND := find . -type f $(addprefix ! -name *.,$(EXCLUDES))
 CMD := echo
 
-compare: #build
+compare: build
 	@(cd .orig/sel4.systems && $(FIND) ! -name '*.pml*' | sort | xargs -I x $(CMD) "x") > .all_orig.txt
 	@(cd _site/ && $(FIND) | sort | xargs -I x $(CMD) "x") > .all_jekyll.txt
 	@diff -u .all_orig.txt .all_jekyll.txt | less
 
 ##############################################################################################################
 # TODO:
-# - Navigation menu
-# - Breadcrumbs
-# - Permanent redirects:
-#   	all .pml -> .html with .htaccess and mod_alias:
-#   	RedirectMatch permanent ^(.*)/home.pml$ $1/index.html
-#   	RedirectMatch permanent ^(.*).pml$ $1.html
-#	Redirect permanent /Info/Docs/index.html https://docs.sel4.systems/Documentation
-#	or
-#	<meta http-equiv="refresh" content="0; url="...">
-#	<link rel="canonical" href="..." />
-#  See also https://developers.google.com/search/docs/crawling-indexing/301-redirects#metarefresh
-#  https://stackoverflow.com/questions/51178289/permanently-redirect-jekyll-pages-to-external-site-without-markdown
-#
-#	Or add redirect_from: to all html files.
-#
-# - News
-#	Convert to posts?
-#
 # - Cleanup
 #	Delete obsolete files
 #	Tidy up Makefile
