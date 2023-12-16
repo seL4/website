@@ -17,7 +17,7 @@ Files: js/jquery.min.js
 Copyright: 2020 The JQuery Foundation <https://jquery.org>
 License: MIT
 
-Files: _data/* _includes/*
+Files: _data/* _includes/* .bundle/config Gemfile.lock
 Copyright: 2023 seL4 Project a Series of LF Projects, LLC.
 License: CC-BY-SA-4.0
 
