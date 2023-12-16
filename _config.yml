@@ -74,11 +74,7 @@ exclude:
   - Makefile
   - README.md
   - LICENSES/
-  - apache/ # TODO: Remove all these when done.
-  - bin/
-  - code/
+  - apache/
   - configs/
   - docker/
-  - templates/
-  - underlay/
 
