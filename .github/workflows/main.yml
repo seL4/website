@@ -76,6 +76,7 @@ jobs:
           echo "validator_msg=$MSG" >> $GITHUB_OUTPUT
 
       - name: Deploy
+        if: github.event.pull_request.head.repo.name == github.repository
         uses: peaceiris/actions-gh-pages@v3
         with:
           deploy_key: ${{ secrets.ACTIONS_DEPLOY_KEY }}
@@ -147,7 +148,7 @@ jobs:
 
       - name: Leave comment with link to site, and results of checks
         uses: actions/github-script@v6
-        if: github.event_name == 'pull_request'
+        if: github.event.pull_request.head.repo.name == github.repository
         with:
           github-token: ${{secrets.GITHUB_TOKEN}}
           script: |
