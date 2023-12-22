@@ -1,3 +1,4 @@
+# Copyright 2023, Proofcraft Pty Ltd
 # Copyright 2020, Data61, CSIRO (ABN 41 687 119 230)
 #
 # SPDX-License-Identifier: BSD-2-Clause
@@ -12,57 +13,67 @@ on:
 
 jobs:
   snapshot:
-    name: "Static snapshot"
+    name: "Build site"
     runs-on: 'ubuntu-latest'
     outputs:
       linkchecker_failed: ${{ steps.linkchecker_status.outputs.linkchecker_failed }}
       validator_failed:   ${{ steps.validator_status.outputs.validator_failed }}
+      validator_msg:      ${{ steps.msg.outputs.validator_msg }}
     steps:
       - uses: actions/checkout@v4
 
-      - uses: ./.github/actions/gen_static_website
-        id: 'gen_static_website'
+      - name: Dependencies
+        run: |
+          sudo apt-get update
+          sudo apt-get install -y ruby build-essential
+          sudo gem install bundler
+
+      - name: 'Site'
+        id: 'site'
+        run: |
+          make build
 
       - name: Check status of linkchecker
         id: linkchecker_status
         run: |
           if [ -e ".linkchecker_failed" ]; then
-            echo "::set-output name=linkchecker_failed::true"
+            echo "linkchecker_failed=true" >> $GITHUB_OUTPUT
           else
-            echo "::set-output name=linkchecker_failed::false"
+            echo "linkchecker_failed=false" >> $GITHUB_OUTPUT
           fi
-
-      - name: Fix up linkchecker log paths
-        run: sed -i 's|/github/workspace/snapped_site/localhost||g' snapped_site/localhost/pr_checks/linkchecker.html
+#      - name: Fix up linkchecker log paths
+#        run: sed -i 's|/github/workspace/snapped_site/localhost||g' _site/localhost/pr_checks/linkchecker.html
 
       - name: HTML5 Validator
         id: validate
-        uses: Cyb3r-Jak3/html5validator-action@v0.4.3
+        uses: Cyb3r-Jak3/html5validator-action@v7.2.0
         with:
-          root: snapped_site/localhost
+          root: _site
           format: text
-          extra: --blacklist pr_checks
+          blacklist: pr_checks
         continue-on-error: true
 
       - name: Check status of HTML5 validator
         id: validator_status
         run: |
           if [ "${{ steps.validate.outputs.result }}" -eq "0" ]; then
-            echo "::set-output name=validator_failed::false"
+            echo "validator_failed=false" >> $GITHUB_OUTPUT
           else
-            echo "::set-output name=validator_failed::true"
+            echo "validator_failed=true" >> $GITHUB_OUTPUT
           fi
 
-      - name: Fix up HTML5 validator log paths
+      - name: Fix up HTML5 validator log paths + escape quotes
+        id: msg
         run: |
-          output="snapped_site/localhost/pr_checks/validator.log"
-          # Make some very dodgey HTML, so we can get nicer output
-          echo "<html><body><p>" > "$output"
-          sed 's|/github/workspace/snapped_site/localhost||g' log.log \
-            | sed "s|'ERROR:|</p><p>ERROR:|g" \
-            | sed "s|', '|<br />|g" \
-            >> "$output"
-          echo "</p></body></html>" >> "$output"
+          output="_site/localhost/pr_checks/validator.log"
+          mkdir -p "$(dirname "$output")"
+          sed 's|/github/workspace/||g' log.log | \
+            sed 's|\\|\\\\|g' | \
+            sed 's|\"|\\\"|g' >> "$output"
+          MSG="$(cat "$output")"
+          # Replaces newlines with the string '\n'
+          MSG="${MSG//$'\n'/'\n'}"
+          echo "validator_msg=$MSG" >> $GITHUB_OUTPUT
 
       - name: Deploy
         uses: peaceiris/actions-gh-pages@v3
@@ -70,7 +81,7 @@ jobs:
           deploy_key: ${{ secrets.ACTIONS_DEPLOY_KEY }}
           external_repository: seL4/website_pr_hosting
           publish_branch: PR_${{ github.event.number }}
-          publish_dir: ./snapped_site
+          publish_dir: ./_site
 
   linkchecker:
     name: "Link checker"
@@ -89,37 +100,47 @@ jobs:
     name: "HTML5 Validator"
     runs-on: 'ubuntu-latest'
     needs: snapshot
+    env:
+      VALIDATOR_MSG: ${{ needs.snapshot.outputs.validator_msg }}
     continue-on-error: true
     steps:
       - name: show validator status
         run: |
           if ${{ needs.snapshot.outputs.validator_failed }}; then
+            echo -e "$VALIDATOR_MSG"
             exit 1
           fi
           exit 0
 
-  commenter:
-    name: "Report results as comment"
+  comment:
+    name: "PR Comment"
     runs-on: 'ubuntu-latest'
-    needs: snapshot
+    needs: [snapshot]
+    env:
+      VALIDATOR_MSG: ${{ needs.snapshot.outputs.validator_msg }}
     steps:
       # TODO: in the future, when this issue is resolved: https://github.com/peaceiris/actions-gh-pages/issues/348, the link
       #       generated should be for the commit itself, not just the tip.
       - name: Build message
+        id: msg
         run: |
-          echo "Preview your changes [here](https://htmlpreview.github.io/?https://github.com/seL4/website_pr_hosting/blob/PR_${{ github.event.number }}/localhost/index.html)" > msg.txt
+          echo "Preview your changes [here](https://htmlpreview.github.io/?https://github.com/seL4/website_pr_hosting/blob/PR_${{ github.event.number }}/index.html)" > msg.txt
           if ${{ needs.snapshot.outputs.linkchecker_failed }}; then
             echo "" >> msg.txt
             echo "The link checker found some issues! Review them [here](https://htmlpreview.github.io/?https://github.com/seL4/website_pr_hosting/blob/PR_${{ github.event.number }}/localhost/pr_checks/linkchecker.html)" >> msg.txt
           fi
           if ${{ needs.snapshot.outputs.validator_failed }}; then
             echo "" >> msg.txt
-            echo "The HTML5 validator found some issues! Review them [here](https://htmlpreview.github.io/?https://github.com/seL4/website_pr_hosting/blob/PR_${{ github.event.number }}/localhost/pr_checks/validator.log)" >> msg.txt
+            echo "The HTML5 validator found some issues!" >> msg.txt
+            echo \`\`\` >> msg.txt
+            echo "$VALIDATOR_MSG" >> msg.txt
+            echo \`\`\` >> msg.txt
           fi
-          export MSG=$(cat msg.txt)
+          export MSG="$(cat msg.txt)"
           # The following replaces newlines with the string '\n' for the JS call further below
           MSG="${MSG//$'\n'/'\n'}"
           echo "MSG=$MSG" >> $GITHUB_ENV
+
       - name: Print message
         run: |
           echo "$MSG"
