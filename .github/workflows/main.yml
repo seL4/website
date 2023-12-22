@@ -63,14 +63,17 @@ jobs:
           fi
 
       - name: Fix up HTML5 validator log paths + escape quotes
-        id: validator_log
+        id: msg
         run: |
           output="_site/localhost/pr_checks/validator.log"
           mkdir -p "$(dirname "$output")"
           sed 's|/github/workspace/||g' log.log | \
             sed 's|\\|\\\\|g' | \
             sed 's|\"|\\\"|g' >> "$output"
-          echo "validator_log=$(cat "$output")" >> $GITHUB_OUTPUT
+          MSG="$(cat "$output")"
+          # Replaces newlines with the string '\n'
+          MSG="${MSG//$'\n'/'\n'}"
+          echo "validator_msg=$MSG" >> $GITHUB_OUTPUT
 
       - name: Deploy
         if: github.event.pull_request.head.repo.name == github.repository
@@ -105,7 +108,7 @@ jobs:
       - name: show validator status
         run: |
           if ${{ needs.snapshot.outputs.validator_failed }}; then
-            echo -e "$MSG"
+            echo -e "$VALIDATOR_MSG"
             exit 1
           fi
           exit 0
@@ -122,7 +125,7 @@ jobs:
       - name: Build message
         id: msg
         run: |
-          echo "Preview your changes [here](https://htmlpreview.github.io/?https://github.com/seL4/website_pr_hosting/blob/PR_${{ github.event.number }}/localhost/index.html)" > msg.txt
+          echo "Preview your changes [here](https://htmlpreview.github.io/?https://github.com/seL4/website_pr_hosting/blob/PR_${{ github.event.number }}/index.html)" > msg.txt
           if ${{ needs.snapshot.outputs.linkchecker_failed }}; then
             echo "" >> msg.txt
             echo "The link checker found some issues! Review them [here](https://htmlpreview.github.io/?https://github.com/seL4/website_pr_hosting/blob/PR_${{ github.event.number }}/localhost/pr_checks/linkchecker.html)" >> msg.txt
