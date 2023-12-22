@@ -1,37 +1,16 @@
 #
-# Copyright 2020, Data61, CSIRO (ABN 41 687 119 230)
+# Copyright 2023, Proofcraft Pty Ltd
 #
 # SPDX-License-Identifier: BSD-2-Clause
 #
 
 # This Dockerfile is expected to built from the context of the whole repo, e.g.:
 #    docker build -t sel4/sel4-website -f docker/Dockerfile .
-FROM debian:buster
+FROM debian:12-slim
 
-COPY docker/libapache2-mod-python_3.5.0-1_amd64.deb /tmp/libapache2-mod-python_3.5.0-1_amd64.deb
+RUN apt-get update && apt-get install -y bash make ruby bundler
 
-# Get and install dependencies required
-RUN apt-get update -q \
-    && apt-get install -y --no-install-recommends \
-        apache2 \
-        libxml2-dev \
-        linkchecker \
-        python3-dev \
-        python3-lxml \
-        python3-pip \
-        wget \
-    && dpkg -i /tmp/libapache2-mod-python_3.5.0-1_amd64.deb \
-    && apt-get clean autoclean \
-    && apt-get autoremove --purge --yes \
-    && rm -rf /var/lib/apt/lists/* \
-    # Python deps
-    && pip3 install setuptools \
-    && pip3 install SQLObject
-
-# Configure apache
-RUN cd /etc/apache2 \
-    # Enable required apache mods
-    && ln -s ../mods-available/expires.load mods-enabled/expires.load
+ENV LANG=C.UTF-8
 
 COPY docker/entrypoint.sh /entrypoint.sh
 ENTRYPOINT ["/entrypoint.sh"]
