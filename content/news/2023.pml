@@ -60,6 +60,12 @@ Older News: <%=reflist%>
     22 December 2023: HACMS receives Game Changer award from DARPA leadership
 </div>
 <div class="news-text-container">
+  <a href = "/images/hacms-award.jpg">
+    <img src="/images/hacms-award.jpg"
+    style="width:350px; padding-left:1.5em; float:right"
+    alt="DARPA Game Changer Award" />
+  </a>
+
   <p>
 
   Each year, DARPA leadership selects the Game Changer program that was the most
@@ -85,7 +91,7 @@ Older News: <%=reflist%>
 
   Our deep thanks to Darren Cofer as well, who masterfully lead the team, made
   of Collins, Galois, Boeing, University of MN and the Trustworthy Systems group
-  (home to seL4 at the time) who demonstrated the technology on Boeing's
+  (home of seL4 at the time) who demonstrated the technology on Boeing's
   Unmanned Little Bird helicopter, including cyber attacks during flight!
 
   </p>
