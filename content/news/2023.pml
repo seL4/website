@@ -54,6 +54,54 @@ Older News: <%=reflist%>
 </div>
 -->
 
+<!----------------------------------------------------------->
+<div class="news-item tag-link" id="hacms-game-changer">
+  <a href="#hacms-game-changer"><span class="tag-span"># </span></a>
+    22 December 2023: HACMS receives Game Changer award from DARPA leadership
+</div>
+<div class="news-text-container">
+  <a href = "/images/hacms-award.jpg">
+    <img src="/images/hacms-award.jpg"
+    style="width:350px; padding-left:1.5em; float:right"
+    alt="DARPA Game Changer Award" />
+  </a>
+
+  <p>
+
+  Each year, DARPA leadership selects the Game Changer program that was the most
+  impactful in the preceding 10 years.
+
+  </p>
+  <p>
+
+  This year, the award goes to HACMS, the High-Assurance Cyber Military Systems
+  program, which has been instrumental in demonstrating how seL4 can be
+  embedded in real-world products (unmanned air and ground vehicles) and truly
+  protect them from cyber attacks.
+
+  </p>
+  <p>
+
+  The award was presented by DARPA Director Stefanie Tompkins to the three HACMS
+  program managers, Kathleen Fisher, John Launchbury, and Ray Richards. We truly
+  thank all three for their visionary leadership.
+
+  </p>
+  <p>
+
+  Our deep thanks to Darren Cofer as well, who masterfully lead the team, made
+  of Collins, Galois, Boeing, University of MN and the Trustworthy Systems group
+  (home of seL4 at the time) who demonstrated the technology on Boeing's
+  Unmanned Little Bird helicopter, including cyber attacks during flight!
+
+  </p>
+  <p>
+
+  A true <em>game changer</em> indeed.
+  </p>
+</div>
+
+
 
 <!----------------------------------------------------------->
 <div class="news-item tag-link" id="nio-skyos">
@@ -735,12 +783,12 @@ Older News: <%=reflist%>
     </div>
   </div>
 
-  <div class="person">
+  <div class="person_no_link">
     <div class="person_pic">
-      <a href="https://trustworthy.systems/people/?cn=Lucy+Parker"><img src="../../../images/summit/lucy.jpg" alt="Lucy Parker" width="80"/></a>
+      <img src="../../../images/summit/lucy.jpg" alt="Lucy Parker" width="80"/>
     </div>
     <div class="person_title">
-      <strong><a href="https://trustworthy.systems/people/?cn=Lucy+Parker">Lucy Parker</a></strong>
+      <strong>Lucy Parker</strong>
     </div>
     <div class="person_affiliation">
       UNSW

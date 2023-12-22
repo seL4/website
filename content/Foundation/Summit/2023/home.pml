@@ -320,12 +320,12 @@ Minneapolis, USA
     </div>
   </div>
 
-  <div class="person">
+  <div class="person_no_link">
     <div class="person_pic">
-      <a href="https://trustworthy.systems/people/?cn=Lucy+Parker"><img src="../../../images/summit/lucy.jpg" alt="Lucy Parker" width="80"/></a>
+      <img src="../../../images/summit/lucy.jpg" alt="Lucy Parker" width="80"/>
     </div>
     <div class="person_title">
-      <strong><a href="https://trustworthy.systems/people/?cn=Lucy+Parker">Lucy Parker</a></strong>
+      <strong>Lucy Parker</strong>
     </div>
     <div class="person_affiliation">
       UNSW
