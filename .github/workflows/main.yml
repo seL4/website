@@ -73,6 +73,7 @@ jobs:
           echo "validator_log=$(cat "$output")" >> $GITHUB_OUTPUT
 
       - name: Deploy
+        if: github.event.pull_request.head.repo.name == github.repository
         uses: peaceiris/actions-gh-pages@v3
         with:
           deploy_key: ${{ secrets.ACTIONS_DEPLOY_KEY }}
