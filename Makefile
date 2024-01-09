@@ -40,6 +40,9 @@ clean doctor:
 
 HTMLPROOFEROPT := --swap-urls '^https\://sel4.systems:http\://localhost\:4000'
 HTMLPROOFEROPT += --enforce-https=false --only-4xx --disable-external=false
+# comma-separated list of URL regexps, e.g. /twitter.com,facebook.com/
+# twitter ignored because of rate limiting
+HTMLPROOFEROPT += --ignore-urls '/twitter.com/'
 
 checklinks:
 	@bundle exec htmlproofer $(HTMLPROOFEROPT) _site
