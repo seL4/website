@@ -33,7 +33,7 @@
 
 <p>We are aiming to provide more resources in the next few months. In the meantime, if you are interested in contributing to the seL4 proofs, please review the <a href="https://github.com/seL4/l4v/">actual proofs</a> and the tools and techniques used for the proofs. Then <a href="/contact/home.pml">contact us</a> to discuss ideas, plans, and options about your contributions.</p>
 
-<p>To get started, you will have to be familiar with the <a href="http://isabelle.in.tum.de/">Isabelle theorem prover</a>. Some learning resources for it are described in <a href="http://proofcraft.org/blog/proof-engineer-reading.html">this blog post</a>.
+<p>To get started, you will have to be familiar with the <a href="https://isabelle.in.tum.de/">Isabelle theorem prover</a>. Some learning resources for it are described in <a href="http://proofcraft.org/blog/proof-engineer-reading.html">this blog post</a>.
 
 <h2 id="documentation-contributions">Documentation Contributions</h2>
 
