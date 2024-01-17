@@ -156,18 +156,6 @@
     </div>
     <div class="sponsor">
       <div class="sponsor-pic">
-        <a href="https://www.lotuscars.com/">
-          <img src="LOGOS/LotusCarsTechnology.svg"
-              style="width: 200px" alt="Lotus Cars logo">
-        </a>
-      </div>
-      <div class="sponsor-name">
-        Lotus Cars
-      </div>
-      <div class="sponsor-info"></div>
-    </div>
-    <div class="sponsor">
-      <div class="sponsor-pic">
         <a href="https://www.penten.com">
           <img src="LOGOS/Penten.svg" style="width: 200px" alt="Penten logo">
         </a>
