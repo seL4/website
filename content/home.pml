@@ -28,17 +28,17 @@
     <ul>
       <li>
         <strong>
+          22 Jan 2024: seL4 features in the Linux Foundation’s 2023 Annual report
+        </strong>
+      </li>
+      <li>
+        <strong>
           22 Dec 2023: HACMS receives Game Changer award from DARPA leadership
         </strong>
       </li>
       <li>
         <strong>
           24 Nov 2023: NIO announces seL4-based SkyOS operating system
-        </strong>
-      </li>
-      <li>
-        <strong>
-          20 Nov 2023: seL4 Microkit officially supported by the seL4 Foundation
         </strong>
       </li>
       <li style="margin-top:0.2em;list-style-type:none">
