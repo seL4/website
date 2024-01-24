@@ -57,7 +57,7 @@ Older News: <%=reflist%>
 <!----------------------------------------------------------->
 <div class="news-item tag-link" id="lf-annual-report">
   <a href="#lf-annual-report"><span class="tag-span"># </span></a>
-  22 January 2024: seL4 features in the Linux Foundation’s 2023 Annual report
+  24 January 2024: seL4 features in the Linux Foundation’s 2023 Annual report
 </div>
 <div style="margin: auto; width: 100%;text-align:center">
     <a href = "https://www.linuxfoundation.org/hubfs/Reports/2023_lf_annual_report_122123a.pdf?hsLang=en">
