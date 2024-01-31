@@ -105,17 +105,6 @@
     </div>
     <div class="sponsor">
       <div class="sponsor-pic">
-        <a href="https://galois.com/">
-          <img src="LOGOS/galois-logo.svg" style="width: 200px" alt="Galois logo">
-        </a>
-      </div>
-      <div class="sponsor-name">
-	      Galois Inc
-      </div>
-      <div class="sponsor-info"></div>
-    </div>
-    <div class="sponsor">
-      <div class="sponsor-pic">
         <a href="https://www.google.com/">
           <img src="LOGOS/google.svg" style="width: 200px" alt="Google logo">
         </a>
