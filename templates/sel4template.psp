@@ -103,11 +103,12 @@ except:
 if in_production:
     # then
 %>
-    <script defer data-domain="sel4.systems" src="https://analytics.sel4.systems
-/js/script.js"></script>
+    <script defer data-domain="sel4.systems" src="https://analytics.sel4.systems/js/script.js"></script>
 <%
 # end if
 %>
+
+
 
 <%
 if "user_head_content" in globals():
