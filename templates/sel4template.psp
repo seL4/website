@@ -103,8 +103,9 @@ except:
 if in_production:
     # then
 %>
+    <script defer data-domain="sel4.systems" src="https://analytics.sel4.systems
+/js/script.js"></script>
 <%
-
 # end if
 %>
 
