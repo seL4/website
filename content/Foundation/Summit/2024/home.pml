@@ -190,7 +190,7 @@
       <strong><a href="">Indan Zupancic</a></strong>
     </div>
     <div class="person_affiliation">
-      
+
     </div>
   </div>
 
