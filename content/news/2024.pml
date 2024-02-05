@@ -160,7 +160,9 @@ Older News: <%=reflist%>
 
   <div class="person">
     <div class="person_pic">
+    <!--
       <a href=""><img src="../../../images/summit/.png" alt="Indan Zupancic" width="80"/></a>
+    -->
     </div>
     <div class="person_title">
       <strong><a href="">Indan Zupancic</a></strong>
@@ -190,7 +192,7 @@ Older News: <%=reflist%>
       <img src="../../../images/summit/lucy.jpg" alt="Lucy Parker" width="80"/></a>
     </div>
     <div class="person_title">
-      <strong><a href="https://www.linkedin.com/in/lucy-parker-13a484253/">Lucy Parker</strong></a>
+      <strong><a href="https://www.linkedin.com/in/lucy-parker-13a484253/">Lucy Parker</a></strong>
     </div>
   </div>
 
