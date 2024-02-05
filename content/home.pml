@@ -28,13 +28,13 @@
     <ul>
       <li>
         <strong>
-          14 Feb 2024: Meet the Program Committee of the seL4 summit 2024
-        </stong>
+          12 Feb 2024: Meet the Program Committee of the seL4 summit 2024
+        </strong>
       </li>
       <li>
         <strong>
           9 Feb 2024: The seL4 summit 2024 will be held in Sydney, Australia
-      </strong>
+        </strong>
       </li>
       <li>
         <strong>
@@ -182,6 +182,20 @@
        Contributing code, documentation, proofs
     </div>
   </div>
+
+  <div class="homepage_item">
+    <a class="divLink" href="/Info/"></a>
+    <div class="hp_pic">
+      <img src="/images/more_info.png" style="width:80px;height:95px;" alt="More info" />
+    </div>
+    <div class="hp_title">
+      Want to know more?
+    </div>
+    <div class="hp_text">
+      Research, roadmap, FAQ
+    </div>
+  </div>
+
 
   <div class="homepage_item">
     <a class="divLink" href="/Info/"></a>
