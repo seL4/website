@@ -28,17 +28,17 @@
     <ul>
       <li>
         <strong>
+          9 Feb 2024: Meet the Program Committee of the seL4 summit 2024
+        </strong>
+      </li>
+      <li>
+        <strong>
           29 Jan 2024: seL4 features in the Linux Foundation’s 2023 Annual report
         </strong>
       </li>
       <li>
         <strong>
           22 Dec 2023: HACMS receives Game Changer award from DARPA leadership
-        </strong>
-      </li>
-      <li>
-        <strong>
-          24 Nov 2023: NIO announces seL4-based SkyOS operating system
         </strong>
       </li>
       <li style="margin-top:0.2em;list-style-type:none">
@@ -158,7 +158,7 @@
   </div>
 
   <div class="homepage_item">
-    <a class="divLink" href="/Foundation/Summit/"></a>
+    <a class="divLink" href="/Foundation/Summit/2024/"></a>
     <div class="hp_pic">
       <img src="/images/sel4-summit-logo.svg" style="width:200px" alt="seL4 Summit" />
     </div>

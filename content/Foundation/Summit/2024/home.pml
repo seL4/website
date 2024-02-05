@@ -1,75 +1,97 @@
-<!--<title>News about seL4 and the seL4 Foundation</title>-->
+<!--<title>Summit</title>-->
 <!--
     Copyright 2024 seL4 Project a Series of LF Projects, LLC.
     SPDX-License-Identifier: CC-BY-SA-4.0
 -->
-<div class="row">
- <div class="col">
-  <h1>
-    News about
-    <a href="/">seL4</a>
-    and the
-    <a href="/Foundation">seL4 Foundation</a>
-  </h1>
- </div>
- <div class="col">
-<%
-from os import listdir
-from os.path import isfile, join
-from ertos_config import cfg
-import re
-cfg.read('config.cfg')
-newsdir = cfg.get('core', 'content_dir') + '/news/'
-files =  sorted([f for f in listdir(newsdir) if re.match(r'^20[0-9][0-9]\.pml$', f)])
-reflist = []
-for x in files:
-    link = '/news/' + x[:4]
-    reflist.append('<a href="%s">%s</a>' % (link, x[:4]))
-reflist = ' '.join(reflist)
-%>
-Older News: <%=reflist%>
- </div>
+<h1>
+  seL4 Summit 2024
+</h1>
+<h4>
+  Sydney, Australia
+</h4>
+<h4>
+  October 2024 (dates TBC)
+</h4>
+
+
+<div class="summit_div">
+  <ul>
+    <!--li><a href="#summit-important-dates">Important Dates</a></li-->
+    <li><a href="#summit-about">About</a></li>
+    <li><a href="../principles">Principles</a></li>
+    <!--li><a href="#summit-registration">Registration</a></li-->
+    <li><a href="#summit-location">Location & Venue</a></li>
+    <!--li><a href="cfp">Call for Presentations</a></li>
+    <li><a href="#summit-keynote-speakers">Keynote Speakers</a></li>
+    <li><a href="#summit-panellists">Panellists</a></li>
+    <li><a href="#summit-program">Program, Abstracts, Slides and Videos</a></li-->
+    <li><a class="highlight" href="#summit-news">Latest News: Program Committee</a></li>
+    <!--li><a href="#summit-sponsors">Sponsors</a></li>
+    <li><a href="#summit-contact">Contact</a></li-->
+  </ul>
 </div>
 
-<!--
-<div class="news-item tag-link" id="brief-unique-anchor-name">
-  <a href="#brief-unique-anchor-name"><span class="tag-span"># </span></a> 29 Jan 2021: Raytheon joins the seL4 Foundation
+<div class="summit_div">
+  <a href="../">All summits</a>
 </div>
-<div>
- <p>
 
-   <a href="https://www.rtx.com/">
-     <img src="/Foundation/Membership/LOGOS/raytheontechnologies.svg"
-	  style="width: 20%;  padding-left:10px;  float:right"
-	  alt="Raytheon logo"/>
-   </a>
+<!--div class="summit_div">
+  <h3 id="summit-important-dates">
+    Important Dates
+  </h3>
+  <ul>
+    <li><s>Abstracts due: </s></li>
+    <li><s>Notification of decisions: </s> </li>
+    <li><s>Early bird cut-off: </s></li>
+    <li><strong>Summit: </strong></li>
+  </ul>
+</div-->
 
-    blah blah blah blah blah blah blah blah blah blah blah blah blah
-    blah blah blah blah blah blah blah blah blah blah blah blah blah
-    blah blah blah blah blah blah blah blah blah blah blah blah blah
-    blah blah blah blah blah blah blah blah blah blah blah blah blah
-    blah blah blah blah blah blah blah blah blah blah blah blah blah
-    blah blah blah blah blah blah blah
- </p>
+<div class="summit_div">
+  <h3 id="summit-about">
+    About
+  </h3>
+  <p>
+    The seL4 Summit is the annual international summit on the <a href="../../../About">seL4 microkernel</a>, the world's most highly assured OS kernel, as well as on all seL4-related technology, tools, infrastructure, products, projects, and people.
+  </p>
+  <p>
+    It aims to gather all the seL4 community to learn, share, and connect:
+  </p>
+    <ul>
+      <li>learn about the seL4 technology, its latest progress, use, successes, challenges, plans;</li>
+      <li>share exciting seL4 development, research, experience, application in the real world;</li>
+      <li>connect with other seL4 developers, users, providers, customers, supporters, potential partners and enthusiasts.</li>
+    </ul>
+  <p>
+    The seL4 Summit is organised by the <a href="../../../Foundation">seL4 Foundation</a>, in a location aimed to be on a different continent each year, as far as possible.
+  </p>
+  <p>
+    An open call for presentations invites submissions of short abstracts about cool work on seL4, and a Program Committee made of a wide range of representatives of the seL4 community is in charge of the technical content (reviewing submission, selecting invited speakers, defining the program).
+  </p>
 </div>
--->
 
-<!----------------------------------------------------------->
-<div class="news-item tag-link" id="summit-2024-pc">
-  <a href="#summit-2024-pc"><span class="tag-span"># </span></a>
-  9 February 2024: Meet the Program Committee of the seL4 summit 2024
+
+<div class="summit_div">
+  <h3 id="summit-location">
+    Location & Venue
+  </h3>
+  <p>
+    The seL4 Summit 2024 will be held in Sydney, Australia in October 2024 (date and venue TBC). The summit is being organised by the <a href="https://events.linuxfoundation.org/">Linux Foundation</a>.
+  </p>
 </div>
-<div>
-    <a href = "../Foundation/Summit/2024">
-    <img src="/images/sel4-summit-logo.svg"
-    style="width: 15%; float:right"
-    alt="seL4 summit" />
-    </a>
-    <p>
-      We are thrilled to announce our program committee for the <a href="../Foundation/Summit/2024">seL4 Summit 2024</a>.
-      Our awesome team comes from various parts of the seL4 ecosystem: users, contributors, committers, experts, advocates, researchers, and engineers.
-    </p>
-    <div class="people_grid">
+
+<div class="summit_div">
+  <div class="highlight">
+    <h3 id="summit-news">
+      Latest News: Program Committee
+    </h3>
+  </div>
+
+  <p>
+    Our awesome team comes from various parts of the seL4 ecosystem: users, contributors, committers, experts, advocates, researchers, and engineers.
+  </p>
+</div>
+<div class="people_grid">
   <div class="person">
     <div class="person_pic">
       <a href="http://www.ikuz.org"><img src="../../../images/tsc/ihor.jpg" alt="Ihor Kuz" width="80" /></a>
@@ -148,7 +170,7 @@ Older News: <%=reflist%>
 
   <div class="person">
     <div class="person_pic">
-      <a href="https://trustworthy.systems/people/?cn=Gernot+Heiser"><img src="../Foundation/Board/TS-Gernot-s.jpg" alt="Gernot Heiser" width="80"/></a>
+      <a href="https://trustworthy.systems/people/?cn=Gernot+Heiser"><img src="../../Board/TS-Gernot-s.jpg" alt="Gernot Heiser" width="80"/></a>
     </div>
     <div class="person_title">
       <strong><a href="https://trustworthy.systems/people/?cn=Gernot+Heiser">Gernot Heiser</a></strong>
@@ -233,20 +255,12 @@ Older News: <%=reflist%>
   </div>
 </div>
 
-</div>
 
-
-<!----------------------------------------------------------->
-<div class="news-item tag-link" id="lf-annual-report">
-  <a href="#lf-annual-report"><span class="tag-span"># </span></a>
-  29 January 2024: seL4 features in the Linux Foundation’s 2023 Annual report
-</div>
-<div style="margin: auto; width: 100%;text-align:center">
-    <a href = "https://www.linuxfoundation.org/hubfs/Reports/2023_lf_annual_report_122123a.pdf?hsLang=en">
-    <img src="/images/lf-annual-report-2023.png"
-    style="width: 70%;"
-    alt="LF annual report" />
-    </a>
-</div>
-<div class="news-finish">
+<div class="summit_div">
+  <h3 id="summit-contact">
+    Contact
+  </h3>
+  <p>
+    For any questions regarding the summit, please contact <a title="summit@sel4.systems" href="mailto:summit@sel4.systems">summit@sel4.systems</a>.
+  </p>
 </div>
