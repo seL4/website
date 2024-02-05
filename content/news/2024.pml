@@ -110,12 +110,12 @@ Older News: <%=reflist%>
     </div>
   </div>
 
-  <div class="person_no_link">
+  <div class="person">
     <div class="person_pic">
-      <img src="../../../images/summit/alison.jpg" alt="Alison Felizzi" width="80"/>
+    <a href="https://www.linkedin.com/in/alison-felizzi-991244189"><img src="../../../images/summit/alison.jpg" alt="Alison Felizzi" width="80"/></a>
     </div>
     <div class="person_title">
-      <strong>Alison Felizzi</strong>
+      <strong><a href="https://www.linkedin.com/in/alison-felizzi-991244189">Alison Felizzi</a></strong>
     </div>
     <div class="person_affiliation">
       Kry10
