@@ -91,7 +91,7 @@
   <p>
     Our awesome team comes from various parts of the seL4 ecosystem: users, contributors, committers, experts, advocates, researchers, and engineers.
   </p>
-</div>
+
 <div class="people_grid">
   <div class="person">
     <div class="person_pic">
