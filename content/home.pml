@@ -28,7 +28,7 @@
     <ul>
       <li>
         <strong>
-          9 Feb 2024: Meet the Program Committee of the seL4 summit 2024
+          9 Feb 2024: The seL4 summit 2024 will be held in Sydney, Australia
         </strong>
       </li>
       <li>
