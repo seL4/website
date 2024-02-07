@@ -196,10 +196,10 @@
 
   <div class="person">
     <div class="person_pic">
-      <a href="https://www.cs.ksu.edu/about/people/faculty/hatcliff/"><img src="../../../images/summit/john.jpg" alt="John Hatcliff" width="80"/></a>
+      <a href="http://people.cs.ksu.edu/~hatcliff"><img src="../../../images/summit/john.jpg" alt="John Hatcliff" width="80"/></a>
     </div>
     <div class="person_title">
-      <strong><a href="https://www.cs.ksu.edu/about/people/faculty/hatcliff/">John Hatcliff</a></strong>
+      <strong><a href="http://people.cs.ksu.edu/~hatcliff">John Hatcliff</a></strong>
     </div>
     <div class="person_affiliation">
       KSU

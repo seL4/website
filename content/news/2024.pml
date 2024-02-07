@@ -122,7 +122,7 @@ Older News: <%=reflist%>
     </div>
   </div>
 
-<div class="person">
+  <div class="person">
     <div class="person_pic">
       <a href="https://loonwerks.com/people/david-hardin.html"><img src="../../../images/summit/RTX-David.png" alt="David Hardin" width="80"/></a>
     </div>
@@ -172,10 +172,10 @@ Older News: <%=reflist%>
 
   <div class="person">
     <div class="person_pic">
-      <a href="https://www.cs.ksu.edu/about/people/faculty/hatcliff/"><img src="../../../images/summit/john.jpg" alt="John Hatcliff" width="80"/></a>
+      <a href="http://people.cs.ksu.edu/~hatcliff"><img src="../../../images/summit/john.jpg" alt="John Hatcliff" width="80"/></a>
     </div>
     <div class="person_title">
-      <strong><a href="https://www.cs.ksu.edu/about/people/faculty/hatcliff/">John Hatcliff</a></strong>
+      <strong><a href="http://people.cs.ksu.edu/~hatcliff">John Hatcliff</a></strong>
     </div>
     <div class="person_affiliation">
       KSU
@@ -259,6 +259,33 @@ Older News: <%=reflist%>
     <img src="/images/summit/sydney-harbour.jpg" alt="Sydney Harbour" />
   </div>
 </div>
+
+<!----------------------------------------------------------->
+<div class="news-item tag-link" id="summit-2024-location">
+  <a href="#summit-2024-location"><span class="tag-span"># </span></a>
+  9 February 2024: The seL4 summit 2024 will be held in Sydney, Australia
+</div>
+<div>
+    <a href = "../Foundation/Summit/2024">
+    <img src="/images/sel4-summit-logo.svg"
+    style="width: 15%; float:right"
+    alt="seL4 summit" />
+    </a>
+    <p>
+      It is our pleasure to confirm that the seL4 Summit 2024 will be in:
+    </p>
+    <p class="highlight">
+      Sydney, Australia, Oct 2024 (dates TBC).
+    </p>
+    <p>
+      The summit will be hosted by the <a href="https://events.linuxfoundation.org/">Linux Foundation</a> and will be an in-person event.
+    </p>
+    <p>
+      We will announce a Call for Presentations in the coming weeks. Stay tuned!
+    </p>
+</div>
+
+
 
 
 <!----------------------------------------------------------->
