@@ -380,7 +380,7 @@ Older News: <%=reflist%>
 
    On 6 August <a href="https://www.darpa.mil">DARPA</a> brought the
    &ldquo;SMACCMcopter&rdquo;
-   to <a href="https://defcon.org/html/defcon-29/dc-29-index.html">DEF&nbsp;CON</a>
+   to <a href="https://defcon.org">DEF&nbsp;CON</a>
    and invited the assembled hacker elite to attack it. The
    SMACCMcopter was the <em>research vehicle</em> of the Air Team at
    DARPA's <a href="https://www.darpa.mil/program/high-assurance-cyber-military-systems">HACMS</a>
@@ -1174,7 +1174,7 @@ Older News: <%=reflist%>
    <a href="https://riscv.org">RISC-V International</a> announced that the
    verified seL4 microkernel on the RV64 architecture has been proved
    down to the executable code
-   by <a href="https://data61.csiro.au">CSIRO’s Data61</a>, thanks to
+   by CSIRO’s Data61, thanks to
    funding provided by <a href="https://hensoldt-cyber.com">HENSOLDT
    Cyber GmbH</a>. This guarantees that the seL4 microkernel on RV64
    will operate to specification even when built with an untrusted C
