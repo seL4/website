@@ -31,7 +31,7 @@
 </div>
 
 <div class="summit_div">
-  <a href="../">All summits</a>
+  All summits: <a href="../2022">2022</a> <a href="../2023">2023</a> <a href="../2024">2024</a>
 </div>
 
 <div class="summit_div">
@@ -288,7 +288,7 @@
 
   <div class="person">
     <div class="person_pic">
-      <a href="https://en.wikipedia.org/wiki/John_Launchbury"><img src="../../../images/summit/john.jpg" alt="John Launchbury" width="80"/></a>
+      <a href="https://en.wikipedia.org/wiki/John_Launchbury"><img src="../../../images/summit/john-l.jpg" alt="John Launchbury" width="80"/></a>
     </div>
     <div class="person_title">
       <strong><a class="list_link" href="https://en.wikipedia.org/wiki/John_Launchbury">John Launchbury</a></strong>

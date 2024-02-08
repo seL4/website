@@ -31,7 +31,7 @@ Minneapolis, USA
 </div>
 
 <div class="summit_div">
-  <a href="../">All summits</a>
+  All summits: <a href="../2022">2022</a> <a href="../2023">2023</a> <a href="../2024">2024</a>
 </div>
 
 <!--div class="summit_div">

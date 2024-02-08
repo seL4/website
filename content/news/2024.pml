@@ -61,18 +61,18 @@ Older News: <%=reflist%>
 </div>
 <div>
     <a href = "../Foundation/Summit/2024">
-    <img src="/images/sel4-summit-logo.svg"
+    <img src="/images/summit/sel4_summit_2024.svg"
     style="width: 15%; float:right"
     alt="seL4 summit" />
     </a>
     <p>
-      It is our pleasure to confirm that the seL4 Summit 2024 will be in:
+      It is our pleasure to confirm that the <a href="../Foundation/Summit/2024">seL4 Summit 2024</a> will be in:
     </p>
     <p class="highlight">
       Sydney, Australia, Oct 2024 (dates TBC).
     </p>
     <p>
-      The summit will be hosted by the <a href="https://events.linuxfoundation.org/">Linux Foundation</a> and will be an in-person event.
+      We look forward to welcoming the community in the birthplace of seL4.
     </p>
     <p>
       We will announce a Call for Presentations in the coming weeks. Stay tuned!

@@ -18,7 +18,6 @@
   <ul>
     <!--li><a href="#summit-important-dates">Important Dates</a></li-->
     <li><a href="#summit-about">About</a></li>
-    <li><a href="../principles">Principles</a></li>
     <!--li><a href="#summit-registration">Registration</a></li-->
     <li><a class="highlight" href="#latest-news">Latest News: Location & Venue</a></li>
     <!--li><a href="cfp">Call for Presentations</a></li>
@@ -32,7 +31,7 @@
 </div>
 
 <div class="summit_div">
-  <a href="../">All summits</a>
+  All summits: <a href="../2022">2022</a> <a href="../2023">2023</a> <a href="../2024">2024</a>
 </div>
 
 <!--div class="summit_div">
@@ -63,7 +62,7 @@
       <li>connect with other seL4 developers, users, providers, customers, supporters, potential partners and enthusiasts.</li>
     </ul>
   <p>
-    The seL4 Summit is organised by the <a href="../../../Foundation">seL4 Foundation</a>, in a location aimed to be on a different continent each year, as far as possible.
+    The seL4 Summit is organised by the <a href="../../../Foundation">seL4 Foundation</a>, aiming for a location on a different continent each year, to the extent possible.
   </p>
   <p>
     An open call for presentations invites submissions of short abstracts about cool work on seL4, and a Program Committee made of a wide range of representatives of the seL4 community is in charge of the technical content (reviewing submission, selecting invited speakers, defining the program).
@@ -78,7 +77,7 @@
     </h3>
   </div>
   <p>
-    The seL4 Summit 2024 will be held in Sydney, Australia in October 2024 (date and venue TBC). The summit is being organised by the <a href="https://events.linuxfoundation.org/">Linux Foundation</a>.
+    The seL4 Summit 2024 will be held in Sydney, Australia in October 2024 (date and venue TBC).
   </p>
 </div>
 
