@@ -33,22 +33,7 @@
     <meta name="msapplication-square310x310logo" content="/images/icons/mstile-310x310.png" />
     <link rel="shortcut icon" href="/images/icons/favicon.ico" />
 {% if jekyll.environment == "production" %}
-    <script type="text/javascript">
-      var _gaq = _gaq || [];
-      _gaq.push(['_setAccount', '{{ site.google_analytics }}']);
-      _gaq.push(['_trackPageview']);
-
-      (function() {
-          var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
-          ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
-          var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
-      })();
-
-    </script>
-{% endif %}
-
-{% if page.user_head_content %}
-	{{ page.user_head_content | markdownify }} <!-- iz: TODO: Check if markdownify is necessary -->
+    <script defer data-domain="sel4.systems" src="https://analytics.sel4.systems/js/script.js"></script>
 {% endif %}
   </head>
   <body>
