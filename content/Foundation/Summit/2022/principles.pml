@@ -1,17 +1,11 @@
 <!--<title>Principles</title>-->
 <!--
-    Copyright 2022 seL4 Project a Series of LF Projects, LLC.
+    Copyright 2023 seL4 Project a Series of LF Projects, LLC.
     SPDX-License-Identifier: CC-BY-SA-4.0
 -->
 <h1>
-  seL4 Summit 2022
+  seL4 Summit
 </h1>
-<h4>
-  Munich, Germany (hybrid)
-</h4>
-<h4>
-  10-13 Oct 2022
-</h4>
 
 <h3>
    Principles

@@ -55,6 +55,35 @@ Older News: <%=reflist%>
 -->
 
 <!----------------------------------------------------------->
+<div class="news-item tag-link" id="summit-2024-location">
+  <a href="#summit-2024-location"><span class="tag-span"># </span></a>
+  9 February 2024: The seL4 summit 2024 will be held in Sydney, Australia
+</div>
+<div>
+    <a href = "../Foundation/Summit/2024">
+    <img src="/images/summit/sel4_summit_2024.svg"
+    style="width: 15%; float:right"
+    alt="seL4 summit" />
+    </a>
+    <p>
+      It is our pleasure to confirm that the <a href="../Foundation/Summit/2024">seL4 Summit 2024</a> will be in:
+    </p>
+    <p class="highlight">
+      Sydney, Australia, Oct 2024 (dates TBC).
+    </p>
+    <p>
+      We look forward to welcoming the community in the birthplace of seL4.
+    </p>
+    <p>
+      We will announce a Call for Presentations in the coming weeks. Stay tuned!
+    </p>
+    <div style="margin: auto; width: 100%;text-align:center">
+      <img src="/images/summit/sydney-harbour.jpg" alt="Sydney Harbour" />
+    </div>
+</div>
+
+
+<!----------------------------------------------------------->
 <div class="news-item tag-link" id="lf-annual-report">
   <a href="#lf-annual-report"><span class="tag-span"># </span></a>
   29 January 2024: seL4 features in the Linux Foundation’s 2023 Annual report

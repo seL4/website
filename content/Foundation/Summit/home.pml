@@ -17,6 +17,11 @@
 <div class="homepage_grid">
 
   <div class="homepage_item summit_item">
+    <a class="divLink" href="2024"></a>
+      <img src="../../images/summit/sel4_summit_2024.svg" style="width:350px;" alt="seL4 summit 2024" />
+  </div>
+
+  <div class="homepage_item summit_item">
     <a class="divLink" href="2023"></a>
       <img src="../../images/summit/sel4_summit_2023.svg" style="width:350px;" alt="seL4 summit 2023" />
   </div>

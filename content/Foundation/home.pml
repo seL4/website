@@ -67,7 +67,7 @@
     </li>
     <li>
       <a title="seL4 Summit"
-          href="Summit">The seL4 Summit</a>
+          href="Summit/2024">The seL4 Summit</a>
     </li>
     <li>
       <a title="Supporting next big steps for the seL4 project"

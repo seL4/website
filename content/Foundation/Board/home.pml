@@ -101,7 +101,7 @@
   <div class="governing-item-heading">
     <strong><a class="list_link"
     href="">David
-    Hardin</a></strong> <span class="person_title_col"><em>Associate Director, <a href="https://galois.com/">Raytheon Technologies</a></em></span>
+    Hardin</a></strong> <span class="person_title_col"><em>Associate Director, <a href="https://loonwerks.com/people/david-hardin.html">Raytheon Technologies</a></em></span>
   </div>
   <!--
   https://www.linkedin.com/in/david-hardin-385a917/
