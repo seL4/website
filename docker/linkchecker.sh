@@ -29,6 +29,7 @@ linkchecker \
     --ignore-url="https://nio.com" \
     --ignore-url="https://lixiang.com" \
     --ignore-url="https://www.rtx.com" \
+    --ignore-url="https://defcon.org/html/defcon-29/dc-29-index.html" \
     --check-extern \
     --output html \
     "$OUTPUT_SNAPSHOT_DIR"/localhost/index.html > $OUTPUT_DIR/linkchecker.html \

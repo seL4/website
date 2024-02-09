@@ -380,7 +380,7 @@ Older News: <%=reflist%>
 
    On 6 August <a href="https://www.darpa.mil">DARPA</a> brought the
    &ldquo;SMACCMcopter&rdquo;
-   to <a href="https://loonwerks.com/publications/cofer2021defcon.html">DEF&nbsp;CON</a>
+   to <a href="https://defcon.org/html/defcon-29/dc-29-index.html">DEF&nbsp;CON</a>
    and invited the assembled hacker elite to attack it. The
    SMACCMcopter was the <em>research vehicle</em> of the Air Team at
    DARPA's <a href="https://www.darpa.mil/program/high-assurance-cyber-military-systems">HACMS</a>
