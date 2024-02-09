@@ -77,6 +77,9 @@ Older News: <%=reflist%>
     <p>
       We will announce a Call for Presentations in the coming weeks. Stay tuned!
     </p>
+    <div style="margin: auto; width: 100%;text-align:center">
+      <img src="/images/summit/sydney-harbour.jpg" alt="Sydney Harbour" />
+    </div>
 </div>
 
 
