@@ -28,7 +28,7 @@
     <ul>
       <li>
         <strong>
-          12 Feb 2024: Meet the Program Committee of the seL4 summit 2024
+          14 Feb 2024: Meet the Program Committee of the seL4 summit 2024
         </strong>
       </li>
       <li>

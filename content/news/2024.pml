@@ -57,7 +57,7 @@ Older News: <%=reflist%>
 <!----------------------------------------------------------->
 <div class="news-item tag-link" id="summit-2024-pc">
   <a href="#summit-2024-pc"><span class="tag-span"># </span></a>
-  12 February 2024: Meet the Program Committee of the seL4 summit 2024
+  14 February 2024: Meet the Program Committee of the seL4 summit 2024
 </div>
 <div>
     <a href = "../Foundation/Summit/2024">
