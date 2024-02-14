@@ -28,17 +28,17 @@
     <ul>
       <li>
         <strong>
+          14 Feb 2024: Meet the Program Committee of the seL4 summit 2024
+        </strong>
+      </li>
+      <li>
+        <strong>
           9 Feb 2024: The seL4 summit 2024 will be held in Sydney, Australia
         </strong>
       </li>
       <li>
         <strong>
           29 Jan 2024: seL4 features in the Linux Foundation’s 2023 Annual report
-        </strong>
-      </li>
-      <li>
-        <strong>
-          22 Dec 2023: HACMS receives Game Changer award from DARPA leadership
         </strong>
       </li>
       <li style="margin-top:0.2em;list-style-type:none">
@@ -182,6 +182,20 @@
        Contributing code, documentation, proofs
     </div>
   </div>
+
+  <div class="homepage_item">
+    <a class="divLink" href="/Info/"></a>
+    <div class="hp_pic">
+      <img src="/images/more_info.png" style="width:80px;height:95px;" alt="More info" />
+    </div>
+    <div class="hp_title">
+      Want to know more?
+    </div>
+    <div class="hp_text">
+      Research, roadmap, FAQ
+    </div>
+  </div>
+
 
   <div class="homepage_item">
     <a class="divLink" href="/Info/"></a>
