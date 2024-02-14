@@ -196,18 +196,4 @@
     </div>
   </div>
 
-
-  <div class="homepage_item">
-    <a class="divLink" href="/Info/"></a>
-    <div class="hp_pic">
-      <img src="/images/more_info.png" style="width:80px;height:95px;" alt="More info" />
-    </div>
-    <div class="hp_title">
-      Want to know more?
-    </div>
-    <div class="hp_text">
-      Research, roadmap, FAQ
-    </div>
-  </div>
-
 </div>
