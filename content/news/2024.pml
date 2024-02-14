@@ -62,7 +62,7 @@ Older News: <%=reflist%>
 </div>
 <div>
   <a href = "../Foundation/Summit/2024">
-    <img src="/images/sel4_summit_2024.svg"
+    <img src="/images/summit/sel4_summit_2024.svg"
     style="width: 15%; float:right"
     alt="seL4 summit" />
   </a>
