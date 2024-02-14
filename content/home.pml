@@ -28,17 +28,17 @@
     <ul>
       <li>
         <strong>
+          19 Feb 2024: Call For Presentations for the seL4 Summit 2024
+        </strong>
+      </li>
+      <li>
+        <strong>
           14 Feb 2024: Meet the Program Committee of the seL4 summit 2024
         </strong>
       </li>
       <li>
         <strong>
           9 Feb 2024: The seL4 summit 2024 will be held in Sydney, Australia
-        </strong>
-      </li>
-      <li>
-        <strong>
-          29 Jan 2024: seL4 features in the Linux Foundation’s 2023 Annual report
         </strong>
       </li>
       <li style="margin-top:0.2em;list-style-type:none">

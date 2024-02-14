@@ -20,11 +20,11 @@
     <li><a href="#summit-about">About</a></li>
     <!--li><a href="#summit-registration">Registration</a></li-->
     <li><a href="#summit-location">Location & Venue</a></li>
-    <!--li><a href="cfp">Call for Presentations</a></li>
-    <li><a href="#summit-keynote-speakers">Keynote Speakers</a></li>
+    <li><a class="highlight" href="cfp">Latest News: Call for Presentations</a></li>
+    <!--li><a href="#summit-keynote-speakers">Keynote Speakers</a></li>
     <li><a href="#summit-panellists">Panellists</a></li>
     <li><a href="#summit-program">Program, Abstracts, Slides and Videos</a></li-->
-    <li><a class="highlight" href="#summit-news">Latest News: Program Committee</a></li>
+    <li><a href="#summit-pc">Program Committee</a></li>
     <!--li><a href="#summit-sponsors">Sponsors</a></li>
     <li><a href="#summit-contact">Contact</a></li-->
   </ul>
@@ -34,17 +34,17 @@
   All summits: <a href="../2022">2022</a> <a href="../2023">2023</a> <a href="../2024">2024</a>
 </div>
 
-<!--div class="summit_div">
-  <h3 id="summit-important-dates">
-    Important Dates
+<div>
+  <h3>
+   Important Dates:
   </h3>
   <ul>
-    <li><s>Abstracts due: </s></li>
-    <li><s>Notification of decisions: </s> </li>
-    <li><s>Early bird cut-off: </s></li>
-    <li><strong>Summit: </strong></li>
+   <li><strong>Abstracts due: 22 April 2024</strong></li>
+   <li>Notification of decisions: 7 June 2024 </li>
+   <!--li>Early bird cut-off: </s></li-->
+    <li>Summit: October 2024 (date TBC)</li>
   </ul>
-</div-->
+</div>
 
 <div class="summit_div">
   <h3 id="summit-about">
@@ -80,11 +80,9 @@
 </div>
 
 <div class="summit_div">
-  <div class="highlight">
-    <h3 id="summit-news">
-      Latest News: Program Committee
-    </h3>
-  </div>
+  <h3 id="summit-pc">
+    Latest News: Program Committee
+  </h3>
 
   <p>
     Our awesome team comes from various parts of the seL4 ecosystem: users, contributors, committers, experts, advocates, researchers, and engineers.

@@ -54,6 +54,32 @@ Older News: <%=reflist%>
 </div>
 -->
 
+
+<!----------------------------------------------------------->
+<div class="news-item tag-link" id="summit-2024-cfp">
+  <a href="#summit-2024-cfp"><span class="tag-span"># </span></a>
+  19 February 2024: <a href="../Foundation/Summit/2024/cfp">Call For Presentations</a> for the <a href="../Foundation/Summit/2024">seL4 Summit 2024</a>
+</div>
+<div>
+  <a href = "../Foundation/Summit/2024">
+    <img src="/images/sel4_summit_2024.svg"
+    style="width: 15%; float:right"
+    alt="seL4 summit" />
+  </a>
+  <h3 class="highlight">
+   <a href="../Foundation/Summit/2024/cfp">Call For Presentations</a> for the <a href="../Foundation/Summit/2024">seL4 Summit 2024</a>
+  </h3>
+  <ul>
+  <li>Share your seL4 work</li>
+  <li>Share your seL4 experience</li>
+  <li>Share your seL4 thoughts</li>
+  </ul>
+  <p>
+    Check the full <a href="../Foundation/Summit/2024/cfp">Call For Presentations</a>. To propose a talk, upload an abstract of one page or less by <strong>10 April 2023</strong> to the <strong><a href="../Foundation/Summit/2023/submit">submission portal</a></strong>.
+  </p>
+</div>
+
+
 <!----------------------------------------------------------->
 <div class="news-item tag-link" id="summit-2024-pc">
   <a href="#summit-2024-pc"><span class="tag-span"># </span></a>
