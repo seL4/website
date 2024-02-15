@@ -75,7 +75,10 @@ Older News: <%=reflist%>
   <li>Share your seL4 thoughts</li>
   </ul>
   <p>
-    Check the full <a href="../Foundation/Summit/2024/cfp">Call For Presentations</a>. To propose a talk, upload an abstract of one page or less by <strong>10 April 2023</strong> to the <strong><a href="../Foundation/Summit/2023/submit">submission portal</a></strong>.
+    Check the full <a href="../Foundation/Summit/2024/cfp">Call For Presentations</a>. To propose a talk, upload an abstract of one page or less by <strong>22 April 2024</strong> to the <strong><a href="../Foundation/Summit/2024/submit">submission portal</a></strong>.
+  </p>
+  <p>
+    Also note the <a href="../Foundation/Summit/2024/cfp#sel4-deployment">open invitation for a 5-minute slot to talk about your seL4 deployment.</a>
   </p>
 </div>
 

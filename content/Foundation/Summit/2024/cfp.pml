@@ -198,18 +198,18 @@ We solicit proposals on any seL4-related topic, in particular in the areas of:
 </div>
 
 <div>
-    <h3>
-        Free 5-min slot to talk about seL4 deployment!
+    <h3 id="sel4-deployment">
+        Open invitation for a 5-minute slot to talk about your seL4 deployment
     </h3>
     <p>
-    The community would love to hear about deployment of seL4. So if you:
+      The community loves to hear about the deployment of seL4. So, if you:
     </p>
     <ol type="a">
-        <li>are selling an end-user product with seL4 embedded, or</li>
-        <li>have integrated an seL4-based system/component into a deployed system,</li>
+      <li>are selling an end-user product that has seL4 embedded within, or </li>
+      <li>have integrated an seL4-based system/component into a deployed system, </li>
     </ol>
     <p>
-        you get a 5-min slot at the summit to talk about it! Simply send a short description by email at <a title="summit@sel4.systems" href="mailto:summit@sel4.systems">summit@sel4.systems</a> by 22 April 2024.
+      you are welcome to a 5-min slot at the summit to talk about it, regardless of whether you are submitting an abstract for a full presentation! Simply send a short description by email to <a title="summit@sel4.systems" href="mailto:summit@sel4.systems">summit@sel4.systems</a> by <strong>22 April 2024</strong>.
     </p>
 </div>
 

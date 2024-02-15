@@ -20,7 +20,7 @@
     <li><a href="#summit-about">About</a></li>
     <!--li><a href="#summit-registration">Registration</a></li-->
     <li><a href="#summit-location">Location & Venue</a></li>
-    <li><a class="highlight" href="cfp">Latest News: Call for Presentations</a></li>
+    <li><a class="highlight" href="#summit-cfp">Latest News: Submissions and Call for Presentations</a></li>
     <!--li><a href="#summit-keynote-speakers">Keynote Speakers</a></li>
     <li><a href="#summit-panellists">Panellists</a></li>
     <li><a href="#summit-program">Program, Abstracts, Slides and Videos</a></li-->
@@ -79,9 +79,20 @@
   </p>
 </div>
 
+
+<div class="summit_div">
+  <h3 id="summit-cfp">
+    Submissions and Call for Presentations
+  </h3>
+  <p>
+    Share your seL4 work, experience and thoughts at the seL4 summit 2024 in Sydney by submitting a presentation proposal by the 22 of April 2024. Find all the submission information in the <a href="cfp">Call for Presentations</a>.
+  </p>
+</div>
+
+
 <div class="summit_div">
   <h3 id="summit-pc">
-    Latest News: Program Committee
+    Program Committee
   </h3>
 
   <p>
