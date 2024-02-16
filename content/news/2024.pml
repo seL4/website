@@ -161,7 +161,7 @@ Older News: <%=reflist%>
 
     <div class="person_no_link">
       <div class="person_pic">
-        <img src="../../../images/summit/person-pc.svg" alt="Indan Zupancic" width="80"/>
+        <img src="../../../images/summit/indan.jpg" alt="Indan Zupancic" width="80"/>
       </div>
       <div class="person_title">
         <strong>Indan Zupancic</strong>
