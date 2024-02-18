@@ -192,7 +192,7 @@ We solicit proposals on any seL4-related topic, in particular in the areas of:
 
   </p>
   <p>
-    If you'd love to hear about some specific work from other people in the community, we encourage you to reach out to them to incite them to submit a proposal :-) else you can also let us know at <a title="summit@sel4.systems"   href="mailto:summit@sel4.systems">summit@sel4.systems</a>.
+    If you'd love to hear about some specific work from other people in the community, we encourage you to reach out to them to incite them to submit a proposal. :-) Alternatively, let us know at <a title="summit@sel4.systems"   href="mailto:summit@sel4.systems">summit@sel4.systems</a>.
   </p>
 
 </div>

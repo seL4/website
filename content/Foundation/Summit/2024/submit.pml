@@ -30,9 +30,6 @@ October 2024 (date TBC)
   </p>
 </div>
 
-<div class="highlight">
-    <p>
-        The jotform submission portal will be embedded here.
-    </p>
+<div>
+  <script type="text/javascript" src="https://form.jotform.com/jsform/240440439332853"></script>
 </div>
-<!--script type="text/javascript" src="https://form.jotform.com/jsform/230467570792059"></script-->
