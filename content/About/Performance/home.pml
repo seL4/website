@@ -32,66 +32,66 @@ priority (255) process in a different address space</li>
     <td class="data-table-right">32</td>
     <td>A9/i.MX6/Sabre</td>
     <td class="data-table-right">1.0 GHz</td>
-    <td class="data-mean">569</td>
-    <td class="data-stddev">(11)</td>
-    <td class="data-mean">317</td>
+    <td class="data-mean">568</td>
+    <td class="data-stddev">(12)</td>
+    <td class="data-mean">316</td>
     <td class="data-stddev">(2)</td>
     <td class="data-mean">336</td>
-    <td class="data-stddev">(2)</td>
-    <td class="data-mean">816</td>
-    <td class="data-stddev">(9)</td>
+    <td class="data-stddev">(3)</td>
+    <td class="data-mean">809</td>
+    <td class="data-stddev">(7)</td>
   </tr>  <tr>
     <td>x86_64</td>
     <td class="data-table-right">64</td>
     <td>i7-4770/Haswell</td>
     <td class="data-table-right">3.4 GHz</td>
-    <td class="data-mean">1643</td>
-    <td class="data-stddev">(269)</td>
-    <td class="data-mean">581</td>
-    <td class="data-stddev">(12)</td>
-    <td class="data-mean">593</td>
+    <td class="data-mean">1635</td>
+    <td class="data-stddev">(247)</td>
+    <td class="data-mean">586</td>
     <td class="data-stddev">(13)</td>
-    <td class="data-mean">1336</td>
-    <td class="data-stddev">(71)</td>
+    <td class="data-mean">590</td>
+    <td class="data-stddev">(12)</td>
+    <td class="data-mean">1252</td>
+    <td class="data-stddev">(73)</td>
   </tr>  <tr>
     <td>x86_64</td>
     <td class="data-table-right">64</td>
     <td>i7-6700/Skylake (without meltdown mitigation)</td>
     <td class="data-table-right">3.4 GHz</td>
-    <td class="data-mean">1207</td>
-    <td class="data-stddev">(191)</td>
-    <td class="data-mean">382</td>
-    <td class="data-stddev">(3)</td>
-    <td class="data-mean">389</td>
+    <td class="data-mean">1201</td>
+    <td class="data-stddev">(212)</td>
+    <td class="data-mean">381</td>
     <td class="data-stddev">(2)</td>
-    <td class="data-mean">767</td>
+    <td class="data-mean">390</td>
+    <td class="data-stddev">(3)</td>
+    <td class="data-mean">766</td>
     <td class="data-stddev">(82)</td>
   </tr>  <tr>
     <td>Armv8a</td>
     <td class="data-table-right">64</td>
     <td>A57/Tx1/Jetson</td>
     <td class="data-table-right">1.9 GHz</td>
-    <td class="data-mean">666</td>
+    <td class="data-mean">667</td>
     <td class="data-stddev">(38)</td>
-    <td class="data-mean">405</td>
-    <td class="data-stddev">(7)</td>
-    <td class="data-mean">415</td>
-    <td class="data-stddev">(1)</td>
-    <td class="data-mean">938</td>
-    <td class="data-stddev">(9)</td>
+    <td class="data-mean">403</td>
+    <td class="data-stddev">(5)</td>
+    <td class="data-mean">420</td>
+    <td class="data-stddev">(15)</td>
+    <td class="data-mean">970</td>
+    <td class="data-stddev">(10)</td>
   </tr>  <tr>
     <td>RV64IMAC</td>
     <td class="data-table-right">64</td>
     <td>U54-MC/SiFive Freedom U540/Hifive</td>
     <td class="data-table-right">1.5 GHz</td>
-    <td class="data-mean">983</td>
-    <td class="data-stddev">(74)</td>
-    <td class="data-mean">492</td>
-    <td class="data-stddev">(88)</td>
+    <td class="data-mean">970</td>
+    <td class="data-stddev">(25)</td>
+    <td class="data-mean">474</td>
+    <td class="data-stddev">(12)</td>
     <td class="data-mean">628</td>
-    <td class="data-stddev">(8)</td>
-    <td class="data-mean">1376</td>
-    <td class="data-stddev">(57)</td>
+    <td class="data-stddev">(7)</td>
+    <td class="data-mean">1372</td>
+    <td class="data-stddev">(52)</td>
   </tr></table>
 
 <h2>MCS</h2>
@@ -110,66 +110,66 @@ priority (255) process in a different address space</li>
     <td class="data-table-right">32</td>
     <td>A9/i.MX6/Sabre</td>
     <td class="data-table-right">1.0 GHz</td>
-    <td class="data-mean">821</td>
-    <td class="data-stddev">(18)</td>
+    <td class="data-mean">823</td>
+    <td class="data-stddev">(19)</td>
     <td class="data-mean">323</td>
     <td class="data-stddev">(3)</td>
-    <td class="data-mean">363</td>
+    <td class="data-mean">362</td>
     <td class="data-stddev">(3)</td>
-    <td class="data-mean">1208</td>
-    <td class="data-stddev">(14)</td>
+    <td class="data-mean">1204</td>
+    <td class="data-stddev">(16)</td>
   </tr>  <tr>
     <td>x86_64</td>
     <td class="data-table-right">64</td>
     <td>i7-4770/Haswell</td>
     <td class="data-table-right">3.4 GHz</td>
-    <td class="data-mean">2011</td>
-    <td class="data-stddev">(429)</td>
-    <td class="data-mean">599</td>
-    <td class="data-stddev">(17)</td>
-    <td class="data-mean">597</td>
+    <td class="data-mean">2043</td>
+    <td class="data-stddev">(431)</td>
+    <td class="data-mean">592</td>
+    <td class="data-stddev">(21)</td>
+    <td class="data-mean">593</td>
     <td class="data-stddev">(13)</td>
     <td class="data-mean">1595</td>
-    <td class="data-stddev">(14)</td>
+    <td class="data-stddev">(12)</td>
   </tr>  <tr>
     <td>x86_64</td>
     <td class="data-table-right">64</td>
     <td>i7-6700/Skylake (without meltdown mitigation)</td>
     <td class="data-table-right">3.4 GHz</td>
-    <td class="data-mean">1731</td>
-    <td class="data-stddev">(337)</td>
-    <td class="data-mean">389</td>
-    <td class="data-stddev">(2)</td>
-    <td class="data-mean">409</td>
-    <td class="data-stddev">(4)</td>
+    <td class="data-mean">1665</td>
+    <td class="data-stddev">(342)</td>
+    <td class="data-mean">387</td>
+    <td class="data-stddev">(3)</td>
+    <td class="data-mean">408</td>
+    <td class="data-stddev">(5)</td>
     <td class="data-mean">1065</td>
-    <td class="data-stddev">(8)</td>
+    <td class="data-stddev">(9)</td>
   </tr>  <tr>
     <td>Armv8a</td>
     <td class="data-table-right">64</td>
     <td>A57/Tx1/Jetson</td>
     <td class="data-table-right">1.9 GHz</td>
-    <td class="data-mean">758</td>
-    <td class="data-stddev">(26)</td>
-    <td class="data-mean">427</td>
-    <td class="data-stddev">(11)</td>
-    <td class="data-mean">444</td>
-    <td class="data-stddev">(11)</td>
-    <td class="data-mean">970</td>
-    <td class="data-stddev">(11)</td>
+    <td class="data-mean">757</td>
+    <td class="data-stddev">(27)</td>
+    <td class="data-mean">435</td>
+    <td class="data-stddev">(1)</td>
+    <td class="data-mean">440</td>
+    <td class="data-stddev">(13)</td>
+    <td class="data-mean">969</td>
+    <td class="data-stddev">(12)</td>
   </tr>  <tr>
     <td>RV64IMAC</td>
     <td class="data-table-right">64</td>
     <td>U54-MC/SiFive Freedom U540/Hifive</td>
     <td class="data-table-right">1.5 GHz</td>
-    <td class="data-mean">1964</td>
-    <td class="data-stddev">(39)</td>
-    <td class="data-mean">698</td>
-    <td class="data-stddev">(61)</td>
-    <td class="data-mean">903</td>
-    <td class="data-stddev">(101)</td>
-    <td class="data-mean">2569</td>
-    <td class="data-stddev">(50)</td>
+    <td class="data-mean">1988</td>
+    <td class="data-stddev">(79)</td>
+    <td class="data-mean">703</td>
+    <td class="data-stddev">(75)</td>
+    <td class="data-mean">872</td>
+    <td class="data-stddev">(23)</td>
+    <td class="data-mean">2580</td>
+    <td class="data-stddev">(97)</td>
   </tr></table>
 
 <h2>Compilation Details</h2>
@@ -268,4 +268,4 @@ docker file repository</a></p><h3>Default</h3>
   </tr></table>
 
 <h2>Source Code</h2>
-<p>This page was generated on 2024-03-13 for sel4bench-manifest <a href="https://github.com/seL4/sel4bench-manifest/blob/ea1dfad43798b009808bdce2a271e599b2d095c9/default.xml">ea1dfad4</a>.</p>
+<p>This page was generated on 2024-03-14 for sel4bench-manifest <a href="https://github.com/seL4/sel4bench-manifest/blob/ef9a52610f79d2b044a22b423c64829444af5e73/default.xml">ef9a5261</a>.</p>
