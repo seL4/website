@@ -1,0 +1,332 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Endorsement | seL4</title>
+    <meta name="author" content="seL4 Foundation" />
+    <link rel="canonical" href="https://sel4.systems/Foundation/Services/endorsement.html">
+    <link href="/css/bootstrap.min.css" rel="stylesheet">
+    <link href="/css/sel4.css" rel="stylesheet">
+
+    <link rel="apple-touch-icon" sizes="57x57" href="/images/icons/apple-touch-icon-57x57.png" />
+    <link rel="apple-touch-icon" sizes="114x114" href="/images/icons/apple-touch-icon-114x114.png" />
+    <link rel="apple-touch-icon" sizes="72x72" href="/images/icons/apple-touch-icon-72x72.png" />
+    <link rel="apple-touch-icon" sizes="144x144" href="/images/icons/apple-touch-icon-144x144.png" />
+    <link rel="apple-touch-icon" sizes="60x60" href="/images/icons/apple-touch-icon-60x60.png" />
+    <link rel="apple-touch-icon" sizes="120x120" href="/images/icons/apple-touch-icon-120x120.png" />
+    <link rel="apple-touch-icon" sizes="76x76" href="/images/icons/apple-touch-icon-76x76.png" />
+    <link rel="apple-touch-icon" sizes="152x152" href="/images/icons/apple-touch-icon-152x152.png" />
+    <link rel="icon" type="image/png" href="/images/icons/favicon-96x96.png" sizes="96x96" />
+    <link rel="icon" type="image/png" href="/images/icons/favicon-32x32.png" sizes="32x32" />
+    <link rel="icon" type="image/png" href="/images/icons/favicon-16x16.png" sizes="16x16" />
+    <meta name="application-name" content="&nbsp;"/>
+    <meta name="msapplication-TileColor" content="#FFFFFF" />
+    <meta name="msapplication-TileImage" content="/images/icons/mstile-144x144.png" />
+    <meta name="msapplication-square70x70logo" content="/images/icons/mstile-70x70.png" />
+    <meta name="msapplication-square150x150logo" content="/images/icons/mstile-150x150.png" />
+    <meta name="msapplication-wide310x150logo" content="/images/icons/mstile-310x150.png" />
+    <meta name="msapplication-square310x310logo" content="/images/icons/mstile-310x310.png" />
+    <link rel="shortcut icon" href="/images/icons/favicon.ico" />
+
+    <script defer data-domain="sel4.systems" src="https://analytics.sel4.systems/js/script.js"></script>
+
+  </head>
+  <body>
+  <div id="page-container"><!--to put footer at bottom of page-->
+  <div id="content-wrap"><!--to put footer at bottom of page-->
+
+<div class="container">
+  <div class="header" id="site-header" role="navigation" >
+    <ul class="nav-pills nav pull-right" id="site-navigation">
+		<li class=""><a href="/">Home</a></li><li class="dropdown "><a class="dropdown-toggle" data-toggle="dropdown" href="/About/">What is seL4? <span class="caret"></span></a>
+		<ul class="dropdown-menu">
+		<li class=""><a href="/About/">What is seL4?</a></li>
+		<li class=""><a href="/About/Performance/">Performance</a></li>
+		<li class=""><a href="/About/seL4-whitepaper.pdf">Whitepaper</a></li>
+		</ul></li><li class="dropdown active"><a class="dropdown-toggle" data-toggle="dropdown" href="/Foundation/">seL4 Foundation <span class="caret"></span></a>
+		<ul class="dropdown-menu">
+		<li class=""><a href="/Foundation/">About the seL4 Foundation</a></li>
+		<li class=""><a href="/Foundation/Governance/">Governance</a></li>
+		<li class=""><a href="/Foundation/Board/">Governing Board</a></li>
+		<li class=""><a href="/Foundation/TSC/">TSC</a></li>
+		<li class=""><a href="/Foundation/Membership/">Membership</a></li>
+		<li class=""><a href="/Foundation/Join/">Join the Foundation now!</a></li>
+		<li class=""><a href="/Foundation/Services/">Commercial Support</a></li>
+		<li class=""><a href="/Foundation/Summit/2024/">seL4 Summit</a></li>
+		<li class=""><a href="/Foundation/Support/">Support Us</a></li>
+		<li class=""><a href="/Foundation/Trademark/">Trademark</a></li>
+		<li class=""><a href="/Foundation/Jobs/">Jobs in the seL4 ecosystem</a></li>
+		<li class=""><a href="/Foundation/Contact/">Contact the seL4 Foundation</a></li>
+		</ul></li>
+		<li class=""><a href="/contact/">Stay in Touch</a></li><li class="dropdown "><a class="dropdown-toggle" data-toggle="dropdown" href="/Contribute/">Contribute <span class="caret"></span></a>
+		<ul class="dropdown-menu">
+		<li class=""><a href="/Contribute/">Contribute</a></li>
+		<li class=""><a href="https://github.com/seL4">GitHub</a></li>
+		</ul></li>
+		<li class=""><a href="/Use/">Use</a></li>
+		<li class=""><a href="/Learn/">Learn</a></li><li class="dropdown "><a class="dropdown-toggle" data-toggle="dropdown" href="/Info/">More Info <span class="caret"></span></a>
+		<ul class="dropdown-menu">
+		<li class=""><a href="/Info/">More Info</a></li>
+		<li class=""><a href="https://docs.sel4.systems/projects/sel4/frequently-asked-questions.html">FAQ</a></li>
+		<li class=""><a href="https://docs.sel4.systems/projects/roadmap.html">Roadmap</a></li>
+		<li class=""><a href="/Info/more-research.html">Research</a></li>
+		</ul></li>
+		<li class=""><a href="/news/">News</a></li>
+    </ul>
+  </div>
+</div>
+<div class="container">
+  <div class="row"><ol class="breadcrumb">
+<li><a href="/">Home</a></li>
+<li><a href="/Foundation/">seL4 Foundation</a></li>
+<li><a href="/Foundation/Services/">Commercial Support</a></li>
+<li><a href="/Foundation/Services/endorsement.html">endorsement</a></li>
+
+    </ol></div>
+
+    <a href='/'><img style="width:20%; padding-top:5px; vertical-align:top;float:right; margin:10px;"
+                     src='/images/sel4-foundation-logo.svg' alt='seL4 foundation logo' />
+    </a>
+
+<h1>
+ Information about the endorsement scheme
+</h1>
+
+<p>
+	The type of services that the member has expertise on and is being endorsed for, are described in detail, and taken from a template list of services, namely:
+</p>
+<ul>
+	<li>systems: kernel</li>
+	<li>systems: kernel platform ports</li>
+	<li>systems: user-level OS</li>
+	<li>systems: applications</li>
+	<li>verification: kernel</li>
+	<li>verification: user-level OS</li>
+	<li>verification: applications</li>
+</ul>
+<p>
+	Endorsement in one of the category above means that the member has one or multiple people in-house who have that expertise and have already contributed in this area. This is reviewed annually.
+</p>
+<p>
+	Each category can have qualifiers/examples, which can be suggested by the member, eg "user-level OS (VM)” or “user-level OS (CAMkES).”
+</p>
+<p>
+	The endorsement of services is limited to members and provided for free.
+</p>
+
+
+<!-- old stuff
+<h1>
+  Process and guidelines for obtaining interim endorsement from the Foundation
+</h1>
+
+
+<div>
+
+
+  <p style="padding-top:10px">
+  <strong>
+    You offer professional support services for seL4-based systems? <br>
+    You offer seL4 training? <br>
+    You offer seL4-based products?  <br>
+    <span class=emph> &#10148; <a href="../Join">Join</a> the Foundation, and</span><br>
+    <span class=emph> &#10148; Apply for interim endorsement of the seL4 Foundation  now!</span>
+  </strong>
+  </p>
+
+  <p style="padding-top:10px">
+    The Foundation is working on developing <strong>endorsement</strong>
+    schemes for services, training and products.
+    Until these are in place, we provide <strong>interim endorsements</strong>.
+    All (interim) endorsed training modules and services are advertised <a href="home.html">here</a>.
+    Interim endorsements are provided for free and to Foundation members only.
+    More info  <a href="home.html">here</a>.
+  </p>
+
+  <h2>Services</h2>
+  <ul>
+    <li>
+      <span class=emph><strong>To request interim endorsement:</strong></span>
+      Contact
+      <a title="foundation@sel4.systems"
+         href= "mailto:foundation@sel4.systems">
+	foundation@sel4.systems</a>
+    </li>
+    <li>
+      <strong>Guidelines</strong>:
+      <ul>
+	<li>
+	  The (for now, interim) endorsement indicates
+	  that a particular <strong>service provider has the skills and experience
+	    to provide high-quality services to adopters of seL4 </strong>.
+	</li>
+	<li>
+	  The interim endorsement of an seL4 service provider is awarded based on an assessment that the provider is:
+	  <ul>
+	    <li>
+	      known and respected in the seL4 Community;
+	    </li>
+	    <li>
+	      has demonstrated technical competence in the development of code
+	      or proofs of the seL4 kernel or software components running
+	      directly the seL4 kernel or tools supporting the development of
+	      seL4-based systems;
+	    </li>
+	    <li>
+	      has a track record of contributions to the seL4 ecosystem.
+	    </li>
+	  </ul>
+	</li>
+      </ul>
+  </ul>
+
+  <h2>Training</h2>
+  <ul>
+    <li>
+      <span class=emph><strong>To request interim endorsement:</strong></span>
+      <ul>
+	<li>
+	  Contact
+          <a title="foundation@sel4.systems"
+             href= "mailto:foundation@sel4.systems">
+	    foundation@sel4.systems</a>
+	  <strong>at least 3 weeks before sending the actual
+	    training material</strong>;
+	</li>
+	<li>
+	  Within two weeks of sending the material, you will receive the Foundation's assessment, which may be:
+	  <ul>
+	    <li>
+	      either an unconditional interim endorsement,
+	    </li>
+	    <li>
+	      or a conditional interim endorsement subject to some required changes,
+	    </li>
+	    <li>
+	      or a list of recommended changes for a revised submission.
+	    </li>
+	  </ul>
+	</li>
+	<li>
+	  The assessment may be based on presentation material
+	  alone but may also include an examination of any code provided for
+	  hands-on training, at the discretion of the Foundation.
+	</li>
+      </ul>
+    </li>
+    <li>
+      <strong>Guidelines</strong>:
+      <ul>
+	<li>
+	  The (for now, interim) endorsement indicates
+	  that a particular <strong>training is of high quality and effective
+	    in providing useful skills for deploying the seL4 microkernel</strong>.
+	</li>
+	<li>
+	  The interim endorsement of an seL4 training module will be
+	  awarded based on an assessment of the training material
+	  (presentation material and potentially code used in hands-on
+	  training sessions), to ensure that:
+	  <ul>
+	    <li>
+	      it is technically correct and of sufficient depth and breadth
+	    </li>
+	    <li>
+	      it is compliant with the Foundation's Trademark Guidelines.
+	    </li>
+	  </ul>
+	</li>
+      </ul>
+  </ul>
+
+
+  <h2>Products</h2>
+  <ul>
+    <li>
+      <span class=emph><strong>To request interim endorsement</strong></span>:
+      Contact
+      <a title="foundation@sel4.systems"
+         href= "mailto:foundation@sel4.systems">
+	foundation@sel4.systems</a>
+    </li>
+    <li><strong>Guidelines</strong>:
+      <ul>
+	<li>
+	  The (for now interim) endorsement indicates
+	  that a particular <strong>product is helpful to the community
+	    for building high-assurance seL4-based systems</strong>.
+	</li>
+	<li>
+	  The assessment of the product by the Foundation will depend
+	  on the category of the product. The different categories of
+	  seL4 products include:
+	  <ul>
+	    <li>
+	      components for seL4-based systems (e.g. library, device
+	      driver, authentication service)
+	    </li>
+	    <li>
+	      developer tools (e.g. compiler, static analysis tool,
+	      IDE)
+	    </li>
+	    <li>
+	      seL4-based end-user products
+	    </li>
+	  </ul>
+	<li>
+	  Community members interested in getting a product endorsed should
+	  contact the Foundation so we can work together on developing suitable
+	  guidelines/schemes.
+	</li>
+      </ul>
+  </ul>
+
+</div>
+-->
+<div class="divider"></div>
+</div><!-- container -->
+</div><!--content-wrap-->
+<footer class="page-footer small pt-3" id="footer"> <!-- footer -->
+  <div class="container">
+    <!-- for mobile screens -->
+    <div class="text-center visible-xs">
+    <a href="https://fosstodon.org/@sel4"><img style="height:36px; padding-right:5px; padding-top:2px; padding-bottom:2px;" src="/images/icons/mastodon.svg" alt="mastodon icon"></a>
+      <a href="https://www.youtube.com/@seL4"><img style="height:36px; padding-top:2px; padding-bottom:2px;" src="/images/icons/youtube.svg" alt="youtube icon"></a>
+      <a href="https://www.linkedin.com/company/sel4"><img style="height:36px; padding-left:5px; padding-top:2px; padding-bottom:2px;" src="/images/icons/linkedin.svg" alt="linkedin icon"></a>
+      <br>
+      <br>
+    Copyright &copy; 2023 seL4 Project a Series of LF Projects, LLC.<br/>
+      seL4 is a trademark of LF Projects, LLC.<br/>
+      For trademark usage guidelines, privacy and cookie policies,
+      and other applicable policies, as well as terms and conditions
+      governing this web site, please see
+      <a href="http://www.lfprojects.org/">www.lfprojects.org</a>
+      and the <a href="/Foundation/Trademark/">trademark guidelines</a>.
+    </div>
+    <div class="row">
+      <!-- for screens larger than mobiles -->
+      <div class="col-xs-6 hidden-xs">
+        Copyright &copy; 2023 seL4 Project a Series of LF Projects, LLC.<br/>
+        seL4 is a trademark of LF Projects, LLC.<br/>
+        For trademark usage guidelines, privacy and cookie policies,
+        and other applicable policies, as well as terms and conditions
+        governing this web site, please see
+        <a href="http://www.lfprojects.org/">www.lfprojects.org</a>
+        and the <a href="/Foundation/Trademark/">trademark guidelines</a>.
+      </div>
+      <div class="col-xs-6 text-right hidden-xs">
+        <a href="https://fosstodon.org/@sel4"><img style="height:36px; padding-right:5px; padding-top:2px; padding-bottom:2px;" src="/images/icons/mastodon.svg" alt="mastodon icon"></a>
+        <a href="https://www.youtube.com/@seL4"><img style="height:36px; padding-top:2px; padding-bottom:2px;" src="/images/icons/youtube.svg" alt="youtube icon"></a>
+        <a href="https://www.linkedin.com/company/sel4"><img style="height:36px; padding-left:5px; padding-top:2px; padding-bottom:2px;" src="/images/icons/linkedin.svg" alt="linkedin icon"></a>
+      </div>
+    </div>
+  </div>
+
+</footer> <!-- footer -->
+<!-- wrapper -->
+<script src="/js/jquery.min.js"></script>
+<script src="/js/bootstrap.min.js"></script>
+</div><!--page-container-->
+</body>
+</html>

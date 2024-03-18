@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Governance | seL4</title>
+    <meta name="author" content="seL4 Foundation" />
+    <link rel="canonical" href="https://sel4.systems/Foundation/Governance/">
+    <link href="/css/bootstrap.min.css" rel="stylesheet">
+    <link href="/css/sel4.css" rel="stylesheet">
+
+    <link rel="apple-touch-icon" sizes="57x57" href="/images/icons/apple-touch-icon-57x57.png" />
+    <link rel="apple-touch-icon" sizes="114x114" href="/images/icons/apple-touch-icon-114x114.png" />
+    <link rel="apple-touch-icon" sizes="72x72" href="/images/icons/apple-touch-icon-72x72.png" />
+    <link rel="apple-touch-icon" sizes="144x144" href="/images/icons/apple-touch-icon-144x144.png" />
+    <link rel="apple-touch-icon" sizes="60x60" href="/images/icons/apple-touch-icon-60x60.png" />
+    <link rel="apple-touch-icon" sizes="120x120" href="/images/icons/apple-touch-icon-120x120.png" />
+    <link rel="apple-touch-icon" sizes="76x76" href="/images/icons/apple-touch-icon-76x76.png" />
+    <link rel="apple-touch-icon" sizes="152x152" href="/images/icons/apple-touch-icon-152x152.png" />
+    <link rel="icon" type="image/png" href="/images/icons/favicon-96x96.png" sizes="96x96" />
+    <link rel="icon" type="image/png" href="/images/icons/favicon-32x32.png" sizes="32x32" />
+    <link rel="icon" type="image/png" href="/images/icons/favicon-16x16.png" sizes="16x16" />
+    <meta name="application-name" content="&nbsp;"/>
+    <meta name="msapplication-TileColor" content="#FFFFFF" />
+    <meta name="msapplication-TileImage" content="/images/icons/mstile-144x144.png" />
+    <meta name="msapplication-square70x70logo" content="/images/icons/mstile-70x70.png" />
+    <meta name="msapplication-square150x150logo" content="/images/icons/mstile-150x150.png" />
+    <meta name="msapplication-wide310x150logo" content="/images/icons/mstile-310x150.png" />
+    <meta name="msapplication-square310x310logo" content="/images/icons/mstile-310x310.png" />
+    <link rel="shortcut icon" href="/images/icons/favicon.ico" />
+
+    <script defer data-domain="sel4.systems" src="https://analytics.sel4.systems/js/script.js"></script>
+
+  </head>
+  <body>
+  <div id="page-container"><!--to put footer at bottom of page-->
+  <div id="content-wrap"><!--to put footer at bottom of page-->
+
+<div class="container">
+  <div class="header" id="site-header" role="navigation" >
+    <ul class="nav-pills nav pull-right" id="site-navigation">
+		<li class=""><a href="/">Home</a></li><li class="dropdown "><a class="dropdown-toggle" data-toggle="dropdown" href="/About/">What is seL4? <span class="caret"></span></a>
+		<ul class="dropdown-menu">
+		<li class=""><a href="/About/">What is seL4?</a></li>
+		<li class=""><a href="/About/Performance/">Performance</a></li>
+		<li class=""><a href="/About/seL4-whitepaper.pdf">Whitepaper</a></li>
+		</ul></li><li class="dropdown active"><a class="dropdown-toggle" data-toggle="dropdown" href="/Foundation/">seL4 Foundation <span class="caret"></span></a>
+		<ul class="dropdown-menu">
+		<li class=""><a href="/Foundation/">About the seL4 Foundation</a></li>
+		<li class="active"><a href="/Foundation/Governance/">Governance</a></li>
+		<li class=""><a href="/Foundation/Board/">Governing Board</a></li>
+		<li class=""><a href="/Foundation/TSC/">TSC</a></li>
+		<li class=""><a href="/Foundation/Membership/">Membership</a></li>
+		<li class=""><a href="/Foundation/Join/">Join the Foundation now!</a></li>
+		<li class=""><a href="/Foundation/Services/">Commercial Support</a></li>
+		<li class=""><a href="/Foundation/Summit/2024/">seL4 Summit</a></li>
+		<li class=""><a href="/Foundation/Support/">Support Us</a></li>
+		<li class=""><a href="/Foundation/Trademark/">Trademark</a></li>
+		<li class=""><a href="/Foundation/Jobs/">Jobs in the seL4 ecosystem</a></li>
+		<li class=""><a href="/Foundation/Contact/">Contact the seL4 Foundation</a></li>
+		</ul></li>
+		<li class=""><a href="/contact/">Stay in Touch</a></li><li class="dropdown "><a class="dropdown-toggle" data-toggle="dropdown" href="/Contribute/">Contribute <span class="caret"></span></a>
+		<ul class="dropdown-menu">
+		<li class=""><a href="/Contribute/">Contribute</a></li>
+		<li class=""><a href="https://github.com/seL4">GitHub</a></li>
+		</ul></li>
+		<li class=""><a href="/Use/">Use</a></li>
+		<li class=""><a href="/Learn/">Learn</a></li><li class="dropdown "><a class="dropdown-toggle" data-toggle="dropdown" href="/Info/">More Info <span class="caret"></span></a>
+		<ul class="dropdown-menu">
+		<li class=""><a href="/Info/">More Info</a></li>
+		<li class=""><a href="https://docs.sel4.systems/projects/sel4/frequently-asked-questions.html">FAQ</a></li>
+		<li class=""><a href="https://docs.sel4.systems/projects/roadmap.html">Roadmap</a></li>
+		<li class=""><a href="/Info/more-research.html">Research</a></li>
+		</ul></li>
+		<li class=""><a href="/news/">News</a></li>
+    </ul>
+  </div>
+</div>
+<div class="container">
+  <div class="row"><ol class="breadcrumb">
+<li><a href="/">Home</a></li>
+<li><a href="/Foundation/">seL4 Foundation</a></li>
+<li><a href="/Foundation/Governance/">Governance</a></li>
+
+    </ol></div>
+
+    <a href='/'><img style="width:20%; padding-top:5px; vertical-align:top;float:right; margin:10px;"
+                     src='/images/sel4-foundation-logo.svg' alt='seL4 foundation logo' />
+    </a>
+
+<h1>
+  seL4 Foundation Governance
+</h1>
+<div>
+  <p>
+    The <a title="seL4 Foundation"
+       href="../">seL4 Foundation</a>&nbsp;is established as a
+       project under The Linux Foundation. It is designed to
+       fulfill the key principles described&nbsp;<a title=
+       "seL4 Foundation Key Principles pdf"
+       href="seL4_Foundation_Key_Principles.pdf"
+       target="_blank">here</a>&nbsp;and summarised below.
+  </p>
+  <p>
+    The seL4 Foundation has 2 parts:
+  </p>
+  <ul>
+    <li>The <strong>seL4 Directed Fund</strong>, governed by the <a title=
+         "Governing Board"
+          href="../Board">Governing Board</a>.
+    </li>
+    <li>The <strong>seL4 Technical Steering Committee</strong>, composed of the
+      committers and contributors.
+    </li>
+  </ul>
+</div>
+<h2>
+  Principles
+</h2>
+<div>
+  <p>
+    The seL4 Foundation is intended to be structured and governed
+    to promote the following key principles:
+  </p>
+  <ul>
+    <li>
+      <strong>Neutral and community-based</strong>. The seL4
+      Foundation will provide a long-term, independent support for
+      the seL4 kernel and the seL4 ecosystem, by enabling the
+      collaborative community-based development, availability and
+      adoption of the seL4 kernel. This includes providing a
+      familiar structure (i.e., under The Linux Foundation) for
+      membership and raising funds to support its activities, and
+      building the community of developers, adopters, training, and
+      expertise. The seL4 Foundation will aim to represent the
+      perspectives of all main actors of the seL4 community (kernel
+      developers, kernel verifiers, ecosystem developers and
+      adopters) in the technical and general governance of the seL4
+      kernel and the&nbsp;seL4 Foundation.
+    </li>
+    <li>
+      <strong>Grow adoption</strong>. The seL4 Foundation will
+      enable and grow adoption of seL4 by supporting the evolution
+      and verification of the seL4 kernel and supporting the growth
+      of the seL4 ecosystem needed to ease the development of
+      seL4-based systems.
+    </li>
+    <li>
+      <strong>Brand promotion and protection</strong>. The seL4
+      Foundation will provide official releases of the seL4 kernel
+      with clear associated verification statements, to promote the
+      use of seL4 as a competitive advantage, with clear
+      traceability to the sources of the code and the proofs.
+    </li>
+  </ul>
+</div>
+<h2>
+  Governance Documents
+</h2>
+<div>
+  <p>
+    The seL4 Foundation is underpinned by 2 key documents: the
+    <a title="seL4 Foundation Fund Charter"
+       href="seL4_Foundation_Fund_Charter.pdf">seL4
+      Foundation Fund Charter</a>, and the 
+    <a title="seL4 Foundation Technical Charter"
+       href="seL4_Foundation_Technical_Charter.pdf">seL4
+      Foundation Technical Charter</a>. Both are modelled on
+    the standard approach for Linux
+    Foundation projects.
+  </p>
+</div>
+  
+
+<div class="divider"></div>
+</div><!-- container -->
+</div><!--content-wrap-->
+<footer class="page-footer small pt-3" id="footer"> <!-- footer -->
+  <div class="container">
+    <!-- for mobile screens -->
+    <div class="text-center visible-xs">
+    <a href="https://fosstodon.org/@sel4"><img style="height:36px; padding-right:5px; padding-top:2px; padding-bottom:2px;" src="/images/icons/mastodon.svg" alt="mastodon icon"></a>
+      <a href="https://www.youtube.com/@seL4"><img style="height:36px; padding-top:2px; padding-bottom:2px;" src="/images/icons/youtube.svg" alt="youtube icon"></a>
+      <a href="https://www.linkedin.com/company/sel4"><img style="height:36px; padding-left:5px; padding-top:2px; padding-bottom:2px;" src="/images/icons/linkedin.svg" alt="linkedin icon"></a>
+      <br>
+      <br>
+    Copyright &copy; 2023 seL4 Project a Series of LF Projects, LLC.<br/>
+      seL4 is a trademark of LF Projects, LLC.<br/>
+      For trademark usage guidelines, privacy and cookie policies,
+      and other applicable policies, as well as terms and conditions
+      governing this web site, please see
+      <a href="http://www.lfprojects.org/">www.lfprojects.org</a>
+      and the <a href="/Foundation/Trademark/">trademark guidelines</a>.
+    </div>
+    <div class="row">
+      <!-- for screens larger than mobiles -->
+      <div class="col-xs-6 hidden-xs">
+        Copyright &copy; 2023 seL4 Project a Series of LF Projects, LLC.<br/>
+        seL4 is a trademark of LF Projects, LLC.<br/>
+        For trademark usage guidelines, privacy and cookie policies,
+        and other applicable policies, as well as terms and conditions
+        governing this web site, please see
+        <a href="http://www.lfprojects.org/">www.lfprojects.org</a>
+        and the <a href="/Foundation/Trademark/">trademark guidelines</a>.
+      </div>
+      <div class="col-xs-6 text-right hidden-xs">
+        <a href="https://fosstodon.org/@sel4"><img style="height:36px; padding-right:5px; padding-top:2px; padding-bottom:2px;" src="/images/icons/mastodon.svg" alt="mastodon icon"></a>
+        <a href="https://www.youtube.com/@seL4"><img style="height:36px; padding-top:2px; padding-bottom:2px;" src="/images/icons/youtube.svg" alt="youtube icon"></a>
+        <a href="https://www.linkedin.com/company/sel4"><img style="height:36px; padding-left:5px; padding-top:2px; padding-bottom:2px;" src="/images/icons/linkedin.svg" alt="linkedin icon"></a>
+      </div>
+    </div>
+  </div>
+
+</footer> <!-- footer -->
+<!-- wrapper -->
+<script src="/js/jquery.min.js"></script>
+<script src="/js/bootstrap.min.js"></script>
+</div><!--page-container-->
+</body>
+</html>

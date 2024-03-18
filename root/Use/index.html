@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Retrofit | seL4</title>
+    <meta name="author" content="seL4 Foundation" />
+    <link rel="canonical" href="https://sel4.systems/Use/">
+    <link href="/css/bootstrap.min.css" rel="stylesheet">
+    <link href="/css/sel4.css" rel="stylesheet">
+
+    <link rel="apple-touch-icon" sizes="57x57" href="/images/icons/apple-touch-icon-57x57.png" />
+    <link rel="apple-touch-icon" sizes="114x114" href="/images/icons/apple-touch-icon-114x114.png" />
+    <link rel="apple-touch-icon" sizes="72x72" href="/images/icons/apple-touch-icon-72x72.png" />
+    <link rel="apple-touch-icon" sizes="144x144" href="/images/icons/apple-touch-icon-144x144.png" />
+    <link rel="apple-touch-icon" sizes="60x60" href="/images/icons/apple-touch-icon-60x60.png" />
+    <link rel="apple-touch-icon" sizes="120x120" href="/images/icons/apple-touch-icon-120x120.png" />
+    <link rel="apple-touch-icon" sizes="76x76" href="/images/icons/apple-touch-icon-76x76.png" />
+    <link rel="apple-touch-icon" sizes="152x152" href="/images/icons/apple-touch-icon-152x152.png" />
+    <link rel="icon" type="image/png" href="/images/icons/favicon-96x96.png" sizes="96x96" />
+    <link rel="icon" type="image/png" href="/images/icons/favicon-32x32.png" sizes="32x32" />
+    <link rel="icon" type="image/png" href="/images/icons/favicon-16x16.png" sizes="16x16" />
+    <meta name="application-name" content="&nbsp;"/>
+    <meta name="msapplication-TileColor" content="#FFFFFF" />
+    <meta name="msapplication-TileImage" content="/images/icons/mstile-144x144.png" />
+    <meta name="msapplication-square70x70logo" content="/images/icons/mstile-70x70.png" />
+    <meta name="msapplication-square150x150logo" content="/images/icons/mstile-150x150.png" />
+    <meta name="msapplication-wide310x150logo" content="/images/icons/mstile-310x150.png" />
+    <meta name="msapplication-square310x310logo" content="/images/icons/mstile-310x310.png" />
+    <link rel="shortcut icon" href="/images/icons/favicon.ico" />
+
+    <script defer data-domain="sel4.systems" src="https://analytics.sel4.systems/js/script.js"></script>
+
+  </head>
+  <body>
+  <div id="page-container"><!--to put footer at bottom of page-->
+  <div id="content-wrap"><!--to put footer at bottom of page-->
+
+<div class="container">
+  <div class="header" id="site-header" role="navigation" >
+    <ul class="nav-pills nav pull-right" id="site-navigation">
+		<li class=""><a href="/">Home</a></li><li class="dropdown "><a class="dropdown-toggle" data-toggle="dropdown" href="/About/">What is seL4? <span class="caret"></span></a>
+		<ul class="dropdown-menu">
+		<li class=""><a href="/About/">What is seL4?</a></li>
+		<li class=""><a href="/About/Performance/">Performance</a></li>
+		<li class=""><a href="/About/seL4-whitepaper.pdf">Whitepaper</a></li>
+		</ul></li><li class="dropdown "><a class="dropdown-toggle" data-toggle="dropdown" href="/Foundation/">seL4 Foundation <span class="caret"></span></a>
+		<ul class="dropdown-menu">
+		<li class=""><a href="/Foundation/">About the seL4 Foundation</a></li>
+		<li class=""><a href="/Foundation/Governance/">Governance</a></li>
+		<li class=""><a href="/Foundation/Board/">Governing Board</a></li>
+		<li class=""><a href="/Foundation/TSC/">TSC</a></li>
+		<li class=""><a href="/Foundation/Membership/">Membership</a></li>
+		<li class=""><a href="/Foundation/Join/">Join the Foundation now!</a></li>
+		<li class=""><a href="/Foundation/Services/">Commercial Support</a></li>
+		<li class=""><a href="/Foundation/Summit/2024/">seL4 Summit</a></li>
+		<li class=""><a href="/Foundation/Support/">Support Us</a></li>
+		<li class=""><a href="/Foundation/Trademark/">Trademark</a></li>
+		<li class=""><a href="/Foundation/Jobs/">Jobs in the seL4 ecosystem</a></li>
+		<li class=""><a href="/Foundation/Contact/">Contact the seL4 Foundation</a></li>
+		</ul></li>
+		<li class=""><a href="/contact/">Stay in Touch</a></li><li class="dropdown "><a class="dropdown-toggle" data-toggle="dropdown" href="/Contribute/">Contribute <span class="caret"></span></a>
+		<ul class="dropdown-menu">
+		<li class=""><a href="/Contribute/">Contribute</a></li>
+		<li class=""><a href="https://github.com/seL4">GitHub</a></li>
+		</ul></li>
+		<li class="active"><a href="/Use/">Use</a></li>
+		<li class=""><a href="/Learn/">Learn</a></li><li class="dropdown "><a class="dropdown-toggle" data-toggle="dropdown" href="/Info/">More Info <span class="caret"></span></a>
+		<ul class="dropdown-menu">
+		<li class=""><a href="/Info/">More Info</a></li>
+		<li class=""><a href="https://docs.sel4.systems/projects/sel4/frequently-asked-questions.html">FAQ</a></li>
+		<li class=""><a href="https://docs.sel4.systems/projects/roadmap.html">Roadmap</a></li>
+		<li class=""><a href="/Info/more-research.html">Research</a></li>
+		</ul></li>
+		<li class=""><a href="/news/">News</a></li>
+    </ul>
+  </div>
+</div>
+<div class="container">
+  <div class="row"><ol class="breadcrumb">
+<li><a href="/">Home</a></li>
+<li><a href="/Use/">Use</a></li>
+
+    </ol></div>
+
+    <a href='/'><img style="width:20%; margin-top:20px; vertical-align:top;float:right; margin:10px;"
+                     src='/images/logo-text-white.svg' alt='seL4' /></a>
+
+<h1>
+  Retrofitting and transitioning to seL4
+</h1> <br>
+  <p>
+    This page discusses the issues a business will need to consider for a <b>“transition to seL4”</b>, whether creating a
+    new product or upgrading an existing product.</p>
+   <p>Ultimately,
+    the best approach is to <a href="/contact/">contact us</a>
+    to discuss your needs and aims, but
+    brainstorming through the considerations described below is a good
+    first step in any case. This will also give you an idea of the
+    role that seL4 can play in securing software systems across a range of
+    industry verticals.
+  </p>
+  <p>
+    More information about this process is available in
+      <a href="https://trustworthy.systems/publications/abstracts/Klein_AKMHF_18.abstract">this article</a> or in
+      <a href="https://trustworthy.systems/publications/papers/Kuz_19.abstract">these slides</a>.
+  </p>
+  <p>
+    You might also have questions on the <b> licence </b> and its implications.
+    For this, read <a href="https://microkerneldude.wordpress.com/2019/12/09/what-does-sel4s-license-imply/">Gernot’s licensing blog</a> and
+    <a href="/contact/">contact us</a> if you have
+    any questions!
+  </p>
+  <p>Now to the considerations.</p>
+  <ol>
+    <li> <b>The aim: Security through isolation</b>.
+      <img src="/images/trusted.svg" style="width:300px; float:right;" alt="seL4 system"/>
+      <p>The first step is to identify the security and
+      safety requirements of your system (what are the assets that need protecting), and the threat
+      model (what are the attacks or failures that threaten those assets).</p>
+      <p>seL4’s power and added value lie in the proved <em>isolation</em> that
+      it provides. Being an OS kernel, its duty is to control
+      access to resources and communication between entities.
+      By using seL4, you
+      get the highest assurance that components can be properly
+      isolated from each other, with communication only possible
+      through explicitly provided channels.</p>
+      <p>This first step, therefore, helps to identify what it is that
+      you would like to isolate in your system. Typically this comes down to protecting some small
+      but critical component(s) that perform sensitive operations from a large and untrustworthy, but still useful, code base.</p>
+      <p>An example is a critical control loop which takes inputs from a number of sensors, including cameras with complex drivers and image processing software.<p>
+    </li>
+    <li> <b> seL4-ready?</b>
+      <p>
+      The next step is to check which hardware platform (and exact
+      configuration) your product is or will be running on and whether
+      this platform is already <a href="https://docs.sel4.systems/Hardware/">supported by seL4</a>. You will also need
+      to check whether seL4 is <a href="https://docs.sel4.systems/projects/sel4/verified-configurations.html#available-verified-configurations">verified on this configuration</a> and
+      need to know what your assurance and certification requirements
+      are and whether the proofs can support these.</p>
+      <p>If the answer to some of these questions is &ldquo;no&rdquo;, you can
+      check whether it’s on the <a href="https://docs.sel4.systems/projects/roadmap.html">roadmap</a>
+      of seL4, and
+      <a href="/contact/">contact us</a> to
+      discuss extending seL4’s support.</p>
+      <p>Keep in mind that even if a particular configuration is not (yet) verified, it will still be highly robust, owing to sharing the design and much of its code with verified configurations.</p>
+
+      <p>
+      Beside the kernel, your system is likely to require a number of other OS components:
+      remember that seL4 is just a microkernel, and will require a number of
+      OS services to run. You can check the list of <a href="https://docs.sel4.systems/projects/available-user-components.html">available components</a>
+      and if the ones you need are missing,
+      <a href="/contact/">contact us</a>, or better yet
+      <a href="/Contribute">contribute</a>.</p>
+    </li>
+    <li> <b>Gradually getting there: Incremental cyber retrofit</b>
+
+      <p>
+      Systems are rarely built from scratch, even a new product typically incorporates significant amounts of legacy software. And frequently the aim is to increase an existing product's resilience to cyber attacks.</p>
+      <p>The usual approach here is what we call an <em>incremental cyber retrofit</em>, which we describe in detail in
+      <a href="https://trustworthy.systems/publications/abstracts/Klein_AKMHF_18.abstract">this article</a>.  In a nutshell, the idea is to gradually adapt the
+      existing architecture.</p>
+      <p>The first step is to put the complete legacy system into a virtual machine (VM) running
+      on seL4. This in itself adds no security (only a little bit of overhead), but it serves as a starting point for incremental modularisation.</p>
+      <p>The next step is to extract and isolate coarse-grain subsystems, moving from a system with a single VM to one with multiple communicating VMs.</p>
+      <p>In subsequent steps this is repeated and refined until individual trusted components are placed into their own, isolated, sandboxes running
+      natively on seL4.</p>
+
+      <img src="/images/retrofit.png" style="width:700px;" alt="seL4 system"
+	   />
+    </li>
+  </ol>
+<p>
+After this you should have a much more robust system that can take advantage of seL4's proved properties to provide significantly better resilience to cyber attack.</p>
+
+<div class="divider"></div>
+</div><!-- container -->
+</div><!--content-wrap-->
+<footer class="page-footer small pt-3" id="footer"> <!-- footer -->
+  <div class="container">
+    <!-- for mobile screens -->
+    <div class="text-center visible-xs">
+    <a href="https://fosstodon.org/@sel4"><img style="height:36px; padding-right:5px; padding-top:2px; padding-bottom:2px;" src="/images/icons/mastodon.svg" alt="mastodon icon"></a>
+      <a href="https://www.youtube.com/@seL4"><img style="height:36px; padding-top:2px; padding-bottom:2px;" src="/images/icons/youtube.svg" alt="youtube icon"></a>
+      <a href="https://www.linkedin.com/company/sel4"><img style="height:36px; padding-left:5px; padding-top:2px; padding-bottom:2px;" src="/images/icons/linkedin.svg" alt="linkedin icon"></a>
+      <br>
+      <br>
+    Copyright &copy; 2023 seL4 Project a Series of LF Projects, LLC.<br/>
+      seL4 is a trademark of LF Projects, LLC.<br/>
+      For trademark usage guidelines, privacy and cookie policies,
+      and other applicable policies, as well as terms and conditions
+      governing this web site, please see
+      <a href="http://www.lfprojects.org/">www.lfprojects.org</a>
+      and the <a href="/Foundation/Trademark/">trademark guidelines</a>.
+    </div>
+    <div class="row">
+      <!-- for screens larger than mobiles -->
+      <div class="col-xs-6 hidden-xs">
+        Copyright &copy; 2023 seL4 Project a Series of LF Projects, LLC.<br/>
+        seL4 is a trademark of LF Projects, LLC.<br/>
+        For trademark usage guidelines, privacy and cookie policies,
+        and other applicable policies, as well as terms and conditions
+        governing this web site, please see
+        <a href="http://www.lfprojects.org/">www.lfprojects.org</a>
+        and the <a href="/Foundation/Trademark/">trademark guidelines</a>.
+      </div>
+      <div class="col-xs-6 text-right hidden-xs">
+        <a href="https://fosstodon.org/@sel4"><img style="height:36px; padding-right:5px; padding-top:2px; padding-bottom:2px;" src="/images/icons/mastodon.svg" alt="mastodon icon"></a>
+        <a href="https://www.youtube.com/@seL4"><img style="height:36px; padding-top:2px; padding-bottom:2px;" src="/images/icons/youtube.svg" alt="youtube icon"></a>
+        <a href="https://www.linkedin.com/company/sel4"><img style="height:36px; padding-left:5px; padding-top:2px; padding-bottom:2px;" src="/images/icons/linkedin.svg" alt="linkedin icon"></a>
+      </div>
+    </div>
+  </div>
+
+</footer> <!-- footer -->
+<!-- wrapper -->
+<script src="/js/jquery.min.js"></script>
+<script src="/js/bootstrap.min.js"></script>
+</div><!--page-container-->
+</body>
+</html>

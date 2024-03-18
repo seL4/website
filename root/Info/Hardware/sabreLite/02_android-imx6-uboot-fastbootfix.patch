@@ -1,0 +1,130 @@
+diff -r dda7cc7034f3 -r 8007ffcf8136 common/cmd_bootm.c
+--- a/common/cmd_bootm.c	Tue Apr 16 11:55:36 2013 +1000
++++ b/common/cmd_bootm.c	Tue Apr 16 11:55:36 2013 +1000
+@@ -1696,7 +1696,7 @@
+ 
+ fail:
+ #ifdef CONFIG_FASTBOOT
+-	return do_fastboot(NULL, 0, 0, NULL);
++	return -1 /* do_fastboot(NULL, 0, 0, NULL) */;
+ #else
+ 	return -1;
+ #endif
+diff -r dda7cc7034f3 -r 8007ffcf8136 common/cmd_fastboot.c
+--- a/common/cmd_fastboot.c	Tue Apr 16 11:55:36 2013 +1000
++++ b/common/cmd_fastboot.c	Tue Apr 16 11:55:36 2013 +1000
+@@ -76,14 +76,25 @@
+ #endif
+ extern env_t *env_ptr;
+ #endif
++
++#ifdef CONFIG_CMD_BOOTI
+ extern int do_booti(cmd_tbl_t *cmdtp, int flag, int argc, char *argv[]);
++#endif
++
+ /* Use do_setenv and do_saveenv to permenantly save data */
+ int do_saveenv(cmd_tbl_t *cmdtp, int flag, int argc, char *argv[]);
+ int do_setenv(cmd_tbl_t *cmdtp, int flag, int argc, char *argv[]);
++
+ /* Use do_bootm and do_go for fastboot's 'boot' command */
+ int do_bootm(cmd_tbl_t *cmdtp, int flag, int argc, char *argv[]);
+ int do_go(cmd_tbl_t *cmdtp, int flag, int argc, char *argv[]);
+ 
++/* Use do_bootelf for fastboot's 'boot' command */
++#ifdef CONFIG_CMD_ELF
++#include <elf.h>
++int do_bootelf(cmd_tbl_t *cmdtp, int flag, int argc, char *argv[]);
++#endif
++
+ /* Forward decl */
+ static int tx_handler(void);
+ static int rx_handler(const unsigned char *buffer, unsigned int buffer_size);
+@@ -1010,44 +1021,57 @@
+ 		*/
+ 
+ 		if (memcmp(cmdbuf, "boot", 4) == 0) {
++			if ((download_bytes) && (CFG_FASTBOOT_MKBOOTIMAGE_PAGE_SIZE < download_bytes)) {
++				struct fastboot_boot_img_hdr *fb_hdr;
++				fb_hdr = (struct fastboot_boot_img_hdr*)interface.transfer_buffer;
+ 
+-			if ((download_bytes) &&
+-			    (CFG_FASTBOOT_MKBOOTIMAGE_PAGE_SIZE <
+-				    download_bytes)) {
+-				char start[32];
+-				char *booti_args[4] = {"booti",  NULL, "boot", NULL};
++				if (memcmp(fb_hdr->magic, FASTBOOT_BOOT_MAGIC, FASTBOOT_BOOT_MAGIC_SIZE)){
++				    printf("### Bad fastboot magic\n");
+ 
+-				/*
+-				 * Use this later to determine if a command line was passed
+-				 * for the kernel.
+-				 */
+-				/* struct fastboot_boot_img_hdr *fb_hdr = */
+-				/* 	(struct fastboot_boot_img_hdr *) interface.transfer_buffer; */
++				} else {
++ 					uintptr_t image_addr = (uintptr_t)fb_hdr + fb_hdr->page_size;
++					cmd_tbl_t cmdtp;
+ 
+-				/* Skip the mkbootimage header */
+-				/* image_header_t *hdr = */
+-				/* 	(image_header_t *) */
+-				/* 	&interface.transfer_buffer[CFG_FASTBOOT_MKBOOTIMAGE_PAGE_SIZE]; */
++					memset(&cmdtp, 0, sizeof(cmdtp));
++					cmdtp.name = "fastboot";
+ 
+-				booti_args[1] = start;
+-				sprintf(start, "0x%x", (unsigned int)interface.transfer_buffer);
++					/* Execution should jump to kernel so send the response
++					   now and wait a bit.  */
++					sprintf(response, "OKAY");
++					fastboot_tx_status(response, strlen(response));
+ 
+-				/* Execution should jump to kernel so send the response
+-				   now and wait a bit.  */
+-				sprintf(response, "OKAY");
+-				fastboot_tx_status(response, strlen(response));
++					/* Reserve for further use, this can
++					 * be more convient for developer. */
++					/* if (strlen ((char *) &fb_hdr->cmdline[0])) */
++					/* 	set_env("bootargs", (char *) &fb_hdr->cmdline[0]); */
+ 
+-				printf("Booting kernel...\n");
++#ifdef CONFIG_CMD_ELF
++					/* Check for ELF format image */
++					if(IS_ELF(*(Elf32_Ehdr*)image_addr)){
++						char start[32];
++						char *boot_args[3] = {"bootelf",  start, NULL};
++						sprintf(boot_args[1], "0x%x", image_addr);
++						do_bootelf(&cmdtp, 0, 2, boot_args);
++					}
++#endif
++					/* Check for uImage format image */
++					if(image_check_magic((image_header_t*)image_addr)){
++						char start[32];
++						char *boot_args[3] = {"bootm", start, NULL};
++						sprintf(boot_args[1], "0x%x", image_addr);
++						do_bootm(&cmdtp, 0, 2, boot_args);
++					}
+ 
+-
+-				/* Reserve for further use, this can
+-				 * be more convient for developer. */
+-				/* if (strlen ((char *) &fb_hdr->cmdline[0])) */
+-				/* 	set_env("bootargs", (char *) &fb_hdr->cmdline[0]); */
+-
+-				/* boot the boot.img */
+-				do_booti(NULL, 0, 3, booti_args);
+-
++					/* Assume Android image. */
++#ifdef CONFIG_CMD_BOOTI
++					if(1){
++						char start[32];
++						char *boot_args[3] = {"booti",  start, "boot", NULL};
++						sprintf(boot_args[1], "0x%x", (uintptr_t)fb_hdr);
++						do_booti(&cmdtp, 0, 3, boot_args);
++					}
++#endif
++				}
+ 
+ 			}
+ 			sprintf(response, "FAILinvalid boot image");
