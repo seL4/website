@@ -6,7 +6,7 @@ SHELL := bash
 MAKEFLAGS += --warn-undefined-variables --no-builtin-rules
 .DELETE_ON_ERROR:
 .SUFFIXES:
-.PHONY: help build serve debug clean doctor checklinks update
+.PHONY: help build serve debug preview clean doctor checklinks update
 
 help:
 	@echo -e "Usage: make <target>. Available seL4 website targets:\n\
@@ -26,6 +26,7 @@ help:
 	@touch $@
 
 JEKYLL_ENV := production
+SERVE_HOST :=
 
 build serve: .jekyll-cache/ruby_deps
 # $(SERVE_HOST) is here so docker can pass in "--host 0.0.0.0" for serve
@@ -35,8 +36,13 @@ build serve: .jekyll-cache/ruby_deps
 debug: JEKYLL_ENV := development
 debug: serve
 
+preview: JEKYLL_ENV := development
+preview: SERVE_HOST := --config "_config.yml,_preview.yml" $(SERVE_HOST)
+preview: build
+
 clean doctor:
 	@bundle exec jekyll $@
+	@rm -rf _preview/*
 
 HTMLPROOFEROPT := --swap-urls '^https\://sel4.systems:http\://localhost\:4000'
 HTMLPROOFEROPT += --enforce-https=false --only-4xx --disable-external=false
