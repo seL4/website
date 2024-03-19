@@ -1,0 +1,58 @@
+# Copyright 2024, Proofcraft Pty Ltd
+#
+# SPDX-License-Identifier: BSD-2-Clause
+
+# Build and deploy the site
+
+name: Deploy Site
+
+on:
+  push:
+    branches:
+      - master
+  workflow_dispatch:
+
+jobs:
+  build:
+    name: Site
+    runs-on: ubuntu-20.04
+    steps:
+    - uses: actions/checkout@v4
+    - run: sudo gem install bundler -v 2.4.22
+    - run: make build JEKYLL_ENV=production
+    - run: tar -cvf site.tar _site/
+    - uses: actions/upload-artifact@v4
+      with:
+        name: site
+        path: site.tar
+
+  deploy:
+    if: ${{ github.repository_owner == 'seL4' &&
+            (github.event_name == 'push' ||
+            github.event_name == 'workflow_dispatch') }}
+    needs: build
+    name: 'Deploy'
+    runs-on: ubuntu-20.04
+    steps:
+    - uses: actions/checkout@v4
+      with:
+        ref: gh-pages
+        token: ${{ secrets.PRIV_REPO_TOKEN }}
+    # for removing files, we need to start fresh; this does not remove dot-files
+    # leaves .nojekyll in place
+    - run: rm -rf *
+    - uses: actions/download-artifact@v4
+      with:
+        name: site
+    - run: tar -xvf site.tar
+    - run: cp -a _site/* .
+    - run: rm -rf site.tar _site
+    # recreate CNAME file for GitHub; not included in generated site
+    - run: echo sel4.systems > CNAME
+    # add/remove everything
+    - run: git add -A .
+    - run: git diff --cached
+    - run: git config user.name "CI"
+    - run: git config user.email ci@sel4.systems
+    - run: git commit -m "auto-deployed"
+    - run: git push
