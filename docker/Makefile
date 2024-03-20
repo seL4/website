@@ -10,6 +10,9 @@ TAG=sel4/sel4-website
 preview: docker-build
 	cd ..; docker run -p 4000:4000 -v `pwd`:/mnt -ti $(TAG) SERVE_HOST="--host 0.0.0.0" serve
 
+checklinks: docker-build
+	cd ..; docker run -v `pwd`:/mnt -ti $(TAG) checklinks
+
 build: docker-build
 	cd ..; docker run -v `pwd`:/mnt -ti $(TAG)
 
