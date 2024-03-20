@@ -8,7 +8,7 @@
 #    docker build -t sel4/sel4-website -f docker/Dockerfile .
 FROM debian:12-slim
 
-RUN apt-get update && apt-get install -y bash make ruby bundler
+RUN apt-get update && apt-get install -y bash make ruby bundler curl
 
 ENV LANG=C.UTF-8
 
