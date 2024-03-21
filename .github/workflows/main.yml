@@ -132,7 +132,8 @@ jobs:
     name: "PR Comment"
     runs-on: 'ubuntu-latest'
     needs: [snapshot]
-    if: ${{ needs.snapshot.outputs.linkchecker_failed || needs.snapshot.outputs.validator_failed }}
+    if: ${{ needs.snapshot.outputs.linkchecker_failed == 'true' ||
+            needs.snapshot.outputs.validator_failed == 'true' }}
     env:
       LINKCHECK_MSG: ${{ needs.snapshot.outputs.linkcheck_msg }}
       VALIDATOR_MSG: ${{ needs.snapshot.outputs.validator_msg }}
@@ -142,7 +143,9 @@ jobs:
       - name: Build message
         id: msg
         run: |
-          # echo "Preview your changes [here](https://htmlpreview.github.io/?https://github.com/seL4/website_pr_hosting/blob/PR_${{ github.event.number }}/index.html)" > msg.txt
+          rm -f msg.txt
+          touch msg.txt
+          # echo "Preview your changes [here](https://htmlpreview.github.io/?https://github.com/seL4/website_pr_hosting/blob/PR_${{ github.event.number }}/index.html)" >> msg.txt
           if ${{ needs.snapshot.outputs.linkchecker_failed }}; then
             echo "" >> msg.txt
             echo "The link checker found some issues!" >> msg.txt
