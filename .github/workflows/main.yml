@@ -170,7 +170,7 @@ jobs:
           echo "$MSG"
 
       - name: Leave comment with link to site, and results of checks
-        uses: actions/github-script@v6
+        uses: actions/github-script@v7
         if: github.event.pull_request.head.repo.full_name == github.repository
         with:
           github-token: ${{secrets.GITHUB_TOKEN}}
