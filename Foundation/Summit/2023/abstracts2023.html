@@ -158,7 +158,7 @@ Support for dynamic features like updates adds significant complexity. Dynamic s
 <p>
 This talk will report on our initial work on this challenge. We'll discuss our approach to system design, which uses a strict hierarchy of control to ensure that supervisors have complete oversight of their subsystems, and can enforce protocols for resource delegation and revocation. We'll look at our work-in-progress supervisor API design, whose distinguishing feature is the ability to apply complex configuration updates with all-or-nothing semantics. And finally, we'll speculate on how we might eventually back this up with formal guarantees.
 </p>
-<a href="https://youtu.be/KTxz_UGGldA?si=ZmPV1JP5hmhaNZel" target="_blank"><img src="../../../images/icons/youtube_nobckgnd.svg" class="youtube_icon" alt="YouTube icon"></a>
+<a href="https://youtu.be/hHihCvB1cJI?si=3C1-F2wLJnEMHLDE" target="_blank"><img src="../../../images/icons/youtube_nobckgnd.svg" class="youtube_icon" alt="YouTube icon"></a>
 &nbsp;&nbsp;
 <a href="slides/day1-02-brecknell.pdf"><img src="../../../images/icons/slides.svg" alt="slides icon"></a>
 <br><a href="program#p-dynamic-sel4">See this talk in the program</a></div>
@@ -186,7 +186,7 @@ We are analyzing system interaction impacts between components that are formally
 <p>
 This talk is relevant to the seL4 scope because it covers an seL4 experience report relevant to developing capabilities toward “building a business case for using a verified kernel”. In order to use a verified kernel, especially with critical components, it is important to know its potential limitations and special considerations, therefore exploring the kernel’s interactions with components that might not be verified is paramount.
 </p>
-<a href="https://youtu.be/tpooLn2aJJ4?si=v3HLLkrDN2ikdNa6" target="_blank"><img src="../../../images/icons/youtube_nobckgnd.svg" class="youtube_icon" alt="YouTube icon"></a>
+<a href="https://youtu.be/YnjpB5GlIsA?si=Nc8NuVBz_6oqi7Kp" target="_blank"><img src="../../../images/icons/youtube_nobckgnd.svg" class="youtube_icon" alt="YouTube icon"></a>
 &nbsp;&nbsp;
 <a href="slides/day1-03-frost.pdf"><img src="../../../images/icons/slides.svg" alt="slides icon"></a>
 <br><a href="program#p-formally-stepping">See this talk in the program</a></div>
@@ -220,7 +220,7 @@ This talk is relevant to the seL4 scope because it covers an seL4 experience rep
 <p>
     For instance, the current seL4 invariant proofs are split into a generic architecture- independent part and an architecture-dependent part. This allows significantly speed up in development of proofs for new features, as well as reduction of the proof update bur- den on code changes. We plan to improve this architecture split and apply it to other large proof artefacts in seL4. Another example is our plan to almost completely automate the verification of platform ports within existing verified architectures of the seL4 kernel. Currently, porting seL4 to a new platform involves determining which architecture the platform runs on, for instance Arm v7, Intel x64, or RISC-V 64, determining which devices are included, at which memory addresses they reside, etc. These lead to configuration parameters for the kernel and the definition of a set of constants. Instead of requiring the involvement of experts, we can develop proof automation that shows these interface relationships are satisfied by a concrete platform configuration, greatly reducing the verification overhead of porting to a new platform.
 </p>
-<a href="https://youtu.be/bxlE5AiQQXU?si=_n9CYMSfSGELmckg" target="_blank"><img src="../../../images/icons/youtube_nobckgnd.svg" class="youtube_icon" alt="YouTube icon"></a>
+<a href="https://youtu.be/XJTdhZqFONI?si=YNeFC0bfC_tMeH1N" target="_blank"><img src="../../../images/icons/youtube_nobckgnd.svg" class="youtube_icon" alt="YouTube icon"></a>
 &nbsp;&nbsp;
 <a href="slides/day1-04-klein.pdf"><img src="../../../images/icons/slides.svg" alt="slides icon"></a>
 <br><a href="program#p-reducing-reliance">See this talk in the program</a></div>
@@ -246,7 +246,7 @@ with small core counts using our multikernel mechanisms.
 <p>
 This talk will detail how to construct such a system, the work involved and examples of how it can be used.
 </p>
-<a href="https://youtu.be/PE7cLQ1OTqM?si=mm5mZHFut1EZNDWd" target="_blank"><img src="../../../images/icons/youtube_nobckgnd.svg" class="youtube_icon" alt="YouTube icon"></a>
+<a href="https://youtu.be/ePdaQDO5nhc?si=LMtGK8b2i7b91o0s" target="_blank"><img src="../../../images/icons/youtube_nobckgnd.svg" class="youtube_icon" alt="YouTube icon"></a>
 &nbsp;&nbsp;
 <a href="slides/day1-05-mcleod.pdf"><img src="../../../images/icons/slides.svg" alt="slides icon"></a>
 <br><a href="program#p-efficient-smp">See this talk in the program</a></div>
@@ -271,7 +271,7 @@ Most seL4 systems are multi-server systems - consisting of numerous user-level c
 <p>
 There has been past work looking at analysing static seL4-based systems for various information flow properties, but Kry10 OS is a more dynamic system. This presentation will discuss the problem space of analysing information and control flow in multi-server systems and present options and solutions (both formal and informal) for doing this for static and dynamic seL4-based systems. We will also discuss how such analyses contribute to overall system assurance cases and how they relate to kernel and user-level component proofs.
 </p>
-<a href="https://youtu.be/yk-8tb3ssHw?si=Z4QU0C0qlaSqLnut" target="_blank"><img src="../../../images/icons/youtube_nobckgnd.svg" class="youtube_icon" alt="YouTube icon"></a>
+<a href="https://youtu.be/u-yhdme-o0k?si=zbYHmq0QxzmmeZzt" target="_blank"><img src="../../../images/icons/youtube_nobckgnd.svg" class="youtube_icon" alt="YouTube icon"></a>
 &nbsp;&nbsp;
 <a href="slides/day1-06-kuz.pdf"><img src="../../../images/icons/slides.svg" alt="slides icon"></a>
 <br><a href="program#p-system-information">See this talk in the program</a></div>
@@ -303,7 +303,7 @@ platform.
 <p>
 Our approach provides a flexible and scalable solution for critical systems, addressing the limitations of existing solutions while building on the foundation of our previous work. Our talk will provide an overview of the implementation details, performance improvements, and future directions for the technology, highlighting the benefits of using the seL4 hypervisor for virtualized environments.
 </p>
-<a href="https://youtu.be/GlHMxTiD3wo?si=WlS_9tPEi7BtUqdL" target="_blank"><img src="../../../images/icons/youtube_nobckgnd.svg" class="youtube_icon" alt="YouTube icon"></a>
+<a href="https://youtu.be/AsYB6yOAEYQ?si=jEewVOADm8NQv3bl" target="_blank"><img src="../../../images/icons/youtube_nobckgnd.svg" class="youtube_icon" alt="YouTube icon"></a>
 &nbsp;&nbsp;
 <a href="slides/day1-07-ahvenjärvi.pdf"><img src="../../../images/icons/slides.svg" alt="slides icon"></a>
 <br><a href="program#p-advancements-virtualization">See this talk in the program</a></div>
@@ -325,7 +325,7 @@ The seL4 Device Driver Framework
 <p>
 A lack of a good approach to I/O is one of the primary barriers to uptake for seL4. Unfortunately, there’s a distinct lack of guidance, along with too many poor performing solutions that don’t make good use of seL4. We believe a thoughtful design can, and should, demonstrate performance competitive with Linux. We present such a design in the seL4 Device Driver framework (sDDF). Its simple design prioritises a strong separation of concerns by using multiple isolated components, each with a single task in the pipeline, that communicate via a low-overhead, asynchronous transport layer. It’s presently focused on networking systems, and comparison against Linux already shows that simplicity wins. This talk will revisit the design of the sDDF, and discuss ongoing work to further evaluate and optimise the framework for device sharing.
 </p>
-<a href="https://youtu.be/gDXsnBhNiQM?si=mgxC5xNNWiH0wabe" target="_blank"><img src="../../../images/icons/youtube_nobckgnd.svg" class="youtube_icon" alt="YouTube icon"></a>
+<a href="https://youtu.be/be0_PSW0b5M?si=t7dB73HMk8hR9mk0" target="_blank"><img src="../../../images/icons/youtube_nobckgnd.svg" class="youtube_icon" alt="YouTube icon"></a>
 &nbsp;&nbsp;
 <a href="slides/day1-08-parker.pdf"><img src="../../../images/icons/slides.svg" alt="slides icon"></a>
 <br><a href="program#p-sel4-device">See this talk in the program</a></div>
@@ -362,7 +362,7 @@ Our third major activity is Pancake, our new systems language aimed at easing ve
 <p>
 I will finally give an update on our work on verified Time Protection, the principled prevention of microarchitectural timing channels, as wel as the SMOS project, which is designing a fully dynamic, general-purpose OS that can be proved to enforce a security policy.
 </p>
-<a href="https://youtu.be/D6SRIUMAZAA?si=a9jKZXa97uDQgLJY" target="_blank"><img src="../../../images/icons/youtube_nobckgnd.svg" class="youtube_icon" alt="YouTube icon"></a>
+<a href="https://youtu.be/v16ycALKDLM?si=5eVX9qe2faJhDQyq" target="_blank"><img src="../../../images/icons/youtube_nobckgnd.svg" class="youtube_icon" alt="YouTube icon"></a>
 &nbsp;&nbsp;
 <a href="slides/day1-09-heiser.pdf"><img src="../../../images/icons/slides.svg" alt="slides icon"></a>
 <br><a href="program#p-rd-update">See this talk in the program</a></div>
@@ -384,7 +384,7 @@ seL4: Experiences, Improvements and Optimizations
 <p>
 Sandboxing legacy code provides a low barrier approach for developers to start implementing systems in the seL4 ecosystem. However, these legacy applications often need to communicate with each other to function properly. seL4 provides a means of communication between virtual machines via a software implementation of an ethernet device called virtio-net, which currently suffers from performance and stability problems. These performance and stability issues present a barrier to adoption of seL4 for multiple markets. DornerWorks will present an overview of the seL4 virtio-net implementation, the challenges using it, how DornerWorks improved it in the mainline, and performance benchmarks which include our IP solution to increase performance by a factor of 40.
 </p>
-<a href="https://youtu.be/bCRNTrZ9gx8?si=jA3paaa7efTwlG0M" target="_blank"><img src="../../../images/icons/youtube_nobckgnd.svg" class="youtube_icon" alt="YouTube icon"></a>
+<a href="https://youtu.be/SsEuhby_U6k?si=9dPxuHINTNOcLgFR" target="_blank"><img src="../../../images/icons/youtube_nobckgnd.svg" class="youtube_icon" alt="YouTube icon"></a>
 &nbsp;&nbsp;
 <a href="slides/day1-10-guikema.pdf"><img src="../../../images/icons/slides.svg" alt="slides icon"></a>
 <br><a href="program#p-sel4-experiences">See this talk in the program</a></div>
@@ -412,7 +412,7 @@ We use the Avnet MaaXBoard as our development board although our intention is to
 <p>
 We also present an experience report detailing our development with seL4 as a team who had no prior experience with it.
 </p>
-<a href="https://youtu.be/ih3oxRS8PAU?si=m-PtD8uXo8OOzx0-" target="_blank"><img src="../../../images/icons/youtube_nobckgnd.svg" class="youtube_icon" alt="YouTube icon"></a>
+<a href="https://youtu.be/Jsp2VMq3uDI?si=JucKo2C5ykhWaItl" target="_blank"><img src="../../../images/icons/youtube_nobckgnd.svg" class="youtube_icon" alt="YouTube icon"></a>
 &nbsp;&nbsp;
 <a href="slides/day1-11-felmeden.pdf"><img src="../../../images/icons/slides.svg" alt="slides icon"></a>
 <br><a href="program#p-from-zero">See this talk in the program</a></div>
@@ -443,7 +443,7 @@ One approach to dealing with failure is to let software crash, but monitor it an
 <p>
 We’ve applied this “let it crash” approach in the sel4-based Kry10 OS. In this presentation we will dive into our use of this approach, describe the challenges of applying it in Kry10 OS (such as resource recovery, dependency managements, re-initialisation of resources, etc), explain why seL4 provides all the right features for applying this approach at the system level, and give examples of how it helps to achieve reliability.
 </p>
-<a href="https://youtu.be/9oxfqS6gUik?si=9ersOF3-REmUiR_k" target="_blank"><img src="../../../images/icons/youtube_nobckgnd.svg" class="youtube_icon" alt="YouTube icon"></a>
+<a href="https://youtu.be/jAzo4J9mrrE?si=h5slswaN53Ws4Ncf" target="_blank"><img src="../../../images/icons/youtube_nobckgnd.svg" class="youtube_icon" alt="YouTube icon"></a>
 &nbsp;&nbsp;
 <a href="slides/day1-12-kuz.pdf"><img src="../../../images/icons/slides.svg" alt="slides icon"></a>
 <br><a href="program#p-crashing-for">See this talk in the program</a></div>
@@ -465,7 +465,7 @@ Building a Platform for Critical Devices in the “Real World”
 <p>
 Boyd Multerer, Founder and CEO of Kry10 will talk about the role of seL4 as a one of the critical ingredients for addressing the “real world” requirements and high level of assurance required by their critical systems.  Boyd will talk about the importance of the continued innovation around seL4 and the additional platform services platform work Kry10 is doing to need to deliver addition of seL4 and the new work underway as a key ingredient to any broader platform for critical systems and the importance of new investments done and the critical role that seL4 plays as Boyd will emphasize role of seL4 and the Kry10 Platform. Hear about the design principles of the KRy10 Platform Kry10 Platform that caters to the real-world demands of critical systems.  Don't miss this opportunity to learn about the exciting advancements in seL4 and the Kry10 Platform and its potential to support the real-world challenges faced by critical systems.
 </p>
-<a href="https://youtu.be/kUWmockNkUY?si=22QhHV2woeubBgXj" target="_blank"><img src="../../../images/icons/youtube_nobckgnd.svg" class="youtube_icon" alt="YouTube icon"></a>
+<a href="https://youtu.be/1H5EQ4DrJeo?si=ZffQVqCmYRdZ4dfu" target="_blank"><img src="../../../images/icons/youtube_nobckgnd.svg" class="youtube_icon" alt="YouTube icon"></a>
 &nbsp;&nbsp;
 <a href="slides/day1-13-multerer.pdf"><img src="../../../images/icons/slides.svg" alt="slides icon"></a>
 <br><a href="program#p-gold-kry10">See this talk in the program</a></div>
@@ -487,7 +487,7 @@ CantripOS: An OS for Ambient ML Applications
 <p>
 CantripOS is an open source operating system purpose-built to run ML workloads for embedded systems. It is being developed as part of Google’s project Sparrow, whose charter is to build a low-power embedded platform for ML applications with a focus on security and privacy. CantripOS is built in the Rust programming language1, runs under the seL4 microkernel2, and uses a modified CAmkES framework3. This allows CantripOS to run dynamically loaded applications in a controlled sandbox, while still retaining the benefits of a statically designed system. This paper describes the system design, modifications made to seL4 and CAmkES, and future directions. All the work described here is publicly available on GitHub4.
 </p>
-<a href="https://youtu.be/yITE9AvlohY?si=zHtRHuyqaYdk_yCj" target="_blank"><img src="../../../images/icons/youtube_nobckgnd.svg" class="youtube_icon" alt="YouTube icon"></a>
+<a href="https://youtu.be/-3SCCx-b61k?si=IpAa7ZHfBQf8Wd9l" target="_blank"><img src="../../../images/icons/youtube_nobckgnd.svg" class="youtube_icon" alt="YouTube icon"></a>
 &nbsp;&nbsp;
 <a href="slides/day2-01-leffler.pdf"><img src="../../../images/icons/slides.svg" alt="slides icon"></a>
 <br><a href="program#p-cantripos">See this talk in the program</a></div>
@@ -509,7 +509,7 @@ Magnetite: Rust-Based OS Services for seL4
 <p>
 What if the isolation that seL4 provides could be applied at a fine-grained level to individual processes? Frequently seL4 is used as a hypervisor but at MIT Lincoln Laboratory, we explored the potential of seL4 as a foundational block in a new security-focused operating system. Magnetite is a suite of performant, secure-by-design, real-time OS services built upon the formally-verified microkernel seL4 and written in Rust, a memory-safe language. Magnetite offers a feature-rich API for both legacy C and new Rust applications to engage with its variety of resource types, which extend seL4’s capability-based system to provide common OS services. Magnetite is built upon the Principle of Least Privilege (PoLP) to limit trust and time of trust, and also adheres to strong isolation properties with self-contained processes and system services, and isolated domains known as silos.
 </p>
-<a href="https://youtu.be/O66mgVMAA6E?si=Me6zb6t7DqCi57On" target="_blank"><img src="../../../images/icons/youtube_nobckgnd.svg" class="youtube_icon" alt="YouTube icon"></a>
+<a href="https://youtu.be/UFF93HcQfEc?si=MrX9dEbI3b_CAamZ" target="_blank"><img src="../../../images/icons/youtube_nobckgnd.svg" class="youtube_icon" alt="YouTube icon"></a>
 &nbsp;&nbsp;
 <a href="slides/day2-02-furgala.pdf"><img src="../../../images/icons/slides.svg" alt="slides icon"></a>
 <br><a href="program#p-magnetite">See this talk in the program</a></div>
@@ -555,7 +555,7 @@ I will then showcase a live demo demonstrating the zero-touch provisioning capab
 <p>
 [4] https://azure.microsoft.com/en-us/products/iot-hub
 </p>
-<a href="https://youtu.be/Kp-PsRZbbCc?si=_jYcxJgbgoLY3Hsr" target="_blank"><img src="../../../images/icons/youtube_nobckgnd.svg" class="youtube_icon" alt="YouTube icon"></a>
+<a href="https://youtu.be/R9zRyYVReKU?si=Jj-BjHhlqIQbCjob" target="_blank"><img src="../../../images/icons/youtube_nobckgnd.svg" class="youtube_icon" alt="YouTube icon"></a>
 &nbsp;&nbsp;
 <a href="slides/day2-03-hussman.pdf"><img src="../../../images/icons/slides.svg" alt="slides icon"></a>
 <br><a href="program#p-showcase-microkernel">See this talk in the program</a></div>
@@ -577,7 +577,7 @@ Rust support in seL4 userspace: update and roadmap
 <p>
 The Rust programming language and ecosystem provide memory safety and enhance developer productivity even at lower levels of the software stack. This talk outlines our efforts, funded by the seL4 Foundation, to apply Rust to seL4 userspace and facilitate its use in the seL4 software ecosystem. This talk will cover new bodies of Rust code related to libsel4, the seL4 Core Platform, and CapDL; information about how to integrate, extend, and contribute to this work; and our vision and roadmap moving forward.
 </p>
-<a href="https://youtu.be/J17lC124_9s?si=m0QguvsgDXOTlrtz" target="_blank"><img src="../../../images/icons/youtube_nobckgnd.svg" class="youtube_icon" alt="YouTube icon"></a>
+<a href="https://youtu.be/jR2i4Y2Aq3o?si=rJSRRTD7Y-3Z6lUu" target="_blank"><img src="../../../images/icons/youtube_nobckgnd.svg" class="youtube_icon" alt="YouTube icon"></a>
 &nbsp;&nbsp;
 <a href="slides/day2-04-spinale.pdf"><img src="../../../images/icons/slides.svg" alt="slides icon"></a>
 <br><a href="program#p-rust-support">See this talk in the program</a></div>
@@ -604,7 +604,7 @@ The seL4 Microkit is an operating system framework on top of seL4 that aims to p
 </li><li> How the seL4CP has progressed over the past year and how it can now be used to create more complex systems.
 </li><li> An update on the verification story of seL4CP, which includes the functional correctness of the seL4CP library and runtime code as well as the verified mapping from seL4CP system description to CapDL.
 </ul>
-<a href="https://youtu.be/QWMyvFuJ-WQ?si=aN9vwOjgYmNsJ37w" target="_blank"><img src="../../../images/icons/youtube_nobckgnd.svg" class="youtube_icon" alt="YouTube icon"></a>
+<a href="https://youtu.be/1Y6uE3eZWKQ?si=9fIcnBFUlji0EOAj" target="_blank"><img src="../../../images/icons/youtube_nobckgnd.svg" class="youtube_icon" alt="YouTube icon"></a>
 &nbsp;&nbsp;
 <a href="slides/day2-05-velickovic.pdf"><img src="../../../images/icons/slides.svg" alt="slides icon"></a>
 <br><a href="program#p-sel4-microkit">See this talk in the program</a></div>
@@ -642,7 +642,7 @@ This approach is suitable for interactions with a networking stack (smoltcp) and
 <p>
 We will present conclusions and examples developed as part of this work.
 </p>
-<a href="https://youtu.be/TeF0f0YcDOw?si=eCZA1ryWFpBZi5UR" target="_blank"><img src="../../../images/icons/youtube_nobckgnd.svg" class="youtube_icon" alt="YouTube icon"></a>
+<a href="https://youtu.be/JmqSfTEg0u8?si=pPKmIWJ4_PrHxvfk" target="_blank"><img src="../../../images/icons/youtube_nobckgnd.svg" class="youtube_icon" alt="YouTube icon"></a>
 &nbsp;&nbsp;
 <a href="slides/day2-06-hamlin.pdf"><img src="../../../images/icons/slides.svg" alt="slides icon"></a>
 <br><a href="program#p-leveraging-rust">See this talk in the program</a></div>
@@ -732,7 +732,7 @@ where failure is unacceptable. We apply cutting edge computer science
 and mathematics to advance the state of the art in software and hardware
 trustworthiness.
 </p>
-<a href="https://youtu.be/e7-laSU2NS0?si=zP-36-6VWKaIM0xP" target="_blank"><img src="../../../images/icons/youtube_nobckgnd.svg" class="youtube_icon" alt="YouTube icon"></a>
+<a href="https://youtu.be/PynVzpXRW-o?si=JR_9nGM3fwILHnJc" target="_blank"><img src="../../../images/icons/youtube_nobckgnd.svg" class="youtube_icon" alt="YouTube icon"></a>
 <br>
 <a href="program#p-panel">See this talk in the program</a></div>
 
@@ -753,7 +753,7 @@ trustworthiness.
 <p>
     The royalty-free, open-source RISC-V is an ideal ISA for the high-assurance seL4 microkernel since the formal proof requires definitive understanding of its underlying architecture. DornerWorks’ use-case generally utilizes virtualization with seL4 to provide a secure platform which allows for cyber-retrofit, rapid deployment, and cyber resilience. Virtualization is an area where RISC-V is immature. The hypervisor (H) extension has been ratified, but there are still no commercially available silicon processors that support the extension. The Rocket Chip is a soft-core RISC-V implementation which can be instantiated on an FPGA and is essentially equivalent to a real silicon processor. DornerWorks bridged the gap between the seL4 VMM running on QEMU and running on actual silicon by getting a seL4 VMM running, for the first time, on a Rocket Chip instantiation which has the hypervisor extensions implemented. This presentation will provide an overview of the Rocket Chip, the RISC-V H extension, the effort that went into getting the seL4 VMM to run on Rocket Chip, and thoughts on the next steps for seL4 virtualization on RISC-V platforms.
 </p>
-<a href="https://youtu.be/YtTM0jn4iN0?si=gG1o6Ygq6vYjWbkF" target="_blank"><img src="../../../images/icons/youtube_nobckgnd.svg" class="youtube_icon" alt="YouTube icon"></a>
+<a href="https://youtu.be/a-JLqYVINxo?si=EjKQHSYPmGrlgLna" target="_blank"><img src="../../../images/icons/youtube_nobckgnd.svg" class="youtube_icon" alt="YouTube icon"></a>
 &nbsp;&nbsp;
 <a href="slides/day2-08-vanvossen.pdf"><img src="../../../images/icons/slides.svg" alt="slides icon"></a>
 <br><a href="program#p-sel4-vmm">See this talk in the program</a></div>
@@ -781,7 +781,7 @@ Our project builds on initial work done at Arm Research to port the seL4 kernel 
 <p>
 This paper will report on the progress of the project, and discuss the requirements and design options for the communication of CHERI capabilities between seL4 tasks, and the implications this has on the seL4 IPC mechanisms.
 </p>
-<a href="https://youtu.be/YeBqmRWQWrI?si=WNTDVL0iIODbOtL3" target="_blank"><img src="../../../images/icons/youtube_nobckgnd.svg" class="youtube_icon" alt="YouTube icon"></a>
+<a href="https://youtu.be/VcufX8hZ5-o?si=zNc0rSodvxrm5DF8" target="_blank"><img src="../../../images/icons/youtube_nobckgnd.svg" class="youtube_icon" alt="YouTube icon"></a>
 &nbsp;&nbsp;
 <a href="slides/day2-09-atkins.pdf"><img src="../../../images/icons/slides.svg" alt="slides icon"></a>
 <br><a href="program#p-sel4-arm">See this talk in the program</a></div>
@@ -809,7 +809,7 @@ To mitigate this gap, we started with an existing and widely used Rust network s
 <p>
 This summer, we used Prognosis framework, offering automated closed-box learning and analysis of models of network protocol implementations, for model based veritication of TCP protocol in smoltcp, and Kani Rust verifier to verify TCP protocol logic and packet format correctness via symbolic execution. We have found protocol violations or misimplementations in the library, and have been working with the smoltcp developers to mitigate these violations. Furthermore, we integrated Continuous Verification suite with the smoltcp library, to automatically validate the code after each commit.
 </p>
-<a href="https://youtu.be/uLA6bbDzGyI?si=e9G9h2eZ_4oVjxo_" target="_blank"><img src="../../../images/icons/youtube_nobckgnd.svg" class="youtube_icon" alt="YouTube icon"></a>
+<a href="https://youtu.be/c7UC2Rgj3n4?si=XCFZwqwZbTeERon1" target="_blank"><img src="../../../images/icons/youtube_nobckgnd.svg" class="youtube_icon" alt="YouTube icon"></a>
 &nbsp;&nbsp;
 <a href="slides/day2-10-podhradsky.pdf"><img src="../../../images/icons/slides.svg" alt="slides icon"></a>
 <br><a href="program#p-incremental-assurance">See this talk in the program</a></div>
@@ -853,7 +853,7 @@ By hosting the installation/uninstallation of the Stage-1 context root, bring mu
 </p><p>
 3. Not only can native drivers be highly reused, but also the performance is almost the same as without virtualization
 </p>
-<a href="https://youtu.be/83NvRf4zsJQ?si=FohEFUf2QCvGPiWk" target="_blank"><img src="../../../images/icons/youtube_nobckgnd.svg" class="youtube_icon" alt="YouTube icon"></a>
+<a href="https://youtu.be/6knMCkB-Qvw?si=sd1etRZ3Y4Y_Z0Kc" target="_blank"><img src="../../../images/icons/youtube_nobckgnd.svg" class="youtube_icon" alt="YouTube icon"></a>
 &nbsp;&nbsp;
 <a href="slides/day2-12-mao.pdf"><img src="../../../images/icons/slides.svg" alt="slides icon"></a>
 <br><a href="program#p-iommu">See this talk in the program</a></div>
@@ -881,7 +881,7 @@ We believe our implementation will provide high performance and reliability thro
 <p>
 In this talk, we report on our progress implementing and verifying this networking stack.
 </p>
-<a href="https://youtu.be/rkuqmizZjbw?si=ojlp7FRRoduiOXIQ" target="_blank"><img src="../../../images/icons/youtube_nobckgnd.svg" class="youtube_icon" alt="YouTube icon"></a>
+<a href="https://youtu.be/wjrA0HlW9JQ?si=O-s5cyDWcgz_LxTY" target="_blank"><img src="../../../images/icons/youtube_nobckgnd.svg" class="youtube_icon" alt="YouTube icon"></a>
 &nbsp;&nbsp;
 <a href="slides/day2-11-rollins.pdf"><img src="../../../images/icons/slides.svg" alt="slides icon"></a>
 <br><a href="program#p-toward-verified">See this talk in the program</a></div>
@@ -903,7 +903,7 @@ In this talk, we report on our progress implementing and verifying this networki
 <p>
 This talk provides a brief introduction of NIO – a global smart EV company, and discusses how automotive industry evolves towards software defined vehicle, and how OS could play a key role in this transition, and shares what NIO’s vision and progress of building a vehicle OS using seL4.
 </p>
-<a href="https://youtu.be/HfvX2VbWp6c?si=TpCsq8GtYme0SY12" target="_blank"><img src="../../../images/icons/youtube_nobckgnd.svg" class="youtube_icon" alt="YouTube icon"></a>
+<a href="https://youtu.be/W_Y3M6s4E9w?si=OHlpA1kppVWKtbyk" target="_blank"><img src="../../../images/icons/youtube_nobckgnd.svg" class="youtube_icon" alt="YouTube icon"></a>
 &nbsp;&nbsp;
 <a href="slides/day2-13-wang.pdf"><img src="../../../images/icons/slides.svg" alt="slides icon"></a>
 <br><a href="program#p-gold-nio">See this talk in the program</a></div>
@@ -925,7 +925,7 @@ This talk provides a brief introduction of NIO – a global smart EV company, an
 <p>
 In today's digital age, when cyber threats are everywhere, the importance of building robust and secure systems cannot be overstated. This presentation dives deep into the initiatives undertaken by the Secure Systems Research Center (SSRC). We'll shed light on our collaborations, projects, and the novel solutions we've pioneered to tackle pressing cyber challenges. The SSRC is a pillar among the ten research centers that comprise the Technology Innovation Institute (TII). Situated in Abu Dhabi, TII aims to lead the way in tech research, focusing on critical areas in the digital world today. In this presentation, we will discuss our latest work and how tools like the seL4 microkernel help make our systems even more secure. By the end of this session, attendees will gain a panoramic view of SSRC's achievements over the past year. We'll also offer a glimpse into the future, outlining our strategic plans and emphasizing SSRC's commitment to pushing the barriers of tech security.
 </p>
-<a href="https://youtu.be/NrtkpOHv8-k?si=ig8c4umBXrd5Y1cI" target="_blank"><img src="../../../images/icons/youtube_nobckgnd.svg" class="youtube_icon" alt="YouTube icon"></a>
+<a href="https://youtu.be/MX_svP-Sopk?si=L7DBrBEMd7eIxNYs" target="_blank"><img src="../../../images/icons/youtube_nobckgnd.svg" class="youtube_icon" alt="YouTube icon"></a>
 &nbsp;&nbsp;
 <a href="slides/day2-14-dematos.pdf"><img src="../../../images/icons/slides.svg" alt="slides icon"></a>
 <br><a href="program#p-gold-tii">See this talk in the program</a></div>
@@ -967,7 +967,7 @@ In today's digital age, when cyber threats are everywhere, the importance of bui
 <p>
     Everton de Matos serves as Lead Security Research Engineer at the Technology Innovation Institute (TII) within the Secure Systems Research Center (SSRC). He earned his Ph.D. in Computer Science from the Pontifical Catholic University of Rio Grande do Sul (PUCRS). During his doctoral studies, he was honored with a Fulbright scholarship, allowing him to further his research at the University of Southern California (USC). Presently, Everton's focus lies in security for embedded systems, specifically within the context of the seL4 Microkernel. He boasts numerous contributions to significant conferences and journals. His primary areas of interest encompass embedded systems security, the Internet of Things, virtualization, and context-aware security.
 </p>
-<a href="https://youtu.be/Z8TK83qx0NY?si=Yy8GpNi1KHEWYbwl" target="_blank"><img src="../../../images/icons/youtube_nobckgnd.svg" class="youtube_icon" alt="YouTube icon"></a>
+<a href="https://youtu.be/ZHLePzGa4vs?si=2Jk9djA0IbBaO81G" target="_blank"><img src="../../../images/icons/youtube_nobckgnd.svg" class="youtube_icon" alt="YouTube icon"></a>
 &nbsp;&nbsp;
 <br><a href="program#p-sig-community">See this talk in the program</a></div>
 
@@ -1013,7 +1013,7 @@ Note: Most++ COST ARMv8 SoC only have GICv3 interrupt controller IP, GOS interru
 <p>
 Note: Linux GOS basic system can recover less in 500ms, Linux GOS with an actual complex application may recover less in 1000 ms.
 </p>
-<a href="https://www.youtube.com/watch?" target="_blank"><img src="../../../images/icons/youtube_nobckgnd.svg" class="youtube_icon" alt="YouTube icon"></a>
+<!--a href="https://www.youtube.com/watch?" target="_blank"><img src="../../../images/icons/youtube_nobckgnd.svg" class="youtube_icon" alt="YouTube icon"></a-->
 <br><a href="program#p-sel4-virtualization">See this talk in the program</a></div>
 
 <div class="summit-abstract" id="a-building-commercial"><!--<title>Summit abstract</title>-->
@@ -1039,7 +1039,7 @@ In 2017 Cog Systems developed a single domain virtualized device on an HTC One A
 <p>
 At the 2020 seL4 Summit, Cog Systems presented this effort as a case study in applying seL4 to a product commercialization effort. Since then, the project has experienced multiple and varied challenges, and has not yet been completed. Cog Systems feels there is value in giving a follow-up presentation to discuss the progress, setbacks, and lessons learned in the past few years.
 </p>
-<a href="https://youtu.be/pC2KdpTPstI?si=u9_u0RJ0xnyrfM14" target="_blank"><img src="../../../images/icons/youtube_nobckgnd.svg" class="youtube_icon" alt="YouTube icon"></a>
+<a href="https://youtu.be/TSYXw4DIGXw?si=BGeO-2LhY1lGREJr" target="_blank"><img src="../../../images/icons/youtube_nobckgnd.svg" class="youtube_icon" alt="YouTube icon"></a>
 &nbsp;&nbsp;
 <a href="slides/day3-03-sebranek.pdf"><img src="../../../images/icons/slides.svg" alt="slides icon"></a>
 <br><a href="program#p-building-commercial">See this talk in the program</a></div>
@@ -1064,7 +1064,7 @@ At the 2020 seL4 Summit, Cog Systems presented this effort as a case study in ap
 <p>
     In this talk, we will present our efforts on using seL4 on RISC-V to build a TEE service. We will discuss the challenges we faced during the development process and the solutions we implemented to address them. Additionally, we will provide an in-depth overview of our TEE architecture by discussing its features and demonstrating its functionality through real-world use cases. Our experimentation tests with the PolarFire Icicle kit have played a crucial role in enhancing our understanding of the platform and refining our implementation. Furthermore, we will discuss our ongoing efforts to improve and expand upon the TEE service and its potential applications, as well as outline our future research and development directions in this domain.
 </p>
-<a href="https://youtu.be/7L-hLbxCkCc?si=52JqDj12s7tLqKa0" target="_blank"><img src="../../../images/icons/youtube_nobckgnd.svg" class="youtube_icon" alt="YouTube icon"></a>
+<a href="https://youtu.be/QSo03imeTx8?si=x2Qx7DRZb82xnJ7b" target="_blank"><img src="../../../images/icons/youtube_nobckgnd.svg" class="youtube_icon" alt="YouTube icon"></a>
 &nbsp;&nbsp;
 <a href="slides/day3-04-dematos.pdf"><img src="../../../images/icons/slides.svg" alt="slides icon"></a>
 <br><a href="program#p-sel4-riscv">See this talk in the program</a></div>
@@ -1101,7 +1101,7 @@ The principles also demand fresh information and constrained disclosure, which a
 <p>
 It remains to implement a more comprehensive suite of measurements for the Linux kernel and the target program, and to demonstrate layered attestation on the bare metal of the ODROID XU4. If the measurements suffice to detect corruption, the appraiser will learn of this. Possible future work includes implementing this work for a wider range of Linux kernels and hardware platforms or formalizing a composition of seL4 kernel-level proofs and proofs over the attestation tools.
 </p>
-<a href="https://youtu.be/tGRQFvVnmVU?si=Mhz7ofjOE7DDCZcR" target="_blank"><img src="../../../images/icons/youtube_nobckgnd.svg" class="youtube_icon" alt="YouTube icon"></a>
+<a href="https://youtu.be/lyTyJKugoqU?si=mbT_WOp2fGZsbL1h" target="_blank"><img src="../../../images/icons/youtube_nobckgnd.svg" class="youtube_icon" alt="YouTube icon"></a>
 &nbsp;&nbsp;
 <a href="slides/day3-05-neises.pdf"><img src="../../../images/icons/slides.svg" alt="slides icon"></a>
 <br><a href="program#p-trustworthy-measurements">See this talk in the program</a></div>
