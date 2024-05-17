@@ -15,9 +15,9 @@
 {%-				assign active = 'active' -%}
 {%-			endif -%}
 		<li class="dropdown {{ active }}"><a class="dropdown-toggle" data-toggle="dropdown" href="
-		{{- url }}">{{ name }} <span class="caret"></span></a>
+		{{- url | relative_url }}">{{ name }} <span class="caret"></span></a>
 {%-		else %}
-		<li class="{{ active }}"><a href="{{ url }}">{{ name }}</a>
+		<li class="{{ active }}"><a href="{{ url | relative_url }}">{{ name }}</a>
 {%-		endif -%}
 {%-		if submenu %}
 		<ul class="dropdown-menu">
