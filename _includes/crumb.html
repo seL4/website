@@ -28,4 +28,4 @@
 {%-			break -%}
 {%-		endif -%}
 {%-	endfor -%}
-<li><a href="{{ curl }}">{{ cname | split: "." | first }}</a></li>
+<li><a href="{{ curl | relative_url }}">{{ cname | split: "." | first }}</a></li>

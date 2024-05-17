@@ -9,13 +9,14 @@ layout: default
  <div class="col">
   <h1>
     News about
-    <a href="/">seL4</a>
+    <a href={{ "/" | relative_url }}>seL4</a>
     and the
-    <a href="/Foundation">seL4 Foundation</a>
+    <a href={{ "/Foundation" | relative_url }}>seL4 Foundation</a>
   </h1>
  </div>
  <div class="col">
-Older News:  {% for i in (2020..newest_year) -%}<a href="/news/{{ i }}">{{ i }}</a> {% endfor %}
+{% assign url = "/news/" | relative_url -%}
+Older News:  {% for i in (2020..newest_year) -%}<a href="{{ url }}{{ i }}">{{ i }}</a> {% endfor %}
  </div>
 </div>
 {{ content }}
