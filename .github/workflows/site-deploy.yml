@@ -15,7 +15,7 @@ on:
 jobs:
   build:
     name: Site
-    runs-on: ubuntu-20.04
+    runs-on: ubuntu-latest
     steps:
     - uses: actions/checkout@v4
     - uses: ruby/setup-ruby@v1 # sets up ruby accourding to .ruby-version and caches bundler deps
@@ -31,10 +31,10 @@ jobs:
   deploy:
     if: ${{ github.repository_owner == 'seL4' &&
             (github.event_name == 'push' ||
-            github.event_name == 'workflow_dispatch') }}
+             github.event_name == 'workflow_dispatch') }}
     needs: build
     name: 'Deploy'
-    runs-on: ubuntu-20.04
+    runs-on: ubuntu-latest
     steps:
     - uses: actions/checkout@v4
       with:
