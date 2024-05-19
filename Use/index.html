@@ -93,7 +93,7 @@
     This page discusses the issues a business will need to consider for a <b>“transition to seL4”</b>, whether creating a
     new product or upgrading an existing product.</p>
    <p>Ultimately,
-    the best approach is to <a href="/contact/">contact us</a>
+    the best approach is to <a href="../contact/">contact us</a>
     to discuss your needs and aims, but
     brainstorming through the considerations described below is a good
     first step in any case. This will also give you an idea of the
@@ -108,13 +108,13 @@
   <p>
     You might also have questions on the <b> licence </b> and its implications.
     For this, read <a href="https://microkerneldude.wordpress.com/2019/12/09/what-does-sel4s-license-imply/">Gernot’s licensing blog</a> and
-    <a href="/contact/">contact us</a> if you have
+    <a href="../contact/">contact us</a> if you have
     any questions!
   </p>
   <p>Now to the considerations.</p>
   <ol>
     <li> <b>The aim: Security through isolation</b>.
-      <img src="/images/trusted.svg" style="width:300px; float:right;" alt="seL4 system"/>
+      <img src="../images/trusted.svg" style="width:300px; float:right;" alt="seL4 system"/>
       <p>The first step is to identify the security and
       safety requirements of your system (what are the assets that need protecting), and the threat
       model (what are the attacks or failures that threaten those assets).</p>
@@ -141,7 +141,7 @@
       <p>If the answer to some of these questions is &ldquo;no&rdquo;, you can
       check whether it’s on the <a href="https://docs.sel4.systems/projects/roadmap.html">roadmap</a>
       of seL4, and
-      <a href="/contact/">contact us</a> to
+      <a href="../contact/">contact us</a> to
       discuss extending seL4’s support.</p>
       <p>Keep in mind that even if a particular configuration is not (yet) verified, it will still be highly robust, owing to sharing the design and much of its code with verified configurations.</p>
 
@@ -150,8 +150,8 @@
       remember that seL4 is just a microkernel, and will require a number of
       OS services to run. You can check the list of <a href="https://docs.sel4.systems/projects/available-user-components.html">available components</a>
       and if the ones you need are missing,
-      <a href="/contact/">contact us</a>, or better yet
-      <a href="/Contribute">contribute</a>.</p>
+      <a href="../contact/">contact us</a>, or better yet
+      <a href="../Contribute">contribute</a>.</p>
     </li>
     <li> <b>Gradually getting there: Incremental cyber retrofit</b>
 
@@ -166,7 +166,7 @@
       <p>In subsequent steps this is repeated and refined until individual trusted components are placed into their own, isolated, sandboxes running
       natively on seL4.</p>
 
-      <img src="/images/retrofit.png" style="width:700px;" alt="seL4 system"
+      <img src="../images/retrofit.png" style="width:700px;" alt="seL4 system"
 	   />
     </li>
   </ol>
