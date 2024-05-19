@@ -18,7 +18,9 @@ jobs:
     runs-on: ubuntu-20.04
     steps:
     - uses: actions/checkout@v4
-    - run: sudo gem install bundler -v 2.4.22
+    - uses: ruby/setup-ruby@v1 # sets up ruby accourding to .ruby-version and caches bundler deps
+      with:
+        bundler-cache: true
     - run: make build JEKYLL_ENV=production
     - run: tar -cvf site.tar _site/
     - uses: actions/upload-artifact@v4
