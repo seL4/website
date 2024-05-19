@@ -17,6 +17,10 @@ Files: js/jquery.min.js
 Copyright: 2020 The JQuery Foundation <https://jquery.org>
 License: MIT
 
+Files: .ruby-version
+Copyright: 2024 seL4 Project a Series of LF Projects, LLC.
+License: BSD-2-Clause
+
 Files: _data/menu.json
        _includes/breadcrumbs.html
        _includes/menu.html
