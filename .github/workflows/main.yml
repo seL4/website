@@ -34,6 +34,13 @@ jobs:
         run: |
           make build
 
+      # Link checking etc is done on the main build, PR preview builds the site
+      # again, but since all dependencies are installed now, this should be fast.
+      - name: 'Prepare Preview'
+        run: |
+          echo 'baseurl: "/website_pr_hosting/PR_${{ github.event.number }}"' >> _preview.yml
+          make preview
+
       - name: 'Link Check'
         id: 'linkchecker_status'
         run: |
@@ -87,14 +94,14 @@ jobs:
           MSG="${MSG//$'\n'/'\n'}"
           echo "validator_msg=$MSG" >> $GITHUB_OUTPUT
 
-      - name: Deploy
-        if: github.event.pull_request.head.repo.name == github.repository
-        uses: peaceiris/actions-gh-pages@v3
+      - name: Deploy Preview
+        if: github.repository_owner == 'seL4' && github.event.pull_request.head.repo.full_name == 'seL4/website'
+        uses: peaceiris/actions-gh-pages@v4
         with:
           deploy_key: ${{ secrets.ACTIONS_DEPLOY_KEY }}
           external_repository: seL4/website_pr_hosting
-          publish_branch: PR_${{ github.event.number }}
-          publish_dir: ./_site
+          publish_dir: ./_preview
+          destination_dir: PR_${{ github.event.number }}
 
   linkchecker:
     name: "Link checker"
@@ -132,8 +139,6 @@ jobs:
     name: "PR Comment"
     runs-on: 'ubuntu-latest'
     needs: [snapshot]
-    if: ${{ needs.snapshot.outputs.linkchecker_failed == 'true' ||
-            needs.snapshot.outputs.validator_failed == 'true' }}
     env:
       LINKCHECK_MSG: ${{ needs.snapshot.outputs.linkcheck_msg }}
       VALIDATOR_MSG: ${{ needs.snapshot.outputs.validator_msg }}
@@ -145,7 +150,7 @@ jobs:
         run: |
           rm -f msg.txt
           touch msg.txt
-          # echo "Preview your changes [here](https://htmlpreview.github.io/?https://github.com/seL4/website_pr_hosting/blob/PR_${{ github.event.number }}/index.html)" >> msg.txt
+          echo "Preview your changes [here](https://sel4.github.io/website_pr_hosting/PR_${{ github.event.number }})" >> msg.txt
           if ${{ needs.snapshot.outputs.linkchecker_failed }}; then
             echo "" >> msg.txt
             echo "The link checker found some issues!" >> msg.txt
@@ -171,7 +176,7 @@ jobs:
 
       - name: Leave comment with link to site, and results of checks
         uses: actions/github-script@v7
-        if: github.event.pull_request.head.repo.full_name == github.repository
+        if: github.repository_owner == 'seL4' && github.event.pull_request.head.repo.full_name == 'seL4/website'
         with:
           github-token: ${{secrets.GITHUB_TOKEN}}
           script: |
