@@ -23,11 +23,10 @@ jobs:
     steps:
       - uses: actions/checkout@v4
 
-      - name: Dependencies
-        run: |
-          sudo apt-get update
-          sudo apt-get install -y ruby build-essential
-          sudo gem install bundler
+      # sets up ruby accourding to .ruby-version and caches bundler deps
+      - uses: ruby/setup-ruby@v1
+        with:
+          bundler-cache: true
 
       - name: 'Site'
         id: 'site'
