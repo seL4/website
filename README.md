@@ -9,12 +9,48 @@ The [seL4.systems](https://sel4.systems) website is built with the
 static site generator [Jekyll](https://jekyllrb.com), which uses
 the Liquid templating engine.
 
+## Setting up Ruby
+
+### Installing rbenv
+
+We recommend using [rbenv](https://github.com/rbenv/rbenv) to install the
+correct Ruby version.
+
+On Mac:
+
+```sh
+homebrew install ruby-build rbenv
+```
+
+On Linux:
+
+```sh
+apt install rbenv
+```
+
+### Setting up rbenv
+
+```sh
+# follow the instructions this command shows, and start a new shell afterwards
+rbenv init
+# in the docs directory (root of this repo):
+rebenv install
+```
+
+After these, you should be able to forget about `rbenv`, the `Makefile` will now
+see the correct Ruby version.
+
 ## Build
 
 Running `make build` will generate the pages and put them into the
-`_site/` directory. To preview the website locally, run `make serve`
-for the production build and `make debug` for the development build.
-See `make help` for all options.
+`_site/` directory. To preview the website locally, run
+
+```sh
+make serve
+```
+
+for the production build and `make debug` for the development build. See `make
+help` for all options.
 
 ## Docker
 
@@ -35,19 +71,18 @@ machine.
 
 
 ## Licences
-Files in this repository (with a few exceptions) are released under
-standard open source licences, identified by [SPDX Licence
-tags](https://spdx.org).  See individual file headers for details.
 
-As a general rule, code files are under [GPL
-v2](https://www.gnu.org/licenses/old-licenses/gpl-2.0.html), and
-documents under the [Creative Commons Licence CC-BY-SA (4.0
-International)](https://creativecommons.org/licenses/by-sa/4.0/)
-licence.
+Files in this repository (with a few exceptions) are released under standard
+open source licences, identified by [SPDX Licence tags](https://spdx.org).  See
+individual file headers for details.
 
-This repository also contains a copy of the Bootstrap CSS, which is
-licensed under the
-[MIT](https://github.com/twbs/bootstrap/blob/master/LICENSE) Licence.
+As a general rule, new code files should be under
+[BSD-2-Clause](LICENSES/BSD-2-Clause.txt), and documents under the [Creative
+Commons Licence [CC-BY-SA 4.0 International](LICENSES/CC-BY-SA-4.0.txt) licence
+in this repository.
+
+This repository also contains a copy of the Bootstrap CSS, which is licensed
+under the [MIT](LICENSES/MIT.txt) licence.
 
 Some files contain representations of trademarks.  Irrespective of any
 licence markings, logos and trademarks in this repository are owned by
