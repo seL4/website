@@ -120,9 +120,6 @@ As a general rule, new code files should be under
 Commons Licence [CC-BY-SA 4.0 International](LICENSES/CC-BY-SA-4.0.txt) licence
 in this repository.
 
-This repository also contains a copy of the Bootstrap CSS, which is licensed
-under the [MIT](LICENSES/MIT.txt) licence.
-
 Some files contain representations of trademarks.  Irrespective of any
 licence markings, logos and trademarks in this repository are owned by
 their respective owners. No licenses or other rights in or to such

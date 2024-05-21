@@ -8,11 +8,6 @@ Copyright: 2010 - 2020 GLYPHICONS® All rights reserved.
 License: MIT
   See https://glyphicons.com/old/license.html#old-halflings-bootstrap
 
-Files: css/bootstrap.min.css js/bootstrap.min.js
-Copyright: 2011-2016 Twitter, Inc
-License: MIT
-  https://github.com/twbs/bootstrap/blob/master/LICENSE
-
 Files: js/jquery.min.js
 Copyright: 2020 The JQuery Foundation <https://jquery.org>
 License: MIT
