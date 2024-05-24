@@ -69,6 +69,37 @@ This will build the container (takes a while the first time), and then
 run it such that you can preview the website on port 8080 on your local
 machine.
 
+## Making Changes
+
+Contributions are welcome &mdash; if you find anything out of date, any typos or
+inaccuracies, please raise a pull request on this repository.
+
+### Links
+
+For the preview functionality on pull requests to work, all links to internal
+pages and images need to be relative to the file they are made from. That
+means, please do not use links that start with a `/` such as
+`/Foundation/page.html` even though Jekyll encourages that.
+
+There are two ways to use relative links: either directly use the relative path
+(usually nicer), or use the `relative_url` function in Jekyll/Liquid.
+
+Examples:
+
+```html
+<a href="../Foundation/a-page.html">
+<img src="../images/something.jpg">
+```
+
+With `relative_url`:
+
+```html
+<a href={{ "/Foundation/a-page.html" | relative_url }}>
+```
+
+Note: `relative_url` only produces a site-relative URL not a path-relative URL,
+but Jekyll has enough setup to prepend the correct prefix for the GitHub
+previews to work, so it is fine to use.
 
 ## Licences
 
