@@ -7,3 +7,4 @@ _site_on_seL4
 .jekyll-cache
 .jekyll-metadata
 vendor
+node_modules

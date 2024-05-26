@@ -29,6 +29,8 @@ plugins:
   - jekyll-sitemap
   # Allow multiple urls to redirect to a single page
   - jekyll-redirect-from
+  # For tailwind postcss
+  - jekyll-postcss
 
 breadcrumbs:
   root:
@@ -45,7 +47,14 @@ exclude:
   - Makefile
   - README.md
   - LICENSES/
-  - apache/
-  - configs/
   - docker/
   - _news-items/9999-12-31-template.md
+  - node_modules/
+  - package-lock.json
+  - package.json
+  - postcss.config.js
+  - tailwind.config.js
+
+postcss:
+  # necessary for live reload
+  cache: false
