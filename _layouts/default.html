@@ -11,7 +11,6 @@
     <meta name="author" content="seL4 Foundation" />
     <link rel="canonical" href="{{ site.url }}{{ page.url | replace:'index.html',''}}">
     <link href={{ "/css/sel4.css" | relative_url }} rel="stylesheet">
-
     <link rel="apple-touch-icon" sizes="57x57" href={{ "/images/icons/apple-touch-icon-57x57.png" | relative_url }} />
     <link rel="apple-touch-icon" sizes="114x114" href={{ "/images/icons/apple-touch-icon-114x114.png" | relative_url }} />
     <link rel="apple-touch-icon" sizes="72x72" href={{ "/images/icons/apple-touch-icon-72x72.png" | relative_url }} />
@@ -36,62 +35,14 @@
 {% endif %}
   </head>
   <body>
-  <div id="page-container"><!--to put footer at bottom of page-->
-  <div id="content-wrap"><!--to put footer at bottom of page-->
-
-<div class="container">
-  <div class="header" id="site-header" role="navigation" >
-    <ul class="nav-pills nav pull-right" id="site-navigation">
-{%- assign menu = site.data.menu -%}
-{% include menu.html %}
-    </ul>
-  </div>
-</div>
-<div class="container">
-  <div class="row">
 {%- if page.url != "/" -%}
     <ol class="breadcrumb">
 {% include breadcrumbs.html %}
     </ol>
 {%- endif -%}
-  </div>
-{% if page.url contains "/Foundation/Summit" %}
-  <a href={{ '/Foundation/Summit' | relative_url }}><img style="width:20%; padding-top:5px; vertical-align:top;float:right; margin:10px;"
-                     src={{ '/images/sel4-summit-logo.svg' | relative_url }} alt='seL4 summit logo' /></a>
-{% elsif page.url contains "/Foundation" %}
-    <a href={{ '/' | relative_url }}><img style="width:20%; padding-top:5px; vertical-align:top;float:right; margin:10px;"
-                     src={{ '/images/sel4-foundation-logo.svg' | relative_url }} alt='seL4 foundation logo' />
-    </a>
-{% else %}
-    <a href={{ '/' | relative_url }}><img style="width:20%; margin-top:20px; vertical-align:top;float:right; margin:10px;"
-                     src={{ '/images/logo-text-white.svg' | relative_url }} alt='seL4' /></a>
-{% endif %}
 {{ content }}
-<div class="divider"></div>
-</div><!-- container -->
-</div><!--content-wrap-->
-<footer class="page-footer small pt-3" id="footer"> <!-- footer -->
-  <div class="container">
-    <!-- for mobile screens -->
-    <div class="text-center visible-xs">
-      {% include footer_icons.html %}
-      <br>
-      <br>
-      {% include footer_text.html %}
-    </div>
-    <div class="row">
-      <!-- for screens larger than mobiles -->
-      <div class="col-xs-6 hidden-xs">
-        {% include footer_text.html %}
-      </div>
-      <div class="col-xs-6 text-right hidden-xs">
-        {% include footer_icons.html %}
-      </div>
-    </div>
-  </div>
-</footer> <!-- footer -->
-<!-- wrapper -->
-<script src={{ "/js/jquery.min.js" | relative_url }}></script>
-</div><!--page-container-->
+{% if site.on_seL4 %}
+  Served by Apache on Linux on seL4.
+{% endif %}
 </body>
 </html>
