@@ -1,0 +1,556 @@
+---
+---
+
+<header class="bg-white">
+  <nav class="mx-auto flex max-w-7xl items-center justify-between p-6 lg:px-8" aria-label="Global">
+    <div class="flex lg:flex-none">
+      <a href="https://sel4.systems" class="-m-1.5 p-1.5">
+        <span class="sr-only">seL4</span>
+        <img class="h-8 w-auto" src="images/seL4.svg" alt="seL4 logo">
+      </a>
+    </div>
+    <div class="hidden lg:flex lg:flex-1"></div>
+    <div class="flex lg:hidden">
+      <button type="button" class="-m-2.5 inline-flex items-center justify-center rounded-md p-2.5 text-gray-700 mobile-drop">
+        <span class="sr-only">Open main menu</span>
+        <svg class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" aria-hidden="true">
+          <path stroke-linecap="round" stroke-linejoin="round" d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5" />
+        </svg>
+      </button>
+    </div>
+    <div class="hidden lg:flex lg:gap-x-12">
+      <div class="relative">
+        <button type="button" class="dropbtn" aria-expanded="false">
+          About seL4 {% include icons/chevron-down-mini.html %}
+        </button>
+
+        <div class="absolute -left-14 top-full z-10 mt-4 flex w-screen max-w-max px-4 transition ease-in-out duration-200 dropmenu">
+          <div class="w-screen max-w-md flex-auto overflow-hidden rounded-3xl bg-white text-sm leading-6 shadow-lg ring-1 ring-gray-900/5 lg:max-w-3xl">
+            <div class="grid grid-cols-1 gap-x-6 gap-y-1 p-4 lg:grid-cols-2">
+              <div class="group menu-item-group">
+                <div class="menu-icon-div">
+                  <svg class="menu-icon" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" aria-hidden="true">
+                    <path stroke-linecap="round" stroke-linejoin="round" d="M10.5 6a7.5 7.5 0 107.5 7.5h-7.5V6z" />
+                    <path stroke-linecap="round" stroke-linejoin="round" d="M13.5 10.5H21A7.5 7.5 0 0013.5 3v7.5z" />
+                  </svg>
+                </div>
+                <div>
+                  <a href="#" class="font-semibold text-gray-900">
+                    What is seL4
+                    <span class="absolute inset-0"></span>
+                  </a>
+                  <p class="mt-1 text-gray-600">History, Fact Sheet, Whitepaper</p>
+                </div>
+              </div>
+              <div class="group menu-item-group">
+                <div class="menu-icon-div">
+                  <svg class="menu-icon" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" aria-hidden="true">
+                    <path stroke-linecap="round" stroke-linejoin="round" d="M13.5 16.875h3.375m0 0h3.375m-3.375 0V13.5m0 3.375v3.375M6 10.5h2.25a2.25 2.25 0 002.25-2.25V6a2.25 2.25 0 00-2.25-2.25H6A2.25 2.25 0 003.75 6v2.25A2.25 2.25 0 006 10.5zm0 9.75h2.25A2.25 2.25 0 0010.5 18v-2.25a2.25 2.25 0 00-2.25-2.25H6a2.25 2.25 0 00-2.25 2.25V18A2.25 2.25 0 006 20.25zm9.75-9.75H18a2.25 2.25 0 002.25-2.25V6A2.25 2.25 0 0018 3.75h-2.25A2.25 2.25 0 0013.5 6v2.25a2.25 2.25 0 002.25 2.25z" />
+                  </svg>
+                </div>
+                <div>
+                  <a href="#" class="font-semibold text-gray-900">
+                    Verification
+                    <span class="absolute inset-0"></span>
+                  </a>
+                  <p class="mt-1 text-gray-600">seL4 Proofs; implications for seL4-based systems and certification</p>
+                </div>
+              </div>
+              <div class="group menu-item-group">
+                <div class="menu-icon-div">
+                  <svg class="menu-icon" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" aria-hidden="true">
+                    <path stroke-linecap="round" stroke-linejoin="round" d="M15.042 21.672L13.684 16.6m0 0l-2.51 2.225.569-9.47 5.227 7.917-3.286-.672zM12 2.25V4.5m5.834.166l-1.591 1.591M20.25 10.5H18M7.757 14.743l-1.59 1.59M6 10.5H3.75m4.007-4.243l-1.59-1.59" />
+                  </svg>
+                </div>
+                <div>
+                  <a href="#" class="font-semibold text-gray-900">
+                    Performance
+                    <span class="absolute inset-0"></span>
+                  </a>
+                  <p class="mt-1 text-gray-600">The numbers on the world's fastest kernel</p>
+                </div>
+              </div>
+              <div class="group menu-item-group">
+                <div class="menu-icon-div">
+                  <svg class="menu-icon" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor">
+                    <path stroke-linecap="round" stroke-linejoin="round" d="M9.879 7.519c1.171-1.025 3.071-1.025 4.242 0 1.172 1.025 1.172 2.687 0 3.712-.203.179-.43.326-.67.442-.745.361-1.45.999-1.45 1.827v.75M21 12a9 9 0 1 1-18 0 9 9 0 0 1 18 0Zm-9 5.25h.008v.008H12v-.008Z" />
+                  </svg>
+                </div>
+                <div>
+                  <a href="#" class="font-semibold text-gray-900">
+                    FAQ
+                    <span class="absolute inset-0"></span>
+                  </a>
+                  <p class="mt-1 text-gray-600">Frequently Asked Questions</p>
+                </div>
+              </div>
+              <div class="group menu-item-group">
+                <div class="menu-icon-div">
+                  <svg class="menu-icon" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" aria-hidden="true">
+                    <path stroke-linecap="round" stroke-linejoin="round" d="M16.023 9.348h4.992v-.001M2.985 19.644v-4.992m0 0h4.992m-4.993 0l3.181 3.183a8.25 8.25 0 0013.803-3.7M4.031 9.865a8.25 8.25 0 0113.803-3.7l3.181 3.182m0-4.991v4.99" />
+                  </svg>
+                </div>
+                <div>
+                  <a href="#" class="font-semibold text-gray-900">
+                    Using seL4
+                    <span class="absolute inset-0"></span>
+                  </a>
+                  <p class="mt-1 text-gray-600">Where seL4 is used; Benefits seL4 brings; TODO: how to use seL4</p>
+                </div>
+              </div>
+              <div class="group menu-item-group">
+                <div class="menu-icon-div">
+                  <svg class="menu-icon" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor">
+                    <path stroke-linecap="round" stroke-linejoin="round" d="M8.25 3v1.5M4.5 8.25H3m18 0h-1.5M4.5 12H3m18 0h-1.5m-15 3.75H3m18 0h-1.5M8.25 19.5V21M12 3v1.5m0 15V21m3.75-18v1.5m0 15V21m-9-1.5h10.5a2.25 2.25 0 0 0 2.25-2.25V6.75a2.25 2.25 0 0 0-2.25-2.25H6.75A2.25 2.25 0 0 0 4.5 6.75v10.5a2.25 2.25 0 0 0 2.25 2.25Zm.75-12h9v9h-9v-9Z" />
+                  </svg>
+                </div>
+                <div>
+                  <a href="#" class="font-semibold text-gray-900">
+                    Supported Platforms
+                    <span class="absolute inset-0"></span>
+                  </a>
+                  <p class="mt-1 text-gray-600">Hardware and simulators seL4 runs on</p>
+                </div>
+              </div>
+              <div class="group menu-item-group">
+                <div class="menu-icon-div">
+                  <svg class="menu-icon" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor">
+                    <path stroke-linecap="round" stroke-linejoin="round" d="M2.25 18 9 11.25l4.306 4.306a11.95 11.95 0 0 1 5.814-5.518l2.74-1.22m0 0-5.94-2.281m5.94 2.28-2.28 5.941" />
+                  </svg>
+                </div>
+                <div>
+                  <a href="#" class="font-semibold text-gray-900">
+                    Roadmap
+                    <span class="absolute inset-0"></span>
+                  </a>
+                  <p class="mt-1 text-gray-600">Planned development &amp; verification</p>
+                </div>
+              </div>
+              <div class="group menu-item-group">
+                <div class="menu-icon-div">
+                  <svg class="menu-icon" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor">
+                    <path stroke-linecap="round" stroke-linejoin="round" d="M4.26 10.147a60.438 60.438 0 0 0-.491 6.347A48.62 48.62 0 0 1 12 20.904a48.62 48.62 0 0 1 8.232-4.41 60.46 60.46 0 0 0-.491-6.347m-15.482 0a50.636 50.636 0 0 0-2.658-.813A59.906 59.906 0 0 1 12 3.493a59.903 59.903 0 0 1 10.399 5.84c-.896.248-1.783.52-2.658.814m-15.482 0A50.717 50.717 0 0 1 12 13.489a50.702 50.702 0 0 1 7.74-3.342M6.75 15a.75.75 0 1 0 0-1.5.75.75 0 0 0 0 1.5Zm0 0v-3.675A55.378 55.378 0 0 1 12 8.443m-7.007 11.55A5.981 5.981 0 0 0 6.75 15.75v-1.5" />
+                  </svg>
+                </div>
+                <div>
+                  <a href="#" class="font-semibold text-gray-900">
+                    Research
+                    <span class="absolute inset-0"></span>
+                  </a>
+                  <p class="mt-1 text-gray-600">Seminal seL4 Publications; Ongoing Research; Courses in the Ecosystem</p>
+                </div>
+              </div>
+              <div class="group menu-item-group">
+                <div class="menu-icon-div">
+                  <svg class="menu-icon" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor">
+                    <path stroke-linecap="round" stroke-linejoin="round" d="M12 3v17.25m0 0c-1.472 0-2.882.265-4.185.75M12 20.25c1.472 0 2.882.265 4.185.75M18.75 4.97A48.416 48.416 0 0 0 12 4.5c-2.291 0-4.545.16-6.75.47m13.5 0c1.01.143 2.01.317 3 .52m-3-.52 2.62 10.726c.122.499-.106 1.028-.589 1.202a5.988 5.988 0 0 1-2.031.352 5.988 5.988 0 0 1-2.031-.352c-.483-.174-.711-.703-.59-1.202L18.75 4.971Zm-16.5.52c.99-.203 1.99-.377 3-.52m0 0 2.62 10.726c.122.499-.106 1.028-.589 1.202a5.989 5.989 0 0 1-2.031.352 5.989 5.989 0 0 1-2.031-.352c-.483-.174-.711-.703-.59-1.202L5.25 4.971Z" />
+                  </svg>
+                </div>
+                <div>
+                  <a href="#" class="font-semibold text-gray-900">
+                    License &amp; Trademark
+                    <span class="absolute inset-0"></span>
+                  </a>
+                  <p class="mt-1 text-gray-600">seL4 License and Implications; Trademark Compliance Guide</p>
+                </div>
+              </div>
+              <div class="group menu-item-group">
+                <div class="menu-icon-div">
+                  <svg class="menu-icon" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" aria-hidden="true">
+                    <path stroke-linecap="round" stroke-linejoin="round" d="M19.5 14.25v-2.625a3.375 3.375 0 00-3.375-3.375h-1.5A1.125 1.125 0 0113.5 7.125v-1.5a3.375 3.375 0 00-3.375-3.375H8.25M9 16.5v.75m3-3v3M15 12v5.25m-4.5-15H5.625c-.621 0-1.125.504-1.125 1.125v17.25c0 .621.504 1.125 1.125 1.125h12.75c.621 0 1.125-.504 1.125-1.125V11.25a9 9 0 00-9-9z" />
+                  </svg>
+                </div>
+                <div>
+                  <a href="#" class="font-semibold text-gray-900">
+                    seL4 Foundation
+                    <span class="absolute inset-0"></span>
+                  </a>
+                  <p class="mt-1 text-gray-600">Members, Board, and Technical Steering Committe</p>
+                </div>
+              </div>
+            </div>
+            <div class="bg-gray-50 px-8 py-6">
+              <div class="flex items-center gap-x-3">
+                <h3 class="text-sm font-semibold leading-6 text-gray-900"><a href="#">seL4 Foundation</a></h3>
+                <p class="rounded-full bg-indigo-600/10 px-2.5 py-1.5 text-xs font-semibold text-indigo-600">New</p>
+              </div>
+              <p class="mt-2 text-sm leading-6 text-gray-600">Members, Board, and Technical Steering Committe</p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="relative">
+        <button type="button" class="dropbtn" aria-expanded="false">
+          Contribute {% include icons/chevron-down-mini.html %}
+        </button>
+
+        <div class="menu-one-col dropmenu">
+          <div class="p-4">
+            <div class="group menu-item-group">
+              <div class="menu-icon-div">
+                <svg class="menu-icon" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" aria-hidden="true">
+                  <path stroke-linecap="round" stroke-linejoin="round" d="M16.023 9.348h4.992v-.001M2.985 19.644v-4.992m0 0h4.992m-4.993 0l3.181 3.183a8.25 8.25 0 0013.803-3.7M4.031 9.865a8.25 8.25 0 0113.803-3.7l3.181 3.182m0-4.991v4.99" />
+                </svg>
+              </div>
+              <div>
+                <a href="#" class="font-semibold text-gray-900">
+                  Contribution Guidelines
+                  <span class="absolute inset-0"></span>
+                </a>
+                <p class="mt-1 text-gray-600">Overview on how to contribute to seL4</p>
+              </div>
+            </div>
+            <div class="group menu-item-group">
+              <div class="menu-icon-div">
+                <svg class="menu-icon" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" aria-hidden="true">
+                  <path stroke-linecap="round" stroke-linejoin="round" d="M15.042 21.672L13.684 16.6m0 0l-2.51 2.225.569-9.47 5.227 7.917-3.286-.672zM12 2.25V4.5m5.834.166l-1.591 1.591M20.25 10.5H18M7.757 14.743l-1.59 1.59M6 10.5H3.75m4.007-4.243l-1.59-1.59" />
+                </svg>
+              </div>
+              <div>
+                <a href="#" class="font-semibold text-gray-900">
+                  Code of Conduct
+                  <span class="absolute inset-0"></span>
+                </a>
+                <p class="mt-1 text-gray-600">Rules for interaction</p>
+              </div>
+            </div>
+            <div class="group menu-item-group">
+              <div class="menu-icon-div">
+                <svg class="menu-icon" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" aria-hidden="true">
+                  <path stroke-linecap="round" stroke-linejoin="round" d="M13.5 16.875h3.375m0 0h3.375m-3.375 0V13.5m0 3.375v3.375M6 10.5h2.25a2.25 2.25 0 002.25-2.25V6a2.25 2.25 0 00-2.25-2.25H6A2.25 2.25 0 003.75 6v2.25A2.25 2.25 0 006 10.5zm0 9.75h2.25A2.25 2.25 0 0010.5 18v-2.25a2.25 2.25 0 00-2.25-2.25H6a2.25 2.25 0 00-2.25 2.25V18A2.25 2.25 0 006 20.25zm9.75-9.75H18a2.25 2.25 0 002.25-2.25V6A2.25 2.25 0 0018 3.75h-2.25A2.25 2.25 0 0013.5 6v2.25a2.25 2.25 0 002.25 2.25z" />
+                </svg>
+              </div>
+              <div>
+                <a href="#" class="font-semibold text-gray-900">
+                  Coding Conventions &amp; Requirements
+                  <span class="absolute inset-0"></span>
+                </a>
+                <p class="mt-1 text-gray-600">Requirements for C Code, Git Commits, Pull Requests</p>
+              </div>
+            </div>
+            <div class="group menu-item-group">
+              <div class="menu-icon-div">
+                <svg class="menu-icon" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" aria-hidden="true">
+                  <path stroke-linecap="round" stroke-linejoin="round" d="M13.5 16.875h3.375m0 0h3.375m-3.375 0V13.5m0 3.375v3.375M6 10.5h2.25a2.25 2.25 0 002.25-2.25V6a2.25 2.25 0 00-2.25-2.25H6A2.25 2.25 0 003.75 6v2.25A2.25 2.25 0 006 10.5zm0 9.75h2.25A2.25 2.25 0 0010.5 18v-2.25a2.25 2.25 0 00-2.25-2.25H6a2.25 2.25 0 00-2.25 2.25V18A2.25 2.25 0 006 20.25zm9.75-9.75H18a2.25 2.25 0 002.25-2.25V6A2.25 2.25 0 0018 3.75h-2.25A2.25 2.25 0 0013.5 6v2.25a2.25 2.25 0 002.25 2.25z" />
+                </svg>
+              </div>
+              <div>
+                <a href="#" class="font-semibold text-gray-900">
+                  RFC Process
+                  <span class="absolute inset-0"></span>
+                </a>
+                <p class="mt-1 text-gray-600">When and how to write an RFC</p>
+              </div>
+            </div>
+            <div class="group menu-item-group">
+              <div class="menu-icon-div">
+                <svg class="menu-icon" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" aria-hidden="true">
+                  <path stroke-linecap="round" stroke-linejoin="round" d="M13.5 16.875h3.375m0 0h3.375m-3.375 0V13.5m0 3.375v3.375M6 10.5h2.25a2.25 2.25 0 002.25-2.25V6a2.25 2.25 0 00-2.25-2.25H6A2.25 2.25 0 003.75 6v2.25A2.25 2.25 0 006 10.5zm0 9.75h2.25A2.25 2.25 0 0010.5 18v-2.25a2.25 2.25 0 00-2.25-2.25H6a2.25 2.25 0 00-2.25 2.25V18A2.25 2.25 0 006 20.25zm9.75-9.75H18a2.25 2.25 0 002.25-2.25V6A2.25 2.25 0 0018 3.75h-2.25A2.25 2.25 0 0013.5 6v2.25a2.25 2.25 0 002.25 2.25z" />
+                </svg>
+              </div>
+              <div>
+                <a href="#" class="font-semibold text-gray-900">
+                  Platform Maintainer
+                  <span class="absolute inset-0"></span>
+                </a>
+                <p class="mt-1 text-gray-600">Contributing and maintaining a platform port</p>
+              </div>
+            </div>
+            <div class="group menu-item-group">
+              <div class="menu-icon-div">
+                <svg class="menu-icon" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" aria-hidden="true">
+                  <path stroke-linecap="round" stroke-linejoin="round" d="M13.5 16.875h3.375m0 0h3.375m-3.375 0V13.5m0 3.375v3.375M6 10.5h2.25a2.25 2.25 0 002.25-2.25V6a2.25 2.25 0 00-2.25-2.25H6A2.25 2.25 0 003.75 6v2.25A2.25 2.25 0 006 10.5zm0 9.75h2.25A2.25 2.25 0 0010.5 18v-2.25a2.25 2.25 0 00-2.25-2.25H6a2.25 2.25 0 00-2.25 2.25V18A2.25 2.25 0 006 20.25zm9.75-9.75H18a2.25 2.25 0 002.25-2.25V6A2.25 2.25 0 0018 3.75h-2.25A2.25 2.25 0 0013.5 6v2.25a2.25 2.25 0 002.25 2.25z" />
+                </svg>
+              </div>
+              <div>
+                <a href="#" class="font-semibold text-gray-900">
+                  Development Roles
+                  <span class="absolute inset-0"></span>
+                </a>
+                <p class="mt-1 text-gray-600">Contributors, Reviewers, Committers, TSC</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="relative">
+        <button type="button" class="dropbtn" aria-expanded="false">
+          News &amp; Events {% include icons/chevron-down-mini.html %}
+        </button>
+
+        <div class="menu-one-col dropmenu">
+          <div class="p-4">
+            <div class="group menu-item-group">
+              <div class="menu-icon-div">
+                <svg class="menu-icon" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor">
+                  <path stroke-linecap="round" stroke-linejoin="round" d="M10.34 15.84c-.688-.06-1.386-.09-2.09-.09H7.5a4.5 4.5 0 1 1 0-9h.75c.704 0 1.402-.03 2.09-.09m0 9.18c.253.962.584 1.892.985 2.783.247.55.06 1.21-.463 1.511l-.657.38c-.551.318-1.26.117-1.527-.461a20.845 20.845 0 0 1-1.44-4.282m3.102.069a18.03 18.03 0 0 1-.59-4.59c0-1.586.205-3.124.59-4.59m0 9.18a23.848 23.848 0 0 1 8.835 2.535M10.34 6.66a23.847 23.847 0 0 0 8.835-2.535m0 0A23.74 23.74 0 0 0 18.795 3m.38 1.125a23.91 23.91 0 0 1 1.014 5.395m-1.014 8.855c-.118.38-.245.754-.38 1.125m.38-1.125a23.91 23.91 0 0 0 1.014-5.395m0-3.46c.495.413.811 1.035.811 1.73 0 .695-.316 1.317-.811 1.73m0-3.46a24.347 24.347 0 0 1 0 3.46" />
+                </svg>
+              </div>
+              <div>
+                <a href="#" class="font-semibold text-gray-900">
+                  News
+                  <span class="absolute inset-0"></span>
+                </a>
+                <p class="mt-1 text-gray-600">News about seL4 and the seL4 Foundation</p>
+              </div>
+            </div>
+            <div class="group menu-item-group">
+              <div class="menu-icon-div">
+                <svg class="menu-icon" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" aria-hidden="true">
+                  <path stroke-linecap="round" stroke-linejoin="round" d="M16.5 3.75V16.5L12 14.25 7.5 16.5V3.75m9 0H18A2.25 2.25 0 0120.25 6v12A2.25 2.25 0 0118 20.25H6A2.25 2.25 0 013.75 18V6A2.25 2.25 0 016 3.75h1.5m9 0h-9" />
+                </svg>
+              </div>
+              <div>
+                <a href="#" class="font-semibold text-gray-900">
+                  seL4 Summit 2024
+                  <span class="absolute inset-0"></span>
+                </a>
+                <p class="mt-1 text-gray-600">The seL4 event of the year</p>
+              </div>
+            </div>
+            <div class="group menu-item-group">
+              <div class="menu-icon-div">
+                <svg class="menu-icon" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor">
+                  <path stroke-linecap="round" stroke-linejoin="round" d="M21.75 6.75v10.5a2.25 2.25 0 0 1-2.25 2.25h-15a2.25 2.25 0 0 1-2.25-2.25V6.75m19.5 0A2.25 2.25 0 0 0 19.5 4.5h-15a2.25 2.25 0 0 0-2.25 2.25m19.5 0v.243a2.25 2.25 0 0 1-1.07 1.916l-7.5 4.615a2.25 2.25 0 0 1-2.36 0L3.32 8.91a2.25 2.25 0 0 1-1.07-1.916V6.75" />
+                </svg>
+              </div>
+              <div>
+                <a href="#" class="font-semibold text-gray-900">
+                  Stay Informed
+                  <span class="absolute inset-0"></span>
+                </a>
+                <p class="mt-1 text-gray-600">Mailing list and other channels to stay informed</p>
+              </div>
+            </div>
+          </div>
+          <div class="bg-gray-50 p-8">
+            <div class="flex justify-between">
+              <h3 class="text-sm font-semibold leading-6 text-gray-500">Recent news</h3>
+              <a href="#" class="text-sm font-semibold leading-6 text-indigo-600">See all <span aria-hidden="true">&rarr;</span></a>
+            </div>
+            <ul class="mt-6 space-y-6">
+              <li class="relative">
+                <time datetime="2023-03-05" class="block text-xs leading-6 text-gray-600">Mar 5, 2023</time>
+                <a href="#" class="block truncate text-sm font-semibold leading-6 text-gray-900">
+                  Boost your conversion rate
+                  <span class="absolute inset-0"></span>
+                </a>
+              </li>
+              <li class="relative">
+                <time datetime="2023-02-25" class="block text-xs leading-6 text-gray-600">Feb 25, 2023</time>
+                <a href="#" class="block truncate text-sm font-semibold leading-6 text-gray-900">
+                  How to use search engine optimization to drive traffic to your site
+                  <span class="absolute inset-0"></span>
+                </a>
+              </li>
+              <li class="relative">
+                <time datetime="2023-02-21" class="block text-xs leading-6 text-gray-600">Feb 21, 2023</time>
+                <a href="#" class="block truncate text-sm font-semibold leading-6 text-gray-900">
+                  Improve your customer experience
+                  <span class="absolute inset-0"></span>
+                </a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+
+      <div class="relative">
+        <button type="button" class="dropbtn" aria-expanded="false">
+          Contact &amp; Support {% include icons/chevron-down-mini.html %}
+        </button>
+
+        <div class="menu-one-col dropmenu">
+          <div class="p-4">
+            <div class="group menu-item-group">
+              <div class="menu-icon-div">
+                <svg class="menu-icon" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor">
+                  <path stroke-linecap="round" stroke-linejoin="round" d="M15.59 14.37a6 6 0 0 1-5.84 7.38v-4.8m5.84-2.58a14.98 14.98 0 0 0 6.16-12.12A14.98 14.98 0 0 0 9.631 8.41m5.96 5.96a14.926 14.926 0 0 1-5.841 2.58m-.119-8.54a6 6 0 0 0-7.381 5.84h4.8m2.581-5.84a14.927 14.927 0 0 0-2.58 5.84m2.699 2.7c-.103.021-.207.041-.311.06a15.09 15.09 0 0 1-2.448-2.448 14.9 14.9 0 0 1 .06-.312m-2.24 2.39a4.493 4.493 0 0 0-1.757 4.306 4.493 4.493 0 0 0 4.306-1.758M16.5 9a1.5 1.5 0 1 1-3 0 1.5 1.5 0 0 1 3 0Z" />
+                </svg>
+              </div>
+              <div>
+                <a href="#" class="font-semibold text-gray-900">
+                  Commercial Support
+                  <span class="absolute inset-0"></span>
+                </a>
+                <p class="mt-1 text-gray-600">Endorsed Service Providers for seL4</p>
+              </div>
+            </div>
+            <div class="group menu-item-group">
+              <div class="menu-icon-div">
+                <svg class="menu-icon" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" aria-hidden="true">
+                  <path stroke-linecap="round" stroke-linejoin="round" d="M16.712 4.33a9.027 9.027 0 011.652 1.306c.51.51.944 1.064 1.306 1.652M16.712 4.33l-3.448 4.138m3.448-4.138a9.014 9.014 0 00-9.424 0M19.67 7.288l-4.138 3.448m4.138-3.448a9.014 9.014 0 010 9.424m-4.138-5.976a3.736 3.736 0 00-.88-1.388 3.737 3.737 0 00-1.388-.88m2.268 2.268a3.765 3.765 0 010 2.528m-2.268-4.796a3.765 3.765 0 00-2.528 0m4.796 4.796c-.181.506-.475.982-.88 1.388a3.736 3.736 0 01-1.388.88m2.268-2.268l4.138 3.448m0 0a9.027 9.027 0 01-1.306 1.652c-.51.51-1.064.944-1.652 1.306m0 0l-3.448-4.138m3.448 4.138a9.014 9.014 0 01-9.424 0m5.976-4.138a3.765 3.765 0 01-2.528 0m0 0a3.736 3.736 0 01-1.388-.88 3.737 3.737 0 01-.88-1.388m2.268 2.268L7.288 19.67m0 0a9.024 9.024 0 01-1.652-1.306 9.027 9.027 0 01-1.306-1.652m0 0l4.138-3.448M4.33 16.712a9.014 9.014 0 010-9.424m4.138 5.976a3.765 3.765 0 010-2.528m0 0c.181-.506.475-.982.88-1.388a3.736 3.736 0 011.388-.88m-2.268 2.268L4.33 7.288m6.406 1.18L7.288 4.33m0 0a9.024 9.024 0 00-1.652 1.306A9.025 9.025 0 004.33 7.288" />
+                </svg>
+              </div>
+              <div>
+                <a href="#" class="font-semibold text-gray-900">
+                  Public Channels &amp; Open Source Support
+                  <span class="absolute inset-0"></span>
+                </a>
+                <p class="mt-1 text-gray-600">Mailing lists, Forum, Chat, Developer Hangouts</p>
+              </div>
+            </div>
+            <div class="group menu-item-group">
+              <div class="menu-icon-div">
+                <svg class="menu-icon" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" aria-hidden="true">
+                  <path stroke-linecap="round" stroke-linejoin="round" d="M13.5 16.875h3.375m0 0h3.375m-3.375 0V13.5m0 3.375v3.375M6 10.5h2.25a2.25 2.25 0 002.25-2.25V6a2.25 2.25 0 00-2.25-2.25H6A2.25 2.25 0 003.75 6v2.25A2.25 2.25 0 006 10.5zm0 9.75h2.25A2.25 2.25 0 0010.5 18v-2.25a2.25 2.25 0 00-2.25-2.25H6a2.25 2.25 0 00-2.25 2.25V18A2.25 2.25 0 006 20.25zm9.75-9.75H18a2.25 2.25 0 002.25-2.25V6A2.25 2.25 0 0018 3.75h-2.25A2.25 2.25 0 0013.5 6v2.25a2.25 2.25 0 002.25 2.25z" />
+                </svg>
+              </div>
+              <div>
+                <a href="#" class="font-semibold text-gray-900">
+                  Other Channels
+                  <span class="absolute inset-0"></span>
+                </a>
+                <p class="mt-1 text-gray-600">seL4 Foundation, Security Contact, Website Contact, Moderation</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="hidden lg:flex lg:flex-1"></div>
+    <div class="hidden lg:flex lg:flex-none lg:justify-end">
+      <a href="#" class="button-snd mr-10">Become a Member</a>
+
+      <a href="https://docs.sel4.systems" class="button-snd">Docsite
+        <svg class="inline-icon" fill="none" aria-hidden="true" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor">
+        <path stroke-linecap="round" stroke-linejoin="round" d="M13.5 6H5.25A2.25 2.25 0 0 0 3 8.25v10.5A2.25 2.25 0 0 0 5.25 21h10.5A2.25 2.25 0 0 0 18 18.75V10.5m-10.5 6L21 3m0 0h-5.25M21 3v5.25" />
+      </svg></a>
+    </div>
+  </nav>
+
+<!-- Mobile menu, show/hide based on menu open state. -->
+<div class="lg:hidden hidden" id="mobile-menu" role="dialog" aria-modal="true">
+  <!-- Background backdrop, show/hide based on slide-over state. -->
+  <div class="fixed inset-0 z-10"></div>
+  <div class="fixed inset-y-0 right-0 z-10 w-full overflow-y-auto bg-white px-6 py-6 sm:max-w-sm sm:ring-1 sm:ring-gray-900/10">
+    <div class="flex items-center justify-between">
+      <a href="#" class="-m-1.5 p-1.5">
+        <span class="sr-only">Your Company</span>
+        <img class="h-8 w-auto" src="https://tailwindui.com/img/logos/mark.svg?color=indigo&shade=600" alt="">
+      </a>
+      <button type="button" class="-m-2.5 rounded-md p-2.5 text-gray-700">
+        <span class="sr-only">Close menu</span>
+        <svg class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" aria-hidden="true">
+          <path stroke-linecap="round" stroke-linejoin="round" d="M6 18L18 6M6 6l12 12" />
+        </svg>
+      </button>
+    </div>
+    <div class="mt-6 flow-root">
+      <div class="-my-6 divide-y divide-gray-500/10">
+        <div class="space-y-2 py-6">
+          <div class="-mx-3">
+            <button type="button" class="flex w-full items-center justify-between rounded-lg py-2 pl-3 pr-3.5 text-base font-semibold leading-7 text-gray-900 hover:bg-gray-50" aria-controls="disclosure-1" aria-expanded="false">
+              Product
+              <!--
+                Expand/collapse icon, toggle classes based on menu open state.
+
+                Open: "rotate-180", Closed: ""
+              -->
+              <svg class="h-5 w-5 flex-none" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true">
+                <path fill-rule="evenodd" d="M5.23 7.21a.75.75 0 011.06.02L10 11.168l3.71-3.938a.75.75 0 111.08 1.04l-4.25 4.5a.75.75 0 01-1.08 0l-4.25-4.5a.75.75 0 01.02-1.06z" clip-rule="evenodd" />
+              </svg>
+            </button>
+            <!-- 'Product' sub-menu, show/hide based on menu state. -->
+            <div class="mt-2 space-y-2" id="disclosure-1">
+              <a href="#" class="block rounded-lg py-2 pl-6 pr-3 text-sm font-semibold leading-7 text-gray-900 hover:bg-gray-50">Analytics</a>
+              <a href="#" class="block rounded-lg py-2 pl-6 pr-3 text-sm font-semibold leading-7 text-gray-900 hover:bg-gray-50">Engagement</a>
+              <a href="#" class="block rounded-lg py-2 pl-6 pr-3 text-sm font-semibold leading-7 text-gray-900 hover:bg-gray-50">Security</a>
+              <a href="#" class="block rounded-lg py-2 pl-6 pr-3 text-sm font-semibold leading-7 text-gray-900 hover:bg-gray-50">Integrations</a>
+              <a href="#" class="block rounded-lg py-2 pl-6 pr-3 text-sm font-semibold leading-7 text-gray-900 hover:bg-gray-50">Automations</a>
+              <a href="#" class="block rounded-lg py-2 pl-6 pr-3 text-sm font-semibold leading-7 text-gray-900 hover:bg-gray-50">Watch demo</a>
+              <a href="#" class="block rounded-lg py-2 pl-6 pr-3 text-sm font-semibold leading-7 text-gray-900 hover:bg-gray-50">Contact sales</a>
+            </div>
+          </div>
+
+          <a href="#" class="-mx-3 block rounded-lg px-3 py-2 text-base font-semibold leading-7 text-gray-900 hover:bg-gray-50">Features</a>
+          <a href="#" class="-mx-3 block rounded-lg px-3 py-2 text-base font-semibold leading-7 text-gray-900 hover:bg-gray-50">Marketplace</a>
+
+          <div class="-mx-3">
+            <button type="button" class="flex w-full items-center justify-between rounded-lg py-2 pl-3 pr-3.5 text-base font-semibold leading-7 text-gray-900 hover:bg-gray-50" aria-controls="disclosure-2" aria-expanded="false">
+              Company
+              <!--
+                Expand/collapse icon, toggle classes based on menu open state.
+
+                Open: "rotate-180", Closed: ""
+              -->
+              <svg class="h-5 w-5 flex-none" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true">
+                <path fill-rule="evenodd" d="M5.23 7.21a.75.75 0 011.06.02L10 11.168l3.71-3.938a.75.75 0 111.08 1.04l-4.25 4.5a.75.75 0 01-1.08 0l-4.25-4.5a.75.75 0 01.02-1.06z" clip-rule="evenodd" />
+              </svg>
+            </button>
+            <!-- 'Company' sub-menu, show/hide based on menu state. -->
+            <div class="mt-2 space-y-2" id="disclosure-2">
+              <a href="#" class="block rounded-lg py-2 pl-6 pr-3 text-sm font-semibold leading-7 text-gray-900 hover:bg-gray-50">About us</a>
+              <a href="#" class="block rounded-lg py-2 pl-6 pr-3 text-sm font-semibold leading-7 text-gray-900 hover:bg-gray-50">Careers</a>
+              <a href="#" class="block rounded-lg py-2 pl-6 pr-3 text-sm font-semibold leading-7 text-gray-900 hover:bg-gray-50">Support</a>
+              <a href="#" class="block rounded-lg py-2 pl-6 pr-3 text-sm font-semibold leading-7 text-gray-900 hover:bg-gray-50">Press</a>
+              <a href="#" class="block rounded-lg py-2 pl-6 pr-3 text-sm font-semibold leading-7 text-gray-900 hover:bg-gray-50">Blog</a>
+            </div>
+          </div>
+        </div>
+        <div class="py-6">
+          <a href="#" class="-mx-3 block rounded-lg px-3 py-2.5 text-base font-semibold leading-7 text-gray-900 hover:bg-gray-50">Docsite</a>
+        </div>
+      </div>
+    </div>
+  </div>
+  </div>
+</header>
+
+<h2>A Heading</h2>
+<p>
+  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+</p>
+
+<script>
+  const mobile_button = document.querySelector('.mobile-drop');
+  mobile_button.addEventListener("click", openMobileMenu);
+  console.log(mobile_button);
+
+  const drop_buttons = document.querySelectorAll('.dropbtn');
+  for (var i = 0; i < drop_buttons.length; i++) {
+    drop_buttons[i].addEventListener("click", openDropButton)
+  }
+
+  function openMobileMenu(event) {
+    console.log("openMobile");
+    console.log(event);
+    event.stopPropagation();
+    document.getElementById("mobile-menu").classList.add("mobile-on");
+  }
+
+  function isDropBtn(element) {
+    return element.classList.contains('dropbtn');
+  }
+
+  function openDropButton(event) {
+    // console.log("dropbtn");
+    // console.log(event);
+    event.stopPropagation();
+    var theButton = isDropBtn(event.target) ? event.target : event.target.parentElement;
+    var dropMenu = theButton.parentElement.getElementsByClassName('dropmenu')[0];
+    var wasOn = dropMenu.classList.contains('on');
+
+    var onElements = document.getElementsByClassName("on");
+    for (var i = 0; i < onElements.length; i++) {
+      onElements[i].classList.remove('on');
+    }
+    if (!wasOn) {
+      dropMenu.classList.add("on");
+    }
+  }
+
+  window.onclick = function(e) {
+    // If this gets called, no button event listener was called,
+    // because they all stop propagation.
+    // console.log("on window")
+    // console.log(e);
+
+    var onElements = document.getElementsByClassName("on");
+    for (var i = 0; i < onElements.length; i++) {
+      onElements[i].classList.remove('on');
+    }
+    document.getElementById("mobile-menu").classList.remove('mobile-on');
+  }
+</script>
