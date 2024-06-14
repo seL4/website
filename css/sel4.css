@@ -690,7 +690,12 @@
  .keynotes_grid {
    display: grid;
    display: inline-grid;
-   grid-template-columns: 1fr 1fr;
+   grid-template-columns: 300px 300px;
+   align-items: center;
+   justify-content: center; /* adjusted */
+   width: 100%;
+   row-gap: 20px;
+   padding-bottom:20px;
    /*grid-column-gap: 10px;
    grid-row-gap: 10px;*/
  }
@@ -700,16 +705,23 @@
      grid-template-columns: repeat(1, 200px);
    }
  }
-
+.keynote_talk {
+   grid-area: speaker_talk;
+   justify-self: center;
+   align-self: center;
+   width: 250px;
+   font-size:1.1em;
+ }
 
  /*note the plural*/
  .speakers_grid {
    display: grid;
    display: inline-grid;
    grid-template-columns: auto;
-   /*grid-column-gap: 10px;
-   grid-row-gap: 10px;*/
- }
+   align-items: center;
+   justify-content: center; /* adjusted */
+   width: 100%;
+}
 
  @media screen and (max-width: 400px) {
    .speakers_grid {
@@ -776,6 +788,7 @@
    grid-area: speaker_talk;
    justify-self: center;
    align-self: center;
+   width: 300px;
    font-size:1.1em;
  }
 
