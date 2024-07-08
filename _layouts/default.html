@@ -91,6 +91,12 @@
     <div class="row">
       <!-- for screens larger than mobiles -->
       <div class="col-xs-6 hidden-xs">
+{% if site.on_seL4 %}
+  <a href="/Info/Website/">About this web server</a>
+  Served by <a href="https://micropython.org/">MicroPython</a>
+on <a href="https://lionsos.org/"> LionsOS</a> on seL4.
+<br/>
+{% endif %}
         Copyright &copy; 2024 seL4 Project a Series of LF Projects, LLC.<br/>
         seL4 is a trademark of LF Projects, LLC.<br/>
         For trademark usage guidelines, privacy and cookie policies,
@@ -106,9 +112,6 @@
       </div>
     </div>
   </div>
-{% if site.on_seL4 %}
-  Served by Apache on Linux on seL4.
-{% endif %}
 </footer> <!-- footer -->
 <!-- wrapper -->
 <script src={{ "/js/jquery.min.js" | relative_url }}></script>

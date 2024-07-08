@@ -1,0 +1,8 @@
+# Copyright 2024 seL4 Project a Series of LF Projects, LLC.
+# SPDX-License-Identifier: BSD-2-Clause
+##
+
+url: "https://beta.sel4.systems"
+static_url: "https://beta.sel4.systems"
+on_seL4: true
+destination: _site_on_seL4
