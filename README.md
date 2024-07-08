@@ -52,6 +52,14 @@ make serve
 for the production build and `make debug` for the development build. See `make
 help` for all options.
 
+There are two variants of the website to build.  When running on
+LionsOS and seL4 we include an additional footer with a link to pages
+describing the hardware and software architecture of the LionsOS
+webserver.  To build this variant, use
+```sh
+make on_seL4
+```
+and the site will be generated into `_site_on_seL4/`.
 ## Docker
 
 The directory `docker/` provides a docker file and some scripts to host
