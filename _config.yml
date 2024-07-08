@@ -6,12 +6,12 @@
 
 title: seL4
 description: "The seL4 main website.  Pull requests are welcome."
-url: "https://sel4.systems"
-static_url: "https://sel4.systems"
+url: "https://beta.sel4.systems"
+static_url: "https://beta.sel4.systems"
 baseurl: "" # the subpath of your site, e.g. /blog
 git_repo: https://github.com/seL4/website
 github_username: seL4
-on_seL4: false
+on_seL4: true
 
 collections:
   - "news-items"
