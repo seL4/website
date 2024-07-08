@@ -21,6 +21,10 @@ Files: .ruby-version
 Copyright: 2024 seL4 Project a Series of LF Projects, LLC.
 License: BSD-2-Clause
 
+Files: Info/Website/webserver.svg
+Copyright: UNSW
+License: CC-BY-SA-4.0
+
 Files: _data/menu.json
        _includes/breadcrumbs.html
        _includes/menu.html
