@@ -1,6 +1,6 @@
 ---
-# Copyright 2020 seL4 Project a Series of LF Projects, LLC.
-# SPDX-License-Identifier: GPL-2.0-only
+# Copyright 2024 seL4 Project a Series of LF Projects, LLC.
+# SPDX-License-Identifier: CC-BY-SA-4.0
 ---
 <!DOCTYPE html>
 <html lang="en">
@@ -38,14 +38,62 @@
 {% endif %}
   </head>
   <body>
-{%- if page.url != "/" -%}
-    <ol class="breadcrumb">
-{% include breadcrumbs.html %}
-    </ol>
-{%- endif -%}
+{%- assign menu = site.data.menu -%}
+{% include header.html %}
+
 {{ content }}
-{% if site.on_seL4 %}
-  Served by Apache on Linux on seL4.
-{% endif %}
+
+<!-- FIXME: put into separate file -->
+<script>
+  const mobile_button = document.querySelector('.mobile-drop');
+  mobile_button.addEventListener("click", openMobileMenu);
+  console.log(mobile_button);
+
+  const drop_buttons = document.querySelectorAll('.dropbtn');
+  for (var i = 0; i < drop_buttons.length; i++) {
+    drop_buttons[i].addEventListener("click", openDropButton)
+  }
+
+  function openMobileMenu(event) {
+    console.log("openMobile");
+    console.log(event);
+    event.stopPropagation();
+    document.getElementById("mobile-menu").classList.add("mobile-on");
+  }
+
+  function isDropBtn(element) {
+    return element.classList.contains('dropbtn');
+  }
+
+  function openDropButton(event) {
+    // console.log("dropbtn");
+    // console.log(event);
+    event.stopPropagation();
+    var theButton = isDropBtn(event.target) ? event.target : event.target.parentElement;
+    var dropMenu = theButton.parentElement.getElementsByClassName('dropmenu')[0];
+    var wasOn = dropMenu.classList.contains('on');
+
+    var onElements = document.getElementsByClassName("on");
+    for (var i = 0; i < onElements.length; i++) {
+      onElements[i].classList.remove('on');
+    }
+    if (!wasOn) {
+      dropMenu.classList.add("on");
+    }
+  }
+
+  window.onclick = function(e) {
+    // If this gets called, no button event listener was called,
+    // because they all stop propagation.
+    // console.log("on window")
+    // console.log(e);
+
+    var onElements = document.getElementsByClassName("on");
+    for (var i = 0; i < onElements.length; i++) {
+      onElements[i].classList.remove('on');
+    }
+    document.getElementById("mobile-menu").classList.remove('mobile-on');
+  }
+</script>
 </body>
 </html>

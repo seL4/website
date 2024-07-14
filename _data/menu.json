@@ -1,40 +1,161 @@
 [
-	["/", "Home"],
-	["/About/", "What is seL4?", [
-			["/About/", "What is seL4?"],
-			["/About/Performance/", "Performance"],
-			["/About/seL4-whitepaper.pdf", "Whitepaper"]
+	[
+		"About seL4",
+		[
+			[
+				"icon-name",
+				"What is seL4?",
+				"History, Fact Sheet, Whitepaper. How to use seL4 in your system.",
+				"/About/"
+			],
+			[
+				"icon-name",
+				"Who is using seL4?",
+				"Where seL4 is used; Benefits seL4 brings",
+				"/About/"
+			],
+			[
+				"icon-name",
+				"Verification",
+				"seL4 Proofs; implications for seL4-based systems and certification",
+				"/About/"
+			],
+			[
+				"icon-name",
+				"Roadmap",
+				"Planned development & verification",
+				"/About/"
+			],
+			[
+				"icon-name",
+				"Performance",
+				"The numbers on the world's fastest kernel",
+				"/About/"
+			],
+			[
+				"scale",
+				"License & Trademark",
+				"seL4 License and Implications; Trademark Compliance Guide",
+				"/About/"
+			],
+			[
+				"cpu-chip",
+				"Supported Platforms",
+				"Hardware and simulators seL4 runs on",
+				"/About/"
+			],
+			[
+				"academic-cap",
+				"Research",
+				"Seminal seL4 Publications; Ongoing Research; Courses in the Ecosystem",
+				"/About/"
+			],
+			[
+				"squares-plus",
+				"Frameworks & Languages",
+				"Frameworks, Tools, OS Personalities, Components, Language Support",
+				"/About/"
+			],
+			[
+				"icon-name",
+				"seL4 Foundation",
+				"Members, Board, and Technical Steering Committee",
+				"/About/"
+			]
+		],
+		[
+			[
+				"FAQ",
+				"Frequently Asked Questions",
+				"/About/"
+			]
 		]
 	],
-	["/Foundation/", "seL4 Foundation", [
-			["/Foundation/", "About the seL4 Foundation"],
-			["/Foundation/Governance/"],
-			["/Foundation/Board/", "Governing Board"],
-			["/Foundation/TSC/"],
-			["/Foundation/Membership/"],
-			["/Foundation/Join/", "Join the Foundation now!"],
-			["/Foundation/Services/", "Commercial Support"],
-			["/Foundation/Summit/2025/", "seL4 Summit"],
-			["/Foundation/Support/", "Support Us"],
-			["/Foundation/Trademark/"],
-			["/Foundation/Jobs/", "Jobs in the seL4 ecosystem"],
-			["/Foundation/Contact/", "Contact the seL4 Foundation"]
+	[
+		"Contribute",
+		[
+			[
+				"icon-name",
+				"Contribution Guidelines",
+				"Overview on how to contribute to seL4",
+				"/About/"
+			],
+			[
+				"icon-name",
+				"Code of Conduct",
+				"Rules for interaction",
+				"/About/"
+			],
+			[
+				"icon-name",
+				"Coding Conventions & Requirements",
+				"Requirements for C Code, Git Commits, Pull Requests",
+				"/About/"
+			],
+			[
+				"icon-name",
+				"RFC Process",
+				"When and how to write an RFC",
+				"/About/"
+			],
+			[
+				"icon-name",
+				"Platform Maintainer",
+				"Contributing and maintaining a platform port",
+				"/About/"
+			],
+			[
+				"icon-name",
+				"Development Roles",
+				"Contributors, Reviewers, Committers, TSC",
+				"/About/"
+			]
 		]
 	],
-	["/contact/", "Stay in Touch"],
-	["/Contribute/", "Contribute", [
-			["/Contribute/"],
-			["https://github.com/seL4", "GitHub"]
+	[
+		"News & Events",
+		[
+			[
+				"megaphone",
+				"News",
+				"News about seL4 and the seL4 Foundation",
+				"/news/"
+			],
+			[
+				"user-group",
+				"seL4 Summit 2025",
+				"The seL4 event of the year",
+				"/Foundation/Summit/2025/"
+			],
+			[
+				"envelope",
+				"Stay Informed",
+				"Announcement mailing list and other channels to stay informed",
+				"/About/"
+			]
 		]
 	],
-	["/Use/"],
-	["/Learn/"],
-	["/Info/", "More Info", [
-			["/Info/", "More Info"],
-			["https://docs.sel4.systems/projects/sel4/frequently-asked-questions.html", "FAQ"],
-			["https://docs.sel4.systems/projects/roadmap.html", "Roadmap"],
-			["/Info/more-research.html", "Research"]
+	[
+		"Contact & Support",
+		[
+			[
+				"rocket-launch",
+				"Commercial Support",
+				"Endorsed Service Providers for seL4",
+				"/About/"
+			],
+			[
+				"lifebuoy",
+				"Help & Open Source Support",
+				"Mailing lists, Forum, Chat, Developer Hangouts",
+				"/About/"
+			],
+			[
+				"user",
+				"Contact a Person",
+				"seL4 Foundation, Security Contact, Website Contact, Moderation",
+				"/About/"
+			]
 		]
-	],
-	["/news/", "News"]
+	]
 ]
