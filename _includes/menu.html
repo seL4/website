@@ -1,30 +1,52 @@
 {%-	for n in menu -%}
-{%-		assign url = n[0] -%}
-{%-		assign name = n[1] -%}
-{%-		assign submenu = n[2] -%}
-{%-		unless name -%}
-{%-			assign name = url | split: "/" | last -%}
-{%-		endunless -%}
-{%-		if page.url == url -%}
-{%-			assign active = 'active' -%}
-{%-		else -%}
-{%-			assign active = '' -%}
-{%-		endif -%}
-{%-		if submenu %}
-{%-			if page.url contains url -%}
-{%-				assign active = 'active' -%}
-{%-			endif -%}
-		<li class="dropdown {{ active }}"><a class="dropdown-toggle" data-toggle="dropdown" href="
-		{{- url | relative_url }}">{{ name }} <span class="caret"></span></a>
-{%-		else %}
-		<li class="{{ active }}"><a href="{{ url | relative_url }}">{{ name }}</a>
-{%-		endif -%}
-{%-		if submenu %}
-		<ul class="dropdown-menu">
-{%-			assign menu = submenu -%}
-{%			include menu.html %}
-		</ul>
-{%-		endif -%}
-		</li>
+{%-		assign name = n[0] -%}
+{%-		assign submenu = n[1] -%}
+{%-   assign extra = n[2] -%}
+<div class="relative">
+	<button type="button" class="dropbtn" aria-expanded="false">
+		{{ name }} {% include icons/chevron-down-mini.html %}
+	</button>
+
+{%-   if submenu.size() > 6 -%}
+	<div class="absolute -left-14 top-full z-10 mt-4 flex w-screen max-w-max px-4 transition ease-in-out duration-200 dropmenu">
+		<div class="w-screen max-w-md flex-auto overflow-hidden rounded-3xl bg-white text-sm leading-6 shadow-lg ring-1 ring-gray-900/5 lg:max-w-3xl">
+			<div class="grid grid-cols-1 gap-x-6 gap-y-1 p-4 lg:grid-cols-2">
+{%    else %}
+	<div class="menu-one-col dropmenu">
+		<div class="p-4">
+{%    endif %}
+{%-	  for sub in submenu -%}
+{%-		  assign icon = "icons/" | append: sub[0] | append: ".svg" -%}
+{%-		  assign short = sub[1] -%}
+{%-		  assign long = sub[2] -%}
+{%-		  assign url = sub[3] -%}
+				<div class="group menu-item-group">
+					<div class="menu-icon-div">{%- include {{ icon }} class="menu-icon" -%}</div>
+					<div>
+						<a href="{{ url | relative_url }}" class="font-semibold text-gray-900">
+							{{ short }}
+							<span class="absolute inset-0"></span>
+						</a>
+						<p class="mt-1 text-gray-600">{{ long }}</p>
+					</div>
+				</div>
+{%-	  endfor -%}
+			</div>
+{%-   if extra -%}
+{%-	    assign sub = extra[0] -%}
+{%-		  assign short = sub[0] -%}
+{%-		  assign long = sub[1] -%}
+{%-		  assign url = sub[2] -%}
+			<div class="bg-gray-50 px-8 py-6">
+				<div class="flex items-center gap-x-3">
+					<h3 class="text-sm font-semibold leading-6 text-gray-900"><a href="{{ url | relative_url }}">{{ short }}</a></h3>
+				</div>
+				<p class="mt-2 text-sm leading-6 text-gray-600">{{ long }}</p>
+			</div>
+{%-   endif %}
+{%-   if submenu.size() > 6 -%}
+		</div>
+{%-   endif %}
+	</div>
+</div>
 {%-	endfor -%}
-{%- comment %} vim: set ft=html.liquid: ts=4 {% endcomment -%}
