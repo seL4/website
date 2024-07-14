@@ -33,16 +33,29 @@
 {%-	  endfor -%}
 			</div>
 {%-   if extra -%}
-{%-	    assign sub = extra[0] -%}
-{%-		  assign short = sub[0] -%}
-{%-		  assign long = sub[1] -%}
-{%-		  assign url = sub[2] -%}
-			<div class="bg-gray-50 px-8 py-6">
-				<div class="flex items-center gap-x-3">
+			<div class="grid grid-cols-1 gap-x-6 gap-y-1 p-4 lg:grid-cols-2 bg-gray-50">
+{%-	    for sub in extra -%}
+{%-		    assign icon = "icons/" | append: sub[0] | append: ".svg" -%}
+{%-		    assign short = sub[1] -%}
+{%-		    assign long = sub[2] -%}
+{%-		    assign url = sub[3] -%}
+				<div class="group menu-item-group">
+					<div class="menu-icon-div">{%- include {{ icon }} class="menu-icon" -%}</div>
+					<div>
+						<a href="{{ url | relative_url }}" class="font-semibold text-gray-900">
+							{{ short }}
+							<span class="absolute inset-0"></span>
+						</a>
+						<p class="mt-1 text-gray-600">{{ long }}</p>
+					</div>
+				</div>
+				<!-- div class="flex items-center gap-x-3">
 					<h3 class="text-sm font-semibold leading-6 text-gray-900"><a href="{{ url | relative_url }}">{{ short }}</a></h3>
 				</div>
 				<p class="mt-2 text-sm leading-6 text-gray-600">{{ long }}</p>
-			</div>
+			</div -->
+{%-     endfor -%}
+		</div>
 {%-   endif %}
 {%-   if submenu.size() > 6 -%}
 		</div>

@@ -3,31 +3,31 @@
 		"About seL4",
 		[
 			[
-				"icon-name",
+				"light-bulb",
 				"What is seL4?",
 				"History, Fact Sheet, Whitepaper. How to use seL4 in your system.",
 				"/About/"
 			],
 			[
-				"icon-name",
+				"user-group",
 				"Who is using seL4?",
 				"Where seL4 is used; Benefits seL4 brings",
 				"/About/"
 			],
 			[
-				"icon-name",
+				"check-circle",
 				"Verification",
 				"seL4 Proofs; implications for seL4-based systems and certification",
 				"/About/"
 			],
 			[
-				"icon-name",
+				"arrow-trending-up",
 				"Roadmap",
 				"Planned development & verification",
 				"/About/"
 			],
 			[
-				"icon-name",
+				"bolt",
 				"Performance",
 				"The numbers on the world's fastest kernel",
 				"/About/"
@@ -57,7 +57,7 @@
 				"/About/"
 			],
 			[
-				"icon-name",
+				"building-library",
 				"seL4 Foundation",
 				"Members, Board, and Technical Steering Committee",
 				"/About/"
@@ -65,6 +65,7 @@
 		],
 		[
 			[
+				"question-mark-circle",
 				"FAQ",
 				"Frequently Asked Questions",
 				"/About/"
@@ -75,37 +76,37 @@
 		"Contribute",
 		[
 			[
-				"icon-name",
+				"arrow-path",
 				"Contribution Guidelines",
 				"Overview on how to contribute to seL4",
 				"/About/"
 			],
 			[
-				"icon-name",
+				"shield-check",
 				"Code of Conduct",
 				"Rules for interaction",
 				"/About/"
 			],
 			[
-				"icon-name",
+				"command-line",
 				"Coding Conventions & Requirements",
 				"Requirements for C Code, Git Commits, Pull Requests",
 				"/About/"
 			],
 			[
-				"icon-name",
+				"beaker",
 				"RFC Process",
 				"When and how to write an RFC",
 				"/About/"
 			],
 			[
-				"icon-name",
+				"wrench-screwdriver",
 				"Platform Maintainer",
 				"Contributing and maintaining a platform port",
 				"/About/"
 			],
 			[
-				"icon-name",
+				"users",
 				"Development Roles",
 				"Contributors, Reviewers, Committers, TSC",
 				"/About/"
