@@ -3,7 +3,7 @@
   <h2 id="footer-heading" class="sr-only">Footer</h2>
   <div class="mx-auto max-w-7xl px-6 pb-8 pt-16 sm:pt-24 lg:px-8 lg:pt-32">
 
-    <div class="ml-10 md:grid md:grid-cols-2 md:gap-8">
+    <div class="ml-10 lg:grid lg:grid-cols-2 lg:gap-8">
       <div class="space-y-8">
         <img class="h-12" src={{ "/images/sel4.svg" | relative_url }} alt="seL4 logo">
         <p class="text-sm leading-6 text-gray-300">Proof. Performance. Security.</p>
@@ -42,7 +42,7 @@
         </div>
       </div>
       <!-- footer menu -->
-      <div class="mt-16 grid grid-cols-3 gap-8 md:col-span-1 md:mt-0">
+      <div class="mt-16 grid grid-cols-3 gap-8 lg:mt-0">
 {%-	for f in footer -%}
 {%-		assign menu_name = f[0] -%}
 {%-		assign links = f[1] -%}
