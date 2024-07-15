@@ -1,0 +1,65 @@
+[
+	[
+		"Useful Links",
+		[
+			[
+				"What is seL4?",
+				"/About/"
+			],
+			[
+				"seL4 Foundation",
+				"/Foundation/"
+			],
+			[
+				"Become a Member",
+				"/Foundation/Join/"
+			],
+			[
+				"Sitemap",
+				"#"
+			]
+		]
+	],
+	[
+		"Legal",
+		[
+			[
+				"seL4 Trademark",
+				"/About/"
+			],
+			[
+				"seL4 License",
+				"/About/"
+			],
+			[
+				"Code of Conduct",
+				"/About/"
+			],
+			[
+				"Site Policies",
+				"http://www.lfprojects.org/"
+			]
+		]
+	],
+	[
+		"Using seL4",
+		[
+			[
+				"Docsite",
+				"https://docs.sel4.systems"
+			],
+			[
+				"Manual",
+				"#"
+			],
+			[
+				"Tutorials",
+				"#"
+			],
+			[
+				"FAQ",
+				"#"
+			]
+		]
+	]
+]
