@@ -1,0 +1,102 @@
+---
+# Copyright 2024 seL4 Project a Series of LF Projects, LLC.
+# SPDX-License-Identifier: CC-BY-SA-4.0
+---
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>{{ page.title }} | {{ site.title }}</title>
+    <meta name="author" content="seL4 Foundation" />
+    <link rel="canonical" href="{{ site.url }}{{ page.url | replace:'index.html',''}}">
+    <link href={{ "/css/sel4.css" | relative_url }} rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+    <link rel="apple-touch-icon" sizes="57x57" href={{ "/images/icons/apple-touch-icon-57x57.png" | relative_url }} />
+    <link rel="apple-touch-icon" sizes="114x114" href={{ "/images/icons/apple-touch-icon-114x114.png" | relative_url }} />
+    <link rel="apple-touch-icon" sizes="72x72" href={{ "/images/icons/apple-touch-icon-72x72.png" | relative_url }} />
+    <link rel="apple-touch-icon" sizes="144x144" href={{ "/images/icons/apple-touch-icon-144x144.png" | relative_url }} />
+    <link rel="apple-touch-icon" sizes="60x60" href={{ "/images/icons/apple-touch-icon-60x60.png" | relative_url }} />
+    <link rel="apple-touch-icon" sizes="120x120" href={{ "/images/icons/apple-touch-icon-120x120.png" | relative_url }} />
+    <link rel="apple-touch-icon" sizes="76x76" href={{ "/images/icons/apple-touch-icon-76x76.png" | relative_url }} />
+    <link rel="apple-touch-icon" sizes="152x152" href={{ "/images/icons/apple-touch-icon-152x152.png" | relative_url }} />
+    <link rel="icon" type="image/png" href={{ "/images/icons/favicon-96x96.png" | relative_url }} sizes="96x96" />
+    <link rel="icon" type="image/png" href={{ "/images/icons/favicon-32x32.png" | relative_url }} sizes="32x32" />
+    <link rel="icon" type="image/png" href={{ "/images/icons/favicon-16x16.png" | relative_url }} sizes="16x16" />
+    <meta name="application-name" content="&nbsp;"/>
+    <meta name="msapplication-TileColor" content="#FFFFFF" />
+    <meta name="msapplication-TileImage" content={{ "/images/icons/mstile-144x144.png" | relative_url }} />
+    <meta name="msapplication-square70x70logo" content={{ "/images/icons/mstile-70x70.png" | relative_url }} />
+    <meta name="msapplication-square150x150logo" content={{ "/images/icons/mstile-150x150.png" | relative_url }} />
+    <meta name="msapplication-wide310x150logo" content={{ "/images/icons/mstile-310x150.png" | relative_url }} />
+    <meta name="msapplication-square310x310logo" content={{ "/images/icons/mstile-310x310.png" | relative_url }} />
+    <link rel="shortcut icon" href={{ "/images/icons/favicon.ico" | relative_url }} />
+{% if jekyll.environment == "production" %}
+    <script defer data-domain="sel4.systems" src="https://analytics.sel4.systems/js/script.js"></script>
+{% endif %}
+  </head>
+  <body>
+{%- assign menu = site.data.menu -%}
+{% include header.html %}
+
+{{ content }}
+
+<!-- FIXME: put into separate file -->
+<script>
+  const mobile_button = document.querySelector('.mobile-drop');
+  mobile_button.addEventListener("click", openMobileMenu);
+  console.log(mobile_button);
+
+  const drop_buttons = document.querySelectorAll('.dropbtn');
+  for (var i = 0; i < drop_buttons.length; i++) {
+    drop_buttons[i].addEventListener("click", openDropButton)
+  }
+
+  function openMobileMenu(event) {
+    console.log("openMobile");
+    console.log(event);
+    event.stopPropagation();
+    document.getElementById("mobile-menu").classList.add("mobile-on");
+  }
+
+  function isDropBtn(element) {
+    return element.classList.contains('dropbtn');
+  }
+
+  function openDropButton(event) {
+    // console.log("dropbtn");
+    // console.log(event);
+    event.stopPropagation();
+    var theButton = isDropBtn(event.target) ? event.target : event.target.parentElement;
+    var dropMenu = theButton.parentElement.getElementsByClassName('dropmenu')[0];
+    var wasOn = dropMenu.classList.contains('on');
+
+    var onElements = document.getElementsByClassName("on");
+    for (var i = 0; i < onElements.length; i++) {
+      onElements[i].classList.remove('on');
+    }
+    if (!wasOn) {
+      dropMenu.classList.add("on");
+    }
+  }
+
+  window.onclick = function(e) {
+    // If this gets called, no button event listener was called,
+    // because they all stop propagation.
+    // console.log("on window")
+    // console.log(e);
+
+    var onElements = document.getElementsByClassName("on");
+    for (var i = 0; i < onElements.length; i++) {
+      onElements[i].classList.remove('on');
+    }
+    document.getElementById("mobile-menu").classList.remove('mobile-on');
+  }
+</script>
+
+{%- assign footer = site.data.footer -%}
+{% include footer.html %}
+</body>
+</html>

@@ -2,7 +2,6 @@
 # Copyright 2020 seL4 Project a Series of LF Projects, LLC.
 # SPDX-License-Identifier: CC-BY-SA-4.0
 title: About seL4
-layout: prose
 redirect_from:
  - /About/home.pml
  - /About/seL4/index.html
