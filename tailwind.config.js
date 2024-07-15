@@ -12,6 +12,9 @@ module.exports = {
       fontFamily: {
         'sans': ['Roboto', ...defaultTheme.fontFamily.sans],
       },
+      colors: {
+        logogreen: '#96ca4f'
+      }
     },
   },
   plugins: [
