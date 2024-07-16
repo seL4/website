@@ -56,6 +56,11 @@
     drop_buttons[i].addEventListener("click", openDropButton)
   }
 
+  const drop_buttons_mobile = document.querySelectorAll('.dropbtn-mobile');
+  for (var i = 0; i < drop_buttons_mobile.length; i++) {
+    drop_buttons_mobile[i].addEventListener("click", dropButtonMobileClick)
+  }
+
   function openMobileMenu(event) {
     console.log("openMobile");
     console.log(event);
@@ -81,6 +86,25 @@
     }
     if (!wasOn) {
       dropMenu.classList.add("on");
+    }
+  }
+
+  function dropButtonMobileClick(event) {
+    // console.log("dropbtn-mobile");
+    // console.log(event);
+    event.stopPropagation();
+    var theButton = event.target;
+    var theSVG = theButton.lastElementChild;
+    var dropMenu = theButton.nextElementSibling;
+    var wasHidden= dropMenu.classList.contains('hidden');
+
+    if (wasHidden) {
+      dropMenu.classList.remove("hidden");
+      theSVG.classList.add("rotate-180");
+    }
+    else {
+      dropMenu.classList.add("hidden");
+      theSVG.classList.remove("rotate-180");
     }
   }
 
