@@ -37,6 +37,12 @@
 {%-		  assign url = sub[3] -%}
               <a href="{{ url | relative_url }}" class="block rounded-lg py-2 pl-6 pr-3 text-sm font-semibold leading-7 text-gray-900 hover:bg-gray-50">{% include {{icon}} class="inline-icon mr-2" %} {{ short }}</a>
 {%- endfor -%}
+{%-	  for sub in extra -%}
+{%-		  assign icon = "icons/" | append: sub[0] | append: ".svg" -%}
+{%-		  assign short = sub[1] -%}
+{%-		  assign url = sub[3] -%}
+              <a href="{{ url | relative_url }}" class="block rounded-lg py-2 pl-6 pr-3 text-sm font-semibold leading-7 text-gray-900 hover:bg-gray-50">{% include {{icon}} class="inline-icon mr-2" %} {{ short }}</a>
+{%- endfor -%}
             </div>
 {%- endfor -%}
           </div>
