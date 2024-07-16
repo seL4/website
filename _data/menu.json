@@ -65,6 +65,12 @@
 		],
 		[
 			[
+				"book-open",
+				"Manual & Documentation",
+				"Dedicated seL4 documentation site",
+				"https://docs.sel4.systems"
+			],
+			[
 				"question-mark-circle",
 				"FAQ",
 				"Frequently Asked Questions",
