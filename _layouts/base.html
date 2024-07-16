@@ -49,7 +49,7 @@
 <script>
   const mobile_button = document.querySelector('.mobile-drop');
   mobile_button.addEventListener("click", openMobileMenu);
-  console.log(mobile_button);
+  // console.log(mobile_button);
 
   const drop_buttons = document.querySelectorAll('.dropbtn');
   for (var i = 0; i < drop_buttons.length; i++) {
@@ -62,21 +62,27 @@
   }
 
   function openMobileMenu(event) {
-    console.log("openMobile");
-    console.log(event);
+    // console.log("openMobile");
+    // console.log(event);
     event.stopPropagation();
     document.getElementById("mobile-menu").classList.add("mobile-on");
   }
 
-  function isDropBtn(element) {
-    return element.classList.contains('dropbtn');
+  function firstParentWithClass(element, className) {
+    if (element.classList && element.classList.contains(className)) {
+      return element;
+    }
+    if (element.parentElement) {
+      return firstParentWithClass(element.parentElement, className);
+    }
+    return null;
   }
 
   function openDropButton(event) {
     // console.log("dropbtn");
     // console.log(event);
     event.stopPropagation();
-    var theButton = isDropBtn(event.target) ? event.target : event.target.parentElement;
+    var theButton = firstParentWithClass(event.target, 'dropbtn');
     var dropMenu = theButton.parentElement.getElementsByClassName('dropmenu')[0];
     var wasOn = dropMenu.classList.contains('on');
 
@@ -93,7 +99,7 @@
     // console.log("dropbtn-mobile");
     // console.log(event);
     event.stopPropagation();
-    var theButton = event.target;
+    var theButton = firstParentWithClass(event.target, 'dropbtn-mobile');;
     var theSVG = theButton.lastElementChild;
     var dropMenu = theButton.nextElementSibling;
     var wasHidden= dropMenu.classList.contains('hidden');
