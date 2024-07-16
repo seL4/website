@@ -20,7 +20,7 @@ layout: none
 @layer components {
   .dropbtn {
     @apply flex items-center gap-x-1 text-sm font-semibold leading-6 text-gray-900;
-    }
+  }
 
   .button-pri {
     @apply rounded-md bg-indigo-600 px-3 py-2 text-sm font-semibold text-white shadow-sm hover:bg-indigo-500 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-600;
@@ -44,6 +44,14 @@ layout: none
 
   .menu-one-col {
     @apply absolute -left-8 top-full z-10 mt-4 w-screen max-w-md overflow-hidden rounded-3xl bg-white text-sm leading-6 shadow-lg ring-1 ring-gray-900/5 opacity-0;
+  }
+
+  .dropbtn-mobile {
+    @apply flex w-full items-center justify-between rounded-lg py-2 pl-3 pr-3.5 text-base font-semibold leading-7 text-gray-900 hover:bg-gray-50;
+  }
+
+  .mobile-menu {
+    @apply mt-2 space-y-2;
   }
 
   .inline-icon {
