@@ -37,11 +37,13 @@
     <script defer data-domain="sel4.systems" src="https://analytics.sel4.systems/js/script.js"></script>
 {% endif %}
   </head>
-  <body>
+  <body class="min-h-screen grid gap-0 grid-cols-1 grid-rows-[auto_1fr_auto]">
 {%- assign menu = site.data.menu -%}
 {% include header.html %}
 
+    <main>
 {{ content }}
+    </main>
 
 <!-- FIXME: put into separate file -->
 <script>
