@@ -28,11 +28,11 @@
         </div>
       </div>
       <!-- footer menu -->
-      <div class="mt-16 grid grid-cols-3 gap-8 lg:mt-0">
+      <div class="mt-16 flex flex-wrap gap-8 lg:mt-0">
 {%-	for f in footer -%}
 {%-		assign menu_name = f[0] -%}
 {%-		assign links = f[1] -%}
-        <div>
+        <div class="flex-none">
           <h3 class="text-md font-semibold leading-6 text-logogreen">{{ menu_name }}</h3>
           <ul role="list" class="mt-6 space-y-4">
 {%-	  for l in links -%}
