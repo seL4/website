@@ -237,12 +237,16 @@ redirect_from: /home.pml
 <div class="logo-cloud">
   <div class="mx-auto max-w-7xl px-6 lg:px-8">
     <h2>Strong membership base</h2>
-    <div class="logo-grid">
-      <img src="https://tailwindui.com/img/logos/158x48/transistor-logo-gray-900.svg" alt="Transistor">
-      <img src="https://tailwindui.com/img/logos/158x48/reform-logo-gray-900.svg" alt="Reform" width="158" height="48">
-      <img src="https://tailwindui.com/img/logos/158x48/tuple-logo-gray-900.svg" alt="Tuple" width="158" height="48">
-      <img src="https://tailwindui.com/img/logos/158x48/savvycal-logo-gray-900.svg" alt="SavvyCal" width="158" height="48">
-      <img src="https://tailwindui.com/img/logos/158x48/statamic-logo-gray-900.svg" alt="Statamic" width="158" height="48">
-    </div>
+    <a href="Foundation/Membership/">
+      <div class="logo-grid">
+{%- assign members = site.data.members.premium |
+                     concat: site.data.members.general |
+                     concat: site.data.members.associate -%}
+{%- assign members = members | sort: "name" -%}
+{%- for member in members %}
+        <img src={{ "Foundation/Membership/LOGOS/" | append: member.logo }} alt="{{ member.name }}" width="158">
+{%- endfor -%}
+      </div>
+    </a>
   </div>
 </div>
