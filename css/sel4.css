@@ -63,7 +63,7 @@ layout: none
   }
 
   /* commaon padding settings for front page sections */
-  .feature-left, .feature-right, .logo-cloud {
+  .feature-left, .feature-right {
     @apply py-16 sm:py-20;
   }
 
@@ -124,19 +124,18 @@ layout: none
   /* ---- logo cloud ---- */
 
   .logo-cloud {
-    @apply bg-white py-24 sm:py-28;
+    @apply bg-white py-20 sm:pt-24 sm:pb-32 max-w-7xl mx-auto overflow-hidden
+           [mask-image:_linear-gradient(to_right,transparent_0,_black_200px,_black_calc(100%-200px),transparent_100%)];
   }
 
   .logo-cloud h2 {
-    @apply text-center text-lg font-semibold leading-8 text-gray-900;
-  }
-
-  .logo-grid img {
-    @apply col-span-2 max-h-12 w-full object-contain lg:col-span-1;
+    @apply text-center text-3xl font-semibold leading-8 text-gray-900 mb-10;
   }
 
   .logo-grid {
-    @apply mx-auto mt-10 grid max-w-lg grid-cols-4 items-center gap-x-8 gap-y-10 sm:max-w-xl sm:grid-cols-6 sm:gap-x-10 lg:mx-0 lg:max-w-none lg:grid-cols-5;
+    @apply flex items-center justify-center md:justify-start
+           animate-infinite-scroll motion-reduce:animate-none
+           [&_li]:mx-8 [&_img]:max-w-none;
   }
 }
 

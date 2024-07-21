@@ -235,18 +235,29 @@ redirect_from: /home.pml
 </div>
 
 <div class="logo-cloud">
-  <div class="mx-auto max-w-7xl px-6 lg:px-8">
-    <h2>Strong membership base</h2>
-    <a href="Foundation/Membership/">
-      <div class="logo-grid">
+  <a href="Foundation/Membership/">
+    <h2>Meet our members</h2>
+    <div class="inline-flex flex-nowrap">
 {%- assign members = site.data.members.premium |
-                     concat: site.data.members.general |
-                     concat: site.data.members.associate -%}
+  concat: site.data.members.general |
+  concat: site.data.members.associate -%}
+      <ul class="logo-grid">
 {%- assign members = members | sort: "name" -%}
 {%- for member in members %}
-        <img src={{ "Foundation/Membership/LOGOS/" | append: member.logo }} alt="{{ member.name }}" width="158">
+        <li>
+          <img src={{ "Foundation/Membership/LOGOS/" | append: member.logo }} alt="{{ member.name }}" width="158px">
+        </li>
 {%- endfor -%}
-      </div>
-    </a>
-  </div>
+      </ul>
+      <!-- repeat for animation reset -->
+      <ul class="logo-grid" aria-hidden="true">
+{%- assign members = members | sort: "name" -%}
+{%- for member in members %}
+        <li>
+          <img src={{ "Foundation/Membership/LOGOS/" | append: member.logo }} alt="{{ member.name }}" width="158px">
+        </li>
+{%- endfor -%}
+      </ul>
+    </div>
+  </a>
 </div>
