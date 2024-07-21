@@ -141,6 +141,14 @@ layout: none
   .join {
     @apply text-logogreen text-xl font-bold;
   }
+
+  .theprose-nodark {
+    @apply prose lg:prose-lg max-w-screen-md;
+  }
+
+  .theprose {
+    @apply theprose-nodark dark:prose-invert
+  }
 }
 
 .breadcrumb {
