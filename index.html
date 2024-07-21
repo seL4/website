@@ -1,190 +1,210 @@
 ---
 # Copyright 2020 seL4 Project a Series of LF Projects, LLC.
 # SPDX-License-Identifier: CC-BY-SA-4.0
-title: Home
+title: The seL4 Microkernel
+layout: plain
 redirect_from: /home.pml
 ---
-<h1>The&nbsp;seL4<sup><sup>&reg;</sup></sup> Microkernel</h1>
-<h4>
-  Security is no excuse for bad performance
-</h4>
-<div class="highlight">
-  The benchmark for performance.<br />
-  The world's most highly assured OS kernel.<br />
-  Open source &amp; community-supported under the seL4 Foundation.
-</div>
 
+<!-- FIXME: add background image/call graph/hero section -->
 
-<a href="news/">
-<div class="news">
-<div class="news-clearfix">
-  <div class="news-column news-title">
-  News
+<h1 class="my-20 text-center text-6xl font-bold">seL4</h1>
+
+<div class="flex flex-wrap justify-center gap-x-16 gap-y-10 my-10">
+  <div class="overflow-hidden rounded-lg bg-logogreen shadow">
+    <div class="px-4 py-5 sm:p-6 font-bold w-[25rem] text-center">
+      The world’s most highly assured OS kernel
+    </div>
   </div>
-
-  <div class="news-column news-content">
-    <ul>
-{%- assign items = site.news-items | reverse -%}
-{% for item in items limit: 3 %}
-      <li>
-        <strong>
-          {{ item.date | date: "%d %b %Y" }}: {{ item.title }}
-        </strong>
-      </li>
-{% endfor %}
-      <li style="margin-top:0.2em;list-style-type:none">
-        more...
-      </li>
-    </ul>
+  <div class="overflow-hidden rounded-lg bg-logogreen shadow">
+    <div class="px-4 py-5 sm:p-6 font-bold w-[25rem] text-center">
+      The world’s fastest OS kernel
+    </div>
   </div>
 </div>
+
+<div class="flex flex-wrap gap-x-10 justify-center">
+  <div>
+    <button type="button" class="button-snd w-60">Learn more about seL4</button>
+  </div>
+  <div>
+    <button type="button" class="button-snd w-60">Start developing</button>
+  </div>
 </div>
-</a>
 
-<div class="homepage_grid">
-  <div class="homepage_item">
-    <a class="divLink" href="About/"></a>
-    <div class="hp_pic">
-      <img src="images/seL4.svg" style="width:150px;height:58px;" alt="seL4" />
+<!-- feature sections -->
+
+<div class="feature-left">
+  <h2>Award-winning technology backed by ground-breaking research</h2>
+  <div class="feature-content">
+    <div>
+      <p>
+        Voluptate tempor et excepteur Lorem quis culpa consequat. Magna in officia nulla et sint. Elit nisi nisi aliqua
+        velit excepteur voluptate amet sunt dolore incididunt laboris. Aliquip tempor nulla enim ea ipsum.
+      </p>
+      <p>
+        Sit eu Lorem minim incididunt consequat exercitation sunt qui. Cillum id cupidatat laborum ut nostrud eiusmod
+        voluptate proident do officia exercitation do dolore amet. Elit aliquip proident dolore ullamco eiusmod aute
+        consectetur dolore.
+      </p>
+      <div class="feature-buttons">
+        <a href="#" class="feature-link-pri">Get started</a>
+        <a href="#" class="feature-link-snd">Learn more <span aria-hidden="true">→</span></a>
+      </div>
     </div>
-    <div class="hp_title">
-      What is seL4?
-    </div>
-    <div class="hp_text">
-      The world’s most high-assured operating system kernel
+    <div class="feature-img">
+      <img src="images/bg.png" alt="bg" width="400px">
     </div>
   </div>
+</div>
 
-  <div class="homepage_item">
-    <a class="divLink" href="Foundation"></a>
-    <div class="hp_pic">
-      <img src="images/sel4-foundation-logo.svg" style="width:200px;height:87px;" alt="seL4 Foundation" />
+<div class="feature-right">
+  <h2>Protecting critical systems around the globe</h2>
+  <div class="feature-content">
+    <div>
+      <p>
+        Voluptate tempor et excepteur Lorem quis culpa consequat. Magna in officia nulla et sint. Elit nisi nisi aliqua
+        velit excepteur voluptate amet sunt dolore incididunt laboris. Aliquip tempor nulla enim ea ipsum.
+      </p>
+      <p>
+        Sit eu Lorem minim incididunt consequat exercitation sunt qui. Cillum id cupidatat laborum ut nostrud eiusmod
+        voluptate proident do officia exercitation do dolore amet. Elit aliquip proident dolore ullamco eiusmod aute
+        consectetur dolore.
+      </p>
+      <div class="feature-buttons">
+        <a href="#" class="feature-link-pri">Get started</a>
+        <a href="#" class="feature-link-snd">Learn more <span aria-hidden="true">→</span></a>
+      </div>
     </div>
-    <div class="hp_title">
-      seL4 Foundation
-    </div>
-    <div class="hp_text">
-      Open source foundation for seL4 and its ecosystem. Want to join?
+    <div class="feature-img">
+      <img src="images/bg.png" alt="bg" width="400px">
     </div>
   </div>
+</div>
 
-  <div class="homepage_item">
-    <a class="divLink" href="contact"></a>
-    <div class="hp_pic">
-      <img src="images/contacts.png" style="width:160px;height:98px;" alt="Contacts" />
-    </div>
-    <div class="hp_title">
-      Stay in touch
-    </div>
-    <div class="hp_text">
-      Mailing lists, blog, contacts, chat
+<div class="feature-left">
+  <h2>Supported by commercial service providers</h2>
+  <div class="feature-content">
+    <p>
+      Voluptate tempor et excepteur Lorem quis culpa consequat. Magna in officia nulla et sint. Elit nisi nisi aliqua
+      velit excepteur voluptate amet sunt dolore incididunt laboris. Aliquip tempor nulla enim ea ipsum.
+    </p>
+    <p>
+      Sit eu Lorem minim incididunt consequat exercitation sunt qui. Cillum id cupidatat laborum ut nostrud eiusmod
+      voluptate proident do officia exercitation do dolore amet. Elit aliquip proident dolore ullamco eiusmod aute
+      consectetur dolore.
+    </p>
+    <div class="feature-buttons">
+      <a href="#" class="feature-link-pri">Get started</a>
+      <a href="#" class="feature-link-snd">Learn more <span aria-hidden="true">→</span></a>
     </div>
   </div>
+</div>
 
-  <div class="homepage_item">
-    <a class="divLink" href="Foundation/Services/"></a>
-    <div class="hp_pic">
-      <img src="images/services.png" style="width:110px;height:110px" alt="Contribute" />
-    </div>
-    <div class="hp_title">
-      Commercial Support
-    </div>
-    <div class="hp_text">
-       Endorsed service providers for seL4
+<div class="feature-right">
+  <h2>Backed by an Open Source Foundation</h2>
+  <div class="feature-content">
+    <p>
+      Voluptate tempor et excepteur Lorem quis culpa consequat. Magna in officia nulla et sint. Elit nisi nisi aliqua
+      velit excepteur voluptate amet sunt dolore incididunt laboris. Aliquip tempor nulla enim ea ipsum.
+    </p>
+    <p>
+      Sit eu Lorem minim incididunt consequat exercitation sunt qui. Cillum id cupidatat laborum ut nostrud eiusmod
+      voluptate proident do officia exercitation do dolore amet. Elit aliquip proident dolore ullamco eiusmod aute
+      consectetur dolore.
+    </p>
+    <div class="feature-buttons">
+      <a href="#" class="feature-link-pri">Get started</a>
+      <a href="#" class="feature-link-snd">Learn more <span aria-hidden="true">→</span></a>
     </div>
   </div>
+</div>
 
-  <div class="homepage_item">
-    <a class="divLink" href="Use"></a>
-    <div class="hp_pic">
-      <img src="images/sel4_quad_low.jpg" style="width:200px;height:68px;" alt="seL4 quadcopter" />
-    </div>
-    <div class="hp_title">
-      Use
-     </div>
-    <div class="hp_text">
-      Build or retrofit your product to run on seL4
+<div class="feature-left">
+  <h2>Contributions from a strong ecosystem</h2>
+  <div class="feature-content">
+    <p>
+      Voluptate tempor et excepteur Lorem quis culpa consequat. Magna in officia nulla et sint. Elit nisi nisi aliqua
+      velit excepteur voluptate amet sunt dolore incididunt laboris. Aliquip tempor nulla enim ea ipsum.
+    </p>
+    <p>
+      Sit eu Lorem minim incididunt consequat exercitation sunt qui. Cillum id cupidatat laborum ut nostrud eiusmod
+      voluptate proident do officia exercitation do dolore amet. Elit aliquip proident dolore ullamco eiusmod aute
+      consectetur dolore.
+    </p>
+    <div class="feature-buttons">
+      <a href="#" class="feature-link-pri">Get started</a>
+      <a href="#" class="feature-link-snd">Learn more <span aria-hidden="true">→</span></a>
     </div>
   </div>
+</div>
 
-
-  <div class="homepage_item">
-    <a class="divLink" href="Learn"></a>
-    <div class="hp_pic">
-      <img src="images/learning.jpg" style="width:200px;height:112px;" alt="Learn" />
-    </div>
-    <div class="hp_title">
-      Learn
-    </div>
-    <div class="hp_text">
-      Tutorials, documentation, courses
+<div class="feature-right">
+  <h2>Annual gathering at the seL4 summit</h2>
+  <div class="feature-content">
+    <p>
+      Voluptate tempor et excepteur Lorem quis culpa consequat. Magna in officia nulla et sint. Elit nisi nisi aliqua
+      velit excepteur voluptate amet sunt dolore incididunt laboris. Aliquip tempor nulla enim ea ipsum.
+    </p>
+    <p>
+      Sit eu Lorem minim incididunt consequat exercitation sunt qui. Cillum id cupidatat laborum ut nostrud eiusmod
+      voluptate proident do officia exercitation do dolore amet. Elit aliquip proident dolore ullamco eiusmod aute
+      consectetur dolore.
+    </p>
+    <div class="feature-buttons">
+      <a href="#" class="feature-link-pri">Get started</a>
+      <a href="#" class="feature-link-snd">Learn more <span aria-hidden="true">→</span></a>
     </div>
   </div>
+</div>
 
-
-  <div class="homepage_item">
-    <a class="divLink" href="Foundation/Support/"></a>
-    <div class="hp_pic">
-      <img src="images/support.png" style="width:150px;height:87px;" alt="Support" />
-    </div>
-    <div class="hp_title">
-      Support seL4
-    </div>
-    <div class="hp_text">
-      Funding the next big steps for the seL4 project
+<div class="feature-left">
+  <h2>Active development Roadmap</h2>
+  <div class="feature-content">
+    <p>
+      Voluptate tempor et excepteur Lorem quis culpa consequat. Magna in officia nulla et sint. Elit nisi nisi aliqua
+      velit excepteur voluptate amet sunt dolore incididunt laboris. Aliquip tempor nulla enim ea ipsum.
+    </p>
+    <p>
+      Sit eu Lorem minim incididunt consequat exercitation sunt qui. Cillum id cupidatat laborum ut nostrud eiusmod
+      voluptate proident do officia exercitation do dolore amet. Elit aliquip proident dolore ullamco eiusmod aute
+      consectetur dolore.
+    </p>
+    <div class="feature-buttons">
+      <a href="#" class="feature-link-pri">Get started</a>
+      <a href="#" class="feature-link-snd">Learn more <span aria-hidden="true">→</span></a>
     </div>
   </div>
+</div>
 
-  <div class="homepage_item">
-    <a class="divLink" href="Foundation/Trademark/"></a>
-    <div class="hp_pic">
-      <img src="images/scales.png" style="width:100px;height:76px;" alt="Branding" />
-    </div>
-    <div class="hp_title">
-      The seL4 Trademark
-    </div>
-    <div class="hp_text">
-      Compliance rules and promoting the brand
+<div class="feature-right">
+  <h2>Dedicated Docsite for documentation and learning material</h2>
+  <div class="feature-content">
+    <p>
+      Voluptate tempor et excepteur Lorem quis culpa consequat. Magna in officia nulla et sint. Elit nisi nisi aliqua
+      velit excepteur voluptate amet sunt dolore incididunt laboris. Aliquip tempor nulla enim ea ipsum.
+    </p>
+    <p>
+      Sit eu Lorem minim incididunt consequat exercitation sunt qui. Cillum id cupidatat laborum ut nostrud eiusmod
+      voluptate proident do officia exercitation do dolore amet. Elit aliquip proident dolore ullamco eiusmod aute
+      consectetur dolore.
+    </p>
+    <div class="feature-buttons">
+      <a href="#" class="feature-link-pri">Get started</a>
+      <a href="#" class="feature-link-snd">Learn more <span aria-hidden="true">→</span></a>
     </div>
   </div>
+</div>
 
-  <div class="homepage_item">
-    <a class="divLink" href="Foundation/Summit/2025/"></a>
-    <div class="hp_pic">
-      <img src="images/sel4-summit-logo.svg" style="width:200px" alt="seL4 Summit" />
-    </div>
-    <div class="hp_title">
-      seL4 Summit
-    </div>
-    <div class="hp_text">
-      The annual summit organised by the seL4 Foundation.
+<div class="logo-cloud">
+  <div class="mx-auto max-w-7xl px-6 lg:px-8">
+    <h2>Strong membership base</h2>
+    <div class="logo-grid">
+      <img src="https://tailwindui.com/img/logos/158x48/transistor-logo-gray-900.svg" alt="Transistor">
+      <img src="https://tailwindui.com/img/logos/158x48/reform-logo-gray-900.svg" alt="Reform" width="158" height="48">
+      <img src="https://tailwindui.com/img/logos/158x48/tuple-logo-gray-900.svg" alt="Tuple" width="158" height="48">
+      <img src="https://tailwindui.com/img/logos/158x48/savvycal-logo-gray-900.svg" alt="SavvyCal" width="158" height="48">
+      <img src="https://tailwindui.com/img/logos/158x48/statamic-logo-gray-900.svg" alt="Statamic" width="158" height="48">
     </div>
   </div>
-
-  <div class="homepage_item">
-    <a class="divLink" href="Contribute/"></a>
-    <div class="hp_pic">
-      <img src="images/contributing.jpg" style="width:200px;height:75px" alt="Contribute" />
-    </div>
-    <div class="hp_title">
-      Contribute
-    </div>
-    <div class="hp_text">
-       Contributing code, documentation, proofs
-    </div>
-  </div>
-
-  <div class="homepage_item">
-    <a class="divLink" href="Info/"></a>
-    <div class="hp_pic">
-      <img src="images/more_info.png" style="width:80px;height:95px;" alt="More info" />
-    </div>
-    <div class="hp_title">
-      Want to know more?
-    </div>
-    <div class="hp_text">
-      Research, roadmap, FAQ
-    </div>
-  </div>
-
 </div>
