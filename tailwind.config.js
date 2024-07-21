@@ -27,6 +27,9 @@ module.exports = {
     },
   },
   plugins: [
-    require('@tailwindcss/typography')
+    require('@tailwindcss/typography'),
+    function ({ addVariant }) {
+      addVariant('light', '@media (prefers-color-scheme: light)')
+    },
   ]
 }
