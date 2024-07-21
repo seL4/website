@@ -1,0 +1,121 @@
+{
+  "premium": [
+    {
+      "name": "Horizon Robotics",
+      "logo": "Horizon_Robotics.svg",
+      "url": "https://en.horizon.cc/"
+    },
+    {
+      "name": "Jump Trading",
+      "logo": "Jump-Trading.svg",
+      "url": "https://jumptrading.com/"
+    },
+    {
+      "name": "NIO",
+      "logo": "NIO.svg",
+      "url": "http://nio.com/"
+    },
+    {
+      "name": "UNSW Sydney",
+      "logo": "UNSW.svg",
+      "url": "https://unsw.edu.au/",
+      "founding": true,
+      "endorsed": true
+    }
+  ],
+  "general": [
+    {
+      "name": "Apple",
+      "logo": "",
+      "url": "https://apple.com/"
+    },
+    {
+      "name": "Cog Systems Inc",
+      "logo": "Cog.jpg",
+      "url": "https://cog.systems/",
+      "founding": true,
+      "endorsed": true
+    },
+    {
+      "name": "DornerWorks Ltd",
+      "logo": "DornerWorks.svg",
+      "url": "https://www.dornerworks.com",
+      "founding": true,
+      "endorsed": true
+    },
+    {
+      "name": "Kry10 Limited",
+      "logo": "Kry10.svg",
+      "url": "https://www.kry10.com/",
+      "endorsed": true
+    },
+    {
+      "name": "Penten Pty Ltd",
+      "logo": "Penten.svg",
+      "url": "https://www.penten.com/"
+    },
+    {
+      "name": "Proofcraft",
+      "logo": "proofcraft.svg",
+      "url": "https://proofcraft.systems/",
+      "endorsed": true
+    },
+    {
+      "name": "Raytheon Technologies",
+      "logo": "raytheontechnologies.svg",
+      "url": "https://www.rtx.com/"
+    },
+    {
+      "name": "SpacemiT",
+      "logo": "SpacemiT.svg",
+      "url": "https://spacemit.com/en/"
+    },
+    {
+      "name": "Technology Innovation Institute",
+      "logo": "TII.jpg",
+      "url": "https://www.tii.ae/"
+    },
+    {
+      "name": "Xcalibyte",
+      "logo": "xcalibyte.svg",
+      "url": "https://xcalibyte.com/"
+    }
+  ],
+  "associate": [
+    {
+      "name": "Autoware Foundation",
+      "logo": "autoware.svg",
+      "url": "https://autoware.org/"
+    },
+    {
+      "name": "ETH Zurich",
+      "logo": "ETH-Zurich.svg",
+      "url": "https://ethz.ch/en.html"
+    },
+    {
+      "name": "Kansas State University",
+      "logo": "kansas-state.svg",
+      "url": "https://www.k-state.edu/"
+    },
+    {
+      "name": "NCSC",
+      "logo": "NCSC.png",
+      "url": "https://www.ncsc.gov.uk/"
+    },
+    {
+      "name": "RISC-V International",
+      "logo": "RISC-V.svg",
+      "url": "https://riscv.org/"
+    },
+    {
+      "name": "TU Munich",
+      "logo": "TU-Munich.svg",
+      "url": "https://www.tum.de/en"
+    },
+    {
+      "name": "University of Kansas",
+      "logo": "universityofkansas.svg",
+      "url": "https://ku.edu/"
+    }
+  ]
+}
