@@ -1,14 +1,14 @@
-<div class="ml-4 sm:ml-6 sm:grid sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 sm:gap-x-[4rem] sm:gap-y-[5rem]">
+<div class="mr-4 md:ml-6 sm:grid sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 sm:gap-x-[4rem] sm:gap-y-[5rem]">
 {%- for member in members -%}
 {%-   assign logo = "/Foundation/Membership/LOGOS/" | append: member.logo | relative_url -%}
   <div class="text-gray-600 mt-16 sm:mt-0">
     <a href="{{ member.url }}">
-    <div class="mx-auto h-[5rem] w-[10rem] flex align-middle justify-center">
-      <img class="contain" src="{{ logo }}" alt="{{ member.name }}" title="{{ member.name }}">
+    <div class="mx-auto h-[5.5rem] w-[11rem] flex align-middle justify-center">
+      <img class="object-scale-down" src="{{ logo }}" alt="{{ member.name }}" title="{{ member.name }}">
     </div>
     <!-- div class="mt-6 text-lg font-semi-bold text-center">{{ member.name }}</div -->
     </a>
-    <div class="mt-4 sm:mt-6 text-sm text-gray-500 w-[10rem] mx-auto text-nowrap">
+    <div class="mt-4 sm:mt-6 text-sm text-gray-500 w-[11rem] mx-auto text-nowrap">
       {%- if member.founding -%}
       <p>
         {%- include icons/building-library.svg class="inline-icon h-4 w-4 mr-2" -%}
