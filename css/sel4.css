@@ -19,7 +19,7 @@ layout: none
 
 @layer components {
   .dropbtn {
-    @apply flex items-center gap-x-1 text-sm font-semibold leading-6 text-gray-900;
+    @apply flex items-center gap-x-1 text-sm font-semibold leading-6 text-gray-900 dark:text-gray-300;
   }
 
   .drop-icon {
@@ -31,7 +31,7 @@ layout: none
   }
 
   .button-snd {
-    @apply rounded-md bg-white px-3 py-2 text-xs md:text-sm font-semibold text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 hover:bg-gray-50 h-8 md:h-9;
+    @apply rounded-md bg-white dark:bg-indigo-400 px-3 py-2 text-xs md:text-sm font-semibold text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 dark:ring-indigo-700 hover:bg-gray-50 dark:hover:bg-indigo-300 h-8 md:h-9;
   }
 
   .menu-item-group {
@@ -124,8 +124,8 @@ layout: none
   /* ---- logo cloud ---- */
 
   .logo-cloud {
-    @apply bg-white py-20 sm:pt-24 sm:pb-32 max-w-7xl mx-auto overflow-hidden
-           [mask-image:_linear-gradient(to_right,transparent_0,_black_200px,_black_calc(100%-200px),transparent_100%)];
+    @apply bg-white py-20 sm:pt-24 sm:pb-32 max-w-7xl dark:max-w-none mx-auto overflow-hidden
+           light:[mask-image:_linear-gradient(to_right,transparent_0,_black_200px,_black_calc(100%-200px),transparent_100%)];
   }
 
   .logo-cloud h2 {
