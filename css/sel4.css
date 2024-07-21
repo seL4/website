@@ -73,7 +73,7 @@ layout: none
   }
 
   .feature-content {
-    @apply text-lg leading-8 text-gray-600 mt-6 mr-10
+    @apply text-lg leading-8 text-gray-600 dark:text-gray-400 mt-6 mr-10
            lg:grid lg:grid-rows-[auto_auto];
   }
 
@@ -106,7 +106,7 @@ layout: none
   }
 
   .feature-content h2 {
-    @apply mb-8 text-3xl lg:text-4xl font-bold tracking-tight text-gray-900;
+    @apply mb-8 text-3xl lg:text-4xl font-bold tracking-tight text-gray-900 dark:text-gray-300;
   }
 
   .feature-link-pri {
@@ -114,7 +114,7 @@ layout: none
   }
 
   .feature-link-snd {
-    @apply text-sm font-semibold leading-6 text-gray-900;
+    @apply text-sm font-semibold leading-6 text-gray-900 dark:text-gray-200;
   }
 
   .feature-buttons {
@@ -136,6 +136,10 @@ layout: none
     @apply flex items-center justify-center md:justify-start
            animate-infinite-scroll motion-reduce:animate-none
            [&_li]:mx-8 [&_img]:max-w-none;
+  }
+
+  .join {
+    @apply text-logogreen text-xl font-bold;
   }
 }
 
