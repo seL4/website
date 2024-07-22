@@ -4,7 +4,7 @@
 {%-   assign extra = n[2] -%}
 <div class="relative">
 	<button type="button" class="dropbtn" aria-expanded="false">
-		{{ name }} {% include icons/chevron-down-mini.svg class="drop-icon" %}
+		{{ name | escape }} {% include icons/chevron-down-mini.svg class="drop-icon" %}
 	</button>
 
 {%-   if submenu.size() > 6 -%}
@@ -17,8 +17,8 @@
 {%    endif %}
 {%-	  for sub in submenu -%}
 {%-		  assign icon = "icons/" | append: sub[0] | append: ".svg" -%}
-{%-		  assign short = sub[1] -%}
-{%-		  assign long = sub[2] -%}
+{%-		  assign short = sub[1] | escape -%}
+{%-		  assign long = sub[2] | escape -%}
 {%-		  assign url = sub[3] -%}
 				<div class="group menu-item-group">
 					<div class="menu-icon-div">{%- include {{ icon }} class="menu-icon" -%}</div>
@@ -36,8 +36,8 @@
 			<div class="grid grid-cols-1 gap-x-6 gap-y-1 p-4 lg:grid-cols-2 bg-gray-50">
 {%-	    for sub in extra -%}
 {%-		    assign icon = "icons/" | append: sub[0] | append: ".svg" -%}
-{%-		    assign short = sub[1] -%}
-{%-		    assign long = sub[2] -%}
+{%-		    assign short = sub[1] | escape -%}
+{%-		    assign long = sub[2] | escape -%}
 {%-		    assign url = sub[3] -%}
 				<div class="group menu-item-group">
 					<div class="menu-icon-div">{%- include {{ icon }} class="menu-icon" -%}</div>
@@ -49,11 +49,6 @@
 						<p class="mt-1 text-gray-600">{{ long }}</p>
 					</div>
 				</div>
-				<!-- div class="flex items-center gap-x-3">
-					<h3 class="text-sm font-semibold leading-6 text-gray-900"><a href="{{ url | relative_url }}">{{ short }}</a></h3>
-				</div>
-				<p class="mt-2 text-sm leading-6 text-gray-600">{{ long }}</p>
-			</div -->
 {%-     endfor -%}
 		</div>
 {%-   endif %}
