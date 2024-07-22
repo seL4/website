@@ -2,9 +2,9 @@
   <nav class="mx-auto flex 2xl:max-w-7xl items-center justify-between px-6 pt-6 pb-4 mb-2 lg:px-8
               shadow-md" aria-label="Global">
     <div class="flex lg:flex-none">
-      <a href={{ "/" | relative_url }} class="-m-1.5 p-1.5">
+      <a href="{{ '/' | relative_url }}" class="-m-1.5 p-1.5">
         <span class="sr-only">seL4</span>
-        <img class="h-8 w-auto" src={{ "/images/seL4.svg" || relative_url }} alt="seL4 logo">
+        <img class="h-8 w-auto" src="{{ '/images/seL4.svg' || relative_url }}" alt="seL4 logo">
       </a>
     </div>
     <div class="flex flex-1"></div>
@@ -16,7 +16,7 @@
 
     <div class="hidden min-[470px]:flex lg:flex-none justify-end">
       <!-- member button -->
-      <a href={{ "/Foundation/Join/" | relative_url }} class="button-snd mr-6 md:mr-10">Become a Member</a>
+      <a href="{{ '/Foundation/Join/' | relative_url }}" class="button-snd mr-6 md:mr-10">Become a Member</a>
 
       <!-- docsite button -->
       <a href="https://docs.sel4.systems" class="button-snd mr-2 md:mr-6">Docsite

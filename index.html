@@ -246,7 +246,7 @@ redirect_from: /home.pml
 {%- assign members = members | sort: "name" -%}
 {%- for member in members %}
         <li>
-          <img src={{ "Foundation/Membership/LOGOS/" | append: member.logo }} alt="{{ member.name }}" width="158px">
+          <img src="{{ 'Foundation/Membership/LOGOS/' | append: member.logo }}" alt="{{ member.name }}" width="158px">
         </li>
 {%- endfor -%}
       </ul>
@@ -255,7 +255,7 @@ redirect_from: /home.pml
 {%- assign members = members | sort: "name" -%}
 {%- for member in members %}
         <li>
-          <img src={{ "Foundation/Membership/LOGOS/" | append: member.logo }} alt="{{ member.name }}" width="158px">
+          <img src="{{ 'Foundation/Membership/LOGOS/' | append: member.logo }}" alt="{{ member.name }}" width="158px">
         </li>
 {%- endfor -%}
       </ul>
