@@ -15,23 +15,23 @@
         <div class="space-y-2 py-6">
           <div class="-mx-3">
 {%-	for n in menu -%}
-{%-		assign name = n[0] -%}
+{%-		assign name = n[0] | escape -%}
 {%-		assign submenu = n[1] -%}
 {%-   assign extra = n[2] -%}
-            <button type="button" class="dropbtn-mobile" aria-controls="disclosure-1" aria-expanded="false">
+            <button type="button" class="dropbtn-mobile" aria-expanded="false">
               {{ name }}
               {% include icons/chevron-down-mini.svg class="h-5 w-5 flex-none" %}
             </button>
-            <div class="mobile-menu hidden" id="disclosure-1">
+            <div class="mobile-menu hidden">
 {%-	  for sub in submenu -%}
 {%-		  assign icon = "icons/" | append: sub[0] | append: ".svg" -%}
-{%-		  assign short = sub[1] -%}
+{%-		  assign short = sub[1] | escape -%}
 {%-		  assign url = sub[3] -%}
               <a href="{{ url | relative_url }}" class="block rounded-lg py-2 pl-6 pr-3 text-sm font-semibold leading-7 text-gray-900 hover:bg-gray-50">{% include {{icon}} class="inline-icon mr-2" %} {{ short }}</a>
 {%- endfor -%}
 {%-	  for sub in extra -%}
 {%-		  assign icon = "icons/" | append: sub[0] | append: ".svg" -%}
-{%-		  assign short = sub[1] -%}
+{%-		  assign short = sub[1] | escape -%}
 {%-		  assign url = sub[3] -%}
               <a href="{{ url | relative_url }}" class="block rounded-lg py-2 pl-6 pr-3 text-sm font-semibold leading-7 text-gray-900 hover:bg-gray-50">{% include {{icon}} class="inline-icon mr-2" %} {{ short }}</a>
 {%- endfor -%}
@@ -41,7 +41,7 @@
         </div>
         <!-- FIXME: leave out? -->
         <div class="py-6">
-          <a href={{ "/Foundation/Join" | relative_url }} class="-mx-3 block rounded-lg px-3 py-2.5 text-base font-semibold leading-7 text-gray-900 hover:bg-gray-50">Become a Member</a>
+          <a href="{{ '/Foundation/Join' | relative_url }}" class="-mx-3 block rounded-lg px-3 py-2.5 text-base font-semibold leading-7 text-gray-900 hover:bg-gray-50">Become a Member</a>
           <a href="https://docs.sel4.systems" class="-mx-3 block rounded-lg px-3 py-2.5 text-base font-semibold leading-7 text-gray-900 hover:bg-gray-50">Docsite {% include icons/link.svg class="ml-1 inline-icon" %}</a>
         </div>
       </div>
