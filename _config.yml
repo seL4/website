@@ -13,8 +13,8 @@ git_repo: https://github.com/seL4/website
 github_username: seL4
 on_seL4: false
 
-# TODO: collections ...
-# menu items, news as posts?
+collections:
+  - "news-items"
 
 # Front matter defaults:
 defaults:
@@ -49,3 +49,4 @@ exclude:
   - apache/
   - configs/
   - docker/
+  - _news-items/9999-12-31-template.md
