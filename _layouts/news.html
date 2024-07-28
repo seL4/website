@@ -3,20 +3,57 @@
 # SPDX-License-Identifier: CC-BY-SA-4.0
 layout: default
 ---
+
+{%- assign this_year = page.year | append: "" -%}
+
 {%- assign newest_url = site.pages | where: "layout", "news" | map: "name" | sort | pop | last -%}
 {%- assign newest_year = newest_url | split: "." | first -%}
-<div class="row">
- <div class="col">
-  <h1>
-    News about
-    <a href={{ "/" | relative_url }}>seL4</a>
-    and the
-    <a href={{ "/Foundation" | relative_url }}>seL4 Foundation</a>
-  </h1>
- </div>
- <div class="col">
-{% assign url = "/news/" | relative_url -%}
-Older News:  {% for i in (2020..newest_year) -%}<a href="{{ url }}{{ i }}">{{ i }}</a> {% endfor %}
- </div>
+<div class="row" style="margin-left: 0.3em;">
+  <div class="col">
+    <h1>
+      News about
+      <a href="{{ '/' | relative_url }}">seL4</a>
+      and the
+      <a href="{{ '/Foundation' | relative_url }}">seL4 Foundation</a>
+      {%- unless newest_year == this_year %} &mdash; {{ page.year }} {%- endunless %}
+    </h1>
+  </div>
+  <div class="col">
+{%- assign url = "/news/" | relative_url %}
+    News from {%- if newest_year == this_year %} older {%- else %} other {%- endif %} years:
+{%- for i in (2020..newest_year) -%}
+{%-   unless i == page.year %}
+      <a href="{{ url }}{{ i }}">{{ i }}</a>
+{%- else %}
+     {{ i }}
+{%- endunless -%}
+{%- endfor %}
+  </div>
 </div>
-{{ content }}
+
+{%  for news_item in site.news-items reversed -%}
+{%-   assign date = news_item.date | date: "%d %b %Y" -%}
+{%-   assign year = date | date: "%Y" -%}
+{%-   assign default_anchor = news_item.date | date: "%m-%d" -%}
+{%-   assign anchor = news_item.anchor | default: default_anchor -%}
+{%-   if year == this_year -%}
+<div class="news-item tag-link" id="{{ anchor }}">
+  <a href="#{{ anchor }}"><span class="tag-span"># </span></a>
+  {{ date }}: {{ news_item.title }}
+</div>
+<div>
+{%    if news_item.img -%}
+{%-     if news_item.link -%}
+  <a href="{{ news_item.link }}">
+{%-     endif -%}
+    <img src="{{ news_item.img | relative_url }}" style="width:{{ news_item.width | default: '20%' }};" class="news-img" alt="{{ news_item.alt | default: news_item.title }}">
+{%-     if news_item.link -%}
+  </a>
+{%-     endif -%}
+{%-   endif %}
+{{ news_item.content }}
+</div>
+<div class="news-finish"></div>
+
+{%   endif -%}
+{%- endfor -%}
