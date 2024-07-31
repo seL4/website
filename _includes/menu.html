@@ -31,6 +31,34 @@
 					</div>
 				</div>
 {%-	  endfor -%}
+{%-   if name contains "News" -%}
+		</div>
+			<div class="bg-gray-50 p-8">
+				<div class="flex justify-between">
+					<h3 class="text-sm font-semibold leading-6 text-gray-500">Recent news</h3>
+					<a href="{{ '/news/' | relative_url}}" class="text-sm font-semibold leading-6 text-indigo-600">See all <span aria-hidden="true">&rarr;</span></a>
+				</div>
+				<ul class="mt-6 space-y-6">
+{%-		  assign news_items = site.news-items | reverse -%}
+{%-	    for item in news_items limit: 3 -%}
+{%-		    assign date = item.date | date: "%d %b %Y" -%}
+{%-		    assign iso = item.date | date: "%Y-%e-%d" -%}
+{%-		    assign year = item.date | date: "%Y" -%}
+{%-		    assign mm_dd = item.date | date: "%e_%d" -%}
+{%-		    assign anchor = item.anchor | default: mm_dd -%}
+{%-		    assign url = "/news/" | append: year | append: "#" | append: anchor -%}
+					<li class="relative">
+						<time datetime="{{ iso }}" class="block text-xs leading-6 text-gray-600">{{ date }}</time>
+						<a href="{{ url | relative_url }}" class="block truncate text-sm font-semibold leading-6 text-gray-900">
+							{{ item.title }}
+							<span class="absolute inset-0"></span>
+						</a>
+					</li>
+{%-     endfor -%}
+				</ul>
+			</div>
+			<div>
+{%-   endif %}
 			</div>
 {%-   if extra -%}
 			<div class="grid grid-cols-1 gap-x-6 gap-y-1 p-4 lg:grid-cols-2 bg-gray-50">
@@ -50,7 +78,7 @@
 					</div>
 				</div>
 {%-     endfor -%}
-		</div>
+			</div>
 {%-   endif %}
 {%-   if submenu.size() > 6 -%}
 		</div>
