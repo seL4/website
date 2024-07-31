@@ -6,19 +6,9 @@ layout: default
 
 {%- assign this_year = page.year | append: "" -%}
 
+<div>
 {%- assign newest_url = site.pages | where: "layout", "news" | map: "name" | sort | pop | last -%}
 {%- assign newest_year = newest_url | split: "." | first -%}
-<div class="row" style="margin-left: 0.3em;">
-  <div class="col">
-    <h1>
-      News about
-      <a href="{{ '/' | relative_url }}">seL4</a>
-      and the
-      <a href="{{ '/Foundation' | relative_url }}">seL4 Foundation</a>
-      {%- unless newest_year == this_year %} &mdash; {{ page.year }} {%- endunless %}
-    </h1>
-  </div>
-  <div class="col">
 {%- assign url = "/news/" | relative_url %}
     News from {%- if newest_year == this_year %} older {%- else %} other {%- endif %} years:
 {%- for i in (2020..newest_year) -%}
@@ -28,7 +18,6 @@ layout: default
      {{ i }}
 {%- endunless -%}
 {%- endfor %}
-  </div>
 </div>
 
 {%  for news_item in site.news-items reversed -%}
