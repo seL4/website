@@ -533,7 +533,7 @@
    width: auto;
    height:auto;
    padding:.3em;
-   margin-top:1.5em;
+   margin-top:3rem;
    margin-bottom:.5em;
    border-radius: .4em;
    background-color: #D6DBE4; /* neutralLighter */
@@ -546,7 +546,13 @@
  }
 
  .news-finish{
-     clear:both
+     clear:both;
+     margin-bottom: 4rem;
+ }
+
+ .news-img {
+    float: right;
+    padding-left: 2rem;
  }
 
  .news-text-container{
