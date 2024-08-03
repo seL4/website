@@ -1,12 +1,17 @@
 ---
 # Copyright 2023 seL4 Project a Series of LF Projects, LLC.
 # SPDX-License-Identifier: CC-BY-SA-4.0
-layout: default
+layout: base
 ---
 
 {%- assign this_year = page.year | append: "" -%}
 
-<div>
+<div class="mx-auto max-w-4xl py-12 px-12">
+
+<div class="theprose">
+<h1 class="text-4xl">{{page.title}}</h1>
+
+<nav>
 {%- assign newest_url = site.pages | where: "layout", "news" | map: "name" | sort | pop | last -%}
 {%- assign newest_year = newest_url | split: "." | first -%}
 {%- assign url = "/news/" | relative_url %}
@@ -18,31 +23,62 @@ layout: default
      {{ i }}
 {%- endunless -%}
 {%- endfor %}
+</nav>
+</div>
 </div>
 
 {%  for news_item in site.news-items reversed -%}
 {%-   assign date = news_item.date | date: "%d %b %Y" -%}
+{%-   assign iso = news_item.date | date: "%Y-$e-%d" -%}
 {%-   assign year = date | date: "%Y" -%}
 {%-   assign default_anchor = news_item.date | date: "%m-%d" -%}
 {%-   assign anchor = news_item.anchor | default: default_anchor -%}
 {%-   if year == this_year -%}
-<div class="news-item tag-link" id="{{ anchor }}">
-  <a href="#{{ anchor }}"><span class="tag-span"># </span></a>
-  {{ date }}: {{ news_item.title }}
-</div>
+<div class="relative my-12 sm:my-18 pt-2 pb-8 px-6 lg:px-8 mx-auto max-w-5xl">
+
+  <svg class="absolute inset-0 -z-10 h-full w-full stroke-gray-200 dark:stroke-gray-800 [mask-image:radial-gradient(100%_100%_at_top_right,white,transparent)]" aria-hidden="true">
+    <defs>
+      <pattern id="0787a7c5-978c-4f66-83c7-11c213f99cb7" width="150" height="150" x="50%" y="-1" patternUnits="userSpaceOnUse">
+        <path d="M.5 200V.5H200" fill="none" />
+      </pattern>
+    </defs>
+    <rect width="100%" height="100%" stroke-width="0" fill="url(#0787a7c5-978c-4f66-83c7-11c213f99cb7)" />
+  </svg>
+
+
+{%- if news_item.img -%}
+{%-   assign w = news_item.width | default: "30%" -%}
+{%- else -%}
+{%-   assign w = "0%" -%}
+{%- endif -%}
+
+<article class="news text-lg leading-8 text-gray-600 dark:text-gray-400 mt-6 mr-10
+           grid grid-cols-1 lg:grid-rows-[auto_auto] lg:gap-x-10 lg:grid-cols-[auto_{{w}}]">
 <div>
+<a href="#{{anchor}}" class="not-prose hover:underline text-gray-400"><time datetime="{{ iso }}" id="{{anchor}}">{{ date }}</time></a>
+<h2 class="mb-8 mt-2 text-2xl lg:text-3xl font-bold tracking-tight text-gray-900 dark:text-gray-300">{{ news_item.title }}</h2>
+</div>
+<div></div>
+<div class="theprose max-w-4xl order-4 lg:order-3">
+{{ news_item.content }}
+{%- unless news_item.flow -%}
+</div>
+<div class="order-3 lg:order-4 mb-4 lg:mb-0">
+{%- endunless -%}
 {%    if news_item.img -%}
 {%-     if news_item.link -%}
-  <a href="{{ news_item.link }}">
+  <a href="{{ news_item.link }}" class="text-center">
 {%-     endif -%}
-    <img src="{{ news_item.img | relative_url }}" style="width:{{ news_item.width | default: '20%' }};" class="news-img" alt="{{ news_item.alt | default: news_item.title }}">
+    <img src="{{ news_item.img | relative_url }}"
+         alt="{{ news_item.alt | default: news_item.title }}"
+         class="news_pic w-1/2 lg:w-full lg:mr-0" >
 {%-     if news_item.link -%}
   </a>
 {%-     endif -%}
-{%-   endif %}
-{{ news_item.content }}
 </div>
-<div class="news-finish"></div>
+{%-   endif %}
+</article>
+</div>
 
 {%   endif -%}
 {%- endfor -%}
