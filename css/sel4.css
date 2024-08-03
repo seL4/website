@@ -149,6 +149,47 @@ layout: none
   .theprose {
     @apply theprose-nodark dark:prose-invert
   }
+
+  .speakers_grid {
+    @apply my-8 grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-x-16 gap-y-6 justify-center align-middle;
+  }
+
+  .speaker {
+    @apply grid grid-cols-1 grid-rows-[250px_2rem_3rem]
+  }
+
+  .speaker a {
+    @apply hover:underline;
+  }
+
+  .speaker_pic {
+    @apply flex flex-col align-middle justify-center mb-8;
+  }
+
+  .speaker_pic img {
+    @apply rounded-lg shadow-lg;
+  }
+
+  .people_grid {
+    @apply my-8 grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-x-8 gap-y-6 w-full justify-center align-middle;
+  }
+
+  .person, .person_no_link {
+    @apply rounded-2xl p-4 text-center text-sm
+           grid grid-cols-1 grid-rows-[120px_4em_4em] justify-center align-middle;
+  }
+
+  .person {
+    @apply hover:bg-gray-100 dark:hover:bg-gray-800;
+  }
+
+  .person_pic img {
+    @apply rounded-md shadow-md mx-auto my-auto;
+  }
+
+  .news_pic {
+    @apply rounded-xl shadow-xl mx-auto bg-white p-8;
+  }
 }
 
 .breadcrumb {

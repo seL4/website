@@ -6,9 +6,9 @@ layout: base
 
 <div class="flex justify-center items-center py-12 px-12">
   <article class="theprose">
-{%- if page.no_title_header -%}{%- else -%}
+{%- unless page.no_title_header -%}
   <h1>{{page.title}}</h1>
-{%- endif -%}
+{%- endunless -%}
   {{ content }}
   </article>
 </div>
