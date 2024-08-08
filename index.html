@@ -30,35 +30,12 @@ redirect_from: /home.pml
         <a href="#" class="button-snd hover:bg-slate-200 text-sm sm:text-base h-10 w-full sm:w-52 md:w-60 flex justify-center items-center">Start developing</a>
       </div>
     </div>
-
-<!-- news banner alternative -->
-
-    <div class="absolute top-4 w-full text-[#4f9b47] text-xs sm:text-sm bg-[#030020]/50">
-      <div class="flex flex-row gap-6 md:gap-8 justify-center">
-        <div class="p-2 text-right sm:font-semibold flex-0">News:</div>
-{%-		  assign news_items = site.news-items | reverse -%}
-{%-	    for item in news_items limit: 3 -%}
-{%-		    assign date = item.date | date: "%d %b %Y" -%}
-{%-		    assign iso = item.date | date: "%Y-%e-%d" -%}
-{%-		    assign year = item.date | date: "%Y" -%}
-{%-		    assign mm_dd = item.date | date: "%e_%d" -%}
-{%-		    assign anchor = item.anchor | default: mm_dd -%}
-{%-		    assign url = "/news/" | append: year | append: "#" | append: anchor -%}
-<div class="relative flex-0 truncate p-2 rounded-lg hover:bg-green-700/20 {% if forloop.last %}hidden lg:block{% endif %}">
-  <a href="{{ url | relative_url }}">
-    <time datetime="{{ iso }}">{{ date }}</time>: {{ item.title }}
-    <span class="absolute inset-0"></span>
-  </a>
-</div>
-{%-     endfor -%}
-      </div>
-    </div>
   </div>
 </div>
 
 <!-- news -->
 
-<!-- div class="grid grid-cols-2 md:grid-cols-3 gap-x-8 max-w-6xl mt-8 xl:mx-auto mx-10">
+<div class="grid grid-cols-2 md:grid-cols-3 gap-x-8 max-w-6xl mt-8 xl:mx-auto mx-10">
 {%-		  assign news_items = site.news-items | reverse -%}
 {%-	    for item in news_items limit: 3 -%}
 {%-		    assign date = item.date | date: "%d %b %Y" -%}
@@ -75,7 +52,7 @@ redirect_from: /home.pml
     </a>
   </div>
 {%-     endfor -%}
-</div -->
+</div>
 
 <!-- feature sections -->
 
