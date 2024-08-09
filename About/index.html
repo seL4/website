@@ -1,0 +1,52 @@
+---
+# Copyright 2020 seL4 Project a Series of LF Projects, LLC.
+# SPDX-License-Identifier: CC-BY-SA-4.0
+title: What is seL4?
+redirect_from:
+- /About/home.pml
+- /About/seL4/index.html
+layout: card
+---
+
+<!-- TODO: make header section into template or css classes -->
+<div class="px-6 pt-6 sm:pt-8 pb-12 sm:pb-20 lg:px-8">
+  <div class="mx-auto max-w-3xl text-center [&_a]:underline">
+    <p class="text-lg font-semibold leading-7 text-indigo-600">What is seL4?</p>
+    <h2 class="mt-2 text-3xl font-bold tracking-tight text-gray-900 sm:text-5xl">A high-assurance, high-performance
+      operating system microkernel</h2>
+    <p class="mt-6 text-base sm:text-lg leading-8 text-gray-600">seL4 is unique because of its comprehensive formal verification.</p>
+    <p class="text-base sm:text-lg leading-8 text-gray-600">seL4 is open source, available on <a
+        href="https://github.com/seL4/">GitHub</a>, and supported by the <a href="../Foundation/">seL4 Foundation</a>.
+    </p>
+
+    <h2 class="mt-16 text-3xl font-bold tracking-tight text-gray-900 md:text-4xl">The foundation for trustworthy systems.
+    </h2>
+  </div>
+</div>
+
+<div class="card-grid-4">
+  {% include card.html
+     title="Whitepaper"
+     body="More in-depth information about seL4, what the formal
+           verification means, and how to use seL4."
+     link="whitepaper"
+  %}
+
+  {% include card.html
+     title="Fact Sheet"
+     body="Quick high-level facts and comparison to other kernels."
+     link="#"
+  %}
+
+  {% include card.html
+     title="History"
+     body="Where seL4 comes from."
+     link="#"
+  %}
+
+  {% include card.html
+     title="FAQ"
+     body="Frequently asked questions and their answers."
+     link="#"
+  %}
+</div>

@@ -1,0 +1,14 @@
+{%- assign link_text = include.link_text | default: "Learn more" -%}
+<div class="flex flex-col relative rounded-lg border bg-slate-50 py-5 px-6 shadow-lg {% if include.link %}hover:bg-slate-100{% endif %}">
+  <h2 class="text-base font-semibold leading-7 text-gray-900">{{ include.title }}</h2>
+  <div class="flex-auto mt-1 text-base text-gray-600">
+    {{ include.body }}
+  </div>
+{%- if include.link %}
+  <p class="mt-6">
+    <a href="{{ include.link }}" class="text-sm font-semibold leading-6 text-indigo-600">{{ link_text }} <span aria-hidden="true">→</span>
+      <span class="absolute inset-0"></span>
+    </a>
+  </p>
+{% endif -%}
+</div>
