@@ -190,6 +190,14 @@ layout: none
   .news_pic {
     @apply rounded-xl shadow-xl mx-auto bg-white p-8;
   }
+
+  .card-grid-3 {
+    @apply grid grid-cols-2 sm:grid-cols-3 gap-10 pb-12 sm:pb-20;
+  }
+
+  .card-grid-4 {
+    @apply grid grid-cols-2 grid-rows-2 md:grid-cols-4 md:grid-rows-1 gap-10 pb-12 md:pb-20;
+  }
 }
 
 .breadcrumb {
