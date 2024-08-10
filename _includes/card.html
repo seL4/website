@@ -1,7 +1,13 @@
 {%- assign link_text = include.link_text | default: "Learn more" -%}
+{%- assign icon = "icons/" | append: include.icon | append: ".svg" -%}
 <div class="flex flex-col relative rounded-lg border bg-white py-5 px-6 shadow-lg {% if include.link %}hover:bg-slate-50{% endif %}">
-  <h2 class="text-base font-semibold leading-7 text-gray-900">{{ include.title }}</h2>
-  <div class="flex-auto mt-1 text-base text-gray-600">
+  <h2 class="flex items-center gap-x-3 text-base font-semibold leading-7 text-gray-900">
+    {% if include.icon %}
+    {% include {{ icon }} class="h-5 w-5" %}
+    {% endif %}
+    {{ include.title }}
+  </h2>
+  <div class="flex-auto mt-3 text-base text-gray-600">
     {{ include.body }}
   </div>
 {%- if include.link %}
