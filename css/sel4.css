@@ -17,14 +17,14 @@ layout: none
   }
 }
 
-@layer components {
+@layer utilities {
 
   .text-dark {
-    @apply text-gray-900 dark:text-gray-300;
+    @apply text-darkcol dark:text-darkcol_inv;
   }
 
   .text-light {
-    @apply text-gray-600 dark:text-gray-400;
+    @apply text-lightcol dark:text-lightcol_inv;
   }
 
   .theprose-nodark {
@@ -34,6 +34,14 @@ layout: none
   .theprose {
     @apply theprose-nodark dark:prose-invert
   }
+
+  .inline-icon {
+    @apply h-[1rem] w-[1rem] mb-[0.15rem] inline-flex text-current;
+  }
+
+}
+
+@layer components {
 
   .speakers_grid {
     @apply my-8 grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-x-16 gap-y-6 justify-center align-middle;
@@ -84,50 +92,45 @@ layout: none
     @apply grid grid-cols-2 grid-rows-2 md:grid-cols-4 md:grid-rows-1 gap-10 pb-12 md:pb-20;
   }
 
-}
+  .dropbtn {
+    @apply flex items-center gap-x-1 text-sm font-semibold leading-6 text-dark;
+  }
 
-.dropbtn {
-  @apply flex items-center gap-x-1 text-sm font-semibold leading-6 text-dark;
-}
+  .drop-icon {
+    @apply h-5 w-5 flex-none text-gray-400;
+  }
 
-.drop-icon {
-  @apply h-5 w-5 flex-none text-gray-400;
-}
+  .button-pri {
+    @apply rounded-md bg-accent px-3 py-2 text-sm font-semibold text-white shadow-sm hover:bg-accentdark focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-accent;
+  }
 
-.button-pri {
-  @apply rounded-md bg-indigo-600 px-3 py-2 text-sm font-semibold text-white shadow-sm hover:bg-indigo-500 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-600;
-}
+  .button-snd {
+    @apply rounded-md bg-white dark:bg-accentlight px-3 py-2 text-xs md:text-sm font-semibold text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 dark:ring-indigo-700 hover:bg-gray-50 dark:hover:bg-accentlight h-8 md:h-9;
+  }
 
-.button-snd {
-  @apply rounded-md bg-white dark:bg-indigo-400 px-3 py-2 text-xs md:text-sm font-semibold text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 dark:ring-indigo-700 hover:bg-gray-50 dark:hover:bg-indigo-300 h-8 md:h-9;
-}
+  .menu-item-group {
+    @apply relative flex gap-x-6 rounded-lg p-4 hover:bg-gray-50;
+  }
 
-.menu-item-group {
-  @apply relative flex gap-x-6 rounded-lg p-4 hover:bg-gray-50;
-}
+  .menu-icon-div {
+    @apply mt-1 flex h-11 w-11 flex-none items-center justify-center rounded-lg bg-gray-50 group-hover:bg-white;
+  }
 
-.menu-icon-div {
-  @apply mt-1 flex h-11 w-11 flex-none items-center justify-center rounded-lg bg-gray-50 group-hover:bg-white;
-}
+  .menu-icon {
+    @apply h-6 w-6 text-lightcol group-hover:text-accentdark;
+  }
 
-.menu-icon {
-  @apply h-6 w-6 text-gray-600 group-hover:text-indigo-600;
-}
+  .menu-one-col {
+    @apply absolute -left-8 top-full z-10 mt-4 w-screen max-w-md overflow-hidden rounded-3xl bg-white text-sm leading-6 shadow-lg ring-1 ring-gray-900/5 opacity-0;
+  }
 
-.menu-one-col {
-  @apply absolute -left-8 top-full z-10 mt-4 w-screen max-w-md overflow-hidden rounded-3xl bg-white text-sm leading-6 shadow-lg ring-1 ring-gray-900/5 opacity-0;
-}
+  .dropbtn-mobile {
+    @apply flex w-full items-center justify-between rounded-lg py-2 pl-3 pr-3.5 text-base font-semibold leading-7 text-darkcol hover:bg-gray-50;
+  }
 
-.dropbtn-mobile {
-  @apply flex w-full items-center justify-between rounded-lg py-2 pl-3 pr-3.5 text-base font-semibold leading-7 text-gray-900 hover:bg-gray-50;
-}
-
-.mobile-menu {
-  @apply mt-2 space-y-2;
-}
-
-.inline-icon {
-  @apply h-[1rem] w-[1rem] mb-[0.15rem] inline-flex text-gray-900;
+  .mobile-menu {
+    @apply mt-2 space-y-2;
+  }
 }
 
 /* commaon padding settings for front page sections */
@@ -174,15 +177,15 @@ layout: none
 }
 
 .feature-content h2 {
-  @apply mb-8 text-3xl lg:text-4xl font-bold tracking-tight text-gray-900 dark:text-gray-300;
+  @apply mb-8 text-3xl lg:text-4xl font-bold tracking-tight text-dark;
 }
 
 .feature-link-pri {
-  @apply rounded-md bg-indigo-600 px-3.5 py-2.5 text-sm font-semibold text-white shadow-sm hover:bg-indigo-500 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-600;
+  @apply rounded-md bg-accentdark px-3.5 py-2.5 text-sm font-semibold text-white shadow-sm hover:bg-accent focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-accentdark;
 }
 
 .feature-link-snd {
-  @apply text-sm font-semibold leading-6 text-gray-900 dark:text-gray-200;
+  @apply text-sm font-semibold leading-6 text-dark;
 }
 
 .feature-buttons {
@@ -197,7 +200,7 @@ layout: none
 }
 
 .logo-cloud h2 {
-  @apply text-center text-3xl font-semibold leading-8 text-gray-900 mb-10;
+  @apply text-center text-3xl font-semibold leading-8 text-darkcol mb-10;
 }
 
 .logo-grid {
@@ -219,7 +222,7 @@ layout: none
 }
 
 .card-layout h1, .card-layout h2 {
-  @apply text-center font-bold tracking-tight text-gray-900 dark:text-gray-50;
+  @apply text-center font-bold tracking-tight text-dark;
 }
 
 .card-layout h1 {
@@ -235,15 +238,11 @@ layout: none
 }
 
 .card-layout .pre-heading {
-  @apply text-center text-lg font-semibold leading-7 text-indigo-600
+  @apply text-center text-lg font-semibold leading-7 text-accentdark
 }
 
 .card-layout .sub-heading {
   @apply text-center text-base md:text-lg text-light mt-6 leading-loose;
-}
-
-.breadcrumb {
-  display: none;
 }
 
 .dropmenu {
