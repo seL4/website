@@ -10,7 +10,7 @@
     Talk
 </p>
 <p class="summit-abstract-author">
-    Presented by <mark>Daniel Schwyn</mark>, <span class="summit-abstract-affiliation">ETH Zurich</span>
+    Presented by Daniel Schwyn, <span class="summit-abstract-affiliation">ETH Zurich</span>
 </p>
 <p>
     At the heart of every modern server platform sits an embedded system called theboard management controller (BMC) that is responsible for the low-levelfunctioning of the platform. Despite their critical nature, they are generallynot built as trustworthy systems. We have embarked on a journey tocyber-retrofit BMC firmware with seL4 as the kernel. In this talk, we present anupdate on our efforts -- generate trustworthy hardware/software I2C drivers. I2C is a low-level protocol used by BMCs to communicate with many peripherals(e.g. the power regulators). Unlike memory-mapped devices with one-to-oneinterfaces with the BMC, multiple I2C devices may share the same bus. Quirks ofone device can influence the whole assemblage. Therefore, to produce a correctdriver for I2C (and other bus-based protocols), we need to consider thespecifications of not only the controller but all devices on the bus.
