@@ -18,128 +18,13 @@ layout: none
 }
 
 @layer components {
-  .dropbtn {
-    @apply flex items-center gap-x-1 text-sm font-semibold leading-6 text-gray-900 dark:text-gray-300;
+
+  .text-dark {
+    @apply text-gray-900 dark:text-gray-300;
   }
 
-  .drop-icon {
-    @apply h-5 w-5 flex-none text-gray-400;
-  }
-
-  .button-pri {
-    @apply rounded-md bg-indigo-600 px-3 py-2 text-sm font-semibold text-white shadow-sm hover:bg-indigo-500 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-600;
-  }
-
-  .button-snd {
-    @apply rounded-md bg-white dark:bg-indigo-400 px-3 py-2 text-xs md:text-sm font-semibold text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 dark:ring-indigo-700 hover:bg-gray-50 dark:hover:bg-indigo-300 h-8 md:h-9;
-  }
-
-  .menu-item-group {
-    @apply relative flex gap-x-6 rounded-lg p-4 hover:bg-gray-50;
-  }
-
-  .menu-icon-div {
-    @apply mt-1 flex h-11 w-11 flex-none items-center justify-center rounded-lg bg-gray-50 group-hover:bg-white;
-  }
-
-  .menu-icon {
-    @apply h-6 w-6 text-gray-600 group-hover:text-indigo-600;
-  }
-
-  .menu-one-col {
-    @apply absolute -left-8 top-full z-10 mt-4 w-screen max-w-md overflow-hidden rounded-3xl bg-white text-sm leading-6 shadow-lg ring-1 ring-gray-900/5 opacity-0;
-  }
-
-  .dropbtn-mobile {
-    @apply flex w-full items-center justify-between rounded-lg py-2 pl-3 pr-3.5 text-base font-semibold leading-7 text-gray-900 hover:bg-gray-50;
-  }
-
-  .mobile-menu {
-    @apply mt-2 space-y-2;
-  }
-
-  .inline-icon {
-    @apply h-[1rem] w-[1rem] mb-[0.15rem] inline-flex text-gray-900;
-  }
-
-  /* commaon padding settings for front page sections */
-  .feature-left, .feature-right {
-    @apply py-16 sm:py-20;
-  }
-
-  /* common x margin and max-width settings for front page sections */
-  .feature-left, .feature-right {
-    @apply mx-auto max-w-7xl px-6 lg:px-8;
-  }
-
-  .feature-content {
-    @apply text-lg leading-8 text-gray-600 dark:text-gray-400 mt-6 mr-10
-           lg:grid lg:grid-rows-[auto_auto];
-  }
-
-  .feature-left .feature-content {
-    @apply lg:gap-x-10 lg:grid-cols-[60%_40%];
-  }
-
-  .feature-right .feature-content {
-    @apply lg:gap-x-14 lg:grid-cols-[40%_60%];
-  }
-
-  .feature-img {
-    @apply mt-12 lg:mt-0;
-  }
-
-  .feature-right h2 {
-    @apply order-2;
-  }
-
-  .feature-right .feature-img {
-    @apply order-3;
-  }
-
-  .feature-right .feature-text {
-    @apply order-4;
-  }
-
-  .feature-img img {
-    @apply rounded-xl shadow-xl mx-auto;
-  }
-
-  .feature-content h2 {
-    @apply mb-8 text-3xl lg:text-4xl font-bold tracking-tight text-gray-900 dark:text-gray-300;
-  }
-
-  .feature-link-pri {
-    @apply rounded-md bg-indigo-600 px-3.5 py-2.5 text-sm font-semibold text-white shadow-sm hover:bg-indigo-500 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-600;
-  }
-
-  .feature-link-snd {
-    @apply text-sm font-semibold leading-6 text-gray-900 dark:text-gray-200;
-  }
-
-  .feature-buttons {
-    @apply mt-10 flex items-center gap-x-6;
-  }
-
-  /* ---- logo cloud ---- */
-
-  .logo-cloud {
-    @apply bg-white py-20 sm:pt-24 sm:pb-32 max-w-7xl dark:max-w-none mx-auto overflow-hidden
-           light:[mask-image:_linear-gradient(to_right,transparent_0,_black_200px,_black_calc(100%-200px),transparent_100%)];
-  }
-
-  .logo-cloud h2 {
-    @apply text-center text-3xl font-semibold leading-8 text-gray-900 mb-10;
-  }
-
-  .logo-grid {
-    @apply flex items-center justify-center md:justify-start
-           animate-infinite-scroll motion-reduce:animate-none
-           [&_li]:mx-8 [&_img]:max-w-none;
-  }
-
-  .join {
-    @apply text-logogreen text-xl font-bold;
+  .text-light {
+    @apply text-gray-600 dark:text-gray-400;
   }
 
   .theprose-nodark {
@@ -176,7 +61,7 @@ layout: none
 
   .person, .person_no_link {
     @apply rounded-2xl p-4 text-center text-sm
-           grid grid-cols-1 grid-rows-[120px_4em_4em] justify-center align-middle;
+            grid grid-cols-1 grid-rows-[120px_4em_4em] justify-center align-middle;
   }
 
   .person {
@@ -198,6 +83,163 @@ layout: none
   .card-grid-4 {
     @apply grid grid-cols-2 grid-rows-2 md:grid-cols-4 md:grid-rows-1 gap-10 pb-12 md:pb-20;
   }
+
+}
+
+.dropbtn {
+  @apply flex items-center gap-x-1 text-sm font-semibold leading-6 text-dark;
+}
+
+.drop-icon {
+  @apply h-5 w-5 flex-none text-gray-400;
+}
+
+.button-pri {
+  @apply rounded-md bg-indigo-600 px-3 py-2 text-sm font-semibold text-white shadow-sm hover:bg-indigo-500 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-600;
+}
+
+.button-snd {
+  @apply rounded-md bg-white dark:bg-indigo-400 px-3 py-2 text-xs md:text-sm font-semibold text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 dark:ring-indigo-700 hover:bg-gray-50 dark:hover:bg-indigo-300 h-8 md:h-9;
+}
+
+.menu-item-group {
+  @apply relative flex gap-x-6 rounded-lg p-4 hover:bg-gray-50;
+}
+
+.menu-icon-div {
+  @apply mt-1 flex h-11 w-11 flex-none items-center justify-center rounded-lg bg-gray-50 group-hover:bg-white;
+}
+
+.menu-icon {
+  @apply h-6 w-6 text-gray-600 group-hover:text-indigo-600;
+}
+
+.menu-one-col {
+  @apply absolute -left-8 top-full z-10 mt-4 w-screen max-w-md overflow-hidden rounded-3xl bg-white text-sm leading-6 shadow-lg ring-1 ring-gray-900/5 opacity-0;
+}
+
+.dropbtn-mobile {
+  @apply flex w-full items-center justify-between rounded-lg py-2 pl-3 pr-3.5 text-base font-semibold leading-7 text-gray-900 hover:bg-gray-50;
+}
+
+.mobile-menu {
+  @apply mt-2 space-y-2;
+}
+
+.inline-icon {
+  @apply h-[1rem] w-[1rem] mb-[0.15rem] inline-flex text-gray-900;
+}
+
+/* commaon padding settings for front page sections */
+.feature-left, .feature-right {
+  @apply py-16 sm:py-20;
+}
+
+/* common x margin and max-width settings for front page sections */
+.feature-left, .feature-right {
+  @apply mx-auto max-w-7xl px-6 lg:px-8;
+}
+
+.feature-content {
+  @apply text-lg leading-8 text-light mt-6 mr-10
+          lg:grid lg:grid-rows-[auto_auto];
+}
+
+.feature-left .feature-content {
+  @apply lg:gap-x-10 lg:grid-cols-[60%_40%];
+}
+
+.feature-right .feature-content {
+  @apply lg:gap-x-14 lg:grid-cols-[40%_60%];
+}
+
+.feature-img {
+  @apply mt-12 lg:mt-0;
+}
+
+.feature-right h2 {
+  @apply order-2;
+}
+
+.feature-right .feature-img {
+  @apply order-3;
+}
+
+.feature-right .feature-text {
+  @apply order-4;
+}
+
+.feature-img img {
+  @apply rounded-xl shadow-xl mx-auto;
+}
+
+.feature-content h2 {
+  @apply mb-8 text-3xl lg:text-4xl font-bold tracking-tight text-gray-900 dark:text-gray-300;
+}
+
+.feature-link-pri {
+  @apply rounded-md bg-indigo-600 px-3.5 py-2.5 text-sm font-semibold text-white shadow-sm hover:bg-indigo-500 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-600;
+}
+
+.feature-link-snd {
+  @apply text-sm font-semibold leading-6 text-gray-900 dark:text-gray-200;
+}
+
+.feature-buttons {
+  @apply mt-10 flex items-center gap-x-6;
+}
+
+/* ---- logo cloud ---- */
+
+.logo-cloud {
+  @apply bg-white py-20 sm:pt-24 sm:pb-32 max-w-7xl dark:max-w-none mx-auto overflow-hidden
+          light:[mask-image:_linear-gradient(to_right,transparent_0,_black_200px,_black_calc(100%-200px),transparent_100%)];
+}
+
+.logo-cloud h2 {
+  @apply text-center text-3xl font-semibold leading-8 text-gray-900 mb-10;
+}
+
+.logo-grid {
+  @apply flex items-center justify-center md:justify-start
+          animate-infinite-scroll motion-reduce:animate-none
+          [&_li]:mx-8 [&_img]:max-w-none;
+}
+
+.join {
+  @apply text-logogreen text-xl font-bold;
+}
+
+.card-layout .section-borders {
+  @apply px-6 lg:px-8 pt-6 sm:pt-8 pb-12 sm:pb-20;
+}
+
+.card-layout .section-max-w {
+  @apply mx-auto max-w-4xl;
+}
+
+.card-layout h1, .card-layout h2 {
+  @apply text-center font-bold tracking-tight text-gray-900 dark:text-gray-50;
+}
+
+.card-layout h1 {
+  @apply text-3xl sm:text-5xl;
+}
+
+.card-layout h2 {
+  @apply text-2xl sm:text-4xl;
+}
+
+.card-layout p a {
+  @apply underline;
+}
+
+.card-layout .pre-heading {
+  @apply text-center text-lg font-semibold leading-7 text-indigo-600
+}
+
+.card-layout .sub-heading {
+  @apply text-center text-base md:text-lg text-light mt-6 leading-loose;
 }
 
 .breadcrumb {
