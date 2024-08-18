@@ -134,7 +134,575 @@ high-criticality components, producing an architecture model for the system, por
 to Rust, building software to run on seL4, and verifying critical safety and security properties. This
 presentation will provide an overview of the PROVERS program objectives, the INSPECTA workflow to be
 developed, and the assurance evidence to be produced.
-</p></div>
+</p>
+    <br><a href="program#p-inspecta">See this talk in the program</a></div>
+
+<div class="summit-abstract" id="a-sel4-verification"><!--<title>Summit abstract</title>-->
+<!--
+    Copyright 2024, seL4 summit authors (see abstracts)
+    SPDX-License-Identifier: CC-BY-SA-4.0
+-->
+<h4 class="summit-abstract-title">
+    seL4 Verification: Status and Plans
+</h4>
+<p class="summit-abstract-type">
+    Talk
+</p>
+<p class="summit-abstract-author">
+    Presented by June Andronick, Rafal Kolanski, Gerwin Klein, Corey Lewis, Michael McInerney, <span class="summit-abstract-affiliation">Proofcraft</span>
+</p>
+<p>
+    In this talk we will give an overview of Proofcraft's recent milestones, as well as ongoing and future plans for the formal verification of seL4 to support more platforms, architectures, configurations, and features.
+</p>
+<p>
+    In particular, we will report on the completion of the functional correctness proof of seL4 on AArch64. AArch64 is now on par with Arm 32-bit, RISC-V 64-bit and Intel x86 64-bit with respect to functional correctness, the strongest assurance that can be given about the correctness of software. Functional correctness is also the cornerstone of even stronger overall assurance, such as the security properties of integrity and confidentiality, which are next inseL4's AArch64 verification roadmap.
+</p>
+<p>
+    We will further report on where the verification of the seL4 extensions for mixed-criticality systems (MCS) is at, and share our plans for DARPA's PROVERS program where, as part of the INSPECTA team, we are aiming at increasing verification automation and scope while reducing the reliance on formal methods experts.
+</p>
+    <br><a href="program#p-sel4-verification">See this talk in the program</a></div>
+
+<div class="summit-abstract" id="a-multikernel-roadmap"><!--<title>Summit abstract</title>-->
+<!--
+    Copyright 2024, seL4 summit authors (see abstracts)
+    SPDX-License-Identifier: CC-BY-SA-4.0
+-->
+<h4 class="summit-abstract-title">
+    seL4 multikernel roadmap and concurrency verification
+</h4>
+<p class="summit-abstract-type">
+    Talk
+</p>
+<p class="summit-abstract-author">
+    Presented by Corey Lewis, <span class="summit-abstract-affiliation">Proofcraft</span>
+</p>
+<p>
+    In this talk we will present Proofcraft's roadmap for producing a verified static multikernel configuration of seL4, allowing the use of multiple CPU cores with one kernel per core. In this roadmap, we are planning to increase formal assurance incrementally, providing a tractable path to multicore verification
+with early usable results for the seL4 community.
+</p>
+<p>
+    Formally proving correctness on a multicore platform requires the ability to model fully concurrent execution, and then prove that any interactions either do not occur or are safe. This requires a new formal model of execution, supporting concurrency reasoning.
+</p>
+<p>
+    We will report on our progress in building such a framework, with the aim to maximise the reuse of existing proofs. We will also present how starting with a static multikernel design is the fastest path to providing the community with an seL4 kernel that allows utilisation of multiple processor cores, opening the path to building multicore seL4-based systems that come with a formal proof of correctness.
+</p>
+    <br><a href="program#p-multikernel-roadmap">See this talk in the program</a></div>
+
+<div class="summit-abstract" id="a-neutrality"><!--<title>Summit abstract</title>-->
+<!--
+    Copyright 2024, seL4 summit authors (see abstracts)
+    SPDX-License-Identifier: CC-BY-SA-4.0
+-->
+<h4 class="summit-abstract-title">
+    The Neutrality Atoll Hypervisor and the seL4 Multikernel
+</h4>
+<p class="summit-abstract-type">
+    Talk
+</p>
+<p class="summit-abstract-author">
+    Presented by David Cock, <span class="summit-abstract-affiliation">Neutrality</span>
+</p>
+<p>
+    Neutrality(1) is building the Atoll hypervisor as a high-assurance platform for the secure multitenant virtualisation of workloads which are likely targets of well-resourced attackers. Atoll will use seL4 configured as a multikernel to provide verified isolation between multi-vCPU VMs on datacenter-class hardware containing hundreds of CPU cores, terabytes of main memory, and 100GbE-class self-virtualising (SR-IOV) NICs. This project places seL4 on a wholly new playing field, with orders-of-magnitude increases in hardware performance and the associated scaling challenges, while retaining the full verified assurance of the seL4/ARM stack. In particular, Atoll will provide fully-verified Integrity and Confidentiality between customer VMs, while efficiently handling commercial-scale workloads.
+</p>
+<p>
+    In this talk, we will give an overview of Atoll’s design, and explain how it addresses the challenges unique to this application domain. In particular we will motivate the choice of the multikernel as the ultimate design rather than as a stepping stone on the way to a verified SMP kernel, the benefits and challenges that arise from this choice, and other details of likely interest to others building multi-processor systems on seL4. In particular we will discuss the implications for verification, including on our own verification plan, and where we expect to coordinate with and contribute to the overall seL4 proof roadmap.
+</p>
+<p>
+    (1) https://neutrality.ch/
+</p>
+    <br><a href="program#p-neutrality">See this talk in the program</a></div>
+
+<div class="summit-abstract" id="a-lions-os"><!--<title>Summit abstract</title>-->
+<!--
+    Copyright 2024, seL4 summit authors (see abstracts)
+    SPDX-License-Identifier: CC-BY-SA-4.0
+-->
+<h4 class="summit-abstract-title">
+    Lions OS: Secure, fast, adaptable!
+</h4>
+<p class="summit-abstract-type">
+    Talk
+</p>
+<p class="summit-abstract-author">
+    Presented by Gernot Heiser, <span class="summit-abstract-affiliation">UNSW Sydney</span>
+</p>
+<p>
+    Lions OS is a new, seL4-based, open-source operating systems aimed at the embedded/IoT/cyberphysical space. Based on the Microkit, Lions OS features a static system architecture, i.e. all (potential) components and their (maximum) connectivity are known at system build time. Lions OS is characterised by a highly modular design, driven by the principles of strong separation of concerns and strict adherence to the KISS principle – keep it simple, stupid! The “radical simplicity” design, when done right, enables excellent performance despite the many context switches resulting from the fine-grained modularity. Critically, this modularity, coupled with keeping each module as simple as possible, should enable formal verification of Lions OS.
+</p>
+<p>
+    Taking the KISS principle to the extreme, Lions OS radically departs from the idea of universal policies, adaptable to many different use cases, that characterise most existing OSes. In contrast, Lions OS keeps all policies minimal and specific to the particular use case; it achieves use-case diversity by isolating each policy in an individual module that can be easily rewritten/replaced when a different policy is required.
+</p>
+<p>
+    In the talk I will explain the principles of Lions OS and its design, looking at concrete examples. I will present performance data that show that the approach can work and provide an overview of our current work on verification. This will be complemented by Ivan Velickovic’s talk covering Lions OS from a developer’s point of view, and Rob Sison’s and Courtney Darville’s talks on verifying Lions OS.
+</p>
+
+    <br><a href="program#p-lions-os">See this talk in the program</a></div>
+
+<div class="summit-abstract" id="a-lions-os-practise"><!--<title>Summit abstract</title>-->
+<!--
+    Copyright 2024, seL4 summit authors (see abstracts)
+    SPDX-License-Identifier: CC-BY-SA-4.0
+-->
+<h4 class="summit-abstract-title">
+    In and Around Lions OS
+</h4>
+<p class="summit-abstract-type">
+    Talk
+</p>
+<p class="summit-abstract-author">
+    Presented by Ivan Velickovic, <span class="summit-abstract-affiliation">UNSW Sydney</span>
+</p>
+<p>
+    LionsOS is a new Operating Systems developed at Trustworthy Systems aimed at embedded, IoT, and cyberphysical systems. LionsOS is based on the seL4 Microkit and is desgined to formally verifiable, performant, and adaptable to a wide class of use-cases.
+</p>
+<p>
+    Gernot's talk will discuss the principles and design of LionsOS, while this talk will be focused on aspects of LionsOS from a developer's perspective.
+</p>
+<p>
+    We will dive into what it is like to use LionsOS by showcasing the tooling and surrounding infrastructure that has been created for developing a LionsOS-based system. This will cover topics such as I/O, virtualisation, debugging, profiling, as well as how to put all these pieces together.
+</p>
+
+    <br><a href="program#p-lions-os-practise">See this talk in the program</a></div>
+
+<div class="summit-abstract" id="a-secure-multiserver"><!--<title>Summit abstract</title>-->
+<!--
+    Copyright 2024, seL4 summit authors (see abstracts)
+    SPDX-License-Identifier: CC-BY-SA-4.0
+-->
+<h4 class="summit-abstract-title">
+    The Secure Multiserver Operating System Framework
+</h4>
+<p class="summit-abstract-type">
+    Talk
+</p>
+<p class="summit-abstract-author">
+    Presented by Alwin Joshy, <span class="summit-abstract-affiliation">UNSW Sydney</span>
+</p>
+<p>
+    Several frameworks, such as CAmkES and the seL4 Microkit, have been built on top of seL4 to enable the development of performant and provably secure operating systems. Most of these have static architectures and use system descriptions that define a complete system including all components and the resources they can access. The system specification is then passed to tools like CapDL, which generate the described system with the correct capability distribution. An important attribute of frameworks like CAmkES and Microkit is that they do not allow this initial distribution to evolve, preventing the runtime transmission of capabilities within an initialized system. This makes them well-suited for static analysis and verification, but comes with the caveat that some behaviours become more difficult or even impossible to represent. In particular, static frameworks are unsuitable for dynamic systems that adhere to complex security policies, especially ones that depend on runtime behaviour, or require functionality such as the ability to create new, sandboxed components, or temporarily transfer privileges between components at runtime.
+</p>
+<p>
+    The Secure Multiserver Operating System (SMOS) project aims to create a secure, dynamic OS framework on top of seL4. Our goal is to enable the development of systems as dynamic as mainstream operating systems like Linux, that allow you to, for example, download and run arbitrary executables, while leveraging the security properties of seL4 to ensure that a global security policy is always correctly upheld. This talk will focus on the key principles behind the design of SMOS, the progress we have made on its implementation, and an overview of some of the challenges we have encountered, both in development and in correctly enforcing a variety of arbitrary, often complex security policies at runtime.
+</p>
+
+    <br><a href="program#p-secure-multiserver">See this talk in the program</a></div>
+
+<div class="summit-abstract" id="a-running-certified"><!--<title>Summit abstract</title>-->
+<!--
+    Copyright 2024, seL4 summit authors (see abstracts)
+    SPDX-License-Identifier: CC-BY-SA-4.0
+-->
+<h4 class="summit-abstract-title">
+    Running Certified Operating Systems under the seL4 Hypervisor
+</h4>
+<p class="summit-abstract-type">
+    Talk
+</p>
+<p class="summit-abstract-author">
+    Presented by Chris Guikema, <span class="summit-abstract-affiliation">DornerWorks</span>
+</p>
+<p>
+    Upstream hypervisor support has expanded in recent years to support additional configurations on x86, ARM, and RISC-V. Every upstream example simply runs Linux, which is an excellent use case for highly functional, general purpose computing platforms, however there are other guest Operating Systems that solve different use cases. Running seL4 in Hypervisor mode allows for the untrusted code in Linux to be sandboxed and isolated from trusted components in the system. What if the guest Operating System was fully trusted? Deos is a DO-178C DAL A certified RTOS for Avionics Applications, an area seL4 has struggled to break into. DornerWorks expanded seL4 Hypervisor support to run Deos under the CAmkES VM. This presentation will overview the changes that needed to be made to support a certifiable RTOS guest, how a Hypervisor effects the safety certification considerations of Deos, and the next steps needed to create a certifiable system with seL4.
+</p>
+
+    <br><a href="program#p-running-certified">See this talk in the program</a></div>
+
+<div class="summit-abstract" id="a-securing-ros"><!--<title>Summit abstract</title>-->
+<!--
+    Copyright 2024, seL4 summit authors (see abstracts)
+    SPDX-License-Identifier: CC-BY-SA-4.0
+-->
+<h4 class="summit-abstract-title">
+    Securing ROS Systems with seL4
+</h4>
+<p class="summit-abstract-type">
+    Talk
+</p>
+<p class="summit-abstract-author">
+    Presented by Nathan	Studer, <span class="summit-abstract-affiliation">DornerWorks</span>
+</p>
+<p>
+    ROS (Robotic Operating System), a modular componentized architecture for robot applications, has made it possible to quickly develop and deploy systems utilizing autonomous or human guided robots.  Focusing on ease of use and portability, ROS has enabled a community of developers to create autonomy solutions that were previously restricted to well-funded companies.  However, ROS depends on many services included in a full Linux distribution to function properly.  Beyond the Operating System itself, these distributions contain many unvetted software packages, which when used in high assurance environments, such as factory automation, could present an unacceptable amount of overhead and potential vulnerabilities.
+</p>
+<p>
+    Even in less critical environments, a compromised robot could surreptitiously spy on an end user or subtly/overtly cause harm to the environment in which it operates.  While securing such systems with seL4 seems like an obvious solution, the lack of support for common software APIs and middleware presents a significant hurdle. Once this is overcome wider adoption of seL4 and more resilient robotic systems would be enabled.  This presentation will show how the cyber-retrofit approach is being used to enable secure autonomous operation of an x86 based ground vehicle, how this approach is being extended to enable native seL4 ROS applications, and the barriers to further system hardening.
+</p>
+
+    <br><a href="program#p-securing-ros">See this talk in the program</a></div>
+
+<div class="summit-abstract" id="a-experience-developing"><!--<title>Summit abstract</title>-->
+<!--
+    Copyright 2024, seL4 summit authors (see abstracts)
+    SPDX-License-Identifier: CC-BY-SA-4.0
+-->
+<h4 class="summit-abstract-title">
+    Experience Developing Code for the seL4 Environment
+</h4>
+<p class="summit-abstract-type">
+    Talk
+</p>
+<p class="summit-abstract-author">
+    Presented by Caitlyn Wilde and Wyeth Greenlaw Rollins, <span class="summit-abstract-affiliation">Lewis & Clark College</span>
+</p>
+<p>
+    We have developed a minimal networking stack (Ethernet, IP, UDP, and ICMP) with the overarching goal of proving that it implements its specification correctly. We target our implementation for the embedded market and therefore we have chosen to develop our solution around the seL4 Microkit and the seL4 Device Driver Framework.
+</p>
+<p>
+    In this talk, we report on our experience developing, testing, and characterizing the performance of our implementation using the seL4 ecosystem. We have containerized our development environment to simplify building our application and to support users with differing platforms. In addition to relying on automated theorem prover assistants and model checkers, we have written many unit and integration tests to help write correct software. Using a network benchmark, we show that our solution exhibits competitive, if not superior, performance characteristics both in terms of average behavior and variance.
+</p>
+
+    <br><a href="program#p-experience-developing">See this talk in the program</a></div>
+
+<div class="summit-abstract" id="a-camkes-to-microkit"><!--<title>Summit abstract</title>-->
+<!--
+    Copyright 2024, seL4 summit authors (see abstracts)
+    SPDX-License-Identifier: CC-BY-SA-4.0
+-->
+<h4 class="summit-abstract-title">
+    Transitioning from CAmkES VMM to MicroKit VMM
+</h4>
+<p class="summit-abstract-type">
+    Talk
+</p>
+<p class="summit-abstract-author">
+    Presented by Leigha VanderKlok, <span class="summit-abstract-affiliation">DornerWorks</span>
+</p>
+<p>
+    This talk presents an experience report on migrating seL4-based systems from the CAmkES VMM to the Microkit VMM. Microkit is a simple framework and SDK created to enable more efficient designs and lower the barrier to entry to seL4.  The presentation will compare and contrast MicroKit with CAmkES and highlight a few reasons to start using Microkit.  In addition, it will examine how MicroKit can make learning and developing seL4-based systems easier and breakdown roadblocks encountered by new users when porting to a new platform. Finally, we will present our gap analysis between the two VMMs and highlight what still needs to be addressed so users can start developing real-world products.
+</p>
+
+    <br><a href="program#p-camkes-to-microkit">See this talk in the program</a></div>
+
+<div class="summit-abstract" id="a-foundation-update"><!--<title>Summit abstract</title>-->
+<!--
+    Copyright 2024, seL4 summit authors (see abstracts)
+    SPDX-License-Identifier: CC-BY-SA-4.0
+-->
+<h4 class="summit-abstract-title">
+    seL4 Foundation Update
+</h4>
+<p class="summit-abstract-type">
+    Update
+</p>
+<p class="summit-abstract-author">
+    Presented by June Andronick, <span class="summit-abstract-affiliation">seL4 Foundation</span>
+</p>
+<p>
+    In this talk, June Andronick, CEO of the seL4 Foundation, will give a brief overview of the latest updates and future plans for the seL4 Foundation.
+</p>
+<p>
+    The seL4 Foundation is home to the ecosystem of software, developers and adopters for safety- and security-critical systems based on seL4. It was formed in April 2020 as a neutral and community-based organisation that ensures long-term, independent support for seL4 and its ecosystem, and fosters strong community participation and ownership in the ecosystem. It raises funds for continuing and accelerating development, facilitates interoperability, standardisation and sharing of cost for the benefit of all. Its aim is to ensure that seL4 is not only the world’s best secure operating-system technology, but is readily deployable and supported by a diverse and stable ecosystem of services and products.
+</p>
+    <br><a href="program#p-foundation-update">See this talk in the program</a></div>
+
+<div class="summit-abstract" id="a-first-steps"><!--<title>Summit abstract</title>-->
+<!--
+    Copyright 2024, seL4 summit authors (see abstracts)
+    SPDX-License-Identifier: CC-BY-SA-4.0
+-->
+<h4 class="summit-abstract-title">
+    First steps towards verification of user-space systems
+</h4>
+<p class="summit-abstract-type">
+    Talk
+</p>
+<p class="summit-abstract-author">
+    Presented by Matthew Brecknell, <span class="summit-abstract-affiliation">Kry10</span>
+</p>
+<p>
+    The Kry10 operating system supports some dynamic behaviours, including incremental updates to running systems. To ensure that the OS always enforces the access controls specified by device owners, we must verify the privileged OS components that manage system resources across updates. Verification will soon be further complicated by the addition of support for multikernel systems, because the OS will need to coordinate resource management across cores.
+</p>
+<p>
+    Concurrency is therefore fundamental to our approach. There is concurrency between the resource managers on different cores, and also between each resource manager and the apps and kernels in the system. We hope to use the structure of the system to avoid fine-grained reasoning as much as possible. But we want a framework which will allow us to prove that such structural reasoning is sound, rather than forcing us to assume it.
+</p>
+<p>
+    Though our plans might be grand, our first steps must be small. In particular, we need experience with techniques and frameworks for reasoning about concurrency.
+</p>
+<p>
+    In this talk, we present our initial experiments with concurent user-space verification. We use the Iris separation logic framework to build an abstract model of a simple system in which components interact using shared memory and notifications, and we prove a simple correctness property. We explain the limitations of this experiment, and how we plan to address them in our next steps.
+</p>
+
+    <br><a href="program#p-first-steps">See this talk in the program</a></div>
+
+<div class="summit-abstract" id="a-generating-trustworthy"><!--<title>Summit abstract</title>-->
+<!--
+    Copyright 2024, seL4 summit authors (see abstracts)
+    SPDX-License-Identifier: CC-BY-SA-4.0
+-->
+<h4 class="summit-abstract-title">
+    Generating Trustworthy Hardware/Software I2C Drivers for Board Management Controllers
+</h4>
+<p class="summit-abstract-type">
+    Talk
+</p>
+<p class="summit-abstract-author">
+    Presented by Zikai Liu, <span class="summit-abstract-affiliation">ETH Zurich</span>
+</p>
+<p>
+    At the heart of every modern server platform sits an embedded system called theboard management controller (BMC) that is responsible for the low-levelfunctioning of the platform. Despite their critical nature, they are generallynot built as trustworthy systems. We have embarked on a journey tocyber-retrofit BMC firmware with seL4 as the kernel. In this talk, we present anupdate on our efforts -- generate trustworthy hardware/software I2C drivers. I2C is a low-level protocol used by BMCs to communicate with many peripherals(e.g. the power regulators). Unlike memory-mapped devices with one-to-oneinterfaces with the BMC, multiple I2C devices may share the same bus. Quirks ofone device can influence the whole assemblage. Therefore, to produce a correctdriver for I2C (and other bus-based protocols), we need to consider thespecifications of not only the controller but all devices on the bus.
+</p>
+<p>
+    We present Efeu, a framework that allows us to specify both the host-side driverand the peripherals. The specifications are composed of layers, which enableefficient modeling of different devices (including those with quirks). Theentire system is then model-checked using SPIN to ensure interoperability. Fromthat, Efeu generates trustworthy drivers in software and hardware. The softwareimplementations target seL4, but could also address other operating systems.Furthermore, when I2C communication speed or CPU usage is a concern, Efeu allowsgenerating hybrid hardware/software drivers, where the hardware part can bematerialized on programmable hardware such as Field Programmable Gate Arrays(FPGAs). We evaluated Efeu-generated I2C stacks on a Zynq MPSoC and show thatmodel-checking the whole system and generating the full stack is not onlypractical but that the resulting implementations can saturate the I2C bus andachieve competitive performance with off-the-shelf solutions.
+</p>
+
+    <br><a href="program#p-generating-trustworthy">See this talk in the program</a></div>
+
+<div class="summit-abstract" id="a-using-model"><!--<title>Summit abstract</title>-->
+<!--
+    Copyright 2024, seL4 summit authors (see abstracts)
+    SPDX-License-Identifier: CC-BY-SA-4.0
+-->
+<h4 class="summit-abstract-title">
+    Using Model Checking to Develop and Verify Inter-Component Signalling Protocols
+</h4>
+<p class="summit-abstract-type">
+    Talk
+</p>
+<p class="summit-abstract-author">
+    Presented by Courtney Darville, <span class="summit-abstract-affiliation">UNSW Sydney</span>
+</p>
+<p>
+    The seL4 Device Driver Framework (sDDF) provides a lightweight library of device drivers and supporting virtualising components which allow clients to securely access and share devices. Each sDDF component is designed to handle one primary concern, and as a result, components have minimal knowledge of the system as a whole and instead communicate only with their direct neighbours. Components are event driven and and require a signal to be scheduled to process incoming data. A signalling protocol is the decision process a component goes through when deciding whether to signal its neighbour.
+</p>
+<p>
+    If a component signals its neighbour unconditionally when data is available, the system progresses without deadlock, however this often results in a large number of unnecessary signals - meaning the receiver was already awake, or had already been signalled but was yet to be scheduled. Designing a signalling protocol that avoids these unnecessary signals, but does not skip any necessary ones can be challenging, since the experimental absence of deadlocks does not necessarily imply deadlock freedom, and if a deadlock is encountered, it can be hard to replicate and understand.
+</p>
+<p>
+    Using formal methods, and in particular model checking, vastly improves the development process of signalling protocols, since the tool can verify for deadlock freedom whilst also producing detailed traces (interleavings of executions) when a deadlock is found. This talk details how the model checker SPIN was used to develop and analyse sDDF signalling protocols, ultimately resulting in a verified protocol that reduces the number of unnecessary signals by 47% when compared to unconditionally signalling.
+</p>
+
+    <br><a href="program#p-using-model">See this talk in the program</a></div>
+
+<div class="summit-abstract" id="a-rust-support"><!--<title>Summit abstract</title>-->
+<!--
+    Copyright 2024, seL4 summit authors (see abstracts)
+    SPDX-License-Identifier: CC-BY-SA-4.0
+-->
+<h4 class="summit-abstract-title">
+    Rust Support in seL4 Userspace: Overview and Update
+</h4>
+<p class="summit-abstract-type">
+    Talk
+</p>
+<p class="summit-abstract-author">
+    Presented by Nick Spinale, <span class="summit-abstract-affiliation">Colias Group, LLC</span>
+</p>
+<p>
+    The development and maintenance of Rust support in seL4 userspace has been an official seL4 Foundation project since last year’s summit. This project’s scope includes libraries for interacting with the seL4 API, higher-level libraries for use in seL4 userspace (e.g. support for asynchronous programming and integration with the seL4 Device Driver Framework), Rust language runtimes for root tasks and Microkit protection domains, modular building blocks for custom seL4 userspace Rust language runtimes, a CapDL system initializer implementation, and an easy-to-use kernel loader. The past year has seen the expansion and refinement of this project’s library offerings, the release of relevant educational materials, and further integration with the rest of the seL4 software ecosystem. In this talk, we will cover progress since last year’s summit, demonstrate how to leverage this work in your own systems, and share our vision and goals for the path ahead.
+</p>
+
+    <br><a href="program#p-rust-support">See this talk in the program</a></div>
+
+<div class="summit-abstract" id="a-pancake"><!--<title>Summit abstract</title>-->
+<!--
+    Copyright 2024, seL4 summit authors (see abstracts)
+    SPDX-License-Identifier: CC-BY-SA-4.0
+-->
+<h4 class="summit-abstract-title">
+    Pancake: a language for verified systems programming
+</h4>
+<p class="summit-abstract-type">
+    Talk
+</p>
+<p class="summit-abstract-author">
+    Presented by Miki Tanaka, <span class="summit-abstract-affiliation">UNSW Sydney</span>
+</p>
+<p>
+    We introduce Pancake, a new language for verifiable, low-level systems programming, especially device drivers. Pancake features a simple type system that makes it attractive to systems programmers, while at the same time aiming to ease the formal verification of code. Pancake has well-defined semantics which the compiler is proven to preserve, meaning that each generated binary code preserves the semantics of its original program. We have now extended Pancake with the shared memory capability which allows the programs to access device registers without escaping to C.
+</p>
+<p>
+    We present the design of the language and its verified compiler, as well as demonstrating its usability, performance and current limitations through case studies of device drivers and related systems components for an seL4-based operating system.
+</p>
+
+    <br><a href="program#p-pancake">See this talk in the program</a></div>
+
+<div class="summit-abstract" id="a-assured-reserve"><!--<title>Summit abstract</title>-->
+<!--
+    Copyright 2024, seL4 summit authors (see abstracts)
+    SPDX-License-Identifier: CC-BY-SA-4.0
+-->
+<h4 class="summit-abstract-title">
+    Assured Reserve Modes
+</h4>
+<p class="summit-abstract-type">
+    Talk
+</p>
+<p class="summit-abstract-author">
+    Presented by Ihor Kuz, <span class="summit-abstract-affiliation">Kry10</span>
+</p>
+<p>
+    When a digital system is undergoing cyber attack or is failing in some way, it is often necessary to take action different from its usual operating mode. These alternative modes of operation are called Reserve Modes.
+</p>
+<p>
+    There are several challenges in implementing reserve modes in systems. The first challenge is developing a mechanism for defining and loading all modes into a system at boot time and enabling alternative modes as necessary. The second challenge is making these changes without affecting or disturbing parts of the system not involved in the reserve modes. The final and hardest challenge is being able to perform such system level changes with assurance that the reserve modes will be enabled as required and operate as expected, without modification.
+</p>
+<p>
+    This presentation introduces Assured Reserve Modes on the seL4-based Kry10 OS. Assured Reserve Modes are a mechanism for providing reserved modes that successfully address the above challenges - implementing reserved mode functionality and providing assurance that they work correctly.  We explain the concept of reserve modes and provide examples of reserve modes and their benefits, present the Assured Reserve Mode design and implementation, and discuss how to provide the assurance that they require.
+</p>
+
+    <br><a href="program#p-assured-reserve">See this talk in the program</a></div>
+
+<div class="summit-abstract" id="a-assured-reserve-action"><!--<title>Summit abstract</title>-->
+<!--
+    Copyright 2024, seL4 summit authors (see abstracts)
+    SPDX-License-Identifier: CC-BY-SA-4.0
+-->
+<h4 class="summit-abstract-title">
+    Assured Reserve Modes in Action
+</h4>
+<p class="summit-abstract-type">
+    Talk
+</p>
+<p class="summit-abstract-author">
+    Presented by Ihor Kuz, <span class="summit-abstract-affiliation">Kry10</span>
+</p>
+<p>
+    Assured Reserve Modes are a mechanism that we’ve developed for the seL4-based Kry10 OS that allows a system to switch between pre-configured operating modes at runtime in response to security, safety, and other routine operational events. In this presentation we show the operation of assured reserve modes in action.
+</p>
+<p>
+    We present the Kry10 OS design and implementation of assured reserve modes, demonstrating their application to a representaive industrial control system (based on the Fischertechnik Training Factory 4.0).  The system is exposed to security and safety incidents, which it will detect and then switch into appropriate reserve modes in order to mitigate, resolve, or contain the problem.
+</p>
+<p>
+    This presentation is a companion to the Assured Reserve Modes presentation that describes the assured reserve mode model and mechanism itself.
+</p>
+
+    <br><a href="program#p-assured-reserve-action">See this talk in the program</a></div>
+
+<div class="summit-abstract" id="a-supporting-container"><!--<title>Summit abstract</title>-->
+<!--
+    Copyright 2024, seL4 summit authors (see abstracts)
+    SPDX-License-Identifier: CC-BY-SA-4.0
+-->
+<h4 class="summit-abstract-title">
+    Supporting container applications on Kry10 OS
+</h4>
+<p class="summit-abstract-type">
+    Talk
+</p>
+<p class="summit-abstract-author">
+    Presented by Alison Felizzi, <span class="summit-abstract-affiliation">Kry10</span>
+</p>
+<p>
+    Container solutions have been instrumental throughout cloud computing, influencing how developers build and automate their application deployments. A core benefit behind containers is that they provide a standardised abstraction layer of an application's underlying OS infrastructure. These abstractions help isolate an application's code and system dependencies, whilst conveniently packaging said dependencies into images that can be easily revision controlled and managed in CI/CD pipelines. When applying this technology to embedded systems, containers offer the potential for simplifying application development workflows, whilst also providing a useful CI/CD mechanism for deploying software updates to deployed devices. seL4 is uniquely suited to power a modern generation of embedded devices and using containers brings with it modern software development practices that makes it easier to manage fleets of devices.
+</p>
+<p>
+    Deploying containers on embedded systems is not necessarily new and has been demonstrated across various embedded Linux deployments. At Kry10 we recognise the value of using containers and see the conveniences it can bring to a developers workflow and the capabilities it provides for developing update-able and maintainable systems. We've implemented first-class container support in Kry10 OS that allows developers to define and package native and VM-based applications. In this talk, I'll present the design and implementation behind our seL4-based container support. I'll step through how container builds are used to package and deploy different types of applications on Kry10 OS, starting from simple native applications, and as the needs and runtime requirements of the application grow, moving onto more complex microVM-style applications.
+</p>
+
+    <br><a href="program#p-supporting-container">See this talk in the program</a></div>
+
+<div class="summit-abstract" id="a-exploring-sel4"><!--<title>Summit abstract</title>-->
+<!--
+    Copyright 2024, seL4 summit authors (see abstracts)
+    SPDX-License-Identifier: CC-BY-SA-4.0
+-->
+<h4 class="summit-abstract-title">
+    Exploring an seL4-based Trusted Execution Environment in a RISC-V Platform
+</h4>
+<p class="summit-abstract-type">
+    Talk
+</p>
+<p class="summit-abstract-author">
+    Presented by Everton de Matos, <span class="summit-abstract-affiliation">TII</span>
+</p>
+<p>
+    The utilization of seL4, a high-assurance microkernel, in a Trusted Execution Environment (TEE) on RISC-V hardware, presents a robust solution for secure computing. This year, we build upon our foundational work with new insights into the performance impacts and enhancements of our TEE.
+</p>
+<p>
+    We present empirical data on the CPU, memory, and I/O performance impacts of having a seL4 TEE on a PolarFire RISC-V platform and run different TEE services performance measurements. The insights into performance nuances, such as the minimal overhead introduced by the seL4 TEE and its operational efficiency in handling cryptographic tasks, solidify the practical benefits of our architecture. Furthermore, we outline ongoing advancements and future directions in enhancing the seL4-based TEE.
+</p>
+
+    <br><a href="program#p-exploring-sel4">See this talk in the program</a></div>
+
+<div class="summit-abstract" id="a-bridging-academia"><!--<title>Summit abstract</title>-->
+<!--
+    Copyright 2024, seL4 summit authors (see abstracts)
+    SPDX-License-Identifier: CC-BY-SA-4.0
+-->
+<h4 class="summit-abstract-title">
+    Bridging Academia and Industry
+</h4>
+<p class="summit-abstract-type">
+    Talk
+</p>
+<p class="summit-abstract-author">
+    Presented by Yanyan Shen, <span class="summit-abstract-affiliation">NIO</span>
+</p>
+<p>
+    A formally-verified microkernel is a great start, and an OS needs more than a microkernel. Over the past years, we have been building a vehicle operating system and toolsets based on seL4 from scratch. It is very challenging, especially when dependability is the top priority. In this talk, we would like to share our experiences along the journey, with an emphasis on the following topics: (1) POSIX or not, that is not a question. To leverage the existing code base and 3rd party libraries, a layered approach is adopted: The system has a core system call layer and a POSIX layer based on the core layer. System components use the core layer. Applications and 3rd party libraries use the POSIX interfaces. (2) Tooling is especially important for development efficiency and system usability. System status monitoring and comprehensive logging are critical since we rely on them to analyze issues remotely. Additionally, a building and integration tool is specifically designed to manage the building and releasing process of the OS and applications. (3) Resource management needs more thoughts. Seasoned system developers are surprised by another form of resource leakage: capability slot leakage. Access control to resources that are not managed by the kernel directly through capabilities also deserves some discussion. (4) Product-level maturity is paramount. We wish that the major OS components could be verified, but at least for now, realistically, various levels of testing are used to stabilize and mature the new OS.
+</p>
+
+    <br><a href="program#p-bridging-academia">See this talk in the program</a></div>
+
+<div class="summit-abstract" id="a-sel4-infrastructure"><!--<title>Summit abstract</title>-->
+<!--
+    Copyright 2024, seL4 summit authors (see abstracts)
+    SPDX-License-Identifier: CC-BY-SA-4.0
+-->
+<h4 class="summit-abstract-title">
+    seL4 Infrastructure: USB and Beyond
+</h4>
+<p class="summit-abstract-type">
+    Talk
+</p>
+<p class="summit-abstract-author">
+    Presented by Bill Ellis, <span class="summit-abstract-affiliation">Capgemini</span>
+</p>
+<p>
+    Since 2021, a small team at Capgemini have been making contributions toward the seL4 infrastructure, assisting developers in getting started with seL4. Previously, building atop CAmkES, we presented a Developer Kit (from zero to "hello world"), a framework to access the U-boot driver suite, and initial efforts in preparing a native xHCI driver (USB 3.0). Now, we present the conclusion of these efforts.
+</p>
+<p>
+    We transition our entire suite of contributions from CAmkES to Microkit. A greater range of USB device classes are now supported. A simple native HDMI driver is introduced. And we leverage sDDF and VMM, in permitting the secure routing of a selected physical USB device into a guest host. While our primary focus has been the Avnet MaaXBoard, many of these contributions would be readily portable to other platforms. More generally, as our focus on seL4 infrastructure reaches a conclusion, we describe our journey with seL4 thus far, summarising our overall contributions and experiences.
+</p>
+    <br><a href="program#p-sel4-infrastructure">See this talk in the program</a></div>
+
+<div class="summit-abstract" id="a-building-commercial"><!--<title>Summit abstract</title>-->
+<!--
+    Copyright 2024, seL4 summit authors (see abstracts)
+    SPDX-License-Identifier: CC-BY-SA-4.0
+-->
+<h4 class="summit-abstract-title">
+    Building a Commercial Virtualized Mobile Device with seL4 – Part 3
+</h4>
+<p class="summit-abstract-type">
+    Talk
+</p>
+<p class="summit-abstract-author">
+    Presented by Jason Sebranek, <span class="summit-abstract-affiliation">Cog Systems, Inc.</span>
+</p>
+<p>
+    In 2017 Cog Systems developed a single domain virtualized device on an HTC One A9 smartphone, and successfully validated it against the National Information Assurance Partnership (NIAP) Protection Profile (PP) for Mobile Device Fundamentals (MDF) and registered the device with the National Security Agency (NSA) as an Approved Component under its Commercial Solutions for Classified (CSfC) process. In the past few years we have been building the next-gen version of this solution.
+</p>
+<p>
+    At the 2020 seL4 Summit, Cog Systems presented this effort as a case study in applying seL4 to a product commercialization effort. Since then, the project has experienced multiple and varied challenges, and has not yet been completed. At the 2023 Summit we gave a follow-up presentation detailing the progress, setbacks, and lessons learned of the past few years. Now, in the 2024 continuation of the series, Cog Systems will provide an update and share some of the technical, logistical, and financial challenges we encountered while building a commercial smartphone product with seL4.
+</p>
+
+    <br><a href="program#p-building-commercial">See this talk in the program</a></div>
+
+<div class="summit-abstract" id="a-doing-nix"><!--<title>Summit abstract</title>-->
+<!--
+    Copyright 2024, seL4 summit authors (see abstracts)
+    SPDX-License-Identifier: CC-BY-SA-4.0
+-->
+<h4 class="summit-abstract-title">
+    Doing Nix for seL4: Towards more Infrastructure-as-Code
+</h4>
+<p class="summit-abstract-type">
+    Talk
+</p>
+<p class="summit-abstract-author">
+    Presented by Wanja Zaeske, <span class="summit-abstract-affiliation">Deutsches Zentrum für Luft- und Raumfahrt (DLR)</span>
+</p>
+<p>
+    Compiling the seL4 kernel itself might be simple, but once more and more of the seL4 ecosystem is involved, transitive dependencies from Python to Haskell complicate things. To tackle this complexity, we added yet another layer on top, a declarative build system that allows to provide all the (transitive-) dependencies from one hand: Nix.
+</p>
+<p>
+    This talk introduces you to the seL4-nix-utils, a collection of Nix expressions to compile but also ease integration and project bring-up with seL4. After a brief introduction to the mechanism behind Nix, we outline the provided Nix expressions and their use-cases. The talk closes with a list of remaining pain-points and a reference to a hands-on you may try after the talk.
+</p>
+
+    <br><a href="program#p-doing-nix">See this talk in the program</a></div>
+
 <div class="summit-abstract" id="a-software-defined"><!--<title>Summit abstract</title>-->
 <!--
     Copyright 2024, seL4 summit authors (see abstracts)
@@ -151,7 +719,94 @@ developed, and the assurance evidence to be produced.
 </p>
 <p>
     The automotive industry is rapidly evolving, with software-defined vehicles (SDVs) at the forefront of this transformation. At NIO, we are leveraging the seL4 microkernel to redefine vehicle architecture, ensuring robust safety, reliability, and performance. This presentation will explore the vision behind integrating seL4 into our SDV platform. We will share the journey of delivering the seL4-based SkyOS-M within the ONVO vehicle on our latest NT3 platform, highlight the significant impact this integration has had on our vehicle design and functionality, and outline our future roadmap beyond the current launch.
-</p></div>
+</p>
+    <br><a href="program#p-software-defined">See this talk in the program</a></div>
+
+<div class="summit-abstract" id="a-cheri-morello"><!--<title>Summit abstract</title>-->
+<!--
+    Copyright 2024, seL4 summit authors (see abstracts)
+    SPDX-License-Identifier: CC-BY-SA-4.0
+-->
+<h4 class="summit-abstract-title">
+    seL4 CHERI/Morello port
+</h4>
+<p class="summit-abstract-type">
+    Talk
+</p>
+<p class="summit-abstract-author">
+    Presented by Hesham Almatary, <span class="summit-abstract-affiliation">Capabilities Limited</span>
+</p>
+<p>
+    seL4 currently provides, formally verified, memory safety guarantees in the kernel and isolation guarantees between seL4's userspace tasks, but there is no safety within a single seL4 task or protection domain itself (e.g., VMs or single-address-space servers such as rumprun). According to a recent Microsoft study, memory safety vulnerabilities account for 70% of all software vulnerabilities. CHERI is a capability-based hardware-software architecture aiming to address memory-safety and software compartmentalisation issues. The goal of this project is to have a complete memory-safe C/C++ seL4-based software stack using CHERI on Morello, without having to re-write the existing seL4 C/C++ userspace libraries (currently over 250 KLoC, using sloc tool) from scratch or formally verify them. This talk will describe the progress of CHERIfying the existing seL4's userspace in order to have complete (spatial) memory and pointer safety.
+</p>
+
+    <br><a href="program#p-cheri-morello">See this talk in the program</a></div>
+
+<div class="summit-abstract" id="a-hardware-support"><!--<title>Summit abstract</title>-->
+<!--
+    Copyright 2024, seL4 summit authors (see abstracts)
+    SPDX-License-Identifier: CC-BY-SA-4.0
+-->
+<h4 class="summit-abstract-title">
+    Hardware Support for Time Protection
+</h4>
+<p class="summit-abstract-type">
+    Talk
+</p>
+<p class="summit-abstract-author">
+    Presented by Nils Wistoff, <span class="summit-abstract-affiliation">ETH Zurich</span>
+</p>
+<p>
+    Timing channels enable information leakage across address spaces, bypassing an operating system’s security boundaries. They can result from any shared microarchitectural state that depends on previous execution and affects a system’s timing. Closing timing channels (aka “time protection”) requires strict partitioning of microarchitectural state, which is not feasible (or extremely expensive) in current ISAs.
+</p>
+<p>
+    At the 2022 seL4 summit, we presented the custom RISC-V fence.t instruction to temporally partition on-core processor state in CVA6, a simple in-order RV64GC processor. This year’s talk will propose a minimal ISA extension that enables hybrid spatial and temporal partitioning of a complete system-on-chip comprising complex out-of-order CPUs, last-level caches, and DRAMs, making system-wide microarchitectural state a first-class resource that can be managed by the OS. We will highlight hardware design implications in different system components and present preliminary experimental results detailing the efficacy and performance overheads of the proposed solution based on extended hardware systems running seL4.
+</p>
+
+    <br><a href="program#p-hardware-support">See this talk in the program</a></div>
+
+<div class="summit-abstract" id="a-verification-status"><!--<title>Summit abstract</title>-->
+<!--
+    Copyright 2024, seL4 summit authors (see abstracts)
+    SPDX-License-Identifier: CC-BY-SA-4.0
+-->
+<h4 class="summit-abstract-title">
+    Verification Status of Time Protection and Microkit-based OS Services
+</h4>
+<p class="summit-abstract-type">
+    Talk
+</p>
+<p class="summit-abstract-author">
+    Presented by Robert Sison, <span class="summit-abstract-affiliation">UNSW Sydney</span>
+</p>
+<p>
+    This talk will give an overview of the status of ongoing and planned research and development at Trustworthy Systems to expand the scope of proofs about seL4-based operating systems in two directions: (1) downwards, to prove that the seL4 kernel implements time protection correctly at the abstract and C specification levels, and (2) upwards, to prove functional specifications of seL4's system calls and on that basis carry out SMT-based automated deductive verification of the user-level seL4 Microkit and Lions OS service components built on top of it. Here I will lay out the research and engineering challenges facing us on both these fronts and the planned subprojects for which we seek talented PhD students, postdocs and engineers to tackle them.
+</p>
+
+    <br><a href="program#p-verification-status">See this talk in the program</a></div>
+
+<div class="summit-abstract" id="a-cpu-driver"><!--<title>Summit abstract</title>-->
+<!--
+    Copyright 2024, seL4 summit authors (see abstracts)
+    SPDX-License-Identifier: CC-BY-SA-4.0
+-->
+<h4 class="summit-abstract-title">
+    seL4 as a CPU Driver for an OS for Real Computers
+</h4>
+<p class="summit-abstract-type">
+    Talk
+</p>
+<p class="summit-abstract-author">
+    Presented by Roman Meier, <span class="summit-abstract-affiliation">ETH Zurich</span>
+</p>
+<p>
+    Modern operating systems&mdash;including seL4&mdash;are written to a fictional model of machine hardware from the 1960s and 1970s: a set of homogeneous cores accessing a common physical address space containing main memory, plus memory-mapped devices. However, modern SoCs and server platforms are really a complex network of heterogeneous cores and intelligent devices, many of which are running their own firmware and "operating systems". The result is a catastrophe of system design, including a plethora of security exploits like remote over-the-air compromises due to weaknesses in WiFi modem firmware. Link: https://googleprojectzero.blogspot.com/2017/04/over-air-exploiting-broadcoms-wi-fi_11.html.
+</p>
+<p>
+    We are building Kirsch, a new OS that solves this problem by embracing and formally capturing the heterogeneity and multiple trust domains of modern hardware. To this end, Kirsch formally models what each hardware context can access using a decoding net representation of the platform (Link "Putting out the hardware dumpster fire", https://doi.org/10.1145/3593856.3595903), which induces a trust relationship between contexts. This trust relationship is the basis for reasoning about isolation, protection and authorization in the system. An seL4 instance can run from, and manage, a region of RAM which is explicitly isolated from untrusted contexts in the system, by using the trust an access information we formally derived. Kirsch thus recovers the power of the seL4 correctness proofs, and we can finally use the seL4 kernel to run truly isolated processes and virtual machines.
+</p>
+
+    <br><a href="program#p-cpu-driver">See this talk in the program</a></div>
 
 <div class="divider"></div>
 </div><!-- container -->
