@@ -42,10 +42,10 @@ layout: base
 {%-   assign w = "0%" -%}
 {%- endif -%}
 
-<article class="news text-lg leading-8 text-gray-600 dark:text-gray-400 mt-6 mr-10
+<article class="news text-lg leading-8 text-gray-600 dark:text-gray-400 mr-10
            grid grid-cols-1 lg:grid-rows-[auto_auto] lg:gap-x-10 lg:grid-cols-[auto_{{w}}]">
 <div>
-<a href="#{{anchor}}" class="not-prose hover:underline text-gray-400"><time datetime="{{ iso }}" id="{{anchor}}">{{ date }}</time></a>
+<a href="#{{anchor}}" class="not-prose hover:underline text-gray-400 pt-16 lg:pt-20"><time datetime="{{ iso }}" id="{{anchor}}">{{ date }}</time></a>
 <h2 class="mb-8 mt-2 text-2xl lg:text-3xl font-bold tracking-tight text-gray-900 dark:text-gray-300">{{ news_item.title }}</h2>
 </div>
 <div></div>
