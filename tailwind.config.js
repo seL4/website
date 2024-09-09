@@ -20,9 +20,9 @@ module.exports = {
         lightcol_inv: colors.gray['400'],
         logogreen: '#96ca4f',
         darkblue: '#030020',
-        accentlight: colors.indigo['400'],
-        accent: colors.indigo['500'],
-        accentdark: colors.indigo['600']
+        accentlight: colors.slate['400'],
+        accent: colors.slate['500'],
+        accentdark: colors.slate['600']
       },
       animation: {
         'infinite-scroll': 'infinite-scroll 50s linear infinite',
