@@ -2,8 +2,26 @@
 # Copyright 2020 seL4 Project a Series of LF Projects, LLC.
 # SPDX-License-Identifier: CC-BY-SA-4.0
 title: Technical Steering Committee
+layout: plain
 redirect_from: /Foundation/TSC/home.pml
 ---
+
+
+<div class="bg-white px-6 py-24 sm:py-32 lg:px-8">
+  <div class="mx-auto max-w-2xl text-center">
+    <p class="text-base font-semibold leading-7 text-indigo-600"><a href="../">The seL4 Foundation</a></p>
+    <h2 class="mt-2 text-4xl font-bold tracking-tight text-gray-900 sm:text-6xl">
+      Technical Steering Committee</h2>
+    <p class="mt-6 text-lg leading-8 text-gray-600">
+      The Technical Steering Committee (TSC) of the seL4 Foundation is
+      responsible for overseeing all technical aspects of the seL4 project
+      (technical direction, code of conduct, procedures, workflows, quality
+      control, etc).
+    </p>
+  </div>
+</div>
+
+<!--
   <p>The Technical Steering Committee (TSC) of the seL4 Foundation is
   responsible for overseeing all technical aspects of the seL4 project
   (technical direction, code of conduct, procedures, workflows,
@@ -14,8 +32,140 @@ redirect_from: /Foundation/TSC/home.pml
        href="../Governance/seL4_Foundation_Technical_Charter.pdf">seL4
       Foundation Technical Charter</a>.
   </p>
+-->
 
 
+<!-- FIXME: change tab style to be just line, no boxes, and make it work -->
+
+<div>
+ <div class="sm:hidden">
+   <label for="tabs" class="sr-only">Select a tab</label>
+   <!-- Use an "onChange" listener to redirect the user to the selected tab URL. -->
+   <select id="tabs" name="tabs" class="block w-full rounded-md border-gray-300 focus:border-indigo-500 focus:ring-indigo-500">
+     <option selected>TSC Members</option>
+     <option>Meetings</option>
+     <option>Joining the TSC</option>
+   </select>
+ </div>
+ <div class="hidden sm:block">
+   <nav class="isolate flex divide-x divide-gray-200 rounded-lg shadow" aria-label="Tabs">
+     <!-- Current: "text-gray-900", Default: "text-gray-500 hover:text-gray-700" -->
+     <a href="#tsc-members" class="group relative min-w-0 flex-1 overflow-hidden rounded-l-lg bg-white px-4 py-4 text-center text-sm font-medium text-gray-900 hover:bg-gray-50 focus:z-10" aria-current="page">
+       <span>TSC Members</span>
+       <span aria-hidden="true" class="absolute inset-x-0 bottom-0 h-0.5 bg-indigo-500"></span>
+     </a>
+     <a href="#" class="group relative min-w-0 flex-1 overflow-hidden bg-white px-4 py-4 text-center text-sm font-medium text-gray-500 hover:bg-gray-50 hover:text-gray-700 focus:z-10">
+       <span>Meetings</span>
+       <span aria-hidden="true" class="absolute inset-x-0 bottom-0 h-0.5 bg-transparent"></span>
+     </a>
+     <a href="#" class="group relative min-w-0 flex-1 overflow-hidden rounded-r-lg bg-white px-4 py-4 text-center text-sm font-medium text-gray-500 hover:bg-gray-50 hover:text-gray-700 focus:z-10">
+       <span>Joining the TSC</span>
+       <span aria-hidden="true" class="absolute inset-x-0 bottom-0 h-0.5 bg-transparent"></span>
+     </a>
+   </nav>
+ </div>
+</div>
+
+
+<!-- FIXME: make pictures square -->
+<!-- FIXME: order?? -->
+
+<div class="bg-white py-24 sm:py-32">
+  <div class="mx-auto max-w-7xl px-6 lg:px-8">
+    <div class="mx-auto max-w-2xl lg:mx-0">
+      <h2 class="text-3xl font-bold tracking-tight text-gray-900 sm:text-4xl">Members</h2>
+      <p class="mt-6 text-lg leading-8 text-gray-600">
+	The TSC is made up of seL4 developers, proof engineers, and technical
+        leaders. Their role is described in detail in the
+	<a title="seL4 Foundation Technical Charter"
+	   href="../Governance/seL4_Foundation_Technical_Charter.pdf">seL4
+	  Foundation Technical Charter</a>.
+      </p>
+    </div>
+    <ul role="list" class="mx-auto mt-20 grid max-w-2xl grid-cols-2 gap-x-8 gap-y-16 text-center sm:grid-cols-3 md:grid-cols-4 lg:mx-0 lg:max-w-none lg:grid-cols-5 xl:grid-cols-6">
+      <li>
+	<a href="https://au.linkedin.com/in/yanyan-shen-1495547">
+	  <img class="mx-auto h-24 w-24 rounded-full" src="../../images/tsc/yanyan.jpg" alt="Yanyan Shen">
+	  <h3 class="mt-6 text-base font-semibold leading-7 tracking-tight text-gray-900">Yanyan Shen</h3>
+	  <p class="text-sm leading-6 text-gray-600">NIO</p>
+	</a>
+      </li>
+      <li>
+	<a href="https://www.linkedin.com/in/mbrcknl">
+	  <img class="mx-auto h-24 w-24 rounded-full" src="../../images/tsc/matthew.jpg" alt="Matthew Brecknell">
+	  <h3 class="mt-6 text-base font-semibold leading-7 tracking-tight text-gray-900">Matthew Brecknell</h3>
+	  <p class="text-sm leading-6 text-gray-600">Kry10</p>
+	</a>
+      </li>
+      <li>
+	<a href="https://trustworthy.systems/people/?cn=Ihor+Kuz">
+	  <img class="mx-auto h-24 w-24 rounded-full" src="../../images/tsc/ihor.jpg" alt="Ihor Kuz">
+	  <h3 class="mt-6 text-base font-semibold leading-7 tracking-tight text-gray-900">Ihor Kuz</h3>
+	  <p class="text-sm leading-6 text-gray-600">Kry10</p>
+	</a>
+      </li>
+      <li>
+	<a href="https://trustworthy.systems/people/?cn=Gerwin+Klein">
+	  <img class="mx-auto h-24 w-24 rounded-full" src="../Board/TS-Gerwin-s.jpg" alt="Gerwin Klein">
+	  <h3 class="mt-6 text-base font-semibold leading-7 tracking-tight text-gray-900">Gerwin Klein (Chair)</h3>
+	  <p class="text-sm leading-6 text-gray-600">Proofcraft</p>
+	</a>
+      </li>
+      <li>
+	<a href="https://trustworthy.systems/people/?cn=Rafal+Kolanski">
+	  <img class="mx-auto h-24 w-24 rounded-full" src="../../images/tsc/rafal.jpg" alt="Rafal Kolanski">
+	  <h3 class="mt-6 text-base font-semibold leading-7 tracking-tight text-gray-900">Rafal Kolanski</h3>
+	  <p class="text-sm leading-6 text-gray-600">Proofcraft</p>
+	</a>
+      </li>
+      <li>
+	<a href="https://trustworthy.systems/people/?alumni=True">
+	  <img class="mx-auto h-24 w-24 rounded-full" src="../../images/tsc/corey.jpg" alt="Corey Lewis">
+	  <h3 class="mt-6 text-base font-semibold leading-7 tracking-tight text-gray-900">Corey Lewis</h3>
+	  <p class="text-sm leading-6 text-gray-600">Proofcraft</p>
+	</a>
+      </li>
+      <li>
+	<a href="https://www.linkedin.com/in/annamlyons/">
+	  <img class="mx-auto h-24 w-24 rounded-full" src="../../images/tsc/anna.png" alt="Anna Lyons">
+	  <h3 class="mt-6 text-base font-semibold leading-7 tracking-tight text-gray-900">Anna Lyons</h3>
+	  <p class="text-sm leading-6 text-gray-600"></p>
+	</a>
+      </li>
+      <li>
+	<a href="https://trustworthy.systems/people/?alumni=True">
+	  <img class="mx-auto h-24 w-24 rounded-full" src="../../images/tsc/kent.jpg" alt="Kent Mcleod">
+	  <h3 class="mt-6 text-base font-semibold leading-7 tracking-tight text-gray-900">Kent Mcleod</h3>
+	  <p class="text-sm leading-6 text-gray-600">Kry10</p>
+	</a>
+      </li>
+      <li>
+	<a href="https://trustworthy.systems/people/?cn=June+Andronick">
+	  <img class="mx-auto h-24 w-24 rounded-full" src="../Board/TS-June-s.jpg" alt="June Andronick">
+	  <h3 class="mt-6 text-base font-semibold leading-7 tracking-tight text-gray-900">June Andronick</h3>
+	  <p class="text-sm leading-6 text-gray-600">Proofcraft</p>
+	</a>
+      </li>
+      <li>
+	<a href="https://trustworthy.systems/people/?cn=Kevin+Elphinstone">
+	  <img class="mx-auto h-24 w-24 rounded-full" src="../../images/tsc/kevin.jpg" alt="Kevin Elphinstone">
+	  <h3 class="mt-6 text-base font-semibold leading-7 tracking-tight text-gray-900">Kevin Elphinstone</h3>
+	  <p class="text-sm leading-6 text-gray-600">UNSW</p>
+	</a>
+      </li>
+      <li>
+	<a href="https://trustworthy.systems/people/?cn=Gernot+Heiser">
+	  <img class="mx-auto h-24 w-24 rounded-full" src="../Board/TS-Gernot-s.jpg" alt="Gernot Heiser">
+	  <h3 class="mt-6 text-base font-semibold leading-7 tracking-tight text-gray-900">Gernot Heiser</h3>
+	  <p class="text-sm leading-6 text-gray-600">UNSW</p>
+	</a>
+      </li>
+    </ul>
+  </div>
+</div>
+
+
+<!--
 <h3>Members</h3>
 
 <div class="people_grid">
@@ -120,6 +270,131 @@ redirect_from: /Foundation/TSC/home.pml
   </div>
 
 </div>
+-->
+
+
+
+
+<!-- FIXME: fix the links below + add missing ones + have tab for current year and previous years... -->
+
+
+<div class="bg-white py-24 sm:py-32">
+  <div class="mx-auto max-w-7xl px-6 lg:px-8">
+    <div class="mx-auto max-w-2xl lg:mx-0">
+      <h2 class="text-3xl font-bold tracking-tight text-gray-900 sm:text-4xl">Meetings</h2>
+      <p class="mt-6 text-lg leading-8 text-gray-600">
+	TSC meetings are public, with minutes made publicly available from this
+	page.
+	If you have an issue that you'd like to bring to the attention of the TSC,
+	please email any of its members listed above.</p>
+      <p class="mt-6 text-lg leading-8 text-gray-600">
+	The following meetings and decisions have so far been recorded:
+      </p>
+    </div>
+
+    <ul role="list" class="space-y-2">
+      <li class="relative flex gap-x-4">
+	<div class="absolute -bottom-2 left-0 top-0 flex w-6 justify-center">
+	  <div class="w-px bg-gray-200"></div>
+	</div>
+	<div class="relative flex h-6 w-6 flex-none items-center justify-center bg-white">
+	  <div class="h-1.5 w-1.5 rounded-full bg-gray-100 ring-1 ring-gray-300"></div>
+	</div>
+	<p class="flex-auto py-0.5 text-xs leading-5 text-gray-500">
+	  <span class="font-medium text-gray-900">2020-05-20:</span>
+	  <a href="notes/tsc-meeting-2020-05-20.pdf">Constituting meeting of
+	    the TSC</a>.</p>
+      </li>
+      <li class="relative flex gap-x-4">
+	<div class="absolute -bottom-2 left-0 top-0 flex w-6 justify-center">
+	  <div class="w-px bg-gray-200"></div>
+	</div>
+	<div class="relative flex h-6 w-6 flex-none items-center justify-center bg-white">
+	  <div class="h-1.5 w-1.5 rounded-full bg-gray-100 ring-1 ring-gray-300"></div>
+	</div>
+	<p class="flex-auto py-0.5 text-xs leading-5 text-gray-500">
+	  <span class="font-medium text-gray-900">2020-05-21:</span>
+	  <a href="notes/tsc-meeting-2020-05-20.pdf"><a href="notes/vote-2020-05-21.pdf">Email
+	      vote</a> for invitation to reviewer role.</p>
+      </li>
+      <li class="relative flex gap-x-4">
+	<div class="absolute -bottom-2 left-0 top-0 flex w-6 justify-center">
+	  <div class="w-px bg-gray-200"></div>
+	</div>
+	<div class="relative flex h-6 w-6 flex-none items-center justify-center bg-white">
+	  <div class="h-1.5 w-1.5 rounded-full bg-gray-100 ring-1 ring-gray-300"></div>
+	</div>
+	<p class="flex-auto py-0.5 text-xs leading-5 text-gray-500">
+	  <span class="font-medium text-gray-900">2021-01-29:</span>
+	  <a href="notes/tsc-meeting-2020-05-20.pdf"><a href="notes/tsc-meeting-2021-01-29.pdf">2nd
+	      TSC meeting</a></p>
+      </li>
+      <li class="relative flex gap-x-4">
+	<div class="absolute -bottom-2 left-0 top-0 flex w-6 justify-center">
+	  <div class="w-px bg-gray-200"></div>
+	</div>
+	<div class="relative flex h-6 w-6 flex-none items-center justify-center bg-white">
+	  <div class="h-1.5 w-1.5 rounded-full bg-gray-100 ring-1 ring-gray-300"></div>
+	</div>
+	<p class="flex-auto py-0.5 text-xs leading-5 text-gray-500">
+	  <span class="font-medium text-gray-900">2021-02-12:</span>
+	  <a href="notes/tsc-meeting-2020-05-20.pdf"><a href="notes/tsc-meeting-2021-02-12.pdf">3rd
+	      TSC meeting</a></p>
+      </li>
+      <li class="relative flex gap-x-4">
+	<div class="absolute -bottom-2 left-0 top-0 flex w-6 justify-center">
+	  <div class="w-px bg-gray-200"></div>
+	</div>
+	<div class="relative flex h-6 w-6 flex-none items-center justify-center bg-white">
+	  <div class="h-1.5 w-1.5 rounded-full bg-gray-100 ring-1 ring-gray-300"></div>
+	</div>
+	<p class="flex-auto py-0.5 text-xs leading-5 text-gray-500">
+	  <span class="font-medium text-gray-900">2021-05-27:</span>
+	  <a href="notes/tsc-meeting-2020-05-20.pdf"><a href="notes/vote-2021-05-27.pdf">Email
+	      vote</a> for invitation to committer role.</p>
+      </li>
+      <li class="relative flex gap-x-4">
+	<div class="absolute -bottom-2 left-0 top-0 flex w-6 justify-center">
+	  <div class="w-px bg-gray-200"></div>
+	</div>
+	<div class="relative flex h-6 w-6 flex-none items-center justify-center bg-white">
+	  <div class="h-1.5 w-1.5 rounded-full bg-gray-100 ring-1 ring-gray-300"></div>
+	</div>
+	<p class="flex-auto py-0.5 text-xs leading-5 text-gray-500">
+	  <span class="font-medium text-gray-900">2021-08-18:</span>
+	  <a href="notes/tsc-meeting-2020-05-20.pdf"><a href="notes/vote-2021-08-18.pdf">Email
+	      vote</a> for interim endorsement.</p>
+      </li>
+      <li class="relative flex gap-x-4">
+	<div class="absolute -bottom-2 left-0 top-0 flex w-6 justify-center">
+	  <div class="w-px bg-gray-200"></div>
+	</div>
+	<div class="relative flex h-6 w-6 flex-none items-center justify-center bg-white">
+	  <div class="h-1.5 w-1.5 rounded-full bg-gray-100 ring-1 ring-gray-300"></div>
+	</div>
+	<p class="flex-auto py-0.5 text-xs leading-5 text-gray-500">
+	  <span class="font-medium text-gray-900">2021-09-29:</span>
+	  <a href="notes/tsc-meeting-2020-05-20.pdf"><a href="notes/vote-2021-09-29.pdf">Email
+	      vote</a> for interim endorsement.</p>
+      </li>
+      <li class="relative flex gap-x-4">
+	<div class="absolute left-0 top-0 flex h-6 w-6 justify-center">
+	  <div class="w-px bg-gray-200"></div>
+	</div>
+	<div class="relative flex h-6 w-6 flex-none items-center justify-center bg-white">
+	  <div class="h-1.5 w-1.5 rounded-full bg-gray-100 ring-1 ring-gray-300"></div>
+	</div>
+	<p class="flex-auto py-0.5 text-xs leading-5 text-gray-500">
+	  <span class="font-medium text-gray-900">2021-09-30:</span>
+	  <a href="notes/tsc-meeting-2020-05-20.pdf"><a href="notes/vote-2021-09-29.pdf">Email
+	      vote</a> for interim endorsement.</p>
+      </li>
+    </ul>
+  </div>
+</div>
+
+
+<!--
 
 <h3>Meetings</h3>
 <p>
@@ -153,7 +428,95 @@ The following meetings and decisions have so far been recorded:</p>
   <li>2024-03-22: <a href="notes/tsc-meeting-2024-03-22.pdf">7th TSC meeting</a>.</li>
   <li>2024-07-25: <a href="notes/tsc-meeting-2024-07-25.pdf">8th TSC meeting</a>.</li>
 </ul>
+-->
 
+
+<!-- FIXME: decide which style is better between the 2 below -->
+
+
+<div class="bg-white py-24 sm:py-32">
+  <div class="mx-auto max-w-7xl px-6 lg:px-8">
+    <div class="mx-auto max-w-2xl lg:mx-0">
+      <h2 class="text-3xl font-bold tracking-tight text-gray-900 sm:text-4xl">Joining the TSC</h2>
+      <p class="mt-6 text-lg leading-8 text-gray-600">
+	TSC members are the technical leadership of the foundation. New members
+	can join the TSC by decision (vote) of the TSC, and potential new
+	members can be nominated by any current TSC member.
+      </p>
+      <div class="mt-10 max-w-2xl">
+	<ul role="list" class="mt-8 max-w-xl space-y-8 text-gray-600">
+	  <li class="flex gap-x-3">
+            <svg class="mt-1 h-5 w-5 flex-none text-indigo-600" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true">
+              <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.857-9.809a.75.75 0 00-1.214-.882l-3.483 4.79-1.88-1.88a.75.75 0 10-1.06 1.061l2.5 2.5a.75.75 0 001.137-.089l4-5.5z" clip-rule="evenodd" />
+            </svg>
+            <span> New members are generally expected to be active current
+	      contributors with the technical knowledge required for the role and a
+	      vision for the future of the seL4 ecosystem.</span>
+	  </li>
+	  <li class="flex gap-x-3">
+            <svg class="mt-1 h-5 w-5 flex-none text-indigo-600" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true">
+              <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.857-9.809a.75.75 0 00-1.214-.882l-3.483 4.79-1.88-1.88a.75.75 0 10-1.06 1.061l2.5 2.5a.75.75 0 001.137-.089l4-5.5z" clip-rule="evenodd" />
+            </svg>
+            <span>There are separate roles for repository write access (Committer),
+	      organisational admin access (SysAdmin), and the ability to approve pull
+	      request and manage issues (Reviewer).</span>
+	  </li>
+	  <li class="flex gap-x-3">
+            <svg class="mt-1 h-5 w-5 flex-none text-indigo-600" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true">
+              <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.857-9.809a.75.75 0 00-1.214-.882l-3.483 4.79-1.88-1.88a.75.75 0 10-1.06 1.061l2.5 2.5a.75.75 0 001.137-.089l4-5.5z" clip-rule="evenodd" />
+            </svg>
+            <span>If you would like to nominate someone for any of these roles,
+	      please email the chair (Gerwin Klein) of the TSC.</span>
+	  </li>
+	</ul>
+      </div>
+    </div>
+  </div>
+</div>
+  
+
+<div class="bg-white px-6 py-32 lg:px-8">
+ <div class="mx-auto max-w-3xl text-base leading-7 text-gray-700">
+   <h2 class="mt-2 text-3xl font-bold tracking-tight text-gray-900 sm:text-4xl">Joining the TSC</h2>
+   <p class="mt-6 text-xl leading-8">
+     TSC members are the technical leadership of the foundation. New members can
+     join the TSC by decision (vote) of the TSC, and potential new members can
+     be nominated by any current TSC member.
+   </p>
+   <div class="mt-10 max-w-2xl">
+     <ul role="list" class="mt-8 max-w-xl space-y-8 text-gray-600">
+       <li class="flex gap-x-3">
+         <svg class="mt-1 h-5 w-5 flex-none text-indigo-600" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true">
+           <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.857-9.809a.75.75 0 00-1.214-.882l-3.483 4.79-1.88-1.88a.75.75 0 10-1.06 1.061l2.5 2.5a.75.75 0 001.137-.089l4-5.5z" clip-rule="evenodd" />
+         </svg>
+         <span> New members are generally expected to be active current
+	contributors with the technical knowledge required for the role and a
+	vision for the future of the seL4 ecosystem.</span>
+       </li>
+       <li class="flex gap-x-3">
+         <svg class="mt-1 h-5 w-5 flex-none text-indigo-600" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true">
+           <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.857-9.809a.75.75 0 00-1.214-.882l-3.483 4.79-1.88-1.88a.75.75 0 10-1.06 1.061l2.5 2.5a.75.75 0 001.137-.089l4-5.5z" clip-rule="evenodd" />
+         </svg>
+         <span>There are separate roles for repository write access (Committer),
+	organisational admin access (SysAdmin), and the ability to approve pull
+	request and manage issues (Reviewer).</span>
+       </li>
+       <li class="flex gap-x-3">
+         <svg class="mt-1 h-5 w-5 flex-none text-indigo-600" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true">
+           <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.857-9.809a.75.75 0 00-1.214-.882l-3.483 4.79-1.88-1.88a.75.75 0 10-1.06 1.061l2.5 2.5a.75.75 0 001.137-.089l4-5.5z" clip-rule="evenodd" />
+         </svg>
+         <span>If you would like to nominate someone for any of these roles,
+	please email the chair (Gerwin Klein) of the TSC.</span>
+       </li>
+     </ul>
+   </div>
+ </div>
+</div>
+
+
+
+
+<!--
 <h3>Joining the TSC</h3>
 <p>
 TSC members are the technical leadership of the foundation. New members can
@@ -168,3 +531,4 @@ There are separate roles for repository write access (Committer), organisational
 access (SysAdmin), and the ability to approve pull request and manage issues (Reviewer).
 </p>
 <p>If you would like to nominate someone for any of these roles, please email the chair (Gerwin Klein) of the TSC.</p>
+-->

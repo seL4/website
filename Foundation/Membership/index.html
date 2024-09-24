@@ -6,6 +6,8 @@ layout: plain
 redirect_from: /Foundation/Membership/home.pml
 ---
 
+<!-- FIXME: update style of title to be consistent with the rest; center... -->
+
 <!-- override dark mode, because some of the logos don't work on dark background -->
 <div class="bg-white pt-10 pb-24 sm:pt-16 sm:pb-28">
   <div class="mx-4 lg:mx-auto max-w-4xl
@@ -16,22 +18,51 @@ redirect_from: /Foundation/Membership/home.pml
       <p>
         Below is the list of members of the
         <a title="seL4 Foundation" href="../">seL4 Foundation</a>. Want to be part of the adventure?
-      </p>
-      <p class="join">JOIN NOW <a title="Join" href="../Join">HERE!</a></p>
+      </p> <p>
+      <!-- member button -->
+      <a href="{{ '/Foundation/Join/' | relative_url }}" class="button-snd mr-6 md:mr-10">Become a Member</a> </p>
     </div>
 
-    <h2>Premium Members</h2>
+
+
+
+
+<!--    <h2>Premium Members</h2> -->
+
+<div class="pt-20 pb-10 inline-flex items-center justify-center w-full">
+    <hr class="w-full h-px my-8 bg-gray-200 border-0 dark:bg-gray-700">
+    <span class="absolute px-3 text-2xl font-light text-gray-900 -translate-x-1/2
+		 bg-white left-1/2 dark:text-white dark:bg-gray-900">
+      <strong>Premium</strong>
+    </span>
+</div>
 
     {%- assign members = site.data.members.premium | sort_natural: "name" -%}
     {%- include member-info.html -%}
 
-    <h2>General Members</h2>
+
+<!--    <h2>General Members</h2> -->
+
+<div class="pt-40 pb-10 inline-flex items-center justify-center w-full">
+    <hr class="w-full h-px my-8 bg-gray-200 border-0 dark:bg-gray-700">
+    <span class="absolute px-3 text-2xl font-light text-gray-900 -translate-x-1/2
+		 bg-white left-1/2 dark:text-white dark:bg-gray-900">
+      <strong>General</strong>
+    </span>
+</div>
 
     {%- assign members = site.data.members.general | sort_natural: "name" -%}
     {%- include member-info.html -%}
 
-    <h2>Associate Members</h2>
+<!--    <h2>Associate Members</h2> -->
 
+<div class="pt-40 pb-10 inline-flex items-center justify-center w-full">
+    <hr class="w-full h-px my-8 bg-gray-200 border-0 dark:bg-gray-700">
+    <span class="absolute px-3 text-2xl font-light text-gray-900 -translate-x-1/2
+		 bg-white left-1/2 dark:text-white dark:bg-gray-900">
+      <strong>Associate</strong>
+    </span>
+</div>
     {%- assign members = site.data.members.associate | sort_natural: "name" -%}
     {%- include member-info.html -%}
   </div>
