@@ -2,8 +2,13 @@
 # Copyright 2020 seL4 Project a Series of LF Projects, LLC.
 # SPDX-License-Identifier: CC-BY-SA-4.0
 title: Governing Board
+layout: plain
 redirect_from: /Foundation/Board/home.pml
 ---
+
+<!-- FIXME: delete Minutes pages; added here -->
+
+<!--
 <div>
   <p>
     The Governing Board of the <a title="seL4 Foundation"
@@ -24,6 +29,358 @@ redirect_from: /Foundation/Board/home.pml
     <a title="Board Minutes" href="Minutes/">Governing Board meeting minutes</a> are  publicly accessible.
   </p>
 </div>
+-->
+
+<div class="bg-white px-6 py-24 sm:py-32 lg:px-8">
+  <div class="mx-auto max-w-2xl text-center">
+    <p class="text-base font-semibold leading-7 text-indigo-600"><a href="../">The seL4 Foundation</a></p>
+    <h2 class="mt-2 text-4xl font-bold tracking-tight text-gray-900 sm:text-6xl">
+      Governing Board</h2>
+    <p class="mt-6 text-lg leading-8 text-gray-600">
+      The Governing Board of the seL4 Foundation is responsible for overall
+      management of the Directed Fund, including approving a budget directing
+      the use of funds raised through memberships or other revenues, attracting
+      new members through community outreach, establishing policies for the use
+      of seL4 trademark.
+    </p>
+  </div>
+</div>
+
+
+<!-- FIXME: change tab style to be just line, no boxes, and make it work -->
+
+<div>
+ <div class="sm:hidden">
+   <label for="tabs" class="sr-only">Select a tab</label>
+   <!-- Use an "onChange" listener to redirect the user to the selected tab URL. -->
+   <select id="tabs" name="tabs" class="block w-full rounded-md border-gray-300 focus:border-indigo-500 focus:ring-indigo-500">
+     <option selected>Board Members</option>
+     <option>Meetings</option>
+     <option>Committees</option>
+   </select>
+ </div>
+ <div class="hidden sm:block">
+   <nav class="isolate flex divide-x divide-gray-200 rounded-lg shadow" aria-label="Tabs">
+     <!-- Current: "text-gray-900", Default: "text-gray-500 hover:text-gray-700" -->
+     <a href="#tsc-members" class="group relative min-w-0 flex-1 overflow-hidden rounded-l-lg bg-white px-4 py-4 text-center text-sm font-medium text-gray-900 hover:bg-gray-50 focus:z-10" aria-current="page">
+       <span>Board Members</span>
+       <span aria-hidden="true" class="absolute inset-x-0 bottom-0 h-0.5 bg-indigo-500"></span>
+     </a>
+     <a href="#" class="group relative min-w-0 flex-1 overflow-hidden bg-white px-4 py-4 text-center text-sm font-medium text-gray-500 hover:bg-gray-50 hover:text-gray-700 focus:z-10">
+       <span>Meetings</span>
+       <span aria-hidden="true" class="absolute inset-x-0 bottom-0 h-0.5 bg-transparent"></span>
+     </a>
+     <a href="#" class="group relative min-w-0 flex-1 overflow-hidden rounded-r-lg bg-white px-4 py-4 text-center text-sm font-medium text-gray-500 hover:bg-gray-50 hover:text-gray-700 focus:z-10">
+       <span>Committees</span>
+       <span aria-hidden="true" class="absolute inset-x-0 bottom-0 h-0.5 bg-transparent"></span>
+     </a>
+   </nav>
+ </div>
+</div>
+
+<!-- FIXME: change style for board members list, currently too big. Remove social media links -->
+
+<div class="bg-white py-24 md:py-32">
+  <div class="mx-auto grid max-w-7xl grid-cols-1 gap-x-8 gap-y-20 px-6 lg:px-8 xl:grid-cols-5">
+    <div class="max-w-2xl xl:col-span-2">
+      <h2 class="text-3xl font-bold tracking-tight text-gray-900 sm:text-4xl">Members</h2>
+      <p class="mt-6 text-lg leading-8 text-gray-600">
+	The Governing Board of the <a title="seL4 Foundation" href="../">seL4
+	  Foundation</a> consists of: the Founders of the seL4 technology (June
+	  Andronick, Gerwin Klein and Gernot Heiser); a representative appointed
+	  by each Premium Member; a representative elected by General Members;
+	  the Chair of the Technical Steering Committee.
+      </p>
+      <p class="mt-6 text-lg leading-8 text-gray-600">
+	Their role is described in detail in the
+	<a title="seL4 Foundation Fund Charter"
+	   href="seL4_Foundation_Fund_Charter.pdf">seL4 Foundation Fund
+	  Charter</a>.</p>
+    </div>
+   <ul role="list" class="-mt-12 space-y-12 divide-y divide-gray-200 xl:col-span-3">
+
+     <li class="flex flex-col gap-10 pt-12 sm:flex-row">
+       <img class="aspect-[4/5] w-52 flex-none rounded-2xl object-cover" src="TS-Gernot-s.jpg" alt="Gernot Heiser">
+       <div class="max-w-xl flex-auto">
+         <h3 class="text-lg font-semibold leading-8 tracking-tight text-gray-900">Gernot Heiser (Chair)</h3>
+         <p class="text-base leading-7 text-gray-600">
+	   <em>Technology Evangelist, <a title="TS"
+					 href="http://trustworthy.systems/">Trustworthy
+					 Systems</a></em>
+	 </p>
+         <p class="mt-6 text-base leading-7 text-gray-600">
+	   Gernot is the Founder of the Trustworthy Systems Research Group (TS),
+	   which created seL4. He is Scientia Professor and John Lions Chair of
+	   Operating Systems at <a href="https://unsw.edu.au/">UNSW Sydney</a>,
+	   where he has been teaching operating systems and leading research on
+	   L4 microkernels for more than 25 years. Besides that, his focus is on
+	   transferring TS technology to the real world. He was the founder and
+	   CTO of Open Kernel Labs and is presently serving as Chief Scientist
+	   (Software) at <a href="https://www.hensoldt-cyber.com/">HENSOLDT
+	   Cyber</a>. Gernot holds a PhD from ETH Zurich and is a Fellow of
+	   the <a href="https://acm.org/">ACM</a>,
+	   the <a href="https://ieee.org/">IEEE</a> and
+	   the <a href="https://atse.org.au/">Australian Academy of Technology
+	   and Engineering</a> (ATSE). Jointly with June and Gerwin he won
+	   the <a href="https://www.sigops.org/awards/hof/">ACM SIGOPS
+	   Hall-of-Fame award</a> in 2019.
+	 </p>
+         <ul role="list" class="mt-6 flex gap-x-6">
+           <li>
+             <a href="#" class="text-gray-400 hover:text-gray-500">
+               <span class="sr-only">X</span>
+               <svg class="h-5 w-5" fill="currentColor" viewBox="0 0 20 20" aria-hidden="true">
+                 <path d="M11.4678 8.77491L17.2961 2H15.915L10.8543 7.88256L6.81232 2H2.15039L8.26263 10.8955L2.15039 18H3.53159L8.87581 11.7878L13.1444 18H17.8063L11.4675 8.77491H11.4678ZM9.57608 10.9738L8.95678 10.0881L4.02925 3.03974H6.15068L10.1273 8.72795L10.7466 9.61374L15.9156 17.0075H13.7942L9.57608 10.9742V10.9738Z" />
+               </svg>
+             </a>
+           </li>
+           <li>
+             <a href="#" class="text-gray-400 hover:text-gray-500">
+               <span class="sr-only">LinkedIn</span>
+               <svg class="h-5 w-5" fill="currentColor" viewBox="0 0 20 20" aria-hidden="true">
+                 <path fill-rule="evenodd" d="M16.338 16.338H13.67V12.16c0-.995-.017-2.277-1.387-2.277-1.39 0-1.601 1.086-1.601 2.207v4.248H8.014v-8.59h2.559v1.174h.037c.356-.675 1.227-1.387 2.526-1.387 2.703 0 3.203 1.778 3.203 4.092v4.711zM5.005 6.575a1.548 1.548 0 11-.003-3.096 1.548 1.548 0 01.003 3.096zm-1.337 9.763H6.34v-8.59H3.667v8.59zM17.668 1H2.328C1.595 1 1 1.581 1 2.298v15.403C1 18.418 1.595 19 2.328 19h15.34c.734 0 1.332-.582 1.332-1.299V2.298C19 1.581 18.402 1 17.668 1z" clip-rule="evenodd" />
+               </svg>
+             </a>
+           </li>
+         </ul>
+       </div>
+     </li>
+
+     <li class="flex flex-col gap-10 pt-12 sm:flex-row">
+       <img class="aspect-[4/5] w-52 flex-none rounded-2xl object-cover" src="TS-June-s.jpg" alt="June Andronick" >
+       <div class="max-w-xl flex-auto">
+         <h3 class="text-lg font-semibold leading-8 tracking-tight text-gray-900">June Andronick (CEO and Treasurer)</h3>
+         <p class="text-base leading-7 text-gray-600">
+	   <em>CEO, <a href="https://proofcraft.systems/">Proofcraft</a></em>
+	 </p>
+         <p class="mt-6 text-base leading-7 text-gray-600">
+	   June is a former leader of the TS group and was a core contributor to
+	   seL4's verification story, as well as verification work on the
+	   eChronos RTOS. She holds a PhD
+	   from <a href="https://www.universite-paris-saclay.fr/en">Paris-Saclay
+	   University</a>. In 2011 she was recognised by MIT Tech Review as
+	   a <a href="https://www.technologyreview.com/innovator/june-andronick">Top
+	   Innovator under 35</a>. She is a conjoint professor
+	   at <a href="https://unsw.edu.au/">UNSW Sydney</a>.
+	 </p>
+         <ul role="list" class="mt-6 flex gap-x-6">
+           <li>
+             <a href="#" class="text-gray-400 hover:text-gray-500">
+               <span class="sr-only">X</span>
+               <svg class="h-5 w-5" fill="currentColor" viewBox="0 0 20 20" aria-hidden="true">
+                 <path d="M11.4678 8.77491L17.2961 2H15.915L10.8543 7.88256L6.81232 2H2.15039L8.26263 10.8955L2.15039 18H3.53159L8.87581 11.7878L13.1444 18H17.8063L11.4675 8.77491H11.4678ZM9.57608 10.9738L8.95678 10.0881L4.02925 3.03974H6.15068L10.1273 8.72795L10.7466 9.61374L15.9156 17.0075H13.7942L9.57608 10.9742V10.9738Z" />
+               </svg>
+             </a>
+           </li>
+           <li>
+             <a href="#" class="text-gray-400 hover:text-gray-500">
+               <span class="sr-only">LinkedIn</span>
+               <svg class="h-5 w-5" fill="currentColor" viewBox="0 0 20 20" aria-hidden="true">
+                 <path fill-rule="evenodd" d="M16.338 16.338H13.67V12.16c0-.995-.017-2.277-1.387-2.277-1.39 0-1.601 1.086-1.601 2.207v4.248H8.014v-8.59h2.559v1.174h.037c.356-.675 1.227-1.387 2.526-1.387 2.703 0 3.203 1.778 3.203 4.092v4.711zM5.005 6.575a1.548 1.548 0 11-.003-3.096 1.548 1.548 0 01.003 3.096zm-1.337 9.763H6.34v-8.59H3.667v8.59zM17.668 1H2.328C1.595 1 1 1.581 1 2.298v15.403C1 18.418 1.595 19 2.328 19h15.34c.734 0 1.332-.582 1.332-1.299V2.298C19 1.581 18.402 1 17.668 1z" clip-rule="evenodd" />
+               </svg>
+             </a>
+           </li>
+         </ul>
+       </div>
+     </li>
+
+     <li class="flex flex-col gap-10 pt-12 sm:flex-row">
+       <img class="aspect-[4/5] w-52 flex-none rounded-2xl object-cover" src="RTX-David.png" alt="David Hardin" >
+       <div class="max-w-xl flex-auto">
+         <h3 class="text-lg font-semibold leading-8 tracking-tight text-gray-900">David Hardin</h3>
+         <p class="text-base leading-7 text-gray-600">
+	   <em>Associate Director, <a href="https://rtx.com">Raytheon
+	   Technologies</a></em>
+	 </p>
+         <p class="mt-6 text-base leading-7 text-gray-600">
+	   Dr. David Hardin is an Associate Director, Systems Engineering at
+	   Collins Aerospace.  Dr. Hardin has significant experience in the
+	   design and verification of high-assurance hardware, software, and
+	   systems, and is editor of the book <em>Design and Verification of
+	   Microprocessor Systems for High-Assurance Applications</em>.
+	 </p>
+         <ul role="list" class="mt-6 flex gap-x-6">
+           <li>
+             <a href="#" class="text-gray-400 hover:text-gray-500">
+               <span class="sr-only">X</span>
+               <svg class="h-5 w-5" fill="currentColor" viewBox="0 0 20 20" aria-hidden="true">
+                 <path d="M11.4678 8.77491L17.2961 2H15.915L10.8543 7.88256L6.81232 2H2.15039L8.26263 10.8955L2.15039 18H3.53159L8.87581 11.7878L13.1444 18H17.8063L11.4675 8.77491H11.4678ZM9.57608 10.9738L8.95678 10.0881L4.02925 3.03974H6.15068L10.1273 8.72795L10.7466 9.61374L15.9156 17.0075H13.7942L9.57608 10.9742V10.9738Z" />
+               </svg>
+             </a>
+           </li>
+           <li>
+             <a href="#" class="text-gray-400 hover:text-gray-500">
+               <span class="sr-only">LinkedIn</span>
+               <svg class="h-5 w-5" fill="currentColor" viewBox="0 0 20 20" aria-hidden="true">
+                 <path fill-rule="evenodd" d="M16.338 16.338H13.67V12.16c0-.995-.017-2.277-1.387-2.277-1.39 0-1.601 1.086-1.601 2.207v4.248H8.014v-8.59h2.559v1.174h.037c.356-.675 1.227-1.387 2.526-1.387 2.703 0 3.203 1.778 3.203 4.092v4.711zM5.005 6.575a1.548 1.548 0 11-.003-3.096 1.548 1.548 0 01.003 3.096zm-1.337 9.763H6.34v-8.59H3.667v8.59zM17.668 1H2.328C1.595 1 1 1.581 1 2.298v15.403C1 18.418 1.595 19 2.328 19h15.34c.734 0 1.332-.582 1.332-1.299V2.298C19 1.581 18.402 1 17.668 1z" clip-rule="evenodd" />
+               </svg>
+             </a>
+           </li>
+         </ul>
+       </div>
+     </li>
+
+     <li class="flex flex-col gap-10 pt-12 sm:flex-row">
+       <img class="aspect-[4/5] w-52 flex-none rounded-2xl object-cover" src="Horizon-Feng-s.jpg" alt="Feng Zhou">
+       <div class="max-w-xl flex-auto">
+         <h3 class="text-lg font-semibold leading-8 tracking-tight text-gray-900">Feng Zhou</h3>
+         <p class="text-base leading-7 text-gray-600">
+	   <em>Fellow, <a href="https://en.horizon.cc/">Horizon Robotics</a></em>
+	 </p>
+         <p class="mt-6 text-base leading-7 text-gray-600">
+	   Dr. Feng Zhou has 15 years of academic experience (Professor and Vice
+	   Chairman of Dept. of Information and Electronics Engineering in
+	   Zhejiang University, China) and over 15 years of industrial
+	   experience in video/image compression &amp; processing, computer
+	   vision, artificial intelligence, and ASIC processor
+	   architecture. Dr. Feng Zhou experience extends to the FPGA/ASIC
+	   system architecture design and deep learning algorithm implementation
+	   based on FPGA/ASIC platforms.
+	 </p>
+         <ul role="list" class="mt-6 flex gap-x-6">
+           <li>
+             <a href="#" class="text-gray-400 hover:text-gray-500">
+               <span class="sr-only">X</span>
+               <svg class="h-5 w-5" fill="currentColor" viewBox="0 0 20 20" aria-hidden="true">
+                 <path d="M11.4678 8.77491L17.2961 2H15.915L10.8543 7.88256L6.81232 2H2.15039L8.26263 10.8955L2.15039 18H3.53159L8.87581 11.7878L13.1444 18H17.8063L11.4675 8.77491H11.4678ZM9.57608 10.9738L8.95678 10.0881L4.02925 3.03974H6.15068L10.1273 8.72795L10.7466 9.61374L15.9156 17.0075H13.7942L9.57608 10.9742V10.9738Z" />
+               </svg>
+             </a>
+           </li>
+           <li>
+             <a href="#" class="text-gray-400 hover:text-gray-500">
+               <span class="sr-only">LinkedIn</span>
+               <svg class="h-5 w-5" fill="currentColor" viewBox="0 0 20 20" aria-hidden="true">
+                 <path fill-rule="evenodd" d="M16.338 16.338H13.67V12.16c0-.995-.017-2.277-1.387-2.277-1.39 0-1.601 1.086-1.601 2.207v4.248H8.014v-8.59h2.559v1.174h.037c.356-.675 1.227-1.387 2.526-1.387 2.703 0 3.203 1.778 3.203 4.092v4.711zM5.005 6.575a1.548 1.548 0 11-.003-3.096 1.548 1.548 0 01.003 3.096zm-1.337 9.763H6.34v-8.59H3.667v8.59zM17.668 1H2.328C1.595 1 1 1.581 1 2.298v15.403C1 18.418 1.595 19 2.328 19h15.34c.734 0 1.332-.582 1.332-1.299V2.298C19 1.581 18.402 1 17.668 1z" clip-rule="evenodd" />
+               </svg>
+             </a>
+           </li>
+         </ul>
+       </div>
+     </li>
+
+     <li class="flex flex-col gap-10 pt-12 sm:flex-row">
+       <img class="aspect-[4/5] w-52 flex-none rounded-2xl object-cover" src="TS-Gerwin-s.jpg" alt="Gerwin Klein">
+       <div class="max-w-xl flex-auto">
+         <h3 class="text-lg font-semibold leading-8 tracking-tight text-gray-900">Gerwin Klein</h3>
+         <p class="text-base leading-7 text-gray-600">
+	   <em>Chief Scientist,	<a href="https://proofcraft.systems/">Proofcraft</a></em>
+	 </p>
+         <p class="mt-6 text-base leading-7 text-gray-600">
+	   Gerwin lead the verification of seL4. He spends much of his time deep
+	   in the proofs about seL4 and contributes to other verification
+	   research in TS. He holds a PhD from <a href="https://www.tum.de/">TU
+	   Munich</a> and led the original seL4 verification, which won the
+	   MIT-TR10 award for the top 10 emerging technologies in 2011, as well
+	   as the <a href="https://www.sigops.org/awards/hof/">SIGOPS
+	   Hall-of-Fame award</a> in 2019. He is a conjoint professor
+	   at <a href="https://unsw.edu.au/">UNSW Sydney</a>.
+	 </p>
+         <ul role="list" class="mt-6 flex gap-x-6">
+           <li>
+             <a href="#" class="text-gray-400 hover:text-gray-500">
+               <span class="sr-only">X</span>
+               <svg class="h-5 w-5" fill="currentColor" viewBox="0 0 20 20" aria-hidden="true">
+                 <path d="M11.4678 8.77491L17.2961 2H15.915L10.8543 7.88256L6.81232 2H2.15039L8.26263 10.8955L2.15039 18H3.53159L8.87581 11.7878L13.1444 18H17.8063L11.4675 8.77491H11.4678ZM9.57608 10.9738L8.95678 10.0881L4.02925 3.03974H6.15068L10.1273 8.72795L10.7466 9.61374L15.9156 17.0075H13.7942L9.57608 10.9742V10.9738Z" />
+               </svg>
+             </a>
+           </li>
+           <li>
+             <a href="#" class="text-gray-400 hover:text-gray-500">
+               <span class="sr-only">LinkedIn</span>
+               <svg class="h-5 w-5" fill="currentColor" viewBox="0 0 20 20" aria-hidden="true">
+                 <path fill-rule="evenodd" d="M16.338 16.338H13.67V12.16c0-.995-.017-2.277-1.387-2.277-1.39 0-1.601 1.086-1.601 2.207v4.248H8.014v-8.59h2.559v1.174h.037c.356-.675 1.227-1.387 2.526-1.387 2.703 0 3.203 1.778 3.203 4.092v4.711zM5.005 6.575a1.548 1.548 0 11-.003-3.096 1.548 1.548 0 01.003 3.096zm-1.337 9.763H6.34v-8.59H3.667v8.59zM17.668 1H2.328C1.595 1 1 1.581 1 2.298v15.403C1 18.418 1.595 19 2.328 19h15.34c.734 0 1.332-.582 1.332-1.299V2.298C19 1.581 18.402 1 17.668 1z" clip-rule="evenodd" />
+               </svg>
+             </a>
+           </li>
+         </ul>
+       </div>
+     </li>
+
+     <li class="flex flex-col gap-10 pt-12 sm:flex-row">
+       <img class="aspect-[4/5] w-52 flex-none rounded-2xl object-cover" src="Jump-Matt-s.jpg" alt="Matthew Grosvenor">
+       <div class="max-w-xl flex-auto">
+         <h3 class="text-lg font-semibold leading-8 tracking-tight text-gray-900">Dr Matthew P. Grosvenor</h3>
+         <p class="text-base leading-7 text-gray-600">
+	   <em>Software Engineer, <a href="https://jumptrading.com">Jump Trading</a></em>
+	 </p>
+         <p class="mt-6 text-base leading-7 text-gray-600">
+	   Matthew is the representative of Premium Member Jump Trading, where
+	   he specializes on measurement and optimization of high-performance
+	   and low-latency network systems. He holds a doctorate in computer
+	   science from the University of Cambridge where his research work
+	   focused on techniques for managing and mitigating latency variance in
+	   hyper-scale datacenter networks. He is also a former member of the
+	   Trustworthy Systems research group. For his honors project, Matt
+	   worked on capability allocation/deallocation techniques using the
+	   seL4 capability system. Matthew maintains a strong interest in
+	   facilitating and performing research, particularly in the areas of
+	   high-performance, and high-assurance systems.
+	 </p>
+         <ul role="list" class="mt-6 flex gap-x-6">
+           <li>
+             <a href="#" class="text-gray-400 hover:text-gray-500">
+               <span class="sr-only">X</span>
+               <svg class="h-5 w-5" fill="currentColor" viewBox="0 0 20 20" aria-hidden="true">
+                 <path d="M11.4678 8.77491L17.2961 2H15.915L10.8543 7.88256L6.81232 2H2.15039L8.26263 10.8955L2.15039 18H3.53159L8.87581 11.7878L13.1444 18H17.8063L11.4675 8.77491H11.4678ZM9.57608 10.9738L8.95678 10.0881L4.02925 3.03974H6.15068L10.1273 8.72795L10.7466 9.61374L15.9156 17.0075H13.7942L9.57608 10.9742V10.9738Z" />
+               </svg>
+             </a>
+           </li>
+           <li>
+             <a href="#" class="text-gray-400 hover:text-gray-500">
+               <span class="sr-only">LinkedIn</span>
+               <svg class="h-5 w-5" fill="currentColor" viewBox="0 0 20 20" aria-hidden="true">
+                 <path fill-rule="evenodd" d="M16.338 16.338H13.67V12.16c0-.995-.017-2.277-1.387-2.277-1.39 0-1.601 1.086-1.601 2.207v4.248H8.014v-8.59h2.559v1.174h.037c.356-.675 1.227-1.387 2.526-1.387 2.703 0 3.203 1.778 3.203 4.092v4.711zM5.005 6.575a1.548 1.548 0 11-.003-3.096 1.548 1.548 0 01.003 3.096zm-1.337 9.763H6.34v-8.59H3.667v8.59zM17.668 1H2.328C1.595 1 1 1.581 1 2.298v15.403C1 18.418 1.595 19 2.328 19h15.34c.734 0 1.332-.582 1.332-1.299V2.298C19 1.581 18.402 1 17.668 1z" clip-rule="evenodd" />
+               </svg>
+             </a>
+           </li>
+         </ul>
+       </div>
+     </li>
+
+     <li class="flex flex-col gap-10 pt-12 sm:flex-row">
+       <img class="aspect-[4/5] w-52 flex-none rounded-2xl object-cover" src="NIO-Qiyan-s.png" alt="Qiyan Wang">
+       <div class="max-w-xl flex-auto">
+         <h3 class="text-lg font-semibold leading-8 tracking-tight text-gray-900">Qiyan Wang</h3>
+         <p class="text-base leading-7 text-gray-600">
+	   <em>VP Engineering, Digital Systems of <a href="https://nio.com/">NIO</a></em>
+	 </p>
+         <p class="mt-6 text-base leading-7 text-gray-600">
+	   Qiyan is the representative of Premium Member NIO, where he leads a
+	   global R&amp;D team responsible for Vehicle Operating System,
+	   Connected Vehicle Cloud, Vehicle Digital Architecture, Cyber
+	   Security, and Vehicle Software Integration and Validation. Prior to
+	   NIO, he worked as Principal Scientist at Symantec and Exabeam. He
+	   received his PhD in Computer Science from the University of Illinois
+	   at Urbana-Champaign with research focus on Distributed Systems and
+	   Cyber Security.
+	 </p>
+         <ul role="list" class="mt-6 flex gap-x-6">
+           <li>
+             <a href="#" class="text-gray-400 hover:text-gray-500">
+               <span class="sr-only">X</span>
+               <svg class="h-5 w-5" fill="currentColor" viewBox="0 0 20 20" aria-hidden="true">
+                 <path d="M11.4678 8.77491L17.2961 2H15.915L10.8543 7.88256L6.81232 2H2.15039L8.26263 10.8955L2.15039 18H3.53159L8.87581 11.7878L13.1444 18H17.8063L11.4675 8.77491H11.4678ZM9.57608 10.9738L8.95678 10.0881L4.02925 3.03974H6.15068L10.1273 8.72795L10.7466 9.61374L15.9156 17.0075H13.7942L9.57608 10.9742V10.9738Z" />
+               </svg>
+             </a>
+           </li>
+           <li>
+             <a href="#" class="text-gray-400 hover:text-gray-500">
+               <span class="sr-only">LinkedIn</span>
+               <svg class="h-5 w-5" fill="currentColor" viewBox="0 0 20 20" aria-hidden="true">
+                 <path fill-rule="evenodd" d="M16.338 16.338H13.67V12.16c0-.995-.017-2.277-1.387-2.277-1.39 0-1.601 1.086-1.601 2.207v4.248H8.014v-8.59h2.559v1.174h.037c.356-.675 1.227-1.387 2.526-1.387 2.703 0 3.203 1.778 3.203 4.092v4.711zM5.005 6.575a1.548 1.548 0 11-.003-3.096 1.548 1.548 0 01.003 3.096zm-1.337 9.763H6.34v-8.59H3.667v8.59zM17.668 1H2.328C1.595 1 1 1.581 1 2.298v15.403C1 18.418 1.595 19 2.328 19h15.34c.734 0 1.332-.582 1.332-1.299V2.298C19 1.581 18.402 1 17.668 1z" clip-rule="evenodd" />
+               </svg>
+             </a>
+           </li>
+         </ul>
+       </div>
+     </li>
+
+     <!-- More people... -->
+   </ul>
+ </div>
+</div>
+
+<!--
 
 <h2>The present Governing Board</h2>
 
@@ -102,10 +459,12 @@ redirect_from: /Foundation/Board/home.pml
     href="https://loonwerks.com/people/david-hardin.html">David
     Hardin</a></strong> <span class="person_title_col"><em>Associate Director, <a href="https://rtx.com">Raytheon Technologies</a></em></span>
   </div>
+-->
   <!--
   https://www.linkedin.com/in/david-hardin-385a917/
   http://loonwerks.com/people/david-hardin.html
   -->
+<!--
   <div class="governing-item-text">
     <p>
       Dr. David Hardin is an Associate Director, Systems Engineering
@@ -196,7 +555,250 @@ redirect_from: /Foundation/Board/home.pml
     </p>
   </div>
 </div>
+-->
 
+
+<!-- FIXME: this is just a strawman; need to put actual meetings -->
+<div class="bg-white py-24 sm:py-32">
+  <div class="mx-auto max-w-7xl px-6 lg:px-8">
+    <div class="mx-auto max-w-2xl lg:mx-0">
+      <h2 class="text-3xl font-bold tracking-tight text-gray-900 sm:text-4xl">Meetings</h2>
+      <p class="mt-6 text-lg leading-8 text-gray-600">
+	The Governing Board meetings are normally held in private, i.e. attended
+	by Governing Board Representatives only, although the Governing Board
+	may invite others to participate. However, the Governing Board meeting
+	minutes are publicly accessible.
+      </p>
+      <p class="mt-6 text-lg leading-8 text-gray-600">
+	Confirmed Minutes:
+      </p>
+    </div>
+
+    <ul role="list" class="space-y-2">
+      <li class="relative flex gap-x-4">
+	<div class="absolute -bottom-2 left-0 top-0 flex w-6 justify-center">
+	  <div class="w-px bg-gray-200"></div>
+	</div>
+	<div class="relative flex h-6 w-6 flex-none items-center justify-center bg-white">
+	  <div class="h-1.5 w-1.5 rounded-full bg-gray-100 ring-1 ring-gray-300"></div>
+	</div>
+	<p class="flex-auto py-0.5 text-xs leading-5 text-gray-500">
+	  <a href="200318-minutes-signed.pdf">1<sup>st</sup> meeting of 2020-03-18</a>
+	</p>
+      </li>
+      <li class="relative flex gap-x-4">
+	<div class="absolute left-0 top-0 flex h-6 w-6 justify-center">
+	  <div class="w-px bg-gray-200"></div>
+	</div>
+	<div class="relative flex h-6 w-6 flex-none items-center justify-center bg-white">
+	  <div class="h-1.5 w-1.5 rounded-full bg-gray-100 ring-1 ring-gray-300"></div>
+	</div>
+	<p class="flex-auto py-0.5 text-xs leading-5 text-gray-500">
+	  <a href="201016-minutes-signed.pdf">3<sup>rd</sup> meeting of 2020-10-16</a>
+	</p>
+      </li>
+    </ul>
+    <div class="mx-auto max-w-2xl lg:mx-0">
+      <p class="mt-6 text-lg leading-8 text-gray-600">
+	Unconfirmed Minutes:
+      </p>
+    </div>
+    <ul role="list" class="space-y-2">
+      <li class="relative flex gap-x-4">
+	<div class="absolute -bottom-2 left-0 top-0 flex w-6 justify-center">
+	  <div class="w-px bg-gray-200"></div>
+	</div>
+	<div class="relative flex h-6 w-6 flex-none items-center justify-center bg-white">
+	  <div class="h-1.5 w-1.5 rounded-full bg-gray-100 ring-1 ring-gray-300"></div>
+	</div>
+	<p class="flex-auto py-0.5 text-xs leading-5 text-gray-500">
+	  <a href="200318-minutes-signed.pdf">1<sup>st</sup> meeting of 2020-03-18</a>
+	</p>
+      </li>
+    </ul>
+  </div>
+</div>
+
+
+
+<!-- FIXME: change purple colour -->
+
+<div class="bg-white px-6 py-24 sm:py-32 lg:px-8">
+  <div class="mx-auto max-w-2xl text-center">
+    <h2 class="mt-2 text-4xl font-bold tracking-tight text-gray-900 sm:text-6xl">
+      Board Committees</h2>
+  </div>
+</div>
+
+
+<div class="bg-white py-24 sm:py-32">
+ <div class="mx-auto grid max-w-7xl gap-x-8 gap-y-20 px-6 lg:px-8 xl:grid-cols-3">
+   <div class="max-w-2xl">
+     <h2 class="text-3xl font-bold tracking-tight text-gray-900 sm:text-4xl">Compliance Committee</h2>
+     <p class="mt-6 text-lg leading-8 text-gray-600">
+       The compliance committee proposes rules and licensing conditions for the
+       seL4 trademark, and drives the Interim Endorsement scheme for seL4-based
+       products and services.
+     </p>
+   </div>
+   <ul role="list" class="grid gap-x-8 gap-y-12 sm:grid-cols-2 sm:gap-y-16 xl:col-span-2">
+     <li>
+       <div class="flex items-center gap-x-6">
+         <img class="h-16 w-16 rounded-full" src="TS-June-s.jpg" alt="June Andronick">
+         <div>
+           <h3 class="text-base font-semibold leading-7 tracking-tight text-gray-900">June Andronick</h3>
+           <p class="text-sm font-semibold leading-6 text-indigo-600">
+	     CEO,  <a href="https://proofcraft.systems/">Proofcraft</a></p>
+         </div>
+       </div>
+     </li>
+     <li>
+       <div class="flex items-center gap-x-6">
+         <img class="h-16 w-16 rounded-full" src="TS-Gernot-s.jpg" alt="Gernot Heiser">
+         <div>
+           <h3 class="text-base font-semibold leading-7 tracking-tight text-gray-900">Gernot Heiser</h3>
+           <p class="text-sm font-semibold leading-6 text-indigo-600">
+	     Technology Evangelist, <a title="TS"
+				       href="http://trustworthy.systems/">Trustworthy
+				       Systems</a>
+	   </p>
+         </div>
+       </div>
+     </li>
+     <li>
+       <div class="flex items-center gap-x-6">
+         <img class="h-16 w-16 rounded-full" src="TS-Gerwin-s.jpg" alt="Gerwin Klein">
+         <div>
+           <h3 class="text-base font-semibold leading-7 tracking-tight text-gray-900">Gerwin Klein</h3>
+           <p class="text-sm font-semibold leading-6 text-indigo-600">
+	     Chief Scientist,
+	     <a href="https://proofcraft.systems/">Proofcraft</a>
+	   </p>
+         </div>
+       </div>
+     </li>
+   </ul>
+ </div>
+</div>
+
+
+<div class="bg-white py-24 sm:py-32">
+ <div class="mx-auto grid max-w-7xl gap-x-8 gap-y-20 px-6 lg:px-8 xl:grid-cols-3">
+   <div class="max-w-2xl">
+     <h2 class="text-3xl font-bold tracking-tight text-gray-900 sm:text-4xl">Outreach Committee</h2>
+     <p class="mt-6 text-lg leading-8 text-gray-600">
+       The Outreach Committee is in charge of expanding the membership. It
+       develops material for supporting membership recruitment. Members of the
+       committee will work closely with existing members to make best use of
+       their networks for strategic recruitment of members. The Outreach
+       Committee may co-opt member representatives.
+     </p>
+   </div>
+   <ul role="list" class="grid gap-x-8 gap-y-12 sm:grid-cols-2 sm:gap-y-16 xl:col-span-2">
+     <li>
+       <div class="flex items-center gap-x-6">
+         <img class="h-16 w-16 rounded-full" src="TS-June-s.jpg" alt="June Andronick">
+         <div>
+           <h3 class="text-base font-semibold leading-7 tracking-tight text-gray-900">June Andronick</h3>
+           <p class="text-sm font-semibold leading-6 text-indigo-600">
+	     CEO,  <a href="https://proofcraft.systems/">Proofcraft</a></p>
+         </div>
+       </div>
+     </li>
+     <li>
+       <div class="flex items-center gap-x-6">
+         <img class="h-16 w-16 rounded-full" src="TS-Gernot-s.jpg" alt="Gernot Heiser">
+         <div>
+           <h3 class="text-base font-semibold leading-7 tracking-tight text-gray-900">Gernot Heiser</h3>
+           <p class="text-sm font-semibold leading-6 text-indigo-600">
+	     Technology Evangelist, <a title="TS"
+				       href="http://trustworthy.systems/">Trustworthy
+				       Systems</a>
+	   </p>
+         </div>
+       </div>
+     </li>
+     <li>
+       <div class="flex items-center gap-x-6">
+         <img class="h-16 w-16 rounded-full" src="RTX-David.png" alt="David Hardin">
+         <div>
+           <h3 class="text-base font-semibold leading-7 tracking-tight text-gray-900">David Hardin</h3>
+           <p class="text-sm font-semibold leading-6 text-indigo-600">
+	     Associate Director, <a href="https://rtx.com">Raytheon
+	       Technologies</a>
+	   </p>
+         </div>
+       </div>
+     </li>
+     <li>
+       <div class="flex items-center gap-x-6"> <!-- FIXME: update picture and link -->
+         <img class="h-16 w-16 rounded-full" src="RTX-David.png" alt="David Hardin">
+         <div>
+           <h3 class="text-base font-semibold leading-7 tracking-tight text-gray-900">Boyd Multerer</h3>
+           <p class="text-sm font-semibold leading-6 text-indigo-600">
+	     Founder and CEO, <a href="https://www.kry10.com/">Kry10 Limited</a>
+	   </p>
+         </div>
+       </div>
+     </li>
+     <li>
+       <div class="flex items-center gap-x-6"> <!-- FIXME: update picture and link -->
+         <img class="h-16 w-16 rounded-full" src="RTX-David.png" alt="David Hardin">
+         <div>
+           <h3 class="text-base font-semibold leading-7 tracking-tight text-gray-900">Gregg Wildes</h3>
+           <p class="text-sm font-semibold leading-6 text-indigo-600">
+	     Innovation Director, <a href="https://dornerworks.com/">DornerWorks</a>
+	   </p>
+         </div>
+       </div>
+     </li>
+   </ul>
+ </div>
+</div>
+
+
+
+<div class="bg-white py-24 sm:py-32">
+ <div class="mx-auto grid max-w-7xl gap-x-8 gap-y-20 px-6 lg:px-8 xl:grid-cols-3">
+   <div class="max-w-2xl">
+     <h2 class="text-3xl font-bold tracking-tight text-gray-900 sm:text-4xl">Marketing Committee</h2>
+     <p class="mt-6 text-lg leading-8 text-gray-600">
+       The Marketing Committee is responsible for the external presentation of
+       the Foundation. This includes the look-and-feel of the web site and
+       presentation materials and other branding issues, social media presence
+       and other media liaison.
+     </p>
+   </div>
+   <ul role="list" class="grid gap-x-8 gap-y-12 sm:grid-cols-2 sm:gap-y-16 xl:col-span-2">
+     <li>
+       <div class="flex items-center gap-x-6">
+         <img class="h-16 w-16 rounded-full" src="TS-June-s.jpg" alt="June Andronick">
+         <div>
+           <h3 class="text-base font-semibold leading-7 tracking-tight text-gray-900">June Andronick</h3>
+           <p class="text-sm font-semibold leading-6 text-indigo-600">
+	     CEO,  <a href="https://proofcraft.systems/">Proofcraft</a></p>
+         </div>
+       </div>
+     </li>
+     <li>
+       <div class="flex items-center gap-x-6">
+         <img class="h-16 w-16 rounded-full" src="TS-Gernot-s.jpg" alt="Gernot Heiser">
+         <div>
+           <h3 class="text-base font-semibold leading-7 tracking-tight text-gray-900">Gernot Heiser</h3>
+           <p class="text-sm font-semibold leading-6 text-indigo-600">
+	     Technology Evangelist, <a title="TS"
+				       href="http://trustworthy.systems/">Trustworthy
+				       Systems</a>
+	   </p>
+         </div>
+       </div>
+     </li>
+   </ul>
+ </div>
+</div>
+
+
+<!--
 
 <h2>Board Committees</h2>
 
@@ -243,3 +845,5 @@ presence and other media liaison.</p>
   <li>June Andronick</li>
   <li>Gernot Heiser</li>
 </ul>
+
+-->

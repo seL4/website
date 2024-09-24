@@ -3,7 +3,170 @@
 # SPDX-License-Identifier: CC-BY-SA-4.0
 title: The seL4 Foundation
 redirect_from: /Foundation/home.pml
+layout: card
 ---
+
+
+<!-- FIXME: delete Governance page. Subsumed here -->
+
+<!-- FIXME: more space before the button -->
+
+<div class="px-6 pt-6 sm:pt-8 pb-12 sm:pb-20 lg:px-8 section-borders">
+  <div class="section-max-w text-center">
+    <h1>The seL4 Foundation</h1>
+    <div class="mt-6 sub-heading">
+      <p>
+	The seL4 Foundation is an open, transparent and neutral organisation
+	tasked with growing the seL4 ecosystem.
+      </p>
+      <p>
+	Its focus is on coordinating, directing and standardising development of
+	the seL4 ecosystem in order to reduce barriers to adoption, raising
+	funds for accelerating development, and ensuring clarity of verification
+	claims.
+      </p>
+      <div class="flex justify-center items-center">
+	<img class="object-center h-52 w-52" src="../images/sel4-foundation-logo.svg" alt="seL4 Foundation">
+      </div>
+      <div class="flex justify-center items-center">
+	<!-- member button --> 
+	<a href="{{ '/Foundation/Join/' | relative_url }}" class="button-snd mr-6 md:mr-10">Become a Member</a>
+      </div>
+  </div>
+
+    <h2 class="mt-16 text-3xl font-bold tracking-tight text-gray-900 md:text-4xl">Two main bodies
+    </h2>
+  </div>
+</div>
+
+
+<!-- Main bodies section -->
+<!-- FIXME: have a 2-grid centered (and remove dummy extra cards) -->
+<!-- FIXME: have the charters as links/buttons (allow flexibility in paragraph in box) -->
+<!-- FIXME: have card centered -->
+<!-- FIXME: change icons to appropriate ones, e.g.
+     https://www.shutterstock.com/image-vector/board-room-members-sitting-around-table-257220877
+     https://www.shutterstock.com/image-vector/tech-staff-icon-like-technical-committee-2207238665
+     https://www.shutterstock.com/image-vector/effective-teamwork-icon-black-thin-line-2227180861
+  -->
+
+<div class="card-grid-4">
+  {% include card.html
+  %}
+  {% include card.html
+     icon="light-bulb"
+     title="Governing Board"
+     body="The body in charge of outreach, managing the funds, protecting the
+          brand. It is governed by the seL4 Foundation Fund Charter."
+     link="Board/"
+  %}
+
+  {% include card.html
+     icon="document"
+     title="TSC"
+     body="The Technical Steering Committee, responsible for overseeing all
+          technical aspects of the seL4 project. It is governed by
+          the seL4 Foundation Technical Charter."
+     link="TSC/"
+  %}
+  {% include card.html
+  %}
+</div>
+
+
+<!-- FIXME: center title and sub-text -->
+<!-- FIXME: update text to present tense and revise as required; maybe shorten first item to balance -->
+
+<!-- Principles section -->
+<div class="mx-auto mt-32 max-w-7xl px-6 sm:mt-40 lg:px-8">
+  <div class="mx-auto max-w-2xl lg:mx-0">
+    <h2 class="text-3xl font-bold tracking-tight text-gray-900 sm:text-4xl">Key principles</h2>
+    <p class="mt-6 text-lg leading-8 text-gray-600">
+      The seL4 Foundation is established as a project
+      under <a href="https://www.linuxfoundation.org">the Linux
+      Foundation</a>. It is designed to fulfill the following key principles.
+    </p>
+  </div>
+  <dl class="mx-auto mt-16 grid max-w-2xl grid-cols-1 gap-x-8 gap-y-16 text-base leading-7 sm:grid-cols-2 lg:mx-0 lg:max-w-none lg:grid-cols-3">
+    <div>
+      <dt class="font-semibold text-gray-900">
+	Neutral and community-based
+      </dt>
+      <dd class="mt-1 text-gray-600">
+	The seL4 Foundation will provide a long-term, independent support for
+	the seL4 kernel and the seL4 ecosystem, by enabling the collaborative
+	community-based development, availability and adoption of the seL4
+	kernel. This includes providing a familiar structure (i.e., under The
+	Linux Foundation) for membership and raising funds to support its
+	activities, and building the community of developers, adopters,
+	training, and expertise. The seL4 Foundation will aim to represent the
+	perspectives of all main actors of the seL4 community (kernel
+	developers, kernel verifiers, ecosystem developers and adopters) in the
+	technical and general governance of the seL4 kernel and the&nbsp;seL4
+	Foundation.
+      </dd>
+    </div>
+    <div>
+      <dt class="font-semibold text-gray-900">
+	Adoption growth
+      </dt>
+      <dd class="mt-1 text-gray-600">
+	The seL4 Foundation will enable and grow adoption of seL4 by supporting
+	the evolution and verification of the seL4 kernel and supporting the
+	growth of the seL4 ecosystem needed to ease the development of
+	seL4-based systems.
+      </dd>
+    </div>
+    <div>
+      <dt class="font-semibold text-gray-900">
+	Brand promotion and protection
+      </dt>
+      <dd class="mt-1 text-gray-600">
+	The seL4 Foundation will provide official releases of the seL4 kernel
+	with clear associated verification statements, to promote the use of
+	seL4 as a competitive advantage, with clear traceability to the sources
+	of the code and the proofs.
+      </dd>
+    </div>
+  </dl>
+</div>
+
+
+<!-- fixme: add a "learn more" button to make explicit that there's a separate page on this? -->
+
+
+<!-- Members section -->
+<div class="logo-cloud">
+  <a href="Membership/">
+    <h2>Meet our members</h2>
+    <div class="inline-flex flex-nowrap">
+{%- assign members = site.data.members.premium |
+  concat: site.data.members.general |
+  concat: site.data.members.associate -%}
+      <ul class="logo-grid">
+{%- assign members = members | sort: "name" -%}
+{%- for member in members %}
+        <li>
+          <img src="{{ 'Membership/LOGOS/' | append: member.logo }}" alt="{{ member.name }}" width="158px">
+        </li>
+{%- endfor -%}
+      </ul>
+      <!-- repeat for animation reset -->
+      <ul class="logo-grid" aria-hidden="true">
+{%- assign members = members | sort: "name" -%}
+{%- for member in members %}
+        <li>
+          <img src="{{ 'Membership/LOGOS/' | append: member.logo }}" alt="{{ member.name }}" width="158px">
+        </li>
+{%- endfor -%}
+      </ul>
+    </div>
+  </a>
+</div>
+
+
+<!--
+
 <div>
   <p>
     We have taken an exciting step to expand the seL4
@@ -89,3 +252,4 @@ redirect_from: /Foundation/home.pml
     </li>
   </ul>
 </div>
+-->
