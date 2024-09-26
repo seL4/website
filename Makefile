@@ -6,7 +6,8 @@ SHELL := bash
 MAKEFLAGS += --warn-undefined-variables --no-builtin-rules
 .DELETE_ON_ERROR:
 .SUFFIXES:
-.PHONY: help build serve debug preview clean doctor checklinks update
+.PHONY: help build serve debug preview clean doctor checklinks update \
+	on_seL4
 
 help:
 	@echo -e "Usage: make <target>. Available seL4 website targets:\n\
@@ -39,6 +40,9 @@ debug: serve
 preview: JEKYLL_ENV := development
 preview: SERVE_HOST := --config "_config.yml,_preview.yml" $(SERVE_HOST)
 preview: build
+
+on_seL4: SERVE_HOST := --config "_config.yml,_on_seL4.yml"
+on_seL4: build
 
 clean doctor:
 	@bundle exec jekyll $@
