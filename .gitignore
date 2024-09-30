@@ -2,6 +2,7 @@
 *.swp
 _site
 _preview
+_site_on_seL4
 .sass-cache
 .jekyll-cache
 .jekyll-metadata
