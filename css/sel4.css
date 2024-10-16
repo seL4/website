@@ -354,6 +354,54 @@
    font-weight: bold;
  }
 
+/* REMOVE - NEW CSS MEMBER -------
+/* three members */
+.sponsors-3 {
+  max-width:500px;
+  margin-left: auto;
+  margin-right: auto;
+
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 10px;
+  grid-template-rows: 100px 20px 20px;
+  grid-template-areas:
+    "logo1 logo2 logo3"
+    "name1 name2 name3"
+    "tier1 tier2 tier3";
+  align-items: center;
+}
+.sponsor2-pic1 {
+  grid-area: logo1;
+  text-align: center;
+}
+.sponsor2-pic2 {
+  grid-area: logo2;
+  text-align: center;
+}
+.sponsor2-name1 {
+  grid-area: name1;
+  text-align: center;
+}
+.sponsor2-name2 {
+  grid-area: d;
+  text-align: center;
+}
+.sponsor2-tier1 {
+  grid-area: tier1;
+  text-align: center;
+  font-size:0.8em;
+}
+.sponsor2-tier2 {
+  grid-area: tier2;
+  text-align: center;
+  font-size:0.8em;
+}
+
+
+
+/* REMOVE _____________
+
  /* note the plural */
  .sponsors {
    display: grid;
@@ -430,11 +478,11 @@
   grid-area: logo1;
   text-align: center;
 }
-.sponsor2-item2 {
+.sponsor2-pic2 {
   grid-area: logo2;
   text-align: center;
 }
-.sponsor2-item3 {
+.sponsor2-name1 {
   grid-area: name1;
   text-align: center;
 }
@@ -447,7 +495,7 @@
   text-align: center;
   font-size:0.8em;
 }
-.sponsor2-item6 {
+.sponsor2-tier2 {
   grid-area: tier2;
   text-align: center;
   font-size:0.8em;
