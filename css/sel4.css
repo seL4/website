@@ -356,48 +356,61 @@
 
 /* REMOVE - NEW CSS MEMBER -------
 /* three members */
-.sponsors-3 {
+.members-3 {
   max-width:500px;
   margin-left: auto;
   margin-right: auto;
+  padding-top: 50px;
 
   display: grid;
-  grid-template-columns: repeat(2, 1fr);
+  grid-template-columns: repeat(3, 1fr);
   gap: 10px;
   grid-template-rows: 100px 20px 20px;
   grid-template-areas:
     "logo1 logo2 logo3"
     "name1 name2 name3"
-    "tier1 tier2 tier3";
+    "info1 info2 info3";
   align-items: center;
 }
-.sponsor2-pic1 {
+.member3-pic1 {
   grid-area: logo1;
   text-align: center;
 }
-.sponsor2-pic2 {
+.member3-pic2 {
   grid-area: logo2;
   text-align: center;
 }
-.sponsor2-name1 {
+.member3-pic3 {
+  grid-area: logo3;
+  text-align: center;
+}
+.member3-name1 {
   grid-area: name1;
   text-align: center;
 }
-.sponsor2-name2 {
-  grid-area: d;
+.member3-name2 {
+  grid-area: name2;
   text-align: center;
 }
-.sponsor2-tier1 {
+.member3-name3 {
+  grid-area: name3;
+  text-align: center;
+}
+.member3-tier1 {
   grid-area: tier1;
   text-align: center;
   font-size:0.8em;
 }
-.sponsor2-tier2 {
+.member3-tier2 {
   grid-area: tier2;
   text-align: center;
   font-size:0.8em;
 }
-
+.member3-tier3 {
+  grid-area: tier3;
+  text-align: center;
+  font-size:0.8em;
+}
 
 
 /* REMOVE _____________
@@ -470,11 +483,11 @@
   grid-template-rows: 100px 20px 20px;
   grid-template-areas:
     "logo1 logo2"
-    "name1 d"
+    "name1 name2"
     "tier1 tier2";
   align-items: center;
 }
-.sponsor2-item1 {
+.sponsor2-pic1 {
   grid-area: logo1;
   text-align: center;
 }
@@ -486,11 +499,11 @@
   grid-area: name1;
   text-align: center;
 }
-.sponsor2-item4 {
-  grid-area: d;
+.sponsor2-name2 {
+  grid-area: name2;
   text-align: center;
 }
-.sponsor2-item5 {
+.sponsor2-tier1 {
   grid-area: tier1;
   text-align: center;
   font-size:0.8em;
