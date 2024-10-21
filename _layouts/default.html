@@ -80,6 +80,12 @@
       <a href="https://www.linkedin.com/company/sel4"><img style="height:36px; padding-left:5px; padding-top:2px; padding-bottom:2px;" src={{ "/images/icons/linkedin.svg" | relative_url }} alt="linkedin icon"></a>
       <br>
       <br>
+{% if site.on_seL4 %}
+  <a href="/Info/Website/">About this web server</a>
+  Served by <a href="https://micropython.org/">MicroPython</a>
+on <a href="https://lionsos.org/"> LionsOS</a> on seL4.
+<br/>
+{% endif %}
     Copyright &copy; 2024 seL4 Project a Series of LF Projects, LLC.<br/>
       seL4 is a trademark of LF Projects, LLC.<br/>
       For trademark usage guidelines, privacy and cookie policies,
