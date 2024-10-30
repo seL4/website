@@ -35,43 +35,38 @@ redirect_from: /Foundation/TSC/home.pml
 -->
 
 
-<!-- FIXME: change tab style to be just line, no boxes, and make it work -->
+<!-- FIXME: make tabs work -->
 
-<div>
+<!--
+<div class="mx-auto max-w-3xl">
  <div class="sm:hidden">
-   <label for="tabs" class="sr-only">Select a tab</label>
-   <!-- Use an "onChange" listener to redirect the user to the selected tab URL. -->
-   <select id="tabs" name="tabs" class="block w-full rounded-md border-gray-300 focus:border-indigo-500 focus:ring-indigo-500">
+   <label for="tabs" class="sr-only">Select a tab</label>-->
+   <!-- Use an "onChange" listener to redirect the user to the selected tab URL. --><!--
+   <select id="tabs" name="tabs" class="block w-full rounded-md border-gray-300 py-2 pl-3 pr-10 text-base focus:border-indigo-500 focus:outline-none focus:ring-indigo-500 sm:text-sm">
      <option selected>TSC Members</option>
      <option>Meetings</option>
      <option>Joining the TSC</option>
    </select>
  </div>
  <div class="hidden sm:block">
-   <nav class="isolate flex divide-x divide-gray-200 rounded-lg shadow" aria-label="Tabs">
-     <!-- Current: "text-gray-900", Default: "text-gray-500 hover:text-gray-700" -->
-     <a href="#tsc-members" class="group relative min-w-0 flex-1 overflow-hidden rounded-l-lg bg-white px-4 py-4 text-center text-sm font-medium text-gray-900 hover:bg-gray-50 focus:z-10" aria-current="page">
-       <span>TSC Members</span>
-       <span aria-hidden="true" class="absolute inset-x-0 bottom-0 h-0.5 bg-indigo-500"></span>
-     </a>
-     <a href="#" class="group relative min-w-0 flex-1 overflow-hidden bg-white px-4 py-4 text-center text-sm font-medium text-gray-500 hover:bg-gray-50 hover:text-gray-700 focus:z-10">
-       <span>Meetings</span>
-       <span aria-hidden="true" class="absolute inset-x-0 bottom-0 h-0.5 bg-transparent"></span>
-     </a>
-     <a href="#" class="group relative min-w-0 flex-1 overflow-hidden rounded-r-lg bg-white px-4 py-4 text-center text-sm font-medium text-gray-500 hover:bg-gray-50 hover:text-gray-700 focus:z-10">
-       <span>Joining the TSC</span>
-       <span aria-hidden="true" class="absolute inset-x-0 bottom-0 h-0.5 bg-transparent"></span>
-     </a>
-   </nav>
+   <div class="border-b border-gray-200">
+     <nav class="-mb-px flex space-x-8" aria-label="Tabs">-->
+       <!-- Current: "border-indigo-500 text-indigo-600", Default: "border-transparent text-gray-500 hover:border-gray-300 hover:text-gray-700" --><!--
+       <a href="#" class="whitespace-nowrap border-b-2 border-indigo-500 px-1 py-4 text-sm font-medium text-indigo-600" aria-current="page">TSC Members</a>
+       <a href="#" class="whitespace-nowrap border-b-2 border-transparent px-1 py-4 text-sm font-medium text-gray-500 hover:border-gray-300 hover:text-gray-700">Meetings</a>
+       <a href="#" class="whitespace-nowrap border-b-2 border-transparent px-1 py-4 text-sm font-medium text-gray-500 hover:border-gray-300 hover:text-gray-700">Joining the TSC</a>
+     </nav>
+   </div>
  </div>
 </div>
+-->
 
 
 <!-- FIXME: make pictures square -->
 <!-- FIXME: order?? -->
 
 <div class="bg-white py-24 sm:py-32">
-  <div class="mx-auto max-w-7xl px-6 lg:px-8">
+  <div class="mx-auto max-w-3xl px-6 lg:px-8">
     <div class="mx-auto max-w-2xl lg:mx-0">
       <h2 class="text-3xl font-bold tracking-tight text-gray-900 sm:text-4xl">Members</h2>
       <p class="mt-6 text-lg leading-8 text-gray-600">
@@ -85,42 +80,42 @@ redirect_from: /Foundation/TSC/home.pml
     <ul role="list" class="mx-auto mt-20 grid max-w-2xl grid-cols-2 gap-x-8 gap-y-16 text-center sm:grid-cols-3 md:grid-cols-4 lg:mx-0 lg:max-w-none lg:grid-cols-5 xl:grid-cols-6">
       <li>
 	<a href="https://au.linkedin.com/in/yanyan-shen-1495547">
-	  <img class="mx-auto h-24 w-24 rounded-full" src="../../images/tsc/yanyan.jpg" alt="Yanyan Shen">
+	  <img class="mx-auto h-24 w-24 rounded-full" src="../../images/tsc/yanyan-square.jpg" alt="Yanyan Shen">
 	  <h3 class="mt-6 text-base font-semibold leading-7 tracking-tight text-gray-900">Yanyan Shen</h3>
 	  <p class="text-sm leading-6 text-gray-600">NIO</p>
 	</a>
       </li>
       <li>
 	<a href="https://www.linkedin.com/in/mbrcknl">
-	  <img class="mx-auto h-24 w-24 rounded-full" src="../../images/tsc/matthew.jpg" alt="Matthew Brecknell">
+	  <img class="mx-auto h-24 w-24 rounded-full" src="../../images/tsc/matthew-square.jpg" alt="Matthew Brecknell">
 	  <h3 class="mt-6 text-base font-semibold leading-7 tracking-tight text-gray-900">Matthew Brecknell</h3>
 	  <p class="text-sm leading-6 text-gray-600">Kry10</p>
 	</a>
       </li>
       <li>
 	<a href="https://trustworthy.systems/people/?cn=Ihor+Kuz">
-	  <img class="mx-auto h-24 w-24 rounded-full" src="../../images/tsc/ihor.jpg" alt="Ihor Kuz">
+	  <img class="mx-auto h-24 w-24 rounded-full" src="../../images/tsc/ihor-square.jpg" alt="Ihor Kuz">
 	  <h3 class="mt-6 text-base font-semibold leading-7 tracking-tight text-gray-900">Ihor Kuz</h3>
 	  <p class="text-sm leading-6 text-gray-600">Kry10</p>
 	</a>
       </li>
       <li>
 	<a href="https://trustworthy.systems/people/?cn=Gerwin+Klein">
-	  <img class="mx-auto h-24 w-24 rounded-full" src="../Board/TS-Gerwin-s.jpg" alt="Gerwin Klein">
+	  <img class="mx-auto h-24 w-24 rounded-full" src="../Board/TS-Gerwin-square.jpg" alt="Gerwin Klein">
 	  <h3 class="mt-6 text-base font-semibold leading-7 tracking-tight text-gray-900">Gerwin Klein (Chair)</h3>
 	  <p class="text-sm leading-6 text-gray-600">Proofcraft</p>
 	</a>
       </li>
       <li>
 	<a href="https://trustworthy.systems/people/?cn=Rafal+Kolanski">
-	  <img class="mx-auto h-24 w-24 rounded-full" src="../../images/tsc/rafal.jpg" alt="Rafal Kolanski">
+	  <img class="mx-auto h-24 w-24 rounded-full" src="../../images/tsc/rafal-square.jpg" alt="Rafal Kolanski">
 	  <h3 class="mt-6 text-base font-semibold leading-7 tracking-tight text-gray-900">Rafal Kolanski</h3>
 	  <p class="text-sm leading-6 text-gray-600">Proofcraft</p>
 	</a>
       </li>
       <li>
 	<a href="https://trustworthy.systems/people/?alumni=True">
-	  <img class="mx-auto h-24 w-24 rounded-full" src="../../images/tsc/corey.jpg" alt="Corey Lewis">
+	  <img class="mx-auto h-24 w-24 rounded-full" src="../../images/tsc/corey-square.jpg" alt="Corey Lewis">
 	  <h3 class="mt-6 text-base font-semibold leading-7 tracking-tight text-gray-900">Corey Lewis</h3>
 	  <p class="text-sm leading-6 text-gray-600">Proofcraft</p>
 	</a>
@@ -134,28 +129,28 @@ redirect_from: /Foundation/TSC/home.pml
       </li>
       <li>
 	<a href="https://trustworthy.systems/people/?alumni=True">
-	  <img class="mx-auto h-24 w-24 rounded-full" src="../../images/tsc/kent.jpg" alt="Kent Mcleod">
+	  <img class="mx-auto h-24 w-24 rounded-full" src="../../images/tsc/kent-square.jpg" alt="Kent Mcleod">
 	  <h3 class="mt-6 text-base font-semibold leading-7 tracking-tight text-gray-900">Kent Mcleod</h3>
 	  <p class="text-sm leading-6 text-gray-600">Kry10</p>
 	</a>
       </li>
       <li>
 	<a href="https://trustworthy.systems/people/?cn=June+Andronick">
-	  <img class="mx-auto h-24 w-24 rounded-full" src="../Board/TS-June-s.jpg" alt="June Andronick">
+	  <img class="mx-auto h-24 w-24 rounded-full" src="../Board/TS-June-square.jpg" alt="June Andronick">
 	  <h3 class="mt-6 text-base font-semibold leading-7 tracking-tight text-gray-900">June Andronick</h3>
 	  <p class="text-sm leading-6 text-gray-600">Proofcraft</p>
 	</a>
       </li>
       <li>
 	<a href="https://trustworthy.systems/people/?cn=Kevin+Elphinstone">
-	  <img class="mx-auto h-24 w-24 rounded-full" src="../../images/tsc/kevin.jpg" alt="Kevin Elphinstone">
+	  <img class="mx-auto h-24 w-24 rounded-full" src="../../images/tsc/kevin-square.jpg" alt="Kevin Elphinstone">
 	  <h3 class="mt-6 text-base font-semibold leading-7 tracking-tight text-gray-900">Kevin Elphinstone</h3>
 	  <p class="text-sm leading-6 text-gray-600">UNSW</p>
 	</a>
       </li>
       <li>
 	<a href="https://trustworthy.systems/people/?cn=Gernot+Heiser">
-	  <img class="mx-auto h-24 w-24 rounded-full" src="../Board/TS-Gernot-s.jpg" alt="Gernot Heiser">
+	  <img class="mx-auto h-24 w-24 rounded-full" src="../Board/TS-Gernot-square.jpg" alt="Gernot Heiser">
 	  <h3 class="mt-6 text-base font-semibold leading-7 tracking-tight text-gray-900">Gernot Heiser</h3>
 	  <p class="text-sm leading-6 text-gray-600">UNSW</p>
 	</a>
@@ -279,7 +274,7 @@ redirect_from: /Foundation/TSC/home.pml
 
 
 <div class="bg-white py-24 sm:py-32">
-  <div class="mx-auto max-w-7xl px-6 lg:px-8">
+  <div class="mx-auto max-w-3xl px-6 lg:px-8">
     <div class="mx-auto max-w-2xl lg:mx-0">
       <h2 class="text-3xl font-bold tracking-tight text-gray-900 sm:text-4xl">Meetings</h2>
       <p class="mt-6 text-lg leading-8 text-gray-600">
@@ -435,7 +430,7 @@ The following meetings and decisions have so far been recorded:</p>
 
 
 <div class="bg-white py-24 sm:py-32">
-  <div class="mx-auto max-w-7xl px-6 lg:px-8">
+  <div class="mx-auto max-w-3xl px-6 lg:px-8">
     <div class="mx-auto max-w-2xl lg:mx-0">
       <h2 class="text-3xl font-bold tracking-tight text-gray-900 sm:text-4xl">Joining the TSC</h2>
       <p class="mt-6 text-lg leading-8 text-gray-600">
@@ -473,46 +468,6 @@ The following meetings and decisions have so far been recorded:</p>
     </div>
   </div>
 </div>
-  
-
-<div class="bg-white px-6 py-32 lg:px-8">
- <div class="mx-auto max-w-3xl text-base leading-7 text-gray-700">
-   <h2 class="mt-2 text-3xl font-bold tracking-tight text-gray-900 sm:text-4xl">Joining the TSC</h2>
-   <p class="mt-6 text-xl leading-8">
-     TSC members are the technical leadership of the foundation. New members can
-     join the TSC by decision (vote) of the TSC, and potential new members can
-     be nominated by any current TSC member.
-   </p>
-   <div class="mt-10 max-w-2xl">
-     <ul role="list" class="mt-8 max-w-xl space-y-8 text-gray-600">
-       <li class="flex gap-x-3">
-         <svg class="mt-1 h-5 w-5 flex-none text-indigo-600" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true">
-           <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.857-9.809a.75.75 0 00-1.214-.882l-3.483 4.79-1.88-1.88a.75.75 0 10-1.06 1.061l2.5 2.5a.75.75 0 001.137-.089l4-5.5z" clip-rule="evenodd" />
-         </svg>
-         <span> New members are generally expected to be active current
-	contributors with the technical knowledge required for the role and a
-	vision for the future of the seL4 ecosystem.</span>
-       </li>
-       <li class="flex gap-x-3">
-         <svg class="mt-1 h-5 w-5 flex-none text-indigo-600" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true">
-           <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.857-9.809a.75.75 0 00-1.214-.882l-3.483 4.79-1.88-1.88a.75.75 0 10-1.06 1.061l2.5 2.5a.75.75 0 001.137-.089l4-5.5z" clip-rule="evenodd" />
-         </svg>
-         <span>There are separate roles for repository write access (Committer),
-	organisational admin access (SysAdmin), and the ability to approve pull
-	request and manage issues (Reviewer).</span>
-       </li>
-       <li class="flex gap-x-3">
-         <svg class="mt-1 h-5 w-5 flex-none text-indigo-600" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true">
-           <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.857-9.809a.75.75 0 00-1.214-.882l-3.483 4.79-1.88-1.88a.75.75 0 10-1.06 1.061l2.5 2.5a.75.75 0 001.137-.089l4-5.5z" clip-rule="evenodd" />
-         </svg>
-         <span>If you would like to nominate someone for any of these roles,
-	please email the chair (Gerwin Klein) of the TSC.</span>
-       </li>
-     </ul>
-   </div>
- </div>
-</div>
-
 
 
 
