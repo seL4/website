@@ -31,6 +31,7 @@ redirect_from: /Foundation/Board/home.pml
 </div>
 -->
 
+
 <div class="bg-white px-6 py-24 sm:py-32 lg:px-8">
   <div class="mx-auto max-w-2xl text-center">
     <p class="text-base font-semibold leading-7 text-indigo-600"><a href="../">The seL4 Foundation</a></p>
@@ -47,38 +48,84 @@ redirect_from: /Foundation/Board/home.pml
 </div>
 
 
-<!-- FIXME: change tab style to be just line, no boxes, and make it work -->
+<!-- FIXME:  make tabs work -->
 
-<div>
- <div class="sm:hidden">
-   <label for="tabs" class="sr-only">Select a tab</label>
-   <!-- Use an "onChange" listener to redirect the user to the selected tab URL. -->
-   <select id="tabs" name="tabs" class="block w-full rounded-md border-gray-300 focus:border-indigo-500 focus:ring-indigo-500">
-     <option selected>Board Members</option>
-     <option>Meetings</option>
-     <option>Committees</option>
-   </select>
- </div>
- <div class="hidden sm:block">
-   <nav class="isolate flex divide-x divide-gray-200 rounded-lg shadow" aria-label="Tabs">
-     <!-- Current: "text-gray-900", Default: "text-gray-500 hover:text-gray-700" -->
-     <a href="#tsc-members" class="group relative min-w-0 flex-1 overflow-hidden rounded-l-lg bg-white px-4 py-4 text-center text-sm font-medium text-gray-900 hover:bg-gray-50 focus:z-10" aria-current="page">
-       <span>Board Members</span>
-       <span aria-hidden="true" class="absolute inset-x-0 bottom-0 h-0.5 bg-indigo-500"></span>
-     </a>
-     <a href="#" class="group relative min-w-0 flex-1 overflow-hidden bg-white px-4 py-4 text-center text-sm font-medium text-gray-500 hover:bg-gray-50 hover:text-gray-700 focus:z-10">
-       <span>Meetings</span>
-       <span aria-hidden="true" class="absolute inset-x-0 bottom-0 h-0.5 bg-transparent"></span>
-     </a>
-     <a href="#" class="group relative min-w-0 flex-1 overflow-hidden rounded-r-lg bg-white px-4 py-4 text-center text-sm font-medium text-gray-500 hover:bg-gray-50 hover:text-gray-700 focus:z-10">
-       <span>Committees</span>
-       <span aria-hidden="true" class="absolute inset-x-0 bottom-0 h-0.5 bg-transparent"></span>
-     </a>
-   </nav>
- </div>
-</div>
+
+<!-- <div class="mx-auto max-w-3xl"> -->
+<!--  <div class="sm:hidden"> -->
+<!--    <label for="tabs" class="sr-only">Select a tab</label>-\-> -->
+<!--    <\!-- Use an "onChange" listener to redirect the user to the selected tab URL. -\-> -->
+<!--    <select id="tabs" name="tabs" class="block w-full rounded-md border-gray-300 py-2 pl-3 pr-10 text-base focus:border-indigo-500 focus:outline-none focus:ring-indigo-500 sm:text-sm"> -->
+<!--      <option selected>Board Members</option> -->
+<!--      <option>Meetings</option> -->
+<!--      <option>Committees</option> -->
+<!--    </select> -->
+<!--  </div> -->
+<!--  <div class="hidden sm:block"> -->
+<!--    <div class="border-b border-gray-200"> -->
+<!--      <nav class="-mb-px flex space-x-8" aria-label="Tabs"> -->
+<!--        <\!-- Current: "border-indigo-500 text-indigo-600", Default: "border-transparent text-gray-500 hover:border-gray-300 hover:text-gray-700" -\-> -->
+<!--        <a href="#" class="whitespace-nowrap border-b-2 border-indigo-500 px-1 py-4 text-sm font-medium text-indigo-600" aria-current="page">Board Members</a> -->
+<!--        <a href="#" class="whitespace-nowrap border-b-2 border-transparent px-1 py-4 text-sm font-medium text-gray-500 hover:border-gray-300 hover:text-gray-700">Meetings</a> -->
+<!--        <a href="#" class="whitespace-nowrap border-b-2 border-transparent px-1 py-4 text-sm font-medium text-gray-500 hover:border-gray-300 hover:text-gray-700">Committees</a> -->
+<!--      </nav> -->
+<!--    </div> -->
+<!--  </div> -->
+<!-- </div> -->
+
+
 
 <!-- FIXME: change style for board members list, currently too big. Remove social media links -->
+
+<!--
+<div class="bg-white py-24 sm:py-32">
+ <div class="mx-auto max-w-2xl px-6 lg:px-8">
+   <div class="mx-auto max-w-2xl sm:text-center">
+     <h2 class="text-3xl font-bold tracking-tight text-gray-900 sm:text-4xl">Members</h2>
+     <p class="mt-6 text-lg leading-8 text-gray-600">
+       The Governing Board of the <a title="seL4 Foundation" href="../">seL4
+	  Foundation</a> consists of: the Founders of the seL4 technology (June
+	  Andronick, Gerwin Klein and Gernot Heiser); a representative appointed
+	  by each Premium Member; a representative elected by General Members;
+	  the Chair of the Technical Steering Committee.
+     </p>
+   </div>
+   <ul role="list" class="mx-auto mt-20 grid max-w-2xl grid-cols-1 gap-x-6 gap-y-20 sm:grid-cols-2 lg:max-w-4xl lg:gap-x-8 xl:max-w-none">
+     <li class="flex flex-col gap-6 xl:flex-row">
+       <img class="aspect-[4/5] w-52 flex-none rounded-2xl object-cover" src="TS-Gernot-square.jpg" alt="Gernot Heiser">
+       <div class="flex-auto">
+         <h3 class="text-lg font-semibold leading-8 tracking-tight text-gray-900">Gernot Heiser (Chair)</h3>
+         <p class="text-base leading-7 text-gray-600">
+	     <em>Technology Evangelist, <a title="TS"
+					 href="http://trustworthy.systems/">Trustworthy
+					 Systems</a></em>
+	 </p>
+         <p class="mt-6 text-base leading-7 text-gray-600">
+	   Gernot is the Founder of the Trustworthy Systems Research Group (TS),
+	   which created seL4. He is Scientia Professor and John Lions Chair of
+	   Operating Systems at <a href="https://unsw.edu.au/">UNSW Sydney</a>,
+	   where he has been teaching operating systems and leading research on
+	   L4 microkernels for more than 25 years. Besides that, his focus is on
+	   transferring TS technology to the real world. He was the founder and
+	   CTO of Open Kernel Labs and is presently serving as Chief Scientist
+	   (Software) at <a href="https://www.hensoldt-cyber.com/">HENSOLDT
+	   Cyber</a>. Gernot holds a PhD from ETH Zurich and is a Fellow of
+	   the <a href="https://acm.org/">ACM</a>,
+	   the <a href="https://ieee.org/">IEEE</a> and
+	   the <a href="https://atse.org.au/">Australian Academy of Technology
+	   and Engineering</a> (ATSE). Jointly with June and Gerwin he won
+	   the <a href="https://www.sigops.org/awards/hof/">ACM SIGOPS
+	   Hall-of-Fame award</a> in 2019.
+	 </p>
+       </div>
+     </li>
+-->
+     <!-- More people... --><!--
+   </ul>
+ </div>
+</div>
+-->
+
 
 <div class="bg-white py-24 md:py-32">
   <div class="mx-auto grid max-w-7xl grid-cols-1 gap-x-8 gap-y-20 px-6 lg:px-8 xl:grid-cols-5">
@@ -100,7 +147,7 @@ redirect_from: /Foundation/Board/home.pml
    <ul role="list" class="-mt-12 space-y-12 divide-y divide-gray-200 xl:col-span-3">
 
      <li class="flex flex-col gap-10 pt-12 sm:flex-row">
-       <img class="aspect-[4/5] w-52 flex-none rounded-2xl object-cover" src="TS-Gernot-s.jpg" alt="Gernot Heiser">
+       <img class="aspect-[4/5] w-52 flex-none rounded-2xl object-cover" src="TS-Gernot-square.jpg" alt="Gernot Heiser">
        <div class="max-w-xl flex-auto">
          <h3 class="text-lg font-semibold leading-8 tracking-tight text-gray-900">Gernot Heiser (Chair)</h3>
          <p class="text-base leading-7 text-gray-600">
@@ -147,7 +194,7 @@ redirect_from: /Foundation/Board/home.pml
      </li>
 
      <li class="flex flex-col gap-10 pt-12 sm:flex-row">
-       <img class="aspect-[4/5] w-52 flex-none rounded-2xl object-cover" src="TS-June-s.jpg" alt="June Andronick" >
+       <img class="aspect-[4/5] w-52 flex-none rounded-2xl object-cover" src="TS-June-square.jpg" alt="June Andronick" >
        <div class="max-w-xl flex-auto">
          <h3 class="text-lg font-semibold leading-8 tracking-tight text-gray-900">June Andronick (CEO and Treasurer)</h3>
          <p class="text-base leading-7 text-gray-600">
@@ -185,7 +232,7 @@ redirect_from: /Foundation/Board/home.pml
      </li>
 
      <li class="flex flex-col gap-10 pt-12 sm:flex-row">
-       <img class="aspect-[4/5] w-52 flex-none rounded-2xl object-cover" src="RTX-David.png" alt="David Hardin" >
+       <img class="aspect-[4/5] w-52 flex-none rounded-2xl object-cover" src="RTX-David-square.png" alt="David Hardin" >
        <div class="max-w-xl flex-auto">
          <h3 class="text-lg font-semibold leading-8 tracking-tight text-gray-900">David Hardin</h3>
          <p class="text-base leading-7 text-gray-600">
@@ -259,7 +306,7 @@ redirect_from: /Foundation/Board/home.pml
      </li>
 
      <li class="flex flex-col gap-10 pt-12 sm:flex-row">
-       <img class="aspect-[4/5] w-52 flex-none rounded-2xl object-cover" src="TS-Gerwin-s.jpg" alt="Gerwin Klein">
+       <img class="aspect-[4/5] w-52 flex-none rounded-2xl object-cover" src="TS-Gerwin-square.jpg" alt="Gerwin Klein">
        <div class="max-w-xl flex-auto">
          <h3 class="text-lg font-semibold leading-8 tracking-tight text-gray-900">Gerwin Klein</h3>
          <p class="text-base leading-7 text-gray-600">
@@ -644,7 +691,7 @@ redirect_from: /Foundation/Board/home.pml
    <ul role="list" class="grid gap-x-8 gap-y-12 sm:grid-cols-2 sm:gap-y-16 xl:col-span-2">
      <li>
        <div class="flex items-center gap-x-6">
-         <img class="h-16 w-16 rounded-full" src="TS-June-s.jpg" alt="June Andronick">
+         <img class="h-16 w-16 rounded-full" src="TS-June-square.jpg" alt="June Andronick">
          <div>
            <h3 class="text-base font-semibold leading-7 tracking-tight text-gray-900">June Andronick</h3>
            <p class="text-sm font-semibold leading-6 text-indigo-600">
@@ -654,7 +701,7 @@ redirect_from: /Foundation/Board/home.pml
      </li>
      <li>
        <div class="flex items-center gap-x-6">
-         <img class="h-16 w-16 rounded-full" src="TS-Gernot-s.jpg" alt="Gernot Heiser">
+         <img class="h-16 w-16 rounded-full" src="TS-Gernot-square.jpg" alt="Gernot Heiser">
          <div>
            <h3 class="text-base font-semibold leading-7 tracking-tight text-gray-900">Gernot Heiser</h3>
            <p class="text-sm font-semibold leading-6 text-indigo-600">
@@ -667,7 +714,7 @@ redirect_from: /Foundation/Board/home.pml
      </li>
      <li>
        <div class="flex items-center gap-x-6">
-         <img class="h-16 w-16 rounded-full" src="TS-Gerwin-s.jpg" alt="Gerwin Klein">
+         <img class="h-16 w-16 rounded-full" src="TS-Gerwin-square.jpg" alt="Gerwin Klein">
          <div>
            <h3 class="text-base font-semibold leading-7 tracking-tight text-gray-900">Gerwin Klein</h3>
            <p class="text-sm font-semibold leading-6 text-indigo-600">
@@ -697,7 +744,7 @@ redirect_from: /Foundation/Board/home.pml
    <ul role="list" class="grid gap-x-8 gap-y-12 sm:grid-cols-2 sm:gap-y-16 xl:col-span-2">
      <li>
        <div class="flex items-center gap-x-6">
-         <img class="h-16 w-16 rounded-full" src="TS-June-s.jpg" alt="June Andronick">
+         <img class="h-16 w-16 rounded-full" src="TS-June-square.jpg" alt="June Andronick">
          <div>
            <h3 class="text-base font-semibold leading-7 tracking-tight text-gray-900">June Andronick</h3>
            <p class="text-sm font-semibold leading-6 text-indigo-600">
@@ -707,7 +754,7 @@ redirect_from: /Foundation/Board/home.pml
      </li>
      <li>
        <div class="flex items-center gap-x-6">
-         <img class="h-16 w-16 rounded-full" src="TS-Gernot-s.jpg" alt="Gernot Heiser">
+         <img class="h-16 w-16 rounded-full" src="TS-Gernot-square.jpg" alt="Gernot Heiser">
          <div>
            <h3 class="text-base font-semibold leading-7 tracking-tight text-gray-900">Gernot Heiser</h3>
            <p class="text-sm font-semibold leading-6 text-indigo-600">
@@ -720,7 +767,7 @@ redirect_from: /Foundation/Board/home.pml
      </li>
      <li>
        <div class="flex items-center gap-x-6">
-         <img class="h-16 w-16 rounded-full" src="RTX-David.png" alt="David Hardin">
+         <img class="h-16 w-16 rounded-full" src="RTX-David-square.png" alt="David Hardin">
          <div>
            <h3 class="text-base font-semibold leading-7 tracking-tight text-gray-900">David Hardin</h3>
            <p class="text-sm font-semibold leading-6 text-indigo-600">
@@ -732,7 +779,7 @@ redirect_from: /Foundation/Board/home.pml
      </li>
      <li>
        <div class="flex items-center gap-x-6"> <!-- FIXME: update picture and link -->
-         <img class="h-16 w-16 rounded-full" src="RTX-David.png" alt="David Hardin">
+         <img class="h-16 w-16 rounded-full" src="RTX-David-square.png" alt="David Hardin">
          <div>
            <h3 class="text-base font-semibold leading-7 tracking-tight text-gray-900">Boyd Multerer</h3>
            <p class="text-sm font-semibold leading-6 text-indigo-600">
@@ -743,7 +790,7 @@ redirect_from: /Foundation/Board/home.pml
      </li>
      <li>
        <div class="flex items-center gap-x-6"> <!-- FIXME: update picture and link -->
-         <img class="h-16 w-16 rounded-full" src="RTX-David.png" alt="David Hardin">
+         <img class="h-16 w-16 rounded-full" src="RTX-David-square.png" alt="David Hardin">
          <div>
            <h3 class="text-base font-semibold leading-7 tracking-tight text-gray-900">Gregg Wildes</h3>
            <p class="text-sm font-semibold leading-6 text-indigo-600">
@@ -772,7 +819,7 @@ redirect_from: /Foundation/Board/home.pml
    <ul role="list" class="grid gap-x-8 gap-y-12 sm:grid-cols-2 sm:gap-y-16 xl:col-span-2">
      <li>
        <div class="flex items-center gap-x-6">
-         <img class="h-16 w-16 rounded-full" src="TS-June-s.jpg" alt="June Andronick">
+         <img class="h-16 w-16 rounded-full" src="TS-June-square.jpg" alt="June Andronick">
          <div>
            <h3 class="text-base font-semibold leading-7 tracking-tight text-gray-900">June Andronick</h3>
            <p class="text-sm font-semibold leading-6 text-indigo-600">
@@ -782,7 +829,7 @@ redirect_from: /Foundation/Board/home.pml
      </li>
      <li>
        <div class="flex items-center gap-x-6">
-         <img class="h-16 w-16 rounded-full" src="TS-Gernot-s.jpg" alt="Gernot Heiser">
+         <img class="h-16 w-16 rounded-full" src="TS-Gernot-square.jpg" alt="Gernot Heiser">
          <div>
            <h3 class="text-base font-semibold leading-7 tracking-tight text-gray-900">Gernot Heiser</h3>
            <p class="text-sm font-semibold leading-6 text-indigo-600">
