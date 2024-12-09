@@ -3,6 +3,7 @@
 _site
 _preview
 _site_on_seL4
+_proofcraft
 .sass-cache
 .jekyll-cache
 .jekyll-metadata
