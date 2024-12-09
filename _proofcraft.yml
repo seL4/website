@@ -1,0 +1,6 @@
+# Copyright 2024 Proofcraft Pty Lt
+# SPDX-License-Identifier: BSD-2-Clause
+url: "https://proofcraft.systems"
+static_url: "https://proofcraft.systems"
+baseurl: "sel4site"
+destination: _proofcraft

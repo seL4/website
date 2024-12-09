@@ -38,7 +38,7 @@ debug: JEKYLL_ENV := development
 debug: serve
 
 preview: JEKYLL_ENV := development
-preview: SERVE_HOST := --config "_config.yml,_preview.yml" $(SERVE_HOST)
+preview: SERVE_HOST := --config "_config.yml,_proofcraft.yml" $(SERVE_HOST)
 preview: build
 
 on_seL4: SERVE_HOST := --config "_config.yml,_on_seL4.yml"
