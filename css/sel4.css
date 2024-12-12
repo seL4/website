@@ -238,7 +238,7 @@ layout: none
 }
 
 .card-layout .pre-heading {
-  @apply text-center text-lg font-semibold leading-7 text-accentdark
+  @apply text-center text-lg font-semibold leading-7 text-[#509b49] dark:text-[#74ba6e]
 }
 
 .card-layout .sub-heading {
