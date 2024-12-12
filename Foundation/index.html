@@ -11,7 +11,7 @@ layout: card
 
 <!-- FIXME: more space before the button -->
 
-<div class="px-6 pt-6 sm:pt-8 pb-12 sm:pb-20 lg:px-8 section-borders">
+<div class="px-6 pt-6 sm:pt-8 pb-12 sm:pb-12 lg:px-8 section-borders">
   <div class="section-max-w text-center">
     <h1>The seL4 Foundation</h1>
     <div class="mt-6 sub-heading">
@@ -29,19 +29,18 @@ layout: card
 	<img class="object-center h-52 w-52" src="../images/sel4-foundation-logo.svg" alt="seL4 Foundation">
       </div>
       <div class="flex justify-center items-center">
-	<!-- member button --> 
-	<a href="{{ '/Foundation/Join/' | relative_url }}" class="button-snd mr-6 md:mr-10">Become a Member</a>
+	<a href="{{ '/Foundation/Join/' | relative_url }}" class="button-snd">Become a Member</a>
       </div>
   </div>
 
-    <h2 class="mt-16 text-3xl font-bold tracking-tight text-gray-900 md:text-4xl">Two main bodies
-    </h2>
   </div>
 </div>
 
+<!-- FIXME: margins -->
+<div class="section-borders -mt-12 pt-0">
+<h2 class="mt-16 text-3xl font-bold tracking-tight text-gray-900 md:text-4xl">Two main bodies</h2>
 
 <!-- Main bodies section -->
-<!-- FIXME: have a 2-grid centered (and remove dummy extra cards) -->
 <!-- FIXME: have the charters as links/buttons (allow flexibility in paragraph in box) -->
 <!-- FIXME: have card centered -->
 <!-- FIXME: change icons to appropriate ones, e.g.
@@ -50,9 +49,7 @@ layout: card
      https://www.shutterstock.com/image-vector/effective-teamwork-icon-black-thin-line-2227180861
   -->
 
-<div class="card-grid-4">
-  {% include card.html
-  %}
+<div class="grid grid-cols-1 md:grid-cols-2 gap-4 md:gap-10 py-12 sm:py-20 mx-2 lg:mx-32">
   {% include card.html
      icon="light-bulb"
      title="Governing Board"
@@ -69,17 +66,15 @@ layout: card
           the seL4 Foundation Technical Charter."
      link="TSC/"
   %}
-  {% include card.html
-  %}
 </div>
-
+</div>
 
 <!-- FIXME: center title and sub-text -->
 <!-- FIXME: update text to present tense and revise as required; maybe shorten first item to balance -->
 
 <!-- Principles section -->
-<div class="mx-auto mt-32 max-w-2xl px-6 sm:mt-40 lg:px-8">
-  <div class="mx-auto max-w-2xl lg:mx-0">
+<div class="mx-auto mt-32 max-w-4xl px-6 sm:mt-6 lg:px-8 mb-12 sm:mb-24">
+  <div class="mx-auto lg:mx-0">
     <h2 class="text-3xl font-bold tracking-tight text-gray-900 sm:text-4xl">Key principles</h2>
     <p class="mt-6 text-lg leading-8 text-gray-600">
       The seL4 Foundation is established as a project
@@ -87,8 +82,8 @@ layout: card
       Foundation</a>. It is designed to fulfill the following key principles.
     </p>
   </div>
-  <dl class="mx-auto mt-16 grid max-w-2xl grid-cols-1 gap-x-8 gap-y-16 text-base leading-7 sm:grid-cols-2 lg:mx-0 lg:max-w-none lg:grid-cols-3">
-    <div>
+  <dl class="mx-auto mt-16 grid max-w-2xl grid-cols-1 gap-x-8 gap-y-16 text-base leading-7 sm:grid-cols-2 lg:mx-0 lg:max-w-none lg:grid-cols-2">
+    <div class="col-span-2">
       <dt class="font-semibold text-gray-900">
 	Neutral and community-based
       </dt>
@@ -132,12 +127,12 @@ layout: card
 </div>
 
 
-<!-- fixme: add a "learn more" button to make explicit that there's a separate page on this? -->
+<!-- FIXME: add a "learn more" button to make explicit that there's a separate page on this? -->
 
-
+<!-- FIXME: logo cloud should be on max-w-7xl, but that messes with layout width above -->
 <!-- Members section -->
-<div class="logo-cloud">
-  <a href="Membership/">
+  <div class="logo-cloud max-w-2xl">
+    <a href="Membership/">
     <h2>Meet our members</h2>
     <div class="inline-flex flex-nowrap">
 {%- assign members = site.data.members.premium |
@@ -163,7 +158,6 @@ layout: card
     </div>
   </a>
 </div>
-
 
 <!--
 
