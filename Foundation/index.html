@@ -9,32 +9,25 @@ layout: card
 
 <!-- FIXME: delete Governance page. Subsumed here -->
 
-<!-- FIXME: more space before the button -->
+{% include heading.html
+  h1="The seL4 Foundation"
+  sub='
+  <p>
+    The seL4 Foundation is an open, transparent and neutral organisation
+    tasked with growing the seL4 ecosystem.
+  </p>
+  <p>
+    Its focus is on coordinating, directing and standardising development of
+    the seL4 ecosystem in order to reduce barriers to adoption, raising
+    funds for accelerating development, and ensuring clarity of verification
+    claims.
+  </p>
+  <img class="h-52 w-52 mx-auto" src="../images/sel4-foundation-logo.svg" alt="seL4 Foundation">
+  <div class="flex justify-center items-center">
+    <a href="Join" class="button-snd px-10">Become a Member</a>
+  </div>'
+%}
 
-<div class="px-6 pt-6 sm:pt-8 pb-12 sm:pb-12 lg:px-8 section-borders">
-  <div class="section-max-w text-center">
-    <h1>The seL4 Foundation</h1>
-    <div class="mt-6 sub-heading">
-      <p>
-	The seL4 Foundation is an open, transparent and neutral organisation
-	tasked with growing the seL4 ecosystem.
-      </p>
-      <p>
-	Its focus is on coordinating, directing and standardising development of
-	the seL4 ecosystem in order to reduce barriers to adoption, raising
-	funds for accelerating development, and ensuring clarity of verification
-	claims.
-      </p>
-      <div class="flex justify-center items-center">
-	<img class="object-center h-52 w-52" src="../images/sel4-foundation-logo.svg" alt="seL4 Foundation">
-      </div>
-      <div class="flex justify-center items-center">
-	<a href="{{ '/Foundation/Join/' | relative_url }}" class="button-snd">Become a Member</a>
-      </div>
-  </div>
-
-  </div>
-</div>
 
 <!-- FIXME: margins -->
 <div class="section-borders -mt-12 pt-0">

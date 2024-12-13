@@ -5,33 +5,31 @@ title: seL4 Research
 layout: card
 ---
 
-<div class="px-6 pt-6 sm:pt-8 pb-12 sm:pb-20 lg:px-8 section-borders">
-  <div class="section-max-w text-center">
-    <a href="research.html"><p class="pre-heading">seL4 research</p></a>
-    <h1>seL4, an award-winning technology</h1>
-    <div class="mt-6 sub-heading">
-      <p>
-	The formal verification of seL4 was a breakthrough in both the Systems
-	and the Formal Methods research disciplines. Applying the rigor of a
-	mathematical computer-checked proof to a high-performance, deployable
-	was a world first. It has since been followed by increasingly stronger
-	assurance, as well as demonstrations of prevention of cyber-attacks on
-	systems in operation. This has been recognised by international
-	acclaimed awards.
-      </p>
-    </div>
-    <div class="mt-6 sub-heading">
-      <a href="images/tries-shutterstock/award.jpeg">
-	<img src="images/tries-shutterstock/award.jpeg" alt="ACM SIGOPS award" class="rounded-lg ">
-      </a>
-    </div>
-  </div>
-</div>
+{% include heading.html
+	 pre="seL4 research"
+	 pre_link="research.html"
+	 h1="seL4, an award-winning technology"
+	 sub='
+  	<p>
+			The formal verification of seL4 was a breakthrough in both the Systems
+			and the Formal Methods research disciplines. Applying the rigor of a
+			mathematical computer-checked proof to a high-performance, deployable
+			was a world first. It has since been followed by increasingly stronger
+			assurance, as well as demonstrations of prevention of cyber-attacks on
+			systems in operation. This has been recognised by international
+			acclaimed awards.
+		</p>
+		<img src="images/tries-shutterstock/award.jpeg"
+					alt="ACM SIGOPS award" class="mt-8 rounded-lg">
+	 '
+%}
+
+<!-- FIXME: on smaller screens, there is no indication that there is further content after the awards image -->
 
 <!--FIXME: what are time and datetime used for? should the dates be fixed here?-->
 
 
-<div class="bg-white py-24 sm:py-32">
+<div class="py-12">
   <div class="mx-auto max-w-7xl px-6 lg:px-8">
     <div class="mx-auto grid max-w-2xl grid-cols-1 gap-8 overflow-hidden ">
       <div>
