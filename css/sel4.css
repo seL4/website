@@ -213,35 +213,35 @@ layout: none
   @apply text-logogreen text-xl font-bold;
 }
 
-.card-layout .section-borders {
+.heading .section-borders, .card-layout .section-borders {
   @apply px-6 lg:px-8 pt-6 sm:pt-8 pb-12 sm:pb-20;
 }
 
-.card-layout .section-max-w {
+.heading .section-max-w, .card-layout .section-max-w {
   @apply mx-auto max-w-4xl;
 }
 
-.card-layout h1, .card-layout h2 {
+.heading h1, .card-layout h1, .card-layout h2 {
   @apply text-center font-bold tracking-tight text-dark;
 }
 
-.card-layout h1 {
+.heading h1, .card-layout h1 {
   @apply text-3xl sm:text-5xl;
 }
 
-.card-layout h2 {
+.heading h2, .card-layout h2 {
   @apply text-2xl sm:text-4xl;
 }
 
-.card-layout p a {
+.heading p a, .card-layout p a {
   @apply underline;
 }
 
-.card-layout .pre-heading {
+.pre-heading {
   @apply text-center text-lg font-semibold leading-7 text-[#509b49] dark:text-[#74ba6e]
 }
 
-.card-layout .sub-heading {
+.sub-heading {
   @apply text-center text-base md:text-lg text-light mt-6 leading-loose;
 }
 
