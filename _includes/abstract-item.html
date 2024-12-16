@@ -1,0 +1,37 @@
+<div id="a-{{ include.id }}" class="bg-white py-24 mt-5 section-max-w sm:py-16">
+  <div class="mx-auto px-6 lg:px-8">
+    <div class="mx-auto lg:mx-0">
+      <h2 class="text-xl font-bold tracking-tight text-gray-900 mb-6 sm:text-4xl">{{include.title}}</h2>
+      <p>
+        <span class="text-gray-800">{{include.presenter}}</span>
+        <br>
+        <span class="text-gray-500">{{include.affiliation}}</span>
+      </p>
+      <article class="theprose -mt-10">
+        <p class="pt-5">
+          {% include {{ include.text }} %}
+        </p>
+      </article>
+      <div class="flex flex-row gap-x-2 pt-2">
+        {% if include.youtube %}
+          <div class="p-2 pb-1">
+            <a href="{{include.youtube}}" target="_blank"><img
+      src="../../../images/icons/youtube_nobckgnd.svg" width="30px" alt="YouTube icon"></a>
+          </div>
+        {% endif %}
+        {% if include.slides %}
+          <div class="p-2 mt-1">
+            <a href="{{include.slides}}"><img src="../../../images/icons/slides.svg" width="25px"
+      alt="slides icon"></a>
+          </div>
+      {% endif %}
+      </div>
+      <p class="pt-2">
+      <a href="program#p-{{include.id}}">See this talk in the program</a>
+      </p>
+    </div>
+  </div>
+</div>
+<div class="relative">
+  {% include up-button.html %}
+</div>

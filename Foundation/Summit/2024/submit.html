@@ -1,35 +1,50 @@
 ---
 # Copyright 2024 seL4 Project a Series of LF Projects, LLC.
 # SPDX-License-Identifier: CC-BY-SA-4.0
-title: submit
+title: Submission Portal
+pre: "Call for Presentations"
+pre_link: "./cfp"
+sub: '
+<p>
+  Submission portal for the seL4 Summit 2024
+</p>'
+layout: card
 ---
-<h1>
-  seL4 Summit 2024
-</h1>
-<h4>
-    Sydney, Australia
-</h4>
-<h4>
-15-17 October 2024
-</h4>
 
-<div>
-  <h3>
-   Important Dates:
-  </h3>
-  <ul>
-      <li><strong>Abstracts due: <s>22 April 2024</s> 29 April 2024</strong></li>
-   <li>Notification of decisions: 7 June 2024 </li>
-    <li>Summit: 15-17 October 2024 </li>
-  </ul>
+
+<!-- Important dates section -->
+{% include section-start.html
+  id = "dates"
+  heading = "Important Dates"
+  intro = '
+    <div class="theprose">
+      <ul>
+        <li><s>22 April 2024</s> 29 April 2024</strong></li>
+        <li>Notification of decisions: 7 June 2024 </li>
+        <li>Summit: 15-17 October 2024</li>
+      </ul>
+    </div>
+    '
+%}
+{% include section-end.html %}
+
+
+<!-- Submission form section -->
+{% include section-start.html
+  id = "submit"
+  heading = "Submission form"
+  intro = '
   <p>
     The submissions portal is now closed. Further information on the <a href="cfp">Call for Presentations</a>.
   </p>
   <p>
-    Please contact <a title="summit@sel4.systems" href="mailto:summit@sel4.systems">summit@sel4.systems</a> if you have any questions.
-  </p>
-</div>
+    Please contact <a title="summit@sel4.systems" href="mailto:summit@sel4.systems">summit@sel4.systems</a> if you
+    have any questions.
+    '
+%}
+{% include section-end.html %}
 
 <div>
   <script type="text/javascript" src="https://form.jotform.com/jsform/240440439332853"></script>
 </div>
+{% include centered-up-button.html margins="py-12 sm:py-24" %}
