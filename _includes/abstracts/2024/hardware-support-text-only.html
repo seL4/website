@@ -1,0 +1,6 @@
+<p><p>
+    Timing channels enable information leakage across address spaces, bypassing an operating system’s security boundaries. They can result from any shared microarchitectural state that depends on previous execution and affects a system’s timing. Closing timing channels (aka “time protection”) requires strict partitioning of microarchitectural state, which is not feasible (or extremely expensive) in current ISAs.
+</p>
+<p><p>
+    At the 2022 seL4 summit, we presented the custom RISC-V fence.t instruction to temporally partition on-core processor state in CVA6, a simple in-order RV64GC processor. This year’s talk will propose a minimal ISA extension that enables hybrid spatial and temporal partitioning of a complete system-on-chip comprising complex out-of-order CPUs, last-level caches, and DRAMs, making system-wide microarchitectural state a first-class resource that can be managed by the OS. We will highlight hardware design implications in different system components and present preliminary experimental results detailing the efficacy and performance overheads of the proposed solution based on extended hardware systems running seL4.
+</p>

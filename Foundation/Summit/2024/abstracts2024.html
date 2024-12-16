@@ -1,167 +1,403 @@
 ---
-# Copyright 2024, seL4 summit authors (see abstracts)
+# Copyright 2024 seL4 Project a Series of LF Projects, LLC.
 # SPDX-License-Identifier: CC-BY-SA-4.0
-title: Summit abstracts
+title: seL4 summit 2024 Abstracts
+pre: "seL4 Summit 2024 Program"
+pre_link: "../2024/program"
+sub: '
+<p>
+  The seL4 summit 2024 features a combination of technical research and development, real-world seL4 deployment
+  insights, in-depth interactive discussions, thought-provoking <a href="../2024/index.html#keynotes">keynotes</a>, <a
+    href="../2024/index.html#panel">panel discussion</a>, as well as informal a <a href="#training">training day</a> and
+  <a href="#social">social activities</a>. Videos are available on the <a
+    href="https://www.youtube.com/@seL4">seL4 YouTube channel</a>.
+</p>'
+layout: card
 ---
-<h1>
-  seL4 Summit 2024
-</h1>
-<h4>
-  Sydney, Australia
-</h4>
-<h4>
-  15-17 October 2024
-</h4>
 
 
-<h3>
-   Abstracts
-</h3>
-<div class="summit-abstract" id="a-inspecta">{% include abstracts/2024/inspecta.html %}
-    <a href="https://youtu.be/9K22dUeyXm8?si=NvXW3see-AKKVuS1" target="_blank"><img src="../../../images/icons/youtube_nobckgnd.svg" class="youtube_icon" alt="YouTube icon"></a>&nbsp;&nbsp;
-    <a href="slides/inspecta.pdf"><img src="../../../images/icons/slides.svg" alt="slides icon"></a>
-    <br><a href="program#p-inspecta">See this talk in the program</a></div>
+  {% include abstract-item.html 
+    id = "inspecta"
+    time = "9:10 - 10:00"
+    type = "Keynote"
+    title = "Industrial Scale Proof Engineering for Critical Trustworthy Applications (INSPECTA)"
+    presenter = "Darren Cofer"
+    affiliation = "Collins Aerospace"
+    text = "abstracts/2024/inspecta-text-only.html"
+    youtube = "https://youtu.be/9K22dUeyXm8?si=NvXW3see-AKKVuS1"
+    slides = "slides/inspecta.pdf"
+  %}
 
-<div class="summit-abstract" id="a-sel4-verification">{% include abstracts/2024/sel4-verification.html %}
-    <a href="https://youtu.be/2lFYm7cjMpQ?si=es3uWoBy9ML2XRKJ" target="_blank"><img src="../../../images/icons/youtube_nobckgnd.svg" class="youtube_icon" alt="YouTube icon"></a>&nbsp;&nbsp;
-    <a href="slides/sel4-verification.pdf"><img src="../../../images/icons/slides.svg" alt="slides icon"></a>
-    <br><a href="program#p-sel4-verification">See this talk in the program</a></div>
 
-<div class="summit-abstract" id="a-multikernel-roadmap">{% include abstracts/2024/multikernel-roadmap.html %}
-    <a href="https://youtu.be/8JLKtpB1KPM?si=LY6ZDRXleZF5uG7M" target="_blank"><img src="../../../images/icons/youtube_nobckgnd.svg" class="youtube_icon" alt="YouTube icon"></a>&nbsp;&nbsp;
-    <a href="slides/multikernel-roadmap.pdf"><img src="../../../images/icons/slides.svg" alt="slides icon"></a>
-    <br><a href="program#p-multikernel-roadmap">See this talk in the program</a></div>
+  {% include abstract-item.html
+    id = "sel4-verification"
+    time = "10:30 - 11:00"
+    type = "Talk"
+    title = "seL4 Verification: Status and Plans"
+    presenter = "Gerwin Klein, June Andronick, Rafal Kolanski, Corey Lewis, Michael McInerney"
+    affiliation = "Proofcraft"
+    text = "abstracts/2024/sel4-verification-text-only.html"
+    youtube = "https://youtu.be/2lFYm7cjMpQ?si=es3uWoBy9ML2XRKJ"
+    slides = "slides/sel4-verification.pdf"
+  %}
 
-<div class="summit-abstract" id="a-neutrality">{% include abstracts/2024/neutrality.html %}
-    <a href="https://youtu.be/Zw1eeNHZm6Q?si=TkFY384jiyQpbHgA" target="_blank"><img src="../../../images/icons/youtube_nobckgnd.svg" class="youtube_icon" alt="YouTube icon"></a>&nbsp;&nbsp;
-    <br><a href="program#p-neutrality">See this talk in the program</a></div>
+ 
+  {% include abstract-item.html 
+    id = "multikernel-roadmap"
+    time = "11:00 - 11:30"
+    type = "Talk"
+    title = "seL4 multikernel roadmap and concurrency verification"
+    presenter = "Gerwin Klein, Corey Lewis"
+    affiliation = "Proofcraft"
+    text = "abstracts/2024/multikernel-roadmap-text-only.html"
+    youtube = "https://youtu.be/8JLKtpB1KPM?si=LY6ZDRXleZF5uG7M"
+    slides = "slides/multikernel-roadmap.pdf"
+  %}
 
-<div class="summit-abstract" id="a-lions-os">{% include abstracts/2024/lions-os.html %}
-    <a href="https://youtu.be/W8Ka_8kHTj4?si=cLGmYIX8FT80Esb6" target="_blank"><img src="../../../images/icons/youtube_nobckgnd.svg" class="youtube_icon" alt="YouTube icon"></a>&nbsp;&nbsp;
-    <a href="slides/lions-os.pdf"><img src="../../../images/icons/slides.svg" alt="slides icon"></a>
-    <br><a href="program#p-lions-os">See this talk in the program</a></div>
+  {% include abstract-item.html 
+    id = "neutrality"
+    time = "11:30 - 12:00"
+    type = "Talk"
+    title = "The Neutrality Atoll Hypervisor and the seL4 Multikernel"
+    presenter = "David Cock, Mathieu Mirmont, Stevens Le Blond"
+    affiliation = "Neutrality"
+    text = "abstracts/2024/neutrality-text-only.html"
+    youtube = "https://youtu.be/Zw1eeNHZm6Q?si=TkFY384jiyQpbHgA"
+  %}
 
-<div class="summit-abstract" id="a-lions-os-practise">{% include abstracts/2024/lions-os-practise.html %}
-    <a href="https://youtu.be/loPlocTZEp0?si=0NC3iZVvm9bdLdEW" target="_blank"><img src="../../../images/icons/youtube_nobckgnd.svg" class="youtube_icon" alt="YouTube icon"></a>&nbsp;&nbsp;
-    <a href="slides/lions-os-practise.pdf"><img src="../../../images/icons/slides.svg" alt="slides icon"></a>
-    <br><a href="program#p-lions-os-practise">See this talk in the program</a></div>
+  
+  {% include abstract-item.html
+    id = "lions-os"
+    time = "13:30 - 13:45"
+    type = "Talk"
+    title = "Lions OS: Secure, fast, adaptable!"
+    presenter = "Gernot Heiser"
+    affiliation = "UNSW Sydney"
+    text = "abstracts/2024/lions-os-text-only.html"
+    youtube = "https://youtu.be/W8Ka_8kHTj4?si=cLGmYIX8FT80Esb6"
+    slides = "slides/lions-os.pdf"
+  %}
+  
 
-<div class="summit-abstract" id="a-secure-multiserver">{% include abstracts/2024/secure-multiserver.html %}
-    <a href="https://youtu.be/KYpIfblpDOM?si=ZEtHJepVQOlT9U5-" target="_blank"><img src="../../../images/icons/youtube_nobckgnd.svg" class="youtube_icon" alt="YouTube icon"></a>&nbsp;&nbsp;
-    <a href="slides/secure-multiserver.pdf"><img src="../../../images/icons/slides.svg" alt="slides icon"></a>
-    <br><a href="program#p-secure-multiserver">See this talk in the program</a></div>
+  {% include abstract-item.html
+    id = "lions-os-practise" 
+    time = "13:45 - 14:15"
+    type = "Talk"
+    title = "In and Around Lions OS"
+    presenter = "Ivan Velickovic"
+    affiliation = "UNSW Sydney"
+    text = "abstracts/2024/lions-os-practise-text-only.html"
+    youtube = "https://youtu.be/loPlocTZEp0?si=0NC3iZVvm9bdLdEW"
+    slides = "slides/lions-os-practise.pdf"
+  %}
+  
 
-<div class="summit-abstract" id="a-running-certified">{% include abstracts/2024/running-certified.html %}
-    <a href="https://youtu.be/VfsN1PriVK0?si=eKMtEVmrSaAox3LF" target="_blank"><img src="../../../images/icons/youtube_nobckgnd.svg" class="youtube_icon" alt="YouTube icon"></a>&nbsp;&nbsp;
-    <a href="slides/running-certified.pdf"><img src="../../../images/icons/slides.svg" alt="slides icon"></a>
-    <br><a href="program#p-running-certified">See this talk in the program</a></div>
+  {% include abstract-item.html
+    id = "secure-multiserver" 
+    time = "14:15 - 14:30"
+    type = "Talk"
+    title = "The Secure Multiserver Operating System Framework"
+    presenter = "Alwin Joshy, Kevin Elphinstone, Gernot Heiser, Craig McLaughlin"
+    affiliation = "UNSW Sydney"
+    text = "abstracts/2024/secure-multiserver-text-only.html"
+    youtube = "https://youtu.be/KYpIfblpDOM?si=ZEtHJepVQOlT9U5-"
+    slides = "slides/secure-multiserver.pdf"
+  %}
 
-<div class="summit-abstract" id="a-cheri-morello">{% include abstracts/2024/cheri-morello.html %}
-    <a href="https://youtu.be/BQhykTrtIwg?si=QttV8mbIB1NE_ui0" target="_blank"><img src="../../../images/icons/youtube_nobckgnd.svg" class="youtube_icon" alt="YouTube icon"></a>&nbsp;&nbsp;
-    <a href="slides/cheri-morello.pdf"><img src="../../../images/icons/slides.svg" alt="slides icon"></a>
-    <br><a href="program#p-cheri-morello">See this talk in the program</a></div>
 
-<div class="summit-abstract" id="a-experience-developing">{% include abstracts/2024/experience-developing.html %}
-    <a href="https://youtu.be/L0EwJ9qOrhE?si=jdLxb0wfcPgNwmWl" target="_blank"><img src="../../../images/icons/youtube_nobckgnd.svg" class="youtube_icon" alt="YouTube icon"></a>&nbsp;&nbsp;
-    <a href="slides/experience-developing.pdf"><img src="../../../images/icons/slides.svg" alt="slides icon"></a>
-    <br><a href="program#p-experience-developing">See this talk in the program</a></div>
+  {% include abstract-item.html
+    id = "running-certified" 
+    time = "14:30 - 15:00"
+    type = "Talk"
+    title = "Running Certified Operating Systems under the seL4 Hypervisor"
+    presenter = "Chris Guikema"
+    affiliation = "DornerWorks"
+    text = "abstracts/2024/running-certified-text-only.html"
+    youtube = "https://youtu.be/VfsN1PriVK0?si=eKMtEVmrSaAox3LF"
+    slides = "slides/running-certified.pdf"
+  %}
+  
 
-<div class="summit-abstract" id="a-camkes-to-microkit">{% include abstracts/2024/camkes-to-microkit.html %}
-    <a href="https://youtu.be/5xE24p-RauQ?si=d6o8cqgVB9FTPpnx" target="_blank"><img src="../../../images/icons/youtube_nobckgnd.svg" class="youtube_icon" alt="YouTube icon"></a>&nbsp;&nbsp;
-    <a href="slides/camkes-to-microkit.pdf"><img src="../../../images/icons/slides.svg" alt="slides icon"></a>
-    <br><a href="program#p-camkes-to-microkit">See this talk in the program</a></div>
+  {% include abstract-item.html
+    id = "cheri-morello" 
+    time = "15:30 - 16:00"
+    type = "Talk"
+    title = "Enhancing seL4’s C/C++ userspace memory safety using CHERI"
+    presenter = "Hesham Almatary"
+    affiliation = "Capabilities Limited"
+    text = "abstracts/2024/cheri-morello-text-only.html"
+    youtube = "https://youtu.be/BQhykTrtIwg?si=QttV8mbIB1NE_ui0"
+    slides = "slides/cheri-morello.pdf"
+  %}
 
-<div class="summit-abstract" id="a-foundation-update">{% include abstracts/2024/foundation-update.html %}
-    <a href="https://youtu.be/vYUuOgqzOa8?si=X68iNbaVf-SUSWuZ" target="_blank"><img src="../../../images/icons/youtube_nobckgnd.svg" class="youtube_icon" alt="YouTube icon"></a>&nbsp;&nbsp;
-    <a href="slides/foundation-update.pdf"><img src="../../../images/icons/slides.svg" alt="slides icon"></a>
-    <br><a href="program#p-foundation-update">See this talk in the program</a></div>
+  
+  {% include abstract-item.html
+    id = "experience-developing" 
+    time = "16:00 - 16:15"
+    type = "Talk"
+    title = "Experience Developing Code for the seL4 Environment"
+    presenter = "Caitlyn Wilde, Wyeth Greenlaw Rollins, Alain Kägi"
+    affiliation = "Lewis & Clark College"
+    text = "abstracts/2024/experience-developing-text-only.html"
+    youtube = "https://youtu.be/L0EwJ9qOrhE?si=jdLxb0wfcPgNwmWl"
+    slides = "slides/experience-developing.pdf"
+  %}
+  
 
-<div class="summit-abstract" id="a-first-steps">{% include abstracts/2024/first-steps.html %}
-    <a href="https://youtu.be/UCj1Qfuifu8?si=q1_b1BaCgivv46FG" target="_blank"><img src="../../../images/icons/youtube_nobckgnd.svg" class="youtube_icon" alt="YouTube icon"></a>&nbsp;&nbsp;
-    <a href="slides/first-steps.pdf"><img src="../../../images/icons/slides.svg" alt="slides icon"></a>
-    <br><a href="program#p-first-steps">See this talk in the program</a></div>
+  {% include abstract-item.html
+    id = "camkes-to-microkit" 
+    time = "16:15 - 16:30"
+    type = "Talk"
+    title = "Transitioning from CAmkES VMM to MicroKit VMM"
+    presenter = "Leigha VanderKlok"
+    affiliation = "DornerWorks"
+    text = "abstracts/2024/camkes-to-microkit-text-only.html"
+    youtube = "https://youtu.be/5xE24p-RauQ?si=d6o8cqgVB9FTPpnx"
+    slides = "slides/camkes-to-microkit.pdf"
+  %}
+  
+  {% include abstract-item.html
+    id = "foundation-update" 
+    time = "16:30 - 16:45"
+    type = "Update"
+    title = "seL4 Foundation Update"
+    presenter = "June Andronick"
+    affiliation = "seL4 Foundation"
+    text = "abstracts/2024/foundation-update-text-only.html"
+    youtube = "https://youtu.be/vYUuOgqzOa8?si=X68iNbaVf-SUSWuZ"
+    slides = "slides/foundation-update.pdf"
+  %}
+  
+  
 
-<div class="summit-abstract" id="a-generating-trustworthy">{% include abstracts/2024/generating-trustworthy.html %}
-    <a href="https://youtu.be/b6t-qkHjgdE?si=deqLKsLIM3n96Z7G" target="_blank"><img src="../../../images/icons/youtube_nobckgnd.svg" class="youtube_icon" alt="YouTube icon"></a>&nbsp;&nbsp;
-    <a href="slides/generating-trustworthy.pdf"><img src="../../../images/icons/slides.svg" alt="slides icon"></a>
-    <br><a href="program#p-generating-trustworthy">See this talk in the program</a></div>
+  {% include abstract-item.html
+    id = "first-steps" 
+    time = "10:30 - 11:00"
+    type = "Talk"
+    title = "First steps towards verification of user-space systems"
+    presenter = "Matthew Brecknell"
+    affiliation = "Kry10"
+    text = "abstracts/2024/first-steps-text-only.html"
+    youtube = "https://youtu.be/UCj1Qfuifu8?si=q1_b1BaCgivv46FG"
+    slides = "slides/first-steps.pdf"
+  %}
 
-<div class="summit-abstract" id="a-using-model">{% include abstracts/2024/using-model.html %}
-    <a href="https://youtu.be/4ESGgf80lcg?si=tEP0Z6bEscupqp5E" target="_blank"><img src="../../../images/icons/youtube_nobckgnd.svg" class="youtube_icon" alt="YouTube icon"></a>&nbsp;&nbsp;
-    <a href="slides/using-model.pdf"><img src="../../../images/icons/slides.svg" alt="slides icon"></a>
-    <br><a href="program#p-using-model">See this talk in the program</a></div>
 
-<div class="summit-abstract" id="a-rust-support">{% include abstracts/2024/rust-support.html %}
-    <a href="https://youtu.be/0W5cMTnyBLk?si=WGGVY3qd0PETj8cE" target="_blank"><img src="../../../images/icons/youtube_nobckgnd.svg" class="youtube_icon" alt="YouTube icon"></a>&nbsp;&nbsp;
-    <a href="slides/rust-support.pdf"><img src="../../../images/icons/slides.svg" alt="slides icon"></a>
-    <br><a href="program#p-rust-support">See this talk in the program</a></div>
+  {% include abstract-item.html
+    id = "generating-trustworthy" 
+    time = "11:00 - 11:30"
+    type = "Talk"
+    title = "Generating Trustworthy Hardware/Software I2C Drivers for Board Management Controllers"
+    presenter = "Daniel Schwyn, Zikai Liu, Timothy Roscoe"
+    affiliation = "ETH Zurich"
+    text = "abstracts/2024/generating-trustworthy-text-only.html"
+    youtube = "https://youtu.be/b6t-qkHjgdE?si=deqLKsLIM3n96Z7G"
+    slides = "slides/generating-trustworthy.pdf"
+  %}
 
-<div class="summit-abstract" id="a-pancake">{% include abstracts/2024/pancake.html %}
-    <a href="https://youtu.be/uAHVV0Lzopw?si=QbuY_1_Y5IOddxnE" target="_blank"><img src="../../../images/icons/youtube_nobckgnd.svg" class="youtube_icon" alt="YouTube icon"></a>&nbsp;&nbsp;
-    <a href="slides/pancake.pdf"><img src="../../../images/icons/slides.svg" alt="slides icon"></a>
-    <br><a href="program#p-pancake">See this talk in the program</a></div>
 
-<div class="summit-abstract" id="a-assured-reserve">{% include abstracts/2024/assured-reserve.html %}
-    <a href="https://youtu.be/zIQ-wYjiYSg?si=uODU6MNgt7r3eO2W" target="_blank"><img src="../../../images/icons/youtube_nobckgnd.svg" class="youtube_icon" alt="YouTube icon"></a>&nbsp;&nbsp;
-    <a href="slides/assured-reserve.pdf"><img src="../../../images/icons/slides.svg" alt="slides icon"></a>
-    <br><a href="program#p-assured-reserve">See this talk in the program</a></div>
+  {% include abstract-item.html
+    id = "using-model" 
+    time = "11:30 - 11:45"
+    type = "Talk"
+    title = "Using Model Checking to Develop and Verify Inter-Component Signalling Protocols"
+    presenter = "Courtney Darville"
+    affiliation = "UNSW Sydney"
+    text = "abstracts/2024/using-model-text-only.html"
+    youtube = "https://youtu.be/4ESGgf80lcg?si=tEP0Z6bEscupqp5E"
+    slides = "slides/using-model.pdf"
+  %}
 
-<div class="summit-abstract" id="a-assured-reserve-action">{% include abstracts/2024/assured-reserve-action.html %}
-    <a href="https://youtu.be/rWksafHHc2I?si=61q9-ff6c3yS4Jax" target="_blank"><img src="../../../images/icons/youtube_nobckgnd.svg" class="youtube_icon" alt="YouTube icon"></a>&nbsp;&nbsp;
-    <a href="slides/assured-reserve.pdf"><img src="../../../images/icons/slides.svg" alt="slides icon"></a>
-    <br><a href="program#p-assured-reserve-action">See this talk in the program</a></div>
 
-<div class="summit-abstract" id="a-supporting-container">{% include abstracts/2024/supporting-container.html %}
-    <a href="https://youtu.be/AaBaefF0eGg?si=mmr3xJg5LDjABuF9" target="_blank"><img src="../../../images/icons/youtube_nobckgnd.svg" class="youtube_icon" alt="YouTube icon"></a>&nbsp;&nbsp;
-    <a href="slides/supporting-container.pdf"><img src="../../../images/icons/slides.svg" alt="slides icon"></a>
-    <br><a href="program#p-supporting-container">See this talk in the program</a></div>
+  {% include abstract-item.html
+    id = "rust-support" 
+    time = "11:45 - 12:00"
+    type = "Talk"
+    title = "Rust Support in seL4 Userspace: Overview and Update"
+    presenter = "Nick Spinale"
+    affiliation = "Colias Group, LLC"
+    text = "abstracts/2024/rust-support-text-only.html"
+    youtube = "https://youtu.be/0W5cMTnyBLk?si=WGGVY3qd0PETj8cE"
+    slides = "slides/rust-support.pdf"
+  %}
 
-<div class="summit-abstract" id="a-exploring-sel4">{% include abstracts/2024/exploring-sel4.html %}
-    <a href="https://youtu.be/kRgLIb4eO8U?si=mTZiR1w0ibTAAojM" target="_blank"><img src="../../../images/icons/youtube_nobckgnd.svg" class="youtube_icon" alt="YouTube icon"></a>&nbsp;&nbsp;
-    <a href="slides/exploring-sel4.pdf"><img src="../../../images/icons/slides.svg" alt="slides icon"></a>
-    <br><a href="program#p-exploring-sel4">See this talk in the program</a></div>
 
-<div class="summit-abstract" id="a-bridging-academia">{% include abstracts/2024/bridging-academia.html %}
-    <a href="https://youtu.be/2JdaHxf8jrk?si=-NUi4KbYjoqheRhI" target="_blank"><img src="../../../images/icons/youtube_nobckgnd.svg" class="youtube_icon" alt="YouTube icon"></a>&nbsp;&nbsp;
-    <a href="slides/bridging-academia.pdf"><img src="../../../images/icons/slides.svg" alt="slides icon"></a>
-    <br><a href="program#p-bridging-academia">See this talk in the program</a></div>
+  {% include abstract-item.html
+    id = "pancake" 
+    time = "12:00 - 12:15"
+    type = "Talk"
+    title = "Pancake: a language for verified systems programming"
+    presenter = "Miki Tanaka, Johannes Åman Pohjola, Gernot Heiser"
+    affiliation = "UNSW Sydney"
+    text = "abstracts/2024/pancake-text-only.html"
+    youtube = "https://youtu.be/uAHVV0Lzopw?si=QbuY_1_Y5IOddxnE"
+    slides = "slides/pancake.pdf"
+  %}
+  
+ 
+  {% include abstract-item.html
+    id = "assured-reserve" 
+    time = "13:45 - 14:15"
+    type = "Talk"
+    title = "Assured Reserve Modes"
+    presenter = "Ihor Kuz, Lance Joneckis"
+    affiliation = "Kry10, Idaho National Laboratory"
+    text = "abstracts/2024/assured-reserve-text-only.html"
+    youtube = "https://youtu.be/zIQ-wYjiYSg?si=uODU6MNgt7r3eO2W"
+    slides = "slides/assured-reserve.pdf"
+  %}
 
-<div class="summit-abstract" id="a-sel4-infrastructure">{% include abstracts/2024/sel4-infrastructure.html %}
-    <a href="https://youtu.be/-2zvgVGJSc8?si=dbMDCOwWL9T_CKq_" target="_blank"><img src="../../../images/icons/youtube_nobckgnd.svg" class="youtube_icon" alt="YouTube icon"></a>&nbsp;&nbsp;
-    <a href="slides/sel4-infrastructure.pdf"><img src="../../../images/icons/slides.svg" alt="slides icon"></a>
-    <br><a href="program#p-sel4-infrastructure">See this talk in the program</a></div>
+      
+  {% include abstract-item.html
+    id = "assured-reserve-action" 
+    time = "14:15 - 14:30"
+    type = "Talk"
+    title = "Assured Reserve Modes in Action"
+    presenter = "Ihor Kuz, Lance Joneckis"
+    affiliation = "Kry10, Idaho National Laboratory"
+    text = "abstracts/2024/assured-reserve-action-text-only.html"
+    youtube = "https://youtu.be/rWksafHHc2I?si=61q9-ff6c3yS4Jax"
+    slides = "slides/assured-reserve.pdf"
+  %}
 
-<div class="summit-abstract" id="a-building-commercial">{% include abstracts/2024/building-commercial.html %}
-    <a href="https://youtu.be/lI_Rn-riJ-Y?si=iQ_aHjRxVy3iWeHs" target="_blank"><img src="../../../images/icons/youtube_nobckgnd.svg" class="youtube_icon" alt="YouTube icon"></a>&nbsp;&nbsp;
-    <a href="slides/building-commercial.pdf"><img src="../../../images/icons/slides.svg" alt="slides icon"></a>
-    <br><a href="program#p-building-commercial">See this talk in the program</a></div>
 
-<div class="summit-abstract" id="a-doing-nix">{% include abstracts/2024/doing-nix.html %}
-    <a href="https://youtu.be/e12dYR8xhJI?si=ypuzrGQgeg_2vv1C" target="_blank"><img src="../../../images/icons/youtube_nobckgnd.svg" class="youtube_icon" alt="YouTube icon"></a>&nbsp;&nbsp;
-    <a href="slides/doing-nix.pdf"><img src="../../../images/icons/slides.svg" alt="slides icon"></a>
-    <br><a href="program#p-doing-nix">See this talk in the program</a></div>
+  {% include abstract-item.html
+    id = "supporting-container" 
+    time = "14:30 - 14:45"
+    type = "Talk"
+    title = "Supporting container applications on Kry10 OS"
+    presenter = "Alison Felizzi"
+    affiliation = "Kry10"
+    text = "abstracts/2024/supporting-container-text-only.html"
+    youtube = "https://youtu.be/AaBaefF0eGg?si=mmr3xJg5LDjABuF9"
+    slides = "slides/supporting-container.pdf"
+  %}
 
-<div class="summit-abstract" id="a-software-defined">{% include abstracts/2024/software-defined.html %}
-    <a href="https://youtu.be/-I3uenz5Mw0?si=UNAXI76J0Go-NP3X" target="_blank"><img src="../../../images/icons/youtube_nobckgnd.svg" class="youtube_icon" alt="YouTube icon"></a>&nbsp;&nbsp;
-    <a href="slides/software-defined.pdf"><img src="../../../images/icons/slides.svg" alt="slides icon"></a>
-    <br><a href="program#p-software-defined">See this talk in the program</a></div>
 
-<div class="summit-abstract" id="a-securing-ros">{% include abstracts/2024/securing-ros.html %}
-    <a href="https://youtu.be/O0SrqPTc_kU?si=O0QqO4aHwVHlmjxg" target="_blank"><img src="../../../images/icons/youtube_nobckgnd.svg" class="youtube_icon" alt="YouTube icon"></a>&nbsp;&nbsp;
-    <a href="slides/securing-ros.pdf"><img src="../../../images/icons/slides.svg" alt="slides icon"></a>
-    <br><a href="program#p-securing-ros">See this talk in the program</a></div>
+  {% include abstract-item.html
+    id = "exploring-sel4" 
+    time = "14:45 - 15:00"
+    type = "Talk"
+    title = "Exploring an seL4-based Trusted Execution Environment in a RISC-V Platform"
+    presenter = "Everton de Matos"
+    affiliation = "TII"
+    text = "abstracts/2024/exploring-sel4-text-only.html"
+    youtube = "https://youtu.be/kRgLIb4eO8U?si=mTZiR1w0ibTAAojM"
+    slides = "slides/exploring-sel4.pdf"
+  %}
+  
 
-<div class="summit-abstract" id="a-hardware-support">{% include abstracts/2024/hardware-support.html %}
-    <a href="https://youtu.be/qoInVWmVdeQ?si=gPgv9O3LAtmmjuTp" target="_blank"><img src="../../../images/icons/youtube_nobckgnd.svg" class="youtube_icon" alt="YouTube icon"></a>&nbsp;&nbsp;
-    <a href="slides/hardware-support.pdf"><img src="../../../images/icons/slides.svg" alt="slides icon"></a>
-    <br><a href="program#p-hardware-support">See this talk in the program</a></div>
+  {% include abstract-item.html
+    id = "bridging-academia" 
+    time = "15:30 - 16:00"
+    type = "Talk"
+    title = "Bridging Academia and Industry"
+    presenter = "Yanyan Shen, Dhammika Elkaduwe"
+    affiliation = "NIO"
+    text = "abstracts/2024/bridging-academia-text-only.html"
+    youtube = "https://youtu.be/2JdaHxf8jrk?si=-NUi4KbYjoqheRhI"
+    slides = "slides/bridging-academia.pdf"
+  %}
 
-<div class="summit-abstract" id="a-verification-status">{% include abstracts/2024/verification-status.html %}
-    <a href="https://youtu.be/7wcFx6OTEL4?si=VMcr1_JS7znZhNMO" target="_blank"><img src="../../../images/icons/youtube_nobckgnd.svg" class="youtube_icon" alt="YouTube icon"></a>&nbsp;&nbsp;
-    <a href="slides/verification-status.pdf"><img src="../../../images/icons/slides.svg" alt="slides icon"></a>
-    <br><a href="program#p-verification-status">See this talk in the program</a></div>
+  
+  {% include abstract-item.html
+    id = "sel4-infrastructure" 
+    time = "16:00 - 16:30"
+    type = "Talk"
+    title = "seL4 Infrastructure: USB and Beyond"
+    presenter = "Bill Ellis, James Nevell, Stephen Williams, Josh Felmeden, Daniel Storer, Tom Harvey"
+    affiliation = "Capgemini"
+    text = "abstracts/2024/sel4-infrastructure-text-only.html"
+    youtube = "https://youtu.be/-2zvgVGJSc8?si=dbMDCOwWL9T_CKq_"
+    slides = "slides/sel4-infrastructure.pdf"
+  %}
 
-<div class="summit-abstract" id="a-cpu-driver">{% include abstracts/2024/cpu-driver.html %}
-    <a href="https://youtu.be/DGLSJ8m-X2I?si=mbMoB2uYiKJ5_2Cs" target="_blank"><img src="../../../images/icons/youtube_nobckgnd.svg" class="youtube_icon" alt="YouTube icon"></a>&nbsp;&nbsp;
-    <a href="slides/cpu-driver.pdf"><img src="../../../images/icons/slides.svg" alt="slides icon"></a>
-    <br><a href="program#p-cpu-driver">See this talk in the program</a></div>
+
+  {% include abstract-item.html
+    id = "building-commercial" 
+    time = "16:30 - 16:45"
+    type = "Talk"
+    title = "Building a Commercial Virtualized Mobile Device with seL4 – Part 3"
+    presenter = "Jason Sebranek"
+    affiliation = "Cog Systems, Inc."
+    text = "abstracts/2024/building-commercial-text-only.html"
+    youtube = "https://youtu.be/lI_Rn-riJ-Y?si=iQ_aHjRxVy3iWeHs"
+    slides = "slides/building-commercial.pdf"
+  %}
+
+
+  {% include abstract-item.html
+    id = "doing-nix" 
+    time = "16:45 - 17:00"
+    type = "Talk"
+    title = "Doing Nix for seL4: Towards more Infrastructure-as-Code"
+    presenter = "Wanja Zaeske"
+    affiliation = "Deutsches Zentrum für Luft- und Raumfahrt (DLR)"
+    text = "abstracts/2024/doing-nix-text-only.html"
+    youtube = "https://youtu.be/e12dYR8xhJI?si=ypuzrGQgeg_2vv1C"
+    slides = "slides/doing-nix.pdf"
+  %}
+
+
+  {% include abstract-item.html
+    id = "software-defined" 
+    time = "9:00 - 9:50"
+    type = "Talk"
+    title = "seL4 in Software-Defined Vehicles: Vision, Roadmap, and Impact at NIO"
+    presenter = "Ning Qu"
+    affiliation = "NIO"
+    text = "abstracts/2024/software-defined-text-only.html"
+    youtube = "https://youtu.be/-I3uenz5Mw0?si=UNAXI76J0Go-NP3X"
+    slides = "slides/software-defined.pdf"
+  %}
+
+  
+  {% include abstract-item.html
+    id = "securing-ros" 
+    time = "10:30 - 11:00"
+    type = "Talk"
+    title = "Securing ROS Systems with seL4"
+    presenter = "Nathan Studer, Alex Pavey, Zach Clark, Dariusz Mikulski, Cristian Balas, Yale Empie"
+    affiliation = "DornerWorks, US Army - Ground Vehicle Robotics"
+    text = "abstracts/2024/securing-ros-text-only.html"
+    youtube = "https://youtu.be/O0SrqPTc_kU?si=O0QqO4aHwVHlmjxg"
+    slides = "slides/securing-ros.pdf"
+  %}
+
+
+
+  {% include abstract-item.html
+    id = "hardware-support" 
+    time = "11:00 - 11:15"
+    type = "Talk"
+    title = "Hardware Support for Time Protection"
+    presenter = "Nils Wistoff, Gernot Heiser, Luca Benini"
+    affiliation = "ETH Zurich, UNSW Sydney, University of Bologna"
+    text = "abstracts/2024/hardware-support-text-only.html"
+    youtube = "https://youtu.be/qoInVWmVdeQ?si=gPgv9O3LAtmmjuTp"
+    slides = "slides/hardware-support.pdf"
+  %}
+
+  {% include abstract-item.html
+    id = "verification-status" 
+    time = "11:15 - 11:45"
+    type = "Talk"
+    title = "Verification Status of Time Protection and Microkit-based OS Services"
+    presenter = "Robert Sison"
+    affiliation = "UNSW Sydney"
+    text = "abstracts/2024/verification-status-text-only.html"
+    youtube = "https://youtu.be/7wcFx6OTEL4?si=VMcr1_JS7znZhNMO"
+    slides = "slides/verification-status.pdf"
+  %}
+
+  {% include abstract-item.html
+    id = "cpu-driver" 
+    time = "11:45 - 12:15"
+    type = "Talk"
+    title = "seL4 as a CPU Driver for an OS for Real Computers"
+    presenter = "Roman Meier, Zikai Liu, Ben Fiedler, Timothy Roscoe"
+    affiliation = "ETH Zurich"
+    text = "abstracts/2024/cpu-driver-text-only.html"
+    youtube = "https://youtu.be/DGLSJ8m-X2I?si=mbMoB2uYiKJ5_2Cs"
+    slides = "slides/cpu-driver.pdf"
+  %}

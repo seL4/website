@@ -1,0 +1,12 @@
+<div class="mr-4 md:ml-6 sm:grid sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 sm:gap-x-[4rem] sm:gap-y-[5rem]">
+{%- for sponsor in sponsors -%}
+{%-   assign logo = "/Foundation/Membership/LOGOS/" | append: sponsor.logo | relative_url -%}
+  <div class="text-gray-600 mt-16 sm:mt-0">
+    <a href="{{ sponsor.url }}">
+    <div class="mx-auto h-[5.5rem] w-[11rem] flex align-middle justify-center">
+      <img class="object-scale-down" src="{{ logo }}" alt="{{ sponsor.name }}" title="{{ sponsor.name }}">
+    </div>
+    </a>
+  </div>
+{%- endfor -%}
+</div>
