@@ -2,26 +2,22 @@
 # Copyright 2020 seL4 Project a Series of LF Projects, LLC.
 # SPDX-License-Identifier: CC-BY-SA-4.0
 title: Join
-no_title_header: true
 redirect_from: /Foundation/Join/home.pml
 layout: card
 ---
 
-<div class="section-borders">
-  <div class="section-max-w">
-    <h1>Join the seL4 Foundation!</h1>
-    <div class="sub-heading">
-      <p>
-        Become part of the network of <a title="Membership" href="../Membership">members</a> who
-        have already joined the <a title="seL4 Foundation" href="../">seL4 Foundation</a>
-      </p>
-      <p>
-        Joining is an easy process via the Linux Foundation's <a title="Signup page"
-        href="https://joinnow.platform.linuxfoundation.org/?project=seL4">online signup page</a>
-      </p>
-    </div>
-  </div>
-</div>
+{% include heading.html
+	 pre="The seL4 Foundation"
+	 pre_link="../"
+	 h1="Join the seL4 Foundation!"
+	 sub='
+         <p>
+	   Become part of the network of <a title="Membership"
+           href="../Membership">members</a> who have already joined
+           the <a title="seL4 Foundation" href="../">seL4 Foundation</a>.
+	 </p>'
+	 %}
+
 
 {%- assign tc = "mb-3" -%}
 <div class="card-grid-3 grid-cols-1 sm:grid-cols-2 md:grid-cols-3 mb-8 pb-8">
