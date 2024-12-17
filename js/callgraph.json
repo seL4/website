@@ -3037,24 +3037,6 @@
       "nodeColor": "0xA0B0F0"
     },
     {
-      "id": "getKernelStack",
-      "name": "getKernelStack",
-      "val": 1,
-      "nodeColor": "0xA0B0F0"
-    },
-    {
-      "id": "readHTPIDR",
-      "name": "readHTPIDR",
-      "val": 1,
-      "nodeColor": "0xA0B0F0"
-    },
-    {
-      "id": "readTPIDRPRW",
-      "name": "readTPIDRPRW",
-      "val": 1,
-      "nodeColor": "0xA0B0F0"
-    },
-    {
       "id": "getReceiveSlots",
       "name": "getReceiveSlots",
       "val": 1,
@@ -4083,18 +4065,6 @@
     {
       "id": "mdb_node_ptr_set_mdbRevocable",
       "name": "mdb_node_ptr_set_mdbRevocable",
-      "val": 1,
-      "nodeColor": "0xA0B0F0"
-    },
-    {
-      "id": "str_to_long",
-      "name": "str_to_long",
-      "val": 1,
-      "nodeColor": "0xA0B0F0"
-    },
-    {
-      "id": "char_to_long",
-      "name": "char_to_long",
       "val": 1,
       "nodeColor": "0xA0B0F0"
     },
@@ -7875,14 +7845,6 @@
       "target": "l1index_to_prio"
     },
     {
-      "source": "getKernelStack",
-      "target": "readHTPIDR"
-    },
-    {
-      "source": "getKernelStack",
-      "target": "readTPIDRPRW"
-    },
-    {
       "source": "getObjectSize",
       "target": "Arch_getObjectSize"
     },
@@ -10637,10 +10599,6 @@
     {
       "source": "storeHWASID",
       "target": "pde_pde_invalid_new"
-    },
-    {
-      "source": "str_to_long",
-      "target": "char_to_long"
     },
     {
       "source": "supportsAsyncExceptions",
