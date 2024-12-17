@@ -1,6 +1,76 @@
 const defaultTheme = require('tailwindcss/defaultTheme')
 const colors = require('tailwindcss/colors')
 
+f_green = { /* foundation logo green = f_green['400'] */
+  '50': '#f5faeb',
+  '100': '#e8f4d3',
+  '200': '#d2ebab',
+  '300': '#b4dc7a',
+  '400': '#96ca4f',
+  '500': '#78b032',
+  '600': '#5c8c24',
+  '700': '#486b20',
+  '800': '#3b561e',
+  '900': '#33491e',
+  '950': '#19280b',
+}
+
+f_red = { /* foundation accentDark = f_red['900'] */
+  '50': '#fff4ea',
+  '100': '#ffe6ce',
+  '200': '#ffc89c',
+  '300': '#ffa15d',
+  '400': '#ff6a1c',
+  '500': '#ff4300',
+  '600': '#ff2300',
+  '700': '#e10f00',
+  '800': '#b10b00',
+  '900': '#820c00',
+  '950': '#4d0100',
+}
+
+f_yellow = { /* foundation emphasis = f_yellow['300'] */
+  '50': '#fff9eb',
+  '100': '#ffeec6',
+  '200': '#ffdb88',
+  '300': '#ffca5f',
+  '400': '#ffab20',
+  '500': '#f98807',
+  '600': '#dd6202',
+  '700': '#b74206',
+  '800': '#94320c',
+  '900': '#7a2a0d',
+  '950': '#461302',
+}
+
+f_neutral = { /* foundation neutral = f_neutral['700'] */
+  '50': '#f5f7fa',
+  '100': '#e9edf5',
+  '200': '#cfd9e8',
+  '300': '#a5bad4',
+  '400': '#7496bc',
+  '500': '#5278a5',
+  '600': '#3f5f8a',
+  '700': '#385378',
+  '800': '#2e425e',
+  '900': '#2b3a4f',
+  '950': '#1c2535',
+}
+
+f_blue = { /* 950 = dark blue background */
+  '50': '#e4ecff',
+  '100': '#cfdcff',
+  '200': '#a8bcff',
+  '300': '#7490ff',
+  '400': '#3e4fff',
+  '500': '#1413ff',
+  '600': '#0800ff',
+  '700': '#0800ff',
+  '800': '#0700e4',
+  '900': '#0c00b0',
+  '950': '#030020',
+}
+
 module.exports = {
   content: [
     './_includes/**/*.html',
@@ -14,15 +84,20 @@ module.exports = {
         'sans': ['Roboto', ...defaultTheme.fontFamily.sans],
       },
       colors: {
+        f_green: f_green,
+        f_red: f_red,
+        f_yellow: f_yellow,
+        f_neutral: f_neutral,
+        f_blue: f_blue,
         darkcol: colors.gray['900'],
         darkcol_inv: colors.gray['300'],
         lightcol: colors.gray['600'],
         lightcol_inv: colors.gray['400'],
-        logogreen: '#96ca4f',
-        darkblue: '#030020',
+        logogreen: f_green['400'],
+        darkblue: f_blue['950'],
         accentlight: colors.slate['400'],
         accent: colors.slate['500'],
-        accentdark: colors.slate['600']
+        accentdark: colors.slate['600'],
       },
       animation: {
         'infinite-scroll': 'infinite-scroll 50s linear infinite',
