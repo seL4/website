@@ -21,6 +21,7 @@ defaults:
       path: ""
     values:
       layout: "default"
+      background: true
 
 # Build settings
 
