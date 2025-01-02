@@ -247,6 +247,14 @@ layout: none
   @apply text-2xl sm:text-4xl;
 }
 
+/* has enough specificity for styles like "prose": */
+a.button,
+a.button-outline,
+a.button-outline-nodark,
+a.button-on-dark,
+a.arrow-link,
+a.pre-heading
+/* for more specificity, to override the ".card-layout p a" rules: */
 .card-layout a.button,
 .card-layout a.button-outline,
 .card-layout a.button-outline-nodark,
