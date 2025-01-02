@@ -1,7 +1,7 @@
-<div class="heading px-6 pt-6 sm:pt-8 pb-12 sm:pb-20 lg:px-8 section-borders">
-  <div class="section-max-w text-center">
+<div class="px-6 lg:px-8 pt-6 sm:pt-8 pb-12 sm:pb-20 section-borders">
+  <div class="mx-auto max-w-4xl text-center">
     {% if include.pre %}
-    <div class="pre-heading">
+    <div class="text-center text-lg font-semibold leading-7 text-f_green-600 dark:text-f_green-400">
       {% if include.pre_link %}<a href="{{ include.pre_link }}" class="hover:underline">{% endif %}
       {{ include.pre }}
       {% if include.pre_link %}
@@ -10,8 +10,8 @@
       {% endif %}
     </div>
     {% endif %}
-    <h1>{{ include.h1 }}</h1>
-    <div class="mt-6 sub-heading">
+    <h1 class="text-center font-bold tracking-tight text-dark text-3xl sm:text-5xl">{{ include.h1 }}</h1>
+    <div class="mt-6 text-center text-base md:text-lg text-light leading-loose">
       {{ include.sub }}
     </div>
     {% if include.h2 %}
