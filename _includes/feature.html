@@ -1,0 +1,29 @@
+{% assign button = include.button | default: "Learn more" %}
+{% assign link = include.link | relative_url %}
+{% assign width = include.width | default: "400px" %}
+<div class="py-16 sm:py-20 mx-auto max-w-7xl px-6 lg:px-8">
+  <div class="text-lg leading-8 text-light mt-6 mr-10 lg:grid lg:grid-rows-[auto_auto]
+              {%if include.right%}
+              lg:gap-x-14 lg:grid-cols-[40%_60%]
+              {%else%}
+              lg:gap-x-10 lg:grid-cols-[60%_40%]
+              {%endif%}">
+    <h2 class="mb-8 text-3xl lg:text-4xl font-bold tracking-tight text-dark
+               {%if include.right%} order-2 {%endif%}">
+      {{include.h2}}
+    </h2>
+    <div></div>
+    <div class="{%if include.right%} order-4 {%endif%}">
+      {{include.text}}
+      <div class="mt-10 flex items-center gap-x-6">
+        <a href="{{link}}" class="button">{{button}}</a>
+      </div>
+    </div>
+    <div class="mt-12 lg:mt-0 {%if include.right%} order-3 {%endif%}">
+      <a href="{{link}}">
+	      <img class="rounded-xl shadow-xl mx-auto"
+             src="{{include.img}}" alt="{{include.alt}}" width="{{width}}">
+      </a>
+    </div>
+  </div>
+</div>
