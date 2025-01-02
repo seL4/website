@@ -7,30 +7,33 @@ background: false
 redirect_from: /Foundation/Membership/home.pml
 ---
 
-<!-- FIXME: update style of title to be consistent with the rest; center... -->
+<!-- FIXME: override dark mode, because some of the logos don't work on dark background -->
 
-<!-- override dark mode, because some of the logos don't work on dark background -->
-<div class="bg-white pt-10 pb-24 sm:pt-16 sm:pb-28">
-  <div class="mx-4 lg:mx-auto max-w-4xl
-              [&_h2]:text-2xl [&_h2]:md:text-4xl [&_h2]:font-semibold [&_h2]:tracking-tight [&_h2]:mt-20 [&_h2]:mb-16">
-
-    <div class="theprose-nodark mt-0 pt-0">
-      <h1>{{page.title}}</h1>
+  {% include heading.html
+     pre='The seL4 Foundation'
+     pre_link='../'
+     h1=page.title
+     sub='
       <p>
         Below is the list of members of the
-        <a title="seL4 Foundation" href="../">seL4 Foundation</a>. Want to be part of the adventure?
-      </p> <p>
-      <!-- member button -->
-      <a href="{{ '/Foundation/Join/' | relative_url }}" class="button-outline-nodark">Become a Member</a></p>
-    </div>
+        <a title="seL4 Foundation" href="../">seL4 Foundation</a>.
+      </p>
+      <p>
+        Want to be part of the adventure?
+      </p>
+      <p class="text-center mt-10">
+        <a href="../Join/" class="button-outline-nodark text-sm-base w-20 h-8">Become a Member</a>
+      </p>
+      '
+  %}
 
 
 
-
+<!-- FIXME: make this a component or CSS utility -->
 
 <!--    <h2>Premium Members</h2> -->
 
-<div class="pt-20 pb-10 inline-flex items-center justify-center w-full">
+<div class="pt-10 pb-10 inline-flex items-center justify-center w-full">
     <hr class="w-full h-px my-8 bg-gray-200 border-0 dark:bg-gray-700">
     <span class="absolute px-3 text-2xl font-light text-gray-900 -translate-x-1/2
 		 bg-white left-1/2 dark:text-white dark:bg-gray-900">
@@ -66,5 +69,3 @@ redirect_from: /Foundation/Membership/home.pml
 </div>
     {%- assign members = site.data.members.associate | sort_natural: "name" -%}
     {%- include member-info.html -%}
-  </div>
-</div>
