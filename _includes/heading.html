@@ -2,9 +2,12 @@
   <div class="section-max-w text-center">
     {% if include.pre %}
     <div class="pre-heading">
-      {% if include.pre_link %}<a href="{{ include.pre_link }}">{% endif %}
+      {% if include.pre_link %}<a href="{{ include.pre_link }}" class="hover:underline">{% endif %}
       {{ include.pre }}
-      {% if include.pre_link %}</a>{% endif %}
+      {% if include.pre_link %}
+      {% unless include.noarrow %}{% include icons/arrow-uturn-left.svg class="inline-icon -mt-2" %}{% endunless %}
+      </a>
+      {% endif %}
     </div>
     {% endif %}
     <h1>{{ include.h1 }}</h1>
