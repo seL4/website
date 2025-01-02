@@ -153,8 +153,36 @@ layout, e.g.:
 
 ## Feature Sections
 
-TODO: the feature sections on the main landing page should really become a
-`include` component.
+A feature section with heading, image, text next to the image, and a link. Image
+can be on the left or right. Used mainly on the landing page.
+
+### Example
+
+```html
+{%
+  include feature.html
+  right=true
+  h2="Protecting critical systems around the globe"
+  text="
+      <p>
+        seL4 protects critical systems from software failures and
+        cyber-attacks. It allows non-critical functionality to run securely
+        alongside critical payloads by enforcing strong isolation and controlled
+        communication.
+      </p>
+      <p>
+        seL4 is used in a wide range of critical sectors, from automotive,
+        aerospace and IoT to data distribution, military and intelligence. It
+        has been successfully retrofitted into complex critical systems and has
+        demonstrably prevented cyber-attacks. Government organisations on
+        several continents have funded further development of seL4 and its
+        ecosystem.
+      </p>"
+  link="#"
+  img="images/tries-shutterstock/cpu.jpg"
+  alt="Critical system"
+%}
+```
 
 ## Member scroll section
 
