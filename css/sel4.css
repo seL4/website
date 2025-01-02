@@ -157,6 +157,14 @@ layout: none
   .mobile-menu {
     @apply mt-2 space-y-2;
   }
+
+  .section-borders {
+    @apply px-6 lg:px-8 pt-6 sm:pt-8 pb-12 sm:pb-20;
+  }
+
+  .section-max-w {
+    @apply mx-auto max-w-4xl;
+  }
 }
 
 /* common padding settings for front page sections */
@@ -227,24 +235,8 @@ layout: none
           [&_li]:mx-8 [&_img]:max-w-none;
 }
 
-.heading .section-borders, .card-layout .section-borders {
-  @apply px-6 lg:px-8 pt-6 sm:pt-8 pb-12 sm:pb-20;
-}
-
-.heading .section-max-w, .card-layout .section-max-w {
-  @apply mx-auto max-w-4xl;
-}
-
-.heading h1, .card-layout h1, .card-layout h2 {
-  @apply text-center font-bold tracking-tight text-dark;
-}
-
-.heading h1, .card-layout h1 {
-  @apply text-3xl sm:text-5xl;
-}
-
-.heading h2, .card-layout h2 {
-  @apply text-2xl sm:text-4xl;
+.card-layout h2 {
+  @apply text-center font-bold tracking-tight text-dark text-2xl sm:text-4xl;
 }
 
 /* has enough specificity for styles like "prose": */
@@ -253,29 +245,18 @@ a.button-outline,
 a.button-outline-nodark,
 a.button-on-dark,
 a.arrow-link,
-a.pre-heading
 /* for more specificity, to override the ".card-layout p a" rules: */
 .card-layout a.button,
 .card-layout a.button-outline,
 .card-layout a.button-outline-nodark,
 .card-layout a.button-on-dark,
-.card-layout a.arrow-link,
-.card-layout a.pre-heading {
+.card-layout a.arrow-link {
   @apply no-underline;
 }
 
-.heading p a,
 .card-layout p a,
 .card-layout li a {
   @apply underline;
-}
-
-.pre-heading {
-  @apply text-center text-lg font-semibold leading-7 text-[#509b49] dark:text-[#74ba6e]
-}
-
-.sub-heading {
-  @apply text-center text-base md:text-lg text-light mt-6 leading-loose;
 }
 
 .dropmenu {
