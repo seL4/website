@@ -3,9 +3,11 @@
 {%- assign icon_colour = include.icon_colour | default: "bg-logogreen" -%}
 <div class="flex flex-col relative rounded-lg light:border bg-white shadow-lg {% if include.link %}hover:bg-slate-50 dark:hover:bg-slate-100{% endif %} {{ include.class }}">
   {% if include.icon %}
-  <div class="absolute {{ icon_colour }} -top-8 left-1/2 -ml-8 p-4 rounded-full shadow-md">
-  {% include {{ icon }} class="h-8 w-8" %}
-  </div>
+  {% if include.link %}<a href="{{ include.link }}">{% endif %}
+    <div class="absolute {{ icon_colour }} -top-8 left-1/2 -ml-8 p-4 rounded-full shadow-md">
+      {% include {{ icon }} class="h-8 w-8" %}
+    </div>
+  {% if include.link %}</a>{% endif %}
   {% endif %}
   <h3 class="px-6 {% if include.icon %} pt-12 {% else %} pt-5 {% endif %} pb-3 text-center text-base font-semibold leading-7 text-gray-900 {{ include.title_colour }} {{ include.title_class }}">
     {{ include.title }}
@@ -15,7 +17,7 @@
   </div>
 {%- if include.link %}
   <div class="px-6 mt-1 pb-5">
-    <a href="{{ include.link }}" class="text-sm font-semibold leading-6 text-f_green-600">{{ link_text }} <span aria-hidden="true">→</span>
+    <a href="{{ include.link }}" class="arrow-link">{{ link_text }}
       <span class="absolute inset-0"></span>
     </a>
   </div>
