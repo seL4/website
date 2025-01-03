@@ -85,13 +85,13 @@
 				"arrow-path",
 				"Contribution Guidelines",
 				"Overview on how to contribute to seL4",
-				"/About/"
+				"/Contribute/"
 			],
 			[
 				"shield-check",
 				"Code of Conduct",
 				"Rules for interaction",
-				"/About/"
+				"/Contribute/conduct.html"
 			],
 			[
 				"command-line",
