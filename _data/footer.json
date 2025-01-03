@@ -20,7 +20,7 @@
 			],
 			[
 				"Sitemap",
-				"#"
+				"/todo.html"
 			]
 		]
 	],
@@ -33,7 +33,7 @@
 			],
 			[
 				"seL4 License",
-				"/About/"
+				"/todo.html"
 			],
 			[
 				"Code of Conduct",
@@ -54,15 +54,15 @@
 			],
 			[
 				"Manual",
-				"#"
+				"/todo.html"
 			],
 			[
 				"Tutorials",
-				"#"
+				"/todo.html"
 			],
 			[
 				"FAQ",
-				"#"
+				"/todo.html"
 			]
 		]
 	]
