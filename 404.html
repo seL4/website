@@ -1,0 +1,42 @@
+---
+# Copyright 2024 seL4 Project a Series of LF Projects, LLC.
+# SPDX-License-Identifier: CC-BY-SA-4.0
+title: Page Not Found
+layout: card
+---
+
+{% include heading.html
+  pre=404
+  h1="Page Not Found :-("
+  sub="Oops, this page does not seem to exist."
+%}
+
+<div class="max-w-4xl">
+
+  <div class="grid grid-cols-2 gap-10 pb-12">
+
+    {% include card.html
+      icon="light-bulb"
+      title="seL4 Home"
+      body="Return to the seL4 home page."
+      link="/"
+      link_text="Go to page"
+    %}
+
+    {% include card.html
+      icon="book-open"
+      title="seL4 Docsite"
+      body="Go to the seL4 documentation site"
+      link="https://docs.sel4.systems/"
+      link_text="Go to page"
+    %}
+
+  </div>
+  <p>
+    If you found a link on this site that is not working, please consider <a
+      href="https://github.com/seL4/website/issues">filing an issue</a> to let us
+    know or opening a pull request to fix it on the
+    <a href="https://github.com/seL4/website">seL4 website GitHub repository</a>.
+  </p>
+
+</div>
