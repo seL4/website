@@ -12,19 +12,19 @@
 				"user-group",
 				"Who is using seL4?",
 				"Where seL4 is used; Benefits seL4 brings",
-				"/About/"
+				"/todo.html"
 			],
 			[
 				"check-circle",
 				"Verification",
 				"seL4 Proofs; implications for seL4-based systems and certification",
-				"/About/"
+				"/todo.html"
 			],
 			[
 				"arrow-trending-up",
 				"Roadmap",
 				"Planned development & verification",
-				"/About/"
+				"/todo.html"
 			],
 			[
 				"bolt",
@@ -36,13 +36,13 @@
 				"scale",
 				"License & Trademark",
 				"seL4 License and Implications; Trademark Compliance Guide",
-				"/About/"
+				"/todo.html"
 			],
 			[
 				"cpu-chip",
 				"Supported Platforms",
 				"Hardware and simulators seL4 runs on",
-				"/About/"
+				"/todo.html"
 			],
 			[
 				"academic-cap",
@@ -54,7 +54,7 @@
 				"squares-plus",
 				"Frameworks & Languages",
 				"Frameworks, Tools, OS Personalities, Components, Language Support",
-				"/About/"
+				"/todo.html"
 			],
 			[
 				"building-library",
@@ -74,7 +74,7 @@
 				"question-mark-circle",
 				"FAQ",
 				"Frequently Asked Questions",
-				"/About/"
+				"/todo.html"
 			]
 		]
 	],
@@ -97,7 +97,7 @@
 				"command-line",
 				"Coding Conventions & Requirements",
 				"Requirements for C Code, Git Commits, Pull Requests",
-				"/About/"
+				"/todo.html"
 			],
 			[
 				"beaker",
@@ -109,7 +109,7 @@
 				"wrench-screwdriver",
 				"Platform Maintainer",
 				"Contributing and maintaining a platform port",
-				"/About/"
+				"/todo.html"
 			],
 			[
 				"users",
@@ -138,7 +138,7 @@
 				"envelope",
 				"Stay Informed",
 				"Announcement mailing list and other channels to stay informed",
-				"/About/"
+				"/todo.html"
 			]
 		]
 	],
@@ -149,19 +149,19 @@
 				"rocket-launch",
 				"Commercial Support",
 				"Endorsed Service Providers for seL4",
-				"/About/"
+				"/todo.html"
 			],
 			[
 				"lifebuoy",
 				"Help & Open Source Support",
 				"Mailing lists, Forum, Chat, Developer Hangouts",
-				"/About/"
+				"/todo.html"
 			],
 			[
 				"user",
 				"Contact a Person",
 				"seL4 Foundation, Security Contact, Website Contact, Moderation",
-				"/About/"
+				"/todo.html"
 			]
 		]
 	]
