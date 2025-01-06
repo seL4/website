@@ -354,10 +354,10 @@
    font-weight: bold;
  }
 
-/* REMOVE - NEW CSS MEMBER -------
+/* css for members, with new alignment
 /* three members */
 .members-3 {
-  max-width:500px;
+  max-width:700px;
   margin-left: auto;
   margin-right: auto;
   padding-top: 50px;
@@ -372,6 +372,7 @@
     "info1 info2 info3";
   align-items: center;
 }
+
 .member3-pic1 {
   grid-area: logo1;
   text-align: center;
@@ -396,21 +397,27 @@
   grid-area: name3;
   text-align: center;
 }
-.member3-tier1 {
-  grid-area: tier1;
+.member3-info1 {
+  grid-area: info1;
   text-align: center;
   font-size:0.8em;
 }
-.member3-tier2 {
-  grid-area: tier2;
+.member3-info2 {
+  grid-area: info2;
   text-align: center;
   font-size:0.8em;
 }
-.member3-tier3 {
-  grid-area: tier3;
+.member3-info3 {
+  grid-area: info3;
   text-align: center;
   font-size:0.8em;
 }
+     "name3"
+     "info3"
+     ;
+   }
+ }
+
 
 
 /* REMOVE _____________
