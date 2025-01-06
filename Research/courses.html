@@ -31,92 +31,66 @@ layout: card
 <!--FIXME: decide on an order-->
 
 
-<div class="feature-right">
-  <div class="feature-content mt-0">
-    <h2>Advanced Operating Systems</h2>
-    <div></div>
-    <div class="feature-text">
-      <p>
-	The course, offered at UNSW Sydney, Australia, provides students with a
-	deep understanding of modern operating system technology, implementation
-	techniques and research issues. It develops general “systems skills”,
-	the ability to design, implement and understand a complex software
-	system. It specifically provides a thorough understanding of low-level
-	system software and its interaction with hardware, the trade-offs that
-	determine system performance, techniques to assess performance
-	correctly, and the impact of system design on security. The course is
-	based on seL4 and students build an seL4-based operating system. The
-	lectures are
-	available <a href="https://www.youtube.com/playlist?list=PLtoQeavghzr3nlXyJEXaTLU9Ca0DXWMnt">online</a>.
-      </p>
-      <div class="feature-buttons">
-        <a href="https://www.handbook.unsw.edu.au/postgraduate/courses/2025/COMP9242?year=2025"
-        class="button">Learn more</a>
-      </div>
-    </div>
-    <div class="feature-img">
-      <a href="Foundation/Membership/LOGOS/UNSW.svg">
-      	<img src="../Foundation/Membership/LOGOS/UNSW.svg" alt="UNSW Logo" width="400px" class="p-10 bg-white">
-      </a>
-    </div>
-  </div>
-</div>
+{% include feature.html
+  right=true
+  h2="Advanced Operating Systems"
+  text='
+  <p>
+    The course, offered at UNSW Sydney, Australia, provides students with a
+    deep understanding of modern operating system technology, implementation
+    techniques and research issues. It develops general “systems skills”,
+    the ability to design, implement and understand a complex software
+    system. It specifically provides a thorough understanding of low-level
+    system software and its interaction with hardware, the trade-offs that
+    determine system performance, techniques to assess performance
+    correctly, and the impact of system design on security. The course is
+    based on seL4 and students build an seL4-based operating system. Videos of the
+    lectures are available <a
+    href="https://www.youtube.com/playlist?list=PLtoQeavghzr3nlXyJEXaTLU9Ca0DXWMnt">online</a>.
+  </p>'
+  link="https://www.handbook.unsw.edu.au/postgraduate/courses/2025/COMP9242?year=2025"
+  img="/Foundation/Membership/LOGOS/UNSW.svg"
+  img_class="p-white"
+  alt="UNSW Logo"
+%}
 
-
-
-<div class="feature-right">
-  <div class="feature-content mt-0">
-    <h2>Advanced Topics in Software Verification</h2>
-    <div></div>
-    <div class="feature-text">
-      <p>
-	This course, offered at UNSW Sydney, Australia, is about mechanical
-	proof assistants, how they work, and what they can be used for.  It
-	presents specification and proof techniques used in industrial grade
-	interactive theorem provers, teaches the theoretical background to the
-	techniques involved, and shows how to use a theorem prover to conduct
-	formal proofs in practice.  Topics include higher order logic, natural
-	deduction, lambda calculus, term rewriting, data types and recursive
-	functions, induction principles, and proofs about programs. The course
-	will provide hands-on experience with the proof assistant Isabelle/HOL,
-	which is used in the verification of seL4.
-      </p>
-      <div class="feature-buttons">
-        <a href="https://cgi.cse.unsw.edu.au/~cs4161/"
-        class="button">Learn more</a>
-      </div>
-    </div>
-    <div class="feature-img">
-      <a href="Foundation/Membership/LOGOS/UNSW.svg">
-	      <img src="../Foundation/Membership/LOGOS/UNSW.svg" alt="UNSW Logo" width="400px" class="p-10 bg-white">
-      </a>
-    </div>
-  </div>
-</div>
+{% include feature.html
+  right=true
+  h2="Advanced Topics in Software Verification"
+  text="
+  <p>
+    This course, offered at UNSW Sydney, Australia, is about mechanical
+    proof assistants, how they work, and what they can be used for.  It
+    presents specification and proof techniques used in industrial grade
+    interactive theorem provers, teaches the theoretical background to the
+    techniques involved, and shows how to use a theorem prover to conduct
+    formal proofs in practice.  Topics include higher order logic, natural
+    deduction, lambda calculus, term rewriting, data types and recursive
+    functions, induction principles, and proofs about programs. The course
+    will provide hands-on experience with the proof assistant Isabelle/HOL,
+    which is used in the verification of seL4.
+  </p>"
+  link="https://cgi.cse.unsw.edu.au/~cs4161/"
+  img="/Foundation/Membership/LOGOS/UNSW.svg"
+  img_class="p-white"
+  alt="UNSW Logo"
+%}
 
 <!--FIXME: properly get access to ANU logo, once they sign as associate-->
 
-<div class="feature-right">
-  <div class="feature-content mt-0">
-    <h2>Advanced Topics in Formal Methods and Programming Languages</h2>
-    <div></div>
-    <div class="feature-text">
-      <p>
-	This course, offered at ANU, Canberra, Australia is based on the course
-	Advanced Topics in Software Verification offered by UNSW. It has the
-	same objectives and outcomes, and will provide hands-on experience with
-	the proof assistant Isabelle/HOL, which is used in the verification of
-	seL4.
-      </p>
-      <div class="feature-buttons">
-        <a href="https://comp.anu.edu.au/courses/comp4011-itp/"
-        class="button">Learn more</a>
-      </div>
-    </div>
-    <div class="feature-img">
-      <a href="images/tries-shutterstock/logo-ANU-black.svg">
-	      <img src="../images/tries-shutterstock/logo-ANU-black.svg" alt="ANU Logo" width="400px" class="p-10 bg-white">
-      </a>
-    </div>
-  </div>
-</div>
+{% include feature.html
+  right=true
+  h2="Advanced Topics in Formal Methods and Programming Languages"
+  text="
+  <p>
+    This course, offered at ANU, Canberra, Australia is based on the course
+    Advanced Topics in Software Verification offered by UNSW. It has the
+    same objectives and outcomes, and will provide hands-on experience with
+    the proof assistant Isabelle/HOL, which is used in the verification of
+    seL4.
+   </p>"
+  link="https://comp.anu.edu.au/courses/comp4011-itp/"
+  img="/images/tries-shutterstock/logo-ANU-black.svg"
+  alt="ANU Logo"
+  img_class="p-white"
+%}
