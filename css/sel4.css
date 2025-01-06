@@ -169,6 +169,10 @@ layout: none
   .section-max-w {
     @apply mx-auto max-w-4xl;
   }
+
+  .h2-size {
+    @apply font-bold tracking-tight text-dark text-2xl sm:text-4xl;
+  }
 }
 
 /* ---- logo cloud ---- */
@@ -186,10 +190,6 @@ layout: none
   @apply flex items-center justify-center md:justify-start
           animate-infinite-scroll motion-reduce:animate-none
           [&_li]:mx-8 [&_img]:max-w-none;
-}
-
-.card-layout h2 {
-  @apply text-center font-bold tracking-tight text-dark text-2xl sm:text-4xl;
 }
 
 /* has enough specificity for styles like "prose": */
