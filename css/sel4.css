@@ -35,6 +35,10 @@ layout: none
     @apply text-sm sm:text-base;
   }
 
+  .p-white {
+    @apply p-10 bg-white;
+  }
+
   .on-dark-btn-colors {
     @apply text-gray-900 bg-slate-400 hover:bg-slate-500;
   }
