@@ -1,19 +1,15 @@
-<div class="py-8">
-    <div class="mx-auto grid max-w-2xl grid-cols-1 gap-8 overflow-hidden ">
-      <div>
-	<div class="flex items-center text-lg font-semibold leading-6 text-f_blue-900">
+<div>
+	<div class="flex items-center text-lg font-semibold leading-6 text-f_blue-900 dark:text-f_blue-200">
 	  <svg viewBox="0 0 4 4" class="mr-4 h-1 w-1 flex-none" aria-hidden="true">
 	    <circle cx="2" cy="2" r="2" fill="currentColor" />
 	  </svg>
 	  <time datetime="{{ include.date }}">{{ include.year }}</time>
-	  <div class="absolute -ml-2 h-px w-screen -translate-x-full bg-gray-900/10 sm:-ml-4 " aria-hidden="true"></div>
+	  <div class="absolute -ml-2 h-px w-full -translate-x-full bg-f_blue-900/20 dark:bg-f_blue-200 sm:-ml-4" aria-hidden="true"></div>
 	</div>
-	<p class="mt-6 text-lg font-semibold leading-8 tracking-tight text-gray-900">
+	<p class="mt-6 text-lg font-semibold leading-8 tracking-tight text-dark">
 	  {{ include.title }}
 	</p>
-	<p class="mt-1 text-base leading-7 text-gray-600">
+	<p class="mt-1 text-base leading-7 text-light">
 	  {{ include.description }}
 	</p>
-      </div>
-    </div>
-  </div>
+</div>
