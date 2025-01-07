@@ -29,39 +29,26 @@ sub: '
 <div class="py-12">
   <div class="mx-auto max-w-7xl px-6 lg:px-8">
     <div class="mx-auto grid max-w-2xl grid-cols-1 gap-8 overflow-hidden ">
-      <div>
-	<time datetime="2021-08" class="flex items-center text-lg font-semibold leading-6 text-f_blue-900">
-          <svg viewBox="0 0 4 4" class="mr-4 h-1 w-1 flex-none" aria-hidden="true">
-            <circle cx="2" cy="2" r="2" fill="currentColor" />
-          </svg>
-          2023
-          <div class="absolute -ml-2 h-px w-screen -translate-x-full bg-gray-900/10 sm:-ml-4 " aria-hidden="true"></div>
-	</time>
-	<p class="mt-6 text-lg font-semibold leading-8 tracking-tight text-gray-900">
-	  DARPA Game Changer Award for HACMS
-	</p>
-	<p class="mt-1 text-base leading-7 text-gray-600">
+
+      {% include timeline-item.html
+      date="2023"
+      year="2023"
+      title="DARPA Game Changer Award for HACMS"
+      description="
 	  Each year, DARPA, the US Defense Advanced Research Projects Agency,
 	  selects the Game Changer program that was the most impactful in the
 	  preceding 10 years. In 2023, DARPA's Game Changer award recognised the
 	  High-Assurance Cyber Military Systems program (HACMS), which has been
 	  instrumental in demonstrating how seL4 can be integrated into
 	  real-world products, such as unmanned air and ground vehicles, to
-	  provide unprecedented protection against cyber attacks.
-	</p>
-      </div>
-      <div>
-	<time datetime="2021-08" class="flex items-center text-lg font-semibold leading-6 text-f_blue-900">
-          <svg viewBox="0 0 4 4" class="mr-4 h-1 w-1 flex-none" aria-hidden="true">
-            <circle cx="2" cy="2" r="2" fill="currentColor" />
-          </svg>
-          2022
-          <div class="absolute -ml-2 h-px w-screen -translate-x-full bg-gray-900/10 sm:-ml-4 " aria-hidden="true"></div>
-	</time>
-	<p class="mt-6 text-lg font-semibold leading-8 tracking-tight text-gray-900">
-	  ACM Software System Award
-	</p>
-	<p class="mt-1 text-base leading-7 text-gray-600">
+	  provide unprecedented protection against cyber attacks."
+      %}
+
+      {% include timeline-item.html
+      date="2022"
+      year="2022"
+      title="ACM Software System Award"
+      description='
 	  The ACM Software System Award, presented annually by the Association for
 	  Computing Machinery (ACM) since 1983, honors individuals or
 	  organisations "for developing a software system that has had a lasting
@@ -71,42 +58,28 @@ sub: '
 	  the ACM Software System Award</a>, recognised as a technology that has
 	  "fundamentally changed the research community&apos;s perception of what
 	  formal methods can accomplish", also for giving "rise to a new
-	  discipline of proof engineering".
-	</p>
-      </div>
-      <div>
-	<time datetime="2021-08" class="flex items-center text-lg font-semibold leading-6 text-f_blue-900">
-          <svg viewBox="0 0 4 4" class="mr-4 h-1 w-1 flex-none" aria-hidden="true">
-            <circle cx="2" cy="2" r="2" fill="currentColor" />
-          </svg>
-          2019
-          <div class="absolute -ml-2 h-px w-screen -translate-x-full bg-gray-900/10 sm:-ml-4 " aria-hidden="true"></div>
-	</time>
-	<p class="mt-6 text-lg font-semibold leading-8 tracking-tight text-gray-900">
-	  ACM SIGOPS Hall of Fame Award
-	</p>
-	<p class="mt-1 text-base leading-7 text-gray-600">
+          discipline of proof engineering".'
+      %}
+
+      {% include timeline-item.html
+      date="2019"
+      year="2019"
+      title="ACM SIGOPS Hall of Fame Award"
+      description='
 	   The ACM SIGOPS Hall of Fame Award recognises the most influential
 	   Operating Systems papers that were published at least ten years in
 	   the past. In
 	   2019, <a href="https://www.sigops.org/2019/hof-award-2019/">this
 	   prestigious honor went to the seL4 project</a>, acknowledging that
 	   the work "has become the basis for a large amount of subsequent work
-	   in provably correct systems".
-	</p>
-      </div>
-      <div>
-	<time datetime="2021-08" class="flex items-center text-lg font-semibold leading-6 text-f_blue-900">
-          <svg viewBox="0 0 4 4" class="mr-4 h-1 w-1 flex-none" aria-hidden="true">
-            <circle cx="2" cy="2" r="2" fill="currentColor" />
-          </svg>
-          2011
-          <div class="absolute -ml-2 h-px w-screen -translate-x-full bg-gray-900/10 sm:-ml-4 " aria-hidden="true"></div>
-	</time>
-	<p class="mt-6 text-lg font-semibold leading-8 tracking-tight text-gray-900">
-	  MIT Technology Review's TR10 Award
-	</p>
-	<p class="mt-1 text-base leading-7 text-gray-600">
+	   in provably correct systems".'
+      %}
+
+      {% include timeline-item.html
+      date="2011"
+      year="2011"
+      title="MIT Technology Review's TR10 Award"
+      description='
 	  MIT Technology Review, founded in 1899 by the Massachusetts Institute
 	  of Technology, is a renowned independent media company that each year
 	  selects 10 transformative technologies expected to have the biggest
@@ -115,30 +88,24 @@ sub: '
 	  seL4 with its prestigious TR10 award,</a> recognizing it as a
 	  "computing and mathematical tour de force" that will have "a major
 	  impact on the reliability of the entire system", by "making critical
-	  software safer".
-	</p>
-      </div>
-      <div>
-	<time datetime="2021-08" class="flex items-center text-lg font-semibold leading-6 text-f_blue-900">
-          <svg viewBox="0 0 4 4" class="mr-4 h-1 w-1 flex-none" aria-hidden="true">
-            <circle cx="2" cy="2" r="2" fill="currentColor" />
-          </svg>
-          2009
-          <div class="absolute -ml-2 h-px w-screen -translate-x-full bg-gray-900/10 sm:-ml-4 " aria-hidden="true"></div>
-	</time>
-	<p class="mt-6 text-lg font-semibold leading-8 tracking-tight text-gray-900">
-	  SOSP Best Paper Award
-	</p>
-	<p class="mt-1 text-base leading-7 text-gray-600">
+	  software safer".'
+      %}
+
+      {% include timeline-item.html
+      date="2009"
+      year="2009"
+      title="SOSP Best Paper Award"
+      description='
 	  The Symposium on Operating Systems Principles (SOSP), organized by the
 	  Association for Computing Machinery (ACM), is one of the most
-	  prestigious academic conferences on operating systems. In 2009, seL4's
+	  prestigious academic conferences on operating systems. In 2009, seL4&apos;s
 	  cornerstone paper on the first formal proof of functional correctness
 	  of a high-performance microkernel received
 	  the <a href="https://www.sigops.org/s/conferences/sosp/2009/program.html">best
-	    paper award</a>.
-	</p>
-      </div>
+	    paper award</a>.'
+      %}
+
+
     </div>
   </div>
 </div>
