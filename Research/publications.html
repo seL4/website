@@ -10,220 +10,117 @@ sub: '
 <img src="../images/res_paper.jpeg" alt="CACM paper" class="rounded-lg">'
 layout: card
 ---
+<!-- FIXME: make image background above transparent for dark mode -->
+<!-- FIXME: add license file for screenshot-->
 
-<!-- FIXME: dark mode -->
+<!-- FIXME: remove (conference) from heading? -->
+<!-- FIXME: reduce heading to just year and make current heading a description
+	          underneath the paper? (to make the layout less busy, currently
+						everything is trying to draw attention) -->
+<!-- FIXME: paper title and authors currently not italic. Ok? -->
+<!-- FIXME: add page missing numbers for more recent papers -->
+<!-- FIXME: add links and/or PDF to papers -->
 
-<!--FIXME: add license file for screenshot-->
-<!--FIXME: what are time and datetime used for? should the dates be fixed here?-->
-<!--FIXME: GK: the <time> tag should only enclose a time or date, no further text. -->
+{% include timeline-start.html %}
 
+{% include timebib-item.html
+	date="2019-03-01"
+	heading="Time-protection principles for seL4 (EuroSys)"
+	title="Time protection: The missing OS abstraction"
+	authors="Qian Ge, Yuval Yarom, Tom Chothia and Gernot Heiser"
+	details="EuroSys Conference, Dresden, Germany"
+	award="Best Paper Award"
+%}
 
-<div class="bg-white pb-24 sm:pb-32">
-  <div class="mx-auto max-w-7xl px-6 lg:px-8">
-    <div class="mx-auto grid max-w-2xl grid-cols-1 gap-8 overflow-hidden ">
-      <div>
-	<time datetime="2021-08" class="flex items-center text-lg font-semibold leading-6 text-f_blue-900">
-          <svg viewBox="0 0 4 4" class="mr-4 h-1 w-1 flex-none" aria-hidden="true">
-            <circle cx="2" cy="2" r="2" fill="currentColor" />
-          </svg>
-          2019: Time-protection principles for seL4 (EuroSys)
-          <div class="absolute -ml-2 h-px w-screen -translate-x-full bg-gray-900/10 sm:-ml-4 " aria-hidden="true"></div>
-	</time>
-	<p class="mt-6 text-lg font-semibold italic leading-8 tracking-tight text-gray-900">
-	  Time protection: The missing OS abstraction
-	</p>
-	<p class="mt-1 text-base italic leading-7 text-gray-600">
-	  Qian Ge, Yuval Yarom, Tom Chothia and Gernot Heiser
-	</p>
-	<p class="mt-1 text-base leading-7 text-gray-600">
-	  EuroSys Conference, Dresden, Germany, March, 2019
-	</p>
-	<p class="mt-1 text-base leading-7 text-logogreen">
-	  Best Paper Award
-	</p>
-      </div>
-      <div>
-	<time datetime="2021-08" class="flex items-center text-lg font-semibold leading-6 text-f_blue-900">
-          <svg viewBox="0 0 4 4" class="mr-4 h-1 w-1 flex-none" aria-hidden="true">
-            <circle cx="2" cy="2" r="2" fill="currentColor" />
-          </svg>
-          2018: The principles of Mixed-Criticality support (MCS) for seL4 Systems (EuroSys)
-          <div class="absolute -ml-2 h-px w-screen -translate-x-full bg-gray-900/10 sm:-ml-4 " aria-hidden="true"></div>
-	</time>
-	<p class="mt-6 text-lg font-semibold italic leading-8 tracking-tight text-gray-900">
-	  Scheduling-context capabilities: A principled, light-weight OS mechanism for managing time
-	</p>
-	<p class="mt-1 text-base italic leading-7 text-gray-600">
-	  Anna Lyons, Kent Mcleod, Hesham Almatary and Gernot Heiser
-	</p>
-	<p class="mt-1 text-base leading-7 text-gray-600">
-	  EuroSys Conference, Porto, Portugal, April, 2018
-	</p>
-      </div>
-      <div>
-	<time datetime="2021-08" class="flex items-center text-lg font-semibold leading-6 text-f_blue-900">
-          <svg viewBox="0 0 4 4" class="mr-4 h-1 w-1 flex-none" aria-hidden="true">
-            <circle cx="2" cy="2" r="2" fill="currentColor" />
-          </svg>
-          2016: Worst-Case Execution Time (WCET) analysis for seL4 (RTAS)
-          <div class="absolute -ml-2 h-px w-screen -translate-x-full bg-gray-900/10 sm:-ml-4 " aria-hidden="true"></div>
-	</time>
-	<p class="mt-6 text-lg font-semibold italic leading-8 tracking-tight text-gray-900">
-	  Complete, high-assurance determination of loop bounds and infeasible paths for WCET analysis
-	</p>
-	<p class="mt-1 text-base italic leading-7 text-gray-600">
-	  Thomas Sewell, Chi Kam and Gernot Heiser
-	</p>
-	<p class="mt-1 text-base leading-7 text-gray-600">
-	  IEEE Real-Time and Embedded Technology and Applications Symposium (RTAS), Vienna, Austria, April, 2016
-	</p>
-	<p class="mt-1 text-base leading-7 text-logogreen">
-	  Outstanding Paper award
-	</p>
-      </div>
-      <div>
-	<time datetime="2021-08" class="flex items-center text-lg font-semibold leading-6 text-f_blue-900">
-          <svg viewBox="0 0 4 4" class="mr-4 h-1 w-1 flex-none" aria-hidden="true">
-            <circle cx="2" cy="2" r="2" fill="currentColor" />
-          </svg>
-          2014: Comprehensive overview of the complete proof stack for seL4 (TOCs)
-          <div class="absolute -ml-2 h-px w-screen -translate-x-full bg-gray-900/10 sm:-ml-4 " aria-hidden="true"></div>
-	</time>
-	<p class="mt-6 text-lg font-semibold italic leading-8 tracking-tight text-gray-900">
-	  Comprehensive formal verification of an OS microkernel
-	</p>
-	<p class="mt-1 text-base italic leading-7 text-gray-600">
-	  Gerwin Klein, June Andronick, Kevin Elphinstone, Toby Murray, Thomas Sewell, Rafal Kolanski and Gernot Heiser
-	</p>
-	<p class="mt-1 text-base leading-7 text-gray-600">
-	  ACM Transactions on Computer Systems, Volume 32, Number 1, pp. 2:1-2:70, February, 2014
-	</p>
-      </div>
-      <div>
-	<time datetime="2021-08" class="flex items-center text-lg font-semibold leading-6 text-f_blue-900">
-          <svg viewBox="0 0 4 4" class="mr-4 h-1 w-1 flex-none" aria-hidden="true">
-            <circle cx="2" cy="2" r="2" fill="currentColor" />
-          </svg>
-          2013: Binary verification of seL4 (PLDI)
-          <div class="absolute -ml-2 h-px w-screen -translate-x-full bg-gray-900/10 sm:-ml-4 " aria-hidden="true"></div>
-	</time>
-	<p class="mt-6 text-lg font-semibold italic leading-8 tracking-tight text-gray-900">
-	  Translation validation for a verified OS kernel
-	</p>
-	<p class="mt-1 text-base italic leading-7 text-gray-600">
-	  Thomas Sewell, Magnus Myreen and Gerwin Klein
-	</p>
-	<p class="mt-1 text-base leading-7 text-gray-600">
-	  ACM SIGPLAN Conference on Programming Language Design and
-	  Implementation, pp. 471–481, Seattle, Washington, USA, June, 2013
-	</p>
-      </div>
-      <div>
-	<time datetime="2021-08" class="flex items-center text-lg font-semibold leading-6 text-f_blue-900">
-          <svg viewBox="0 0 4 4" class="mr-4 h-1 w-1 flex-none" aria-hidden="true">
-            <circle cx="2" cy="2" r="2" fill="currentColor" />
-          </svg>
-          2013: Proof that seL4 enforces confidentiality (S &amp P)
-          <div class="absolute -ml-2 h-px w-screen -translate-x-full bg-gray-900/10 sm:-ml-4 " aria-hidden="true"></div>
-	</time>
-	<p class="mt-6 text-lg font-semibold italic leading-8 tracking-tight text-gray-900">
-	  seL4: From general purpose to a proof of information flow enforcement
-	</p>
-	<p class="mt-1 text-base italic leading-7 text-gray-600">
-	  Toby Murray, Daniel Matichuk, Matthew Brassil, Peter Gammie, Timothy
-	  Bourke, Sean Seefried, Corey Lewis, Xin Gao and Gerwin Klein
-	</p>
-	<p class="mt-1 text-base leading-7 text-gray-600">
-	  IEEE Symposium on Security and Privacy, pp. 415–429, San Francisco, CA, May, 2013
-	</p>
-      </div>
-      <div>
-	<time datetime="2021-08" class="flex items-center text-lg font-semibold leading-6 text-f_blue-900">
-          <svg viewBox="0 0 4 4" class="mr-4 h-1 w-1 flex-none" aria-hidden="true">
-            <circle cx="2" cy="2" r="2" fill="currentColor" />
-          </svg>
-          2010: Proof that seL4 enforces integrity (ITP)
-          <div class="absolute -ml-2 h-px w-screen -translate-x-full bg-gray-900/10 sm:-ml-4 " aria-hidden="true"></div>
-	</time>
-	<p class="mt-6 text-lg font-semibold italic leading-8 tracking-tight text-gray-900">
-	  seL4 enforces integrity
-	</p>
-	<p class="mt-1 text-base italic leading-7 text-gray-600">
-	  Thomas Sewell, Simon Winwood, Peter Gammie, Toby Murray, June
-	  Andronick and Gerwin Klein
-	</p>
-	<p class="mt-1 text-base leading-7 text-gray-600">
-	  International Conference on Interactive Theorem Proving, pp. 325–340,
-	  Nijmegen, The Netherlands, August, 2011
-	</p>
-      </div>
-      <div>
-	<time datetime="2021-08" class="flex items-center text-lg font-semibold leading-6 text-f_blue-900">
-          <svg viewBox="0 0 4 4" class="mr-4 h-1 w-1 flex-none" aria-hidden="true">
-            <circle cx="2" cy="2" r="2" fill="currentColor" />
-          </svg>
-          2010: Research Highlights paper on seL4's functional correctness proof (CACM)
-          <div class="absolute -ml-2 h-px w-screen -translate-x-full bg-gray-900/10 sm:-ml-4 " aria-hidden="true"></div>
-	</time>
-	<p class="mt-6 text-lg font-semibold italic leading-8 tracking-tight text-gray-900">
-	  seL4: Formal verification of an operating-system kernel
-	</p>
-	<p class="mt-1 text-base italic leading-7 text-gray-600">
-	  Gerwin Klein, June Andronick, Kevin Elphinstone, Gernot Heiser, David
-	  Cock, Philip Derrin, Dhammika Elkaduwe, Kai Engelhardt, Rafal
-	  Kolanski, Michael Norrish, Thomas Sewell, Harvey Tuch and Simon
-	  Winwood
-	</p>
-	<p class="mt-1 text-base leading-7 text-gray-600">
-	  Communications of the ACM, Volume 53, Number 6, pp. 107–115, June, 2010
-	</p>
-	<p class="mt-1 text-base leading-7 text-gray-600">
-	  Research Highlights paper
-	</p>
-      </div>
-      <div>
-	<time datetime="2021-08" class="flex items-center text-lg font-semibold leading-6 text-f_blue-900">
-          <svg viewBox="0 0 4 4" class="mr-4 h-1 w-1 flex-none" aria-hidden="true">
-            <circle cx="2" cy="2" r="2" fill="currentColor" />
-          </svg>
-          2009: The first full functional correctness proof of seL4 (SOSP)
-          <div class="absolute -ml-2 h-px w-screen -translate-x-full bg-gray-900/10 sm:-ml-4 " aria-hidden="true"></div>
-	</time>
-	<p class="mt-6 text-lg font-semibold italic leading-8 tracking-tight text-gray-900">
-	  seL4: Formal verification of an OS kernel
-	</p>
-	<p class="mt-1 text-base italic leading-7 text-gray-600">
-	  Gerwin Klein, Kevin Elphinstone, Gernot Heiser, June Andronick, David
-	  Cock, Philip Derrin, Dhammika Elkaduwe, Kai Engelhardt, Rafal
-	  Kolanski, Michael Norrish, Thomas Sewell, Harvey Tuch and Simon
-	  Winwood
-	</p>
-	<p class="mt-1 text-base leading-7 text-gray-600">
-	  ACM Symposium on Operating Systems Principles, pp. 207–220, Big Sky,
-	  MT, USA, October, 2009
-	</p>
-	<p class="mt-1 text-base leading-7 text-logogreen">
-	  Best Paper Award, Hall of Fame Award
-	</p>
-      </div>
-      <div>
-	<time datetime="2021-08" class="flex items-center text-lg font-semibold leading-6 text-f_blue-900">
-          <svg viewBox="0 0 4 4" class="mr-4 h-1 w-1 flex-none" aria-hidden="true">
-            <circle cx="2" cy="2" r="2" fill="currentColor" />
-          </svg>
-          2018: Security by architecture and cyber retrofit with seL4 (CACM)
-          <div class="absolute -ml-2 h-px w-screen -translate-x-full bg-gray-900/10 sm:-ml-4 " aria-hidden="true"></div>
-	</time>
-	<p class="mt-6 text-lg font-semibold italic leading-8 tracking-tight text-gray-900">
-	  Formally verified software in the real world
-	</p>
-	<p class="mt-1 text-base italic leading-7 text-gray-600">
-	  Gerwin Klein, June Andronick, Ihor Kuz, Toby Murray, Gernot Heiser and Matthew Fernandez
-	</p>
-	<p class="mt-1 text-base leading-7 text-gray-600">
-	  Communications of the ACM, Volume 61, Issue 10, pp. 68-77, October, 2018
-	</p>
-      </div>
-    </div>
-  </div>
-</div>
+{% include timebib-item.html
+	date="2018-10-01"
+	heading="Security by architecture and cyber retrofit with seL4 (CACM)"
+	title="Formally verified software in the real world"
+	authors="Gerwin Klein, June Andronick, Ihor Kuz, Toby Murray, Gernot Heiser
+	         and Matthew Fernandez"
+	details="Communications of the ACM, Volume 61, Issue 10, pp. 68-77"
+%}
+
+{% include timebib-item.html
+	date="2018-04-01"
+	heading="The principles of Mixed-Criticality support (MCS) for seL4 Systems (EuroSys)"
+	title="Scheduling-context capabilities: A principled, light-weight OS mechanism
+	       for managing time"
+	authors="Anna Lyons, Kent Mcleod, Hesham Almatary and Gernot Heiser"
+	details="EuroSys Conference, Porto, Portugal"
+%}
+
+{% include timebib-item.html
+	date="2016-04-01"
+	heading="Worst-Case Execution Time (WCET) analysis for seL4 (RTAS)"
+	title="Complete, high-assurance determination of loop bounds and infeasible
+	       paths for WCET analysis"
+	authors="Thomas Sewell, Chi Kam and Gernot Heiser"
+	details="IEEE Real-Time and Embedded Technology and Applications Symposium
+	         (RTAS), Vienna, Austria"
+	award="Outstanding Paper Award"
+%}
+
+{% include timebib-item.html
+	date="2014-02-01"
+	heading="Comprehensive overview of the complete proof stack for seL4 (TOCs)"
+	title="Comprehensive formal verification of an OS microkernel"
+	authors="Gerwin Klein, June Andronick, Kevin Elphinstone, Toby Murray, Thomas
+	         Sewell, Rafal Kolanski and Gernot Heiser"
+	details="ACM Transactions on Computer Systems, Volume 32, Number 1, pp. 2:1-2:70"
+%}
+
+{% include timebib-item.html
+	date="2013-06-01"
+	heading="Binary verification of seL4 (PLDI)"
+	title="Translation validation for a verified OS kernel"
+	authors="Thomas Sewell, Magnus Myreen and Gerwin Klein"
+	details="ACM SIGPLAN Conference on Programming Language Design and
+	         Implementation, pp. 471-481, Seattle, Washington, USA"
+%}
+
+{% include timebib-item.html
+	date="2013-05-01"
+	heading="Proof that seL4 enforces confidentiality (S &amp; P)"
+	title="seL4: From general purpose to a proof of information flow enforcement"
+	authors="Toby Murray, Daniel Matichuk, Matthew Brassil, Peter Gammie, Timothy
+		       Bourke, Sean Seefried, Corey Lewis, Xin Gao and Gerwin Klein"
+	details="IEEE Symposium on Security and Privacy, pp. 415-429, San Francisco, CA, USA"
+%}
+
+{% include timebib-item.html
+	date="2011-08-01"
+	heading="Proof that seL4 enforces integrity (ITP)"
+	title="seL4 enforces integrity"
+	authors="Thomas Sewell, Simon Winwood, Peter Gammie, Toby Murray,
+	         June Andronick and Gerwin Klein"
+	details="International Conference on Interactive Theorem Proving, pp. 325-340,
+	         Nijmegen, The Netherlands"
+%}
+
+{% include timebib-item.html
+	date="2010-06-01"
+	heading="Research Highlights paper on seL4's functional correctness proof (CACM)"
+	title="seL4: Formal verification of an operating-system kernel"
+	authors="Gerwin Klein, June Andronick, Kevin Elphinstone, Gernot Heiser, David
+	         Cock, Philip Derrin, Dhammika Elkaduwe, Kai Engelhardt, Rafal
+	         Kolanski, Michael Norrish, Thomas Sewell, Harvey Tuch and Simon
+	         Winwood"
+	details="Communications of the ACM, Volume 53, Number 6, pp. 107-115"
+	award="Research Highlights paper"
+%}
+
+{% include timebib-item.html
+	date="2009-10-01"
+	heading="The first full functional correctness proof of seL4 (SOSP)"
+	title="seL4: Formal verification of an OS kernel"
+	authors="Gerwin Klein, Kevin Elphinstone, Gernot Heiser, June Andronick, David
+	         Cock, Philip Derrin, Dhammika Elkaduwe, Kai Engelhardt, Rafal
+	         Kolanski, Michael Norrish, Thomas Sewell, Harvey Tuch and Simon
+	         Winwood"
+	details="ACM Symposium on Operating Systems Principles, pp. 207-220, Big Sky,
+	         MT, USA"
+	award="Best Paper Award, Hall of Fame Award"
+%}
+
+{% include timeline-end.html %}
