@@ -21,10 +21,7 @@ sub: '
 
 <!-- FIXME: on smaller screens, there is no indication that there is further content after the awards image -->
 
-<!--FIXME: what are time and datetime used for? should the dates be fixed here?-->
-<!-- <time> is for semantic hints for time points, it should be used like this:
-	   <time datetime="2021-08-01">2021</time> (styling allowed, but no other content, just the time,
-		the bullet etc should be outside) -->
+{% include timeline-start.html %}
 
       {% include timeline-item.html
       date="2023"
@@ -101,3 +98,4 @@ sub: '
 	    paper award</a>.'
       %}
 
+{% include timeline-end.html %}
