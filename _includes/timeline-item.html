@@ -1,0 +1,15 @@
+<div>
+  <time datetime={{ include.date }} class="flex items-center text-lg font-semibold leading-6 text-f_blue-900">
+    <svg viewBox="0 0 4 4" class="mr-4 h-1 w-1 flex-none" aria-hidden="true">
+      <circle cx="2" cy="2" r="2" fill="currentColor" />
+    </svg>
+    {{ include.year }}
+    <div class="absolute -ml-2 h-px w-screen -translate-x-full bg-gray-900/10 sm:-ml-4 " aria-hidden="true"></div>
+  </time>
+  <p class="mt-6 text-lg font-semibold leading-8 tracking-tight text-gray-900">
+    {{ include.title }}
+  </p>
+  <p class="mt-1 text-base leading-7 text-gray-600">
+    {{ include.description }}
+  </p>
+</div>
