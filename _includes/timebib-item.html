@@ -2,15 +2,13 @@
 {% capture description %}
 <p>{{ include.authors }}</p>
 <p class="mt-1">{{ include.details }}, {{ month-year }} </p>
-{% if include.award %}
-<p class="mt-1 text-logogreen">{{ include.award }}</p>
-{% endif %}
 {% endcapture %}
 {% include timeline-item.html
   date=include.date
-  heading=include.heading
   title=include.title
+  award=include.award
   description=description
+  explanation=include.explanation
 %}
 {% comment %}
   title_class="italic"
