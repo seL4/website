@@ -11,15 +11,23 @@
 			<circle cx="2" cy="2" r="2" fill="currentColor" />
 		</svg>
 		<div>
-			<time datetime="{{ date }}">{{ year }}</time>{% if include.heading %}: {{ include.heading }}{% endif %}
+			<time datetime="{{ date }}">{{ year }}</time>
 		</div>
 		<div class="absolute -ml-2 h-px w-full -translate-x-full bg-f_blue-900/20 dark:bg-f_blue-200 sm:-ml-4"
 			aria-hidden="true"></div>
 	</div>
 	<p class="mt-6 text-lg font-semibold leading-8 tracking-tight text-dark {{ include.title_class }}">
-		{{ include.title }}
+	  {{ include.title }}
+	  {% if include.award %}
+	  <span class="mt-1 text-logogreen font-normal text-base">({{ include.award }})</span>
+	  {% endif %}
 	</p>
 	<div class="mt-1 text-base leading-7 text-light">
 		{{ include.description }}
 	</div>
+	{% if include.explanation %}
+	<div class="mt-1 text-base leading-7 text-f_blue-900">
+	  (&rarr; {{ include.explanation }})
+	</div>
+	{% endif %}
 </div>
