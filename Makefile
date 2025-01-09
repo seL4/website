@@ -53,7 +53,7 @@ HTMLPROOFEROPT += --enforce-https=false --only-4xx --disable-external=false
 # comma-separated list of URL regexps, e.g. /twitter.com/,/facebook.com/
 # twitter ignored because of rate limiting; query links on github work, but don't seem to check
 # rtx.com produces 403 from GitHub
-HTMLPROOFEROPT += --ignore-urls '/twitter.com/,/flaticon.com/,/github.com.seL4.rfcs.pulls\?q/,/rtx.com/'
+HTMLPROOFEROPT += --ignore-urls '/twitter.com/,/flaticon.com/,/github.com.seL4.rfcs.pulls\?q/,/rtx.com/,/www.collinsaerospace.com/'
 
 checklinks:
 	@bundle exec htmlproofer $(HTMLPROOFEROPT) _site
