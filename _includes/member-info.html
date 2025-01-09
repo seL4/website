@@ -11,14 +11,14 @@
     <div class="mt-4 sm:mt-6 text-sm text-gray-500 w-[11rem] mx-auto text-nowrap">
       {%- if member.founding -%}
       <p>
-        {%- include icons/building-library.svg class="inline-icon h-4 w-4 mr-2" -%}
+        {%- svg _icons/building-library.svg class="inline-icon h-4 w-4 mr-2" -%}
         Founding member
       </p>
       {%- endif %}
       {%- if member.endorsed -%}
       <a href="{{ member.url }}">
       <p>
-        {%- include icons/rocket-launch.svg class="inline-icon h-4 w-4 mr-2" -%}
+        {%- svg _icons/rocket-launch.svg class="inline-icon h-4 w-4 mr-2" -%}
         Endorsed Service Provider
       </p></a>
       {%- endif %}

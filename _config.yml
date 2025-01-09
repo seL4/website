@@ -32,6 +32,8 @@ plugins:
   - jekyll-redirect-from
   # For tailwind postcss
   - jekyll-postcss
+  # For icons
+  - jekyll-inline-svg
 
 breadcrumbs:
   root:
