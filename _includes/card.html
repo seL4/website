@@ -1,11 +1,11 @@
 {%- assign link_text = include.link_text | default: "Learn more" -%}
-{%- assign icon = "icons/" | append: include.icon | append: ".svg" -%}
+{%- assign icon = "_icons/" | append: include.icon | append: ".svg" -%}
 {%- assign icon_colour = include.icon_colour | default: "bg-logogreen" -%}
 <div class="flex flex-col relative rounded-lg light:border bg-white dark:bg-slate-300 shadow-lg {% if include.link %}hover:bg-slate-50 dark:hover:bg-slate-400{% endif %} {{ include.class }}">
 {% if include.icon %}
   {% if include.link %}<a href="{{ include.link }}">{% endif %}
     <div class="absolute {{ icon_colour }} -top-8 left-1/2 -ml-8 p-4 rounded-full shadow-md">
-      {% include {{ icon }} class="h-8 w-8" %}
+      {% svg "{{icon}}" class="h-8 w-8" %}
     </div>
   {% if include.link %}</a>{% endif %}
   {% endif %}

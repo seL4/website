@@ -7,7 +7,7 @@
       <span class="-m-1.5 p-1.5"> </span>
       <button type="button" class="-m-2.5 rounded-md p-2.5 text-gray-700">
         <span class="sr-only">Close menu</span>
-        {% include icons/x-mark.svg class="h-6 w-6" %}
+        {% svg _icons/x-mark.svg class="h-6 w-6" %}
       </button>
     </div>
     <div class="mt-6 flow-root">
@@ -20,20 +20,20 @@
 {%-   assign extra = n[2] -%}
             <button type="button" class="dropbtn-mobile" aria-expanded="false">
               {{ name }}
-              {% include icons/chevron-down-mini.svg class="h-5 w-5 flex-none" %}
+              {% svg _icons/chevron-down-mini.svg class="h-5 w-5 flex-none" %}
             </button>
             <div class="mobile-menu hidden">
 {%-	  for sub in submenu -%}
-{%-		  assign icon = "icons/" | append: sub[0] | append: ".svg" -%}
+{%-		  assign icon = "_icons/" | append: sub[0] | append: ".svg" -%}
 {%-		  assign short = sub[1] | escape -%}
 {%-		  assign url = sub[3] -%}
-              <a href="{{ url | relative_url }}" class="block rounded-lg py-2 pl-6 pr-3 text-sm font-semibold leading-7 text-gray-900 hover:bg-gray-50">{% include {{icon}} class="inline-icon mr-2" %} {{ short }}</a>
+              <a href="{{ url | relative_url }}" class="block rounded-lg py-2 pl-6 pr-3 text-sm font-semibold leading-7 text-gray-900 hover:bg-gray-50">{% svg "{{icon}}" class="inline-icon mr-2" %} {{ short }}</a>
 {%- endfor -%}
 {%-	  for sub in extra -%}
-{%-		  assign icon = "icons/" | append: sub[0] | append: ".svg" -%}
+{%-		  assign icon = "_icons/" | append: sub[0] | append: ".svg" -%}
 {%-		  assign short = sub[1] | escape -%}
 {%-		  assign url = sub[3] -%}
-              <a href="{{ url | relative_url }}" class="block rounded-lg py-2 pl-6 pr-3 text-sm font-semibold leading-7 text-gray-900 hover:bg-gray-50">{% include {{icon}} class="inline-icon mr-2" %} {{ short }}</a>
+              <a href="{{ url | relative_url }}" class="block rounded-lg py-2 pl-6 pr-3 text-sm font-semibold leading-7 text-gray-900 hover:bg-gray-50">{% svg "{{icon}}" class="inline-icon mr-2" %} {{ short }}</a>
 {%- endfor -%}
             </div>
 {%- endfor -%}
@@ -42,7 +42,7 @@
         <!-- FIXME: leave out? -->
         <div class="py-6">
           <a href="{{ '/Foundation/Join' | relative_url }}" class="-mx-3 block rounded-lg px-3 py-2.5 text-base font-semibold leading-7 text-gray-900 hover:bg-gray-50">Become a Member</a>
-          <a href="https://docs.sel4.systems" class="-mx-3 block rounded-lg px-3 py-2.5 text-base font-semibold leading-7 text-gray-900 hover:bg-gray-50">Docsite {% include icons/link.svg class="ml-1 inline-icon" %}</a>
+          <a href="https://docs.sel4.systems" class="-mx-3 block rounded-lg px-3 py-2.5 text-base font-semibold leading-7 text-gray-900 hover:bg-gray-50">Docsite {% svg _icons/link.svg class="ml-1 inline-icon" %}</a>
         </div>
       </div>
     </div>

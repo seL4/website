@@ -5,7 +5,7 @@
       {% if include.pre_link %}<a href="{{ include.pre_link }}" class="hover:underline">{% endif %}
       {{ include.pre }}
       {% if include.pre_link %}
-      {% unless include.noarrow %}{% include icons/arrow-uturn-left.svg class="inline-icon -mt-2" %}{% endunless %}
+      {% unless include.noarrow %}{% svg _icons/arrow-uturn-left.svg class="inline-icon -mt-2" %}{% endunless %}
       </a>
       {% endif %}
     </div>
