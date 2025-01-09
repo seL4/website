@@ -54,29 +54,29 @@ applied manually or automatically?
 
 ## Icons
 
-To insert an icon, use
+To insert an icon, use e.g.
 
 ```liquid
-{% include icons/name.svg %}
+{% svg _icons/name.svg class="w-8 h-8" %}
 ```
 
-for the default `inline-icon` class, or with custom classes applied:
+You need to provide some class that has size information, either explicitly with
+something like `h-6 w-6` or as part of the `inline-icon` or `menu-icon` classes.
+Colour and other styling is available as well:
 
-```liquid
-{% include icons/name.svg class="w-8 h-8 text-f_green-500" %}
+``liquid
+{% svg _icons/name.svg class="w-8 h-8 text-f_green-500" %}
 ```
 
-The icons live in the `_includes/icons/` directory and are modified `svg` files
-from <https://heroicons.com>, usually the Outline 24x24 version.
+The icons live in the `_includes/icons/` directory. All optimised 24x24
+outline icons from <https://heroicons.com> are in there. Use these by default.
+Smaller versions (20x20, solid) can be added where necessary and should be
+named `...-mini.svg`.
 
-The modification is that we make it possible to apply a css class directly in
-the `include` command, by removing the default stroke colour from the svg and
-changing the `svg` tag to:
+Icons from other sources are in `_icons/other/`.
 
-```svg
-<svg class="{{ include.class | default: "inline-icon" }}"
-     viewBox="0 0 24 24" fill="none" stroke="currentColor" aria-hidden="true">
-```
+They are normal `.svg` files, so if you want to add a new inline svg, you
+should be able to just add that to the `_icons/other` directory.
 
 ## Hero Headings
 
