@@ -3265,18 +3265,6 @@
       "nodeColor": "0xA0B0F0"
     },
     {
-      "id": "idle_thread",
-      "name": "idle_thread",
-      "val": 1,
-      "nodeColor": "0xA0B0F0"
-    },
-    {
-      "id": "wfi",
-      "name": "wfi",
-      "val": 1,
-      "nodeColor": "0xA0B0F0"
-    },
-    {
       "id": "initIRQController",
       "name": "initIRQController",
       "val": 1,
@@ -8267,10 +8255,6 @@
     {
       "source": "hasCancelSendRights",
       "target": "cap_get_capType"
-    },
-    {
-      "source": "idle_thread",
-      "target": "wfi"
     },
     {
       "source": "initIRQController",
