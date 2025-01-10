@@ -31,4 +31,9 @@
 	  (&rarr; {{ include.explanation }})
 	</div>
 	{% endif %}
+	{% if include.pdf %}
+	<div>
+		<div class="pt-5"><a href="pdfs/{{ include.pdf }}">{%- svg _icons/document.svg class="block h-8 w-8" -%}</a></div>
+	</div>
+	{% endif %}
 </div>
