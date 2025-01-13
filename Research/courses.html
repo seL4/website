@@ -18,10 +18,12 @@ sub: '
 layout: card
 ---
 
-
-
 <!--FIXME: decide on an order-->
 
+{% capture button %}
+Go to course site &nbsp;
+{% svg _icons/other/external.svg class="inline-icon" %}
+{% endcapture %}
 
 {% include feature.html
   right=true
@@ -42,6 +44,7 @@ layout: card
     href="https://www.youtube.com/playlist?list=PLtoQeavghzr3nlXyJEXaTLU9Ca0DXWMnt">online</a>.
   </p>'
   link="https://www.cse.unsw.edu.au/~cs9242/"
+  button=button
   img="/Foundation/Membership/LOGOS/UNSW.svg"
   img_class="p-white"
   alt="UNSW Logo"
@@ -66,12 +69,12 @@ layout: card
     free from the course website.
   </p>"
   link="https://www.cse.unsw.edu.au/~cs4161"
+  button=button
   img="/Foundation/Membership/LOGOS/UNSW.svg"
   img_class="p-white"
   alt="UNSW Logo"
 %}
 
-<!--FIXME: get picture source for concrete semantics book -->
 {% include feature.html
   right=true
   up=true
@@ -86,6 +89,7 @@ layout: card
     with Isabelle. Extensively classroom-tested slides are also available.
    </p>"
   link="http://www.concrete-semantics.org"
+  button=button
   img="/images/tries-shutterstock/concrete-semantics.jpg"
   alt="Concrete Semantics"
   img_class="p-white"
