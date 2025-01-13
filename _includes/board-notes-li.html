@@ -1,0 +1,34 @@
+{% if include.short %}
+{%   assign date = include.date | date: "%y%m" %}
+{%   assign print_date = include.date | date: "%Y-%m" %}
+{% else %}
+{%   assign date = include.date | date: "%y%m%d" %}
+{%   assign print_date = include.date %}
+{% endif %}
+{% if include.unconfirmed %}
+{%   assign status = "unconfirmed" %}
+{% else %}
+{%   assign status = "signed" %}
+{% endif %}
+{% assign fname = "Minutes/" | append: date | append: "-minutes-" |
+                  append: status | append: ".pdf" %}
+{% if include.n == 1 %}
+{%   assign suffix = "st" %}
+{% else %}
+{%   if include.n == 2 %}
+{%     assign suffix = "nd" %}
+{%   else %}
+{%     if include.n == 3 %}
+{%       assign suffix = "rd" %}
+{%    else %}
+{%      assign suffix = "th" %}
+{%    endif %}
+{%   endif %}
+{% endif %}
+{% assign text = include.n | append: "<sup>" | append: suffix | append: "</sup> meeting" %}
+{% include date-li.html
+   date = print_date
+   link = fname
+   text = text
+   last = include.last
+%}

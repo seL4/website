@@ -325,167 +325,43 @@ redirect_from: /Foundation/Board/home.pml
 </div>
 
 
-
-<!-- FIXME: this is just a strawman; need to put actual meetings -->
-<div class="bg-white py-24 sm:py-32">
+<div class="py-24 sm:py-28">
   <div class="mx-auto max-w-7xl px-6 lg:px-8">
     <div class="mx-auto max-w-2xl lg:mx-0 mb-2">
-      <h3 class="text-3xl font-bold tracking-tight text-gray-900 sm:text-4xl">Meetings</h3>
-      <p class="mt-6 text-lg leading-8 text-gray-600">
-	The Governing Board meetings are normally held in private, i.e. attended
-	by Governing Board Representatives only, although the Governing Board
-	may invite others to participate. However, the Governing Board meeting
-	minutes are publicly accessible.
+      <h3 class="text-3xl font-bold tracking-tight text-dark sm:text-4xl">Meetings</h3>
+      <p class="mt-6 text-lg leading-8 text-light">
+        The Governing Board meetings are normally held in private, i.e. attended
+        by Governing Board Representatives only, although the Governing Board
+        may invite others to participate. However, the Governing Board meeting
+        minutes are publicly accessible.
       </p>
-      <p class="mt-6 text-lg leading-8 text-gray-600">
-	Confirmed Minutes:
-      </p>
+      <div class="grid grid-cols-1 md:grid-cols-2">
+        <div>
+          <h4 class="mt-6 text-lg leading-8 text-dark mb-2">Confirmed Minutes</h4>
+          <ul class="space-y-2">
+            {% include board-notes-li.html date="2020-03-18" n=1 %}
+            {% include board-notes-li.html date="2020-08-26" n=2 %}
+            {% include board-notes-li.html date="2020-10-16" n=3 %}
+            {% include board-notes-li.html date="2021-04-13" n=4 %}
+            {% include board-notes-li.html date="2021-06-09" n=5 %}
+            {% include board-notes-li.html date="2021-10-06" n=6 %}
+            {% include board-notes-li.html date="2022-02-24" n=7 short=true %}
+            {% include board-notes-li.html date="2022-04-05" n=8 short=true %}
+            {% include board-notes-li.html date="2022-10-13" n=9 %}
+            {% include board-notes-li.html date="2023-04-26" n=10 short=true %}
+            {% include board-notes-li.html date="2023-09-28" n=11 last=true %}
+          </ul>
+        </div>
+        <div>
+          <h4 class="mt-6 text-lg leading-8 text-dark mb-2">Unconfirmed Minutes</h4>
+          <ul class="space-y-2">
+            {% include board-notes-li.html date="2024-10-09" n=12 unconfirmed=true last=true %}
+          </ul>
+        </div>
+      </div>
     </div>
-
-    <ul role="list" class="space-y-2">
-      <li class="relative flex gap-x-4">
-	<div class="absolute -bottom-2 left-0 top-0 flex w-6 justify-center">
-	  <div class="w-px bg-gray-200"></div>
-	</div>
-	<div class="relative flex h-6 w-6 flex-none items-center justify-center bg-white">
-	  <div class="h-1.5 w-1.5 rounded-full bg-gray-100 ring-1 ring-gray-300"></div>
-	</div>
-	<p class="flex-auto py-0.5 text-sm leading-5 text-gray-500">
-	  <span class="font-medium text-gray-900">2020-03-18:</span>
-	  <a href="Minutes/200318-minutes-signed.pdf">1<sup>st</sup> meeting</a>
-	</p>
-      </li>
-      <li class="relative flex gap-x-4">
-	<div class="absolute -bottom-2 left-0 top-0 flex w-6 justify-center">
-	  <div class="w-px bg-gray-200"></div>
-	</div>
-	<div class="relative flex h-6 w-6 flex-none items-center justify-center bg-white">
-	  <div class="h-1.5 w-1.5 rounded-full bg-gray-100 ring-1 ring-gray-300"></div>
-	</div>
-	<p class="flex-auto py-0.5 text-sm leading-5 text-gray-500">
-	  <span class="font-medium text-gray-900">2020-08-26:</span>
-	  <a href="Minutes/200826-minutes-signed.pdf">2<sup>nd</sup> meeting</a>
-	</p>
-      </li>
-      <li class="relative flex gap-x-4">
-	<div class="absolute -bottom-2 left-0 top-0 flex w-6 justify-center">
-	  <div class="w-px bg-gray-200"></div>
-	</div>
-	<div class="relative flex h-6 w-6 flex-none items-center justify-center bg-white">
-	  <div class="h-1.5 w-1.5 rounded-full bg-gray-100 ring-1 ring-gray-300"></div>
-	</div>
-	<p class="flex-auto py-0.5 text-sm leading-5 text-gray-500">
-	  <span class="font-medium text-gray-900">2020-10-16:</span>
-	  <a href="Minutes/201016-minutes-signed.pdf">3<sup>rd</sup> meeting</a>
-	</p>
-      </li>
-      <li class="relative flex gap-x-4">
-	<div class="absolute -bottom-2 left-0 top-0 flex w-6 justify-center">
-	  <div class="w-px bg-gray-200"></div>
-	</div>
-	<div class="relative flex h-6 w-6 flex-none items-center justify-center bg-white">
-	  <div class="h-1.5 w-1.5 rounded-full bg-gray-100 ring-1 ring-gray-300"></div>
-	</div>
-	<p class="flex-auto py-0.5 text-sm leading-5 text-gray-500">
-	  <span class="font-medium text-gray-900">2021-04-13:</span>
-	  <a href="Minutes/210413-minutes-signed.pdf">4<sup>th</sup> meeting</a>
-	</p>
-      </li>
-      <li class="relative flex gap-x-4">
-	<div class="absolute -bottom-2 left-0 top-0 flex w-6 justify-center">
-	  <div class="w-px bg-gray-200"></div>
-	</div>
-	<div class="relative flex h-6 w-6 flex-none items-center justify-center bg-white">
-	  <div class="h-1.5 w-1.5 rounded-full bg-gray-100 ring-1 ring-gray-300"></div>
-	</div>
-	<p class="flex-auto py-0.5 text-sm leading-5 text-gray-500">
-	  <span class="font-medium text-gray-900">2021-06-09:</span>
-	  <a href="Minutes/210609-minutes-signed.pdf">5<sup>th</sup> meeting</a>
-	</p>
-      </li>
-      <li class="relative flex gap-x-4">
-	<div class="absolute -bottom-2 left-0 top-0 flex w-6 justify-center">
-	  <div class="w-px bg-gray-200"></div>
-	</div>
-	<div class="relative flex h-6 w-6 flex-none items-center justify-center bg-white">
-	  <div class="h-1.5 w-1.5 rounded-full bg-gray-100 ring-1 ring-gray-300"></div>
-	</div>
-	<p class="flex-auto py-0.5 text-sm leading-5 text-gray-500">
-	  <span class="font-medium text-gray-900">2021-10-06:</span>
-	  <a href="Minutes/211006-minutes-signed.pdf">6<sup>th</sup> meeting</a>
-	</p>
-      </li>
-      <li class="relative flex gap-x-4">
-	<div class="absolute -bottom-2 left-0 top-0 flex w-6 justify-center">
-	  <div class="w-px bg-gray-200"></div>
-	</div>
-	<div class="relative flex h-6 w-6 flex-none items-center justify-center bg-white">
-	  <div class="h-1.5 w-1.5 rounded-full bg-gray-100 ring-1 ring-gray-300"></div>
-	</div>
-	<p class="flex-auto py-0.5 text-sm leading-5 text-gray-500">
-	  <span class="font-medium text-gray-900">2022-02:</span>
-	  <a href="Minutes/2202-minutes-signed.pdf">7<sup>th</sup> meeting</a>
-	</p>
-      </li>
-      <li class="relative flex gap-x-4">
-	<div class="absolute -bottom-2 left-0 top-0 flex w-6 justify-center">
-	  <div class="w-px bg-gray-200"></div>
-	</div>
-	<div class="relative flex h-6 w-6 flex-none items-center justify-center bg-white">
-	  <div class="h-1.5 w-1.5 rounded-full bg-gray-100 ring-1 ring-gray-300"></div>
-	</div>
-	<p class="flex-auto py-0.5 text-sm leading-5 text-gray-500">
-	  <span class="font-medium text-gray-900">2022-04:</span>
-	  <a href="Minutes/2204-minutes-signed.pdf">8<sup>th</sup> meeting</a>
-	</p>
-      </li>
-      <li class="relative flex gap-x-4">
-	<div class="absolute -bottom-2 left-0 top-0 flex w-6 justify-center">
-	  <div class="w-px bg-gray-200"></div>
-	</div>
-	<div class="relative flex h-6 w-6 flex-none items-center justify-center bg-white">
-	  <div class="h-1.5 w-1.5 rounded-full bg-gray-100 ring-1 ring-gray-300"></div>
-	</div>
-	<p class="flex-auto py-0.5 text-sm leading-5 text-gray-500">
-	  <span class="font-medium text-gray-900">2022-10-13:</span>
-	  <a href="Minutes/221013-minutes-signed.pdf">9<sup>th</sup> meeting</a>
-	</p>
-      </li>
-      <li class="relative flex gap-x-4">
-	<div class="absolute left-0 top-0 flex h-6 w-6 justify-center">
-	  <div class="w-px bg-gray-200"></div>
-	</div>
-	<div class="relative flex h-6 w-6 flex-none items-center justify-center bg-white">
-	  <div class="h-1.5 w-1.5 rounded-full bg-gray-100 ring-1 ring-gray-300"></div>
-	</div>
-	<p class="flex-auto py-0.5 text-sm leading-5 text-gray-500">
-	  <span class="font-medium text-gray-900">2022-05:</span>
-	  <a href="Minutes/2305-minutes-signed.pdf">10<sup>th</sup> meeting</a>
-	</p>
-      </li>
-    </ul>
-    <div class="mx-auto max-w-2xl lg:mx-0 mb-2">
-      <p class="mt-6 text-lg leading-8 text-gray-600">
-	Unconfirmed Minutes:
-      </p>
-    </div>
-    <ul role="list" class="space-y-2">
-      <li class="relative flex gap-x-4">
-	<div class="absolute left-0 top-0 flex h-6 w-6 justify-center">
-	  <div class="w-px bg-gray-200"></div>
-	</div>
-	<div class="relative flex h-6 w-6 flex-none items-center justify-center bg-white">
-	  <div class="h-1.5 w-1.5 rounded-full bg-gray-100 ring-1 ring-gray-300"></div>
-	</div>
-	<p class="flex-auto py-0.5 text-sm leading-5 text-gray-500">
-	  <span class="font-medium text-gray-900">2023-09-28:</span>
-	  <a href="Minutes/230928-minutes-unconfirmed.pdf">11<sup>th</sup> meeting</a>
-	</p>
-      </li>
-    </ul>
   </div>
 </div>
-
 
 
 <!-- FIXME: change purple colour -->
