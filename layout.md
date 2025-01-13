@@ -73,7 +73,7 @@ You need to provide some class that has size information, either explicitly with
 something like `h-6 w-6` or as part of the `inline-icon` or `menu-icon` classes.
 Colour and other styling is available as well:
 
-``liquid
+```liquid
 {% svg _icons/name.svg class="w-8 h-8 text-f_green-500" %}
 ```
 
@@ -202,7 +202,11 @@ component. Maybe generally a scroll section, since we
 
 ## Time line
 
-TODO: make a component out of e.g. `Research/awards.html`
+Larger time line component with time point, heading, and text. Begins with a
+`timeline-start` include, then a series of `timeline-item` includes,
+concluded by `timeline-end`.
+
+See Research/awards.html and Research/publications.html for examples.
 
 ## Add More!
 
