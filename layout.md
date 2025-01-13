@@ -12,7 +12,7 @@
 - `plain`: no styling applied. Use this only rarely, e.g. when you need to
   control all aspects of the page.
 
-### Usage
+### Usage Example
 
 Use name in the page front matter, e.g.
 
@@ -48,6 +48,15 @@ The following classes are available for styling links as buttons:
 The following class is for highlighted links followed by a right-arrow →
 
 - `arrow-link`
+
+For navigating to the top of the page, there is also an arrow-up icon/button. By
+default, the button is placed at the `absolute top-0 right-0` of the enclosing
+`relative` or `flex` container. You can override placing with the `placing`
+parameter.
+
+- `{% include up-button.html %}`
+- `{% include up-button.html placing="absolute bottom-0 right-0" %}`
+- `{% include up-button.html placing="relative" %}` (next to the previous element)
 
 TODO: should we have a separate explicit style for external links? Should it be
 applied manually or automatically?
@@ -154,7 +163,8 @@ layout, e.g.:
 ## Feature Sections
 
 A feature section with heading, image, text next to the image, and a link. Image
-can be on the left or right. Used mainly on the landing page.
+can be on the left or right. Optionally includes an up-button to navigate to top
+of page.
 
 ### Example
 
@@ -162,6 +172,7 @@ can be on the left or right. Used mainly on the landing page.
 {%
   include feature.html
   right=true
+  up=true
   h2="Protecting critical systems around the globe"
   text="
       <p>
