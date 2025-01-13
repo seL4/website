@@ -1,7 +1,18 @@
 {% assign month-year = include.date | date: "%B, %Y" %}
 {% capture description %}
 <p>{{ include.authors }}</p>
-<p class="mt-1">{{ include.details }}, {{ month-year }} </p>
+<p class="mt-1">{{ include.details }}, {{ month-year }}
+   {%- if include.award -%}
+   . <span class="text-f_green-500 dark:text-logogreen">{{ include.award }}.</span>
+   {% endif %}
+</p>
+{% if include.explanation %}
+<p class="mt-4 text-base text-dark">
+  <a href="pdfs/{{ include.pdf }}" class="!no-underline hover:!underline">
+  {%- svg _icons/document.svg class="inline mr-2 -mt-1 h-7 w-7" -%} {{ include.explanation }}
+  </a>
+</p>
+{% endif %}
 {% endcapture %}
 {% include timeline-item.html
   date=include.date

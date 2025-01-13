@@ -5,7 +5,7 @@
 {%   assign date = include.year %}
 {%   assign year = include.year %}
 {% endif %}
-<div class="relative">
+<div class="relative mb-6">
 	{% include up-button.html %}
 	<div class="flex items-center text-lg font-semibold leading-6 text-f_blue-900 dark:text-f_blue-200">
 		<svg viewBox="0 0 4 4" class="mr-4 h-1 w-1 flex-none" aria-hidden="true">
@@ -19,21 +19,8 @@
 	</div>
 	<p class="mt-6 text-lg font-semibold leading-8 tracking-tight text-dark {{ include.title_class }}">
 	  {{ include.title }}
-	  {% if include.award %}
-	  <span class="mt-1 text-logogreen font-normal text-base">({{ include.award }})</span>
-	  {% endif %}
 	</p>
 	<div class="mt-1 text-base leading-7 text-light">
 		{{ include.description }}
 	</div>
-	{% if include.explanation %}
-	<div class="mt-1 text-base leading-7 text-f_blue-900">
-	  (&rarr; {{ include.explanation }})
-	</div>
-	{% endif %}
-	{% if include.pdf %}
-	<div>
-		<div class="pt-5"><a href="pdfs/{{ include.pdf }}">{%- svg _icons/document.svg class="block h-8 w-8" -%}</a></div>
-	</div>
-	{% endif %}
 </div>
