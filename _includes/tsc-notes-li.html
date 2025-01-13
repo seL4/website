@@ -1,0 +1,31 @@
+{% if include.email %}
+{%   assign name = "vote-" %}
+{% else %}
+{%   assign name = "tsc-meeting-" %}
+{% endif %}
+{% assign fname = "notes/" | append: name | append: include.date | append: ".pdf" %}
+{% if include.n == 1 %}
+{%   assign suffix = "st" %}
+{% else %}
+{%   if include.n == 2 %}
+{%     assign suffix = "nd" %}
+{%   else %}
+{%     if include.n == 3 %}
+{%       assign suffix = "rd" %}
+{%    else %}
+{%      assign suffix = "th" %}
+{%    endif %}
+{%   endif %}
+{% endif %}
+{% if include.email %}
+{%   assign text = "Email vote" %}
+{% else %}
+{%   assign text = include.n | append: suffix | append: " TSC meeting" %}
+{% endif %}
+{% include date-li.html
+   date = include.date
+   link = fname
+   text = text
+   extra_text = include.extra_text
+   last = include.last
+%}
