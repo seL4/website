@@ -29,10 +29,13 @@ help:
 JEKYLL_ENV := production
 SERVE_HOST :=
 
-build serve: .jekyll-cache/ruby_deps
+build: .jekyll-cache/ruby_deps
+	JEKYLL_ENV=$(JEKYLL_ENV) bundle exec jekyll build
+
+serve: .jekyll-cache/ruby_deps
 # $(SERVE_HOST) is here so docker can pass in "--host 0.0.0.0" for serve
 # otherwise this variable is not needed and by default empty
-	JEKYLL_ENV=$(JEKYLL_ENV) bundle exec jekyll $@ $(SERVE_HOST)
+	JEKYLL_ENV=$(JEKYLL_ENV) bundle exec jekyll serve -I --livereload $(SERVE_HOST)
 
 debug: JEKYLL_ENV := development
 debug: serve
