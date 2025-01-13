@@ -35,11 +35,6 @@ plugins:
   # For icons
   - jekyll-inline-svg
 
-breadcrumbs:
-  root:
-    hide: false  # show breadcrumbs on root/home page
-    image: false # Show image or title text
-
 strict_front_matter: true
 
 optional_front_matter:
