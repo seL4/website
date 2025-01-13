@@ -49,14 +49,22 @@ optional_front_matter:
 exclude:
   - Makefile
   - README.md
+  - layout.md
   - LICENSES/
   - docker/
   - _news-items/9999-12-31-template.md
   - node_modules/
+  - vendor/
   - package-lock.json
   - package.json
   - postcss.config.js
   - tailwind.config.js
+  - "**/*.license"
+  - .bundle/
+  - .github/
+  - .git/
+  - .gitignore
+  - .reuse/
 
 postcss:
   # necessary for live reload
