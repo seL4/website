@@ -4,6 +4,7 @@
 title: The seL4 Foundation
 redirect_from: /Foundation/home.pml
 layout: card
+background: false
 sub: '
 <p>
   The seL4 Foundation is an open, transparent and neutral organisation
@@ -19,213 +20,118 @@ sub: '
 </div>'
 ---
 
-
 <!-- FIXME: delete Governance page. Subsumed here -->
 
 <!-- FIXME: margins -->
 <div class="section-borders -mt-12 pt-0">
-<h2 class="text-center mt-16 text-3xl font-bold tracking-tight text-gray-900 md:text-4xl">Two main bodies</h2>
+  <h2 class="text-center mt-16 text-3xl font-bold tracking-tight text-dark md:text-4xl">Two main bodies</h2>
 
-<!-- Main bodies section -->
-<!-- FIXME: have the charters as links/buttons (allow flexibility in paragraph in box) -->
-<!-- FIXME: have card centered -->
-<!-- FIXME: change icons to appropriate ones, e.g.
+  <!-- Main bodies section -->
+  <!-- FIXME: have the charters as links/buttons (allow flexibility in paragraph in box) -->
+  <!-- FIXME: change icons to appropriate ones, e.g.
      https://www.shutterstock.com/image-vector/board-room-members-sitting-around-table-257220877
      https://www.shutterstock.com/image-vector/tech-staff-icon-like-technical-committee-2207238665
      https://www.shutterstock.com/image-vector/effective-teamwork-icon-black-thin-line-2227180861
   -->
 
-<div class="grid grid-cols-1 md:grid-cols-2 gap-4 md:gap-10 py-12 sm:py-20 mx-2 lg:mx-32">
-  {% include card.html
-     icon="user-group"
-     title="Governing Board"
-     body="The body in charge of outreach, managing the funds, protecting the
-          brand. It is governed by the seL4 Foundation Fund Charter."
-     link="Board/"
-  %}
+  <div class="grid grid-cols-1 md:grid-cols-2 gap-x-4 gap-y-12 md:gap-10 py-12 sm:py-20 mx-2 lg:mx-32">
+    {% include card.html
+        icon="user-group"
+        title="Governing Board"
+        body="The body in charge of outreach, managing the funds, protecting the
+              brand. It is governed by the seL4 Foundation Fund Charter."
+        link="Board/"
+    %}
 
-  {% include card.html
-     icon="users"
-     title="TSC"
-     body="The Technical Steering Committee, responsible for overseeing all
-          technical aspects of the seL4 project. It is governed by
-          the seL4 Foundation Technical Charter."
-     link="TSC/"
-  %}
+    {% include card.html
+        icon="users"
+        title="TSC"
+        body="The Technical Steering Committee, responsible for overseeing all
+              technical aspects of the seL4 project. It is governed by
+              the seL4 Foundation Technical Charter."
+        link="TSC/"
+    %}
+  </div>
 </div>
-</div>
-
-<!-- FIXME: center title and sub-text -->
-<!-- FIXME: update text to present tense and revise as required; maybe shorten first item to balance -->
 
 <!-- Principles section -->
 <div class="mx-auto mt-32 max-w-4xl px-6 sm:mt-6 lg:px-8 mb-12 sm:mb-24">
   <div class="mx-auto lg:mx-0">
-    <h2 class="text-3xl font-bold tracking-tight text-gray-900 sm:text-4xl">Key principles</h2>
-    <p class="mt-6 text-lg leading-8 text-gray-600">
+    <h2 class="text-3xl font-bold tracking-tight text-dark sm:text-4xl">Key principles</h2>
+    <p class="mt-6 text-lg leading-8 text-light">
       The seL4 Foundation is established as a project
       under <a href="https://www.linuxfoundation.org">the Linux
-      Foundation</a>. It is designed to fulfill the following key principles.
+        Foundation</a>. It is designed to fulfill the following key principles.
     </p>
   </div>
-  <dl class="mx-auto mt-16 grid max-w-2xl grid-cols-1 gap-x-8 gap-y-16 text-base leading-7 sm:grid-cols-2 lg:mx-0 lg:max-w-none lg:grid-cols-2">
+  <dl
+    class="mx-auto mt-16 grid max-w-2xl grid-cols-1 gap-x-8 gap-y-16 text-base leading-7 sm:grid-cols-2 lg:mx-0 lg:max-w-none lg:grid-cols-2">
     <div class="col-span-2">
-      <dt class="font-semibold text-gray-900">
-	Neutral and community-based
+      <dt class="font-semibold text-dark">
+        Neutral and community-based
       </dt>
-      <dd class="mt-1 text-gray-600">
-	The seL4 Foundation provides a long-term, independent support for the
-	seL4 kernel and the seL4 ecosystem, by enabling the collaborative
-	community-based development, availability and adoption of the seL4
-	kernel. The seL4 Foundation aims to represent the perspectives of all
-	main actors of the seL4 community (kernel developers, kernel verifiers,
-	ecosystem developers and adopters) in the technical and general
-	governance of the seL4 kernel and the&nbsp;seL4 Foundation.
+      <dd class="mt-1 text-light">
+        The seL4 Foundation provides a long-term, independent support for the
+        seL4 kernel and the seL4 ecosystem, by enabling the collaborative
+        community-based development, availability and adoption of the seL4
+        kernel. The seL4 Foundation aims to represent the perspectives of all
+        main actors of the seL4 community (kernel developers, kernel verifiers,
+        ecosystem developers and adopters) in the technical and general
+        governance of the seL4 kernel and the&nbsp;seL4 Foundation.
       </dd>
     </div>
     <div>
-      <dt class="font-semibold text-gray-900">
-	Adoption growth
+      <dt class="font-semibold text-dark">
+        Adoption growth
       </dt>
-      <dd class="mt-1 text-gray-600">
-	The seL4 Foundation enables and grows adoption of seL4 by supporting
-	the evolution and verification of the seL4 kernel and supporting the
-	growth of the seL4 ecosystem needed to ease the development of
-	seL4-based systems.
+      <dd class="mt-1 text-light">
+        The seL4 Foundation enables and grows adoption of seL4 by supporting
+        the evolution and verification of the seL4 kernel and supporting the
+        growth of the seL4 ecosystem needed to ease the development of
+        seL4-based systems.
       </dd>
     </div>
     <div>
-      <dt class="font-semibold text-gray-900">
-	Brand promotion and protection
+      <dt class="font-semibold text-dark">
+        Brand promotion and protection
       </dt>
-      <dd class="mt-1 text-gray-600">
-	The seL4 Foundation provides official releases of the seL4 kernel
-	with clear associated verification statements, to promote the use of
-	seL4 as a competitive advantage, with clear traceability to the sources
-	of the code and the proofs.
+      <dd class="mt-1 text-light">
+        The seL4 Foundation provides official releases of the seL4 kernel
+        with clear associated verification statements, to promote the use of
+        seL4 as a competitive advantage, with clear traceability to the sources
+        of the code and the proofs.
       </dd>
     </div>
   </dl>
 </div>
 
-
-<!-- FIXME: add a "learn more" button to make explicit that there's a separate page on this? -->
-
-<!-- FIXME: logo cloud should be on max-w-7xl, but that messes with layout width above -->
+<!-- FIXME: logo cloud should be on max-w-7xl, but that messes with layout width above.
+            Probably need to put this page into plain layout for logo cloud + dark mode. -->
 <!-- Members section -->
-  <div class="logo-cloud max-w-2xl">
-    <a href="Membership/">
-    <h2>Meet our members</h2>
+<div class="logo-cloud max-w-2xl">
+  <a href="Membership/" class="hover:underline">
+    <h2>Meet our members &rarr;</h2>
     <div class="inline-flex flex-nowrap">
-{%- assign members = site.data.members.premium |
-  concat: site.data.members.general |
-  concat: site.data.members.associate -%}
+      {%- assign members = site.data.members.premium |
+      concat: site.data.members.general |
+      concat: site.data.members.associate -%}
       <ul class="logo-grid">
-{%- assign members = members | sort: "name" -%}
-{%- for member in members %}
+        {%- assign members = members | sort: "name" -%}
+        {%- for member in members %}
         <li>
           <img src="{{ 'Membership/LOGOS/' | append: member.logo }}" alt="{{ member.name }}" width="158px">
         </li>
-{%- endfor -%}
+        {%- endfor -%}
       </ul>
       <!-- repeat for animation reset -->
       <ul class="logo-grid" aria-hidden="true">
-{%- assign members = members | sort: "name" -%}
-{%- for member in members %}
+        {%- assign members = members | sort: "name" -%}
+        {%- for member in members %}
         <li>
           <img src="{{ 'Membership/LOGOS/' | append: member.logo }}" alt="{{ member.name }}" width="158px">
         </li>
-{%- endfor -%}
+        {%- endfor -%}
       </ul>
     </div>
   </a>
 </div>
-
-<!--
-
-<div>
-  <p>
-    We have taken an exciting step to expand the seL4
-    community, by setting up the <strong>seL4 Foundation</strong>,
-    similar to foundations for other open-source projects, such as
-    the Linux Foundation's Cloud Native Computing Foundation,
-    RISC-V and others. It forms an open, transparent and
-    neutral organisation tasked with growing the seL4 ecosystem. It
-    brings together developers of the seL4 kernel, developers
-    of seL4-based components and frameworks, and those
-    adopting seL4 in real-world systems. Its focus is on
-    coordinating, directing and standardising development of the
-    seL4 ecosystem in order to reduce barriers to adoption, raising
-    funds for accelerating development, and ensuring clarity of
-    verification claims.
-  </p>
-  <p>
-    <span class=join> JOIN NOW
-      <a title="Join" href="Join">HERE!</a></span>
-  </p>
-
-  <a href="../images/mosaic-high.jpg">
-    <img src="../images/mosaic.jpg" style="width:300px; padding-left:10px; float:right;"
-      alt="seL4 foundation launch"
-	   /></a>
-  <p>
-  To learn more about the seL4 Foundation:
-  </p>
-  <ul>
-    <li><strong>Read the <a href="https://microkerneldude.wordpress.com/2020/04/07/the-sel4-foundation-what-and-why/">Blog post</a> about "The seL4 Foundation &mdash; What and Why"</strong>
-    </li>
-    <li><strong>Read the <a href="https://www.linuxfoundation.org/press/press-release/sel4-microkernel-optimized-for-security-gets-support-of-linux-foundation">press releases about the launch from the Linux Foundation</a></strong>
-    </li>
-  </ul>
-
-  <p>
-    For details, please see:
-  </p>
-  <ul>
-    <li>
-      <a title="seL4 Foundation Governance"
-          href="Governance/">seL4 Foundation Governance</a>
-    </li>
-    <li>
-      <a title="seL4 Foundation Governing Board"
-          href="Board/">seL4 Foundation Governing Board</a>
-    </li>
-    <li>
-      <a title="seL4 Technical Steering Committee"
-          href="TSC/">seL4 Technical Steering Committee</a>
-    </li>
-    <li>
-      <a title="Membership"
-          href="Membership">seL4 Foundation Membership</a>
-    </li>
-    <li>
-      <a title="Commercial Support"
-          href="Services/">Commercial Support</a>
-    </li>
-    <li>
-      <a title="seL4 Summit"
-          href="Summit/2024">The seL4 Summit</a>
-    </li>
-    <li>
-      <a title="Supporting next big steps for the seL4 project"
-          href="Support/">Supporting next big steps for the seL4 project</a>
-    </li>
-    <li>
-      <a title="Logo"
-          href="Trademark/logo.html">seL4 Logo</a>
-    </li>
-    <li>
-      <a title="Trademark"
-          href="Trademark/">seL4 Trademark</a>
-    </li>
-    <li>
-      <a title="Contact the Foundation"
-          href="Contact">Contact the seL4 Foundation</a>
-    </li>
-    <li>
-      <a title="Jobs in the seL4 ecosystem"
-          href="Jobs">Jobs in the seL4 ecosystem</a>
-    </li>
-  </ul>
-</div>
--->
