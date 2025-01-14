@@ -1,4 +1,4 @@
-{% if include.email %}
+{% if include.vote %}
 {%   assign name = "vote-" %}
 {% else %}
 {%   assign name = "tsc-meeting-" %}
@@ -17,7 +17,7 @@
 {%    endif %}
 {%   endif %}
 {% endif %}
-{% if include.email %}
+{% if include.vote %}
 {%   assign text = "Email vote" %}
 {% else %}
 {%   assign text = include.n | append: suffix | append: " TSC meeting" %}
@@ -26,6 +26,6 @@
    date = include.date
    link = fname
    text = text
-   extra_text = include.extra_text
+   extra_text = include.vote
    last = include.last
 %}
