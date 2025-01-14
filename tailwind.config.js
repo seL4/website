@@ -57,18 +57,18 @@ f_neutral = { /* foundation neutral = f_neutral['700'] */
   '950': '#1c2535',
 }
 
-f_blue = { /* 950 = dark blue background */
-  '50': '#e4ecff',
-  '100': '#cfdcff',
-  '200': '#a8bcff',
-  '300': '#7490ff',
-  '400': '#3e4fff',
-  '500': '#1413ff',
-  '600': '#0800ff',
-  '700': '#0800ff',
-  '800': '#0700e4',
-  '900': '#0c00b0',
-  '950': '#030020',
+f_blue = {
+  '50': '#eff8ff',
+  '100': '#dcedfd',
+  '200': '#c1e1fc',
+  '300': '#96cffa',
+  '400': '#64b3f6',
+  '500': '#4094f1',
+  '600': '#2a78e6',
+  '700': '#2261d3',
+  '800': '#2250ab',
+  '900': '#214587',
+  '950': '#1b305b',
 }
 
 module.exports = {
@@ -94,7 +94,7 @@ module.exports = {
         lightcol: colors.gray['600'],
         lightcol_inv: colors.gray['400'],
         logogreen: f_green['400'],
-        darkblue: f_blue['950'],
+        darkblue: '#030020',
         accentlight: colors.slate['400'],
         accent: colors.slate['500'],
         accentdark: colors.slate['600'],
