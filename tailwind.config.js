@@ -78,6 +78,12 @@ module.exports = {
     '**/*.md',
     '**/*.html',
   ],
+  safelist: [
+    {
+      /* FIXME: for colour palette only; remove for production */
+      pattern: /bg-(f_.*|slate|gray)-.*0/,
+    },
+  ],
   theme: {
     extend: {
       fontFamily: {
