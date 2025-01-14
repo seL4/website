@@ -14,25 +14,25 @@
       <div class="-my-6 divide-y divide-gray-500/10">
         <div class="space-y-2 py-6">
           <div class="-mx-3">
-{%-	for n in menu -%}
-{%-		assign name = n[0] | escape -%}
-{%-		assign submenu = n[1] -%}
+{%- for n in menu -%}
+{%-   assign name = n[0] | escape -%}
+{%-   assign submenu = n[1] -%}
 {%-   assign extra = n[2] -%}
             <button type="button" class="dropbtn-mobile" aria-expanded="false">
               {{ name }}
               {% svg _icons/chevron-down-mini.svg class="h-5 w-5 flex-none" %}
             </button>
             <div class="mobile-menu hidden">
-{%-	  for sub in submenu -%}
-{%-		  assign icon = "_icons/" | append: sub[0] | append: ".svg" -%}
-{%-		  assign short = sub[1] | escape -%}
-{%-		  assign url = sub[3] -%}
+{%-   for sub in submenu -%}
+{%-     assign icon = "_icons/" | append: sub[0] | append: ".svg" -%}
+{%-     assign short = sub[1] | escape -%}
+{%-     assign url = sub[3] -%}
               <a href="{{ url | relative_url }}" class="block rounded-lg py-2 pl-6 pr-3 text-sm font-semibold leading-7 text-gray-900 hover:bg-gray-50">{% svg "{{icon}}" class="inline-icon mr-2" %} {{ short }}</a>
-{%- endfor -%}
-{%-	  for sub in extra -%}
-{%-		  assign icon = "_icons/" | append: sub[0] | append: ".svg" -%}
-{%-		  assign short = sub[1] | escape -%}
-{%-		  assign url = sub[3] -%}
+{%-   endfor -%}
+{%-   for sub in extra -%}
+{%-     assign icon = "_icons/" | append: sub[0] | append: ".svg" -%}
+{%-     assign short = sub[1] | escape -%}
+{%-     assign url = sub[3] -%}
               <a href="{{ url | relative_url }}" class="block rounded-lg py-2 pl-6 pr-3 text-sm font-semibold leading-7 text-gray-900 hover:bg-gray-50">{% svg "{{icon}}" class="inline-icon mr-2" %} {{ short }}</a>
 {%- endfor -%}
             </div>

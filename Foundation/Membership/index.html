@@ -28,38 +28,39 @@ redirect_from: /Foundation/Membership/home.pml
 <!--    <h2>Premium Members</h2> -->
 
 <div class="pt-10 pb-10 inline-flex items-center justify-center w-full">
-    <hr class="w-full h-px my-8 bg-gray-200 border-0 dark:bg-gray-700">
-    <span class="absolute px-3 text-2xl font-light text-gray-900 -translate-x-1/2
-		 bg-white left-1/2 dark:text-white dark:bg-gray-900">
-      <strong>Premium</strong>
-    </span>
+  <hr class="w-full h-px my-8 bg-gray-200 border-0 dark:bg-gray-700">
+  <span class="absolute px-3 text-2xl font-light text-gray-900 -translate-x-1/2
+     bg-white left-1/2 dark:text-white dark:bg-gray-900">
+    <strong>Premium</strong>
+  </span>
 </div>
 
-    {%- assign members = site.data.members.premium | sort_natural: "name" -%}
-    {%- include member-info.html -%}
+{%- assign members = site.data.members.premium | sort_natural: "name" -%}
+{%- include member-info.html -%}
 
 
 <!--    <h2>General Members</h2> -->
 
 <div class="pt-40 pb-10 inline-flex items-center justify-center w-full">
-    <hr class="w-full h-px my-8 bg-gray-200 border-0 dark:bg-gray-700">
-    <span class="absolute px-3 text-2xl font-light text-gray-900 -translate-x-1/2
-		 bg-white left-1/2 dark:text-white dark:bg-gray-900">
-      <strong>General</strong>
-    </span>
+  <hr class="w-full h-px my-8 bg-gray-200 border-0 dark:bg-gray-700">
+  <span class="absolute px-3 text-2xl font-light text-gray-900 -translate-x-1/2
+     bg-white left-1/2 dark:text-white dark:bg-gray-900">
+    <strong>General</strong>
+  </span>
 </div>
 
-    {%- assign members = site.data.members.general | sort_natural: "name" -%}
-    {%- include member-info.html -%}
+{%- assign members = site.data.members.general | sort_natural: "name" -%}
+{%- include member-info.html -%}
 
 <!--    <h2>Associate Members</h2> -->
 
 <div class="pt-40 pb-10 inline-flex items-center justify-center w-full">
-    <hr class="w-full h-px my-8 bg-gray-200 border-0 dark:bg-gray-700">
-    <span class="absolute px-3 text-2xl font-light text-gray-900 -translate-x-1/2
-		 bg-white left-1/2 dark:text-white dark:bg-gray-900">
-      <strong>Associate</strong>
-    </span>
+  <hr class="w-full h-px my-8 bg-gray-200 border-0 dark:bg-gray-700">
+  <span class="absolute px-3 text-2xl font-light text-gray-900 -translate-x-1/2
+     bg-white left-1/2 dark:text-white dark:bg-gray-900">
+    <strong>Associate</strong>
+  </span>
 </div>
-    {%- assign members = site.data.members.associate | sort_natural: "name" -%}
-    {%- include member-info.html -%}
+
+{%- assign members = site.data.members.associate | sort_natural: "name" -%}
+{%- include member-info.html -%}

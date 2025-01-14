@@ -1,69 +1,69 @@
 [
-	[
-		"Useful Links",
-		[
-			[
-				"What is seL4?",
-				"/About/"
-			],
-			[
-				"seL4 Foundation",
-				"/Foundation/"
-			],
-			[
-				"Become a Member",
-				"/Foundation/Join/"
-			],
-			[
-				"seL4 Logo",
-				"/Foundation/Trademark/logo.html"
-			],
-			[
-				"Sitemap",
-				"/todo.html"
-			]
-		]
-	],
-	[
-		"Legal",
-		[
-			[
-				"seL4 Trademark",
-				"/Foundation/Trademark/"
-			],
-			[
-				"seL4 License",
-				"/todo.html"
-			],
-			[
-				"Code of Conduct",
-				"/Contribute/conduct.html"
-			],
-			[
-				"Site Policies",
-				"http://www.lfprojects.org/"
-			]
-		]
-	],
-	[
-		"Using seL4",
-		[
-			[
-				"Docsite",
-				"https://docs.sel4.systems"
-			],
-			[
-				"Manual",
-				"/todo.html"
-			],
-			[
-				"Tutorials",
-				"/todo.html"
-			],
-			[
-				"FAQ",
-				"/About/FAQ.html"
-			]
-		]
-	]
+  [
+    "Useful Links",
+    [
+      [
+        "What is seL4?",
+        "/About/"
+      ],
+      [
+        "seL4 Foundation",
+        "/Foundation/"
+      ],
+      [
+        "Become a Member",
+        "/Foundation/Join/"
+      ],
+      [
+        "seL4 Logo",
+        "/Foundation/Trademark/logo.html"
+      ],
+      [
+        "Sitemap",
+        "/todo.html"
+      ]
+    ]
+  ],
+  [
+    "Legal",
+    [
+      [
+        "seL4 Trademark",
+        "/Foundation/Trademark/"
+      ],
+      [
+        "seL4 License",
+        "/todo.html"
+      ],
+      [
+        "Code of Conduct",
+        "/Contribute/conduct.html"
+      ],
+      [
+        "Site Policies",
+        "http://www.lfprojects.org/"
+      ]
+    ]
+  ],
+  [
+    "Using seL4",
+    [
+      [
+        "Docsite",
+        "https://docs.sel4.systems"
+      ],
+      [
+        "Manual",
+        "/todo.html"
+      ],
+      [
+        "Tutorials",
+        "/todo.html"
+      ],
+      [
+        "FAQ",
+        "/About/FAQ.html"
+      ]
+    ]
+  ]
 ]

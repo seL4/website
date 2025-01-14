@@ -15,7 +15,7 @@ diff -r eb7db924c90c -r dda7cc7034f3 lib_arm/cache.c
 +++ b/lib_arm/cache.c	Tue Apr 16 11:55:36 2013 +1000
 @@ -34,3 +34,15 @@
  #endif
- 	return;
+   return;
  }
 +
 +int   dcache_status (void){
