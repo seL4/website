@@ -1,0 +1,13 @@
+{% assign affiliation = '<a href="' | append: include.affiliation_link | append: '">'
+                                    | append: include.affiliation
+                                    | append: '</a>' %}
+{% assign details = "<em>" | append: include.role | append: ", "
+                           | append: affiliation | append: "</em>" %}
+{% include bio-item.html
+    name = include.name
+    details = details
+    img = include.img
+    bio = include.bio
+    mastodon = include.mastodon
+    linkedin = include.linkedin
+%}
