@@ -5,6 +5,9 @@
 {%   assign date = include.year %}
 {%   assign year = include.year %}
 {% endif %}
+{% assign title_class =
+		include.title_class
+	  | default: "mt-6 text-lg font-semibold leading-8 tracking-tight text-dark" %}
 <div class="relative mb-6">
 	{% include up-button.html %}
 	<div class="flex items-center text-lg font-semibold leading-6 text-f_blue-900 dark:text-f_blue-200">
@@ -13,11 +16,12 @@
 		</svg>
 		<div>
 			<time datetime="{{ date }}">{{ year }}</time>
+			{{ include.after_year }}
 		</div>
 		<div class="absolute -ml-2 h-px w-full -translate-x-full bg-f_blue-900/20 dark:bg-f_blue-200 sm:-ml-4"
 			aria-hidden="true"></div>
 	</div>
-	<p class="mt-6 text-lg font-semibold leading-8 tracking-tight text-dark {{ include.title_class }}">
+	<p class="{{ title_class }}">
 	  {{ include.title }}
 	</p>
 	<div class="mt-1 text-base leading-7 text-light">
