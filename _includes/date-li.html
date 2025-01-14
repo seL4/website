@@ -1,12 +1,12 @@
 <li class="relative flex gap-x-4">
-	<div class="absolute left-0 top-0 flex {% if include.last %} h-6 {% else %} -bottom-2 {% endif %} w-6 justify-center">
+  <div class="absolute left-0 top-0 flex {% if include.last %} h-6 {% else %} -bottom-2 {% endif %} w-6 justify-center">
     <div class="w-px bg-gray-200"></div>
-	</div>
-	<div class="relative flex h-6 w-6 flex-none items-center justify-center bg-white dark:bg-darkblue">
-		<div class="h-1.5 w-1.5 rounded-full bg-gray-100 ring-1 ring-gray-300"></div>
-	</div>
-	<p class="flex-auto py-0.5 text-sm leading-5 text-light">
-		<time datetime="{{include.date}}" class="font-medium text-dark">{{include.date}}:</time>
-		<a href="{{include.link}}">{{include.text}}</a> {{include.extra_text}}
-	</p>
+  </div>
+  <div class="relative flex h-6 w-6 flex-none items-center justify-center bg-white dark:bg-darkblue">
+    <div class="h-1.5 w-1.5 rounded-full bg-gray-100 ring-1 ring-gray-300"></div>
+  </div>
+  <p class="flex-auto py-0.5 text-sm leading-5 text-light">
+    <time datetime="{{include.date}}" class="font-medium text-dark">{{include.date}}:</time>
+    <a href="{{include.link}}">{{include.text}}</a> {{include.extra_text}}
+  </p>
 </li>

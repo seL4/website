@@ -1,168 +1,168 @@
 [
-	[
-		"About seL4",
-		[
-			[
-				"light-bulb",
-				"What is seL4?",
-				"History, Fact Sheet, Whitepaper. How to use seL4 in your system.",
-				"/About/"
-			],
-			[
-				"user-group",
-				"Who is using seL4?",
-				"Where seL4 is used; Benefits seL4 brings",
-				"/todo.html"
-			],
-			[
-				"check-circle",
-				"Verification",
-				"seL4 Proofs; implications for seL4-based systems and certification",
-				"/todo.html"
-			],
-			[
-				"arrow-trending-up",
-				"Roadmap",
-				"Planned development & verification",
-				"/todo.html"
-			],
-			[
-				"bolt",
-				"Performance",
-				"The numbers on the world's fastest kernel",
-				"/About/Performance/"
-			],
-			[
-				"scale",
-				"License & Trademark",
-				"seL4 License and Implications; Trademark Compliance Guide",
-				"/todo.html"
-			],
-			[
-				"cpu-chip",
-				"Supported Platforms",
-				"Hardware and simulators seL4 runs on",
-				"/todo.html"
-			],
-			[
-				"academic-cap",
-				"Research",
-				"Seminal seL4 Publications; Ongoing Research; Courses in the Ecosystem",
-				"/Research/"
-			],
-			[
-				"squares-plus",
-				"Frameworks & Languages",
-				"Frameworks, Tools, OS Personalities, Components, Language Support",
-				"/todo.html"
-			],
-			[
-				"building-library",
-				"seL4 Foundation",
-				"Members, Board, and Technical Steering Committee",
-				"/Foundation/"
-			]
-		],
-		[
-			[
-				"book-open",
-				"Manual & Documentation",
-				"Dedicated seL4 documentation site",
-				"https://docs.sel4.systems"
-			],
-			[
-				"question-mark-circle",
-				"FAQ",
-				"Frequently Asked Questions",
-				"/About/FAQ.html"
-			]
-		]
-	],
-	[
-		"Contribute",
-		[
-			[
-				"arrow-path",
-				"Contribution Guidelines",
-				"Overview on how to contribute to seL4",
-				"/Contribute/"
-			],
-			[
-				"shield-check",
-				"Code of Conduct",
-				"Rules for interaction",
-				"/Contribute/conduct.html"
-			],
-			[
-				"command-line",
-				"Coding Conventions & Requirements",
-				"Requirements for C Code, Git Commits, Pull Requests",
-				"/todo.html"
-			],
-			[
-				"beaker",
-				"RFC Process",
-				"When and how to write an RFC",
-				"/Contribute/rfc-process.html"
-			],
-			[
-				"wrench-screwdriver",
-				"Platform Contributions",
-				"Contributing and maintaining a platform port",
-				"/Contribute/platforms.html"
-			],
-			[
-				"users",
-				"Development Roles",
-				"Contributors, Reviewers, Committers, TSC",
-				"/Contribute/roles.html"
-			]
-		]
-	],
-	[
-		"News & Events",
-		[
-			[
-				"megaphone",
-				"News",
-				"News about seL4 and the seL4 Foundation",
-				"/news/"
-			],
-			[
-				"user-group",
-				"seL4 Summit 2025",
-				"The seL4 event of the year",
-				"/Foundation/Summit/2025/"
-			],
-			[
-				"envelope",
-				"Stay Informed",
-				"Announcement mailing list and other channels to stay informed",
-				"/todo.html"
-			]
-		]
-	],
-	[
-		"Contact & Support",
-		[
-			[
-				"rocket-launch",
-				"Commercial Support",
-				"Endorsed Service Providers for seL4",
-				"/todo.html"
-			],
-			[
-				"lifebuoy",
-				"Help & Open Source Support",
-				"Mailing lists, Forum, Chat, Developer Hangouts",
-				"/todo.html"
-			],
-			[
-				"user",
-				"Contact a Person",
-				"seL4 Foundation, Security Contact, Website Contact, Moderation",
-				"/todo.html"
-			]
-		]
-	]
+  [
+    "About seL4",
+    [
+      [
+        "light-bulb",
+        "What is seL4?",
+        "History, Fact Sheet, Whitepaper. How to use seL4 in your system.",
+        "/About/"
+      ],
+      [
+        "user-group",
+        "Who is using seL4?",
+        "Where seL4 is used; Benefits seL4 brings",
+        "/todo.html"
+      ],
+      [
+        "check-circle",
+        "Verification",
+        "seL4 Proofs; implications for seL4-based systems and certification",
+        "/todo.html"
+      ],
+      [
+        "arrow-trending-up",
+        "Roadmap",
+        "Planned development & verification",
+        "/todo.html"
+      ],
+      [
+        "bolt",
+        "Performance",
+        "The numbers on the world's fastest kernel",
+        "/About/Performance/"
+      ],
+      [
+        "scale",
+        "License & Trademark",
+        "seL4 License and Implications; Trademark Compliance Guide",
+        "/todo.html"
+      ],
+      [
+        "cpu-chip",
+        "Platform Support Overview",
+        "Hardware and simulators seL4 runs on",
+        "/todo.html"
+      ],
+      [
+        "academic-cap",
+        "Research",
+        "Seminal seL4 Publications; Ongoing Research; Courses in the Ecosystem",
+        "/Research/"
+      ],
+      [
+        "squares-plus",
+        "Frameworks & Languages",
+        "Frameworks, Tools, OS Personalities, Components, Language Support",
+        "/todo.html"
+      ],
+      [
+        "building-library",
+        "seL4 Foundation",
+        "Members, Board, and Technical Steering Committee",
+        "/Foundation/"
+      ]
+    ],
+    [
+      [
+        "book-open",
+        "Manual & Documentation",
+        "Dedicated seL4 documentation site",
+        "https://docs.sel4.systems"
+      ],
+      [
+        "question-mark-circle",
+        "FAQ",
+        "Frequently Asked Questions",
+        "/About/FAQ.html"
+      ]
+    ]
+  ],
+  [
+    "Contribute",
+    [
+      [
+        "arrow-path",
+        "Contribution Guidelines",
+        "Overview on how to contribute to seL4",
+        "/Contribute/"
+      ],
+      [
+        "shield-check",
+        "Code of Conduct",
+        "Rules for interaction",
+        "/Contribute/conduct.html"
+      ],
+      [
+        "command-line",
+        "Coding Conventions & Requirements",
+        "Requirements for C Code, Git Commits, Pull Requests",
+        "/todo.html"
+      ],
+      [
+        "beaker",
+        "RFC Process",
+        "When and how to write an RFC",
+        "/Contribute/rfc-process.html"
+      ],
+      [
+        "wrench-screwdriver",
+        "Platform Contributions",
+        "Contributing and maintaining a platform port",
+        "/Contribute/platforms.html"
+      ],
+      [
+        "users",
+        "Development Roles",
+        "Contributors, Reviewers, Committers, TSC",
+        "/Contribute/roles.html"
+      ]
+    ]
+  ],
+  [
+    "News & Events",
+    [
+      [
+        "megaphone",
+        "News",
+        "News about seL4 and the seL4 Foundation",
+        "/news/"
+      ],
+      [
+        "user-group",
+        "seL4 Summit 2024",
+        "The seL4 event of the year",
+        "/Foundation/Summit/2024/"
+      ],
+      [
+        "envelope",
+        "Stay Informed",
+        "Announcement mailing list and other channels to stay informed",
+        "/todo.html"
+      ]
+    ]
+  ],
+  [
+    "Contact & Support",
+    [
+      [
+        "rocket-launch",
+        "Commercial Support",
+        "Endorsed Service Providers for seL4",
+        "/todo.html"
+      ],
+      [
+        "lifebuoy",
+        "Help & Open Source Support",
+        "Mailing lists, Forum, Chat, Developer Hangouts",
+        "/todo.html"
+      ],
+      [
+        "user",
+        "Contact a Person",
+        "seL4 Foundation, Security Contact, Website Contact, Moderation",
+        "/todo.html"
+      ]
+    ]
+  ]
 ]
