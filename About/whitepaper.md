@@ -53,7 +53,7 @@ security and high performance. It also has the most advanced support for
 systems](https://en.wikipedia.org/wiki/Mixed_criticality).
 
 For detailed explanations of these terms, see our
-[FAQ](https://docs.sel4.systems/projects/sel4/frequently-asked-questions.html).
+[FAQ](FAQ.html).
 
 In 2009, the seL4 kernel was a scientific breakthrough result from the
 [Trustworthy Systems group](http://trustworthy.systems/) (TS) that
