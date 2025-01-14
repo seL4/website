@@ -9,12 +9,12 @@
 {% assign extra = '&nbsp; ' | append: include.explanation %}
 {% assign title = '<a href="pdfs/'
                   | append: include.pdf
-                  | append: '" class="!no-underline hover:!underline">'
+                  | append: '" class="hover:!underline">'
                   | append: include.title | append: "</a>" %}
 {% include timeline-item.html
   date=include.date
   after_year=extra
   title=title
-  title_class="mt-4 text-medium text-base leading-7 tracking-tight text-dark"
+  title_class="mt-4 text-medium text-base leading-7 tracking-tight text-light"
   description=description
 %}
