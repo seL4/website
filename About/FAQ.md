@@ -1,9 +1,11 @@
 ---
 SPDX-License-Identifier: CC-BY-SA-4.0
 SPDX-FileCopyrightText: 2020 seL4 Project a Series of LF Projects, LLC.
+pre: What is seL4?
+pre_link: ./
+title: Frequently Asked Questions
+sub: Questions about seL4 and their answers.
 ---
-
-# Frequently Asked Questions on seL4
 
 ## What is seL4?
  seL4 is the most advanced member of the L4 microkernel
