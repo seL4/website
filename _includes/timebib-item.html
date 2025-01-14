@@ -7,9 +7,7 @@
 {% endif %}
 {% endcapture %}
 {% assign extra = '&nbsp; ' | append: include.explanation %}
-{% assign title = '<a href="pdfs/'
-                  | append: include.pdf
-                  | append: '" class="hover:!underline">'
+{% assign title = '<a href="pdfs/' | append: include.pdf | append: '">'
                   | append: include.title | append: "</a>" %}
 {% include timeline-item.html
   date=include.date
