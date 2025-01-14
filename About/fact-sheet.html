@@ -7,146 +7,144 @@ pre_link: "./"
 layout: card
 ---
 
+<div class="grid grid-cols-1 gap-x-4 gap-y-12 md:gap-10 py-12 sm:py-20 mx-2 lg:mx-32">
 
-  <div class="grid grid-cols-1 gap-x-4 gap-y-12 md:gap-10 py-12 sm:py-20 mx-2 lg:mx-32">
-
-    <div class="flex flex-col relative rounded-lg light:border bg-white dark:bg-slate-300
-		shadow-lg hover:bg-slate-50 dark:hover:bg-slate-400">
-      <a href="#">
-	<div class="absolute bg-logogreen -top-8 left-1/2 -ml-8 p-4 rounded-full shadow-md">
-	  {% svg "_icons/check.svg" class="h-8 w-8" %}
-	</div>
-      </a>
-      <h3 class="px-6  pt-12 pb-3 text-center text-base font-semibold leading-7 text-gray-900 text-logogreen">
-	Verification
-      </h3>
-      <div class="mx-auto">
-	<p class="px-6  pt-12 pb-3 text-center text-3xl font-semibold leading-10 text-gray-900 ">
-	  seL4 is the only kernel with inspectable proofs of deep properties down to the implementation
-	</p>
-	</div>
-      <div class="px-6 pb-5 flex-auto text-base text-gray-600">
-	<ul class="mt-10 mx-auto max-w-xl space-y-2 text-light">
-	  {% include green-tick-li.html
-	  text="
-	  Formal, mathematical, machine-checked proofs"
-	  %}
-	  {% include green-tick-li.html
-	  text="
-	  1,234,567 Lines of Proofs"
-	  %}
-	  {% include green-tick-li.html
-	  text="
-	  0 bugs since 2009"
-	  %}
-	  {% include green-tick-li.html
-	  text="
-	  Functional Correctness proof"
-	  %}
-	  {% include green-tick-li.html
-	  text="
-	  Integrity proof"
-	  %}
-	  {% include green-tick-li.html
-	  text="
-	  Confidentiality proof (Absence of information flow)"
-	  %}
-	  {% include green-tick-li.html
-	  text="
-	  Binary Correctness proof"
-	  %}
-	  {% include green-tick-li.html
-	  text="
-	  Beyond Common Criteria EAL7 certification"
-	  %}
-	</ul>
+  <div class="flex flex-col relative rounded-lg light:border bg-white dark:bg-slate-300
+    shadow-lg hover:bg-slate-50 dark:hover:bg-slate-400">
+    <a href="#">
+      <div class="absolute bg-logogreen -top-8 left-1/2 -ml-8 p-4 rounded-full shadow-md">
+        {% svg "_icons/check.svg" class="h-8 w-8" %}
       </div>
-      <div class="px-6 mt-1 pb-5">
-	<a href="#" class="arrow-link">Learn more
-	  <span class="absolute inset-0"></span>
-	</a>
-      </div>
+    </a>
+    <h3 class="px-6  pt-12 pb-3 text-center text-base font-semibold leading-7 text-logogreen">
+      Verification
+    </h3>
+    <div class="mx-auto">
+      <p class="px-6  pt-12 pb-3 text-center text-3xl font-semibold leading-10 text-dark ">
+        seL4 is the only kernel with inspectable proofs of deep properties down to the implementation
+      </p>
     </div>
-
-    
-    <div class="flex flex-col relative rounded-lg light:border bg-white dark:bg-slate-300
-		shadow-lg hover:bg-slate-50 dark:hover:bg-slate-400">
-      <a href="#">
-	<div class="absolute bg-logogreen -top-8 left-1/2 -ml-8 p-4 rounded-full shadow-md">
-	  {% svg "_icons/bolt.svg" class="h-8 w-8" %}
-	</div>
-      </a>
-      <h3 class="px-6  pt-12 pb-3 text-center text-base font-semibold leading-7 text-gray-900 text-logogreen">
-	Performance
-      </h3>
-      <div class="mx-auto">
-	<p class="px-6  pt-12 pb-3 text-center text-3xl font-semibold leading-10 text-gray-900 ">
-	  seL4 is 2 to 10 times faster than other comparable systems
-	</p>
-	</div>
-      <div class="px-6 pb-5 flex-auto text-base text-gray-600">
-	<ul class="mt-10 mx-auto max-w-xl space-y-2 text-light">
-	  {% include green-tick-li.html
-	  text="
-	  Blah"
-	  %}
-	  {% include green-tick-li.html
-	  text="
-	  Blah"
-	  %}
-	  {% include green-tick-li.html
-	  text="
-	  Blah"
-	  %}
-	</ul>
-      </div>
-      <div class="px-6 mt-1 pb-5">
-	<a href="#" class="arrow-link">Learn more
-	  <span class="absolute inset-0"></span>
-	</a>
-      </div>
+    <div class="px-6 pb-5 flex-auto text-base text-light">
+      <ul class="mt-10 mx-auto max-w-xl space-y-2 text-light">
+        {% include green-tick-li.html
+          text="
+            Formal, mathematical, machine-checked proofs"
+        %}
+        {% include green-tick-li.html
+          text="
+             1,234,567 Lines of Proofs"
+        %}
+        {% include green-tick-li.html
+          text="
+            0 bugs since 2009"
+        %}
+        {% include green-tick-li.html
+          text="
+            Functional Correctness proof"
+        %}
+        {% include green-tick-li.html
+          text="
+            Integrity proof"
+        %}
+        {% include green-tick-li.html
+          text="
+            Confidentiality proof (Absence of information flow)"
+        %}
+        {% include green-tick-li.html
+          text="
+            Binary Correctness proof"
+        %}
+        {% include green-tick-li.html
+          text="
+            Beyond Common Criteria EAL7 certification"
+        %}
+      </ul>
     </div>
-
-    <div class="flex flex-col relative rounded-lg light:border bg-white dark:bg-slate-300
-		shadow-lg hover:bg-slate-50 dark:hover:bg-slate-400">
-      <a href="#">
-	<div class="absolute bg-logogreen -top-8 left-1/2 -ml-8 p-4 rounded-full shadow-md">
-	  {% svg "_icons/list-bullet.svg" class="h-8 w-8" %}
-	</div>
+    <div class="px-6 mt-1 pb-5">
+      <a href="#" class="arrow-link">Learn more
+        <span class="absolute inset-0"></span>
       </a>
-      <h3 class="px-6  pt-12 pb-3 text-center text-base font-semibold leading-7 text-gray-900 text-logogreen">
-	Features
-      </h3>
-      <div class="mx-auto">
-	<p class="px-6  pt-12 pb-3 text-center text-3xl font-semibold leading-10 text-gray-900 ">
-	  seL4 is the only verified general-purpose, capability-based operating system
-	</p>
-	</div>
-      <div class="px-6 pb-5 flex-auto text-base text-gray-600">
-	<ul class="mt-10 m-auto max-w-xl space-y-2 text-light">
-	  {% include green-tick-li.html
-	  text="
-	  General purpose: blah blah"
-	  %}
-	  {% include green-tick-li.html
-	  text="
-	  Capability-based: blah blah"
-	  %}
-	  {% include green-tick-li.html
-	  text="
-	  Can run as a hypervisor: blah blah"
-	  %}
-	  {% include green-tick-li.html
-	  text="
-	  ..."
-	  %}
-	</ul>
-      </div>
-      <div class="px-6 mt-1 pb-5">
-	<a href="#" class="arrow-link">Learn more
-	  <span class="absolute inset-0"></span>
-	</a>
-      </div>
     </div>
-    
   </div>
+
+
+  <div class="flex flex-col relative rounded-lg light:border bg-white dark:bg-slate-300
+    shadow-lg hover:bg-slate-50 dark:hover:bg-slate-400">
+    <a href="#">
+      <div class="absolute bg-logogreen -top-8 left-1/2 -ml-8 p-4 rounded-full shadow-md">
+        {% svg "_icons/bolt.svg" class="h-8 w-8" %}
+      </div>
+    </a>
+    <h3 class="px-6  pt-12 pb-3 text-center text-base font-semibold leading-7 text-logogreen">
+      Performance
+    </h3>
+    <div class="mx-auto">
+      <p class="px-6  pt-12 pb-3 text-center text-3xl font-semibold leading-10 text-dark">
+        seL4 is 2 to 10 times faster than other comparable systems
+      </p>
+    </div>
+    <div class="px-6 pb-5 flex-auto text-base text-llight">
+      <ul class="mt-10 mx-auto max-w-xl space-y-2 text-light">
+        {% include green-tick-li.html
+          text="
+          Blah"
+        %}
+        {% include green-tick-li.html
+          text="
+          Blah"
+        %}
+        {% include green-tick-li.html
+          text="
+          Blah"
+        %}
+      </ul>
+    </div>
+    <div class="px-6 mt-1 pb-5">
+      <a href="#" class="arrow-link">Learn more
+        <span class="absolute inset-0"></span>
+      </a>
+    </div>
+  </div>
+
+  <div class="flex flex-col relative rounded-lg light:border bg-white dark:bg-slate-300
+    shadow-lg hover:bg-slate-50 dark:hover:bg-slate-400">
+    <a href="#">
+      <div class="absolute bg-logogreen -top-8 left-1/2 -ml-8 p-4 rounded-full shadow-md">
+        {% svg "_icons/list-bullet.svg" class="h-8 w-8" %}
+      </div>
+    </a>
+    <h3 class="px-6  pt-12 pb-3 text-center text-base font-semibold leading-7 text-logogreen">
+      Features
+    </h3>
+    <div class="mx-auto">
+      <p class="px-6  pt-12 pb-3 text-center text-3xl font-semibold leading-10 text-dark ">
+        seL4 is the only verified general-purpose, capability-based operating system
+      </p>
+    </div>
+    <div class="px-6 pb-5 flex-auto text-base text-light">
+      <ul class="mt-10 m-auto max-w-xl space-y-2 text-light">
+        {% include green-tick-li.html
+            text="
+              General purpose: blah blah"
+        %}
+        {% include green-tick-li.html
+            text="
+              Capability-based: blah blah"
+        %}
+        {% include green-tick-li.html
+            text="
+              Can run as a hypervisor: blah blah"
+        %}
+        {% include green-tick-li.html
+            text="
+              ..."
+        %}
+      </ul>
+    </div>
+    <div class="px-6 mt-1 pb-5">
+      <a href="#" class="arrow-link">Learn more
+        <span class="absolute inset-0"></span>
+      </a>
+    </div>
+  </div>
+</div>
