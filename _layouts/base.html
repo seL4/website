@@ -2,7 +2,6 @@
 # Copyright 2024 seL4 Project a Series of LF Projects, LLC.
 # SPDX-License-Identifier: CC-BY-SA-4.0
 ---
-<!DOCTYPE html>
 <html lang="en">
   <head>
     <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
@@ -43,13 +42,15 @@
 {%-  endfor -%}
 {%  endif %}
   </head>
-  <body class="min-h-screen grid gap-0 grid-cols-1 grid-rows-[auto_1fr_auto] dark:bg-[#030020]">
+  <body class="flex flex-col h-screen {%unless page.nodark%}dark:bg-[#030020]{%endunless%}">
 {%- assign menu = site.data.menu -%}
 {% include header.html %}
-    <main class="pt-12 lg:pt-16">
+    <div class="flex-1 overflow-y-auto">
+      <main>
 {{ content }}
-    </main>
+      </main>
 {%- assign footer = site.data.footer -%}
 {% include footer.html %}
+   </div>
   </body>
 </html>
