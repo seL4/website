@@ -41,9 +41,6 @@ optional_front_matter:
 # Set this to false if you want .md files to be accessible also
   remove_originals: true
 
-livereload: true
-incremental: true
-
 exclude:
   - Makefile
   - README.md
