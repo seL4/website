@@ -138,6 +138,10 @@ layout: none
     content: " →";
   }
 
+  .a-underline a {
+    @apply underline;
+  }
+
   .menu-item-group {
     @apply relative flex gap-x-6 rounded-lg p-4 hover:bg-gray-50;
   }
