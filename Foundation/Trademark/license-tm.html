@@ -1,0 +1,39 @@
+---
+# Copyright 2020 seL4 Project a Series of LF Projects, LLC.
+# SPDX-License-Identifier: CC-BY-SA-4.0
+title: Licensing &amp; Trademark
+pre: 'Legal'
+sub: "The seL4 kernel is open-source, and protected by a registered trademark
+      in multiple countries. You are allowed and encouraged to use the logo and
+      trademark, as long as you follow the Foundation guidelines."
+layout: card
+---
+
+<div class="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-3 gap-12 px-10 pt-8 pb-12 sm:pb-20">
+  {% include card.html
+     icon="document-text"
+     title="License"
+     body='<p>The seL4 kernel is licensed under the GPL, version 2.</p>
+           <p class="mt-2">The GPL propagation clause stops at the user code boundary. This means, user code, operating system code, and drivers can have any license, proprietary or open source. </p>'
+     link="license.html"
+  %}
+
+  {% include card.html
+     icon="clipboard-document-list"
+     title="Trademark"
+     body='<p>You are allowed to use the seL trademark according to the
+           Foundation guidelines.</p> <p class="mt-2">The intent of these guidelines is that
+           the name seL4 must refer to the seL4 code base, not a derivative
+           or changed version of the kernel.</p>'
+     link="./"
+  %}
+
+  {% include card.html
+      class="col-span-1 md:col-span-2 xl:col-span-1 md:max-w-xl md:mx-auto"
+      icon="clipboard-document-list"
+      title="Logo"
+      body="You are encouraged to use the seL4 logo to show off your work around
+            seL4, provided you are not violating the trademark use guidelines."
+      link="logo.html"
+   %}
+</div>
