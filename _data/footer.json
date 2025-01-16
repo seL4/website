@@ -20,7 +20,7 @@
       ],
       [
         "Sitemap",
-        "/todo.html"
+        "/sitemap.html"
       ]
     ]
   ],
@@ -54,11 +54,11 @@
       ],
       [
         "Manual",
-        "/todo.html"
+        "/Info/Docs/seL4-manual-latest.pdf"
       ],
       [
         "Tutorials",
-        "/todo.html"
+        "https://docs.sel4.systems/Tutorials/"
       ],
       [
         "FAQ",

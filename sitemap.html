@@ -1,0 +1,19 @@
+---
+SPDX-License-Identifier: CC-BY-SA-4.0
+SPDX-FileCopyrightText: 2020 seL4 Project a Series of LF Projects, LLC.
+title: Sitemap
+sub: A list of all pages on this site.
+layout: card
+---
+
+{% assign pages = site.html_pages | sort: "url" %}
+
+<div class="max-w-2xl mx-auto pb-16">
+  <ul>
+  {% for page in pages %}
+    <li class="py-1">
+      <a href="{{ page.url }}">{{ page.url | replace:'/index.html','/' }}</a>
+    </li>
+  {% endfor %}
+  </ul>
+</div>
