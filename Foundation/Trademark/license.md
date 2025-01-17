@@ -39,6 +39,12 @@ commercial operating systems. You can develop a closed-source commercial OS or
 system on top of seL4 without fear of violating the GPL. You can also develop a
 fully open source OS or system on top of seL4 with an even more liberal license.
 
+<img src="/images/licensing.drawio.svg" class="w-full px-2"
+     alt="Diagram with seL4 (GPL) at the bottom,
+          system code and drivers (any license) +
+          optional foundation frameworks (BSD) in the middle, and
+          user-code (any license) at the top.)">
+
 Only if you change seL4 itself or the seL4 proofs, your changes fall under the
 conditions of the GPL. For normal system development, this should not be
 necessary. Even then it would only affect a very small
