@@ -9,7 +9,6 @@
     include.title_class
     | default: "mt-6 text-lg font-semibold leading-8 tracking-tight text-dark" %}
 <div class="relative mb-6">
-  {% include up-button.html %}
   <div class="flex items-center text-lg font-semibold leading-6 text-f_blue-900 dark:text-f_blue-200">
     <svg viewBox="0 0 4 4" class="mr-4 h-1 w-1 flex-none" aria-hidden="true">
       <circle cx="2" cy="2" r="2" fill="currentColor" />
@@ -27,4 +26,11 @@
   <div class="mt-1 text-base leading-7 text-light">
     {{ include.description }}
   </div>
+</div>
+<div class="flex w-full mb-6">
+  <div class="flex-1"></div>
+  <hr class="w-10">
+  {% include up-button.html placing="relative -mt-3.5 mx-4" %}
+  <hr class="w-10">
+  <div class="flex-1"></div>
 </div>
