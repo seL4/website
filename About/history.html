@@ -1,0 +1,201 @@
+---
+# Copyright 2020 seL4 Project a Series of LF Projects, LLC.
+# SPDX-License-Identifier: CC-BY-SA-4.0
+title: "History"
+layout: card
+pre: "What is seL4?"
+pre_link: "./"
+sub: '
+  <p>
+    The seL4 story began in the early 2000s. In 2009, the first formally
+    verified OS kernel was a scientific breakthrough. Since then, seL4 has
+    continued to reach new milestones, both
+    in <a href="../Research/publications.html">research</a> and
+     <a href="#">real-world deployment and use</a>. Here is a walk down
+     seL4&apos;s memory lane.
+  </p>
+  <img src="../images/tries-shutterstock/l4v-old-photo.png"
+       alt="l4v early team" class="mt-8 rounded-lg">'
+---
+
+  <!--FIXME: fix link to Use page when it exists-->
+  <!--FIXME: ok to have year field with text?-->
+
+{% include timeline-start.html %}
+
+  {% include timeline-item.html
+      year="70's and 80's"
+      title="First microkernel: minimality but bad performance"
+      description='
+
+        The notion of a microkernel first emerged in the 70&apos;s. At that
+        time, Operating Systems largely ran in privilege mode (known as kernel
+        mode) to provide hardware abstraction mechanisms and services. First
+        defined in Brinch Hansen&apos;s Nucleus, then in CMU&apos;s MACH kernel,
+        the philosophy behind microkernels is to reduce the kernel (code running
+        in kernel mode) to a minimal core that is free from policy, while the
+        rest of the operating system services run in unprivileged mode (known as
+        application mode).
+
+        The achilles&apos; heel of microkernels at the time was performance:
+        applications code would obtain system services by communicating via an
+        interprocess communication (IPC) mechanism, making IPC on the critical
+        path of any service invocation. This led to poor performance, claimed by
+        some to be intrinsic to microkernels design.
+        <img src="../images/tries-shutterstock/wikipedia-microkernel-idea.svg"
+             alt="Microkernel principles" class="mt-8 rounded-lg shadow-lg">'
+  %}
+<!-- FIXME: redo picture or add licence, from wikipedia -->
+
+
+  {% include timeline-item.html
+      year="90's"
+      title="L4 kernel: microkernels can have high performance"
+      description='
+
+
+        In 1993 Jochen Liedtke demonstrated with his L4 kernel that microkernel
+        IPC could be fast, a factor 10–20 faster than contemporary
+        microkernels. This remarkable order-of-magnitude performance improvement
+        was the start of a journey that created a whole family of microkernels
+        and led to large-scale commercial deployment. Read more on L4
+        microkernels designs evolution during the decades that followed
+        Liedtke&apos;s L4 in the
+        paper <a href="https://www.google.fr/url?sa=t&source=web&rct=j&opi=89978449&url=https://trustworthy.systems/publications/nicta_full_text/8988.pdf&ved=2ahUKEwjR3Y76-YuLAxV2U6QEHflXM0MQFnoECBcQAQ&usg=AOvVaw0q8HSvt7xj8PyxXGQYvmHX">"L4
+        Microkernels: The Lessons from 20 Years of Research and Deployment"</a>
+        <a href="https://www.google.fr/url?sa=t&source=web&rct=j&opi=89978449&url=https://trustworthy.systems/publications/nicta_full_text/8988.pdf&ved=2ahUKEwjR3Y76-YuLAxV2U6QEHflXM0MQFnoECBcQAQ&usg=AOvVaw0q8HSvt7xj8PyxXGQYvmHX"><img src="../images/tries-shutterstock/paper-20y.png"
+        alt="20 years restrospective paper" class="mt-8 rounded-lg mx-auto
+        shadow-lg px-20 py-4"></a>' %}
+
+	<!-- FIXME: add underline for links? and replace quotes by italic?-->
+
+  {% include timeline-item.html
+      year="2004"
+      title="Start of the L4.verified project"
+	description='
+
+        In 2004, after spending some years experimenting with microkernel
+        designs looking for performance and complexity reduction opportunities,
+        Gernot Heiser and Kevin Elphinstone partnered with Gerwin Klein with the
+        project to target assurance without compromising on performance:
+        producing a formally verified microkernel (of the L4 family) at no more
+        than 10% performance degradation. The L4.verified project started. Kevin
+        led the design of a new kernel of the L4 family which would be
+        verifiable, while Gerwin led the formal specification and verification
+        of it. seL4 was born.
+
+        <img src="../images/tries-shutterstock/l4v.jpg"
+        alt="L4.verified project" class="mt-8 rounded-lg mx-auto shadow-lg px-20 py-4">'
+  %}
+
+  {% include timeline-item.html
+      date="2009-07-29"
+      title="0 sorries: first formally verified kernel, after multiple 2-to-4 weeks"
+      description='
+        Blah blah blah blah blah blah blah blah blah blah blah blah blah blah
+        blah blah blah blah blah blah blah blah blah blah blah blah blah blah
+        blah blah blah blah blah blah blah blah blah blah
+        <img src="../images/tries-shutterstock/0sorries.jpg"
+             alt="0 sorries" class="mt-8 rounded-lg w-3/4 mx-auto shadow-lg">'
+  %}
+
+  {% include timeline-item.html
+      year="2012-2013"
+      title="Further proofs: Security, Binary Correctness, and more"
+      description='
+	Blah blah blah blah blah blah blah blah blah blah blah blah blah blah
+        blah blah blah blah blah blah blah blah blah blah blah blah blah blah
+        blah blah blah blah blah blah blah blah blah blah
+        <img src="../images/tries-shutterstock/proof-stack.pdf"
+             alt="seL4 Proof stack" class="mt-8 rounded-lg w-3/4 mx-auto shadow-lg px-20 py-4">'
+  %}
+
+
+<!-- FIXME: redo picture or add licence, from wikipedia -->
+
+
+  {% include timeline-item.html
+      year="2012-2017"
+      title="DARPA HACMS: seL4 protects unmanned helicopter against cyber-attacks"
+      description='
+	Blah blah blah blah blah blah blah blah blah blah blah blah blah blah
+        blah blah blah blah blah blah blah blah blah blah blah blah blah blah
+        blah blah blah blah blah blah blah blah blah blah
+        <img src="../images/boeing-ulb-helicopter.jpg"
+             alt="Boeing&apos;s ULB" class="mt-8 rounded-lg w-3/4 mx-auto">'
+   %}
+
+  {% include timeline-item.html
+      year="2014-07-29"
+      title="Freedom day: seL4 becomes Open Source"
+      description='
+	Blah blah blah blah blah blah blah blah blah blah blah blah blah blah
+        blah blah blah blah blah blah blah blah blah blah blah blah blah blah
+        blah blah blah blah blah blah blah blah blah blah
+        <img src="../images/tries-shutterstock/sel4-github.png"
+             alt="seL4 on Github" class="mt-8 rounded-lg mx-auto shadow-lg p-4">'
+   %}
+
+  {% include timeline-item.html
+      year="2018"
+      title="MCS is born: support for Mixed Criticality Systems"
+      description='
+	Blah blah blah blah blah blah blah blah blah blah blah blah blah blah
+        blah blah blah blah blah blah blah blah blah blah blah blah blah blah
+        blah blah blah blah blah blah blah blah blah blah
+        <img src="../images/tries-shutterstock/mcs-cap.png"
+             alt="MCS principle" class="mt-8 rounded-lg w-3/4 mx-auto shadow-lg p-4">'
+  %}
+
+  {% include timeline-item.html
+      year="2018-2023"
+      title="DARPA CASE: blah"
+      description='
+	Blah blah blah blah blah blah blah blah blah blah blah blah blah blah
+        blah blah blah blah blah blah blah blah blah blah blah blah blah blah
+        blah blah blah blah blah blah blah blah blah blah
+        <img src="../images/tries-shutterstock/case.jpg"
+             alt="DARPA CASE program" class="mt-8 rounded-lg w-3/4 mx-auto shadow-lg ">'
+  %}
+
+
+<!-- FIXME: ask Darren for CASE picture -->
+
+
+  {% include timeline-item.html
+      year="2020"
+      title="Launch of the seL4 Foundation"
+      description='
+	Blah blah blah blah blah blah blah blah blah blah blah blah blah blah
+        blah blah blah blah blah blah blah blah blah blah blah blah blah blah
+        blah blah blah blah blah blah blah blah blah blah
+        <img src="../images/mosaic-high.jpg"
+             alt="seL4 Foundation launch" class="mt-8 rounded-lg w-1/2 mx-auto shadow-lg ">'
+  %}
+
+  {% include timeline-item.html
+      year="2021"
+      title="seL4 becomes an Ecosystem"
+      description='
+	Blah blah blah blah blah blah blah blah blah blah blah blah blah blah
+        blah blah blah blah blah blah blah blah blah blah blah blah blah blah
+        blah blah blah blah blah blah blah blah blah blah
+        <img src="../images/tries-shutterstock/summit2024.jpg"
+             alt="seL4 summit2024" class="mt-8 rounded-lg w-3/4 mx-auto shadow-lg ">'
+  %}
+
+<!-- FIXME: or logo cloud? -->
+
+  {% include timeline-item.html
+      year="2024"
+      title="DARPA PROVERS: blah"
+      description=' Blah'
+  %}
+
+  {% include timeline-item.html
+      year="2025"
+      title="More?"
+      description=' Blah'
+  %}
+
+{% include timeline-end.html %}
