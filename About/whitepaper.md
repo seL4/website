@@ -34,7 +34,7 @@ provides fine-grained access control through
 and controls communication between components of the system. It is the
 most critical part of the software system, and runs in privileged mode.
 
-Being a microkernel means that it is reduced to a minimal core that is
+Being a *microkernel* means that it is reduced to a minimal core that is
 free from policy and therefore can form a dependable base for building
 arbitrary systems serving many different usage scenarios.
 
@@ -43,10 +43,10 @@ microkernels](https://en.wikipedia.org/wiki/L4_microkernel_family "L4 microkerne
 and is the world's most advanced, most highly assured operating-system
 kernel.
 
-seL4's formal verification sets it apart from any other operating
-system. In a nutshell, it provides the highest assurance of *isolation*
-between applications running in the system, meaning that a compromise in
-one part of the system can be contained and prevented from harming
+seL4's [formal verification](Verification/) sets it apart from any other
+operating system. In a nutshell, it provides the highest assurance of
+*isolation* between applications running in the system, meaning that a
+compromise in one part of the system can be contained and prevented from harming
 other, potentially more critical parts of the system.
 
 Specifically, seL4's implementation is formally (mathematically) proven
