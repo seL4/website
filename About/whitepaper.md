@@ -1,20 +1,31 @@
 ---
-# Copyright 2020 seL4 Project a Series of LF Projects, LLC.
-# SPDX-License-Identifier: CC-BY-SA-4.0
+SPDX-License-Identifier: CC-BY-SA-4.0
+SPDX-FileCopyrightText: 2020 seL4 Project a Series of LF Projects, LLC.
 title: seL4 Whitepaper
+pre: What is seL4?
+pre_link: index.html
+sub: '
+  <p>
+    This whitepaper provides an introduction to and overview of seL4, including
+    seL4’s assurance story, its security- and safety-relevant features, and its
+    benchmark-setting performance, as well as typical usage scenarios.
+  </p>
+<div class="flex justify-center items-center pt-6">
+  <a href="seL4-whitepaper.pdf" class="button-outline px-10">Download Whitepaper</a>
+</div>'
 ---
 
 <div class="mx-10 mb-6 float-left w-1/4">
   <a href="seL4-whitepaper.pdf">
   <img src="whitepaper.svg" alt="seL4 Whitepaper" />
-  Download Whitepaper</a>
+  </a>
 </div>
 seL4 is a high-assurance, high-performance operating system microkernel. It is
-unique because of its comprehensive formal verification, without compromising
-[performance](Performance/). It is meant to be used as a trustworthy foundation
-for building safety- and security-critical systems. It is available as open
-source on [GitHub](https://github.com/seL4/) and supported by the [seL4
-Foundation](../Foundation/).
+unique because of its comprehensive formal [verification](Verification/),
+without compromising [performance](Performance/). It is meant to be used as a
+trustworthy foundation for building safety- and security-critical systems. It is
+available as open source on [GitHub](https://github.com/seL4/) and supported by
+the [seL4 Foundation](../Foundation/).
 
 Being a *kernel* means it is the piece of software that runs at the
 heart of any software system and controls all accesses to resources. It
@@ -22,10 +33,6 @@ provides fine-grained access control through
 [capabilities](https://en.wikipedia.org/wiki/Capability-based_security),
 and controls communication between components of the system. It is the
 most critical part of the software system, and runs in privileged mode.
-
-<img style="width: 250px; margin-left: 10px; float: right;"
-     src="../images/trusted.svg"
-     alt="seL4 system" />
 
 Being a microkernel means that it is reduced to a minimal core that is
 free from policy and therefore can form a dependable base for building
@@ -52,9 +59,15 @@ security and high performance. It also has the most advanced support for
 [mixed criticality real-time
 systems](https://en.wikipedia.org/wiki/Mixed_criticality).
 
-For detailed explanations of these terms, see our
-[FAQ](FAQ.html).
+For detailed explanations of these terms, see our [FAQ](FAQ.html). For a more
+detailed introduction to seL4, read the [Whitepaper](seL4-whitepaper.pdf).
 
+
+<img style="width: 40%; margin-left: auto; margin-right: auto; center"
+     src="../images/trusted.svg"
+     alt="seL4 system" />
+
+<!--
 In 2009, the seL4 kernel was a scientific breakthrough result from the
 [Trustworthy Systems group](http://trustworthy.systems/) (TS) that
 showed that high-performance kernels are within the realm of formal
@@ -70,5 +83,4 @@ with its partners in the seL4 Foundation.
 
 More on TS ongoing and future [research](../Info/more-research.html)
 about seL4 and trustworthy systems.
-
-Read the [Whitepaper](seL4-whitepaper.pdf) for a more detailed introduction to seL4.
+-->
