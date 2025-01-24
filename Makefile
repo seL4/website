@@ -22,17 +22,21 @@ help:
 		help        This help text.\n"
 
 .jekyll-cache/ruby_deps: Gemfile Gemfile.lock
-	@bundle install
+	bundle install
 	@mkdir -p .jekyll-cache/
+	@touch $@
+
+.npm_deps: package.json package-lock.json
+	npm install
 	@touch $@
 
 JEKYLL_ENV := production
 SERVE_HOST :=
 
-build: .jekyll-cache/ruby_deps
+build: .jekyll-cache/ruby_deps .npm_deps
 	JEKYLL_ENV=$(JEKYLL_ENV) bundle exec jekyll build
 
-serve: .jekyll-cache/ruby_deps
+serve: .jekyll-cache/ruby_deps .npm_deps
 # $(SERVE_HOST) is here so docker can pass in "--host 0.0.0.0" for serve
 # otherwise this variable is not needed and by default empty
 	JEKYLL_ENV=$(JEKYLL_ENV) bundle exec jekyll serve -I --livereload $(SERVE_HOST)
@@ -62,4 +66,5 @@ checklinks:
 	@bundle exec htmlproofer $(HTMLPROOFEROPT) _site
 
 update:
-	@bundle update
+	bundle update
+	npm update
