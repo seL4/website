@@ -31,7 +31,7 @@ plugins:
   # Allow multiple urls to redirect to a single page
   - jekyll-redirect-from
   # For tailwind postcss
-  - jekyll-postcss
+  - jekyll-postcss-v2
   # For icons
   - jekyll-inline-svg
 
@@ -53,14 +53,9 @@ exclude:
   - package-lock.json
   - package.json
   - postcss.config.js
-  - tailwind.config.js
   - "**/*.license"
   - .bundle/
   - .github/
   - .git/
   - .gitignore
   - .reuse/
-
-postcss:
-  # necessary for live reload
-  cache: false
