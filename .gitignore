@@ -7,5 +7,6 @@ _proofcraft
 .sass-cache
 .jekyll-cache
 .jekyll-metadata
+.npm_deps
 vendor
 node_modules
