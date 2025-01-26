@@ -110,10 +110,6 @@ layout: none
   }
 }
 
-@utility news_pic {
-  @apply rounded-xl shadow-xl mx-auto bg-white p-8;
-}
-
 @utility card-grid-3 {
   @apply grid grid-cols-2 sm:grid-cols-3 gap-10 pb-12 sm:pb-20;
 }

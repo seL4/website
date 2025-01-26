@@ -29,21 +29,28 @@ layout: base
 
 {%  for news_item in site.news-items reversed -%}
 {%-   assign date = news_item.date | date: "%d %b %Y" -%}
-{%-   assign iso = news_item.date | date: "%Y-$e-%d" -%}
+{%-   assign iso = news_item.date | date: "%Y-%m-%d" -%}
 {%-   assign year = date | date: "%Y" -%}
 {%-   assign default_anchor = news_item.date | date: "%m-%d" -%}
 {%-   assign anchor = news_item.anchor | default: default_anchor -%}
 {%-   if year == this_year -%}
 <div class="relative my-12 sm:my-18 pt-2 pb-8 px-6 lg:px-8 mx-auto max-w-5xl">
 
+{% comment %}
+FIXME: news_item..width is currently being ignored, because tailwind needs to see
+       the value in the source for the grid to work. Need to either not use
+       grid or figure out some other way to set the width. Or provide only
+       a finite set of choices (narrow, standard, wide).
+{% endcomment %}
 {%- if news_item.img -%}
-{%-   assign w = news_item.width | default: "30%" -%}
+{%-   assign w = "lg:grid-cols-[auto_30%]" -%}
 {%- else -%}
-{%-   assign w = "0%" -%}
+{%-   assign w = "lg:grid-cols-[auto_0%]" -%}
 {%- endif -%}
 
-<article class="news text-lg leading-8 text-gray-600 dark:text-gray-400 mr-10
-           grid grid-cols-1 lg:grid-rows-[auto_auto] lg:gap-x-10 lg:grid-cols-[auto_{{w}}]">
+<article class="text-lg leading-8 text-gray-600 dark:text-gray-400 mr-10
+           grid grid-cols-1 lg:grid-rows-[auto_auto]
+           lg:gap-x-10 {{w}}">
 <div>
 <a href="#{{anchor}}" class="not-prose hover:underline text-gray-400 pt-16 lg:pt-20"><time datetime="{{ iso }}" id="{{anchor}}">{{ date }}</time></a>
 <h2 class="mb-8 mt-2 text-2xl lg:text-3xl font-bold tracking-tight text-gray-900 dark:text-gray-300">{{ news_item.title }}</h2>
@@ -61,7 +68,7 @@ layout: base
 {%-     endif -%}
     <img src="{{ news_item.img | relative_url }}"
          alt="{{ news_item.alt | default: news_item.title }}"
-         class="news_pic w-1/2 lg:w-full lg:mr-0" >
+         class="rounded-xl mx-auto bg-white p-8 w-1/2 lg:w-full lg:mr-0" >
 {%-     if news_item.link -%}
   </a>
 {%-     endif -%}
