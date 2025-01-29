@@ -1,8 +1,8 @@
 {% assign max-width = include.width | default: "max-w-7xl" %}
 <div class="{{max-width}} bg-white py-20 sm:pt-24 sm:pb-32 dark:max-w-none mx-auto overflow-hidden
           light:[mask-image:_linear-gradient(to_right,transparent_0,_black_200px,_black_calc(100%-200px),transparent_100%)]">
-  <a href="{{ '/Foundation/Membership/' | relative_url }}">
-    <h2 class="text-center text-3xl font-semibold leading-8 text-darkcol mb-10">Meet our members</h2>
+  <a href="{{ '/Foundation/Membership/' | relative_url }}" class="hover:underline">
+    <h2 class="text-center text-3xl font-semibold leading-8 text-darkcol mb-10">Meet our members &rarr;</h2>
     <div class="inline-flex flex-nowrap">
 {%- assign logo-grid = "flex items-center justify-center md:justify-start
                         animate-infinite-scroll motion-reduce:animate-none" -%}
