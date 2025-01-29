@@ -21,47 +21,20 @@ nodark: true
 redirect_from: /Foundation/Membership/home.pml
 ---
 
-<!-- FIXME: override dark mode, because some of the logos don't work on dark background -->
 
-
-<!-- FIXME: make this a component or CSS utility -->
-
-<!--    <h2>Premium Members</h2> -->
-
-<div class="pt-10 pb-10 inline-flex items-center justify-center w-full">
-  <hr class="w-full h-px my-8 bg-gray-200 border-0 dark:bg-gray-700">
-  <span class="absolute px-3 text-2xl font-light text-gray-900 -translate-x-1/2
-     bg-white left-1/2 dark:text-white dark:bg-gray-900">
-    <strong>Premium</strong>
-  </span>
-</div>
+{% include sep-header.html text="Premium" %}
 
 {%- assign members = site.data.members.premium | sort_natural: "name" -%}
 {%- include member-info.html -%}
 
 
-<!--    <h2>General Members</h2> -->
-
-<div class="pt-40 pb-10 inline-flex items-center justify-center w-full">
-  <hr class="w-full h-px my-8 bg-gray-200 border-0 dark:bg-gray-700">
-  <span class="absolute px-3 text-2xl font-light text-gray-900 -translate-x-1/2
-     bg-white left-1/2 dark:text-white dark:bg-gray-900">
-    <strong>General</strong>
-  </span>
-</div>
+{% include sep-header.html text="General" %}
 
 {%- assign members = site.data.members.general | sort_natural: "name" -%}
 {%- include member-info.html -%}
 
-<!--    <h2>Associate Members</h2> -->
 
-<div class="pt-40 pb-10 inline-flex items-center justify-center w-full">
-  <hr class="w-full h-px my-8 bg-gray-200 border-0 dark:bg-gray-700">
-  <span class="absolute px-3 text-2xl font-light text-gray-900 -translate-x-1/2
-     bg-white left-1/2 dark:text-white dark:bg-gray-900">
-    <strong>Associate</strong>
-  </span>
-</div>
+{% include sep-header.html text="Associate" %}
 
 {%- assign members = site.data.members.associate | sort_natural: "name" -%}
 {%- include member-info.html -%}
