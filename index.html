@@ -295,35 +295,9 @@ redirect_from: /home.pml
 
 </div>
 
-<!--------------------------------------------------------------------------------------->
 
-<div class="logo-cloud max-w-7xl">
-  <a href="Foundation/Membership/">
-    <h2>Meet our members</h2>
-    <div class="inline-flex flex-nowrap">
-{%- assign members = site.data.members.premium |
-  concat: site.data.members.general |
-  concat: site.data.members.associate -%}
-      <ul class="logo-grid">
-{%- assign members = members | sort: "name" -%}
-{%- for member in members %}
-        <li>
-          <img src="{{ 'Foundation/Membership/LOGOS/' | append: member.logo }}" alt="{{ member.name }}" width="158px">
-        </li>
-{%- endfor -%}
-      </ul>
-      <!-- repeat for animation reset -->
-      <ul class="logo-grid" aria-hidden="true">
-{%- assign members = members | sort: "name" -%}
-{%- for member in members %}
-        <li>
-          <img src="{{ 'Foundation/Membership/LOGOS/' | append: member.logo }}" alt="{{ member.name }}" width="158px">
-        </li>
-{%- endfor -%}
-      </ul>
-    </div>
-  </a>
-</div>
+{% include logo-cloud.html %}
+
 
 <script type="module">
     function remtopx(rem) {
