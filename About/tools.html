@@ -1,0 +1,188 @@
+---
+# Copyright 2020 seL4 Project a Series of LF Projects, LLC.
+# SPDX-License-Identifier: CC-BY-SA-4.0
+title: Tools, Frameworks & Languages
+sub: 'Below is a list of available tools, frameworks, Software Development Kits
+  (SDKs), and supported languages for seL4, either provided by the seL4
+  Foundation (in green) or provided by the seL4 community (in blue). Some are
+  open source (potentially still in development), while others are commercial.
+  If you would like an item to be added, please contact us at
+  <a title="foundation@sel4.systems"
+  href="mailto:foundation@sel4.systems">foundation@sel4.systems</a>.'
+layout: card
+---
+
+
+<div class="section-borders -mt-12 pt-0">
+  <h2 class="text-center mt-16 text-3xl font-bold tracking-tight text-dark md:text-4xl">Development kits & Component frameworks</h2>
+
+  <div class="grid grid-cols-1 md:grid-cols-2  gap-12 px-10 pt-8 pb-12 sm:pb-20">
+
+    {% include card.html
+    icon="cloud-arrow-down"
+    title="MicroKit"
+    link="https://docs.sel4.systems/projects/microkit"
+    body='<p>
+      Abstraction layer, SDK and tools that simplifies development of statically
+      architected seL4-based systems.
+    </p>'
+    %}
+
+    {% include card.html
+    icon="cloud-arrow-down"
+    title="CAmkES"
+    link="https://docs.sel4.systems/projects/camkes/"
+    body='<p>
+      Development and runtime component framework for microkernel-based embedded
+      static systems.
+    </p>'
+    %}
+
+    <!-- FIXME: link inside a card doesn't work -->
+
+    {% include card.html
+    icon="cloud-arrow-down"
+    icon_colour="f_blue"
+    link="https://trustworthy.systems/projects/drivers"
+    title="sDDF"
+    body='<p>
+      A verifiable seL4 device driver framework providing a set of interfaces,
+      designs and tools for developing high-performance, encapsulated device
+      drivers for seL4, developed at
+      UNSW. A <a href="https://sel4.atlassian.net/jira/software/c/projects/RFC/issues/RFC-12">Request
+      for Comment</a>
+      (<a href="https://docs.sel4.systems/processes/rfc-process.html">RFC</a>)
+      is open for consideration by the seL4 Foundation.
+    </p>'
+    %}
+
+    {% include card.html
+    icon="cloud-arrow-down"
+    icon_colour="f_blue"
+    link="https://github.com/sel4devkit"
+    title="seL4 Dev Kit"
+    body='<p>
+      An seL4 development kit aimed at helping complete beginners get started
+      and evaluate seL4 for their needs, developed by Capgemini Engineering and
+      funded by the National Cyber Security Centre (NCSC).
+    </p>'
+    %}
+
+    {% include card.html
+    icon="cloud-arrow-down"
+    icon_colour="f_blue"
+    link="https://github.com/loonwerks/BriefCASE-Tutorial"
+    title="BriefCase"
+    body='<p>
+      A model-based systems engineering environment that can build systems
+      targeting seL4, based on AADL and OSATE, from the DARPA CASE program.
+    </p>'
+    %}
+
+  </div>
+</div>
+
+<div class="section-borders -mt-12 pt-0">
+  <h2 class="text-center mt-16 text-3xl font-bold tracking-tight text-dark md:text-4xl">Operating Systems</h2>
+
+  <div class="grid grid-cols-1 md:grid-cols-2  gap-12 px-10 pt-8 pb-12 sm:pb-20">
+
+    {% include card.html
+    icon="cloud-arrow-down"
+    icon_colour="f_blue"
+    link="https://trustworthy.systems/projects/LionsOS/"
+    title="Lion OS"
+    body='<p>
+      Highly modular, adaptable, verifiable, high-performance OS for statically
+      architected embedded/IoT/cyberphysical systems, developed at UNSW.
+    </p>'
+    %}
+
+    {% include card.html
+    icon="building-storefront"
+    icon_colour="f_blue"
+    link="https://www.kry10.com/#platform/"
+    title="KOS"
+    body='<p>
+      Kry10 Operating System (KOS) and Platform, designed for mission critical
+      connected devices and integrated with the Erlang BEAM application
+      environment, developed by Kry10.
+    </p>'
+    %}
+
+    {% include card.html
+    icon="building-storefront"
+    icon_colour="f_blue"
+    link="https://www.trentos.de"
+    title="TRENTOS"
+    body='<p>
+      An seL4- and CAmkES-based statically architected OS and SDK for embedded
+      systems, developed by HENSOLDT Cyber.
+    </p>'
+    %}
+
+    {% include card.html
+    icon="cloud-arrow-down"
+    title="CantripOS"
+    link="https://github.com/AmbiML/sparrow-cantrip-full"
+    body='<p>
+      An operating system written almost entirely in Rust, that runs on top of
+      seL4 using CAmkES, aimed at low-power secure embedded platform for Ambient
+      ML applications, developped by Google.
+    </p>'
+    %}
+
+  </div>
+</div>
+
+
+<div class="section-borders -mt-12 pt-0">
+  <h2 class="text-center mt-16 text-3xl font-bold tracking-tight text-dark md:text-4xl">Virtualisation</h2>
+
+  <div class="grid grid-cols-1 md:grid-cols-2  gap-12 px-10 pt-8 pb-12 sm:pb-20">
+
+    {% include card.html
+    icon="building-storefront"
+    icon_colour="f_blue"
+    link="https://www.dornerworks.com/vm-composer"
+    title="VM Composer"
+    body='<p>
+      A Secure Microkernel Virtual Machine (VM) Composer, a modeling tool to
+      develop and deploy virtualised high-assurance systems using a
+      drag-and-drop interface, developed by DornerWorks.
+    </p>'
+    %}
+
+  </div>
+</div>
+
+
+<div class="section-borders -mt-12 pt-0">
+  <h2 class="text-center mt-16 text-3xl font-bold tracking-tight text-dark md:text-4xl">Language Support</h2>
+
+  <div class="grid grid-cols-1 md:grid-cols-2  gap-12 px-10 pt-8 pb-12 sm:pb-20">
+
+    {% include card.html
+    icon="cloud-arrow-down"
+    title="Rust"
+    link="https://github.com/seL4/rust-sel4"
+    body='<p>
+      Comprehensive support for using the Rust programming language to write
+      seL4 applications.
+    </p>'
+    %}
+
+    {% include card.html
+    icon="cloud-arrow-down"
+    icon_colour="f_blue"
+    link="https://trustworthy.systems/projects/pancake/"
+    title="Pancake"
+    body='<p>
+      Low-level, imperative language with a verified compiler, designed for
+      implementing verifiable device drivers and other OS code.
+    </p>'
+    %}
+
+  </div>
+</div>
+
