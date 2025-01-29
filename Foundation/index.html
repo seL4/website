@@ -100,33 +100,4 @@ sub: '
   </dl>
 </div>
 
-<!-- FIXME: logo cloud should be on max-w-7xl, but that messes with layout width above.
-            Probably need to put this page into plain layout for logo cloud + dark mode. -->
-<!-- Members section -->
-<div class="logo-cloud max-w-2xl">
-  <a href="Membership/" class="hover:underline">
-    <h2>Meet our members &rarr;</h2>
-    <div class="inline-flex flex-nowrap">
-      {%- assign members = site.data.members.premium |
-      concat: site.data.members.general |
-      concat: site.data.members.associate -%}
-      <ul class="logo-grid">
-        {%- assign members = members | sort: "name" -%}
-        {%- for member in members %}
-        <li>
-          <img src="{{ 'Membership/LOGOS/' | append: member.logo }}" alt="{{ member.name }}" width="158px">
-        </li>
-        {%- endfor -%}
-      </ul>
-      <!-- repeat for animation reset -->
-      <ul class="logo-grid" aria-hidden="true">
-        {%- assign members = members | sort: "name" -%}
-        {%- for member in members %}
-        <li>
-          <img src="{{ 'Membership/LOGOS/' | append: member.logo }}" alt="{{ member.name }}" width="158px">
-        </li>
-        {%- endfor -%}
-      </ul>
-    </div>
-  </a>
-</div>
+{% include logo-cloud.html %}

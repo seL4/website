@@ -196,23 +196,6 @@ layout: none
   }
 }
 
-/* ---- logo cloud ---- */
-
-.logo-cloud {
-  @apply bg-white py-20 sm:pt-24 sm:pb-32 dark:max-w-none mx-auto overflow-hidden
-          light:[mask-image:_linear-gradient(to_right,transparent_0,_black_200px,_black_calc(100%-200px),transparent_100%)];
-}
-
-.logo-cloud h2 {
-  @apply text-center text-3xl font-semibold leading-8 text-darkcol mb-10;
-}
-
-.logo-grid {
-  @apply flex items-center justify-center md:justify-start
-          animate-infinite-scroll motion-reduce:animate-none
-          [&_li]:mx-8 [&_img]:max-w-none;
-}
-
 /* has enough specificity for styles like "prose": */
 a.button,
 a.button-outline,
