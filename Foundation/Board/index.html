@@ -18,14 +18,9 @@ redirect_from: /Foundation/Board/home.pml
 
 <!-- FIXME: delete Minutes pages; added here -->
 
-<!-- FIXME: currently uses h3 to avoid conflicting h2 definition in card-layout css.
-            Probably should get rid of the card-layout css altogether and define h2/h3
-            utility classes instead -->
-
-
-<div class="mx-auto grid max-w-7xl grid-cols-1 gap-x-8 gap-y-20 px-6 lg:px-8 xl:grid-cols-5 pt-16 md:pt-24">
+<div class="mx-auto grid max-w-7xl grid-cols-1 gap-x-12 gap-y-20 px-6 lg:px-8 xl:grid-cols-5 pt-16 md:pt-24">
   <div class="max-w-2xl xl:col-span-2">
-    <h3 class="h2-size">Members</h3>
+    <h2 class="h2-size">Members</h2>
     <p class="mt-6 text-lg leading-8 text-light">
       The Governing Board of the <a title="seL4 Foundation" href="../">seL4
         Foundation</a> consists of: the Founders of the seL4 technology (June
@@ -180,58 +175,55 @@ redirect_from: /Foundation/Board/home.pml
 
 {% include centered-up-button.html margins="py-12 sm:py-24" %}
 
-<div class="mt-6">
-  <div class="mx-auto max-w-7xl px-6 lg:px-8">
-    <div class="mx-auto max-w-2xl lg:mx-0 mb-2">
-      <h3 id="meetings" class="h2-size">Meetings</h3>
-      <p class="mt-6 text-lg leading-8 text-light">
-        The Governing Board meetings are normally held in private, i.e. attended
-        by Governing Board Representatives only, although the Governing Board
-        may invite others to participate. However, the Governing Board meeting
-        minutes are publicly accessible.
-      </p>
-      <div class="grid grid-cols-1 md:grid-cols-2">
-        <div>
-          <h4 class="mt-6 text-lg leading-8 text-dark mb-2">Confirmed Minutes</h4>
-          <ul class="space-y-2">
-            {% include board-notes-li.html date="2020-03-18" n=1 %}
-            {% include board-notes-li.html date="2020-08-26" n=2 %}
-            {% include board-notes-li.html date="2020-10-16" n=3 %}
-            {% include board-notes-li.html date="2021-04-13" n=4 %}
-            {% include board-notes-li.html date="2021-06-09" n=5 %}
-            {% include board-notes-li.html date="2021-10-06" n=6 %}
-            {% include board-notes-li.html date="2022-02-24" n=7 short=true %}
-            {% include board-notes-li.html date="2022-04-05" n=8 short=true %}
-            {% include board-notes-li.html date="2022-10-13" n=9 %}
-            {% include board-notes-li.html date="2023-04-26" n=10 short=true %}
-            {% include board-notes-li.html date="2023-09-28" n=11 last=true %}
-          </ul>
-        </div>
-        <div>
-          <h4 class="mt-6 text-lg leading-8 text-dark mb-2">Unconfirmed Minutes</h4>
-          <ul class="space-y-2">
-            {% include board-notes-li.html date="2024-10-09" n=12 unconfirmed=true last=true %}
-          </ul>
-        </div>
-      </div>
-    </div>
+{% include section-start.html
+    heading="Meetings"
+    id="meetings"
+    intro='
+    <p>
+      The Governing Board meetings are normally held in private, i.e. attended
+      by Governing Board Representatives only, although the Governing Board
+      may invite others to participate. However, the Governing Board meeting
+      minutes are publicly accessible.
+    </p>'
+%}
+
+<div class="grid grid-cols-1 md:grid-cols-2">
+  <div>
+    <h4 class="mt-6 text-lg leading-8 text-dark mb-2">Confirmed Minutes</h4>
+    <ul class="space-y-2">
+      {% include board-notes-li.html date="2020-03-18" n=1 %}
+      {% include board-notes-li.html date="2020-08-26" n=2 %}
+      {% include board-notes-li.html date="2020-10-16" n=3 %}
+      {% include board-notes-li.html date="2021-04-13" n=4 %}
+      {% include board-notes-li.html date="2021-06-09" n=5 %}
+      {% include board-notes-li.html date="2021-10-06" n=6 %}
+      {% include board-notes-li.html date="2022-02-24" n=7 short=true %}
+      {% include board-notes-li.html date="2022-04-05" n=8 short=true %}
+      {% include board-notes-li.html date="2022-10-13" n=9 %}
+      {% include board-notes-li.html date="2023-04-26" n=10 short=true %}
+      {% include board-notes-li.html date="2023-09-28" n=11 last=true %}
+    </ul>
+  </div>
+  <div>
+    <h4 class="mt-6 text-lg leading-8 text-dark mb-2">Unconfirmed Minutes</h4>
+    <ul class="space-y-2">
+      {% include board-notes-li.html date="2024-10-09" n=12 unconfirmed=true last=true %}
+    </ul>
   </div>
 </div>
 
-{% include centered-up-button.html margins="py-12 sm:py-24" %}
+{% include section-end.html %}
 
-<div class="pt-6 px-6 lg:px-8">
-  <div class="mx-auto max-w-2xl text-center">
-    <h3 id="committees" class="mt-2 text-4xl font-bold tracking-tight text-dark sm:text-6xl">
-      Board Committees</h3>
-  </div>
-</div>
 
+<h1 id="committees"
+    class="px-6 lg:px-8 text-center mb-10 text-4xl font-bold tracking-tight text-dark sm:text-6xl">
+  Board Committees
+</h1>
 
 <div class="py-6 sm:py-12">
-  <div class="mx-auto grid max-w-7xl gap-x-8 gap-y-20 px-6 lg:px-8 xl:grid-cols-3">
+  <div class="mx-auto grid max-w-7xl gap-x-12 gap-y-20 px-6 lg:px-8 xl:grid-cols-[40%_30%_30%]">
     <div class="max-w-2xl">
-      <h3 class="h2-size">Compliance Committee</h3>
+      <h2 class="h2-size">Compliance Committee</h2>
       <p class="mt-6 text-lg leading-8 text-light">
         The compliance committee proposes rules and licensing conditions for the
         seL4 trademark, and drives the Interim Endorsement scheme for seL4-based
@@ -279,9 +271,9 @@ redirect_from: /Foundation/Board/home.pml
 
 
 <div class="py-24 sm:py-32">
-  <div class="mx-auto grid max-w-7xl gap-x-8 gap-y-20 px-6 lg:px-8 xl:grid-cols-3">
+  <div class="mx-auto grid max-w-7xl gap-x-12 gap-y-20 px-6 lg:px-8 xl:grid-cols-[40%_30%_30%]">
     <div class="max-w-2xl">
-      <h3 class="h2-size">Outreach Committee</h3>
+      <h2 class="h2-size">Outreach Committee</h2>
       <p class="mt-6 text-lg leading-8 text-light">
         The Outreach Committee is in charge of expanding the membership. It
         develops material for supporting membership recruitment. Members of the
@@ -353,9 +345,9 @@ redirect_from: /Foundation/Board/home.pml
 
 
 <div class="py-24 sm:py-32">
-  <div class="mx-auto grid max-w-7xl gap-x-8 gap-y-20 px-6 lg:px-8 xl:grid-cols-3">
+  <div class="mx-auto grid max-w-7xl gap-x-12 gap-y-20 px-6 lg:px-8 xl:grid-cols-[40%_30%_30%]">
     <div class="max-w-2xl">
-      <h3 class="h2-size">Marketing Committee</h3>
+      <h2 class="h2-size">Marketing Committee</h2>
       <p class="mt-6 text-lg leading-8 text-light">
         The Marketing Committee is responsible for the external presentation of
         the Foundation. This includes the look-and-feel of the web site and
