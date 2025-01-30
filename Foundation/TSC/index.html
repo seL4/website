@@ -16,17 +16,21 @@ layout: card
 redirect_from: /Foundation/TSC/home.pml
 ---
 
-<div class="mx-auto max-w-6xl px-6 lg:px-8 pt-16 sm:pt-24">
-  <div class="mx-auto max-w-3xl">
-    <h2 class="h2-size">Members</h2>
-    <p class="mt-6 text-lg leading-8 text-light">
+{% include section-start.html
+    heading='Members'
+    id='members'
+    margins='pt-16 sm:pt-24'
+    body-max-w='max-w-6xl'
+    intro='
+    <p>
       The TSC is made up of seL4 developers, proof engineers, and technical
       leaders. The role of the TSC is described in detail in the
       <a title="seL4 Foundation Technical Charter"
           href="../Governance/seL4_Foundation_Technical_Charter.pdf">seL4
         Foundation Technical Charter</a>.
-    </p>
-  </div>
+    </p>'
+%}
+
   {% include person-grid-start.html dense=true %}
     {% include person.html
       name = "June Andronick"
@@ -95,96 +99,98 @@ redirect_from: /Foundation/TSC/home.pml
       link = "https://au.linkedin.com/in/yanyan-shen-1495547"
     %}
   {% include person-grid-end.html %}
-</div>
 
-{% include centered-up-button.html margins="py-12 sm:py-24" %}
+{% include section-end.html %}
 
-<div class="px-6 lg:px-8">
-  <div class="mx-auto max-w-3xl">
-    <h2 id="meetings" class="h2-size">Meetings</h2>
-    <p class="mt-6 text-lg leading-8 text-light">
+
+{% include section-start.html
+    heading='Meetings'
+    id='meetings'
+    intro='
+    <p>
       TSC meetings are public, with minutes made publicly available from this
       page.
-      If you have an issue that you'd like to bring to the attention of the TSC,
-      please email any of its members listed above.</p>
-    <p class="mt-6 text-lg leading-8 text-light">
-      The following meetings and decisions have so far been recorded:
+      If you have an issue that you would like to bring to the attention of the TSC,
+      please email any of its members listed above.
     </p>
-    <ul class="mt-6 space-y-2">
-      {% include tsc-notes-li.html date="2020-05-20" n=1 %}
-      {% include tsc-notes-li.html date="2020-05-21"
-          vote="for invitation to reviewer role."
-      %}
-      {% include tsc-notes-li.html date="2021-01-29" n=2 %}
-      {% include tsc-notes-li.html date="2021-02-12" n=3 %}
-      {% include tsc-notes-li.html date="2021-05-27"
-          vote="for invitation to committer role."
-      %}
-      {% include tsc-notes-li.html date="2021-05-27"
-          vote="for invitation to committer role."
-      %}
-      {% include tsc-notes-li.html date="2021-09-29"
-          vote="for interim endorsement."
-      %}
-      {% include tsc-notes-li.html date="2021-09-30"
-          vote=
-          "to approve <a href='https://sel4.github.io/rfcs/implemented/0080-remove-armv6-support.html'>RFC-8</a>."
-      %}
-      {% include tsc-notes-li.html date="2021-12-16"
-          vote="to invite Yanyan Shen to the TSC." %}
-      {% include tsc-notes-li.html date="2021-12-17" n=4 %}
-      {% include tsc-notes-li.html date="2022-04-14"
-          vote=
-          "to approve <a href='https://sel4.github.io/rfcs/implemented/0100-refactor-aarch64-vspace.html'>RFC-10</a>."
-      %}
-      {% include tsc-notes-li.html date="2022-12-15"
-          vote="to invite Indan Zupancic as Reviewer."
-      %}
-      {% include tsc-notes-li.html date="2021-12-16" n=5 %}
-      {% include tsc-notes-li.html date="2023-05-30"
-          vote="to drop support for Cogent." %}
-      {% include tsc-notes-li.html date="2023-07-17"
-          vote="to invite Indan Zupancic and Ivan Velickovic as
-                Committers, as well as Alwin Joshy as Reviewer."
-      %}
-      {% include tsc-notes-li.html date="2023-09-12" n=6 %}
-      {% include tsc-notes-li.html date="2024-03-22" n=7 %}
-      {% include tsc-notes-li.html date="2024-07-25" n=8 last=true %}
-    </ul>
-  </div>
-</div>
+    <p>
+      The following meetings and decisions have so far been recorded:
+    </p>'
+%}
 
-{% include centered-up-button.html margins="py-12 sm:py-24" %}
+<ul class="mt-6 space-y-2">
+  {% include tsc-notes-li.html date="2020-05-20" n=1 %}
+  {% include tsc-notes-li.html date="2020-05-21"
+      vote="for invitation to reviewer role."
+  %}
+  {% include tsc-notes-li.html date="2021-01-29" n=2 %}
+  {% include tsc-notes-li.html date="2021-02-12" n=3 %}
+  {% include tsc-notes-li.html date="2021-05-27"
+      vote="for invitation to committer role."
+  %}
+  {% include tsc-notes-li.html date="2021-05-27"
+      vote="for invitation to committer role."
+  %}
+  {% include tsc-notes-li.html date="2021-09-29"
+      vote="for interim endorsement."
+  %}
+  {% include tsc-notes-li.html date="2021-09-30"
+      vote=
+      "to approve <a href='https://sel4.github.io/rfcs/implemented/0080-remove-armv6-support.html'>RFC-8</a>."
+  %}
+  {% include tsc-notes-li.html date="2021-12-16"
+      vote="to invite Yanyan Shen to the TSC." %}
+  {% include tsc-notes-li.html date="2021-12-17" n=4 %}
+  {% include tsc-notes-li.html date="2022-04-14"
+      vote=
+      "to approve <a href='https://sel4.github.io/rfcs/implemented/0100-refactor-aarch64-vspace.html'>RFC-10</a>."
+  %}
+  {% include tsc-notes-li.html date="2022-12-15"
+      vote="to invite Indan Zupancic as Reviewer."
+  %}
+  {% include tsc-notes-li.html date="2021-12-16" n=5 %}
+  {% include tsc-notes-li.html date="2023-05-30"
+      vote="to drop support for Cogent." %}
+  {% include tsc-notes-li.html date="2023-07-17"
+      vote="to invite Indan Zupancic and Ivan Velickovic as
+            Committers, as well as Alwin Joshy as Reviewer."
+  %}
+  {% include tsc-notes-li.html date="2023-09-12" n=6 %}
+  {% include tsc-notes-li.html date="2024-03-22" n=7 %}
+  {% include tsc-notes-li.html date="2024-07-25" n=8 last=true %}
+</ul>
 
-<div class="px-6 lg:px-8">
-  <div class="mx-auto max-w-3xl">
-    <h2 id="join" class="h2-size">Joining the TSC</h2>
-    <p class="mt-6 text-lg leading-8 text-light">
+{% include section-end.html %}
+
+{% include section-start.html
+    heading='Joining the TSC'
+    id='join'
+    intro='
+    <p>
       TSC members are the technical leadership of the foundation. New members
       can join the TSC by decision (vote) of the TSC, and potential new
       members can be nominated by any current TSC member.
-    </p>
-    <ul class="mt-10 max-w-xl space-y-8 text-light">
-      {% include green-tick-li.html
-          text="
-          New members are generally expected to be active current contributors
-          with the technical knowledge required for the role and a vision for
-          the future of the seL4 ecosystem."
-      %}
-      {% include green-tick-li.html
-          text="
-          There are separate roles for repository write access (Committer),
-          organisational admin access (SysAdmin), and the ability to approve pull
-          request and manage issues (Reviewer)."
-      %}
-      {% include green-tick-li.html
-        text="
-        If you would like to nominate someone for any of these roles,
-          please email the chair (Gerwin Klein) of the TSC."
-      %}
-    </ul>
-  </div>
-</div>
+    </p>'
+%}
 
+<ul class="mt-10 max-w-xl space-y-8 text-light">
+  {% include green-tick-li.html
+      text="
+      New members are generally expected to be active current contributors
+      with the technical knowledge required for the role and a vision for
+      the future of the seL4 ecosystem."
+  %}
+  {% include green-tick-li.html
+      text="
+      There are separate roles for repository write access (Committer),
+      organisational admin access (SysAdmin), and the ability to approve pull
+      request and manage issues (Reviewer)."
+  %}
+  {% include green-tick-li.html
+    text="
+    If you would like to nominate someone for any of these roles,
+      please email the chair (Gerwin Klein) of the TSC."
+  %}
+</ul>
 
-{% include centered-up-button.html margins="py-12 sm:py-24" %}
+{% include section-end.html %}

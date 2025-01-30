@@ -1,0 +1,10 @@
+<div class="px-6 lg:px-8 mx-auto {{include.margins}}">
+  <div class="section-max-w">
+    <h2 id="{{include.id}}" class="h2-size max-w-2xl">{{include.heading}}</h2>
+    <div class="[&_p]:mt-6 [&_p]:text-lg [&_p]:leading-8 [&_p]:text-light">
+      {{include.intro}}
+    </div>
+{% if include.body-max-w %}
+  </div>
+  <div class="mx-auto {{include.body-max-w}}">
+{% endif %}

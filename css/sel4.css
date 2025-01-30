@@ -183,7 +183,7 @@ layout: none
 }
 
 @utility section-max-w {
-  @apply mx-auto max-w-4xl;
+  @apply mx-auto max-w-3xl;
 }
 
 @utility h2-size {
