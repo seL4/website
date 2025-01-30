@@ -1,0 +1,24 @@
+
+<article class="relative isolate flex flex-col justify-end overflow-hidden rounded-2xl bg-gray-900 px-8 pt-80 pb-8 sm:pt-48 lg:pt-80">
+  <img src="{{include.pic}}" alt="" class="absolute inset-0 -z-10 size-full object-cover">
+  <div class="absolute inset-0 -z-10 bg-linear-to-t from-gray-900 via-gray-900/40"></div>
+  <div class="absolute inset-0 -z-10 rounded-2xl ring-1 ring-gray-900/10 ring-inset"></div>
+  <div class="flex flex-wrap items-center gap-y-1 overflow-hidden text-sm/6 text-gray-300">
+    <time datetime="{{ include.date }}" class="mr-8">{{ include.date }}</time>
+    <div class="-ml-4 flex items-center gap-x-4">
+      <svg viewBox="0 0 2 2" class="-ml-0.5 size-0.5 flex-none fill-white/50">
+        <circle cx="1" cy="1" r="1" />
+      </svg>
+      <div class="flex gap-x-2.5">
+        <img src="{{include.author-pic}}" alt="" class="size-6 flex-none rounded-full bg-white/10">
+        {{include.author-name}}
+      </div>
+    </div>
+  </div>
+  <h3 class="mt-3 text-xl/6 font-semibold text-white">
+    <a href="#">
+      <span class="absolute inset-0"></span>
+      {{include.title}}
+    </a>
+  </h3>
+</article>
