@@ -2,7 +2,7 @@
   {% if include.link %}
   <a title="{{include.name}}" href="{{include.link}}" class="text-dark no-underline! hover:underline!">
   {% endif %}
-    <img class="mx-auto h-24 w-24 rounded-full" src="{{include.img || relative_url}}" alt="Picture of {{include.name}}">
+    <img class="mx-auto h-24 w-24 rounded-full" src="{{include.img | relative_url}}" alt="Picture of {{include.name}}">
     <p class="mt-6 text-base font-semibold leading-7 tracking-tight text-dark">{{include.name}}</p>
   {% if include.link %}
   </a>
