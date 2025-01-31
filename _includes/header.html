@@ -4,34 +4,34 @@
     <div class="flex lg:flex-none">
       <a href="{{ '/' | relative_url }}" class="-m-1.5 p-1.5">
         <span class="sr-only">seL4</span>
-        <img class="h-8 w-auto" src="{{ '/images/seL4.svg' || relative_url }}" alt="seL4 logo">
+        <img class="h-6 lg:h-8 w-auto" src="{{ '/images/seL4.svg' | relative_url }}" alt="seL4 logo">
       </a>
     </div>
     <div class="flex flex-1"></div>
 
-    <div class="hidden lg:flex lg:gap-x-6 xl:gap-x-12">
+    <div class="hidden md:flex md:gap-x-3 lg:gap-x-5 xl:gap-x-10">
       {%- include menu.html -%}
     </div>
-    <div class="hidden lg:flex lg:flex-1"></div>
+    <div class="hidden md:flex md:flex-1"></div>
 
-    <div class="hidden min-[470px]:flex lg:flex-none justify-end">
+    <div class="hidden min-[470px]:flex md:flex-none justify-end">
       <!-- member button -->
-      <a href="{{ '/Foundation/Join/' | relative_url }}" class="button-outline mr-6 md:mr-10">Become a Member</a>
+      <a href="{{ '/Foundation/Join/' | relative_url }}" class="button-outline md:h-8 lg:h-9 md:text-xs lg:text-sm mr-6 md:mr-4 lg:mr-8 xl:mr-10">Become a Member</a>
 
       <!-- docsite button -->
-      <a href="https://docs.sel4.systems" class="button-outline mr-2 md:mr-6">Docsite
+      <a href="https://docs.sel4.systems" class="button-outline md:h-8 lg:h-9 md:text-xs lg:text-sm mr-2 lg:mr-6">Docsite
         {% svg _icons/other/external.svg class="inline-icon" %}
       </a>
 
       <!-- github button -->
-      <a href="https://github.com/seL4" class="mr-4 lg:mr-0 px-3 pt-1 pb-2 block text-gray-400 hover:text-gray-500 dark:hover:text-gray-300">
+      <a href="https://github.com/seL4" class="mr-4 md:mr-0 px-3 pt-1 pb-2 block text-gray-400 hover:text-gray-500 dark:hover:text-gray-300">
         <span class="sr-only">seL4 on GitHub</span>
-        {% svg _icons/other/github.svg class="w-5 h-5 md:w-6 md:h-6" %}
+        {% svg _icons/other/github.svg class="w-5 h-5 lg:w-6 lg:h-6" %}
       </a>
     </div>
 
     <!-- mobile menu hamburger button -->
-    <div class="flex lg:hidden">
+    <div class="flex md:hidden">
       <button type="button" class="-m-2.5 inline-flex items-center justify-center rounded-md p-2.5 text-gray-700 dark:text-gray-300 mobile-drop">
         <span class="sr-only">Open main menu</span>
         {% svg _icons/bars-3.svg class="h-6 w-6" %}
