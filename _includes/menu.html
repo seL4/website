@@ -1,10 +1,13 @@
 {%- for n in menu -%}
-{%-   assign name = n[0] -%}
-{%-   assign submenu = n[1] -%}
-{%-   assign extra = n[2] -%}
+{%-   assign name = n[0] | escape -%}
+{%-   assign name-ext = n[1] | escape -%}
+{%-   assign submenu = n[2] -%}
+{%-   assign extra = n[3] -%}
 <div class="relative">
   <button type="button" class="dropbtn" aria-expanded="false">
-    {{ name | escape }} {% svg _icons/chevron-down-mini.svg class="drop-icon" %}
+    <span>{{ name }}</span>
+    <span class="hidden lg:inline">{{name-ext}}</span>
+    {% svg _icons/chevron-down-mini.svg class="drop-icon" %}
   </button>
 
 {%-   if submenu.size() > 6 -%}

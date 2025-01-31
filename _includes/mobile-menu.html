@@ -16,10 +16,11 @@
           <div class="-mx-3">
 {%- for n in menu -%}
 {%-   assign name = n[0] | escape -%}
-{%-   assign submenu = n[1] -%}
-{%-   assign extra = n[2] -%}
+{%-   assign name-ext = n[1] | escape -%}
+{%-   assign submenu = n[2] -%}
+{%-   assign extra = n[3] -%}
             <button type="button" class="dropbtn-mobile" aria-expanded="false">
-              {{ name }}
+              {{ name }}{{ name-ext }}
               {% svg _icons/chevron-down-mini.svg class="h-5 w-5 flex-none" %}
             </button>
             <div class="mobile-menu hidden">
