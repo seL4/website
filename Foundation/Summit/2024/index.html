@@ -109,7 +109,7 @@ redirect_from: Foundation/Summit/2024/social-activities.html
     id = "pc"
     heading = "Program Committee"
     intro = '
-        <p class="text-lg leading-8 text-gray-600">
+        <p>
           The Program Committee is made up of members from various parts of the seL4 ecosystem: users, contributors,
           committers, experts, advocates, researchers, and engineers.
         </p>'
@@ -197,6 +197,11 @@ redirect_from: Foundation/Summit/2024/social-activities.html
 
 
 <!-- Sponsors section -->
+{% include section-start.html
+  id = "sponsors"
+  heading = "Sponsors"
+%}
+  
 {% include sep-header.html text = "Gold" %}
 {%- assign sponsors = site.data.sponsors.summit-2024.gold | sort_natural: "name" -%}
 {%- include sponsor-info.html -%}
