@@ -50,6 +50,9 @@ portion of the overall system -- much less than if you were using Linux or if
 you were paying license fees for a commercial OS where such changes would
 usually be impossible.
 
+<!-- FIXME: why arrow now aligned with line?? -->
+{% include centered-up-button.html %}
+
 ## Why GPL?
 
 The motivation for this licensing model was to keep seL4 strongly open-source
@@ -61,6 +64,10 @@ changed version of seL4 under the GPL, but the [seL4 trademark] policy prohibits
 you from calling that changed version "seL4". This is to provide clarity which
 code base the trade mark seL4 refers to and that the high assurance of seL4 is
 not compromised by third-party changes.
+
+
+<!-- FIXME: why arrow now aligned with line?? -->
+{% include centered-up-button.html %}
 
 ## License Details
 
@@ -97,3 +104,7 @@ that repository.
 [SPDX]: https://spdx.org
 [GPL-note]: https://spdx.org/licenses/Linux-syscall-note.html
 [seL4 trademark]: ./index.html
+
+
+<!-- FIXME: why arrow now aligned with line?? -->
+{% include centered-up-button.html %}
