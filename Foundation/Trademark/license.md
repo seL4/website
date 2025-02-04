@@ -74,15 +74,16 @@ conditions that do not violate any license".
 
 ## Why GPL?
 
-The motivation for this licensing model was to keep seL4 strongly open-source
-and to encourage changes to be contributed back instead of creating a
-proliferation of forks or slightly changed seL4 versions.
+The motivation for this licensing model was to keep seL4 strongly open-source,
+for wider adoption, and to encourage changes to be contributed back instead of
+creating a proliferation of forks or slightly changed seL4 versions.
 
 Note that the license does allow you to make a fork of seL4 and distribute a
-changed version of seL4 under the GPL, but the [seL4 trademark] policy prohibits
-you from calling that changed version "seL4". This is to provide clarity which
-code base the trade mark seL4 refers to and that the high assurance of seL4 is
-not compromised by third-party changes.
+modified version under the GPL, but the [seL4 trademark] policy prohibits you
+from calling that modified version "seL4". This restriction is crucial for
+maintaining clarity around which codebase the seL4 trademark refers to, and
+ensuring that the high assurance of seL4 is not compromised by third-party
+changes.
 
 
 <!-- FIXME: why arrow now aligned with line?? -->
