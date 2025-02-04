@@ -21,7 +21,8 @@ sub: '
 ## Licensing Model
 
 The seL4 kernel itself is licensed under [GPL version 2][GPL-2.0-only], like
-Linux.
+Linux (the seL4 Foundation also licenses other frameworks under various
+licenses, as explained <a href="#license-details">further below</a>).
 
 The GPL is one of the most popular open-source licenses, upheld in court in the
 US and other countries. One of its stipulations is that changes and "derived
@@ -40,7 +41,8 @@ This implies that the licensing model for seL4 is more flexible than for Linux
 or for most commercial operating systems. You can develop a closed-source
 commercial OS or system on top of seL4 without fear of violating the GPL. You
 can also develop a fully open source OS or system on top of seL4 with an even
-more liberal license than GPL.
+more liberal license than GPL (such as the BSD-licenced frameworks that are also
+provided by the seL4 Foundation alongisde the seL4 kernel).
 
 It is only if you change the seL4 kernel code itself or the seL4 kernel proofs
 that your changes fall under the conditions of the GPL. However, for normal
@@ -93,11 +95,11 @@ changes.
 
 The code and documentation in the repositories of the [seL4 GitHub
 organisation][seL4-org] are available under standard open-source licenses,
-identified by [SPDX license tags][SPDX].
+identified by [SPDX license tags][SPDX] in the header of each file.
 
-The seL4 Foundation licenses and accepts contributions for
+The seL4 Foundation licenses and accepts contributions for:
 
-- the seL4 kernel itself under [GPL Version 2][GPL-2.0-only],
+- the seL4 kernel itself (and proofs) under [GPL Version 2][GPL-2.0-only],
 - user code and proof libraries under the [BSD 2 Clause license][BSD-2-Clause],
 - code and proofs that depend on GPL-code or GPL-proofs under GPL,
 - documentation under [Creative Commons Attribution-ShareAlike][CC-BY-SA-4.0].
@@ -105,9 +107,9 @@ The seL4 Foundation licenses and accepts contributions for
 As in the [Linux syscall note for the GPL][GPL-note], the seL4 kernel GPL
 license explicitly does *not* cover user-level code that uses kernel services by
 normal system calls -- this is merely considered normal use of the kernel, and
-does *not* fall under the heading of "derived work". Syscall headers are
-provided under BSD. You can create, distribute and commercially develop systems
-on top of seL4 without fear of GPL infection from seL4.
+does *not* fall under the heading of "derived work". For seL4, syscall headers
+are provided under BSD. This allows you to create, distribute and commercially
+develop systems on top of seL4 without fear of GPL infection from seL4.
 
 The repositories of the seL4 GitHub organisation also contain third-party code
 under additional compatible open source licenses. See the individual file
