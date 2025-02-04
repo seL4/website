@@ -25,17 +25,32 @@ Linux.
 
 The GPL is one of the most popular open-source licenses, upheld in court in the
 US and other countries. One of its stipulations is that changes and "derived
-code" must again be licensed under the GPL.
+code" must again be licensed under the GPL. We explain <a
+href="#why-gpl">further below</a> why this is important to ensure adoption and
+longevity.
 
-As with Linux, this GPL stipulation stops at the kernel/user boundary:
-user-level code can have any license and can also be closed-source. Unlike for
-Linux -- because seL4 is a microkernel -- the actual operating system, including
-drivers, runs in user level on top of seL4.
+As with Linux, this GPL stipulation stops at the kernel/user boundary. This
+means that the GPL only applies to kernel code, which is defined as the code
+running in privileged mode of the hardware. In contrast, user-level code -- any
+code running in unprivileged mode -- can have any license and can also be
+closed-source. However, unlike Linux, because seL4 is a microkernel, the actual
+operating system, including drivers, runs as user code on top of seL4.
 
-This means, the licensing model is more flexible than for Linux or for most
-commercial operating systems. You can develop a closed-source commercial OS or
-system on top of seL4 without fear of violating the GPL. You can also develop a
-fully open source OS or system on top of seL4 with an even more liberal license.
+This implies that the licensing model for seL4 is more flexible than for Linux
+or for most commercial operating systems. You can develop a closed-source
+commercial OS or system on top of seL4 without fear of violating the GPL. You
+can also develop a fully open source OS or system on top of seL4 with an even
+more liberal license than GPL.
+
+It is only if you change the seL4 kernel code itself or the seL4 kernel proofs
+that your changes fall under the conditions of the GPL. However, for normal
+system development you should not have to change any kernel code. Not only it
+would invalidate the seL4 proofs, which is its key value, it should not be
+necessary -- with the exception of doing a new platform port. Even then, the
+change would hold little IP value (and could therefore easily be contributed
+back to the open source code) and would only affect a very small portion of the
+overall system -- much less than if you were using Linux or if you were paying
+license fees for a commercial OS where such changes would usually be impossible.
 
 <img src="/images/licensing.drawio.svg" class="w-full px-2"
      alt="Diagram with seL4 (GPL) at the bottom,
@@ -43,12 +58,16 @@ fully open source OS or system on top of seL4 with an even more liberal license.
           optional foundation frameworks (BSD) in the middle, and
           user-code (any license) at the top.)">
 
-Only if you change seL4 itself or the seL4 proofs, your changes fall under the
-conditions of the GPL. For normal system development, this should not be
-necessary. Even then it would only affect a very small
-portion of the overall system -- much less than if you were using Linux or if
-you were paying license fees for a commercial OS where such changes would
-usually be impossible.
+
+Note that US Department of Defence Chief Information Officer <a
+href="https://dodcio.defense.gov/Open-Source-Software-FAQ/">officially
+states</a> that "there is no DoD policy forbidding or limiting the use of
+software licensed under the GNU General Public License (GPL)" and that "Software
+licensed under the GPL can be mixed with software released under other licenses,
+and mixed with classified or export-controlled software, but only under
+conditions that do not violate any license".
+
+
 
 <!-- FIXME: why arrow now aligned with line?? -->
 {% include centered-up-button.html %}
