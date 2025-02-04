@@ -5,17 +5,15 @@ title: seL4 Licensing
 pre: Licensing and Trademark
 pre_link: license-tm.html
 sub: '
-  <p>
-    The seL4 kernel is open source and licensed under the GPL, version 2.
-  </p>
-  <p class="mt-1 a-underline">
-    The GPL propagation clause
-    stops at the user code boundary. This means, user code, operating system code,
-    and drivers can have any license, proprietary or open source.
-    This page explains the <a href="#licensing-model">licensing model</a>,
-    the <a href="#why-gpl">motivation</a> behind it, and
-    the <a href="#license-details">details</a>
-    which open-source licenses are used by the seL4 Foundation.
+  <p class="a-underline">
+    The seL4 kernel itself is open source and licensed under the GPL, version 2,
+    while application code, operating system components, and drivers can have
+    any license, proprietary or open source (i.e., the GPL propagation
+    clause from the kernel code stops at the user code boundary).  This page
+    explains the <a href="#licensing-model">licensing model</a>, the <a
+    href="#why-gpl">motivation</a> behind it, and the <a
+    href="#license-details">details</a> of all open-source licenses used for
+    code provided by the seL4 Foundation.
   </p>
   '
 ---
