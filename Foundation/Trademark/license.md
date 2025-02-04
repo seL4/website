@@ -22,13 +22,12 @@ sub: '
 
 The seL4 kernel itself is licensed under [GPL version 2][GPL-2.0-only], like
 Linux (the seL4 Foundation also licenses other frameworks under various
-licenses, as explained <a href="#license-details">further below</a>).
+licenses, as explained [further below](#license-details).
 
 The GPL is one of the most popular open-source licenses, upheld in court in the
 US and other countries. One of its stipulations is that changes and "derived
-code" must again be licensed under the GPL. We explain <a
-href="#why-gpl">further below</a> why this is important to ensure adoption and
-longevity.
+code" must again be licensed under the GPL. We explain [further below](#why-gpl)
+why this is important to ensure adoption and longevity.
 
 As with Linux, this GPL stipulation stops at the kernel/user boundary. This
 means that the GPL only applies to kernel code, which is defined as the code
@@ -61,14 +60,12 @@ license fees for a commercial OS where such changes would usually be impossible.
           user-code (any license) at the top.)">
 
 
-Note that US Department of Defence Chief Information Officer <a
-href="https://dodcio.defense.gov/Open-Source-Software-FAQ/">officially
-states</a> that "there is no DoD policy forbidding or limiting the use of
+Note that US Department of Defence Chief Information Officer [officially
+states][DOD] that "there is no DoD policy forbidding or limiting the use of
 software licensed under the GNU General Public License (GPL)" and that "Software
 licensed under the GPL can be mixed with software released under other licenses,
 and mixed with classified or export-controlled software, but only under
 conditions that do not violate any license".
-
 
 
 <!-- FIXME: why arrow now aligned with line?? -->
@@ -126,7 +123,7 @@ that repository.
 [SPDX]: https://spdx.org
 [GPL-note]: https://spdx.org/licenses/Linux-syscall-note.html
 [seL4 trademark]: ./index.html
-
+[DOD]: https://dodcio.defense.gov/Open-Source-Software-FAQ/
 
 <!-- FIXME: why arrow now aligned with line?? -->
 {% include centered-up-button.html %}
