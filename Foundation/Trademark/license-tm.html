@@ -12,9 +12,11 @@ layout: card
   {% include card.html
      icon="scale"
      title="License"
-     body='<p>The seL4 kernel is licensed under the GPL, version 2.</p>
-           <p class="mt-2">The GPL propagation clause stops at the user code boundary. This means, user code, operating system code, and drivers can have any license, proprietary or open source. </p>'
-     link="license.html"
+     body='<p>The seL4 kernel is licensed under the GPL, version 2, while
+           application code, operating system components, and drivers can have
+           any license, proprietary or open source (i.e., the GPL propagation
+           clause from the kernel code stops at the user code boundary).  </p>'
+      link="license.html"
   %}
 
   {% include card.html
