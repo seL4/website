@@ -4,19 +4,30 @@
 layout: base
 ---
 
-<div class="flex flex-wrap justify-center items-center section-borders">
-  {% unless page.no_title_heading %}
-  <div class="flex-none w-full">
-    {% assign h1 = page.h1 | default: page.title %}
-    {% include heading.html
-       pre = page.pre
-       pre_link = page.pre_link
-       h1 = h1
-       sub = page.sub
-    %}
+{% if page.toc %}
+<div class="grid grid-cols-[20rem_auto]">
+  <nav class="sticky left-8 top-4 pt-6 pr-8 w-72 h-screen mb-10
+              overflow-y-auto overflow-x-hidden
+              border-r border-gray-200 dark:border-gray-800">
+    {{ content | toc_only }}
+  </nav>
+{% endif %}
+  <div class="section-borders">
+    {% unless page.no_title_heading %}
+    <div class="w-full">
+      {% assign h1 = page.h1 | default: page.title %}
+      {% include heading.html
+          pre = page.pre
+          pre_link = page.pre_link
+          h1 = h1
+          sub = page.sub
+      %}
+    </div>
+    {% endunless %}
+    <article class="mx-auto theprose -mt-10">
+      {{ content }}
+    </article>
   </div>
-  {% endunless %}
-  <article class="theprose -mt-10">
-    {{ content }}
-  </article>
+{% if page.toc %}
 </div>
+{% endif %}
