@@ -42,5 +42,25 @@
         "url": "https://unsw.edu.au"
       }
       ]
+    },
+  "summit-2022":
+    {
+      "bronze": [
+      {
+        "name": "DornerWorks",
+        "logo": "DornerWorks.svg",
+        "url": "https://dornerworks.com/"
+      },
+      {
+        "name": "Horizon Robotics",
+        "logo": "Horizon_Robotics.svg",
+        "url": "https://horizon.ai/"
+      },
+      {
+        "name": "Xcalibyte",
+        "logo": "xcalibyte.svg",
+        "url": "https://xcalibyte.com"
+      }
+    ]
     }
 }
