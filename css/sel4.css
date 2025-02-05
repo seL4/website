@@ -230,3 +230,15 @@ a.arrow-link,
 .mobile-on {
   display: block;
 }
+
+#toc {
+  @apply pb-24;
+}
+
+.toc-h2 {
+  @apply font-bold mb-4 text-dark overflow-hidden text-ellipsis;
+}
+
+.toc-h3 {
+  @apply ml-6 font-normal mt-2 text-sm text-light overflow-hidden text-ellipsis;
+}

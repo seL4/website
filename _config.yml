@@ -34,6 +34,9 @@ plugins:
   - jekyll-postcss-v2
   # For icons
   - jekyll-inline-svg
+  # Generate table of contents for toc: true in the frontmatter
+  - jekyll-toc
+
 
 strict_front_matter: true
 
