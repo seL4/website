@@ -236,7 +236,7 @@ a.arrow-link,
 }
 
 .toc-h2 {
-  @apply font-bold mb-4 text-dark overflow-hidden text-ellipsis;
+  @apply font-semibold mb-4 text-dark overflow-hidden text-ellipsis;
 }
 
 .toc-h3 {
