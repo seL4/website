@@ -1,16 +1,16 @@
 {% if include.break %}
-  <div class="bg-slate-200 col-span-3 text-gray-800 p-2">
+  <div class="bg-slate-200 col-span-4 text-gray-800 p-2">
     {{include.break}}
   </div>
 
 {% elsif include.day %}
-<div class="bg-slate-500 col-span-3 text-white p-2">
+<div class="bg-slate-500 col-span-4 text-white p-2">
   Day {{include.day}}&emsp;{{include.date}}</th>
 </div>
 
-{% elsif include.function %}
-  <div class="bg-slate-200 col-span-3 text-gray-800 p-2">
-    <em>{{include.function}}</em>
+{% elsif include.event %}
+  <div class="bg-slate-200 col-span-4 text-gray-800 p-2">
+    <em>{{include.event}}</em>
   </div>
 
 {% else %}
@@ -26,7 +26,7 @@
     {% endif %}
   </div>
 
-  <div>
+  <div class="col-span-2">
     {% if include.abstract %}
         <a href="{{include.abstract}}">
       {% endif %}
@@ -41,21 +41,68 @@
         <span class="text-gray-500">{{include.affiliation}}</span>
       {% endif %}
 
+
+      {% if include.slides-1 %}
+      {% if include.youtube %}
       <div class="flex flex-row gap-x-2 pt-2 pb-5">
-        {% if include.youtube %}
-          <div class="p-1 pb-1">
-            <a href="{{include.youtube}}" target="_blank"><img
-      src="../../../images/icons/youtube_nobckgnd.svg" width="25px" alt="YouTube icon"></a>
+              <a href="{{include.youtube}}" target="_blank"><img
+        src="../../../images/icons/youtube_nobckgnd.svg" width="25px" alt="YouTube icon"></a>
+        </div>
+      {% endif %}
+      <div class="flex flex-row gap-x-2 pt-2 pb-5">
+        <div>
+          <a href="{{include.slides-1}}"><img src="../../../images/icons/slides.svg" width="20px"
+            alt="slides icon"></a>
+        </div>
+        <div>
+            <span class="text-gray-800">{{include.presenter-1}}</span>,
+      <span class="text-gray-500">{{include.affiliation-1}}</span>
+        </div>
+      </div>
+        {% if include.slides-2 %}
+        <div class="flex flex-row gap-x-2 pt-2 pb-5">
+          <div>
+            <a href="{{include.slides-2}}"><img src="../../../images/icons/slides.svg" width="20px"
+              alt="slides icon"></a>
           </div>
-        {% endif %}
-        {% if include.slides %}
-          <div class="p-1 mt-1">
-            <a href="{{include.slides}}"><img src="../../../images/icons/slides.svg" width="20px"
-      alt="slides icon"></a>
+          <div>
+              <span class="text-gray-800">{{include.presenter-2}}</span>,
+        <span class="text-gray-500">{{include.affiliation-2}}</span>
           </div>
+        </div>
         {% endif %}
 
+        {% if include.slides-3 %}
+        <div class="flex flex-row gap-x-2 pt-2 pb-5">
+          <div>
+            <a href="{{include.slides-3}}"><img src="../../../images/icons/slides.svg" width="20px"
+              alt="slides icon"></a>
+          </div>
+          <div>
+              <span class="text-gray-800">{{include.presenter-3}}</span>,
+        <span class="text-gray-500">{{include.affiliation-3}}</span>
+          </div>
         </div>
+        {% endif %}
+
+      {% else %}
+        <div class="flex flex-row gap-x-2 pt-2 pb-5">
+          {% if include.youtube %}
+            <div class="p-1 pb-1">
+              <a href="{{include.youtube}}" target="_blank"><img
+        src="../../../images/icons/youtube_nobckgnd.svg" width="25px" alt="YouTube icon"></a>
+            </div>
+          {% endif %}
+          {% if include.slides %}
+            <div class="p-1 mt-1">
+              <a href="{{include.slides}}"><img src="../../../images/icons/slides.svg" width="20px"
+        alt="slides icon"></a>
+            </div>
+          {% endif %}
+        </div>
+
+      {% endif %}
+
   </div>
   <div class="text-right">
     {% if include.chair %}
