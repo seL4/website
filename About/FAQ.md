@@ -602,9 +602,7 @@ can be invoked with a send-only capability, enabling one-way data
 transfer. By definition, a send-ony cap cannot be used to receive any
 information. A result status, indicating whether or not the message has
 been delivered, would constitute a back channel: the receiver could use
-the result status to signal information to the sender. This would
-violate the seL4's information-flow guarantees, by allowing information
-flow that is not explicitly authorised by a capability.
+the result status to signal information to the sender.
 
 In short, it's a feature, not a bug (painful as it may be).
 
@@ -634,6 +632,8 @@ bit string is zero.
 
 ### What is the seL4 fastpath?
 
+<!-- FIXME: fast path instead of fastpath? -->
+
 The fastpath is an add-on frontend to the kernel which performs the simple cases
 of some common operations quickly. It is key to the high IPC performance seL4
 achieves -- we know of no kernel that does IPC faster.
@@ -645,6 +645,8 @@ There is a section on the fastpath and its verification in [this
 article][TOCS_14]. The fastpath discussion starts on page 23.
 
 ## What's coming up next?
+
+<!-- FIXME: link to roadmap page instead when it exists -->
 
 We're currently working on a number of things. As we're in a research
 environment (not a product development environment) we cannot commit to dates,
