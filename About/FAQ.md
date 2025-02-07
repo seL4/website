@@ -18,6 +18,8 @@ system. seL4 achieves this without compromising performance.
 
 ### What is a microkernel?
 
+<!-- FIXME: cites should be links or have actual bib -->
+
 A microkernel is the minimal core of an operating system (OS). It presents a
 very small subset of what is generally considered an operating system today. The
 definition of what makes up a microkernel is given by Liedtke [SOSP'95]: A
@@ -64,11 +66,11 @@ description of L4 variants and history can be found along this image source:
 
 ### How does seL4's performance compare to other microkernels?
 
-Up-to-date performance figures of the seL4 head revision are listed on the
-[seL4 Benchmarks page](https://sel4.systems/About/Performance/). To the
-best of our knowledge, seL4 is the world's fastest microkernel on the
-supported processors, in terms of the usual ping-pong metric: the cost
-of a cross-address-space message-passing (IPC) operation.
+Up-to-date performance figures of the seL4 head revision are listed on the [seL4
+Benchmarks page]({% link About/Performance/index.html %}). To the best of our
+knowledge, seL4 is the world's fastest microkernel on the supported processors,
+in terms of the usual ping-pong metric: the cost of a cross-address-space
+message-passing (IPC) operation.
 
 In fact, we have not seen performance data from another microkernel
 that are within a factor of two of seL4's, and in most cases the
@@ -92,33 +94,36 @@ user mode code.)
 
 ### I want to know more about seL4 functionality, design, implementation, philosophy
 
-There are plenty of references on the [documentation page](/Documentation).
+There are plenty of references on the [documentation site][docsite].
 
 ### What can I do with seL4?
 
-You can use seL4 for research, education or commerce. Details are specified in
-the standard open-source [licenses](#what-are-the-licensing-conditions) that
-come with the code. Different licenses apply to different parts of the code, but
-the conditions are designed to ease uptake.
+You can use seL4 for research, education or commerce. seL4 is open source, with
+a liberal license model for user-level code. See the [license page] for more
+detail.
+
+<!-- FIXME: probably should say more about what you can actually do with it -->
 
 ### What are the licensing conditions?
 
-The seL4 kernel is released under GPL Version 2. Userland tools and libraries
-are mostly under BSD. See the [license page](/processes/licenses) for more
-details.
+The seL4 kernel is released under GPL version 2. Userland tools and libraries
+are mostly under BSD-2-Clause, documentation under CC-BY-SA-4.0. The [license
+page] has more details.
 
 ### How do I contribute to seL4?
 
-See [How to Contribute](/Contributing).
+See the page on [contribution guidelines]({% link Contribute/index.html %}).
 
 ### How can I build a system with seL4?
+
+<!-- FIXME: update; add microkit -->
 
 Much more is required to build a system on seL4 compared to building on, say
 Linux. Having decomposed your system into modules, you will need to work out
 what access each module needs to hardware resources, you will need to build
 device drivers for the platform you are on (there are a few provided in
-libplatsupport for supported platforms), and you will have to integrate it into
-something that can be run.
+`libplatsupport` for supported platforms), and you will have to integrate it
+into something that can be run.
 
 There are two recommended ways to do this.
 
@@ -126,112 +131,108 @@ There are two recommended ways to do this.
       Component Architecture for Micro-Kernel-based Embedded Systems. It
       provides a language for describing the distribution of resources
       to components, and the assignment of components to address spaces.
-- Build on libsel4utils, which provides useful abstractions like
+- Build on `libsel4utils`, which provides useful abstractions like
       processes, but is generally more low-level.
 
-For build instructions, and how to get started, see the [Resources](/Resources)
-page. Also, UNSW's [Advanced Operating Systems
+For build instructions, and how to get started, see the [Resources] page on the
+[docsite]. Also, UNSW's [Advanced Operating Systems
 course](https://www.cse.unsw.edu.au/~cs9242) has an extensive project component
 that builds an OS on top of seL4. If you have access to an
-[Odroid-C2](https://www.hardkernel.com/shop/odroid-c2/), you should be able to
+[Odroid-C4](https://www.hardkernel.com/shop/odroid-c4/), you should be able to
 do the project work yourself as a way of familiarising yourself with seL4.
 
 ### Where can I learn more?
+
+<!-- FIXME: also update with in-site links -->
 
 The UNSW [seL4 project](https://trustworthy.systems/projects/seL4/) and
 [Trustworthy Systems](https://trustworthy.systems/) pages contain more technical
 information about seL4, including links to all peer-reviewed publications. Good
 starting points are:
 
-- [from L3 to seL4 – what have we learnt in 20 years of L4 microkernels?](https://trustworthy.systems/publications/nictaabstracts/Elphinstone_Heiser_13.abstract),
-  a 20-year retrospective of L4 microkernels;
-- [the original 2009 paper](https://trustworthy.systems/publications/nictaabstracts/Klein_EHACDEEKNSTW_09.abstract) describing seL4 and its formal
-      verification;
-- [a much longer paper detailing the complete verification story of
-      seL4](https://trustworthy.systems/publications/nictaabstracts/Klein_AEMSKH_14.abstract)
-      , including the high-level security proofs, binary
-      verification and timeliness analysis. It also contains an analysis
-      of the cost of verification, and how it compares to that of
-      traditionally-engineered systems.
+- [from L3 to seL4 – what have we learnt in 20 years of L4
+  microkernels?][Elphinstone_Heiser_13], a 20-year retrospective of L4
+  microkernels;
+- [the original 2009 paper][SOSP_09] describing seL4 and its formal verification;
+- [a much longer paper detailing the complete verification story of seL4][TOCS_14],
+  including the high-level security proofs, binary verification
+  and timeliness analysis. It also contains an analysis of the cost of
+  verification, and how it compares to that of traditionally-engineered
+  systems.
 
 ## Hardware
 
 ### What processor architectures are supported?
 
-Presently seL4 runs on Arm v6, v7 (32-bit) and v8 (64-bit) cores,
-on PC99 (x86) cores (32- and 64-bit mode), and RISC-V RV64 (64-bit) cores.
-See the up-to-date list of [supported platforms](/Hardware/).
+Presently seL4 runs on Arm v7 (32-bit) and v8 (64-bit) cores, on PC99 (x86)
+cores (32- and 64-bit mode), and RISC-V RV64 (64-bit) cores. See the up-to-date
+list of [supported platforms].
 
+<!-- FIXME: link to platform contribution page instead -->
 Talk to us if you have funds to support a port to further architectures.
 
 ### Which platform ports are verified?
 
 We have presently the most comprehensive verification story (functional
 correctness to the binary, security proofs, user-level initialisation proofs)
-for 32-bit Arm v6 and v7 platforms. For 64-bit x86 there are
+for 32-bit Arm v7 platforms. For 64-bit Arm v8 and x86 there are
 functional-correctness proofs to C code, and for 64-bit RISC-V there are
-functional-correctness proofs to binary code as well as security proofs
-(but no user-level initialisation proofs yet).
+functional-correctness proofs to binary code as well as security proofs.
 
-Verification of the 64-bit Arm (Armv8 AArch64) is in progress.
+Further verification of the 64-bit Arm v8 configuration (AArch64) is in
+progress.
 
-The list of [supported platforms](/Hardware/) shows verification status per
-hardware platform and the
-[verified configurations](/projects/sel4/verified-configurations.html) page has
-more details on which platform supports which level of proof.
+The list of [supported platforms] shows verification status per hardware
+platform and the [verified configurations] page has more details on which
+platform supports which level of proof.
 
 ### What devices does seL4 support?
 
-seL4, like any real microkernel, runs all device drivers in user mode, device
-support is therefore not the kernel's problem. The exceptions are a timer
+seL4, like any real microkernel, runs all device drivers in user mode. Device
+support is therefore not a kernel matter. The exceptions are a timer
 driver, which seL4 needs to enforce time-slice preemption, and the interrupt
-controller access to which seL4 mediates. When compiled with debugging enabled,
+controller, to which mediates access. When compiled with debugging enabled,
 the kernel also contains a serial driver.
 
-Other than that, device support is the user's problem. seL4 provides the
-mechanisms for user-mode device drivers, especially the ability to map
-device memory to drivers and forward IRQs as (asynchronous) messages.
+Other than that, device support must be provided by user-level code. seL4
+provides the mechanisms for user-mode device drivers, especially the ability to
+map device memory to drivers and forward IRQs as (asynchronous) messages.
 
 ### What about DMA?
 
-The formal verification of seL4 on the ARM platform assumes that the MMU has
-complete control over memory, which means the proof assumes that DMA is off. DMA
-devices can in theory overwrite any memory on the machine, including kernel data
-and code.
+The formal verification of seL4 assumes that the MMU has complete control over
+memory, which means the proof assumes that DMA is off. DMA devices can in theory
+overwrite any memory on the machine, including kernel data and code.
 
-You can still use DMA devices safely, but you have to separately assure
-that they are well-behaved, that is, that they don't overwrite kernel
-code or data structures, and only write to frames allocated to them
-according to the system policy. In practice, this means, drivers and
-hardware for DMA devices need to be trusted.
+You can still use DMA devices safely, but you have to separately assure that
+they are well-behaved, that is, that they don't overwrite kernel code or data
+structures, and only write to frames allocated to them according to the system
+policy. In practice, this means, drivers and hardware for DMA devices need to be
+trusted.
 
-The unverified x86 version of seL4 supports VT-d extensions on the
-experimental branch. The VT-d extensions allow the kernel to restrict
-DMA and thereby enable DMA devices with untrusted user-level drivers.
-There is unverified support for the SystemMMU on multiple ARM boards.
+There are unverified seL4 configurations with SystemMMU support on Arm and VT-d
+extension support for x86. These extensions allow the kernel to restrict DMA and
+thereby enable DMA devices with untrusted user-level drivers.
 
 ### Does seL4 support multicore?
 
-Multicore is presently supported on x64, ARMv7, ARMv8, and RISC-V.
-Verification of the multicore kernel is in progress (but presently as an
-unfunded background activity).
+Multicore is presently supported on x64, ARMv7, ARMv8, and RISC-V. Verification
+of the multicore kernel is in progress for static multikernel configurations.
 
-The multicore kernel uses a [big-lock approach, which makes sense for
-tightly-coupled cores that share an L2
+The SMP kernel uses a [big-lock approach, which makes sense for tightly-coupled
+cores that share an L2
 cache](https://trustworthy.systems/publications/nictaabstracts/Peters_DEH_15.abstract).
-It is not meant to scale to many cores, where instead multikernel is the right
-approach (running separate kernel image on each cluster of cores sharing a
-cache). This "clustered multikernel" configuration is presently not supported,
-though.
+It is not meant to scale to many cores, where instead a multikernel is the right
+approach -- running a separate kernel image on each core.
 
 ### Can I run seL4 on an MMU-less microcontroller?
 
 Using seL4 without a full memory-management unit (MMU) makes little sense, as
 its resource management is fundamentally based on virtual memory. For lower-end
 processors that only have a memory-protection unit (MPU) or no memory protection
-at all, you should look at NICTA's [eChronos real-time operating
-system](https://trustworthy.systems/projects/TS/echronos/) (RTOS), which is
-designed for such processors and is also undergoing formal verification.
+at all, you should look at the [eChronos real-time operating
+system](https://trustworthy.systems/projects/OLD/echronos/), which is
+designed for such processors and has undergone partial formal verification.
 
 ### What are the intended applications of seL4?
 
@@ -246,12 +247,9 @@ financial, medical, automotive, avionics and defence sectors.
 
 ### Can I run Linux on top of seL4?
 
-Yes, seL4 can run Linux in a virtual machine. At
-present the master branch supports this on ARMv7 processors (presently
-A15/A7 cores). For x86 there is experimental virtualisation support
-(requiring Intel VT-x, ETP and a HPET that supports MSI delivery).
-Please see the [roadmap](/projects/roadmap.html)
-for anticipated release of a mature version.
+Yes, seL4 can run Linux in a virtual machine. At present seL4 supports this on
+Arm v7 and v8 platforms, as well as x86 (requiring Intel VT-x, ETP and a HPET
+that supports MSI delivery).
 
 To support virtual machines, seL4 itself runs as a hypervisor (x86
 Ring-0 root mode or ARM hyp mode) and forwards virtualisation events to
@@ -264,6 +262,9 @@ Yes, multiple VMs are supported, including heterogeneous ones.
 
 ### Can I run a real-time OS in a virtual machine on seL4?
 
+<!-- FIXME: update. Some parts misleading; who is "we"; MCS no longer new.
+     "Mainline" is no longer a concept. "We" do not recommend using MCS
+     for all new projects. -->
 seL4 is the world’s only hypervisor with a sound worst-case execution-time
 (WCET) analysis, and as such the only one that can give you actual real-time
 guarantees, no matter what others may be claiming. (If someone else tells you
@@ -314,12 +315,13 @@ degree of assurance that the resulting proof is correct.
 
 Unique about seL4 is its unprecedented degree of assurance, achieved through
 formal verification. Specifically, the ARM, ARM\_HYP (ARM with virtualisation
-extensions), X64, and RISCV64 versions of seL4 comprise the first (and still
-only) general-purpose OS kernel with a full code-level functional correctness
-proof, meaning a mathematical proof that the implementation (written in C)
-adheres to its specification. In short, the implementation is proved to be
-bug-free (see below). This also implies a number of other properties, such as
-freedom from buffer overflows, null pointer exceptions, use-after-free, etc.
+extensions), AARCH64, X64, and RISCV64 versions of seL4 comprise the first (and
+still only) general-purpose OS kernel with a full code-level functional
+correctness proof, meaning a mathematical proof that the implementation (written
+in C) adheres to its specification. In short, the implementation is proved to be
+free of implementation defects. This also implies a number of other properties,
+such as freedom from buffer overflows, null pointer exceptions, use-after-free,
+etc.
 
 On the ARM and RISCV64 platforms, there is a further proof that the binary code
 which executes on the hardware is a correct translation of the C code. This
@@ -334,11 +336,12 @@ these properties are guaranteed to be enforced not only by a model of the kernel
 Therefore, seL4 is the world's first (and still only) OS that is proved secure
 in a very strong sense.
 
-Finally, seL4/ARM is the first (and still only) protected-mode OS kernel with a
-sound and complete timeliness analysis. Among others this means that it has
-provable upper bounds on interrupt latencies (as well as latencies of any other
-kernel operations). It is therefore the only kernel with memory protection that
-can give you hard real-time guarantees.
+<!-- FIXME: misleading, Arm v6 no longer supported -->
+Finally, seL4 for Arm v6 was the first (and still only) protected-mode OS
+kernel with a sound and complete timeliness analysis. Among others this means
+that it has provable upper bounds on interrupt latencies (as well as latencies
+of any other kernel operations). It is therefore the only kernel with memory
+protection that can give you hard real-time guarantees.
 
 ### Does seL4 have zero bugs?
 
@@ -355,14 +358,13 @@ sufficient for what your system needs, but might not. For instance, the
 confidentiality proof makes no guarantees about the absence of covert
 timing channels.
 
-So the answer to the question depends on what you understand a bug to
-be. In the understanding of formal software verification (code
-implements specification), the answer is yes. In the understanding of a
-general software user, the answer is potentially, because there may
-still be hardware bugs or proof assumptions unmet. For high assurance
-systems, this is not a problem, because analysing hardware and proof
-assumptions is much easier than analysing a large software system, the
-same hardware, and test assumptions.
+So the answer to the question depends on what you understand a bug to be. In the
+understanding of formal software verification (code implements specification),
+the answer is yes. In the understanding of a general software user, the answer
+is potentially, because there may still be hardware bugs or proof assumptions
+unmet. For high assurance systems, this is not a problem. It reduces evaluation
+burden, because analysing hardware and proof assumptions is much easier than
+analysing a large software system, the same hardware, and test assumptions.
 
 ### Is seL4 proved secure?
 
@@ -382,11 +384,11 @@ System MMUs on ARM.
 
 Not automatically, no. Security is a question that spans the whole system,
 including its human parts. An OS kernel, verified or not, does not automatically
-make a system secure. In fact, any system, no matter how secure, can be used in
-insecure ways.
+make a system secure. Any system, no matter how secure, can be used in insecure
+ways.
 
 However, if used correctly, seL4 provides the system architect and user with
-strong mechanisms to implement security policies, backed by specific security
+strong mechanisms to implement security policies, backed by strong security
 theorems.
 
 ### What are the proof assumptions?
@@ -397,8 +399,7 @@ caches) is correct, and boot code is correct. The hardware model assumes DMA to
 be off or to be trusted. The security proofs additionally give a list of
 conditions how the system is configured.
 
-For a more in-depth description, see the [proof and assumptions
-page](https://sel4.systems/Info/FAQ/proof.pml).
+For a more in-depth description, see the [proof and assumptions page][proofs].
 
 ### How do I leverage seL4's formal proofs?
 
@@ -420,15 +421,12 @@ be able to offer assistance.
 
 OS verification goes back at least 40 years to the mid 1970s, so there is plenty
 of previous work on verified OS kernels. See also a [comprehensive
-overview](https://trustworthy.systems/publications/nictaabstracts/Klein_09.abstract.html)
-paper on OS verification from 2008 as well as the related work section of the
-[seL4 overview
-paper](https://trustworthy.systems/publications/nictaabstracts/Klein_AEMSKH_14.abstract)
-from 2014.
+overview][Klein_09] paper on OS verification from 2008 as well as the related
+work section of the [seL4 overview paper][TOCS_14] from 2014.
 
 The new and exciting thing about seL4 is that it has a) strong properties such
 as functional correctness, integrity, and confidentiality, and b) has these
-properties formally verified directly to the code — initially to C, now also to
+properties formally verified directly to the code - initially to C, now also to
 binary. In addition, the seL4 proofs are machine-checked, not just based on pen
 and paper.
 
@@ -445,31 +443,23 @@ feasible.
 
 ### When and how often does seL4 get updated and re-proved?
 
-We update the seL4 proofs semi-continuously, usually whenever something is
-pulled into the master branch in the seL4 GitHub repository. You can see the
+We update the seL4 proofs semi-continuously, usually whenever a pull request is
+merged into the master branch in the seL4 GitHub repository. You can see the
 proof updates coming through on <https://github.com/seL4/l4v/commits/master> and
 you can see the kernel revision the proof currently refers to in
 <https://github.com/seL4/verification-manifest/blob/master/default.xml>. This is
 usually the head of the master branch.
 
-The rough protocol for updates in the seL4 master branch is that, together with
-the kernel team, the verification team picks the next feature(s), isolates them
-on a separate small internal feature branch, starts verifying that, and when
-done, merges both into the proof repository and seL4 master.
-
 The frequency depends on what it is and who has time. Larger features take
-longer to write and prove, get pushed when they are done, and get selected by
-importance for the projects we're running. Not many of these happen per year
-unless there is specific funding for a specific feature. Small updates take a
-day to a few weeks and we often do them on the side. There's no specific
-schedule at the moment.
+longer to write and prove and get pushed when they are done. Not many of these
+happen per year unless there is specific funding for a specific feature. Small
+updates take a day to a few weeks.
 
 ### How do I tell which code in GitHub is covered by the proof and which isn't?
 
 The verification sees the entire C code for one particular combination of
-configuration options. See [Verified Configurations](/VerifiedConfigurations)
-for details of architecture and platform configurations which have verified
-properties.
+configuration options. See the page on [verified configurations] for details of
+architecture and platform configurations which have verified properties.
 
 Excluded from the verification of the C code is the machine interface and boot
 code, whose behaviour is an explicit assumption to the proof.
@@ -486,7 +476,9 @@ kernel build) - this is what the prover, the proof engineer, and the compiler
 see after configuration is done. So a quick way of figuring out if something is
 in the proof input or not is checking if the contents of that file change if you
 make a change to the source you're wondering about. You don't need the prover
-for this, and only parts of the seL4 build environment setup.
+for this, and only parts of the seL4 build environment setup. The GitHub CI
+setup for seL4 pull requests contains a preprocess check that shows which
+verification-relevant code has changed.
 
 The top-level proof makes statements about the behaviour of all of the kernel
 entry points, which we enumerate once manually in the proof. The prover reads in
@@ -514,6 +506,7 @@ As an example, the CPU and architecture options mean that everything under
 
 ### How are resources managed and protected in seL4?
 
+<!-- FIXME: remove userland; not a word -->
 The key idea in seL4 is that all resource management is done in userland. Access
 to and control over resources is controlled by capabilities. The kernel after
 boot hands control over all free resources to userland, and after that will
@@ -543,6 +536,8 @@ details on caps.
 
 ### How can user mode manage kernel memory safely?
 
+<!-- FIXME: update, confuses memory with caps -->
+<!-- FIXME: clean up double quote style -->
 The kernel puts userland in control of system resources by handing all
 free memory (called "Untyped") after booting to the first user process
 (called the "root task") by depositing the respective caps in the root
@@ -602,7 +597,7 @@ on top of seL4's primitive mechanisms.
 
 ### Why do send-only operations not return a success indication?
 
-The send-only IPC system calls "seL4_Send()" and "seL4_NBSend()"
+The send-only IPC system calls `seL4_Send()` and `seL4_NBSend()`
 can be invoked with a send-only capability, enabling one-way data
 transfer. By definition, a send-ony cap cannot be used to receive any
 information. A result status, indicating whether or not the message has
@@ -647,8 +642,7 @@ Enabling or disabling the fastpath should not have any impact on the kernel
 behaviour except for performance.
 
 There is a section on the fastpath and its verification in [this
-article](https://trustworthy.systems/publications/nictaabstracts/Klein_AEMSKH_14.abstract).
-The fastpath discussion starts on page 23.
+article][TOCS_14]. The fastpath discussion starts on page 23.
 
 ## What's coming up next?
 
@@ -659,6 +653,26 @@ released at all).
 
 That being said, we are currently working on:
 
-- verification of the Aarch64 kernel
+- verification of the AArch64 kernel
 - verification of multicore seL4
-- [time protection](https://trustworthy.systems/publications/csiroabstracts/Ge_YCH_19.abstract?bib=combined) as a principled prevention of timing channels (this one is still very much cutting-edge research)
+- [time protection] as a principled prevention of timing channels (this one is
+  still very much cutting-edge research)
+
+
+[docsite]: https://docs.sel4.systems
+[Resources]: https://docs.sel4.systems/Resources
+[verified configurations]: https://docs.sel4.systems/projects/sel4/verified-configurations.html
+
+[license page]: {% link Foundation/Trademark/license-tm.html %}
+[proofs]: {% link Info/FAQ/proof.html %}
+
+<!-- FIXME: use on-site page when it exists -->
+[supported platforms]: https://docs.sel4.systems/Hardware/
+
+<!-- FIXME: links to PDFs or paper section on sel4.systems? -->
+[time protection]: https://trustworthy.systems/publications/csiroabstracts/Ge_YCH_19.abstract?bib=combined
+[TOCS_14]: https://trustworthy.systems/publications/nictaabstracts/Klein_AEMSKH_14.abstract
+[SOSP_09]: https://trustworthy.systems/publications/nictaabstracts/Klein_EHACDEEKNSTW_09.abstract
+[Elphinstone_Heiser_13]: https://trustworthy.systems/publications/nictaabstracts/Elphinstone_Heiser_13.abstract
+
+[Klein_09]: https://trustworthy.systems/publications/nictaabstracts/Klein_09.abstract
