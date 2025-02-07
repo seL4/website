@@ -32,23 +32,24 @@ help:
 
 JEKYLL_ENV := production
 SERVE_HOST :=
+BUILD_OPTS :=
 
 build: .jekyll-cache/ruby_deps .npm_deps
-	JEKYLL_ENV=$(JEKYLL_ENV) bundle exec jekyll build
+	JEKYLL_ENV=$(JEKYLL_ENV) bundle exec jekyll build $(BUILD_OPTS)
 
 serve: .jekyll-cache/ruby_deps .npm_deps
 # $(SERVE_HOST) is here so docker can pass in "--host 0.0.0.0" for serve
 # otherwise this variable is not needed and by default empty
-	JEKYLL_ENV=$(JEKYLL_ENV) bundle exec jekyll serve -I --livereload $(SERVE_HOST)
+	JEKYLL_ENV=$(JEKYLL_ENV) bundle exec jekyll serve -I --livereload $(BUILD_OPTS) $(SERVE_HOST)
 
 debug: JEKYLL_ENV := development
 debug: serve
 
 preview: JEKYLL_ENV := development
-preview: SERVE_HOST := --config "_config.yml,_proofcraft.yml" $(SERVE_HOST)
+preview: BUILD_OPTS := --config "_config.yml,_proofcraft.yml" $(BUILD_OPTS)
 preview: build
 
-on_seL4: SERVE_HOST := --config "_config.yml,_on_seL4.yml"
+on_seL4: BUILD_OPTS := --config "_config.yml,_on_seL4.yml" $(BUILD_OPTS)
 on_seL4: build
 
 clean doctor:
