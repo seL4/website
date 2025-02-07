@@ -1,217 +1,334 @@
 ---
 # Copyright 2022, seL4 summit authors (see abstracts)
 # SPDX-License-Identifier: CC-BY-SA-4.0
-title: Summit abstracts
+title: seL4 summit 2022 Abstracts
+pre: "seL4 Summit 2022 Program"
+pre_link: "../2022/program"
+sub: '
+<p>
+  The seL4 summit 2022 features a combination of technical research and development, real-world seL4 deployment
+  insights, in-depth interactive discussions, thought-provoking <a href="index.html#keynotes">keynotes</a>, <a
+    href="index.html#panel">panel discussion</a>, as well as a <a href="#bootcamp">bootcamp</a>. Videos are available on the <a
+    href="https://www.youtube.com/@seL4">seL4 YouTube channel</a>.
+</p>'
+layout: card
 redirect_from:
  - /Foundation/Summit/abstracts2022.html
  - /Foundation/Summit/abstracts2022.pml
 ---
-<h1>
-  seL4 Summit 2022
-</h1>
-<h4>
-  Munich, Germany (hybrid)
-</h4>
-<h4>
-  10-13 Oct 2022
-</h4>
 
-<h3>
-   Abstracts
-</h3>
-<div class="summit-abstract" id="a-seL4-research">{% include abstracts/2022/seL4-research.html %}
-<a href="https://www.youtube.com/watch?v=C3nOjXhyPfk" target="_blank"><img src="../../../images/icons/youtube_nobckgnd.svg" class="youtube_icon" alt="YouTube icon"></a>
-&nbsp;&nbsp;
-<a href="slides/d1_02_State_of_seL4-related_research_Gernot_Heiser.pdf"><img src="../../../images/icons/slides.svg" alt="slides icon"></a>
-<br><a href="program#p-seL4-research">See this talk in the program</a></div>
 
-<div class="summit-abstract" id="a-seL4-verification-roadmap">{% include abstracts/2022/seL4-verification-roadmap.html %}
-<a href="https://www.youtube.com/watch?v=lvmjXO1jTec" target="_blank"><img src="../../../images/icons/youtube_nobckgnd.svg" class="youtube_icon" alt="YouTube icon"></a>
-&nbsp;&nbsp;
-<a href="slides/d1_03_seL4_verification-roadmap_Proofcraft.pdf"><img src="../../../images/icons/slides.svg" alt="slides icon"></a>
-<br><a href="program.html#p-seL4-verification-roadmap">See this talk in the program</a></div>
+{% include abstract-item.html 
+  id = "seL4-research"
+  type = "Keynote"
+  time = "9:10 - 10:00"
+  title = "State of seL4-related research"
+  presenter = "Gernot Heiser"
+  affiliation = "UNSW"
+  text = "abstracts/2022/seL4-research-text-only.html"
+  youtube = "https://www.youtube.com/watch?v=C3nOjXhyPfk"
+  slides = "slides/d1_02_State_of_seL4-related_research_Gernot_Heiser.pdf"
+%}
 
-<div class="summit-abstract" id="a-explaining-integrity-theorems">{% include abstracts/2022/Explaining-integrity-theorems.html %}
-<a href="https://www.youtube.com/watch?v=fyF9w_CsCEU" target="_blank"><img src="../../../images/icons/youtube_nobckgnd.svg" class="youtube_icon" alt="YouTube icon"></a>
-&nbsp;&nbsp;
-<a href="slides/d1_04_Explaining_the_seL4_integrity_theorems_Matt_Brecknell.pdf"><img src="../../../images/icons/slides.svg" alt="slides icon"></a>
-<br><a href="program.html#p-explaining-integrity-theorems">See this talk in the program</a></div>
+{% include abstract-item.html 
+  id = "seL4-verification-roadmap"
+  time = "10:15 - 10:45"
+  title = "seL4 Verification Roadmap"
+  presenter = "Rafal Kolanski, Gerwin Klein, June Andronick"
+  affiliation = "Proofcraft"
+  text = "abstracts/2022/seL4-verification-roadmap-text-only.html"
+  youtube = "https://www.youtube.com/watch?v=lvmjXO1jTec"
+  slides = "slides/d1_03_seL4_verification-roadmap_Proofcraft.pdf"
+%}
 
-<div class="summit-abstract" id="a-seL4CP">{% include abstracts/2022/seL4CP.html %}
-<a href="https://www.youtube.com/watch?v=kRI4VQRSB_w" target="_blank"><img src="../../../images/icons/youtube_nobckgnd.svg" class="youtube_icon" alt="YouTube icon"></a>
-&nbsp;&nbsp;
-<a href="slides/d1_05_The_seL4_Core_Platform_(seL4CP)_Zoltan_Kocsis.pdf"><img src="../../../images/icons/slides.svg" alt="slides icon"></a>
-<br><a href="program.html#p-seL4CP">See this talk in the program</a></div>
+{% include abstract-item.html 
+  id = "explaining-integrity-theorems"
+  time = "10:45 - 11:15"
+  title = "Explaining the seL4 integrity theorems"
+  presenter = "Matt Brecknell"
+  affiliation = "Kry10"
+  text = "abstracts/2022/explaining-integrity-theorems-text-only.html"
+  youtube = "https://www.youtube.com/watch?v=fyF9w_CsCEU"
+  slides = "slides/d1_04_Explaining_the_seL4_integrity_theorems_Matt_Brecknell.pdf"
+%}
 
-<div class="summit-abstract" id="a-sDDF">{% include abstracts/2022/sDDF.html %}
-<a href="https://www.youtube.com/watch?v=INBEKSkAiTA" target="_blank"><img src="../../../images/icons/youtube_nobckgnd.svg" class="youtube_icon" alt="YouTube icon"></a>
-&nbsp;&nbsp;
-<a href="slides/d1_06_The_seL4_Device_Driver_Framework_(sDDF)_Lucy_Parker.pdf"><img src="../../../images/icons/slides.svg" alt="slides icon"></a>
-<br><a href="program.html#p-sDDF">See this talk in the program</a></div>
+{% include abstract-item.html 
+  id = "seL4CP"
+  time = "12:45 - 13:15"
+  title = "The seL4 Core Platform (seL4CP)"
+  presenter = "Zoltan Kocsis"
+  affiliation = "UNSW"
+  text = "abstracts/2022/seL4CP-text-only.html"
+  youtube = "https://www.youtube.com/watch?v=kRI4VQRSB_w"
+  slides = "slides/d1_05_The_seL4_Core_Platform_(seL4CP)_Zoltan_Kocsis.pdf"
+%}
 
-<div class="summit-abstract" id="a-Multiprocessing-verified-kernels">{% include abstracts/2022/Multiprocessing-verified-kernels.html %}
-<a href="https://youtu.be/ooIPe4wRMKk" target="_blank"><img src="../../../images/icons/youtube_nobckgnd.svg" class="youtube_icon" alt="YouTube icon"></a>
-&nbsp;&nbsp;
-<a href="slides/d1_07_Multiprocessing_on_seL4_with_verified_kernels_Kent_Mcleod.pdf"><img src="../../../images/icons/slides.svg" alt="slides icon"></a>
-<br><a href="program.html#p-Multiprocessing-verified-kernels">See this talk in the program</a></div>
+{% include abstract-item.html 
+  id = "sDDF"
+  time = "13:15 - 13:45"
+  title = "The seL4 Device Driver Framework (sDDF)"
+  presenter = "Lucy Parker"
+  affiliation = "UNSW"
+  text = "abstracts/2022/sDDF-text-only.html"
+  youtube = "https://www.youtube.com/watch?v=INBEKSkAiTA"
+  slides = "slides/d1_06_The_seL4_Device_Driver_Framework_(sDDF)_Lucy_Parker.pdf"
+%}
 
-<div class="summit-abstract" id="a-QEMU-extend-VirtIO">{% include abstracts/2022/QEMU-extend-VirtIO.html %}
-<a href="https://www.youtube.com/watch?v=qjtY2O1ViGs" target="_blank"><img src="../../../images/icons/youtube_nobckgnd.svg" class="youtube_icon" alt="YouTube icon"></a>
-&nbsp;&nbsp;
-<a href="slides/d1_08_Using_QEMU_to_extend_seL4_VirtIO_support_Hannu_Lyytinen.pdf"><img src="../../../images/icons/slides.svg" alt="slides icon"></a>
-<br><a href="program.html#p-QEMU-extend-VirtIO">See this talk in the program</a></div>
+{% include abstract-item.html 
+  id = "Multiprocessing-verified-kernels"
+  time = "13:45 - 14:30"
+  type = "Talk & Discussion"
+  title = "Multiprocessing on seL4 with verified kernels"
+  presenter = "Kent McLeod"
+  affiliation = "Kry10"
+  text = "abstracts/2022/Multiprocessing-verified-kernels-text-only.html"
+  youtube = "https://youtu.be/ooIPe4wRMKk"
+  slides = "slides/d1_07_Multiprocessing_on_seL4_with_verified_kernels_Kent_Mcleod.pdf"
+%}
 
-<div class="summit-abstract" id="a-QEMU-prototyping-platform">{% include abstracts/2022/QEMU-prototyping-platform.html %}
-<a href="https://www.youtube.com/watch?v=R-HNQK1uA7c" target="_blank"><img src="../../../images/icons/youtube_nobckgnd.svg" class="youtube_icon" alt="YouTube icon"></a>
-&nbsp;&nbsp;
-<a href="slides/d1_09_QEMU_as_prototyping_platform_for_seL4_systems_Axel_Heider.pdf"><img src="../../../images/icons/slides.svg" alt="slides icon"></a>
-<br><a href="program.html#p-QEMU-prototyping-platform">See this talk in the program</a></div>
+{% include abstract-item.html 
+  id = "QEMU-extend-VirtIO"
+  time = "15:00 - 15:30"
+  title = "Using QEMU to extend seL4 VirtIO support"
+  presenter = "Hannu Lyytinen, Markku Ahvenjärvi"
+  affiliation = "TII"
+  text = "abstracts/2022/QEMU-extend-VirtIO-text-only.html"
+  youtube = "https://www.youtube.com/watch?v=qjtY2O1ViGs"
+  slides = "slides/d1_08_Using_QEMU_to_extend_seL4_VirtIO_support_Hannu_Lyytinen.pdf"
+%}
 
-<div class="summit-abstract" id="a-Porting-U-Boot">{% include abstracts/2022/Porting-U-Boot.html %}
-<a href="https://www.youtube.com/watch?v=FfdrOKder_U" target="_blank"><img src="../../../images/icons/youtube_nobckgnd.svg" class="youtube_icon" alt="YouTube icon"></a>
-&nbsp;&nbsp;
-<a href="slides/d1_10_Porting_U-Boot_drivers_to_seL4_Mark_Jenkinson_&_Stephen_Williams.pdf"><img src="../../../images/icons/slides.svg" alt="slides icon"></a>
-<br><a href="program.html#p-Porting-U-Boot">See this talk in the program</a></div>
+{% include abstract-item.html 
+  id = "QEMU-prototyping-platform"
+  time = "15:30 - 16:00"
+  title = "QEMU as prototyping platform for seL4 systems"
+  presenter = "Axel Heider"
+  affiliation = "HENSOLDT Cyber"
+  text = "abstracts/2022/QEMU-prototyping-platform-text-only.html"
+  youtube = "https://www.youtube.com/watch?v=R-HNQK1uA7c"
+  slides = "slides/d1_09_QEMU_as_prototyping_platform_for_seL4_systems_Axel_Heider.pdf"
+%}
 
-<div class="summit-abstract" id="a-fence-t">{% include abstracts/2022/fence-t.html %}
-<a href="https://www.youtube.com/watch?v=tLcum9YksJM" target="_blank"><img src="../../../images/icons/youtube_nobckgnd.svg" class="youtube_icon" alt="YouTube icon"></a>
-&nbsp;&nbsp;
-<a href="slides/d1_11_fence.t_hardware_support_for_preventing_microarchitectural_timing_channels_Nils_Wistoff.pdf"><img src="../../../images/icons/slides.svg" alt="slides icon"></a>
-<br><a href="program.html#p-fence-t">See this talk in the program</a></div>
+{% include abstract-item.html 
+  id = "Porting-U-Boot"
+  time = "16:00 - 16:30"
+  title = "Porting U-Boot drivers to seL4"
+  presenter = "Mark Jenkinson, Stephen Williams"
+  affiliation = "Capgemini"
+  text = "abstracts/2022/Porting-U-Boot-text-only.html"
+  youtube = "https://www.youtube.com/watch?v=FfdrOKder_U"
+  slides = "slides/d1_10_Porting_U-Boot_drivers_to_seL4_Mark_Jenkinson_&_Stephen_Williams.pdf"
+%}
 
-<div class="summit-abstract" id="a-Kry10-Secure-Platform">{% include abstracts/2022/Kry10-Secure-Platform.html %}
-<a href="https://www.youtube.com/watch?v=YG5BaoB24eA" target="_blank"><img src="../../../images/icons/youtube_nobckgnd.svg" class="youtube_icon" alt="YouTube icon"></a>
-&nbsp;&nbsp;
-<a href="slides/d2_01_Kry10_Secure_Platform_Boyd_Multerer.pdf"><img src="../../../images/icons/slides.svg" alt="slides icon"></a>
-<br><a href="program.html#p-Kry10-Secure-Platform">See this talk in the program</a></div>
+{% include abstract-item.html 
+  id = "fence-t"
+  time = "16:30 - 17:00"
+  title = "fence.t: hardware support for preventing microarchitectural timing channels"
+  presenter = "Nils Wistoff"
+  affiliation = "ETH"
+  text = "abstracts/2022/fence-t-text-only.html"
+  youtube = "https://www.youtube.com/watch?v=tLcum9YksJM"
+  slides = "slides/d1_11_fence.t_hardware_support_for_preventing_microarchitectural_timing_channels_Nils_Wistoff.pdf"
+%}
 
-<div class="summit-abstract" id="a-seL4-BEAM">{% include abstracts/2022/seL4-BEAM.html %}
-<a href="https://youtu.be/owmvgUwBlJ0" target="_blank"><img src="../../../images/icons/youtube_nobckgnd.svg" class="youtube_icon" alt="YouTube icon"></a>
-&nbsp;&nbsp;
-<a href="slides/d2_03_seL4_and_BEAM_a_match_made_in_Erlang_Ihor.pdf"><img src="../../../images/icons/slides.svg" alt="slides icon"></a>
-<br><a href="program.html#p-seL4-BEAM">See this talk in the program</a></div>
+{% include abstract-item.html 
+  id = "Kry10-Secure-Platform"
+  type = "Keynote"
+  time = "9:00 - 9:50"
+  title = "Kry10 Secure Platform"
+  presenter = "Boyd Multerer"
+  affiliation = "Kry10"
+  text = "abstracts/2022/Kry10-Secure-Platform-text-only.html"
+  youtube = "https://www.youtube.com/watch?v=YG5BaoB24eA"
+  slides = "slides/d2_01_Kry10_Secure_Platform_Boyd_Multerer.pdf"
+%}
 
-<div class="summit-abstract" id="a-Trustworthy-board-management">{% include abstracts/2022/Trustworthy-board-management.html %}
-<a href="https://www.youtube.com/watch?v=mCYxdn4bWw4" target="_blank"><img src="../../../images/icons/youtube_nobckgnd.svg" class="youtube_icon" alt="YouTube icon"></a>
-&nbsp;&nbsp;
-<a href="slides/d2_04_Trustworthy_board_management_controllers_Daniel_Schwyn,_Ben_Fiedler.pdf"><img src="../../../images/icons/slides.svg" alt="slides icon"></a>
-<br><a href="program.html#p-Trustworthy-board-management">See this talk in the program</a></div>
+{% include abstract-item.html 
+  id = "seL4-BEAM"
+  time = "10:15 - 10:45"
+  title = "seL4 and BEAM: a match made in Erlang"
+  presenter = "Ihor Kuz"
+  affiliation = "Kry10"
+  text = "abstracts/2022/seL4-BEAM-text-only.html"
+  youtube = "https://youtu.be/owmvgUwBlJ0"
+  slides = "slides/d2_03_seL4_and_BEAM_a_match_made_in_Erlang_Ihor.pdf"
+%}
 
-<div class="summit-abstract" id="a-Rust-support">{% include abstracts/2022/Rust-support.html %}
-<a href="https://www.youtube.com/watch?v=FXB4hGZUilU" target="_blank"><img src="../../../images/icons/youtube_nobckgnd.svg" class="youtube_icon" alt="YouTube icon"></a>
-&nbsp;&nbsp;
-<a href="slides/d2_05_Rust_support_in_seL4_userspace_present_and_future_Nick_Spinale.pdf"><img src="../../../images/icons/slides.svg" alt="slides icon"></a>
-<br><a href="program.html#p-Rust-support">See this talk in the program</a></div>
+{% include abstract-item.html 
+  id = "Trustworthy-board-management"
+  time = "10:45 - 11:15"
+  title = "Trustworthy board management controllers"
+  presenter = "Daniel Schwyn, Ben Fiedler, Michael Giardino, David Cock, Timothy Roscoe"
+  affiliation = "ETH"
+  text = "abstracts/2022/Trustworthy-board-management-text-only.html"
+  youtube = "https://www.youtube.com/watch?v=mCYxdn4bWw4"
+  slides = "slides/d2_04_Trustworthy_board_management_controllers_Daniel_Schwyn,_Ben_Fiedler.pdf"
+%}
 
-<div class="summit-abstract" id="a-Network-stack-implementation">{% include abstracts/2022/Network-stack-implementation.html %}
-<a href="https://youtu.be/linRvpquOrg" target="_blank"><img src="../../../images/icons/youtube_nobckgnd.svg" class="youtube_icon" alt="YouTube icon"></a>
-&nbsp;&nbsp;
-<a href="slides/d2_06_Early_experiences_proving_the_correctness_of_a_network_stack_implementation_Alain_Kägi.pdf"><img src="../../../images/icons/slides.svg" alt="slides icon"></a>
-<br><a href="program.html#p-Network-stack-implementation">See this talk in the program</a></div>
+{% include abstract-item.html 
+  id = "Rust-support"
+  type = "Talk & Discussion"
+  time = "11:15 - 11:45"
+  title = "Rust support in seL4 userspace: present and future"
+  presenter = "Nick Spinale"
+  affiliation = "Colias Group"
+  text = "abstracts/2022/Rust-support-text-only.html"
+  youtube = "https://www.youtube.com/watch?v=FXB4hGZUilU"
+  slides = "slides/d2_05_Rust_support_in_seL4_userspace_present_and_future_Nick_Spinale.pdf"
+%}
 
-<div class="summit-abstract" id="a-CASE-overview">{% include abstracts/2022/CASE-overview.html %}
-<a href="https://youtu.be/SY9GHV_5agM" target="_blank"><img src="../../../images/icons/youtube_nobckgnd.svg" class="youtube_icon" alt="YouTube icon"></a>
-&nbsp;&nbsp;
-<a href="slides/d2_07_CASE_overview_Cyber_Assured_Systems_Engineering_Darren_Cofer.pdf"><img src="../../../images/icons/slides.svg" alt="slides icon"></a>
-<br><a href="program.html#p-CASE-overview">See this talk in the program</a></div>
+{% include abstract-item.html 
+  id = "Network-stack-implementation"
+  time = "12:45 - 13:15"
+  title = "Early experiences proving the correctness of a network stack implementation"
+  presenter = "Alain Kägi, Aubrey Birdwell, Caitlyn Wilde, Jens Mache, Richard Weiss"
+  affiliation = "Lewis & Clark College"
+  text = "abstracts/2022/Network-stack-implementation-text-only.html"
+  youtube = "https://youtu.be/linRvpquOrg"
+  slides = "slides/d2_06_Early_experiences_proving_the_correctness_of_a_network_stack_implementation_Alain_Kägi.pdf"
+%}
 
-<div class="summit-abstract" id="a-Verified-architecture">{% include abstracts/2022/Verified-architecture.html %}<a href="https://www.youtube.com/watch?v=gZxnyTbtb7Q" target="_blank"><img src="../../../images/icons/youtube_nobckgnd.svg" class="youtube_icon" alt="YouTube icon"></a>
-    <a href="slides/d2_08_A_verified_architecture_for_trustworthy_remote_attestation_Grant_Jurgenson.pdf"><img src="../../../images/icons/slides.svg" alt="slides icon"></a>
-<br><a href="program.html#p-Verified-architecture">See this talk in the program</a></div>
+{% include abstract-item.html 
+  id = "CASE-overview"
+  time = "13:15 - 13:45"
+  title = "CASE overview: Cyber Assured Systems Engineering"
+  presenter = "Darren Cofer"
+  affiliation = "Collins Aerospace"
+  text = "abstracts/2022/CASE-overview-text-only.html"
+  youtube = "https://youtu.be/SY9GHV_5agM"
+  slides = "slides/d2_07_CASE_overview_Cyber_Assured_Systems_Engineering_Darren_Cofer.pdf"
+%}
 
-<div class="summit-abstract" id="a-FerrOS">{% include abstracts/2022/FerrOS.html %}
-<a href="https://www.youtube.com/watch?v=osepBlSQjY8&t=4s" target="_blank"><img src="../../../images/icons/youtube_nobckgnd.svg" class="youtube_icon" alt="YouTube icon"></a>
-&nbsp;&nbsp;
-<a href="slides/d2_09_FerrOS_Rust-y_unikernels_on_seL4_w_compile-time_assurances_Zack_Pierce.pdf"><img src="../../../images/icons/slides.svg" alt="slides icon"></a>
-<br><a href="program.html#p-FerrOS">See this talk in the program</a></div>
+{% include abstract-item.html 
+  id = "Verified-architecture"
+  time = "13:45 - 14:15"
+  title = "A verified architecture for trustworthy remote attestation"
+  presenter = "Grant Jurgensen"
+  affiliation = "The University of Kansas"
+  text = "abstracts/2022/Verified-architecture-text-only.html"
+  slides = "slides/d2_08_A_verified_architecture_for_trustworthy_remote_attestation_Grant_Jurgenson.pdf"
+%}
 
-<!--Safety-critical-voice.-->
+{% include abstract-item.html 
+  id = "FerrOS"
+  time = "14:45 - 15:05"
+  title = "FerrOS: Rust-y unikernels on seL4 w/ compile-time assurances"
+  presenter = "Zack Pierce"
+  affiliation = "Auxon"
+  text = "abstracts/2022/FerrOS-text-only.html"
+  youtube = "https://www.youtube.com/watch?v=osepBlSQjY8&t=4s"
+  slides = "slides/d2_09_FerrOS_Rust-y_unikernels_on_seL4_w_compile-time_assurances_Zack_Pierce.pdf"
+%}
 
-<div class="summit-abstract" id="a-ASIL-D">{% include abstracts/2022/ASIL-D.html %}
-<a href="https://youtu.be/x69C4SVRbKo" target="_blank"><img src="../../../images/icons/youtube_nobckgnd.svg" class="youtube_icon" alt="YouTube icon"></a>
-&nbsp;&nbsp;
-<a href="slides/d2_10_Make_seL4_an_ASIL-D_certified_system_Yuning_Liang.pdf"><img src="../../../images/icons/slides.svg" alt="slides icon"></a>
-<br><a href="program.html#p-ASIL-D">See this talk in the program</a></div>
+{% include abstract-item.html 
+  id = "ASIL-D"
+  time = "15:05 - 15:25"
+  title = "Make seL4 an ASIL-D certified system"
+  presenter = "Yuning Liang"
+  affiliation = "Xcalibyte"
+  text = "abstracts/2022/ASIL-D-text-only.html"
+  youtube = "https://youtu.be/x69C4SVRbKo"
+  slides = "slides/d2_10_Make_seL4_an_ASIL-D_certified_system_Yuning_Liang.pdf"
+%}
 
-<!--TCCOE-->
+<!-- put funding agencies here -->
 
-<div class="summit-abstract" id="a-Funding-agencies">{% include abstracts/2022/Funding-agencies.html %}</div>
-<div class="summit-abstract" id="a-Funding-agencies-darpa">{% include abstracts/2022/Funding-agencies-darpa.html %}</div>
-<div class="summit-abstract" id="a-Funding-agencies-ncsc">{% include abstracts/2022/Funding-agencies-ncsc.html %}</div>
-<div class="summit-abstract" id="a-Funding-agencies-cyberagentur">{% include abstracts/2022/Funding-agencies-cyberagentur.html %}</div>
-<div class="summit-abstract" id="a-Funding-agencies-tii">{% include abstracts/2022/Funding-agencies-tii.html %}</div><a href="https://youtu.be/ycoUg3pP40k" target="_blank"><img src="../../../images/icons/youtube_nobckgnd.svg" class="youtube_icon" alt="YouTube icon"></a>
-<br><a href="program.html#p-Funding-agencies">See this talk in the program</a>
-<div class="summit-abstract" id="a-seL4-principles-abstractions">{% include abstracts/2022/seL4-principles-abstractions.html %}</div><a href="https://www.youtube.com/watch?v=xszOcZnR_lg" target="_blank"><img src="../../../images/icons/youtube_nobckgnd.svg" class="youtube_icon" alt="YouTube icon"></a>
-&nbsp;&nbsp;
-<a href="slides/d3_01_Overview_seL4_principles,_abstractions_and_use_Gernot_Heiser.pdf"><img src="../../../images/icons/slides.svg" alt="slides icon"></a>
-<br><a href="program.html#p-seL4-principles-abstractions">See this talk in the program</a>
-<div class="summit-abstract" id="a-Whats-verified">{% include abstracts/2022/Whats-verified.html %}
-<a href="https://www.youtube.com/watch?v=zUpq3c0_b_s" target="_blank"><img src="../../../images/icons/youtube_nobckgnd.svg" class="youtube_icon" alt="YouTube icon"></a>
-&nbsp;&nbsp;
-<a href="slides/d3_02_Overview_what's_verified,_what's_not,_and_what_does_it_mean_June_Andronick.pdf"><img src="../../../images/icons/slides.svg" alt="slides icon"></a>
-<br><a href="program.html#p-Whats-verified">See this talk in the program</a></div>
 
-<div class="summit-abstract" id="a-GitHub-tests">{% include abstracts/2022/GitHub-tests.html %}
-<a href="https://www.youtube.com/watch?v=5LlXQUjefTc" target="_blank"><img src="../../../images/icons/youtube_nobckgnd.svg" class="youtube_icon" alt="YouTube icon"></a>
-&nbsp;&nbsp;
-<a href="slides/d3_03_The_seL4_GitHub_test_suite_Gerwin_Klein.pdf"><img src="../../../images/icons/slides.svg" alt="slides icon"></a>
-<br><a href="program.html#p-GitHub-tests">See this talk in the program</a></div>
+{% include abstract-item.html 
+  id = "seL4-principles-abstractions"
+  time = "9:00 - 9:45"
+  title = "Overview: seL4 principles, abstractions and use"
+  presenter = "Gernot Heiser"
+  affiliation = "seL4 Foundation"
+  text = "abstracts/2022/seL4-principles-abstractions-text-only.html"
+  youtube = "https://www.youtube.com/watch?v=xszOcZnR_lg"
+  slides = "slides/d3_01_Overview_seL4_principles,_abstractions_and_use_Gernot_Heiser.pdf"
+%}
 
-<div class="summit-abstract" id="a-seL4-mainlining">{% include abstracts/2022/seL4-mainlining.html %}
-<a href="https://www.youtube.com/watch?v=OBrSov78KcY" target="_blank"><img src="../../../images/icons/youtube_nobckgnd.svg" class="youtube_icon" alt="YouTube icon"></a>
-&nbsp;&nbsp;
-<a href="slides/d3_04_seL4_mainlining_experiences,_challenges,_and_solutions_Robbie.pdf"><img src="../../../images/icons/slides.svg" alt="slides icon"></a>
-<br><a href="program.html#p-seL4-mainlining">See this talk in the program</a></div>
+{% include abstract-item.html 
+  id = "Whats-verified"
+  time = "9:45 - 10:00"
+  title = "Overview: what's verified, what's not, and what does it mean?"
+  presenter = "June Andronick"
+  affiliation = "seL4 Foundation"
+  text = "abstracts/2022/Whats-verified-text-only.html"
+  youtube = "https://www.youtube.com/watch?v=zUpq3c0_b_s"
+  slides = "slides/d3_02_Overview_what's_verified,_what's_not,_and_what_does_it_mean_June_Andronick.pdf"
+%}
 
-<div class="summit-abstract" id="a-Standard-VMM">{% include abstracts/2022/Standard-VMM.html %}
-<a href="https://www.youtube.com/watch?v=j0mcjByf6PM" target="_blank"><img src="../../../images/icons/youtube_nobckgnd.svg" class="youtube_icon" alt="YouTube icon"></a>
-&nbsp;&nbsp;
-<a href="slides/d3_05_seL4_microkernel_for_virtualization_use-cases_“The_importance_of_a_standard_VMM”.pdf"><img src="../../../images/icons/slides.svg" alt="slides icon"></a>
-<br><a href="program.html#p-Standard-VMM">See this talk in the program</a></div>
+{% include abstract-item.html 
+  id = "GitHub-tests"
+  time = "10:00 - 10:45"
+  title = "The seL4 GitHub test suite"
+  presenter = "Gerwin Klein"
+  affiliation = "Proofcraft"
+  text = "abstracts/2022/GitHub-tests-text-only.html"
+  youtube = "https://www.youtube.com/watch?v=5LlXQUjefTc"
+  slides = "slides/d3_03_The_seL4_GitHub_test_suite_Gerwin_Klein.pdf"
+%}
 
-<div class="summit-abstract" id="a-Improving-embedded-DevOps">{% include abstracts/2022/Improving-embedded-DevOps.html %}
-<a href="https://www.youtube.com/watch?v=rocLV9xl2MQ" target="_blank"><img src="../../../images/icons/youtube_nobckgnd.svg" class="youtube_icon" alt="YouTube icon"></a>
-&nbsp;&nbsp;
-<a href="slides/d3_06_Improving_embedded_DevOps_with_seL4_VMM.pdf"><img src="../../../images/icons/slides.svg" alt="slides icon"></a>
-<br><a href="program.html#p-Improving-embedded-DevOps">See this talk in the program</a></div>
+{% include abstract-item.html 
+  id = "seL4-mainlining"
+  time = "11:15 - 12:00"
+  title = "seL4 mainlining: experiences, challenges, and solutions"
+  presenter = "Robbie VanVossen, Chris Guikema"
+  affiliation = "DornerWorks"
+  text = "abstracts/2022/seL4-mainlining-text-only.html"
+  youtube = "https://www.youtube.com/watch?v=OBrSov78KcY"
+  slides = "slides/d3_04_seL4_mainlining_experiences,_challenges,_and_solutions_Robbie.pdf"
+%}
 
-<div class="summit-abstract" id="a-Experience-teaching-seL4">{% include abstracts/2022/Experience-teaching-seL4.html %}
-<a href="https://youtu.be/5xl7e0J9_3A" target="_blank"><img src="../../../images/icons/youtube_nobckgnd.svg" class="youtube_icon" alt="YouTube icon"></a>
-&nbsp;&nbsp;
-<a href="slides/d3_07_Experience_teaching_seL4.pdf"><img src="../../../images/icons/slides.svg" alt="slides icon"></a>
-<br><a href="program.html#p-Experience-teaching-seL4">See this talk in the program</a></div>
+{% include abstract-item.html 
+  id = "Standard-VMM"
+  time = "12:45 - 13:30"
+  title = "seL4 microkernel for virtualization use-cases “The importance of a standard VMM”"
+  presenter = "Everton de Matos, Jason Sebranek"
+  affiliation = "TII, Cog"
+  text = "abstracts/2022/Standard-VMM-text-only.html"
+  youtube = "https://www.youtube.com/watch?v=j0mcjByf6PM"
+  slides = "slides/d3_05_seL4_microkernel_for_virtualization_use-cases_“The_importance_of_a_standard_VMM”.pdf"
+%}
 
-<div class="summit-abstract" id="a-VM-Composer">{% include abstracts/2022/VM-Composer.html %}
-<a href="https://www.youtube.com/watch?v=r6b1ehTQCHI&t=1s" target="_blank"><img src="../../../images/icons/youtube_nobckgnd.svg" class="youtube_icon" alt="YouTube icon"></a>
-&nbsp;&nbsp;
-<a href="slides/d3_08_DornerWorks’_VM_Composer.pdf"><img src="../../../images/icons/slides.svg" alt="slides icon"></a>
-<br><a href="program.html#p-VM-Composer">See this talk in the program</a></div>
+{% include abstract-item.html 
+  id = "Improving-embedded-DevOps"
+  time = "13:30 - 14:15"
+  title = "Improving embedded DevOps with seL4 VMM"
+  presenter = "Robbie VanVossen"
+  affiliation = "DornerWorks"
+  text = "abstracts/2022/Improving-embedded-DevOps-text-only.html"
+  youtube = "https://www.youtube.com/watch?v=rocLV9xl2MQ"
+  slides = "slides/d3_06_Improving_embedded_DevOps_with_seL4_VMM.pdf"
+%}
 
-<div class="summit-abstract" id="a-seL4-Foundation">{% include abstracts/2022/seL4-Foundation.html %}
-<a href="https://www.youtube.com/watch?v=ABqQqgf6ez8" target="_blank"><img src="../../../images/icons/youtube_nobckgnd.svg" class="youtube_icon" alt="YouTube icon"></a>
-&nbsp;&nbsp;
-<a href="slides/d3_09_seL4_Foundation_overview,_update_and_vision.pdf"><img src="../../../images/icons/slides.svg" alt="slides icon"></a>
-<br><a href="program.html#p-seL4-Foundation">See this talk in the program</a></div>
+{% include abstract-item.html 
+  id = "Experience-teaching-seL4"
+  time = "14:15 - 15:00"
+  title = "Experience teaching seL4"
+  presenter = "Sebastian Eckl"
+  affiliation = "HENSOLDT Cyber"
+  text = "abstracts/2022/Experience-teaching-seL4-text-only.html"
+  youtube = "https://youtu.be/5xl7e0J9_3A"
+  slides = "slides/d3_07_Experience_teaching_seL4.pdf"
+%}
 
-<div class="summit-abstract" id="a-zero-hello-world">{% include abstracts/2022/zero-hello-world.html %}
-<a href="program.html#p-zero-hello-world">See this talk in the program</a></div>
+{% include abstract-item.html 
+  id = "VM-Composer"
+  type = "Teaser"
+  time = "16:15 - 16:30"
+  title = "DornerWorks’ VM Composer"
+  presenter = "Robbie VanVossen"
+  affiliation = "DornerWorks"
+  text = "abstracts/2022/VM-Composer-text-only.html"
+  youtube = "https://www.youtube.com/watch?v=r6b1ehTQCHI&t=1s"
+  slides = "slides/d3_08_DornerWorks’_VM_Composer.pdf"
+%}
 
-<div class="summit-abstract" id="a-CAmkES">{% include abstracts/2022/CAmkES.html %}
-<a href="program.html#p-CAmkES">See this talk in the program</a></div>
-
-<div class="summit-abstract" id="a-TRENTOS">{% include abstracts/2022/TRENTOS.html %}
-<a href="program.html#p-TRENTOS">See this talk in the program</a></div>
-
-<div class="summit-abstract" id="a-seL4CP-bootcamp">{% include abstracts/2022/seL4CP-bootcamp.html %}
-<a href="program.html#p-seL4CP-bootcamp">See this talk in the program</a></div>
-
-<div class="summit-abstract" id="a-VM-Composer-bootcamp">{% include abstracts/2022/VM-Composer-bootcamp.html %}
-<a href="program.html#p-VM-Composer-bootcamp">See this talk in the program</a></div>
-
-<div class="summit-abstract" id="a-BriefCASE-tutorial">{% include abstracts/2022/BriefCASE-tutorial.html %}
-<a href="program.html#p-BriefCASE-tutorial">See this talk in the program</a></div>
-
-<p>
-<strong><br>Acknowledgement: </strong>
-<a href="https://www.flaticon.com/free-icons/explanation" title="explanation icons">Slide icons created by Syahrul Hidayatullah - Flaticon</a>
-</p>
+{% include abstract-item.html 
+  id = "seL4-Foundation"
+  time = "16:30 - 16:45"
+  title = "seL4 Foundation: overview, update and vision"
+  presenter = "June Andronick"
+  affiliation = "seL4 Foundation"
+  text = "abstracts/2022/seL4-Foundation-text-only.html"
+  youtube = "https://www.youtube.com/watch?v=ABqQqgf6ez8"
+  slides = "slides/d3_09_seL4_Foundation_overview,_update_and_vision.pdf"
+%}
