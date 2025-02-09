@@ -56,6 +56,7 @@ redirect_from: Foundation/Summit/2024/social-activities.html
 
 {% include bio-items-start.html %}
 <!-- Should board-bio-item.html be renamed to be more generic? -->
+<!-- Also, 'bio' includes link to abstract in summit pages, which is misleading -->
 {% include board-bio-item.html
   name = "Darren Cofer"
   role = "Principal Fellow"
@@ -69,6 +70,7 @@ redirect_from: Foundation/Summit/2024/social-activities.html
   </a>'
 %}
 <!-- Should board-bio-item.html be renamed to be more generic? -->
+<!-- Also, 'bio' includes link to abstract in summit pages, which is misleading -->
 {% include board-bio-item.html
   name = "Ning Qu"
   role = "Senior Director of the SkyOS team"
@@ -129,7 +131,7 @@ redirect_from: Foundation/Summit/2024/social-activities.html
     link = "https://nickspinale.com"
   %}
   {% include person.html
-    name = Adam
+    name = "Adam"
     text = "NSCS"
     img = "images/summit/person-pc.svg"
     link = "https://www.ncsc.gov.uk/"
@@ -201,7 +203,7 @@ redirect_from: Foundation/Summit/2024/social-activities.html
   id = "sponsors"
   heading = "Sponsors"
 %}
-  
+
 {% include sep-header.html text = "Gold" %}
 {%- assign sponsors = site.data.sponsors.summit-2024.gold | sort_natural: "name" -%}
 {%- include sponsor-info.html -%}

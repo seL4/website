@@ -43,6 +43,47 @@
       }
       ]
     },
+  "summit-2023":
+    {
+      "gold": [
+      {
+        "name": "Kry10",
+        "logo": "Kry10.svg",
+        "url": "https://www.kry10.com/"
+      },
+      {
+        "name": "NIO",
+        "logo": "NIO.svg",
+        "url": "https://www.nio.com"
+      },
+      {
+        "name": "TII",
+        "logo": "TII.svg",
+        "url": "https://www.tii.ae/"
+      }
+      ],
+      "silver": [
+      {
+        "name": "Collins Aerospace",
+        "logo": "Collins_Aerospace_Logo.svg",
+        "url": "https://www.collinsaerospace.com"
+      }
+      ],
+      "dinner": [
+      {
+        "name": "NIO",
+        "logo": "NIO.svg",
+        "url": "https://www.nio.com"
+      }
+      ],
+      "reception": [
+      {
+        "name": "NIO",
+        "logo": "NIO.svg",
+        "url": "https://www.nio.com"
+      }
+      ]
+    },
   "summit-2022":
     {
       "bronze": [

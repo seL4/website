@@ -1,479 +1,309 @@
 ---
 # Copyright 2023 seL4 Project a Series of LF Projects, LLC.
 # SPDX-License-Identifier: CC-BY-SA-4.0
-title: Summit
+title: seL4 summit 2023
+layout: card
+sub: '
+<p>
+  Minneapolis, 19 - 21 September 2023
+</p>
+<img class="h-52 w-52 mx-auto" src="../../../images/summit/sel4_summit_2023.svg" alt="seL4 Summit 2023">
+<div class="flex justify-center items-center gap-x-5">
+  <a href="../" class="button-outline px-10">Other years</a>
+</div>'
 redirect_from: /Foundation/Summit/2023/home.pml
 ---
-<h1>
-  seL4 Summit 2023
-</h1>
-<h4>
-Minneapolis, USA
-</h4>
-<h4>
-  19 - 21 September 2023
-</h4>
 
 
-<div class="summit_div">
-  <ul>
-    <!--li><a href="#summit-important-dates">Important Dates</a></li-->
-    <li><a href="#summit-about">About</a></li>
-    <!--li><a href="#summit-registration">Registration</a></li-->
-    <li><a href="#summit-location">Location & Venue</a></li>
-    <li><a href="cfp">Call for Presentations</a></li>
-    <li><a href="#summit-keynote-speakers">Keynote Speakers</a></li>
-    <li><a href="#summit-panellists">Panellists</a></li>
-    <li><a href="#summit-program">Program, Abstracts, Slides and Videos</a></li>
-    <li><a href="#summit-pc">Program Committee</a></li>
-    <li><a href="#summit-sponsors">Sponsors</a></li>
-    <li><a href="#summit-contact">Contact</a></li>
-  </ul>
+
+
+<div class="card-grid-3 grid-cols-1 sm:grid-cols-2 md:grid-cols-3 mb-8 pb-8">
+
+  {% include card.html
+  icon="user"
+  title="Call for Presentations"
+  body="Share your seL4 work, experience and thoughts at the seL4 summit 2023."
+  link="cfp"
+  %}
+
+  {% include card.html
+  icon="building-library"
+  title="Registration, Location & Venue"
+  body="Information about location, venue and travel."
+  link="https://events.linuxfoundation.org/archive/2023/sel4-summit/"
+  %}
+
+  {% include card.html
+  icon="book-open"
+  title="Program"
+  body="Program, abstracts and videos of the seL4 summit 2023."
+  link="program"
+  %}
 </div>
 
-<div class="summit_div">
-  All summits: <a href="../2022">2022</a> <a href="../2023">2023</a> <a href="../2024">2024</a> <a href="../2025">2025</a>
-</div>
 
-<!--div class="summit_div">
-  <h3 id="summit-important-dates">
-    Important Dates
-  </h3>
-  <ul>
-    <li><s>Abstracts due: 24 April 2023</s></li>
-    <li><s>Notification of decisions: 9 June 2023</s> </li>
-    <li><s>Early bird cut-off: 18 August 2023</s></li>
-    <li><strong>Summit: 19-21 September 2023</strong></li>
-  </ul>
-</div-->
+<!-- About the summit section -->
+{% include summit-about.html %}
 
-<div class="summit_div">
-  <h3 id="summit-about">
-    About
-  </h3>
-  <p>
-    The seL4 Summit is the annual international summit on the <a href="../../../About">seL4 microkernel</a>, the world's most highly assured OS kernel, as well as on all seL4-related technology, tools, infrastructure, products, projects, and people.
-  </p>
-  <p>
-    It aims to gather all the seL4 community to learn, share, and connect:
-  </p>
-    <ul>
-      <li>learn about the seL4 technology, its latest progress, use, successes, challenges, plans;</li>
-      <li>share exciting seL4 development, research, experience, application in the real world;</li>
-      <li>connect with other seL4 developers, users, providers, customers, supporters, potential partners and enthusiasts.</li>
-    </ul>
-  <p>
-    The seL4 Summit is organised by the <a href="../../../Foundation">seL4 Foundation</a>, in a location aimed to be on a different continent each year, as far as possible.
-  </p>
-  <p>
-    An open call for presentations invites submissions of short abstracts about cool work on seL4, and a Program Committee made of a wide range of representatives of the seL4 community is in charge of the technical content (reviewing submission, selecting invited speakers, defining the program).
-  </p>
-</div>
 
-<!--div class="summit_div">
-  <h3 id="summit-registration">
-    Registration
-  </h3>
-  <p>
-    Registrations are now open <strong><a href="https://events.linuxfoundation.org/sel4-summit/">here</a></strong>.
-  </p>
-  <p>
-    The early bird cut-off date is 18 August 2023.
-  </p>
-  <p>
-    Tickets include:
-  </p>
-  <ul>
-    <li>Participation in the 3-day conference, including talks, keynotes, seL4 updates & discussions</li>
-    <li>Networking with other seL4 experts and enthusiasts</li>
-    <li>Reception and Dinner</li>
-  </ul>
-</div-->
 
-<div class="summit_div">
-  <h3 id="summit-location">
-    Location & Venue
-  </h3>
-  <p>
-    The seL4 Summit 2023 was held in Minneapolis, USA, 19 - 21 September 2023, at the Elliot Park Hotel. The summit was organised by the <a href="https://events.linuxfoundation.org/archive/2023/sel4-summit/">Linux Foundation</a>.
-  </p>
-</div>
+<!-- Keynotes section -->
+{% include section-start.html
+  id = "keynotes"
+  heading = "Keynotes"
+%}
 
-<div class="summit_div">
-  <h3 id="summit-keynote-speakers">
-    Keynote Speakers
-  </h3>
-</div>
-  <div class="keynotes_grid">
-    <div class="speaker">
-      <div class="speaker_pic">
-        <a href="https://www.ncsc.gov.uk/">
-          <img src="../../Membership/LOGOS/NCSC.png" style="width: 200px" alt="NCSC logo" />
-        </a>
-      </div>
-      <div class="speaker_title" style="text-align:center">
-        <strong>Gage</strong>
-        <br>
-        NCSC
-      </div>
-      <a class="summit-abstract-link" href="abstracts2023#a-scoping-assurance">
-        <div class="keynote_talk" style="text-align:center">
-          Scoping assurance activities with seL4
-        </div>
-      </a>
-    </div>
-  <div class="speaker">
-      <div class="speaker_pic">
-        <a href="https://www.google.com/">
-          <img src="../../../images/summit/sam-security-photo.jpg" style="width: 150px" alt="Sam Leffler" />
-        </a>
-      </div>
-      <div class="speaker_title" style="text-align:center">
-        <strong>Sam Leffler</strong>
-        <br>
-        Google
-      </div>
-      <a class="summit-abstract-link" href="abstracts2023#a-cantripos">
-        <div class="keynote_talk" style="text-align:center">
-          CantripOS: An OS for Ambient ML Applications
-        </div>
-      </a>
-    </div>
-</div>
 
-<div class="summit_div">
-  <h3 id="summit-panellists">
-      Panellists
-  </h3>
-  <p>
+
+{% include bio-items-start.html %}
+
+<!-- Should board-bio-item.html be renamed to be more generic? -->
+<!-- Also, 'bio' includes link to abstract in summit pages, which is misleading -->
+{% include board-bio-item.html
+  name = "Gage B"
+  role = "Assurance Lead"
+  img = "../../Membership/LOGOS/ncsc-square.svg"
+  affiliation = "NCSC"
+  affiliation_link = "https://www.ncsc.gov.uk/"
+  bio = '
+  <a href="abstracts2023#a-scoping-assurance">
+    <p class="text-lg leading-8 tracking-tight text-gray-900 mt-10">Scoping assurance activities with seL</p>
+  </a>'
+%}
+{% include board-bio-item.html
+  name = "Sam Leffler"
+  role = "Member of Technical Staff"
+  img = "../../../images/summit/sam-security-photo.jpg"
+  affiliation = "Google"
+  affiliation_link = "https://www.google.com/"
+  bio = '
+  <a href="abstracts2023#a-cantripos">
+    <p class="text-lg leading-8 tracking-tight text-gray-900 mt-10">CantripOS: An OS for Ambient ML Applications</p>
+  </a>'
+%}
+
+{% include bio-items-end.html %}
+{% include section-end.html %}
+
+
+<!-- Panel section -->
+{% include section-start.html
+  id = "panel"
+  heading = "Panel: OS on seL4: so many options!"
+  intro = '
     <p>
-    We were very fortunate to welcome five industry leaders to participate at the <a href="./">seL4 Summit 2023</a>, in a session <a href="abstracts2023.html#a-panel">OS on seL4: so many options!</a>. Gapfruit, Kry10, Magnetite (MIT), and UNSW presented their views on the priorities and vision for their OS on seL4. The panel was moderated by Todd Carpenter from Galois.
-  </p>
+      We were very fortunate to welcome five industry leaders to participate at the seL4 Summit 2023, in a session <a href="abstracts2023.html#a-panel">OS on seL4: so many options!</a> Gapfruit, Kry10, Magnetite (MIT), and UNSW presented their views on the priorities and vision for their OS on seL4. The panel was moderated by Todd Carpenter from Galois.
+    </p>
+  '
+%}
 
-  <div class="speakers_grid">
-    <div class="speaker">
-      <div class="speaker_pic">
-        <img src="../../../images/summit/sid.jpg" alt="Sid Hussmann" height="100"/>
-      </div>
-      <div class="speaker_title" style="text-align:center">
-        Sid Hussmann
-        <br>
-        <a href="https://www.gapfruit.com/">Gapfruit</a>
-      </div>
-    </div>
-    <div class="speaker">
-      <div class="speaker_pic">
-        <img src="../../../images/tsc/kent.jpg" alt="Kent McLeod" height="100"/>
-      </div>
-      <div class="speaker_title" style="text-align:center">
-        Kent McLeod
-        <br>
-        <a href="https://www.kry10.com/">Kry10</a>
-      </div>
-    </div>
-    <div class="speaker">
-      <div class="speaker_pic">
-        <img src="../../../images/summit/juliana.jpeg" alt="Juliana Furgala" height="100"/>
-      </div>
-      <div class="speaker_title" style="text-align:center">
-        Juliana Furgala
-        <br>
-        <a href="https://www.ll.mit.edu/r-d/cyber-security-and-information-sciences/secure-resilient-systems-and-technology">MIT Lincoln Laboratory</a>
-      </div>
-    </div>
-    <div class="speaker">
-      <div class="speaker_pic">
-        <img src="../../Board/TS-Gernot-s.jpg" alt="Gernot Heiser" height="100"/>
-      </div>
-      <div class="speaker_title" style="text-align:center">
-        Gernot Heiser
-        <br>
-        <a href="https://trustworthy.systems/about/">Trustworthy Systems UNSW</a>
-      </div>
-    </div>
-    <div class="speaker">
-      <div class="speaker_pic">
-        <img src="../../../images/summit/todd.jpg" alt="Todd Carpenter" height="100"/>
-      </div>
-      <div class="speaker_title" style="text-align:center">
-        Todd Carpenter, Moderator <br>
-        <a href="https://galois.com/">Galois</a>
-      </div>
-    </div>
+{% include person-grid-start.html %}
+{% include person.html
+  name = "Sid Hussmann"
+  text = "<a href='https://www.gapfruit.com/'>Gapfruit</a>"
+  img = "../../../images/summit/sid.jpg"
+  link = "abstracts2022#a-panel-gapfruit"
+%}
+
+{% include person.html
+  name = "Kent McLeod"
+  text = "<a href='https://www.kry10.com/'>Kry10</a>"
+  img = "../../../images/tsc/kent-square.jpg"
+  link = "abstracts2022#a-panel-kry10"
+%}
+
+{% include person.html
+  name = "Juliana Furgala"
+  text = "<a href='https://www.ll.mit.edu/r-d/cyber-security-and-information-sciences/secure-resilient-systems-and-technology'>MIT Lincoln Laboratory</a>"
+  img = "../../../images/summit/juliana-square.jpg"
+  link = "abstracts2022#a-panel-mit"
+%}
+
+{% include person.html
+  name = "Gernot Heiser"
+  text = "<a href='https://trustworthy.systems/about/'>Trustworthy Systems UNSW</a>"
+  img = "Foundation/Board/TS-Gernot-square.jpg"
+  link = "abstracts2022#a-panel-unsw"
+%}
+
+{% include person.html
+  name = "Todd Carpenter<br>(Moderator)"
+  text = "<a href='https://galois.com/'>Galois</a>"
+  img = "../../../images/summit/todd.jpg"
+  link = "abstracts2022#a-panel-galois"
+%}
+{% include person-grid-end.html %}
+
+{% include section-end.html %}
+
+
+
+<!-- PC section -->
+{% include section-start.html
+  id = "pc"
+  heading = "Program Committee"
+  intro = '
+      <p>
+        The Program Committee is made up of members from various parts of the seL4 ecosystem: users, contributors,
+        committers, experts, advocates, researchers, and engineers.
+      </p>'
+%}
+
+
+{% include person-grid-start.html %}
+
+{% include person.html
+  name = "Darren Cofer<br>(co-chair)"
+  text = "Collins Aerospace"
+  img = "../../../images/summit/darren-square.jpg"
+  link = "http://loonwerks.com/people/darren-cofer.html"
+%}
+{% include person.html
+  name = "Ihor Kuz<br>(co-chair)"
+  text = "Kry10"
+  img = "images/tsc/ihor-square.jpg"
+  link = "http://www.ikuz.org"
+%}
+
+{% include person.html
+  name = "Alison Felizzi"
+  text = "Kry10"
+  img = "images/summit/alison-square.jpg"
+  link = "https://www.linkedin.com/in/alison-felizzi-991244189"
+%}
+
+{% include person.html
+  name = "Axel Heider"
+  text = "HENSOLDT Cyber"
+  img = "../../../images/summit/axel-square.jpg"
+  link = "https://www.linkedin.com/in/axelheider"
+%}
+
+{% include person.html
+  name = "Gernot Heiser"
+  text = "UNSW"
+  img = "Foundation/Board/TS-Gernot-square.jpg"
+  link = "https://trustworthy.systems/people/?cn=Gernot+Heiser"
+%}
+
+{% include person.html
+  name = "June Andronick"
+  text = "Proofcraft"
+  img = "Foundation/Board/TS-June-square.jpg"
+  link = "https://proofcraft.systems/#june"
+%}
+
+{% include person.html
+  name = "Lucy Parker"
+  img = "images/summit/lucy-square.jpg"
+  link = "https://www.linkedin.com/in/lucy-parker-13a484253/"
+%}
+
+{% include person.html
+  name = "Perry Alexander"
+  text = "The University of Kansas"
+  img = "../../../images/summit/perry-square.jpg"
+  link = "https://perry.alexander.name"
+%}
+
+{% include person.html
+  name = "Martin"
+  text = "NSCS"
+  img = "images/summit/person-pc.svg"
+  link = "https://www.ncsc.gov.uk/"
+%}
+
+{% include person.html
+  name = "Nick Spinale"
+  text = "Colias Group"
+  img = "images/summit/nick.jpg"
+  link = "https://nickspinale.com"
+%}
+
+{% include person.html
+  name = "Robbie VanVossen"
+  text = "DornerWorks"
+  img = "images/summit/robbie.png"
+  link = "https://www.linkedin.com/in/robbie-vanvossen-gr/"
+%}
+
+{% include person.html
+  name = "Todd Carpenter"
+  text = "Galois"
+  img = "../../../images/summit/todd.jpg"
+  link = "https://galois.com/team/todd-carpenter/"
+%}
+
+{% include person-grid-end.html %}
+
+{% include section-end.html %}
+
+
+
+<!-- Sponsors section -->
+{% include section-start.html
+  id = "sponsors"
+  heading = "Sponsors"
+%}
+
+
+{% include sep-header.html text = "Gold" %}
+{%- assign sponsors = site.data.sponsors.summit-2023.gold | sort_natural: "name" -%}
+{%- include sponsor-info.html -%}
+
+{% include sep-header.html text = "Silver" %}
+{%- assign sponsors = site.data.sponsors.summit-2023.silver | sort_natural: "name" -%}
+{%- include sponsor-info.html -%}
+
+{% include sep-header.html text = "Dinner" %}
+{%- assign sponsors = site.data.sponsors.summit-2023.dinner | sort_natural: "name" -%}
+{%- include sponsor-info.html -%}
+
+{% include sep-header.html text = "Reception" %}
+{%- assign sponsors = site.data.sponsors.summit-2023.reception | sort_natural: "name" -%}
+{%- include sponsor-info.html -%}
+
+
+{% include centered-up-button.html margins="py-12 sm:py-24" %}
+
+
+
+<!-- Gallery section -->
+{% include section-start.html
+  id = "gallery"
+  heading = "Gallery"
+%}
+
+<div class="mx-auto max-w-3xl grid grid-cols-4 gap-4 place-items-center">
+  <div class="col-span-3"><img src="../../../images/tries-shutterstock/temp-pic1.jpg" alt=""
+      class="w-full rounded bg-gray-900/5 object-cover shadow-lg">
+  </div>
+  <div class="row-span-2"><img src="../../../images/tries-shutterstock/temp-pic2.jpg" alt=""
+      class="w-full rounded bg-gray-900/5 object-cover shadow-lg">
+  </div>
+  <div class="..."><img src="../../../images/tries-shutterstock/temp-pic4.jpg" alt=""
+      class="w-full rounded bg-gray-900/5 object-cover shadow-lg">
+  </div>
+  <div class="..."><img src="../../../images/tries-shutterstock/temp-pic3.jpg" alt=""
+      class="w-full rounded bg-gray-900/5 object-cover shadow-lg">
+  </div>
+  <div class="..."><img src="../../../images/tries-shutterstock/temp-pic5.jpeg" alt=""
+      class="w-full rounded bg-gray-900/5 object-cover shadow-lg">
   </div>
 </div>
-
-<div class="summit_div">
-  <h3 id="summit-program">
-    Program, Abstracts, Slides and Videos
-  </h3>
-  <p>
-    Videos of the seL4 summit 2023 are available on the <a href="https://www.youtube.com/@seL4" target="_blank">seL4 YouTube channel</a>! Links and slides can be found on the summit <a href="program">Program</a> and <a href="abstracts2023">Abstracts</a> pages. Thanks to all the speakers for making the seL4 summit 2023 a great success!
-  </p>
-</div>
-
-<div class="summit_div">
-  <h3 id="summit-pc">
-    Program committee
-  </h3>
-  <p>
-<p>
-    Our awesome team comes from various parts of the seL4 ecosystem: users, contributors, committers, experts, advocates, researchers, and engineers.
-  </p>
-</div>
-<div class="people_grid">
-  <div class="person">
-    <div class="person_pic">
-      <a href="http://loonwerks.com/people/darren-cofer.html"><img src="../../../images/summit/darren.jpg" alt="Darren Cofer" width="80" /></a>
-    </div>
-    <div class="person_title">
-      <strong><a href="http://loonwerks.com/people/darren-cofer.html">Darren Cofer
-      <br>(co-chair)</a></strong>
-    </div>
-    <div class="person_affiliation">
-      Raytheon
-    </div>
-  </div>
-
-  <div class="person">
-    <div class="person_pic">
-      <a href="https://www.ikuz.org"><img src="../../../images/tsc/ihor.jpg" alt="Ihor Kuz" width="80" /></a>
-    </div>
-    <div class="person_title">
-      <strong><a href="https://www.ikuz.org">Ihor Kuz
-       <br>
-       (co-chair)</a></strong>
-    </div>
-    <div class="person_affiliation">
-      Kry10
-    </div>
-  </div>
-
-  <div class="person">
-    <div class="person_pic">
-      <a href="https://perry.alexander.name"><img src="../../../images/summit/perry.jpg" alt="Perry Alexander" width="80"/></a>
-    </div>
-    <div class="person_title">
-      <strong><a href="https://perry.alexander.name">Perry Alexander</a></strong>
-    </div>
-    <div class="person_affiliation">
-      U of Kansas
-    </div>
-  </div>
-
-  <div class="person">
-    <div class="person_pic">
-      <a href="https://proofcraft.systems/#june"><img src="../../Board/TS-June-s.jpg" alt="June Andronick" width="80" /></a>
-    </div>
-    <div class="person_title">
-      <strong><a href="https://proofcraft.systems/#june">June Andronick</a></strong>
-    </div>
-    <div class="person_affiliation">
-      Proofcraft
-    </div>
-  </div>
-
-  <div class="person">
-    <div class="person_pic">
-      <a href="https://galois.com/team/todd-carpenter/"><img src="../../../images/summit/todd.jpg" alt="Todd Carpenter" width="80"/></a>
-    </div>
-    <div class="person_title">
-      <strong><a href="https://galois.com/team/todd-carpenter/">Todd Carpenter</a></strong>
-    </div>
-    <div class="person_affiliation">
-      Galois Inc
-    </div>
-  </div>
-
-  <div class="person_no_link">
-    <div class="person_pic">
-      <img src="../../../images/summit/alison.jpg" alt="Alison Felizzi" width="80"/>
-    </div>
-    <div class="person_title">
-      <strong>Alison Felizzi</strong>
-    </div>
-    <div class="person_affiliation">
-      Kry10
-    </div>
-  </div>
-
-  <div class="person">
-    <div class="person_pic">
-      <a href="https://www.linkedin.com/in/axelheider"><img src="../../../images/summit/axel.png" alt="Axel Heider" width="80" /></a>
-    </div>
-    <div class="person_title">
-      <strong><a href="https://www.linkedin.com/in/axelheider">Axel Heider</a></strong>
-    </div>
-    <div class="person_affiliation">
-      Hensoldt Cyber
-    </div>
-  </div>
-
-  <div class="person">
-    <div class="person_pic">
-      <a href="https://trustworthy.systems/people/?cn=Gernot+Heiser"><img src="../../Board/TS-Gernot-s.jpg" alt="Gernot Heiser" width="80"/></a>
-    </div>
-    <div class="person_title">
-      <strong><a href="https://trustworthy.systems/people/?cn=Gernot+Heiser">Gernot Heiser</a></strong>
-    </div>
-    <div class="person_affiliation">
-      UNSW
-    </div>
-  </div>
-
-  <div class="person_no_link">
-    <div class="person_pic">
-      <img src="../../../images/summit/lucy.jpg" alt="Lucy Parker" width="80"/>
-    </div>
-    <div class="person_title">
-      <strong>Lucy Parker</strong>
-    </div>
-    <div class="person_affiliation">
-      UNSW
-    </div>
-  </div>
-
-  <div class="person">
-    <div class="person_pic">
-      <a href="https://nickspinale.com"><img src="../../../images/summit/nick.jpg" alt="Nick Spinale" width="80"/></a>
-    </div>
-    <div class="person_title">
-      <strong><a href="https://nickspinale.com">Nick Spinale</a></strong>
-    </div>
-    <div class="person_affiliation">
-      Colias Group
-    </div>
-  </div>
-
-  <div class="person">
-    <div class="person_pic">
-      <a href="https://www.linkedin.com/in/robbie-vanvossen-gr/"><img src="../../../images/summit/robbie.png" alt="Robbie VanVossen" width="80"/></a>
-    </div>
-    <div class="person_title">
-      <strong><a href="https://www.linkedin.com/in/robbie-vanvossen-gr/">Robbie VanVossen</a></strong>
-    </div>
-    <div class="person_affiliation">
-      Dornerworks
-    </div>
-  </div>
-
-
-  <div class="person">
-    <div class="person_pic">
-      <a href="https://www.ncsc.gov.uk/"><img src="../../../images/summit/person-pc.svg" alt="NCSC" width="80"/></a>
-    </div>
-    <div class="person_title">
-      <strong><a href="https://www.ncsc.gov.uk/">Martin (NCSC)</a></strong>
-    </div>
-    <div class="person_affiliation">
-      NCSC
-    </div>
-  </div>
-
-</div>
+{% include section-end.html %}
 
 
 
-<div class="summit_div">
-  <h3 id="summit-sponsors">
-    Sponsors
-  </h3>
-  <p>
-    We are grateful to the following sponsors for their financial support of the seL4 summit 2023.
-  </p>
-</div>
-<div class="sponsors">
-  <div class="sponsor">
-    <div class="sponsor-pic">
-      <a href="https://www.tii.ae/">
-        <img src="../../Membership/LOGOS/TII.jpg" style="width: 150px"
-            alt="TII logo">
-      </a>
-    </div>
-    <div class="sponsor-name">
-      TII
-    </div>
-    <div class="sponsor-info"><div class="highlight">Gold sponsor</div>
-    </div>
-  </div>
-  <div class="sponsor">
-    <div class="sponsor-pic">
-      <a href="https://www.kry10.com/">
-        <img src="../../Membership/LOGOS/Kry10.svg" style="width: 150px"
-            alt="Kry10 logo">
-      </a>
-    </div>
-    <div class="sponsor-name">
-      Kry10
-    </div>
-    <div class="sponsor-info"><div class="highlight">Gold sponsor</div>
-    </div>
-  </div>
-   <div class="sponsor">
-    <div class="sponsor-pic">
-      <a href="https://www.nio.com">
-        <img src="../../Membership/LOGOS/NIO.svg" style="width: 150px"
-            alt="NIO logo">
-      </a>
-    </div>
-    <div class="sponsor-name">
-      NIO
-    </div>
-    <div class="sponsor-info"><div class="highlight">Gold sponsor</div>
-    </div>
-  </div>
-</div>
-<div class="sponsors-1" style="padding-top:60px">
-  <div class="sponsor">
-    <div class="sponsor-pic">
-      <a href="https://www.collinsaerospace.com">
-        <img src="../../Membership/LOGOS/Collins_Aerospace_Logo.svg" style="width: 150px"
-            alt="Collins Aerospace logo">
-      </a>
-    </div>
-    <div class="sponsor-name">
-      Collins Aerospace
-    </div>
-    <div class="sponsor-info">Silver sponsor
-    </div>
-  </div>
-</div>
-<div class="sponsors-1" style="padding-top:60px">
-  <div class="sponsor">
-    <div class="sponsor-pic">
-      <a href="https://www.nio.com">
-        <img src="../../Membership/LOGOS/NIO.svg" style="width: 150px"
-            alt="NIO logo">
-      </a>
-    </div>
-     <div class="sponsor-name">
-      NIO
-    </div>
-    <div class="sponsor-info">Reception
-    </div>
-  </div>
-</div>
-<div class="sponsors-1" style="padding-top:60px">
-  <div class="sponsor">
-    <div class="sponsor-pic">
-      <a href="https://www.nio.com">
-        <img src="../../Membership/LOGOS/NIO.svg" style="width: 150px"
-            alt="NIO logo">
-      </a>
-    </div>
-     <div class="sponsor-name">
-      NIO
-    </div>
-    <div class="sponsor-info">Dinner
-    </div>
-  </div>
-</div>
+<!-- Contact section -->
+{% include section-start.html
+  id = "contact"
+  heading = "Contact"
+  intro = '
+    <p >
+      For any questions regarding the summit, please contact <a title="summit@sel4.systems"
+      href="mailto:summit@sel4.systems">summit@sel4.systems</a>.
+    </p>'
+%}
 
-<div class="summit_div">
-  <h3 id="summit-contact">
-    Contact
-  </h3>
-  <p>
-    For any questions regarding the summit, please contact <a title="summit@sel4.systems" href="mailto:summit@sel4.systems">summit@sel4.systems</a>.
-  </p>
-</div>
+{% include section-end.html %}
