@@ -1,34 +1,50 @@
 ---
 # Copyright 2023 seL4 Project a Series of LF Projects, LLC.
 # SPDX-License-Identifier: CC-BY-SA-4.0
-title: submit
+title: Submission Portal
+pre: "Call for Presentations"
+pre_link: "./cfp"
+sub: '
+<p>
+  Submission portal for the seL4 Summit 2023
+</p>'
+layout: card
 ---
-<h1>
-  seL4 Summit 2023
-</h1>
-<h4>
-Minneapolis, USA
-</h4>
-<h4>
-19-21 September 2023
-</h4>
+
+
+<!-- Important dates section -->
+{% include section-start.html
+  id = "dates"
+  heading = "Important Dates"
+  intro = '
+    <div class="theprose">
+      <ul>
+        <li><strong>Abstracts due: <s>10 April 2023</s> 24 April 2023</strong></li>
+        <li>Notification of decisions: <s>2 June 2023</s> 9 June 2023 </li>
+        <li>Summit: 19 - 21 September 2023</li>
+      </ul>
+    </div>
+    '
+%}
+{% include section-end.html %}
+
+
+<!-- Submission form section -->
+{% include section-start.html
+  id = "submit"
+  heading = "Submission form"
+  intro = '
+  <p>
+    The submissions portal is now closed. Further information on the <a href="cfp">Call for Presentations</a>.
+  </p>
+  <p>
+    Please contact <a title="summit@sel4.systems" href="mailto:summit@sel4.systems">summit@sel4.systems</a> if you
+    have any questions.
+    '
+%}
+{% include section-end.html %}
 
 <div>
-  <h3>
-   Important Dates:
-  </h3>
-  <ul>
-    <li><strong>Abstracts due: <s>10 April 2023</s> 24 April 2023</strong></li>
-    <li>Notification of decisions: <s>2 June 2023</s> 9 June 2023 </li>
-    <li>Summit: 19-21 September 2023 (date TBD)</li>
-  </ul>
-  <p>
-    Further information on the <a href="cfp">Call for Presentations</a>.
-  </p>
-  <p>
-    Summit submissions are now closed. Please contact <a title="summit@sel4.systems" href="mailto:summit@sel4.systems">summit@sel4.systems</a> if you have any questions.
-  </p>
+  <script type="text/javascript" src="https://form.jotform.com/jsform/230467570792059"></script>
 </div>
-
-
-<!--script type="text/javascript" src="https://form.jotform.com/jsform/230467570792059"></script-->
+{% include centered-up-button.html margins="py-12 sm:py-24" %}
