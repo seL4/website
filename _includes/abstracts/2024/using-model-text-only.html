@@ -1,9 +1,9 @@
-<p><p>
+<p>
     The seL4 Device Driver Framework (sDDF) provides a lightweight library of device drivers and supporting virtualising components which allow clients to securely access and share devices. Each sDDF component is designed to handle one primary concern, and as a result, components have minimal knowledge of the system as a whole and instead communicate only with their direct neighbours. Components are event driven and and require a signal to be scheduled to process incoming data. A signalling protocol is the decision process a component goes through when deciding whether to signal its neighbour.
 </p>
-<p><p>
+<p>
     If a component signals its neighbour unconditionally when data is available, the system progresses without deadlock, however this often results in a large number of unnecessary signals - meaning the receiver was already awake, or had already been signalled but was yet to be scheduled. Designing a signalling protocol that avoids these unnecessary signals, but does not skip any necessary ones can be challenging, since the experimental absence of deadlocks does not necessarily imply deadlock freedom, and if a deadlock is encountered, it can be hard to replicate and understand.
 </p>
-<p><p>
+<p>
     Using formal methods, and in particular model checking, vastly improves the development process of signalling protocols, since the tool can verify for deadlock freedom whilst also producing detailed traces (interleavings of executions) when a deadlock is found. This talk details how the model checker SPIN was used to develop and analyse sDDF signalling protocols, ultimately resulting in a verified protocol that reduces the number of unnecessary signals by 47% when compared to unconditionally signalling.
 </p>
