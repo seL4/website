@@ -1,9 +1,9 @@
-<p><p>
+<p>
     Lions OS is a new, seL4-based, open-source operating systems aimed at the embedded/IoT/cyberphysical space. Based on the Microkit, Lions OS features a static system architecture, i.e. all (potential) components and their (maximum) connectivity are known at system build time. Lions OS is characterised by a highly modular design, driven by the principles of strong separation of concerns and strict adherence to the KISS principle – keep it simple, stupid! The “radical simplicity” design, when done right, enables excellent performance despite the many context switches resulting from the fine-grained modularity. Critically, this modularity, coupled with keeping each module as simple as possible, should enable formal verification of Lions OS.
 </p>
-<p><p>
+<p>
     Taking the KISS principle to the extreme, Lions OS radically departs from the idea of universal policies, adaptable to many different use cases, that characterise most existing OSes. In contrast, Lions OS keeps all policies minimal and specific to the particular use case; it achieves use-case diversity by isolating each policy in an individual module that can be easily rewritten/replaced when a different policy is required.
 </p>
-<p><p>
+<p>
     In the talk I will explain the principles of Lions OS and its design, looking at concrete examples. I will present performance data that show that the approach can work and provide an overview of our current work on verification. This will be complemented by Ivan Velickovic’s talk covering Lions OS from a developer’s point of view, and Rob Sison’s and Courtney Darville’s talks on verifying Lions OS.
 </p>

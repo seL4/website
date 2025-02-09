@@ -1,9 +1,9 @@
-<p><p>
+<p>
     Neutrality(1) is building the Atoll hypervisor as a high-assurance platform for the secure multitenant virtualisation of workloads which are likely targets of well-resourced attackers. Atoll will use seL4 configured as a multikernel to provide verified isolation between multi-vCPU VMs on datacenter-class hardware containing hundreds of CPU cores, terabytes of main memory, and 100GbE-class self-virtualising (SR-IOV) NICs. This project places seL4 on a wholly new playing field, with orders-of-magnitude increases in hardware performance and the associated scaling challenges, while retaining the full verified assurance of the seL4/ARM stack. In particular, Atoll will provide fully-verified Integrity and Confidentiality between customer VMs, while efficiently handling commercial-scale workloads.
 </p>
-<p><p>
+<p>
     In this talk, we will give an overview of Atoll’s design, and explain how it addresses the challenges unique to this application domain. In particular we will motivate the choice of the multikernel as the ultimate design rather than as a stepping stone on the way to a verified SMP kernel, the benefits and challenges that arise from this choice, and other details of likely interest to others building multi-processor systems on seL4. In particular we will discuss the implications for verification, including on our own verification plan, and where we expect to coordinate with and contribute to the overall seL4 proof roadmap.
 </p>
-<p><p>
+<p>
     (1) https://neutrality.ch/
 </p>

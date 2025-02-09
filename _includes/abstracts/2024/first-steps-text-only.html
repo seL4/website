@@ -1,12 +1,12 @@
-<p><p>
+<p>
     The Kry10 operating system supports some dynamic behaviours, including incremental updates to running systems. To ensure that the OS always enforces the access controls specified by device owners, we must verify the privileged OS components that manage system resources across updates. Verification will soon be further complicated by the addition of support for multikernel systems, because the OS will need to coordinate resource management across cores.
 </p>
-<p><p>
+<p>
     Concurrency is therefore fundamental to our approach. There is concurrency between the resource managers on different cores, and also between each resource manager and the apps and kernels in the system. We hope to use the structure of the system to avoid fine-grained reasoning as much as possible. But we want a framework which will allow us to prove that such structural reasoning is sound, rather than forcing us to assume it.
 </p>
-<p><p>
+<p>
     Though our plans might be grand, our first steps must be small. In particular, we need experience with techniques and frameworks for reasoning about concurrency.
 </p>
-<p><p>
+<p>
     In this talk, we present our initial experiments with concurent user-space verification. We use the Iris separation logic framework to build an abstract model of a simple system in which components interact using shared memory and notifications, and we prove a simple correctness property. We explain the limitations of this experiment, and how we plan to address them in our next steps.
 </p>
