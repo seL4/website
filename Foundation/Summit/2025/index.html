@@ -1,299 +1,153 @@
 ---
-title: Summit
+# Copyright 2020 seL4 Project a Series of LF Projects, LLC.
+# SPDX-License-Identifier: CC-BY-SA-4.0
+title: seL4 summit 2025
+layout: card
+sub: '
+<p>
+  Prague, 3 - 5 September 2025
+</p>
+<img class="h-52 w-52 mx-auto" src="../../../images/summit/sel4_summit_2025.svg" alt="seL4 Summit 2025">
+<div class="flex justify-center items-center gap-x-5">
+  <a href="../" class="button-outline px-10">Other years</a>
+</div>'
 ---
-<!--
-    Copyright 2025 seL4 Project a Series of LF Projects, LLC.
-    SPDX-License-Identifier: CC-BY-SA-4.0
--->
-<h1>
-  seL4 Summit 2025
-</h1>
-<h4>
-  Prague, Czech Republic
-</h4>
-<h4>
-  3 - 5 September 2025
-</h4>
 
-<div class="summit_div">
-  <ul>
-    <li><a href="#summit-important-dates">Important Dates</a></li>
-    <li><a href="#summit-about">About</a></li>
-    <li><a href="#summit-registration">Registration</a></li>
-    <li><a href="#summit-location">Location & Venue</a></li>
-    <li><a href="#summit-social">Social Activities</a></li>
-    <li><a href="#summit-cfp">Submissions & Call for Presentations</a></li>
-    <li><a href="#summit-pc">Program Committee</a></li>
-    <li><a href="#summit-contact">Contact</a></li>
-  </ul>
-</div>
 
-<div class="summit_div">
-  All summits: <a href="../2022">2022</a> <a href="../2023">2023</a> <a href="../2024">2024</a> <a href="../2025">2025</a>
-</div>
 
-<div>
-  <h3 id="summit-important-dates">
-   Important Dates:
-  </h3>
-  <ul>
-    <li><strong>Abstracts due: 21 April 2025</strong></li>
-   <li>Notification of decisions: 6 June 2025 </li>
-    <li>Summit: 3 - 5 September 2025 (with informal <a href="#summit-social">social activities</a> on 2 September)</li>
-  </ul>
-</div>
+<div class="card-grid-3 grid-cols-1 sm:grid-cols-2 md:grid-cols-3 mb-8 pb-8">
 
-<div class="summit_div">
-  <h3 id="summit-about">
-    About
-  </h3>
-  <p>
-    The seL4 Summit is the annual international summit on the <a href="../../../About">seL4 microkernel</a>, the world's most highly assured OS kernel, as well as on all seL4-related technology, tools, infrastructure, products, projects, and people.
-  </p>
-  <p>
-    It gathers the seL4 community to learn, share, and connect:
-  </p>
-    <ul>
-      <li>learn about the seL4 technology, its latest progress, use, successes, challenges, plans;</li>
-      <li>share exciting seL4 development, research, experience, application in the real world;</li>
-      <li>connect with other seL4 developers, users, providers, customers, supporters, potential partners and enthusiasts.</li>
-    </ul>
-  <p>
-    The seL4 Summit is organised by the <a href="../../../Foundation">seL4 Foundation</a>, aiming for a location on a different continent each year, to the extent possible.
-  </p>
-  <p>
-    An open call for presentations invites submissions of short abstracts about cool work on seL4, and a Program Committee made of a wide range of representatives of the seL4 community is in charge of the technical content (reviewing submission, selecting invited speakers, defining the program).
-  </p>
-</div>
+  {% include card.html
+  icon="user"
+  title="Call for Presentations"
+  body="Share your seL4 work, experience and thoughts at the seL4 summit 2025."
+  link="cfp"
+  %}
 
-<div class="summit_div">
-  <h3 id="summit-registration">
-    Registration
-  </h3>
-  <p>
-    The seL4 summit will cover the complete seL4 ecosystem, consisting of the verified microkernel, as well as all seL4-related technology, tools, infrastructure, products, projects, and people.
-  </p>
-  <p>
-    Tickets include:
-  </p>
-    <ul>
-      <li>Participation in the 3-day conference, including talks, keynotes, seL4 updates & discussions</li>
-      <li>Networking with other seL4 experts and enthusiasts</li>
-      <li>Reception and dinner</li>
-    </ul>
-  <p>
-    <strong><a href="https://events.linuxfoundation.org/sel4-summit/register/">Register here</a></strong>
-  </p>
-  <p>
-     The early bird cut-off date is 3 August 2025.
-  </p>
-</div>
+  {% include card.html
+  icon="building-library"
+  title="Registration, Location & Venue"
+  body="Information about location, venue and travel."
+  link="https://events.linuxfoundation.org/sel4-summit/"
+  %}
 
-<div class="summit_div">
-  <h3 id="summit-location">
-    Location & Venue
-  </h3>
-  <p>
-    The seL4 Summit 2025 will be held in Prague, Czech Republic 3 - 5 September 2025 at the Grandior Hotel Prague.
-  </p>
-  <p>
-    Further information about location, venue and travel is available on the <a href="https://events.linuxfoundation.org/sel4-summit/attend/venue-travel/">Linux Foundation summit information site</a>.
-  </p>
-</div>
-
-<div class="summit_div">
-  <h3 id="summit-social">Social activities</h3>
-  <p>
-    A number of informal social activities will be organised by the seL4 community for Tuesday 2 Sep 2025. Stay tuned for more info!
-  </p>
+  {% include card.html
+  icon="book-open"
+  title="Program"
+  body="Preliminary program of the seL4 summit 2025."
+  link="program"
+  %}
 </div>
 
 
-<div class="summit_div">
-  <h3 id="summit-cfp">
-    Submissions & Call for Presentations
-  </h3>
-  <p>
-    Share your seL4 work, experience and thoughts at the seL4 summit 2025 in Prague by submitting a presentation proposal by 21 April 2025. Find all the submission information in the <a href="cfp">Call for Presentations</a>.
-  </p>
-</div>
+<!-- About the summit section -->
+{% include summit-about.html %}
 
-<div class="summit_div">
-  <h3 id="summit-pc">
-    Program Committee
-  </h3>
 
-  <p>
-    Our awesome team comes from various parts of the seL4 ecosystem: users, contributors, committers, experts, advocates, researchers, and engineers.
-  </p>
 
-  <div class="people_grid">
+ <!-- PC section -->
+ {% include section-start.html
+  id = "pc"
+  heading = "Program Committee"
+  intro = '
+      <p>
+        The Program Committee is made up of members from various parts of the seL4 ecosystem: users, contributors,
+        committers, experts, advocates, researchers, and engineers.
+      </p>'
+%}
 
-    <div class="person">
-      <div class="person_pic">
-        <a href="https://nickspinale.com"><img src="../../../images/summit/nick-spinale.jpg" alt="Nick Spinale" width="80"/></a>
-      </div>
-      <div class="person_title">
-        <strong><a href="https://nickspinale.com">Nick Spinale
-        <br>
-        (co-chair)</a></strong>
-      </div>
-      <div class="person_affiliation">
-        Colias Group
-      </div>
-    </div>
+{% include person-grid-start.html %}
 
-    <div class="person">
-      <div class="person_pic">
-        <a href="https://www.linkedin.com/in/robbie-vanvossen-gr/"><img src="../../../images/summit/robbie.png" alt="Robbie VanVossen" width="80"/></a>
-      </div>
-      <div class="person_title">
-        <strong><a href="https://www.linkedin.com/in/robbie-vanvossen-gr/">Robbie VanVossen
-        <br>
-        (co-chair)
-        </a></strong>
-      </div>
-      <div class="person_affiliation">
-        DornerWorks
-      </div>
-    </div>
+{% include person.html
+  name = "Nick Spinale<br>(co-chair)"
+  text = "Colias Group"
+  img = "images/summit/nick.jpg"
+  link = "https://nickspinale.com"
+%}
 
-    <div class="person">
-      <div class="person_pic">
-        <a href="https://www.ncsc.gov.uk/"><img src="../../../images/summit/person-pc.svg" alt="NCSC" width="80"/></a>
-      </div>
-      <div class="person_title">
-        <strong><a href="https://www.ncsc.gov.uk/">Adam (NCSC)</a></strong>
-      </div>
-      <div class="person_affiliation">
-        NCSC
-      </div>
-    </div>
+{% include person.html
+  name = "Robbie VanVossen<br>(co-chair)"
+  text = "DornerWorks"
+  img = "images/summit/robbie.png"
+  link = "https://www.linkedin.com/in/robbie-vanvossen-gr/"
+%}
 
-    <div class="person">
-      <div class="person_pic">
-        <a href="https://trustworthy.systems/people/?cn=Corey+Lewis"><img src="../../../images/summit/corey-square.jpg" alt="Corey Lewis" width="80"/></a>
-      </div>
-      <div class="person_title">
-        <strong><a href="https://trustworthy.systems/people/?cn=Corey+Lewis">Corey Lewis</a></strong>
-      </div>
-      <div class="person_affiliation">
-        Proofcraft
-      </div>
-    </div>
+{% include person.html
+    name = "Adam"
+    text = "NSCS"
+    img = "images/summit/person-pc.svg"
+    link = "https://www.ncsc.gov.uk/"
+%}
 
-    <div class="person">
-      <div class="person_pic">
-        <a href="https://www.linkedin.com/in/courtneydarville3141/"><img src="../../../images/summit/courtney.jpg" alt="" width="80"/></a>
-      </div>
-      <div class="person_title">
-        <strong><a href="https://www.linkedin.com/in/courtneydarville3141/">Courtney Darville</a></strong>
-      </div>
-      <div class="person_affiliation">
-        UNSW Sydney
-      </div>
-    </div>
+{% include person.html
+  name = "Corey Lewis"
+  text = "Proofcraft"
+  img = "images/summit/corey-square.jpg"
+  link = "https://trustworthy.systems/people/?cn=Corey+Lewis"
+%}
 
-    <div class="person">
-      <div class="person_pic">
-        <a href="https://loonwerks.com/people/david-hardin.html"><img src="../../../images/summit/david-square.jpg" alt="David Hardin" width="80"/></a>
-      </div>
-      <div class="person_title">
-        <strong><a href="https://loonwerks.com/people/david-hardin.html">David Hardin</a></strong>
-      </div>
-      <div class="person_affiliation">
-        RTX
-      </div>
-    </div>
+{% include person.html
+  name = "Courtney Darville"
+  text = "UNSW Sydney"
+  img = "images/summit/courtney.jpg"
+  link = "https://www.linkedin.com/in/courtneydarville3141/"
+%}
 
-    <div class="person">
-      <div class="person_pic">
-        <a href="https://evermatos.com/"><img src="../../../images/summit/everton-square.jpg" alt="Everton de Matos" width="80"/></a>
-      </div>
-      <div class="person_title">
-        <strong><a href="https://evermatos.com/">Everton de Matos</a></strong>
-      </div>
-      <div class="person_affiliation">
-        TII
-      </div>
-    </div>
+{% include person.html
+  name = "David Hardin"
+  text = "Collins"
+  img = "images/summit/david-square.jpg"
+  link = "https://loonwerks.com/people/david-hardin.html"
+%}
 
-    <div class="person">
-      <div class="person_pic">
-        <a href="https://trustworthy.systems/people/?cn=Gernot+Heiser"><img src="../../../images/summit/gernot-square.jpg" alt="Gernot Heiser" width="80"/></a>
-      </div>
-      <div class="person_title">
-        <strong><a href="https://trustworthy.systems/people/?cn=Gernot+Heiser">Gernot Heiser</a></strong>
-      </div>
-      <div class="person_affiliation">
-        UNSW
-      </div>
-    </div>
+{% include person.html
+  name = "Everton de Matos"
+  text = "TII"
+  img = "images/summit/everton-square.jpg"
+  link = "https://evermatos.com/"
+%}
 
-    <div class="person">
-      <div class="person_pic">
-        <a href="https://www.ll.mit.edu/biographies/juliana-furgala"><img src="../../../images/summit/juliana-square.jpg" alt="Juliana Furgala" width="80"/></a>
-      </div>
-      <div class="person_title">
-        <strong><a href="https://www.ll.mit.edu/biographies/juliana-furgala">Juliana Furgala</a></strong>
-      </div>
-      <div class="person_affiliation">
-        MIT Lincoln Laboratory
-      </div>
-    </div>
+{% include person.html
+  name = "Gernot Heiser"
+  text = "UNSW Sydney"
+  img = "images/summit/gernot.jpg"
+  link = "https://trustworthy.systems/people/?cn=Gernot+Heiser"
+%}
 
-    <div class="person">
-      <div class="person_pic">
-        <a href="https://www.linkedin.com/in/leigha-vanderklok-b5038a166/"><img src="../../../images/summit/leigha-square.jpg" alt="Leigha VanderKlok" width="80"/></a>
-      </div>
-      <div class="person_title">
-        <strong><a href="https://www.linkedin.com/in/leigha-vanderklok-b5038a166/">Leigha VanderKlok</a></strong>
-      </div>
-      <div class="person_affiliation">DornerWorks
-      </div>
-    </div>
+{% include person.html
+  name = "Juliana Furgala"
+  text = "MIT Lincoln Laborator"
+  img = "../../../images/summit/juliana-square.jpg"
+  link = "https://www.ll.mit.edu/biographies/juliana-furgala"
+%}
 
-    <div class="person">
-      <div class="person_pic">
-        <a href="https://www.linkedin.com/in/lucy-parker-13a484253/">
-        <img src="../../../images/summit/lucy-square.jpg" alt="Lucy Parker" width="80"/></a>
-      </div>
-      <div class="person_title">
-        <strong><a href="https://www.linkedin.com/in/lucy-parker-13a484253/">Lucy Parker</a></strong>
-      </div>
-    </div>
+{% include person.html
+  name = "Leigha VanderKlok"
+  text = "DornerWorks"
+  img = "../../../images/summit/leigha-square.jpg"
+  link = "https://www.linkedin.com/in/leigha-vanderklok-b5038a166/"
+%}
 
-    <div class="person">
-      <div class="person_pic">
-        <a href="https://www.linkedin.com/in/mbrcknl/"><img src="../../../images/summit/matthew.jpg" alt="Matthew Brecknell" width="80"/></a>
-      </div>
-      <div class="person_title">
-        <strong><a href="https://www.linkedin.com/in/mbrcknl/">Matthew Brecknell</a></strong>
-      </div>
-      <div class="person_affiliation">
-        Kry10
-      </div>
-    </div>
+{% include person.html
+  name = "Lucy Parker"
+  img = "images/summit/lucy-square.jpg"
+  link = "https://www.linkedin.com/in/lucy-parker-13a484253/"
+%}
 
-    <div class="person">
-    <div class="person_pic">
-      <a href="https://au.linkedin.com/in/yanyan-shen-1495547"><img src="../../../images/summit/yanyan-square.jpg" alt="Yanyan Shen" width="80" /></a>
-    </div>
-    <div class="person_title">
-      <strong><a class="list_link" href="https://au.linkedin.com/in/yanyan-shen-1495547">Yanyan Shen</a></strong>
-    </div>
-    <div class="person_affiliation">
-      NIO
-    </div>
-  </div>
-</div>
-</div>
+{% include person.html
+  name = "Matthew Brecknell"
+  text = "Kry10"
+  img = "images/tsc/matthew.jpg"
+  link = "https://www.linkedin.com/in/mbrcknl/"
+%}
 
-<div class="summit_div">
-  <h3 id="summit-contact">
-    Contact
-  </h3>
-  <p>
-    For any questions regarding the summit, please contact <a title="summit@sel4.systems" href="mailto:summit@sel4.systems">summit@sel4.systems</a>.
-  </p>
-</div>
+{% include person.html
+  name = "Yanyan Shen"
+  text = "NIO"
+  img = "images/summit/yanyan-square.jpg"
+  link = "https://au.linkedin.com/in/yanyan-shen-1495547"
+%}
+
+{% include person-grid-end.html %}
+
+{% include section-end.html %}
