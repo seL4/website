@@ -1,509 +1,574 @@
 ---
 # Copyright 2023 seL4 Project a Series of LF Projects, LLC.
 # SPDX-License-Identifier: CC-BY-SA-4.0
-title: Summit program
----
-<h1>
-  seL4 Summit 2023
-</h1>
-<h4>
-  Minneapolis, USA
-</h4>
-<h4>
-  19 - 21 September 2023
-</h4>
-
-<h3>
-   Program
-</h3>
+title: seL4 summit 2023 Program
+pre: "The seL4 Summit 2023"
+pre_link: "./"
+sub: '
 <p>
-  All times are local time in Minneapolis, USA (GMT-5).
-</p>
-<table id="summit-talks">
-  <tr>
-    <th colspan="6">Day 1&emsp;19 September 2023</th>
-  </tr>
-  <tr>
-    <td colspan="5"></td>
-    <td><em>Session chair</em></td>
-  </tr>
-  <tr>
-    <td>9:00 - 9:10</td>
-    <td>Announcements</td>
-    <td><em>Welcome</em></td>
-    <td><a href="https://youtu.be/pOucRQKcE5U?si=k6jaKvCFqRRYtZ6P" target="_blank"><img src="../../../images/icons/youtube_nobckgnd.svg" class="youtube_icon" alt="YouTube icon"></a></td>
-    <td><a href="slides/day1-00-cofer.pdf"><img src="../../../images/icons/slides.svg" alt="slides icon"></a></td>
-    <td class="summit_chair">Darren Cofer &<br> Ihor Kuz</td>
-  </tr>
-  <tr id="p-scoping-assurance">
-    <td>9:10 - 10:00</td>
-    <td>Keynote</td>
-    <td><a class="summit-abstract-link" href="abstracts2023#a-scoping-assurance">Scoping assurance activities with seL4<br><span class="summit-abstract-presenter">Gage B</span></a>,
-    <span class="summit-abstract-affiliation">NCSC</span>
-    </td>
-    <td></td>
-    <td><a href="slides/day1-01-gage.pdf"><img src="../../../images/icons/slides.svg" alt="slides icon"></a></td>
-    <td class="summit_chair">Darren Cofer</td>
-  </tr>
-  <tr>
-    <td class="break" colspan="6">Break</td>
-  </tr>
-  <tr id="p-dynamic-sel4">
-    <td>10:15 - 10:45</td>
-    <td>Talk</td>
-    <td><a class="summit-abstract-link" href="abstracts2023#a-dynamic-sel4">Dynamic seL4 based systems: designing for verifiability<br><span class="summit-abstract-presenter">Matthew Brecknell</span></a>,
-    <span class="summit-abstract-affiliation">Kry10</span>
-    </td>
-    <td><a href="https://youtu.be/hHihCvB1cJI?si=3C1-F2wLJnEMHLDE" target="_blank"><img src="../../../images/icons/youtube_nobckgnd.svg" class="youtube_icon" alt="YouTube icon"></a></td>
-    <td><a href="slides/day1-02-brecknell.pdf"><img src="../../../images/icons/slides.svg" alt="slides icon"></a></td>
-    <td class="summit_chair" rowspan="2">Gerwin Klein</td>
-  </tr>
-  <tr id="p-formally-stepping">
-    <td>10:45 - 11:15</td>
-    <td>Talk</td>
-    <td><a class="summit-abstract-link" href="abstracts2023#a-formally-stepping">Formally Stepping Into The Unverified World<br><span class="summit-abstract-presenter">Sandy Frost</span></a>,
-    <span class="summit-abstract-affiliation">Los Alamos National Laboratory</span>
-    </td>
-    <td><a href="https://youtu.be/YnjpB5GlIsA?si=Nc8NuVBz_6oqi7Kp" target="_blank"><img src="../../../images/icons/youtube_nobckgnd.svg" class="youtube_icon" alt="YouTube icon"></a></td>
-    <td><a href="slides/day1-03-frost.pdf"><img src="../../../images/icons/slides.svg" alt="slides icon"></a></td>
-  </tr>
-  <tr>
-    <td class="break" colspan="6">Break</td>
-  </tr>
-  <tr id="p-reducing-reliance">
-    <td>11:30 - 12:00</td>
-    <td>Talk</td>
-    <td><a class="summit-abstract-link" href="abstracts2023#a-reducing-reliance">Reducing the reliance on verification experts for seL4 proofs<br><span class="summit-abstract-presenter">Gerwin Klein</span></a>,
-    <span class="summit-abstract-affiliation">Proofcraft</span>
-    </td>
-    <td><a href="https://youtu.be/XJTdhZqFONI?si=YNeFC0bfC_tMeH1N" target="_blank"><img src="../../../images/icons/youtube_nobckgnd.svg" class="youtube_icon" alt="YouTube icon"></a></td>
-    <td><a href="slides/day1-04-klein.pdf"><img src="../../../images/icons/slides.svg" alt="slides icon"></a></td>
-    <td class="summit_chair" rowspan="2">Matthew Brecknell</td>
-  </tr>
-  <tr id="p-efficient-smp">
-    <td>12:00 - 12:30</td>
-    <td>Talk</td>
-    <td><a class="summit-abstract-link" href="abstracts2023#a-efficient-smp">More multiprocessing on seL4: Are efficient SMP virtual machines possible on verifiable seL4 kernels?<br><span class="summit-abstract-presenter">Kent McLeod</span></a>,
-    <span class="summit-abstract-affiliation">Kry10</span>
-    </td>
-    <td><a href="https://youtu.be/ePdaQDO5nhc?si=LMtGK8b2i7b91o0s" target="_blank"><img src="../../../images/icons/youtube_nobckgnd.svg" class="youtube_icon" alt="YouTube icon"></a></td>
-    <td><a href="slides/day1-05-mcleod.pdf"><img src="../../../images/icons/slides.svg" alt="slides icon"></a></td>
-  </tr>
-  <tr>
-    <td class="break" colspan="6">Lunch</td>
-  </tr>
-  <tr id="p-system-information">
-    <td>13:30 - 14:00</td>
-    <td>Talk</td>
-    <td><a class="summit-abstract-link" href="abstracts2023#a-system-information">System Information Flow Analysis<br><span class="summit-abstract-presenter">Ihor Kuz</span></a>,
-    <span class="summit-abstract-affiliation">Kry10</span>
-    </td>
-    <td><a href="https://youtu.be/u-yhdme-o0k?si=zbYHmq0QxzmmeZzt" target="_blank"><img src="../../../images/icons/youtube_nobckgnd.svg" class="youtube_icon" alt="YouTube icon"></a></td>
-    <td><a href="slides/day1-06-kuz.pdf"><img src="../../../images/icons/slides.svg" alt="slides icon"></a></td>
-    <td class="summit_chair" rowspan="2">Robbie VanVossen</td>
-  </tr>
-  <tr id="p-advancements-virtualization">
-    <td>14:00 - 14:30</td>
-    <td>Talk</td>
-    <td><a class="summit-abstract-link" href="abstracts2023#a-advancements-virtualization">Advancements for Virtualization Support in seL4:CAmkES and seL4cp<br><span class="summit-abstract-presenter">Markku Ahvenjärvi</span></a>,
-    <span class="summit-abstract-affiliation">TII</span>
-    </td>
-    <td><a href="https://youtu.be/AsYB6yOAEYQ?si=jEewVOADm8NQv3bl" target="_blank"><img src="../../../images/icons/youtube_nobckgnd.svg" class="youtube_icon" alt="YouTube icon"></a></td>
-    <td><a href="slides/day1-07-ahvenjärvi.pdf"><img src="../../../images/icons/slides.svg" alt="slides icon"></a></td>
-  </tr>
-  <tr>
-    <td class="break" colspan="6">Break</td>
-  </tr>
-  <tr id="p-sel4-device">
-    <td>14:45 - 15:15</td>
-    <td>Talk</td>
-    <td><a class="summit-abstract-link" href="abstracts2023#a-sel4-device">The seL4 Device Driver Framework<br><span class="summit-abstract-presenter">Lucy Parker</span></a>,
-    <span class="summit-abstract-affiliation">UNSW</span>
-    </td>
-    <td><a href="https://youtu.be/be0_PSW0b5M?si=t7dB73HMk8hR9mk0" target="_blank"><img src="../../../images/icons/youtube_nobckgnd.svg" class="youtube_icon" alt="YouTube icon"></a></td>
-    <td><a href="slides/day1-08-parker.pdf"><img src="../../../images/icons/slides.svg" alt="slides icon"></a></td>
-    <td class="summit_chair" rowspan="2">Nick Spinale</td>
-  </tr>
-  <tr id="p-rd-update">
-    <td>15:15 - 15:45</td>
-    <td>Talk</td>
-    <td><a class="summit-abstract-link" href="abstracts2023#a-rd-update">R&D Update from TS<br><span class="summit-abstract-presenter">Gernot Heiser</span></a>,
-    <span class="summit-abstract-affiliation">UNSW</span>
-    </td>
-    <td><a href="https://youtu.be/v16ycALKDLM?si=5eVX9qe2faJhDQyq" target="_blank"><img src="../../../images/icons/youtube_nobckgnd.svg" class="youtube_icon" alt="YouTube icon"></a></td>
-    <td><a href="slides/day1-09-heiser.pdf"><img src="../../../images/icons/slides.svg" alt="slides icon"></a></td>
-  </tr>
-  <tr>
-    <td class="break" colspan="6">Break</td>
-  </tr>
-  <tr id="p-sel4-experiences">
-    <td>16:00 - 16:15</td>
-    <td>Talk</td>
-    <td><a class="summit-abstract-link" href="abstracts2023#a-sel4-experiences">seL4: Experiences, Improvements and Optimizations<br><span class="summit-abstract-presenter">Chris Guikema</span></a>,
-    <span class="summit-abstract-affiliation">DornerWorks</span>
-    </td>
-    <td><a href="https://youtu.be/SsEuhby_U6k?si=9dPxuHINTNOcLgFR" target="_blank"><img src="../../../images/icons/youtube_nobckgnd.svg" class="youtube_icon" alt="YouTube icon"></a></td>
-    <td><a href="slides/day1-10-guikema.pdf"><img src="../../../images/icons/slides.svg" alt="slides icon"></a></td>
-    <td class="summit_chair" rowspan="4">Axel Heider</td>
-  </tr>
-  <tr id="p-from-zero">
-    <td>16:15 - 16:30</td>
-    <td>Talk</td>
-    <td><a class="summit-abstract-link" href="abstracts2023#a-from-zero">From Zero to a Native xHCl Driver<br><span class="summit-abstract-presenter">Josh Felmeden</span></a>,
-    <span class="summit-abstract-affiliation">Capgemini Engineering</span>
-    </td>
-    <td><a href="https://youtu.be/Jsp2VMq3uDI?si=JucKo2C5ykhWaItl" target="_blank"><img src="../../../images/icons/youtube_nobckgnd.svg" class="youtube_icon" alt="YouTube icon"></a></td>
-    <td><a href="slides/day1-11-felmeden.pdf"><img src="../../../images/icons/slides.svg" alt="slides icon"></a></td>
-  </tr>
-  <tr id="p-crashing-for">
-    <td>16:30 - 16:45</td>
-    <td>Talk</td>
-    <td><a class="summit-abstract-link" href="abstracts2023#a-crashing-for">Crashing For Reliability<br><span class="summit-abstract-presenter">Ihor Kuz</span></a>,
-    <span class="summit-abstract-affiliation">Kry10</span>
-    </td>
-    <td><a href="https://youtu.be/jAzo4J9mrrE?si=h5slswaN53Ws4Ncf" target="_blank"><img src="../../../images/icons/youtube_nobckgnd.svg" class="youtube_icon" alt="YouTube icon"></a></td>
-    <td><a href="slides/day1-12-kuz.pdf"><img src="../../../images/icons/slides.svg" alt="slides icon"></a></td>
-  </tr>
-  <tr id="p-sel4-foundation">
-    <td>16:45 - 17:00</td>
-    <td>Update</td>
-    <td>seL4 Foundation update<br><span class="summit-abstract-presenter">June Andronick</span>,
-    <span class="summit-abstract-affiliation">seL4 Foundation</span>
-    </td>
-    <td><a href="https://youtu.be/PvzlLVP_dSk?si=-vdn7NdGrqEG0Rw9" target="_blank"><img src="../../../images/icons/youtube_nobckgnd.svg" class="youtube_icon" alt="YouTube icon"></a></td>
-    <td><a href="slides/day1-12-andronick.pdf"><img src="../../../images/icons/slides.svg" alt="slides icon"></a></td>
-  </tr>
-  <tr>
-    <td class="break" colspan="6">Break</td>
-  </tr>
-  <tr id="p-gold-kry10">
-    <td>17:00 - 17:15</td>
-    <td>Gold Sponsor</td>
-    <td><a class="summit-abstract-link" href="abstracts2023#a-gold-kry10">Building a Platform for Critical Devices in the “Real World”<br><span class="summit-abstract-presenter">Boyd Multerer</span></a>,
-    <span class="summit-abstract-affiliation">Kry10</span>
-    </td>
-    <td><a href="https://youtu.be/1H5EQ4DrJeo?si=ZffQVqCmYRdZ4dfu" target="_blank"><img src="../../../images/icons/youtube_nobckgnd.svg" class="youtube_icon" alt="YouTube icon"></a></td>
-    <td><a href="slides/day1-13-multerer.pdf"><img src="../../../images/icons/slides.svg" alt="slides icon"></a></td>
-    <td class="summit_chair">June Andronick</td>
-  </tr>
-  <tr>
-    <td class="break" colspan="6">Break</td>
-  </tr>
-  <tr>
-    <td colspan="6" style="text-align: center;"><em>Networking event: drinks and nibbles 18:00</em></td>
-  </tr>
-  <tr>
-    <th colspan="6">Day 2&emsp;20 September 2023</th>
-  </tr>
-  <tr>
-    <td colspan="5"></td>
-    <td><em>Session chair</em></td>
-  </tr>
-  <tr id="p-cantripos">
-    <td>9:00 - 9:50</td>
-    <td>Keynote</td>
-    <td><a class="summit-abstract-link" href="abstracts2023#a-cantripos">CantripOS: An OS for Ambient ML Applications<br><span class="summit-abstract-presenter">Sam Leffler</span></a>,
-    <span class="summit-abstract-affiliation">Google</span>
-    </td>
-    <td><a href="https://youtu.be/-3SCCx-b61k?si=IpAa7ZHfBQf8Wd9l" target="_blank"><img src="../../../images/icons/youtube_nobckgnd.svg" class="youtube_icon" alt="YouTube icon"></a></td>
-    <td><a href="slides/day2-01-leffler.pdf"><img src="../../../images/icons/slides.svg" alt="slides icon"></a></td>
-    <td class="summit_chair" rowspan="2">Ihor Kuz</td>
-  </tr>
-  <tr id="p-announcements">
-    <td>9:50 - 10:00</td>
-    <td>Announcements</td>
-    <td><br><span class="summit-abstract-presenter"></span>
-    <span class="summit-abstract-affiliation"></span>
-    </td>
-    <td><a href="https://youtu.be/vUBmP6337vY?si=BVsTDyTkVjB-Wu5I" target="_blank"><img src="../../../images/icons/youtube_nobckgnd.svg" class="youtube_icon" alt="YouTube icon"></a></td>
-    <td></td>
-  </tr>
-  <tr>
-    <td class="break" colspan="6">Break</td>
-  </tr>
-  <tr id="p-magnetite">
-    <td>10:15 - 10:45</td>
-    <td>Talk</td>
-    <td><a class="summit-abstract-link" href="abstracts2023#a-magnetite">Magnetite: Rust-Based OS Services for seL4<br><span class="summit-abstract-presenter">Juliana Furgala</span></a>,
-    <span class="summit-abstract-affiliation">MIT Lincoln Laboratory</span>
-    </td>
-    <td><a href="https://youtu.be/UFF93HcQfEc?si=MrX9dEbI3b_CAamZ" target="_blank"><img src="../../../images/icons/youtube_nobckgnd.svg" class="youtube_icon" alt="YouTube icon"></a></td>
-    <td><a href="slides/day2-02-furgala.pdf"><img src="../../../images/icons/slides.svg" alt="slides icon"></a></td>
-    <td class="summit_chair" rowspan="2">Lucy Parker</td>
-  </tr>
-  <tr id="p-showcase-microkernel">
-    <td>10:45 - 11:15</td>
-    <td>Talk</td>
-    <td><a class="summit-abstract-link" href="abstracts2023#a-showcase-microkernel">Showcase: Microkernel OS, TPMs, and WASM in Ilo T Environments<br><span class="summit-abstract-presenter">Sid Hussmann</span></a>,
-    <span class="summit-abstract-affiliation">Gapfruit</span>
-    </td>
-    <td><a href="https://youtu.be/R9zRyYVReKU?si=Jj-BjHhlqIQbCjob" target="_blank"><img src="../../../images/icons/youtube_nobckgnd.svg" class="youtube_icon" alt="YouTube icon"></a></td>
-    <td><a href="slides/day2-03-hussman.pdf"><img src="../../../images/icons/slides.svg" alt="slides icon"></a></td>
-  </tr>
-  <tr>
-    <td class="break" colspan="6">Break</td>
-  </tr>
-  <tr id="p-rust-support">
-    <td>11:30 - 12:00</td>
-    <td>Talk</td>
-    <td><a class="summit-abstract-link" href="abstracts2023#a-rust-support">Rust support in seL4 userspace: update and roadmap<br><span class="summit-abstract-presenter">Nick Spinale</span></a>,
-    <span class="summit-abstract-affiliation">Colias Group</span>
-    </td>
-    <td><a href="https://youtu.be/jR2i4Y2Aq3o?si=rJSRRTD7Y-3Z6lUu" target="_blank"><img src="../../../images/icons/youtube_nobckgnd.svg" class="youtube_icon" alt="YouTube icon"></a></td>
-    <td><a href="slides/day2-04-spinale.pdf"><img src="../../../images/icons/slides.svg" alt="slides icon"></a></td>
-    <td class="summit_chair" rowspan="2">Kent McLeod</td>
-  </tr>
-  <tr id="p-sel4-microkit">
-    <td>12:00 - 12:30</td>
-    <td>Talk</td>
-    <td><a class="summit-abstract-link" href="abstracts2023#a-sel4-microkit">The seL4 Microkit<br><span class="summit-abstract-presenter">Ivan Velickovic</span></a>,
-    <span class="summit-abstract-affiliation">UNSW</span>
-    </td>
-    <td><a href="https://youtu.be/1Y6uE3eZWKQ?si=9fIcnBFUlji0EOAj" target="_blank"><img src="../../../images/icons/youtube_nobckgnd.svg" class="youtube_icon" alt="YouTube icon"></a></td>
-    <td><a href="slides/day2-05-velickovic.pdf"><img src="../../../images/icons/slides.svg" alt="slides icon"></a></td>
-  </tr>
-  <tr>
-    <td class="break" colspan="6">Lunch</td>
-  </tr>
-  <tr id="p-leveraging-rust">
-    <td>13:30 - 14:00</td>
-    <td>Talk</td>
-    <td><a class="summit-abstract-link" href="abstracts2023#a-leveraging-rust">Leveraging Rust for Core Platform<br><span class="summit-abstract-presenter">Ben Hamlin</span></a>,
-    <span class="summit-abstract-affiliation">Galois</span>
-    </td>
-    <td><a href="https://youtu.be/JmqSfTEg0u8?si=pPKmIWJ4_PrHxvfk" target="_blank"><img src="../../../images/icons/youtube_nobckgnd.svg" class="youtube_icon" alt="YouTube icon"></a></td>
-    <td><a href="slides/day2-06-hamlin.pdf"><img src="../../../images/icons/slides.svg" alt="slides icon"></a></td>
-    <td class="summit_chair" rowspan="2">Todd Carpenter</td>
-  </tr>
-  <tr id="p-panel">
-    <td>14:00 - 14:30</td>
-    <td>Panel</td>
-    <td><a class="summit-abstract-link" href="abstracts2023#a-panel">OS on seL4: so many options!<br>
-    <span class="summit-abstract-presenter-bold">Gernot Heiser</span>, <span class="summit-abstract-affiliation">UNSW</span><br>
-    <span class="summit-abstract-presenter-bold">SidHussmann</span>,
-    <span class="summit-abstract-affiliation">Gapfruit</span><br>
-    <span class="summit-abstract-presenter-bold">Kent McLeod</span>, <span class="summit-abstract-affiliation">Kry10</span><br>
-    <span class="summit-abstract-presenter-bold">Juliana Furgala</span>,
-    <span class="summit-abstract-affiliation">MIT Lincoln Laboratory</span></a>
-    </td>
-    <td><a href="https://youtu.be/PynVzpXRW-o?si=JR_9nGM3fwILHnJc" target="_blank"><img src="../../../images/icons/youtube_nobckgnd.svg" class="youtube_icon" alt="YouTube icon"></a></td>
-    <td></td>
-  </tr>
-  <tr>
-    <td class="break" colspan="6">Break</td>
-  </tr>
-  <tr id="p-sel4-vmm">
-    <td>14:45 - 15:15</td>
-    <td>Talk</td>
-    <td><a class="summit-abstract-link" href="abstracts2023#a-sel4-vmm">seL4 VMM on the RISC-V Rocket Chip<br><span class="summit-abstract-presenter">Robbie VanVossen</span></a>,
-    <span class="summit-abstract-affiliation">DornerWorks</span>
-    </td>
-    <td><a href="https://youtu.be/a-JLqYVINxo?si=EjKQHSYPmGrlgLna" target="_blank"><img src="../../../images/icons/youtube_nobckgnd.svg" class="youtube_icon" alt="YouTube icon"></a></td>
-    <td><a href="slides/day2-08-vanvossen.pdf"><img src="../../../images/icons/slides.svg" alt="slides icon"></a></td>
-    <td class="summit_chair" rowspan="2">Gernot Heiser</td>
-  </tr>
-  <tr id="p-sel4-arm">
-    <td>15:15 - 15:45</td>
-    <td>Talk</td>
-    <td><a class="summit-abstract-link" href="abstracts2023#a-sel4-arm">seL4 on Arm Morello<br><span class="summit-abstract-presenter">Martin Atkins</span></a>,
-    <span class="summit-abstract-affiliation">Mission Critical Applications</span>
-    </td>
-    <td><a href="https://youtu.be/VcufX8hZ5-o?si=zNc0rSodvxrm5DF8" target="_blank"><img src="../../../images/icons/youtube_nobckgnd.svg" class="youtube_icon" alt="YouTube icon"></a></td>
-    <td><a href="slides/day2-09-atkins.pdf"><img src="../../../images/icons/slides.svg" alt="slides icon"></a></td>
-  </tr>
-  <tr>
-    <td class="break" colspan="6">Break</td>
-  </tr>
-  <tr id="p-incremental-assurance">
-    <td>16:00 - 16:30</td>
-    <td>Talk</td>
-    <td><a class="summit-abstract-link" href="abstracts2023#a-incremental-assurance">Incremental assurance for a Rust network stack<br><span class="summit-abstract-presenter">Michal Podhradsky</span></a>,
-    <span class="summit-abstract-affiliation">Galois</span>
-    </td>
-    <td><a href="https://youtu.be/c7UC2Rgj3n4?si=XCFZwqwZbTeERon1" target="_blank"><img src="../../../images/icons/youtube_nobckgnd.svg" class="youtube_icon" alt="YouTube icon"></a></td>
-    <td><a href="slides/day2-10-podhradsky.pdf"><img src="../../../images/icons/slides.svg" alt="slides icon"></a></td>
-    <td class="summit_chair" rowspan="3">Gerwin Klein</td>
-  </tr>
-  <tr id="p-toward-verified">
-    <td>16:30 - 16:45</td>
-    <td>Talk</td>
-    <td><a class="summit-abstract-link" href="abstracts2023#a-toward-verified">Toward a Verified, Minimal IPv6 Network Stack Implementation<br><span class="summit-abstract-presenter">Wyeth Greenlaw Rollins</span></a>,
-    <span class="summit-abstract-affiliation">Lewis & Clark College</span>
-    </td>
-    <td><a href="https://youtu.be/wjrA0HlW9JQ?si=O-s5cyDWcgz_LxTY" target="_blank"><img src="../../../images/icons/youtube_nobckgnd.svg" class="youtube_icon" alt="YouTube icon"></a></td>
-    <td><a href="slides/day2-11-rollins.pdf"><img src="../../../images/icons/slides.svg" alt="slides icon"></a></td>
-  </tr>
-  <tr id="p-iommu">
-    <td>16:45 - 17:00</td>
-    <td>Talk</td>
-    <td><a class="summit-abstract-link" href="abstracts2023#a-iommu">IOMMU (take the ARM SMMUv3 for instance) solution for seL4<br><span class="summit-abstract-presenter">Lei Mao</span></a>,
-    <span class="summit-abstract-affiliation">Horizon Robotics</span>
-    </td>
-    <td><a href="https://youtu.be/6knMCkB-Qvw?si=sd1etRZ3Y4Y_Z0Kc" target="_blank"><img src="../../../images/icons/youtube_nobckgnd.svg" class="youtube_icon" alt="YouTube icon"></a></td>
-    <td><a href="slides/day2-12-mao.pdf"><img src="../../../images/icons/slides.svg" alt="slides icon"></a></td>
-  </tr>
-  <tr id="p-gold-nio">
-    <td>17:00 - 17:15</td>
-    <td>Gold Sponsor</td>
-    <td><a class="summit-abstract-link" href="abstracts2023#a-gold-nio">OS for Software Defined Vehicle<br><span class="summit-abstract-presenter">Qiyan Wang</span></a>,
-    <span class="summit-abstract-affiliation">NIO</span>
-    </td>
-    <td><a href="https://youtu.be/W_Y3M6s4E9w?si=OHlpA1kppVWKtbyk" target="_blank"><img src="../../../images/icons/youtube_nobckgnd.svg" class="youtube_icon" alt="YouTube icon"></a></td>
-    <td><a href="slides/day2-13-wang.pdf"><img src="../../../images/icons/slides.svg" alt="slides icon"></a></td>
-    <td class="summit_chair" rowspan="2">June Andronick</td>
-  </tr>
-  <tr id="p-gold-tii">
-    <td>17:15 - 17:30</td>
-    <td>Gold Sponsor</td>
-    <td><a class="summit-abstract-link" href="abstracts2023#a-gold-tii">Secure Systems in Focus: Challenges, Solutions, and Future Directions<br><span class="summit-abstract-presenter">Everton de Matos</span></a>,
-    <span class="summit-abstract-affiliation">TII</span>
-    </td>
-    <td><a href="https://youtu.be/MX_svP-Sopk?si=L7DBrBEMd7eIxNYs" target="_blank"><img src="../../../images/icons/youtube_nobckgnd.svg" class="youtube_icon" alt="YouTube icon"></a></td>
-    <td><a href="slides/day2-14-dematos.pdf"><img src="../../../images/icons/slides.svg" alt="slides icon"></a></td>
-  </tr>
-  <tr>
-    <td class="break" colspan="6">Break</td>
-  </tr>
-  <tr>
-    <td colspan="6" style="text-align: center;"><em>Dinner 19:00</em></td>
-  </tr>
-  <tr>
-    <th colspan="6">Day 3&emsp;21 September 2023</th>
-  </tr>
-  <tr>
-    <td colspan="5"></td>
-    <td><em>Session chair</em></td>
-  </tr>
-  <tr id="p-sig-community">
-    <td>9:00 - 9:30</td>
-    <td>Update</td>
-    <td><a class="summit-abstract-link" href="abstracts2023#a-sig-community">SIG update + Community update/discussion<br><span class="summit-abstract-presenter">Yanyan Shen</span>,
-    <span class="summit-abstract-affiliation">NIO</span><br>
-    <span class="summit-abstract-presenter">Matthew Brecknell</span>,
-    <span class="summit-abstract-affiliation">Kry10</span><br>
-    <span class="summit-abstract-presenter">Everton de Matos</span>,
-    <span class="summit-abstract-affiliation">TII</span><br>
-    <span class="summit-abstract-presenter">Kent McLeod</span>,
-    <span class="summit-abstract-affiliation">Kry10</span></a>
-    </td>
-    <td><a href="https://youtu.be/ZHLePzGa4vs?si=2Jk9djA0IbBaO81G" target="_blank"><img src="../../../images/icons/youtube_nobckgnd.svg" class="youtube_icon" alt="YouTube icon"></a></td>
-    <td></td>
-    <td class="summit_chair" rowspan="2">Darren Cofer</td>
-  </tr>
-  <tr id="p-sel4-virtualization">
-    <td>9:30 - 10:00</td>
-    <td>Talk</td>
-    <td><a class="summit-abstract-link" href="abstracts2023#a-sel4-virtualization">seL4 Virtualization (ARMv8 Edge Device) Guest OS Performance & HA Recovery<br><span class="summit-abstract-presenter">Lei Mao</span></a>,
-    <span class="summit-abstract-affiliation">Horizon Robotics</span>
-    </td>
-    <td></td>
-    <td></td>
-  </tr>
-  <tr>
-    <td class="break" colspan="6">Break</td>
-  </tr>
-  <tr id="p-building-commercial">
-    <td>10:15 - 10:30</td>
-    <td>Talk</td>
-    <td><a class="summit-abstract-link" href="abstracts2023#a-building-commercial">Building a Commercial Virtualized Mobile Device with seL4 - Part 2<br><span class="summit-abstract-presenter">Jason Sebranek</span></a>,
-    <span class="summit-abstract-affiliation">Cog Systems</span>
-    </td>
-    <td><a href="https://youtu.be/TSYXw4DIGXw?si=BGeO-2LhY1lGREJr" target="_blank"><img src="../../../images/icons/youtube_nobckgnd.svg" class="youtube_icon" alt="YouTube icon"></a></td>
-    <td><a href="slides/day3-03-sebranek.pdf"><img src="../../../images/icons/slides.svg" alt="slides icon"></a></td>
-    <td class="summit_chair" rowspan="3">Ihor Kuz</td>
-  </tr>
-  <tr id="p-sel4-riscv">
-    <td>10:30 - 10:45</td>
-    <td>Talk</td>
-    <td><a class="summit-abstract-link" href="abstracts2023#a-sel4-riscv">seL4 on RISC-V: Building a Trusted Execution Environment<br><span class="summit-abstract-presenter">Everton de Matos</span></a>,
-    <span class="summit-abstract-affiliation">TII</span>
-    </td>
-    <td><a href="https://youtu.be/QSo03imeTx8?si=x2Qx7DRZb82xnJ7b" target="_blank"><img src="../../../images/icons/youtube_nobckgnd.svg" class="youtube_icon" alt="YouTube icon"></a></td>
-    <td><a href="slides/day3-04-dematos.pdf"><img src="../../../images/icons/slides.svg" alt="slides icon"></a></td>
-  </tr>
-  <tr id="p-trustworthy-measurements">
-    <td>10:45 - 11:00</td>
-    <td>Talk</td>
-    <td><a class="summit-abstract-link" href="abstracts2023#a-trustworthy-measurements">Trustworthy Measurements of a Linux Kernel and Layered Attestation via the seL4<br><span class="summit-abstract-presenter">Michael Neises</span></a>,
-    <span class="summit-abstract-affiliation">University of Kansas</span>
-    </td>
-    <td><a href="https://youtu.be/lyTyJKugoqU?si=mbT_WOp2fGZsbL1h" target="_blank"><img src="../../../images/icons/youtube_nobckgnd.svg" class="youtube_icon" alt="YouTube icon"></a></td>
-    <td><a href="slides/day3-05-neises.pdf"><img src="../../../images/icons/slides.svg" alt="slides icon"></a></td>
-  </tr>
-  <tr>
-    <td class="break" colspan="6">Break</td>
-  </tr>
-  <tr id="p-bof">
-    <td>11:30 - 11:45</td>
-    <td>Plenary</td>
-    <td>BoFs teasers
-    </td>
-    <td></td>
-    <td></td>
-    <td class="summit_chair">Darren Cofer<br>& Ihor Kuz</td>
-  </tr>
-  <tr>
-    <td>11:45 - 12:30</td>
-    <td rowspan="2">
-      Plenary
-    </td>
-    <td>BoF Room 1
-    </td>
-    <td></td>
-    <td></td>
-    <td></td>
-  </tr>
-  <tr>
-    <td>11:45 - 12:30</td>
-    <td>BoF Room 2
-    </td>
-    <td></td>
-    <td></td>
-    <td></td>
-  </tr>
-  <tr>
-    <td class="break" colspan="6">Lunch</td>
-  </tr>
-  <tr>
-    <td>13:30 - 14:15</td>
-    <td rowspan="2"></td>
-    <td rowspan="2">
-      Plenary
-    </td>
-    <td>BoF Room 1
-    </td>
-    <td></td>
-    <td></td>
-  </tr>
-  <tr>
-    <td>13:30 - 14:15</td>
-    <td>BoF Room 2
-    </td>
-    <td></td>
-    <td></td>
-  </tr>
-  <tr>
-    <td>14:15 - 14:30</td>
-    <td>Plenary</td>
-    <td>Report from BoFs + Discussion
-    </td>
-    <td></td>
-    <td></td>
-    <td class="summit_chair">Darren Cofer<br>& Ihor Kuz</td>
-  </tr>
-  <tr>
-    <td class="break" colspan="6">Break</td>
-  </tr>
-  <tr id="p-training">
-    <td>14:45 - 16:30</td>
-    <td>Training</td>
-    <td>
-    A quick start to seL4 with the Core Platform<br><span class="summit-abstract-presenter">Ivan Velickovic</span>,
-    <span class="summit-abstract-affiliation">UNSW</span>
-    </td>
-    <td></td>
-    <td></td>
-    <td></td>
-  </tr>
-</table>
-<br>
+  The seL4 summit 2023 features a combination of technical research and development, real-world seL4 deployment
+  insights, in-depth interactive discussions, thought-provoking <a href="index.html#keynotes">keynotes</a>, <a
+    href="index.html#panel">panel discussion</a>, as well as a <a href="#p-training">training session</a>. Videos are available on the <a
+    href="https://www.youtube.com/@seL4">seL4 YouTube channel</a>.
+</p>'
+layout: card
+---
+
+
+<!-- Main Program section -->
+{% include section-start.html
+  id = "program"
+  heading = "Main Program"
+  intro = '
+    <p>
+      All times are local time in Minneapolis, USA (GMT-5). Session chairs shown on right.
+    </p>
+    '
+%}
+
+{% include program-start.html %}
+
+  {% include program-item.html 
+    day = "1"
+    date = "19 September 2023"
+  %}
+
+  {% include program-item.html 
+    chair = "Darren Cofer"
+    num-talks = 2
+    time = "9:00 - 9:10"
+    title = "Welcome"
+    presenter = "Darren Cofer, Ihor Kuz"
+    affiliation = "Collins Aerospace, Kry10"
+    youtube = "https://youtu.be/pOucRQKcE5U?si=k6jaKvCFqRRYtZ6P"
+    slides = "slides/day1-00-cofer.pdf"
+  %}
+
+  {% include program-item.html 
+    id = "p-scoping-assurance"
+    type = "Keynote"
+    time = "9:10 - 10:00"
+    title = "Scoping assurance activities with seL4"
+    presenter = "Gage B"
+    affiliation = "NCSC"
+    abstract = "abstracts2023#a-scoping-assurance"
+    slides = "slides/day1-01-gage.pdf"
+  %}
+
+  {% include program-item.html 
+    break = "Break"
+  %}
+
+  {% include program-item.html 
+    chair = "Gerwin Klein"
+    num-talks = 2
+    id = "p-dynamic-sel4" 
+    time = "10:15 - 10:45"
+    title = "Dynamic seL4 based systems: designing for verifiability"
+    presenter = "Matthew Brecknell"
+    affiliation = "Kry10"
+    abstract = "abstracts2023#a-dynamic-sel4"
+    youtube = "https://youtu.be/hHihCvB1cJI?si=3C1-F2wLJnEMHLDE"
+    slides = "slides/day1-02-brecknell.pdf"
+  %}
+  
+  {% include program-item.html 
+    id = "p-formally-stepping"
+    time = "10:45 - 11:15"
+    title = "Formally Stepping Into The Unverified World"
+    presenter = "Sandy Frost"
+    affiliation = "Los Alamos National Laboratory"
+    abstract = "abstracts2023#a-formally-stepping"
+    youtube = "https://youtu.be/YnjpB5GlIsA?si=Nc8NuVBz_6oqi7Kp"
+    slides = "slides/day1-03-frost.pdf"
+  %}
+
+  {% include program-item.html 
+    break = "Break"
+  %}
+
+  {% include program-item.html 
+    chair = "Matthew Brecknell"
+    num-talks = 2
+    id = "p-reducing-reliance" 
+    time = "11:30 - 12:00"
+    title = "Reducing the reliance on verification experts for seL4 proofs"
+    presenter = "Gerwin Klein"
+    affiliation = "Proofcraft"
+    abstract = "abstracts2023#a-reducing-reliance"
+    youtube = "https://youtu.be/XJTdhZqFONI?si=YNeFC0bfC_tMeH1N"
+    slides = "slides/day1-04-klein.pdf"
+  %}
+  
+  {% include program-item.html 
+    id = "p-efficient-smp"
+    time = "12:00 - 12:30"
+    title = "More multiprocessing on seL4: Are efficient SMP virtual machines possible on verifiable seL4 kernels?"
+    presenter = "Kent McLeod"
+    affiliation = "Kry10"
+    abstract = "abstracts2023#a-efficient-smp"
+    youtube = "https://youtu.be/ePdaQDO5nhc?si=LMtGK8b2i7b91o0s"
+    slides = "slides/day1-05-mcleod.pdf"
+  %}
+
+  {% include program-item.html 
+    break = "Lunch"
+  %}
+
+  {% include program-item.html 
+    chair = "Robbie VanVossen"
+    num-talks = 2
+    id = "p-system-information" 
+    time = "13:30 - 14:00"
+    title = "System Information Flow Analysis"
+    presenter = "Ihor Kuz"
+    affiliation = "Kry10"
+    abstract = "abstracts2023#a-system-information"
+    youtube = "https://youtu.be/u-yhdme-o0k?si=zbYHmq0QxzmmeZzt"
+    slides = "slides/day1-06-kuz.pdf"
+  %}
+  
+  {% include program-item.html 
+    id = "p-advancements-virtualization"
+    time = "14:00 - 14:30"
+    title = "Advancements for Virtualization Support in seL4:CAmkES and seL4cp"
+    presenter = "Markku Ahvenjärvi"
+    affiliation = "TII"
+    abstract = "abstracts2023#a-advancements-virtualization"
+    youtube = "https://youtu.be/AsYB6yOAEYQ?si=jEewVOADm8NQv3bl"
+    slides = "slides/day1-07-ahvenjärvi.pdf"
+  %}
+
+  {% include program-item.html 
+    break = "Break"
+  %}
+
+  {% include program-item.html 
+    chair = "Nick Spinale"
+    num-talks = 2
+    id = "p-sel4-device" 
+    time = "14:45 - 15:15"
+    title = "The seL4 Device Driver Framework"
+    presenter = "Lucy Parker"
+    affiliation = "UNSW"
+    abstract = "abstracts2023#a-sel4-device"
+    youtube = "https://youtu.be/be0_PSW0b5M?si=t7dB73HMk8hR9mk0"
+    slides = "slides/day1-08-parker.pdf"
+  %}
+  
+  {% include program-item.html 
+    id = "p-rd-update"
+    time = "15:15 - 15:45"
+    title = "R&D Update from TS"
+    presenter = "Gernot Heiser"
+    affiliation = "UNSW"
+    abstract = "abstracts2023#a-rd-update"
+    youtube = "https://youtu.be/v16ycALKDLM?si=5eVX9qe2faJhDQyq"
+    slides = "slides/day1-09-heiser.pdf"
+  %}
+  
+  {% include program-item.html 
+    break = "Break"
+  %}
+
+  {% include program-item.html 
+    chair = "Axel Heider"
+    num-talks = 4
+    id = "p-sel4-experiences" 
+    time = "16:00 - 16:15"
+    title = "seL4: Experiences, Improvements and Optimizations"
+    presenter = "Chris Guikema"
+    affiliation = "DornerWorks"
+    abstract = "abstracts2023#a-sel4-experiences"
+    youtube = "https://youtu.be/SsEuhby_U6k?si=9dPxuHINTNOcLgFR"
+    slides = "slides/day1-10-guikema.pdf"
+  %}
+  
+  {% include program-item.html 
+    id = "p-from-zero"
+    time = "16:15 - 16:30"
+    title = "From Zero to a Native xHCl Driver"
+    presenter = "Josh Felmeden"
+    affiliation = "Capgemini Engineering"
+    abstract = "abstracts2023#a-from-zero"
+    youtube = "https://youtu.be/Jsp2VMq3uDI?si=JucKo2C5ykhWaItl"
+    slides = "slides/day1-11-felmeden.pdf"
+  %}
+
+  {% include program-item.html 
+    id = "p-crashing-for"
+    time = "16:30 - 16:45"
+    title = "Crashing For Reliability"
+    presenter = "Ihor Kuz"
+    affiliation = "Kry10"
+    abstract = "abstracts2023#a-crashing-for"
+    youtube = "https://youtu.be/jAzo4J9mrrE?si=h5slswaN53Ws4Ncf"
+    slides = "slides/day1-12-kuz.pdf"
+  %}
+
+  {% include program-item.html 
+    id = "p-sel4-foundation"
+    time = "16:45 - 17:00"
+    title = "seL4 Foundation update"
+    presenter = "June Andronick"
+    affiliation = "seL4 Foundation"
+    youtube = "https://youtu.be/PvzlLVP_dSk?si=-vdn7NdGrqEG0Rw9"
+    slides = "slides/day1-12-andronick.pdf"
+  %}
+
+  {% include program-item.html 
+    break = "Break"
+  %}
+
+  {% include program-item.html 
+    chair = "June Andronick"
+    num-talks = 1
+    id = "p-gold-kry10" 
+    time = "17:00 - 17:15"
+    type = "Gold Sponsor"
+    title = "Building a Platform for Critical Devices in the “Real World”"
+    presenter = "Boyd Multerer"
+    affiliation = "Kry10"
+    abstract = "abstracts2023#a-gold-kry10"
+    youtube = "https://youtu.be/1H5EQ4DrJeo?si=ZffQVqCmYRdZ4dfu"
+    slides = "slides/day1-13-multerer.pdf"
+  %}
+  
+  {% include program-item.html 
+    event = "Networking event: drinks and nibbles 18:00"
+  %}
+
+  {% include program-item.html 
+    day = "2"
+    date = "20 September 2023"
+  %}
+
+  {% include program-item.html 
+    chair = "Ihor Kuz"
+    num-talks = 2
+    id = "p-cantripos" 
+    type = "Keynote"
+    time = "9:00 - 9:50"
+    title = "CantripOS: An OS for Ambient ML Applications"
+    presenter = "Sam Leffler"
+    affiliation = "Google"
+    abstract = "abstracts2023#a-cantripos"
+    youtube = "https://youtu.be/-3SCCx-b61k?si=IpAa7ZHfBQf8Wd9l"
+    slides = "slides/day2-01-leffler.pdf"
+  %}
+
+  {% include program-item.html 
+    id = "p-announcements"
+    time = "9:50 - 10:00"
+    title = "Announcements"
+    presenter = "June Andronick"
+    affiliation = "Proofcraft"
+    youtube = "https://youtu.be/vUBmP6337vY?si=BVsTDyTkVjB-Wu5I"
+  %}
+  
+  {% include program-item.html 
+    break = "Break"
+  %}
+
+  {% include program-item.html 
+    chair = "Lucy Parker"
+    num-talks = 2
+    id = "p-magnetite" 
+    time = "10:15 - 10:45"
+    title = "Magnetite: Rust-Based OS Services for seL4"
+    presenter = "Juliana Furgala"
+    affiliation = "MIT Lincoln Laboratory"
+    abstract = "abstracts2023#a-magnetite"
+    youtube = "https://youtu.be/UFF93HcQfEc?si=MrX9dEbI3b_CAamZ"
+    slides = "slides/day2-02-furgala.pdf"
+  %}
+
+  {% include program-item.html 
+    id = "p-showcase-microkernel"
+    time = "10:45 - 11:15"
+    title = "Showcase: Microkernel OS, TPMs, and WASM in Ilo T Environments"
+    presenter = "Sid Hussmann"
+    affiliation = "Gapfruit"
+    abstract = "abstracts2023#a-showcase-microkernel"
+    youtube = "https://youtu.be/R9zRyYVReKU?si=Jj-BjHhlqIQbCjob"
+    slides = "slides/day2-03-hussman.pdf"
+  %}
+
+  {% include program-item.html 
+    break = "Break"
+  %}
+
+  {% include program-item.html 
+    chair = "Kent McLeod"
+    num-talks = 2
+    id = "p-rust-support" 
+    time = "11:30 - 12:00"
+    title = "Rust support in seL4 userspace: update and roadmap"
+    presenter = "Nick Spinale"
+    affiliation = "Colias Group"
+    abstract = "abstracts2023#a-rust-support"
+    youtube = "https://youtu.be/jR2i4Y2Aq3o?si=rJSRRTD7Y-3Z6lUu"
+    slides = "slides/day2-04-spinale.pdf"
+  %}
+
+  {% include program-item.html 
+    id = "p-sel4-microkit"
+    time = "12:00 - 12:30"
+    title = "The seL4 Microkit"
+    presenter = "Ivan Velickovic"
+    affiliation = "UNSW"
+    abstract = "abstracts2023#a-sel4-microkit"
+    youtube = "https://youtu.be/1Y6uE3eZWKQ?si=9fIcnBFUlji0EOAj"
+    slides = "slides/day2-05-velickovic.pdf"
+  %}
+
+  {% include program-item.html 
+    break = "Lunch"
+  %}
+
+  {% include program-item.html 
+    chair = "Todd Carpenter"
+    num-talks = 2
+    id = "p-leveraging-rust" 
+    time = "13:30 - 14:00"
+    title = "Leveraging Rust for Core Platform"
+    presenter = "Ben Hamlin"
+    affiliation = "Galois"
+    abstract = "abstracts2023#a-leveraging-rust"
+    youtube = "https://youtu.be/JmqSfTEg0u8?si=pPKmIWJ4_PrHxvfk"
+    slides = "slides/day2-06-hamlin.pdf"
+  %}
+
+  {% include program-item.html 
+    id = "p-panel"
+    type = "Panel"
+    time = "14:00 - 14:30"
+    title = "OS on seL4: so many options!"
+    presenter = "Gernot Heiser, Sid Hussmann, Kent McLeod, Juliana Furgala"
+    affiliation = "UNSW, Gapfruit, Kry10, MIT Lincoln Laboratory"
+    abstract = "abstracts2023#a-panel"
+    youtube = "https://youtu.be/PynVzpXRW-o?si=JR_9nGM3fwILHnJc"
+  %}
+
+  {% include program-item.html 
+    break = "Break"
+  %}
+
+  {% include program-item.html 
+    chair = "Gernot Heiser"
+    num-talks = 2
+    id = "p-sel4-vmm" 
+    time = "14:45 - 15:15"
+    title = "seL4 VMM on the RISC-V Rocket Chip"
+    presenter = "Robbie VanVossen"
+    affiliation = "DornerWorks"
+    abstract = "abstracts2023#a-sel4-vmm"
+    youtube = "https://youtu.be/a-JLqYVINxo?si=EjKQHSYPmGrlgLna"
+    slides = "slides/day2-08-vanvossen.pdf"
+  %}
+
+  {% include program-item.html 
+    id = "p-sel4-arm"
+    time = "15:15 - 15:45"
+    title = "seL4 on Arm Morello"
+    presenter = "Martin Atkins"
+    affiliation = "Mission Critical Applications"
+    abstract = "abstracts2023#a-sel4-arm"
+    youtube = "https://youtu.be/VcufX8hZ5-o?si=zNc0rSodvxrm5DF8"
+    slides = "slides/day2-09-atkins.pdf"
+  %}
+
+  {% include program-item.html 
+    break = "Break"
+  %}
+
+  {% include program-item.html 
+    chair = "Gerwin Klein"
+    num-talks = 3
+    id = "p-incremental-assurance" 
+    time = "16:00 - 16:30"
+    title = "Incremental assurance for a Rust network stack"
+    presenter = "Michal Podhradsky"
+    affiliation = "Galois"
+    abstract = "abstracts2023#a-incremental-assurance"
+    youtube = "https://youtu.be/c7UC2Rgj3n4?si=XCFZwqwZbTeERon1"
+    slides = "slides/day2-10-podhradsky.pdf"
+  %}
+
+  {% include program-item.html 
+    id = "p-toward-verified"
+    time = "16:30 - 16:45"
+    title = "Toward a Verified, Minimal IPv6 Network Stack Implementation"
+    presenter = "Wyeth Greenlaw Rollins"
+    affiliation = "Lewis & Clark College"
+    abstract = "abstracts2023#a-toward-verified"
+    youtube = "https://youtu.be/wjrA0HlW9JQ?si=O-s5cyDWcgz_LxTY"
+    slides = "slides/day2-11-rollins.pdf"
+  %}
+
+  {% include program-item.html 
+    id = "p-iommu"
+    time = "16:45 - 17:00"
+    title = "IOMMU (take the ARM SMMUv3 for instance) solution for seL4"
+    presenter = "Lei Mao"
+    affiliation = "Horizon Robotics"
+    abstract = "abstracts2023#a-iommu"
+    youtube = "https://youtu.be/6knMCkB-Qvw?si=sd1etRZ3Y4Y_Z0Kc"
+    slides = "slides/day2-12-mao.pdf"
+  %}
+
+  {% include program-item.html 
+    chair = "June Andronick"
+    num-talks = 2
+    id = "p-gold-nio"
+    type = "Gold Sponsor" 
+    time = "17:00 - 17:15"
+    title = "OS for Software Defined Vehicle"
+    presenter = "Qiyan Wang"
+    affiliation = "NIO"
+    abstract = "abstracts2023#a-gold-nio"
+    youtube = "https://youtu.be/W_Y3M6s4E9w?si=OHlpA1kppVWKtbyk"
+    slides = "slides/day2-13-wang.pdf"
+  %}
+
+  {% include program-item.html 
+    id = "p-gold-tii"
+    type = "Gold Sponsor" 
+    time = "17:15 - 17:30"
+    title = "Secure Systems in Focus: Challenges, Solutions, and Future Directions"
+    presenter = "Everton de Matos"
+    affiliation = "TII"
+    abstract = "abstracts2023#a-gold-tii"
+    youtube = "https://youtu.be/MX_svP-Sopk?si=L7DBrBEMd7eIxNYs"
+    slides = "slides/day2-14-dematos.pdf"
+  %}
+
+  {% include program-item.html 
+    event = "Dinner 19:00"
+  %}
+
+  {% include program-item.html 
+    day = "3"
+    date = "21 September 2023"
+  %}
+
+  {% include program-item.html 
+    chair = "Darren Cofer"
+    num-talks = 2
+    id = "p-sig-community" 
+    time = "9:00 - 9:30"
+    title = "SIG update + Community update/discussion"
+    presenter = "Yanyan Shen, Matthew Brecknell, Everton de Matos, Kent McLeod"
+    affiliation = "NIO, Kry10, TII, Kry10"
+    abstract = "abstracts2023#a-sig-community"
+    youtube = "https://youtu.be/ZHLePzGa4vs?si=2Jk9djA0IbBaO81G"
+  %}
+
+  {% include program-item.html 
+    id = "p-sel4-virtualization"
+    time = "9:30 - 10:00"
+    title = "seL4 Virtualization (ARMv8 Edge Device) Guest OS Performance & HA Recovery"
+    presenter = "Lei Mao"
+    affiliation = "Horizon Robotics"
+    abstract = "abstracts2023#a-sel4-virtualization"
+  %}
+  
+  {% include program-item.html 
+    break = "Break"
+  %}
+
+  {% include program-item.html 
+    chair = "Ihor Kuz"
+    num-talks = 3
+    id = "p-building-commercial" 
+    time = "10:15 - 10:30"
+    title = "Building a Commercial Virtualized Mobile Device with seL4 - Part 2"
+    presenter = "Jason Sebranek"
+    affiliation = "Cog Systems"
+    abstract = "abstracts2023#a-building-commercial"
+    youtube = "https://youtu.be/TSYXw4DIGXw?si=BGeO-2LhY1lGREJr"
+    slides = "slides/day3-03-sebranek.pdf"
+  %}
+
+  {% include program-item.html 
+    id = "p-sel4-riscv"
+    time = "10:30 - 10:45"
+    title = "seL4 on RISC-V: Building a Trusted Execution Environment"
+    presenter = "Everton de Matos"
+    affiliation = "TII"
+    abstract = "abstracts2023#a-sel4-riscv"
+    youtube = "https://youtu.be/QSo03imeTx8?si=x2Qx7DRZb82xnJ7b"
+    slides = "slides/day3-04-dematos.pdf"
+  %}
+
+  {% include program-item.html 
+    id = "p-trustworthy-measurements"
+    time = "10:45 - 11:00"
+    title = "Trustworthy Measurements of a Linux Kernel and Layered Attestation via the seL4"
+    presenter = "Michael Neises"
+    affiliation = "University of Kansas"
+    abstract = "abstracts2023#a-trustworthy-measurements"
+    youtube = "https://youtu.be/lyTyJKugoqU?si=mbT_WOp2fGZsbL1h"
+    slides = "slides/day3-05-neises.pdf"
+  %}
+
+  {% include program-item.html 
+    break = "Break"
+  %}
+
+  {% include program-item.html 
+    chair = "Darren Cofer, Ihor Kuz"
+    num-talks = 1
+    id = "p-bof" 
+    time = "11:30 - 11:45"
+    title = "BoFs teasers"
+  %}
+
+  {% include program-item.html 
+    event = "Rooms 1 & 2"
+  %}
+
+  {% include program-item.html 
+    time = "11:45 - 12:30"
+    title = "BoF"
+  %}
+
+  {% include program-item.html 
+    break = "Lunch"
+  %}
+
+  {% include program-item.html 
+    event = "Rooms 1 & 2"
+  %}
+
+  {% include program-item.html 
+    time = "13:30 - 14:15"
+    title = "BoF"
+  %}
+
+  {% include program-item.html 
+    event = "Room 1"
+  %}
+
+  {% include program-item.html 
+    chair = "Darren Cofer, Ihor Kuz"
+    num-talks = 1
+    time = "14:15 - 14:30"
+    title = "Report from BoFs + Discussion"
+  %}
+
+  {% include program-item.html 
+    break = "Break"
+  %}
+
+  {% include program-item.html 
+    id = "p-training"
+    type = "Training"
+    time = "14:45 - 16:30"
+    title = "A quick start to seL4 with the Core Platform"
+    presenter = "Ivan Velickovic"
+    affiliation = "UNSW"
+  %}
+
+{% include program-end.html %}
+{% include section-end.html %}
