@@ -1,0 +1,13 @@
+<p>
+Virtualization enables multiple virtual machines (VMs) to operate on a single physical machine, each with its own operating system, applications, and data, while sharing the underlying physical resources of the host machine. seL4 is a microkernel-based operating system that provides a high-assurance, secure, and efficient platform for the deployment of critical systems. It can be utilized as a hypervisor, providing a minimal and scalable infrastructure for virtualized environments, making it well-suited for use in embedded and real-time systems and high-assurance security-critical systems that require virtualization.
+</p>
+<p>
+Our previous talk at the seL4 Summit 2022 presented our architecture on VirtIO-based Virtualization with seL4 Hypervisor and QEMU. We demonstrated how our approach provides VirtIO standard support to devices on top of the seL4 hypervisor using QEMU to provide the VirtIO device backends for the guest VMs. Our approach offered support for practically all VirtIO-device backends with a minimal amount of source code, providing accelerated graphics and proper file system support.
+</p>
+<p>
+In this talk at the seL4 Summit 2023, we will show the evolution of our architecture compared to the one presented last year, as well as current efforts that we have been working on regarding virtualization support. We aim to discuss the adaptation and integration of our "VirtIO backend" implementation work from the CAmkES environment to the seL4 Core Platform (seL4cp). We will emphasize how the underlying concepts and principles are orthogonal to the choice between CAmkES and seL4cp, demonstrating the seamless transition of key elements such as CAmkES dataports to seL4cp shared memory regions. Our objective is to showcase the versatility and applicability of this virtualization approach, highlighting its value for rapid prototyping in both CAmkES and seL4cp environments. By presenting our work in this manner, we aim to encourage the adoption of this robust virtualization solution, empowering developers to efficiently prototype and deploy secure embedded systems, irrespective of their chosen
+platform.
+</p>
+<p>
+Our approach provides a flexible and scalable solution for critical systems, addressing the limitations of existing solutions while building on the foundation of our previous work. Our talk will provide an overview of the implementation details, performance improvements, and future directions for the technology, highlighting the benefits of using the seL4 hypervisor for virtualized environments.
+</p>

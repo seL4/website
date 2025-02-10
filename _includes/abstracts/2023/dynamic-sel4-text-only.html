@@ -1,0 +1,12 @@
+<p>
+    The current state of the art in seL4-based system design is to statically partition system resources into unprivileged components. Components may synchronise and communicate with each other, but otherwise only have rights to their own resources. For such static systems, the seL4 security theorems guarantee that seL4 correctly enforces access controls, and does not allow any component to gain new rights. The main benefit of this approach is that it automatically gives strong guarantees about component isolation, without further verification effort, and these can be used to support arguments about fault tolerance and security.
+</p>
+<p>
+However, some things are not possible in static systems. For Kry10, over-the-air software and configuration updates are important. Updates should minimise disruption to the system, and may therefore need to co-ordinate with running components. For example, a server may gain new clients, and an allocation of extra memory it can use to serve them.
+</p>
+<p>
+Support for dynamic features like updates adds significant complexity. Dynamic systems must include some privileged components that retain authority to resources used by other components, so isolation guarantees are no longer free. Privileged components should be verified, so we need a way to reason about user-level components, and their interactions with each other and the kernel.
+</p>
+<p>
+This talk will report on our initial work on this challenge. We'll discuss our approach to system design, which uses a strict hierarchy of control to ensure that supervisors have complete oversight of their subsystems, and can enforce protocols for resource delegation and revocation. We'll look at our work-in-progress supervisor API design, whose distinguishing feature is the ability to apply complex configuration updates with all-or-nothing semantics. And finally, we'll speculate on how we might eventually back this up with formal guarantees.
+</p>

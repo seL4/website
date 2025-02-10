@@ -1,0 +1,18 @@
+<p>
+The IOMMU Stage-2 only scheme (the view of IOMMU Stage-2 is as same as the MMU's) is simple, and seems good at most of time, but in order to go further for a more unrestricted and finely controlled Stage-1, we can apply the classic virtio scheme for IOMMU. The only extra important thing that needs to be done in virtio-smmu backend is managing relationships between messages in virtqueue and IOMMU or VSpace capabilities.
+</p>
+<p>
+But what if we use a different page table granularity for SMMU than for MMU? As we know, the IO-mapping request from Guest OS could be as small as one normal page, but seL4 doesn't allow reusing huge or large frames in the same region at the same time. If we already distribute the region into one huge or several large frames, meanwhile, we can not re-segment it into small pages for IO-mapping. Even if leaving capability control aside, we have to use the scheme of Stage1 plus Stage2, and realize Stage1 construction for IO page table which is redundant already exists in VM's OS.
+</p>
+<p>
+Now we have the complete Components'&VMs' IOMMU SID/CB capability management, derivation, and configuration. And most importantly, a proven IOMMU nested sw approach which has the advantages of both performance, flexibility and reliability, with few restrictions, with minimal effort and minimum changes using existing capability systems.
+</p>
+<p>
+By hosting the installation/uninstallation of the Stage-1 context root, bring multiple benefits:
+</p>
+<p>
+1. Not only has finely controlled Stage-1, but also rarely relies on VMM with little restriction and much more flexibility, such as,
+</p>
+<p>
+2. We can separate out Guest OS internal IO page management, and keep them the same as the native IOMMU drivers.
+</p>

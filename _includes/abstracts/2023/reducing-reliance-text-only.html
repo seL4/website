@@ -1,0 +1,15 @@
+<p>
+    The seL4 microkernel is the world’s most highly assured OS kernel. Keeping this claim true is hard work. The formal verification journey of the seL4 microkernel is nearing two decades, and still has a busy roadmap for the years ahead. It started as a research project aiming for a highly challenging problem with the potential of significant impact. Today, the seL4 proofs represent more than a million lines of formal proofs that have been continuously maintained over a system that has evolved considerably, with significant new features being added in response to increased interest and adoption from numerous sectors.
+</p>
+<p>
+    This unique maintenance of a formally verified, evolving software system is one of the largest examples in the emerging discipline of proof engineering: the art of systematic treatment, management and estimation of large-scale proofs. Proofcraft is constantly developing and refining proof engineering techniques to manage what is probably the world’s largest continually maintained formal proof artefact.
+</p>
+<p>
+    Importantly, and perhaps paradoxically, proof engineering aims at reducing the reliance
+    on verification experts, in this case through techniques improving the genericity and automation of the seL4 proofs.
+
+    In this talk we will present the challenges one encounters while maintaining such a large proof base, along with some of Proofcraft’s existing and planned techniques to make seL4 proofs more agile and friendly to change, more robust against predictable change, and less dependent on experts for updates.
+</p>
+<p>
+    For instance, the current seL4 invariant proofs are split into a generic architecture- independent part and an architecture-dependent part. This allows significantly speed up in development of proofs for new features, as well as reduction of the proof update bur- den on code changes. We plan to improve this architecture split and apply it to other large proof artefacts in seL4. Another example is our plan to almost completely automate the verification of platform ports within existing verified architectures of the seL4 kernel. Currently, porting seL4 to a new platform involves determining which architecture the platform runs on, for instance Arm v7, Intel x64, or RISC-V 64, determining which devices are included, at which memory addresses they reside, etc. These lead to configuration parameters for the kernel and the definition of a set of constants. Instead of requiring the involvement of experts, we can develop proof automation that shows these interface relationships are satisfied by a concrete platform configuration, greatly reducing the verification overhead of porting to a new platform.
+</p>
