@@ -1,0 +1,28 @@
+<p>
+    Virtualization technology was widely used in X86 Cloud Server. There are various mature finetunes work was done for GuestOS Performance and High Availability Recovery.
+</p>
+<p>
+In comparison, Virtualization in ARM Edge device(ARMv8 AACH64) was not so widely used. And its HW IP device usage model was very different from the Cloud scenario. The performance and HA is a challenge here.
+</p>
+<p>
+In our advance research project, we explored some ways to improve that, e.g.
+</p>
+<p>
+1) Support sel4 kernel fastpath virtual interrupt(for SPI/PPI/SGI/LPI) to shorten the long interrupt process route.
+</p>
+<p>
+With this, Linux 5.10 GuestOS(cyclictest) average schedule latency will be reduced from 30us-
+>7us, close to RAW Linux 5.10 which was 5us
+</p>
+<p>
+Note: Most++ COST ARMv8 SoC only have GICv3 interrupt controller IP, GOS interrupt direct inject was only supported in GICv4.
+</p>
+<p>
+2) Support Virtual Machine Monitor (VMM) with vCPU symmetric multiprocessing (SMP) extension to speedup co-current helper services to GuestOS VMExits.
+</p>
+<p>
+3) Support Virtual Machine Monitor (VMM) with HA Recovery extension to make Linux GuestOS recovery to working mode less than 1000 ms while crashing.
+</p>
+<p>
+Note: Linux GOS basic system can recover less in 500ms, Linux GOS with an actual complex application may recover less in 1000 ms.
+</p>

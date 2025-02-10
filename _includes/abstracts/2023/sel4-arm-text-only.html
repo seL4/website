@@ -1,0 +1,9 @@
+<p>
+seL4 has a formally-proven kernel, but the safe and secure operation of a system built on seL4 depends on the correct operation of the user-level tasks that implement the system policies, services, and device drivers needed by the application, as well as on the correct operation of the application tasks. Running an seL4 system on a processor with CHERI extensions brings the extra assurance of the capability architecture to these user-level tasks, and thus increases the assurance of the overall application.
+</p>
+<p>
+Our project builds on initial work done at Arm Research to port the seL4 kernel to the Arm Morello CHERI processor. The project aims to support a mixture of user-level tasks compiled as Hybrid code (that is, where capabilities are explicitly defined in the source code), and PureCap code (that is, where all pointers are dereferenced as capabilities). The seL4 user-level libraries must be ported to support these compilation options. SeL4 virtual machines will also be extended to support capability-aware operating systems, such as CheriBSD4, Morello Android5, and Morello Linux6.
+</p>
+<p>
+This paper will report on the progress of the project, and discuss the requirements and design options for the communication of CHERI capabilities between seL4 tasks, and the implications this has on the seL4 IPC mechanisms.
+</p>

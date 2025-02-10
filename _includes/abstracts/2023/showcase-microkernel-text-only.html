@@ -1,0 +1,27 @@
+<p>
+This talk will demonstrate how Gapfruit OS [0], an operating system built with the Genode Framework [1], can be deployed for edge computing in industrial IoT environments. Genode is an operating system framework that supports seL4.
+</p>
+<p>
+When it comes to systems engineering, we live in exciting times. On the one hand, we have projects, such as seL4 and Genode, that push the boundaries for a solid computing foundation from the bottom up. On the other hand, Zero-Trust principles move the industry to combine public-key infrastructures with TPM-backed device identities. Third, we can witness a trend from the cloud natives that tries to free us from much of the complex legacy code bases on the application layer with new runtimes such as WebAssembly/WASI.
+</p>
+<p>
+I present Gapfruit's journey of deploying WASM code to a microkernel OS with capability-based security. I will explain how we chose the Genode Framework for our products and how we utilize it to port libraries such as tpm2-tss [2] and WasmEdge [3].
+</p>
+<p>
+I will then showcase a live demo demonstrating the zero-touch provisioning capabilities of an IoT gateway running Gapfruit OS. The demo will show how the device boots and connects to its digital twin on Azure [4] with TPM-backed credentials and how the desired-state configuration of its digital twin triggers the deployment of a WebAssembly application with WasmEdge to the device.
+</p>
+<p>
+[0] https://gapfruit.com
+</p>
+<p>
+[1] https://github.com/genodelabs/genode
+</p>
+<p>
+[2] https://github.com/tpm2-software/tpm2-tss
+</p>
+<p>
+[3] https://github.com/WasmEdge/WasmEdge
+</p>
+<p>
+[4] https://azure.microsoft.com/en-us/products/iot-hub
+</p>

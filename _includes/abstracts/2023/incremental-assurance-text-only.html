@@ -1,0 +1,9 @@
+<p>
+Despite the fact that numerous components and subsystems have been developed on top of or with seL4 over the past few years, sponsored mainly by DoD SBIR grants, seL4 does not have a high-assurance network stack. In earlier work on the HACMS project, Galois integrated an off-the-shelf TCP stack into a seL4 platform. Many other organizations have done something similar, either by shiming in existing low-assurance network code that has poor provenance and no rigorous assurance, or by using the Linux environment to provide networking features. To the best of our knowledge, there is currently no high assurance network stack readily available for embedded systems.
+</p>
+<p>
+To mitigate this gap, we started with an existing and widely used Rust network stack smoltcp and are providing an incremental assurance, that is by no means complete, but provides a path towards a high assurance stack in the future.
+</p>
+<p>
+This summer, we used Prognosis framework, offering automated closed-box learning and analysis of models of network protocol implementations, for model based veritication of TCP protocol in smoltcp, and Kani Rust verifier to verify TCP protocol logic and packet format correctness via symbolic execution. We have found protocol violations or misimplementations in the library, and have been working with the smoltcp developers to mitigate these violations. Furthermore, we integrated Continuous Verification suite with the smoltcp library, to automatically validate the code after each commit.
+</p>

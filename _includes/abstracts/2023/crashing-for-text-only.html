@@ -1,0 +1,12 @@
+<p>
+A reliable OS needs to make sure that it, and the software that runs on it, keeps running and is always available.
+</p>
+<p>
+Ideally software would never fail, so reliability would be easy. But even if your software is perfect, there are always hardware problems, or problems when interacting with other software. Also software isn’t perfect (even if it’s formally verified) so we have to deal with inevitable failure.
+</p>
+<p>
+One approach to dealing with failure is to let software crash, but monitor it and restart it when it does crash. This allows the system to control (and importantly - recover from) the failures. Erlang OTP-based systems take this approach, and it has worked extremely well for building highly reliable long-running systems.
+</p>
+<p>
+We’ve applied this “let it crash” approach in the sel4-based Kry10 OS. In this presentation we will dive into our use of this approach, describe the challenges of applying it in Kry10 OS (such as resource recovery, dependency managements, re-initialisation of resources, etc), explain why seL4 provides all the right features for applying this approach at the system level, and give examples of how it helps to achieve reliability.
+</p>

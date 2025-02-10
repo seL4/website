@@ -1,0 +1,18 @@
+<p>
+This application-in-development leverages the seL4 proofs to provide assurance for the trustworthy and remote attestation of a Linux VM. By focusing on a Linux VM running on an ODROID XU4 platform, this work demonstrates the potential of seL4-based remote attestation across different hardware architectures and platforms.
+</p>
+<p>
+The principles of remote attestation demand that the mechanisms of attestation are trustworthy. The seL4 guarantees properties of confidentiality and integrity, and these can be jointly understood as the seL4 enforcing the isolation of processes. This isolation allows the use of virtual machine introspection without fear of the virtual machine escape exploits to which previous software solutions are vulnerable. Here, the tools that introspect are trusted to measure a target because they are isolated from that target.
+</p>
+<p>
+This attestation is layered in order to confine the adversary, and the layering is implemented at the architectural level using CAmkES. The adversary is confined to either corrupt the attestation tools or to rapidly corrupt and restore the target, bypassing the attestation tools. The seL4 permits an argument for the infeasibility of these strategies. However, the principles of remote attestation also demand that comprehensive information be generated over the target. Without a comprehensive measurement of the Linux environment, the adversary gains the option of hiding their corruption.
+</p>
+<p>
+In support of a comprehensive measurement suite, an introspection library was implemented for a narrow range of Linux kernels. The library required a pathway for using arbitrary kernel modules in an arbitrary version of Linux, but the range of applicable kernels is narrow due to changes in how Linux manages its memory. The library facilitated the measurements of kernel modules, kernel and user processes, and kernel read-only data. Much more is required for a comprehensive measurement.
+</p>
+<p>
+The principles also demand fresh information and constrained disclosure, which are simple matters of cryptography. Finally, the principles demand semantic explicitness, and this is largely considered in adjacent work that implements the Copland attestation language in CakeML extracted from Coq theorems. That work is integrated into this system. A way to use the latest versions of CakeML in seL4 threads independent from HOL4 was required.
+</p>
+<p>
+It remains to implement a more comprehensive suite of measurements for the Linux kernel and the target program, and to demonstrate layered attestation on the bare metal of the ODROID XU4. If the measurements suffice to detect corruption, the appraiser will learn of this. Possible future work includes implementing this work for a wider range of Linux kernels and hardware platforms or formalizing a composition of seL4 kernel-level proofs and proofs over the attestation tools.
+</p>

@@ -1,0 +1,19 @@
+<p>
+A natural way to perform hardware abstraction in SeL4 is to create a dedicated driver component. Writing such hardware driver components in SeL4 Core Platform for Rust is currently a manual process. Assuming a Rust library to perform register manipulation, etc. already exists (say, as an implementation of embedded-hal traits), it is still necessary to:
+</p>
+<p>
+1. Design an RPC protocol that clients will use to access the hardware driver;
+</p>
+<p>
+2. Implement the driver-side protocol;
+</p>
+<p>
+3. Implement the client-side protocol, adapting any libraries already written to interface with the hardware drivers to use this RPC protocol instead.
+</p>
+<p>
+This talk describes a way to use traits from HAL crates, such as embedded-hal to make the code implementing these protocols easily reusable. As an added benefit our approach allows code reuse in two more ways: Existing implementations of HAL traits for specific hardware can be turned into dedicated Core Platform components with a minimum of additional boilerplate; and hardware-agnostic libraries written on top of embedded-hal traits can be used in client components without writing adapters.
+This approach is suitable for interactions with a networking stack (smoltcp) and other devices such as UART, and can be extended to other peripherals (timers, SPI, I2C). Our approach should make running Core Platform on various devices more straightforward.
+</p>
+<p>
+We will present conclusions and examples developed as part of this work.
+</p>
