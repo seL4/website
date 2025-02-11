@@ -62,7 +62,7 @@ security and high performance. It also has the most advanced support for
 systems](https://en.wikipedia.org/wiki/Mixed_criticality).
 
 For detailed explanations of these terms, see our [FAQ](FAQ.html). For a more
-detailed introduction to seL4, read the [Whitepaper](seL4-whitepaper.pdf).
+detailed introduction to seL4, read the [White Paper](seL4-whitepaper.pdf).
 
 
 <!-- TODO: restyle picture;
