@@ -32,6 +32,7 @@ help:
 
 JEKYLL_ENV := production
 SERVE_HOST :=
+BUILD_OPTS :=
 
 build: .jekyll-cache/ruby_deps .npm_deps
 	JEKYLL_ENV=$(JEKYLL_ENV) bundle exec jekyll build $(BUILD_OPTS)
