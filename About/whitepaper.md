@@ -1,25 +1,27 @@
 ---
 SPDX-License-Identifier: CC-BY-SA-4.0
 SPDX-FileCopyrightText: 2020 seL4 Project a Series of LF Projects, LLC.
-title: seL4 Whitepaper
+title: seL4 White Paper
 pre: What is seL4?
 pre_link: index.html
 sub: '
   <p>
-    This whitepaper provides an introduction to and overview of seL4, including
-    seL4’s assurance story, its security- and safety-relevant features, and its
-    benchmark-setting performance, as well as typical usage scenarios.
+    The seL4 white paper provides an introduction and overview
+    for seL4, including seL4&apos;s assurance story, its security- and safety
+    features, and its benchmark-setting performance. It also shows typical
+    usage scenarios.
   </p>
-<div class="flex justify-center items-center pt-6">
-  <a href="seL4-whitepaper.pdf" class="button-outline px-10">Download Whitepaper</a>
-</div>'
+  <div class="flex justify-center items-center pt-6">
+    <a href="seL4-whitepaper.pdf" class="button-outline px-10">Download White Paper</a>
+  </div>'
 ---
 
 <div class="mx-10 mb-6 float-left w-1/3">
   <a href="seL4-whitepaper.pdf">
-  <img src="whitepaper.svg" alt="seL4 Whitepaper" />
+  <img src="whitepaper.svg" alt="seL4 white paper" />
   </a>
 </div>
+
 seL4 is a high-assurance, high-performance operating system microkernel. It is
 unique because of its comprehensive formal [verification](Verification/),
 without compromising [performance](Performance/). It is meant to be used as a
@@ -50,7 +52,7 @@ compromise in one part of the system can be contained and prevented from harming
 other, potentially more critical parts of the system.
 
 Specifically, seL4's implementation is formally (mathematically) proven
-correct (bug-free) against its specification, has been proved to enforce
+correct against its specification, has been proved to enforce
 strong security properties, and if configured correctly its operations
 have proven safe upper bounds on their worst-case execution times. It
 was the world's first operating system with such a proof, and is still
@@ -63,24 +65,9 @@ For detailed explanations of these terms, see our [FAQ](FAQ.html). For a more
 detailed introduction to seL4, read the [Whitepaper](seL4-whitepaper.pdf).
 
 
+<!-- TODO: restyle picture;
+     TODO: if we include the picture it should be mentioned and at least partially explained -->
 <img style="width: 40%; margin-left: auto; margin-right: auto; center"
      src="../images/trusted.svg"
-     alt="seL4 system" />
-
-<!--
-In 2009, the seL4 kernel was a scientific breakthrough result from the
-[Trustworthy Systems group](http://trustworthy.systems/) (TS) that
-showed that high-performance kernels are within the realm of formal
-verification. Today, seL4 is part of an ecosystem supporting active use
-in various domains including automotive, aviation, infrastructure,
-medical, and defence. A key highlight demonstrating its fit for
-real-world deployment was in the DARPA-funded
-[HACMS](http://trustworthy.systems/projects/OLD/SMACCM/) program, where
-seL4 was used to protect an autonomous helicopter against cyber-attacks.
-TS continues to push the state of the art of operating systems through
-[seL4](http://trustworthy.systems/projects/seL4/), in close cooperation
-with its partners in the seL4 Foundation.
-
-More on TS ongoing and future [research](../Info/more-research.html)
-about seL4 and trustworthy systems.
--->
+     alt="Diagram showing a system with a VM, trusted, and untrusted components,
+          isolated from each other by seL4." />
