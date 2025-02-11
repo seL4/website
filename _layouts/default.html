@@ -25,7 +25,11 @@ layout: base
         %}
       </div>
       {% endunless %}
-      <article class="pl-0 lg:pl-8 xl:pl-0 mx-auto -mt-10 prose xl:prose-lg lg:max-w-2xl xl:max-w-3xl dark:prose-invert;">
+      {% if page.toc %}
+      <article class="pl-0 lg:pl-8 xl:pl-0 mx-auto -mt-8 prose xl:prose-lg lg:max-w-2xl xl:max-w-3xl dark:prose-invert">
+      {% else %}
+      <article class="mx-auto theprose -mt-8">
+      {% endif %}
         {{ content }}
       </article>
     </div>
