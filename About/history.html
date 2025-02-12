@@ -14,8 +14,8 @@ sub: '
      <a href="use.html">real-world deployment and use</a>. Here is a walk down
      seL4&apos;s memory lane.
   </p>
-  <img src="../images/tries-shutterstock/l4v-old-photo.png"
-       alt="l4v early team" class="mt-8 rounded-lg">'
+  <img src="../images/tries-shutterstock/l4v-old.jpg"
+       alt="l4v early team" class="mx-auto mt-8 rounded-lg">'
 ---
 
   <!--FIXME: fix link to Use page when it exists-->
@@ -27,7 +27,7 @@ sub: '
       year="70's and 80's"
       title="First microkernel: minimality but bad performance"
       description='
-
+      <p>
         The notion of a microkernel first emerged in the 70&apos;s. At that
         time, Operating Systems largely ran in privilege mode (known as kernel
         mode) to provide hardware abstraction mechanisms and services. First
@@ -36,12 +36,14 @@ sub: '
         in kernel mode) to a minimal core that is free from policy, while the
         rest of the operating system services run in unprivileged mode (known as
         application mode).
-
+      </p>
+      <p>
         The achilles&apos; heel of microkernels at the time was performance:
         applications code would obtain system services by communicating via an
         interprocess communication (IPC) mechanism, making IPC on the critical
         path of any service invocation. This led to poor performance, claimed by
         some to be intrinsic to microkernels design.
+      </p>
         <img src="../images/tries-shutterstock/wikipedia-microkernel-idea.svg"
              alt="Microkernel principles" class="mt-8 rounded-lg shadow-lg">'
   %}
@@ -52,8 +54,7 @@ sub: '
       year="90's"
       title="L4 kernel: microkernels can have high performance"
       description='
-
-
+      <p>
         In 1993 Jochen Liedtke demonstrated with his L4 kernel that microkernel
         IPC could be fast, a factor 10–20 faster than contemporary
         microkernels. This remarkable order-of-magnitude performance improvement
@@ -63,17 +64,19 @@ sub: '
         Liedtke&apos;s L4 in the
         paper <a href="https://www.google.fr/url?sa=t&source=web&rct=j&opi=89978449&url=https://trustworthy.systems/publications/nicta_full_text/8988.pdf&ved=2ahUKEwjR3Y76-YuLAxV2U6QEHflXM0MQFnoECBcQAQ&usg=AOvVaw0q8HSvt7xj8PyxXGQYvmHX">"L4
         Microkernels: The Lessons from 20 Years of Research and Deployment"</a>
+      </p>
         <a href="https://www.google.fr/url?sa=t&source=web&rct=j&opi=89978449&url=https://trustworthy.systems/publications/nicta_full_text/8988.pdf&ved=2ahUKEwjR3Y76-YuLAxV2U6QEHflXM0MQFnoECBcQAQ&usg=AOvVaw0q8HSvt7xj8PyxXGQYvmHX"><img src="../images/tries-shutterstock/paper-20y.png"
         alt="20 years restrospective paper" class="mt-8 rounded-lg mx-auto
         shadow-lg px-20 py-4"></a>' %}
 
-	<!-- FIXME: add underline for links? and replace quotes by italic?-->
+	<!-- FIXME: replace quotes by italic?-->
 
   {% include timeline-item.html
       year="2004"
       title="Start of the L4.verified project"
-	description='
+      description='
 
+      <p>
         In 2004, after spending some years experimenting with microkernel
         designs looking for performance and complexity reduction opportunities,
         Gernot Heiser and Kevin Elphinstone partnered with Gerwin Klein with the
@@ -83,119 +86,156 @@ sub: '
         led the design of a new kernel of the L4 family which would be
         verifiable, while Gerwin led the formal specification and verification
         of it. seL4 was born.
+      </p>
 
         <img src="../images/tries-shutterstock/l4v.jpg"
         alt="L4.verified project" class="mt-8 rounded-lg mx-auto shadow-lg px-20 py-4">'
   %}
 
   {% include timeline-item.html
-      date="2009-07-29"
-      title="0 sorries: first formally verified kernel, after multiple 2-to-4 weeks"
+      year="29th July 2009"
+      title='0 sorries: first formally verified kernel, after multiple "2-to-4 weeks"'
       description='
-        Blah blah blah blah blah blah blah blah blah blah blah blah blah blah
-        blah blah blah blah blah blah blah blah blah blah blah blah blah blah
-        blah blah blah blah blah blah blah blah blah blah
+      <p>
+	On July 29, 2009, the last "sorry" of the seL4 functional correctness
+	proof was eliminated. A "sorry" is an assumed theorem lacking a complete
+	proof. In this pioneer field of proof engineering, where measuring
+	progress was unchartered territory, counting these "sorries" was one,
+	albeit imperfect, way to monitor progression: hundreds of theorems were
+	first stated and "sorried" so work on their proofs could be parallelised
+	and tracked. Being imperfect, the measure would go up from time to time,
+	for instance when new properties to be proven were discovered. Combined
+	with the intrinsic all-or-nothing nature of formal proofs, the
+	project&apos;s completion estimate was "2-to-4 weeks" for a very long
+	time. When this last sorry was finally proved, which we now celebrate
+	every year as the seL4 day, the world had its first formally verified
+	kernel.
+      </p>
         <img src="../images/tries-shutterstock/0sorries.jpg"
              alt="0 sorries" class="mt-8 rounded-lg w-3/4 mx-auto shadow-lg">'
   %}
+
+	<!-- FIXME: add link to verification page-->
 
   {% include timeline-item.html
       year="2012-2013"
       title="Further proofs: Security, Binary Correctness, and more"
       description='
-	Blah blah blah blah blah blah blah blah blah blah blah blah blah blah
-        blah blah blah blah blah blah blah blah blah blah blah blah blah blah
-        blah blah blah blah blah blah blah blah blah blah
+      <p>
+	Functional correctness shows that the seL4 C code behaves exactly as its
+	specification mandates. Subsequent breakthroughs have demonstrated that
+	seL4 enforces the security properties of integrity, confidentiality and
+	authority confinement; that the binary code of seL4 has the same
+	behaviour as its C implementation; <a href="../Verification/">and
+	more</a>. Collectively, this "proof stack" provides unprecedented assurance
+	that applications running on seL4 can be strongly isolated, preventing
+	attacks from untrusted applications to propagate to critical ones.
+      </p>
         <img src="../images/tries-shutterstock/proof-stack.pdf"
              alt="seL4 Proof stack" class="mt-8 rounded-lg w-3/4 mx-auto shadow-lg px-20 py-4">'
   %}
 
 
-<!-- FIXME: redo picture or add licence, from wikipedia -->
+<!-- FIXME: redo picture  -->
 
 
   {% include timeline-item.html
       year="2012-2017"
       title="DARPA HACMS: seL4 protects unmanned helicopter against cyber-attacks"
       description='
-	Blah blah blah blah blah blah blah blah blah blah blah blah blah blah
-        blah blah blah blah blah blah blah blah blah blah blah blah blah blah
-        blah blah blah blah blah blah blah blah blah blah
+      <p>
+        The impact of seL4&apos;s verification has been clearly significant in the
+	<a href="../Research/">Research</a> area, with high-impact
+	<a href="../Research/publications.html">publications</a> spanning the
+	disciplines of Systems and Formal Methods. Its lasting real-world
+	significance though began with the
+	DARPA-funded <a href="http://loonwerks.com/projects/hacms.html">HACMS
+	program</a>, where seL4 was embedded in a range of autonomous vehicles,
+	ranging from trucks, a land robot, a quadcopter, and Boeing&apos;s
+	Unmanned Little Bird (ULB) helicopter. At the end-of-project
+	demonstration, the HACMS Red Team -- a professional team of hackers --
+	unsuccessfully tried to compromise the security of the
+	ULB, <span class="italic">in flight</span>: they were given access to
+	the uncritical camera feed, and could crash that, but seL4 prevented the
+	cyber attack from compromising the flight mission. This sent a
+	resounding message, recognised by numerous
+	<a href="../Research/awards.html">awards</a>, in DARPA and beyond, that
+	formally verified software does provide unprecedented assurance and can
+	be retrofitted to protect highly critical real-world systems.
+      </p>
+      <p>
+	HACMS was also the project where seL4 started to be ported to new
+	architectures and platforms. The original proof stack only held for Arm
+	32-bit hardware. During the project the proof was ported to Intel x64
+	architecture. This was the start of a continuing widening of the scope
+	of <a href="TODO">all supported architectures and platforms that seL4
+	now supports.</a>
+      </p>
         <img src="../images/tries-shutterstock/boeing-ulb-helicopter.png"
              alt="Boeing&apos;s ULB" class="mt-8 rounded-lg w-3/4 mx-auto">'
    %}
 
+	<!-- FIXME: put real link to Platforms page -->
+
   {% include timeline-item.html
-      year="2014-07-29"
+      year="29th July 2014"
       title="Freedom day: seL4 becomes Open Source"
       description='
-	Blah blah blah blah blah blah blah blah blah blah blah blah blah blah
-        blah blah blah blah blah blah blah blah blah blah blah blah blah blah
-        blah blah blah blah blah blah blah blah blah blah
+      <p>
+	With its demonstrated research and real-world impact, seL4
+	unsurprinsingly attracted significant interest. However, being
+	proprietary was hindering its adoption. In July 2014, on the 29th
+	preciselly to make the "seL4 day" a doubly-celebratory day, seL4 code
+	and proofs became open source, paving the way to the
+	widespread <a href="use.html">use</a> it enjoys today.
+      </p>
         <img src="../images/tries-shutterstock/sel4-github.png"
              alt="seL4 on Github" class="mt-8 rounded-lg mx-auto shadow-lg p-4">'
    %}
 
-  {% include timeline-item.html
-      year="2018"
-      title="MCS is born: support for Mixed Criticality Systems"
-      description='
-	Blah blah blah blah blah blah blah blah blah blah blah blah blah blah
-        blah blah blah blah blah blah blah blah blah blah blah blah blah blah
-        blah blah blah blah blah blah blah blah blah blah
-        <img src="../images/tries-shutterstock/mcs-cap.png"
-             alt="MCS principle" class="mt-8 rounded-lg w-3/4 mx-auto shadow-lg p-4">'
-  %}
 
   {% include timeline-item.html
-      year="2018-2023"
-      title="DARPA CASE: blah"
-      description='
-	Blah blah blah blah blah blah blah blah blah blah blah blah blah blah
-        blah blah blah blah blah blah blah blah blah blah blah blah blah blah
-        blah blah blah blah blah blah blah blah blah blah
-        <img src="../images/tries-shutterstock/case.jpg"
-             alt="DARPA CASE program" class="mt-8 rounded-lg w-3/4 mx-auto shadow-lg ">'
-  %}
-
-
-<!-- FIXME: ask Darren for CASE picture -->
-
-
-  {% include timeline-item.html
-      year="2020"
+      year="7th April 2020"
       title="Launch of the seL4 Foundation"
       description='
-	Blah blah blah blah blah blah blah blah blah blah blah blah blah blah
-        blah blah blah blah blah blah blah blah blah blah blah blah blah blah
-        blah blah blah blah blah blah blah blah blah blah
+      <p>
+	With increased adoption, this open source technology needed a neutral
+	home with long-term future. On April 7th, 2020,
+	the <a href="../Foundation/">seL4 Foundation</a> was created, with
+	Founding <a href="../Foundation/Membership/">Members</a> CSIRO&apos;s
+	Data61, <a href="https://cog.systems">Cog Systems</a>,
+	<a href="https://www.dornerworks.com">DornerWorks</a>, Ghost Locomotion,
+	HENSOLDT Cyber and <a href="https://www.unsw.edu.au">UNSW Sydney</a>.
+      </p>
         <img src="../images/mosaic-high.jpg"
              alt="seL4 Foundation launch" class="mt-8 rounded-lg w-1/2 mx-auto shadow-lg ">'
   %}
+
 
   {% include timeline-item.html
       year="2021"
       title="seL4 becomes an Ecosystem"
       description='
-	Blah blah blah blah blah blah blah blah blah blah blah blah blah blah
-        blah blah blah blah blah blah blah blah blah blah blah blah blah blah
-        blah blah blah blah blah blah blah blah blah blah
+      <p>
+	In 2021, the original core seL4 team becomes a network of
+	organisations. The <a href="https://trustworthy.systems">Trustworthy
+	Systems group</a> continues seL4 research
+	within <a href="https://www.unsw.edu.au">UNSW Sydney</a>. The seL4 proof
+	leaders found <a href="https://proofcraft.systems">Proofcraft</a>, a
+	company providing commercial support for formal verification. A number
+	of key seL4 experts join <a href="https://www.kry10.com">Kry10</a>, a
+	company building an seL4-based platform for mission-critical connected
+	devices. At the same time, the ecosystem of seL4 users, adopters and
+	developers keeps growing, gathering annually at
+	the <a href="../Foundation/Summit/">seL4 summit</a> to share the latest
+	developments of this technology that has now become a world-wide
+	ecosystem.
+      </p>
         <img src="../images/tries-shutterstock/summit2024.jpg"
              alt="seL4 summit2024" class="mt-8 rounded-lg w-3/4 mx-auto shadow-lg ">'
   %}
 
-<!-- FIXME: or logo cloud? -->
+<!-- FIXME: add logo cloud? -->
 
-  {% include timeline-item.html
-      year="2024"
-      title="DARPA PROVERS: blah"
-      description=' Blah'
-  %}
-
-  {% include timeline-item.html
-      year="2025"
-      title="More?"
-      description=' Blah'
-  %}
 
 {% include timeline-end.html %}
