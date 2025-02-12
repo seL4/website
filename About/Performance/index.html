@@ -2,8 +2,44 @@
 # Copyright 2021 seL4 Project a Series of LF Projects, LLC.
 # SPDX-License-Identifier: CC-BY-SA-4.0
 title: Performance
+sub: '
+<p>
+ seL4 stands apart with its unparalleled formal verification, without any
+ compromise in performance. In fact it is <a href="#fastest">fastest operating
+ system kernel</a> available. This page explains this claim and its significance, while also providing
+ <a href="#perf-numbers"> detailed seL4 performance metrics</a>
+ and <a href="#compil-details"> compilation details</a>.
+  <img src="../../images/tries-shutterstock/sel4-fast.png" alt="seL4 is fast" class="rounded-lg mt-8 w-1/2 mx-auto">
+</p>'
 redirect_from: /About/Performance/home.pml
 ---
+
+<!-- FIXME: redo logo properly if we like it-->
+
+<h2 id="fastest">The world's fastest kernel</h2>
+
+<p>
+  seL4 has been designed for real-world use. From
+  its <a href="../history.html">historical days</a> when verification started,
+  the aim was to achieve the highest assurance level through formal proof,
+  without sacrificing more than 10% in performance compared to the fastest
+  kernels at the time.
+</p>
+
+<p>
+  seL4 not only beat the performance of those earlier kernels, but it now
+  outperforms any microkernels by a factor of 2 to 10 times. While independent
+  performance comparisons are scarce, the few available studies corroborate our
+  claims and we are here publicly providing performance numbers for seL4.
+</p>
+<p>
+  By providing both proved security and performance, seL4 is designed to support
+  a wide range of real-world <a href="../use.html">use cases</a>.
+</p>
+
+
+<h2 id="perf-numbers">Performance numbers</h2>
+
 <p>This page displays the latest benchmark numbers for seL4 from the publicly
 available <a href="https://github.com/seL4/sel4bench">sel4bench repository</a>.
 The following times are reported as mean and standard deviation in
@@ -15,7 +51,10 @@ address space as the interrupted thread.</li>
 the same core.</li>
 <li><strong>Notify</strong>: Time in cycles to send a signal from a process with priority 1 to a higher
 priority (255) process in a different address space</li>
-</ul><h2>Default</h2>
+</ul>
+
+
+<h3>Default</h3>
 <table class="data-table">
   <tr>
     <th style=" width: 8ex;" colspan="1">ISA</th>
@@ -93,7 +132,7 @@ priority (255) process in a different address space</li>
     <td class="data-stddev">(78)</td>
   </tr></table>
 
-<h2>MCS</h2>
+<h3>MCS</h3>
 <table class="data-table">
   <tr>
     <th style=" width: 8ex;" colspan="1">ISA</th>
@@ -171,7 +210,7 @@ priority (255) process in a different address space</li>
     <td class="data-stddev">(161)</td>
   </tr></table>
 
-<h2>Compilation Details</h2>
+<h2 id="compil-details">Compilation Details</h2>
 <p>All benchmarks were built using the trustworthy-systems/sel4
 docker image from the <a href="https://github.com/seL4/seL4-CAmkES-L4v-dockerfiles">seL4
 docker file repository</a></p><h3>Default</h3>
