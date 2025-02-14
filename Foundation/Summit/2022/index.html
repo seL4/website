@@ -59,35 +59,30 @@ redirect_from: /Foundation/Summit/2022/home.pml
 
 
 {% include bio-items-start.html %}
-<!-- Should board-bio-item.html be renamed to be more generic? -->
-<!-- Also, 'bio' includes link to abstract in summit pages, which is misleading -->
-{% include board-bio-item.html
+{% include keynote-item.html
   name = "Gernot Heiser"
   role = "Scientia Professor"
   img = "../../../images/summit/gernot.jpg"
   affiliation = "UNSW Sydney"
   affiliation_link = "https://www.unsw.edu.au/"
-  bio = '
+  text = '
   <a href="abstracts2022#a-seL4-research">
     <p class="text-lg leading-8 tracking-tight text-gray-900 mt-10">State of seL4-related research</p>
   </a>'
 %}
-<!-- Should board-bio-item.html be renamed to be more generic? -->
-<!-- Also, 'bio' includes link to abstract in summit pages, which is misleading -->
-{% include board-bio-item.html
+{% include keynote-item.html
   name = "Boyd Multerer"
   role = "Founder and CEO"
   img = "../../../images/summit/boyd.jpg"
   affiliation = "Kry10"
   affiliation_link = "https://www.kry10.com/"
-  bio = '
+  text = '
   <a href="abstracts2022#a-Kry10-Secure-Platform">
     <p class="text-lg leading-8 tracking-tight text-gray-900 mt-10">Kry10 Secure Platform</p>
   </a>'
   %}
-  {% include bio-items-end.html %}
-
-  {% include section-end.html %}
+{% include bio-items-end.html %}
+{% include section-end.html %}
 
 <!-- Panel section -->
 {% include section-start.html

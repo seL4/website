@@ -1,0 +1,6 @@
+{% assign affiliation = '<a href="' | append: include.affiliation_link | append: '">'
+                                    | append: include.affiliation
+                                    | append: '</a>' %}
+{% assign details = "<em>" | append: include.role | append: ", "
+                           | append: affiliation | append: "</em>" %}
+{% include text %}
