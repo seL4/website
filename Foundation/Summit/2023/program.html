@@ -1,7 +1,7 @@
 ---
 # Copyright 2023 seL4 Project a Series of LF Projects, LLC.
 # SPDX-License-Identifier: CC-BY-SA-4.0
-title: seL4 summit 2023 Program
+title: seL4 Summit 2023 Program
 pre: "The seL4 Summit 2023"
 pre_link: "./"
 sub: '
@@ -28,12 +28,12 @@ layout: card
 
 {% include program-start.html %}
 
-  {% include program-item.html 
+  {% include program-item.html
     day = "1"
     date = "19 September 2023"
   %}
 
-  {% include program-item.html 
+  {% include program-item.html
     chair = "Darren Cofer"
     num-talks = 2
     time = "9:00 - 9:10"
@@ -44,7 +44,7 @@ layout: card
     slides = "slides/day1-00-cofer.pdf"
   %}
 
-  {% include program-item.html 
+  {% include program-item.html
     id = "p-scoping-assurance"
     type = "Keynote"
     time = "9:10 - 10:00"
@@ -55,14 +55,14 @@ layout: card
     slides = "slides/day1-01-gage.pdf"
   %}
 
-  {% include program-item.html 
+  {% include program-item.html
     break = "Break"
   %}
 
-  {% include program-item.html 
+  {% include program-item.html
     chair = "Gerwin Klein"
     num-talks = 2
-    id = "p-dynamic-sel4" 
+    id = "p-dynamic-sel4"
     time = "10:15 - 10:45"
     title = "Dynamic seL4 based systems: designing for verifiability"
     presenter = "Matthew Brecknell"
@@ -71,8 +71,8 @@ layout: card
     youtube = "https://youtu.be/hHihCvB1cJI?si=3C1-F2wLJnEMHLDE"
     slides = "slides/day1-02-brecknell.pdf"
   %}
-  
-  {% include program-item.html 
+
+  {% include program-item.html
     id = "p-formally-stepping"
     time = "10:45 - 11:15"
     title = "Formally Stepping Into The Unverified World"
@@ -83,14 +83,14 @@ layout: card
     slides = "slides/day1-03-frost.pdf"
   %}
 
-  {% include program-item.html 
+  {% include program-item.html
     break = "Break"
   %}
 
-  {% include program-item.html 
+  {% include program-item.html
     chair = "Matthew Brecknell"
     num-talks = 2
-    id = "p-reducing-reliance" 
+    id = "p-reducing-reliance"
     time = "11:30 - 12:00"
     title = "Reducing the reliance on verification experts for seL4 proofs"
     presenter = "Gerwin Klein"
@@ -99,8 +99,8 @@ layout: card
     youtube = "https://youtu.be/XJTdhZqFONI?si=YNeFC0bfC_tMeH1N"
     slides = "slides/day1-04-klein.pdf"
   %}
-  
-  {% include program-item.html 
+
+  {% include program-item.html
     id = "p-efficient-smp"
     time = "12:00 - 12:30"
     title = "More multiprocessing on seL4: Are efficient SMP virtual machines possible on verifiable seL4 kernels?"
@@ -111,14 +111,14 @@ layout: card
     slides = "slides/day1-05-mcleod.pdf"
   %}
 
-  {% include program-item.html 
+  {% include program-item.html
     break = "Lunch"
   %}
 
-  {% include program-item.html 
+  {% include program-item.html
     chair = "Robbie VanVossen"
     num-talks = 2
-    id = "p-system-information" 
+    id = "p-system-information"
     time = "13:30 - 14:00"
     title = "System Information Flow Analysis"
     presenter = "Ihor Kuz"
@@ -127,8 +127,8 @@ layout: card
     youtube = "https://youtu.be/u-yhdme-o0k?si=zbYHmq0QxzmmeZzt"
     slides = "slides/day1-06-kuz.pdf"
   %}
-  
-  {% include program-item.html 
+
+  {% include program-item.html
     id = "p-advancements-virtualization"
     time = "14:00 - 14:30"
     title = "Advancements for Virtualization Support in seL4:CAmkES and seL4cp"
@@ -139,14 +139,14 @@ layout: card
     slides = "slides/day1-07-ahvenjärvi.pdf"
   %}
 
-  {% include program-item.html 
+  {% include program-item.html
     break = "Break"
   %}
 
-  {% include program-item.html 
+  {% include program-item.html
     chair = "Nick Spinale"
     num-talks = 2
-    id = "p-sel4-device" 
+    id = "p-sel4-device"
     time = "14:45 - 15:15"
     title = "The seL4 Device Driver Framework"
     presenter = "Lucy Parker"
@@ -155,8 +155,8 @@ layout: card
     youtube = "https://youtu.be/be0_PSW0b5M?si=t7dB73HMk8hR9mk0"
     slides = "slides/day1-08-parker.pdf"
   %}
-  
-  {% include program-item.html 
+
+  {% include program-item.html
     id = "p-rd-update"
     time = "15:15 - 15:45"
     title = "R&D Update from TS"
@@ -166,15 +166,15 @@ layout: card
     youtube = "https://youtu.be/v16ycALKDLM?si=5eVX9qe2faJhDQyq"
     slides = "slides/day1-09-heiser.pdf"
   %}
-  
-  {% include program-item.html 
+
+  {% include program-item.html
     break = "Break"
   %}
 
-  {% include program-item.html 
+  {% include program-item.html
     chair = "Axel Heider"
     num-talks = 4
-    id = "p-sel4-experiences" 
+    id = "p-sel4-experiences"
     time = "16:00 - 16:15"
     title = "seL4: Experiences, Improvements and Optimizations"
     presenter = "Chris Guikema"
@@ -183,8 +183,8 @@ layout: card
     youtube = "https://youtu.be/SsEuhby_U6k?si=9dPxuHINTNOcLgFR"
     slides = "slides/day1-10-guikema.pdf"
   %}
-  
-  {% include program-item.html 
+
+  {% include program-item.html
     id = "p-from-zero"
     time = "16:15 - 16:30"
     title = "From Zero to a Native xHCl Driver"
@@ -195,7 +195,7 @@ layout: card
     slides = "slides/day1-11-felmeden.pdf"
   %}
 
-  {% include program-item.html 
+  {% include program-item.html
     id = "p-crashing-for"
     time = "16:30 - 16:45"
     title = "Crashing For Reliability"
@@ -206,7 +206,7 @@ layout: card
     slides = "slides/day1-12-kuz.pdf"
   %}
 
-  {% include program-item.html 
+  {% include program-item.html
     id = "p-sel4-foundation"
     time = "16:45 - 17:00"
     title = "seL4 Foundation update"
@@ -216,14 +216,14 @@ layout: card
     slides = "slides/day1-12-andronick.pdf"
   %}
 
-  {% include program-item.html 
+  {% include program-item.html
     break = "Break"
   %}
 
-  {% include program-item.html 
+  {% include program-item.html
     chair = "June Andronick"
     num-talks = 1
-    id = "p-gold-kry10" 
+    id = "p-gold-kry10"
     time = "17:00 - 17:15"
     type = "Gold Sponsor"
     title = "Building a Platform for Critical Devices in the “Real World”"
@@ -233,20 +233,20 @@ layout: card
     youtube = "https://youtu.be/1H5EQ4DrJeo?si=ZffQVqCmYRdZ4dfu"
     slides = "slides/day1-13-multerer.pdf"
   %}
-  
-  {% include program-item.html 
+
+  {% include program-item.html
     event = "Networking event: drinks and nibbles 18:00"
   %}
 
-  {% include program-item.html 
+  {% include program-item.html
     day = "2"
     date = "20 September 2023"
   %}
 
-  {% include program-item.html 
+  {% include program-item.html
     chair = "Ihor Kuz"
     num-talks = 2
-    id = "p-cantripos" 
+    id = "p-cantripos"
     type = "Keynote"
     time = "9:00 - 9:50"
     title = "CantripOS: An OS for Ambient ML Applications"
@@ -257,7 +257,7 @@ layout: card
     slides = "slides/day2-01-leffler.pdf"
   %}
 
-  {% include program-item.html 
+  {% include program-item.html
     id = "p-announcements"
     time = "9:50 - 10:00"
     title = "Announcements"
@@ -265,15 +265,15 @@ layout: card
     affiliation = "Proofcraft"
     youtube = "https://youtu.be/vUBmP6337vY?si=BVsTDyTkVjB-Wu5I"
   %}
-  
-  {% include program-item.html 
+
+  {% include program-item.html
     break = "Break"
   %}
 
-  {% include program-item.html 
+  {% include program-item.html
     chair = "Lucy Parker"
     num-talks = 2
-    id = "p-magnetite" 
+    id = "p-magnetite"
     time = "10:15 - 10:45"
     title = "Magnetite: Rust-Based OS Services for seL4"
     presenter = "Juliana Furgala"
@@ -283,7 +283,7 @@ layout: card
     slides = "slides/day2-02-furgala.pdf"
   %}
 
-  {% include program-item.html 
+  {% include program-item.html
     id = "p-showcase-microkernel"
     time = "10:45 - 11:15"
     title = "Showcase: Microkernel OS, TPMs, and WASM in Ilo T Environments"
@@ -294,14 +294,14 @@ layout: card
     slides = "slides/day2-03-hussman.pdf"
   %}
 
-  {% include program-item.html 
+  {% include program-item.html
     break = "Break"
   %}
 
-  {% include program-item.html 
+  {% include program-item.html
     chair = "Kent McLeod"
     num-talks = 2
-    id = "p-rust-support" 
+    id = "p-rust-support"
     time = "11:30 - 12:00"
     title = "Rust support in seL4 userspace: update and roadmap"
     presenter = "Nick Spinale"
@@ -311,7 +311,7 @@ layout: card
     slides = "slides/day2-04-spinale.pdf"
   %}
 
-  {% include program-item.html 
+  {% include program-item.html
     id = "p-sel4-microkit"
     time = "12:00 - 12:30"
     title = "The seL4 Microkit"
@@ -322,14 +322,14 @@ layout: card
     slides = "slides/day2-05-velickovic.pdf"
   %}
 
-  {% include program-item.html 
+  {% include program-item.html
     break = "Lunch"
   %}
 
-  {% include program-item.html 
+  {% include program-item.html
     chair = "Todd Carpenter"
     num-talks = 2
-    id = "p-leveraging-rust" 
+    id = "p-leveraging-rust"
     time = "13:30 - 14:00"
     title = "Leveraging Rust for Core Platform"
     presenter = "Ben Hamlin"
@@ -339,7 +339,7 @@ layout: card
     slides = "slides/day2-06-hamlin.pdf"
   %}
 
-  {% include program-item.html 
+  {% include program-item.html
     id = "p-panel"
     type = "Panel"
     time = "14:00 - 14:30"
@@ -350,14 +350,14 @@ layout: card
     youtube = "https://youtu.be/PynVzpXRW-o?si=JR_9nGM3fwILHnJc"
   %}
 
-  {% include program-item.html 
+  {% include program-item.html
     break = "Break"
   %}
 
-  {% include program-item.html 
+  {% include program-item.html
     chair = "Gernot Heiser"
     num-talks = 2
-    id = "p-sel4-vmm" 
+    id = "p-sel4-vmm"
     time = "14:45 - 15:15"
     title = "seL4 VMM on the RISC-V Rocket Chip"
     presenter = "Robbie VanVossen"
@@ -367,7 +367,7 @@ layout: card
     slides = "slides/day2-08-vanvossen.pdf"
   %}
 
-  {% include program-item.html 
+  {% include program-item.html
     id = "p-sel4-arm"
     time = "15:15 - 15:45"
     title = "seL4 on Arm Morello"
@@ -378,14 +378,14 @@ layout: card
     slides = "slides/day2-09-atkins.pdf"
   %}
 
-  {% include program-item.html 
+  {% include program-item.html
     break = "Break"
   %}
 
-  {% include program-item.html 
+  {% include program-item.html
     chair = "Gerwin Klein"
     num-talks = 3
-    id = "p-incremental-assurance" 
+    id = "p-incremental-assurance"
     time = "16:00 - 16:30"
     title = "Incremental assurance for a Rust network stack"
     presenter = "Michal Podhradsky"
@@ -395,7 +395,7 @@ layout: card
     slides = "slides/day2-10-podhradsky.pdf"
   %}
 
-  {% include program-item.html 
+  {% include program-item.html
     id = "p-toward-verified"
     time = "16:30 - 16:45"
     title = "Toward a Verified, Minimal IPv6 Network Stack Implementation"
@@ -406,7 +406,7 @@ layout: card
     slides = "slides/day2-11-rollins.pdf"
   %}
 
-  {% include program-item.html 
+  {% include program-item.html
     id = "p-iommu"
     time = "16:45 - 17:00"
     title = "IOMMU (take the ARM SMMUv3 for instance) solution for seL4"
@@ -417,11 +417,11 @@ layout: card
     slides = "slides/day2-12-mao.pdf"
   %}
 
-  {% include program-item.html 
+  {% include program-item.html
     chair = "June Andronick"
     num-talks = 2
     id = "p-gold-nio"
-    type = "Gold Sponsor" 
+    type = "Gold Sponsor"
     time = "17:00 - 17:15"
     title = "OS for Software Defined Vehicle"
     presenter = "Qiyan Wang"
@@ -431,9 +431,9 @@ layout: card
     slides = "slides/day2-13-wang.pdf"
   %}
 
-  {% include program-item.html 
+  {% include program-item.html
     id = "p-gold-tii"
-    type = "Gold Sponsor" 
+    type = "Gold Sponsor"
     time = "17:15 - 17:30"
     title = "Secure Systems in Focus: Challenges, Solutions, and Future Directions"
     presenter = "Everton de Matos"
@@ -443,19 +443,19 @@ layout: card
     slides = "slides/day2-14-dematos.pdf"
   %}
 
-  {% include program-item.html 
+  {% include program-item.html
     event = "Dinner 19:00"
   %}
 
-  {% include program-item.html 
+  {% include program-item.html
     day = "3"
     date = "21 September 2023"
   %}
 
-  {% include program-item.html 
+  {% include program-item.html
     chair = "Darren Cofer"
     num-talks = 2
-    id = "p-sig-community" 
+    id = "p-sig-community"
     time = "9:00 - 9:30"
     title = "SIG update + Community update/discussion"
     presenter = "Yanyan Shen, Matthew Brecknell, Everton de Matos, Kent McLeod"
@@ -464,7 +464,7 @@ layout: card
     youtube = "https://youtu.be/ZHLePzGa4vs?si=2Jk9djA0IbBaO81G"
   %}
 
-  {% include program-item.html 
+  {% include program-item.html
     id = "p-sel4-virtualization"
     time = "9:30 - 10:00"
     title = "seL4 Virtualization (ARMv8 Edge Device) Guest OS Performance & HA Recovery"
@@ -472,15 +472,15 @@ layout: card
     affiliation = "Horizon Robotics"
     abstract = "abstracts2023#a-sel4-virtualization"
   %}
-  
-  {% include program-item.html 
+
+  {% include program-item.html
     break = "Break"
   %}
 
-  {% include program-item.html 
+  {% include program-item.html
     chair = "Ihor Kuz"
     num-talks = 3
-    id = "p-building-commercial" 
+    id = "p-building-commercial"
     time = "10:15 - 10:30"
     title = "Building a Commercial Virtualized Mobile Device with seL4 - Part 2"
     presenter = "Jason Sebranek"
@@ -490,7 +490,7 @@ layout: card
     slides = "slides/day3-03-sebranek.pdf"
   %}
 
-  {% include program-item.html 
+  {% include program-item.html
     id = "p-sel4-riscv"
     time = "10:30 - 10:45"
     title = "seL4 on RISC-V: Building a Trusted Execution Environment"
@@ -501,7 +501,7 @@ layout: card
     slides = "slides/day3-04-dematos.pdf"
   %}
 
-  {% include program-item.html 
+  {% include program-item.html
     id = "p-trustworthy-measurements"
     time = "10:45 - 11:00"
     title = "Trustworthy Measurements of a Linux Kernel and Layered Attestation via the seL4"
@@ -512,56 +512,56 @@ layout: card
     slides = "slides/day3-05-neises.pdf"
   %}
 
-  {% include program-item.html 
+  {% include program-item.html
     break = "Break"
   %}
 
-  {% include program-item.html 
+  {% include program-item.html
     chair = "Darren Cofer, Ihor Kuz"
     num-talks = 1
-    id = "p-bof" 
+    id = "p-bof"
     time = "11:30 - 11:45"
     title = "BoFs teasers"
   %}
 
-  {% include program-item.html 
+  {% include program-item.html
     event = "Rooms 1 & 2"
   %}
 
-  {% include program-item.html 
+  {% include program-item.html
     time = "11:45 - 12:30"
     title = "BoF"
   %}
 
-  {% include program-item.html 
+  {% include program-item.html
     break = "Lunch"
   %}
 
-  {% include program-item.html 
+  {% include program-item.html
     event = "Rooms 1 & 2"
   %}
 
-  {% include program-item.html 
+  {% include program-item.html
     time = "13:30 - 14:15"
     title = "BoF"
   %}
 
-  {% include program-item.html 
+  {% include program-item.html
     event = "Room 1"
   %}
 
-  {% include program-item.html 
+  {% include program-item.html
     chair = "Darren Cofer, Ihor Kuz"
     num-talks = 1
     time = "14:15 - 14:30"
     title = "Report from BoFs + Discussion"
   %}
 
-  {% include program-item.html 
+  {% include program-item.html
     break = "Break"
   %}
 
-  {% include program-item.html 
+  {% include program-item.html
     id = "p-training"
     type = "Training"
     time = "14:45 - 16:30"
