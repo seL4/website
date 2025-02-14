@@ -1,13 +1,15 @@
-<div class="mb-16 sm:mt-12 mr-4 md:ml-6 sm:grid sm:grid-cols-2 md:grid-cols-3 sm:gap-x-[4rem] sm:gap-y-[5rem]">
-  {%- for sponsor in sponsors -%}
-{%-   assign logo = "/Foundation/Membership/LOGOS/" | append: sponsor.logo | relative_url -%}
-  <div class="text-gray-600 mt-16 sm:mt-0">
-    <a href="{{ sponsor.url }}">
-    <div class="mx-auto h-[5.5rem] w-[11rem] flex align-middle justify-center">
-      <img class="object-scale-down" src="{{ logo }}" alt="{{ sponsor.name }}" title="{{ sponsor.name }}">
-    </div>
-    </a>
-  </div>
-{%- endfor -%}
-</div>
 
+<div class="flex flex-col justify-center items-center my-10">
+  <div class="flex flex-wrap justify-center items-center gap-20 w-full">
+    {%- for sponsor in sponsors -%}
+    {%-   assign logo = "/Foundation/Membership/LOGOS/" | append: sponsor.logo | relative_url -%}
+    <a href="{{ sponsor.url }}">
+      <div class="w-1/4 text-center px-4 py-1 leading-loose">
+        <div class="mx-auto h-[5.5rem] w-[11rem] flex align-middle justify-center">
+          <img class="object-scale-down" src="{{ logo }}" alt="{{ sponsor.name }}" title="{{ sponsor.name }}">
+        </div>
+      </div>
+    </a>
+    {%- endfor -%}
+  </div>
+</div>
