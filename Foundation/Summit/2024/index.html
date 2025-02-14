@@ -55,33 +55,26 @@ redirect_from: Foundation/Summit/2024/social-activities.html
   id = "keynotes"
   heading = "Keynotes"
 %}
-
-
-
 {% include bio-items-start.html %}
-<!-- Should board-bio-item.html be renamed to be more generic? -->
-<!-- Also, 'bio' includes link to abstract in summit pages, which is misleading -->
-{% include board-bio-item.html
+{% include keynote-item.html
   name = "Darren Cofer"
   role = "Principal Fellow"
   img = "../../../images/summit/dcofer-2022-2-small.jpg"
   affiliation = "Collins Aerospace"
   affiliation_link = "https://www.collinsaerospace.com/"
-  bio = '
+  text = '
   <a href="abstracts2024#a-inspecta">
     <p class="text-lg leading-8 tracking-tight text-gray-900 mt-10">Industrial Scale Proof Engineering for
       Critical Trustworthy Applications (INSPECTA)</p>
   </a>'
 %}
-<!-- Should board-bio-item.html be renamed to be more generic? -->
-<!-- Also, 'bio' includes link to abstract in summit pages, which is misleading -->
-{% include board-bio-item.html
+{% include keynote-item.html
   name = "Ning Qu"
   role = "Senior Director of the SkyOS team"
   img = "../../../images/summit/ning2.png"
   affiliation = "NIO"
   affiliation_link = "https://www.nio.com/"
-  bio = '
+  text = '
   <a href="abstracts2024#a-software-defined">
     <p class="text-lg leading-8 tracking-tight text-gray-900 mt-10">seL4 in Software-Defined Vehicles: Vision,
       Roadmap, and Impact at NIO</p>

@@ -56,36 +56,29 @@ redirect_from: /Foundation/Summit/2023/home.pml
   id = "keynotes"
   heading = "Keynotes"
 %}
-
-
-
 {% include bio-items-start.html %}
-
-<!-- Should board-bio-item.html be renamed to be more generic? -->
-<!-- Also, 'bio' includes link to abstract in summit pages, which is misleading -->
-{% include board-bio-item.html
+{% include keynote-item.html
   name = "Gage B"
   role = "Assurance Lead"
   img = "../../Membership/LOGOS/ncsc-square.svg"
   affiliation = "NCSC"
   affiliation_link = "https://www.ncsc.gov.uk/"
-  bio = '
+  text = '
   <a href="abstracts2023#a-scoping-assurance">
     <p class="text-lg leading-8 tracking-tight text-gray-900 mt-10">Scoping assurance activities with seL</p>
   </a>'
 %}
-{% include board-bio-item.html
+{% include keynote-item.html
   name = "Sam Leffler"
   role = "Member of Technical Staff"
   img = "../../../images/summit/sam-security-photo.jpg"
   affiliation = "Google"
   affiliation_link = "https://www.google.com/"
-  bio = '
+  text = '
   <a href="abstracts2023#a-cantripos">
     <p class="text-lg leading-8 tracking-tight text-gray-900 mt-10">CantripOS: An OS for Ambient ML Applications</p>
   </a>'
 %}
-
 {% include bio-items-end.html %}
 {% include section-end.html %}
 
