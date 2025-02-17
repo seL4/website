@@ -1,229 +1,248 @@
 ---
 # Copyright 2025 seL4 Project a Series of LF Projects, LLC.
 # SPDX-License-Identifier: CC-BY-SA-4.0
-title: CFP
----
-<h1>
-  Call For Presentations for the seL4 Summit 2025
-</h1>
-
-<div>
-  <h3>
-   Important Dates:
-  </h3>
-  <ul>
-   <li><strong>Abstracts due: 21 April 2025</strong></li>
-   <li>Notification of decisions: 6 June 2025</li>
-   <li>Summit: 3 - 5 September 2025</li>
-  </ul>
-</div>
-
-
-<div>
-  <h3>
-   Overview
-  </h3>
-  <p>
-
-  The <a href="./">seL4 summit</a> aims at gathering the seL4 community to
-  <strong>learn</strong>, <strong>share</strong>, and <strong>connect</strong>:
-  </p>
-  <ul>
-  <li>
-
-  <strong>learn</strong> about the seL4 technology, its latest progress, use,
-  successes, challenges, plans;
-
-  </li>
-  <li>
-
-  <strong>share</strong> exciting seL4 development, research, experience,
-  application in the real world;
-
-  </li>
-  <li>
-
-  <strong>connect</strong> with other seL4 developers, users, providers,
-  supporters, potential partners, and enthusiasts.
-
-  </li>
-  </ul>
-
-
-  <p>
-
-  The seL4 summit covers the complete seL4 ecosystem, consisting of the verified
-  microkernel, as well as all seL4-related technology, tools, infrastructure,
-  products, projects, and people.
-
-  </p>
-
-  <p>
-
-  The seL4 summit 2025 will be in Prague, Czech Republic.
-
-  </p>
-
-</div>
-
-
-
-<div>
-  <h3>
-  Topics
-  </h3>
+title: Call for Presentations
+pre: "The seL4 Summit 2025"
+pre_link: "./"
+sub: '
 <p>
-We solicit proposals on any seL4-related topic, in particular in the areas of:
+  The <a href="./">seL4 summit</a> aims at gathering the seL4 community to <strong>learn</strong>, <strong>share</strong>, and <strong>connect</strong>. The program committee solicits talks on a wide range of seL4-related <a href="#topics">topics</a>, as well as lightning talks on <a href="#deployment">seL4 deployment</a>.
 </p>
-  <ul>
-  <li>
-  seL4 on-going and planned R&D, mature or early stage:
-    <ul>
-    <li>
-    seL4 research efforts
-    </li>
-    <li>
-    seL4 development efforts
-    </li>
-    <li>
-    work-in-progress seL4 development
-    </li>
-    <li>
-    student work on seL4
-    </li>
-    <li>
-    new/missing/next-gen kernel mechanisms
-    </li>
-    <li>
-    seL4-related roadmaps: what you plan to work on and when
-    </li>
-    <li>
-    seL4 grand challenges
-    </li>
-    <li>
-    OS frameworks and services
-    </li>
-    <li>
-    seL4 userland with programming language support beyond C
-    </li>
-    <li>
-    high performance systems based on seL4: pushing the boundaries
-    </li>
-    <li>
-    early work/new ideas/initial experiments with seL4
-    </li>
-    </ul>
-  </li>
-  <li>
-  seL4 experience reports
-    <ul>
-    <li>
-    experience with deploying seL4 in the field, in commercial/deployed products
-    </li>
-    <li>
-    experience with teaching seL4
-    </li>
-    <li>
-    experience with seL4 in certification schemes and application of industry standards
-    </li>
-    <li>
-    experience with “building a business case for using a verified kernel”
-    </li>
-    <li>
-    experience with porting software from other OSes
-    </li>
-    </ul>
-  </li>
-  <li>
-  seL4 and hardware
-    <ul>
-    <li>
-    ports to new hardware platforms or architectures
-    </li>
-    <li>
-    multicore systems
-    </li>
-    <li>
-    virtualisation
-    </li>
-    <li>
-    new/proposed hardware features or architectures, which could also enable or broaden the scope of formal reasoning (e.g. about time protection)
-    </li>
-    <li>
-    seL4 in embedded processors on FPGAs, and impact of assured separation
-    </li>
-    <li>
-    IOMMU solutions for various hardware architectures and impact for seL4
-    </li>
-    <li>
-    device driver development, porting, reuse, frameworks, verification
-    </li>
-    </ul>
-  </li>
-  <li>
-  seL4 and assurance:
-    <ul>
-    <li>
-    application-level verification leveraging seL4 proofs
-    </li>
-    <li>
-    correctness, spatial separation, temporal separation, and real-time proofs
-    </li>
-    <li>
-    formalised interface between or composition of kernel-level proofs and user-level proofs
-    </li>
-    <li>
-    verification engineering at scale, scaling verification productivity
-    </li>
-    <li>
-    security/safety impact/assurance/certification for an seL4-based system
-    </li>
-    </ul>
-  </li>
-  </ul>
-
+<div class="flex justify-center items-center gap-x-5 mt-10">
+  <a href="https://form.jotform.com/250436091673861" class="button-outline px-10">Submit</a>
 </div>
+'
+layout: card
+---
 
 
 
-<div>
-  <h3>
-  Submissions
-  </h3>
-  <p>
+<!-- Important dates section -->
+{% include section-start.html
+  id = "dates"
+  heading = "Important Dates"
+  intro = '
+  <div class="theprose">
+    <ul>
+      <li><strong>Abstracts due: 21 April 2025</strong></li>
+      <li>Notification of decisions: 6 June 2025</li>
+      <li>Summit: 3 - 5 September 2025</li>
+    </ul>
+  </div>'
+%}
 
-  If you would like to propose a talk, please upload an abstract of <strong>one page or less</strong> for your
-  proposed talk <strong>by 21 April 2025</strong> on the <strong><a href="https://form.jotform.com/250436091673861">submission portal</a></strong>. Abstracts should indicate why the talk fits in the seL4 summit
-  scope. Notifications of accepted presentations will be made by 6 June 2025.
+{% include section-end.html %}
 
-  </p>
-  <p>
-    If you'd love to hear about some specific work from other people in the community, we encourage you to reach out to them to incite them to submit a proposal. :-) Alternatively, let us know at <a title="summit@sel4.systems"   href="mailto:summit@sel4.systems">summit@sel4.systems</a>.
-  </p>
 
-</div>
+<!-- Overview section -->
+{% include section-start.html
+  id = "overview"
+  heading = "Overview"
+  intro = '
+    <div class="theprose">
+      <p>
+        The <a href="./">seL4 summit</a> aims at gathering the seL4 community to
+        <strong>learn</strong>, <strong>share</strong>, and <strong>connect</strong>:
+      </p>
+      <ul>
+        <li>
+          <strong>learn</strong> about the seL4 technology, its latest progress, use,
+          successes, challenges, plans;
+        </li>
+        <li>
+          <strong>share</strong> exciting seL4 development, research, experience,
+          application in the real world;
+        </li>
+        <li>
+          <strong>connect</strong> with other seL4 developers, users, providers,
+          supporters, potential partners, and enthusiasts.
+        </li>
+      </ul>
+      <p>
+        The seL4 summit covers the complete seL4 ecosystem, consisting of the verified
+        microkernel, as well as all seL4-related technology, tools, infrastructure,
+        products, projects, and people.
+      </p>
+      <p>
+        The seL4 summit 2025 will be in  Prague, Czech Republic.
+      </p>
+    </div>'
+%}
+{% include section-end.html %}
 
-<div>
-    <h3 id="sel4-deployment">
-        Open invitation for a 5-minute slot to talk about your seL4 deployment
-    </h3>
+
+<!-- Topics section -->
+{% include section-start.html
+  id = "topics"
+  heading = "Topics"
+  intro = '
+  <div class="theprose">
     <p>
-      The community loves to hear about the deployment of seL4. So, if you:
+      The <a href="./#pc">Program Committee</a> solicits proposals on any seL4-related topic, in particular in the areas of:
     </p>
-    <ol type="a">
+    <ul>
+      <li>
+      seL4 on-going and planned R&D, mature or early stage:
+        <ul>
+        <li>
+        seL4 research efforts
+        </li>
+        <li>
+        seL4 development efforts
+        </li>
+        <li>
+        work-in-progress seL4 development
+        </li>
+        <li>
+        student work on seL4
+        </li>
+        <li>
+        new/missing/next-gen kernel mechanisms
+        </li>
+        <li>
+        seL4-related roadmaps: what you plan to work on and when
+        </li>
+        <li>
+        seL4 grand challenges
+        </li>
+        <li>
+        OS frameworks and services
+        </li>
+        <li>
+        seL4 userland with programming language support beyond C
+        </li>
+        <li>
+        high performance systems based on seL4: pushing the boundaries
+        </li>
+        <li>
+        early work/new ideas/initial experiments with seL4
+        </li>
+        </ul>
+      </li>
+      <li>
+      seL4 experience reports
+        <ul>
+        <li>
+        experience with deploying seL4 in the field, in commercial/deployed products
+        </li>
+        <li>
+        experience with teaching seL4
+        </li>
+        <li>
+        experience with seL4 in certification schemes and application of industry standards
+        </li>
+        <li>
+        experience with “building a business case for using a verified kernel”
+        </li>
+        <li>
+        experience with porting software from other OSes
+        </li>
+        </ul>
+      </li>
+      <li>
+      seL4 and hardware
+        <ul>
+        <li>
+        ports to new hardware platforms or architectures
+        </li>
+        <li>
+        multicore systems
+        </li>
+        <li>
+        virtualisation
+        </li>
+        <li>
+        new/proposed hardware features or architectures, which could also enable or broaden the scope of formal reasoning (e.g. about time protection)
+        </li>
+        <li>
+        seL4 in embedded processors on FPGAs, and impact of assured separation
+        </li>
+        <li>
+        IOMMU solutions for various hardware architectures and impact for seL4
+        </li>
+        <li>
+        device driver development, porting, reuse, frameworks, verification
+        </li>
+        </ul>
+      </li>
+      <li>
+      seL4 and assurance:
+        <ul>
+        <li>
+        application-level verification leveraging seL4 proofs
+        </li>
+        <li>
+        correctness, spatial separation, temporal separation, and real-time proofs
+        </li>
+        <li>
+        formalised interface between or composition of kernel-level proofs and user-level proofs
+        </li>
+        <li>
+        verification engineering at scale, scaling verification productivity
+        </li>
+        <li>
+        security/safety impact/assurance/certification for an seL4-based system
+        </li>
+        </ul>
+      </li>
+      </ul>
+  </div>'
+%}
+{% include section-end.html %}
+
+
+<!-- Submission section -->
+{% include section-start.html
+  id = "submissions"
+  heading = "Submissions"
+  intro = '
+    <p>
+      If you would like to propose a talk, please upload an abstract of <strong>one page or less</strong> for your
+      proposed talk <strong>by 21 April 2025</strong> on the <strong><a href="https://form.jotform.com/250436091673861">submission portal</a></strong>. Abstracts should indicate why the talk fits in the seL4 summit
+      scope. Notifications of accepted presentations will be made by 6 June 2025.
+    </p>
+    <p>
+      If you&apos;d love to hear about some specific work from other people in the community, we encourage you to reach out to them to incite them to submit a proposal. :-) Alternatively, let us know at <a title="summit@sel4.systems"   href="mailto:summit@sel4.systems">summit@sel4.systems</a>.
+    </p>'
+%}
+{% include section-end.html %}
+
+
+<!-- seL4 Deployment section -->
+{% include section-start.html
+  id = "deployment"
+  heading = "seL4 Deployment"
+  intro = '
+  <p>
+    Open invitation for a 5-minute slot to talk about your seL4 deployment
+  </p>
+  <p>
+    The community loves to hear about the deployment of seL4. So, if you:
+  </p>
+  <div class="prose">
+    <ul>
       <li>are selling an end-user product that has seL4 embedded within, or </li>
       <li>have integrated an seL4-based system/component into a deployed system, </li>
-    </ol>
-    <p>
-      you are welcome to a 5-min slot at the summit to talk about it, regardless of whether you are submitting an abstract for a full presentation! Simply send a short description by email to <a title="summit@sel4.systems" href="mailto:summit@sel4.systems">summit@sel4.systems</a> <strong>by 21 April 2025</strong>.
-    </p>
-</div>
-
-<div>
-  <h3>
-   Contact
-  </h3>
+    </ul>
+  </div>
   <p>
-   If you have questions, please do not hesitate to contact the seL4 Foundation summit team at: <a title="summit@sel4.systems"   href="mailto:summit@sel4.systems">summit@sel4.systems</a>.
-  </p>
-</div>
+    you are welcome to a 5-min slot at the summit to talk about it, regardless of whether you are submitting an
+    abstract
+    for a full presentation! Simply send a short description by email to <a title="summit@sel4.systems"
+      href="mailto:summit@sel4.systems">summit@sel4.systems</a> <strong>by 21 April 2025</strong>.
+  </p>'
+%}
+{% include section-end.html %}
+
+
+<!-- Contact section -->
+{% include section-start.html
+  id = "contact"
+  heading = "Contact"
+  intro = '
+  <p>
+    If you have questions, please do not hesitate to contact the seL4 Foundation summit team at: <a
+      title="summit@sel4.systems" href="mailto:summit@sel4.systems">summit@sel4.systems</a>.
+  </p>'
+%}
+{% include section-end.html %}
