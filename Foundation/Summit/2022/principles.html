@@ -1,17 +1,23 @@
 ---
 # Copyright 2022 seL4 Project a Series of LF Projects, LLC.
 # SPDX-License-Identifier: CC-BY-SA-4.0
-title: Principles
+title: Principles of the seL4 Summit 2022
+pre: "The seL4 Summit 2022"
+pre_link: "./"
+sub: '
+<p>
+  The seL4 Summit is the annual international summit on the <a href="../../../About">seL4 microkernel</a>, the
+world&apos;s most highly assured OS kernel, as well as on all seL4-related technology, tools, infrastructure,
+products, projects, and people.
+</p>'
+layout: card
 ---
-<h1>
-  seL4 Summit
-</h1>
 
-<h3>
-   Principles
-</h3>
-
-<div>
+<!-- Principles section -->
+{% include section-start.html
+  id = "principles"
+  heading = "Principles"
+  intro = '
   <p>
     An open <strong>call for presentation</strong> invites submissions of short abstracts about cool work on seL4.
   </p>
@@ -26,5 +32,6 @@ title: Principles
 
   <p>
       The <strong>location</strong> is aimed to be on a different continent each year, as far as possible, with a hybrid in-person/online event.
-  </p>
-</div>
+  </p>'
+%}
+{% include section-end.html %}
