@@ -20,15 +20,14 @@
           </div>
         {% endif %}
         {% if include.slides %}
-          <div class="p-2 mt-1">
-            <a href="{{include.slides}}"><img src="../../../images/icons/slides.svg" width="25px"
-      alt="slides icon"></a>
+          <div class="p-1 mt-2">
+            <a href="{{include.slides}}" class="text-sm text-gray-500 underline">Slides</a>
           </div>
-      {% endif %}
-      </div>
-      <p class="pt-2">
-      <a href="program#p-{{include.id}}">See this talk in the program</a>
-      </p>
+        {% endif %}
+        <div>
+        <p class="p-1 mt-2">
+        <a href="program#p-{{include.id}}" class="text-sm text-gray-500 underline">See this talk in the program</a>
+        </p>
     </div>
   </div>
 </div>
