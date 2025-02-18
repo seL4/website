@@ -51,15 +51,12 @@ operating system. In a nutshell, it provides the highest assurance of
 compromise in one part of the system can be contained and prevented from harming
 other, potentially more critical parts of the system.
 
-Specifically, seL4's implementation is formally (mathematically) proven
-correct against its specification, has been proved to enforce
-strong security properties, and if configured correctly its operations
-have proven safe upper bounds on their worst-case execution times. It
-was the world's first operating system with such a proof, and is still
-the only proven operating system featuring fine-grained capability-based
-security and high performance. It also has the most advanced support for
-[mixed criticality real-time
-systems](https://en.wikipedia.org/wiki/Mixed_criticality).
+Specifically, seL4's implementation is formally (mathematically) proven correct
+against its specification and has been proved to enforce strong security
+properties. It was the world's first operating system with such a proof, and is
+still the only proven operating system featuring fine-grained capability-based
+security and high performance. It also has the most advanced support for [mixed
+criticality real-time systems](https://en.wikipedia.org/wiki/Mixed_criticality).
 
 For detailed explanations of these terms, see our [FAQ](FAQ.html). For a more
 detailed introduction to seL4, read the [White Paper](seL4-whitepaper.pdf).
