@@ -6,96 +6,98 @@ pre: "The seL4 Foundation"
 pre_link: "../"
 sub: '
   <p>
-    Become part of the network of <a title="Membership" href="../Membership">members</a>
-    who have already joined the <a title="seL4 Foundation" href="../">seL4 Foundation</a>.
-  </p>'
+      seL4 is open source and free to use. The cost of maintaining and extending
+      the technology, as well as supporting the community of users,
+      developers, contributors, is covered by funding from the seL4 Foundation
+      memberships. We explain what <a href="#cover">memberships funding allows to
+      support</a>, the <a href="#benefits">additional benefits</a> members receive,
+      the different <a href="#tiers">membership tiers</a>, and other ways
+      to <a href="#support">support the technology</a>.
+  </p>
+  <div class="flex justify-center items-center pt-10">
+    <a href="https://joinnow.platform.linuxfoundation.org/?project=seL4" class="button-outline px-10">Join</a>
+  </div>'
 redirect_from: /Foundation/Join/home.pml
 layout: card
 ---
 
-{%- assign tc = "mb-3" -%}
-<div class="card-grid-3 grid-cols-1 sm:grid-cols-2 md:grid-cols-3 mb-8 pb-8">
 
-  {% include card.html
-     title = "Premium"
-     title_colour = "bg-[#385378] text-white"
-     title_class = tc
-     link_text = "Join via Linux Foundation"
-     link = "https://joinnow.platform.linuxfoundation.org/?project=seL4"
-     body = '
-     <p class="mt-2">
-      <strong>Guaranteed board seat</strong>
-     </p>
-     <div class="mt-4 border-t pt-4 text-sm">
-       <p>USD 100k / year</p>
-     </div>'
-  %}
+{%- assign tc = "h-24 mb-5" -%}
+{%- assign tcol = "bg-f_neutral-200" -%}
 
-  {% include card.html
-      title = "General"
-      title_colour = "bg-[#8897AE] text-white"
-      title_class = tc
-      link_text = "Join via Linux Foundation"
-      link = "https://joinnow.platform.linuxfoundation.org/?project=seL4"
-      body = '
-      <p class="mt-2">One board seat as a class</p>
-      <div class="mt-4 border-t pt-4 text-sm">
-        <p>Based on number of employees</p>
-        <table class="mt-3 mx-auto [&_td]:text-right">
-          <tbody>
-          <tr>
-            <td class="w-6">USD</td> <td class="w-[10ex]">30K / year</td> <td class="w-[12ex]">(5000+)</td>
-          </tr>
-          <tr>
-            <td>USD</td> <td>20K / year</td> <td>(500-4999)</td>
-          </tr>
-          <tr>
-            <td>USD</td> <td>10K / year</td> <td>(100-499)</td>
-          </tr>
-          <tr>
-            <td>USD</td> <td>3K / year</td> <td>(0-99)</td>
-          </tr>
-        </tbody>
-        </table>
-      </div>'
-  %}
+<div class="section-borders">
+  <h2 class="h2-size text-center" id="cover">What your membership allows</h2>
 
-  {% include card.html
-     title = "Associate"
-     title_colour = "bg-[#D6DBE4] text-white"
-     title_class = tc
-     link_text = "Join via Linux Foundation"
-     link = "https://joinnow.platform.linuxfoundation.org/?project=seL4"
-     body = '
-      <p class="mt-2">No voting rights</p>
-      <div class="mt-4 border-t pt-4 text-sm">
-        <p>Free</p>
-        <div class="mt-3">
-          For non-profits, open source projects, and government entities.
-        </div>
-      </div>'
-  %}
+  <div class="mx-auto px-20 md:px-10 sm:px-20 lg:px-42 text-center text-lg text-light">
+    <p class="py-4">
+      None of the below support would be possible without the financial
+      contributions from memberships. Businesses that make the choice of seL4
+      for a project, product or service rely on this support, and can
+      ensure it continues by joining the seL4 Foundation.
+    </p>
+  </div>
+
+  <div class="grid grid-cols-1 md:grid-cols-2 gap-x-4 gap-y-12 md:gap-10 py-12 sm:py-20 mx-2 lg:mx-32">
+    {% include card.html
+        icon="beaker"
+        title="Continuous Integration"
+        title_colour=tcol
+        title_class=tc
+        body="Running the full set of seL4 tests and proofs at each code change,
+              making sure seL4’s quality and assurance levels are maintained."
+    %}
+
+    {% include card.html
+        icon="cpu-chip"
+        title="IT infrastructure"
+        title_colour=tcol
+        title_class=tc
+        body="An increasing set of hardware boards being supported and tested,
+             for a wider scope of applicability."
+    %}
+
+    {% include card.html
+        icon="wrench-screwdriver"
+        title="seL4 Development"
+        title_colour=tcol
+        title_class=tc
+        body="Strategic extensions and projects to improve ease of use and
+              adoption, such as Rust support."
+    %}
+
+    {% include card.html
+        icon="question-mark-circle"
+        title="Community Support"
+        title_colour=tcol
+        title_class=tc
+        body="Expert advice and guidance on mailing lists and other communication channels."
+    %}
+
+    {% include card.html
+        icon="user-group"
+        title="seL4 summit"
+        title_colour=tcol
+        title_class=tc
+        body="An annual event gathering the community to share insights,
+             collaborate, show-case."
+    %}
+
+    {% include card.html
+        icon="arrow-trending-up"
+        title="Leadership and Coordination"
+        title_colour=tcol
+        title_class=tc
+        body="Financial planning, strategy execution, communication to the
+             community, etc."
+    %}
+  </div>
 </div>
 
-<div class="section-max-w text-xs sm:text-sm mt-8 sm:mt-12 text-light [&_p]:mt-3">
-  <p>
-    <strong>Note that seL4 Foundation members must be or become members of the Linux Foundation.</strong>
-  </p>
-  <p>The online process will include your Linux Foundation membership if you are not already a member. Details on Linux
-    Foundation membership can be found <a href="https://www.linuxfoundation.org/about/join">here</a>.
-  </p>
-  <p>
-    You can review the <a title="Participation Agreement" href="Directed_Fund_Participation_Agreement.pdf">seL4
-      Foundation Directed Fund Participation Agreement</a> beforehand.
-  </p>
-  <p>Questions? Email us at
-    <a title="foundation@sel4.systems" href="mailto:foundation@sel4.systems">foundation@sel4.systems</a>
-  </p>
-</div>
 
-<div class="section-borders mt-12 sm:mt-20">
-  <h2 class="h2-size text-center">Benefits of joining</h2>
+<div class="section-borders">
+  <h2 class="h2-size text-center" id="benefits">Additional Benefits to Members</h2>
 
+  <!--
   <div class="mt-12 theprose section-max-w">
     <ul>
       <li>
@@ -117,8 +119,34 @@ layout: card
       </li>
     </ul>
   </div>
+-->
 </div>
 
+<ul class="mx-auto mt-10 max-w-xl space-y-8 text-light">
+  {% include green-tick-li.html
+      text='
+      Influence the <strong>direction of the growth</strong> of the seL4
+      ecosystem through the board and its committees, including allocation of
+      funds to strategic projects and support initiatives, approval of
+      standards, decisions on branding and trademark use.'
+  %}
+  {% include green-tick-li.html
+    text='
+    Become an <strong>endorsed trusted seL4 provider</strong>, with Foundation
+    providing advertising opportunities, re-directing inquiries,
+    facilitating teaming for funding bids facilitating
+    subcontracting.'
+  %}
+  {% include green-tick-li.html
+      text='
+      <strong>Advertise</strong>
+    your <a href="../../Research/ongoing.html">ongoing research</a>,
+    your <a href="../../Research/courses.html">course</a>.'  %} {% include
+    green-tick-li.html text=' Get a <strong>discount</strong> for seL4 summits.'
+    %}
+</ul>
+
+<!--
 {%- assign tc = "h-24 mb-5" -%}
 {%- assign tcol = "bg-f_neutral-200" -%}
 
@@ -168,3 +196,141 @@ layout: card
     Establish or deepen research <strong>collaborations</strong>.'
 %}
 </div>
+-->
+
+<div class="section-borders mt-12 sm:mt-20">
+  <h2 class="h2-size text-center" id="tiers">Membership Tiers</h2>
+  <div class="mx-auto px-20 md:px-10 sm:px-20 lg:px-42 text-center text-lg text-light">
+    <p class="py-4">
+      Premium Members get a guaranteed seat at the board, directly influencing
+      the direction of the growth through funds allocation. General Members
+      elect one representative at the board as a class. Affiliate Members can
+      join for free but have no voting rights. You can review
+      the <a title="Participation Agreement"
+      href="Directed_Fund_Participation_Agreement.pdf">seL4 Foundation Directed
+      Fund Participation Agreement</a> beforehand (this is for review only, not
+      for signing). If you have any questions, contact us at
+      <a title="foundation@sel4.systems"
+	 href="mailto:foundation@sel4.systems">foundation@sel4.systems</a>.
+    </p>
+  </div>
+
+ 
+{%- assign tc = "mb-3" -%}
+<div class="card-grid-3 grid-cols-1 sm:grid-cols-2 md:grid-cols-3 mb-8 pb-8">
+
+  {% include card.html
+     title = "Premium"
+     title_colour = "bg-[#385378] text-white"
+     title_class = tc
+     link_text = "Join"
+     link = "https://joinnow.platform.linuxfoundation.org/?project=seL4"
+     body = '
+     <p class="mt-2">
+      <strong>Guaranteed board seat</strong>
+     </p>
+     <div class="mt-4 border-t pt-4 text-sm">
+       <p>USD 100k / year</p>
+     </div>'
+  %}
+
+  {% include card.html
+      title = "General"
+      title_colour = "bg-[#8897AE] text-white"
+      title_class = tc
+      link_text = "Join"
+      link = "https://joinnow.platform.linuxfoundation.org/?project=seL4"
+      body = '
+      <p class="mt-2">One board seat as a class</p>
+      <div class="mt-4 border-t pt-4 text-sm">
+        <p>Based on number of employees</p>
+        <table class="mt-3 mx-auto [&_td]:text-right">
+          <tbody>
+          <tr>
+            <td class="w-6">USD</td> <td class="w-[10ex]">30K / year</td> <td class="w-[12ex]">(5000+)</td>
+          </tr>
+          <tr>
+            <td>USD</td> <td>20K / year</td> <td>(500-4999)</td>
+          </tr>
+          <tr>
+            <td>USD</td> <td>10K / year</td> <td>(100-499)</td>
+          </tr>
+          <tr>
+            <td>USD</td> <td>3K / year</td> <td>(1-99)</td>
+          </tr>
+        </tbody>
+        </table>
+      </div>'
+  %}
+
+  {% include card.html
+     title = "Associate"
+     title_colour = "bg-[#D6DBE4] text-white"
+     title_class = tc
+     link_text = "Join"
+     link = "https://joinnow.platform.linuxfoundation.org/?project=seL4"
+     body = '
+      <p class="mt-2">No voting rights</p>
+      <div class="mt-4 border-t pt-4 text-sm">
+        <p>Free</p>
+        <div class="mt-3">
+          For non-profits, open source projects, and government entities.
+        </div>
+      </div>'
+  %}
+</div>
+
+<div class="section-max-w text-xs sm:text-sm mt-8 sm:mt-12 text-light [&_p]:mt-3">
+  <p>
+    Note that seL4 Foundation members must be or become members of the Linux
+    Foundation. The online process will include your Linux Foundation membership
+    if you are not already a member.
+  </p>
+  <p>
+    The <a href="https://www.linuxfoundation.org/about/join">Linux Foundation
+    tier</a> can be the lowest available, e.g., seL4 Foundation Premium and
+    General Members only need to be Linux Foundation Silver Members:
+    <ul><li> USD 20K/year (5000+)</li>
+      <li> USD 15K/year (500-4,999)</li>
+      <li> USD 10K/year (100-499)</li>
+      <li> USD 5k (1-99)</li>
+    </ul>
+  </p>
+</div>
+
+
+<div class="section-borders mt-12 sm:mt-20">
+  <h2 class="h2-size text-center" id="support">Other ways to support seL4</h2>
+
+  <div class="grid grid-cols-1 md:grid-cols-2 gap-x-4 gap-y-12 md:gap-10 py-12 sm:py-20 mx-2 lg:mx-32">
+    {% include card.html
+        icon="user-group"
+        title="Crowdfunding"
+        title_colour=tcol
+        title_class=tc
+        link_text="Crowdfunding portal"
+        link="https://crowdfunding.lfx.linuxfoundation.org/projects/e94c998c-bac2-4224-b0ae-23f265fdd1a5"
+        body="You can contribute to seL4 though the Linux Foundation's crowdfunding portal."
+    %}
+
+    {% include card.html
+        icon="heart"
+        title="Donation"
+        title_colour=tcol
+        title_class=tc
+        link_text="Contact"
+        link="mailto:foundation@sel4.systems"
+        body="For larger donations, we can raise an invoice through the Linux
+        Foundation. Contact us if you want to take this route."
+    %}
+
+  </div>
+</div>
+</div>
+
+
+<div class="section-borders mt-12 sm:mt-20">
+  <h2 class="h2-size text-center">They have already joined</h2>
+</div>
+
+{% include logo-cloud.html %}
