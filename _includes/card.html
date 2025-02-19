@@ -15,11 +15,16 @@
   <div class="px-6 pb-5 flex-auto text-base text-gray-600 {{ include.body_class }}">
     {{ include.body }}
   </div>
-{%- if include.link %}
+  {%- if include.link %}
   <div class="px-6 mt-1 pb-5">
     <a href="{{ include.link }}" class="arrow-link">{{ link_text }}
       <span class="absolute inset-0"></span>
     </a>
   </div>
-{% endif -%}
+  {% endif -%}
+  {%- if include.info %}
+  <div class="px-6 mt-1 pb-5">
+    <p class="text-sm font-semibold text-f_green-600">{{include.info}}</p>
+  </div>
+  {% endif -%}
 </div>
