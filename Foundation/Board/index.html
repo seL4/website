@@ -220,166 +220,96 @@ redirect_from: /Foundation/Board/home.pml
   Board Committees
 </h1>
 
-<div class="py-6 sm:py-12">
-  <div class="mx-auto grid max-w-7xl gap-x-12 gap-y-20 px-6 lg:px-8 xl:grid-cols-[40%_30%_30%]">
-    <div class="max-w-2xl">
-      <h2 class="h2-size">Compliance Committee</h2>
-      <p class="mt-6 text-lg leading-8 text-light">
-        The compliance committee proposes rules and licensing conditions for the
+
+{% include side-section-start.html
+  title = "Compliance Committee"
+  text = "The compliance committee proposes rules and licensing conditions for the
         seL4 trademark, and drives the Interim Endorsement scheme for seL4-based
-        products and services.
-      </p>
-    </div>
-    <ul class="grid gap-x-8 gap-y-12 sm:grid-cols-2 sm:gap-y-16 xl:col-span-2">
-      <li>
-        <div class="flex items-center gap-x-6">
-          <img class="h-16 w-16 rounded-full" src="TS-June-square.jpg" alt="June Andronick">
-          <div>
-            <h3 class="text-base font-semibold leading-7 tracking-tight text-dark">June Andronick</h3>
-            <p class="text-sm font-semibold leading-6 text-f_green-600">
-              CEO, <a href="https://proofcraft.systems/">Proofcraft</a></p>
-          </div>
-        </div>
-      </li>
-      <li>
-        <div class="flex items-center gap-x-6">
-          <img class="h-16 w-16 rounded-full" src="TS-Gernot-square.jpg" alt="Gernot Heiser">
-          <div>
-            <h3 class="text-base font-semibold leading-7 tracking-tight text-dark">Gernot Heiser</h3>
-            <p class="text-sm font-semibold leading-6 text-f_green-600">
-              Technology Evangelist, <a title="TS" href="http://trustworthy.systems/">Trustworthy
-                Systems</a>
-            </p>
-          </div>
-        </div>
-      </li>
-      <li>
-        <div class="flex items-center gap-x-6">
-          <img class="h-16 w-16 rounded-full" src="TS-Gerwin-square.jpg" alt="Gerwin Klein">
-          <div>
-            <h3 class="text-base font-semibold leading-7 tracking-tight text-dark">Gerwin Klein</h3>
-            <p class="text-sm font-semibold leading-6 text-f_green-600">
-              Chief Scientist,
-              <a href="https://proofcraft.systems/">Proofcraft</a>
-            </p>
-          </div>
-        </div>
-      </li>
-    </ul>
-  </div>
-</div>
+        products and services."
+%}
+  {% include side-person-grid-start.html %}
+    {% include side-person.html
+      name = 'June Andronick'
+      img = 'TS-June-square.jpg'
+      text = 'CEO, <a href="https://proofcraft.systems/">Proofcraft</a></p>'
+    %}
+    {% include side-person.html
+      name = 'Gernot Heiser'
+      img = 'TS-Gernot-square.jpg'
+      text = 'Technology Evangelist, <a title="TS" href="http://trustworthy.systems/">Trustworthy
+        Systems</a>'
+    %}
+    {% include side-person.html
+      name = 'Gerwin Klein'
+      img = 'TS-Gerwin-square.jpg'
+      text = 'Chief Scientist,
+      <a href="https://proofcraft.systems/">Proofcraft</a>'
+    %}
+  {% include side-person-grid-end.html %}
+{% include side-section-end.html %}
 
 
-<div class="py-24 sm:py-32">
-  <div class="mx-auto grid max-w-7xl gap-x-12 gap-y-20 px-6 lg:px-8 xl:grid-cols-[40%_30%_30%]">
-    <div class="max-w-2xl">
-      <h2 class="h2-size">Outreach Committee</h2>
-      <p class="mt-6 text-lg leading-8 text-light">
-        The Outreach Committee is in charge of expanding the membership. It
+{% include side-section-start.html
+  title = "Outreach Committee"
+  text ="The Outreach Committee is in charge of expanding the membership. It
         develops material for supporting membership recruitment. Members of the
         committee will work closely with existing members to make best use of
         their networks for strategic recruitment of members. The Outreach
-        Committee may co-opt member representatives.
-      </p>
-    </div>
-    <ul class="grid gap-x-8 gap-y-12 sm:grid-cols-2 sm:gap-y-16 xl:col-span-2">
-      <li>
-        <div class="flex items-center gap-x-6">
-          <img class="h-16 w-16 rounded-full" src="TS-June-square.jpg" alt="June Andronick">
-          <div>
-            <h3 class="text-base font-semibold leading-7 tracking-tight text-dark">June Andronick</h3>
-            <p class="text-sm font-semibold leading-6 text-f_green-600">
-              CEO, <a href="https://proofcraft.systems/">Proofcraft</a></p>
-          </div>
-        </div>
-      </li>
-      <li>
-        <div class="flex items-center gap-x-6">
-          <img class="h-16 w-16 rounded-full" src="TS-Gernot-square.jpg" alt="Gernot Heiser">
-          <div>
-            <h3 class="text-base font-semibold leading-7 tracking-tight text-dark">Gernot Heiser</h3>
-            <p class="text-sm font-semibold leading-6 text-f_green-600">
-              Technology Evangelist, <a title="TS" href="http://trustworthy.systems/">Trustworthy
-                Systems</a>
-            </p>
-          </div>
-        </div>
-      </li>
-      <li>
-        <div class="flex items-center gap-x-6">
-          <img class="h-16 w-16 rounded-full" src="RTX-David-square.png" alt="David Hardin">
-          <div>
-            <h3 class="text-base font-semibold leading-7 tracking-tight text-dark">David Hardin</h3>
-            <p class="text-sm font-semibold leading-6 text-f_green-600">
-              Associate Director, <a href="https://rtx.com">Raytheon
-                Technologies</a>
-            </p>
-          </div>
-        </div>
-      </li>
-      <li>
-        <div class="flex items-center gap-x-6">
-          <img class="h-16 w-16 rounded-full" src="Kry10-Boyd-square.jpg" alt="Boyd Multerer">
-          <div>
-            <h3 class="text-base font-semibold leading-7 tracking-tight text-dark">Boyd Multerer</h3>
-            <p class="text-sm font-semibold leading-6 text-f_green-600">
-              Founder and CEO, <a href="https://www.kry10.com/">Kry10 Limited</a>
-            </p>
-          </div>
-        </div>
-      </li>
-      <li>
-        <div class="flex items-center gap-x-6">
-          <img class="h-16 w-16 rounded-full" src="DW-Gregg-square.jpg" alt="Gregg Wildes">
-          <div>
-            <h3 class="text-base font-semibold leading-7 tracking-tight text-dark">Gregg Wildes</h3>
-            <p class="text-sm font-semibold leading-6 text-f_green-600">
-              Innovation Director, <a href="https://dornerworks.com/">DornerWorks</a>
-            </p>
-          </div>
-        </div>
-      </li>
-    </ul>
-  </div>
-</div>
+        Committee may co-opt member representatives."
+%}
+  {% include side-person-grid-start.html %}
+    {% include side-person.html
+      name = 'June Andronick'
+      img = 'TS-June-square.jpg'
+      text = 'CEO, <a href="https://proofcraft.systems/">Proofcraft</a></p>'
+    %}
+    {% include side-person.html
+      name = 'Gernot Heiser'
+      img = 'TS-Gernot-square.jpg'
+      text = 'Technology Evangelist, <a title="TS" href="http://trustworthy.systems/">Trustworthy
+        Systems</a>'
+    %}
+    {% include side-person.html
+      name = 'David Hardin'
+      img = 'RTX-David-square.png'
+      text = 'Associate Director, <a href="https://rtx.com">Raytheon
+        Technologies</a>'
+    %}
+    {% include side-person.html
+      name = 'Boyd Multerer'
+      img = 'Kry10-Boyd-square.jpg'
+      text = 'Founder and CEO, <a href="https://www.kry10.com/">Kry10 Limited</a>'
+    %}
+    {% include side-person.html
+      name = 'Gregg Wildes'
+      img = 'DW-Gregg-square.jpg'
+      text = 'Innovation Director, <a href="https://dornerworks.com/">DornerWorks</a>'
+    %}
+  {% include side-person-grid-end.html %}
+{% include side-section-end.html %}
 
 
-<div class="py-24 sm:py-32">
-  <div class="mx-auto grid max-w-7xl gap-x-12 gap-y-20 px-6 lg:px-8 xl:grid-cols-[40%_30%_30%]">
-    <div class="max-w-2xl">
-      <h2 class="h2-size">Marketing Committee</h2>
-      <p class="mt-6 text-lg leading-8 text-light">
-        The Marketing Committee is responsible for the external presentation of
+
+{% include side-section-start.html
+  title = "Marketing Committee"
+  text = "The Marketing Committee is responsible for the external presentation of
         the Foundation. This includes the look-and-feel of the web site and
         presentation materials and other branding issues, social media presence
-        and other media liaison.
-      </p>
-    </div>
-    <ul class="grid gap-x-8 gap-y-12 sm:grid-cols-2 sm:gap-y-16 xl:col-span-2">
-      <li>
-        <div class="flex items-center gap-x-6">
-          <img class="h-16 w-16 rounded-full" src="TS-June-square.jpg" alt="June Andronick">
-          <div>
-            <h3 class="text-base font-semibold leading-7 tracking-tight text-dark">June Andronick</h3>
-            <p class="text-sm font-semibold leading-6 text-f_green-600">
-              CEO, <a href="https://proofcraft.systems/">Proofcraft</a></p>
-          </div>
-        </div>
-      </li>
-      <li>
-        <div class="flex items-center gap-x-6">
-          <img class="h-16 w-16 rounded-full" src="TS-Gernot-square.jpg" alt="Gernot Heiser">
-          <div>
-            <h3 class="text-base font-semibold leading-7 tracking-tight text-dark">Gernot Heiser</h3>
-            <p class="text-sm font-semibold leading-6 text-f_green-600">
-              Technology Evangelist, <a title="TS" href="http://trustworthy.systems/">Trustworthy
-                Systems</a>
-            </p>
-          </div>
-        </div>
-      </li>
-    </ul>
-  </div>
-</div>
+        and other media liaison."
+%}
+  {% include side-person-grid-start.html %}
+    {% include side-person.html
+        name = 'June Andronick'
+        img = 'TS-June-square.jpg'
+        text = 'CEO, <a href="https://proofcraft.systems/">Proofcraft</a></p>'
+    %}
+    {% include side-person.html
+      name = 'Gernot Heiser'
+      img = 'TS-Gernot-square.jpg'
+      text = 'Technology Evangelist, <a title="TS" href="http://trustworthy.systems/">Trustworthy
+        Systems</a>'
+    %}
+  {% include side-person-grid-end.html %}
+{% include side-section-end.html %}
 
 {% include centered-up-button.html margins="pb-24" %}
