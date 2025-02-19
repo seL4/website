@@ -6,9 +6,9 @@ sub: '
 <p>
   Below is a list of available tools, frameworks, Software Development Kits
   (SDKs), and supported languages for seL4, either provided by the seL4
-  Foundation (in green) or provided by the seL4 community (in blue). Some are
-  open source (potentially still in development), while others are commercial.
-  If you would like an item to be added, please contact us at
+  Foundation or provided by the seL4 community. Some are open source
+  (potentially still in development), while others are commercial.  If you would
+  like an item to be added, please contact us at
   <a title="foundation@sel4.systems"
      href="mailto:foundation@sel4.systems">foundation@sel4.systems</a>.
 </p>'
@@ -17,13 +17,14 @@ layout: card
 
 
 <div class="section-borders -mt-12 pt-0">
-  <h2 class="text-center mt-16 text-3xl font-bold tracking-tight text-dark md:text-4xl">Development kits & Component frameworks</h2>
+  <h2 class="text-center mt-16 mb-6 text-3xl font-bold tracking-tight text-dark md:text-4xl">Development kits & Component frameworks</h2>
 
   <div class="grid grid-cols-1 md:grid-cols-2  gap-12 px-10 pt-8 pb-12 sm:pb-20">
 
-    {% include card.html
-    icon="cloud-arrow-down"
+    {% include card_tool.html
     title="MicroKit"
+    type="Open Source"
+    foundation=true
     link="https://docs.sel4.systems/projects/microkit"
     body='<p>
       Abstraction layer, SDK and tools that simplifies development of statically
@@ -31,9 +32,10 @@ layout: card
     </p>'
     %}
 
-    {% include card.html
-    icon="cloud-arrow-down"
+    {% include card_tool.html
     title="CAmkES"
+    type="Open Source"
+    foundation=true
     link="https://docs.sel4.systems/projects/camkes/"
     body='<p>
       Development and runtime component framework for microkernel-based embedded
@@ -43,11 +45,11 @@ layout: card
 
     <!-- FIXME: link inside a card doesn't work -->
 
-    {% include card.html
-    icon="cloud-arrow-down"
-    icon_colour="f_blue"
-    link="https://trustworthy.systems/projects/drivers"
+    {% include card_tool.html
     title="sDDF"
+    type="Open Source"
+    foundation=false
+    link="https://trustworthy.systems/projects/drivers"
     body='<p>
       A verifiable seL4 device driver framework providing a set of interfaces,
       designs and tools for developing high-performance, encapsulated device
@@ -59,11 +61,11 @@ layout: card
     </p>'
     %}
 
-    {% include card.html
-    icon="cloud-arrow-down"
-    icon_colour="f_blue"
-    link="https://github.com/sel4devkit"
+    {% include card_tool.html
     title="seL4 Dev Kit"
+    type="Open Source"
+    foundation=false
+    link="https://github.com/sel4devkit"
     body='<p>
       An seL4 development kit aimed at helping complete beginners get started
       and evaluate seL4 for their needs, developed by Capgemini Engineering and
@@ -71,11 +73,11 @@ layout: card
     </p>'
     %}
 
-    {% include card.html
-    icon="cloud-arrow-down"
-    icon_colour="f_blue"
-    link="https://github.com/loonwerks/BriefCASE-Tutorial"
+    {% include card_tool.html
     title="BriefCase"
+    type="Open Source"
+    foundation=false
+    link="https://github.com/loonwerks/BriefCASE-Tutorial"
     body='<p>
       A model-based systems engineering environment that can build systems
       targeting seL4, based on AADL and OSATE, from the DARPA CASE program.
@@ -86,26 +88,26 @@ layout: card
 </div>
 
 <div class="section-borders -mt-12 pt-0">
-  <h2 class="text-center mt-16 text-3xl font-bold tracking-tight text-dark md:text-4xl">Operating Systems</h2>
+  <h2 class="text-center mt-16  mb-6 text-3xl font-bold tracking-tight text-dark md:text-4xl">Operating Systems</h2>
 
   <div class="grid grid-cols-1 md:grid-cols-2  gap-12 px-10 pt-8 pb-12 sm:pb-20">
 
-    {% include card.html
-    icon="cloud-arrow-down"
-    icon_colour="f_blue"
-    link="https://trustworthy.systems/projects/LionsOS/"
+    {% include card_tool.html
     title="Lion OS"
+    type="Open Source"
+    foundation=false
+    link="https://trustworthy.systems/projects/LionsOS/"
     body='<p>
       Highly modular, adaptable, verifiable, high-performance OS for statically
       architected embedded/IoT/cyberphysical systems, developed at UNSW.
     </p>'
     %}
 
-    {% include card.html
-    icon="building-storefront"
-    icon_colour="f_blue"
-    link="https://www.kry10.com/#platform/"
+    {% include card_tool.html
     title="KOS"
+    type="Commercial"
+    foundation=false
+    link="https://www.kry10.com/#platform/"
     body='<p>
       Kry10 Operating System (KOS) and Platform, designed for mission critical
       connected devices and integrated with the Erlang BEAM application
@@ -113,20 +115,21 @@ layout: card
     </p>'
     %}
 
-    {% include card.html
-    icon="building-storefront"
-    icon_colour="f_blue"
-    link="https://www.trentos.de"
+    {% include card_tool.html
     title="TRENTOS"
+    type="Commercial"
+    foundation=false
+    link="https://www.trentos.de"
     body='<p>
       An seL4- and CAmkES-based statically architected OS and SDK for embedded
       systems, developed by HENSOLDT Cyber.
     </p>'
     %}
 
-    {% include card.html
-    icon="cloud-arrow-down"
+    {% include card_tool.html
     title="CantripOS"
+    type="Open Source"
+    foundation=false
     link="https://github.com/AmbiML/sparrow-cantrip-full"
     body='<p>
       An operating system written almost entirely in Rust, that runs on top of
@@ -140,15 +143,15 @@ layout: card
 
 
 <div class="section-borders -mt-12 pt-0">
-  <h2 class="text-center mt-16 text-3xl font-bold tracking-tight text-dark md:text-4xl">Virtualisation</h2>
+  <h2 class="text-center mt-16  mb-6 text-3xl font-bold tracking-tight text-dark md:text-4xl">Virtualisation</h2>
 
-  <div class="grid grid-cols-1 md:grid-cols-2  gap-12 px-10 pt-8 pb-12 sm:pb-20">
+  <div class="grid grid-cols-1 md:grid-cols-1 gap-12 px-10 pt-8 pb-12 sm:pb-20">
 
-    {% include card.html
-    icon="building-storefront"
-    icon_colour="f_blue"
-    link="https://www.dornerworks.com/vm-composer"
+    {% include card_tool.html
     title="VM Composer"
+    type="Commercial"
+    foundation=false
+    link="https://www.dornerworks.com/vm-composer"
     body='<p>
       A Secure Microkernel Virtual Machine (VM) Composer, a modeling tool to
       develop and deploy virtualised high-assurance systems using a
@@ -161,16 +164,17 @@ layout: card
 
 
 <div class="section-borders -mt-12 pt-0">
-  <h2 class="text-center mt-16 text-3xl font-bold tracking-tight text-dark md:text-4xl">Language Support</h2>
-  <h3 class="text-center">
+  <h2 class="text-center mt-16  mb-6 text-3xl font-bold tracking-tight text-dark md:text-4xl">Language Support</h2>
+  <h3 class="text-center mb-6">
     C is the default seL4 language, but other languages are supported, in particular for application-level components.
   </h3>
 
   <div class="grid grid-cols-1 md:grid-cols-2  gap-12 px-10 pt-8 pb-12 sm:pb-20">
 
-    {% include card.html
-    icon="cloud-arrow-down"
+    {% include card_tool.html
     title="Rust"
+    type="Open Source"
+    foundation=true
     link="https://github.com/seL4/rust-sel4"
     body='<p>
       Comprehensive support for using the Rust programming language to write
@@ -178,11 +182,11 @@ layout: card
     </p>'
     %}
 
-    {% include card.html
-    icon="cloud-arrow-down"
-    icon_colour="f_blue"
-    link="https://trustworthy.systems/projects/pancake/"
+    {% include card_tool.html
     title="Pancake"
+    type="Open Source"
+    foundation=false
+    link="https://trustworthy.systems/projects/pancake/"
     body='<p>
       Low-level, imperative language with a verified compiler, designed for
       implementing verifiable device drivers and other OS code.
