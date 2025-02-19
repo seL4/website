@@ -1,0 +1,5 @@
+{% assign margins = include.margins | default: "" %}
+<div class="flex w-full {{margins}}">
+  <div class="flex-1"></div>
+  {% include up-button.html placing="relative" %}
+</div>

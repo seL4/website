@@ -67,7 +67,7 @@ licensed under the GPL can be mixed with software released under other licenses,
 and mixed with classified or export-controlled software, but only under
 conditions that do not violate any license".
 
-{% include centered-up-button.html margins="not-prose py-10" %}
+{% include right-up-button.html %}
 
 
 ## Why GPL?
@@ -83,7 +83,7 @@ maintaining clarity around which codebase the seL4 trademark refers to, and
 ensuring that the high assurance of seL4 is not compromised by third-party
 changes.
 
-{% include centered-up-button.html margins="not-prose py-10" %}
+{% include right-up-button.html %}
 
 
 ## License Details
@@ -113,7 +113,7 @@ generate a software bill of materials. The directory `LICENSES/` in each
 repository contains the text for all licenses that are mentioned by files in
 that repository.
 
-{% include centered-up-button.html margins="not-prose py-10" %}
+{% include right-up-button.html margins="mb-20" %}
 
 
 [seL4-org]: https://github.com/seL4/
