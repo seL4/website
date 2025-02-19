@@ -7,8 +7,15 @@ pre: 'Licensing &amp; Trademark'
 pre_link: license-tm.html
 sub: '
   <p>
-    We encourage you to use the <a href="logo.html">seL4<sup>&reg;</sup> name and logo</a>.
-    The Foundation grants permission to do so under the rules published on this page.
+    We encourage you to use the
+    <a href="{% link Foundation/Trademark/logo.html %}">seL4<sup>&reg;</sup>
+    name and logo</a>. The seL4 Foundation grants
+    permission to do so under the rules published on this page.
+  </p>
+  <p>
+    The spirit of these rules is that the name seL4 should always refer to the
+    official code/proof from the seL4 Foundation repositories and that
+    corresponding verification claims must be accurate.
   </p>
 '
 ---
@@ -72,7 +79,8 @@ sub: '
   <li>
     <strong>You may</strong> use the seL4 mark to refer to the seL4
     microkernel, the seL4 Foundation, or the seL4 proofs if you use
-    them accurately. The seL4 microkernel refers to the master branch
+    them accurately. The seL4 microkernel refers to official seL4 releases by
+    the seL4 foundation and the master branch
     of the code hosted
     at <a href="https://github.com/seL4/seL4" class="uri">https://github.com/seL4/seL4</a>. The seL4 proofs
     refer to the formal mathematical proofs hosted
@@ -81,14 +89,15 @@ sub: '
     For any
     modified versions make clear it is a modification of seL4, not
     seL4 itself; for academic research modifications you may use the
-    term <em>experimental seL4</em>.<br /> Cloning the repository,
-    working on features, modifications, evaluations, research, etc,
-    and referring to these is fine and encouraged. The purpose of the
-    restriction is to ensure clarity and consistency on what the mark
-    refers to. When referring to modifications and work-in-progress on
-    the seL4 kernel, the name seL4 should refer to the official seL4
-    code from the foundation repository. Therefore examples
-    of <strong>incorrect</strong> use are:
+    term <em>experimental seL4</em>.
+    <br>
+    Cloning the repository, working on features, modifications, evaluations,
+    research, etc, and referring to these is fine and encouraged. The purpose of
+    the restriction is to ensure clarity and consistency on what the mark refers
+    to. When referring to modifications and work-in-progress on the seL4 kernel,
+    the name seL4 should refer to the official seL4 code from the seL4
+    Foundation repository. Therefore examples of <strong>incorrect</strong> use
+    are:
     <ul>
       <li>company Y's seL4 with feature X</li>
       <li>enhanced seL4 with feature X</li>
@@ -96,36 +105,46 @@ sub: '
     Examples of <strong>correct</strong> use are (where accurate):
     <ul>
       <li>
-        feature X by company Y is under review for inclusion into the
+        <em>Our seL4-based product X</em> &mdash; if X is indeed based on an seL4
+        release by the seL4 Foundation.
+      </li>
+      <li>
+        <em>Our product X leverages the formal verification of the seL4
+        microkernel</em> or <em>Our product X is built on the formally verified
+        seL4 microkernel</em> &mdash; if X is indeed based on an seL4 release by
+        the seL4 Foundation and uses a verified configuration of seL4.
+      </li>
+      <li>
+        Feature X by company Y is under review for inclusion into the
         seL4 kernel
       </li>
       <li>
-        feature X developed by company Y is under review to be
+        Feature X developed by company Y is under review to be
         included in the next release of the seL4 kernel
       </li>
       <li>
-        feature X by company Y is on the roadmap to be included in the seL4 kernel
+        Feature X by company Y is on the roadmap to be included in the seL4 kernel
       </li>
       <li>
-        company Y has developed a modification X to the seL4 kernel and has
+        Company Y has developed a modification X to the seL4 kernel and has
         evaluated its performance/impact/benefits.
       </li>
       <li>
-        company Y is working on feature X to be included in the seL4 kernel
+        Company Y is working on feature X to be included in the seL4 kernel
       </li>
     </ul>
     The important difference between <em>xyz seL4</em> and <em>a
       modification to seL4</em> is that in the former (incorrect) use
-    of the mark refers to the modified version, and in the latter
-    (correct) use of the mark refers to the code in the foundation
+    the mark refers to the modified version, and in the latter
+    (correct) use the mark refers to the code in the seL4 Foundation
     repository.<br>
     For use in academic research publications only,
-    the foundation allows the use of the forms <em>experimental
+    the seL4 Foundation allows the use of the forms <em>experimental
       seL4</em> and <em>experimental version of seL4</em> for referring
     to modifications to the seL4 code that are experimental research
     code. The form is explicitly meant for modifications that are not
     ready for commercial use, and not checked or endorsed by the
-    foundation. An example of correct such use in a research paper
+    seL4 Foundation. An example of correct such use in a research paper
     would be “running on an experimental version of seL4 that supports
     feature X”.
   </li>
@@ -136,7 +155,7 @@ sub: '
     to be formally verified when they are not, and do not claim
     properties to be verified that are not. See the source code
     repository for which configurations are verified. If unsure,
-    contact <a href="mailto:trademark@sel4.systems" class="email">trademark@sel4.systems</a>. We will be happy to
+    contact <a href="mailto:trademark@sel4.systems" class="email">trademark@sel4.systems</a>. We can
     review and help phrase formal verification claims.
   </li>
   <li>
@@ -187,13 +206,13 @@ sub: '
   permission from <a href="mailto:trademark@sel4.systems" class="email">trademark@sel4.systems</a>.
 </p>
 <p>
-  If your project is a generally useful part of the ecosystem of
-  components, libraries, and frameworks around the seL4 kernel,
-  consider hosting it under the seL4 Foundation GitHub organisation
-  at <a href="https://github.com/seL4/">github.com/seL4</a>. Contact
-  one of the members of the <a href="../TSC/">TSC</a> of the
-  foundation if you would like to do so with a description of the
-  project, its current state and plans for the future.
+  If your project is a generally useful part of the ecosystem of components,
+  libraries, and frameworks around the seL4 kernel, consider hosting it under
+  the seL4 Foundation GitHub organisation at <a
+  href="https://github.com/seL4/">github.com/seL4</a>. Contact one of the
+  members of the <a href="{% link Foundation/TSC/index.html %}">TSC</a> of the
+  foundation if you would like to do so with a description of the project, its
+  current state and plans for the future.
 </p>
 <p>
   Projects and repositories hosted under the seL4 Foundation GitHub
