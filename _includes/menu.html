@@ -45,9 +45,9 @@
 {%-     assign news_items = site.news-items | reverse -%}
 {%-     for item in news_items limit: 3 -%}
 {%-       assign date = item.date | date: "%d %b %Y" -%}
-{%-       assign iso = item.date | date: "%Y-%e-%d" -%}
+{%-       assign iso = item.date | date: "%Y-%m-%d" -%}
 {%-       assign year = item.date | date: "%Y" -%}
-{%-       assign mm_dd = item.date | date: "%e_%d" -%}
+{%-       assign mm_dd = item.date | date: "%m-%d" -%}
 {%-       assign anchor = item.anchor | default: mm_dd -%}
 {%-       assign url = "/news/" | append: year | append: "#" | append: anchor -%}
           <li class="relative">
