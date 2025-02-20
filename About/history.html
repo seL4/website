@@ -212,6 +212,7 @@ sub: '
 
 
   {% include timeline-item.html
+      hide_up_button=true
       year="2021"
       title="seL4 becomes an Ecosystem"
       description='
@@ -237,7 +238,10 @@ sub: '
 
 
 {% include timeline-end.html %}
-{% include logo-cloud.html %}
+
+{% include logo-cloud.html hide_title=true margins="-mt-6 py-12 sm:py-18" %}
+
+{% include centered-up-button.html margins="my-12 pb-12" %}
+
 
 <!-- FIXME: remove title of logo cloud and put the up arrow after the cloud-->
-
