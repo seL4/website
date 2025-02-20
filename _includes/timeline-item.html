@@ -27,4 +27,6 @@
     {{ include.description }}
   </div>
 </div>
+{% unless include.hide_up_button %}
 {% include centered-up-button.html %}
+{% endunless %}
