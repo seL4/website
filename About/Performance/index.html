@@ -6,21 +6,25 @@ sub: '
 <p>
  seL4 stands apart with its unparalleled formal verification, without any
  compromise in performance. In fact it is <a href="#fastest">fastest operating
- system kernel</a> available. This page explains this claim and its significance, while also providing
- <a href="#perf-numbers"> detailed seL4 performance metrics</a>
- and <a href="#compil-details"> compilation details</a>.
-  <img src="../../images/tries-shutterstock/sel4-fast.png" alt="seL4 is fast" class="rounded-lg mt-8 w-1/2 mx-auto">
+ system kernel</a> available on IPC performance. This page explains this claim
+ and its significance, while also providing
+ <a href="#perf-numbers"> detailed seL4 performance metrics</a>.
+ <img src="../../images/tries-shutterstock/sel4-fast.png"
+      alt="speeding seL4 logo with 2-10x faster byline"
+      class="rounded-lg mt-8 w-1/2 mx-auto">
 </p>'
 redirect_from: /About/Performance/home.pml
+layout: card
 ---
 
 <!-- FIXME: redo logo properly if we like it-->
 
+<div class="theprose mx-auto">
 <h2 id="fastest">The world's fastest kernel</h2>
 
 <p>
   seL4 has been designed for real-world use. From
-  its <a href="../history.html">historical days</a> when verification started,
+  the <a href="../history.html">beginning</a> when verification started,
   the aim was to achieve the highest assurance level through formal proof,
   without sacrificing more than 10% in performance compared to the fastest
   kernels at the time.
@@ -28,9 +32,10 @@ redirect_from: /About/Performance/home.pml
 
 <p>
   seL4 not only beat the performance of those earlier kernels, but it now
-  outperforms any microkernels by a factor of 2 to 10 times. While independent
-  performance comparisons are scarce, the few available studies corroborate our
-  claims and we are here publicly providing performance numbers for seL4.
+  outperforms any microkernels by a factor of 2 to 10 times on key benchmarks.
+  While independent performance comparisons are scarce, the few available studies
+  corroborate our claims and we are here publicly providing performance numbers
+  for seL4.
 </p>
 <p>
   By providing both proved security and performance, seL4 is designed to support
@@ -38,23 +43,44 @@ redirect_from: /About/Performance/home.pml
 </p>
 
 
+<h3>Why IPC Benchmarks?</h3>
+
+<p>
+  In microkernel-based systems, software is more divided into separate
+  components than is usual on monolithic operating systems. Usually these
+  components run in separate address spaces. This is excellent for improving
+  security, but, if done wrong, can incur overhead.
+</p>
+<p>
+  Components on top of seL4 communicate with IPC (inter-process communication),
+  notifications, and shared memory, where IPC is most commonly used as the
+  mechanism for protected procedure calls. The IPC benchmarks belowmeasure the
+  overhead of these calls and show that they are on the order of normal function
+  calls in monolithic systems. This is the key benchmark for showing that you
+  can have improved security without sacrificing performance.
+</p>
+
 <h2 id="perf-numbers">Performance numbers</h2>
 
-<p>This page displays the latest benchmark numbers for seL4 from the publicly
+<p>This section displays the latest benchmark numbers for seL4 from the publicly
 available <a href="https://github.com/seL4/sel4bench">sel4bench repository</a>.
 The following times are reported as mean and standard deviation in
 the format <em>mean (std dev)</em>, both rounded to the nearest integer.</p>
-<ul><li><strong>IRQ invoke</strong>: Time in cycles to invoke a user-level interrupt handler running a different
-address space as the interrupted thread.</li>
-<li><strong>IPC call</strong>: Time in cycles for invoking a server in a different address space on the same core.</li>
-<li><strong>IPC reply</strong>: Time in cycles for a server replying to a client in a different address space on
-the same core.</li>
-<li><strong>Notify</strong>: Time in cycles to send a signal from a process with priority 1 to a higher
-priority (255) process in a different address space</li>
+
+<ul>
+  <li><strong>IRQ invoke</strong>: Time in cycles to invoke a user-level interrupt handler running in a different
+    address space as the interrupted thread.</li>
+  <li><strong>IPC call</strong>: Time in cycles for invoking a server in a different address space on the same core.
+  </li>
+  <li><strong>IPC reply</strong>: Time in cycles for a server replying to a client in a different address space on
+    the same core.</li>
+  <li><strong>Notify</strong>: Time in cycles to send a signal from a process with priority 1 to a higher
+    priority (255) process in a different address space</li>
 </ul>
+</div>
 
+<h3 class="h3-size text-dark mt-12 mb-6">Default</h3>
 
-<h3>Default</h3>
 <table class="data-table">
   <tr>
     <th style=" width: 8ex;" colspan="1">ISA</th>
@@ -132,7 +158,7 @@ priority (255) process in a different address space</li>
     <td class="data-stddev">(78)</td>
   </tr></table>
 
-<h3>MCS</h3>
+<h3 class="h3-size text-dark mt-12 mb-6">MCS</h3>
 <table class="data-table">
   <tr>
     <th style=" width: 8ex;" colspan="1">ISA</th>
@@ -210,10 +236,14 @@ priority (255) process in a different address space</li>
     <td class="data-stddev">(161)</td>
   </tr></table>
 
+<div class="theprose">
 <h2 id="compil-details">Compilation Details</h2>
 <p>All benchmarks were built using the trustworthy-systems/sel4
 docker image from the <a href="https://github.com/seL4/seL4-CAmkES-L4v-dockerfiles">seL4
-docker file repository</a></p><h3>Default</h3>
+docker file repository</a></p>
+</div>
+
+<h3 class="h3-size text-dark mt-12 mb-6">Default</h3>
 <table class="data-table">
   <tr>
     <th>ISA</th>
@@ -259,7 +289,7 @@ docker file repository</a></p><h3>Default</h3>
     <td class="monospace">init-build.sh -DFASTPATH=TRUE -DHARDWARE=FALSE -DFAULT=FALSE -DRISCV64=TRUE -DPLATFORM=hifive</td>
   </tr></table>
 
-<h3>MCS</h3>
+<h3 class="h3-size text-dark mt-12 mb-6">MCS</h3>
 <table class="data-table">
   <tr>
     <th>ISA</th>
@@ -305,5 +335,6 @@ docker file repository</a></p><h3>Default</h3>
     <td class="monospace">init-build.sh -DFASTPATH=TRUE -DHARDWARE=FALSE -DFAULT=FALSE -DRISCV64=TRUE -DPLATFORM=hifive -DMCS=TRUE</td>
   </tr></table>
 
+<div class="theprose">
 <h2>Source Code</h2>
 <p>This page was generated on 2025-04-14 for sel4bench-manifest <a href="https://github.com/seL4/sel4bench-manifest/blob/4cf8e02abda9b3f2dfd04984f33b47f3073aa3a2/default.xml">4cf8e02a</a>.</p>
