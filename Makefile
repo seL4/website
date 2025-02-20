@@ -56,12 +56,27 @@ clean doctor:
 	@bundle exec jekyll $@
 	@rm -rf _preview/*
 
+# list of URL regexps to ignore when checking links
+# font preload/preconnect URLS give 404 on link check, but work;
+# twitter ignored because of rate limiting;
+# query links on github work, but don't seem to check;
+# rtx.com produces 403 from GitHub;
+IGNORE_URLS  = fonts.gstatic.com
+IGNORE_URLS += fonts.googleapis.com
+IGNORE_URLS += twitter.com
+IGNORE_URLS += flaticon.com
+IGNORE_URLS += github.com.seL4.rfcs.pulls\?q
+IGNORE_URLS += rtx.com
+IGNORE_URLS += www.collinsaerospace.com
+
+sep:= /,/
+empty:=
+space:= $(empty) $(empty)
+IGNORE_EXP:= $(subst $(space),$(sep),$(IGNORE_URLS))
+
 HTMLPROOFEROPT := --swap-urls '^https\://sel4.systems:http\://localhost\:4000'
 HTMLPROOFEROPT += --enforce-https=false --only-4xx --disable-external=false
-# comma-separated list of URL regexps, e.g. /twitter.com/,/facebook.com/
-# twitter ignored because of rate limiting; query links on github work, but don't seem to check
-# rtx.com produces 403 from GitHub
-HTMLPROOFEROPT += --ignore-urls '/twitter.com/,/flaticon.com/,/github.com.seL4.rfcs.pulls\?q/,/rtx.com/,/www.collinsaerospace.com/'
+HTMLPROOFEROPT += --ignore-urls '/$(IGNORE_EXP)/'
 
 checklinks:
 	@bundle exec htmlproofer $(HTMLPROOFEROPT) _site
