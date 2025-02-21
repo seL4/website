@@ -8,9 +8,9 @@ sub: '
   <p>
       seL4 is open source and free to use. The cost of maintaining and extending
       the technology, as well as supporting the community of users,
-      developers, contributors, is covered by funding from the seL4 Foundation
-      memberships. We explain what <a href="#cover">memberships funding allows to
-      support</a>, the <a href="#benefits">additional benefits</a> members receive,
+      developers, and contributors is covered by funding from the seL4 Foundation
+      memberships. This page explains what the <a href="#cover">memberships funding
+      enables</a>, the <a href="#benefits">additional benefits</a> members receive,
       the different <a href="#tiers">membership tiers</a>, and other ways
       to <a href="#support">support the technology</a>.
   </p>
@@ -23,28 +23,28 @@ layout: card
 
 
 {%- assign tc = "h-24 mb-5" -%}
-{%- assign tcol = "bg-f_neutral-200" -%}
+{%- assign tcol = "" -%} <!-- "bg-f_neutral-200" -->
 
 <div class="section-borders">
-  <h2 class="h2-size text-center" id="cover">What your membership allows</h2>
+  <h2 class="h2-size text-center" id="cover">What your Membership Enables</h2>
 
-  <div class="mx-auto px-20 md:px-10 sm:px-20 lg:px-42 text-center text-lg text-light">
+  <div class="mx-auto section-max-w text-center text-base sm:text-lg text-light">
     <p class="py-4">
-      None of the below support would be possible without the financial
-      contributions from memberships. Businesses that make the choice of seL4
-      for a project, product or service rely on this support, and can
-      ensure it continues by joining the seL4 Foundation.
+      None of the support below would be possible without the financial
+      contributions from seL4 Foundation memberships. Businesses that rely on
+      this support and the continued development of seL4 can ensure that it
+      continues by joining the seL4 Foundation.
     </p>
   </div>
 
-  <div class="grid grid-cols-1 md:grid-cols-2 gap-x-4 gap-y-12 md:gap-10 py-12 sm:py-20 mx-2 lg:mx-32">
+  <div class="grid grid-cols-1 md:grid-cols-2 gap-y-14 md:gap-x-10 md-gap-y-24 py-12 sm:py-20 mx-2 lg:mx-32">
     {% include card.html
         icon="beaker"
         title="Continuous Integration"
         title_colour=tcol
         title_class=tc
-        body="Running the full set of seL4 tests and proofs at each code change,
-              making sure seL4’s quality and assurance levels are maintained."
+        body="Running the seL4 proofs and full set of tests at each code change,
+              making sure seL4&apos;s quality and assurance levels are maintained."
     %}
 
     {% include card.html
@@ -53,7 +53,9 @@ layout: card
         title_colour=tcol
         title_class=tc
         body="An increasing set of hardware boards being supported and tested,
-             for a wider scope of applicability."
+             for wider scope and applicability of seL4. Hosting the seL4 website
+             and documentation. Maintaining cloud services for running
+             the seL4 proof."
     %}
 
     {% include card.html
@@ -62,7 +64,8 @@ layout: card
         title_colour=tcol
         title_class=tc
         body="Strategic extensions and projects to improve ease of use and
-              adoption, such as Rust support."
+              adoption, such as Rust support, new seL4 features, and new
+              seL4 releases, including user-level libraries and frameworks."
     %}
 
     {% include card.html
@@ -79,7 +82,7 @@ layout: card
         title_colour=tcol
         title_class=tc
         body="An annual event gathering the community to share insights,
-             collaborate, show-case."
+             collaborate, make connections, and show-case your work."
     %}
 
     {% include card.html
@@ -87,42 +90,36 @@ layout: card
         title="Leadership and Coordination"
         title_colour=tcol
         title_class=tc
-        body="Financial planning, strategy execution, communication to the
-             community, etc."
+        body="Financial planning, strategy execution, communication with the
+             community. Keeping the vision for seL4 on track and
+             providing technical leadership for the project."
     %}
   </div>
 </div>
 
 
 <div class="section-borders">
-  <h2 class="h2-size text-center" id="benefits">Additional Benefits to Members</h2>
+  <h2 class="h2-size text-center" id="benefits">Additional Benefits for Members</h2>
 
-  <!--
-  <div class="mt-12 theprose section-max-w">
-    <ul>
-      <li>
-        Be associated with the world&#39;s most advanced, and most
-        highly assured OS technology.
-      </li>
-      <li>
-        Get easy access to seL4 expertise across the Foundation,
-        and to a community of people who are addressing similar
-        technical issues, and targeting corresponding value
-        propositions.
-      </li>
-      <li>
-        Influence the direction of the growth of the seL4
-        ecosystem through the board and its committees, including
-        allocation of funds, approval of standards, decisions on
-        branding, trademark use, and certification and
-        accreditation schemes.
-      </li>
-    </ul>
+  <div class="mx-auto section-max-w text-center text-base sm:text-lg text-light">
+    <p class="mt-4 mb-8">
+      Some benefits are only available to members of the seL4 Foundation:
+    </p>
   </div>
--->
-</div>
 
-<ul class="mx-auto mt-10 max-w-xl space-y-8 text-light">
+<ul class="mx-auto max-w-4xl space-y-8 text-light text-base sm:text-lg gap-x-10 grid grid-cols-1 md:grid-cols-2">
+  {% include green-tick-li.html
+      text='
+      Be associated with the world&#39;s most advanced, and most
+      highly assured OS technology.'
+  %}
+  {% include green-tick-li.html
+      text='
+      Get easy access to seL4 expertise across the Foundation,
+      and to a community of people who are addressing similar
+      technical issues, and targeting corresponding value
+      propositions.'
+  %}
   {% include green-tick-li.html
       text='
       Influence the <strong>direction of the growth</strong> of the seL4
@@ -132,92 +129,40 @@ layout: card
   %}
   {% include green-tick-li.html
     text='
-    Become an <strong>endorsed trusted seL4 provider</strong>, with Foundation
+    Become an <strong>endorsed trusted seL4 provider</strong>, with the Foundation
     providing advertising opportunities, re-directing inquiries,
-    facilitating teaming for funding bids facilitating
-    subcontracting.'
+    facilitating teaming for funding bids and subcontracting.'
   %}
   {% include green-tick-li.html
       text='
       <strong>Advertise</strong>
-    your <a href="../../Research/ongoing.html">ongoing research</a>,
-    your <a href="../../Research/courses.html">course</a>.'  %} {% include
-    green-tick-li.html text=' Get a <strong>discount</strong> for seL4 summits.'
-    %}
+      your <a href="../../Research/ongoing.html">ongoing research</a> or
+      your seL4-related <a href="../../Research/courses.html">course</a>.'  %}
 </ul>
-
-<!--
-{%- assign tc = "h-24 mb-5" -%}
-{%- assign tcol = "bg-f_neutral-200" -%}
-
-<div class="max-w-5xl mx-10 grid grid-cols-1 sm:grid-cols-2 gap-10 md:gap-20 md:mx-auto mb-12 md:mb-20">
-{% include card.html
-   icon = "users"
-   title = "Adopters"
-   title_colour = tcol
-   title_class = tc
-   body = '
-    Support creation of artefacts everyone needs, eliminating
-    replication of effort and <strong>reducing the cost</strong>
-    for everyone.'
-%}
-
-{% include card.html
-  icon = "cpu-chip"
-  title = "Processor manufacturers"
-  title_colour = tcol
-  title_class = tc
-  body = '
-    Ensure hardware is well-supported by seL4, with certified
-    verification, to ensure <strong>competitiveness</strong> in
-    critical domains.'
-%}
-
-{% include card.html
-  icon = "rocket-launch"
-  title = "Service Providers"
-  title_colour = "bg-[#FFCA5F]"
-  title_colour = tcol
-  title_class = tc
-  body = '
-    Become an <strong>endorsed trusted seL4 provider</strong>, with Foundation
-    providing advertising opportunities, re-directing inquiries,
-    facilitating teaming for funding bids facilitating
-    subcontracting.'
-%}
-
-{% include card.html
-  icon = "building-library"
-  title = "Universities &amp; public sector"
-  title_colour = tcol
-  title_class = tc
-  body = '
-    <strong>Advertise</strong> seL4-related work and teaching material. <br>
-    Establish or deepen research <strong>collaborations</strong>.'
-%}
 </div>
--->
+
 
 <div class="section-borders mt-12 sm:mt-20">
   <h2 class="h2-size text-center" id="tiers">Membership Tiers</h2>
-  <div class="mx-auto px-20 md:px-10 sm:px-20 lg:px-42 text-center text-lg text-light">
-    <p class="py-4">
-      Premium Members get a guaranteed seat at the board, directly influencing
-      the direction of the growth through funds allocation. General Members
-      elect one representative at the board as a class. Affiliate Members can
-      join for free but have no voting rights. You can review
+  <div class="mt-4 mb-18 mx-auto section-max-w text-base sm:text-lg text-light">
+    <p class="mb-2">
+      There are three membership tiers: <strong>Premium</strong> Members get a guaranteed seat at
+      the board, directly influencing the direction of the growth through funds
+      allocation. <strong>General</strong> Members elect one representative at the board as a
+      class. <strong>Affiliate</strong> Members can join for free but have no voting rights.</p>
+      <p>You can review
       the <a title="Participation Agreement"
       href="Directed_Fund_Participation_Agreement.pdf">seL4 Foundation Directed
       Fund Participation Agreement</a> beforehand (this is for review only, not
-      for signing). If you have any questions, contact us at
+      for signing). If you have any questions, please contact us at
       <a title="foundation@sel4.systems"
 	 href="mailto:foundation@sel4.systems">foundation@sel4.systems</a>.
     </p>
   </div>
 
- 
+
 {%- assign tc = "mb-3" -%}
-<div class="card-grid-3 grid-cols-1 sm:grid-cols-2 md:grid-cols-3 mb-8 pb-8">
+<div class="card-grid-3 grid-cols-1 md:grid-cols-2 lg:grid-cols-3 mb-8 pb-8">
 
   {% include card.html
      title = "Premium"
@@ -244,19 +189,19 @@ layout: card
       <p class="mt-2">One board seat as a class</p>
       <div class="mt-4 border-t pt-4 text-sm">
         <p>Based on number of employees</p>
-        <table class="mt-3 mx-auto [&_td]:text-right">
+        <table class="mt-3 mx-auto [&_td]:text-right text-sm text-light">
           <tbody>
           <tr>
-            <td class="w-6">USD</td> <td class="w-[10ex]">30K / year</td> <td class="w-[12ex]">(5000+)</td>
+            <td class="w-6">USD</td> <td class="w-[10ex]">30k / year</td> <td class="w-[12ex]">(5000+)</td>
           </tr>
           <tr>
-            <td>USD</td> <td>20K / year</td> <td>(500-4999)</td>
+            <td>USD</td> <td>20k / year</td> <td>(500-4999)</td>
           </tr>
           <tr>
-            <td>USD</td> <td>10K / year</td> <td>(100-499)</td>
+            <td>USD</td> <td>10k / year</td> <td>(100-499)</td>
           </tr>
           <tr>
-            <td>USD</td> <td>3K / year</td> <td>(1-99)</td>
+            <td>USD</td> <td>3k / year</td> <td>(1-99)</td>
           </tr>
         </tbody>
         </table>
@@ -264,8 +209,9 @@ layout: card
   %}
 
   {% include card.html
+     class = "md:col-span-2 md:max-w-[26rem] md:mx-auto lg:col-span-1 lg:max-w-none"
      title = "Associate"
-     title_colour = "bg-[#D6DBE4] text-white"
+     title_colour = "bg-f_neutral-200 dark:bg-f_neutral-300 text-white dark:text-gray-700"
      title_class = tc
      link_text = "Join"
      link = "https://joinnow.platform.linuxfoundation.org/?project=seL4"
@@ -290,16 +236,27 @@ layout: card
     The <a href="https://www.linuxfoundation.org/about/join">Linux Foundation
     tier</a> can be the lowest available, e.g., seL4 Foundation Premium and
     General Members only need to be Linux Foundation Silver Members:
-    <ul><li> USD 20K/year (5000+)</li>
-      <li> USD 15K/year (500-4,999)</li>
-      <li> USD 10K/year (100-499)</li>
-      <li> USD 5k (1-99)</li>
-    </ul>
   </p>
+  <table class="mt-3 mx-auto [&_td]:text-right text-xs sm:text-sm text-light">
+      <tbody>
+      <tr>
+        <td class="w-6">USD</td> <td class="w-[10ex]">20k / year</td> <td class="w-[12ex]">(5000+)</td>
+      </tr>
+      <tr>
+        <td>USD</td> <td>15k / year</td> <td>(500-4999)</td>
+      </tr>
+      <tr>
+        <td>USD</td> <td>10k / year</td> <td>(100-499)</td>
+      </tr>
+      <tr>
+        <td>USD</td> <td>5k / year</td> <td>(1-99)</td>
+      </tr>
+    </tbody>
+    </table>
 </div>
 
 
-<div class="section-borders mt-12 sm:mt-20">
+<div class="section-borders mt-12 sm:mt-20 mb-0 pb-0">
   <h2 class="h2-size text-center" id="support">Other ways to support seL4</h2>
 
   <div class="grid grid-cols-1 md:grid-cols-2 gap-x-4 gap-y-12 md:gap-10 py-12 sm:py-20 mx-2 lg:mx-32">
@@ -328,9 +285,7 @@ layout: card
 </div>
 </div>
 
-
-<div class="section-borders mt-12 sm:mt-20">
-  <h2 class="h2-size text-center">They have already joined</h2>
-</div>
-
-{% include logo-cloud.html %}
+{% include logo-cloud.html
+   title="They have already joined"
+   margins = "pt-16 pb-8 mb-12"
+%}
