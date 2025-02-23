@@ -1,0 +1,24 @@
+<div class="-mt-20 text-center text-base md:text-lg text-lightcol {% unless page.nodark %}dark:text-lightcol_inv{%endunless%} leading-6 md:leading-7 a-underline">
+  <p>
+    {{include.about}}
+  </p>
+  <div class="mt-5 mb-5">
+    <img class="w-52 mx-auto" src="../../../images/sel4-summit-logo.svg" alt="seL4 Summit">
+  </div>
+  <p>
+    {{include.city}}, {{include.date}}
+  </p>
+  {% if include.submit-link or include.reg-link %}
+    <div class="flex justify-center items-center gap-x-5 mt-5 mb-20">
+      {% if include.submit-link %}
+        <a href="{{include.submit-link}}" class="button-outline px-10">Submit</a>
+      {% else %}
+        <a href="{{include.reg-link}}" class="button-outline px-10">Register</a>
+      {% endif %}
+    </div>
+
+    {% else %}
+    <div class="mb-20"></div>
+    {% endif %}
+
+</div>
