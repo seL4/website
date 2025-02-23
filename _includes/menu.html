@@ -49,7 +49,7 @@
 {%-       assign year = item.date | date: "%Y" -%}
 {%-       assign mm_dd = item.date | date: "%m-%d" -%}
 {%-       assign anchor = item.anchor | default: mm_dd -%}
-{%-       assign url = "/news/" | append: year | append: "#" | append: anchor -%}
+{%-       assign url = "/news/" | append: year | append: ".html" | append: "#" | append: anchor -%}
           <li class="relative">
             <time datetime="{{ iso }}" class="block text-xs leading-6 text-gray-600">{{ date }}</time>
             <a href="{{ url | relative_url }}" class="block truncate text-sm font-semibold leading-6 text-gray-900">
