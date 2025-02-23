@@ -18,7 +18,7 @@ layout: base
     News from {%- if newest_year == this_year %} older {%- else %} other {%- endif %} years:
 {%- for i in (2020..newest_year) -%}
 {%-   unless i == page.year %}
-      <a href="{{ url }}{{ i }}">{{ i }}</a>
+      <a href="{{ url }}{{ i }}.html">{{ i }}</a>
 {%- else %}
      {{ i }}
 {%- endunless -%}
