@@ -64,7 +64,7 @@ detailed introduction to seL4, read the [White Paper](seL4-whitepaper.pdf).
 
 <!-- TODO: restyle picture;
      TODO: if we include the picture it should be mentioned and at least partially explained -->
-<img style="width: 40%; margin-left: auto; margin-right: auto; center"
-     src="../images/tries-shutterstock/sel4-principles.svg"
-     alt="Diagram showing a system with a VM, trusted, and untrusted components,
-          isolated from each other by seL4." />
+{% svg ../images/tries-shutterstock/sel4-principles.drawio.svg
+   class="w-full px-2 mx-auto" %}
+
+
