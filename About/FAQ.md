@@ -127,7 +127,7 @@ into something that can be run.
 
 There are two recommended ways to do this.
 
-- [CAmKES](/CAmkES) is the
+- [CAmKES](https://docs.sel4.systems/projects/camkes/) is the
       Component Architecture for Micro-Kernel-based Embedded Systems. It
       provides a language for describing the distribution of resources
       to components, and the assignment of components to address spaces.

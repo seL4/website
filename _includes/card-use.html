@@ -1,6 +1,6 @@
-
+{% comment %} FIXME: empty alt text {% endcomment %}
 <article class="relative isolate flex flex-col justify-end overflow-hidden rounded-2xl bg-gray-900 px-8 pt-80 pb-8 sm:pt-48 lg:pt-80">
-  <img src="{{include.pic}}" alt="" class="absolute inset-0 -z-10 size-full object-cover">
+  <img src="{{include.pic | relative_url}}" alt="" class="absolute inset-0 -z-10 size-full object-cover">
   <div class="absolute inset-0 -z-10 bg-linear-to-t from-gray-900 via-gray-900/40"></div>
   <div class="absolute inset-0 -z-10 rounded-2xl ring-1 ring-gray-900/10 ring-inset"></div>
   <div class="flex flex-wrap items-center gap-y-1 overflow-hidden text-sm/6 text-gray-300">
@@ -10,7 +10,7 @@
         <circle cx="1" cy="1" r="1" />
       </svg>
       <div class="flex gap-x-2.5">
-        <img src="{{include.author-pic}}" alt="" class="size-6 flex-none rounded-full bg-white/10">
+        <img src="{{include.author-pic | relative_url}}" alt="" class="size-6 flex-none rounded-full bg-white/10">
         {{include.author-name}}
       </div>
     </div>

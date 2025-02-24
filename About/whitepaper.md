@@ -23,7 +23,7 @@ sub: '
 </div>
 
 seL4 is a high-assurance, high-performance operating system microkernel. It is
-unique because of its comprehensive formal [verification](Verification/),
+unique because of its comprehensive formal [verification](../Verification/),
 without compromising [performance](Performance/). It is meant to be used as a
 trustworthy foundation for building safety- and security-critical systems. It is
 available as open source on [GitHub](https://github.com/seL4/) and supported by
@@ -45,7 +45,7 @@ microkernels](https://en.wikipedia.org/wiki/L4_microkernel_family "L4 microkerne
 and is the world's most advanced, most highly assured operating-system
 kernel.
 
-seL4's [formal verification](Verification/) sets it apart from any other
+seL4's [formal verification](../Verification/) sets it apart from any other
 operating system. In a nutshell, it provides the highest assurance of
 *isolation* between applications running in the system, meaning that a
 compromise in one part of the system can be contained and prevented from harming
