@@ -4,9 +4,11 @@
     {%- for sponsor in sponsors -%}
     {%-   assign logo = "/Foundation/Membership/LOGOS/" | append: sponsor.logo | relative_url -%}
     <a href="{{ sponsor.url }}">
-      <div class="w-1/4 text-center px-4 py-1 leading-loose">
-        <div class="mx-auto h-[5.5rem] w-[11rem] flex align-middle justify-center">
-          <img class="object-scale-down" src="{{ logo }}" alt="{{ sponsor.name }}" title="{{ sponsor.name }}">
+      <div class="dark:bg-white dark:p-2 dark:rounded">
+        <div class="w-1/4 text-center px-4 py-1 leading-loose">
+          <div class="mx-auto h-[5.5rem] w-[11rem] flex align-middle justify-center">
+            <img class="object-scale-down" src="{{ logo }}" alt="{{ sponsor.name }}" title="{{ sponsor.name }}">
+          </div>
         </div>
       </div>
     </a>
