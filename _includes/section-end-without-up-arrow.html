@@ -1,3 +1,7 @@
   </div>
+  {% if include.margins %}
+    <div class="{{include.margins}}"></div>
+  {% else %}
   <div class="py-12"></div>
+  {% endif %}
 </div>

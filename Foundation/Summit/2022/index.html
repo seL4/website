@@ -220,10 +220,16 @@ redirect_from: /Foundation/Summit/2022/home.pml
   id = "sponsors"
   heading = "Sponsors"
 %}
+{% include section-end-without-up-arrow.html
+  margins = "py-2"
+%}
 
+<div class="bg-white">
 {% include sep-header.html text = "Bronze" %}
 {%- assign sponsors = site.data.sponsors.summit-2022.bronze | sort_natural: "name" -%}
 {%- include sponsor-info.html -%}
+</div>
+<div class="py-12"></div>
 
 
 
