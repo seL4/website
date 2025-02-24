@@ -1,5 +1,5 @@
 {% if include.break %}
-  <div class="bg-slate-200 col-span-4 text-gray-800 p-2">
+  <div class="bg-slate-200 dark:bg-slate-700 col-span-4 text-gray-800 dark:text-gray-300 p-2">
     {{include.break}}
   </div>
 
@@ -9,7 +9,7 @@
 </div>
 
 {% elsif include.event %}
-  <div class="bg-slate-200 col-span-4 text-gray-800 p-2">
+  <div class="bg-slate-200 dark:bg-slate-700 col-span-4 text-gray-800 dark:text-gray-300 p-2">
     <em>{{include.event}}</em>
   </div>
 
@@ -19,7 +19,7 @@
   {% else %}
   <div>
   {% endif %}
-    {{include.time}}
+    <span class="text-light">{{include.time}}</span>
     {% if include.type %}
     <br>
     <span class="text-gray-500">{{include.type}}</span>
@@ -30,15 +30,15 @@
     {% if include.abstract %}
         <a href="{{include.abstract}}" class="no-underline hover:underline">
       {% endif %}
-        <strong>{{include.title}}</strong>
+        <span class="text-dark"><strong>{{include.title}}</strong></span>
       {% if include.abstract %}
         </a>
       {% endif %}
 
       {% if include.presenter %}
         <br>
-        <span class="text-gray-800">{{include.presenter}}</span>,
-        <span class="text-gray-500">{{include.affiliation}}</span>
+        <span class="text-dark">{{include.presenter}}</span>,
+        <span class="text-light">{{include.affiliation}}</span>
       {% endif %}
 
 
