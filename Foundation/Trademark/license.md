@@ -54,11 +54,11 @@ portion of the overall system -- much less than if you were using Linux or if
 you were paying license fees for a commercial OS where such changes would
 usually be impossible.
 
-<img src="{{ '/images/licensing.drawio.svg' | relative_url }}" class="w-full px-2"
-     alt="Diagram with seL4 (GPL) at the bottom,
+{% svg images/licensing.drawio.svg class="w-full px-2" %}
+<!-- FIXME  alt="Diagram with seL4 (GPL) at the bottom,
           system code and drivers (any license) +
           optional foundation frameworks (BSD) in the middle, and
-          user-code (any license) at the top.)">
+          user-code (any license) at the top.)" -->
 
 {% include right-up-button.html %}
 
