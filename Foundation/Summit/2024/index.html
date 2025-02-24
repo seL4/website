@@ -192,7 +192,11 @@ redirect_from: Foundation/Summit/2024/social-activities.html
   id = "sponsors"
   heading = "Sponsors"
 %}
+{% include section-end-without-up-arrow.html
+  margins = "py-2"
+%}
 
+<div class="bg-white">
 {% include sep-header.html text = "Gold" %}
 {%- assign sponsors = site.data.sponsors.summit-2024.gold | sort_natural: "name" -%}
 {%- include sponsor-info.html -%}
@@ -204,6 +208,8 @@ redirect_from: Foundation/Summit/2024/social-activities.html
 {% include sep-header.html text = "Bronze" %}
 {%- assign sponsors = site.data.sponsors.summit-2024.bronze | sort_natural: "name" -%}
 {%- include sponsor-info.html -%}
+</div>
+<div class="py-12"></div>
 
 
 
