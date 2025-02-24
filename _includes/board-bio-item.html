@@ -3,10 +3,11 @@
                                     | append: '</a>' %}
 {% assign details = "<em>" | append: include.role | append: ", "
                            | append: affiliation | append: "</em>" %}
+{% assign img = '/Foundation/Board/' | append: include.img %}
 {% include bio-item.html
     name = include.name
     details = details
-    img = include.img
+    img = img
     bio = include.bio
     mastodon = include.mastodon
     linkedin = include.linkedin
