@@ -61,7 +61,7 @@ criticality real-time systems](https://en.wikipedia.org/wiki/Mixed_criticality).
 The figure below shows one of the uses for seL4: isolation between trusted and
 untrusted components in a system, including full virtual machines.
 
-<div class="w-4/5 my-6 mx-auto h-80">
+<div class="w-1/2 my-6 mx-auto aspect-3/2">
 {% svg /images/tries-shutterstock/sel4-principles.drawio.svg width="100%" %}
 </div>
 
