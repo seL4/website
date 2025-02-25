@@ -21,28 +21,34 @@ sub: '
 
 {% include timeline-start.html %}
 
+{% capture desc %}
+<p>
+  The notion of a microkernel first emerged in the 70&apos;s. At that
+  time, operating systems largely ran in privileged mode, also known as kernel
+  mode, to provide hardware abstraction mechanisms and services. First
+  defined in Brinch Hansen&apos;s Nucleus, then in CMU&apos;s MACH kernel,
+  the philosophy behind microkernels is to reduce the code running
+  in kernel mode to a minimal core that is free from policy, while the
+  rest of the operating system services run in unprivileged mode,
+  just like application code.
+</p>
+<p>
+  The achilles&apos; heel of microkernels at the time was performance:
+  application code would obtain system services by communicating via an
+  interprocess communication (IPC) mechanism, putting this IPC on the
+  critical path of any service invocation. This led to poor performance,
+  claimed by some to be intrinsic to microkernels design.
+</p>
+<div class="mx-auto w-5/6 mt-4 h-96">
+{% svg images/tries-shutterstock/monolithic-vs-mkernel.drawio.svg width="100%" %}
+</div>
+{% endcapture %}
+
   {% include timeline-item.html
       year="70's and 80's"
       title="First microkernel: minimality but bad performance"
-      description='
-      <p>
-        The notion of a microkernel first emerged in the 70&apos;s. At that
-        time, operating systems largely ran in privileged mode, also known as kernel
-        mode, to provide hardware abstraction mechanisms and services. First
-        defined in Brinch Hansen&apos;s Nucleus, then in CMU&apos;s MACH kernel,
-        the philosophy behind microkernels is to reduce the code running
-        in kernel mode to a minimal core that is free from policy, while the
-        rest of the operating system services run in unprivileged mode,
-        just like application code.
-      </p>
-      <p>
-        The achilles&apos; heel of microkernels at the time was performance:
-        application code would obtain system services by communicating via an
-        interprocess communication (IPC) mechanism, putting this IPC on the
-        critical path of any service invocation. This led to poor performance,
-        claimed by some to be intrinsic to microkernels design.
-      </p> '%}
-      {% svg ../images/tries-shutterstock/monolithic-vs-mkernel.drawio.svg class="mt-8 mx-auto dark:bg-darkblue" %}
+      description=desc
+  %}
 
   {% include timeline-item.html
       year="90's"
@@ -110,11 +116,8 @@ sub: '
 
 	<!-- FIXME: add link to verification page-->
 
-  {% include timeline-item.html
-      year="2012-2013"
-      title="Further proofs: Security, Binary Correctness, and more"
-      description='
-      <p>
+{% capture desc %}
+<p>
 	Functional correctness shows that the seL4 C code behaves exactly as its
 	specification mandates. Subsequent breakthroughs have demonstrated that
 	seL4 enforces the security properties of integrity, confidentiality and
@@ -123,10 +126,17 @@ sub: '
 	more</a>. Collectively, this "proof stack" provides unprecedented assurance
 	that applications running on seL4 can be strongly isolated, preventing
 	attacks from untrusted applications from propagating to critical ones.
-      </p>'%}
-      
-      {% svg ../images/tries-shutterstock/proof-stack.drawio.svg class="mt-8 mx-auto w-full px-2 py-4 dark:bg-darkblue" %}
+</p>
+<div class="mx-auto w-4/5 pl-2 mt-4 h-76">
+{% svg images/tries-shutterstock/proof-stack.drawio.svg width="100%" %}
+</div>
+{% endcapture %}
 
+  {% include timeline-item.html
+      year="2012-2013"
+      title="Further proofs: Security, Binary Correctness, and more"
+      description=desc
+  %}
 
   {% include timeline-item.html
       year="2012-2017"
