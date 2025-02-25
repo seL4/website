@@ -256,41 +256,29 @@ a.arrow-link,
 }
 
 table.data-table {
-  border-collapse: collapse;
-  width: 100%;
-  word-wrap: break-word;
-  border-width: 0px;
-}
-
-.data-table tr {
-  border-width: 0px;
+  @apply border-collapse max-w-4xl mx-auto break-words text-dark;
 }
 
 .data-table th {
-  padding: 1ex 2ex 1ex 2ex;
-  border-style: solid none solid none;
-  border-color: black;
-  border-width: 2px;
+  @apply text-left px-3 py-2 border-t-2 border-b-2 border-darkcol dark:border-darkcol_inv;
 }
 
 .data-table td, td.data-table-right {
-  padding: 0.8ex 2ex 0.8ex 2ex;
+  @apply px-3 py-1.5;
 }
 
 td.data-table-right {
-  text-align: right;
+  @apply text-right;
 }
 
 td.data-table-right, td.data-mean, td.data-stddev {
-  word-wrap: normal;
-  white-space: nowrap;
+  @apply break-normal whitespace-nowrap;
 }
 
 td.data-mean {
-  padding: 0.8ex 0ex 0.8ex 2.5ex;
-  text-align: right;
+  @apply px-3 py-1.5 text-right;
 }
 
 td.data-stddev {
-  padding: 0.8ex 1.5ex 0.8ex 1ex;
+  @apply pl-1 pr-2 py-1.5;
 }
