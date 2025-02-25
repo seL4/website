@@ -78,6 +78,8 @@ the format <em>mean (std dev)</em>, both rounded to the nearest integer.</p>
 </ul>
 </div>
 
+<!-- FIXME: read all of this from a json file instead -->
+<div class="max-w-4xl mx-auto">
 <h3 class="h3-size text-dark mt-12 mb-6">Default</h3>
 
 <table class="data-table">
@@ -119,7 +121,7 @@ the format <em>mean (std dev)</em>, both rounded to the nearest integer.</p>
   </tr>  <tr>
     <td>x86_64</td>
     <td class="data-table-right">64</td>
-    <td>i7-6700/Skylake (without meltdown mitigation)</td>
+    <td>i7-6700/Skylake<sup>*</sup></td>
     <td class="data-table-right">3.4 GHz</td>
     <td class="data-mean">1472</td>
     <td class="data-stddev">(200)</td>
@@ -156,6 +158,10 @@ the format <em>mean (std dev)</em>, both rounded to the nearest integer.</p>
     <td class="data-mean">1697</td>
     <td class="data-stddev">(78)</td>
   </tr></table>
+
+  <p class="text-light text-xs sm:text-sm mt-4">
+  <sup>*</sup> without meltdown mitigation
+  </p>
 
 <h3 class="h3-size text-dark mt-12 mb-6">MCS</h3>
 <table class="data-table">
@@ -197,7 +203,7 @@ the format <em>mean (std dev)</em>, both rounded to the nearest integer.</p>
   </tr>  <tr>
     <td>x86_64</td>
     <td class="data-table-right">64</td>
-    <td>i7-6700/Skylake (without meltdown mitigation)</td>
+    <td>i7-6700/Skylake<sup>*</sup></td>
     <td class="data-table-right">3.4 GHz</td>
     <td class="data-mean">1824</td>
     <td class="data-stddev">(322)</td>
@@ -235,6 +241,11 @@ the format <em>mean (std dev)</em>, both rounded to the nearest integer.</p>
     <td class="data-stddev">(161)</td>
   </tr></table>
 
+  <p class="text-light text-xs sm:text-sm mt-4">
+    <sup>*</sup> without meltdown mitigation
+  </p>
+</div>
+
 <div class="theprose mx-auto pt-20">
 <h2 id="compil-details">Compilation Details</h2>
 <p>All benchmarks were built using the trustworthy-systems/sel4
@@ -242,7 +253,9 @@ docker image from the <a href="https://github.com/seL4/seL4-CAmkES-L4v-dockerfil
 docker file repository</a></p>
 </div>
 
-<h3 class="h3-size text-dark mt-12 mb-6">Default</h3>
+<details>
+<summary class="theprose mx-auto">See details on compiler and build commands</summary>
+<h3 class="h3-size text-dark mt-12 mb-6 max-w-4xl mx-auto">Default</h3>
 <table class="data-table">
   <tr>
     <th>ISA</th>
@@ -288,7 +301,7 @@ docker file repository</a></p>
     <td class="monospace">init-build.sh -DFASTPATH=TRUE -DHARDWARE=FALSE -DFAULT=FALSE -DRISCV64=TRUE -DPLATFORM=hifive</td>
   </tr></table>
 
-<h3 class="h3-size text-dark mt-12 mb-6">MCS</h3>
+<h3 class="h3-size text-dark mt-12 mb-6 max-w-4xl mx-auto">MCS</h3>
 <table class="data-table">
   <tr>
     <th>ISA</th>
@@ -333,7 +346,8 @@ docker file repository</a></p>
     <td>riscv64-unknown-elf-gcc GNU 8.3.0</td>
     <td class="monospace">init-build.sh -DFASTPATH=TRUE -DHARDWARE=FALSE -DFAULT=FALSE -DRISCV64=TRUE -DPLATFORM=hifive -DMCS=TRUE</td>
   </tr></table>
+</details>
 
-<div class="theprose mx-auto pt-20">
+<div class="theprose mx-auto pb-20">
 <h2>Source Code</h2>
 <p>This page was generated on 2025-04-14 for sel4bench-manifest <a href="https://github.com/seL4/sel4bench-manifest/blob/4cf8e02abda9b3f2dfd04984f33b47f3073aa3a2/default.xml">4cf8e02a</a>.</p>
