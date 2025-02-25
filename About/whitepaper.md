@@ -58,18 +58,21 @@ still the only proven operating system featuring fine-grained capability-based
 security and high performance. It also has the most advanced support for [mixed
 criticality real-time systems](https://en.wikipedia.org/wiki/Mixed_criticality).
 
-The figure below shows one of the settings seL4 can be used in. The seL4 kernel
-is the layer directly above the hardware, mediating access to it. On top of
-seL4, this example is running a virtual machine with untrusted code, some native
-applications with untrusted code, and some native applications with critical
-trusted code. The kernel isolates trusted from untrusted code and provides
-secure, controlled communication mechanisms between them. In the example, the
-system is configured to only allow communication via the trusted application,
-which for instance could implement custom security policies.
+The figure below shows one of the uses for seL4: isolation between trusted and
+untrusted components in a system, including full virtual machines.
 
 <div class="w-4/5 my-6 mx-auto h-80">
 {% svg /images/tries-shutterstock/sel4-principles.drawio.svg width="100%" %}
 </div>
+
+In the diagram, the seL4 kernel is the layer directly above the hardware,
+mediating access to it. On top of seL4, this example is running a virtual
+machine with untrusted code, some native applications with untrusted code, and
+some native applications with critical trusted code. The kernel isolates trusted
+from untrusted code and provides secure, controlled communication mechanisms
+between them. In the example, the system is configured to only allow
+communication via the trusted application, which for instance could implement
+custom security policies.
 
 For detailed explanations of these terms, see our [FAQ](FAQ.html). For a more
 detailed introduction to seL4, read the full [White Paper](seL4-whitepaper.pdf).
