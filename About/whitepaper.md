@@ -74,5 +74,6 @@ between them. In the example, the system is configured to only allow
 communication via the trusted application, which for instance could implement
 custom security policies.
 
-For detailed explanations of these terms, see our [FAQ](FAQ.html). For a more
-detailed introduction to seL4, read the full [White Paper](seL4-whitepaper.pdf).
+For detailed explanations of the terms used in this page, see our
+[FAQ](FAQ.html). For a more detailed introduction to seL4, read the full [White
+Paper](seL4-whitepaper.pdf).
