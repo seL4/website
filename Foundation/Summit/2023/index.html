@@ -53,6 +53,7 @@ redirect_from: /Foundation/Summit/2023/home.pml
   id = "keynotes"
   heading = "Keynotes"
 %}
+<div class="mt-6 sm:mt-12">
 {% include bio-items-start.html %}
 {% include keynote-item.html
   name = "Gage B"
@@ -73,6 +74,7 @@ redirect_from: /Foundation/Summit/2023/home.pml
   abstract-link = "abstracts2023.html#a-cantripos"
 %}
 {% include bio-items-end.html %}
+</div>
 {% include section-end.html %}
 
 
@@ -234,11 +236,10 @@ redirect_from: /Foundation/Summit/2023/home.pml
 {% include section-start.html
   id = "sponsors"
   heading = "Sponsors"
-%}
-{% include section-end-without-up-arrow.html
-  margins = "py-2"
+  body-max-w = "max-w-6xl"
 %}
 
+<div class="mt-2 sm:mt-4">
 {% include sep-header.html text = "Gold" %}
 {%- assign sponsors = site.data.sponsors.summit-2023.gold | sort_natural: "name" -%}
 {%- include sponsor-info.html -%}
@@ -254,8 +255,9 @@ redirect_from: /Foundation/Summit/2023/home.pml
 {% include sep-header.html text = "Reception" %}
 {%- assign sponsors = site.data.sponsors.summit-2023.reception | sort_natural: "name" -%}
 {%- include sponsor-info.html -%}
+</div>
 
-
+{% include section-end.html %}
 
 <!-- Gallery section -->
 {% include section-start.html

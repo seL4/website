@@ -50,9 +50,7 @@ redirect_from: /Foundation/Summit/2022/home.pml
   id = "keynotes"
   heading = "Keynotes"
 %}
-
-
-
+<div class="mt-6 sm:mt-12">
 {% include bio-items-start.html %}
 {% include keynote-item.html
   name = "Gernot Heiser"
@@ -73,6 +71,7 @@ redirect_from: /Foundation/Summit/2022/home.pml
   abstract-link = "abstracts2022.html#a-Kry10-Secure-Platform"
 %}
 {% include bio-items-end.html %}
+</div>
 {% include section-end.html %}
 
 <!-- Panel section -->
@@ -115,6 +114,8 @@ redirect_from: /Foundation/Summit/2022/home.pml
     link = "abstracts2022.html#a-Funding-agencies"
   %}
   {% include person-grid-end.html %}
+
+{% include section-end.html %}
 
   {% include section-start.html
     id = "pc"
@@ -219,16 +220,15 @@ redirect_from: /Foundation/Summit/2022/home.pml
 {% include section-start.html
   id = "sponsors"
   heading = "Sponsors"
+  body-max-w = "max-w-6xl"
 %}
-{% include section-end-without-up-arrow.html
-  margins = "py-2"
-%}
-
+<div class="mt-2 sm:mt-4">
 {% include sep-header.html text = "Bronze" %}
 {%- assign sponsors = site.data.sponsors.summit-2022.bronze | sort_natural: "name" -%}
 {%- include sponsor-info.html -%}
+</div>
 
-
+{% include section-end.html %}
 
 <!-- Gallery section -->
 {% include section-start.html

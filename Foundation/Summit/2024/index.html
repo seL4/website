@@ -51,6 +51,7 @@ redirect_from: Foundation/Summit/2024/social-activities.html
   id = "keynotes"
   heading = "Keynotes"
 %}
+<div class="mt-6 sm:mt-12">
 {% include bio-items-start.html %}
 {% include keynote-item.html
   name = "Darren Cofer"
@@ -72,9 +73,9 @@ redirect_from: Foundation/Summit/2024/social-activities.html
   Roadmap, and Impact at NIO"
   abstract-link = "abstracts2024.html#a-software-defined"
   %}
-  {% include bio-items-end.html %}
-
-  {% include section-end.html %}
+{% include bio-items-end.html %}
+</div>
+{% include section-end.html %}
 
 
 <!-- Panel section -->
@@ -191,11 +192,10 @@ redirect_from: Foundation/Summit/2024/social-activities.html
 {% include section-start.html
   id = "sponsors"
   heading = "Sponsors"
-%}
-{% include section-end-without-up-arrow.html
-  margins = "py-2"
+  body-max-w = "max-w-6xl"
 %}
 
+<div class="mt-2 sm:mt-4">
 {% include sep-header.html text = "Gold" %}
 {%- assign sponsors = site.data.sponsors.summit-2024.gold | sort_natural: "name" -%}
 {%- include sponsor-info.html -%}
@@ -207,8 +207,9 @@ redirect_from: Foundation/Summit/2024/social-activities.html
 {% include sep-header.html text = "Bronze" %}
 {%- assign sponsors = site.data.sponsors.summit-2024.bronze | sort_natural: "name" -%}
 {%- include sponsor-info.html -%}
+</div>
 
-
+{% include section-end.html %}
 
 
 <!-- Gallery section -->
