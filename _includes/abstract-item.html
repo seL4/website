@@ -1,11 +1,11 @@
-<div id="a-{{ include.id }}" class="bg-white py-24 mt-5 section-max-w sm:py-16">
+<div id="a-{{ include.id }}" class="py-24 mt-5 section-max-w sm:py-16">
   <div class="mx-auto px-6 lg:px-8">
     <div class="mx-auto lg:mx-0">
-      <h2 class="text-xl font-bold tracking-tight text-gray-900 mb-6 sm:text-4xl">{{include.title}}</h2>
+      <h2 class="text-xl font-bold tracking-tight text-dark mb-6 sm:text-4xl">{{include.title}}</h2>
       <p>
-        <span class="text-gray-800">{{include.presenter}}</span>
+        <span class="text-gray-800 dark:text-gray-300">{{include.presenter}}</span>
         <br>
-        <span class="text-gray-500">{{include.affiliation}}</span>
+        <span class="text-light">{{include.affiliation}}</span>
       </p>
       <article class="theprose -mt-10">
         <p class="pt-5">
@@ -21,12 +21,12 @@
         {% endif %}
         {% if include.slides %}
           <div class="p-1 mt-2">
-            <a href="{{include.slides}}" class="text-sm text-gray-500 underline">Slides</a>
+            <a href="{{include.slides}}" class="text-sm text-light underline">Slides</a>
           </div>
         {% endif %}
         <div>
           <p class="p-1 mt-2">
-          <a href="program#p-{{include.id}}" class="text-sm text-gray-500 underline">See this talk in the program</a>
+          <a href="program#p-{{include.id}}" class="text-sm text-light underline">See this talk in the program</a>
           </p>
         </div>
       </div>
