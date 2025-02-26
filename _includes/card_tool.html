@@ -1,29 +1,38 @@
 {%- assign link_text = include.link_text | default: "Learn more" -%}
-{%- assign tc = "h-24 mb-5" -%}
-{%- assign tcol = "bg-f_neutral-200" -%}
-{%- assign tcolf = "bg-f_green-200" -%}
-<div class="flex flex-col relative rounded-lg light:border bg-white dark:bg-slate-300 shadow-lg {% if include.link %}hover:bg-slate-50 dark:hover:bg-slate-400{% endif %} {{ include.class }}">
+{%- if include.foundation -%}
+{%-   assign fc = "bg-f_green-400/80 dark:bg-f_green-400/90 group-hover:bg-f_green-500/90" -%}
+{%- else -%}
+{%-   assign fc = "bg-f_green-300/40 dark:bg-f_green-200 group-hover:bg-f_green-400/50" -%}
+{%- endif %}
+<div class="flex flex-col relative rounded-lg light:border bg-white dark:bg-gray-50 shadow-lg {% if include.link %}hover:bg-slate-50 dark:hover:bg-slate-300{% endif %} {{ include.class }} group overflow-hidden">
+  {% comment %}
   {% if include.link %}<a href="{{ include.link }}">{% endif %}
     {% if include.foundation %}
-    <div class="absolute bg-slate-200 -top-6 left-95/100 -ml-8 p-1 rounded-full shadow-md">
+    <div class="absolute bg-gray-50 -top-6 left-95/100 -ml-8 p-1 rounded-full shadow-md">
       {% svg "/images/sel4-foundation-logo.svg" class="h-16 w-16 fill-white" %}
     </div>
     {% endif %}
   {% if include.link %}</a>{% endif %}
-  <h3 class="px-6 pt-9 pb-3 text-center text-xl font-semibold leading-7 text-gray-900 {{ tc }}  {% if include.foundation %}{{ tcolf }}{% else %}{{ tcol }}{% endif %}">
+  {% endcomment %}
+  <h3 class="px-6 pt-9 pb-3 text-center text-xl font-semibold leading-7 text-gray-900 h-22 mb-4 {{fc}}">
     {{ include.title }}
   </h3>
-  <div class="px-6 pb-5 flex-auto text-base text-gray-600 {{ include.body_class }}">
+  <div class="px-6 pb-5 flex-auto text-base text-gray-600 mt-3 {{ include.body_class }}">
     {{ include.body }}
   </div>
 {%- if include.link %}
-  <div class="px-6 left-5/6 mt-1 pb-5">
+  <div class="px-6 left-5/6 mt-2 pb-5">
     <a href="{{ include.link }}" class="arrow-link">{{ link_text }}
       <span class="absolute inset-0"></span>
     </a>
   </div>
-  <div class="absolute bg-slate-200 text-sm -bottom-4 left-1/2 -ml-16 p-1 px-5 rounded-sm shadow-md">
+  <div class="absolute text-xs sm:text-sm bottom-4 right-6 py-0.5 px-4 rounded-sm border-dotted border-1 border-gray-200 dark:border-gray-400 text-gray-400">
     {{ include.type }}
   </div>
+  {% if include.foundation %}
+  <div class="absolute text-xs sm:text-sm bottom-4 right-34 sm:right-38 py-0.5 px-4 rounded-sm border-dotted border-1 border-gray-200 dark:border-gray-400 text-gray-400">
+    seL4 Foundation
+  </div>
+  {% endif %}
 {% endif -%}
 </div>
