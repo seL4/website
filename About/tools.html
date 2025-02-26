@@ -17,7 +17,7 @@ layout: card
 
 
 <div class="section-borders -mt-12 pt-0">
-  <h2 class="text-center mt-16 mb-6 text-3xl font-bold tracking-tight text-dark md:text-4xl">Development kits & Component frameworks</h2>
+  <h2 class="text-center mt-16 mb-6 text-3xl font-bold tracking-tight text-dark md:text-4xl">Development Kits &amp; Component Frameworks</h2>
 
   <div class="grid grid-cols-1 md:grid-cols-2  gap-12 px-10 pt-8 pb-12 sm:pb-20">
 
@@ -115,28 +115,17 @@ layout: card
     </p>'
     %}
 
+    <!-- FIXME: include? -->
     {% include card_tool.html
-    title="TRENTOS"
-    type="Commercial"
-    foundation=false
-    link="https://www.trentos.de"
-    body='<p>
-      An seL4- and CAmkES-based statically architected OS and SDK for embedded
-      systems, developed by HENSOLDT Cyber.
-    </p>'
-    %}
-
-    {% include card_tool.html
-    title="CantripOS"
-    type="Open Source"
-    foundation=false
-    link="https://github.com/AmbiML/sparrow-cantrip-full"
-    body='<p>
-      An operating system written almost entirely in Rust, that runs on top of
-      seL4 using CAmkES, aimed at low-power secure embedded platform for Ambient
-      ML applications, developped by Google.
-    </p>'
-    %}
+      title="Genode"
+      type="Open Source"
+      foundation=false
+      link="https://genode.org/"
+      body='<p>
+        Genode is an operating system framework for hierarchical dynamic systems
+        based on L4-family microkernels, including seL4.
+      </p>'
+      %}
 
   </div>
 </div>
