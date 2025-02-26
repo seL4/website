@@ -1,9 +1,37 @@
 ---
-SPDX-License-Identifier: CC-BY-SA-4.0
-SPDX-FileCopyrightText: 2020 seL4 Project a Series of LF Projects, LLC.
-
-pre: seL4 Home
-pre_link: /
-title: TODO
-sub: The page this was supposed to link to isn't done yet.
+# Copyright 2020 seL4 Project a Series of LF Projects, LLC.
+# SPDX-License-Identifier: CC-BY-SA-4.0
+title: Verification
+layout: card
+no_title_heading: true
 ---
+
+
+{% include heading.html
+   h1="Verification"
+   sub='<p>seL4 is unique because of its comprehensive formal verification. Blah'
+%}
+
+
+<div class="card-grid-3">
+  {% include card.html
+     icon="check"
+     title="seL4 proofs"
+     body="Blah"
+     link="proofs.html"
+  %}
+
+  {% include card.html
+     icon="rocket-launch"
+     title="Implications for your System"
+     body="Blah"
+     link="../todo.html"
+  %}
+
+  {% include card.html
+     icon="check-badge"
+     title="Implication for Certification"
+     body="Blah"
+     link="certification.html"
+  %}
+</div>
