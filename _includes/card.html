@@ -1,30 +1,38 @@
 {%- assign link_text = include.link_text | default: "Learn more" -%}
 {%- assign icon = "_icons/" | append: include.icon | append: ".svg" -%}
 {%- assign icon_colour = include.icon_colour | default: "bg-logogreen" -%}
-<div class="flex flex-col relative rounded-lg light:border bg-white dark:bg-slate-300 shadow-lg {% if include.link %}hover:bg-slate-50 dark:hover:bg-slate-400{% endif %} {{ include.class }}">
-{% if include.icon %}
-  {% if include.link %}<a href="{{ include.link }}">{% endif %}
+<div class="grid grid-cols-1 relative group">
+  {% if include.icon %}
+  <div class="absolute left-1/2">
+    {% if include.link %}<a href="{{ include.link }}">{% endif %}
     <div class="absolute {{ icon_colour }} -top-8 left-1/2 -ml-8 p-4 rounded-full shadow-md">
       {% svg "{{icon}}" class="h-8 w-8" %}
     </div>
-  {% if include.link %}</a>{% endif %}
+    {% if include.link %}</a>{% endif %}
+  </div>
   {% endif %}
-  <h3 class="px-6 {% if include.icon %} pt-12 {% else %} pt-5 {% endif %} pb-3 text-center text-base font-semibold leading-7 text-gray-900 {{ include.title_colour }} {{ include.title_class }}">
-    {{ include.title }}
-  </h3>
-  <div class="px-6 pb-5 flex-auto text-base text-gray-600 {{ include.body_class }}">
-    {{ include.body }}
+  <div class="flex flex-col rounded-lg light:border bg-white dark:bg-slate-300 shadow-lg
+              {% if include.link %}group-hover:bg-slate-50 dark:group-hover:bg-slate-400{% endif %}
+              {{ include.class }} overflow-hidden">
+    <h3 class="px-6 {% if include.icon %} pt-12 {% else %} pt-5 {% endif %}
+               pb-3 text-center text-base font-semibold leading-7 text-gray-900
+               {{ include.title_colour }} {{ include.title_class }}">
+      {{ include.title }}
+    </h3>
+    <div class="px-6 pb-5 flex-auto text-base text-gray-600 {{ include.body_class }}">
+      {{ include.body }}
+    </div>
+    {%- if include.link %}
+    <div class="px-6 mt-1 pb-5">
+      <a href="{{ include.link }}" class="arrow-link">{{ link_text }}
+        <span class="absolute inset-0"></span>
+      </a>
+    </div>
+    {% endif -%}
+    {%- if include.info %}
+    <div class="px-6 mt-1 pb-5">
+      <p class="text-sm font-semibold text-f_green-600">{{include.info}}</p>
+    </div>
+    {% endif -%}
   </div>
-  {%- if include.link %}
-  <div class="px-6 mt-1 pb-5">
-    <a href="{{ include.link }}" class="arrow-link">{{ link_text }}
-      <span class="absolute inset-0"></span>
-    </a>
-  </div>
-  {% endif -%}
-  {%- if include.info %}
-  <div class="px-6 mt-1 pb-5">
-    <p class="text-sm font-semibold text-f_green-600">{{include.info}}</p>
-  </div>
-  {% endif -%}
 </div>
