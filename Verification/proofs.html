@@ -1,0 +1,70 @@
+---
+# Copyright 2020 seL4 Project a Series of LF Projects, LLC.
+# SPDX-License-Identifier: CC-BY-SA-4.0
+title: seL4 Proofs
+pre: 'seL4 Verification'
+pre_link: ./
+sub: '
+  <p> seL4 has many proofs...
+  </p>
+'
+---
+  
+
+
+<p>
+seL4 is the world's mostly assured OS kernel thanks to its extensive
+formal verification. It has machine-checked mathematical proofs of a
+number of properties for various hardware architectures: Arm (32 bits),
+x86 (64 bits) and RISC-V (64 bits). The properties proved include (not
+all architectures have all properties):
+</p>
+
+
+<div class="mx-auto w-4/5 pl-2 mt-4 aspect-3/2">
+{% svg images/tries-shutterstock/proof-stack.drawio.svg width="100%" %}
+</div>
+
+<ul class="mt-10 space-y-8 text-light">
+  {% include green-tick-li.html
+      text="
+      <strong>Functional correctness</strong>: the C code behaves exactly as its
+      specification says. This is the strongest assurance that the code will not
+      have any undesired behaviour."
+  %}
+  {% include green-tick-li.html
+      text="
+      <strong>Binary correctness:</strong> the machine code running on the
+      processor behaves exactly as the C code, and by extension, as the
+      specification."
+  %}
+  {% include green-tick-li.html
+      text="
+      <strong>Security:</strong> the specification, and by extension the kernel
+      binary, prevents an application running on top from modifying data without
+      authorisation (integrity), interfering with another's resource access
+      (availability) and learning information without authorisation
+      (confidentiality). Together these security properties enforce the
+      <strong>isolation</strong> of components running on top of the kernel,
+      allowing critical components to securely run alongside untrusted
+      software. Integrity and availability are proved in the <tt>Access
+      Control</tt> proof. Confidentiality is proved in the <tt>Information Flow</tt>
+      (Infoflow) proof."
+  %}
+  {% include green-tick-li.html
+      text="
+      <strong>System initialisation:</strong> the proofs above show that seL4
+      provides strong security -- when used correctly. To achieve secure
+      systems, the components of the system that are supposed to be isolated
+      from each other need to be set up with the correct access rights, and that
+      setup must satisfy the preconditions of the security theorems.  The seL4
+      proof stack has three parts that support this task: the
+      <tt>capDL</tt> specification language that lets developers describe access
+      control configurations statically, the <tt>system initialiser</tt> that
+      takes those descriptions, and automatically configures a system to conform
+      to them at boot time, and the
+      <tt>CAmkES proofs</tt> that show that the CAmkES component framework
+      produces access control configurations that lead to the desired security
+      properties."
+  %}
+</ul>
