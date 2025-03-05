@@ -12,108 +12,103 @@ sub: '
 layout: card
 ---
 
-{% include feature.html
-  right=true
-  up=true
-  h2="seL4 and Common Criteria EAL 7"
-  text='
-  <p>
-    upidatat minim id magna ipsum sint dolor qui. Sunt sit in quis cupidatat
-    mollit aute velit. Et labore commodo nulla aliqua proident mollit ullamco
-    exercitation tempor
-  </p>
-  <p>
-    upidatat minim id magna ipsum sint dolor qui. Sunt sit in quis cupidatat
-    mollit aute velit. Et labore commodo nulla aliqua proident mollit ullamco
-    exercitation tempor
-  </p>
-  '
-  img="../images/tries-shutterstock/certif-security.jpg"
-  alt="Security Certification"
-%}
+<div class="section-borders">
+  <h2 class="h2-size text-center" id="benefits">seL4 and Common Criteria EAL 7</h2>
+  <div class="mt-12 mb-18 mx-auto section-max-w text-base sm:text-lg text-light
+	      space-x-8 space-y-4 text-justify">
+    <img class="rounded-xl shadow-xl float-left w-1/2"
+         src="../images/tries-shutterstock/certif-security.jpg"
+	 alt="Futuristic Car">
+    <p>
+      The international standard known as Common Criteria (CC) focuses on
+      computer security certification. Its highest Evaluation Assurance Level,
+      EAL 7, requires some level of formal modelling and verification. The
+      formal specifications and proofs provided by seL4 go beyond what is
+      required at this highest level.
+    </p>
+    <p>
+      Namely, CC's EAL 7 requires a formal model of the security policy, of the
+      functional specification and of the design specification, with formal
+      correspondance between each. Then it only requires an informal mapping
+      from the design specification to the implementation. In contrast, seL4
+      provides a formal proof to the implementation, and even further to the
+      binary.
+      <div class="w-4/5 md:w-3/4 lg:w-2/3 my-6 mx-auto aspect-3/2">
+	{% svg /images/tries-shutterstock/certif-cc-comparison.drawio.svg width="100%" %}
+      </div>
+    </p>
+    <p>
+      More precisely, formal methods are required in CC's assurance class for
+      product development (CC contains 5 other assurance classes, such as tests,
+      life-cycle support, or vulnerability assessment). As shown in the figure
+      below, summarising the requirements for the developement class per EAL,
+      the use of formal modelling and verification is only required from EAL 6,
+      and only down to the design specification level.
+      <div class="w-full md:w-9/10 lg:w-5/6 my-6 mx-auto aspect-5/2">
+	{% svg /images/tries-shutterstock/certif-cc-adv.drawio.svg width="100%" %}
+      </div>
+    </p>
+  </div>
+</div>
 
-<div class="mx-auto max-w-4xl text-lg text-light">
+<div class="section-borders">
+  <h2 class="h2-size text-center" id="benefits">seL4 and ISO26262 ASIL-D</h2>
+  <div class="mt-12 mb-18 mx-auto section-max-w text-base sm:text-lg text-light
+	      space-x-8 space-y-4 text-justify">
+    <img class="rounded-xl shadow-xl float-left w-1/2"
+         src="../images/tries-shutterstock/certif-car.jpg"
+	 alt="Security Certification">
+    <p>
+    upidatat minim id magna ipsum sint dolor qui. Sunt sit in quis cupidatat
+    mollit aute velit. Et labore commodo nulla aliqua proident mollit ullamco
+    exercitation tempor
+    upidatat minim id magna ipsum sint dolor qui. Sunt sit in quis cupidatat
+    mollit aute velit. Et labore commodo nulla aliqua proident mollit ullamco
+    exercitation tempor
+    upidatat minim id magna ipsum sint dolor qui. Sunt sit in quis cupidatat
+    mollit aute velit. Et labore commodo nulla aliqua proident mollit ullamco
+    exercitation tempor
+    upidatat minim id magna ipsum sint dolor qui. Sunt sit in quis cupidatat
+    mollit aute velit. Et labore commodo nulla aliqua proident mollit ullamco
+    exercitation tempor
+    upidatat minim id magna ipsum sint dolor qui. Sunt sit in quis cupidatat
+    mollit aute velit. Et labore commodo nulla aliqua proident mollit ullamco
+    exercitation tempor
+    upidatat minim id magna ipsum sint dolor qui. Sunt sit in quis cupidatat
+    mollit aute velit. Et labore commodo nulla aliqua proident mollit ullamco
+    exercitation tempor
+    </p>
+  </div>
+</div>
 
-  <p>
+<div class="section-borders">
+  <h2 class="h2-size text-center" id="benefits">seL4 and DO-178B/DO-178B</h2>
+  <div class="mt-12 mb-18 mx-auto section-max-w text-base sm:text-lg text-light
+	      space-x-8 space-y-4 text-justify">
+    <img class="rounded-xl shadow-xl float-left w-1/2"
+         src="../images/tries-shutterstock/certif-plane.jpg"
+	 alt="Airplane visualisation">
+    <p>
     upidatat minim id magna ipsum sint dolor qui. Sunt sit in quis cupidatat
     mollit aute velit. Et labore commodo nulla aliqua proident mollit ullamco
     exercitation tempor
-  </p>
-  <p>
     upidatat minim id magna ipsum sint dolor qui. Sunt sit in quis cupidatat
     mollit aute velit. Et labore commodo nulla aliqua proident mollit ullamco
     exercitation tempor
-  </p>
+    upidatat minim id magna ipsum sint dolor qui. Sunt sit in quis cupidatat
+    mollit aute velit. Et labore commodo nulla aliqua proident mollit ullamco
+    exercitation tempor
+    upidatat minim id magna ipsum sint dolor qui. Sunt sit in quis cupidatat
+    mollit aute velit. Et labore commodo nulla aliqua proident mollit ullamco
+    exercitation tempor
+    upidatat minim id magna ipsum sint dolor qui. Sunt sit in quis cupidatat
+    mollit aute velit. Et labore commodo nulla aliqua proident mollit ullamco
+    exercitation tempor
+    upidatat minim id magna ipsum sint dolor qui. Sunt sit in quis cupidatat
+    mollit aute velit. Et labore commodo nulla aliqua proident mollit ullamco
+    exercitation tempor
+    </p>
+  </div>
 </div>
 
 
-
-{% include feature.html
-  right=true
-  up=true
-  h2="seL4 and ISO26262 ASIL-D"
-  text='
-  <p>
-    upidatat minim id magna ipsum sint dolor qui. Sunt sit in quis cupidatat
-    mollit aute velit. Et labore commodo nulla aliqua proident mollit ullamco
-    exercitation tempor
-  </p>
-  <p>
-    upidatat minim id magna ipsum sint dolor qui. Sunt sit in quis cupidatat
-    mollit aute velit. Et labore commodo nulla aliqua proident mollit ullamco
-    exercitation tempor
-  </p>
-  '
-  img="../images/tries-shutterstock/certif-car.jpg"
-  alt="Futuristic Car"
-%}
-
-<div class="mx-auto max-w-4xl text-lg text-light">
-
-  <p>
-    upidatat minim id magna ipsum sint dolor qui. Sunt sit in quis cupidatat
-    mollit aute velit. Et labore commodo nulla aliqua proident mollit ullamco
-    exercitation tempor
-  </p>
-  <p>
-    upidatat minim id magna ipsum sint dolor qui. Sunt sit in quis cupidatat
-    mollit aute velit. Et labore commodo nulla aliqua proident mollit ullamco
-    exercitation tempor
-  </p>
-</div>
-
-
-
-{% include feature.html
-  right=true
-  up=true
-  h2="seL4 and DO-178B/DO-178B "
-  text='
-  <p>
-    upidatat minim id magna ipsum sint dolor qui. Sunt sit in quis cupidatat
-    mollit aute velit. Et labore commodo nulla aliqua proident mollit ullamco
-    exercitation tempor
-  </p>
-  <p>
-    upidatat minim id magna ipsum sint dolor qui. Sunt sit in quis cupidatat
-    mollit aute velit. Et labore commodo nulla aliqua proident mollit ullamco
-    exercitation tempor
-  </p>
-  '
-  img="../images/tries-shutterstock/certif-plane.jpg"
-  alt="Airplane visualisation"
-%}
-
-<div class="mx-auto max-w-4xl text-lg text-light">
-
-  <p>
-    upidatat minim id magna ipsum sint dolor qui. Sunt sit in quis cupidatat
-    mollit aute velit. Et labore commodo nulla aliqua proident mollit ullamco
-    exercitation tempor
-  </p>
-  <p>
-    upidatat minim id magna ipsum sint dolor qui. Sunt sit in quis cupidatat
-    mollit aute velit. Et labore commodo nulla aliqua proident mollit ullamco
-    exercitation tempor
-  </p>
-</div>
