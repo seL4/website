@@ -1,12 +1,12 @@
 ---
 # Copyright 2023 seL4 Project a Series of LF Projects, LLC.
 # SPDX-License-Identifier: CC-BY-SA-4.0
-title: 'Dates and venue confirmed for the <a href="../Foundation/Summit/2023/">seL4 summit 2023</a>'
+title: 'Dates and venue confirmed for the <a href="../Foundation/Summit/2023/">seL4 Summit 2023</a>'
 anchor: summit-2023-venue
 
 link: ../Foundation/Summit/2023
 img: /images/sel4-summit-logo.svg
-alt: seL4 summit logo
+alt: seL4 Summit logo
 ---
 
 The [seL4 Summit 2023](../Foundation/Summit/2023) will be held **19 - 21
