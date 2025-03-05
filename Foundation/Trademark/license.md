@@ -33,26 +33,24 @@ As with Linux, this GPL stipulation stops at the kernel/user boundary. This
 means that the GPL only applies to kernel code, which is defined as the code
 running in privileged mode of the hardware. In contrast, user-level code ---
 code running in unprivileged mode --- can have any license and can also be
-closed-source. Unlike Linux, because seL4 is a microkernel, the actual
-operating system, including drivers, runs as user code on top of seL4.
-
-This implies that the licensing model for seL4 is more flexible than for Linux
-or for most commercial operating systems. You can develop a closed-source
-commercial OS or system on top of seL4 without fear of violating the GPL. You
-can also develop a fully open-source OS or system on top of seL4 with an even
-more liberal license than GPL, such as the BSD-licensed frameworks that are also
-provided by the seL4 Foundation.
+closed-source. Unlike Linux, because seL4 is a microkernel, the actual operating
+system, including drivers, runs as user code on top of seL4. This implies that
+the licensing model for seL4 is more flexible than for Linux or for most
+commercial operating systems. You can develop a closed-source commercial OS or
+system on top of seL4 without fear of violating the GPL. You can also develop a
+fully open-source OS or system on top of seL4 with an even more liberal license
+than GPL, such as the BSD-licensed frameworks that are also provided by the seL4
+Foundation.
 
 It is only if you change the seL4 kernel code itself or the seL4 kernel proofs
 that your changes fall under the conditions of the GPL. However, for normal
-system development you should not have to change any kernel code. Not only would
-this invalidate the seL4 proofs, which is one of seL4's key values, but it
-should also not be necessary. The exception to this is a new platform port of
-seL4. Even then, the change would apply to only a small part of the hardware IP
-(mostly timer and interrupt controller) and would only affect a very small
-portion of the overall system -- much less than if you were using Linux or if
-you were paying license fees for a commercial OS where such changes would
-usually be impossible.
+system development you should not have to change any kernel code. This would
+invalidate the seL4 proofs, which is one of seL4’s key values, and shouldn’t be
+necessary. The exception to this is a new platform port of seL4. Even then, the
+change would apply to only a small part of the hardware IP (mostly timer and
+interrupt controller) and would only affect a very small portion of the overall
+system -- much less than if you were using Linux or if you were paying license
+fees for a commercial OS where such changes would usually be impossible.
 
 {% svg images/licensing.drawio.svg class="w-full px-2" %}
 <!-- FIXME  alt="Diagram with seL4 (GPL) at the bottom,
