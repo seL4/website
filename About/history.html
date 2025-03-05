@@ -33,7 +33,7 @@ sub: '
   just like application code.
 </p>
 <p>
-  The achilles&apos; heel of microkernels at the time was performance:
+  The Achilles&apos; heel of microkernels at the time was performance:
   application code would obtain system services by communicating via an
   interprocess communication (IPC) mechanism, putting this IPC on the
   critical path of any service invocation. This led to poor performance,
@@ -106,7 +106,7 @@ sub: '
 	and tracked. Being imperfect, the measure would go up from time to time,
 	for instance when new properties to be proven were discovered.
   "0 sorries" meant there was nothing left to prove: the project was finished.
-  We now celebrate this day every year as the seL4 day, where the world&apos;s first
+  We now celebrate this day every year as the seL4 day, when the world&apos;s first
   formally verified kernel with a machine-checked code-level proof came
   into existence.
       </p>
@@ -154,22 +154,22 @@ sub: '
 	Unmanned Little Bird helicopter. At the end-of-project
 	demonstration, the HACMS Red Team &mdash; a professional team of hackers &mdash;
 	was unsuccessful at compromising the security of the
-	helicopter, <span class="italic">in flight</span>: they were given full access to
-	the uncritical camera feed, and were even given the keys to crash its virtual machine,
-  but seL4 prevented the cyber attack from compromising the flight mission. This sent a
-	resounding message, recognised by numerous
-	<a href="../Research/awards.html">awards</a>, in DARPA and beyond, not only that
-	formally verified software is usable in practice and provides unprecedented
-  assurance, but that it can also be retrofitted into existing systems to protect
-  highly critical real-world systems.
+	helicopter, <span class="italic">in flight</span>: they were given full access
+	to the uncritical camera feed, and were even given the keys to crash its
+	virtual machine, but seL4 prevented the cyber attack from compromising the
+	flight mission. This sent a resounding message, in DARPA and beyond, not only
+	that formally verified software is usable in practice and provides
+	unprecedented assurance, but that it can be retrofitted into existing systems
+	to protect highly critical real-world systems. The ground-breaking research
+	was recognised with numerous <a href="../Research/awards.html">awards</a>.
       </p>
       <p>
-	HACMS was also the project where seL4 started to be ported to new
-	architectures and platforms. The original proof stack only held for Arm
-	32-bit hardware. During the project the proof was ported to the Intel x64
-	architecture. This was the start of a continuing widening of the scope
-	of <a href="../todo.html">all supported architectures and platforms that seL4
-	now supports.</a>
+        seL4 was first ported to new architectures and platforms during HACMS.
+        The original proof stack only held for Arm 32-bit hardware. During the
+        project the proof was ported to the Intel x64 architecture. This was the
+        start of a continuing widening of the scope of <a
+        href="../todo.html">all supported architectures and platforms that seL4
+        now supports.</a>
       </p>
         <img src="../images/boeing-ulb-helicopter.jpg"
              alt="Boeing&apos;s ULB" class="mt-8 rounded-lg w-3/4 mx-auto">'
@@ -182,16 +182,19 @@ sub: '
       title="Freedom day: seL4 becomes Open Source"
       description='
       <p>
-	With its demonstrated research and real-world impact, seL4
-	unsurprisingly attracted significant interest. However, being
-	proprietary was hindering its adoption. In July 2014, on the 29th
-	to make the "seL4 day" a doubly-celebratory day, the seL4 code
-	and proofs became open source, paving the way to the
-	widespread <a href="use.html">use</a> it enjoys today.
+        With its demonstrated research and real-world impact, seL4 attracted
+        significant interest. However, being proprietary hindered its adoption.
+        In July 2014, on the 29th to make the "seL4 day" a double-celebratory
+        day, the seL4 code and proofs became open source, paving the way to the
+        widespread <a href="use.html">use</a>
+        it enjoys today.
       </p>
         <img src="../images/screenshot-sel4-github.png"
              alt="seL4 on Github" class="mt-8 rounded-lg mx-auto shadow-lg p-4 dark:bg-white">'
    %}
+
+
+
 
 
   {% include timeline-item.html
@@ -218,24 +221,26 @@ sub: '
       title="seL4 becomes an Ecosystem"
       description='
       <p>
-	In 2021, the original core seL4 team is becoming a network of
-	organisations. The <a href="https://trustworthy.systems">Trustworthy
-	Systems group</a> is continuing seL4 research
-	within <a href="https://www.unsw.edu.au">UNSW Sydney</a>. The seL4 proof
-	leaders are founding <a href="https://proofcraft.systems">Proofcraft</a>, a
-	company providing commercial support for formal verification and continuing
-  to drive the expansion of the seL4 proofs. A number
-	of key seL4 experts are joining <a href="https://www.kry10.com">Kry10</a>, a
-	company building an seL4-based platform for mission-critical connected
-	devices. At the same time, the ecosystem of seL4 users, adopters and
-	developers keeps growing, gathering annually at
-	the <a href="../Foundation/Summit/">seL4 summit</a> to share the latest
-	developments of this technology that has now become a world-wide
-	ecosystem.
+        In 2021, the original core seL4 team became a network of
+        organisations. The <a href="https://trustworthy.systems">Trustworthy
+        Systems group</a> continued seL4 research at <a
+        href="https://www.unsw.edu.au">UNSW Sydney</a>. The seL4 proof leaders
+        founded <a href="https://proofcraft.systems">Proofcraft</a>, a company
+        that provides commercial support for formal verification and drives the
+        expansion of the seL4 proofs. A number of key seL4 experts joined <a
+        href="https://www.kry10.com">Kry10</a>, a company that is building an
+        seL4-based platform for mission-critical connected devices. At the same
+        time, the ecosystem of seL4 users, adopters and developers kept growing,
+        gathering annually at the <a href="../Foundation/Summit/">seL4
+        summit</a> to share the latest developments of this technology that has
+        now become a world-wide ecosystem.
       </p>
         <img src="../images/summit2024-group.jpg"
              alt="seL4 summit2024" class="mt-8 rounded-lg w-3/4 mx-auto shadow-lg ">'
   %}
+
+
+
 
 {% include timeline-end.html %}
 
