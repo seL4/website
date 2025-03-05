@@ -6,12 +6,12 @@ anchor: registration-open
 
 link: ../Foundation/Summit/2022/
 img: /images/sel4-summit-logo.svg
-alt: seL4 summit
+alt: seL4 Summit
 ---
 
 This hybrid event will be held in Munich, Germany, 10-13 October 2022.
 
-The seL4 summit will cover the complete seL4 ecosystem, consisting of the
+The seL4 Summit will cover the complete seL4 ecosystem, consisting of the
 verified microkernel, as well as all seL4-related technology, tools,
 infrastructure, products, projects, and people.
 
