@@ -25,7 +25,7 @@ linkchecker \
     --ignore-url="/About/Performance" \
     --ignore-url="/lists/" \
     --ignore-url="https://ethz.ch/en.html" \
-    --ignore-url="https://horizon.ai" \
+    --ignore-url="https://en.horizon.auto" \
     --ignore-url="https://nio.com" \
     --ignore-url="https://lixiang.com" \
     --ignore-url="https://www.rtx.com" \
