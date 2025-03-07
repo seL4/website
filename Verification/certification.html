@@ -75,6 +75,9 @@ layout: card
   </div>
 </div>
 
+<!-- FIXME: some sort of conclusion for the CC part?-->
+
+
 <div class="section-borders">
   <h2 class="h2-size text-center" id="ISO26262">seL4 and ISO26262 ASIL-D</h2>
   <div class="mt-12 mb-18 mx-auto section-max-w text-base sm:text-lg text-light
@@ -83,24 +86,38 @@ layout: card
          src="../images/tries-shutterstock/certif-car.jpg"
 	 alt="Security Certification">
     <p>
-    upidatat minim id magna ipsum sint dolor qui. Sunt sit in quis cupidatat
-    mollit aute velit. Et labore commodo nulla aliqua proident mollit ullamco
-    exercitation tempor
-    upidatat minim id magna ipsum sint dolor qui. Sunt sit in quis cupidatat
-    mollit aute velit. Et labore commodo nulla aliqua proident mollit ullamco
-    exercitation tempor
-    upidatat minim id magna ipsum sint dolor qui. Sunt sit in quis cupidatat
-    mollit aute velit. Et labore commodo nulla aliqua proident mollit ullamco
-    exercitation tempor
-    upidatat minim id magna ipsum sint dolor qui. Sunt sit in quis cupidatat
-    mollit aute velit. Et labore commodo nulla aliqua proident mollit ullamco
-    exercitation tempor
-    upidatat minim id magna ipsum sint dolor qui. Sunt sit in quis cupidatat
-    mollit aute velit. Et labore commodo nulla aliqua proident mollit ullamco
-    exercitation tempor
-    upidatat minim id magna ipsum sint dolor qui. Sunt sit in quis cupidatat
-    mollit aute velit. Et labore commodo nulla aliqua proident mollit ullamco
-    exercitation tempor
+      In the Automotive sector, while not mandatory, the ISO26262 standard for
+      functional safety of road vehicles is highly used. To achieve the highest
+      safety integrity levels, ISO26262 recommends the use of formal methods
+      throughout the development lifecycle. The strength of seL4 formal proofs
+      is much higher than what is required by ASIL-D, ISO26262's highest level.
+    </p>
+    <p>
+      Namely, ISO26262 defines an automotive-specific risk-based approach that
+      determines risk classes as four Automotive Safety Integrity Levels
+      (ASILs), depending on the risk severity, likely exposure and
+      controllability. The highest level, ASIL-D, corresponds to events having
+      reasonable possibility of causing a life-threatening or fatal injury, with
+      the injury being physically possible in most operating conditions, and
+      with little chance the driver can do something to prevent the injury.
+      <div class="w-full md:w-9/10 lg:w-5/6 my-6 mx-auto aspect-2/1">
+	{% svg /images/tries-shutterstock/certif-iso-asil.drawio.svg width="100%" %}
+      </div>
+    </p>
+    <p>
+      In ISO26262, formal verification is recommended (not <em>highly</em>) for
+      ASIL-C and ASIL-D risk classes. Note that in this standard, <em>formal
+      verification</em> is defined as a method used to prove the correctness of
+      a system against the specification in formal notation of its required
+      behaviour. In other words, only the specification is mandated to be
+      formal, and any analysis (including testing) with respect to such a formal
+      specification is fulfilling the ISO26262 recommendation for formal
+      verification. With its mathematical, machine-checked proofs of correctness
+      and security, seL4's assurance level is much stronger than ISO26262
+      highest risk recommendations.
+      <div class="w-4/5 md:w-3/4 lg:w-2/3 my-6 mx-auto aspect-3/2">
+	{% svg /images/tries-shutterstock/certif-iso-fm.drawio.svg width="100%" %}
+      </div>
     </p>
   </div>
 </div>
