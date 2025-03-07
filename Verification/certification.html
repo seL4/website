@@ -20,30 +20,31 @@ layout: card
          src="../images/tries-shutterstock/certif-security.jpg"
 	 alt="Futuristic Car">
     <p>
-      The international standard known as Common Criteria (CC) focuses on
-      computer security certification. Its highest Evaluation Assurance Level,
-      EAL 7, requires some level of formal modelling and verification. The
-      formal specifications and proofs provided by seL4 go beyond what is
-      required at this highest level.
+      The international standard known as Common Criteria focuses on computer
+      security certification. Its highest Evaluation Assurance Level, EAL 7,
+      mandates a certain degree of formal modelling and verification. The formal
+      specifications and proofs provided by seL4 go beyond what is required at
+      this highest level.
     </p>
     <p>
-      Namely, CC's EAL 7 requires a formal model of the security policy, of the
-      functional specification and of the design specification, with formal
-      correspondance between each. Then it only requires an informal mapping
-      from the design specification to the implementation. In contrast, seL4
-      provides a formal proof to the implementation, and even further to the
-      binary.
+      Namely, Common Criteria's EAL 7 requires a formal model of the security
+      policy, functional specification and design specification, with formal
+      correspondance between each. From the design specification, it only
+      requires an informal mapping to the implementation. In contrast, seL4
+      provides a formal proof all the way down to the implementation, and even
+      further to the binary.
       <div class="w-4/5 md:w-3/4 lg:w-2/3 my-6 mx-auto aspect-3/2">
 	{% svg /images/tries-shutterstock/certif-cc-comparison.drawio.svg width="100%" %}
       </div>
     </p>
     <p>
-      More precisely, formal methods are required in CC's assurance class for
-      product development (CC contains 5 other assurance classes, such as tests,
-      life-cycle support, or vulnerability assessment). As shown in the figure
-      below, summarising the requirements for the developement class per EAL,
-      the use of formal modelling and verification is only required from EAL 6,
-      and only down to the design specification level.
+      More precisely, formal methods are required in Common Criteria's assurance
+      class for product <em>development</em> (the standard contains 5 other
+      assurance classes, such as tests, life-cycle support, or vulnerability
+      assessment). As shown in the figure below, summarising the requirements
+      for the developement class per EAL, the use of formal modelling and
+      verification is only required from EAL 6, and only down to the design
+      specification level.
       <div class="w-full md:w-9/10 lg:w-5/6 my-6 mx-auto aspect-5/2">
 	{% svg /images/tries-shutterstock/certif-cc-adv.drawio.svg width="100%" %}
       </div>
