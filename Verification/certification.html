@@ -1,7 +1,7 @@
 ---
 # Copyright 2020 seL4 Project a Series of LF Projects, LLC.
 # SPDX-License-Identifier: CC-BY-SA-4.0
-title: Implications of seL4 Proofs for Certification
+title: seL4 Proofs &amp Certification
 pre: 'seL4 Verification'
 pre_link: "./"
 sub: '
@@ -35,13 +35,13 @@ layout: card
     commercial support for certification processes.
   </div>
 
-<div class="section-borders">
-  <h2 class="h2-size text-center" id="CC">seL4 and Common Criteria EAL 7</h2>
-  <div class="mt-12 mb-18 mx-auto section-max-w text-base sm:text-lg text-light
-	      space-x-8 space-y-4 text-justify">
-    <img class="rounded-xl shadow-xl float-left w-1/2"
-         src="../images/tries-shutterstock/certif-security.jpg"
-	 alt="Futuristic Car">
+
+  {% include section-certif-start.html
+  id="CC"
+  heading="seL4 and Common Criteria EAL 7"
+  img="../images/tries-shutterstock/certif-security.jpg"
+  img-alt="Security Certification"
+  %}
     <p>
       The international standard known as Common Criteria focuses on computer
       security certification. Its highest Evaluation Assurance Level, EAL 7,
@@ -50,7 +50,7 @@ layout: card
       this highest level.
     </p>
     <p>
-      Namely, Common Criteria's EAL 7 requires a formal model of the security
+      Namely, Common Criteria&apos;s EAL 7 requires a formal model of the security
       policy, functional specification and design specification, with formal
       correspondance between each. From the design specification, it only
       requires an informal mapping to the implementation. In contrast, seL4
@@ -61,7 +61,7 @@ layout: card
       </div>
     </p>
     <p>
-      More precisely, formal methods are required in Common Criteria's assurance
+      More precisely, formal methods are required in Common Criteria&apos;s assurance
       class for product <em>development</em> (the standard contains 5 other
       assurance classes, such as tests, life-cycle support, or vulnerability
       assessment). As shown in the figure below, summarising the requirements
@@ -72,19 +72,17 @@ layout: card
 	{% svg /images/tries-shutterstock/certif-cc-adv.drawio.svg width="100%" %}
       </div>
     </p>
-  </div>
-</div>
+    {% include section-end.html %}
 
 <!-- FIXME: some sort of conclusion for the CC part?-->
 
 
-<div class="section-borders">
-  <h2 class="h2-size text-center" id="ISO26262">seL4 and ISO26262 ASIL-D</h2>
-  <div class="mt-12 mb-18 mx-auto section-max-w text-base sm:text-lg text-light
-	      space-x-8 space-y-4 text-justify">
-    <img class="rounded-xl shadow-xl float-left w-1/2"
-         src="../images/tries-shutterstock/certif-car.jpg"
-	 alt="Security Certification">
+    {% include section-certif-start.html
+    id="ISO26262"
+    heading="seL4 and ISO26262 ASIL-D"
+    img="../images/tries-shutterstock/certif-car.jpg"
+    img-alt="Futuristic Car"
+    %}
     <p>
       In the Automotive sector, while not mandatory, the ISO26262 standard for
       functional safety of road vehicles is highly used. To achieve the highest
@@ -119,16 +117,14 @@ layout: card
 	{% svg /images/tries-shutterstock/certif-iso-fm.drawio.svg width="100%" %}
       </div>
     </p>
-  </div>
-</div>
+    {% include section-end.html %}
 
-<div class="section-borders">
-  <h2 class="h2-size text-center" id="DO178">seL4 and DO-178B/DO-178B</h2>
-  <div class="mt-12 mb-18 mx-auto section-max-w text-base sm:text-lg text-light
-	      space-x-8 space-y-4 text-justify">
-    <img class="rounded-xl shadow-xl float-left w-1/2"
-         src="../images/tries-shutterstock/certif-plane.jpg"
-	 alt="Airplane visualisation">
+    {% include section-certif-start.html
+    id="ISO26262"
+    heading="seL4 and DO-178C"
+    img="../images/tries-shutterstock/certif-plane.jpg"
+    img-alt="Airplane visualisation"
+    %}
     <p>
     upidatat minim id magna ipsum sint dolor qui. Sunt sit in quis cupidatat
     mollit aute velit. Et labore commodo nulla aliqua proident mollit ullamco
@@ -149,7 +145,6 @@ layout: card
     mollit aute velit. Et labore commodo nulla aliqua proident mollit ullamco
     exercitation tempor
     </p>
-  </div>
-</div>
+    {% include section-end.html %}
 
 
