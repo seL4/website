@@ -10,17 +10,15 @@ sub: '
     correctly and enforces critical security properties. Such evidence are
     commonly required by certification authorities to approve the use of
     computer systems in critical sectors, such as <a href="#CC">Common
-    Criteria</a> for security products, with <a href="#ISO26262">ISO 26262</a>
-    in the automotive sector, with <a href="#DO178">DO-178B/DO-178C</a> in the
-    avionic sector.
+    Criteria</a> for security products, <a href="#ISO26262">ISO 26262</a> in the
+    automotive sector, <a href="#DO178C">DO-178C</a> in the avionic
+    sector.
   </p>
 '
 layout: card
 ---
 
-  <!-- FIXME: why there's a space after the lik to used?-->
   <!-- TODO: contact members to know who would provide certif services and add it to the services list-->
-
 
 
   {% include section-certif-start.html
@@ -29,19 +27,18 @@ layout: card
   %}
   <p>
     <em>Verification</em> aims at building <em>assurance</em> that a system
-    meets its intended behaviour, and <em>formal</em> verification provide the
-    highest such assurance. <em>Certification</em>, on the other hand, is a
-    process to assess a system against a pre-existing standard, where
-    verification is typically a key component, amongst other requirements.
+    meets its intended behaviour, and <em>formal</em> verification provides the
+    highest level of such assurance. <em>Certification</em>, on the other hand, is a
+    process to assess a system against a pre-existing standard, with
+    verification typically being a key component, among other requirements.
   </p>
   <p>
-    Certifying a given seL4-based product in critical sectors where seL4 is
-    being <a href="../About/use.html">used</a>, such as automotive, aeropsace,
-    critical infrastructure, or defense, will require addressing a number of
-    requirements, but when it comes the verification of correctness and
-    security, the seL4's open-source, formal proofs provide the highest possible
-    assurance level, beyond the most striggent levels of existing certification
-    schemes.
+    Certifying an seL4-based product in critical sectors such as automotive,
+    aeropsace, critical infrastructure, or defense, where seL4 is
+    being <a href="../About/use.html">used</a>, requires addressing a number of
+    requirements. When it comes to the verification of correctness and security,
+    the seL4's open-source, formal proofs provide the highest possible assurance
+    level, beyond the most striggent levels of existing certification schemes.
   </p>
   {% include section-end-without-up-arrow.html %}
 
@@ -130,32 +127,86 @@ layout: card
     </p>
     {% include section-end.html %}
 
+
+
     {% include section-certif-start.html
-    id="ISO26262"
+    id="DO178C"
     heading="seL4 and DO-178C"
     img="../images/tries-shutterstock/certif-plane.jpg"
     img-alt="Airplane visualisation"
     %}
-    <p>
-    upidatat minim id magna ipsum sint dolor qui. Sunt sit in quis cupidatat
-    mollit aute velit. Et labore commodo nulla aliqua proident mollit ullamco
-    exercitation tempor
-    upidatat minim id magna ipsum sint dolor qui. Sunt sit in quis cupidatat
-    mollit aute velit. Et labore commodo nulla aliqua proident mollit ullamco
-    exercitation tempor
-    upidatat minim id magna ipsum sint dolor qui. Sunt sit in quis cupidatat
-    mollit aute velit. Et labore commodo nulla aliqua proident mollit ullamco
-    exercitation tempor
-    upidatat minim id magna ipsum sint dolor qui. Sunt sit in quis cupidatat
-    mollit aute velit. Et labore commodo nulla aliqua proident mollit ullamco
-    exercitation tempor
-    upidatat minim id magna ipsum sint dolor qui. Sunt sit in quis cupidatat
-    mollit aute velit. Et labore commodo nulla aliqua proident mollit ullamco
-    exercitation tempor
-    upidatat minim id magna ipsum sint dolor qui. Sunt sit in quis cupidatat
-    mollit aute velit. Et labore commodo nulla aliqua proident mollit ullamco
-    exercitation tempor
-    </p>
-    {% include section-end.html %}
+  <p>
+    DO-178C defines a number of safety objectives to be satisfied by commercial
+    software-based aerospace systems, depending on the effects their failure may
+    have on the aircraft, crew, and passengers. At the highest assurance level,
+    called Level A software, objectives related to software development include
+    evidence about the system's high-level and low-level requirements (accuracy,
+    verifiability, traceability, compliance etc) as well as its architecture and
+    partitioning. The seL4 proofs of correctness and security provide such
+    evidences with the strength of mathematical proofs.
+  </p>
+  <p>
+    Namely, DO-178C defines five assurance levels, depending on the effects of
+    failures, ranging from <em>Level A software</em>, when failures may
+    have <em>catastrophic</em> effects that may cause deaths, usually with loss
+    of the aircraft, to <em>Level E software</em>, when failures have <em>no
+    safety effect</em>. For instance, Level A has 71 objectives to satisfy
+    whereas Level E has none. The table below shows some of the objectives
+    related to software development process, showing that the most stringent
+    software levels require a number of objectives in terms of accuracy,
+    verifiability, traceability and compliance of the high-level and low-level
+    requirements.
+    <div class="w-4/5 md:w-3/4 lg:w-2/3 my-6 mx-auto aspect-3/1">
+      {% svg /images/tries-shutterstock/certif-do178c-objectives1.drawio.svg width="100%" %}
+    </div>
+    <div class="w-4/5 md:w-3/4 lg:w-2/3 my-6 mx-auto aspect-2/1">
+      {% svg /images/tries-shutterstock/certif-do178c-objectives2.drawio.svg width="100%" %}
+    </div>
+  </p>
+  <!-- FIXME: make diagrams bigger-->
+  <p>
+    For this aerospace standard, a guide is also published specifically to
+    address the use of Formal Methods: the DO-333 Formal Methods Supplement. The
+    supplement identifies the modifications and additions to DO-178C objectives,
+    activities, and software life cycle data that should be addressed when
+    formal methods are used as part of the software development process. It
+    includes requirements for the use of formal notations with unambiguous,
+    mathematically defined syntax and semantics, soundness of the formal
+    analysis methods used, and justification of all assumptions used in each
+    formal analysis.
+  </p>
+  <p>
+    In the case of the seL4 proofs, they are using the Isabelle theorem prover,
+    with all the assumptions being explicitely stated.
+  </p>
+  <!-- FIXME: say more...-->
+  <!-- FIXME: link to Isabelle website?-->
+  <p>
+    DO-178C also refers to DO-330 for the qualification of any tool used, and
+    specifies five tool qualification levels (TQL) depending on three criteria:
+    whether (1) the tool output is part of the airborne software and thus could
+    insert an error; (2) the tool automates a verification process <em>and</em>
+    is used to justify the elimination or reduction of other verification
+    processes; or the tools is just used to automated a verification
+    process. Then each of TQl-1 to TQL-5 defines a list of objectives to
+    fulfill. For instance, objectives related to the source code of the tool is
+    not required for TQL-4 or TQL-5, i.e., for tools not generating code that is
+    part of the airborne software.
+    <div class="w-4/5 md:w-3/4 lg:w-2/3 my-6 mx-auto aspect-2/1">
+      {% svg /images/tries-shutterstock/certif-do330-tql.drawio.svg width="100%" %}
+    </div>
+  </p>
+  <p>
+    In the case of the use of the Isabelle theorem prover in seL4, there is no
+    code generated from Isabelle that results in the seL4 code base. So criteria
+    1 does not apply. Moreover Isabelle's logic is based on a very small core
+    set of axioms, that have been manually validated, with all extensions
+    derived from first principles. No external tool is trusted: all outputs from
+    external tools go through the creation of a corresponding proof within
+    Isabelle.
+  </p>
+  <!-- FIXME: say more...-->
+
+  {% include section-end.html %}
 
 
