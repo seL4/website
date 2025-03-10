@@ -6,7 +6,7 @@ pre: 'seL4 Verification'
 pre_link: "./"
 sub: '
   <p>
-    seL4 formal proofs provide extremely strong evidence that it functions
+    seL4 formal proofs provide extremely strong assurance that it functions
     correctly and enforces critical security properties. Such evidence are
     commonly required by certification authorities to approve the use of
     computer systems in critical sectors, such as <a href="#CC">Common
@@ -22,18 +22,29 @@ layout: card
   <!-- TODO: contact members to know who would provide certif services and add it to the services list-->
 
 
-  <div class="mt-12 mb-18 mx-auto section-max-w text-base sm:text-lg text-light
-	      text-justify a-underline">
 
-    seL4 is being <a href="../About/use.html">used</a> in critical, highly
-    regulated sectors such as automotive, aeropsace, critical infrastructure,
-    defense and more.  Certifying a given seL4-based product in one of these
-    sectors requires addressing all aspects of the relevant certification
-    process. The kernel's open-source, formal proofs address the requirement of
-    correctness and security at the the highest possible assurance level. The
-    seL4 Foundation's <a href="todo">endorsed service providers</a> can provide
-    commercial support for certification processes.
-  </div>
+  {% include section-certif-start.html
+  id="intro"
+  heading="Verification vs Certification vs Assurance"
+  %}
+  <p>
+    <em>Verification</em> aims at building <em>assurance</em> that a system
+    meets its intended behaviour, and <em>formal</em> verification provide the
+    highest such assurance. <em>Certification</em>, on the other hand, is a
+    process to assess a system against a pre-existing standard, where
+    verification is typically a key component, amongst other requirements.
+  </p>
+  <p>
+    Certifying a given seL4-based product in critical sectors where seL4 is
+    being <a href="../About/use.html">used</a>, such as automotive, aeropsace,
+    critical infrastructure, or defense, will require addressing a number of
+    requirements, but when it comes the verification of correctness and
+    security, the seL4's open-source, formal proofs provide the highest possible
+    assurance level, beyond the most striggent levels of existing certification
+    schemes.
+  </p>
+  {% include section-end-without-up-arrow.html %}
+
 
 
   {% include section-certif-start.html
