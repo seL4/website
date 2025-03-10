@@ -155,13 +155,13 @@
         "lifebuoy",
         "Help & Open Source Support",
         "Mailing lists, Forum, Chat, Developer Hangouts",
-        "/todo.html"
+        "/Contact/support.html"
       ],
       [
         "user",
         "Contact a Person",
         "seL4 Foundation, Security Contact, Website Contact, Moderation",
-        "/todo.html"
+        "/contact/"
       ]
     ]
   ]

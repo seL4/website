@@ -2,84 +2,79 @@
 # Copyright 2020 seL4 Project a Series of LF Projects, LLC.
 # SPDX-License-Identifier: CC-BY-SA-4.0
 redirect_from: /contact/home.pml
-title: Contact Information
+title: Contact
+redirect_from:
+- /About/home.pml
+- /About/seL4/index.html
+layout: card
+sub: '
+  <p>
+    The seL4 Foundation has a number of points of contact for <a
+    href="#foundation">operational</a> and <a href="#technical">technical</a>
+    queries.
+  </p>'
 ---
 
-<h2>Foundation</h2>
 
-<ul>
-<li><code>foundation<span>@</span>sel4<span>.</span>systems</code>
-</ul>
+<!-- Foundation section -->
+{% include section-start.html
+  id = "foundation"
+  heading = "The seL4 Foundation"
+  intro = '
+    <div class="theprose dark:text-light">
+      <ul>
+        <li>
+          Information about the seL4 Foundation:
+        <a title="foundation@sel4.systems" href=
+        "mailto:foundation@sel4.systems">foundation@sel4.systems</a>
+        </li>
+        <li>
+          Issues relating to seL4 Foundation admin:
+          <a title="foundation-admin@sel4.systems" href=
+          "mailto:foundation-admin@sel4.systems">foundation-admin@sel4.systems</a>
+        </li>
+        <li>
+          Questions about the seL4 Summit:
+          <a title="summit@sel4.systems" href=
+          "mailto:summit@sel4.systems">summit@sel4.systems</a>
+        </li>
+      </ul>
+    </div>
+      '
+%}
+{% include section-end.html %}
 
-<h2>Information and Announcements</h2>
 
-<ul>
-<li><a href="https://lists.sel4.systems/postorius/lists/announce.sel4.systems/">Announce mailing list</a> announcements about seL4 (low volume list)</li>
-<li>LinkedIn: <a href="https://www.linkedin.com/company/sel4/">seL4 Foundation</a></li>
-<li>Mastodon: <a href="https://fosstodon.org/@sel4">@sel4@fosstodon.org</a><br>We are suspending our use of Twitter until further notice. We will instead provide updates on Mastodon.</li>
-<li>YouTube: <a href="https://www.youtube.com/@seL4">The seL4 Microkernel</a></li>
-<li><a href="https://microkerneldude.wordpress.com/category/sel4/">Blog</a></li>
-<li><a href="https://calendar.google.com/calendar/u/0?cid=NXNybzFhaGtodDNsb2NuaGRxMnFmbDhndGNAZ3JvdXAuY2FsZW5kYXIuZ29vZ2xlLmNvbQ">Google calendar feed</a> for seL4 Foundation events and dates
-</li>
-</ul>
-
-<p id="calendar-container" style="text-align:center; padding:2ex 0 2ex 0;"></p>
-
-<!-- use js to display calendar in client-local time zone -->
-<script type="text/javascript">
-const timezone = Intl.DateTimeFormat().resolvedOptions().timeZone
-const html = `<iframe src="https://calendar.google.com/calendar/embed?wkst=1&showTitle=0&showCalendars=0&ctz=${timezone}&showPrint=0&showTz=1&bgcolor=%23ffffff&mode=AGENDA&src=NXNybzFhaGtodDNsb2NuaGRxMnFmbDhndGNAZ3JvdXAuY2FsZW5kYXIuZ29vZ2xlLmNvbQ" style="height:40ex; width:60%; border:0;"></iframe>`
-document.getElementById('calendar-container').innerHTML = html;
-</script>
-
-<h2>Development</h2>
-
-<p>
-Discussion about using and developing seL4 (questions, suggestions, updates, etc.)
-</p>
-<ul>
-<li><a href="https://lists.sel4.systems/postorius/lists/devel.sel4.systems/">Developer mailing list</a></li>
-<li><a href="https://sel4.discourse.group/">Discourse forums</a></li>
-<li><a href="https://mattermost.trustworthy.systems/sel4-external/">Mattermost chat</a></li>
-<li>IRC: we used to have an IRC channel, but we no longer monitor that, so do not recommend using it.</li>
-</ul>
-<p>
-We also host an <a href="https://unsw.zoom.us/j/82640784431">open video
-chat hangout</a> every two weeks (dates/times shown in calendar above) to bring seL4 developers together. There is no strict
-agenda, anybody can join for technical discussions about seL4, related
-repositories and projects, or general questions and answers. Members from the
-technical steering committee (TSC) will try to be there, but these are not
-TSC meetings where formal decisions are made.<br>
-A <a href="https://calendar.google.com/calendar/u/0?cid=NXNybzFhaGtodDNsb2NuaGRxMnFmbDhndGNAZ3JvdXAuY2FsZW5kYXIuZ29vZ2xlLmNvbQ">calendar
-feed</a> is available.
-</p>
-
-<p>
-RFC (request for comments) proposing new features for seL4
-</p>
-<ul>
-<li><a href="https://sel4.github.io/rfcs/">Information about the RFC process</a></li>
-<li><a href="https://github.com/seL4/rfcs/pulls?q=is%3Aopen+is%3Apr+-label%3Anot-rfc+">Currently proposed RFCs</a></li>
-</ul>
-
-<p>
-Github
-</p>
-<ul>
-<li><a href="https://github.com/seL4">https://github.com/seL4</a></li>
-<li><a href="https://github.com/seL4Proj">https://github.com/seL4Proj</a></li>
-</ul>
-
-<h2>Direct Communication</h2>
-
-<ul>
-<li><code>support<span>@</span>sel4<span>.</span>systems</code> inquiries about professional support contracts</li>
-<li><code>sel4<span>@</span>sel4<span>.</span>systems</code> communication that cannot be done on the public channels</li>
-<li><code>moderation<span>@</span>sel4<span>.</span>systems</code> requests or queries about community moderation. See <a href="https://docs.sel4.systems/processes/conduct.html">seL4 Code of Conduct</a></li>
-</ul>
-
-<h2>Website Issues</h2>
-
-<ul>
-<li><code>webmaster<span>@</span>sel4<span>.</span>systems</code>
-</ul>
+<!-- Technical support section -->
+{% include section-start.html
+  id = "technical"
+  heading = "Technical support"
+  intro = '
+  <div class="theprose dark:text-light">
+    <ul>
+      <li>
+        Inquiries about professional support contracts:
+        <a title="support@sel4.systems" href=
+        "mailto:support@sel4.systems">support@sel4.systems</a>
+      </li>
+      <li>
+        Communication that cannot be conducted on the public channels:
+        <a title="sel4@sel4.systems" href=
+        "mailto:sel4@sel4.systems">sel4@sel4.systems</a>
+      </li>
+      <li>
+        Requests or queries about community moderation:
+        <a title="moderation@sel4.systems" href=
+        "mailto:moderation@sel4.systems">moderation@sel4.systems</a>. See <a
+        href="https://docs.sel4.systems/processes/conduct.html">seL4 Code of
+        Conduct</a>
+      </li>
+      <li>
+        Website issues:
+        <a title="webmaster@sel4.systems" href=
+        "mailto:webmaster@sel4.systems">webmaster@sel4.systems</a>
+    </ul>
+  </div>
+  '
+%}
+{% include section-end.html %}
