@@ -12,7 +12,13 @@ no_title_heading: true
     <h1 class="text-4xl font-bold tracking-tight text-gray-900 sm:text-6xl">
       seL4 is used across a wide range of sectors
     </h1>
-    <p class="mt-6 text-lg leading-8 text-gray-600 sm:max-w-md lg:max-w-none">Cupidatat minim id magna ipsum sint dolor qui. Sunt sit in quis cupidatat mollit aute velit. Et labore commodo nulla aliqua proident mollit ullamco exercitation tempor. Sint aliqua anim nulla sunt mollit id pariatur in voluptate cillum.</p>
+    <p class="mt-6 text-lg leading-8 text-gray-600 sm:max-w-md lg:max-w-none">
+      seL4's formally verified isolation enforcement enables a unique solution
+      for safely running critical applications alongside any uncritical
+      workloads. This capability has a significant impact across critical
+      sectors such as automotive, aerospace, infrastructure, defense, secure
+      communications, and more.
+    </p>
   </div>
 
   <div class="mt-14 flex justify-end gap-8 sm:-mt-44 sm:justify-start sm:pl-20 lg:mt-0 lg:pl-0">
@@ -51,53 +57,48 @@ no_title_heading: true
 </div>
 
 
-<!--
-
-<div class="mx-auto mt-16 grid max-w-2xl auto-rows-fr grid-cols-1 gap-8">
-  {% include card-use.html
-  pic="/images/tries-shutterstock/nio-onvo-h.png"
-  date="2024-10-01"
-  title="seL4 in NIO's cars"
-  author-name="Name Surname"
-  author-pic="/Foundation/Board/TS-June-square.jpg"
-  %}
-  {% include card-use.html
-  pic="/images/tries-shutterstock/boeing-ulb-helicopter-h.png"
-  date="2024-10-01"
-  title="seL4 protects unmanned helicopter against cyber attacks"
-  author-name="Name Surname"
-  author-pic="/Foundation/Board/TS-June-square.jpg"
-  %}
-  {% include card-use.html
-  pic="/images/tries-shutterstock/industrial-control-unsplash.jpg"
-  date="2024-10-01"
-  title="KOS: Kry10's seL4-based OS designed from the ground up for mission critical connected devices"
-  author-name="Name Surname"
-  author-pic="/Foundation/Board/TS-June-square.jpg"
-  %}
-  {% include card-use.html
-  pic="/images/tries-shutterstock/cantripos-slide.jpg"
-  date="2024-10-01"
-  title="CantripOS: Google's seL4-based open-source low-power secure embedded platform for Ambient ML applications"
-  author-name="Name Surname"
-  author-pic="/Foundation/Board/TS-June-square.jpg"
-  %}
-</div>
--->
-
 <div class="mt-16 space-y-20 lg:mt-20 lg:space-y-20">
-  {% include card-use2.html
-  pic="/images/tries-shutterstock/nio-onvo-h.png"
-  title="seL4 in NIO's cars"
-  description="NIO announced seL4 will be in mass production in their cars from October 2024"
+
+
+  {% include card-use.html
+  pic="/images/tries-shutterstock/mep-surevoice.jpg"
+  date="2025"
+  tag="Product"
+  title="seL4 in MEP's SureVoice Solid switch"
+  link="https://www.mep-info.com/products/surevoice-solid"
+  description='
+  SureVoice solid is a Voice Control System (VCS) running at the heart of the
+  traffic controllers produced by <a href="https://www.mep-info.com">MEP</a>.
+  MEP has chosen to run SureVoice on seL4 to provide 24/7 availability.
+  '
   author-name="Name Surname"
   author-affiliation="Role at Company X"
   author-pic="/Foundation/Board/TS-June-square.jpg"
   %}
-  {% include card-use2.html
+
+  {% include card-use.html
+  pic="/images/tries-shutterstock/nio-onvo-h.png"
+  date="2024-10-01"
+  tag="Deployment"
+  title="seL4 in mass production in NIO's cars"
+  description='
+  From October 2024, NIO begins mass producing the ONVO vehicle featuring their
+  seL4-based SkyOS-M operating system, as announced by Ning Qu, NIO&apos;s VP of
+  engineering and leader of the SkyOS team, at the seL4 summit 2024. NIO is a
+  Premium Member of the seL4 Foundation, with NIO&apos;s OS architect Yanyan
+  Shen being a member of the seL4 Foundation Technical Steering Committee and
+  NIO&apos;s Global VP of Digital Systems, Qiyan Wang, sitting at the seL4
+  Foundation board.
+  '
+  author-name="Name Surname"
+  author-affiliation="Role at Company X"
+  author-pic="/Foundation/Board/TS-June-square.jpg"
+  %}
+
+  {% include card-use.html
   pic="/images/tries-shutterstock/boeing-ulb-helicopter-h.png"
   date="2024-10-01"
-  tag="Blah"
+  tag="Deployment"
   title="seL4 protects unmanned helicopter against cyber attacks"
   description="upidatat minim id magna ipsum sint dolor qui. Sunt sit in quis cupidatat
   mollit aute velit. Et labore commodo nulla aliqua proident mollit ullamco
@@ -106,9 +107,12 @@ no_title_heading: true
   author-affiliation="Role at Company X"
   author-pic="/Foundation/Board/TS-June-square.jpg"
   %}
-  {% include card-use2.html
+
+
+  {% include card-use.html
   pic="/images/tries-shutterstock/industrial-control-unsplash.jpg"
   date="2024-10-01"
+  tag="Commercial product"
   title="KOS: Kry10's seL4-based OS designed from the ground up for mission critical connected devices"
   description="upidatat minim id magna ipsum sint dolor qui. Sunt sit in quis cupidatat
   mollit aute velit. Et labore commodo nulla aliqua proident mollit ullamco
@@ -117,9 +121,12 @@ no_title_heading: true
   author-affiliation="Role at Company X"
   author-pic="/Foundation/Board/TS-June-square.jpg"
   %}
-  {% include card-use2.html
+
+
+  {% include card-use.html
   pic="/images/tries-shutterstock/cantripos-slide.jpg"
   date="2024-10-01"
+  tag="Commercial research"
   title="CantripOS: Google's seL4-based open-source low-power secure embedded platform for Ambient ML applications"
   description="upidatat minim id magna ipsum sint dolor qui. Sunt sit in quis cupidatat
   mollit aute velit. Et labore commodo nulla aliqua proident mollit ullamco
@@ -128,6 +135,9 @@ no_title_heading: true
   author-affiliation="Role at Company X"
   author-pic="/Foundation/Board/TS-June-square.jpg"
   %}
+
+
+
 </div>
 
 
