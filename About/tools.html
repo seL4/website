@@ -30,11 +30,16 @@ layout: card
       Abstraction layer, SDK and tools that simplify development of statically
       architected seL4-based systems. Focus on high performance and simplicity.
     </p>
-    <p>
+    <p class="mt-2">
       In active development. Ready for use, but not all features and
       configurations supported yet. For mixed-criticality scheduling (MCS)
       kernel configurations only.
-    </p>'
+    </p>
+    <p class="mt-2">
+      Use when feature set is sufficient, and kernel configuration and
+      verification requirements are supported by Microkit for your use case.
+    </p>
+    '
     %}
 
     {% include card_tool.html
@@ -46,6 +51,11 @@ layout: card
       Development and runtime component framework for microkernel-based embedded
       static systems. Eventually to be replaced by Microkit, but still
       supported. Currently more mature, and feature rich.
+    </p>
+    <p class="mt-2">
+      Use when features not yet supported by Microkit are needed for your
+      project, or verification requirements are not met by the
+      kernel configurations supported by Microkit.
     </p>'
     %}
 
