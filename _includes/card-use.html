@@ -5,7 +5,7 @@
     </div>
     <div>
       <div class="flex items-center gap-x-4 text-xs">
-        <time datetime="{{ include.date }}" class="text-gray-500">{{ include.date }}</time>
+        {% if include.date %}<time datetime="{{ include.date }}" class="text-gray-500">{{ include.date }}</time>{% endif %}
         <div class="relative z-10 rounded-full bg-gray-50 px-3 py-1.5 font-medium text-gray-600 hover:bg-gray-100">{{ include.tag }}</div>
       </div>
       <div class="group relative max-w-xl">
@@ -17,13 +17,13 @@
         </h3>
 	{{include.description}}
       </div>
-      <!-- FIXME
+      {% if include.author-name %}
       <div class="mt-6 flex border-t border-gray-900/5 pt-6">
         <div class="relative flex items-center gap-x-4">
           <img src="{{include.author-pic | relative_url}}" alt="" class="size-10 rounded-full bg-gray-50">
           <div class="text-sm/6">
             <p class="font-semibold text-gray-900">
-              <a href="#">
+              <a href="{{include.author-link}}">
                 <span class="absolute inset-0"></span>
                 {{include.author-name}}
               </a>
@@ -31,6 +31,7 @@
             <p class="text-gray-600"> {{include.author-affiliation}}</p>
           </div>
         </div>
-      </div>-->
+      </div>
+      {% endif %}
     </div>
   </article>
