@@ -7,150 +7,51 @@ redirect_from:
 - /About/home.pml
 - /About/seL4/index.html
 layout: card
-sub: '
-  <p>
-    The seL4 Foundation fosters community engagement through various avenues,
-    ranging from <a href="#announcements">announcements</a>, <a
-    href="#development">development discussions</a>, <a
-    href="#rfc">RFCs</a> and <a href="#github">GitHub</a>.
-  </p>'
 ---
 
-<!-- Announcements section -->
-{% include section-start.html
-  id = "announcements"
-  heading = "Information and Announcements"
-  intro = '
-    <div class="theprose dark:text-light">
-      <ul>
-        <li>
-          <a
-          href="https://lists.sel4.systems/postorius/lists/announce.sel4.systems/">Announce
-          mailing list</a> sends announcements about seL4 (low volume list)
-        </li>
-        <li>
-          LinkedIn: <a href="https://www.linkedin.com/company/sel4/">seL4
-          Foundation</a>
-        </li>
-        <li>Mastodon:
-          <a href="https://fosstodon.org/@sel4">@sel4@fosstodon.org</a><br>We
-          are suspending our use of Twitter until further notice. We will
-          instead provide updates on Mastodon.
-        </li>
-        <li>
-          YouTube: <a href="https://www.youtube.com/@seL4">The seL4
-          Microkernel</a>
-        </li>
-        <li>
-          <a
-          href="https://microkerneldude.wordpress.com/category/sel4/">Blog</a>
-        </li>
-        <li>
-          <a
-          href="https://calendar.google.com/calendar/u/0?cid=NXNybzFhaGtodDNsb2NuaGRxMnFmbDhndGNAZ3JvdXAuY2FsZW5kYXIuZ29vZ2xlLmNvbQ">Google
-          calendar feed</a> for seL4 Foundation events and dates
-        </li>
-      </ul>
-  </div>'
+
+<div class="card-grid-3 grid-cols-1 sm:grid-cols-2 md:grid-cols-3 mb-8 pb-8">
+  {% include card.html
+     icon="envelope"
+     title="seL4 Developer Mailing list"
+     link="https://lists.sel4.systems/postorius/lists/devel.sel4.systems/"
+     link_text="Go"
   %}
-  <div id="calendar-container" class="flex mt-10 justify-center"></div>
-
-    <!-- use js to display calendar in client-local time zone -->
-    <script type="text/javascript">
-    const timezone = Intl.DateTimeFormat().resolvedOptions().timeZone
-    const html = `<iframe src="https://calendar.google.com/calendar/embed?wkst=1&showTitle=0&showCalendars=0&ctz=${timezone}&showPrint=0&showTz=1&bgcolor=%23ffffff&mode=AGENDA&src=NXNybzFhaGtodDNsb2NuaGRxMnFmbDhndGNAZ3JvdXAuY2FsZW5kYXIuZ29vZ2xlLmNvbQ" style="height:40ex; width:80%; border:0;"></iframe>`
-    document.getElementById('calendar-container').innerHTML = html;
-    </script>
-
-{% include section-end.html %}
-
-
-
-<!-- Development section -->
-{% include section-start.html
-  id = "development"
-  heading = "Development"
-  intro = '
-    <div class="theprose dark:text-light">
-      <p>
-        Discussions about using and developing seL4 (questions, suggestions,
-        updates, etc.)
-      </p>
-      <ul>
-        <li>
-          <a
-          href="https://lists.sel4.systems/postorius/lists/devel.sel4.systems/">Developer
-          mailing list</a>
-        </li>
-        <li>
-          <a href="https://sel4.discourse.group/">Discourse forums</a>
-        </li>
-        <li>
-          <a
-          href="https://mattermost.trustworthy.systems/sel4-external/">Mattermost
-          chat</a>
-        </li>
-        <li>
-          IRC: we used to have an IRC channel, but we no longer monitor that, so
-          do not recommend using it.
-        </li>
-        </ul>
-        <p>
-          We also host an <a href="https://unsw.zoom.us/j/82640784431">open
-          video chat hangout</a> every two weeks (dates/times shown in calendar
-          above) to bring seL4 developers together. There is no strict agenda,
-          anybody can join for technical discussions about seL4, related
-          repositories and projects, or general questions and answers. Members
-          from the technical steering committee (TSC) will try to be there, but
-          these are not TSC meetings where formal decisions are made.<br>
-        </p>
-    </div>'
-%}
-
-{% include section-end.html %}
-
-
-<!-- RFC section -->
-{% include section-start.html
-  id = "rfc"
-  heading = "Request for Comments (RFC)"
-  intro = '
-    <div class="theprose dark:text-light">
-      <p>
-        RFC (request for comments) proposing new features for seL4
-      </p>
-      <ul>
-        <li>
-          <a href="https://sel4.github.io/rfcs/">Information about the RFC
-          process</a>
-        </li>
-        <li>
-          <a
-          href="https://github.com/seL4/rfcs/pulls?q=is%3Aopen+is%3Apr+-label%3Anot-rfc+">Currently
-          proposed RFCs</a>
-        </li>
-      </ul>
-    </div>'
-%}
-
-{% include section-end.html %}
-
-
-<!-- GitHub section -->
-{% include section-start.html
-  id = "github"
-  heading = "GitHub"
-  intro = '
-    <div class="theprose dark:text-light">
-    <ul>
-      <li>
-        <a href="https://github.com/seL4">https://github.com/seL4</a>
-      </li>
-      <li>
-        <a href="https://github.com/seL4Proj">https://github.com/seL4Proj</a>
-      </li>
-    </ul>
-  </div>'
+  {% include card.html
+     icon="chat-bubble-bottom-center-text"
+     title="seL4 Discourse forums"
+     link="https://sel4.discourse.group/"
+     link_text="Go"
   %}
+  {% include card.html
+     icon="chat-bubble-left-right"
+     title="seL4 Mattermost chat"
+     link="https://mattermost.trustworthy.systems/sel4-external/"
+     link_text="Go"
+  %}
+</div>
 
-  {% include section-end.html %}
+
+
+<div class="mt-12 mb-20">
+  <img class="rounded-xl shadow-xl float-left m-8 lg:w-1/3 md:w-2/5 w-1/2"
+       src="../images/tries-shutterstock/hangout.jpg">
+  <h3 class="mb-2 text-xl lg:text-2xl font-bold tracking-tight text-dark">
+    seL4 Hangout
+  </h3>
+  <p class="mb-4">
+    We host an <a href="https://unsw.zoom.us/j/82640784431">open video chat
+    hangout</a> every two weeks to bring seL4 developers together. Dates/times
+    are shown in <a href="stay-informed.html#calendar">seL4 calendar entry</a>.
+  </p>
+  <p class="mb-4">
+    There is no strict agenda, anybody can join for technical discussions about
+    seL4, related repositories and projects, or general questions and answers.
+  </p>
+  <p>
+    Members from the technical steering committee (TSC) will try to be there,
+    but these are not TSC meetings where formal decisions are made.
+  </p>
+</div>
+
+<!-- FIXME: decide whether we want RFC and github back here -->
