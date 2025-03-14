@@ -1,0 +1,15 @@
+# Copyright Proofcraft Pty Ltd
+# SPDX-License-Identifier: BSD-2-Clause
+
+files:
+  - vendor
+  - node_modules
+  - "_.*/.*"
+  - ".*html"
+
+urls:
+  - twitter.com
+  - flaticon.com
+  - github.com.seL4.rfcs.pulls\?q
+  - rtx.com
+  - www.collinsaerospace.com
