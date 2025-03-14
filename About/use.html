@@ -17,7 +17,12 @@ no_title_heading: true
       for safely running critical applications alongside any uncritical
       workloads. This capability has a significant impact across critical
       sectors such as automotive, aerospace, infrastructure, defense, secure
-      communications, and more.
+      communications, and more. Here are some examples of where seL4 is being
+      used. There are many more: seL4 is open source and many products or
+      development are not or cannot be public. See also our list
+      of <a href="../Research/ongoing.html">research organisations</a>
+      conducting seL4-related research and our list
+      of <a href="tools.html">frameworks and languages</a> built on or for seL4.
     </p>
   </div>
 
@@ -60,26 +65,15 @@ no_title_heading: true
 <div class="mt-16 space-y-20 lg:mt-20 lg:space-y-20">
 
 
-  {% include card-use.html
-  pic="/images/tries-shutterstock/mep-surevoice.jpg"
-  date="2025"
-  tag="Product"
-  title="seL4 in MEP's SureVoice Solid switch"
-  link="https://www.mep-info.com/products/surevoice-solid"
-  description='
-  SureVoice solid is a Voice Control System (VCS) running at the heart of the
-  traffic controllers produced by <a href="https://www.mep-info.com">MEP</a>.
-  MEP has chosen to run SureVoice on seL4 to provide 24/7 availability.
-  '
-  %}
 
   {% include card-use.html
   pic="/images/tries-shutterstock/nio-onvo-h.png"
-  tag="Deployment"
+  date="2024"
+  tag="Commercial product"
   title="seL4 in mass production in NIO's cars"
   description='
-  From October 2024, NIO begins mass producing the ONVO vehicle featuring their
-  seL4-based SkyOS-M operating system, as announced by Ning Qu, NIO&apos;s VP of
+  NIO mass-produces the ONVO vehicle featuring their seL4-based SkyOS-M
+  operating system. This was as announced by Ning Qu, NIO&apos;s VP of
   engineering and leader of the SkyOS team, at the seL4 summit 2024. NIO is a
   Premium Member of the seL4 Foundation, with NIO&apos;s OS architect Yanyan
   Shen being a member of the seL4 Foundation Technical Steering Committee and
@@ -92,33 +86,101 @@ no_title_heading: true
   %}
 
   {% include card-use.html
-  pic="/images/tries-shutterstock/boeing-ulb-helicopter-h.png"
-  tag="Deployment"
-  title="seL4 protects unmanned helicopter against cyber attacks"
-  description="upidatat minim id magna ipsum sint dolor qui. Sunt sit in quis cupidatat
-  mollit aute velit. Et labore commodo nulla aliqua proident mollit ullamco
-  exercitation tempor."
+  pic="/images/tries-shutterstock/use-vm-composer.png"
+  tag="Commercial product"
+  title="seL4 in Dornerworks' VM Composer"
+  description='
+  Built on seL4 to enable robust security, DornerWorks&apos; Secure Microkernel
+  Virtual Machine (VM) Composer is a modeling tool and the "easy button" that
+  helps organisations develop and deploy virtualized high-assurance systems
+  using a drag-and-drop interface. DornerWorks, a founding member of the seL4
+  Foundation and one of its endorsed service providers, has a dedicated team of
+  seL4 experts who help organisations accelerate the integration of seL4 as the
+  trusted software base for their products.
+  '
   %}
 
+  {% include card-use.html
+  pic="/images/tries-shutterstock/mep-surevoice.jpg"
+  date="2025"
+  tag="Commercial product"
+  title="seL4 in MEP's SureVoice Solid switch"
+  link="https://www.mep-info.com/products/surevoice-solid"
+  description='
+  SureVoice Solid is a Voice Control System (VCS) running at the heart of the
+  traffic controllers produced by <a href="https://www.mep-info.com">MEP</a>.
+  MEP is a company developing and supplying voice communication systems for
+  critical applications in the Maritime and Aviation sectors worldwide. MEP has
+  chosen to run SureVoice on seL4 to provide 24/7 availability.
+  '
+  %}
 
   {% include card-use.html
   pic="/images/tries-shutterstock/industrial-control-unsplash.jpg"
   tag="Commercial product"
-  title="KOS: Kry10's seL4-based OS designed from the ground up for mission critical connected devices"
-  description="upidatat minim id magna ipsum sint dolor qui. Sunt sit in quis cupidatat
-  mollit aute velit. Et labore commodo nulla aliqua proident mollit ullamco
-  exercitation tempor."
+  title="seL4 in KOS, Kry10's operating system for mission critical connected devices"
+  description='
+  KOS is an Operating System and platform designed from the ground up for
+  mission critical connected devices. Developped by Kry10, KOS leverages the
+  formal verification of seL4 to provide an operating system that is secure,
+  self-healing, and dynamic with minimal downtime, even during upgrades. Kry10
+  is an seL4 Foundation member, with strong seL4 expertise and contributing
+  three members to the seL4 Techncial Steering Committee, Kent McLeod, Ihor Kuz
+  and Matthew Brecknell.
+  '
+  %}
+
+  <!-- FIXME: fix all links -->
+
+  {% include card-use.html
+  pic="/images/tries-shutterstock/use-neutrality.png"
+  tag="Commercial research &amp development"
+  title="seL4 in Neutrality's Atoll hypervisor"
+  description='
+  Swiss start-up Neutrality is developing the Atoll hypervisor &mdash; a
+  high-assurance platform designed to protect systems that are likely targets of
+  well-resourced attackers. Atoll will leverage the seL4 microkernel, configured
+  as a multikernel, to provide verified isolation between virtualized workloads
+  running on datacenter-class hardware with hundreds of CPU cores. This approach
+  will deliver orders-of-magnitude increases in hardware performance while
+  retaining the benefits of formal verification.
+  '
   %}
 
 
   {% include card-use.html
   pic="/images/tries-shutterstock/cantripos-slide.jpg"
-  tag="Commercial research"
-  title="CantripOS: Google's seL4-based open-source low-power secure embedded platform for Ambient ML applications"
-  description="upidatat minim id magna ipsum sint dolor qui. Sunt sit in quis cupidatat
-  mollit aute velit. Et labore commodo nulla aliqua proident mollit ullamco
-  exercitation tempor."
+  tag="Commercial research &amp development"
+  title="seL4 in Google's CantripOS platform for Ambient Machine Learning applications"
+  description='
+  Developed at Google, CantripOS is an open-source, low-power operating system
+  purpose-built to run Machine Learning workloads for embedded systems. Focused
+  on security and privacy, CantripOS runs on the seL4 microkernel and is written
+  in the Rust programming language.
+  '
   %}
+
+
+  {% include card-use.html
+  pic="/images/tries-shutterstock/boeing-ulb-helicopter-h.png"
+  tag="Demonstration"
+  title="seL4 protects unmanned helicopter against cyber attacks"
+  description='
+
+  In the DARPA-funded HACMS program, seL4 was embedded in a range of autonomous
+  vehicles, ranging from trucks, a land robot, and a quadcopter to Boeing&apos;s
+  Unmanned Little Bird helicopter. At the end-of-project demonstration, the
+  HACMS Red Team — a professional team of hackers — was unsuccessful at
+  compromising the security of the helicopter, in flight: they were given full
+  access to the uncritical camera feed, and were even given the keys to crash
+  its virtual machine, but seL4 prevented the cyber attack from compromising the
+  flight mission.
+
+  '
+  %}
+
+
+
 
 
 
