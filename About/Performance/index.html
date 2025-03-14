@@ -32,9 +32,9 @@ layout: card
 <p>
   seL4 not only beat the performance of those earlier kernels, but it now
   outperforms any microkernels by a factor of 2 to 10 times on key benchmarks.
-  While independent performance comparisons are scarce, the few available studies
-  corroborate our claims and here we provide publicly available performance numbers
-  for seL4.
+  While independent performance comparisons are scarce, the few available
+  studies corroborate our claims. We provide public performance numbers and a
+  public experimental setup to enable repeatable independent benchmarks.
 </p>
 <p>
   By providing both proved security and performance, seL4 is designed to support
@@ -45,18 +45,18 @@ layout: card
 <h3>Why IPC Benchmarks?</h3>
 
 <p>
-  In microkernel-based systems, the division of software into separate
-  components is greater than on monolithic operating systems. Usually these
-  components run in separate address spaces. This is excellent for improving
-  security, but can incur overhead if done incorrectly.
+  Microkernel-based systems tend to divide up software into a greater number of
+  components than monolithic systems. Usually these components run in separate
+  address spaces. This is excellent for improving security, but can incur
+  overhead if done incorrectly.
 </p>
 <p>
   Components on top of seL4 communicate with IPC (inter-process communication),
   notifications, and shared memory, where IPC is most commonly used as the
   mechanism for protected procedure calls. The IPC benchmarks below measure the
   overhead of these calls and show that they are on the order of normal function
-  calls in monolithic systems. This is the key benchmark showing that improved
-  security is possible without sacrificing performance.
+  calls in monolithic systems. This is the key benchmark for showing that
+  improved security is possible without sacrificing performance.
 </p>
 
 <h2 id="perf-numbers">Performance numbers</h2>
