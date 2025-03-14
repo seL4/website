@@ -8,73 +8,80 @@ redirect_from:
 - /About/seL4/index.html
 layout: card
 sub: '
-  <p>
-    The seL4 Foundation has a number of points of contact for <a
-    href="#foundation">operational</a> and <a href="#technical">technical</a>
-    queries.
-  </p>'
+<p>
+  To get in contact with a specific set of people for a specific purpose, use
+  one of the direct contact address below.
+</p>'
 ---
 
+<!-- FIXME: ok to not put foundation-admin@sel4.systems here? -->
+<!-- FIXME: all below still useful? -->
+<!-- FIXME: add security contact? any other? -->
 
-<!-- Foundation section -->
-{% include section-start.html
-  id = "foundation"
-  heading = "The seL4 Foundation"
-  intro = '
-    <div class="theprose dark:text-light">
-      <ul>
-        <li>
-          Information about the seL4 Foundation:
-        <a title="foundation@sel4.systems" href=
-        "mailto:foundation@sel4.systems">foundation@sel4.systems</a>
-        </li>
-        <li>
-          Issues relating to seL4 Foundation admin:
-          <a title="foundation-admin@sel4.systems" href=
-          "mailto:foundation-admin@sel4.systems">foundation-admin@sel4.systems</a>
-        </li>
-        <li>
-          Questions about the seL4 Summit:
-          <a title="summit@sel4.systems" href=
-          "mailto:summit@sel4.systems">summit@sel4.systems</a>
-        </li>
-      </ul>
-    </div>
-      '
-%}
-{% include section-end.html %}
-
-
-<!-- Technical support section -->
-{% include section-start.html
-  id = "technical"
-  heading = "Technical support"
-  intro = '
+<div class="mb-20">
+  <img class="rounded-xl shadow-xl float-left m-8 w-1/8"
+       src="../images/tries-shutterstock/contact-quill-pen.jpg">
+  
   <div class="theprose dark:text-light">
     <ul>
-      <li>
-        Inquiries about professional support contracts:
-        <a title="support@sel4.systems" href=
-        "mailto:support@sel4.systems">support@sel4.systems</a>
-      </li>
-      <li>
-        Communication that cannot be conducted on the public channels:
-        <a title="sel4@sel4.systems" href=
-        "mailto:sel4@sel4.systems">sel4@sel4.systems</a>
-      </li>
-      <li>
-        Requests or queries about community moderation:
-        <a title="moderation@sel4.systems" href=
-        "mailto:moderation@sel4.systems">moderation@sel4.systems</a>. See <a
-        href="https://docs.sel4.systems/processes/conduct.html">seL4 Code of
-        Conduct</a>
-      </li>
-      <li>
-        Website issues:
-        <a title="webmaster@sel4.systems" href=
-        "mailto:webmaster@sel4.systems">webmaster@sel4.systems</a>
+      {% include green-contact-li.html
+      text='
+      <a title="foundation@sel4.systems" href=
+         "mailto:foundation@sel4.systems">foundation@sel4.systems</a>
+      for information about the seL4 Foundation
+      '
+      %}
+      {% include green-contact-li.html
+      text='
+      <a title="summit@sel4.systems" href=
+         "mailto:summit@sel4.systems">summit@sel4.systems</a>
+      for questions about the seL4 Summit
+      '
+      %}
+      {% include green-contact-li.html
+      text='
+      <a title="support@sel4.systems" href=
+         "mailto:support@sel4.systems">support@sel4.systems</a>
+      for inquiries about professional support contracts
+      '
+      %}
+      {% include green-contact-li.html
+      text='
+      <a title="sel4@sel4.systems" href=
+         "mailto:sel4@sel4.systems">sel4@sel4.systems</a>
+      for communication that cannot be conducted on the public channels
+      '
+      %}
+      {% include green-contact-li.html
+      text='
+      <a title="webmaster@sel4.systems" href=
+         "mailto:webmaster@sel4.systems">webmaster@sel4.systems</a>
+      for website issues
+      '
+      %}
+      {% include green-contact-li.html
+      text='
+      <a title="moderation@sel4.systems" href=
+         "mailto:moderation@sel4.systems">moderation@sel4.systems</a>
+      for requests or queries about community
+      moderation. See <a href="https://docs.sel4.systems/processes/conduct.html">seL4
+        Code of Conduct</a>
+      '
+      %}
     </ul>
   </div>
-  '
-%}
-{% include section-end.html %}
+
+
+  <p> If you are unsure which contact to use, contact
+    <a title="foundation@sel4.systems" href=
+       "mailto:foundation@sel4.systems">foundation-admin@sel4.systems</a>.
+    
+  </p>
+  <p class="mt-8">
+    For development help and support visit the
+    <a href= "support.html">Help & Open Source Support</a> page. To stay informed on seL4 latest news see the
+    <a href= "stay-informed.html">Stay Informed</a> page or read the <a href=
+      "../news/index.html">seL4 news</a>.
+  </p>
+
+  
