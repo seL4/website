@@ -7,7 +7,7 @@ pre_link: index.html
 sub: '
   <p>
     The seL4 white paper provides an introduction and overview
-    for seL4, including seL4&apos;s assurance story, its security- and safety
+    for seL4, including seL4&apos;s assurance story, its security and safety
     features, and its benchmark-setting performance. It also shows typical
     usage scenarios.
   </p>
@@ -22,23 +22,23 @@ sub: '
   </a>
 </div>
 
-seL4 is a high-assurance, high-performance operating system microkernel. It is
-unique because of its comprehensive formal [verification](../Verification/),
-without compromising [performance](Performance/). It is meant to be used as a
+seL4 is a high-assurance, high-performance operating system microkernel. Its
+uniqueness lies in the comprehensive formal [verification](../Verification/),
+while maintaining high [performance](Performance/). seL4 was designed as a
 trustworthy foundation for building safety- and security-critical systems. It is
 available as open source on [GitHub](https://github.com/seL4/) and supported by
 the [seL4 Foundation](../Foundation/).
 
-Being a *kernel* means it is the piece of software that runs at the
-heart of any software system and controls all accesses to resources. It
-provides fine-grained access control through
-[capabilities](https://en.wikipedia.org/wiki/Capability-based_security),
-and controls communication between components of the system. It is the
-most critical part of the software system, and runs in privileged mode.
+As a *kernel*, it is the piece of software that runs at the heart of any software
+system and controls all access to resources. It provides fine-grained access
+control through
+[capabilities](https://en.wikipedia.org/wiki/Capability-based_security), and
+controls communication between components of the system. It is the most critical
+part of the software system, and runs in privileged mode.
 
-Being a *microkernel* means that it is reduced to a minimal core that is
-free from policy and therefore can form a dependable base for building
-arbitrary systems serving many different usage scenarios.
+seL4 is a *microkernel*, which means that it is reduced to a minimal core that
+is free from policy. It can therefore form a dependable base for building
+arbitrary systems to serve many different usage scenarios.
 
 seL4 is a member of the [L4 family of
 microkernels](https://en.wikipedia.org/wiki/L4_microkernel_family "L4 microkernel family on wikipedia"),
@@ -65,14 +65,13 @@ untrusted components in a system, including full virtual machines.
 {% svg /images/tries-shutterstock/sel4-principles.drawio.svg width="100%" %}
 </div>
 
-In the diagram, the seL4 kernel is the layer directly above the hardware,
-mediating access to it. On top of seL4, this example is running a virtual
-machine with untrusted code, some native applications with untrusted code, and
-some native applications with critical trusted code. The kernel isolates trusted
-from untrusted code and provides secure, controlled communication mechanisms
-between them. In the example, the system is configured to only allow
-communication via the trusted application, which for instance could implement
-custom security policies.
+In the diagram, the seL4 kernel is the layer directly above the hardware and
+mediates access to it. This example shows a virtual machine running on top of
+seL4. Some native applications in the virtual machine have untrusted code, and
+some have critical trusted code. The kernel isolates trusted from untrusted code
+and provides secure, controlled communication mechanisms between them. In the
+example, the system is configured to only allow communication via the trusted
+applications, which for instance, could implement custom security policies.
 
 For detailed explanations of the terms used in this page, see our
 [FAQ](FAQ.html). For a more detailed introduction to seL4, read the full [White
