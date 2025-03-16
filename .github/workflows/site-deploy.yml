@@ -18,7 +18,7 @@ jobs:
     runs-on: ubuntu-latest
     steps:
     - uses: actions/checkout@v4
-    - uses: ruby/setup-ruby@v1 # sets up ruby accourding to .ruby-version and caches bundler deps
+    - uses: ruby/setup-ruby@v1 # sets up ruby according to .ruby-version and caches bundler deps
       with:
         bundler-cache: true
     - run: make build JEKYLL_ENV=production
@@ -28,12 +28,26 @@ jobs:
         name: site
         path: site.tar
 
-  deploy:
+  build-seL4:
+    runs-on: ubuntu-latest
+    steps:
+    - uses: actions/checkout@v4
+    - uses: ruby/setup-ruby@v1 # sets up ruby according to .ruby-version and caches bundler deps
+      with:
+        bundler-cache: true
+    - run: make on_seL4 JEKYLL_ENV=production
+    - run: tar -cvf site.tar _site_on_seL4/
+    - uses: actions/upload-artifact@v4
+      with:
+        name: site-seL4
+        path: site.tar
+
+  deploy_branch:
     if: ${{ github.repository_owner == 'seL4' &&
             (github.event_name == 'push' ||
              github.event_name == 'workflow_dispatch') }}
     needs: build
-    name: 'Deploy'
+    name: 'Deploy gh_pages branch'
     runs-on: ubuntu-latest
     steps:
     - uses: actions/checkout@v4
