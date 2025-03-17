@@ -42,6 +42,58 @@ jobs:
         name: site-seL4
         path: site.tar
 
+  deploy_seL4:
+    if: ${{ github.repository_owner == 'seL4' &&
+            (github.event_name == 'push' ||
+             github.event_name == 'workflow_dispatch') }}
+    needs: build-seL4
+    name: 'Deploy to seL4 server'
+    runs-on: ubuntu-latest
+    steps:
+      - name: Get site
+        uses: actions/download-artifact@v4
+        with:
+          name: site-seL4
+      - name: Unpack
+        run: tar -xvf site.tar
+      - name: Set up SSH agent
+        uses: webfactory/ssh-agent@v0.9.0
+        with:
+          ssh-private-key: ${{ secrets.WEB_DEPLOY_KEY }}
+      - name: Add host keys
+        run: |
+          mkdir ~/.ssh
+          echo ${{ secrets.WEB_HOST_KEYS }} > ~/.ssh/known_hosts
+      - name: rsync
+        run: |
+          rsync -a --delete -e 'ssh -J web-updater@login.trustworthy.systems' _site_on_seL4/ web-updater@tftp.keg.cse.unsw.edu.au:/vmm-work/www
+
+  deploy_backup:
+    if: ${{ github.repository_owner == 'seL4' &&
+            (github.event_name == 'push' ||
+              github.event_name == 'workflow_dispatch') }}
+    needs: build
+    name: 'Deploy to backup server'
+    runs-on: ubuntu-latest
+    steps:
+      - name: Get site
+        uses: actions/download-artifact@v4
+        with:
+          name: site
+      - name: Unpack
+        run: tar -xvf site.tar
+      - name: Set up ssh agent
+        uses: webfactory/ssh-agent@v0.9.0
+        with:
+          ssh-private-key: ${{ secrets.WEB_DEPLOY_KEY }}
+      - name: Add host keys
+        run: |
+          mkdir ~/.ssh
+          echo ${{ secrets.WEB_HOST_KEYS }} > ~/.ssh/known_hosts
+      - name: rsync
+        run: |
+          rsync -a --delete _site/ web-updater@lists.sel4.systems:/var/www/html/seL4
+
   deploy_branch:
     if: ${{ github.repository_owner == 'seL4' &&
             (github.event_name == 'push' ||
