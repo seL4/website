@@ -1,0 +1,16 @@
+<li class="flex mt-8">
+  {% svg _icons/map-pin.svg class="h-15 w-15 flex-none text-f_green-600" %}
+  <span>
+    <strong>{{include.title}}</strong>: <br> {{include.description}}
+    <div class="text-base ml-8">
+    <div>
+      {% svg _icons/user-group.svg class="mr-2 h-5 w-5 text-f_green-600 inline-icon" %}
+      By {{include.who}} 
+    </div>
+    <div>
+      {% svg _icons/forward.svg class="mr-2 h-5 w-5 flex-none text-f_green-600 inline-icon" %}
+      {{include.status}}
+    </div>
+    </div>
+  </span>
+</li>

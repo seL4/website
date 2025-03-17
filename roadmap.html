@@ -1,0 +1,146 @@
+---
+# Copyright 2020 seL4 Project a Series of LF Projects, LLC.
+# SPDX-License-Identifier: CC-BY-SA-4.0
+title: Development Roadmap
+sub: '
+  <p>
+    seL4 continues to evolve, expanding its support for an increasing range of
+    platforms, architectures, configurations and features. It solidifies its
+    position as the leading secure operating system and the industry standard
+    for verified software, with an active, public development roadmap, both on
+    the <a href="#systems">Systems</a> side, with the kernel itself and the
+    expanding ecosystem of frameworks, tools, components and language support to
+    facilitate the production of seL4-based systems, and on
+    the <a href="#verification">Verification</a> side for seL4&apos;s formal
+    proofs, which evolves alongside the kernel code changes. You
+    can <a href="#help">help or contribute</a> to the roadmap.
+  </p>
+  <img src="../images/tries-shutterstock/roadmap.jpg" alt="Roadmap" class="rounded-lg mt-8 w-4/5 mx-auto">
+'
+layout: card
+---
+
+  <!-- FIXME: fix width without using margins.. -->
+  <!-- FIXME: add icon for links going externally? -->
+  <!-- FIXME: mkit: should 'who' now be the Foundation? -->
+  <!-- FIXME: fix status icon for better layout when there's a line break-->
+  <!-- FIXME: diagrans?? -->
+
+
+
+  {% include section-start.html
+  heading='Systems Roadmap'
+  id='systems'
+  margins='pt-16 sm:pt-24'
+  body-max-w='max-w-6xl'
+  %}
+
+  <div class="theprose dark:text-light mx-40">
+    <ul>
+
+      {% include green-roadmap-li.html
+      title='MCS Kernel extensions'
+      description='A new scheduling model to support trustworthy
+      mixed-criticality real-time systems.'
+      who='UNSW'
+      status=' In progress. Main API stable and available. <em>Note: smaller API
+      changes while verification is in progress</em>'
+      %}
+
+      {% include green-roadmap-li.html
+      title='seL4 Microkit'
+      description='A simple operating systems framework for building systems on seL4.'
+      who='UNSW'
+      status='Ongoing research & development. Available for use. Detailed
+      roadmap
+      available <a href="https://github.com/seL4/microkit/issues/61">here</a>.'
+      %}
+
+      {% include green-roadmap-li.html
+      title='seL4 Device Driver Framework (SDDF)'
+      description='A high-performance and secure driver framework for seL4.'
+      who='UNSW'
+      status='Ongoing research & development. Available for use. Find out
+      more <a href="https://github.com/au-ts/sddf">here</a>.'
+      %}
+
+      {% include green-roadmap-li.html
+      title='LionsOS'
+      description='A secure, fast, and adaptable OS based on the seL4 Microkit.'
+      who='UNSW'
+      status='Ongoing research & development. An initial release containing a
+      non-trivial example system has been made. Find out
+      more <a href="https://lionsos.org">here</a>.'
+      %}
+
+    </ul>
+  </div>
+
+  {% include section-end-without-up-arrow.html %}
+
+
+  {% include section-start.html
+  heading='Formal Verification Roadmap'
+  id='verification'
+  body-max-w='max-w-6xl'
+  %}
+
+  <div class="theprose dark:text-light mx-40">
+    <ul>
+
+      {% include green-roadmap-li.html
+      title='Verification of MCS Kernel extensions'
+      description='Functional correctness proofs for a new scheduling model to
+      support trustworthy mixed-criticality real-time systems.'
+      who='Proofcraft'
+      status='C verification ongoing'
+      %}
+
+      {% include green-roadmap-li.html
+      title='Verification of AArch64 port'
+      description='Functional correctness proofs for the AArch64 port of seL4
+      completed. Integrity (access control) ongoing.'
+      who='Proofcraft'
+      status='Integrity verification to complete Q1/25'
+      %}
+
+    </ul>
+  </div>
+
+  {% include section-end.html %}
+
+  {% include section-start.html
+  heading='Help &amp; Contribute to the Roadmap'
+  id='help'
+  body-max-w='max-w-6xl'
+  %}
+
+  <!-- FIXME: fix width without using margins.. -->
+  <!-- FIXME: text size?.. -->
+  
+<ul class="mt-10 max-w-3xl space-y-8 text-light ml-40">
+  {% include green-tick-li.html
+      text='In some cases, the roadmap could be accelerated with more funding for the
+      contributors who work on them, or, in some cases, by volunteering time. If
+      you are interested, talk to the
+      <a title="foundation@sel4.systems"
+      href="mailto:foundation@sel4.systems">seL4 Foundation</a>.'
+  %}
+  {% include green-tick-li.html
+      text='
+    <p>If you are working on a large feature or addition to the the wide seL4
+      ecosystem, possibly contracted to deliver it, and ideally with ideally an
+      approved RFC to go with it, your contribution would be an ideal addition
+      to the roadmap.
+      A new feature can become a part of the official seL4 roadmap by decision
+      of the <a href="/Foundation/TSC/index.html">Technical Steering
+      Committee</a> (TSC) of the seL4 Foundation.
+      To submit a request to the TSC for putting a planned feature on the
+      roadmap, send an email to any TSC member with a description of the
+      contribution, the planned timeline, and level of confidence for achieving
+      it, e.g. by pointing to any related RFC. The TSC will discuss the proposal
+      and either request more information or vote on it.</p>'
+  %}
+</ul>
+
+  {% include section-end.html %}
