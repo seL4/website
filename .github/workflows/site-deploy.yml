@@ -14,7 +14,7 @@ on:
 
 jobs:
   build:
-    name: Site
+    name: Build site
     runs-on: ubuntu-latest
     steps:
     - uses: actions/checkout@v4
@@ -29,6 +29,7 @@ jobs:
         path: site.tar
 
   build-seL4:
+    name: Build site (seL4)
     runs-on: ubuntu-latest
     steps:
     - uses: actions/checkout@v4
@@ -62,7 +63,6 @@ jobs:
           ssh-private-key: ${{ secrets.WEB_DEPLOY_KEY }}
       - name: Add host keys
         run: |
-          mkdir ~/.ssh
           echo ${{ secrets.WEB_HOST_KEYS }} > ~/.ssh/known_hosts
       - name: rsync
         run: |
@@ -88,7 +88,6 @@ jobs:
           ssh-private-key: ${{ secrets.WEB_DEPLOY_KEY }}
       - name: Add host keys
         run: |
-          mkdir ~/.ssh
           echo ${{ secrets.WEB_HOST_KEYS }} > ~/.ssh/known_hosts
       - name: rsync
         run: |
