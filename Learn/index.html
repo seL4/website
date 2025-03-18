@@ -3,7 +3,19 @@
 # SPDX-License-Identifier: CC-BY-SA-4.0
 title: Learn
 redirect_from: /Learn/home.pml
+pre: "Learn about seL4"
+h1: "Award-winning technology backed by ground-breaking research"
+sub: '
+  <p>
+   Significant research breakthroughs in seL4 have been recognised by
+   international awards and in high-caliber publications. Research organisations
+   continue to push the boundaries of seL4. Coupled with advancements in the
+   field, partner organisations provide advanced lectures on Operating Systems
+   and Formal Software Verification.
+   </p>'
+layout: card
 ---
+
 <h1 id="learn-about-sel4">Learn about seL4</h1>
 
 <h2 id="docsite">Docsite</h2>
@@ -25,6 +37,58 @@ redirect_from: /Learn/home.pml
   seL4, the kernel and core library APIs, user-level frameworks, and
   virtualisation.
 </p>
+
+Have a look - page with these are all the things that could be useful - manual, tutorials, specs, publications
+need and appealing layout
+
+<div class="card-grid-3 grid-cols-1 sm:grid-cols-2 md:grid-cols-3 mb-8 pb-8">
+  {% include card.html
+     icon="window"
+     title="Docsite"
+     body="A separate website for technical seL4 documentation. The docsite is hosted on GitHub and maintained by the community."
+     link="https://docs.sel4.systems/"
+  %}
+
+  {% include card.html
+     icon="book-open"
+     title="Manual"
+     body="The seL4 manual describes the seL4 kernel&apos;s API from a
+     user&apos;s point of view. It provides an overview of the seL4 microkernel
+     design and a reference of the high-level API exposed by the seL4 kernel to
+     userspace."
+     link="https://sel4.systems/Info/Docs/seL4-manual-latest.pdf"
+  %}
+
+  {% include card.html
+     icon="rectangle-group"
+     title="Specs"
+     body="Abstract Formal Specification of the seL4/ARMv6 API."
+     link="ongoing.html"
+  %}
+
+  {% include card.html
+     icon="puzzle-piece"
+     title="Tutorials"
+     body="A series of hands-on tutorials that cover the basics of
+     seL4, the kernel and core library APIs, user-level frameworks, and
+     virtualisation."
+     link="https://docs.sel4.systems/Tutorials/"
+  %}
+
+  {% include card.html
+    icon="document"
+    title="Key Publications"
+    body="Key papers and articles about seL4 technology, design principles, applications, etc."
+    link="../Research/publications.html"
+ %}
+
+ {% include card.html
+  icon="academic-cap"
+  title="Courses"
+  body="Courses about seL4-relevant topics: operating systems, microkernels, formal methods, software verification."
+  link="../Research/courses.html"
+%}
+</div>
 
 <p>
   If you want to know how to use seL4, then this is where you should
