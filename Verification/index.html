@@ -9,29 +9,49 @@ no_title_heading: true
 
 {% include heading.html
    h1="Verification"
-   sub='<p>seL4 is unique because of its comprehensive formal verification. Blah'
+   sub='
+   <p>
+     seL4 is the most highly-assured operating system kernel. Its uniqueness
+     lies in its formal mathematical proof that it behaves precisely as
+     specified and enforces strong security boundaries for applications. This
+     makes seL4 the trustworthy foundation of choice for safely running critical
+     applications alongside any uncritical workloads.
+   </p>
+   '
 %}
 
-
+<!-- FIXME: add text for card on implication for system once page exists -->
+ 
 <div class="card-grid-3">
   {% include card.html
      icon="check"
-     title="seL4 proofs"
-     body="Blah"
+     title="The seL4 proofs"
+     body="seL4 has machine-checked mathematical proofs, spanning from
+     high-level specifications down to the binary code, of a number of strong
+     properties ranging from functional correctness to absence of information
+     leakage, across a variety of hardware architectures and plaforms."
      link="proofs.html"
   %}
 
   {% include card.html
      icon="rocket-launch"
      title="Implications for your System"
-     body="Blah"
+     body="TODO"
      link="../todo.html"
   %}
 
   {% include card.html
      icon="check-badge"
      title="Implication for Certification"
-     body="Blah"
+     body="seL4's formal proofs provide an extremely high level of assurance,
+     commonly required for the highest levels of certification needed for the
+     use of computer systems in critical sectors, such as Common Criteria,
+     ISO-26262 and DO-178C."
      link="certification.html"
   %}
 </div>
+
+
+ <img src="../images/tries-shutterstock/trusted-untrusted.svg"
+      alt="seL4 isolating trusted from untrusted applications"
+      class="rounded-lg mt-8 w-1/2 mx-auto">
