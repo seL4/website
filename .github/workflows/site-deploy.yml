@@ -63,7 +63,9 @@ jobs:
           ssh-private-key: ${{ secrets.WEB_DEPLOY_KEY }}
       - name: Add host keys
         run: |
-          cat > ~/.ssh/known_hosts <<< ${{ secrets.WEB_HOST_KEYS }}
+          cat > ~/.ssh/known_hosts <<EOF
+          ${{ secrets.WEB_HOST_KEYS }}
+          EOF
       - name: rsync
         run: |
           rsync -a --delete -e 'ssh -J web-updater@login.trustworthy.systems' _site_on_seL4/ web-updater@tftp.keg.cse.unsw.edu.au:/vmm-work/www
@@ -88,7 +90,9 @@ jobs:
           ssh-private-key: ${{ secrets.WEB_DEPLOY_KEY }}
       - name: Add host keys
         run: |
-          cat > ~/.ssh/known_hosts <<< ${{ secrets.WEB_HOST_KEYS }}
+          cat > ~/.ssh/known_hosts <<EOF
+          ${{ secrets.WEB_HOST_KEYS }}
+          EOF
       - name: rsync
         run: |
           rsync -a --delete _site/ web-updater@lists.sel4.systems:/var/www/html/seL4
