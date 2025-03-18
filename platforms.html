@@ -1,0 +1,81 @@
+---
+SPDX-License-Identifier: CC-BY-SA-4.0
+SPDX-FileCopyrightText: 2025 seL4 Project a Series of LF Projects, LLC.
+title: Supported Platforms
+sub: '
+<p>
+  seL4 is available for a wide range of platforms on Arm, RISC-V, and Intel
+  architectures. The kernel is intended to run on hardware ranging from small IoT
+  boards to server class machines, with current focus on the embedded space.
+</p>
+<img src="../images/tries-shutterstock/cpu.jpg" alt="a CPU" class="rounded-lg mt-8 w-4/5 mx-auto">
+'
+layout: card
+---
+
+<div class="theprose mx-auto">
+  <p>
+    The following hardware is supported:
+  </p>
+  <ul>
+    <li><strong>Arm:</strong> Avnet MaaXBoard,
+      BeagleBoard,
+      BeagleBone Black,
+      IMX8MM-EVK,
+      Odroid-C2,
+      Odroid-C4
+      OdroidX,
+      OdroidXU,
+      OdroidXU4,
+      Raspberry Pi 3b,
+      Raspberry Pi 4B,
+      Rockpro64,
+      Sabre Lite,
+      TK1,
+      TK1-SOM,
+      TX1,
+      TX2,
+      Ultra96v2,
+      Zynq ZCU102,
+      Zynq-7000,
+      IMX8MQ</li>
+    <li><strong>RISC-V</strong>: Ariane,
+      Cheshire,
+      HiFive Unleashed,
+      Microchip PolarFire,
+      Rocketchip
+    </li>
+    <li><strong>Intel</strong>: 32 and 64 bit PC-99 machines</li>
+  </ul>
+  <p>
+    Virtualisation and SMP multicore support is available on most of these
+    boards. For details on features and verification status of the kernel on
+    these boards, see the extensive <a
+    href="https://docs.sel4.systems/Hardware/">hardware page</a>
+    on the seL4 docsite.
+  </p>
+  <p>
+    Qemu simulator support is available for all of the architectures above.
+  </p>
+</div>
+
+{% include section-start.html
+    heading='Need seL4 on a new platform?'
+    id='listed'
+    margins='pt-8 sm:pt-16'
+%}
+<div class="theprose mx-auto">
+  <p>
+    Platform ports can be contracted
+    from one of the <a href="{% link Foundation/Services/index.html %}">endorsed
+    seL4 service providers</a>!
+  </p>
+  <p>
+    Instructions for performing your own platform port are available in the <a
+    href="https://docs.sel4.systems/projects/sel4/porting">seL4 porting guide</a>, and
+    requirements for contributing platform ports are described on the
+    <a href="{% link Contribute/platforms.md %}">platform requirements</a> page.
+  </p>
+</div>
+
+{% include section-end.html %}
