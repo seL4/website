@@ -5,19 +5,59 @@ title: seL4 Proofs
 pre: 'seL4 Verification'
 pre_link: ./
 sub: '
-  <p> seL4 has many proofs...
+  <p> seL4 is the world&apos;s mostly assured OS kernel thanks to its extensive
+  formal verification. It has machine-checked mathematical proofs of a number of
+  properties for various hardware architectures: Arm, RISC-V, and Intel. This
+  page describes the high-level statement, the properties being verified, and a
+  brief summary of the assumptions and implications. Much more details can be
+  found in the FAQ&apos;s verification section.
   </p>
 '
 ---
-  
 
+
+
+  {% include section-start.html
+  heading='High-level statement'
+  id='statement'
+  body-max-w='max-w-6xl'
+  %}
+<p>
+  The seL4 proof statement in high-level natural language is the following:
+</p>
 
 <p>
-seL4 is the world's mostly assured OS kernel thanks to its extensive
-formal verification. It has machine-checked mathematical proofs of a
-number of properties for various hardware architectures: Arm (32 bits),
-x86 (64 bits) and RISC-V (64 bits). The properties proved include (not
-all architectures have all properties):
+  <strong> The binary code (of some configurations) of the seL4 microkernel
+    correctly implement the behaviour described in its abstract specification
+    and nothing more. Furthermore, the specification and the seL4 binary satisfy
+    the classic security properties called integrity and
+    confidentiality. </strong>
+</p>
+<p>
+  This implies in particular that <strong>seL4 is free from whole classes of
+  common programming errors such as buffer overflows, null pointer dereferences,
+  memory leaks, arithmetic exceptions or undefined behaviour</strong>.
+</p>
+<p>
+  seL4 proofs say much more than the absence of these common programming
+  errors. They are the strongest evidence that the code is behaving as expecting
+  and enforces key security properties that every OS should provide, that very
+  few manage to provide, and that no OS has better evidence for than seL4.
+</p>
+
+  {% include section-end-without-up-arrow.html %}
+
+
+
+  {% include section-start.html
+  heading='Properties'
+  id='properties'
+  body-max-w='max-w-6xl'
+  %}
+
+<p>
+  The properties proved about seL4 include (not all architectures have all
+  properties):
 </p>
 
 
@@ -68,3 +108,27 @@ all architectures have all properties):
       properties."
   %}
 </ul>
+
+
+
+{% include section-end.html %}
+
+
+  {% include section-start.html
+  heading='Assumptions and implications'
+  id='statement'
+  body-max-w='max-w-6xl'
+  %}
+
+
+The strength of formal verification strength can be measured across two
+dimensions: the strenth of the properties that are verified (from shallow like
+absence of certain errors to deep like complete correctness) and distance to
+reality..
+
+From security properties down to C code, we use the proof assistant Isabelle/HOL.
+
+From C code to binary code, we employ a set of automated widely-used
+verification tools. These are: SONOLAR, Z3, Isabelle/HOL, and HOL4.
+
+  {% include section-end.html %}
