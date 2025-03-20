@@ -1,15 +1,22 @@
+{%- if include.pre %}
+{%-   assign pre = include.pre %}
+{%-   if include.pre_link %}
+{%-     assign pre_link = include.pre_link %}
+{%-   endif %}
+{%- else %}
+{%-   assign pre = "seL4 Home" %}
+{%-   assign pre_link = "/" %}
+{%- endif -%}
 <div class="px-6 lg:px-8 pt-6 sm:pt-8 pb-12 sm:pb-20 section-borders">
   <div class="mx-auto max-w-4xl text-center">
-    {% if include.pre %}
     <div class="text-center text-lg font-semibold leading-7 text-f_green-600 {% unless page.nodark %}dark:text-f_green-400{%endunless%}">
-      {% if include.pre_link %}<a href="{{ include.pre_link }}" class="hover:underline">{% endif %}
-      {{ include.pre }}
-      {% if include.pre_link %}
+      {% if pre_link %}<a href="{{ pre_link }}" class="hover:underline">{% endif %}
+      {{ pre }}
+      {% if pre_link %}
       {% unless include.noarrow %}{% svg _icons/arrow-uturn-left.svg class="inline-icon -mt-2" %}{% endunless %}
       </a>
       {% endif %}
     </div>
-    {% endif %}
     <h1 class="text-center font-bold tracking-tight text-darkcol {% unless page.nodark %}dark:text-darkcol_inv{%endunless%} text-3xl sm:text-5xl">{{ include.h1 }}</h1>
     <div class="mt-6 text-center text-base md:text-lg text-lightcol {% unless page.nodark %}dark:text-lightcol_inv{%endunless%} leading-6 md:leading-7 a-underline">
       {{ include.sub }}
