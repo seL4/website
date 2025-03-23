@@ -111,11 +111,11 @@ layout: none
 }
 
 @utility card-grid-3 {
-  @apply grid grid-cols-2 sm:grid-cols-3 gap-10 pb-12 sm:pb-20;
+  @apply grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-12 gap-y-14 pb-12 sm:pb-20;
 }
 
 @utility card-grid-4 {
-  @apply grid grid-cols-2 grid-rows-2 md:grid-cols-4 md:grid-rows-1 gap-10 pb-12 md:pb-20;
+  @apply grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-x-12 gap-y-14 lg:gap-x-8 pb-12 sm:pb-20;
 }
 
 @utility dropbtn {

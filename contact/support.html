@@ -9,7 +9,7 @@ redirect_from:
 layout: card
 ---
 
-<div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-12 pb-12 sm:pb-20">
+<div class="card-grid-3">
   {% include card.html
      icon="envelope"
      title="seL4 Developer Mailing List"
@@ -25,7 +25,7 @@ layout: card
      link_class="mx-auto"
   %}
   {% include card.html
-     class="col-span-1 sm:col-span-2 lg:col-span-1 sm:w-2/3 sm:mx-auto lg:w-full"
+     center=true
      icon="chat-bubble-left-right"
      title="seL4 Mattermost Chat"
      link="https://mattermost.trustworthy.systems/sel4-external/"

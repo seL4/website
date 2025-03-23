@@ -1,7 +1,10 @@
 {%- assign link_text = include.link_text | default: "Learn more" -%}
 {%- assign icon = "_icons/" | append: include.icon | append: ".svg" -%}
 {%- assign icon_colour = include.icon_colour | default: "bg-logogreen" -%}
-<div class="grid grid-cols-1 relative group {{ include.class }}">
+{%- if include.center %}
+{%-  assign centering = "col-span-1 sm:col-span-2 lg:col-span-1 sm:w-1/2 sm:mx-auto lg:w-full" %}
+{%- endif -%}
+<div class="grid grid-cols-1 relative group {{ include.class }} {{centering}}">
   {% if include.icon %}
   <div class="absolute left-1/2">
     {% if include.link %}<a href="{{ include.link }}">{% endif %}
