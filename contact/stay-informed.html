@@ -36,15 +36,17 @@ layout: card
   %}
 </div>
 
-
+{% assign cal="https://calendar.google.com/calendar/u/0?cid=NXNybzFhaGtodDNsb2NuaGRxMnFmbDhndGNAZ3JvdXAuY2FsZW5kYXIuZ29vZ2xlLmNvbQ" %}
 
 <div class="relative mt-16 lg:mt-20">
+  <a href="{{cal}}">
     <div class="absolute bg-logogreen -top-8 left-1/2 -ml-8 p-4 rounded-full shadow-md">
       {% svg "_icons/calendar-days.svg" class="h-8 w-8" %}
     </div>
-    <h3 id="calendar" class="pt-12 mx-4 text-center text-small sm:text-base font-semibold text-dark">
-      Google calendar feed for seL4 Foundation events and dates
-    </h3>
+  </a>
+  <h3 id="calendar" class="pt-12 mx-4 text-center text-small sm:text-base font-semibold text-dark a-underline">
+    <a href="{{cal}}">Google calendar feed</a> for seL4 Foundation events and dates
+  </h3>
 </div>
 
  <div id="calendar-container" class="flex mt-12 pb-16 lg:pb-24 justify-center w-full md:w-[70%] xl:w-[60%] mx-auto">
