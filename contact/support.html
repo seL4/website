@@ -9,49 +9,57 @@ redirect_from:
 layout: card
 ---
 
-
-<div class="card-grid-3 grid-cols-1 sm:grid-cols-2 md:grid-cols-3 mb-8 pb-8">
+<div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-12 pb-12 sm:pb-20">
   {% include card.html
      icon="envelope"
-     title="seL4 Developer Mailing list"
+     title="seL4 Developer Mailing List"
      link="https://lists.sel4.systems/postorius/lists/devel.sel4.systems/"
      link_text="Go"
+     link_class="mx-auto"
   %}
   {% include card.html
      icon="chat-bubble-bottom-center-text"
-     title="seL4 Discourse forums"
+     title="seL4 Discourse Forums"
      link="https://sel4.discourse.group/"
      link_text="Go"
+     link_class="mx-auto"
   %}
   {% include card.html
+     class="col-span-1 sm:col-span-2 lg:col-span-1 sm:w-2/3 sm:mx-auto lg:w-full"
      icon="chat-bubble-left-right"
-     title="seL4 Mattermost chat"
+     title="seL4 Mattermost Chat"
      link="https://mattermost.trustworthy.systems/sel4-external/"
      link_text="Go"
+     link_class="mx-auto"
   %}
 </div>
 
-
-
-<div class="mt-12 mb-20">
-  <img class="rounded-xl shadow-xl float-left m-8 lg:w-1/3 md:w-2/5 w-1/2"
-       src="../images/tries-shutterstock/hangout.jpg">
-  <h3 class="mb-2 text-xl lg:text-2xl font-bold tracking-tight text-dark">
-    seL4 Hangout
-  </h3>
-  <p class="mb-4">
-    We host an <a href="https://unsw.zoom.us/j/82640784431">open video chat
-    hangout</a> every two weeks to bring seL4 developers together. Dates/times
-    are shown in <a href="stay-informed.html#calendar">seL4 calendar entry</a>.
-  </p>
-  <p class="mb-4">
-    There is no strict agenda, anybody can join for technical discussions about
-    seL4, related repositories and projects, or general questions and answers.
-  </p>
-  <p>
-    Members from the technical steering committee (TSC) will try to be there,
-    but these are not TSC meetings where formal decisions are made.
-  </p>
+<div class="mt-4 md:mt-8 pb-16 sm:pb-24 mx-8">
+  <div class="grid grid-cols-1 sm:grid-cols-[35%_auto] lg:grid-cols-[30%_auto]
+              xl:grid-cols-[25%_auto] gap-8 lg:gap-16">
+    <img class="rounded-xl shadow-xl h-full w-full object-cover"
+         alt="a laptop with a zoom call, with a cup next to it"
+         src="../images/tries-shutterstock/hangout.jpg">
+    <div class="text-light">
+      <h3 class="mb-2 h3-size">
+        seL4 Video Hangout
+      </h3>
+      <p class="mb-4">
+        We host an <a href="https://unsw.zoom.us/j/82640784431">open video chat
+          hangout</a> every two weeks to bring seL4 users and developers together.
+        Dates and times are shown in the
+        <a href="stay-informed.html#calendar">seL4 calendar</a>.
+      </p>
+      <p class="mb-4">
+        There is no strict agenda, anybody can join for technical discussions about
+        seL4, related repositories and projects, or general questions and answers.
+      </p>
+      <p>
+        Members of the technical steering committee (TSC) will try to be there,
+        but these are not TSC meetings where formal decisions are made.
+      </p>
+    </div>
+  </div>
 </div>
 
 <!-- FIXME: decide whether we want RFC and github back here -->
