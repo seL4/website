@@ -7,81 +7,94 @@ redirect_from:
 - /About/home.pml
 - /About/seL4/index.html
 layout: card
-sub: '
-<p>
-  To get in contact with a specific set of people for a specific purpose, use
-  one of the direct contact address below.
-</p>'
 ---
 
-<!-- FIXME: ok to not put foundation-admin@sel4.systems here? -->
-<!-- FIXME: all below still useful? -->
-<!-- FIXME: add security contact? any other? -->
-
-<div class="mb-20">
-  <img class="rounded-xl shadow-xl float-left m-8 w-1/8"
-       src="../images/tries-shutterstock/contact-quill-pen.jpg">
-  
-  <div class="theprose dark:text-light">
-    <ul>
-      {% include green-contact-li.html
-      text='
-      <a title="foundation@sel4.systems" href=
-         "mailto:foundation@sel4.systems">foundation@sel4.systems</a>
-      for information about the seL4 Foundation
-      '
-      %}
-      {% include green-contact-li.html
-      text='
-      <a title="summit@sel4.systems" href=
-         "mailto:summit@sel4.systems">summit@sel4.systems</a>
-      for questions about the seL4 Summit
-      '
-      %}
-      {% include green-contact-li.html
-      text='
-      <a title="support@sel4.systems" href=
-         "mailto:support@sel4.systems">support@sel4.systems</a>
-      for inquiries about professional support contracts
-      '
-      %}
-      {% include green-contact-li.html
-      text='
-      <a title="sel4@sel4.systems" href=
-         "mailto:sel4@sel4.systems">sel4@sel4.systems</a>
-      for communication that cannot be conducted on the public channels
-      '
-      %}
-      {% include green-contact-li.html
-      text='
-      <a title="webmaster@sel4.systems" href=
-         "mailto:webmaster@sel4.systems">webmaster@sel4.systems</a>
-      for website issues
-      '
-      %}
-      {% include green-contact-li.html
-      text='
-      <a title="moderation@sel4.systems" href=
-         "mailto:moderation@sel4.systems">moderation@sel4.systems</a>
-      for requests or queries about community
-      moderation. See <a href="https://docs.sel4.systems/processes/conduct.html">seL4
-        Code of Conduct</a>
-      '
-      %}
-    </ul>
-  </div>
 
 
-  <p> If you are unsure which contact to use, contact
+
+<div class="mx-auto max-w-lg">
+  <p class="my-4">
+    {% svg _icons/chat-bubble-left-right.svg class="mx-auto h-8 w-8 text-f_green-600" %}
+  </p>
+  <p class="text-center mb-8">
+    If you need help and open source support using and developing seL4, visit the
+    <a href="{% link contact/support.html %}">
+      Help & Open Source Support page</a>.
+  </p>
+  <p class="my-4">
+    {% svg _icons/rocket-launch.svg class="mx-auto h-8 w-8 text-f_green-600" %}
+  </p>
+  <p class="text-center mb-8">
+    If you are after professional commercial support, see the list of 
+    <a href="{% link Foundation/Services/index.html %}">
+      Endorsed Service Providers</a>.
+  </p>
+  <p class="my-4">
+    {% svg _icons/bug-ant.svg class="mx-auto h-8 w-8 text-f_green-600" %}
+  </p>
+  <p class="text-center mb-8">
+    To report or discuss a potential security vulnerability, follow the
+    <a href="https://github.com/seL4/seL4/blob/master/SECURITY.md">
+      Vulnerability disclosure policy</a>.
+  </p>
+  <p class="mt-25 mb-4">
+    {% svg _icons/envelope.svg class="mx-auto h-8 w-8 text-f_green-600" %}
+  </p>
+  <p class="text-center mb-8">
+    For requests or queries about community moderation
+    (see <a href="https://docs.sel4.systems/processes/conduct.html">seL4 Code
+      of Conduct</a>) contact
+    <a title="moderation@sel4.systems" href=
+       "mailto:moderation@sel4.systems">moderation@sel4.systems</a>.
+  </p>
+  <p class="my-4">
+    {% svg _icons/envelope.svg class="mx-auto h-8 w-8 text-f_green-600" %}
+  </p>
+  <p class="text-center mb-8">
+    For information about the seL4 Foundation, or anything that can't be
+    discussed in public, or anything else not covered above, contact
     <a title="foundation@sel4.systems" href=
-       "mailto:foundation@sel4.systems">foundation-admin@sel4.systems</a>.
-    
+       "mailto:foundation@sel4.systems">foundation@sel4.systems</a>.
   </p>
-  <p class="mt-8">
-    For development help and support visit the
-    <a href= "support.html">Help & Open Source Support</a> page. To stay informed on seL4 latest news see the
-    <a href= "stay-informed.html">Stay Informed</a> page or read the <a href=
-      "../news/index.html">seL4 news</a>.
-  </p>
+</div>
 
-  
+
+
+<!--
+<div class="mx-auto max-w-3xl">
+  <p class="my-4">
+    {% svg _icons/chat-bubble-left-right.svg class="mr-2 h-8 w-8 text-f_green-600 inline-icon" %}
+    If you need help and open source support using and developing seL4, visit the
+    <a href="{% link contact/support.html %}">
+      Help & Open Source Support page</a>.
+  </p>
+  <p class="my-4">
+    {% svg _icons/rocket-launch.svg class="mr-2 h-8 w-8 text-f_green-600 inline-icon" %}
+    If you are after professional commercial support, see the list of 
+    <a href="{% link Foundation/Services/index.html %}">
+      Endorsed Service Providers</a>.
+  </p>
+  <p class="my-4">
+    {% svg _icons/bug-ant.svg class="mr-2 h-8 w-8 text-f_green-600 inline-icon" %}
+    To report or discuss a potential security vulnerability, follow the
+    <a href="https://github.com/seL4/seL4/blob/master/SECURITY.md">
+      Vulnerability disclosure policy</a>.
+  </p>
+  <p class="mt-18 mb-4">
+    {% svg _icons/envelope.svg class="mr-2 h-8 w-8 text-f_green-600 inline-icon" %}
+    For requests or queries about community moderation
+    (see <a href="https://docs.sel4.systems/processes/conduct.html">seL4 Code
+      of Conduct</a>) contact
+    <a title="moderation@sel4.systems" href=
+       "mailto:moderation@sel4.systems">moderation@sel4.systems</a>.
+  </p>
+  <p class="my-4">
+    {% svg _icons/envelope.svg class="mr-2 h-8 w-8 text-f_green-600 inline-icon" %}
+    For information about the seL4 Foundation, or anything that can't be
+    discussed in public, or anything else not covered above, contact
+    <a title="foundation@sel4.systems" href=
+       "mailto:foundation@sel4.systems">foundation@sel4.systems</a>.
+  </p>
+</div>
+
+-->
