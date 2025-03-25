@@ -13,88 +13,45 @@ layout: card
 
 
 <div class="mx-auto max-w-lg">
-  <p class="my-4">
-    {% svg _icons/chat-bubble-left-right.svg class="mx-auto h-8 w-8 text-f_green-600" %}
-  </p>
-  <p class="text-center mb-8">
-    If you need help and open source support using and developing seL4, visit the
-    <a href="{% link contact/support.html %}">
-      Help & Open Source Support page</a>.
-  </p>
-  <p class="my-4">
-    {% svg _icons/rocket-launch.svg class="mx-auto h-8 w-8 text-f_green-600" %}
-  </p>
-  <p class="text-center mb-8">
-    If you are after professional commercial support, see the list of 
-    <a href="{% link Foundation/Services/index.html %}">
-      Endorsed Service Providers</a>.
-  </p>
-  <p class="my-4">
-    {% svg _icons/bug-ant.svg class="mx-auto h-8 w-8 text-f_green-600" %}
-  </p>
-  <p class="text-center mb-8">
-    To report or discuss a potential security vulnerability, follow the
-    <a href="https://github.com/seL4/seL4/blob/master/SECURITY.md">
-      Vulnerability disclosure policy</a>.
-  </p>
-  <p class="mt-25 mb-4">
-    {% svg _icons/envelope.svg class="mx-auto h-8 w-8 text-f_green-600" %}
-  </p>
-  <p class="text-center mb-8">
-    For requests or queries about community moderation
-    (see <a href="https://docs.sel4.systems/processes/conduct.html">seL4 Code
-      of Conduct</a>) contact
-    <a title="moderation@sel4.systems" href=
-       "mailto:moderation@sel4.systems">moderation@sel4.systems</a>.
-  </p>
-  <p class="my-4">
-    {% svg _icons/envelope.svg class="mx-auto h-8 w-8 text-f_green-600" %}
-  </p>
-  <p class="text-center mb-8">
-    For information about the seL4 Foundation, or anything that can't be
-    discussed in public, or anything else not covered above, contact
-    <a title="foundation@sel4.systems" href=
-       "mailto:foundation@sel4.systems">foundation@sel4.systems</a>.
-  </p>
+
+  {% include contact-item.html
+  icon="chat-bubble-left-right"
+  text='If you need help and open source support using and developing seL4, visit the
+  <a href="support.html">
+    Help & Open Source Support page</a>.'
+  %}
+
+  {% include contact-item.html
+  icon="rocket-launch"
+  text='If you are after professional commercial support, see the list of
+  <a href="../Foundation/Services/index.html">
+    Endorsed Service Providers</a>.'
+  %}
+
+  {% include contact-item.html
+  icon="bug-ant"
+  text='To report or discuss a potential security vulnerability, follow the
+  <a href="https://github.com/seL4/seL4/blob/master/SECURITY.md">
+    Vulnerability disclosure policy</a>.'
+  %}
+
+
+  {% include contact-item.html
+  gap="true"
+  icon="envelope"
+  text='For requests or queries about community moderation
+  (see <a href="https://docs.sel4.systems/processes/conduct.html">seL4 Code
+    of Conduct</a>), contact
+  <a title="moderation@sel4.systems" href=
+     "mailto:moderation@sel4.systems">moderation@sel4.systems</a>.'
+  %}
+
+  {% include contact-item.html
+  icon="envelope"
+  text='For information about the seL4 Foundation, or anything that can&apos;t be
+  discussed in public, or anything else not covered above, contact
+  <a title="foundation@sel4.systems" href=
+     "mailto:foundation@sel4.systems">foundation@sel4.systems</a>.'
+  %}
+
 </div>
-
-
-
-<!--
-<div class="mx-auto max-w-3xl">
-  <p class="my-4">
-    {% svg _icons/chat-bubble-left-right.svg class="mr-2 h-8 w-8 text-f_green-600 inline-icon" %}
-    If you need help and open source support using and developing seL4, visit the
-    <a href="{% link contact/support.html %}">
-      Help & Open Source Support page</a>.
-  </p>
-  <p class="my-4">
-    {% svg _icons/rocket-launch.svg class="mr-2 h-8 w-8 text-f_green-600 inline-icon" %}
-    If you are after professional commercial support, see the list of 
-    <a href="{% link Foundation/Services/index.html %}">
-      Endorsed Service Providers</a>.
-  </p>
-  <p class="my-4">
-    {% svg _icons/bug-ant.svg class="mr-2 h-8 w-8 text-f_green-600 inline-icon" %}
-    To report or discuss a potential security vulnerability, follow the
-    <a href="https://github.com/seL4/seL4/blob/master/SECURITY.md">
-      Vulnerability disclosure policy</a>.
-  </p>
-  <p class="mt-18 mb-4">
-    {% svg _icons/envelope.svg class="mr-2 h-8 w-8 text-f_green-600 inline-icon" %}
-    For requests or queries about community moderation
-    (see <a href="https://docs.sel4.systems/processes/conduct.html">seL4 Code
-      of Conduct</a>) contact
-    <a title="moderation@sel4.systems" href=
-       "mailto:moderation@sel4.systems">moderation@sel4.systems</a>.
-  </p>
-  <p class="my-4">
-    {% svg _icons/envelope.svg class="mr-2 h-8 w-8 text-f_green-600 inline-icon" %}
-    For information about the seL4 Foundation, or anything that can't be
-    discussed in public, or anything else not covered above, contact
-    <a title="foundation@sel4.systems" href=
-       "mailto:foundation@sel4.systems">foundation@sel4.systems</a>.
-  </p>
-</div>
-
--->
