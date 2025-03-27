@@ -94,7 +94,9 @@ user mode code.)
 
 ### I want to know more about seL4 functionality, design, implementation, philosophy
 
-There are plenty of references on the [documentation site][docsite].
+See the [white paper] and the list of [key research papers] about seL4 for more
+on seL4 philosophy and design. See the page on [learning material] and the
+[docsite] for functionality and API references, and [GitHub] for the sources.
 
 ### What can I do with seL4?
 
@@ -661,10 +663,14 @@ That being said, we are currently working on:
   still very much cutting-edge research)
 
 
+[GitHub]: https://github.com/seL4/seL4
 [docsite]: https://docs.sel4.systems
 [Resources]: https://docs.sel4.systems/Resources
 [verified configurations]: https://docs.sel4.systems/projects/sel4/verified-configurations.html
 
+[white paper]: {% link About/whitepaper.md %}
+[learning material]: {% link Learn/index.html %}
+[key research papers]: {% link Research/publications.html %}
 [license page]: {% link Foundation/Trademark/license-tm.html %}
 [proofs]: {% link Info/FAQ/proof.html %}
 
