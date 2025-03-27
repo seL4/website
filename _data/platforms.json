@@ -1,0 +1,44 @@
+[
+  [
+    "Arm",
+    [
+      "Avnet MaaXBoard",
+      "BeagleBoard",
+      "BeagleBone Black",
+      "IMX8MM-EVK",
+      "Odroid-C2",
+      "Odroid-C",
+      "OdroidX",
+      "OdroidXU",
+      "OdroidXU4",
+      "Raspberry Pi 3b",
+      "Raspberry Pi 4B",
+      "Rockpro64",
+      "Sabre Lite",
+      "TK1",
+      "TK1-SOM",
+      "TX1",
+      "TX2",
+      "Ultra96v2",
+      "Zynq ZCU102",
+      "Zynq-7000",
+      "IMX8MQ"
+    ]
+  ],
+  [
+    "RISC-V",
+    [
+      "Ariane",
+      "Cheshire",
+      "HiFive Unleashed",
+      "Microchip PolarFire",
+      "Rocketchip"
+    ]
+  ],
+  [
+    "Intel",
+    [
+      "32 and 64 bit PC-99 machines"
+    ]
+  ]
+]

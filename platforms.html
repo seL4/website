@@ -1,7 +1,7 @@
 ---
 SPDX-License-Identifier: CC-BY-SA-4.0
 SPDX-FileCopyrightText: 2025 seL4 Project a Series of LF Projects, LLC.
-title: Supported Platforms
+title: Platform Support Overview
 sub: '
 <p>
   seL4 is available for a wide range of platforms on Arm, RISC-V, and Intel
@@ -15,43 +15,24 @@ layout: card
 
 <div class="theprose mx-auto">
   <p>
-    The following hardware is supported:
+    seL4 runs on the following hardware:
   </p>
   <ul>
-    <li><strong>Arm:</strong> Avnet MaaXBoard,
-      BeagleBoard,
-      BeagleBone Black,
-      IMX8MM-EVK,
-      Odroid-C2,
-      Odroid-C4
-      OdroidX,
-      OdroidXU,
-      OdroidXU4,
-      Raspberry Pi 3b,
-      Raspberry Pi 4B,
-      Rockpro64,
-      Sabre Lite,
-      TK1,
-      TK1-SOM,
-      TX1,
-      TX2,
-      Ultra96v2,
-      Zynq ZCU102,
-      Zynq-7000,
-      IMX8MQ</li>
-    <li><strong>RISC-V</strong>: Ariane,
-      Cheshire,
-      HiFive Unleashed,
-      Microchip PolarFire,
-      Rocketchip
-    </li>
-    <li><strong>Intel</strong>: 32 and 64 bit PC-99 machines</li>
+    {% for platform in site.data.platforms %}
+      <li><strong>{{ platform[0] }}</strong>:
+        {% for name in platform[1] %}
+        {{ name }}{% unless forloop.last %},{% endunless %}
+        {% endfor %}
+      </li>
+    {% endfor %}
   </ul>
   <p>
     Virtualisation and SMP multicore support is available on most of these
-    boards. For details on features and verification status of the kernel on
-    these boards, see the extensive <a
-    href="https://docs.sel4.systems/Hardware/">hardware page</a>
+    boards, but note that the formal verification does not apply to all
+    configurations and platforms. For details on the exact feature and verification
+    support status see the <a
+    href="https://docs.sel4.systems/Hardware/">detailed supported platforms
+    page</a>
     on the seL4 docsite.
   </p>
   <p>
