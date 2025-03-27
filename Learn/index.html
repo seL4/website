@@ -3,15 +3,12 @@
 # SPDX-License-Identifier: CC-BY-SA-4.0
 title: Learn
 redirect_from: /Learn/home.pml
-pre: "Learn about seL4"
-h1: "Award-winning technology backed by ground-breaking research"
+h1: "Manual, Documentation, Learning Material"
 sub: '
   <p>
-   Significant research breakthroughs in seL4 have been recognised by
-   international awards and in high-caliber publications. Research organisations
-   continue to push the boundaries of seL4. Coupled with advancements in the
-   field, partner organisations provide advanced lectures on Operating Systems
-   and Formal Software Verification.
+    Explore seL4 through the range of available educational material, from
+    hands-on tutorials and comprehensive documentation to research articles and
+    university courses, depending on your specific development goals.
    </p>'
 layout: card
 ---
@@ -43,13 +40,6 @@ need and appealing layout
 
 <div class="card-grid-3">
   {% include card.html
-     icon="window"
-     title="Docsite"
-     body="A separate website for technical seL4 documentation. The docsite is hosted on GitHub and maintained by the community."
-     link="https://docs.sel4.systems/"
-  %}
-
-  {% include card.html
      icon="book-open"
      title="Manual"
      body="The seL4 manual describes the seL4 kernel&apos;s API from a
@@ -59,12 +49,12 @@ need and appealing layout
      link="https://sel4.systems/Info/Docs/seL4-manual-latest.pdf"
   %}
 
-  <!-- FIMXE: need to update spec, ARMv6 is no longer supported -->
   {% include card.html
-     icon="rectangle-group"
-     title="Specs"
-     body="Abstract Formal Specification of the seL4/ARMv6 API."
-     link="ongoing.html"
+     icon="window"
+     title="Docsite"
+     body="A dedicated docsite for documentation and learning material. The
+     docsite is hosted on GitHub and maintained by the community."
+     link="https://docs.sel4.systems/"
   %}
 
   {% include card.html
@@ -79,7 +69,8 @@ need and appealing layout
   {% include card.html
     icon="document"
     title="Key Publications"
-    body="Key papers and articles about seL4 technology, design principles, applications, etc."
+    body="Key research articles about the seL4 technology, its design
+    principles, verification, and applications."
     link="../Research/publications.html"
  %}
 
@@ -88,7 +79,15 @@ need and appealing layout
   title="Courses"
   body="Courses about seL4-relevant topics: operating systems, microkernels, formal methods, software verification."
   link="../Research/courses.html"
-%}
+  %}
+
+ {% include card.html
+  icon="question-mark-circle"
+  title="FAQ"
+  body="Detailed list of frequently asked questions about seL4, and their
+  answers."
+  link="../About/FAQ.html"
+  %}
 </div>
 
 <p>

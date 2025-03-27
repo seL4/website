@@ -66,9 +66,9 @@
     [
       [
         "book-open",
-        "Manual & Documentation",
-        "Dedicated seL4 documentation site",
-        "https://docs.sel4.systems"
+        "Manual, Documentation, Learning Material",
+        "A range of educational material to explore seL4",
+        "/Learn/"
       ],
       [
         "question-mark-circle",
