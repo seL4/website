@@ -3,73 +3,53 @@
 # SPDX-License-Identifier: CC-BY-SA-4.0
 title: Learn
 redirect_from: /Learn/home.pml
-h1: "Manual, Documentation, Learning Material"
+h1: "Documentation"
 sub: '
   <p>
-    Explore seL4 through the range of available educational material, from
+    Explore the wide range of learning material for seL4, from
     hands-on tutorials and comprehensive documentation to research articles and
-    university courses, depending on your specific development goals.
+    university courses.
    </p>'
 layout: card
 ---
 
-<h1 id="learn-about-sel4">Learn about seL4</h1>
-
-<h2 id="docsite">Docsite</h2>
-
-<p>
-  We have a separate website for technical seL4 documentation, which
-  we call the <a href="https://docs.sel4.systems/">Docsite</a>. The
-  docsite is community maintained - its source is hosted on GitHub and
-  can be edited using standard GitHub procedures
-  as <a href="https://docs.sel4.systems/processes/docs-contributing.html">documented</a>
-  on the docsite itself.
-</p>
-
-<h2 id="tutorials">Tutorials</h2>
-
-<p>
-  The best way to learn to use seL4 is to follow our tutorials. We
-  provide a series of hands-on tutorials that cover the basics of
-  seL4, the kernel and core library APIs, user-level frameworks, and
-  virtualisation.
-</p>
-
-Have a look - page with these are all the things that could be useful - manual, tutorials, specs, publications
-need and appealing layout
-
-<div class="card-grid-3">
+<div class="card-grid-3 lg:gap-y-20 xl:gap-x-18 xl:gap-y-24 mx-0 md:mx-6 lg:mx-10">
   {% include card.html
+    icon="document-text"
+    title="White Paper"
+    body="A brief high-level introduction to seL4."
+    link="../About/whitepaper.html"
+   %}
+
+   {% include card.html
      icon="book-open"
-     title="Manual"
-     body="The seL4 manual describes the seL4 kernel&apos;s API from a
-     user&apos;s point of view. It provides an overview of the seL4 microkernel
-     design and a reference of the high-level API exposed by the seL4 kernel to
-     userspace."
+     title="seL4 Manual"
+     body="Reference manual for the seL4 API."
      link="https://sel4.systems/Info/Docs/seL4-manual-latest.pdf"
   %}
 
   {% include card.html
-     icon="window"
+     icon="other/external"
      title="Docsite"
-     body="A dedicated docsite for documentation and learning material. The
-     docsite is hosted on GitHub and maintained by the community."
+     body="Dedicated comprehensive seL4 docsite with API reference, tutorials,
+           including docs for frameworks and libraries."
      link="https://docs.sel4.systems/"
   %}
 
   {% include card.html
      icon="puzzle-piece"
      title="Tutorials"
-     body="A series of hands-on tutorials that cover the basics of
-     seL4, the kernel and core library APIs, user-level frameworks, and
+     body="Hands-on tutorials for the basics of
+     seL4, core libraries, user-level frameworks, and
      virtualisation."
      link="https://docs.sel4.systems/Tutorials/"
   %}
 
+
   {% include card.html
     icon="document"
     title="Key Publications"
-    body="Key research articles about the seL4 technology, its design
+    body="Research articles about the seL4 technology, its design
     principles, verification, and applications."
     link="../Research/publications.html"
  %}
@@ -77,95 +57,23 @@ need and appealing layout
  {% include card.html
   icon="academic-cap"
   title="Courses"
-  body="Courses about seL4-relevant topics: operating systems, microkernels, formal methods, software verification."
+  body="University courses about seL4-topics: operating systems, microkernels,
+  formal methods, software verification."
   link="../Research/courses.html"
   %}
 
- {% include card.html
-  icon="question-mark-circle"
-  title="FAQ"
-  body="Detailed list of frequently asked questions about seL4, and their
-  answers."
-  link="../About/FAQ.html"
-  %}
 </div>
 
-<p>
-  If you want to know how to use seL4, then this is where you should
-  start. See
-  the <a href="https://docs.sel4.systems/Tutorials/">Tutorials</a>
-  page on our docsite.
-</p>
+<div class="max-w-lg text-light mx-auto pb-18 lg:pb-24 text-center">
+  <h2 class="h2-size mt-8 md:mt-12 mb-4">Still have Questions?</h2>
+  <p class="text-base sm:text-lg">
+    Check out the <a href="../About/FAQ.html">frequently asked questions</a> with their answers,
+    or ask on one of the <a href="../Contact/support.html">seL4 community channels</a>.
+  </p>
+</div>
 
-<p>
-  If you prefer unstructured learning and want to dive in and explore
-  on your own then follow the links on the
-  docsite's <a href="https://docs.sel4.systems/Resources">Resources</a> page.
-</p>
-
-<p>
-  After getting a solid seL4 background you can move on to building
-  seL4-based systems. Next steps include working on one of
-  our <a href="https://docs.sel4.systems/SuggestedProjects.html">suggested
-  projects</a> or helping to expand
-  the <a href="https://docs.sel4.systems/projects/available-user-components.html">collection
-  of libraries and components</a> available to build seL4-based
-  systems.
-</p>
-
-<h2 id="documentation">Documentation</h2>
-
-<p>
-  We've written a lot about the seL4 kernel: from overview papers,
-  historical background, and project retrospectives, to detailed
-  documentation of the kernel API, user-level libraries and
-  components, and system frameworks.
-</p>
-
-<p>
-  Besides the kernel implementation and the systems aspects of seL4,
-  we've also written about the seL4 proofs: from overview papers
-  explaining the models and the proofs, details of proof techniques
-  developed and used for the proof, insights gained through doing the
-  proofs, to detailed documentation of the proofs themselves.
-</p>
-
-<p>
-  See
-  the <a href="https://docs.sel4.systems/projects/sel4/documentation.html">Documentation</a>
-  page on our docsite for information about all of these.
-</p>
-
-
-<h2 id="courses">Courses</h2>
-
-<p>
-  seL4 is being used as the basis of several (University-level)
-  courses, including:
-</p>
-<ul>
-  <li>
-    <p>
-      <a href="http://www.cse.unsw.edu.au/~cs9242/current/">Advanced
-      Operating Systems</a> at UNSW. This course provides an extensive
-      seL4-based assignment that teaches students how to build an
-      operating system on seL4. The course material (all lecture slides, the
-      project and related code) are publicly available. Videos of lectures covering seL4 are available from the
-      <a href="https://www.youtube.com/playlist?list=PLbSaCpDlfd6qLbEsKquVo3--0gwYBmrUV">UNSW
-  CSeLearning COMP9242 YouTube channel</a>.
-    </p>
-  </li>
-
-  <li><p>
-      <a href="https://www.cse.unsw.edu.au/~cs4161/">Advanced Topics
-      in Software Verification</a> at UNSW. While not directly about
-      seL4, this course teaches Isabelle/HOL and the program
-      verification techniques used to develop seL4's proof. Following
-      this, or a similar, course is necessary if you intend to
-      contribute to the seL4 proofs.
-  </p></li>
-
-<!--
-<li><p>Others?</p></li>
--->
-</ul>
+<!-- FIXME: we really should have a proper Hello World and/or Getting Started
+            page on the docsite that we prominently link to from here.
+            The current ones are too complex to link to without context.
+            Probably best to add after the docsite revamp.
+ -->
