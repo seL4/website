@@ -7,17 +7,17 @@
     </a>
     <div>
       <div class="flex items-center gap-x-4 text-xs">
-        <div class="relative z-10 rounded-full bg-gray-50 dark:bg-gray-400 px-3 py-1.5 font-medium text-gray-600 hover:bg-gray-100">
+        <div class="relative z-10 rounded-full bg-gray-50 dark:bg-gray-400 px-3 py-1.5 font-medium text-gray-600">
 	  {{ include.tag }}
 	</div>
       </div>
       <div class="group relative max-w-xl">
-        <h3 class="mt-3 text-lg/6 font-semibold text-gray-900 dark:text-gray-100 group-hover:text-gray-400">
+        <h3 class="mt-3 text-lg/6 font-semibold text-dark">
           <a href={{include.link}}>
              {{include.title}}
           </a>
         </h3>
-	<p class="dark:text-light">{{include.description}}</p>
+	<p class="text-light">{{include.description}}</p>
       </div>
     </div>
   </article>
