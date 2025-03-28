@@ -41,7 +41,7 @@ help.
 [contribution guidelines]: ./
 [coding standards]: /todo.html
 [platform porting guidelines]: https://docs.sel4.systems/projects/sel4/porting
-[commercial service providers]: /todo.html
+[commercial service providers]: {% link Foundation/Services/index.html %}
 
 ## Platform owners
 
@@ -87,4 +87,4 @@ maintenance the Foundation usually provides to the community. Luckily, most of
 the time seL4 maintenance does not require much action from platform owners once
 everything is set up and working.
 
-[supported platforms]: /todo.html
+[supported platforms]: https://docs.sel4.systems/Hardware/
