@@ -34,6 +34,8 @@ Please follow the git commit [style guide](https://chris.beams.io/posts/git-comm
 * Capitalise the subject line.
 * Avoid ending the subject line in a full stop.
 * Use the imperative mood in the subject line.
+* Check the repository history if it uses any obvious tagging conventions.
+  Follow them if it does.
 * Follow this with a blank line, then a summary of why the changes are required,
   and if non-trivial, how they achieve their purpose.
 * Wrap the body at 72 characters.
@@ -43,7 +45,7 @@ Please follow the git commit [style guide](https://chris.beams.io/posts/git-comm
 * Please keep whitespace and style changes in their own commits, not mixed with other changes.
 * If making a trivial commit, please prefix with `trivial:`
 * Avoid making PRs that are only changing style and not making other significant changes.
-  This avoids spending reviewer and CI resources on a large number of small stylisitic improvements.
+  This avoids spending reviewer and CI resources on a large number of small stylistic improvements.
 
 ## History
 
