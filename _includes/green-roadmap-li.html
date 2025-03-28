@@ -1,16 +1,26 @@
-<li class="flex mt-8">
-  {% svg _icons/map-pin.svg class="h-15 w-15 flex-none text-f_green-600" %}
-  <span>
-    <strong>{{include.title}}</strong>: <br> {{include.description}}
-    <div class="text-base ml-8">
-    <div>
-      {% svg _icons/user-group.svg class="mr-2 h-5 w-5 text-f_green-600 inline-icon" %}
-      By {{include.who}} 
+<li class="flex flex-row mt-8 mx-0">
+  {% svg _icons/map-pin.svg class="h-10 w-10 sm:h-15 sm:w-15 flex-none text-f_green-600" %}
+  <div class="ml-2 sm:ml-4">
+    <div><strong>{{include.title}}</strong>:</div>
+    <div class="text-light">
+      {{include.description}}
     </div>
-    <div>
-      {% svg _icons/forward.svg class="mr-2 h-5 w-5 flex-none text-f_green-600 inline-icon" %}
-      {{include.status}}
+    <div class="text-base mt-2 ml-2 sm:ml-8">
+      <div class="flex flex-row">
+        <div>
+          {% svg _icons/user-group.svg class="mr-2 h-5 w-5 text-f_green-600 inline-icon" %}
+        </div>
+        <div class="text-light">
+          By {{include.who}}
+        </div>
+      </div>
+      <div class="flex flex-row">
+        <div>
+          {% svg _icons/forward.svg class="mr-2 h-5 w-5 flex-none text-f_green-600 inline-icon" %}
+        </div>
+        <div class="text-light">
+          {{include.status}}
+        </div>
+      </div>
     </div>
-    </div>
-  </span>
 </li>

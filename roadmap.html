@@ -3,50 +3,30 @@
 # SPDX-License-Identifier: CC-BY-SA-4.0
 title: Development Roadmap
 sub: '
-  <p>
-    seL4 continues to evolve, expanding its support for an increasing range of
-    platforms, architectures, configurations and features. It solidifies its
-    position as the leading secure operating system and the industry standard
-    for verified software, with an active, public development roadmap, both on
-    the <a href="#systems">Systems</a> side, with the kernel itself and the
-    expanding ecosystem of frameworks, tools, components and language support to
-    facilitate the production of seL4-based systems, and on
-    the <a href="#verification">Verification</a> side for seL4&apos;s formal
-    proofs, which evolves alongside the kernel code changes. You
-    can <a href="#help">help or contribute</a> to the roadmap.
+  <p class="mb-4 sm:mb-8">
+    seL4 continues to evolve, with an active, public development roadmap, both on
+    the <a href="#systems">Systems</a> side for the kernel itself and the
+    expanding ecosystem of frameworks, tools, components, and languages,
+    as well as on the <a href="#verification">Verification</a> side for seL4&apos;s formal
+    proofs. You can <a href="#help">help accelerate or contribute to</a> the roadmap.
   </p>
   <img src="../images/tries-shutterstock/roadmap.jpg" alt="Roadmap" class="rounded-lg mt-8 w-4/5 mx-auto">
 '
 layout: card
 ---
 
-  <!-- FIXME: fix width without using margins.. -->
   <!-- FIXME: add icon for links going externally? -->
-  <!-- FIXME: mkit: should 'who' now be the Foundation? -->
-  <!-- FIXME: fix status icon for better layout when there's a line break-->
-  <!-- FIXME: diagrans?? -->
-
+  <!-- FIXME: diagrams?? -->
 
 
   {% include section-start.html
   heading='Systems Roadmap'
   id='systems'
-  margins='pt-16 sm:pt-24'
-  body-max-w='max-w-6xl'
+  margins='pt-12 sm:pt-20'
   %}
 
-  <div class="theprose dark:text-light mx-40">
+  <div class="leading-7 sm:leading-8 text-base sm:text-lg mx-2 sm:mx-6">
     <ul>
-
-      {% include green-roadmap-li.html
-      title='MCS Kernel extensions'
-      description='A new scheduling model to support trustworthy
-      mixed-criticality real-time systems.'
-      who='UNSW'
-      status=' In progress. Main API stable and available. <em>Note: smaller API
-      changes while verification is in progress</em>'
-      %}
-
       {% include green-roadmap-li.html
       title='seL4 Microkit'
       description='A simple operating systems framework for building systems on seL4.'
@@ -82,10 +62,9 @@ layout: card
   {% include section-start.html
   heading='Formal Verification Roadmap'
   id='verification'
-  body-max-w='max-w-6xl'
   %}
 
-  <div class="theprose dark:text-light mx-40">
+  <div class="leading-7 sm:leading-8 text-base sm:text-lg mx-2 sm:mx-6">
     <ul>
 
       {% include green-roadmap-li.html
@@ -93,7 +72,7 @@ layout: card
       description='Functional correctness proofs for a new scheduling model to
       support trustworthy mixed-criticality real-time systems.'
       who='Proofcraft'
-      status='C verification ongoing'
+      status='C verification to complete Q3/27'
       %}
 
       {% include green-roadmap-li.html
@@ -110,36 +89,27 @@ layout: card
   {% include section-end.html %}
 
   {% include section-start.html
-  heading='Help &amp; Contribute to the Roadmap'
+  heading='How to Accelerate or Contribute'
   id='help'
-  body-max-w='max-w-6xl'
   %}
 
-  <!-- FIXME: fix width without using margins.. -->
-  <!-- FIXME: text size?.. -->
-  
-<ul class="mt-10 max-w-3xl space-y-8 text-light ml-40">
+<ul class="mt-10 space-y-8 text-light text-base sm:text-lg">
   {% include green-tick-li.html
       text='In some cases, the roadmap could be accelerated with more funding for the
-      contributors who work on them, or, in some cases, by volunteering time. If
-      you are interested, talk to the
+      contributors who work on them, or by volunteering time. If
+      you are interested, email us at
       <a title="foundation@sel4.systems"
-      href="mailto:foundation@sel4.systems">seL4 Foundation</a>.'
+      href="mailto:foundation@sel4.systems">foundation@sel4.systems</a>.'
   %}
   {% include green-tick-li.html
       text='
-    <p>If you are working on a large feature or addition to the the wide seL4
-      ecosystem, possibly contracted to deliver it, and ideally with ideally an
+    <p>If you are working on a larger feature or addition to the seL4
+      ecosystem, possibly contracted to deliver it, and ideally with an
       approved RFC to go with it, your contribution would be an ideal addition
-      to the roadmap.
-      A new feature can become a part of the official seL4 roadmap by decision
-      of the <a href="/Foundation/TSC/index.html">Technical Steering
-      Committee</a> (TSC) of the seL4 Foundation.
-      To submit a request to the TSC for putting a planned feature on the
-      roadmap, send an email to any TSC member with a description of the
-      contribution, the planned timeline, and level of confidence for achieving
-      it, e.g. by pointing to any related RFC. The TSC will discuss the proposal
-      and either request more information or vote on it.</p>'
+      to the roadmap. If you would like to add to the roadmap,
+      email us at
+      <a title="foundation@sel4.systems"
+      href="mailto:foundation@sel4.systems">foundation@sel4.systems</a>.</p>'
   %}
 </ul>
 
