@@ -250,14 +250,16 @@ redirect_from: /home.pml
         {% endunless %}
         <div class="relative flex items-start space-x-3">
           <div class="relative">
-            <div class="-mt-3 p-2 bg-slate-200 dark:bg-slate-600 rounded-full">
-              {%- svg _icons/megaphone.svg class="block h-8 w-8" -%}
-            </div>
+            <a href="{{ item_link }}">
+              <div class="-mt-3 p-2 bg-slate-200 dark:bg-slate-600 rounded-full">
+                {%- svg _icons/megaphone.svg class="block h-8 w-8" -%}
+              </div>
+            </a>
           </div>
           <div class="min-w-0 flex-1">
             <div>
               <div class="text-sm">
-                <a href="{{ item_link }}" class="font-medium text-dark">{{news_item.title}}</a>
+                <a href="{{ item_link }}" class="font-medium text-dark">{{news_item.title}}&nbsp;&rightarrow;</a>
               </div>
               <p class="mt-0.5 text-sm text-gray-500 dark:text-gray-600">{{date}}</p>
             </div>
