@@ -63,20 +63,13 @@ The expectation is that a platform owner
   - keep the platform working, make sure `sel4test` and `sel4bench` are passing
     on the master branch for all supported configurations, especially for MCS,
     but also multicore, and hyp/IOMMU where relevant.
-
   - write and maintain documentation for the platform,
-
   - help to keep the verification passing for verified configurations
-
   - handle bug reports for that platform on GitHub and development mailing list
-
   - handle support requests/questions for that platform
-
   - review and help merge PRs for that platform. Relevant PRs should have one
     approving review from the platform owner if possible.
-
   - if possible providing binaries for bootloader and load instructions
-
   - if other development on the master branch has platform impact, it should
     preferably include relevant platform code updates already, but might need
     consultation with the platform owner to get done, i.e. the basic expectation
