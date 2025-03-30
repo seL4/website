@@ -79,6 +79,14 @@ layout: none
          prose-li:dark:marker:text-lightercol_inv;
 }
 
+@utility list-tick {
+  @apply list-['\2713'] marker:text-f_green-600;
+}
+
+@utility list-cross {
+  @apply list-['X'] marker:text-f_red-700;
+}
+
 @utility speakers_grid {
   @apply my-8 grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-x-16 gap-y-6 justify-center align-middle;
 }
