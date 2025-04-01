@@ -17,7 +17,7 @@ layout: card
 
 
 <div class="section-borders -mt-12 pt-0">
-  <h2 class="text-center mt-16 mb-6 text-3xl font-bold tracking-tight text-dark md:text-4xl">Development Kits &amp; Component Frameworks</h2>
+  <h2 id="devkits" class="text-center mt-16 mb-6 text-3xl font-bold tracking-tight text-dark md:text-4xl">Development Kits &amp; Component Frameworks</h2>
 
   <div class="grid grid-cols-1 md:grid-cols-2  gap-12 px-10 pt-8 pb-12 sm:pb-20">
 
@@ -59,8 +59,6 @@ layout: card
     </p>'
     %}
 
-    <!-- FIXME: link inside a card doesn't work -->
-
     {% include card_tool.html
     title="sDDF"
     type="Open Source"
@@ -81,7 +79,7 @@ layout: card
     title="seL4 Dev Kit"
     type="Open Source"
     foundation=false
-    link="https://github.com/sel4devkit"
+    link="https://sel4devkit.github.io"
     body='<p>
       An seL4 development kit aimed at helping complete beginners get started
       and evaluate seL4 for their needs, developed by Capgemini Engineering and
@@ -134,9 +132,10 @@ layout: card
   </div>
 </div>
 
-
+<!-- FIXME: add CAmkES and Microkit VMMs -->
 <div class="section-borders -mt-12 pt-0">
-  <h2 class="text-center mt-16  mb-6 text-3xl font-bold tracking-tight text-dark md:text-4xl">Virtualisation</h2>
+  <h2 id="virtualisation"
+      class="text-center mt-16  mb-6 text-3xl font-bold tracking-tight text-dark md:text-4xl">Virtualisation</h2>
 
   <div class="grid grid-cols-1 md:grid-cols-1 gap-12 px-10 pt-8 pb-12 sm:pb-20">
 
@@ -157,7 +156,8 @@ layout: card
 
 
 <div class="section-borders -mt-12 pt-0">
-  <h2 class="text-center mt-16  mb-6 text-3xl font-bold tracking-tight text-dark md:text-4xl">Language Support</h2>
+  <h2 id="languages"
+      class="text-center mt-16  mb-6 text-3xl font-bold tracking-tight text-dark md:text-4xl">Language Support</h2>
   <p class="text-center mb-6">
     C and Rust are the default languages on top of seL4, but other languages
     are supported, in particular for application-level components.
