@@ -648,20 +648,10 @@ article][TOCS_14]. The fastpath discussion starts on page 23.
 
 ## What's coming up next?
 
-<!-- FIXME: link to roadmap page instead when it exists -->
+There are always new things in the pipeline for seL4. See the [roadmap]
+for what is up next.
 
-We're currently working on a number of things. As we're in a research
-environment (not a product development environment) we cannot commit to dates,
-or the order in which any of these will be delivered (or even if they will be
-released at all).
-
-That being said, we are currently working on:
-
-- verification of the AArch64 kernel
-- verification of multicore seL4
-- [time protection] as a principled prevention of timing channels (this one is
-  still very much cutting-edge research)
-
+[roadmap]: {% link roadmap.html %}
 
 [GitHub]: https://github.com/seL4/seL4
 [docsite]: https://docs.sel4.systems
