@@ -44,7 +44,9 @@ overflow attacks, but the network filter could check input before it reaches any
 legacy code. And the system architecture in conjunction with seL4 can guarantee
 for you that it cannot be bypassed.
 
-<!-- FIXME: add diagram from white paper page -->
+<div class="w-2/3 my-6 mx-auto aspect-3/2">
+{% svg /images/tries-shutterstock/sel4-principles.drawio.svg width="100%" %}
+</div>
 
 ## Use seL4 to architect Secure Systems
 
