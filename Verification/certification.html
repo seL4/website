@@ -6,12 +6,12 @@ pre: 'seL4 Verification'
 pre_link: "./"
 sub: '
   <p>
-    seL4 formal proofs provide extremely strong assurance that it functions
-    correctly and enforces critical security properties. Such evidence are
+    The seL4 proofs provide strong assurance that seL4 functions
+    correctly and enforces critical security properties. Such evidence is
     commonly required by certification authorities to approve the use of
     computer systems in critical sectors, such as <a href="#CC">Common
     Criteria</a> for security products, <a href="#ISO26262">ISO 26262</a> in the
-    automotive sector, <a href="#DO178C">DO-178C</a> in the avionic
+    automotive sector, and <a href="#DO178C">DO-178C</a> in the aerospace
     sector.
   </p>
 '
@@ -34,14 +34,13 @@ layout: card
   </p>
   <p>
     Certifying an seL4-based product in critical sectors such as automotive,
-    aeropsace, critical infrastructure, or defense, where seL4 is
+    aerospace, critical infrastructure, or defence, where seL4 is
     being <a href="../About/use.html">used</a>, requires addressing a number of
     requirements. When it comes to the verification of correctness and security,
-    the seL4's open-source, formal proofs provide the highest possible assurance
-    level, beyond the most striggent levels of existing certification schemes.
+    seL4's freely available formal proofs provide the highest possible assurance
+    level, going beyond the most stringent levels of existing certification schemes.
   </p>
   {% include section-end-without-up-arrow.html %}
-
 
 
   {% include section-certif-start.html
@@ -58,31 +57,35 @@ layout: card
       this highest level.
     </p>
     <p>
-      Namely, Common Criteria&apos;s EAL 7 requires a formal model of the security
+      In particular, Common Criteria&apos;s EAL 7 requires a formal model of the security
       policy, functional specification and design specification, with formal
-      correspondance between each. From the design specification, it only
+      correspondence between each. From the design specification, it only
       requires an informal mapping to the implementation. In contrast, seL4
       provides a formal proof all the way down to the implementation, and even
-      further to the binary.
-      <div class="w-4/5 md:w-3/4 lg:w-2/3 my-6 mx-auto aspect-3/2">
-	{% svg /images/tries-shutterstock/certif-cc-comparison.drawio.svg width="100%" %}
-      </div>
+      further, to the binary.
     </p>
+    <div class="w-4/5 md:w-3/4 lg:w-2/3 my-6 lg:my-8 mx-auto aspect-3/2">
+      {% svg /images/certif-cc-comparison.drawio.svg width="100%" %}
+    </div>
     <p>
-      More precisely, formal methods are required in Common Criteria&apos;s assurance
+      Formal methods are required in Common Criteria&apos;s assurance
       class for product <em>development</em> (the standard contains 5 other
-      assurance classes, such as tests, life-cycle support, or vulnerability
+      assurance classes, such as tests, life-cycle support, and vulnerability
       assessment). As shown in the figure below, summarising the requirements
-      for the developement class per EAL, the use of formal modelling and
+      for the development class per EAL, the use of formal modelling and
       verification is only required from EAL 6, and only down to the design
       specification level.
-      <div class="w-full md:w-9/10 lg:w-5/6 my-6 mx-auto aspect-5/2">
-	{% svg /images/tries-shutterstock/certif-cc-adv.drawio.svg width="100%" %}
-      </div>
     </p>
-    {% include section-end.html %}
-
-<!-- FIXME: some sort of conclusion for the CC part?-->
+    <div class="w-full md:w-9/10 my-6 lg:my-8 mx-auto aspect-5/2">
+      {% svg /images/certif-cc-adv.drawio.svg width="100%" %}
+    </div>
+    <p>
+      Using seL4 in a certification based on Common Criteria or in a similar
+      high-grade security evaluation does not automatically solve all security
+      goals, but does give a large boost to satisfying the development
+      requirements.
+    </p>
+  {% include section-end.html %}
 
 
     {% include section-certif-start.html
@@ -93,40 +96,40 @@ layout: card
     %}
     <p>
       In the Automotive sector, while not mandatory, the ISO26262 standard for
-      functional safety of road vehicles is highly used. To achieve the highest
-      safety integrity levels, ISO26262 recommends the use of formal methods
-      throughout the development lifecycle. The strength of seL4 formal proofs
-      is much higher than what is required by ASIL-D, ISO26262's highest level.
+      functional safety of road vehicles is in widespread use. It defines safety
+      integrity levels. To achieve the highest safety integrity levels, ISO26262
+      recommends the use of formal methods throughout the development lifecycle.
+      The strength of seL4's formal proofs is considerably higher than what
+      ISO26262's highest level, ASIL-D, requires.
     </p>
     <p>
-      Namely, ISO26262 defines an automotive-specific risk-based approach that
+      In more detail, ISO26262 defines an automotive-specific risk-based approach that
       determines risk classes as four Automotive Safety Integrity Levels
-      (ASILs), depending on the risk severity, likely exposure and
+      (ASILs), depending on risk severity, likely exposure and
       controllability. The highest level, ASIL-D, corresponds to events having
       reasonable possibility of causing a life-threatening or fatal injury, with
       the injury being physically possible in most operating conditions, and
-      with little chance the driver can do something to prevent the injury.
-      <div class="w-full md:w-9/10 lg:w-5/6 my-6 mx-auto aspect-2/1">
-	{% svg /images/tries-shutterstock/certif-iso-asil.drawio.svg width="100%" %}
-      </div>
+      with little chance the driver can do anything to prevent the injury.
     </p>
+    <div class="w-full my-6 lg:my-8 mx-auto aspect-2/1">
+      {% svg /images/certif-iso-asil.drawio.svg width="100%" %}
+    </div>
     <p>
-      In ISO26262, formal verification is recommended (not <em>highly</em>) for
+      In ISO26262, formal verification is recommended for
       ASIL-C and ASIL-D risk classes. Note that in this standard, <em>formal
       verification</em> is defined as a method used to prove the correctness of
       a system against the specification in formal notation of its required
       behaviour. In other words, only the specification is mandated to be
       formal, and any analysis (including testing) with respect to such a formal
-      specification is fulfilling the ISO26262 recommendation for formal
+      specification fulfils the ISO26262 recommendation for formal
       verification. With its mathematical, machine-checked proofs of correctness
-      and security, seL4's assurance level is much stronger than ISO26262
+      and security, seL4's assurance level is considerably stronger than ISO26262
       highest risk recommendations.
-      <div class="w-4/5 md:w-3/4 lg:w-2/3 my-6 mx-auto aspect-3/2">
-	{% svg /images/tries-shutterstock/certif-iso-fm.drawio.svg width="100%" %}
-      </div>
     </p>
+    <div class="w-4/5 md:w-3/4 my-6 lg:my-8 mx-auto aspect-3/2">
+      {% svg /images/certif-iso-fm.drawio.svg width="100%" %}
+    </div>
     {% include section-end.html %}
-
 
 
     {% include section-certif-start.html
@@ -143,30 +146,29 @@ layout: card
     evidence about the system's high-level and low-level requirements (accuracy,
     verifiability, traceability, compliance etc) as well as its architecture and
     partitioning. The seL4 proofs of correctness and security provide such
-    evidences with the strength of mathematical proofs.
+    evidence with the strength of mathematical proofs.
   </p>
   <p>
-    Namely, DO-178C defines five assurance levels, depending on the effects of
+    DO-178C defines five assurance levels, depending on the effects of
     failures, ranging from <em>Level A software</em>, when failures may
     have <em>catastrophic</em> effects that may cause deaths, usually with loss
     of the aircraft, to <em>Level E software</em>, when failures have <em>no
     safety effect</em>. For instance, Level A has 71 objectives to satisfy
     whereas Level E has none. The table below shows some of the objectives
-    related to software development process, showing that the most stringent
+    related to the software development process, showing that the most stringent
     software levels require a number of objectives in terms of accuracy,
     verifiability, traceability and compliance of the high-level and low-level
     requirements.
-    <div class="w-4/5 md:w-3/4 lg:w-2/3 my-6 mx-auto aspect-3/1">
-      {% svg /images/tries-shutterstock/certif-do178c-objectives1.drawio.svg width="100%" %}
-    </div>
-    <div class="w-4/5 md:w-3/4 lg:w-2/3 my-6 mx-auto aspect-2/1">
-      {% svg /images/tries-shutterstock/certif-do178c-objectives2.drawio.svg width="100%" %}
-    </div>
   </p>
-  <!-- FIXME: make diagrams bigger-->
+  <div class="w-9/10 my-6 lg:my-8 mx-auto aspect-7/3">
+    {% svg /images/certif-do178c-objectives1.drawio.svg width="100%" %}
+  </div>
+  <div class="w-9/10 my-6 lg:my-8 mx-auto aspect-5/3">
+    {% svg /images/certif-do178c-objectives2.drawio.svg width="100%" %}
+  </div>
   <p>
-    For this aerospace standard, a guide is also published specifically to
-    address the use of Formal Methods: the DO-333 Formal Methods Supplement. The
+    For this aerospace standard, there also exists a guide specifically for
+    the use of Formal Methods: the DO-333 Formal Methods Supplement. The
     supplement identifies the modifications and additions to DO-178C objectives,
     activities, and software life cycle data that should be addressed when
     formal methods are used as part of the software development process. It
@@ -176,37 +178,37 @@ layout: card
     formal analysis.
   </p>
   <p>
-    In the case of the seL4 proofs, they are using the Isabelle theorem prover,
-    with all the assumptions being explicitely stated.
+    The seL4 proofs use the Isabelle/HOL theorem prover, with all
+    assumptions explicitly stated.
   </p>
   <!-- FIXME: say more...-->
   <!-- FIXME: link to Isabelle website?-->
   <p>
-    DO-178C also refers to DO-330 for the qualification of any tool used, and
-    specifies five tool qualification levels (TQL) depending on three criteria:
-    whether (1) the tool output is part of the airborne software and thus could
-    insert an error; (2) the tool automates a verification process <em>and</em>
+    DO-178C also refers to another supplement, DO-330, for the qualification of
+    verification tools used in the certification. It specifies five tool
+    qualification levels (TQL) depending on three criteria: whether (1) the tool
+    output is part of the airborne software and thus could insert an error; (2)
+    the tool automates a verification process <em>and</em>
     is used to justify the elimination or reduction of other verification
-    processes; or the tools is just used to automated a verification
-    process. Then each of TQl-1 to TQL-5 defines a list of objectives to
-    fulfill. For instance, objectives related to the source code of the tool is
-    not required for TQL-4 or TQL-5, i.e., for tools not generating code that is
-    part of the airborne software.
-    <div class="w-4/5 md:w-3/4 lg:w-2/3 my-6 mx-auto aspect-2/1">
-      {% svg /images/tries-shutterstock/certif-do330-tql.drawio.svg width="100%" %}
-    </div>
+    processes; or whether the tools is just used to automate a verification
+    process. Each of TQl-1 to TQL-5 defines a list of objectives to
+    fulfil. For instance, objectives related to the source code of the tool are
+    not required for TQL-4 or TQL-5, i.e., for tools that do not generate code
+    that becomes part of the airborne software.
   </p>
+  <div class="w-4/5 md:w-3/4 my-6 lg:my-8 mx-auto aspect-2/1">
+    {% svg /images/certif-do330-tql.drawio.svg width="100%" %}
+  </div>
   <p>
-    In the case of the use of the Isabelle theorem prover in seL4, there is no
-    code generated from Isabelle that results in the seL4 code base. So criteria
-    1 does not apply. Moreover Isabelle's logic is based on a very small core
-    set of axioms, that have been manually validated, with all extensions
-    derived from first principles. No external tool is trusted: all outputs from
-    external tools go through the creation of a corresponding proof within
-    Isabelle.
+    For seL4, there is no code generated from Isabelle/HOL that results in the
+    seL4 code base. So criterion 1 does not apply. Moreover Isabelle's logic is
+    based on a well-known, small core set of axioms that have been validated in
+    the literature, with all extensions derived from first principles. No
+    external tool is trusted: all outputs from external tools go through the
+    creation of a corresponding proof within Isabelle's proof kernel. Axioms and
+    assumptions of a formalisation can be tracked. While to our knowledge
+    Isabelle/HOL has not been qualified yet for a DO-178C certification, it
+    should be well able to meet DO-330 requirements.
   </p>
-  <!-- FIXME: say more...-->
 
   {% include section-end.html %}
-
-
