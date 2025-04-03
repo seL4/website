@@ -6,30 +6,34 @@ layout: card
 no_title_heading: true
 ---
 
+{% capture sub %}
+<p>
+   seL4 is the most highly-assured operating system kernel. Its uniqueness
+   lies in the formal mathematical proof that it behaves precisely as
+   specified and enforces strong security boundaries for applications. This
+   makes seL4 the trustworthy foundation of choice for safely running critical
+   applications alongside untrusted workloads.
+ </p>
+<div class="mt-3 w-full sm:w-4/5 md:w-2/3 lg:w-[60%] mx-auto aspect-2/1 px-10 rounded-xl shadow-lg">
+   {% svg /images/tries-shutterstock/sel4-trusted-untrusted.drawio.svg width="100%" height="100%" %}
+</div>
+{% endcapture %}
 
 {% include heading.html
    h1="Verification"
-   sub='
-   <p>
-     seL4 is the most highly-assured operating system kernel. Its uniqueness
-     lies in its formal mathematical proof that it behaves precisely as
-     specified and enforces strong security boundaries for applications. This
-     makes seL4 the trustworthy foundation of choice for safely running critical
-     applications alongside any uncritical workloads.
-   </p>
-   '
+   sub=sub
 %}
 
 <!-- FIXME: add text for card on implication for system once page exists -->
- 
+
 <div class="card-grid-3">
   {% include card.html
      icon="check"
      title="The seL4 proofs"
-     body="seL4 has machine-checked mathematical proofs, spanning from
-     high-level specifications down to the binary code, of a number of strong
+     body="seL4 has machine-checked mathematical proofs from
+     high-level specifications down to binary code. They establish a number of strong
      properties ranging from functional correctness to absence of information
-     leakage, across a variety of hardware architectures and plaforms."
+     leakage, and cover a variety of hardware architectures and plaforms."
      link="proofs.html"
   %}
 
@@ -43,16 +47,12 @@ no_title_heading: true
   {% include card.html
      icon="check-badge"
      title="Implication for Certification"
-     body="seL4's formal proofs provide an extremely high level of assurance,
-     commonly required for the highest levels of certification needed for the
-     use of computer systems in critical sectors, such as Common Criteria,
-     ISO-26262 and DO-178C."
+     body="<p>seL4's formal proofs provide a very high level of assurance,
+     commonly required only for the highest levels of certification
+     in critical sectors, such as Common Criteria,
+     ISO-26262 and DO-178C.</p>
+     <p>Read more on how the proofs affect these certification schemes.</p>"
      link="certification.html"
   %}
-</div>
-
-
-<div class="w-full md:w-2/3 lg:w-1/2 mx-auto aspect-3/2">
-{% svg /images/tries-shutterstock/sel4-trusted-untrusted.drawio.svg width="100%" %}
 </div>
 
