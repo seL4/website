@@ -1,7 +1,12 @@
 {%- assign icon = "_icons/" | append: include.icon | append: ".svg" -%}
-<p class="{% if include.gap %} mt-25 mb-4 {% else %} my-4 {% endif %}">
+<p class="my-4">
   {% svg {{icon}} class="mx-auto h-8 w-8 text-f_green-600" %}
 </p>
 <p class="text-center mb-8 text-base sm:text-lg text-light">
   {{include.text}}
 </p>
+{% if include.email -%}
+<p class="text-center text-base sm:text-lg text-dark -mt-4 mb-12 font-bold">
+<a title="{{include.email}}" href="mailto:{{include.email}}">{{include.email}}</a>
+</p>
+{%- endif %}

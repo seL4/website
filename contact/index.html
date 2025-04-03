@@ -6,44 +6,45 @@ title: Contact
 layout: card
 ---
 
-<div class="mx-auto max-w-lg pb-16 lg:pb-20">
-  {% include contact-item.html
-  icon="chat-bubble-left-right"
-  text='If you need help and open source support using and developing seL4, visit the
-  <a href="support.html">
-    Help & Open Source Support page</a>.'
-  %}
+<div class="mx-auto max-w-7xl -mt-12 pb-16 lg:pb-20">
+  <div class="grid grid-cols-1 lg:grid-cols-2 gap-x-8 xl:gap-x-14 gap-y-18">
+    <div class="max-w-xl mx-auto">
+      {% include contact-item.html
+      icon="chat-bubble-left-right"
+      text='If you need help and open source support using or developing on seL4, visit the
+      <a href="support.html">
+        Help &amp; Open Source Support page</a>.'
+      %}
 
-  {% include contact-item.html
-  icon="rocket-launch"
-  text='If you are after professional commercial support, see the list of
-  <a href="../Foundation/Services/index.html">
-    Endorsed Service Providers</a>.'
-  %}
+      {% include contact-item.html
+      icon="rocket-launch"
+      text='If you are after professional commercial support, see the list of
+      <a href="../Foundation/Services/index.html">
+        Endorsed Service Providers</a>.'
+      %}
 
-  {% include contact-item.html
-  icon="bug-ant"
-  text='To report or discuss a potential security vulnerability, follow the
-  <a href="https://github.com/seL4/seL4/blob/master/SECURITY.md">
-    Vulnerability disclosure policy</a>.'
-  %}
+      {% include contact-item.html
+      icon="bug-ant"
+      text='To report or discuss a potential security vulnerability, follow the
+      <a href="https://github.com/seL4/seL4/blob/master/SECURITY.md">
+        Vulnerability disclosure policy</a>.'
+      %}
+    </div>
+    <div class="max-w-xl mx-auto">
+      {% include contact-item.html
+      icon="envelope"
+      text='For requests or queries about community moderation based on the
+      <a href="https://docs.sel4.systems/processes/conduct.html">seL4 Code
+        of Conduct</a>, email'
+      email="moderation@sel4.systems"
+      %}
 
-
-  {% include contact-item.html
-  gap="true"
-  icon="envelope"
-  text='For requests or queries about community moderation based on the
-   <a href="https://docs.sel4.systems/processes/conduct.html">seL4 Code
-    of Conduct</a>, contact
-  <a title="moderation@sel4.systems" href=
-     "mailto:moderation@sel4.systems">moderation@sel4.systems</a>.'
-  %}
-
-  {% include contact-item.html
-  icon="envelope"
-  text='For information about the seL4 Foundation, or anything that can&apos;t be
-  discussed in public, or anything else not covered above, contact
-  <a title="foundation@sel4.systems" href=
-     "mailto:foundation@sel4.systems">foundation@sel4.systems</a>.'
-  %}
+      {% include contact-item.html
+      icon="envelope"
+      text='For information about the seL4 Foundation, or anything that can&apos;t be
+      discussed in public, or anything else not covered above, email'
+      email="foundation@sel4.systems"
+      %}
+    </div>
+  </div>
 </div>
