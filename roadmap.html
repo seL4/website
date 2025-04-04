@@ -31,7 +31,7 @@ layout: card
       title='seL4 Microkit'
       description='A simple operating systems framework for building systems on seL4.'
       who='UNSW'
-      status='Ongoing research & development. Available for use. Detailed
+      status='Ongoing research &amp; development. Available for use. Detailed
       roadmap
       available <a href="https://github.com/seL4/microkit/issues/61">here</a>.'
       %}
@@ -40,7 +40,7 @@ layout: card
       title='seL4 Device Driver Framework (SDDF)'
       description='A high-performance and secure driver framework for seL4.'
       who='UNSW'
-      status='Ongoing research & development. Available for use. Find out
+      status='Ongoing research &amp; development. Available for use. Find out
       more <a href="https://github.com/au-ts/sddf">here</a>.'
       %}
 
@@ -48,7 +48,7 @@ layout: card
       title='LionsOS'
       description='A secure, fast, and adaptable OS based on the seL4 Microkit.'
       who='UNSW'
-      status='Ongoing research & development. An initial release containing a
+      status='Ongoing research &amp; development. An initial release containing a
       non-trivial example system has been made. Find out
       more <a href="https://lionsos.org">here</a>.'
       %}
@@ -82,6 +82,28 @@ layout: card
       who='Proofcraft'
       status='Integrity verification to complete Q2/25'
       %}
+
+      {% include green-roadmap-li.html
+        title='Automated Platform Port Verification'
+        description='Reducing the need for verification experts for new platform
+                     ports and expanding the set of supported configuration
+                     parameters. Making the seL4 proofs applicable to a broader
+                     range of platforms and applications without the need for
+                     verification experts.'
+        who='Proofcraft'
+        status='Increased platform support available. Further platform and
+                 configuration support ongoing. Project to complete Q3/27'
+      %}
+
+      {% include green-roadmap-li.html
+        title='Multikernel Verification'
+        description='Specifications, verification tools, and proofs for
+                     the multi-kernel configuration of seL4. Providing
+                     gradually increasing assurance for multi-core seL4
+                     systems as the verification progresses.'
+        who='Proofcraft'
+        status='Project scheduled to complete Q3/28'
+        %}
 
     </ul>
   </div>
