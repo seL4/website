@@ -9,7 +9,7 @@ layout: card
 
 <div class="grid grid-cols-1 gap-x-4 gap-y-12 md:gap-10 py-12 sm:py-20 mx-2 lg:mx-32">
 
-  <div class="flex flex-col relative rounded-lg light:border bg-white dark:bg-slate-300
+  <div class="mb-20 flex flex-col relative rounded-lg light:border bg-white dark:bg-slate-300
     shadow-lg hover:bg-slate-50 dark:hover:bg-slate-400">
     <a href="#">
       <div class="absolute bg-logogreen -top-8 left-1/2 -ml-8 p-4 rounded-full shadow-md">
@@ -36,39 +36,30 @@ layout: card
         %}
         {% include green-tick-li.html
           text="
-            0 bugs since 2009"
+            0 bugs since 2009 in verified code; Nightly validation of the
+            proofs; No code change integrated to verified code without proofs"
         %}
         {% include green-tick-li.html
           text="
-            Functional Correctness proof"
+            Deep properties: Functional Correctness, Binary Correctness,
+            Integrity proof, Confidentiality (Absence of unauthorised
+            information flows)"
         %}
         {% include green-tick-li.html
           text="
-            Integrity proof"
-        %}
-        {% include green-tick-li.html
-          text="
-            Confidentiality proof (Absence of information flow)"
-        %}
-        {% include green-tick-li.html
-          text="
-            Binary Correctness proof"
-        %}
-        {% include green-tick-li.html
-          text="
-            Beyond Common Criteria EAL7 certification"
+            Beyond Common Criteria EAL7, ISO26262 ASIL-D or DO-178C Level A certification requirement for development"
         %}
       </ul>
     </div>
-    <div class="px-6 mt-1 pb-5">
-      <a href="#" class="arrow-link">Learn more
+    <div class="px-6 mt-1 pb-5 ml-auto">
+      <a href="{% link Verification/index.html %}" class="arrow-link">Learn more
         <span class="absolute inset-0"></span>
       </a>
     </div>
   </div>
 
 
-  <div class="flex flex-col relative rounded-lg light:border bg-white dark:bg-slate-300
+  <div class="mb-20 flex flex-col relative rounded-lg light:border bg-white dark:bg-slate-300
     shadow-lg hover:bg-slate-50 dark:hover:bg-slate-400">
     <a href="#">
       <div class="absolute bg-logogreen -top-8 left-1/2 -ml-8 p-4 rounded-full shadow-md">
@@ -87,26 +78,26 @@ layout: card
       <ul class="mt-10 mx-auto max-w-xl space-y-2 text-light">
         {% include green-tick-li.html
           text="
-          Blah"
+          Outperforms any microkernels on key benchmarks"
         %}
         {% include green-tick-li.html
           text="
-          Blah"
+          Achieves high assurance without compromising with performance"
         %}
         {% include green-tick-li.html
           text="
-          Blah"
+          Supports a wide range of real-world use cases"
         %}
       </ul>
     </div>
-    <div class="px-6 mt-1 pb-5">
-      <a href="#" class="arrow-link">Learn more
+    <div class="px-6 mt-1 pb-5 ml-auto">
+      <a href="{% link About/Performance/index.html %}" class="arrow-link">Learn more
         <span class="absolute inset-0"></span>
       </a>
     </div>
   </div>
 
-  <div class="flex flex-col relative rounded-lg light:border bg-white dark:bg-slate-300
+  <div class="mb-20 flex flex-col relative rounded-lg light:border bg-white dark:bg-slate-300
     shadow-lg hover:bg-slate-50 dark:hover:bg-slate-400">
     <a href="#">
       <div class="absolute bg-logogreen -top-8 left-1/2 -ml-8 p-4 rounded-full shadow-md">
@@ -125,24 +116,20 @@ layout: card
       <ul class="mt-10 m-auto max-w-xl space-y-2 text-light">
         {% include green-tick-li.html
             text="
-              General purpose: blah blah"
+              General purpose: can run as a hypervisor or as an RTOS, or both; can also be a basis for your OS"
         %}
         {% include green-tick-li.html
             text="
-              Capability-based: blah blah"
+              Capability-based: provides fine-grained access control and can isolate trusted components"
         %}
         {% include green-tick-li.html
             text="
-              Can run as a hypervisor: blah blah"
-        %}
-        {% include green-tick-li.html
-            text="
-              ..."
+              Cyber-retrofit: can be incrementally integrated to existing legacy systems"
         %}
       </ul>
     </div>
-    <div class="px-6 mt-1 pb-5">
-      <a href="#" class="arrow-link">Learn more
+    <div class="px-6 mt-1 pb-5 ml-auto">
+      <a href="{% link About/how-to-use.md %}" class="arrow-link">Learn more
         <span class="absolute inset-0"></span>
       </a>
     </div>
