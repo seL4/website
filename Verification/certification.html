@@ -6,7 +6,7 @@ pre: 'seL4 Verification'
 pre_link: "./"
 sub: '
   <p>
-    The seL4 proofs provide strong assurance that seL4 functions
+    The seL4 proofs provide strong assurance that seL4 operates
     correctly and enforces critical security properties. Such evidence is
     commonly required by certification authorities to approve the use of
     computer systems in critical sectors, such as <a href="#CC">Common
@@ -37,8 +37,9 @@ layout: card
     aerospace, critical infrastructure, or defence, where seL4 is
     being <a href="../About/use.html">used</a>, requires addressing a number of
     requirements. When it comes to the verification of correctness and security,
-    seL4's freely available formal proofs provide the highest possible assurance
-    level, going beyond the most stringent levels of existing certification schemes.
+    seL4's freely available <a href="{% link Verification/proofs.html%}">formal
+    proofs</a> provide the highest possible assurance level, going beyond the
+    most stringent levels of existing certification schemes.
   </p>
   {% include section-end-without-up-arrow.html %}
 
@@ -82,7 +83,7 @@ layout: card
     <p>
       Using seL4 in a certification based on Common Criteria or in a similar
       high-grade security evaluation does not automatically solve all security
-      goals, but does give a large boost to satisfying the development
+      objectives, but does give a large boost to satisfying the development
       requirements.
     </p>
   {% include section-end.html %}
@@ -122,13 +123,16 @@ layout: card
       behaviour. In other words, only the specification is mandated to be
       formal, and any analysis (including testing) with respect to such a formal
       specification fulfils the ISO26262 recommendation for formal
-      verification. With its mathematical, machine-checked proofs of correctness
-      and security, seL4's assurance level is considerably stronger than ISO26262
-      highest risk recommendations.
+      verification.
     </p>
     <div class="w-4/5 md:w-3/4 my-6 lg:my-8 mx-auto aspect-3/2">
       {% svg /images/certif-iso-fm.drawio.svg width="100%" %}
     </div>
+    <p>
+      With its mathematical, machine-checked proofs of correctness and security,
+      seL4's assurance level is considerably stronger than ISO26262 highest risk
+      recommendations.
+    </p>
     {% include section-end.html %}
 
 
@@ -178,8 +182,9 @@ layout: card
     formal analysis.
   </p>
   <p>
-    The seL4 proofs use the Isabelle/HOL theorem prover, with all
-    assumptions explicitly stated.
+    The seL4 proofs use the <a href="https://isabelle.in.tum.de">Isabelle/HOL
+    theorem prover</a>, with all
+    <a href="{%link Info/FAQ/proof.html%}">assumptions explicitly stated</a>.
   </p>
   <!-- FIXME: say more...-->
   <!-- FIXME: link to Isabelle website?-->
@@ -191,7 +196,7 @@ layout: card
     the tool automates a verification process <em>and</em>
     is used to justify the elimination or reduction of other verification
     processes; or whether the tools is just used to automate a verification
-    process. Each of TQl-1 to TQL-5 defines a list of objectives to
+    process. Each of TQL-1 to TQL-5 defines a list of objectives to
     fulfil. For instance, objectives related to the source code of the tool are
     not required for TQL-4 or TQL-5, i.e., for tools that do not generate code
     that becomes part of the airborne software.
