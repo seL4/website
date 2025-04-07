@@ -35,5 +35,5 @@ level of involvement.
 
 <div style="text-align: center">
   <a href="https://hopin.com/events/sel4-summit-2022/registration"
-     class="highlight" >Register for the seL4 Summit 2022!</a>
+     class="emph" >Register for the seL4 Summit 2022!</a>
 </div>

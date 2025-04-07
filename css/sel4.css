@@ -216,6 +216,10 @@ layout: none
   @apply font-mono;
 }
 
+@utility emph {
+  @apply leading-8 text-base sm:text-lg font-medium text-f_green-600 dark:text-logogreen;
+}
+
 @layer base {
   html {
     font-family: "Roboto", system-ui, sans-serif;
