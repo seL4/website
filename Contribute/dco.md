@@ -4,7 +4,7 @@ SPDX-FileCopyrightText: 2020 seL4 Project a Series of LF Projects, LLC.
 title: Developer Certificate of Origin (DCO)
 sub: '
   <p>The seL4 Foundation does not require any contributor license
-  agreements or other documents for contributions. It uses the the
+  agreements or other documents for contributions. It uses the same
   sign-off process as the Linux kernel, the so-called Developer
   Certificate of Origin.
   </p>'
