@@ -2,51 +2,79 @@
 # Copyright 2020 seL4 Project a Series of LF Projects, LLC.
 # SPDX-License-Identifier: CC-BY-SA-4.0
 title: Contributing to seL4
-sub: "<p>Overview on how to contribute to the seL4 kernel and ecosystem.</p>"
+sub: '
+  <p>We welcome and encourage community contribution to the seL4 ecosystem.
+     Given the application areas of seL4, quality control and assurance are
+     important. Read on for how and where you can contribute, and how to get
+     your contributions accepted.</p>
+  <img src="../images/code-skewed.png" alt="screenshot of seL4 code"
+       class="mt-8 p-4 w-2/3 aspect-16/9 mx-auto object-cover">
+  '
 layout: card
 redirect_from: /Contribute/home.pml
 ---
 
-<div class="theprose [&_h2]:text-left">
-<!-- FIXME: old content, update -->
+<div class="theprose [&_h2]:text-left mx-auto -mt-10 mb-18 sm:mb-24">
 
-<p>We welcome and encourage community contribution to the seL4 platform.</p>
-
-<p>Contributions can take the form of code contributions, proof contributions, documentation contributions, and community support.</p>
-
-<h2 id="code-contributions">Code Contributions</h2>
-
-<p>We provide general guidance on contributing code to the seL4 platform as well as specific guidance on making contributions to the kernel and to user-level code.</p>
+<h3>We welcome contributions to all aspects of the seL4 ecosystem:</h3>
 
 <ul>
-<li><a href="https://docs.sel4.systems/processes/contributing.html">general code contribution guidance and rules</a></li>
-<li><a href="https://docs.sel4.systems/projects/sel4/kernel-contribution.html">kernel contribution</a></li>
-<!--
-<li><a href="https://docs.sel4.systems/processes/contributing.html">TODO user-level contributions</a></li>
--->
+  <li class="list-tick">Code and documentation contributions via pull requests on
+    <a href="https://github.com/seL4">GitHub</a>. You should be aware of the seL4
+    <a href="{% link Contribute/conventions.html %}">coding conventions and
+    requirements</a> and the <a href="dco.html">developer certificate of origin</a>.
+    See <a href="#code">more details below.</a>
+  </li>
+  <li class="list-tick">Design and API contributions via the
+    <a href="{% link Contribute/rfc-process.md %}">RFC process</a></li>
+  <li class="list-tick">Asking questions and helping out others on
+    <a href="{% link contact/support.html %}">our community channels</a></li>
 </ul>
 
-<p>We also provide a list of <a href="https://docs.sel4.systems/SuggestedProjects.html">suggested projects</a> to start working on, as well as an overview of the different <a href="https://docs.sel4.systems/projects/available-user-components.html">libraries and components</a> available and what can be done to help contribute to their further development.
+The <a href="{% link Contribute/conduct.md %}">seL4 code of conduct</a> applies
+to all contributions.
 
-<h2 id="proof-contributions">Proof Contributions</h2>
 
-<p>Contributing to the seL4 proofs requires a different skill set than contributing to the code, and so far we have not had many community contributions to the proofs.</p>
+<h2 id="code">Code, Proofs, and Documentation</h2>
 
-<p>As a result, our infrastructure for proof contributions is not as mature as that for code contributions.</p>
+<p>
+  Code, proof, and documentation contributions are via pull requests on
+  repositories in the <a href="https://github.com/seL4">seL4 GitHub org</a>. To
+  increase the likelihood that your pull request receives interest and reviews,
+  please follow the guidelines on the page for
+  <a href="{% link Contribute/conventions.html %}">coding conventions and
+  requirements</a>. The <a href="dco.html">developer certificate of origin</a>
+  requirement applies to all pull requests, including documentation and proof
+  contributions.
+</p>
+<p>In general, quality assurance requirements are highest for kernel
+contributions. They are more standard and faster-paced for user-level frameworks
+and libraries.</p>
+<p>
+  Note that larger changes, such as an architecture port, or adding a new
+  feature to the kernel, requires a <a href="{% link Contribute/rfc-process.md
+  %}">Request for Comments</a> first, in which you describe the change and get
+  feedback from the community. Contributions to user-level frameworks and
+  libraries are less formal, but we still recommend that you discuss any larger
+  contributions <a href="{% link contact/support.html %}">with the community</a> before starting work on them.
+</p>
 
-<p>We are aiming to provide more resources in the next few months. In the meantime, if you are interested in contributing to the seL4 proofs, please review the <a href="https://github.com/seL4/l4v/">actual proofs</a> and the tools and techniques used for the proofs. Then <a href="../contact/">contact us</a> to discuss ideas, plans, and options about your contributions.</p>
+<p>
+  Anyone can help review pull requests, but only people that have been granted the
+  <a href="{% link Contribute/roles.md %}">Committer</a> role by the
+  <a href="{% link Foundation/TSC/index.html %}">Technical Steering
+  Committee</a> can merge them. These are the people responsible for maintaining
+  the quality and correctness of the code.
+</p>
 
-<p>To get started, you will have to be familiar with the <a href="https://isabelle.in.tum.de/">Isabelle theorem prover</a>. Some learning resources for it are described in <a href="http://proofcraft.org/blog/proof-engineer-reading.html">this blog post</a>.
 
-<h2 id="documentation-contributions">Documentation Contributions</h2>
+<p>
+  The <a href="https://docs.sel4.systems">seL4 docsite</a> has additional
+  guidance for <a
+  href="https://docs.sel4.systems/projects/sel4/kernel-contribution.html">kernel
+  contributions</a>, as well as <a
+  href="https://docs.sel4.systems/processes/docs-contributing.html">guidance</a>
+  for contributing to the for the docsite itself.
+</p>
 
-<p>seL4 platform documentation is maintained either with the code sources, with the proofs, or on the docsite.</p>
-
-<p>We welcome contribution to all of this documentation, and provide <a href="https://docs.sel4.systems/processes/docs-contributing.html">guidance</a> on the docsite.</p>
-
-<h2 id="community-support-contributions">Community Support Contributions</h2>
-
-<p>The <a href="../contact/">seL4 discussion and support platforms</a> are open to the community and we invite community participation, not only in asking questions, but also in answering questions and providing help.</p>
-
-<p>Please see our <a href="conduct.html">code of conduct</a>.</p>
 </div>
