@@ -38,8 +38,8 @@ seL4 on a new platform and do not want to port and contribute it yourself, one
 of the [commercial service providers] in the seL4 foundation may be able to
 help.
 
-[contribution guidelines]: ./
-[coding standards]: /todo.html
+[contribution guidelines]: {% link Contribute/index.html %}
+[coding standards]: {% link Contribute/conventions.html %}
 [platform porting guidelines]: https://docs.sel4.systems/projects/sel4/porting
 [commercial service providers]: {% link Foundation/Services/index.html %}
 
