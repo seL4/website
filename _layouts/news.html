@@ -5,27 +5,29 @@ layout: base
 ---
 
 {%- assign this_year = page.year | append: "" -%}
-
-<div class="mx-auto max-w-4xl py-12 px-12">
-
-<div class="theprose">
-<h1 class="text-4xl">{{page.title}}</h1>
-
-<nav>
-{%- assign newest_url = site.pages | where: "layout", "news" | map: "name" | sort | pop | last -%}
-{%- assign newest_year = newest_url | split: "." | first -%}
-{%- assign url = "/news/" | relative_url %}
-    News from {%- if newest_year == this_year %} older {%- else %} other {%- endif %} years:
-{%- for i in (2020..newest_year) -%}
-{%-   unless i == page.year %}
-      <a href="{{ url }}{{ i }}.html">{{ i }}</a>
-{%- else %}
-     {{ i }}
-{%- endunless -%}
-{%- endfor %}
+{% capture sub %}
+<p>
+News about seL4, the seL4 Foundation, and the seL4 ecosystem.
+</p>
+<nav class="mt-4">
+  {%- assign newest_url = site.pages | where: "layout", "news" | map: "name" | sort | pop | last -%}
+  {%- assign newest_year = newest_url | split: "." | first -%}
+  {%- assign url = "/news/" | relative_url %}
+      News from {%- if newest_year == this_year %} older {%- else %} other {%- endif %} years:
+  {%- for i in (2020..newest_year) -%}
+  {%-   unless i == page.year %}
+        <a href="{{ url }}{{ i }}.html">{{ i }}</a>
+  {%- else %}
+       <span class="text-lighter">{{ i }}</span>
+  {%- endunless -%}
+  {%- endfor %}
 </nav>
-</div>
-</div>
+{% endcapture %}
+
+{% include heading.html
+   h1=page.title
+   sub=sub
+%}
 
 {%  for news_item in site.news-items reversed -%}
 {%-   assign date = news_item.date | date: "%d %b %Y" -%}
@@ -34,7 +36,6 @@ layout: base
 {%-   assign default_anchor = news_item.date | date: "%m-%d" -%}
 {%-   assign anchor = news_item.anchor | default: default_anchor -%}
 {%-   if year == this_year -%}
-<div class="relative my-12 sm:my-18 pt-2 pb-8 px-6 lg:px-8 mx-auto max-w-5xl">
 
 {% comment %}
 FIXME: news_item..width is currently being ignored, because tailwind needs to see
@@ -48,34 +49,24 @@ FIXME: news_item..width is currently being ignored, because tailwind needs to se
 {%-   assign w = "lg:grid-cols-[auto_0%]" -%}
 {%- endif -%}
 
-<article class="text-lg leading-8 text-gray-600 dark:text-gray-400 mr-10
-           grid grid-cols-1 lg:grid-rows-[auto_auto]
-           lg:gap-x-10 {{w}}">
-<div>
-<a href="#{{anchor}}" class="not-prose hover:underline text-gray-400 pt-16 lg:pt-20"><time datetime="{{ iso }}" id="{{anchor}}">{{ date }}</time></a>
-<h2 class="mb-8 mt-2 text-2xl lg:text-3xl font-bold tracking-tight text-gray-900 dark:text-gray-300">{{ news_item.title }}</h2>
+<article class="max-w-4xl mx-auto mb-12 sm:mb-18 pt-2 pb-8 px-6 lg:px-8 clear-both">
+<a href="#{{anchor}}" class="text-base sm:text-lg hover:underline text-gray-400 pt-16 lg:pt-20"><time datetime="{{ iso }}" id="{{anchor}}">{{ date }}</time></a>
+<h2 class="mb-8 mt-2 h2-size">{{ news_item.title }}</h2>
+<div class="theprose prose-ul:[ul]:my-2 prose-p:[p]:my-3 prose-li:[li]:my-1.5 max-w-4xl">
+  {%    if news_item.img -%}
+  {%-     if news_item.link -%}
+    <a href="{{ news_item.link }}">
+  {%-     endif -%}
+      <img src="{{ news_item.img | relative_url }}"
+           alt="{{ news_item.alt | default: news_item.title }}"
+           class="float-right rounded-xl -mt-1 pt-6 sm:pt-8 px-6 sm:px-8 pb-6 sm:pb-8 ml-4 sm:ml-6 bg-white w-2/5 lg:-mr-16" >
+  {%-     if news_item.link -%}
+    </a>
+  {%-     endif -%}
+  {%-   endif %}
+  {{ news_item.content }}
 </div>
-<div></div>
-<div class="theprose max-w-4xl order-4 lg:order-3">
-{{ news_item.content }}
-{%- unless news_item.flow -%}
-</div>
-<div class="order-3 lg:order-4 mb-4 lg:mb-0">
-{%- endunless -%}
-{%    if news_item.img -%}
-{%-     if news_item.link -%}
-  <a href="{{ news_item.link }}" class="text-center">
-{%-     endif -%}
-    <img src="{{ news_item.img | relative_url }}"
-         alt="{{ news_item.alt | default: news_item.title }}"
-         class="rounded-xl mx-auto bg-white p-8 w-1/2 lg:w-full lg:mr-0" >
-{%-     if news_item.link -%}
-  </a>
-{%-     endif -%}
-</div>
-{%-   endif %}
 </article>
-</div>
 
 {%   endif -%}
 {%- endfor -%}
