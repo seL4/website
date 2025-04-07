@@ -5,135 +5,75 @@ title: Fact Sheet
 pre: "What is seL4?"
 pre_link: "./"
 layout: card
+
+cards:
+- title: Verification
+  sub: seL4 is the only kernel with inspectable proofs of deep properties down to the implementation
+  icon: check
+  link: "Verification/index.html"
+  items:
+    - "Formal, mathematical, machine-checked proofs"
+    - "1.3 million lines of proofs"
+    - "0 violations of verified properties since proof completed in 2009;
+      Continually maintained and updated; No code change without proof validation"
+    - "Deep properties: Functional Correctness, Binary Correctness,
+      Integrity proof, Confidentiality (Absence of unauthorised
+      information flows)"
+    - "Beyond Common Criteria EAL7, ISO26262 ASIL-D or DO-178C Level A
+      certification requirements for development"
+
+- title: Performance
+  sub: seL4 is 2 to 10 times faster than other comparable systems
+  icon: bolt
+  link: "About/Performance/index.html"
+  items:
+    - "Outperforms any other microkernels on key benchmarks"
+    - "Achieves high assurance without compromising performance"
+    - "Supports a wide range of real-world use cases"
+
+- title: Features
+  sub: seL4 is the only verified general-purpose, capability-based operating system
+  icon: list-bullet
+  link: "About/how-to-use.md"
+  items:
+    - "General purpose: can run as a hypervisor or as an RTOS, or both, or
+      as the basis for a general purpose OS"
+    - "Capability-based: provides fine-grained access control and can isolate trusted components"
+    - "Cyber-retrofit: can be incrementally integrated to existing legacy systems"
+    - "Lightweight: small footprint, low overhead, fast context switch"
 ---
 
-<div class="grid grid-cols-1 gap-x-4 gap-y-12 md:gap-10 py-12 sm:py-20 mx-2 lg:mx-32">
+<div class="grid grid-cols-1 gap-x-4 gap-y-12 md:gap-10 pb-12 sm:pb-20 mx-2 lg:mx-32">
 
-  <div class="mb-20 flex flex-col relative rounded-lg light:border bg-white dark:bg-slate-300
-    shadow-lg hover:bg-slate-50 dark:hover:bg-slate-400">
-    <a href="#">
+{% for card in page.cards -%}
+  <div class="mb-20 flex flex-col relative rounded-lg border bg-white dark:bg-darkblue
+              shadow-lg hover:bg-slate-50 dark:hover:bg-slate-900 dark:shadow-gray-500/60">
+    <a href="{% link {{card.link}} %}">
       <div class="absolute bg-logogreen -top-8 left-1/2 -ml-8 p-4 rounded-full shadow-md">
-        {% svg "_icons/check.svg" class="h-8 w-8" %}
+        {% svg "_icons/{{card.icon}}.svg" class="h-8 w-8" %}
       </div>
     </a>
-    <h3 class="px-6  pt-12 pb-3 text-center text-base font-semibold leading-7 text-logogreen">
-      Verification
-    </h3>
-    <div class="mx-auto">
-      <p class="px-6  pt-12 pb-3 text-center text-3xl font-semibold leading-10 text-dark ">
-        seL4 is the only kernel with inspectable proofs of deep properties down to the implementation
-      </p>
-    </div>
-    <div class="px-6 pb-5 flex-auto text-base text-light">
-      <ul class="mt-10 mx-auto max-w-xl space-y-2 text-light">
-        {% include green-tick-li.html
-          text="
-            Formal, mathematical, machine-checked proofs"
-        %}
-        {% include green-tick-li.html
-          text="
-             1.3 million lines of proofs"
-        %}
-        {% include green-tick-li.html
-          text="
-            0 violations of verified properties since proof completed in 2009;
-            Continually maintained and updated; No code change without proof validation"
-        %}
-        {% include green-tick-li.html
-          text="
-            Deep properties: Functional Correctness, Binary Correctness,
-            Integrity proof, Confidentiality (Absence of unauthorised
-            information flows)"
-        %}
-        {% include green-tick-li.html
-          text="
-            Beyond Common Criteria EAL7, ISO26262 ASIL-D or DO-178C Level A
-            certification requirements for development"
-        %}
-      </ul>
-    </div>
-    <div class="px-6 mt-1 pb-5 ml-auto">
-      <a href="{% link Verification/index.html %}" class="arrow-link">Learn more
-        <span class="absolute inset-0"></span>
-      </a>
-    </div>
-  </div>
-
-
-  <div class="mb-20 flex flex-col relative rounded-lg light:border bg-white dark:bg-slate-300
-    shadow-lg hover:bg-slate-50 dark:hover:bg-slate-400">
-    <a href="#">
-      <div class="absolute bg-logogreen -top-8 left-1/2 -ml-8 p-4 rounded-full shadow-md">
-        {% svg "_icons/bolt.svg" class="h-8 w-8" %}
-      </div>
-    </a>
-    <h3 class="px-6  pt-12 pb-3 text-center text-base font-semibold leading-7 text-logogreen">
-      Performance
+    <h3 class="px-6 pt-12 pb-3 text-center text-base font-semibold leading-7 text-logogreen">
+      {{card.title}}
     </h3>
     <div class="mx-auto">
       <p class="px-6  pt-12 pb-3 text-center text-3xl font-semibold leading-10 text-dark">
-        seL4 is 2 to 10 times faster than other comparable systems
-      </p>
-    </div>
-    <div class="px-6 pb-5 flex-auto text-base text-llight">
-      <ul class="mt-10 mx-auto max-w-xl space-y-2 text-light">
-        {% include green-tick-li.html
-          text="
-          Outperforms any other microkernels on key benchmarks"
-        %}
-        {% include green-tick-li.html
-          text="
-          Achieves high assurance without compromising performance"
-        %}
-        {% include green-tick-li.html
-          text="
-          Supports a wide range of real-world use cases"
-        %}
-      </ul>
-    </div>
-    <div class="px-6 mt-1 pb-5 ml-auto">
-      <a href="{% link About/Performance/index.html %}" class="arrow-link">Learn more
-        <span class="absolute inset-0"></span>
-      </a>
-    </div>
-  </div>
-
-  <div class="mb-20 flex flex-col relative rounded-lg light:border bg-white dark:bg-slate-300
-    shadow-lg hover:bg-slate-50 dark:hover:bg-slate-400">
-    <a href="#">
-      <div class="absolute bg-logogreen -top-8 left-1/2 -ml-8 p-4 rounded-full shadow-md">
-        {% svg "_icons/list-bullet.svg" class="h-8 w-8" %}
-      </div>
-    </a>
-    <h3 class="px-6  pt-12 pb-3 text-center text-base font-semibold leading-7 text-logogreen">
-      Features
-    </h3>
-    <div class="mx-auto">
-      <p class="px-6  pt-12 pb-3 text-center text-3xl font-semibold leading-10 text-dark ">
-        seL4 is the only verified general-purpose, capability-based operating system
+        {{card.sub}}
       </p>
     </div>
     <div class="px-6 pb-5 flex-auto text-base text-light">
-      <ul class="mt-10 m-auto max-w-xl space-y-2 text-light">
-        {% include green-tick-li.html
-            text="
-              General purpose: can run as a hypervisor or as an RTOS, or both, or
-              as the basis for a general purpose OS"
-        %}
-        {% include green-tick-li.html
-            text="
-              Capability-based: provides fine-grained access control and can isolate trusted components"
-        %}
-        {% include green-tick-li.html
-            text="
-              Cyber-retrofit: can be incrementally integrated to existing legacy systems"
-        %}
+      <ul class="mt-10 mx-auto max-w-xl space-y-2 text-light">
+        {% for item in card.items %}
+          {% include green-tick-li.html text=item %}
+        {% endfor %}
       </ul>
     </div>
     <div class="px-6 mt-1 pb-5 ml-auto">
-      <a href="{% link About/how-to-use.md %}" class="arrow-link">Learn more
+      <a href="{% link {{card.link}} %}" class="arrow-link">Learn more
         <span class="absolute inset-0"></span>
       </a>
     </div>
   </div>
+{%- endfor %}
+
 </div>
