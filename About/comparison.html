@@ -1,0 +1,188 @@
+---
+# Copyright 2020 seL4 Project a Series of LF Projects, LLC.
+# SPDX-License-Identifier: CC-BY-SA-4.0
+title: Comparison
+pre: "What is seL4?"
+pre_link: "./"
+sub: '
+<p>
+  Compared to other operating system solutions, seL4&apos;s uniqueness lies in
+  its comprehensive <a href="../Verification/index.html">formal correctness and
+  security proofs</a> while being the fastest operating system kernel available
+  on <a href="Performance/index.html">IPC performance</a>. It is
+  a <a href="whitepaperhow-to-use.html">general-purpose</a>
+  and <a href="whitepaper.html">capability-based</a> kernel,
+  supporting <a href="platforms.html">hardware</a> with Memory Management Unit
+  (MMU). It is available as <a href="https://github.com/seL4">open source</a>
+  and is <a href="use.html">deployed</a> in a wide range of sectors. The table
+  below provide a comparison with a subset of other operating systems.
+</p>'
+layout: card
+---
+
+
+
+ <div class="mx-auto max-w-2xl px-6 pt-16 sm:pt-24 lg:max-w-7xl lg:px-8">
+   <table class="w-full text-left">
+     <colgroup>
+       <col class="w-2/7">
+       <col class="w-1/7">
+       <col class="w-1/7">
+       <col class="w-1/7">
+       <col class="w-1/7">
+       <col class="w-1/7">
+     </colgroup>
+     <thead>
+       <tr>
+         <td class="p-0 pb-10"></td>
+         <th scope="col" class="p-0">
+           <div class="font-semibold text-f_green-600">seL4</div>
+         </th>
+         <th scope="col" class="p-0">
+           <div class="text-sm font-normal">QNX</div>
+         </th>
+         <th scope="col" class="p-0">
+           <div class="text-sm font-normal">Greenhill's Integrity</div>
+         </th>
+         <th scope="col" class="p-0">
+           <div class="text-sm font-normal">CertiKOS</div>
+         </th>
+         <th scope="col" class="p-0">
+           <div class="text-sm font-normal">FreeRTOS</div>
+         </th>
+       </tr>
+     </thead>
+     <tbody class="group">
+       <tr class="border-b border-t border-gray-100 last:border-none">
+         <th scope="row" class="px-0 py-4 text-sm/6 font-normal text-gray-600">Correctness Proof</th>
+         <td class="p-4 max-sm:text-center">
+            {% svg _icons/check.svg class="mt-1 h-8 w-8 flex-none text-f_green-600" %}
+         </td>
+         <td class="p-4 max-sm:text-center">
+           {% svg _icons/x-mark.svg class="mt-1 h-5 w-5 flex-none text-gray-400" %}
+         </td>
+         <td class="p-4 max-sm:text-center">
+           {% svg _icons/x-mark.svg class="mt-1 h-5 w-5 flex-none text-gray-400" %}
+         </td>
+         <td class="p-4 max-sm:text-center">
+           {% svg _icons/check.svg class="mt-1 h-5 w-5 flex-none text-gray-400" %}
+         </td>
+         <td class="p-4 max-sm:text-center">
+           {% svg _icons/x-mark.svg class="mt-1 h-5 w-5 flex-none text-gray-400" %}
+         </td>
+       </tr>
+       <tr class="border-b border-gray-100 last:border-none">
+         <th scope="row" class="px-0 py-4 text-sm/6 font-normal text-gray-600">Security Proof</th>
+         <td class="p-4 max-sm:text-center">
+            {% svg _icons/check.svg class="mt-1 h-8 w-8 flex-none text-f_green-600" %}
+         </td>
+         <td class="p-4 max-sm:text-center">
+           {% svg _icons/x-mark.svg class="mt-1 h-5 w-5 flex-none text-gray-400" %}
+         </td>
+         <td class="p-4 max-sm:text-center">
+           {% svg _icons/check.svg class="mt-1 h-5 w-5 flex-none text-f_yellow-600" %}
+         </td>
+         <td class="p-4 max-sm:text-center">
+           {% svg _icons/check.svg class="mt-1 h-5 w-5 flex-none text-gray-400" %}
+         </td>
+         <td class="p-4 max-sm:text-center">
+           {% svg _icons/x-mark.svg class="mt-1 h-5 w-5 flex-none text-gray-400" %}
+         </td>
+       </tr>
+       <tr class="border-b border-gray-100 last:border-none">
+         <th scope="row" class="px-0 py-4 text-sm/6 font-normal text-gray-600">Fast IPC</th>
+         <td class="p-4 max-sm:text-center">
+            {% svg _icons/check.svg class="mt-1 h-8 w-8 flex-none text-f_green-600" %}
+         </td>
+         <td class="p-4 max-sm:text-center">
+           {% svg _icons/x-mark.svg class="mt-1 h-5 w-5 flex-none text-gray-400" %}
+         </td>
+         <td class="p-4 max-sm:text-center">
+           {% svg _icons/x-mark.svg class="mt-1 h-5 w-5 flex-none text-gray-400" %}
+         </td>
+         <td class="p-4 max-sm:text-center">
+           {% svg _icons/x-mark.svg class="mt-1 h-5 w-5 flex-none text-gray-400" %}
+         </td>
+         <td class="p-4 max-sm:text-center">
+           {% svg _icons/x-mark.svg class="mt-1 h-5 w-5 flex-none text-gray-400" %}
+         </td>
+       </tr>
+       <tr class="border-b border-gray-100 last:border-none">
+         <th scope="row" class="px-0 py-4 text-sm/6 font-normal text-gray-600">Deployed</th>
+         <td class="p-4 max-sm:text-center">
+            {% svg _icons/check.svg class="mt-1 h-8 w-8 flex-none text-f_green-600" %}
+         </td>
+         <td class="p-4 max-sm:text-center">
+           {% svg _icons/check.svg class="mt-1 h-5 w-5 flex-none text-gray-400" %}
+         </td>
+         <td class="p-4 max-sm:text-center">
+           {% svg _icons/check.svg class="mt-1 h-5 w-5 flex-none text-gray-400" %}
+         </td>
+         <td class="p-4 max-sm:text-center">
+           {% svg _icons/x-mark.svg class="mt-1 h-5 w-5 flex-none text-gray-400" %}
+         </td>
+         <td class="p-4 max-sm:text-center">
+           {% svg _icons/check.svg class="mt-1 h-5 w-5 flex-none text-gray-400" %}
+         </td>
+       </tr>
+       <tr class="border-b border-gray-100 last:border-none">
+         <th scope="row" class="px-0 py-4 text-sm/6 font-normal text-gray-600">Capability-based</th>
+         <td class="p-4 max-sm:text-center">
+            {% svg _icons/check.svg class="mt-1 h-8 w-8 flex-none text-f_green-600" %}
+         </td>
+         <td class="p-4 max-sm:text-center">
+           {% svg _icons/question-mark-circle.svg class="mt-1 h-5 w-5 flex-none text-gray-400" %}
+         </td>
+         <td class="p-4 max-sm:text-center">
+           {% svg _icons/question-mark-circle.svg class="mt-1 h-5 w-5 flex-none text-gray-400" %}
+         </td>
+         <td class="p-4 max-sm:text-center">
+           {% svg _icons/question-mark-circle.svg class="mt-1 h-5 w-5 flex-none text-gray-400" %}
+         </td>
+         <td class="p-4 max-sm:text-center">
+           {% svg _icons/question-mark-circle.svg class="mt-1 h-5 w-5 flex-none text-gray-400" %}
+         </td>
+       </tr>
+       <tr class="border-b border-gray-100 last:border-none">
+         <th scope="row" class="px-0 py-4 text-sm/6 font-normal text-gray-600">MMU support</th>
+         <td class="p-4 max-sm:text-center">
+            {% svg _icons/check.svg class="mt-1 h-8 w-8 flex-none text-f_green-600" %}
+         </td>
+         <td class="p-4 max-sm:text-center">
+           {% svg _icons/check.svg class="mt-1 h-5 w-5 flex-none text-gray-400" %}
+         </td>
+         <td class="p-4 max-sm:text-center">
+           {% svg _icons/check.svg class="mt-1 h-5 w-5 flex-none text-gray-400" %}
+         </td>
+         <td class="p-4 max-sm:text-center">
+           {% svg _icons/question-mark-circle.svg class="mt-1 h-5 w-5 flex-none text-gray-400" %}
+         </td>
+         <td class="p-4 max-sm:text-center">
+           {% svg _icons/x-mark.svg class="mt-1 h-5 w-5 flex-none text-gray-400" %}
+         </td>
+       </tr>
+       <tr class="border-b border-gray-100 last:border-none">
+         <th scope="row" class="px-0 py-4 text-sm/6 font-normal text-gray-600">Open Source</th>
+         <td class="p-4 max-sm:text-center">
+            {% svg _icons/check.svg class="mt-1 h-8 w-8 flex-none text-f_green-600" %}
+         </td>
+         <td class="p-4 max-sm:text-center">
+           {% svg _icons/x-mark.svg class="mt-1 h-5 w-5 flex-none text-gray-400" %}
+         </td>
+         <td class="p-4 max-sm:text-center">
+           {% svg _icons/x-mark.svg class="mt-1 h-5 w-5 flex-none text-gray-400" %}
+         </td>
+         <td class="p-4 max-sm:text-center">
+           {% svg _icons/question-mark-circle.svg class="mt-1 h-5 w-5 flex-none text-gray-400" %}
+         </td>
+         <td class="p-4 max-sm:text-center">
+           {% svg _icons/check.svg class="mt-1 h-5 w-5 flex-none text-gray-400" %}
+         </td>
+       </tr>
+     </tbody>
+   </table>
+
+
+
+ </div>
+
