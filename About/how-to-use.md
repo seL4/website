@@ -13,11 +13,11 @@ seL4 is a fast, secure, and formally verified microkernel. So what can you do wi
 
 seL4 provides fast and secure OS kernel mechanisms that you can use on otherwise
 bare metal to build systems as you would with a small RTOS. You need to provide
-your own drivers or adapt them from [other sources](#getting-drivers), and you
-are free to design your system however you want with minimal overhead and
-correctness guarantees for the mechanisms that seL4 provides. You can design
-your system directly on the seL4 API or use one of the [existing tools and
-frameworks][tools] to get started quickly.
+your own drivers or adapt them from other sources, and you are free to design
+your system however you want with minimal overhead and correctness guarantees
+for the mechanisms that seL4 provides. You can design your system directly on
+the seL4 API or use one of the [existing tools and frameworks][tools] to get
+started quickly.
 
 ## Use seL4 as a Hypervisor
 
@@ -155,6 +155,6 @@ cool, tell people about it!
 [retro-article]: https://trustworthy.systems/publications/abstracts/Klein_AKMHF_18.abstract
 [retro-slides]: https://trustworthy.systems/publications/papers/Kuz_19.abstract
 [LionsOS]: https://lionsos.org/
-[KOS]: https://www.kry10.com/#platform/
+[KOS]: https://www.kry10.com/#platform
 [devkits]: tools.html#devkits
 [languages]: tools.html#languages

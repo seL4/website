@@ -85,4 +85,4 @@ on the seL4 developer mailing list.
 See [the TSC page][TSC] for current members. TSC members have at least Committer
 access to the seL4 GitHub repositories.
 
-[TSC]: /Foundation/TSC/
+[TSC]: ../Foundation/TSC/

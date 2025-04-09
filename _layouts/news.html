@@ -50,7 +50,7 @@ News about seL4, the seL4 Foundation, and the seL4 ecosystem.
   <div class="theprose prose-ul:[ul]:my-2 prose-p:[p]:my-3 prose-li:[li]:my-1.5 max-w-4xl">
     {% if news_item.img -%}
     {%- if news_item.link -%}
-    <a href="{{ news_item.link }}">
+    <a href="{{ news_item.link | relative_url }}">
       {%- endif -%}
       <img src="{{ news_item.img | relative_url }}" alt="{{ news_item.alt | default: news_item.title }}"
         class="{{img_layout}} {{c}}">

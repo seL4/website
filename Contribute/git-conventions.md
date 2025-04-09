@@ -60,5 +60,4 @@ Please follow the git commit [style guide](https://chris.beams.io/posts/git-comm
 ## Further resources
 
 * [LearnGitBranching](http://pcottle.github.io/learnGitBranching/)
-* Interactive [Git cheat sheet](http://ndpsoftware.com/git-cheatsheet.html#loc=stash)
-
+* Interactive [Git cheat sheet](http://ndpsoftware.com/git-cheatsheet.html)

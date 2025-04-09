@@ -18,6 +18,6 @@ event.
 
 Registration details to follow soon!
 
-Remember that you have until **24 April 2022** to [propose a talk](../Foundation/Summit/2023/cfp).
-To propose a talk, upload an abstract of one page or less to the **[submission
-portal](../Foundation/Summit/2023/submit)**.
+Remember that you have until **24 April 2022** to
+[propose a talk](../Foundation/Summit/2023/cfp.html). To propose a talk, upload an abstract
+of one page or less to the **[submission portal](../Foundation/Summit/2023/submit.html)**.
