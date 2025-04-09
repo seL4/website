@@ -87,26 +87,6 @@ layout: none
   @apply list-['X'] marker:text-f_red-700;
 }
 
-@utility speakers_grid {
-  @apply my-8 grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-x-16 gap-y-6 justify-center align-middle;
-}
-
-@utility speaker {
-  @apply grid grid-cols-1 grid-rows-[250px_2rem_3rem];
-
-  & a {
-    @apply no-underline! hover:underline!;
-  }
-}
-
-@utility speaker_pic {
-  @apply flex flex-col align-middle justify-center mb-8;
-
-  & img {
-    @apply rounded-lg shadow-lg;
-  }
-}
-
 @utility card-grid-3 {
   @apply grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-12 gap-y-14 pb-12 sm:pb-20;
 }
