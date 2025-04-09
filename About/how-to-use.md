@@ -6,7 +6,8 @@ sub: '
 <p>
 seL4 is a fast, secure, and formally verified microkernel. So what can you do with it?
 </p>'
-
+pre: "What is seL4?"
+pre_link: "./"
 ---
 
 ## Use seL4 as a fast and secure RTOS

@@ -21,7 +21,7 @@ no_title_heading: true
     h2="The foundation for trustworthy systems."
 %}
 
-<div class="card-grid-4">
+<div class="card-grid-3">
   {% include card.html
      icon="document-text"
      title="White Paper"
@@ -33,8 +33,22 @@ no_title_heading: true
   {% include card.html
      icon="clipboard-document-list"
      title="Fact Sheet"
-     body="Quick high-level facts and comparison to other kernels."
+     body="Quick high-level facts about seL4."
      link="fact-sheet.html"
+  %}
+
+  {% include card.html
+     icon="arrows-right-left"
+     title="Comparison"
+     body="Comparison to other operating systems."
+     link="comparison.html"
+  %}
+
+  {% include card.html
+     icon="rectangle-group"
+     title="How to use"
+     body="What you can do with the seL4 kernel."
+     link="how-to-use.html"
   %}
 
   {% include card.html
