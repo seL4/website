@@ -6,16 +6,22 @@ pre: "What is seL4?"
 pre_link: "./"
 sub: '
 <p>
+  <!--seL4 offers a unique set of <a href="#features">features</a> compared
+      to <a href="#comparison">other operating systems</a>.-->
+
   Compared to other operating system solutions, seL4&apos;s uniqueness lies in
   its comprehensive <a href="../Verification/index.html">formal correctness and
   security proofs</a> while being the fastest operating system kernel available
   on <a href="Performance/index.html">IPC performance</a>. It is
   a <a href="how-to-use.html">general-purpose</a>
   and <a href="whitepaper.html">capability-based</a> kernel,
-  supporting <a href="../platforms.html">hardware</a> with Memory Management Unit
-  (MMU). It is available as <a href="https://github.com/seL4">open source</a>
-  and is <a href="use.html">deployed</a> in a wide range of sectors. The table
-  below provide a comparison with a subset of other operating systems.
+  supporting <a href="../platforms.html">hardware</a> with Memory Management
+  Unit (MMU). It is available as <a href="https://github.com/seL4">open
+  source</a> and is <a href="use.html">deployed</a> in a wide range of sectors.
+  The table below provide a comparison with a subset of other operating systems:
+  QNX, Greenhill&apos;s Integrity Kernel, CertiKOS, and FreeRTOS. Other systems
+  like Ubuntu Core, SELinux, Wind River&apos;s VxWorks have large monolithic
+  kernel and thus much larger attack surface.
 </p>'
 layout: card
 
@@ -27,17 +33,17 @@ products:
     - "no"     #security proof
     - "no"     #fast ipc
     - "yes"    #deployed
-    - "unsure" #cap based
+    - "no"     #cap based
     - "yes"    #mmu support
     - "no"     #open source
 
 - name: Integrity
   features:
     - "no"     #FC
-    - "ish"    #security-proof
+    - "partial"#security-proof
     - "no"     #fast-ipc
     - "yes"    #deployed
-    - "unsure" #cap-based
+    - "no"     #cap-based
     - "yes"    #mmu support
     - "no"     #open source
 
@@ -47,7 +53,7 @@ products:
     - "yes"    #security-proof
     - "no"     #fast-ipc
     - "no"     #deployed
-    - "unsure" #cap-based
+    - "no"     #cap-based
     - "unsure" #mmu support
     - "unsure" #open source
 
@@ -57,7 +63,7 @@ products:
     - "no"     #security-proof
     - "no"     #fast-ipc
     - "yes"    #deployed
-    - "unsure" #cap-based
+    - "no"     #cap-based
     - "no"     #mmu support
     - "yes"    #open source
 
@@ -73,7 +79,8 @@ products:
 
 ---
 
-<!-- FIXME: confirm QNX uses capabilities in same sense: https://www.qnx.com/developers/docs/8.0/com.qnx.doc.pci_server/topic/capability.html -->
+<!-- FIXME: confirm QNX does not use capabilities in same sense: https://www.qnx.com/developers/docs/8.0/com.qnx.doc.pci_server/topic/capability.html -->
+
 
 {% capture icon-yes %}
 {% svg _icons/check.svg class="mt-1 h-5 w-5 flex-none stroke-2 text-f_green-500" %}
@@ -83,14 +90,48 @@ products:
 {% svg _icons/minus.svg class="mt-1 h-5 w-5 flex-none text-gray-400" %}
 {% endcapture %}
 
+{% capture icon-partial %}
+{% svg _icons/check.svg class="mt-1 h-5 w-5 flex-none text-f_yellow-300 dark:text-f_yellow-200" %}
+{% endcapture %}
+
 {% capture icon-unsure %}
 ?
 {% endcapture %}
 
+<!--
+<div class="section-borders">
+  <h2 class="h2-size text-center" id="features">seL4 unique set of features</h2>
+
+  <div class="mx-auto section-max-w text-center text-base sm:text-lg text-light">
+    <p class="py-4">
+      Compared to other operating system solutions, seL4&apos;s uniqueness lies
+      in its comprehensive <a href="../Verification/index.html">formal
+      correctness and security proofs</a> while being the fastest operating
+      system kernel available on <a href="Performance/index.html">IPC
+      performance</a>. It is a <a href="how-to-use.html">general-purpose</a>
+      and <a href="whitepaper.html">capability-based</a> kernel,
+      supporting <a href="../platforms.html">hardware</a> with Memory Management
+      Unit (MMU). It is available as <a href="https://github.com/seL4">open
+      source</a> and is <a href="use.html">deployed</a> in a wide range of
+      sectors.
+    </p>
+  </div>
+</div>
 
 
+<div class="section-borders">
+  <h2 class="h2-size text-center" id="cover">Comparison to other systems</h2>
 
- <div class="mx-auto max-w-2xl px-6 pt-16 sm:pt-24 lg:max-w-7xl lg:px-8">
+  <div class="mx-auto section-max-w text-center text-base sm:text-lg text-light">
+    <p class="py-4">
+      The table below provide a comparison with a subset of other operating
+      systems: QNX, Greenhill's Integrity Kernel, CertiKOS, and FreeRTOS.
+    </p>
+  </div>
+</div>
+-->
+
+ <div class="mx-auto max-w-2xl px-6 pt-4 sm:pt-8 lg:max-w-7xl lg:px-8">
    <table class="w-full text-left">
      <colgroup>
        <col class="w-2/7">
@@ -106,9 +147,11 @@ products:
 	 {% for product in page.products -%}
          <th scope="col" class="p-0">
 	   {% if product.name=="seL4" %}
-           <div class="font-normal text-f_green-600">{{product.name}}</div>
+           <div class="font-normal px-2 text-sm sm:text-base text-f_green-600">{{product.name}}</div>
 	   {% else %}
-           <div class="font-normal text-gray-600">{{product.name}}</div>
+           <div class="font-normal px-2 text-sm sm:text-base text-gray-600 dark:text-gray-400">
+	     {{product.name}}
+	   </div>
 	   {% endif %}
          </th>
 	 {%- endfor %}
@@ -116,8 +159,8 @@ products:
      </thead>
      <tbody class="group">
        {% for i in (0..6) %}
-       <tr class="border-b border-t border-gray-100 last:border-none">
-         <th scope="row" class="px-0 py-4 text-sm/6 font-normal text-gray-600">
+       <tr class="border-b border-t border-gray-100 dark:border-gray-800 last:border-none">
+         <th scope="row" class="px-0 py-4 text-sm font-normal text-gray-600 dark:text-gray-400">
 	   {% if i==0 %} Correctness proof {% endif %}
 	   {% if i==1 %} Security proof {% endif %}
 	   {% if i==2 %} Fast IPC {% endif %}
@@ -131,11 +174,14 @@ products:
 	   {% if product.features[i]=="yes"%}
            {{ icon-yes }}
 	   {% endif %}
-	   {% if product.features[i]=="unsure" %}
-           {{ icon-unsure }}
-	   {% endif %}
 	   {% if product.features[i]=="no" %}
            {{ icon-no }}
+	   {% endif %}
+	   {% if product.features[i]=="partial" %}
+           {{ icon-partial }}
+	   {% endif %}
+	   {% if product.features[i]=="unsure" %}
+           {{ icon-unsure }}
 	   {% endif %}
          </td>
 	 {% endfor %}
