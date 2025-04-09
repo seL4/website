@@ -6,11 +6,15 @@
 {%- else %}
 {%-   assign pre = "seL4 Home" %}
 {%-   assign pre_link = "/" %}
-{%- endif -%}
+{%- endif %}
+{%- assign fst = pre_link | split: "" | first %}
+{%- if fst == "/" %}
+{%-  assign pre_link = pre_link | relative_url %}
+{%- endif %}
 <div class="px-6 lg:px-8 pt-6 sm:pt-8 pb-12 sm:pb-20 section-borders">
   <div class="mx-auto max-w-4xl text-center">
     <div class="text-center text-lg font-semibold leading-7 text-f_green-600 {% unless page.nodark %}dark:text-f_green-400{%endunless%}">
-      {% if pre_link %}<a href="{{ pre_link | relative_url }}" class="hover:underline">{% endif %}
+      {% if pre_link %}<a href="{{ pre_link }}" class="hover:underline">{% endif %}
       {{ pre }}
       {% if pre_link %}
       {% unless include.noarrow %}{% svg _icons/arrow-uturn-left.svg class="inline-icon -mt-2" %}{% endunless %}
