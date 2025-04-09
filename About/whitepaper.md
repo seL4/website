@@ -42,9 +42,11 @@ policy-free core and can therefore form a dependable basis for building
 arbitrary systems in many different usage scenarios.
 
 seL4 is a member of the [L4 family of
-microkernels](https://en.wikipedia.org/wiki/L4_microkernel_family "L4 microkernel family on wikipedia"),
-and is the world's most advanced, most highly assured operating-system
-kernel.
+microkernels](https://en.wikipedia.org/wiki/L4_microkernel_family "L4
+microkernel family on wikipedia"), and is the world's most advanced, most highly
+assured operating-system kernel. It can be [used](how-to-use.html) as a
+hypervisor or as an RTOS, or both, or as the basis for a general purpose
+operating system.
 
 seL4's [formal verification](../Verification/) sets it apart from any other
 operating system. In a nutshell, it provides the highest assurance of
