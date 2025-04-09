@@ -132,23 +132,24 @@ layout: none
 }
 
 @utility menu-item-group {
-  @apply relative flex gap-x-6 rounded-lg p-4 hover:bg-gray-50;
+  @apply relative flex gap-x-6 rounded-lg p-4 hover:bg-gray-50 dark:hover:bg-slate-800;
 }
 
 @utility menu-icon-div {
-  @apply mt-1 flex h-11 w-11 flex-none items-center justify-center rounded-lg bg-gray-50 group-hover:bg-white;
+  @apply mt-1 flex h-11 w-11 flex-none items-center justify-center rounded-lg
+         bg-gray-50 group-hover:bg-white dark:bg-slate-900 group-hover:dark:bg-darkblue;
 }
 
 @utility menu-icon {
-  @apply h-6 w-6 text-lightcol group-hover:text-accentdark;
+  @apply h-6 w-6 text-light group-hover:text-f_green-600 dark:group-hover:text-logogreen;
 }
 
 @utility menu-one-col {
-  @apply absolute -left-8 top-full z-10 mt-4 w-screen max-w-md overflow-hidden rounded-3xl bg-white text-sm leading-6 shadow-lg ring-1 ring-gray-900/5 opacity-0;
+  @apply absolute -left-8 top-full z-10 mt-4 w-screen max-w-md overflow-hidden rounded-3xl bg-white dark:bg-darkblue text-sm leading-6 shadow-lg ring-1 ring-gray-900/5 dark:ring-gray-100/20 opacity-0;
 }
 
 @utility dropbtn-mobile {
-  @apply flex w-full items-center justify-between rounded-lg py-2 pl-3 pr-3.5 text-base font-semibold leading-7 text-darkcol hover:bg-gray-50;
+  @apply flex w-full items-center justify-between rounded-lg py-2 pl-3 pr-3.5 text-base font-semibold leading-7 text-dark hover:bg-gray-50 dark:hover:bg-slate-800;
 }
 
 @utility mobile-menu {

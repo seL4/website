@@ -2,16 +2,16 @@
 <div class="lg:hidden hidden" id="mobile-menu" role="dialog" aria-modal="true">
   <!-- Background backdrop, show/hide based on slide-over state. -->
   <div class="fixed inset-0 z-10"></div>
-  <div class="fixed inset-y-0 right-0 z-10 w-full overflow-y-auto bg-white px-6 py-6 sm:max-w-sm sm:ring-1 sm:ring-gray-900/10">
+  <div class="fixed inset-y-0 right-0 z-10 w-full overflow-y-auto bg-white dark:bg-darkblue px-6 py-6 sm:max-w-sm sm:ring-1 sm:ring-gray-900/10 dark:sm:ring-gray-100/20">
     <div class="flex items-center justify-between">
       <span class="-m-1.5 p-1.5"> </span>
-      <button type="button" class="-m-2.5 rounded-md p-2.5 text-gray-700">
+      <button type="button" class="-m-2.5 rounded-md p-2.5 text-light">
         <span class="sr-only">Close menu</span>
         {% svg _icons/x-mark.svg class="h-6 w-6" %}
       </button>
     </div>
     <div class="mt-6 flow-root">
-      <div class="-my-6 divide-y divide-gray-500/10">
+      <div class="-my-6 divide-y divide-gray-500/10 dark:divide-gray-200/40">
         <div class="space-y-2 py-6">
           <div class="-mx-3">
 {%- for n in menu -%}
@@ -28,13 +28,13 @@
 {%-     assign icon = "_icons/" | append: sub[0] | append: ".svg" -%}
 {%-     assign short = sub[1] | escape -%}
 {%-     assign url = sub[3] -%}
-              <a href="{{ url | relative_url }}" class="block rounded-lg py-2 pl-6 pr-3 text-sm font-semibold leading-7 text-gray-900 hover:bg-gray-50">{% svg "{{icon}}" class="inline-icon mr-2" %} {{ short }}</a>
+              <a href="{{ url | relative_url }}" class="block rounded-lg py-2 pl-6 pr-3 text-sm font-semibold leading-7 text-dark hover:bg-gray-50 dark:hover:bg-slate-800">{% svg "{{icon}}" class="inline-icon mr-2" %} {{ short }}</a>
 {%-   endfor -%}
 {%-   for sub in extra -%}
 {%-     assign icon = "_icons/" | append: sub[0] | append: ".svg" -%}
 {%-     assign short = sub[1] | escape -%}
 {%-     assign url = sub[3] -%}
-              <a href="{{ url | relative_url }}" class="block rounded-lg py-2 pl-6 pr-3 text-sm font-semibold leading-7 text-gray-900 hover:bg-gray-50">{% svg "{{icon}}" class="inline-icon mr-2" %} {{ short }}</a>
+              <a href="{{ url | relative_url }}" class="block rounded-lg py-2 pl-6 pr-3 text-sm font-semibold leading-7 text-dark hover:bg-gray-50 dark:hover:bg-slate-800">{% svg "{{icon}}" class="inline-icon mr-2" %} {{ short }}</a>
 {%- endfor -%}
             </div>
 {%- endfor -%}
@@ -42,8 +42,8 @@
         </div>
         <!-- FIXME: leave out? -->
         <div class="py-6">
-          <a href="{{ '/Foundation/Join' | relative_url }}" class="-mx-3 block rounded-lg px-3 py-2.5 text-base font-semibold leading-7 text-gray-900 hover:bg-gray-50">Become a Member</a>
-          <a href="https://docs.sel4.systems" class="-mx-3 block rounded-lg px-3 py-2.5 text-base font-semibold leading-7 text-gray-900 hover:bg-gray-50">Docsite {% svg _icons/other/external.svg class="ml-1 inline-icon" %}</a>
+          <a href="{{ '/Foundation/Join' | relative_url }}" class="-mx-3 block rounded-lg px-3 py-2.5 text-base font-semibold leading-7 text-dark hover:bg-gray-50 dark:hover:bg-slate-800">Become a Member</a>
+          <a href="https://docs.sel4.systems" class="-mx-3 block rounded-lg px-3 py-2.5 text-base font-semibold leading-7 text-dark hover:bg-gray-50 dark:hover:bg-slate-800">Docsite {% svg _icons/other/external.svg class="ml-1 inline-icon" %}</a>
         </div>
       </div>
     </div>

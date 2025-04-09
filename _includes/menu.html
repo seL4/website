@@ -12,7 +12,7 @@
 
 {%-   if submenu.size() > 6 -%}
   <div class="absolute -left-14 top-full z-10 mt-4 flex w-screen max-w-max px-4 transition ease-in-out duration-200 dropmenu">
-    <div class="w-screen max-w-md flex-auto overflow-hidden rounded-3xl bg-white text-sm leading-6 shadow-lg ring-1 ring-gray-900/5 lg:max-w-3xl">
+    <div class="w-screen max-w-md flex-auto overflow-hidden rounded-3xl bg-white dark:bg-darkblue text-sm leading-6 shadow-lg ring-1 ring-gray-900/5 dark:ring-gray-100/20 lg:max-w-3xl">
       <div class="grid grid-cols-1 gap-x-6 gap-y-1 p-4 lg:grid-cols-2">
 {%    else %}
   <div class="menu-one-col dropmenu">
@@ -26,17 +26,17 @@
         <div class="group menu-item-group">
           <div class="menu-icon-div">{%- svg "{{icon}}" class="menu-icon" -%}</div>
           <div>
-            <a href="{{ url | relative_url }}" class="font-semibold text-gray-900">
+            <a href="{{ url | relative_url }}" class="font-semibold text-dark">
               {{ short }}
               <span class="absolute inset-0"></span>
             </a>
-            <p class="mt-1 text-gray-600">{{ long }}</p>
+            <p class="mt-1 text-light">{{ long }}</p>
           </div>
         </div>
 {%-   endfor -%}
 {%-   if name contains "News" -%}
     </div>
-      <div class="bg-gray-50 p-8">
+      <div class="bg-gray-50 p-8 dark:bg-slate-900">
         <div class="flex justify-between">
           <h3 class="text-sm font-semibold leading-6 text-gray-500">Recent news</h3>
           <a href="{{ '/news/' | relative_url}}" class="text-sm font-semibold leading-6 text-f_green-600">See all <span aria-hidden="true">&rarr;</span></a>
@@ -51,8 +51,8 @@
 {%-       assign anchor = item.anchor | default: mm_dd -%}
 {%-       assign url = "/news/" | append: year | append: ".html" | append: "#" | append: anchor -%}
           <li class="relative">
-            <time datetime="{{ iso }}" class="block text-xs leading-6 text-gray-600">{{ date }}</time>
-            <a href="{{ url | relative_url }}" class="block truncate text-sm font-semibold leading-6 text-gray-900">
+            <time datetime="{{ iso }}" class="block text-xs leading-6 text-light">{{ date }}</time>
+            <a href="{{ url | relative_url }}" class="block truncate text-sm font-semibold leading-6 text-dark">
               {{ item.title }}
               <span class="absolute inset-0"></span>
             </a>
@@ -64,20 +64,20 @@
 {%-   endif %}
       </div>
 {%-   if extra -%}
-      <div class="grid grid-cols-1 gap-x-6 gap-y-1 p-4 lg:grid-cols-2 bg-gray-50">
+      <div class="grid grid-cols-1 gap-x-6 gap-y-1 p-4 lg:grid-cols-2 bg-gray-50 dark:bg-slate-900">
 {%-     for sub in extra -%}
 {%-       assign icon = "_icons/" | append: sub[0] | append: ".svg" -%}
 {%-       assign short = sub[1] | escape -%}
 {%-       assign long = sub[2] | escape -%}
 {%-       assign url = sub[3] -%}
-        <div class="group menu-item-group hover:bg-gray-100">
+        <div class="group menu-item-group hover:bg-gray-100 hover:dark:bg-slate-800">
           <div class="menu-icon-div">{%- svg "{{icon}}" class="menu-icon" -%}</div>
           <div>
-            <a href="{{ url | relative_url }}" class="font-semibold text-gray-900">
+            <a href="{{ url | relative_url }}" class="font-semibold text-dark">
               {{ short }}
               <span class="absolute inset-0"></span>
             </a>
-            <p class="mt-1 text-gray-600">{{ long }}</p>
+            <p class="mt-1 text-light">{{ long }}</p>
           </div>
         </div>
 {%-     endfor -%}
