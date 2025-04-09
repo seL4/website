@@ -107,27 +107,6 @@ layout: none
   }
 }
 
-@utility people_grid {
-  @apply my-8 grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-x-8 gap-y-6 w-full justify-center align-middle;
-}
-
-@utility person {
-  @apply rounded-2xl p-4 text-center text-sm
-            grid grid-cols-1 grid-rows-[120px_4em_4em] justify-center align-middle;
-  @apply hover:bg-gray-100 dark:hover:bg-gray-800;
-}
-
-@utility person_no_link {
-  @apply rounded-2xl p-4 text-center text-sm
-            grid grid-cols-1 grid-rows-[120px_4em_4em] justify-center align-middle;
-}
-
-@utility person_pic {
-  & img {
-    @apply rounded-md shadow-md mx-auto my-auto;
-  }
-}
-
 @utility card-grid-3 {
   @apply grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-12 gap-y-14 pb-12 sm:pb-20;
 }
