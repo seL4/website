@@ -4,6 +4,7 @@
 layout: base
 ---
 
+<div class="mb-18 sm:mb-24">
 {%- assign this_year = page.year | append: "" -%}
 {% capture sub %}
 <p>
@@ -37,17 +38,10 @@ News about seL4, the seL4 Foundation, and the seL4 ecosystem.
 {%-   assign anchor = news_item.anchor | default: default_anchor -%}
 {%-   if year == this_year -%}
 
-{% comment %}
-FIXME: news_item..width is currently being ignored, because tailwind needs to see
-       the value in the source for the grid to work. Need to either not use
-       grid or figure out some other way to set the width. Or provide only
-       a finite set of choices (narrow, standard, wide).
-{% endcomment %}
-{%- if news_item.img -%}
-{%-   assign w = "lg:grid-cols-[auto_30%]" -%}
-{%- else -%}
-{%-   assign w = "lg:grid-cols-[auto_0%]" -%}
-{%- endif -%}
+{%-   assign img_layout = "float-right rounded-xl -mt-1 ml-4 sm:ml-6 lg:-mr-16" -%}
+{%-   assign w = news_item.img_w | default: "w-2/5" -%}
+{%-   assign default_img_class = "bg-white p-6 sm:p-8 " | append: w -%}
+{%-   assign c = news_item.img_class | default: default_img_class -%}
 
 <article class="max-w-4xl mx-auto mb-12 sm:mb-18 pt-2 pb-8 px-6 lg:px-8 clear-both">
 <a href="#{{anchor}}" class="text-base sm:text-lg hover:underline text-gray-400 pt-16 lg:pt-20"><time datetime="{{ iso }}" id="{{anchor}}">{{ date }}</time></a>
@@ -59,7 +53,7 @@ FIXME: news_item..width is currently being ignored, because tailwind needs to se
   {%-     endif -%}
       <img src="{{ news_item.img | relative_url }}"
            alt="{{ news_item.alt | default: news_item.title }}"
-           class="float-right rounded-xl -mt-1 pt-6 sm:pt-8 px-6 sm:px-8 pb-6 sm:pb-8 ml-4 sm:ml-6 bg-white w-2/5 lg:-mr-16" >
+           class="{{img_layout}} {{c}}" >
   {%-     if news_item.link -%}
     </a>
   {%-     endif -%}
@@ -70,3 +64,4 @@ FIXME: news_item..width is currently being ignored, because tailwind needs to se
 
 {%   endif -%}
 {%- endfor -%}
+</div>
