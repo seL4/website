@@ -18,7 +18,76 @@ sub: '
   below provide a comparison with a subset of other operating systems.
 </p>'
 layout: card
+
+products:
+
+- name: QNX
+  features:
+    - "no"     #FC
+    - "no"     #security proof
+    - "no"     #fast ipc
+    - "yes"    #deployed
+    - "unsure" #cap based
+    - "yes"    #mmu support
+    - "no"     #open source
+
+- name: Integrity
+  features:
+    - "no"     #FC
+    - "ish"    #security-proof
+    - "no"     #fast-ipc
+    - "yes"    #deployed
+    - "unsure" #cap-based
+    - "yes"    #mmu support
+    - "no"     #open source
+
+- name: CertiKOS
+  features:
+    - "yes"    #FC
+    - "yes"    #security-proof
+    - "no"     #fast-ipc
+    - "no"     #deployed
+    - "unsure" #cap-based
+    - "unsure" #mmu support
+    - "unsure" #open source
+
+- name: FreeRTOS
+  features:
+    - "no"     #FC
+    - "no"     #security-proof
+    - "no"     #fast-ipc
+    - "yes"    #deployed
+    - "unsure" #cap-based
+    - "no"     #mmu support
+    - "yes"    #open source
+
+- name: seL4
+  features:
+    - "yes"    #FC
+    - "yes"    #security-proof
+    - "yes"    #fast-ipc
+    - "yes"    #deployed
+    - "yes"    #cap-based
+    - "yes"    #mmu support
+    - "yes"    #open source
+
 ---
+
+<!-- FIXME: confirm QNX uses capabilities in same sense: https://www.qnx.com/developers/docs/8.0/com.qnx.doc.pci_server/topic/capability.html -->
+
+{% capture icon-yes %}
+{% svg _icons/check.svg class="mt-1 h-5 w-5 flex-none stroke-2 text-f_green-500" %}
+{% endcapture %}
+
+{% capture icon-no %}
+{% svg _icons/minus.svg class="mt-1 h-5 w-5 flex-none text-gray-400" %}
+{% endcapture %}
+
+{% capture icon-unsure %}
+?
+{% endcapture %}
+
+
 
 
  <div class="mx-auto max-w-2xl px-6 pt-16 sm:pt-24 lg:max-w-7xl lg:px-8">
@@ -34,154 +103,44 @@ layout: card
      <thead>
        <tr>
          <td class="p-0 pb-10"></td>
+	 {% for product in page.products -%}
          <th scope="col" class="p-0">
-           <div class="font-semibold text-f_green-600">seL4</div>
+	   {% if product.name=="seL4" %}
+           <div class="font-normal text-f_green-600">{{product.name}}</div>
+	   {% else %}
+           <div class="font-normal text-gray-600">{{product.name}}</div>
+	   {% endif %}
          </th>
-         <th scope="col" class="p-0">
-           <div class="text-sm font-normal">QNX</div>
-         </th>
-         <th scope="col" class="p-0">
-           <div class="text-sm font-normal">Greenhill's Integrity</div>
-         </th>
-         <th scope="col" class="p-0">
-           <div class="text-sm font-normal">CertiKOS</div>
-         </th>
-         <th scope="col" class="p-0">
-           <div class="text-sm font-normal">FreeRTOS</div>
-         </th>
+	 {%- endfor %}
        </tr>
      </thead>
      <tbody class="group">
+       {% for i in (0..6) %}
        <tr class="border-b border-t border-gray-100 last:border-none">
-         <th scope="row" class="px-0 py-4 text-sm/6 font-normal text-gray-600">Correctness Proof</th>
+         <th scope="row" class="px-0 py-4 text-sm/6 font-normal text-gray-600">
+	   {% if i==0 %} Correctness proof {% endif %}
+	   {% if i==1 %} Security proof {% endif %}
+	   {% if i==2 %} Fast IPC {% endif %}
+	   {% if i==3 %} Deployed {% endif %}
+	   {% if i==4 %} Capability-based {% endif %}
+	   {% if i==5 %} MMU support {% endif %}
+	   {% if i==6 %} Open source {% endif %}
+	 </th>
+	 {% for product in page.products -%}
          <td class="p-4 max-sm:text-center">
-            {% svg _icons/check.svg class="mt-1 h-8 w-8 flex-none text-f_green-600" %}
+	   {% if product.features[i]=="yes"%}
+           {{ icon-yes }}
+	   {% endif %}
+	   {% if product.features[i]=="unsure" %}
+           {{ icon-unsure }}
+	   {% endif %}
+	   {% if product.features[i]=="no" %}
+           {{ icon-no }}
+	   {% endif %}
          </td>
-         <td class="p-4 max-sm:text-center">
-           {% svg _icons/x-mark.svg class="mt-1 h-5 w-5 flex-none text-gray-400" %}
-         </td>
-         <td class="p-4 max-sm:text-center">
-           {% svg _icons/x-mark.svg class="mt-1 h-5 w-5 flex-none text-gray-400" %}
-         </td>
-         <td class="p-4 max-sm:text-center">
-           {% svg _icons/check.svg class="mt-1 h-5 w-5 flex-none text-gray-400" %}
-         </td>
-         <td class="p-4 max-sm:text-center">
-           {% svg _icons/x-mark.svg class="mt-1 h-5 w-5 flex-none text-gray-400" %}
-         </td>
+	 {% endfor %}
        </tr>
-       <tr class="border-b border-gray-100 last:border-none">
-         <th scope="row" class="px-0 py-4 text-sm/6 font-normal text-gray-600">Security Proof</th>
-         <td class="p-4 max-sm:text-center">
-            {% svg _icons/check.svg class="mt-1 h-8 w-8 flex-none text-f_green-600" %}
-         </td>
-         <td class="p-4 max-sm:text-center">
-           {% svg _icons/x-mark.svg class="mt-1 h-5 w-5 flex-none text-gray-400" %}
-         </td>
-         <td class="p-4 max-sm:text-center">
-           {% svg _icons/check.svg class="mt-1 h-5 w-5 flex-none text-f_yellow-600" %}
-         </td>
-         <td class="p-4 max-sm:text-center">
-           {% svg _icons/check.svg class="mt-1 h-5 w-5 flex-none text-gray-400" %}
-         </td>
-         <td class="p-4 max-sm:text-center">
-           {% svg _icons/x-mark.svg class="mt-1 h-5 w-5 flex-none text-gray-400" %}
-         </td>
-       </tr>
-       <tr class="border-b border-gray-100 last:border-none">
-         <th scope="row" class="px-0 py-4 text-sm/6 font-normal text-gray-600">Fast IPC</th>
-         <td class="p-4 max-sm:text-center">
-            {% svg _icons/check.svg class="mt-1 h-8 w-8 flex-none text-f_green-600" %}
-         </td>
-         <td class="p-4 max-sm:text-center">
-           {% svg _icons/x-mark.svg class="mt-1 h-5 w-5 flex-none text-gray-400" %}
-         </td>
-         <td class="p-4 max-sm:text-center">
-           {% svg _icons/x-mark.svg class="mt-1 h-5 w-5 flex-none text-gray-400" %}
-         </td>
-         <td class="p-4 max-sm:text-center">
-           {% svg _icons/x-mark.svg class="mt-1 h-5 w-5 flex-none text-gray-400" %}
-         </td>
-         <td class="p-4 max-sm:text-center">
-           {% svg _icons/x-mark.svg class="mt-1 h-5 w-5 flex-none text-gray-400" %}
-         </td>
-       </tr>
-       <tr class="border-b border-gray-100 last:border-none">
-         <th scope="row" class="px-0 py-4 text-sm/6 font-normal text-gray-600">Deployed</th>
-         <td class="p-4 max-sm:text-center">
-            {% svg _icons/check.svg class="mt-1 h-8 w-8 flex-none text-f_green-600" %}
-         </td>
-         <td class="p-4 max-sm:text-center">
-           {% svg _icons/check.svg class="mt-1 h-5 w-5 flex-none text-gray-400" %}
-         </td>
-         <td class="p-4 max-sm:text-center">
-           {% svg _icons/check.svg class="mt-1 h-5 w-5 flex-none text-gray-400" %}
-         </td>
-         <td class="p-4 max-sm:text-center">
-           {% svg _icons/x-mark.svg class="mt-1 h-5 w-5 flex-none text-gray-400" %}
-         </td>
-         <td class="p-4 max-sm:text-center">
-           {% svg _icons/check.svg class="mt-1 h-5 w-5 flex-none text-gray-400" %}
-         </td>
-       </tr>
-       <tr class="border-b border-gray-100 last:border-none">
-         <th scope="row" class="px-0 py-4 text-sm/6 font-normal text-gray-600">Capability-based</th>
-         <td class="p-4 max-sm:text-center">
-            {% svg _icons/check.svg class="mt-1 h-8 w-8 flex-none text-f_green-600" %}
-         </td>
-         <td class="p-4 max-sm:text-center">
-           {% svg _icons/question-mark-circle.svg class="mt-1 h-5 w-5 flex-none text-gray-400" %}
-         </td>
-         <td class="p-4 max-sm:text-center">
-           {% svg _icons/question-mark-circle.svg class="mt-1 h-5 w-5 flex-none text-gray-400" %}
-         </td>
-         <td class="p-4 max-sm:text-center">
-           {% svg _icons/question-mark-circle.svg class="mt-1 h-5 w-5 flex-none text-gray-400" %}
-         </td>
-         <td class="p-4 max-sm:text-center">
-           {% svg _icons/question-mark-circle.svg class="mt-1 h-5 w-5 flex-none text-gray-400" %}
-         </td>
-       </tr>
-       <tr class="border-b border-gray-100 last:border-none">
-         <th scope="row" class="px-0 py-4 text-sm/6 font-normal text-gray-600">MMU support</th>
-         <td class="p-4 max-sm:text-center">
-            {% svg _icons/check.svg class="mt-1 h-8 w-8 flex-none text-f_green-600" %}
-         </td>
-         <td class="p-4 max-sm:text-center">
-           {% svg _icons/check.svg class="mt-1 h-5 w-5 flex-none text-gray-400" %}
-         </td>
-         <td class="p-4 max-sm:text-center">
-           {% svg _icons/check.svg class="mt-1 h-5 w-5 flex-none text-gray-400" %}
-         </td>
-         <td class="p-4 max-sm:text-center">
-           {% svg _icons/question-mark-circle.svg class="mt-1 h-5 w-5 flex-none text-gray-400" %}
-         </td>
-         <td class="p-4 max-sm:text-center">
-           {% svg _icons/x-mark.svg class="mt-1 h-5 w-5 flex-none text-gray-400" %}
-         </td>
-       </tr>
-       <tr class="border-b border-gray-100 last:border-none">
-         <th scope="row" class="px-0 py-4 text-sm/6 font-normal text-gray-600">Open Source</th>
-         <td class="p-4 max-sm:text-center">
-            {% svg _icons/check.svg class="mt-1 h-8 w-8 flex-none text-f_green-600" %}
-         </td>
-         <td class="p-4 max-sm:text-center">
-           {% svg _icons/x-mark.svg class="mt-1 h-5 w-5 flex-none text-gray-400" %}
-         </td>
-         <td class="p-4 max-sm:text-center">
-           {% svg _icons/x-mark.svg class="mt-1 h-5 w-5 flex-none text-gray-400" %}
-         </td>
-         <td class="p-4 max-sm:text-center">
-           {% svg _icons/question-mark-circle.svg class="mt-1 h-5 w-5 flex-none text-gray-400" %}
-         </td>
-         <td class="p-4 max-sm:text-center">
-           {% svg _icons/check.svg class="mt-1 h-5 w-5 flex-none text-gray-400" %}
-         </td>
-       </tr>
+       {% endfor %}
      </tbody>
    </table>
-
-
-
- </div>
 
