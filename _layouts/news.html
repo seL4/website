@@ -42,29 +42,25 @@ News about seL4, the seL4 Foundation, and the seL4 ecosystem.
 {%-   assign default_img_class = "bg-white p-6 sm:p-8 " | append: w -%}
 {%-   assign c = news_item.img_class | default: default_img_class -%}
 
-<div class="max-w-7xl mx-auto overflow-hidden">
-  <article class="relative max-w-4xl mx-auto mb-12 sm:mb-18 pt-2 pb-8 px-6 lg:px-8 clear-both">
-    <a href="#{{anchor}}" class="text-base sm:text-lg hover:underline text-gray-400 pt-16 lg:pt-20">
-      <time datetime="{{ iso }}" id="{{anchor}}">{{ date }}</time>
-    </a>
-    <div class="absolute top-5.5 -ml-2 h-px w-full -translate-x-full bg-f_blue-900/20 dark:bg-f_blue-200 sm:-ml-4"
-         aria-hidden="true"></div>
-    <h2 class="mb-8 mt-2 h2-size">{{ news_item.title }}</h2>
-    <div class="theprose prose-ul:[ul]:my-2 prose-p:[p]:my-3 prose-li:[li]:my-1.5 max-w-4xl">
-      {% if news_item.img -%}
-      {%- if news_item.link -%}
-      <a href="{{ news_item.link }}">
-        {%- endif -%}
-        <img src="{{ news_item.img | relative_url }}" alt="{{ news_item.alt | default: news_item.title }}"
-          class="{{img_layout}} {{c}}">
-        {%- if news_item.link -%}
-      </a>
+<article class="max-w-4xl mx-auto mb-12 sm:mb-18 pt-2 pb-8 px-6 lg:px-8 clear-both">
+  <a href="#{{anchor}}" class="text-base sm:text-lg hover:underline text-gray-400 pt-16 lg:pt-20">
+    <time datetime="{{ iso }}" id="{{anchor}}">{{ date }}</time>
+  </a>
+  <h2 class="mb-8 mt-2 h2-size">{{ news_item.title }}</h2>
+  <div class="theprose prose-ul:[ul]:my-2 prose-p:[p]:my-3 prose-li:[li]:my-1.5 max-w-4xl">
+    {% if news_item.img -%}
+    {%- if news_item.link -%}
+    <a href="{{ news_item.link }}">
       {%- endif -%}
-      {%- endif %}
-      {{ news_item.content }}
-    </div>
-  </article>
-</div>
+      <img src="{{ news_item.img | relative_url }}" alt="{{ news_item.alt | default: news_item.title }}"
+        class="{{img_layout}} {{c}}">
+      {%- if news_item.link -%}
+    </a>
+    {%- endif -%}
+    {%- endif %}
+    {{ news_item.content }}
+  </div>
+</article>
 
 {% include centered-up-button.html margins="mb-12 md:mb-24" %}
 
