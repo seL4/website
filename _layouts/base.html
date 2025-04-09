@@ -12,7 +12,7 @@ Use a query string with the time of the last build to cache bust site CSS file.
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>{{ page.title }} | {{ site.title }}</title>
     <meta name="author" content="seL4 Foundation">
-    <link rel="canonical" href="{{ site.url }}{{ page.url | replace:'index.html',''}}">
+    <link rel="canonical" href="{{ page.url | replace:'index.html','' | absolute_url}}">
     <link href="{{ '/css/sel4.css' | relative_url | append: cache_bust }}" rel="stylesheet">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
