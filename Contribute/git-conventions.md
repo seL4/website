@@ -15,12 +15,13 @@ svg_class: "mx-auto mt-12 w-2/3"
 ---
 
 This page outlines the conventions that should be used for git history in the
-seL4 projects. Note that this applies to pull requests where the content is
-ready to merge. If you are raising a pull request for feedback, you do not need
-to follow the history conventions, but please note this in the description of
-the pull request to avoid confusion.
+projects under the <a href="https://github.com/seL4">seL4 GitHub org</a>. Note
+that this applies to pull requests where the content is ready to be merged. If you
+are raising a pull request for feedback only, you do not need to follow the history
+conventions, but please note this in the description of the pull request to
+avoid confusion.
 
-We will review the history in pull requests that are *ready to merge*. If you
+We will review the history in pull requests that are *ready to be merged*. If you
 need help with git, or advice on how to structure your history, please reach
 out.
 
@@ -49,6 +50,9 @@ Please follow the git commit [style guide](https://chris.beams.io/posts/git-comm
 {: .list-tick .my-0}
 * Wrap the body at 72 characters.
 {: .list-tick .my-0}
+
+Examples and counter-examples of the above rules can be found in the git commit
+[style guide](https://chris.beams.io/posts/git-commit/).
 
 ## Whitespace and style
 
