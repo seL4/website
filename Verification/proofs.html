@@ -116,9 +116,46 @@ layout: card
 <div class="theprose">
 
 <p>
-  So how strong are these proofs, really? We can talk about logic, prover
-  correctness, and assumptions all day long, but that is all cerebral and
-  abstract. Is there nothing more concrete? Can we measure how strong they are?
+  seL4 is claimed to be have world's highest level of assurance for an operating
+  system kernel. On an academic level, this is substantiated by the following
+  facts:
+  <ul class="mt-10 space-y-8 text-light">
+    {% include green-tick-li.html
+       text='formal verification in general is much stronger than other
+	     traditional ways to gain trust in software such as testing in that
+	     it can prove the <em>absence</em> of bugs, not just their
+	     presence.'
+    %}
+    {% include green-tick-li.html
+       text='within systems that are claimed to be formally verified,
+	     seL4&apos;s proof stack going down to the binary code reduces
+	     massively the <a href="assumptions.html">assumptions</a> it relies
+	     on, compared to verification projects where the system&apos;s model
+	     stays at a very abstract level.'
+    %}
+    {% include green-tick-li.html
+       text='within existing formal verification approaches, seL4&apos;s proofs
+	     targets properties, like functional correctness, that are much
+	     stronger than (and in fact <a href="implications.html">imply</a>)
+	     the absence of common programming errors, which other techniques,
+	     such as static analysis, usually target.'
+    %}
+    {% include green-tick-li.html
+       text='within tools that can be used for formal proof of functional
+	     correctness, seL4&apos;s proofs use the proof
+	     assistant <a href="https://isabelle.in.tum.de">Isabelle/HOL</a>,
+	     which is engineered to minimise the code that needs to trusted for
+	     the proof to be correct (see more in
+	     the <a href="assumptions.html">assumptions</a> page).'
+    %}
+  </ul>
+</p>
+
+
+<p>
+  Now these arguments about logic, prover correctness, and assumptions are all
+  cerebral and abstract. Is there something more concrete? Can we measure how
+  strong these proofs are?
 </p>
 <p>
   It turns out that we can. Before we turn to seL4
