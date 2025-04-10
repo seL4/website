@@ -7,8 +7,17 @@ pre_link: ./
 sub: "This page defines in high-level language what the seL4 proofs assume. It is
 aimed at an audience with a technical background, but does not assume any
 expertise in formal verification."
+img: /images/screenshot-kernel-elf.png
+img_alt: "Screenshot of seL4 kernel ELF disassembly"
+img_class: "w-2/3 mx-auto"
+layout: card
 ---
 
+{% include section-start.html
+  heading='The Assumptions'
+%}
+
+<div class="theprose">
 <p>
   With a proof in formal logic, it is important to understand what
   its basic assumptions are, because this is where fault can still
@@ -112,9 +121,15 @@ expertise in formal verification."
   formally verified for seL4 by an automatic tool if the kernel is compiled with
   the correct compiler settings that can be configured in the build system.
 </p>
-<h3>
-  What do these assumptions mean?
-</h3>
+</div>
+
+{% include section-end.html %}
+
+{% include section-start.html
+  heading='What do these assumptions mean?'
+%}
+
+<div class="theprose">
 <p>
   The reduced proof assumptions mean that we do not need to trust the compiler
   or linker, but there may still be faults remaining in specific low-level parts
@@ -184,3 +199,6 @@ expertise in formal verification."
   HOL4. The combination of these tools still achieves a very high standard of
   assurance for this last verification step.
 </p>
+</div>
+
+{% include section-end.html %}
