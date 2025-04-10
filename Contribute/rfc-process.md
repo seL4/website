@@ -11,16 +11,16 @@ SPDX-FileCopyrightText: 2020 seL4 Project a Series of LF Projects, LLC.
 
 ## Requests for Comments
 
-The seL4 foundation uses the request for comments (RFC) process to
+The seL4 Foundation uses the request for comments (RFC) process to
 
 - allow the community to discuss design changes in seL4,
-- gather valuable feedback from the community on changes the foundation is
+- gather valuable feedback from the community on changes the seL4 Foundation is
   considering,
 - allow members of the seL4 community to get support and approval to propose and
   implement their own changes to the seL4 ecosystem,
 - ensure that all changes made to core components of the seL4 ecosystem or that
   have wide and varying impacts on users of seL4 undergo rigorous review, and
-- ensure large changes are well advertised and can viewed publicly before
+- ensure large changes are well advertised and can be viewed publicly before
   contributors commit to implementing them.
 
 This helps us ensure that such changes are made with the goal of the best
