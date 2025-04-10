@@ -46,7 +46,7 @@ layout: card
     common issue in the C programming language. In applications they tend to
     lead to strange error messages and lost data. In operating systems they will
     usually crash the whole system. They do not occur in verified configurations
-    of seL4"
+    of seL4."
   %}
   {% include green-tick-li.html
     bold="No pointer errors:"
@@ -81,13 +81,16 @@ layout: card
 <p>
   The list goes on. There are other techniques that can also be used to find
   some of these errors. Here, the absence of such bugs is just a useful
-  by-product of the proof. To be able to complete our proof of functional
-  correctness, we also prove a large number of so-called invariants: properties
+  by-product of the proof.
+</p>
+<p>
+  To be able to complete our proof of functional
+  correctness, we also prove a large number of so-called <strong>invariants</strong>: properties
   that we know to always be true when the kernel runs. To normal people these
   will not be exciting, but to experts and kernel programmers they give an
   immense amount of useful information. They give you the reasons why and how
-  data structures work, why it is Ok to optimise and leave out certain checks
-  (because you know they will be always be true), and why the code always
+  data structures work, why it is safe to optimise and leave out certain checks
+  (because you know they will always be true), and why the code always
   executes in a defined and safe manner.
 </p>
 <p>
@@ -99,7 +102,7 @@ layout: card
 {% include section-end.html %}
 
 {% include section-start.html
-  heading='Implications of Integrity'
+  heading='Implications of the Integrity Property'
   id='integrity'
 %}
 
@@ -121,11 +124,11 @@ layout: card
   defence in depth into the architecture of your system to a degree that is hard
   to imagine with traditional operating systems. If done right, bugs in one part
   of the systems will be extremely hard or impossible to exploit in any other
-  part of the system. Have a buffer overflow bug in the audio driver? No
-  worries! Maybe the sound will not work, but your system will. Very different
-  to a privilege escalation scenario on a monolithic OS that combined with some
-  other hapless application or library can make the entire system vulnerable to
-  a remote network exploit.
+  part of the system. A buffer overflow bug in the audio driver? Not a worry for
+  safety or security. Maybe the sound will not work, but your critical
+  components will. This is in stark contrast to privilege escalation scenarios
+  that can happen in a monolithic OS, where some hapless application or library
+  can make the entire system vulnerable to a remote network exploit.
 </p>
 <p>
   Internalising this technique will lead you to build systems with clear
