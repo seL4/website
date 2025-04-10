@@ -10,6 +10,8 @@ sub: '<p>
 <p>
   Here is what you need to know.
 </p>'
+svg: /images/git-commits.svg
+svg_class: "mx-auto mt-12 w-2/3"
 ---
 
 This page outlines the conventions that should be used for git history in the
@@ -30,32 +32,47 @@ workflow](https://www.atlassian.com/git/tutorials/comparing-workflows/forking-wo
 Please follow the git commit [style guide](https://chris.beams.io/posts/git-commit/). Briefly:
 
 * Use a subject line to summarise the commit.
+{: .list-tick .my-0}
 * Limit the subject line to 50 characters.
+{: .list-tick .my-0}
 * Capitalise the subject line.
+{: .list-tick .my-0}
 * Avoid ending the subject line in a full stop.
+{: .list-cross .my-0}
 * Use the imperative mood in the subject line.
+{: .list-tick .my-0}
 * Check the repository history if it uses any obvious tagging conventions.
   Follow them if it does.
+{: .list-tick .my-0}
 * Follow this with a blank line, then a summary of why the changes are required,
   and if non-trivial, how they achieve their purpose.
+{: .list-tick .my-0}
 * Wrap the body at 72 characters.
+{: .list-tick .my-0}
 
 ## Whitespace and style
 
 * Please keep whitespace and style changes in their own commits, not mixed with other changes.
+{: .list-tick .my-0}
 * If making a trivial commit, please prefix with `trivial:`
+{: .list-tick .my-0}
 * Avoid making PRs that are only changing style and not making other significant changes.
   This avoids spending reviewer and CI resources on a large number of small stylistic improvements.
+{: .list-tick .my-0}
 
 ## History
 
 * Merge commits are prohibited.
+{: .list-cross .my-0}
 * Revert commits which act on the contents of the PR are prohibited.
+{: .list-cross .my-0}
 * Commits should make the changes easier to follow: if you move a function and change it, please do
   so in separate commits.
+{: .list-tick .my-0}
 * Commits should be separated into functional, logical changes, unless those changes are dependant.
   if you find yourself writing a commit message which says 'Fix X and clean up Y', you should
       probably use two commits.
+{: .list-tick .my-0}
 
 ## Further resources
 
