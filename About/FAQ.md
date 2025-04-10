@@ -338,13 +338,6 @@ these properties are guaranteed to be enforced not only by a model of the kernel
 Therefore, seL4 is the world's first (and still only) OS that is proved secure
 in a very strong sense.
 
-<!-- FIXME: misleading, Arm v6 no longer supported -->
-Finally, seL4 for Arm v6 was the first (and still only) protected-mode OS
-kernel with a sound and complete timeliness analysis. Among others this means
-that it has provable upper bounds on interrupt latencies (as well as latencies
-of any other kernel operations). It is therefore the only kernel with memory
-protection that can give you hard real-time guarantees.
-
 ### Does seL4 have zero bugs?
 
 The functional correctness proof states that, if the proof assumptions are met,
