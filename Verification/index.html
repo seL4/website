@@ -29,7 +29,7 @@ no_title_heading: true
      body="Machine-checked mathematical proofs from
            high-level specifications to binary code, for strong
            properties ranging from functional correctness to absence of
-           information leakage"
+           information leakage."
      link="proofs.html"
   %}
 
@@ -38,25 +38,27 @@ no_title_heading: true
       title="Assumptions"
       body="What the seL4 proofs assume: assembly code, boot code, machine
             interface, hardware, and DMA. This is where manual validation and
-            scrutiny is still important."
+            scrutiny can focus on."
       link="assumptions.html"
    %}
 
   {% include card.html
       icon="sparkles"
       title="Proof Implications"
-      body="Functional correctness sounds good, but what about buffer overflows,
-            memory leaks, and other bugs that plague C programs? We prove their
-            absence."
+      body="Functional correctness is an extremely strong property. So strong
+            that it implies, for free, the absence of whole classes of common
+            programming errors such as buffer overflows, memory leaks, and other
+            bugs that usually plague C programs."
       link="implications.html"
   %}
 
   {% include card.html
      icon="check-badge"
      title="Proofs and Certification"
-     body="The traditional way to achieve high levels of assurance are
-           schemes as such Common Criteria, ISO-26262, and DO-178C. How do
-           the seL4 proofs relate to these certification schemes?"
+     body="The traditional way to achieve high levels of assurance are schemes
+           such as Common Criteria, ISO-26262, and DO-178C. The seL4 proofs go
+           beyond what these certification schemes require for software
+           development at their most stringent levels."
      link="certification.html"
   %}
 </div>

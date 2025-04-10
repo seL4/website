@@ -46,7 +46,7 @@ layout: card
   {% include green-tick-li.html
       bold="Binary correctness:"
       text="in the configurations that support this property, the binary machine
-      code running on the correctly implements the behaviour of the C code assumed
+      code running on the processor correctly implements the behaviour of the C code assumed
       in the functional correctness proof. By extension, this means the binary code
       implements precisely the behaviour of the specification, and nothing more."
   %}
@@ -67,16 +67,17 @@ layout: card
       bold="System initialisation:"
       text="
       the proofs above show that seL4 provides strong security &mdash; when used
-      correctly. The security theorems describe how the system must be set up to
-      ensure that the properties above hold. For instance, isolated components
-      must not be given write access to each other, and confidentiality holds
+      correctly. The correct use, in other words how the system must be set up to
+      ensure that the properties above hold, is described in the security theorems statements.
+      For instance, integrity holds if isolated components
+      are not given write access to each other, and confidentiality holds
       between security domains of seL4's domain scheduler, not between arbitrary
       threads. In the configurations that support verified system
       initialisation, the seL4 proof stack has further parts that support the
       task of setting up systems correctly: the <em>capDL</em> specification
       language that lets developers describe access control configurations
       statically, and the user-level <em>system initialiser</em> that takes
-      those descriptions, and automatically configures the system to conform to
+      those descriptions, and automatically configures the system to provably conform to
       them at boot time."
   %}
 </ul>
@@ -130,8 +131,8 @@ layout: card
 </p>
 
 <blockquote>
-    The striking thing about our CompCert results is that the middle-
-    end bugs we found in all other compilers are absent. As of early 2011,
+    The striking thing about our CompCert results is that the middle-end
+    bugs we found in all other compilers are absent. As of early 2011,
     the under-development version of CompCert is the only compiler we
     have tested for which Csmith cannot find wrong-code errors. This is
     not for lack of trying: we have devoted about six CPU-years to the
@@ -150,9 +151,9 @@ layout: card
 
 <ul>
   <li>
-    Code in the verified kernel that is left as an assumption, e.g. machine
-    interfaces such as caching. These can be tested — maybe not exhaustively, but
-    better than not tested at all. This has a fairly high density of tests.
+    Code in the verified kernel that is left as
+    an <a href="assumptions.html">assumption</a>, e.g. machine interfaces such
+    as caching. These can be tested and has a fairly high density of tests.
   </li>
 
   <li>
@@ -184,8 +185,8 @@ layout: card
 </p>
 
 <p>
-  This means there are a lot of test that run frequently, hundreds for every
-  code change. seL4 also has been in continues deployment for over a decade.
+  This means there are a lot of tests that run frequently, hundreds for every
+  code change. seL4 also has been in continued deployment for over a decade.
   This gives us some data.
 </p>
 
@@ -198,17 +199,16 @@ layout: card
 </p>
 
 <p>
-  To contrast how remarkable 0 defects in 15 years are: there regularly have
-  been defects discovered even in mature unverified configurations of the kernel
-  (e.g. multicore SMP, or x64 VT-x virtualisation extensions) during that time,
-  and we still find new ones. Defect density in unverified configurations of
-  seL4 is overall lower than in normal software, but it is not zero. Even in
-  verified configurations, every class of unverified code in the kernel has had
-  defects in that time. Hardware assumptions, compiler assumptions, unverified
-  boot code, every little area that possibly could go wrong has gone wrong in
-  some way or other. 15 years is a long time for software. But not a single one
-  in verified code. This is not surprising, we have a proof for that after all,
-  but it is hard to grasp.
+  To contrast how remarkable 0 defects in 15 years are: there are defects
+  regularly discovered (although at a <em>much lower</em> density than normal
+  software) in all areas of seL4 code that are not verified. This is the case
+  for unverified configurations of the kernel (e.g. multicore SMP, or x64 VT-x
+  virtualisation extensions), including mature ones.  Even in verified
+  configurations, every class of unverified code in the kernel has had defects
+  in that time: hardware assumptions, compiler assumptions, unverified boot
+  code. But not a single one in verified code in 15 years, which is a long time
+  for software. This is not surprising, we have a proof for that after all, but
+  how remarkable that is can sometimes be hard to grasp.
 </p>
 
 </div>
