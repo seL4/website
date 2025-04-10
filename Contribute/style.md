@@ -5,33 +5,41 @@ title: C Coding Conventions and Style Guide
 pre: Coding Conventions
 pre_link: conventions.html
 sub: '<p>
-  Formatting, style, and C language subset requirements, divided into
-  <a href="#general-c-code">general</a>, <a href="#user-level-code">user-level</a>,
-  <a href="#kernel-code">kernel code</a>, and
-  <a href="#verification-requirements">verification requirements</a>.
+
+  Formatting, style, and C language subset requirements, divided into <a
+  href="#general-c-code">general</a>, <a href="#user-level-code">user-level
+  code</a>, and <a href="#kernel-code">kernel code</a> (including specific
+  requirements for <a href="#verification-requirements">verified kernel
+  code</a>).
+
 </p>'
 
 ---
 
-These are conventions which we attempt to follow in all of our code.
-They do not apply to external libraries, where we stick with the
-existing conventions.
+We strive to follow the below conventions for all the code maintained by the
+seL4 Foundation in the <a href="https://github.com/seL4">seL4 GitHub org</a>.
+We make an exception for external libraries, where we refer to the existing
+conventions.
 
-Much of our code pre-dates the conventions, so it may not all comply.
+Some of the code pre-dates the conventions, so it may not all comply.
 However, please try to ensure that any new code does follow the rules.
 In general, we strive to abide by Robert Baden-Powell's rule for
 scouting: "Try and leave [the code] a little better than you found it."
 
-This guide is in three parts: first, we list general coding conventions;
-then we divide the rest of the conventions between kernel and
-user-level.  Please read the appropriate guide, as kernel and user-level
-conventions sometimes contradict each other.
+This guide is in three parts: first, we list <a href="#general-c-code">general
+coding conventions</a>; then we divide the rest of the conventions between <a
+href="#user-level-code">user level</a> (that is, not running in privileged mode)
+and <a href="#kernel-code">kernel level</a> (including specific requirements for
+<a href="#verification-requirements">verified code</a>).  Please read the
+appropriate guide, as kernel and user-level conventions sometimes contradict
+each other.
 
 ## General C code
 
-This guide applies to general C code at user-level.  For developing the
-seL4 kernel and other verified code, please refer to the verification
-requirements below, which override the general conventions.
+This guide applies to general C code at user-level.  For developing the seL4
+kernel and other verified code, please refer to the <a
+href="#verification-requirements">verification requirements</a> below, which
+override the general conventions.
 
 ### Compiler options
 
