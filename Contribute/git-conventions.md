@@ -19,7 +19,7 @@ projects under the <a href="https://github.com/seL4">seL4 GitHub org</a>. Note
 that this applies to pull requests where the content is ready to be merged. If you
 are raising a pull request for feedback only, you do not need to follow the history
 conventions, but please note this in the description of the pull request to
-avoid confusion.
+avoid confusion. Also read the <a href="pull-requests.html"> pull request guidelines</a>.
 
 We will review the history in pull requests that are *ready to be merged*. If you
 need help with git, or advice on how to structure your history, please reach

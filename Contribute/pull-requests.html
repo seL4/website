@@ -7,8 +7,8 @@ layout: card
 ---
 
 {% capture sub %}
-<p>This is a guide for conducting effective and efficient pull requests on any of
-the seL4 GitHub repositories. Pull requests that do not follow it may not
+<p>This is a guide for conducting effective and efficient pull requests (PRs) on
+any of the seL4 GitHub repositories. Pull requests that do not follow it may not
 receive attention or may be closed.
 </p>
 <div class="mx-auto my-12 mr-10">
@@ -53,12 +53,13 @@ commit message.
   - Do not leave the description field empty, even if you think the change is
     obvious.
 
-- If the pull request is for feedback only, and not ready to merge, set it to "Draft"
+- If the pull request is for feedback only, and not ready to merge, note this in
+  its description and set it to "Draft".
 
 - Explain any context:
   - is it part of a greater set of changes?
   - are any concurrent PRs (in other repositories) dependent on this pull request?
-  - provide links in the description
+  - provide links in the description.
 
 - State what testing has been performed. For the kernel, if a new major feature
   has been added, corresponding tests must be added to `sel4test`. Include a
@@ -75,8 +76,8 @@ commit message.
 
 ### Commits
 
-- Commit history and messages are part of the review
-  - A good commit history assists reviewers in understanding the change
+- Commit history and messages are part of the review.
+  - A good commit history assists reviewers in understanding the change.
   - Please see the [Git conventions][git].
 
 - Good reviews are small reviews. Large PRs should only be created if absolutely
@@ -89,7 +90,7 @@ pull request.
 
 - If you do want a particular person to review, please tag them.
 - If there hasn't been any activity after a couple of days, feel free to bump the post.
-- Pull requests require at least one approving review for merge,
+- Pull requests require at least one approving review to be merged,
   and usually should aim for 2 reviews on each non-trivial pull request.
 
 ## During Review
@@ -101,13 +102,13 @@ Always abide by the [seL4 Code of Conduct][Conduct].
 - Take into account the context stated by the author.
 - Review commits and commit messages as well as code
 - Request that the above guide be followed if it is not.
-- Provide constructive feedback -- see the resources below.
+- Provide constructive feedback -- see the <a href="#resources">resources</a> below.
 - Remember to comment on good things.
 
 ### For Authors
 
 - Apply changes due to feedback from reviewers as additional commits, and squash
-  them once the pull request is ready to merge.
+  them once the pull request is ready to be merged.
 - Please attempt to only push changes to the pull request branch once it is ready for re-review.
 - Please communicate any changes you make during the review process.
 - Apart from editing history, fixing review feedback, or fixing trivial issues,
@@ -115,24 +116,24 @@ Always abide by the [seL4 Code of Conduct][Conduct].
 
 ### Tests
 
-The foundation repositories require the following tests to pass before a pull
+The seL4 Foundation repositories require the following tests to pass before a pull
 request can be merged. Exceptions are possible by approval of someone in the
 [Committer][Committers] role.
 
 - Code style. Style checks may vary per repository and language, but default
   should standardise on those in the repository
   [seL4/seL4_tools](https://github.com/seL4/seL4_tools/tree/master/misc).
-- Developer certificate of origin ([DCO][dco])
-- Checks for SPDX license tagging (using the [REUSE tool][reuse])
-- Any applicable regression tests
+- Developer certificate of origin ([DCO][dco]).
+- Checks for SPDX license tagging (using the [REUSE tool][reuse]).
+- Any applicable regression tests.
 
 Regression tests vary per repository. For seL4 itself, they must include:
 
-- compile test
+- compile test.
 - hardware and/or simulator runs. Reviewer can add the `hw-build`,
   `hw-test`, and `hw-bench` labels to run hardware builds and tests
   on pull requests.
-- the proofs
+- the proofs.
 
 For verification target repositories (currently mainly seL4):
 
