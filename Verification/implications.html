@@ -1,0 +1,126 @@
+---
+# Copyright 2020 seL4 Project a Series of LF Projects, LLC.
+# SPDX-License-Identifier: CC-BY-SA-4.0
+title: What the Proof Implies
+pre: Verification
+pre_link: ./
+sub: 'The proofs not only establish functional correctness, integrity, and
+      confidentiality, but they also imply the absence of many common
+      programming errors. This page shows what you get for free out of
+      <a href="#fc">functional correctness</a> and out of
+      <a href="#integrity">integrity</a>.'
+---
+
+<h2 id="fc">Implications of Functional Correctness</h2>
+<p>
+  The <a href="proofs.html">proof page</a> covers the properties that are proved
+  directly: functional correctness, integrity, and confidentiality. These are
+  high-level properties that every OS should provide, that very few manage to
+  provide, and that no OS has better evidence for than seL4.
+</p>
+<p>
+  But the seL4 proofs do more &mdash; the formal proof of functional correctness
+  implies the absence of whole classes of common programming errors. Provided
+  the <a href="assumptions.html">proof assumptions</a> are true, some of these
+  excluded common errors are:
+</p>
+<ul>
+  {% include green-tick-li.html
+    bold="No buffer overflows:"
+    text="buffer overflows are a classic security attack
+    against operating systems, trying to make the software crash or to inject
+    malicious code into the cycle. We have proved that no such attack can be
+    successful on verified configurations of seL4."
+  %}
+  {% include green-tick-li.html
+    bold="No null pointer dereferences:"
+    text="null pointer dereferences are another
+    common issue in the C programming language. In applications they tend to
+    lead to strange error messages and lost data. In operating systems they will
+    usually crash the whole system. They do not occur in verified configurations
+    of seL4"
+  %}
+  {% include green-tick-li.html
+    bold="No pointer errors:"
+    text="in C it is possible to accidentally use a
+    pointer to the wrong type of data. This is a common programming error. It
+    does not happen in verified configurations of the seL4 kernel."
+  %}
+  {% include green-tick-li.html
+    bold="No memory leaks:"
+    text="memory leaks occur when memory is requested, but never
+    given back. The other direction is even worse: memory could be given back,
+    even though it is still in use. Neither of these can happen in verified
+    configurations of seL4."
+  %}
+  {% include green-tick-li.html
+    bold="No arithmetic overflows or exceptions:"
+    text="humans and mathematics usually
+    have a concept of numbers that can be arbitrarily big. Machines do not, they
+    need to fit them into memory, usually into 32 or 64 bits worth of storage.
+    Machines also generate exceptions when you attempt to do things that are
+    mathematically undefined like dividing by zero. In the OS, such exceptions
+    would typically crash the machine. This does not occur in verified
+    configurations of seL4."
+  %}
+  {% include green-tick-li.html
+    bold="No undefined behaviour:"
+    text="there are many static analysis and verification
+    tools that check for the absence of undefined behaviour in C. Our proof
+    explicitly checks that no such undefined behaviour occurs."
+  %}
+</ul>
+<p>
+  The list goes on. There are other techniques that can also be used to find
+  some of these errors. Here, the absence of such bugs is just a useful
+  by-product of the proof. To be able to complete our proof of functional
+  correctness, we also prove a large number of so-called invariants: properties
+  that we know to always be true when the kernel runs. To normal people these
+  will not be exciting, but to experts and kernel programmers they give an
+  immense amount of useful information. They give you the reasons why and how
+  data structures work, why it is Ok to optimise and leave out certain checks
+  (because you know they will be always be true), and why the code always
+  executes in a defined and safe manner.
+</p>
+<p>
+  So does seL4 have zero bugs? Yes, of course, and no, of course not. See the <a
+  href="../About/FAQ.html#does-sel4-have-zero-bugs">FAQ entry</a> for that.
+</p>
+
+<h2 id="integrity">Implications of Integrity</h2>
+<p>
+  You can get even more out of the seL4 proofs for your system. For instance,
+  using the integrity property, you can run large untrusted legacy code bases
+  in your system that have no hope of being formally verified, and you can
+  still get formal proofs about security aspects of the entire system.
+  This is because the integrity property of seL4 guarantees that, if the system
+  is set up correctly, the untrusted code cannot adversely affect the behaviour
+  of separated trusted code. The page on <a href="../About/how-to-use.html">how
+  to use seL4</a> and the <a href="../About/whitepaper.html">seL4 white paper</a>
+  have more examples on this general idea.
+</p>
+<p>
+  This is an incredibly powerful technique. Together with the principle of least
+  privilege and the fine-grained capability system of seL4, you can build
+  defence in depth into the architecture of your system to a degree that is hard
+  to imagine with traditional operating systems. If done right, bugs in one part
+  of the systems will be extremely hard or impossible to exploit in any other
+  part of the system. Have a buffer overflow bug in the audio driver? No
+  worries! Maybe the sound will not work, but your system will. Very different
+  to a privilege escalation scenario on a monolithic OS that combined with some
+  other hapless application or library can make the entire system vulnerable to
+  a remote network exploit.
+</p>
+<p>
+  Internalising this technique will lead you to build systems with clear
+  protection boundaries, least privilege, and clearly defined communication
+  channels. That alone already makes systems more robust and easier to analyse
+  and understand.
+</p>
+<p>
+  You do not need to perform formal verification of your system or any additional
+  code to profit from this property. You can use any other analysis technique
+  to make informal arguments about the behaviour of the system and informally
+  make use of the integrity isolation provided by seL4 to connect them. This will
+  still give you more strength than with any other operating system.
+</p>

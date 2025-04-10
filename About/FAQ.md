@@ -53,7 +53,8 @@ high-performance microkernels evolved from the first L4 microkernel
 developed by Jochen Liedtke in the early '90s. See the
 [L4 microkernel family](https://en.wikipedia.org/wiki/L4_microkernel_family) entry on Wikipedia for more details.
 
-<img style="width:100%" src="https://sel4.systems/images/l4family.svg" alt="L4 microkernel family tree" aria-describedby="p1"/>
+<img class="w-full" src="https://sel4.systems/images/l4family.svg"
+     alt="L4 microkernel family tree" aria-describedby="p1"/>
 
 <p id="p1">
 L4 microkernel family tree from 1993 until 2013. Black arrows indicate code,
@@ -167,11 +168,10 @@ starting points are:
 ### What processor architectures are supported?
 
 Presently seL4 runs on Arm v7 (32-bit) and v8 (64-bit) cores, on PC99 (x86)
-cores (32- and 64-bit mode), and RISC-V RV64 (64-bit) cores. See the up-to-date
-list of [supported platforms].
+cores (32- and 64-bit mode), and RISC-V (32- and 64-bit) cores. See the
+up-to-date [platform overview].
 
-<!-- FIXME: link to platform contribution page instead -->
-Talk to us if you have funds to support a port to further architectures.
+There is a [platform contribution guide] and [platform porting guide] available.
 
 ### Which platform ports are verified?
 
@@ -394,7 +394,7 @@ caches) is correct, and boot code is correct. The hardware model assumes DMA to
 be off or to be trusted. The security proofs additionally give a list of
 conditions how the system is configured.
 
-For a more in-depth description, see the [proof and assumptions page][proofs].
+For a more in-depth description, see the [assumptions page][assumptions].
 
 ### How do I leverage seL4's formal proofs?
 
@@ -655,13 +655,15 @@ for what is up next.
 [learning material]: {% link Learn/index.html %}
 [key research papers]: {% link Research/publications.html %}
 [license page]: {% link Foundation/Trademark/license-tm.html %}
-[proofs]: {% link Info/FAQ/proof.html %}
+[assumptions]: {% link Verification/assumptions.html %}
 
-<!-- FIXME: use on-site page when it exists -->
+[platform porting guide]: https://docs.sel4.systems/projects/sel4/porting
+[platform contribution guide]: {% link Contribute/platforms.md %}
+
+[platform overview]: {% link platforms.html %}
 [supported platforms]: https://docs.sel4.systems/Hardware/
 
 <!-- FIXME: links to PDFs or paper section on sel4.systems? -->
-[time protection]: https://trustworthy.systems/publications/csiroabstracts/Ge_YCH_19.abstract?bib=combined
 [TOCS_14]: https://trustworthy.systems/publications/nictaabstracts/Klein_AEMSKH_14.abstract
 [SOSP_09]: https://trustworthy.systems/publications/nictaabstracts/Klein_EHACDEEKNSTW_09.abstract
 [Elphinstone_Heiser_13]: https://trustworthy.systems/publications/nictaabstracts/Elphinstone_Heiser_13.abstract

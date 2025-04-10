@@ -1,6 +1,7 @@
 ---
 # Copyright 2020 seL4 Project a Series of LF Projects, LLC.
 # SPDX-License-Identifier: CC-BY-SA-4.0
+redirect_from: /About/FAQ/proof.html
 title: Verification
 layout: card
 no_title_heading: true
@@ -24,35 +25,40 @@ no_title_heading: true
    sub=sub
 %}
 
-<!-- FIXME: add text for card on implication for system once page exists -->
-
-<div class="card-grid-3">
+<div class="card-grid-4">
   {% include card.html
-     icon="check"
+     icon="rocket-launch"
      title="The seL4 proofs"
-     body="seL4 has machine-checked mathematical proofs from
-     high-level specifications to binary code. They establish a number of strong
-     properties ranging from functional correctness to absence of information
-     leakage, and cover a variety of hardware architectures and platforms."
+     body="Machine-checked mathematical proofs from
+           high-level specifications to binary code, for strong
+           properties ranging from functional correctness to absence of
+           information leakage"
      link="proofs.html"
   %}
 
   {% include card.html
-     icon="rocket-launch"
-     title="Implications for your System"
-     body="TODO"
-     link="../todo.html"
+      icon="check"
+      title="Assumptions"
+      body="What the seL4 proofs assume. This is where manual validation and
+            scrutiny is still important."
+      link="assumptions.html"
+   %}
+
+  {% include card.html
+      icon="sparkles"
+      title="Proof Implications"
+      body="Functional correctness sounds good, but what about buffer overflows,
+            memory leaks, and other bugs that plague C programs? We prove their
+            absence."
+      link="implications.html"
   %}
 
   {% include card.html
-     center=true
      icon="check-badge"
      title="Implications for Certification"
-     body="<p>seL4's formal proofs provide a very high level of assurance,
-     commonly required only for the highest levels of certification in critical
-     sectors, such as Common Criteria, ISO-26262 and DO-178C. Read more on how
-     the proofs affect these certification schemes.</p>"
+     body="The traditional way to achieve very high levels of assurance are
+           schemes as such Common Criteria, ISO-26262, and DO-178C. How do
+           the seL4 proofs relate to these certification schemes?"
      link="certification.html"
   %}
 </div>
-
