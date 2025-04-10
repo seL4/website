@@ -27,8 +27,8 @@ such as Linux. Generally, you would use one of the [existing seL4 virtual
 machine monitors][VMMs] for this, or write your own. You can use seL4 to
 restrict resources for virtual machines, or pass them through. Most of the
 virtual machine monitor code is a library component that runs in user mode. That
-means, bugs in the virtual machine monitor can be contained to a single VM and
-cannot violate
+means, bugs in the virtual machine monitor can be contained to a single virtual
+machine (VM) and cannot propagate to the rest of the system.
 
 ## Use seL4 as Hypervisor and RTOS at the same time
 
@@ -40,10 +40,10 @@ code in one VM, use a complex Linux driver in a separate driver VM, and connect
 them via a native crypto components and network filter. The legacy code may
 still have bugs, but they cannot affect the crypto component. The complex driver
 may still have bugs, but it also cannot affect the crypto component -- at most
-it can provide garbage input. The legacy code might be vulnerable to buffer
+it can provide invalid input. The legacy code might be vulnerable to buffer
 overflow attacks, but the network filter could check input before it reaches any
 legacy code. And the system architecture in conjunction with seL4 can guarantee
-for you that it cannot be bypassed.
+for you that the filter cannot be bypassed.
 
 <div class="w-2/3 my-6 mx-auto aspect-3/2">
 {% svg /images/tries-shutterstock/sel4-principles.drawio.svg width="100%" %}
@@ -68,7 +68,7 @@ systems.
 
 This leverages the strong formal verification of seL4 without needing any
 specific formal verification expertise. If you do want to apply further formal
-verification to the system, you can how verify small parts of the system to gain
+verification to the system, you can now verify small parts of the system to gain
 system-global security properties.
 
 Even without further analysis and verification, the system benefits from a
@@ -78,7 +78,7 @@ which are not, and being sure that uncritical parts cannot destroy security
 enables you to move fast *without* breaking things.
 
 You can also leverage the formal verification of seL4 to speed up debugging and
-failure analysis during development: You know the verified code didn't fail, and
+failure analysis during development: you know the verified code didn't fail, and
 isolation wasn't broken. This means you can focus your analysis on much fewer
 lines of code when something goes wrong.
 
@@ -88,11 +88,11 @@ lines of code when something goes wrong.
 
 Imagine a heap of legacy code and a mandate to make it secure. Putting it behind
 a firewall will not make it secure, and there is no time for rewriting it from
-scratch. What can you do? With a bit of luck, you can use seL4 for an
+scratch. What can you do? Chances are that you can use seL4 for an
 incremental cyber retrofit.
 
 If the security property you need can be enforced by green-field design with the
-right architecture, chances are that you can gradually restructure the legacy
+right architecture, you likely can gradually restructure the legacy
 code base into a more and more secure system. You don't need to reach that
 green-field system, you only need to reach an architecture that enforces the
 security property.
@@ -104,9 +104,9 @@ serves as a starting point for incremental modularisation.
 The next step is to extract and isolate coarse-grained subsystems, moving from a
 system with a single VM to one with multiple communicating VMs. For instance, if
 you want to protect against network attacks, you might move the network stack
-into a separate VM. If there is crypto, that could be a separate VM as well. Now
+into a separate VM. If there is some crypto involved, that could be a separate VM as well. Now
 you already have a much stronger system --- a random buffer overflow in the rest
-of the code base can no longer be used to to subvert the crypto code, and
+of the code base can no longer be used to subvert the crypto code, and
 neither can a code-level attack on the network stack.
 
 <img src="../images/retrofit.png" class="w-full" alt="cyber retrofit">
@@ -135,8 +135,8 @@ deny service to critical components.
 ## Use seL4 as the basis for your OS
 
 seL4 is a microkernel, it is not an operating system. But you can use it as the
-basis for an OS -- that is what it is designed for. There are existing OS
-projects that do just that: the commercial [KOS from Kry10][KOS] for dynamic
+basis for an OS -- that is what it is designed for. There are existing OSes
+that do just that: the commercial [KOS from Kry10][KOS] for dynamic
 systems and the open-source [LionsOS] from UNSW for static systems.
 
 ## Use seL4 for fun and learning
