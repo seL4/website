@@ -87,6 +87,10 @@ layout: none
   @apply list-['X'] marker:text-f_red-700;
 }
 
+@utility card-grid-2 {
+  @apply grid grid-cols-1 sm:grid-cols-2 gap-12 gap-y-14 pb-12 sm:pb-20;
+}
+
 @utility card-grid-3 {
   @apply grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-12 gap-y-14 pb-12 sm:pb-20;
 }

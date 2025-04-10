@@ -15,9 +15,6 @@ no_title_heading: true
    makes seL4 the trustworthy foundation of choice for safely running critical
    applications alongside untrusted workloads.
  </p>
-<div class="mt-3 w-full sm:w-4/5 md:w-2/3 lg:w-[60%] mx-auto aspect-2/1 px-10 rounded-xl shadow-lg">
-   {% svg /images/tries-shutterstock/sel4-trusted-untrusted.drawio.svg width="100%" height="100%" %}
-</div>
 {% endcapture %}
 
 {% include heading.html
@@ -25,10 +22,10 @@ no_title_heading: true
    sub=sub
 %}
 
-<div class="card-grid-4">
+<div class="card-grid-2">
   {% include card.html
      icon="rocket-launch"
-     title="The seL4 proofs"
+     title="The seL4 Proofs"
      body="Machine-checked mathematical proofs from
            high-level specifications to binary code, for strong
            properties ranging from functional correctness to absence of
@@ -39,7 +36,8 @@ no_title_heading: true
   {% include card.html
       icon="check"
       title="Assumptions"
-      body="What the seL4 proofs assume. This is where manual validation and
+      body="What the seL4 proofs assume: assembly code, boot code, machine
+            interface, hardware, and DMA. This is where manual validation and
             scrutiny is still important."
       link="assumptions.html"
    %}
@@ -55,10 +53,17 @@ no_title_heading: true
 
   {% include card.html
      icon="check-badge"
-     title="Implications for Certification"
-     body="The traditional way to achieve very high levels of assurance are
+     title="Proofs and Certification"
+     body="The traditional way to achieve high levels of assurance are
            schemes as such Common Criteria, ISO-26262, and DO-178C. How do
            the seL4 proofs relate to these certification schemes?"
      link="certification.html"
   %}
 </div>
+
+<div class="mt-8 w-full sm:w-4/5 md:w-2/3 lg:w-[60%] mx-auto aspect-2/1 px-10 rounded-xl shadow-lg">
+   {% svg /images/tries-shutterstock/sel4-trusted-untrusted.drawio.svg width="100%" height="100%" %}
+</div>
+<p class="text-center mt-4 mb-18 sm:mb-24 text-sm sm:text-base text-light">
+   Illustration of isolating trusted from untrusted workloads using seL4.
+ </p>
