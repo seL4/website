@@ -658,7 +658,7 @@ for what is up next.
 [assumptions]: {% link Verification/assumptions.html %}
 
 [platform porting guide]: https://docs.sel4.systems/projects/sel4/porting
-[platform contribution guide]: {% link Contribute/platforms.md %}
+[platform contribution guide]: {% link Contribute/platform-ports.md %}
 
 [platform overview]: {% link platforms.html %}
 [supported platforms]: https://docs.sel4.systems/Hardware/
