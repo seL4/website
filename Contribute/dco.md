@@ -37,16 +37,16 @@ fine. You can also sign off on somebody else's behalf.
 
 The full text of the declaration is at <https://developercertificate.org>.
 
-The seL4 GitHub repositories are configured to only accept pull requests
-where all commits are signed off. There are no other signatures or legal
-documents required.
+The [seL4 GitHub repositories](https://github.com/seL4) are configured to only
+accept pull requests where all commits are signed off. There are no other
+signatures or legal documents required.
 
 ## Some tips on using signed-off-by with git:
 
 - signed-off-by is different from signing commits with a GPG key (commit -S)
 - you can use `git commit --amend -s` to sign off a single existing commit if
   you’ve forgotten
-- you can use `git rebase --signoff <base-branch> `for signing off multiple
+- you can use `git rebase --signoff <base-branch>` for signing off multiple
   commits on a whole branch
 - the DCO allows you to sign off commits for others -- see
   <https://developercertificate.org> for details
@@ -55,5 +55,5 @@ documents required.
 
             git config alias.ci “commit -s"
 
-  now `git ci` will commit with sign-off. The config command above is local
+  Now `git ci` will commit with sign-off. The config command above is local
   for the current repository.
