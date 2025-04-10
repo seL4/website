@@ -37,10 +37,10 @@ seL4, you can freely run native seL4 user components next to or in communication
 with virtual machines. This can be an extremely powerful mix, enhancing and
 controlling what virtual machines can do. For instance, you could run legacy
 code in one VM, use a complex Linux driver in a separate driver VM, and connect
-them via a native crypto components and network filter. The legacy code may
-still have bugs, but they cannot affect the crypto component. The complex driver
-may still have bugs, but it also cannot affect the crypto component -- at most
-it can provide invalid input. The legacy code might be vulnerable to buffer
+them via a native cryptography components and network filter. The legacy code
+may still have bugs, but they cannot affect the crypto component. The complex
+driver may still have bugs, but it also cannot affect the crypto component -- at
+most it can provide invalid input. The legacy code might be vulnerable to buffer
 overflow attacks, but the network filter could check input before it reaches any
 legacy code. And the system architecture in conjunction with seL4 can guarantee
 for you that the filter cannot be bypassed.
@@ -104,10 +104,10 @@ serves as a starting point for incremental modularisation.
 The next step is to extract and isolate coarse-grained subsystems, moving from a
 system with a single VM to one with multiple communicating VMs. For instance, if
 you want to protect against network attacks, you might move the network stack
-into a separate VM. If there is some crypto involved, that could be a separate VM as well. Now
-you already have a much stronger system --- a random buffer overflow in the rest
-of the code base can no longer be used to subvert the crypto code, and
-neither can a code-level attack on the network stack.
+into a separate VM. If there is encryption involved, that could be a separate VM
+as well. Now you already have a much stronger system --- a random buffer
+overflow in the rest of the code base can no longer be used to subvert the
+encryption code, and neither can a code-level attack on the network stack.
 
 <img src="../images/retrofit.png" class="w-full" alt="cyber retrofit">
 
