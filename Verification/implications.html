@@ -12,9 +12,14 @@ sub: 'The proofs not only establish functional correctness, integrity, and
 img: /images/verif-implications.jpg
 img_class: "w-3/5 mx-auto"
 img_alt: "abstract photo of a lock with futuristic background"
+layout: card
 ---
 
-<h2 id="fc">Implications of Functional Correctness</h2>
+{% include section-start.html
+  heading='Implications of Functional Correctness'
+  id='fc'
+%}
+<div class="theprose">
 <p>
   The <a href="proofs.html">proof page</a> covers the properties that are proved
   directly: functional correctness, integrity, and confidentiality. These are
@@ -89,8 +94,16 @@ img_alt: "abstract photo of a lock with futuristic background"
   So does seL4 have zero bugs? Yes, of course, and no, of course not. See the <a
   href="../About/FAQ.html#does-sel4-have-zero-bugs">FAQ entry</a> for that.
 </p>
+</div>
 
-<h2 id="integrity">Implications of Integrity</h2>
+{% include section-end.html %}
+
+{% include section-start.html
+  heading='Implications of Integrity'
+  id='integrity'
+%}
+
+<div class="theprose">
 <p>
   You can get even more out of the seL4 proofs for your system. For instance,
   using the integrity property, you can run large untrusted legacy code bases
@@ -127,3 +140,6 @@ img_alt: "abstract photo of a lock with futuristic background"
   make use of the integrity isolation provided by seL4 to connect them. This will
   still give you more strength than with any other operating system.
 </p>
+</div>
+
+{% include section-end.html %}
