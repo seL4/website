@@ -22,7 +22,7 @@ or otherwise.
 
 ## Reviewer
 
-People with technical experience and interest to approve reviews on
+People with technical experience and interest in reviewing and approving
 pull requests, be assigned and maintain issues, but without full
 commit rights.  They would typically be active Contributors already,
 but exceptions are possible. They become members of the seL4 GitHub
