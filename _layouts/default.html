@@ -13,27 +13,25 @@ layout: base
       {{ content | toc_only }}
     </nav>
   {% endif %}
-    <div class="section-borders">
+    <div class="max-w-7xl py-12 px-6 sm:px-12 mx-auto">
       {% unless page.no_title_heading %}
-      <div class="w-full">
-        {% assign h1 = page.h1 | default: page.title %}
-        {% include heading.html
-            pre = page.pre
-            pre_link = page.pre_link
-            h1 = h1
-            sub = page.sub
-            img = page.img
-            img_class = page.img_class
-            alt = page.alt
-            svg = page.svg
-            svg_class = page.svg_class
-        %}
-      </div>
+      {% assign h1 = page.h1 | default: page.title %}
+      {% include heading.html
+          pre = page.pre
+          pre_link = page.pre_link
+          h1 = h1
+          sub = page.sub
+          img = page.img
+          img_class = page.img_class
+          alt = page.alt
+          svg = page.svg
+          svg_class = page.svg_class
+      %}
       {% endunless %}
       {% if page.toc %}
-      <article class="pl-0 lg:pl-8 xl:pl-0 mx-auto -mt-8 prose xl:prose-lg lg:max-w-2xl xl:max-w-3xl dark:prose-invert">
+      <article class="section-borders pl-0 lg:pl-8 xl:pl-0 mx-auto -mt-8 prose xl:prose-lg lg:max-w-2xl xl:max-w-3xl dark:prose-invert">
       {% else %}
-      <article class="mx-auto theprose -mt-8">
+      <article class="section-borders mx-auto theprose -mt-8">
       {% endif %}
         {{ content }}
       </article>
