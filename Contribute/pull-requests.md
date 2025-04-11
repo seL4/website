@@ -51,7 +51,8 @@ commit message.
 
 - Explain any context:
   - is it part of a greater set of changes?
-  - are any concurrent PRs (in other repositories) dependent on this pull request?
+  - are any concurrent pull requests (in other repositories) dependent on this
+    pull request?
   - provide links in the description.
 
 - State what testing has been performed. For the kernel, if a new major feature
@@ -73,8 +74,8 @@ commit message.
   - A good commit history assists reviewers in understanding the change.
   - Please see the [Git conventions][git].
 
-- Good reviews are small reviews. Large PRs should only be created if absolutely
-  necessary and are unlikely to generate excitement from reviewers.
+- Good reviews are small reviews. Large pull requests should only be created if
+  absolutely necessary and are unlikely to generate excitement from reviewers.
 
 ### Requesting Reviewers
 
