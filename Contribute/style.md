@@ -23,10 +23,10 @@ code does follow the rules. In general, we strive to abide by the rule
 
 > Try and leave the code a little better than you found it.
 
-This guide is in three parts: first, we list [general coding
+This guide is in four parts: first, we list [general coding
 conventions](#general-c-code); then we divide the rest of the conventions
-between [user level](#user-level-code) and [kernel code](#kernel-code),
-including [verification requirements](#verification-requirements) that apply to
+between [user level](#user-level-code), [kernel code](#kernel-code), and
+[verification requirements](#verification-requirements) that apply to
 all kernel code. Please read the appropriate guide, as kernel and user-level
 conventions sometimes contradict each other.
 
