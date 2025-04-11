@@ -8,6 +8,9 @@ seL4 is a fast, secure, and formally verified microkernel. So what can you do wi
 </p>'
 pre: "What is seL4?"
 pre_link: "./"
+img: /images/server-virtualization-concept.jpg
+img_class: "w-2/3 aspect-2/1 object-cover"
+img_alt: "illustration of server virtualisation"
 ---
 
 ## Use seL4 as a fast and secure RTOS
