@@ -11,7 +11,7 @@ sub: '<p>
   requirements for <a href="#verification-requirements">verification</a>.
 </p>'
 svg: /images/code-bracket.svg
-svg_class: "text-logogreen mx-auto w-1/4"
+svg_class: "text-logogreen mx-auto w-1/5 stroke-1"
 ---
 
 The conventions below apply to all code maintained by the seL4 Foundation in the

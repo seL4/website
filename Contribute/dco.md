@@ -11,7 +11,7 @@ sub: '
 pre: Coding Conventions
 pre_link: conventions.html
 svg: /images/check-badge.svg
-svg_class: "text-logogreen mx-auto w-1/4"
+svg_class: "text-logogreen mx-auto w-1/5 stroke-1"
 ---
 
 ## Signing off on commits
