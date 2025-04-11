@@ -4,7 +4,7 @@
 title: Register for the seL4 Summit!
 anchor: registration-open
 
-link: ../Foundation/Summit/2022/
+link: /Foundation/Summit/2022/
 img: /images/sel4-summit-logo.svg
 alt: seL4 Summit
 ---
