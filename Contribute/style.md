@@ -5,41 +5,36 @@ title: C Coding Conventions and Style Guide
 pre: Coding Conventions
 pre_link: conventions.html
 sub: '<p>
-
   Formatting, style, and C language subset requirements, divided into <a
   href="#general-c-code">general</a>, <a href="#user-level-code">user-level
-  code</a>, and <a href="#kernel-code">kernel code</a> (including specific
-  requirements for <a href="#verification-requirements">verified kernel
-  code</a>).
-
+  code</a>, and <a href="#kernel-code">kernel code</a>, including
+  requirements for <a href="#verification-requirements">verification</a>.
 </p>'
 
 ---
 
-We strive to follow the below conventions for all the code maintained by the
-seL4 Foundation in the <a href="https://github.com/seL4">seL4 GitHub org</a>.
-We make an exception for external libraries, where we refer to the existing
-conventions.
+The conventions below apply to all code maintained by the seL4 Foundation in the
+[seL4 GitHub org](https://github.com/seL4). They do not apply to external
+libraries, where we refer to the existing conventions.
 
-Some of the code pre-dates the conventions, so it may not all comply.
-However, please try to ensure that any new code does follow the rules.
-In general, we strive to abide by Robert Baden-Powell's rule for
-scouting: "Try and leave [the code] a little better than you found it."
+Some of the code pre-dates the conventions and we update files incrementally as
+they are touched, so it may not all comply. However, please ensure that any new
+code does follow the rules. In general, we strive to abide by the rule
 
-This guide is in three parts: first, we list <a href="#general-c-code">general
-coding conventions</a>; then we divide the rest of the conventions between <a
-href="#user-level-code">user level</a> (that is, not running in privileged mode)
-and <a href="#kernel-code">kernel level</a> (including specific requirements for
-<a href="#verification-requirements">verified code</a>).  Please read the
-appropriate guide, as kernel and user-level conventions sometimes contradict
-each other.
+> Try and leave the code a little better than you found it.
+
+This guide is in three parts: first, we list [general coding
+conventions](#general-c-code); then we divide the rest of the conventions
+between [user level](#user-level-code) and [kernel code](#kernel-code),
+including [verification requirements](#verification-requirements) that apply to
+all kernel code. Please read the appropriate guide, as kernel and user-level
+conventions sometimes contradict each other.
 
 ## General C code
 
-This guide applies to general C code at user-level.  For developing the seL4
-kernel and other verified code, please refer to the <a
-href="#verification-requirements">verification requirements</a> below, which
-override the general conventions.
+This section applies to general C code. There are additional sections with more
+specifics for [user-level](#user-level-code) and [kernel](#kernel-code) code
+below.
 
 ### Compiler options
 
@@ -49,7 +44,7 @@ Code should compile without warnings, with `-Wall`.
 
 For automatic formatting of C code, we use
 [astyle](http://astyle.sourceforge.net/), version 3.1, with the
-settings declared in our
+settings declared in the `sel4_tools`
 [astylerc](https://github.com/seL4/seL4_tools/blob/master/misc/astylerc).
 
 ### Spacing and braces
@@ -60,14 +55,17 @@ settings declared in our
 * Use space between keywords and parentheses; e.g., `if (condition)`.
 * Put the opening brace of a function implementation on the line _after_
   the function's return type, name, and argument list.
+
   ```c
   int atoi(const char *nptr)
   {
       /* ... */
   }
   ```
+
 * Use the "one true brace style" (1TBS); use braces everywhere the
-  syntax allows (including single-statement scopes).
+  syntax allows, including single-statement scopes.
+
   ```c
   if (x == FOO) {
       do_something();
@@ -77,9 +75,11 @@ settings declared in our
       do_last_else();
   }
   ```
+
 * When a function argument list gets too long for one line, indent the
   remaining arguments on the next line just inboard of the parenthesis
   on the line above.  For example:
+
   ```c
   void myfunc(my_ridiculously_long_type_t foo,
               my_ridiculously_long_type_t bar)
@@ -96,8 +96,8 @@ Use `#pragma once` in header files to avoid duplicated includes.
 
 When using integral types (`char`, `int`, `long`, etc.), qualify them
 explicitly as `unsigned` except where negative values are meaningful and
-must be handled.  (Overflow of signed integral types is undefined in the
-C standard.)
+must be handled.  Overflow of signed integral types is undefined behaviour
+in the C standard, whereas overflow of unsigned integral types is defined.
 
 ### Naming of symbols (variables), types, and type aliases (`typedef`)
 
@@ -105,17 +105,19 @@ C standard.)
 * The names of type aliases should always end in `_t`.
 * Function pointer type aliases should always end in `_fn_t`.
 * Do not alias pointer types with `typedef`; we keep them explicit.
+
   ```c
   typedef tick_count unsigned int;
 
   typedef tick_count_ptr_t *tick_count; /* NO */
   tick_count *tick_count_ptr; /* yes */
   ```
+
 * Use `snake_case` to name a multi-word variable or type.
 * Non-`static` functions should be prefixed with appropriate names to
   avoid polluting the namespace.
-    * The convention in library code is to use the name of the library.
-    * A good guide for application code is to use the filename.
+  * The convention in library code is to use the name of the library.
+  * A good guide for application code is to use the filename.
 * Name Boolean variables with a verb phrase including a verb like `is_`,
   `has_`, or `want_` so that the intent of the variable is clear in
   expressions and conditionals.
@@ -130,8 +132,8 @@ C standard.)
 ### Expressions
 
 * Avoid pointer arithmetic unless necessary.
-* Always use preprocessor macros for bit manipulation (e.g., use
-  `BIT(7)` instead of `1 << 7`).
+* Always use preprocessor macros for bit manipulation, e.g., use
+  `BIT(7)` instead of `1 << 7`.
 
 ### Structure
 
@@ -141,14 +143,15 @@ C standard.)
 * Variables at file scope must be marked as `static`.
 * Use public/private header files; avoid `extern` unless necessary.
 * General-purpose utility functions belong in shared libraries, not
-  library-specific files, and vice versa.  (Consider checking `libutils`
+  library-specific files, and vice versa.  Consider checking `libutils`
   in the `util_libs` Git repository for existing functionality, and
-  consider making useful additions there.)
+  consider making useful additions there.
 * Prefer `static inline` functions over preprocessor macros unless
   preprocessor features are required or the macro is simple.
 * Put a comment after the `#endif` of an `#if`, `#ifdef`, or `#ifndef`
   blocks that refers to the preprocessor symbol(s) upon which the code
   is guarded.
+
 ```c
   #ifdef CONFIG_BLAH
   /* ... */
@@ -168,6 +171,10 @@ followed by `memset` or `bzero`.
 
 ## User-level code
 
+In addition to the [general rules](#general-c-code), please follow the below for
+user-level code. These are different to [kernel code](#kernel-code)
+requirements.
+
 ### Type conventions
 
 Be aware that our code needs to be portable across 32- and 64-bit
@@ -186,8 +193,8 @@ platforms.
 
 ### Format strings
 
-* Use 64-bit-friendly printing macros for `printf` (e.g., `PRIi32` for
-  `uint32_t`).
+* Use 64-bit-friendly printing macros for `printf`, e.g., `PRIi32` for
+  `uint32_t`.
 * Use `%p` for pointers.
 * Use `%zd` and `%zu` for `ssize_t` and `size_t` respectively.
 
@@ -203,9 +210,13 @@ platforms.
 
 ## Kernel code
 
+In addition to the [general](#general-c-code) and [verification
+requirements](#verification-requirements), use the following for kernel code.
+These are different to [user level](#user-level-code) requirements.
+
 * Use `word_t` for word-sized things.
-* Do not explicitly typecast between pointers and references (i.e.,
-  integers used as, e.g., offsets into structures): use object-specific
+* Do not explicitly typecast between pointers and references, i.e.,
+  integers used as, e.g., offsets into structures: use object-specific
   macros for this purpose, such as `TCB_REF` and `TCB_PTR`.
 
 ### Format strings
@@ -220,50 +231,54 @@ The in-kernel `printf` implementation is limited.
 Within seL4, the `decode` stage must only check conditions; the
   `invoke` stage can alter state.
 
-### Verification requirements
+## Verification requirements
 
-Verified code (such as that in the seL4 kernel) must follow these
-requirements.  Note that the verified code requirements override
-anything in the general guide.
+Verified code such as in [kernel code](#kernel-code) must follow these
+requirements. If in doubt, verified code requirements override anything in the
+[general guide](#general-c-code).
 
 * Follow the
   [C99](http://www.open-std.org/jtc1/sc22/wg14/www/docs/n1256.pdf)
   standard.  (The link is to the final draft before ratification; the
   official standard document cannot be distributed freely.)
-* Avoid taking the address of a variable of automatic storage class.
-  (In most C implementations, this means stack-allocated locals.)
+* Do not take the address of a variable of automatic storage class.
+  In most C implementations, this means stack-allocated locals.
 * Do not use floating-point types, e.g., `double` or `float`.
 * Do not use `restrict`.
-* `union` types cannot be used; use the bitfield generator instead.
-* Do not preincrement or predecrement variables (`++x`, `--y`).
+* Do not use `union` types; use the bitfield generator instead.
+* Do not pre-increment or pre-decrement variables (`++x`, `--y`).
 * Do not use variable names that duplicate `typedef` type aliases:
+
   ```c
   typedef int A;
-  A A;
+  A A; /* NO */
   ```
+
 * Do not use fall-through cases in `switch` statements.
 * Do not use variadic argument lists.
 * Declare functions that take no arguments as taking a `void` argument.
 * References to linker addresses must be via `extern char[]` declarations
-  rather than declarations of other types (such as `extern char` or
-  `extern void *`).
+  rather than declarations of other types such as `extern char` or
+  `extern void *`.
 * Do not pass arrays as arguments to functions expecting pointers.
+
   ```c
   void foo(int *some_pointer);
   int my_array[10];
-  foo(my_array);
+  foo(my_array); /* NO */
   ```
+
 * Do not declare local variables as `static`.
 * Prefix `struct` fields with the name of the `struct` to avoid
-  namespace conflicts in the proof.  (Much existing kernel code does not
+  namespace conflicts in the proof. Much existing kernel code does not
   follow this directive; new code should adopt the recommended practice
-  to avoid namespace collisions in proofs.)
+  to avoid namespace collisions in proofs.
 * Do not use `typedef` to create a type alias for an `enum`; always
-  specify `enum` types as `word_t` (otherwise, the `enum` size is
-  determined by the compiler).
+  specify `enum` types as `word_t`. Otherwise, the `enum` size is
+  determined by the compiler.
 * All `struct` definitions must be packed, i.e. not contain any implicit padding
-  that is inserted by the compiler (otherwise memory content is
-  unspecified). Use explicit `padding` fields of the required type size to
+  that is inserted by the compiler -- otherwise memory content is
+  unspecified. Use explicit `padding` fields of the required type size to
   remove implicit compiler padding.
 
 ## Further resources
@@ -273,4 +288,3 @@ anything in the general guide.
 * [How to C in 2016](http://matt.sh/howto-c)
 * [Google C++ Style Guide: 64-bit Portability](https://google.github.io/styleguide/cppguide.html#64-bit_Portability)
 * [Google C++ Style Guide: Integer Types](https://google.github.io/styleguide/cppguide.html#Integer_Types)
-* [Baden-Powell quotation](https://www.brainyquote.com/quotes/robert_badenpowell_753084)
