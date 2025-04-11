@@ -1,29 +1,22 @@
 ---
 SPDX-FileCopyrightText: 2020 seL4 Project a Series of LF Projects, LLC.
 SPDX-License-Identifier: CC-BY-SA-4.0
-title: Pull Requests
-no_title_heading: true
 layout: card
+title: Pull Requests
+pre: Coding Conventions
+pre_link: conventions.html
+sub: '
+<p>
+  This is a guide for conducting effective and efficient pull requests on
+  any of the seL4 GitHub repositories. Pull requests that do not follow it may not
+  receive attention or may be closed.
+</p>'
+svg: /images/pr.svg
+svg_class: "w-full"
 ---
 
-{% capture sub %}
-<p>This is a guide for conducting effective and efficient pull requests (PRs) on
-any of the seL4 GitHub repositories. Pull requests that do not follow it may not
-receive attention or may be closed.
-</p>
-<div class="mx-auto my-12 mr-10">
-  {% svg /images/pr.svg width="450" height="150" class="w-full" %}
-</div>
-{% endcapture %}
+<div class="theprose mx-auto -mt-8 mb-12 lg:mb-18" markdown="1">
 
-{% include heading.html
-  pre = "Coding Conventions"
-  pre_link = "conventions.html"
-  h1 = "Pull Requests"
-  sub = sub
-%}
-
-{% capture text %}
 In general, a pull request not should only communicate what the change is,
 but more importantly why it is necessary. The guide below helps you to provide
 the information that will make it likely that a change will be accepted.
@@ -102,7 +95,7 @@ Always abide by the [seL4 Code of Conduct][Conduct].
 - Take into account the context stated by the author.
 - Review commits and commit messages as well as code
 - Request that the above guide be followed if it is not.
-- Provide constructive feedback -- see the <a href="#resources">resources</a> below.
+- Provide constructive feedback -- see the [resources](#resources) below.
 - Remember to comment on good things.
 
 ### For Authors
@@ -174,8 +167,5 @@ satisfy the required tests and approvals.
 [RFC]: rfc-process.html
 [Conduct]: conduct.html
 [git]: git-conventions.html
-{% endcapture %}
 
-<article class="mx-auto theprose -mt-8 mb-12 lg:mb-18">
-  {{ text | markdownify }}
-</article>
+</div>
