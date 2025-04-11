@@ -11,7 +11,7 @@ sub: The seL4 Foundation defines the roles of Contributor, Reviewer,
 
 Apart from Contributor, which anyone can be, you can become a member of any of
 these roles by decision (vote) of the [Technical Steering Committee][TSC] (TSC).
-You can nominate someone for a role by emailing the chair of the TSC.
+You can nominate someone for a role by emailing the chair of the [TSC].
 
 
 ## Contributor
