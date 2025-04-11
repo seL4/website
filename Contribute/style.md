@@ -10,7 +10,8 @@ sub: '<p>
   code</a>, and <a href="#kernel-code">kernel code</a>, including
   requirements for <a href="#verification-requirements">verification</a>.
 </p>'
-
+svg: /images/code-bracket.svg
+svg_class: "text-logogreen mx-auto w-1/4"
 ---
 
 The conventions below apply to all code maintained by the seL4 Foundation in the

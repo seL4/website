@@ -10,6 +10,8 @@ sub: '
   </p>'
 pre: Coding Conventions
 pre_link: conventions.html
+svg: /images/check-badge.svg
+svg_class: "text-logogreen mx-auto w-1/4"
 ---
 
 ## Signing off on commits
