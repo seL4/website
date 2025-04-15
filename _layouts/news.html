@@ -39,7 +39,12 @@ News about seL4, the seL4 Foundation, and the seL4 ecosystem.
 
 {%-   assign img_layout = "float-right rounded-xl -mt-1 ml-4 sm:ml-6 lg:-mr-16" -%}
 {%-   assign w = news_item.img_w | default: "w-2/5" -%}
-{%-   assign default_img_class = "bg-white p-6 sm:p-8 " | append: w -%}
+{%-   if news_item.dark -%}
+{%-     assign bg = "" -%}
+{%-   else -%}
+{%-     assign bg = "bg-white" -%}
+{%-   endif -%}
+{%-   assign default_img_class = bg | append: " p-6 sm:p-8 " | append: w-%}
 {%-   assign c = news_item.img_class | default: default_img_class -%}
 
 <article class="max-w-4xl mx-auto mb-12 sm:mb-18 pt-2 pb-8 px-6 lg:px-8 clear-both">
