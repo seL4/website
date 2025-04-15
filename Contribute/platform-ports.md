@@ -6,7 +6,7 @@ pre_link: ./
 title: Platform Contributions
 sub: "How to contribute a platform port and what it means
       to be a long-term platform maintainer."
-img: /images/tries-shutterstock/stock-photo-collection-of-different-types-of-embedded-cpu-modules-with-integrated-chips-and-connectors-2452627321.jpg
+img: /images/circuit-boards.png
 img_alt: "Collection of different types of embedded CPU modules"
 ---
 
