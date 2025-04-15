@@ -6,7 +6,7 @@ anchor: hacms-game-changer
 
 img: /images/hacms-award.jpg
 alt: DARPA Game Changer Award
-width: 30%
+img_class: w-1/3
 ---
 
 Each year, DARPA leadership selects the Game Changer program that was the most

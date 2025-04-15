@@ -6,6 +6,7 @@ anchor: member-proofcraft
 img: /Foundation/Membership/LOGOS/proofcraft.svg
 alt: Proofcraft Logo
 link: https://proofcraft.systems
+dark: true
 ---
 
 The seL4 Foundation is pleased to welcome Proofcraft.
