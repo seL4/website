@@ -89,7 +89,7 @@ pull request.
 
 ## During Review
 
-Always abide by the [seL4 Code of Conduct][Conduct].
+Always follow the [seL4 Code of Conduct][Conduct].
 
 ### For Reviewers
 
@@ -123,31 +123,35 @@ request can be merged. Exceptions are possible by approval of someone in the
 
 Regression tests vary per repository. For seL4 itself, they must include:
 
-- compile test.
-- hardware and/or simulator runs. Reviewer can add the `hw-build`,
+- Compile test.
+- Hardware and/or simulator runs. Reviewer can add the `hw-build`,
   `hw-test`, and `hw-bench` labels to run hardware builds and tests
   on pull requests.
-- the proofs.
+- Proofs.
 
 For verification target repositories (currently mainly seL4):
 
-- a pull request can only be merged on the master branch if either
+- A pull request can only be merged on the master branch if either
   the corresponding proof is updated or if there is no proof impact.
-- there is no proof impact if:
-  - the preprocessed source for verified code has not changed
-    (the "preprocess" check on GitHub succeeds), or
-  - the proof still works unchanged despite the code change.
-    Reviewers can add the `proof-test` label to run the current proofs
-    on a pull request.
-- for proof updates:
-  - submit a pull request to the [`l4v`](https://github.com/seL4/l4v)
-    repository together with the
-    pull request for the [`seL4`](https://github.com/seL4/seL4)
-    repository, or
-  - ping the `@verification` team on the GitHub seL4 org for help in
-    updating the proofs, or
-  - talk to the [seL4 Foundation][foundation] about finding funding
-    and/or volunteers for the proofs updates if it is a bigger project.
+
+There is no proof impact if:
+
+- The preprocessed source for verified code has not changed
+  (the "preprocess" check on GitHub succeeds), or
+- the proof still works unchanged despite the code change.
+  Reviewers can add the `proof-test` label to run the current proofs
+  on a pull request.
+
+If there are proof updates:
+
+- Submit a pull request to the [`l4v`](https://github.com/seL4/l4v)
+  repository together with the
+  pull request for the [`seL4`](https://github.com/seL4/seL4)
+  repository, or
+- ping the `@verification` team on the GitHub seL4 org for help in
+  updating the proofs, or
+- talk to the [seL4 Foundation][foundation] about finding funding
+  and/or volunteers for the proofs updates if it is a bigger project.
 
 ## Merging
 
