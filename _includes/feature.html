@@ -2,7 +2,13 @@
 {% assign link = include.link | relative_url %}
 {% assign width = include.width | default: "400px" %}
 {% assign img_url = include.img | relative_url %}
-<div class="py-16 sm:py-20 mx-auto max-w-7xl px-6 lg:px-8">
+<div class="py-16 sm:py-20 mx-auto max-w-7xl px-6 sm:px-10 lg:px-8">
+  <div class="mb-12 lg:hidden">
+    <a href="{{link}}">
+      <img class="rounded-xl shadow-xl mx-auto {{include.img_class}}"
+           src="{{img_url}}" alt="{{include.alt}}" width="{{width}}">
+    </a>
+  </div>
   <div class="text-lg leading-8 text-light mt-6 lg:mr-10 lg:grid lg:grid-rows-[auto_auto]
               {%if include.right%}
               lg:gap-x-14 lg:grid-cols-[40%_60%]
@@ -24,7 +30,7 @@
         {% endif %}
       </div>
     </div>
-    <div class="mt-12 lg:mt-0 {%if include.right%} order-3 {%endif%}">
+    <div class="mt-12 lg:mt-0 {%if include.right%} order-3 {%endif%} hidden lg:block">
       <a href="{{link}}">
         <img class="rounded-xl shadow-xl mx-auto {{include.img_class}}"
              src="{{img_url}}" alt="{{include.alt}}" width="{{width}}">
