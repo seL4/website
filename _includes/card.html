@@ -26,13 +26,21 @@
     <div class="px-6 pb-5 flex-auto text-base text-light {{ include.body_class }}">
       {{ include.body }}
     </div>
-    {%- if include.link %}
+    {%- if include.no_link_text and include.link %}
+      <a href="{{ include.link }}">
+        <span class="sr-only">Link to {{ include.title }}</span>
+        <span class="absolute inset-0"></span>
+      </a>
+    {%- endif %}
+    {%- unless include.no_link_text %}
+    {%-   if include.link %}
     <div class="px-6 mt-1 pb-5 {{ include.link_class }}">
       <a href="{{ include.link }}" class="arrow-link">{{ link_text }}
         <span class="absolute inset-0"></span>
       </a>
     </div>
-    {% endif -%}
+    {%   endif -%}
+    {% endunless -%}
     {%- if include.info %}
     <div class="px-6 mt-1 pb-5">
       <p class="text-sm font-semibold text-f_green-600">{{include.info}}</p>

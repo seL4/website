@@ -17,12 +17,13 @@ layout: card
 
 
 <div class="section-borders -mt-12 pt-0">
-  <h2 id="devkits" class="text-center mt-16 mb-6 text-3xl font-bold tracking-tight text-dark md:text-4xl">Development Kits &amp; Component Frameworks</h2>
+  <h2 id="devkits" class="text-center my-16 text-3xl font-bold tracking-tight text-dark md:text-4xl">Development Kits &amp; Component Frameworks</h2>
 
-  <div class="grid grid-cols-1 md:grid-cols-2  gap-12 px-10 pt-8 pb-12 sm:pb-20">
+  <div class="grid grid-cols-1 lg:grid-cols-2 gap-y-24 gap-x-12 lg:gap-x-20 px-10 pt-8 pb-12 sm:pb-20">
 
     {% include card_tool.html
     title="Microkit"
+    icon="puzzle-piece"
     type="Open Source"
     foundation=true
     link="https://docs.sel4.systems/projects/microkit"
@@ -44,6 +45,7 @@ layout: card
 
     {% include card_tool.html
     title="CAmkES"
+    icon="puzzle-piece"
     type="Open Source"
     foundation=true
     link="https://docs.sel4.systems/projects/camkes/"
@@ -61,6 +63,7 @@ layout: card
 
     {% include card_tool.html
     title="sDDF"
+    icon="puzzle-piece"
     type="Open Source"
     foundation=false
     link="https://trustworthy.systems/projects/drivers"
@@ -77,6 +80,7 @@ layout: card
 
     {% include card_tool.html
     title="seL4 Dev Kit"
+    icon="book-open"
     type="Open Source"
     foundation=false
     link="https://sel4devkit.github.io"
@@ -88,9 +92,11 @@ layout: card
     %}
 
     {% include card_tool.html
+    icon="cog-6-tooth"
     title="BriefCase"
     type="Open Source"
     foundation=false
+    class="lg:col-span-2 lg:w-3/4 lg:mx-auto"
     link="https://github.com/loonwerks/BriefCASE-Tutorial"
     body='<p>
       A model-based systems engineering environment that can build systems
@@ -102,12 +108,13 @@ layout: card
 </div>
 
 <div class="section-borders -mt-12 pt-0">
-  <h2 class="text-center mt-16  mb-6 text-3xl font-bold tracking-tight text-dark md:text-4xl">Operating Systems</h2>
+  <h2 class="text-center my-16 text-3xl font-bold tracking-tight text-dark md:text-4xl">Operating Systems</h2>
 
-  <div class="grid grid-cols-1 md:grid-cols-2  gap-12 px-10 pt-8 pb-12 sm:pb-20">
+  <div class="grid grid-cols-1 md:grid-cols-2 gap-y-24 gap-x-12 lg:gap-x-20 px-10 pt-8 pb-12 sm:pb-20">
 
     {% include card_tool.html
     title="Lions OS"
+    icon="squares-plus"
     type="Open Source"
     foundation=false
     link="https://trustworthy.systems/projects/LionsOS/"
@@ -119,6 +126,7 @@ layout: card
 
     {% include card_tool.html
     title="KOS"
+    icon="squares-plus"
     type="Commercial"
     foundation=false
     link="https://www.kry10.com/#platform"
@@ -135,14 +143,16 @@ layout: card
 <!-- FIXME: add CAmkES and Microkit VMMs -->
 <div class="section-borders -mt-12 pt-0">
   <h2 id="virtualisation"
-      class="text-center mt-16  mb-6 text-3xl font-bold tracking-tight text-dark md:text-4xl">Virtualisation</h2>
+      class="text-center my-16 text-3xl font-bold tracking-tight text-dark md:text-4xl">Virtualisation</h2>
 
-  <div class="grid grid-cols-1 md:grid-cols-1 gap-12 px-10 pt-8 pb-12 sm:pb-20">
+  <div class="grid grid-cols-1 md:grid-cols-1 gap-y-24 gap-x-12 lg:gap-x-20 px-10 pt-8 pb-12 sm:pb-20">
 
     {% include card_tool.html
     title="VM Composer"
+    icon="server-stack"
     type="Commercial"
     foundation=false
+    class="mx-auto w-4/5"
     link="https://www.dornerworks.com/vm-composer"
     body='<p>
       A Secure Microkernel Virtual Machine (VM) Composer, a modelling tool to
@@ -158,19 +168,20 @@ layout: card
 <div class="section-borders -mt-12 pt-0">
   <h2 id="languages"
       class="text-center mt-16  mb-6 text-3xl font-bold tracking-tight text-dark md:text-4xl">Language Support</h2>
-  <p class="text-center mb-6">
+  <p class="text-center mb-6 text-light leading-6 text-base sm:text-lg">
     C and Rust are the default languages on top of seL4, but other languages
     are supported, in particular for application-level components.
-    <!-- FIXME: keep the following? -->
+
     seL4 as such is language agnostic. The main effort in using a new
     programming language on top of seL4 usually lies in providing functionality for
     a runtime environment and standard library.
   </p>
 
-  <div class="grid grid-cols-1 md:grid-cols-2  gap-12 px-10 pt-8 pb-12 sm:pb-20">
+  <div class="grid grid-cols-1 md:grid-cols-2 mt-16 gap-y-24 gap-x-12 lg:gap-x-20 px-10 pt-8 pb-12 sm:pb-20">
 
     {% include card_tool.html
       title="C/C++"
+      icon="other/C"
       type="Open Source"
       foundation=true
       link="https://docs.sel4.systems/Tutorials/"
@@ -182,6 +193,7 @@ layout: card
 
     {% include card_tool.html
     title="Rust"
+    icon="other/rust-logo-blk"
     type="Open Source"
     foundation=true
     link="https://github.com/seL4/rust-sel4"
@@ -194,6 +206,7 @@ layout: card
 
     {% include card_tool.html
     title="Pancake"
+    icon="circle-stack"
     type="Open Source"
     foundation=false
     link="https://trustworthy.systems/projects/pancake/"
@@ -205,6 +218,7 @@ layout: card
 
     {% include card_tool.html
     title="Micropython"
+    icon="other/python-logo-only"
     type="Open Source"
     foundation=false
     link="https://lionsos.org/docs/use/language_support/#micropython"
@@ -217,9 +231,11 @@ layout: card
 
     {% include card_tool.html
     title="Erlang and Elixir"
+    icon="other/Elixir"
     type="Commercial"
     foundation=false
     link="https://www.kry10.com/resources"
+    class="md:col-span-2 md:w-2/3 md:mx-auto"
     body='<p>
       Commercial support by Kry10 for the
       <a href="https://www.erlang.org">Erlang</a> and
