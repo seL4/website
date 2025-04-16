@@ -6,6 +6,7 @@ pre: What is seL4?
 pre_link: ./
 title: Frequently Asked Questions
 sub: Questions about seL4 and their answers.
+redirect_from: /Info/FAQ/index.html
 ---
 
 ## General Questions
