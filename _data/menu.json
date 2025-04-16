@@ -12,7 +12,7 @@
         "user-group",
         "Who is using seL4?",
         "Where seL4 is used and deployed world wide",
-        "/About/use.html"
+        "use.html"
       ],
       [
         "check-circle",
