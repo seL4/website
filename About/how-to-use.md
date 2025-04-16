@@ -48,8 +48,8 @@ overflow attacks, but the network filter could check input before it reaches any
 legacy code. And the system architecture in conjunction with seL4 can guarantee
 for you that the filter cannot be bypassed.
 
-<div class="w-2/3 my-6 mx-auto aspect-3/2">
-{% svg /images/tries-shutterstock/sel4-principles.drawio.svg width="100%" %}
+<div class="sm:w-full md:w-3/4 lg:w-2/3 my-6 mx-auto aspect-3/1">
+{% svg /images/sel4-use-example.drawio.svg width="100%" %}
 </div>
 
 ## Use seL4 to architect Secure Systems
