@@ -43,7 +43,7 @@ help.
 [contribution guidelines]: {% link Contribute/index.html %}
 [coding standards]: {% link Contribute/conventions.html %}
 [platform porting guidelines]: https://docs.sel4.systems/projects/sel4/porting
-[commercial service providers]: {% link Foundation/Services/index.html %}
+[commercial service providers]: {% link Services/index.html %}
 [TSC]: {% link Foundation/TSC/index.html %}
 [docsite]: https://docs.sel4.systems
 
