@@ -24,7 +24,7 @@ sub: '
 
 seL4 is a high-assurance, high-performance operating system microkernel. It is
 unique because of its comprehensive formal [verification](../Verification/),
-without compromising [performance](Performance/). seL4 is designed as a
+without compromising [performance](../performance.html). seL4 is designed as a
 trustworthy foundation for building safety- and security-critical systems. It is
 available as open source on [GitHub](https://github.com/seL4/) and supported by
 the [seL4 Foundation](../Foundation/).

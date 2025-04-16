@@ -68,7 +68,7 @@ description of L4 variants and history can be found along this image source:
 ### How does seL4's performance compare to other microkernels?
 
 Up-to-date performance figures of the seL4 head revision are listed on the [seL4
-Benchmarks page]({% link About/Performance/index.html %}). To the best of our
+Benchmarks page]({% link performance.html %}). To the best of our
 knowledge, seL4 is the world's fastest microkernel on the supported processors,
 in terms of the usual ping-pong metric: the cost of a cross-address-space
 message-passing (IPC) operation.
