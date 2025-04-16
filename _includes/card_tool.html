@@ -1,16 +1,16 @@
 {% capture info %}
-  <div class="flex flex-row gap-y-2 sm:gap-y-4 flex-wrap">
-    <div class="text-xs md:text-sm py-0.5 px-4 rounded-sm border-dotted border-1 border-gray-200 dark:border-gray-400 text-gray-400 mr-3 md:mr-5 flex-none">
+  <div class="flex flex-row gap-y-2 sm:gap-y-4 gap-x-3 flex-wrap mx-auto">
+    <div class="text-xs md:text-sm py-0.5 px-4 rounded-sm border-dotted border-1 border-gray-200 dark:border-gray-400 text-gray-400 flex-none basis-auto mx-auto text-center">
       {{ include.type }}
     </div>
     {% if include.foundation %}
-    <div class="text-xs md:text-sm sm:right-38 py-0.5 px-4 rounded-sm border-dotted border-1 border-gray-200 dark:border-gray-400 text-gray-400 flex-none mr-3 md:mr-5">
+    <div class="text-xs md:text-sm sm:right-38 py-0.5 px-4 rounded-sm border-dotted border-1 border-gray-200 dark:border-gray-400 text-gray-400 flex-none basis-auto mx-auto">
       {% svg "_icons/check-badge.svg" class="h-4 w-4 text-f_green-600 mr-1 inline-icon" %}
       seL4 Foundation
     </div>
     {% endif %}
   </div>
-  <div class="py-0.5 text-sm font-semibold text-f_green-600 text-right mt-6 mr-2">
+  <div class="py-0.5 text-sm font-semibold text-f_green-600 text-center mt-6 mr-2">
     Learn more
     &nbsp;
     {% svg _icons/other/external.svg class="inline-icon" %}
