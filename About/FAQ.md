@@ -654,7 +654,7 @@ for what is up next.
 [white paper]: {% link About/whitepaper.md %}
 [learning material]: {% link Learn/index.html %}
 [key research papers]: {% link Research/publications.html %}
-[license page]: {% link Foundation/Trademark/license-tm.html %}
+[license page]: {% link Legal/index.html %}
 [assumptions]: {% link Verification/assumptions.html %}
 
 [platform porting guide]: https://docs.sel4.systems/projects/sel4/porting

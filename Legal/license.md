@@ -3,7 +3,7 @@ SPDX-License-Identifier: CC-BY-SA-4.0
 SPDX-FileCopyrightText: 2020 seL4 Project a Series of LF Projects, LLC.
 title: seL4 Licensing
 pre: Licensing and Trademark
-pre_link: license-tm.html
+pre_link: ./
 sub: '
   <p class="a-underline">
     The seL4 kernel itself is open source and licensed under the GPL, version 2.
@@ -113,4 +113,4 @@ that repository.
 [CC-BY-SA-4.0]: https://spdx.org/licenses/CC-BY-SA-4.0.html
 [SPDX]: https://spdx.org
 [GPL-note]: https://spdx.org/licenses/Linux-syscall-note.html
-[seL4 trademark]: ./index.html
+[seL4 trademark]: ./trademark.html

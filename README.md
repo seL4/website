@@ -124,7 +124,7 @@ Some files contain representations of trademarks.  Irrespective of any
 licence markings, logos and trademarks in this repository are owned by
 their respective owners. No licenses or other rights in or to such
 logos and/or trademarks are granted. The Trademark guidelines for the
-seL4 Foundation can be found at <https://sel4.systems/Foundation/Trademark>
+seL4 Foundation can be found at <https://sel4.systems/Legal/trademark.html>
 
 Permission to use pictures of people have been granted for display on
 the seL4.systems website only.  Please do not use them for any other
