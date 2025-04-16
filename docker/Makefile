@@ -8,13 +8,13 @@
 TAG=sel4/sel4-website
 
 preview: docker-build
-	cd ..; docker run -p 4000:4000 -v `pwd`:/mnt -ti $(TAG) SERVE_HOST="--host 0.0.0.0" serve
+	docker run -p 4000:4000 -v `pwd`/..:/mnt -ti $(TAG) SERVE_HOST="--host 0.0.0.0" serve
 
 checklinks: docker-build
-	cd ..; docker run -v `pwd`:/mnt -ti $(TAG) checklinks
+	docker run -v `pwd`/..:/mnt -ti $(TAG) checklinks
 
 build: docker-build
-	cd ..; docker run -v `pwd`:/mnt -ti $(TAG)
+	docker run -v `pwd`/..:/mnt -ti $(TAG)
 
 docker-build:
-	cd ..; docker build -t $(TAG) -f docker/Dockerfile .
+	docker build -t $(TAG) --build-arg NODE_VERSION=`cat ../.nvmrc` -f Dockerfile ..
