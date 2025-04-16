@@ -62,3 +62,4 @@ exclude:
   - .git/
   - .gitignore
   - .reuse/
+  - colours.html

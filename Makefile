@@ -37,11 +37,13 @@ BUILD_OPTS :=
 build: .jekyll-cache/ruby_deps .npm_deps
 	JEKYLL_ENV=$(JEKYLL_ENV) bundle exec jekyll build $(BUILD_OPTS)
 
+serve: BUILD_OPTS := --config "_config.yml,_dev_pages.yml" $(BUILD_OPTS)
 serve: .jekyll-cache/ruby_deps .npm_deps
 # $(SERVE_HOST) is here so docker can pass in "--host 0.0.0.0" for serve
 # otherwise this variable is not needed and by default empty
 	JEKYLL_ENV=$(JEKYLL_ENV) bundle exec jekyll serve -I --livereload $(BUILD_OPTS) $(SERVE_HOST)
 
+debug: BUILD_OPTS := --config "_config.yml,_dev_pages.yml" $(BUILD_OPTS)
 debug: JEKYLL_ENV := development
 debug: serve
 
