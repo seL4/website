@@ -154,11 +154,11 @@ space, or any of the other [supported languages][languages], write something
 cool, tell people about it!
 
 
-[VMMs]: tools.html#virtualisation
-[tools]: tools.html
+[VMMs]: ../tools.html#virtualisation
+[tools]: ../tools.html
 [retro-article]: https://trustworthy.systems/publications/abstracts/Klein_AKMHF_18.abstract
 [retro-slides]: https://trustworthy.systems/publications/papers/Kuz_19.abstract
 [LionsOS]: https://lionsos.org/
 [KOS]: https://www.kry10.com/#platform
-[devkits]: tools.html#devkits
-[languages]: tools.html#languages
+[devkits]: ../tools.html#devkits
+[languages]: ../tools.html#languages
