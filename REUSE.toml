@@ -1,0 +1,92 @@
+version = 1
+
+SPDX-PackageName = "seL4.systems"
+SPDX-PackageSupplier = "seL4 Foundation"
+SPDX-PackageDownloadLocation = "https://github.com/seL4/website/"
+
+[[annotations]]
+path = [
+    "_data/menu.json",
+    "_data/footer.json",
+    "_data/members.json",
+    "_data/platforms.json",
+    "_data/sponsors.json",
+    "_includes/menu.html",
+    ".bundle/config",
+    "Gemfile.lock",
+    ".ruby-version",
+    ".nvmrc",
+]
+SPDX-FileCopyrightText = "2024 seL4 Project a Series of LF Projects, LLC."
+SPDX-License-Identifier = "BSD-2-Clause"
+
+[[annotations]]
+path = [
+    "images/icons/android*.png",
+    "images/icons/apple-touch-icon*.png",
+    "images/icons/mstile*.png",
+    "images/icons/favicon*.png",
+    "images/icons/favicon.ico",
+    "images/icons/manifest.json",
+    "images/icons/browserconfig.xml",
+    "favicon.ico",
+    "robots.txt",
+    "**/**.pdf",
+    "About/whitepaper.svg",
+    "security.asc",
+]
+SPDX-FileCopyrightText = "2020 seL4 Project a Series of LF Projects, LLC."
+SPDX-License-Identifier = "CC-BY-SA-4.0"
+
+[[annotations]]
+path = [
+  "_icons/*.svg",
+  "_icons/other/external.svg"
+]
+SPDX-FileCopyrightText = "Tailwind Labs"
+SPDX-License-Identifier = "MIT"
+
+[[annotations]]
+path = "About/webserver.svg"
+SPDX-FileCopyrightText = "UNSW"
+SPDX-License-Identifier = "CC-BY-SA-4.0"
+
+[[annotations]]
+path = [
+  "Foundation/Board/**.jpg",
+  "Foundation/Board/**.png",
+  "images/tsc/**",
+  "images/summit/**",
+  "images/acm**",
+]
+SPDX-FileCopyrightText = "various"
+SPDX-License-Identifier = "LicenseRef-PhotoLicence"
+
+[[annotations]]
+path = [
+  "Foundation/Membership/LOGOS/**",
+  "Foundation/Summit/2024/Sponsors/*.svg",
+]
+SPDX-FileCopyrightText = ["Various. Each logo is copyright to the organisation owning that logo."]
+SPDX-License-Identifier = "LicenseRef-PhotoLicence"
+
+[[annotations]]
+path = "**/**.patch"
+SPDX-FileCopyrightText = "2020 seL4 Project a Series of LF Projects, LLC."
+SPDX-License-Identifier = "GPL-2.0-only"
+
+[[annotations]]
+path = ["Info/Docs/u-boot-working-rpi3-32bit-v2017.11.bin", "Info/Hardware/sabreLite/u-boot.bin"]
+SPDX-FileCopyrightText = "Wolfgang Denk and others 2019"
+SPDX-License-Identifier = "GPL-2.0-only"
+
+# TODO:
+# _icons/other/C.svg
+# _icons/other/Elixir.svg
+# _icons/other/github.svg
+# _icons/other/linkedin.svg
+# _icons/other/mastodon.svg
+# _icons/other/python-logo-only.svg
+# _icons/other/registered-tm.svg
+# _icons/other/rust-logo-blk.svg
+# _icons/other/youtube.svg
