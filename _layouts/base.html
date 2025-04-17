@@ -4,8 +4,9 @@
 ---
 {%- comment %}
 Use a query string with the time of the last build to cache bust site CSS file.
-{% endcomment %}
-{% assign cache_bust = site.time | date:'?v=%s' %}
+{% endcomment -%}
+{%- assign cache_bust = site.time | date:'?v=%s' -%}
+<!DOCTYPE html>
 <html lang="en">
   <head>
     <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
