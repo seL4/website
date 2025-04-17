@@ -6,6 +6,9 @@ files:
   - node_modules
   - "_.*/.*"
   - ".*html"
+  - "About/.*md"
+  - "Legal/.*md"
+  - "Contribute/.*md"
 
 urls:
   - twitter.com
