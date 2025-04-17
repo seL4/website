@@ -13,11 +13,14 @@ help:
 	@echo -e "Usage: make <target>. Available seL4 website targets:\n\
 		\n\
 		build       Generate the static files and put them in _site/.\n\
+		on_sel4     As above, but into _site_on_seL4/ for the seL4-hosted version.\n\
 		serve       Host site locally on port 4000 for previewing before commit.\n\
 		debug       Host the development version of the site for local testing.\n\
+		preview     Generate GitHub prievew of the site in pull requests.\n\
 		clean       Remove generated files.\n\
 		doctor      Run jekyll doctor to check configuration.\n\
 		checklinks  Runs html-proofer to check for broken links.\n\
+		validate    Runs html5validator to check for HTML5 compliance.\n\
 		update      Updates all Ruby Gem versions to the newest available.\n\
 		help        This help text.\n"
 
@@ -82,6 +85,15 @@ HTMLPROOFEROPT += --ignore-urls '/$(IGNORE_EXP)/'
 
 checklinks:
 	@bundle exec htmlproofer $(HTMLPROOFEROPT) _site
+
+validate:
+# ignore errors from inline SVG files
+	@html5validator --root _site \
+					--ignore 'is not a "color" value' \
+							 'not allowed on element "svg"' \
+							 'The "font" element is obsolete' \
+							 'xmlns:svg' \
+							 'sodipodi:namedview'
 
 update:
 	bundle update
