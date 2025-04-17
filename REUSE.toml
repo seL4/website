@@ -142,7 +142,13 @@ path = [
     "images/code-skewed.png",
     "images/git-commits.svg",
     "images/licensing.drawio.svg",
-    "images/tries-shutterstock/0sorries.jpg",
+    "images/0sorries.jpg",
+    "images/award.jpeg",
+    "images/proof-stack.drawio.svg",
+    "images/sel4-fast.svg",
+    "images/sel4-principles.drawio.svg",
+    "images/seL4-sepia.svg",
+    "images/sel4-use-example.drawio.svg",
     "_icons/other/registered-tm.svg",
 ]
 SPDX-FileCopyrightText = "Copyright 2025 Proofcraft Pty ltd"
@@ -151,9 +157,34 @@ SPDX-License-Identifier = "CC-BY-SA-4.0"
 [[annotations]]
 path = [
     "images/circuit-boards.png",
+    "images/certif-car.jpg",
+    "images/certif-plane.jpg",
+    "images/certif-security.jpg",
+    "images/courses.jpg",
+    "images/cpu.jpg",
+    "images/documentation.jpg",
+    "images/hangout.jpg",
+    "images/newspaper.jpg",
+    "images/providers.jpg",
+    "images/research.jpg",
+    "images/roadmap.jpg",
+    "images/server-virtualization-concept.jpg",
+    "images/stone-with-a-painted-smile.jpg",
+    "images/verif-implications.jpg",
+    "images/world.jpg",
 ]
 SPDX-FileCopyrightText = "Copyright Shutterstock"
 SPDX-License-Identifier = "LicenseRef-Shutterstock"
+
+
+[[annotations]]
+path = [
+    "images/industrial-control.jpg",
+    "images/spacex.jpg",
+    "images/windmill.jpg",
+]
+SPDX-FileCopyrightText = "Copyright Unsplash"
+SPDX-License-Identifier = "LicenseRef-unsplash"
 
 
 [[annotations]]
