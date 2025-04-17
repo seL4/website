@@ -1,3 +1,5 @@
+# License information for files that cannot have a license header
+
 version = 1
 
 SPDX-PackageName = "seL4.systems"
@@ -32,12 +34,26 @@ path = [
     "images/seL4-short.svg",
     "favicon.ico",
     "robots.txt",
-    "**/**.pdf",
+    "Foundation/TSC/notes/*.pdf",
+    "Foundation/TSC/seL4_Foundation_Technical_Charter.pdf",
+    "Foundation/Board/Minutes/*.pdf",
+    "Foundation/Board/seL4_Foundation_Fund_Charter.pdf",
+    "Foundation/Join/Directed_Fund_Participation_Agreement.pdf",
+    "About/seL4-whitepaper.pdf",
+    "Foundation/Summit/2022/seL4-Summit_Useful-Info.pdf",
     "About/whitepaper.svg",
     "security.asc",
 ]
 SPDX-FileCopyrightText = "2020 seL4 Project a Series of LF Projects, LLC."
 SPDX-License-Identifier = "CC-BY-SA-4.0"
+
+[[annotations]]
+path = [
+    "Info/Docs/seL4-manual*.pdf",
+    "Info/Docs/seL4-spec.pdf",
+]
+SPDX-FileCopyrightText = "2025 seL4 Project a Series of LF Projects, LLC. and others"
+SPDX-License-Identifier = "GPL-2.0-only"
 
 [[annotations]]
 path = "About/webserver.svg"
@@ -47,8 +63,9 @@ SPDX-License-Identifier = "CC-BY-SA-4.0"
 [[annotations]]
 path = [
   "_includes/abstracts/*/*.html",
+  "Foundation/Summit/*/slides/*.pdf",
 ]
-SPDX-FileCopyrightText = "Various. Each abstract is copyright of the talk author."
+SPDX-FileCopyrightText = "Various. Each abstract and slide set is copyright of the talk author."
 SPDX-License-Identifier = "CC-BY-SA-4.0"
 
 [[annotations]]
