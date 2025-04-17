@@ -49,6 +49,13 @@ SPDX-License-Identifier = "CC-BY-SA-4.0"
 
 [[annotations]]
 path = [
+    "Research/pdfs/*.pdf",
+]
+SPDX-FileCopyrightText = "seL4 authors"
+SPDX-License-Identifier = "LicenseRef-Papers"
+
+[[annotations]]
+path = [
     "Info/Docs/seL4-manual*.pdf",
     "Info/Docs/seL4-spec.pdf",
 ]
