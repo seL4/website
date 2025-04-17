@@ -43,8 +43,8 @@ jobs:
       - name: 'Link Check'
         id: 'linkchecker_status'
         run: |
-          make checklinks > linkchecker.log 2>&1 || touch .linkchecker_failed
-          if [ -e ".linkchecker_failed" ]; then
+          make checklinks 2>&1 | tee linkchecker.log
+          if [ "${PIPESTATUS[0]}" != "0" ]; then
             echo "linkchecker_failed=true" >> $GITHUB_OUTPUT
           else
             echo "linkchecker_failed=false" >> $GITHUB_OUTPUT
@@ -63,29 +63,23 @@ jobs:
           echo "linkcheck_msg=$MSG" >> $GITHUB_OUTPUT
 
       - name: HTML5 Validator
-        id: validate
-        uses: Cyb3r-Jak3/html5validator-action@v7.2.0
-        with:
-          root: _site
-          format: text
-          blacklist: pr_checks
-        continue-on-error: true
-
-      - name: Check status of HTML5 validator
         id: validator_status
         run: |
-          if [ "${{ steps.validate.outputs.result }}" -eq "0" ]; then
-            echo "validator_failed=false" >> $GITHUB_OUTPUT
-          else
+          pip install html5validator
+          make validate 2>&1 | tee validator.log
+          if [ "${PIPESTATUS[0]}" != "0" ]; then
             echo "validator_failed=true" >> $GITHUB_OUTPUT
+          else
+            echo "validator_failed=false" >> $GITHUB_OUTPUT
           fi
+        continue-on-error: true
 
       - name: Fix up HTML5 validator log paths + escape quotes
         id: msg
         run: |
-          output="_site/localhost/pr_checks/validator.log"
+          output="validator-fixed.log"
           mkdir -p "$(dirname "$output")"
-          sed 's|/github/workspace/||g' log.log | \
+          sed 's|/github/workspace/||g' validator.log | \
             sed 's|\\|\\\\|g' | \
             sed 's|\"|\\\"|g' >> "$output"
           MSG="$(cat "$output")"
