@@ -29,6 +29,7 @@ path = [
     "images/icons/favicon.ico",
     "images/icons/manifest.json",
     "images/icons/browserconfig.xml",
+    "images/seL4-short.svg",
     "favicon.ico",
     "robots.txt",
     "**/**.pdf",
@@ -39,17 +40,26 @@ SPDX-FileCopyrightText = "2020 seL4 Project a Series of LF Projects, LLC."
 SPDX-License-Identifier = "CC-BY-SA-4.0"
 
 [[annotations]]
-path = [
-  "_icons/*.svg",
-  "_icons/other/external.svg"
-]
-SPDX-FileCopyrightText = "Tailwind Labs"
-SPDX-License-Identifier = "MIT"
-
-[[annotations]]
 path = "About/webserver.svg"
 SPDX-FileCopyrightText = "UNSW"
 SPDX-License-Identifier = "CC-BY-SA-4.0"
+
+[[annotations]]
+path = [
+  "_includes/abstracts/*/*.html",
+]
+SPDX-FileCopyrightText = "Various. Each abstract is copyright of the talk author."
+SPDX-License-Identifier = "CC-BY-SA-4.0"
+
+[[annotations]]
+path = [
+  "_icons/*.svg",
+  "_icons/other/external.svg",
+  "images/check-badge.svg",
+  "images/code-bracket.svg",
+]
+SPDX-FileCopyrightText = "Tailwind Labs"
+SPDX-License-Identifier = "MIT"
 
 [[annotations]]
 path = [
@@ -67,7 +77,7 @@ path = [
   "Foundation/Membership/LOGOS/**",
   "Foundation/Summit/2024/Sponsors/*.svg",
 ]
-SPDX-FileCopyrightText = ["Various. Each logo is copyright to the organisation owning that logo."]
+SPDX-FileCopyrightText = "Various. Each logo is copyright to the organisation owning that logo."
 SPDX-License-Identifier = "LicenseRef-PhotoLicence"
 
 [[annotations]]
@@ -80,13 +90,119 @@ path = ["Info/Docs/u-boot-working-rpi3-32bit-v2017.11.bin", "Info/Hardware/sabre
 SPDX-FileCopyrightText = "Wolfgang Denk and others 2019"
 SPDX-License-Identifier = "GPL-2.0-only"
 
-# TODO:
-# _icons/other/C.svg
-# _icons/other/Elixir.svg
-# _icons/other/github.svg
-# _icons/other/linkedin.svg
-# _icons/other/mastodon.svg
-# _icons/other/python-logo-only.svg
-# _icons/other/registered-tm.svg
-# _icons/other/rust-logo-blk.svg
-# _icons/other/youtube.svg
+[[annotations]]
+path = [
+    "js/callgraph.json",
+    "package.json",
+    "package-lock.json",
+]
+SPDX-FileCopyrightText = "Copyright 2025 Proofcraft Pty ltd"
+SPDX-License-Identifier = "BSD-2-Clause"
+
+[[annotations]]
+path = [
+    "images/certif-cc-adv.drawio.svg",
+    "images/certif-cc-comparison.drawio.svg",
+    "images/certif-do178c-objectives1.drawio.svg",
+    "images/certif-do178c-objectives2.drawio.svg",
+    "images/certif-do330-tql.drawio.svg",
+    "images/certif-iso-asil.drawio.svg",
+    "images/certif-iso-fm.drawio.svg",
+    "images/monolithic-vs-mkernel.drawio.svg",
+    "images/pr.svg",
+    "images/res_paper.svg",
+    "images/screenshot-isabelle-dark.png",
+    "images/screenshot-kernel-elf.png",
+    "images/screenshot-proofs.png",
+    "images/screenshot-sel4-github.png",
+    "images/code-skewed.png",
+    "images/git-commits.svg",
+    "images/licensing.drawio.svg",
+    "images/tries-shutterstock/0sorries.jpg",
+    "_icons/other/registered-tm.svg",
+]
+SPDX-FileCopyrightText = "Copyright 2025 Proofcraft Pty ltd"
+SPDX-License-Identifier = "CC-BY-SA-4.0"
+
+[[annotations]]
+path = [
+    "images/circuit-boards.png",
+]
+SPDX-FileCopyrightText = "Copyright Shutterstock"
+SPDX-License-Identifier = "LicenseRef-Shutterstock"
+
+
+[[annotations]]
+path = "_icons/other/C.svg"
+SPDX-FileCopyrightText = "Rezonansowy"
+SPDX-License-Identifier = "CC0-1.0"
+from = "https://en.m.wikipedia.org/wiki/File:The_C_Programming_Language_logo.svg"
+
+[[annotations]]
+path = "_icons/other/rust-logo-blk.svg"
+SPDX-FileCopyrightText = "Copyright 2023 Rust Foundation"
+SPDX-License-Identifier = "CC-BY-4.0"
+from = "https://foundation.rust-lang.org/policies/logo-policy-and-media-guide/"
+
+[[annotations]]
+path = "_icons/other/Elixir.svg"
+SPDX-FileCopyrightText = "Copyright 2025 Elixir Team"
+SPDX-License-Identifier = "LicenseRef-Elixir"
+from = "https://elixir-lang.org/trademarks"
+
+[[annotations]]
+path = "_icons/other/github.svg"
+SPDX-FileCopyrightText = "Copyright 2025 GitHub, Inc"
+SPDX-License-Identifier = "LicenseRef-GitHubLogo"
+
+[[annotations]]
+path = "_icons/other/mastodon.svg"
+SPDX-FileCopyrightText = "Copyright 2025 Mastodon gGmbH"
+SPDX-License-Identifier = "LicenseRef-MastodonLogo"
+
+[[annotations]]
+path = "_icons/other/linkedin.svg"
+SPDX-FileCopyrightText = "Copyright 2025 LinkedIn Corporation"
+SPDX-License-Identifier = "LicenseRef-LinkedInLogo"
+
+[[annotations]]
+path = "_icons/other/youtube.svg"
+SPDX-FileCopyrightText = "Copyright 2025 YouTube"
+SPDX-License-Identifier = "LicenseRef-YouTubeLogo"
+
+[[annotations]]
+path = "_icons/other/python-logo-only.svg"
+SPDX-FileCopyrightText = "Copyright 2025 Python Software Foundation"
+SPDX-License-Identifier = "LicenseRef-PythonLogo"
+
+[[annotations]]
+path = "images/wordcloud-summit-participants-sponsors.svg"
+SPDX-FileCopyrightText =  "2025 seL4 Project a Series of LF Projects, LLC."
+SPDX-License-Identifier = "LicenseRef-Wordcloud"
+
+
+[[annotations]]
+path= "arc-logo.svg"
+SPDX-FileCopyrightText = "Copyright Australian Research Council"
+SPDX-License-Identifier = "SPDX-License-Identifier: LicenseRef-ARC"
+
+
+[[annotations]]
+path = "images/mep-surevoice.jpg"
+SPDX-FileCopyrightText = "Copyright 2025 MEP"
+SPDX-License-Identifier = "LicenseRef-UsedWithPermission"
+
+[[annotations]]
+path = "images/use-vm-composer.jpg"
+SPDX-FileCopyrightText = "Copyright 2025 Dornerworks"
+SPDX-License-Identifier = "LicenseRef-UsedWithPermission"
+
+[[annotations]]
+path = "images/hacms-award.jpg"
+SPDX-FileCopyrightText = "Copyright 2023 John Launchbury"
+SPDX-License-Identifier = "LicenseRef-UsedWithPermission"
+
+[[annotations]]
+path = "smaccmcopter-defcon.jpg"
+SPDX-FileCopyrightText = "Copyright 2021 DARPA"
+SPDX-License-Identifier = "LicenseRef-UsedWithPermission"

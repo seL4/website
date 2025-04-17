@@ -1,6 +1,8 @@
-<!-- Mobile menu, show/hide based on menu open state. -->
+{%- comment %}
+Copyright 2025 Proofcraft Pty Ltd
+SPDX-License-Identifier: CC-BY-SA-4.0
+{% endcomment -%}
 <div class="lg:hidden hidden" id="mobile-menu" role="dialog" aria-modal="true">
-  <!-- Background backdrop, show/hide based on slide-over state. -->
   <div class="fixed inset-0 z-10"></div>
   <div class="fixed inset-y-0 right-0 z-10 w-full overflow-y-auto bg-white dark:bg-darkblue px-6 py-6 sm:max-w-sm sm:ring-1 sm:ring-gray-900/10 dark:sm:ring-gray-100/20">
     <div class="flex items-center justify-between">
@@ -40,7 +42,6 @@
 {%- endfor -%}
           </div>
         </div>
-        <!-- FIXME: leave out? -->
         <div class="py-6">
           <a href="{{ '/Foundation/Join' | relative_url }}" class="-mx-3 block rounded-lg px-3 py-2.5 text-base font-semibold leading-7 text-dark hover:bg-gray-50 dark:hover:bg-slate-800">Become a Member</a>
           <a href="https://docs.sel4.systems" class="-mx-3 block rounded-lg px-3 py-2.5 text-base font-semibold leading-7 text-dark hover:bg-gray-50 dark:hover:bg-slate-800">Docsite {% svg _icons/other/external.svg class="ml-1 inline-icon" %}</a>
