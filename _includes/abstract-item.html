@@ -8,15 +8,15 @@
         <span class="text-light">{{include.affiliation}}</span>
       </p>
       <article class="theprose -mt-10">
-        <p class="pt-5">
+        <div class="pt-5">
           {% include {{ include.text }} %}
-        </p>
+        </div>
       </article>
       <div class="flex flex-row gap-x-2 pt-2">
         {% if include.youtube %}
           <div class="p-2 pb-1">
             <a href="{{include.youtube}}" target="_blank"><img
-      src="../../../images/icons/youtube_nobckgnd.svg" width="30px" alt="YouTube icon"></a>
+      src="../../../images/icons/youtube_nobckgnd.svg" width="30" alt="YouTube icon"></a>
           </div>
         {% endif %}
         {% if include.slides %}

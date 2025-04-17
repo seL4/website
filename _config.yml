@@ -44,6 +44,9 @@ optional_front_matter:
 # Set this to false if you want .md files to be accessible also
   remove_originals: true
 
+svg:
+  optimize: true
+
 exclude:
   - Makefile
   - README.md
