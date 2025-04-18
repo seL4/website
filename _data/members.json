@@ -45,6 +45,11 @@
       "endorsed": true
     },
     {
+      "name": "MEP",
+      "logo": "mep.svg",
+      "url": "https://www.mep-info.com/"
+    },
+    {
       "name": "Penten Pty Ltd",
       "logo": "Penten.svg",
       "url": "https://www.penten.com/"
