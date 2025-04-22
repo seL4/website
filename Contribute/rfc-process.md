@@ -7,8 +7,6 @@ SPDX-License-Identifier: CC-BY-SA-4.0
 SPDX-FileCopyrightText: 2020 seL4 Project a Series of LF Projects, LLC.
 ---
 
-<!-- FIXME: include more info from the RFC repo here -->
-
 ## Requests for Comments
 
 The seL4 Foundation uses the request for comments (RFC) process to
