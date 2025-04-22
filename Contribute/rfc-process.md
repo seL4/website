@@ -1,8 +1,10 @@
 ---
-title: "The RFC Process"
-sub: How to make design changes to seL4 and seL4 components.
 SPDX-License-Identifier: CC-BY-SA-4.0
 SPDX-FileCopyrightText: 2020 seL4 Project a Series of LF Projects, LLC.
+title: "The RFC Process"
+sub: How to make design changes to seL4 and seL4 components.
+svg: _icons/chat-bubble-left-right.svg
+svg_class: "text-logogreen mx-auto w-1/5 stroke-1"
 ---
 
 ## Requests for Comments
