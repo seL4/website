@@ -47,6 +47,15 @@ path = [
 SPDX-FileCopyrightText = "2020 seL4 Project a Series of LF Projects, LLC."
 SPDX-License-Identifier = "CC-BY-SA-4.0"
 
+
+[[annotations]]
+path = [
+    "images/foundation-logo-3d.png",
+]
+SPDX-FileCopyrightText = "2025 seL4 Project a Series of LF Projects, LLC."
+SPDX-License-Identifier = "LicenseRef-Trademark"
+
+
 [[annotations]]
 path = [
     "Research/pdfs/*.pdf",
@@ -264,5 +273,312 @@ SPDX-License-Identifier = "LicenseRef-UsedWithPermission"
 
 [[annotations]]
 path = "smaccmcopter-defcon.jpg"
+SPDX-FileCopyrightText = "Copyright 2021 DARPA"
+SPDX-License-Identifier = "LicenseRef-UsedWithPermission"
+# License information for files that cannot have a license header
+
+version = 1
+
+SPDX-PackageName = "seL4.systems"
+SPDX-PackageSupplier = "seL4 Foundation"
+SPDX-PackageDownloadLocation = "https://github.com/seL4/website/"
+
+[[annotations]]
+path = [
+    "_data/menu.json",
+    "_data/footer.json",
+    "_data/members.json",
+    "_data/platforms.json",
+    "_data/sponsors.json",
+    "_includes/menu.html",
+    ".bundle/config",
+    "Gemfile.lock",
+    ".ruby-version",
+    ".nvmrc",
+]
+SPDX-FileCopyrightText = "2024 seL4 Project a Series of LF Projects, LLC."
+SPDX-License-Identifier = "BSD-2-Clause"
+
+[[annotations]]
+path = [
+    "images/icons/android*.png",
+    "images/icons/apple-touch-icon*.png",
+    "images/icons/mstile*.png",
+    "images/icons/favicon*.png",
+    "images/icons/favicon.ico",
+    "images/icons/manifest.json",
+    "images/icons/browserconfig.xml",
+    "images/seL4-short.svg",
+    "favicon.ico",
+    "robots.txt",
+    "Foundation/TSC/notes/*.pdf",
+    "Foundation/TSC/seL4_Foundation_Technical_Charter.pdf",
+    "Foundation/Board/Minutes/*.pdf",
+    "Foundation/Board/seL4_Foundation_Fund_Charter.pdf",
+    "Foundation/Join/Directed_Fund_Participation_Agreement.pdf",
+    "About/seL4-whitepaper.pdf",
+    "Foundation/Summit/2022/seL4-Summit_Useful-Info.pdf",
+    "About/whitepaper.svg",
+    "security.asc",
+]
+SPDX-FileCopyrightText = "2020 seL4 Project a Series of LF Projects, LLC."
+SPDX-License-Identifier = "CC-BY-SA-4.0"
+
+[[annotations]]
+path = [
+    "Research/pdfs/*.pdf",
+]
+SPDX-FileCopyrightText = "seL4 authors"
+SPDX-License-Identifier = "LicenseRef-Papers"
+
+[[annotations]]
+path = [
+    "Info/Docs/seL4-manual*.pdf",
+    "Info/Docs/seL4-spec.pdf",
+]
+SPDX-FileCopyrightText = "2025 seL4 Project a Series of LF Projects, LLC. and others"
+SPDX-License-Identifier = "GPL-2.0-only"
+
+[[annotations]]
+path = "About/webserver.svg"
+SPDX-FileCopyrightText = "UNSW"
+SPDX-License-Identifier = "CC-BY-SA-4.0"
+
+[[annotations]]
+path = [
+  "_includes/abstracts/*/*.html",
+  "Foundation/Summit/*/slides/*.pdf",
+]
+SPDX-FileCopyrightText = "Various. Each abstract and slide set is copyright of the talk author."
+SPDX-License-Identifier = "CC-BY-SA-4.0"
+
+[[annotations]]
+path = [
+  "_icons/*.svg",
+  "_icons/other/external.svg",
+  "images/check-badge.svg",
+  "images/code-bracket.svg",
+]
+SPDX-FileCopyrightText = "Tailwind Labs"
+SPDX-License-Identifier = "MIT"
+
+[[annotations]]
+path = [
+  "Foundation/Board/**.jpg",
+  "Foundation/Board/**.png",
+  "images/tsc/**",
+  "images/summit/**",
+  "images/acm**",
+]
+SPDX-FileCopyrightText = "various"
+SPDX-License-Identifier = "LicenseRef-PhotoLicence"
+
+[[annotations]]
+path = [
+  "Foundation/Membership/LOGOS/**",
+  "Foundation/Summit/2024/Sponsors/*.svg",
+]
+SPDX-FileCopyrightText = "Various. Each logo is copyright to the organisation owning that logo."
+SPDX-License-Identifier = "LicenseRef-PhotoLicence"
+
+
+[[annotations]]
+path = [
+  "images/summit-talk-gernot-with-audience.jpg",
+]
+SPDX-FileCopyrightText = "2022 seL4 Project a Series of LF Projects, LLC."
+SPDX-License-Identifier = "LicenseRef-PhotoLicence"
+
+[[annotations]]
+path = "**/**.patch"
+SPDX-FileCopyrightText = "2020 seL4 Project a Series of LF Projects, LLC."
+SPDX-License-Identifier = "GPL-2.0-only"
+
+[[annotations]]
+path = ["Info/Docs/u-boot-working-rpi3-32bit-v2017.11.bin", "Info/Hardware/sabreLite/u-boot.bin"]
+SPDX-FileCopyrightText = "Wolfgang Denk and others 2019"
+SPDX-License-Identifier = "GPL-2.0-only"
+
+[[annotations]]
+path = [
+    "js/callgraph.json",
+    "package.json",
+    "package-lock.json",
+]
+SPDX-FileCopyrightText = "Copyright 2025 Proofcraft Pty ltd"
+SPDX-License-Identifier = "BSD-2-Clause"
+
+[[annotations]]
+path = [
+    "images/certif-cc-adv.drawio.svg",
+    "images/certif-cc-comparison.drawio.svg",
+    "images/certif-do178c-objectives1.drawio.svg",
+    "images/certif-do178c-objectives2.drawio.svg",
+    "images/certif-do330-tql.drawio.svg",
+    "images/certif-iso-asil.drawio.svg",
+    "images/certif-iso-fm.drawio.svg",
+    "images/monolithic-vs-mkernel.drawio.svg",
+    "images/pr.svg",
+    "images/res_paper.svg",
+    "images/screenshot-isabelle-dark.png",
+    "images/screenshot-kernel-elf.png",
+    "images/screenshot-proofs.png",
+    "images/screenshot-sel4-github.png",
+    "images/code-skewed.png",
+    "images/git-commits.svg",
+    "images/licensing.drawio.svg",
+    "images/0sorries.jpg",
+    "images/award.jpeg",
+    "images/proof-stack.drawio.svg",
+    "images/sel4-fast.svg",
+    "images/sel4-principles.drawio.svg",
+    "images/seL4-sepia.svg",
+    "images/sel4-use-example.drawio.svg",
+    "_icons/other/registered-tm.svg",
+]
+SPDX-FileCopyrightText = "Copyright 2025 Proofcraft Pty ltd"
+SPDX-License-Identifier = "CC-BY-SA-4.0"
+
+[[annotations]]
+path = [
+    "images/circuit-boards.png",
+    "images/certif-car.jpg",
+    "images/certif-plane.jpg",
+    "images/certif-security.jpg",
+    "images/courses.jpg",
+    "images/cpu.jpg",
+    "images/documentation.jpg",
+    "images/hangout.jpg",
+    "images/newspaper.jpg",
+    "images/providers.jpg",
+    "images/research.jpg",
+    "images/roadmap.jpg",
+    "images/server-virtualization-concept.jpg",
+    "images/stone-with-a-painted-smile.jpg",
+    "images/verif-implications.jpg",
+    "images/world.jpg",
+]
+SPDX-FileCopyrightText = "Copyright Shutterstock"
+SPDX-License-Identifier = "LicenseRef-Shutterstock"
+
+
+[[annotations]]
+path = [
+    "images/industrial-control.jpg",
+    "images/spacex.jpg",
+    "images/windmill.jpg",
+]
+SPDX-FileCopyrightText = "Copyright Unsplash"
+SPDX-License-Identifier = "LicenseRef-unsplash"
+
+
+[[annotations]]
+path = "images/boeing-ulb-helicopter.jpg"
+SPDX-FileCopyrightText = "U.S. federal government"
+SPDX-License-Identifier = "CC0-1.0"
+from ="https://commons.wikimedia.org/wiki/File:US_Navy_090616-M-9917S-144_The_Unmanned_Little_Bird_(ULB)_helicopter,_a_smaller_variant_of_the_larger,_manned_A-MH-6M_can_be_controlled_by_a_pilot_or_piloted_remotely.jpg"
+
+[[annotations]]
+path = "_icons/other/C.svg"
+SPDX-FileCopyrightText = "Rezonansowy"
+SPDX-License-Identifier = "CC0-1.0"
+from = "https://en.m.wikipedia.org/wiki/File:The_C_Programming_Language_logo.svg"
+
+[[annotations]]
+path = "_icons/other/rust-logo-blk.svg"
+SPDX-FileCopyrightText = "Copyright 2023 Rust Foundation"
+SPDX-License-Identifier = "CC-BY-4.0"
+from = "https://foundation.rust-lang.org/policies/logo-policy-and-media-guide/"
+
+[[annotations]]
+path = "_icons/other/Elixir.svg"
+SPDX-FileCopyrightText = "Copyright 2025 Elixir Team"
+SPDX-License-Identifier = "LicenseRef-Elixir"
+from = "https://elixir-lang.org/trademarks"
+
+[[annotations]]
+path = "_icons/other/github.svg"
+SPDX-FileCopyrightText = "Copyright 2025 GitHub, Inc"
+SPDX-License-Identifier = "LicenseRef-GitHubLogo"
+
+[[annotations]]
+path = "_icons/other/mastodon.svg"
+SPDX-FileCopyrightText = "Copyright 2025 Mastodon gGmbH"
+SPDX-License-Identifier = "LicenseRef-MastodonLogo"
+
+[[annotations]]
+path = "_icons/other/linkedin.svg"
+SPDX-FileCopyrightText = "Copyright 2025 LinkedIn Corporation"
+SPDX-License-Identifier = "LicenseRef-LinkedInLogo"
+
+[[annotations]]
+path = "_icons/other/youtube.svg"
+SPDX-FileCopyrightText = "Copyright 2025 YouTube"
+SPDX-License-Identifier = "LicenseRef-YouTubeLogo"
+
+[[annotations]]
+path = "_icons/other/python-logo-only.svg"
+SPDX-FileCopyrightText = "Copyright 2025 Python Software Foundation"
+SPDX-License-Identifier = "LicenseRef-PythonLogo"
+
+[[annotations]]
+path = "images/wordcloud-summit-participants-sponsors.svg"
+SPDX-FileCopyrightText =  "2025 seL4 Project a Series of LF Projects, LLC."
+SPDX-License-Identifier = "LicenseRef-Wordcloud AND CC-BY-SA-4.0"
+
+
+[[annotations]]
+path= "images/arc-logo.svg"
+SPDX-FileCopyrightText = "Copyright Australian Research Council"
+SPDX-License-Identifier = "LicenseRef-ARC"
+
+
+[[annotations]]
+path = "images/mep-surevoice.jpg"
+SPDX-FileCopyrightText = "Copyright 2025 MEP"
+SPDX-License-Identifier = "LicenseRef-UsedWithPermission"
+
+[[annotations]]
+path = "images/use-vm-composer.jpg"
+SPDX-FileCopyrightText = "Copyright 2025 Dornerworks"
+SPDX-License-Identifier = "LicenseRef-UsedWithPermission"
+
+[[annotations]]
+path = "images/use-neutrality.png"
+SPDX-FileCopyrightText = "Copyright 2025 Neutrality"
+SPDX-License-Identifier = "LicenseRef-UsedWithPermission"
+
+[[annotations]]
+path = "images/hacms-award.jpg"
+SPDX-FileCopyrightText = "Copyright 2023 John Launchbury"
+SPDX-License-Identifier = "LicenseRef-UsedWithPermission"
+
+[[annotations]]
+path = "images/concrete-semantics.jpg"
+SPDX-FileCopyrightText = "Copyright 2014 Gerwin Klein"
+SPDX-License-Identifier = "LicenseRef-UsedWithPermission"
+
+[[annotations]]
+path = "images/l4v.png"
+SPDX-FileCopyrightText = "Copyright 2007 Gerwin Klein"
+SPDX-License-Identifier = "LicenseRef-UsedWithPermission"
+
+[[annotations]]
+path = "images/nio-onvo.png"
+SPDX-FileCopyrightText = "Copyright 2024 NIO"
+SPDX-License-Identifier = "LicenseRef-UsedWithPermission"
+
+[[annotations]]
+path = "images/paper-20y.png"
+SPDX-FileCopyrightText = "Copyright 2016 Gernot Heiser and Kevin Elphinstone"
+SPDX-License-Identifier = "LicenseRef-UsedWithPermission"
+
+[[annotations]]
+path = "images/summit2024-group.jpg"
+SPDX-FileCopyrightText = "Copyright 2024 Ryan Barry"
+SPDX-License-Identifier = "LicenseRef-UsedWithPermission"
+
+[[annotations]]
+path = "images/smaccmcopter-defcon.jpg"
 SPDX-FileCopyrightText = "Copyright 2021 DARPA"
 SPDX-License-Identifier = "LicenseRef-UsedWithPermission"
