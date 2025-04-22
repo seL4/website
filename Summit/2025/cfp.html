@@ -1,23 +1,28 @@
 ---
-# Copyright 2023 seL4 Project a Series of LF Projects, LLC.
+# Copyright 2025 seL4 Project a Series of LF Projects, LLC.
 # SPDX-License-Identifier: CC-BY-SA-4.0
 title: Call for Presentations
-title: Call for Presentations
-pre: "The seL4 Summit 2023"
+pre: "The seL4 Summit 2025"
 pre_link: "./"
 sub: '
 <p>
-  The seL4 Summit gathers the seL4 community to learn, share and connect. The program committee solicits talks on a wide range of seL4-related <a href="#topics">topics</a>.
-</p>'
+  The seL4 Summit gathers the seL4 community to learn, share and connect. The program committee solicits talks on a wide range of seL4-related <a href="#topics">topics</a>, as well as lightning talks on <a href="#deployment">seL4 deployment</a>.
+</p>
+<div class="flex justify-center items-center gap-x-5 mt-10">
+  <a href="https://form.jotform.com/250436091673861" class="button-outline px-10">Submit</a>
+</div>
+'
 layout: card
+redirect_from: /Foundation/Summit/2025/cfp.html
 ---
+
 
 
 <!-- Important dates section -->
 {% include summit-important-dates.html
-  abstracts_date = "24 April 2023"
-  decisions_date = "9 June 2023"
-  summit_date = "19 - 21 September 2023"
+  abstracts_date = "21 April 2025"
+  decisions_date = "6 June 2025"
+  summit_date = "3 - 5 September 2025"
 %}
 {% include section-end-without-up-arrow.html %}
 
@@ -53,12 +58,11 @@ layout: card
         products, projects, and people.
       </p>
       <p>
-        The seL4 Summit 2023 will be in Minneapolis, USA.
+        The seL4 Summit 2025 will be in  Prague, Czech Republic.
       </p>
     </div>'
 %}
 {% include section-end.html %}
-
 
 
 <!-- Topics section -->
@@ -102,7 +106,10 @@ layout: card
         seL4 userland with programming language support beyond C
         </li>
         <li>
-        High performance systems based on seL4: pushing the boundaries
+        high performance systems based on seL4: pushing the boundaries
+        </li>
+        <li>
+        early work/new ideas/initial experiments with seL4
         </li>
         </ul>
       </li>
@@ -147,6 +154,9 @@ layout: card
         <li>
         IOMMU solutions for various hardware architectures and impact for seL4
         </li>
+        <li>
+        device driver development, porting, reuse, frameworks, verification
+        </li>
         </ul>
       </li>
       <li>
@@ -170,7 +180,7 @@ layout: card
         </ul>
       </li>
       </ul>
-    </div>'
+  </div>'
 %}
 {% include section-end.html %}
 
@@ -182,11 +192,12 @@ layout: card
   intro = '
     <p>
       If you would like to propose a talk, please upload an abstract of
-      <strong>one page or less</strong> for your proposed talk <strong>by 24
-      April 2023</strong> on the <strong><a href="submit.html">submission
+      <strong>one page or less</strong> for your proposed talk <strong>by 21
+      April 2025</strong> on the <strong><a
+      href="https://form.jotform.com/250436091673861">submission
       portal</a></strong>. Abstracts should indicate why the talk fits the scope
       of the seL4 Summit. Notifications of accepted presentations will be made
-      by 2 June 2023.
+      by 6 June 2025.
     </p>
     <p>
       If you&apos;d love to hear about some specific work from other people in
@@ -198,6 +209,32 @@ layout: card
 %}
 {% include section-end.html %}
 
+
+<!-- seL4 Deployment section -->
+{% include section-start.html
+  id = "deployment"
+  heading = "seL4 Deployment"
+  intro = '
+  <p>
+    Open invitation for a 5-minute slot to talk about your seL4 deployment
+  </p>
+  <p>
+    The community loves to hear about the deployment of seL4. So, if you:
+  </p>
+  <div class="theprose dark:text-light">
+    <ul>
+      <li>are selling an end-user product that has seL4 embedded within, or </li>
+      <li>have integrated an seL4-based system/component into a deployed system, </li>
+    </ul>
+  </div>
+  <p>
+    you are welcome to a 5-min slot at the summit to talk about it, regardless of whether you are submitting an
+    abstract
+    for a full presentation. Simply send a short description by email to <a title="summit@sel4.systems"
+      href="mailto:summit@sel4.systems">summit@sel4.systems</a> <strong>by 21 April 2025</strong>.
+  </p>'
+%}
+{% include section-end.html %}
 
 
 <!-- Contact section -->

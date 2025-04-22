@@ -40,7 +40,7 @@ path = [
     "Foundation/Board/seL4_Foundation_Fund_Charter.pdf",
     "Foundation/Join/Directed_Fund_Participation_Agreement.pdf",
     "About/seL4-whitepaper.pdf",
-    "Foundation/Summit/2022/seL4-Summit_Useful-Info.pdf",
+    "Summit/2022/seL4-Summit_Useful-Info.pdf",
     "About/whitepaper.svg",
     "security.asc",
 ]
@@ -79,7 +79,7 @@ SPDX-License-Identifier = "CC-BY-SA-4.0"
 [[annotations]]
 path = [
   "_includes/abstracts/*/*.html",
-  "Foundation/Summit/*/slides/*.pdf",
+  "Summit/*/slides/*.pdf",
 ]
 SPDX-FileCopyrightText = "Various. Each abstract and slide set is copyright of the talk author."
 SPDX-License-Identifier = "CC-BY-SA-4.0"
@@ -108,7 +108,7 @@ SPDX-License-Identifier = "LicenseRef-PhotoLicence"
 [[annotations]]
 path = [
   "Foundation/Membership/LOGOS/**",
-  "Foundation/Summit/2024/Sponsors/*.svg",
+  "Summit/2024/Sponsors/*.svg",
 ]
 SPDX-FileCopyrightText = "Various. Each logo is copyright to the organisation owning that logo."
 SPDX-License-Identifier = "LicenseRef-PhotoLicence"
@@ -317,7 +317,7 @@ path = [
     "Foundation/Board/seL4_Foundation_Fund_Charter.pdf",
     "Foundation/Join/Directed_Fund_Participation_Agreement.pdf",
     "About/seL4-whitepaper.pdf",
-    "Foundation/Summit/2022/seL4-Summit_Useful-Info.pdf",
+    "Summit/2022/seL4-Summit_Useful-Info.pdf",
     "About/whitepaper.svg",
     "security.asc",
 ]
@@ -347,7 +347,7 @@ SPDX-License-Identifier = "CC-BY-SA-4.0"
 [[annotations]]
 path = [
   "_includes/abstracts/*/*.html",
-  "Foundation/Summit/*/slides/*.pdf",
+  "Summit/*/slides/*.pdf",
 ]
 SPDX-FileCopyrightText = "Various. Each abstract and slide set is copyright of the talk author."
 SPDX-License-Identifier = "CC-BY-SA-4.0"
@@ -376,7 +376,7 @@ SPDX-License-Identifier = "LicenseRef-PhotoLicence"
 [[annotations]]
 path = [
   "Foundation/Membership/LOGOS/**",
-  "Foundation/Summit/2024/Sponsors/*.svg",
+  "Summit/2024/Sponsors/*.svg",
 ]
 SPDX-FileCopyrightText = "Various. Each logo is copyright to the organisation owning that logo."
 SPDX-License-Identifier = "LicenseRef-PhotoLicence"
