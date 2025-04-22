@@ -135,6 +135,12 @@
         "/Summit/2025/"
       ],
       [
+        "backward",
+        "Previous seL4 Summits",
+        "All seL4 summits from 2022",
+        "/Summit/"
+      ],
+      [
         "envelope",
         "Stay Informed",
         "Announcement mailing list and other channels to stay informed",
