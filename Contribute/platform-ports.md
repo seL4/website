@@ -1,8 +1,6 @@
 ---
 SPDX-License-Identifier: CC-BY-SA-4.0
 SPDX-FileCopyrightText: 2020 seL4 Project a Series of LF Projects, LLC.
-pre: Contributing to seL4
-pre_link: ./
 title: Platform Contributions
 sub: "How to contribute a platform port and what it means
       to be a long-term platform maintainer."

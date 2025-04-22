@@ -1,8 +1,6 @@
 ---
 SPDX-License-Identifier: CC-BY-SA-4.0
 SPDX-FileCopyrightText: 2020 seL4 Project a Series of LF Projects, LLC.
-pre: "Contributing to seL4"
-pre_link: "./"
 title: seL4 Code of Conduct
 sub: "Be nice, considerate, and constructive."
 img: /images/stone-with-a-painted-smile.jpg

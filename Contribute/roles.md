@@ -2,8 +2,6 @@
 SPDX-License-Identifier: CC-BY-SA-4.0
 SPDX-FileCopyrightText: 2020 seL4 Project a Series of LF Projects, LLC.
 
-pre: Contributing to seL4
-pre_link: ./
 title: Development Roles
 sub: The seL4 Foundation defines the roles of Contributor, Reviewer,
      Committer, System Admin, and TSC member for seL4 development.

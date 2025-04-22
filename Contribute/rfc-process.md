@@ -1,7 +1,5 @@
 ---
 title: "The RFC Process"
-pre: "Contributing to seL4"
-pre_link: "./"
 sub: How to make design changes to seL4 and seL4 components.
 SPDX-License-Identifier: CC-BY-SA-4.0
 SPDX-FileCopyrightText: 2020 seL4 Project a Series of LF Projects, LLC.
