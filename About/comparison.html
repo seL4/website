@@ -16,7 +16,7 @@ sub: '
   Unit (MMU). It is available as <a href="https://github.com/seL4">open
   source</a> and is <a href="../use.html">deployed</a> in a wide range of
   sectors.  The table below provide a comparison with a subset of other
-  operating systems: QNX, Greenhill&apos;s Integrity Kernel, CertiKOS, and
+  operating systems: QNX, Greenhill&apos;s INTEGRITY Kernel, CertiKOS, and
   FreeRTOS. Other systems like Ubuntu Core, SELinux, Wind River&apos;s VxWorks
   have large monolithic kernel and thus much larger attack surface.
 </p>'
@@ -32,9 +32,10 @@ products:
     - "yes"    #deployed
     - "no"     #cap based
     - "yes"    #mmu support
+    - "yes"    #general purpose
     - "no"     #open source
 
-- name: Integrity
+- name: INTEGRITY
   features:
     - "no"     #FC
     - "partial"#security-proof
@@ -42,6 +43,7 @@ products:
     - "yes"    #deployed
     - "no"     #cap-based
     - "yes"    #mmu support
+    - "yes"    #general purpose
     - "no"     #open source
 
 - name: CertiKOS
@@ -52,6 +54,7 @@ products:
     - "no"     #deployed
     - "no"     #cap-based
     - "yes"    #mmu support
+    - "no"    #general purpose
     - "no"     #open source (source available but not open source)
 
 - name: FreeRTOS
@@ -62,6 +65,7 @@ products:
     - "yes"    #deployed
     - "no"     #cap-based
     - "no"     #mmu support
+    - "no"    #general purpose
     - "yes"    #open source
 
 - name: seL4
@@ -72,6 +76,7 @@ products:
     - "yes"    #deployed
     - "yes"    #cap-based
     - "yes"    #mmu support
+    - "yes"    #general purpose
     - "yes"    #open source
 
 ---
@@ -119,7 +124,7 @@ products:
        </tr>
      </thead>
      <tbody class="group">
-       {% for i in (0..6) %}
+       {% for i in (0..7) %}
        <tr class="border-b border-t border-gray-100 dark:border-gray-800 last:border-none">
          <th scope="row" class="px-0 py-4 text-sm font-normal text-gray-600 dark:text-gray-400">
 	   {% if i==0 %} Correctness proof {% endif %}
@@ -128,7 +133,8 @@ products:
 	   {% if i==3 %} Deployed {% endif %}
 	   {% if i==4 %} Capability-based {% endif %}
 	   {% if i==5 %} MMU support {% endif %}
-	   {% if i==6 %} Open source {% endif %}
+	   {% if i==6 %} General purpose {% endif %}
+	   {% if i==7 %} Open source {% endif %}
 	 </th>
 	 {% for product in page.products -%}
          <td class="p-4 max-sm:text-center">
