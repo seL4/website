@@ -36,13 +36,13 @@
         "scale",
         "License, Trademark & Logo",
         "seL4 License and Implications; Trademark Compliance Guide",
-        "Legal/index.html"
+        "/Legal/"
       ],
       [
         "cpu-chip",
         "Platform Support Overview",
         "Hardware and simulators seL4 runs on",
-        "/platforms.html"
+        "platforms.html"
       ],
       [
         "academic-cap",
