@@ -233,13 +233,13 @@ SPDX-License-Identifier = "LicenseRef-PythonLogo"
 [[annotations]]
 path = "images/wordcloud-summit-participants-sponsors.svg"
 SPDX-FileCopyrightText =  "2025 seL4 Project a Series of LF Projects, LLC."
-SPDX-License-Identifier = "LicenseRef-Wordcloud"
+SPDX-License-Identifier = "LicenseRef-Wordcloud AND CC-BY-SA-4.0"
 
 
 [[annotations]]
-path= "arc-logo.svg"
+path= "images/arc-logo.svg"
 SPDX-FileCopyrightText = "Copyright Australian Research Council"
-SPDX-License-Identifier = "SPDX-License-Identifier: LicenseRef-ARC"
+SPDX-License-Identifier = "LicenseRef-ARC"
 
 
 [[annotations]]
@@ -250,6 +250,11 @@ SPDX-License-Identifier = "LicenseRef-UsedWithPermission"
 [[annotations]]
 path = "images/use-vm-composer.jpg"
 SPDX-FileCopyrightText = "Copyright 2025 Dornerworks"
+SPDX-License-Identifier = "LicenseRef-UsedWithPermission"
+
+[[annotations]]
+path = "images/use-neutrality.png"
+SPDX-FileCopyrightText = "Copyright 2025 Neutrality"
 SPDX-License-Identifier = "LicenseRef-UsedWithPermission"
 
 [[annotations]]
