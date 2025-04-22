@@ -6,9 +6,8 @@ layout: base
 
 {%- assign this_year = page.year | append: "" -%}
 {% capture sub %}
-<p>
-News about seL4, the seL4 Foundation, and the seL4 ecosystem.
-</p>
+<p>News about seL4, the seL4 Foundation, and the seL4 ecosystem.</p>
+<p>Also available as <a type="application/atom+xml" href="{{ '/feed.xml' | relative_url }}">RSS</a> feed.</p>
 <nav class="mt-4">
   {%- assign newest_url = site.pages | where: "layout", "news" | map: "name" | sort | pop | last -%}
   {%- assign newest_year = newest_url | split: "." | first -%}
