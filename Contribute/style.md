@@ -10,7 +10,7 @@ sub: '<p>
   code</a>, and <a href="#kernel-code">kernel code</a>, including
   requirements for <a href="#verification-requirements">verification</a>.
 </p>'
-svg: /images/code-bracket.svg
+svg: _icons/code-bracket.svg
 svg_class: "text-logogreen mx-auto w-1/5 stroke-1"
 ---
 

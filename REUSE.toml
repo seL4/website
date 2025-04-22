@@ -87,8 +87,6 @@ SPDX-License-Identifier = "CC-BY-SA-4.0"
 path = [
   "_icons/*.svg",
   "_icons/other/external.svg",
-  "images/check-badge.svg",
-  "images/code-bracket.svg",
 ]
 SPDX-FileCopyrightText = "Tailwind Labs"
 SPDX-License-Identifier = "MIT"
