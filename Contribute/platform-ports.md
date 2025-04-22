@@ -11,9 +11,9 @@ img_alt: "Collection of different types of embedded CPU modules"
 ---
 
 While it is exciting to see seL4 running on as many platforms as possible,
-maintaining, testing, and validating the formal verification on those platforms
-has an ongoing cost, and for instance an incomplete platform port would lead to
-a very frustrating user experience.
+maintaining each new platform to the standard expected by our community,
+including testing and validating its formal verification, comes with an ongoing
+cost.
 
 The [Technical Steering Committee][TSC] has therefore set the following requirements
 and expectations for seL4 platform ports.
