@@ -1,0 +1,34 @@
+---
+layout: null
+---
+<?xml version="1.0" encoding="UTF-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+  <title>{{ "seL4 News" | xml_escape }}</title>
+  <author>
+    <name>seL4 Foundation</name>
+  </author>
+  <logo>{{ "/images/seL4.svg" | relative_url }}</logo>
+  <icon>{{ "/images/seL4.svg" | relative_url }}</icon>
+  <id>{{ site.url }}{{ site.baseurl }}/</id>
+  <description>News feed about seL4, the seL4 Foundation, and the seL4 ecosystem.</description>
+  <link rel="alternate">{{ site.url }}{{ site.baseurl }}/news/</link>
+  <link rel="self">{{ site.url }}{{ site.baseurl }}/feed.xml</link>
+  {%- assign last_item = site.news-items | last %}
+  <updated>{{ last_item.date | date_to_rfc822 }}</updated>
+  {%- assign items = site.news-items | reverse %}
+  {%- for item in items limit:10 %}
+  {%-   assign item_year = item.date | date: "%Y" %}
+  {%-   assign item_link = "/news/" | append: item_year | append: ".html#" | append: item.anchor %}
+  <rights>Copyright {{ "now" | date: "%Y" }} seL4 Foundation</rights>
+  <entry>
+    <title>{{ item.title | xml_escape }}</title>
+    <link rel="alternate" type="text/html" href="{{ item_link | absolute_url }}"/>
+    <id>{{ item_link | absolute_url }}</id>
+    <published>{{ item.date | date_to_rfc822 }}</published>
+    <updated>{{ item.date | date_to_rfc822 }}</updated>
+    <content type="html">
+      {{ item.content | xml_escape }}
+    </content>
+  </entry>
+  {%- endfor %}
+</feed>
