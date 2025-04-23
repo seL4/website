@@ -8,11 +8,11 @@ SPDX-License-Identifier: CC-BY-SA-4.0
 {%-   assign submenu = n[2] -%}
 {%-   assign extra = n[3] -%}
 <div class="relative">
-  <button type="button" class="dropbtn" aria-expanded="false">
+  <a class="dropbtn" aria-expanded="false" href="#">
     <span>{{ name }}</span>
     <span class="hidden lg:inline">{{name-ext}}</span>
     {% svg _icons/chevron-down-mini.svg class="drop-icon" %}
-  </button>
+  </a>
 
 {%-   if submenu.size() > 6 -%}
   <div class="absolute -left-14 top-full z-10 mt-4 flex w-screen max-w-max px-4 transition ease-in-out duration-200 dropmenu">
