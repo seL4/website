@@ -136,19 +136,43 @@ layout: card
   </div>
 </div>
 
-<!-- FIXME: add CAmkES and Microkit VMMs -->
 <div class="section-borders -mt-12 pt-0">
   <h2 id="virtualisation"
       class="text-center my-16 text-3xl font-bold tracking-tight text-dark md:text-4xl">Virtualisation</h2>
 
-  <div class="grid grid-cols-1 md:grid-cols-1 gap-y-24 gap-x-12 lg:gap-x-20 px-10 pt-8 pb-12 sm:pb-20">
+  <div class="grid grid-cols-1 lg:grid-cols-2 gap-y-24 gap-x-12 lg:gap-x-20 px-10 pt-8 pb-12 sm:pb-20">
+
+    {% include card_tool.html
+      title="CAmkES VMM"
+      icon="server-stack"
+      type="Open Source"
+      foundation=true
+      link="https://docs.sel4.systems/projects/camkes-vm/"
+      body='<p>
+        Virtual Machine Monitor on seL4 with CAmkES, with support for AArch32, AArch64, and x64.
+      </p>
+      '
+      %}
+
+    {% include card_tool.html
+      title="Microkit VMM"
+      icon="server-stack"
+      type="Open Source"
+      foundation=false
+      link="https://github.com/au-ts/libvmm"
+      body='<p>
+        Virtual Machine Monitor on seL4 with Microkit, currently with support for AArch64 only.
+        RISC-V support is in development.
+      </p>
+      '
+      %}
 
     {% include card_tool.html
     title="VM Composer"
     icon="server-stack"
     type="Commercial"
     foundation=false
-    class="md:mx-auto md:w-4/5"
+    class="lg:mx-auto lg:w-4/5 lg:col-span-2"
     link="https://www.dornerworks.com/vm-composer"
     body='<p>
       A Secure Microkernel Virtual Machine (VM) Composer, a modelling tool to
