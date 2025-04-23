@@ -84,6 +84,7 @@ the format <em>mean (std dev)</em>, both rounded to the nearest integer.</p>
 <div class="max-w-4xl mx-auto">
 <h3 class="h3-size text-dark mt-12 mb-6">Default</h3>
 
+<div class="w-full overflow-x-auto">
 <table class="data-table">
   <tr>
     <th style=" width: 8ex;" colspan="1">ISA</th>
@@ -160,13 +161,15 @@ the format <em>mean (std dev)</em>, both rounded to the nearest integer.</p>
     <td class="data-mean">1697</td>
     <td class="data-stddev">(78)</td>
   </tr></table>
+  </div>
 
   <p class="text-light text-xs sm:text-sm mt-4">
   <sup>*</sup> without meltdown mitigation
   </p>
 
 <h3 class="h3-size text-dark mt-12 mb-6">MCS</h3>
-<table class="data-table">
+<div class="w-full overflow-x-auto">
+  <table class="data-table">
   <tr>
     <th style=" width: 8ex;" colspan="1">ISA</th>
     <th style="text-align: center; width: 4ex;" colspan="1">Mode</th>
@@ -242,7 +245,7 @@ the format <em>mean (std dev)</em>, both rounded to the nearest integer.</p>
     <td class="data-mean">4211</td>
     <td class="data-stddev">(161)</td>
   </tr></table>
-
+  </div>
   <p class="text-light text-xs sm:text-sm mt-4">
     <sup>*</sup> without meltdown mitigation
   </p>
@@ -258,7 +261,8 @@ docker file repository</a></p>
 <details>
 <summary class="theprose mx-auto">See details on compiler and build commands</summary>
 <h3 class="h3-size text-dark mt-12 mb-6 max-w-4xl mx-auto">Default</h3>
-<table class="data-table">
+  <div class="w-full overflow-x-auto">
+  <table class="data-table">
   <tr>
     <th>ISA</th>
     <th>Mode</th>
@@ -302,8 +306,10 @@ docker file repository</a></p>
     <td>riscv64-unknown-elf-gcc GNU 8.3.0</td>
     <td class="monospace">init-build.sh -DFASTPATH=TRUE -DHARDWARE=FALSE -DFAULT=FALSE -DRISCV64=TRUE -DPLATFORM=hifive</td>
   </tr></table>
+  </div>
 
 <h3 class="h3-size text-dark mt-12 mb-6 max-w-4xl mx-auto">MCS</h3>
+<div class="w-full overflow-x-auto">
 <table class="data-table">
   <tr>
     <th>ISA</th>
@@ -348,6 +354,7 @@ docker file repository</a></p>
     <td>riscv64-unknown-elf-gcc GNU 8.3.0</td>
     <td class="monospace">init-build.sh -DFASTPATH=TRUE -DHARDWARE=FALSE -DFAULT=FALSE -DRISCV64=TRUE -DPLATFORM=hifive -DMCS=TRUE</td>
   </tr></table>
+</div>
 </details>
 
 <div class="theprose mx-auto pb-20">
