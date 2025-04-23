@@ -81,6 +81,7 @@
 
   --font-sans: 'Roboto', var(--font-sans);
 
+  --text-tiny: 0.625rem;
 
   --animate-infinite-scroll: infinite-scroll 50s linear infinite;
   @keyframes infinite-scroll {

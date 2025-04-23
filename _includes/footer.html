@@ -46,13 +46,13 @@ SPDX-License-Identifier: CC-BY-SA-4.0
       </div>
     </div>
     <div class="flex flex-row flex-wrap gap-x-3 mt-16 border-t border-white/10 pt-8 sm:mt-20 lg:mt-24">
-      <p class="flex-none text-xs leading-5 text-gray-400">&copy; {{"now" | date: "%Y"}} seL4 Project a Series of LF Projects, LLC. seL4 is a trademark of LF Projects, LLC.</p>
-    {% if site.on_seL4 %}
-    <div class="flex-1"></div>
-    <p class="flex-none text-xs leading-5 text-gray-400">
-      Served by on seL4. <a href="/About/webserver.html" class="underline">About this web server.</a>
-    </p>
-    {% endif %}
+      <p class="flex-none max-w-full text-tiny sm:text-xs leading-5 text-gray-400">&copy; {{"now" | date: "%Y"}} seL4 Project a Series of LF Projects, LLC. seL4 is a trademark of LF Projects, LLC.</p>
+      {%- if site.on_seL4 %}
+      <div class="flex-1"></div>
+      <p class="flex-none text-tiny sm:text-xs leading-5 text-gray-400">
+        Served on seL4. <a href="/About/webserver.html" class="underline">About this web server.</a>
+      </p>
+      {% endif -%}
     </div>
   </div>
 </footer>
