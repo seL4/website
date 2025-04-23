@@ -148,7 +148,7 @@ path = [
     "images/certif-iso-fm.drawio.svg",
     "images/monolithic-vs-mkernel.drawio.svg",
     "images/pr.svg",
-    "images/res_paper.svg",
+    "images/res_paper.png",
     "images/screenshot-isabelle-dark.png",
     "images/screenshot-kernel-elf.png",
     "images/screenshot-proofs.png",
