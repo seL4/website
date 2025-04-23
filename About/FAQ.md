@@ -679,8 +679,7 @@ for what is up next.
 [platform overview]: {% link platforms.html %}
 [supported platforms]: https://docs.sel4.systems/Hardware/
 
-<!-- FIXME: links to PDFs or paper section on sel4.systems? -->
-[TOCS_14]: https://trustworthy.systems/publications/nictaabstracts/Klein_AEMSKH_14.abstract
+[TOCS_14]: {% link Research/pdfs/comprehensive-formal-verification-os-microkernel.pdf %}
 [Elphinstone_Heiser_13]: https://trustworthy.systems/publications/nictaabstracts/Elphinstone_Heiser_13.abstract
 
 [Klein_09]: https://trustworthy.systems/publications/nictaabstracts/Klein_09.abstract
