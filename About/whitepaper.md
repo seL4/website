@@ -18,7 +18,7 @@ sub: '
 
 <div class="mx-10 mb-6 float-left w-1/3">
   <a href="seL4-whitepaper.pdf">
-  <img src="whitepaper.svg" alt="seL4 white paper" />
+  <img src="whitepaper.svg" alt="seL4 white paper front page" />
   </a>
 </div>
 

@@ -196,7 +196,7 @@ of page.
       </p>"
   link="#"
   img="images/cpu.jpg"
-  alt="Critical system"
+  alt="Conceptualised image of a CPU on a motherboard"
 %}
 ```
 
