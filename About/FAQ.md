@@ -13,17 +13,27 @@ redirect_from: /Info/FAQ/index.html
 
 ### What is seL4?
 
-seL4 is the most advanced member of the L4 microkernel family, notable for its
-comprehensive formal verification, which sets it apart from any other operating
-system. seL4 achieves this without compromising performance.
+seL4 is a high-assurance, high-performance operating system microkernel, unique
+because of its [comprehensive formal verification][verification] that sets it
+apart from any [other operating system][comparison]. It achieves this without
+compromising [performance].  seL4 is open source, available on [GitHub].
+
+seL4 is the most advanced member of the L4 microkernel family.
+
+
+### What is kernel code vs user-level code?
+
+Kernel code is defined as code running in privileged mode of the hardware, also
+known as kernel mode. In contrast, user-level code, or application code, is code
+running in unprivileged mode. The kernel of an operating system is defined as
+the part of its code that runs in kernel mode.
+
 
 ### What is a microkernel?
 
-<!-- FIXME: cites should be links or have actual bib -->
-
 A microkernel is the minimal core of an operating system (OS). It presents a
 very small subset of what is generally considered an operating system today. The
-definition of what makes up a microkernel is given by Liedtke [SOSP'95]: A
+definition of what makes up a microkernel is given by [Liedtke][SOSP_95]: A
 concept is tolerated inside the microkernel only if moving it outside the
 kernel, i.e., permitting competing implementations, would prevent the
 implementation of the system's required functionality.
@@ -37,15 +47,14 @@ microkernel, using those mechanisms. Such higher-level services
 inevitably encapsulate policy. Policy-freedom is an important
 characteristic of a well-designed microkernel.
 
-In the model used by L4 microkernels (and seL4 is no exception), an
-initial user-level task (the root task) is given full rights to all
-resources left over once the kernel has booted up (this typically
-includes physical memory, IO ports on x86, and interrupts). It is up to
-this root task to set up other tasks, and to grant rights to those other
-tasks in order to build a complete system. In seL4, like other
-third-generation microkernels, such access rights are conferred by
-capabilities (unforgeable tokens representing privileges) and are fully
-delegatable.
+In the model used by [L4 microkernels](#what-is-the-l4-microkernel-family) (and
+seL4 is no exception), an initial user-level task (the root task) is given full
+rights to all resources left over once the kernel has booted up (this typically
+includes physical memory, IO ports on x86, and interrupts). It is up to this
+root task to set up other tasks, and to grant rights to those other tasks in
+order to build a complete system. In seL4, like other third-generation
+microkernels, such access rights are conferred by capabilities (unforgeable
+tokens representing privileges) and are fully delegatable.
 
 ### What is the L4 microkernel family?
 
@@ -54,25 +63,19 @@ high-performance microkernels evolved from the first L4 microkernel
 developed by Jochen Liedtke in the early '90s. See the
 [L4 microkernel family](https://en.wikipedia.org/wiki/L4_microkernel_family) entry on Wikipedia for more details.
 
-<img class="w-full" src="https://sel4.systems/images/l4family.svg"
-     alt="L4 microkernel family tree" aria-describedby="p1"/>
+A full description of L4 variants and history can be found in the paper ["From
+L3 to seL4. What Have We Learnt in 20 Years of L4
+Microkernels?"][Elphinstone_Heiser_13].
 
-<p id="p1">
-L4 microkernel family tree from 1993 until 2013. Black arrows indicate code,
-green arrows ABI inheritance. Node colours indicate author organisations. A full
-description of L4 variants and history can be found along this image source:
-"From L3 to seL4. What Have We Learnt in 20 Years of L4 Microkernels?
-[Elphinstone & Heiser, SOSP 2013]"
-</p>
 
 
 ### How does seL4's performance compare to other microkernels?
 
-Up-to-date performance figures of the seL4 head revision are listed on the [seL4
-Benchmarks page]({% link performance.html %}). To the best of our
-knowledge, seL4 is the world's fastest microkernel on the supported processors,
-in terms of the usual ping-pong metric: the cost of a cross-address-space
-message-passing (IPC) operation.
+Up-to-date performance figures of the seL4 head revision are listed on the
+[performance page]({% link performance.html %}). To the best of our knowledge,
+seL4 is the world's fastest microkernel on the supported processors, in terms of
+the usual ping-pong metric: the cost of a cross-address-space message-passing
+(IPC) operation.
 
 In fact, we have not seen performance data from another microkernel
 that are within a factor of two of seL4's, and in most cases the
@@ -88,11 +91,11 @@ more complex platform, the extra code is mostly in the kernel initialisation.
 
 In terms of executable code size, on the 64-bit RISC-V architecture, the
 single-core kernel compiles into about 138 KiB. Its RAM size is about 162 KiB,
-which includes code, static data and the stack. Meta-data for user mode
+which includes code, static data and the stack. Meta-data for user-mode
 processes, including address spaces (page tables), thread-control blocks,
 capability storage etc, will add to this. (But note that in seL4's
 memory-management model, such dynamic memory must be supplied to the kernel by
-user mode code.)
+user-mode code.)
 
 ### I want to know more about seL4 functionality, design, implementation, philosophy
 
@@ -102,15 +105,22 @@ on seL4 philosophy and design. See the page on [learning material] and the
 
 ### What can I do with seL4?
 
-You can use seL4 for research, education or commerce. seL4 is open source, with
-a liberal license model for user-level code. See the [license page] for more
-detail.
+You can benefit from [seL4's key differentiators] to build critical systems,
+explore a research idea, learn about microkernels, amongst others.
 
-<!-- FIXME: probably should say more about what you can actually do with it -->
+seL4 is general-purpose, so it supports a wide range of application areas. See
+its main [intended applications](#what-are-the-intended-applications-of-sel4)
+below and examples of [where seL4 is being used in the world][use].
+
+seL4 is also used for [research] and [education].
+
+From a legal stand point, seL4 is open source, with a liberal license model for
+user-level code. See the [license page] for more detail.
+
 
 ### What are the licensing conditions?
 
-The seL4 kernel is released under GPL version 2. Userland tools and libraries
+The seL4 kernel is released under GPL version 2. User-level tools and libraries
 are mostly under BSD-2-Clause, documentation under CC-BY-SA-4.0. The [license
 page] has more details.
 
@@ -147,22 +157,11 @@ do the project work yourself as a way of familiarising yourself with seL4.
 
 ### Where can I learn more?
 
-<!-- FIXME: also update with in-site links -->
+The page on [documentation][learning material] gathers all the pointers to
+learning material for seL4, from hands-on tutorials and comprehensive
+documentation to research articles and university courses.
 
-The UNSW [seL4 project](https://trustworthy.systems/projects/seL4/) and
-[Trustworthy Systems](https://trustworthy.systems/) pages contain more technical
-information about seL4, including links to all peer-reviewed publications. Good
-starting points are:
 
-- [from L3 to seL4 – what have we learnt in 20 years of L4
-  microkernels?][Elphinstone_Heiser_13], a 20-year retrospective of L4
-  microkernels;
-- [the original 2009 paper][SOSP_09] describing seL4 and its formal verification;
-- [a much longer paper detailing the complete verification story of seL4][TOCS_14],
-  including the high-level security proofs, binary verification
-  and timeliness analysis. It also contains an analysis of the cost of
-  verification, and how it compares to that of traditionally-engineered
-  systems.
 
 ## Hardware
 
@@ -170,17 +169,17 @@ starting points are:
 
 Presently seL4 runs on Arm v7 (32-bit) and v8 (64-bit) cores, on PC99 (x86)
 cores (32- and 64-bit mode), and RISC-V (32- and 64-bit) cores. See the
-up-to-date [platform overview].
+up-to-date [platform overview], and detailed [supported platforms] list.
 
 There is a [platform contribution guide] and [platform porting guide] available.
 
 ### Which platform ports are verified?
 
-We have presently the most comprehensive verification story (functional
-correctness to the binary, security proofs, user-level initialisation proofs)
-for 32-bit Arm v7 platforms. For 64-bit Arm v8 and x86 there are
-functional-correctness proofs to C code, and for 64-bit RISC-V there are
-functional-correctness proofs to binary code as well as security proofs.
+We have presently the [most comprehensive verification story][verification]
+(functional correctness to the binary, security proofs, user-level
+initialisation proofs) for 32-bit Arm v7 platforms. For 64-bit Arm v8 and x86
+there are functional-correctness proofs to C code, and for 64-bit RISC-V there
+are functional-correctness proofs to binary code as well as security proofs.
 
 Further verification of the 64-bit Arm v8 configuration (AArch64) is in
 progress.
@@ -201,6 +200,13 @@ Other than that, device support must be provided by user-level code. seL4
 provides the mechanisms for user-mode device drivers, especially the ability to
 map device memory to drivers and forward IRQs as (asynchronous) messages.
 
+Check the [Tools, Frameworks & Languages page][tools] for pointers to a device
+driver framework and other user-level OS component tools.
+
+
+
+
+
 ### What about DMA?
 
 The formal verification of seL4 assumes that the MMU has complete control over
@@ -220,7 +226,8 @@ thereby enable DMA devices with untrusted user-level drivers.
 ### Does seL4 support multicore?
 
 Multicore is presently supported on x64, ARMv7, ARMv8, and RISC-V. Verification
-of the multicore kernel is in progress for static multikernel configurations.
+of the multicore kernel is in progress for static multikernel
+configurations in the seL4 [roadmap].
 
 The SMP kernel uses a [big-lock approach, which makes sense for tightly-coupled
 cores that share an L2
@@ -231,20 +238,23 @@ approach -- running a separate kernel image on each core.
 ### Can I run seL4 on an MMU-less microcontroller?
 
 Using seL4 without a full memory-management unit (MMU) makes little sense, as
-its resource management is fundamentally based on virtual memory. For lower-end
-processors that only have a memory-protection unit (MPU) or no memory protection
-at all, you should look at the [eChronos real-time operating
-system](https://trustworthy.systems/projects/OLD/echronos/), which is
-designed for such processors and has undergone partial formal verification.
+its resource management is fundamentally based on virtual memory.
 
 ### What are the intended applications of seL4?
 
-seL4 is a general-purpose microkernel, so the answer is all of them. The main
-targets are embedded systems with security or reliability requirements, but that
-is not exclusive. Using a microkernel like seL4 makes sense on platforms that
-provide virtual memory protection and for application areas that need isolation
-between different parts of the software. Immediate application areas are in the
-financial, medical, automotive, avionics and defence sectors.
+seL4 is a general-purpose microkernel, so the answer is all of them. As
+explained on the page on [how to use seL4][how-to-use], seL4 can be used as a
+fast and secure RTOS, or as a hypervisor, or both, or as a basis for an OS. It
+can also be used to architect secure systems, or to cyber retrofit an existing
+system.
+
+The main targets are embedded systems with security or reliability requirements,
+but that is not exclusive. Using a microkernel like seL4 makes sense on
+platforms that provide virtual memory protection and for application areas that
+need isolation between different parts of the software. Immediate application
+areas are in the financial, medical, automotive, avionics and defence
+sectors. See examples of [where seL4 is being used in the world][use].
+
 
 ## Virtual machines
 
@@ -306,25 +316,25 @@ verification directly to the code that implements the software and to show that
 this code has specific properties.
 
 There are two broad approaches to formal verification: fully automated methods
-such as model checking that work on limited systems and properties, and
-interactive mathematical proof which requires manual effort.
+that work on limited systems and properties, such as model checking or static
+analysis, and interactive mathematical proof which requires manual effort.
 
-The seL4 verification uses formal mathematical proof in the theorem prover
+The [seL4 verification][proofs] uses formal mathematical proof in the theorem prover
 [Isabelle/HOL](http://isabelle.in.tum.de/). This theorem prover is interactive,
 but offers a comparatively high degree of automation. It also offers a very high
 degree of assurance that the resulting proof is correct.
 
 ### What does seL4's formal verification mean?
 
-Unique about seL4 is its unprecedented degree of assurance, achieved through
-formal verification. Specifically, the ARM, ARM\_HYP (ARM with virtualisation
-extensions), AARCH64, X64, and RISCV64 versions of seL4 comprise the first (and
-still only) general-purpose OS kernel with a full code-level functional
-correctness proof, meaning a mathematical proof that the implementation (written
-in C) adheres to its specification. In short, the implementation is proved to be
-free of implementation defects. This also implies a number of other properties,
-such as freedom from buffer overflows, null pointer exceptions, use-after-free,
-etc.
+Unique about seL4 is its unprecedented [degree of assurance][proofs], achieved
+through formal verification. Specifically, the ARM, ARM\_HYP (ARM with
+virtualisation extensions), AARCH64, X64, and RISCV64 versions of seL4 comprise
+the first (and still only) general-purpose OS kernel with a full code-level
+functional correctness proof, meaning a mathematical proof that the
+implementation (written in C) adheres to its specification. In short, the
+implementation is proved to be free of implementation defects. This also
+[implies a number of other properties][implications], such as freedom from
+buffer overflows, null pointer exceptions, use-after-free, etc.
 
 On the ARM and RISCV64 platforms, there is a further proof that the binary code
 which executes on the hardware is a correct translation of the C code. This
@@ -420,11 +430,11 @@ of previous work on verified OS kernels. See also a [comprehensive
 overview][Klein_09] paper on OS verification from 2008 as well as the related
 work section of the [seL4 overview paper][TOCS_14] from 2014.
 
-The new and exciting thing about seL4 is that it has a) strong properties such
-as functional correctness, integrity, and confidentiality, and b) has these
-properties formally verified directly to the code - initially to C, now also to
-binary. In addition, the seL4 proofs are machine-checked, not just based on pen
-and paper.
+The new and exciting thing about seL4 is that it has a) [strong
+properties][proofs] such as functional correctness, integrity, and
+confidentiality, and b) has these properties formally verified directly to the
+code - initially to C, now also to binary. In addition, the seL4 proofs are
+machine-checked, not just based on pen and paper.
 
 Previous verifications have either not completed their proofs, have targeted
 more shallow properties, such as the absence of undefined execution, or they
@@ -502,13 +512,12 @@ As an example, the CPU and architecture options mean that everything under
 
 ### How are resources managed and protected in seL4?
 
-<!-- FIXME: remove userland; not a word -->
-The key idea in seL4 is that all resource management is done in userland. Access
-to and control over resources is controlled by capabilities. The kernel after
-boot hands control over all free resources to userland, and after that will
-never do any memory management itself. It has no heap, just a few global
-variables, a strictly bounded stack, and memory explicitly provided to it by
-userland.
+The key idea in seL4 is that all resource management is done in user-level
+code. Access to and control over resources is controlled by capabilities. The
+kernel after boot hands control over all free resources to user-level code, and
+after that will never do any memory management itself. It has no heap, just a
+few global variables, a strictly bounded stack, and memory explicitly provided
+to it by user-level code.
 
 ### What are capabilities?
 
@@ -534,26 +543,27 @@ details on caps.
 
 <!-- FIXME: update, confuses memory with caps -->
 <!-- FIXME: clean up double quote style -->
-The kernel puts userland in control of system resources by handing all
-free memory (called "Untyped") after booting to the first user process
-(called the "root task") by depositing the respective caps in the root
-tasks's CSpace. The root task can then implement its resource management
-policies, e.g. by partitioning the system into security domains and
-handing each domain a disjoint subset of Untyped memory.
 
-If a system call requires memory for the kernel's metadata, such as the
-thread control block when creating a thread, userland must provide this
-memory explicitly to the kernel. This is done by "retyping" some
-Untyped memory into the corresponding kernel object type. Eg. for thread
-creation, userland must retype some Untyped into "TCB Objects". This
-memory then becomes kernel memory, in the sense that only the kernel can
-read or write it. Userland can still revoke it, which implicitly
-destroys the objects (e.g., threads) represented by the object.
+The kernel puts user-level code in control of system resources by handing all
+free memory (called "Untyped") after booting to the first user process (called
+the "root task") by depositing the respective caps in the root tasks's
+CSpace. The root task can then implement its resource management policies,
+e.g. by partitioning the system into security domains and handing each domain a
+disjoint subset of Untyped memory.
 
-The only objects directly accessible by userland are "Frame Objects":
-These can be mapped into an "Address Space Object" (essentially a page
-table), after which userland can write to the physical memory
-represented by the Frame Objects.
+If a system call requires memory for the kernel's metadata, such as the thread
+control block when creating a thread, user-level code must provide this memory
+explicitly to the kernel. This is done by "retyping" some Untyped memory into
+the corresponding kernel object type. Eg. for thread creation, user-level code
+must retype some Untyped into "TCB Objects". This memory then becomes kernel
+memory, in the sense that only the kernel can read or write it. User-level code
+can still revoke it, which implicitly destroys the objects (e.g., threads)
+represented by the object.
+
+The only objects directly accessible by user-level code are "Frame Objects":
+These can be mapped into an "Address Space Object" (essentially a page table),
+after which user-level code can write to the physical memory represented by the
+Frame Objects.
 
 ### How can threads communicate?
 
@@ -645,6 +655,11 @@ article][TOCS_14]. The fastpath discussion starts on page 23.
 There are always new things in the pipeline for seL4. See the [roadmap]
 for what is up next.
 
+[verification]: {% link Verification/index.html %}
+[proofs]: {% link Verification/proofs.html %}
+[implications]: {% link Verification/implications.html %}
+[performance]: {% link performance.html %}
+
 [roadmap]: {% link roadmap.html %}
 
 [GitHub]: https://github.com/seL4/seL4
@@ -666,7 +681,15 @@ for what is up next.
 
 <!-- FIXME: links to PDFs or paper section on sel4.systems? -->
 [TOCS_14]: https://trustworthy.systems/publications/nictaabstracts/Klein_AEMSKH_14.abstract
-[SOSP_09]: https://trustworthy.systems/publications/nictaabstracts/Klein_EHACDEEKNSTW_09.abstract
 [Elphinstone_Heiser_13]: https://trustworthy.systems/publications/nictaabstracts/Elphinstone_Heiser_13.abstract
 
 [Klein_09]: https://trustworthy.systems/publications/nictaabstracts/Klein_09.abstract
+[SOSP_95]: https://dl.acm.org/doi/10.1145/224056.224075
+
+[research]: {% link Research/index.html %}
+[education]: {% link Research/courses.html %}
+[use]: {% link use.html %}
+[seL4's key differentiators]:  {% link About/fact-sheet.html %}
+[comparison]:  {% link About/comparison.html %}
+[tools]:  {% link tools.html %}
+[how-to-use]:  {% link About/how-to-use.md %}
