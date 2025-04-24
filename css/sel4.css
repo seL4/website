@@ -161,7 +161,7 @@ layout: none
 }
 
 @utility section-borders {
-  @apply px-6 lg:px-8 pt-6 sm:pt-8 pb-12 sm:pb-20;
+  @apply px-0 sm:px-6 lg:px-8 pt-6 sm:pt-8 pb-12 sm:pb-20;
 }
 
 @utility section-max-w {

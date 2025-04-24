@@ -24,26 +24,26 @@ SPDX-License-Identifier: CC-BY-SA-4.0
   {% else %}
   <div>
   {% endif %}
-    <span class="text-light">{{include.time}}</span>
+    <span class="text-light text-sm sm:text-base">{{include.time}}</span>
     {% if include.type %}
     <br>
-    <span class="text-gray-500">{{include.type}}</span>
+    <span class="text-gray-500 text-sm sm:text-base">{{include.type}}</span>
     {% endif %}
   </div>
 
   <div class="col-span-2">
     {% if include.abstract %}
-        <a href="{{include.abstract}}" class="no-underline hover:underline">
+        <a href="{{include.abstract}}" class="text-sm sm:text-base no-underline hover:underline">
       {% endif %}
-        <span class="text-dark"><strong>{{include.title}}</strong></span>
+        <span class="text-dark text-sm sm:text-base"><strong>{{include.title}}</strong></span>
       {% if include.abstract %}
         </a>
       {% endif %}
 
       {% if include.presenter %}
         <br>
-        <span class="text-dark">{{include.presenter}}</span>,
-        <span class="text-light">{{include.affiliation}}</span>
+        <span class="text-dark text-sm sm:text-base">{{include.presenter}}</span>,
+        <span class="text-light text-sm sm:text-base">{{include.affiliation}}</span>
       {% endif %}
 
 
@@ -74,7 +74,7 @@ SPDX-License-Identifier: CC-BY-SA-4.0
   </div>
   <div class="text-right">
     {% if include.chair %}
-    <span class="text-gray-500">{{include.chair}}</span>
+    <span class="text-gray-500 text-sm sm:text-base">{{include.chair}}</span>
     {% endif %}
   </div>
 {% endif %}
