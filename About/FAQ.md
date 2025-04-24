@@ -56,6 +56,7 @@ order to build a complete system. In seL4, like other third-generation
 microkernels, such access rights are conferred by capabilities (unforgeable
 tokens representing privileges) and are fully delegatable.
 
+
 ### What is the L4 microkernel family?
 
 L4 is a family of very small,
@@ -66,7 +67,6 @@ developed by Jochen Liedtke in the early '90s. See the
 A full description of L4 variants and history can be found in the paper ["From
 L3 to seL4. What Have We Learnt in 20 Years of L4
 Microkernels?"][Elphinstone_Heiser_13].
-
 
 
 ### How does seL4's performance compare to other microkernels?
@@ -81,27 +81,27 @@ In fact, we have not seen performance data from another microkernel
 that are within a factor of two of seL4's, and in most cases the
 gap is closer to a factor of ten.
 
+
 ### What is the size of seL4?
 
 Obviously this depends on the processor architecture.
 
-In terms of source-code size, the 64-bit RISC-V kernel is about 9,400 SLOC (as
-of Jan'20). The Arm version is similar, x64 is larger (16-18 kSLOC) due to the
-more complex platform, the extra code is mostly in the kernel initialisation.
+In terms of source-code size, the verified 64-bit RISC-V kernel is about 10,000
+SLOC (as of Apr'25). The verified AArch32 version is 12,100 SLOC (13,500 SLOC
+with hypervisor support), the AArch64 version 12,600 SLOC with hypervisor
+support, and the verified configuration of x64 is 16,000 SLOC.
 
-In terms of executable code size, on the 64-bit RISC-V architecture, the
-single-core kernel compiles into about 138 KiB. Its RAM size is about 162 KiB,
-which includes code, static data and the stack. Meta-data for user-mode
-processes, including address spaces (page tables), thread-control blocks,
-capability storage etc, will add to this. (But note that in seL4's
-memory-management model, such dynamic memory must be supplied to the kernel by
-user-mode code.)
+The size of the executable kernel ELF image depends on configuration. It is
+about 66 KiB for the default RISC-V 64-bit single-core verified configuration,
+141 KiB for AArch32, 162 KiB for AArch64, and 141 KiB for x64.
+
 
 ### I want to know more about seL4 functionality, design, implementation, philosophy
 
 See the [white paper] and the list of [key research papers] about seL4 for more
 on seL4 philosophy and design. See the page on [learning material] and the
 [docsite] for functionality and API references, and [GitHub] for the sources.
+
 
 ### What can I do with seL4?
 
@@ -114,8 +114,8 @@ below and examples of [where seL4 is being used in the world][use].
 
 seL4 is also used for [research] and [education].
 
-From a legal stand point, seL4 is open source, with a liberal license model for
-user-level code. See the [license page] for more detail.
+seL4 is open source, with a liberal license model for user-level code. See the
+[license page] for more detail.
 
 
 ### What are the licensing conditions?
@@ -126,34 +126,35 @@ page] has more details.
 
 ### How do I contribute to seL4?
 
+
 See the page on [contribution guidelines]({% link Contribute/index.html %}).
 
-### How can I build a system with seL4?
 
-<!-- FIXME: update; add microkit -->
+### How do I build a system with seL4?
 
-Much more is required to build a system on seL4 compared to building on, say
-Linux. Having decomposed your system into modules, you will need to work out
-what access each module needs to hardware resources, you will need to build
-device drivers for the platform you are on (there are a few provided in
-`libplatsupport` for supported platforms), and you will have to integrate it
-into something that can be run.
+See the page on [how to use seL4]({% link About/how-to-use.md %}) for scenarios
+that benefit from using seL4.
 
-There are two recommended ways to do this.
+Depending on which of these scenarios you are looking to address, there are
+different ways to get started. The [tools and frameworks]({% link tools.html %})
+page has frameworks such as Microkit and CAmkES that can help you get started
+quickly for static systems, as well as Virtual Machine Monitors, and support
+for a number of different programming languages to use on top of seL4.
 
-- [CAmKES](https://docs.sel4.systems/projects/camkes/) is the
-      Component Architecture for Micro-Kernel-based Embedded Systems. It
-      provides a language for describing the distribution of resources
-      to components, and the assignment of components to address spaces.
-- Build on `libsel4utils`, which provides useful abstractions like
-      processes, but is generally more low-level.
+Note that to build a system from scratch on a microkernel, you will need basic
+OS services such as drivers, file system and networking. Some of the tools and
+frameworks above help with these. There are also a few ready-made components to
+start from in both Microkit and CAmkES, but there is still a lot more
+infrastructure work to be done on a microkernel than for developing on a full OS
+like a Linux distribution.
 
-For build instructions, and how to get started, see the [Resources] page on the
-[docsite]. Also, UNSW's [Advanced Operating Systems
-course](https://www.cse.unsw.edu.au/~cs9242) has an extensive project component
-that builds an OS on top of seL4. If you have access to an
-[Odroid-C4](https://www.hardkernel.com/shop/odroid-c4/), you should be able to
-do the project work yourself as a way of familiarising yourself with seL4.
+For instructions on how get started, see the [Resources] page on the [docsite].
+UNSW's [Advanced Operating Systems course](https://www.cse.unsw.edu.au/~cs9242)
+has an extensive project component that builds an OS on top of seL4. If you have
+access to an [Odroid-C4](https://www.hardkernel.com/shop/odroid-c4/), you should
+be able to do the project work yourself as a way of familiarising yourself with
+seL4.
+
 
 ### Where can I learn more?
 
@@ -173,13 +174,14 @@ up-to-date [platform overview], and detailed [supported platforms] list.
 
 There is a [platform contribution guide] and [platform porting guide] available.
 
+
 ### Which platform ports are verified?
 
-We have presently the [most comprehensive verification story][verification]
-(functional correctness to the binary, security proofs, user-level
-initialisation proofs) for 32-bit Arm v7 platforms. For 64-bit Arm v8 and x86
-there are functional-correctness proofs to C code, and for 64-bit RISC-V there
-are functional-correctness proofs to binary code as well as security proofs.
+32-bit Arm v7 platforms presently have the [most comprehensive verification
+story][verification] (functional correctness to the binary, security proofs,
+user-level initialisation proofs). For 64-bit Arm v8 and x86 there are
+functional-correctness proofs to C code, and for 64-bit RISC-V there are
+functional-correctness proofs to binary code as well as security proofs.
 
 Further verification of the 64-bit Arm v8 configuration (AArch64) is in
 progress.
@@ -187,6 +189,7 @@ progress.
 The list of [supported platforms] shows verification status per hardware
 platform and the [verified configurations] page has more details on which
 platform supports which level of proof.
+
 
 ### What devices does seL4 support?
 
@@ -202,9 +205,6 @@ map device memory to drivers and forward IRQs as (asynchronous) messages.
 
 Check the [Tools, Frameworks & Languages page][tools] for pointers to a device
 driver framework and other user-level OS component tools.
-
-
-
 
 
 ### What about DMA?
@@ -223,6 +223,7 @@ There are unverified seL4 configurations with SystemMMU support on Arm and VT-d
 extension support for x86. These extensions allow the kernel to restrict DMA and
 thereby enable DMA devices with untrusted user-level drivers.
 
+
 ### Does seL4 support multicore?
 
 Multicore is presently supported on x64, ARMv7, ARMv8, and RISC-V. Verification
@@ -235,10 +236,12 @@ cache](https://trustworthy.systems/publications/nictaabstracts/Peters_DEH_15.abs
 It is not meant to scale to many cores, where instead a multikernel is the right
 approach -- running a separate kernel image on each core.
 
+
 ### Can I run seL4 on an MMU-less microcontroller?
 
 Using seL4 without a full memory-management unit (MMU) makes little sense, as
 its resource management is fundamentally based on virtual memory.
+
 
 ### What are the intended applications of seL4?
 
@@ -256,6 +259,7 @@ areas are in the financial, medical, automotive, avionics and defence
 sectors. See examples of [where seL4 is being used in the world][use].
 
 
+
 ## Virtual machines
 
 ### Can I run Linux on top of seL4?
@@ -269,39 +273,30 @@ Ring-0 root mode or ARM hyp mode) and forwards virtualisation events to
 a virtual machine monitor (VMM) which performs the necessary emulations.
 The VMM runs de-privileged (x86 Ring-3 root mode or ARM supv mode).
 
+
 ### Does seL4 support multiple virtual machines at once?
 
 Yes, multiple VMs are supported, including heterogeneous ones.
 
+
 ### Can I run a real-time OS in a virtual machine on seL4?
 
-<!-- FIXME: update. Some parts misleading; who is "we"; MCS no longer new.
-     "Mainline" is no longer a concept. "We" do not recommend using MCS
-     for all new projects. -->
-seL4 is the world’s only hypervisor with a sound worst-case execution-time
-(WCET) analysis, and as such the only one that can give you actual real-time
-guarantees, no matter what others may be claiming. (If someone else tells you
-they can make such guarantees, ask them to make them in public so Gernot can
-call out their bullshit.)
+In theory, running a real-time OS in a virtual machine on seL4 would be
+possible, but in most scenarios it is not recommended because the real-time OS
+in the VM would not have much control over time. In general, you will be better
+off running real-time applications in a native seL4 environment.
 
-The originally published analysis was performed on an earlier version of the
-kernel, and contained unverified improvements. We have recently improved our
-WCET analysis to make the determination of loop bounds and infeasible paths
-high-assurance. We now also apply it to the verified kernel, so this now also
-has sound execution-time bounds. Unfortunately, we can only do a sound analysis
-on relatively dated processor cores (ARM11, which is an ARMv6 core) as ARM no
-longer publishes latency bounds for instructions. We should be able to repeat
-this for open RISC-V processor implementations, stay tuned.
+Basic real-time applications, for instance if you are looking to use
+standard rate-monotonic scheduling, are directly supported by default seL4
+configurations. In addition, the MCS configuration of seL4 has a scheduling
+model that supports the kind of temporal isolation that is required for
+supporting mixed-criticality systems and goes beyond what most real-time
+operating systems can provide. This MCS configuration is mature for single-core
+systems, available for use, and currently undergoing verification for functional
+correctness. When verification of all security properties on MCS has caught up
+with the current default configuration, MCS will become the default for seL4.
 
-We are actually not convinced that running an RTOS in a VM is necessarily the
-way to go, although that somewhat depends on your circumstances. In general,
-you’ll better off running RT apps in a native seL4 environment.
 
-More importantly, we have developed a new scheduling model that supports the
-kind of temporal isolation that is required for supporting mixed-criticality
-systems. This MCS model is presently in verification and is being merged into
-mainline as verification progresses We strongly recommend basing any new project
-on the MCS model, irrespective of whether it requires real-time properties.
 
 ## Verification
 
@@ -324,17 +319,18 @@ The [seL4 verification][proofs] uses formal mathematical proof in the theorem pr
 but offers a comparatively high degree of automation. It also offers a very high
 degree of assurance that the resulting proof is correct.
 
+
 ### What does seL4's formal verification mean?
 
-Unique about seL4 is its unprecedented [degree of assurance][proofs], achieved
-through formal verification. Specifically, the ARM, ARM\_HYP (ARM with
-virtualisation extensions), AARCH64, X64, and RISCV64 versions of seL4 comprise
-the first (and still only) general-purpose OS kernel with a full code-level
-functional correctness proof, meaning a mathematical proof that the
-implementation (written in C) adheres to its specification. In short, the
-implementation is proved to be free of implementation defects. This also
-[implies a number of other properties][implications], such as freedom from
-buffer overflows, null pointer exceptions, use-after-free, etc.
+Unique about seL4 is its unprecedented [degree of assurance][proof-strength],
+achieved through formal verification. Specifically, the ARM, ARM\_HYP (ARM with
+virtualisation extensions), AARCH64, X64, and RISCV64 configurations of seL4
+comprise the first (and still only) general-purpose OS kernel with a full
+code-level functional correctness proof -- a mathematical proof that the C
+implementation adheres to its specification. In short, the implementation is
+proved to be free of implementation defects with respect to the specification.
+This also [implies a number of other properties][implications], such as freedom
+from buffer overflows, null pointer exceptions, use-after-free, etc.
 
 On the ARM and RISCV64 platforms, there is a further proof that the binary code
 which executes on the hardware is a correct translation of the C code. This
@@ -348,6 +344,7 @@ these properties are guaranteed to be enforced not only by a model of the kernel
 (the specification) but the actual binary that executes on the hardware.
 Therefore, seL4 is the world's first (and still only) OS that is proved secure
 in a very strong sense.
+
 
 ### Does seL4 have zero bugs?
 
@@ -366,11 +363,16 @@ timing channels.
 
 So the answer to the question depends on what you understand a bug to be. In the
 understanding of formal software verification (code implements specification),
-the answer is yes. In the understanding of a general software user, the answer
-is potentially, because there may still be hardware bugs or proof assumptions
-unmet. For high assurance systems, this is not a problem. It reduces evaluation
-burden, because analysing hardware and proof assumptions is much easier than
-analysing a large software system, the same hardware, and test assumptions.
+the answer is yes, modulo the [proof assumptions][assumptions]. In the
+understanding of a general software user, the answer is potentially, because
+there may still be hardware bugs or proof assumptions unmet. For high assurance
+systems, this is not a problem. It reduces evaluation burden, because analysing
+hardware and proof assumptions is much easier than analysing a large software
+system, the same hardware, and test assumptions.
+
+To gain a sense of how strong the proofs are, check out the [proofs
+page][proof-strength].
+
 
 ### Is seL4 proved secure?
 
@@ -386,6 +388,7 @@ by the user. While these restrictions are common for high-assurance systems, we
 are working to reduce them, for instance through the use of IOMMUs on x86 or
 System MMUs on ARM.
 
+
 ### If I run seL4, is my system secure?
 
 Not automatically, no. Security is a question that spans the whole system,
@@ -397,6 +400,7 @@ However, if used correctly, seL4 provides the system architect and user with
 strong mechanisms to implement security policies, backed by strong security
 theorems.
 
+
 ### What are the proof assumptions?
 
 The brief version is: we assume that the few lines of in-kernel assembly code
@@ -406,6 +410,7 @@ be off or to be trusted. The security proofs additionally give a list of
 conditions how the system is configured.
 
 For a more in-depth description, see the [assumptions page][assumptions].
+
 
 ### How do I leverage seL4's formal proofs?
 
@@ -420,8 +425,10 @@ confidentiality proof to show that others can't get access to that private data.
 And one can tie together all of these into a proof about an entire (one-machine)
 system without having to verify the code of the entire system.
 
-If you are interested in connecting to the seL4 proofs, let us know, as we may
-be able to offer assistance.
+If you are interested in connecting to the seL4 proofs for verifying properties
+about a product, check out the help available from the [commercial services
+page][services].
+
 
 ### Have OS kernels not been verified before?
 
@@ -447,25 +454,23 @@ is only since around (very roughly) the year 2005 that code verification and
 theorem proving technology has advanced enough to make large code-level proofs
 feasible.
 
+
 ### When and how often does seL4 get updated and re-proved?
 
-We update the seL4 proofs semi-continuously, usually whenever a pull request is
-merged into the master branch in the seL4 GitHub repository. You can see the
-proof updates coming through on <https://github.com/seL4/l4v/commits/master> and
-you can see the kernel revision the proof currently refers to in
+The seL4 proofs are updated continuously, whenever a pull request is merged into
+the master branch in the seL4 GitHub repository. You can see the proof updates
+coming through on <https://github.com/seL4/l4v/commits/master> and you can see
+the kernel revision the proof currently refers to in
 <https://github.com/seL4/verification-manifest/blob/master/default.xml>. This is
 usually the head of the master branch.
 
-The frequency depends on what it is and who has time. Larger features take
-longer to write and prove and get pushed when they are done. Not many of these
-happen per year unless there is specific funding for a specific feature. Small
-updates take a day to a few weeks.
 
 ### How do I tell which code in GitHub is covered by the proof and which isn't?
 
-The verification sees the entire C code for one particular combination of
-configuration options. See the page on [verified configurations] for details of
-architecture and platform configurations which have verified properties.
+The verification sees the entire C code of the kernel for the particular
+combination of configuration options that are selected. See the page on
+[verified configurations] for details of architecture and platform
+configurations which have verified properties.
 
 Excluded from the verification of the C code is the machine interface and boot
 code, whose behaviour is an explicit assumption to the proof.
@@ -474,12 +479,13 @@ You can see how verification generates kernel source here in
 [l4v/spec/cspec/c/Makefile](https://github.com/seL4/l4v/blob/master/spec/cspec/c/Makefile).
 The machine interface are the functions that correspond to the ones in the
 Haskell file
-[Hardware.lhs](https://github.com/seL4/l4v/blob/master/spec/haskell/src/SEL4/Machine/Hardware.lhs).
+[Hardware.lhs](https://github.com/seL4/l4v/blob/master/spec/haskell/src/SEL4/Machine/Hardware.lhs)
+and its `Arch` import file.
 
 You can further inspect the gory details by looking at the preprocessor output
 in the file `kernel_all.c_pp` in the proof build (or `kernel_all_pp.c` in the
 kernel build) - this is what the prover, the proof engineer, and the compiler
-see after configuration is done. So a quick way of figuring out if something is
+see after configuration is done. A quick way of figuring out if something is
 in the proof input or not is checking if the contents of that file change if you
 make a change to the source you're wondering about. You don't need the prover
 for this, and only parts of the seL4 build environment setup. The GitHub CI
@@ -496,7 +502,7 @@ That means all of the C code that is in this `kernel_all.c_pp` file either:
 
 - has a proof,
 - or has an explicit assumption about it,
-- or is not part of the kernel (i.e. is never called)
+- or is never called
 
 The functions with explicit assumptions are the machine interface functions
 mentioned above (they're usually inline asm) and the functions that are only
@@ -506,6 +512,7 @@ source so they're easy to spot).
 As an example, the CPU and architecture options mean that everything under
 `src/arch/ia32` is not covered by the proof, but that the files in
 `src/kernel/object` are.
+
 
 
 ## Resource management
@@ -518,6 +525,7 @@ kernel after boot hands control over all free resources to user-level code, and
 after that will never do any memory management itself. It has no heap, just a
 few global variables, a strictly bounded stack, and memory explicitly provided
 to it by user-level code.
+
 
 ### What are capabilities?
 
@@ -539,39 +547,39 @@ See the wikipedia article on [capability-based
 security](https://en.wikipedia.org/wiki/Capability-based_security) for more
 details on caps.
 
+
 ### How can user mode manage kernel memory safely?
 
-<!-- FIXME: update, confuses memory with caps -->
-<!-- FIXME: clean up double quote style -->
-
-The kernel puts user-level code in control of system resources by handing all
-free memory (called "Untyped") after booting to the first user process (called
-the "root task") by depositing the respective caps in the root tasks's
-CSpace. The root task can then implement its resource management policies,
-e.g. by partitioning the system into security domains and handing each domain a
-disjoint subset of Untyped memory.
+The kernel puts user-level code in control of system resources. After booting,
+the kernel hands all free memory in the form of *Untyped* capabilities to the
+first user process, called the *root task*. The root task can then implement
+its own resource management policies, e.g. by partitioning the system into
+security domains and handing each domain a disjoint subset of Untyped capabilities.
 
 If a system call requires memory for the kernel's metadata, such as the thread
 control block when creating a thread, user-level code must provide this memory
-explicitly to the kernel. This is done by "retyping" some Untyped memory into
-the corresponding kernel object type. Eg. for thread creation, user-level code
-must retype some Untyped into "TCB Objects". This memory then becomes kernel
-memory, in the sense that only the kernel can read or write it. User-level code
-can still revoke it, which implicitly destroys the objects (e.g., threads)
-represented by the object.
+explicitly to the kernel. This is done by *retyping* an Untyped capability into
+capabilities for the corresponding kernel object type. For instance, for thread
+creation, user-level code would retype an Untyped capability into a TCB
+capability. The memory pointed to by the TCB capability will then be used by the
+kernel to represent thread control blocks. It remains kernel memory in the sense
+that only the kernel can read or write it. User-level code can later revoke the
+capability, which implicitly destroys the objects (e.g., thread control blocks)
+governed by the capability.
 
-The only objects directly accessible by user-level code are "Frame Objects":
-These can be mapped into an "Address Space Object" (essentially a page table),
-after which user-level code can write to the physical memory represented by the
-Frame Objects.
+The only objects directly accessible by user-level code are *Frames*: These can
+be mapped into address spaces (essentially page tables), after which
+user-level code can write to the physical memory represented by the Frame
+object.
+
 
 ### How can threads communicate?
 
 Communication can happen via message-passing IPC or shared memory. IPC only
 makes sense for short messages; there is an implementation-defined,
 architecture-dependent limit on the message size of a few hundred bytes, but
-generally messages should be kept to a few dozen bytes. For longer messages, a
-shared buffer should be used.
+generally messages should be kept to a few dozen bytes so that they fit into
+registers. For longer messages, a shared buffer should be used.
 
 Depending on the trust relationship, such a buffer may be shared directly
 between a pair of threads or groups of threads (some of which may only have
@@ -580,26 +588,29 @@ could be encapsulated in a shared server. Or a trusted server could be given
 read access to a sender's buffer and write access to a receiver's buffer and
 copies the data directly from the sender's to the receiver's address space.
 
-Shared-buffer access can be synchronised via "Notifications".
+Shared-buffer access can be synchronised via *Notification* objects.
+
 
 ### How does message-passing work?
 
 As is characteristic to members of the L4 microkernel family, seL4 uses
-"synchronous IPC". This means a rendez-vous communication model, where the
+*synchronous IPC*. This means a rendez-vous communication model, where the
 message is exchanged when both sender and receiver are ready. If both are
 running on the same core, this means that one partner will block until the other
 invokes the IPC operation.
 
-In seL4, IPC is via "Endpoint Objects". An Endpoint can be considered a mailbox
+In seL4, IPC is via *Endpoint* objects. An Endpoint can be considered a mailbox
 through which the sender and receiver exchange the message through a handshake.
-Anyone holding a Send capability can send a message through an Endpoint, and
-anyone holding a Receive cap can receive a message. This means that there can be
-any number of sender and receivers for each Endpoint. In particular, a specific
-message is only delivered to one receiver (the first in the queue), no matter
-how many threads are trying to receive from the Endpoint.
+Anyone holding a capability with *Send* rights to the Endpoint can send a
+message through that Endpoint, and anyone holding a capability with *Receive*
+rights can receive a message on the Endpoint the capability refers to. This
+means that there can be any number of sender and receivers for each Endpoint. In
+particular, a specific message is only delivered to one receiver (the first in
+the queue), no matter how many threads are trying to receive from the Endpoint.
 
 Message broadcast is a higher-level abstraction that can be implemented
 on top of seL4's primitive mechanisms.
+
 
 ### Why do send-only operations not return a success indication?
 
@@ -610,53 +621,62 @@ information. A result status, indicating whether or not the message has
 been delivered, would constitute a back channel: the receiver could use
 the result status to signal information to the sender.
 
-In short, it's a feature, not a bug (painful as it may be).
+In short, it's a feature.
 
-But also note that, unless you're building things like data diodes, [you should
-use send-only and receive-only IPC only for initialisation and exception
+But also note that [you should use send-only and receive-only IPC only for
+initialisation and exception
 handling](https://microkerneldude.wordpress.com/2019/03/07/how-to-and-how-not-to-use-sel4-ipc/).
-The normal pattern is that of a protected procedure call (i.e. invoking a
-function in a different protection domain), where the caller uses "seL4_Call()"
-and the receiver uses "seL4_Reply_Wait()" invocations, which combine sending and
+The normal pattern is that of a protected procedure call, i.e. invoking a
+function in a different protection domain, where the caller uses `seL4_Call()`
+and the receiver uses `seL4_Reply_Wait()` invocations, which combine sending and
 receiving in a single system call.
+
+`seL4_Send()` and `seL4_NBSend()` are primarily meant for Notification objects
+where one-way communication can be used to implement unidirectional information
+flow policies.
+
 
 ### What are Notifications?
 
-A "Notification Object" is logically a small array of binary semaphores. It has
-the same operations: "Signal" and "Wait". Due to the binary nature, multiple
-Signals may be lost if they are not interleaved with Waits.
+A *Notification* object is logically a small array of binary semaphores. It has
+the same operations: `Signal` and `Wait`. Due to the binary nature, multiple
+`Signal` operations may be lost if they are not interleaved with `Wait`.
 
-Signalling a Notification requires a Send cap on the Notification Object. The
-cap has a "Badge", which is a bit pattern set by the creator of the cap
-(typically the owner of the Notification Object). The Signal operation bitwise
-ORs the badge on the Notification's bit array. The Wait operation blocks until
-the array is non-zero, and then returns the bit string and zeros out the array.
+Signalling a Notification requires a capability with Send right to the
+Notification object. The capability has a *badge*, which is a bit pattern set by
+the creator of the cap, typically the owner of the Notification object. The
+`Signal` operation bitwise ORs the badge on the Notification's bit array. The
+`Wait` operation blocks until the array is non-zero, and then returns the bit
+string and zeros out the array.
 
-Notifications can also be "Polled", which is like Wait, except the operation
+Notifications can also be polled, which is like `Wait`, except the operation
 does not block, and instead returns zero immediately, even if the Notification
 bit string is zero.
 
-### What is the seL4 fastpath?
 
-<!-- FIXME: fast path instead of fastpath? -->
+### What is the seL4 fast path?
 
-The fastpath is an add-on frontend to the kernel which performs the simple cases
+The fast path is an add-on frontend to the kernel which performs the simple cases
 of some common operations quickly. It is key to the high IPC performance seL4
 achieves -- we know of no kernel that does IPC faster.
 
-Enabling or disabling the fastpath should not have any impact on the kernel
-behaviour except for performance.
+Enabling or disabling the fast path should not have any impact on the kernel
+behaviour except for performance. On verified configurations that include the
+fast path, this property is part of the proof.
 
-There is a section on the fastpath and its verification in [this
-article][TOCS_14]. The fastpath discussion starts on page 23.
+There is a section on the fast path and its verification in [this
+article][TOCS_14]. The fast path discussion starts on page 23.
+
 
 ## What's coming up next?
 
 There are always new things in the pipeline for seL4. See the [roadmap]
 for what is up next.
 
+
 [verification]: {% link Verification/index.html %}
 [proofs]: {% link Verification/proofs.html %}
+[proof-strength]: ../Verification/proofs.html#strength
 [implications]: {% link Verification/implications.html %}
 [performance]: {% link performance.html %}
 
@@ -692,3 +712,4 @@ for what is up next.
 [comparison]:  {% link About/comparison.html %}
 [tools]:  {% link tools.html %}
 [how-to-use]:  {% link About/how-to-use.md %}
+[services]: {% link Services/index.html %}
