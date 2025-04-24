@@ -85,8 +85,6 @@ failure analysis during development: you know the verified code didn't fail, and
 isolation wasn't broken. This means you can focus your analysis on much fewer
 lines of code when something goes wrong.
 
-<!-- FIXME: add a diagram with a small obvious security property -->
-
 ## Use seL4 for Cyber Retrofit
 
 Imagine a heap of legacy code and a mandate to make it secure. Putting it behind
