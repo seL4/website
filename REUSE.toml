@@ -149,6 +149,7 @@ path = [
     "images/monolithic-vs-mkernel.drawio.svg",
     "images/pr.svg",
     "images/res_paper.png",
+    "images/retrofit.drawio.svg",
     "images/screenshot-isabelle-dark.png",
     "images/screenshot-kernel-elf.png",
     "images/screenshot-proofs.png",

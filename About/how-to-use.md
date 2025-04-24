@@ -112,8 +112,9 @@ as well. Now you already have a much stronger system --- a random buffer
 overflow in the rest of the code base can no longer be used to subvert the
 encryption code, and neither can a code-level attack on the network stack.
 
-<img src="../images/retrofit.png" class="w-full" alt="diagrams of the phases of
-the cyber retrofit approach">
+<div class="w-full">
+{% svg /images/retrofit.drawio.svg width="100%" %}
+</div>
 
 You could stop here, or repeat this process and refine until you have reached the
 level of assurance you require. You can also start removing VMs and replacing
