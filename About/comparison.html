@@ -97,63 +97,65 @@ products:
 ?
 {% endcapture %}
 
- <div class="mx-auto max-w-2xl px-6 pt-4 sm:pt-8 lg:max-w-7xl lg:px-8">
-   <table class="w-full text-left">
-     <colgroup>
-       <col class="w-2/7">
-       <col class="w-1/7">
-       <col class="w-1/7">
-       <col class="w-1/7">
-       <col class="w-1/7">
-       <col class="w-1/7">
-     </colgroup>
-     <thead>
-       <tr>
-         <td class="p-0 pb-10"></td>
-	 {% for product in page.products -%}
-         <th scope="col" class="p-0">
-	   {% if product.name=="seL4" %}
-           <div class="font-normal px-2 text-sm sm:text-base text-f_green-600">{{product.name}}</div>
-	   {% else %}
-           <div class="font-normal px-2 text-sm sm:text-base text-gray-600 dark:text-gray-400">
-	     {{product.name}}
-	   </div>
-	   {% endif %}
-         </th>
-	 {%- endfor %}
-       </tr>
-     </thead>
-     <tbody class="group">
-       {% for i in (0..7) %}
-       <tr class="border-b border-t border-gray-100 dark:border-gray-800 last:border-none">
-         <th scope="row" class="px-0 py-4 text-sm font-normal text-gray-600 dark:text-gray-400">
-	   {% if i==0 %} Correctness proof {% endif %}
-	   {% if i==1 %} Security proof {% endif %}
-	   {% if i==2 %} Fast IPC {% endif %}
-	   {% if i==3 %} Deployed {% endif %}
-	   {% if i==4 %} Capability-based {% endif %}
-	   {% if i==5 %} MMU support {% endif %}
-	   {% if i==6 %} General purpose {% endif %}
-	   {% if i==7 %} Open source {% endif %}
-	 </th>
-	 {% for product in page.products -%}
-         <td class="p-4 max-sm:text-center">
-	   {% if product.features[i]=="yes"%}
-           {{ icon-yes }}
-	   {% endif %}
-	   {% if product.features[i]=="no" %}
-           {{ icon-no }}
-	   {% endif %}
-	   {% if product.features[i]=="partial" %}
-           {{ icon-partial }}
-	   {% endif %}
-	   {% if product.features[i]=="unsure" %}
-           {{ icon-unsure }}
-	   {% endif %}
-         </td>
-	 {% endfor %}
-       </tr>
-       {% endfor %}
-     </tbody>
-   </table>
+<div class="mx-auto max-w-2xl px-6 pt-4 sm:pt-8 lg:max-w-7xl lg:px-8">
+  <div class="w-full overflow-x-auto">
+    <table class="w-full text-left">
+      <colgroup>
+        <col class="w-2/7">
+        <col class="w-1/7">
+        <col class="w-1/7">
+        <col class="w-1/7">
+        <col class="w-1/7">
+        <col class="w-1/7">
+      </colgroup>
+      <thead>
+        <tr>
+          <td class="p-0 pb-10"></td>
+          {% for product in page.products -%}
+          <th scope="col" class="p-0">
+            {% if product.name=="seL4" %}
+            <div class="font-normal px-2 text-sm sm:text-base text-f_green-600">{{product.name}}</div>
+            {% else %}
+            <div class="font-normal px-2 text-sm sm:text-base text-gray-600 dark:text-gray-400">
+              {{product.name}}
+            </div>
+            {% endif %}
+          </th>
+          {%- endfor %}
+        </tr>
+      </thead>
+      <tbody class="group">
+        {% for i in (0..7) %}
+        <tr class="border-b border-t border-gray-100 dark:border-gray-800 last:border-none">
+          <th scope="row" class="px-0 py-4 text-sm font-normal text-gray-600 dark:text-gray-400">
+            {% if i==0 %} Correctness proof {% endif %}
+            {% if i==1 %} Security proof {% endif %}
+            {% if i==2 %} Fast IPC {% endif %}
+            {% if i==3 %} Deployed {% endif %}
+            {% if i==4 %} Capability-based {% endif %}
+            {% if i==5 %} MMU support {% endif %}
+            {% if i==6 %} General purpose {% endif %}
+            {% if i==7 %} Open source {% endif %}
+          </th>
+          {% for product in page.products -%}
+          <td class="p-4 max-sm:text-center">
+            {% if product.features[i]=="yes"%}
+            {{ icon-yes }}
+            {% endif %}
+            {% if product.features[i]=="no" %}
+            {{ icon-no }}
+            {% endif %}
+            {% if product.features[i]=="partial" %}
+            {{ icon-partial }}
+            {% endif %}
+            {% if product.features[i]=="unsure" %}
+            {{ icon-unsure }}
+            {% endif %}
+          </td>
+          {% endfor %}
+        </tr>
+        {% endfor %}
+      </tbody>
+    </table>
+  </div>
 </div>
