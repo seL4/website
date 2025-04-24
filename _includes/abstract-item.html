@@ -21,7 +21,7 @@ SPDX-License-Identifier: CC-BY-SA-4.0
         {% if include.youtube %}
           <div class="p-2 pb-1">
             <a href="{{include.youtube}}" target="_blank"><img
-      src="../../../images/icons/youtube_nobckgnd.svg" width="30" alt="YouTube icon"></a>
+      src="{{ '/images/icons/youtube_nobckgnd.svg' | relative_url }}" width="30" alt="YouTube icon"></a>
           </div>
         {% endif %}
         {% if include.slides %}

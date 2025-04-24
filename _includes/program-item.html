@@ -50,8 +50,9 @@ SPDX-License-Identifier: CC-BY-SA-4.0
      <div class="flex flex-row gap-x-2 pt-1 pb-5">
         {% if include.youtube %}
           <div class="p-1 pb-1">
-            <a href="{{include.youtube}}" target="_blank"><img
-      src="../../../images/icons/youtube_nobckgnd.svg" width="25" alt="YouTube icon"></a>
+            <a href="{{include.youtube}}" target="_blank">
+              <img src="{{ '/images/icons/youtube_nobckgnd.svg' | relative_url }}"
+                   width="25" alt="YouTube icon"></a>
           </div>
         {% endif %}
         {% if include.slides %}
