@@ -9,9 +9,11 @@ The [seL4.systems](https://sel4.systems) website is built with the
 static site generator [Jekyll](https://jekyllrb.com), which uses
 the Liquid templating engine.
 
-## Setting up Ruby
+## Tool Dependencies
 
-### Installing rbenv
+### Ruby
+
+#### Installing rbenv
 
 We recommend using [rbenv](https://github.com/rbenv/rbenv) to install the
 correct Ruby version.
@@ -28,7 +30,7 @@ On apt-based Linux distributions (e.g. Ubuntu, Debian):
 apt install rbenv
 ```
 
-### Setting up rbenv
+#### Setting up rbenv
 
 ```sh
 # follow the instructions this command shows, and start a new shell afterwards
@@ -39,6 +41,32 @@ rbenv install
 
 After these, you should be able to forget about `rbenv`, the `Makefile` will now
 see the correct Ruby version.
+
+### Node and Tailwind
+
+The site uses Tailwind CSS, which requires `node`. Any `node` version >= 20
+should work, the automated build is using the latest patch release of version
+22.
+
+You can install `node` on via `brew install node` or `apt install node`
+depending on your OS. If your OS comes with a too-old version of `node`
+pre-installed, we recommend using the node version manager
+[nvm](https://github.com/nvm-sh/nvm). Its README has a one-touch install script.
+
+Once `nvm` is installed, you can get the correct `node` version by running `nvm
+install` in the root directory of this repository.
+
+### HTML5 validator (optional)
+
+To manually run the `html5validator` script via `make validate`, you need to
+install
+
+```sh
+pip install --user html5validator
+```
+
+The validator also needs a working Java runtime installation, which you can get
+from <https://java.com> or via your package manager.
 
 ## Build
 
@@ -53,29 +81,14 @@ for the production build and `make debug` for the development build. See `make
 help` for all options.
 
 There are two variants of the website to build.  When running on
-LionsOS and seL4 we include an additional footer with a link to pages
-describing the hardware and software architecture of the LionsOS
-webserver.  To build this variant, use
+seL4 the site includes an additional footer with a link to pages
+describing the setup. To build this variant, use
+
 ```sh
 make on_seL4
 ```
-and the site will be generated into `_site_on_seL4/`.
-## Docker
 
-The directory `docker/` provides a docker file and some scripts to host
-the website inside a container. It is also used for GitHub pull request
-checks and preview.
-
-To use the docker container locally, install docker and run
-
-```sh
-cd docker
-make
-```
-
-This will build the container (takes a while the first time), and then
-run it such that you can preview the website on port 8080 on your local
-machine.
+The site will be generated into `_site_on_seL4/`.
 
 ## Making Changes
 
@@ -102,12 +115,18 @@ Examples:
 With `relative_url`:
 
 ```html
-<a href={{ "/Foundation/a-page.html" | relative_url }}>
+<a href="{{ '/Foundation/a-page.html' | relative_url }}">
 ```
 
 Note: `relative_url` only produces a site-relative URL not a path-relative URL,
 but Jekyll has enough setup to prepend the correct prefix for the GitHub
 previews to work, so it is fine to use.
+
+`link` tags in the front matter of pages are automatically used with
+`relative_url`, so it is fine to use absolute links there.
+
+News items can potentially get included from multiple pages. Always use
+`relative_url` in those.
 
 ## Licences
 
