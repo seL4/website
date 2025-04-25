@@ -24,9 +24,16 @@ jobs:
       - uses: actions/checkout@v4
 
       # sets up ruby accourding to .ruby-version and caches bundler deps
-      - uses: ruby/setup-ruby@v1
+      - name: Ruby setup
+        uses: ruby/setup-ruby@v1
         with:
           bundler-cache: true
+
+      - name: Node setup
+        uses: actions/setup-node@v4
+        with:
+          node-version: 22
+          cache: 'npm'
 
       - name: 'Site'
         id: 'site'

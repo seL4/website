@@ -21,6 +21,10 @@ jobs:
     - uses: ruby/setup-ruby@v1 # sets up ruby according to .ruby-version and caches bundler deps
       with:
         bundler-cache: true
+    - uses: actions/setup-node@v4
+      with:
+        node-version: 22
+        cache: 'npm'
     - run: make build JEKYLL_ENV=production
     - run: tar -cvf site.tar _site/
     - uses: actions/upload-artifact@v4
@@ -36,6 +40,10 @@ jobs:
     - uses: ruby/setup-ruby@v1 # sets up ruby according to .ruby-version and caches bundler deps
       with:
         bundler-cache: true
+    - uses: actions/setup-node@v4
+      with:
+        node-version: 22
+        cache: 'npm'
     - run: make on_seL4 JEKYLL_ENV=production
     - run: tar -cvf site.tar _site_on_seL4/
     - uses: actions/upload-artifact@v4
