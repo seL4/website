@@ -73,6 +73,7 @@ IGNORE_URLS += flaticon.com
 IGNORE_URLS += github.com.seL4.rfcs.pulls\?q
 IGNORE_URLS += rtx.com
 IGNORE_URLS += www.collinsaerospace.com
+IGNORE_URLS += dl.acm.org/doi/10.1145/224056.224075
 
 sep:= /,/
 empty:=
