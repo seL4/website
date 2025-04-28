@@ -201,21 +201,22 @@ products:
     memory protection and virtualisation like seL4. They are not cheap, and
     certainly not available as open source. It is hard to get official
     performance numbers for any of these, and evaluation licenses do not allow
-    reporting such numbers, which might make one question if there is something
-    to hide. From what we have seen reported, they are multiple kernel
-    architecture generations older than seL4 and cannot provide the same order
-    of magnitude of IPC performance. The older design also means they do not
-    support fine-grained mandatory access control like seL4 does. In terms of
-    assurance, these kernels do all achieve high levels of traditional safety
-    and security assurance, but not to the level that the formal verification of
-    seL4 can provide. Only INTEGRITY underwent a security proof from formal code
-    model to security property, but the proof is neither available for multiple
-    current hardware architectures and OS versions, nor is it public. It also
-    does not connect formally to the source code of the kernel. Without that
-    connection, keeping code and proof in sync is a manual process with all the
-    human error potential that is inherent to manual processes. INTEGRITY does
-    not come with a functional correctness specification that would be necessary
-    for user-level verification arguments.
+    reporting such numbers. If you have a license, you can compare yourself:
+    public, up-to-date numbers for seL4 are available from the <a
+    href="{{'/performance.html' | relative_url}}">performance page</a>. From
+    what we have seen reported, these kernels are multiple architecture
+    generations older than seL4 and cannot provide the same order of magnitude
+    of IPC performance. The older design also means they do not support
+    fine-grained mandatory access control like seL4 does. In terms of assurance,
+    these kernels do all achieve high levels of traditional safety and security
+    mechanisms, but not to the level that the formal verification of seL4 can
+    provide. Only INTEGRITY underwent a security proof from formal code model to
+    security property, but the proof is neither available for multiple current
+    hardware architectures and OS versions, nor is it public. It also does not
+    connect formally to the source code of the kernel. Without that connection,
+    keeping code and proof in sync is a manual process with all the human error
+    potential that is inherent to manual processes. INTEGRITY does not come with
+    a functional correctness proof.
   </p>
 
   <p>
