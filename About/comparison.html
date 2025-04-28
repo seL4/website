@@ -10,15 +10,14 @@ sub: '
   its comprehensive <a href="../Verification/index.html">formal correctness and
   security proofs</a> while being the fastest operating system kernel available
   on <a href="../performance.html">IPC performance</a>. It is
-  a <a href="how-to-use.html">general-purpose</a>
-  and <a href="whitepaper.html">capability-based</a> kernel,
-  supporting <a href="../platforms.html">hardware</a> with Memory Management
+  a <a href="how-to-use.html">general-purpose</a> kernel with
+  <a href="whitepaper.html">fine-grained access control</a>,
+  that supports <a href="../platforms.html">hardware</a> with a Memory Management
   Unit (MMU). It is available as <a href="https://github.com/seL4">open
   source</a> and is <a href="../use.html">deployed</a> in a wide range of
   sectors.  The table below provide a comparison with a subset of other
   operating systems: QNX, Greenhill&apos;s INTEGRITY Kernel, CertiKOS, and
-  FreeRTOS. Other systems like Ubuntu Core, SELinux, Wind River&apos;s VxWorks
-  have large monolithic kernel and thus much larger attack surface.
+  FreeRTOS.
 </p>'
 layout: card
 
@@ -32,6 +31,7 @@ products:
     - "yes"    #deployed
     - "no"     #cap based
     - "yes"    #mmu support
+    - "yes"    #virtualisation
     - "yes"    #general purpose
     - "no"     #open source
 
@@ -43,6 +43,7 @@ products:
     - "yes"    #deployed
     - "no"     #cap-based
     - "yes"    #mmu support
+    - "yes"    #virtualisation
     - "yes"    #general purpose
     - "no"     #open source
 
@@ -54,7 +55,8 @@ products:
     - "no"     #deployed
     - "no"     #cap-based
     - "yes"    #mmu support
-    - "no"    #general purpose
+    - "yes"    #virtualisation
+    - "no"     #general purpose
     - "no"     #open source (source available but not open source)
 
 - name: FreeRTOS
@@ -65,7 +67,8 @@ products:
     - "yes"    #deployed
     - "no"     #cap-based
     - "no"     #mmu support
-    - "no"    #general purpose
+    - "no"     #virtualisation
+    - "no"     #general purpose
     - "yes"    #open source
 
 - name: seL4
@@ -76,6 +79,7 @@ products:
     - "yes"    #deployed
     - "yes"    #cap-based
     - "yes"    #mmu support
+    - "yes"    #virtualisation
     - "yes"    #general purpose
     - "yes"    #open source
 
@@ -114,7 +118,7 @@ products:
           {% for product in page.products -%}
           <th scope="col" class="p-0">
             {% if product.name=="seL4" %}
-            <div class="font-normal px-2 text-sm sm:text-base text-f_green-600">{{product.name}}</div>
+            <div class="font-semibold px-2 text-sm sm:text-base text-f_green-600">{{product.name}}</div>
             {% else %}
             <div class="font-normal px-2 text-sm sm:text-base text-gray-600 dark:text-gray-400">
               {{product.name}}
@@ -125,17 +129,18 @@ products:
         </tr>
       </thead>
       <tbody class="group">
-        {% for i in (0..7) %}
+        {% for i in (0..8) %}
         <tr class="border-b border-t border-gray-100 dark:border-gray-800 last:border-none">
           <th scope="row" class="px-0 py-4 text-sm font-normal text-gray-600 dark:text-gray-400">
             {% if i==0 %} Correctness proof {% endif %}
             {% if i==1 %} Security proof {% endif %}
             {% if i==2 %} Fast IPC {% endif %}
             {% if i==3 %} Deployed {% endif %}
-            {% if i==4 %} Capability-based {% endif %}
+            {% if i==4 %} Fine-grained access control {% endif %}
             {% if i==5 %} MMU support {% endif %}
-            {% if i==6 %} General purpose {% endif %}
-            {% if i==7 %} Open source {% endif %}
+            {% if i==6 %} Virtualisation {% endif %}
+            {% if i==7 %} General purpose {% endif %}
+            {% if i==8 %} Open source {% endif %}
           </th>
           {% for product in page.products -%}
           <td class="p-4 max-sm:text-center">
@@ -158,4 +163,109 @@ products:
       </tbody>
     </table>
   </div>
+</div>
+
+<div class="theprose mx-auto mt-8 sm:mt-12 pb-18 sm:pb-24">
+
+  <h2>Criteria</h2>
+  <p>
+    The comparison uses the following criteria:
+  </p>
+  <ul>
+    <li><strong>Correctness proof:</strong><br>
+      Is there a proof that the kernel behaves according to a formal specification?</li>
+    <li><strong>Security proof:</strong><br>
+      Is there proof that a specification of the kernel has specific security properties?</li>
+    <li><strong>Fast IPC:</strong><br>
+      Does it provide fast IPC mechanisms that make protection domains cheap to use?</li>
+    <li><strong>Deployed:</strong><br>
+      Is there deployment and use in industry?</li>
+    <li><strong>Fine-grained access control:</strong><br>
+      Is fine-grained mandatory access control available to user-level?</li>
+    <li><strong>MMU support:</strong><br>
+      Does the kernel support virtual memory and memory protection?</li>
+    <li><strong>Virtualisation:</strong><br>
+      Does the kernel provide type-1 hypervisor support?</li>
+    <li><strong>General purpose:</strong><br>
+      Is the kernel limited to specific application scenarios and domains or can
+      it be used as a general-purpose OS kernel?</li>
+    <li><strong>Open source:</strong><br>
+      Is it available under under an OSI-approved open source license?</li>
+  </ul>
+
+  <h2>Results</h2>
+
+  <p>
+    Traditional kernels for safety-critical applications like QNX, Wind River's
+    VxWorks, or Greenhills INTEGRITY are widely deployed and generally support
+    memory protection and virtualisation like seL4. They are not cheap, and
+    certainly not available as open source. It is hard to get official
+    performance numbers for any of these, and evaluation licenses do not allow
+    reporting such numbers, which might make one question if there is something
+    to hide. From what we have seen reported, they are multiple kernel
+    architecture generations older than seL4 and cannot provide the same order
+    of magnitude of IPC performance. The older design also means they do not
+    support fine-grained mandatory access control like seL4 does. In terms of
+    assurance, these kernels do all achieve high levels of traditional safety
+    and security assurance, but not to the level that the formal verification of
+    seL4 can provide. Only INTEGRITY underwent a security proof from formal code
+    model to security property, but the proof is neither available for multiple
+    current hardware architectures and OS versions, nor is it public. It also
+    does not connect formally to the source code of the kernel. Without that
+    connection, keeping code and proof in sync is a manual process with all the
+    human error potential that is inherent to manual processes. INTEGRITY does
+    not come with a functional correctness specification that would be necessary
+    for user-level verification arguments.
+  </p>
+
+  <p>
+    There is one other formally verified OS kernel in the literature that
+    provides a proof of functional correctness and security comparable to the
+    level seL4 provides: CertiKOS. However, CertikOS is not a general-purpose OS
+    kernel and only provides a very limited API that makes it an academic case
+    study rather than a base for practically usable systems. To the best of our
+    knowledge it is not deployed in any real-world system. Its own performance
+    evaluation puts it at several multiples slower than seL4. A public review
+    copy is available for non-commercial use, under a non-open source license.
+    Development on it seems to have run out.
+  </p>
+
+  <p>
+    FreeRTOS is a widely used real-time OS kernel for microcontrollers,
+    comparable to other projects in this class like Zephyr. In contrast to seL4,
+    they specifically target micro-processors without a virtual memory
+    management unit, and do not provide features such as fine-grained access
+    control, virtualisation, or fast IPC. They are not general-purpose kernels,
+    but built specifically for real-time applications. While FreeRTOS is the
+    subject of multiple partial academic formal verification efforts, there is
+    no functional correctness proof or security proof available that covers the
+    entire kernel. Hardware memory protection mechanisms are essential for such
+    proofs to make sense on their own &mdash; without memory protection, broken
+    or malicious user-level code can modify kernel data structures and break the
+    kernel. With seL4, this is not the case. If the proof assumptions are
+    satisfied, the seL4 proofs hold for all user behaviours.
+  </p>
+
+  <p>
+    The table leaves out monolithic kernels like Linux and solutions built on it
+    such as Ubuntu Core. Modern monolithic kernels are so large that they cannot
+    reliably provide safety and security in high-assurance scenarios and must
+    generally be treated as untrusted code with a large attack surface in a
+    high-assurance security analysis. Even a solution like SELinux, which adds
+    mandatory access control to the kernel, does not change the fact that an
+    exploitable defect anywhere in a monolithic kernel runs in privileged
+    hardware mode and can undermined the entire system. Such solutions can be
+    used to improve application security, but they fundamentally cannot reach
+    high assurance levels.
+  </p>
+
+  <p>
+    The table also does not mention mainstream virtualisation solutions like Xen
+    or KVM, which are not OS kernels. In some scenarios they can be used to
+    increase security of a system, but compared to high-assurance solutions
+    their code size and attack surface is still very large. seL4 solves this
+    problem by design and puts most of virtual machine management code at user
+    level where it is subject to mandatory access control and isolation.
+  </p>
+
 </div>
