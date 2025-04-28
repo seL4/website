@@ -10,7 +10,40 @@
   <description>News feed about seL4, the seL4 Foundation, and the seL4 ecosystem.</description>
   <link rel="alternate">https://sel4.systems/news/</link>
   <link rel="self">https://sel4.systems/feed.xml</link>
-  <updated>Fri, 18 Apr 2025 00:00:00 +0000</updated>
+  <updated>Mon, 28 Apr 2025 00:00:00 +0000</updated>
+  <rights>Copyright 2025 seL4 Foundation</rights>
+  <entry>
+    <title>The new seL4 website is live!</title>
+    <link rel="alternate" type="text/html" href="https://sel4.systems/news/2025.html"/>
+    <id>https://sel4.systems/news/2025.html</id>
+    <published>Mon, 28 Apr 2025 00:00:00 +0000</published>
+    <updated>Mon, 28 Apr 2025 00:00:00 +0000</updated>
+    <content type="html">
+      &lt;p&gt;
+  We are excited to announce the launch of the new seL4 website! The redesigned
+  site is streamlined for easy access and navigation, with updated content
+  accessible to a broader audience, and new material expanding the scope of
+  topics and information related to seL4 and its ecosystem.
+&lt;/p&gt;
+
+&lt;p&gt;
+  We thank &lt;a href=&quot;https://www.ncsc.gov.uk/&quot;&gt;NCSC&lt;/a&gt; for their funding of this
+  project, &lt;a href=&quot;https://proofcraft.systems&quot;&gt;Proofcraft&lt;/a&gt; and &lt;a href=&quot;/Foundation&quot;&gt;the seL4 Foundation&lt;/a&gt; for its execution,
+  and the community members who provided input and feedback throughout the
+  project.
+&lt;/p&gt;
+
+&lt;p&gt;
+  Stay tuned for the revamp of the &lt;a href=&quot;https://docs.sel4.systems&quot;&gt;seL4
+  docsite&lt;/a&gt;.
+&lt;/p&gt;
+
+&lt;p&gt;
+  We welcome your feedback and we hope you enjoy the new site!
+&lt;/p&gt;
+
+    </content>
+  </entry>
   <rights>Copyright 2025 seL4 Foundation</rights>
   <entry>
     <title>MEP joins the seL4 Foundation</title>
@@ -411,39 +444,6 @@ for Tuesday 2 Sep 2025. Stay tuned for more info!&lt;/p&gt;
     microkernel, Microkit, and device driver framework) as well as seL4&apos;s
     methodologies (e.g., proofs verified by Isabelle/HOL).
 &lt;/p&gt;
-    </content>
-  </entry>
-  <rights>Copyright 2025 seL4 Foundation</rights>
-  <entry>
-    <title>Welcome Kry10, Gold sponsor of the seL4 Summit 2024</title>
-    <link rel="alternate" type="text/html" href="https://sel4.systems/news/2024.html"/>
-    <id>https://sel4.systems/news/2024.html</id>
-    <published>Fri, 06 Sep 2024 00:00:00 +0000</published>
-    <updated>Fri, 06 Sep 2024 00:00:00 +0000</updated>
-    <content type="html">
-      &lt;p&gt;
-  The seL4 Foundation thanks &lt;a href=&quot;https://www.kry10.com/&quot;&gt;Kry10&lt;/a&gt; for
-  becoming a Gold sponsor of the &lt;a href=&quot;../Summit/2024&quot;&gt;seL4
-  Summit 2024&lt;/a&gt;.
-&lt;/p&gt;
-&lt;p&gt;
-  Kry10 offers a full-featured operating system on top of the seL4 kernel, along
-  with tooling, services, key management and more. The Kry10 Platform is a fast
-  and easy way to build highly secure, next-generation cyber-physical devices. It
-  leverages the verification of seL4 to provide a secure, self-healing, truly
-  dynamic system with minimal downtime, even during upgrades.
-
-&lt;/p&gt;
-&lt;p&gt;
-  Kry10 is an &lt;a href=&quot;../Services/&quot;&gt;Endorsed Service Provider&lt;/a&gt; of the seL4
-  Foundation, offering support to enable seL4-based secure projects to be
-  affordable, maintainable, and remotely manageable.
-&lt;/p&gt;
-&lt;p&gt;
-  See &lt;a href=&quot;https://events.linuxfoundation.org/sel4-summit/sponsor/&quot;&gt;here&lt;/a&gt;
-  if you are interested in sponsoring the seL4 Summit 2024.
-&lt;/p&gt;
-
     </content>
   </entry>
 </feed>
