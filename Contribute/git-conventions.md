@@ -73,9 +73,9 @@ Examples and counter-examples of the above rules can be found in the git commit
 * Commits should make the changes easier to follow: if you move a function and change it, please do
   so in separate commits.
 {: .list-tick .my-0}
-* Commits should be separated into functional, logical changes, unless those changes are dependant.
-  if you find yourself writing a commit message which says 'Fix X and clean up Y', you should
-      probably use two commits.
+* Commits should be separated into functional, logical changes. If you find
+  yourself writing a commit message which says 'Fix X and clean up Y', you
+  should probably use two commits.
 {: .list-tick .my-0}
 
 ## Further resources
