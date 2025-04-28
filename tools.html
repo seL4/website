@@ -1,0 +1,1657 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Tools, Frameworks & Languages | seL4</title>
+    <meta name="author" content="seL4 Foundation">
+    <link rel="canonical" href="https://sel4.systems/tools.html">
+    <link href="/css/sel4.css?v=1745826246" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+    <link rel=alternate title="Atom Feed" type=application/atom+xml href="/feed.xml">
+    <link rel="apple-touch-icon" sizes="57x57" href="/images/icons/apple-touch-icon-57x57.png">
+    <link rel="apple-touch-icon" sizes="114x114" href="/images/icons/apple-touch-icon-114x114.png">
+    <link rel="apple-touch-icon" sizes="72x72" href="/images/icons/apple-touch-icon-72x72.png">
+    <link rel="apple-touch-icon" sizes="144x144" href="/images/icons/apple-touch-icon-144x144.png">
+    <link rel="apple-touch-icon" sizes="60x60" href="/images/icons/apple-touch-icon-60x60.png">
+    <link rel="apple-touch-icon" sizes="120x120" href="/images/icons/apple-touch-icon-120x120.png">
+    <link rel="apple-touch-icon" sizes="76x76" href="/images/icons/apple-touch-icon-76x76.png">
+    <link rel="apple-touch-icon" sizes="152x152" href="/images/icons/apple-touch-icon-152x152.png">
+    <link rel="icon" type="image/png" href="/images/icons/favicon-96x96.png" sizes="96x96">
+    <link rel="icon" type="image/png" href="/images/icons/favicon-32x32.png" sizes="32x32">
+    <link rel="icon" type="image/png" href="/images/icons/favicon-16x16.png" sizes="16x16">
+    <meta name="application-name" content="&nbsp;">
+    <meta name="msapplication-TileColor" content="#FFFFFF">
+    <meta name="msapplication-TileImage" content="/images/icons/mstile-144x144.png">
+    <meta name="msapplication-square70x70logo" content="/images/icons/mstile-70x70.png">
+    <meta name="msapplication-square150x150logo" content="/images/icons/mstile-150x150.png">
+    <meta name="msapplication-wide310x150logo" content="/images/icons/mstile-310x150.png">
+    <meta name="msapplication-square310x310logo" content="/images/icons/mstile-310x310.png">
+    <link rel="shortcut icon" href="/images/icons/favicon.ico">
+    <script defer src="/js/menu.js"></script>
+
+    <script defer data-domain="sel4.systems" src="https://analytics.sel4.systems/js/script.js"></script>
+  </head>
+  <body class="flex flex-col h-screen dark:bg-[#030020] bg-white"><header class="bg-white dark:bg-darkblue">
+  <nav class="mx-auto flex items-center justify-between px-6 py-2 lg:pt-4 lg:pb-3 mb-2 lg:px-8
+              shadow-md relative z-10 bg-white/90 dark:bg-darkblue/90 backdrop-blur-md" aria-label="Global">
+    <div class="flex lg:flex-none">
+      <a href="/" class="-m-1.5 p-1.5">
+        <span class="sr-only">seL4</span>
+        <img class="h-6 lg:h-8 w-auto" src="/images/seL4.svg" alt="seL4 logo">
+      </a>
+    </div>
+    <div class="flex flex-1"></div>
+
+    <div class="hidden md:flex md:gap-x-3 lg:gap-x-5 xl:gap-x-10"><div class="relative">
+  <a class="dropbtn" aria-expanded="false" href="#">
+    <span>About</span>
+    <span class="hidden lg:inline"> seL4</span>
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true" data-slot="icon" class="drop-icon">
+  <path fill-rule="evenodd" d="M5.22 8.22a.75.75 0 0 1 1.06 0L10 11.94l3.72-3.72a.75.75 0 1 1 1.06 1.06l-4.25 4.25a.75.75 0 0 1-1.06 0L5.22 9.28a.75.75 0 0 1 0-1.06Z" clip-rule="evenodd"/>
+</svg>
+  </a><div class="absolute -left-14 top-full z-10 mt-4 flex w-screen max-w-max px-4 transition ease-in-out duration-200 dropmenu">
+    <div class="w-screen max-w-md flex-auto overflow-hidden rounded-3xl bg-white dark:bg-darkblue text-sm leading-6 shadow-lg ring-1 ring-gray-900/5 dark:ring-gray-100/20 lg:max-w-3xl">
+      <div class="grid grid-cols-1 gap-x-6 gap-y-1 p-4 lg:grid-cols-2">
+<div class="group menu-item-group">
+          <div class="menu-icon-div"><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" aria-hidden="true" data-slot="icon" class="menu-icon">
+  <path stroke-linecap="round" stroke-linejoin="round" d="M12 18v-5.25m0 0a6.01 6.01 0 0 0 1.5-.189m-1.5.189a6.01 6.01 0 0 1-1.5-.189m3.75 7.478a12.06 12.06 0 0 1-4.5 0m3.75 2.383a14.406 14.406 0 0 1-3 0M14.25 18v-.192c0-.983.658-1.823 1.508-2.316a7.5 7.5 0 1 0-7.517 0c.85.493 1.509 1.333 1.509 2.316V18"/>
+</svg></div>
+          <div>
+            <a href="/About/" class="font-semibold text-dark">
+              What is seL4?
+              <span class="absolute inset-0"></span>
+            </a>
+            <p class="mt-1 text-light">History, Fact Sheet, White Paper. How to use seL4 in your system.</p>
+          </div>
+        </div><div class="group menu-item-group">
+          <div class="menu-icon-div"><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" aria-hidden="true" data-slot="icon" class="menu-icon">
+  <path stroke-linecap="round" stroke-linejoin="round" d="M18 18.72a9.094 9.094 0 0 0 3.741-.479 3 3 0 0 0-4.682-2.72m.94 3.198.001.031c0 .225-.012.447-.037.666A11.944 11.944 0 0 1 12 21c-2.17 0-4.207-.576-5.963-1.584A6.062 6.062 0 0 1 6 18.719m12 0a5.971 5.971 0 0 0-.941-3.197m0 0A5.995 5.995 0 0 0 12 12.75a5.995 5.995 0 0 0-5.058 2.772m0 0a3 3 0 0 0-4.681 2.72 8.986 8.986 0 0 0 3.74.477m.94-3.197a5.971 5.971 0 0 0-.94 3.197M15 6.75a3 3 0 1 1-6 0 3 3 0 0 1 6 0Zm6 3a2.25 2.25 0 1 1-4.5 0 2.25 2.25 0 0 1 4.5 0Zm-13.5 0a2.25 2.25 0 1 1-4.5 0 2.25 2.25 0 0 1 4.5 0Z"/>
+</svg></div>
+          <div>
+            <a href="/use.html" class="font-semibold text-dark">
+              Who is using seL4?
+              <span class="absolute inset-0"></span>
+            </a>
+            <p class="mt-1 text-light">Where seL4 is used and deployed world wide</p>
+          </div>
+        </div><div class="group menu-item-group">
+          <div class="menu-icon-div"><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" aria-hidden="true" data-slot="icon" class="menu-icon">
+  <path stroke-linecap="round" stroke-linejoin="round" d="M9 12.75 11.25 15 15 9.75M21 12a9 9 0 1 1-18 0 9 9 0 0 1 18 0Z"/>
+</svg></div>
+          <div>
+            <a href="/Verification/" class="font-semibold text-dark">
+              Verification
+              <span class="absolute inset-0"></span>
+            </a>
+            <p class="mt-1 text-light">seL4 Proofs; implications for seL4-based systems and certification</p>
+          </div>
+        </div><div class="group menu-item-group">
+          <div class="menu-icon-div"><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" aria-hidden="true" data-slot="icon" class="menu-icon">
+  <path stroke-linecap="round" stroke-linejoin="round" d="M2.25 18 9 11.25l4.306 4.306a11.95 11.95 0 0 1 5.814-5.518l2.74-1.22m0 0-5.94-2.281m5.94 2.28-2.28 5.941"/>
+</svg></div>
+          <div>
+            <a href="/roadmap.html" class="font-semibold text-dark">
+              Roadmap
+              <span class="absolute inset-0"></span>
+            </a>
+            <p class="mt-1 text-light">Planned development &amp; verification</p>
+          </div>
+        </div><div class="group menu-item-group">
+          <div class="menu-icon-div"><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" aria-hidden="true" data-slot="icon" class="menu-icon">
+  <path stroke-linecap="round" stroke-linejoin="round" d="m3.75 13.5 10.5-11.25L12 10.5h8.25L9.75 21.75 12 13.5H3.75Z"/>
+</svg></div>
+          <div>
+            <a href="/performance.html" class="font-semibold text-dark">
+              Performance
+              <span class="absolute inset-0"></span>
+            </a>
+            <p class="mt-1 text-light">The numbers on the world&#39;s fastest kernel</p>
+          </div>
+        </div><div class="group menu-item-group">
+          <div class="menu-icon-div"><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" aria-hidden="true" data-slot="icon" class="menu-icon">
+  <path stroke-linecap="round" stroke-linejoin="round" d="M12 3v17.25m0 0c-1.472 0-2.882.265-4.185.75M12 20.25c1.472 0 2.882.265 4.185.75M18.75 4.97A48.416 48.416 0 0 0 12 4.5c-2.291 0-4.545.16-6.75.47m13.5 0c1.01.143 2.01.317 3 .52m-3-.52 2.62 10.726c.122.499-.106 1.028-.589 1.202a5.988 5.988 0 0 1-2.031.352 5.988 5.988 0 0 1-2.031-.352c-.483-.174-.711-.703-.59-1.202L18.75 4.971Zm-16.5.52c.99-.203 1.99-.377 3-.52m0 0 2.62 10.726c.122.499-.106 1.028-.589 1.202a5.989 5.989 0 0 1-2.031.352 5.989 5.989 0 0 1-2.031-.352c-.483-.174-.711-.703-.59-1.202L5.25 4.971Z"/>
+</svg></div>
+          <div>
+            <a href="/Legal/" class="font-semibold text-dark">
+              License, Trademark &amp; Logo
+              <span class="absolute inset-0"></span>
+            </a>
+            <p class="mt-1 text-light">seL4 License and Implications; Trademark Compliance Guide</p>
+          </div>
+        </div><div class="group menu-item-group">
+          <div class="menu-icon-div"><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" aria-hidden="true" data-slot="icon" class="menu-icon">
+  <path stroke-linecap="round" stroke-linejoin="round" d="M8.25 3v1.5M4.5 8.25H3m18 0h-1.5M4.5 12H3m18 0h-1.5m-15 3.75H3m18 0h-1.5M8.25 19.5V21M12 3v1.5m0 15V21m3.75-18v1.5m0 15V21m-9-1.5h10.5a2.25 2.25 0 0 0 2.25-2.25V6.75a2.25 2.25 0 0 0-2.25-2.25H6.75A2.25 2.25 0 0 0 4.5 6.75v10.5a2.25 2.25 0 0 0 2.25 2.25Zm.75-12h9v9h-9v-9Z"/>
+</svg></div>
+          <div>
+            <a href="/platforms.html" class="font-semibold text-dark">
+              Platform Support Overview
+              <span class="absolute inset-0"></span>
+            </a>
+            <p class="mt-1 text-light">Hardware and simulators seL4 runs on</p>
+          </div>
+        </div><div class="group menu-item-group">
+          <div class="menu-icon-div"><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" aria-hidden="true" data-slot="icon" class="menu-icon">
+  <path stroke-linecap="round" stroke-linejoin="round" d="M4.26 10.147a60.438 60.438 0 0 0-.491 6.347A48.62 48.62 0 0 1 12 20.904a48.62 48.62 0 0 1 8.232-4.41 60.46 60.46 0 0 0-.491-6.347m-15.482 0a50.636 50.636 0 0 0-2.658-.813A59.906 59.906 0 0 1 12 3.493a59.903 59.903 0 0 1 10.399 5.84c-.896.248-1.783.52-2.658.814m-15.482 0A50.717 50.717 0 0 1 12 13.489a50.702 50.702 0 0 1 7.74-3.342M6.75 15a.75.75 0 1 0 0-1.5.75.75 0 0 0 0 1.5Zm0 0v-3.675A55.378 55.378 0 0 1 12 8.443m-7.007 11.55A5.981 5.981 0 0 0 6.75 15.75v-1.5"/>
+</svg></div>
+          <div>
+            <a href="/Research/" class="font-semibold text-dark">
+              Research
+              <span class="absolute inset-0"></span>
+            </a>
+            <p class="mt-1 text-light">Seminal seL4 Publications; Ongoing Research; Courses in the Ecosystem</p>
+          </div>
+        </div><div class="group menu-item-group">
+          <div class="menu-icon-div"><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" aria-hidden="true" data-slot="icon" class="menu-icon">
+  <path stroke-linecap="round" stroke-linejoin="round" d="M13.5 16.875h3.375m0 0h3.375m-3.375 0V13.5m0 3.375v3.375M6 10.5h2.25a2.25 2.25 0 0 0 2.25-2.25V6a2.25 2.25 0 0 0-2.25-2.25H6A2.25 2.25 0 0 0 3.75 6v2.25A2.25 2.25 0 0 0 6 10.5Zm0 9.75h2.25A2.25 2.25 0 0 0 10.5 18v-2.25a2.25 2.25 0 0 0-2.25-2.25H6a2.25 2.25 0 0 0-2.25 2.25V18A2.25 2.25 0 0 0 6 20.25Zm9.75-9.75H18a2.25 2.25 0 0 0 2.25-2.25V6A2.25 2.25 0 0 0 18 3.75h-2.25A2.25 2.25 0 0 0 13.5 6v2.25a2.25 2.25 0 0 0 2.25 2.25Z"/>
+</svg></div>
+          <div>
+            <a href="/tools.html" class="font-semibold text-dark">
+              Frameworks &amp; Languages
+              <span class="absolute inset-0"></span>
+            </a>
+            <p class="mt-1 text-light">Frameworks, Tools, OS Personalities, Components, Language Support</p>
+          </div>
+        </div><div class="group menu-item-group">
+          <div class="menu-icon-div"><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" aria-hidden="true" data-slot="icon" class="menu-icon">
+  <path stroke-linecap="round" stroke-linejoin="round" d="M12 21v-8.25M15.75 21v-8.25M8.25 21v-8.25M3 9l9-6 9 6m-1.5 12V10.332A48.36 48.36 0 0 0 12 9.75c-2.551 0-5.056.2-7.5.582V21M3 21h18M12 6.75h.008v.008H12V6.75Z"/>
+</svg></div>
+          <div>
+            <a href="/Foundation/" class="font-semibold text-dark">
+              seL4 Foundation
+              <span class="absolute inset-0"></span>
+            </a>
+            <p class="mt-1 text-light">Members, Board, and Technical Steering Committee</p>
+          </div>
+        </div>
+      </div><div class="grid grid-cols-1 gap-x-6 gap-y-1 p-4 lg:grid-cols-2 bg-gray-50 dark:bg-slate-900"><div class="group menu-item-group hover:bg-gray-100 hover:dark:bg-slate-800">
+          <div class="menu-icon-div"><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" aria-hidden="true" data-slot="icon" class="menu-icon">
+  <path stroke-linecap="round" stroke-linejoin="round" d="M12 6.042A8.967 8.967 0 0 0 6 3.75c-1.052 0-2.062.18-3 .512v14.25A8.987 8.987 0 0 1 6 18c2.305 0 4.408.867 6 2.292m0-14.25a8.966 8.966 0 0 1 6-2.292c1.052 0 2.062.18 3 .512v14.25A8.987 8.987 0 0 0 18 18a8.967 8.967 0 0 0-6 2.292m0-14.25v14.25"/>
+</svg></div>
+          <div>
+            <a href="/Learn/" class="font-semibold text-dark">
+              Manual &amp; Documentation
+              <span class="absolute inset-0"></span>
+            </a>
+            <p class="mt-1 text-light">Manual, Tutorials, Documentation</p>
+          </div>
+        </div><div class="group menu-item-group hover:bg-gray-100 hover:dark:bg-slate-800">
+          <div class="menu-icon-div"><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" aria-hidden="true" data-slot="icon" class="menu-icon">
+  <path stroke-linecap="round" stroke-linejoin="round" d="M9.879 7.519c1.171-1.025 3.071-1.025 4.242 0 1.172 1.025 1.172 2.687 0 3.712-.203.179-.43.326-.67.442-.745.361-1.45.999-1.45 1.827v.75M21 12a9 9 0 1 1-18 0 9 9 0 0 1 18 0Zm-9 5.25h.008v.008H12v-.008Z"/>
+</svg></div>
+          <div>
+            <a href="/About/FAQ.html" class="font-semibold text-dark">
+              FAQ
+              <span class="absolute inset-0"></span>
+            </a>
+            <p class="mt-1 text-light">Frequently Asked Questions</p>
+          </div>
+        </div></div></div>
+  </div>
+</div><div class="relative">
+  <a class="dropbtn" aria-expanded="false" href="#">
+    <span>Contribute</span>
+    <span class="hidden lg:inline"></span>
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true" data-slot="icon" class="drop-icon">
+  <path fill-rule="evenodd" d="M5.22 8.22a.75.75 0 0 1 1.06 0L10 11.94l3.72-3.72a.75.75 0 1 1 1.06 1.06l-4.25 4.25a.75.75 0 0 1-1.06 0L5.22 9.28a.75.75 0 0 1 0-1.06Z" clip-rule="evenodd"/>
+</svg>
+  </a>
+  <div class="menu-one-col dropmenu">
+    <div class="p-4">
+<div class="group menu-item-group">
+          <div class="menu-icon-div"><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" aria-hidden="true" data-slot="icon" class="menu-icon">
+  <path stroke-linecap="round" stroke-linejoin="round" d="M16.023 9.348h4.992v-.001M2.985 19.644v-4.992m0 0h4.992m-4.993 0 3.181 3.183a8.25 8.25 0 0 0 13.803-3.7M4.031 9.865a8.25 8.25 0 0 1 13.803-3.7l3.181 3.182m0-4.991v4.99"/>
+</svg></div>
+          <div>
+            <a href="/Contribute/" class="font-semibold text-dark">
+              Contribution Guidelines
+              <span class="absolute inset-0"></span>
+            </a>
+            <p class="mt-1 text-light">Overview on how to contribute to seL4</p>
+          </div>
+        </div><div class="group menu-item-group">
+          <div class="menu-icon-div"><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" aria-hidden="true" data-slot="icon" class="menu-icon">
+  <path stroke-linecap="round" stroke-linejoin="round" d="M9 12.75 11.25 15 15 9.75m-3-7.036A11.959 11.959 0 0 1 3.598 6 11.99 11.99 0 0 0 3 9.749c0 5.592 3.824 10.29 9 11.623 5.176-1.332 9-6.03 9-11.622 0-1.31-.21-2.571-.598-3.751h-.152c-3.196 0-6.1-1.248-8.25-3.285Z"/>
+</svg></div>
+          <div>
+            <a href="/Contribute/conduct.html" class="font-semibold text-dark">
+              Code of Conduct
+              <span class="absolute inset-0"></span>
+            </a>
+            <p class="mt-1 text-light">Rules for interaction</p>
+          </div>
+        </div><div class="group menu-item-group">
+          <div class="menu-icon-div"><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" aria-hidden="true" data-slot="icon" class="menu-icon">
+  <path stroke-linecap="round" stroke-linejoin="round" d="m6.75 7.5 3 2.25-3 2.25m4.5 0h3m-9 8.25h13.5A2.25 2.25 0 0 0 21 18V6a2.25 2.25 0 0 0-2.25-2.25H5.25A2.25 2.25 0 0 0 3 6v12a2.25 2.25 0 0 0 2.25 2.25Z"/>
+</svg></div>
+          <div>
+            <a href="/Contribute/conventions.html" class="font-semibold text-dark">
+              Coding Conventions &amp; Requirements
+              <span class="absolute inset-0"></span>
+            </a>
+            <p class="mt-1 text-light">Requirements for C Code, Git Commits, Pull Requests</p>
+          </div>
+        </div><div class="group menu-item-group">
+          <div class="menu-icon-div"><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" aria-hidden="true" data-slot="icon" class="menu-icon">
+  <path stroke-linecap="round" stroke-linejoin="round" d="M20.25 8.511c.884.284 1.5 1.128 1.5 2.097v4.286c0 1.136-.847 2.1-1.98 2.193-.34.027-.68.052-1.02.072v3.091l-3-3c-1.354 0-2.694-.055-4.02-.163a2.115 2.115 0 0 1-.825-.242m9.345-8.334a2.126 2.126 0 0 0-.476-.095 48.64 48.64 0 0 0-8.048 0c-1.131.094-1.976 1.057-1.976 2.192v4.286c0 .837.46 1.58 1.155 1.951m9.345-8.334V6.637c0-1.621-1.152-3.026-2.76-3.235A48.455 48.455 0 0 0 11.25 3c-2.115 0-4.198.137-6.24.402-1.608.209-2.76 1.614-2.76 3.235v6.226c0 1.621 1.152 3.026 2.76 3.235.577.075 1.157.14 1.74.194V21l4.155-4.155"/>
+</svg></div>
+          <div>
+            <a href="/Contribute/rfc-process.html" class="font-semibold text-dark">
+              RFC Process
+              <span class="absolute inset-0"></span>
+            </a>
+            <p class="mt-1 text-light">When and how to write an RFC</p>
+          </div>
+        </div><div class="group menu-item-group">
+          <div class="menu-icon-div"><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" aria-hidden="true" data-slot="icon" class="menu-icon">
+  <path stroke-linecap="round" stroke-linejoin="round" d="M11.42 15.17 17.25 21A2.652 2.652 0 0 0 21 17.25l-5.877-5.877M11.42 15.17l2.496-3.03c.317-.384.74-.626 1.208-.766M11.42 15.17l-4.655 5.653a2.548 2.548 0 1 1-3.586-3.586l6.837-5.63m5.108-.233c.55-.164 1.163-.188 1.743-.14a4.5 4.5 0 0 0 4.486-6.336l-3.276 3.277a3.004 3.004 0 0 1-2.25-2.25l3.276-3.276a4.5 4.5 0 0 0-6.336 4.486c.091 1.076-.071 2.264-.904 2.95l-.102.085m-1.745 1.437L5.909 7.5H4.5L2.25 3.75l1.5-1.5L7.5 4.5v1.409l4.26 4.26m-1.745 1.437 1.745-1.437m6.615 8.206L15.75 15.75M4.867 19.125h.008v.008h-.008v-.008Z"/>
+</svg></div>
+          <div>
+            <a href="/Contribute/platform-ports.html" class="font-semibold text-dark">
+              Platform Contributions
+              <span class="absolute inset-0"></span>
+            </a>
+            <p class="mt-1 text-light">Contributing and maintaining a platform port</p>
+          </div>
+        </div><div class="group menu-item-group">
+          <div class="menu-icon-div"><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" aria-hidden="true" data-slot="icon" class="menu-icon">
+  <path stroke-linecap="round" stroke-linejoin="round" d="M15 19.128a9.38 9.38 0 0 0 2.625.372 9.337 9.337 0 0 0 4.121-.952 4.125 4.125 0 0 0-7.533-2.493M15 19.128v-.003c0-1.113-.285-2.16-.786-3.07M15 19.128v.106A12.318 12.318 0 0 1 8.624 21c-2.331 0-4.512-.645-6.374-1.766l-.001-.109a6.375 6.375 0 0 1 11.964-3.07M12 6.375a3.375 3.375 0 1 1-6.75 0 3.375 3.375 0 0 1 6.75 0Zm8.25 2.25a2.625 2.625 0 1 1-5.25 0 2.625 2.625 0 0 1 5.25 0Z"/>
+</svg></div>
+          <div>
+            <a href="/Contribute/roles.html" class="font-semibold text-dark">
+              Development Roles
+              <span class="absolute inset-0"></span>
+            </a>
+            <p class="mt-1 text-light">Contributors, Reviewers, Committers, TSC</p>
+          </div>
+        </div>
+      </div>
+  </div>
+</div><div class="relative">
+  <a class="dropbtn" aria-expanded="false" href="#">
+    <span>News</span>
+    <span class="hidden lg:inline"> &amp; Events</span>
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true" data-slot="icon" class="drop-icon">
+  <path fill-rule="evenodd" d="M5.22 8.22a.75.75 0 0 1 1.06 0L10 11.94l3.72-3.72a.75.75 0 1 1 1.06 1.06l-4.25 4.25a.75.75 0 0 1-1.06 0L5.22 9.28a.75.75 0 0 1 0-1.06Z" clip-rule="evenodd"/>
+</svg>
+  </a>
+  <div class="menu-one-col dropmenu">
+    <div class="p-4">
+<div class="group menu-item-group">
+          <div class="menu-icon-div"><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" aria-hidden="true" data-slot="icon" class="menu-icon">
+  <path stroke-linecap="round" stroke-linejoin="round" d="M10.34 15.84c-.688-.06-1.386-.09-2.09-.09H7.5a4.5 4.5 0 1 1 0-9h.75c.704 0 1.402-.03 2.09-.09m0 9.18c.253.962.584 1.892.985 2.783.247.55.06 1.21-.463 1.511l-.657.38c-.551.318-1.26.117-1.527-.461a20.845 20.845 0 0 1-1.44-4.282m3.102.069a18.03 18.03 0 0 1-.59-4.59c0-1.586.205-3.124.59-4.59m0 9.18a23.848 23.848 0 0 1 8.835 2.535M10.34 6.66a23.847 23.847 0 0 0 8.835-2.535m0 0A23.74 23.74 0 0 0 18.795 3m.38 1.125a23.91 23.91 0 0 1 1.014 5.395m-1.014 8.855c-.118.38-.245.754-.38 1.125m.38-1.125a23.91 23.91 0 0 0 1.014-5.395m0-3.46c.495.413.811 1.035.811 1.73 0 .695-.316 1.317-.811 1.73m0-3.46a24.347 24.347 0 0 1 0 3.46"/>
+</svg></div>
+          <div>
+            <a href="/news/" class="font-semibold text-dark">
+              News
+              <span class="absolute inset-0"></span>
+            </a>
+            <p class="mt-1 text-light">News about seL4 and the seL4 Foundation</p>
+          </div>
+        </div><div class="group menu-item-group">
+          <div class="menu-icon-div"><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" aria-hidden="true" data-slot="icon" class="menu-icon">
+  <path stroke-linecap="round" stroke-linejoin="round" d="M18 18.72a9.094 9.094 0 0 0 3.741-.479 3 3 0 0 0-4.682-2.72m.94 3.198.001.031c0 .225-.012.447-.037.666A11.944 11.944 0 0 1 12 21c-2.17 0-4.207-.576-5.963-1.584A6.062 6.062 0 0 1 6 18.719m12 0a5.971 5.971 0 0 0-.941-3.197m0 0A5.995 5.995 0 0 0 12 12.75a5.995 5.995 0 0 0-5.058 2.772m0 0a3 3 0 0 0-4.681 2.72 8.986 8.986 0 0 0 3.74.477m.94-3.197a5.971 5.971 0 0 0-.94 3.197M15 6.75a3 3 0 1 1-6 0 3 3 0 0 1 6 0Zm6 3a2.25 2.25 0 1 1-4.5 0 2.25 2.25 0 0 1 4.5 0Zm-13.5 0a2.25 2.25 0 1 1-4.5 0 2.25 2.25 0 0 1 4.5 0Z"/>
+</svg></div>
+          <div>
+            <a href="/Summit/2025/" class="font-semibold text-dark">
+              seL4 Summit 2025
+              <span class="absolute inset-0"></span>
+            </a>
+            <p class="mt-1 text-light">The seL4 event of the year</p>
+          </div>
+        </div><div class="group menu-item-group">
+          <div class="menu-icon-div"><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" aria-hidden="true" data-slot="icon" class="menu-icon">
+  <path stroke-linecap="round" stroke-linejoin="round" d="M21 16.811c0 .864-.933 1.406-1.683.977l-7.108-4.061a1.125 1.125 0 0 1 0-1.954l7.108-4.061A1.125 1.125 0 0 1 21 8.689v8.122ZM11.25 16.811c0 .864-.933 1.406-1.683.977l-7.108-4.061a1.125 1.125 0 0 1 0-1.954l7.108-4.061a1.125 1.125 0 0 1 1.683.977v8.122Z"/>
+</svg></div>
+          <div>
+            <a href="/Summit/" class="font-semibold text-dark">
+              Previous seL4 Summits
+              <span class="absolute inset-0"></span>
+            </a>
+            <p class="mt-1 text-light">All seL4 summits since 2022</p>
+          </div>
+        </div><div class="group menu-item-group">
+          <div class="menu-icon-div"><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" aria-hidden="true" data-slot="icon" class="menu-icon">
+  <path stroke-linecap="round" stroke-linejoin="round" d="M21.75 6.75v10.5a2.25 2.25 0 0 1-2.25 2.25h-15a2.25 2.25 0 0 1-2.25-2.25V6.75m19.5 0A2.25 2.25 0 0 0 19.5 4.5h-15a2.25 2.25 0 0 0-2.25 2.25m19.5 0v.243a2.25 2.25 0 0 1-1.07 1.916l-7.5 4.615a2.25 2.25 0 0 1-2.36 0L3.32 8.91a2.25 2.25 0 0 1-1.07-1.916V6.75"/>
+</svg></div>
+          <div>
+            <a href="/stay-informed.html" class="font-semibold text-dark">
+              Stay Informed
+              <span class="absolute inset-0"></span>
+            </a>
+            <p class="mt-1 text-light">Announcement mailing list and other channels to stay informed</p>
+          </div>
+        </div></div>
+      <div class="bg-gray-50 p-8 dark:bg-slate-900">
+        <div class="flex justify-between">
+          <h3 class="text-sm font-semibold leading-6 text-gray-500">Recent news</h3>
+          <a href="/news/" class="text-sm font-semibold leading-6 text-f_green-600">See all <span aria-hidden="true">&rarr;</span></a>
+        </div>
+        <ul class="mt-6 space-y-6"><li class="relative">
+            <time datetime="2025-04-18" class="block text-xs leading-6 text-light">18 Apr 2025</time>
+            <a href="/news/2025.html#member-mep" class="block truncate text-sm font-semibold leading-6 text-dark">
+              MEP joins the seL4 Foundation
+              <span class="absolute inset-0"></span>
+            </a>
+          </li><li class="relative">
+            <time datetime="2025-04-14" class="block text-xs leading-6 text-light">14 Apr 2025</time>
+            <a href="/news/2025.html#summit-2025-register" class="block truncate text-sm font-semibold leading-6 text-dark">
+              Register for the seL4 summit 2025
+              <span class="absolute inset-0"></span>
+            </a>
+          </li><li class="relative">
+            <time datetime="2025-02-17" class="block text-xs leading-6 text-light">17 Feb 2025</time>
+            <a href="/news/2025.html#summit-2025-cfp" class="block truncate text-sm font-semibold leading-6 text-dark">
+              Call For Presentations for the seL4 Summit 2025
+              <span class="absolute inset-0"></span>
+            </a>
+          </li></ul>
+      </div>
+      <div>
+      </div>
+  </div>
+</div><div class="relative">
+  <a class="dropbtn" aria-expanded="false" href="#">
+    <span>Contact</span>
+    <span class="hidden lg:inline"> &amp; Support</span>
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true" data-slot="icon" class="drop-icon">
+  <path fill-rule="evenodd" d="M5.22 8.22a.75.75 0 0 1 1.06 0L10 11.94l3.72-3.72a.75.75 0 1 1 1.06 1.06l-4.25 4.25a.75.75 0 0 1-1.06 0L5.22 9.28a.75.75 0 0 1 0-1.06Z" clip-rule="evenodd"/>
+</svg>
+  </a>
+  <div class="menu-one-col dropmenu">
+    <div class="p-4">
+<div class="group menu-item-group">
+          <div class="menu-icon-div"><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" aria-hidden="true" data-slot="icon" class="menu-icon">
+  <path stroke-linecap="round" stroke-linejoin="round" d="M15.59 14.37a6 6 0 0 1-5.84 7.38v-4.8m5.84-2.58a14.98 14.98 0 0 0 6.16-12.12A14.98 14.98 0 0 0 9.631 8.41m5.96 5.96a14.926 14.926 0 0 1-5.841 2.58m-.119-8.54a6 6 0 0 0-7.381 5.84h4.8m2.581-5.84a14.927 14.927 0 0 0-2.58 5.84m2.699 2.7c-.103.021-.207.041-.311.06a15.09 15.09 0 0 1-2.448-2.448 14.9 14.9 0 0 1 .06-.312m-2.24 2.39a4.493 4.493 0 0 0-1.757 4.306 4.493 4.493 0 0 0 4.306-1.758M16.5 9a1.5 1.5 0 1 1-3 0 1.5 1.5 0 0 1 3 0Z"/>
+</svg></div>
+          <div>
+            <a href="/Services/" class="font-semibold text-dark">
+              Commercial Support
+              <span class="absolute inset-0"></span>
+            </a>
+            <p class="mt-1 text-light">Endorsed Service Providers for seL4</p>
+          </div>
+        </div><div class="group menu-item-group">
+          <div class="menu-icon-div"><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" aria-hidden="true" data-slot="icon" class="menu-icon">
+  <path stroke-linecap="round" stroke-linejoin="round" d="M16.712 4.33a9.027 9.027 0 0 1 1.652 1.306c.51.51.944 1.064 1.306 1.652M16.712 4.33l-3.448 4.138m3.448-4.138a9.014 9.014 0 0 0-9.424 0M19.67 7.288l-4.138 3.448m4.138-3.448a9.014 9.014 0 0 1 0 9.424m-4.138-5.976a3.736 3.736 0 0 0-.88-1.388 3.737 3.737 0 0 0-1.388-.88m2.268 2.268a3.765 3.765 0 0 1 0 2.528m-2.268-4.796a3.765 3.765 0 0 0-2.528 0m4.796 4.796c-.181.506-.475.982-.88 1.388a3.736 3.736 0 0 1-1.388.88m2.268-2.268 4.138 3.448m0 0a9.027 9.027 0 0 1-1.306 1.652c-.51.51-1.064.944-1.652 1.306m0 0-3.448-4.138m3.448 4.138a9.014 9.014 0 0 1-9.424 0m5.976-4.138a3.765 3.765 0 0 1-2.528 0m0 0a3.736 3.736 0 0 1-1.388-.88 3.737 3.737 0 0 1-.88-1.388m2.268 2.268L7.288 19.67m0 0a9.024 9.024 0 0 1-1.652-1.306 9.027 9.027 0 0 1-1.306-1.652m0 0 4.138-3.448M4.33 16.712a9.014 9.014 0 0 1 0-9.424m4.138 5.976a3.765 3.765 0 0 1 0-2.528m0 0c.181-.506.475-.982.88-1.388a3.736 3.736 0 0 1 1.388-.88m-2.268 2.268L4.33 7.288m6.406 1.18L7.288 4.33m0 0a9.024 9.024 0 0 0-1.652 1.306A9.025 9.025 0 0 0 4.33 7.288"/>
+</svg></div>
+          <div>
+            <a href="/support.html" class="font-semibold text-dark">
+              Help &amp; Open Source Support
+              <span class="absolute inset-0"></span>
+            </a>
+            <p class="mt-1 text-light">Mailing lists, Forum, Chat, Developer Hangouts</p>
+          </div>
+        </div><div class="group menu-item-group">
+          <div class="menu-icon-div"><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" aria-hidden="true" data-slot="icon" class="menu-icon">
+  <path stroke-linecap="round" stroke-linejoin="round" d="M15.75 6a3.75 3.75 0 1 1-7.5 0 3.75 3.75 0 0 1 7.5 0ZM4.501 20.118a7.5 7.5 0 0 1 14.998 0A17.933 17.933 0 0 1 12 21.75c-2.676 0-5.216-.584-7.499-1.632Z"/>
+</svg></div>
+          <div>
+            <a href="/contact.html" class="font-semibold text-dark">
+              Contact a Person
+              <span class="absolute inset-0"></span>
+            </a>
+            <p class="mt-1 text-light">seL4 Foundation, Security Contact, Moderation</p>
+          </div>
+        </div>
+      </div>
+  </div>
+</div></div>
+    <div class="hidden md:flex md:flex-1"></div>
+
+    <div class="hidden min-[470px]:flex md:flex-none justify-end">
+      <!-- member button -->
+      <a href="/Foundation/Join/" class="button-outline md:h-8 lg:h-9 md:text-xs lg:text-sm mr-6 md:mr-4 lg:mr-8 xl:mr-10">Become a Member</a>
+
+      <!-- docsite button -->
+      <a href="https://docs.sel4.systems" class="button-outline md:h-8 lg:h-9 md:text-xs lg:text-sm mr-2 lg:mr-6">Docsite
+        <svg xmlns="http://www.w3.org/2000/svg" fill="none" aria-hidden="true" viewBox="0 0 24 24" stroke="currentColor" data-slot="icon" class="inline-icon">
+  <path stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" d="M13.5 6H5.25A2.25 2.25 0 0 0 3 8.25v10.5A2.25 2.25 0 0 0 5.25 21h10.5A2.25 2.25 0 0 0 18 18.75V10.5m-10.5 6L21 3m0 0h-5.25M21 3v5.25"/>
+</svg>
+      </a>
+
+      <!-- github button -->
+      <a href="https://github.com/seL4" class="mr-4 md:mr-0 px-3 pt-1 pb-2 block text-gray-400 hover:text-gray-500 dark:hover:text-gray-300">
+        <span class="sr-only">seL4 on GitHub</span>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16" fill="currentColor" aria-hidden="true" data-slot="icon" class="w-5 h-5 lg:w-6 lg:h-6">
+  <path d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.013 8.013 0 0016 8c0-4.42-3.58-8-8-8z"/>
+</svg>
+      </a>
+    </div>
+
+    <!-- mobile menu hamburger button -->
+    <div class="flex md:hidden">
+      <button type="button" class="-m-2.5 inline-flex items-center justify-center rounded-md p-2.5 text-gray-700 dark:text-gray-300 mobile-drop">
+        <span class="sr-only">Open main menu</span>
+        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" aria-hidden="true" data-slot="icon" class="h-6 w-6">
+  <path stroke-linecap="round" stroke-linejoin="round" d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5"/>
+</svg>
+      </button>
+    </div>
+  </nav><div class="lg:hidden hidden" id="mobile-menu" role="dialog" aria-modal="true">
+  <div class="fixed inset-0 z-10"></div>
+  <div class="fixed inset-y-0 right-0 z-10 w-full overflow-y-auto bg-white dark:bg-darkblue px-6 py-6 sm:max-w-sm sm:ring-1 sm:ring-gray-900/10 dark:sm:ring-gray-100/20">
+    <div class="flex items-center justify-between">
+      <span class="-m-1.5 p-1.5"> </span>
+      <button type="button" class="-m-2.5 rounded-md p-2.5 text-light">
+        <span class="sr-only">Close menu</span>
+        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" aria-hidden="true" data-slot="icon" class="h-6 w-6">
+  <path stroke-linecap="round" stroke-linejoin="round" d="M6 18 18 6M6 6l12 12"/>
+</svg>
+      </button>
+    </div>
+    <div class="mt-6 flow-root">
+      <div class="-my-6 divide-y divide-gray-500/10 dark:divide-gray-200/40">
+        <div class="space-y-2 py-6">
+          <div class="-mx-3"><button type="button" class="dropbtn-mobile" aria-expanded="false">
+              About seL4
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true" data-slot="icon" class="h-5 w-5 flex-none">
+  <path fill-rule="evenodd" d="M5.22 8.22a.75.75 0 0 1 1.06 0L10 11.94l3.72-3.72a.75.75 0 1 1 1.06 1.06l-4.25 4.25a.75.75 0 0 1-1.06 0L5.22 9.28a.75.75 0 0 1 0-1.06Z" clip-rule="evenodd"/>
+</svg>
+            </button>
+            <div class="mobile-menu hidden"><a href="/About/" class="block rounded-lg py-2 pl-6 pr-3 text-sm font-semibold leading-7 text-dark hover:bg-gray-50 dark:hover:bg-slate-800"><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" aria-hidden="true" data-slot="icon" class="inline-icon mr-2">
+  <path stroke-linecap="round" stroke-linejoin="round" d="M12 18v-5.25m0 0a6.01 6.01 0 0 0 1.5-.189m-1.5.189a6.01 6.01 0 0 1-1.5-.189m3.75 7.478a12.06 12.06 0 0 1-4.5 0m3.75 2.383a14.406 14.406 0 0 1-3 0M14.25 18v-.192c0-.983.658-1.823 1.508-2.316a7.5 7.5 0 1 0-7.517 0c.85.493 1.509 1.333 1.509 2.316V18"/>
+</svg> What is seL4?</a><a href="/use.html" class="block rounded-lg py-2 pl-6 pr-3 text-sm font-semibold leading-7 text-dark hover:bg-gray-50 dark:hover:bg-slate-800"><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" aria-hidden="true" data-slot="icon" class="inline-icon mr-2">
+  <path stroke-linecap="round" stroke-linejoin="round" d="M18 18.72a9.094 9.094 0 0 0 3.741-.479 3 3 0 0 0-4.682-2.72m.94 3.198.001.031c0 .225-.012.447-.037.666A11.944 11.944 0 0 1 12 21c-2.17 0-4.207-.576-5.963-1.584A6.062 6.062 0 0 1 6 18.719m12 0a5.971 5.971 0 0 0-.941-3.197m0 0A5.995 5.995 0 0 0 12 12.75a5.995 5.995 0 0 0-5.058 2.772m0 0a3 3 0 0 0-4.681 2.72 8.986 8.986 0 0 0 3.74.477m.94-3.197a5.971 5.971 0 0 0-.94 3.197M15 6.75a3 3 0 1 1-6 0 3 3 0 0 1 6 0Zm6 3a2.25 2.25 0 1 1-4.5 0 2.25 2.25 0 0 1 4.5 0Zm-13.5 0a2.25 2.25 0 1 1-4.5 0 2.25 2.25 0 0 1 4.5 0Z"/>
+</svg> Who is using seL4?</a><a href="/Verification/" class="block rounded-lg py-2 pl-6 pr-3 text-sm font-semibold leading-7 text-dark hover:bg-gray-50 dark:hover:bg-slate-800"><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" aria-hidden="true" data-slot="icon" class="inline-icon mr-2">
+  <path stroke-linecap="round" stroke-linejoin="round" d="M9 12.75 11.25 15 15 9.75M21 12a9 9 0 1 1-18 0 9 9 0 0 1 18 0Z"/>
+</svg> Verification</a><a href="/roadmap.html" class="block rounded-lg py-2 pl-6 pr-3 text-sm font-semibold leading-7 text-dark hover:bg-gray-50 dark:hover:bg-slate-800"><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" aria-hidden="true" data-slot="icon" class="inline-icon mr-2">
+  <path stroke-linecap="round" stroke-linejoin="round" d="M2.25 18 9 11.25l4.306 4.306a11.95 11.95 0 0 1 5.814-5.518l2.74-1.22m0 0-5.94-2.281m5.94 2.28-2.28 5.941"/>
+</svg> Roadmap</a><a href="/performance.html" class="block rounded-lg py-2 pl-6 pr-3 text-sm font-semibold leading-7 text-dark hover:bg-gray-50 dark:hover:bg-slate-800"><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" aria-hidden="true" data-slot="icon" class="inline-icon mr-2">
+  <path stroke-linecap="round" stroke-linejoin="round" d="m3.75 13.5 10.5-11.25L12 10.5h8.25L9.75 21.75 12 13.5H3.75Z"/>
+</svg> Performance</a><a href="/Legal/" class="block rounded-lg py-2 pl-6 pr-3 text-sm font-semibold leading-7 text-dark hover:bg-gray-50 dark:hover:bg-slate-800"><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" aria-hidden="true" data-slot="icon" class="inline-icon mr-2">
+  <path stroke-linecap="round" stroke-linejoin="round" d="M12 3v17.25m0 0c-1.472 0-2.882.265-4.185.75M12 20.25c1.472 0 2.882.265 4.185.75M18.75 4.97A48.416 48.416 0 0 0 12 4.5c-2.291 0-4.545.16-6.75.47m13.5 0c1.01.143 2.01.317 3 .52m-3-.52 2.62 10.726c.122.499-.106 1.028-.589 1.202a5.988 5.988 0 0 1-2.031.352 5.988 5.988 0 0 1-2.031-.352c-.483-.174-.711-.703-.59-1.202L18.75 4.971Zm-16.5.52c.99-.203 1.99-.377 3-.52m0 0 2.62 10.726c.122.499-.106 1.028-.589 1.202a5.989 5.989 0 0 1-2.031.352 5.989 5.989 0 0 1-2.031-.352c-.483-.174-.711-.703-.59-1.202L5.25 4.971Z"/>
+</svg> License, Trademark &amp; Logo</a><a href="/platforms.html" class="block rounded-lg py-2 pl-6 pr-3 text-sm font-semibold leading-7 text-dark hover:bg-gray-50 dark:hover:bg-slate-800"><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" aria-hidden="true" data-slot="icon" class="inline-icon mr-2">
+  <path stroke-linecap="round" stroke-linejoin="round" d="M8.25 3v1.5M4.5 8.25H3m18 0h-1.5M4.5 12H3m18 0h-1.5m-15 3.75H3m18 0h-1.5M8.25 19.5V21M12 3v1.5m0 15V21m3.75-18v1.5m0 15V21m-9-1.5h10.5a2.25 2.25 0 0 0 2.25-2.25V6.75a2.25 2.25 0 0 0-2.25-2.25H6.75A2.25 2.25 0 0 0 4.5 6.75v10.5a2.25 2.25 0 0 0 2.25 2.25Zm.75-12h9v9h-9v-9Z"/>
+</svg> Platform Support Overview</a><a href="/Research/" class="block rounded-lg py-2 pl-6 pr-3 text-sm font-semibold leading-7 text-dark hover:bg-gray-50 dark:hover:bg-slate-800"><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" aria-hidden="true" data-slot="icon" class="inline-icon mr-2">
+  <path stroke-linecap="round" stroke-linejoin="round" d="M4.26 10.147a60.438 60.438 0 0 0-.491 6.347A48.62 48.62 0 0 1 12 20.904a48.62 48.62 0 0 1 8.232-4.41 60.46 60.46 0 0 0-.491-6.347m-15.482 0a50.636 50.636 0 0 0-2.658-.813A59.906 59.906 0 0 1 12 3.493a59.903 59.903 0 0 1 10.399 5.84c-.896.248-1.783.52-2.658.814m-15.482 0A50.717 50.717 0 0 1 12 13.489a50.702 50.702 0 0 1 7.74-3.342M6.75 15a.75.75 0 1 0 0-1.5.75.75 0 0 0 0 1.5Zm0 0v-3.675A55.378 55.378 0 0 1 12 8.443m-7.007 11.55A5.981 5.981 0 0 0 6.75 15.75v-1.5"/>
+</svg> Research</a><a href="/tools.html" class="block rounded-lg py-2 pl-6 pr-3 text-sm font-semibold leading-7 text-dark hover:bg-gray-50 dark:hover:bg-slate-800"><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" aria-hidden="true" data-slot="icon" class="inline-icon mr-2">
+  <path stroke-linecap="round" stroke-linejoin="round" d="M13.5 16.875h3.375m0 0h3.375m-3.375 0V13.5m0 3.375v3.375M6 10.5h2.25a2.25 2.25 0 0 0 2.25-2.25V6a2.25 2.25 0 0 0-2.25-2.25H6A2.25 2.25 0 0 0 3.75 6v2.25A2.25 2.25 0 0 0 6 10.5Zm0 9.75h2.25A2.25 2.25 0 0 0 10.5 18v-2.25a2.25 2.25 0 0 0-2.25-2.25H6a2.25 2.25 0 0 0-2.25 2.25V18A2.25 2.25 0 0 0 6 20.25Zm9.75-9.75H18a2.25 2.25 0 0 0 2.25-2.25V6A2.25 2.25 0 0 0 18 3.75h-2.25A2.25 2.25 0 0 0 13.5 6v2.25a2.25 2.25 0 0 0 2.25 2.25Z"/>
+</svg> Frameworks &amp; Languages</a><a href="/Foundation/" class="block rounded-lg py-2 pl-6 pr-3 text-sm font-semibold leading-7 text-dark hover:bg-gray-50 dark:hover:bg-slate-800"><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" aria-hidden="true" data-slot="icon" class="inline-icon mr-2">
+  <path stroke-linecap="round" stroke-linejoin="round" d="M12 21v-8.25M15.75 21v-8.25M8.25 21v-8.25M3 9l9-6 9 6m-1.5 12V10.332A48.36 48.36 0 0 0 12 9.75c-2.551 0-5.056.2-7.5.582V21M3 21h18M12 6.75h.008v.008H12V6.75Z"/>
+</svg> seL4 Foundation</a><a href="/Learn/" class="block rounded-lg py-2 pl-6 pr-3 text-sm font-semibold leading-7 text-dark hover:bg-gray-50 dark:hover:bg-slate-800"><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" aria-hidden="true" data-slot="icon" class="inline-icon mr-2">
+  <path stroke-linecap="round" stroke-linejoin="round" d="M12 6.042A8.967 8.967 0 0 0 6 3.75c-1.052 0-2.062.18-3 .512v14.25A8.987 8.987 0 0 1 6 18c2.305 0 4.408.867 6 2.292m0-14.25a8.966 8.966 0 0 1 6-2.292c1.052 0 2.062.18 3 .512v14.25A8.987 8.987 0 0 0 18 18a8.967 8.967 0 0 0-6 2.292m0-14.25v14.25"/>
+</svg> Manual &amp; Documentation</a><a href="/About/FAQ.html" class="block rounded-lg py-2 pl-6 pr-3 text-sm font-semibold leading-7 text-dark hover:bg-gray-50 dark:hover:bg-slate-800"><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" aria-hidden="true" data-slot="icon" class="inline-icon mr-2">
+  <path stroke-linecap="round" stroke-linejoin="round" d="M9.879 7.519c1.171-1.025 3.071-1.025 4.242 0 1.172 1.025 1.172 2.687 0 3.712-.203.179-.43.326-.67.442-.745.361-1.45.999-1.45 1.827v.75M21 12a9 9 0 1 1-18 0 9 9 0 0 1 18 0Zm-9 5.25h.008v.008H12v-.008Z"/>
+</svg> FAQ</a></div><button type="button" class="dropbtn-mobile" aria-expanded="false">
+              Contribute
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true" data-slot="icon" class="h-5 w-5 flex-none">
+  <path fill-rule="evenodd" d="M5.22 8.22a.75.75 0 0 1 1.06 0L10 11.94l3.72-3.72a.75.75 0 1 1 1.06 1.06l-4.25 4.25a.75.75 0 0 1-1.06 0L5.22 9.28a.75.75 0 0 1 0-1.06Z" clip-rule="evenodd"/>
+</svg>
+            </button>
+            <div class="mobile-menu hidden"><a href="/Contribute/" class="block rounded-lg py-2 pl-6 pr-3 text-sm font-semibold leading-7 text-dark hover:bg-gray-50 dark:hover:bg-slate-800"><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" aria-hidden="true" data-slot="icon" class="inline-icon mr-2">
+  <path stroke-linecap="round" stroke-linejoin="round" d="M16.023 9.348h4.992v-.001M2.985 19.644v-4.992m0 0h4.992m-4.993 0 3.181 3.183a8.25 8.25 0 0 0 13.803-3.7M4.031 9.865a8.25 8.25 0 0 1 13.803-3.7l3.181 3.182m0-4.991v4.99"/>
+</svg> Contribution Guidelines</a><a href="/Contribute/conduct.html" class="block rounded-lg py-2 pl-6 pr-3 text-sm font-semibold leading-7 text-dark hover:bg-gray-50 dark:hover:bg-slate-800"><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" aria-hidden="true" data-slot="icon" class="inline-icon mr-2">
+  <path stroke-linecap="round" stroke-linejoin="round" d="M9 12.75 11.25 15 15 9.75m-3-7.036A11.959 11.959 0 0 1 3.598 6 11.99 11.99 0 0 0 3 9.749c0 5.592 3.824 10.29 9 11.623 5.176-1.332 9-6.03 9-11.622 0-1.31-.21-2.571-.598-3.751h-.152c-3.196 0-6.1-1.248-8.25-3.285Z"/>
+</svg> Code of Conduct</a><a href="/Contribute/conventions.html" class="block rounded-lg py-2 pl-6 pr-3 text-sm font-semibold leading-7 text-dark hover:bg-gray-50 dark:hover:bg-slate-800"><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" aria-hidden="true" data-slot="icon" class="inline-icon mr-2">
+  <path stroke-linecap="round" stroke-linejoin="round" d="m6.75 7.5 3 2.25-3 2.25m4.5 0h3m-9 8.25h13.5A2.25 2.25 0 0 0 21 18V6a2.25 2.25 0 0 0-2.25-2.25H5.25A2.25 2.25 0 0 0 3 6v12a2.25 2.25 0 0 0 2.25 2.25Z"/>
+</svg> Coding Conventions &amp; Requirements</a><a href="/Contribute/rfc-process.html" class="block rounded-lg py-2 pl-6 pr-3 text-sm font-semibold leading-7 text-dark hover:bg-gray-50 dark:hover:bg-slate-800"><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" aria-hidden="true" data-slot="icon" class="inline-icon mr-2">
+  <path stroke-linecap="round" stroke-linejoin="round" d="M20.25 8.511c.884.284 1.5 1.128 1.5 2.097v4.286c0 1.136-.847 2.1-1.98 2.193-.34.027-.68.052-1.02.072v3.091l-3-3c-1.354 0-2.694-.055-4.02-.163a2.115 2.115 0 0 1-.825-.242m9.345-8.334a2.126 2.126 0 0 0-.476-.095 48.64 48.64 0 0 0-8.048 0c-1.131.094-1.976 1.057-1.976 2.192v4.286c0 .837.46 1.58 1.155 1.951m9.345-8.334V6.637c0-1.621-1.152-3.026-2.76-3.235A48.455 48.455 0 0 0 11.25 3c-2.115 0-4.198.137-6.24.402-1.608.209-2.76 1.614-2.76 3.235v6.226c0 1.621 1.152 3.026 2.76 3.235.577.075 1.157.14 1.74.194V21l4.155-4.155"/>
+</svg> RFC Process</a><a href="/Contribute/platform-ports.html" class="block rounded-lg py-2 pl-6 pr-3 text-sm font-semibold leading-7 text-dark hover:bg-gray-50 dark:hover:bg-slate-800"><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" aria-hidden="true" data-slot="icon" class="inline-icon mr-2">
+  <path stroke-linecap="round" stroke-linejoin="round" d="M11.42 15.17 17.25 21A2.652 2.652 0 0 0 21 17.25l-5.877-5.877M11.42 15.17l2.496-3.03c.317-.384.74-.626 1.208-.766M11.42 15.17l-4.655 5.653a2.548 2.548 0 1 1-3.586-3.586l6.837-5.63m5.108-.233c.55-.164 1.163-.188 1.743-.14a4.5 4.5 0 0 0 4.486-6.336l-3.276 3.277a3.004 3.004 0 0 1-2.25-2.25l3.276-3.276a4.5 4.5 0 0 0-6.336 4.486c.091 1.076-.071 2.264-.904 2.95l-.102.085m-1.745 1.437L5.909 7.5H4.5L2.25 3.75l1.5-1.5L7.5 4.5v1.409l4.26 4.26m-1.745 1.437 1.745-1.437m6.615 8.206L15.75 15.75M4.867 19.125h.008v.008h-.008v-.008Z"/>
+</svg> Platform Contributions</a><a href="/Contribute/roles.html" class="block rounded-lg py-2 pl-6 pr-3 text-sm font-semibold leading-7 text-dark hover:bg-gray-50 dark:hover:bg-slate-800"><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" aria-hidden="true" data-slot="icon" class="inline-icon mr-2">
+  <path stroke-linecap="round" stroke-linejoin="round" d="M15 19.128a9.38 9.38 0 0 0 2.625.372 9.337 9.337 0 0 0 4.121-.952 4.125 4.125 0 0 0-7.533-2.493M15 19.128v-.003c0-1.113-.285-2.16-.786-3.07M15 19.128v.106A12.318 12.318 0 0 1 8.624 21c-2.331 0-4.512-.645-6.374-1.766l-.001-.109a6.375 6.375 0 0 1 11.964-3.07M12 6.375a3.375 3.375 0 1 1-6.75 0 3.375 3.375 0 0 1 6.75 0Zm8.25 2.25a2.625 2.625 0 1 1-5.25 0 2.625 2.625 0 0 1 5.25 0Z"/>
+</svg> Development Roles</a></div><button type="button" class="dropbtn-mobile" aria-expanded="false">
+              News &amp; Events
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true" data-slot="icon" class="h-5 w-5 flex-none">
+  <path fill-rule="evenodd" d="M5.22 8.22a.75.75 0 0 1 1.06 0L10 11.94l3.72-3.72a.75.75 0 1 1 1.06 1.06l-4.25 4.25a.75.75 0 0 1-1.06 0L5.22 9.28a.75.75 0 0 1 0-1.06Z" clip-rule="evenodd"/>
+</svg>
+            </button>
+            <div class="mobile-menu hidden"><a href="/news/" class="block rounded-lg py-2 pl-6 pr-3 text-sm font-semibold leading-7 text-dark hover:bg-gray-50 dark:hover:bg-slate-800"><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" aria-hidden="true" data-slot="icon" class="inline-icon mr-2">
+  <path stroke-linecap="round" stroke-linejoin="round" d="M10.34 15.84c-.688-.06-1.386-.09-2.09-.09H7.5a4.5 4.5 0 1 1 0-9h.75c.704 0 1.402-.03 2.09-.09m0 9.18c.253.962.584 1.892.985 2.783.247.55.06 1.21-.463 1.511l-.657.38c-.551.318-1.26.117-1.527-.461a20.845 20.845 0 0 1-1.44-4.282m3.102.069a18.03 18.03 0 0 1-.59-4.59c0-1.586.205-3.124.59-4.59m0 9.18a23.848 23.848 0 0 1 8.835 2.535M10.34 6.66a23.847 23.847 0 0 0 8.835-2.535m0 0A23.74 23.74 0 0 0 18.795 3m.38 1.125a23.91 23.91 0 0 1 1.014 5.395m-1.014 8.855c-.118.38-.245.754-.38 1.125m.38-1.125a23.91 23.91 0 0 0 1.014-5.395m0-3.46c.495.413.811 1.035.811 1.73 0 .695-.316 1.317-.811 1.73m0-3.46a24.347 24.347 0 0 1 0 3.46"/>
+</svg> News</a><a href="/Summit/2025/" class="block rounded-lg py-2 pl-6 pr-3 text-sm font-semibold leading-7 text-dark hover:bg-gray-50 dark:hover:bg-slate-800"><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" aria-hidden="true" data-slot="icon" class="inline-icon mr-2">
+  <path stroke-linecap="round" stroke-linejoin="round" d="M18 18.72a9.094 9.094 0 0 0 3.741-.479 3 3 0 0 0-4.682-2.72m.94 3.198.001.031c0 .225-.012.447-.037.666A11.944 11.944 0 0 1 12 21c-2.17 0-4.207-.576-5.963-1.584A6.062 6.062 0 0 1 6 18.719m12 0a5.971 5.971 0 0 0-.941-3.197m0 0A5.995 5.995 0 0 0 12 12.75a5.995 5.995 0 0 0-5.058 2.772m0 0a3 3 0 0 0-4.681 2.72 8.986 8.986 0 0 0 3.74.477m.94-3.197a5.971 5.971 0 0 0-.94 3.197M15 6.75a3 3 0 1 1-6 0 3 3 0 0 1 6 0Zm6 3a2.25 2.25 0 1 1-4.5 0 2.25 2.25 0 0 1 4.5 0Zm-13.5 0a2.25 2.25 0 1 1-4.5 0 2.25 2.25 0 0 1 4.5 0Z"/>
+</svg> seL4 Summit 2025</a><a href="/Summit/" class="block rounded-lg py-2 pl-6 pr-3 text-sm font-semibold leading-7 text-dark hover:bg-gray-50 dark:hover:bg-slate-800"><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" aria-hidden="true" data-slot="icon" class="inline-icon mr-2">
+  <path stroke-linecap="round" stroke-linejoin="round" d="M21 16.811c0 .864-.933 1.406-1.683.977l-7.108-4.061a1.125 1.125 0 0 1 0-1.954l7.108-4.061A1.125 1.125 0 0 1 21 8.689v8.122ZM11.25 16.811c0 .864-.933 1.406-1.683.977l-7.108-4.061a1.125 1.125 0 0 1 0-1.954l7.108-4.061a1.125 1.125 0 0 1 1.683.977v8.122Z"/>
+</svg> Previous seL4 Summits</a><a href="/stay-informed.html" class="block rounded-lg py-2 pl-6 pr-3 text-sm font-semibold leading-7 text-dark hover:bg-gray-50 dark:hover:bg-slate-800"><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" aria-hidden="true" data-slot="icon" class="inline-icon mr-2">
+  <path stroke-linecap="round" stroke-linejoin="round" d="M21.75 6.75v10.5a2.25 2.25 0 0 1-2.25 2.25h-15a2.25 2.25 0 0 1-2.25-2.25V6.75m19.5 0A2.25 2.25 0 0 0 19.5 4.5h-15a2.25 2.25 0 0 0-2.25 2.25m19.5 0v.243a2.25 2.25 0 0 1-1.07 1.916l-7.5 4.615a2.25 2.25 0 0 1-2.36 0L3.32 8.91a2.25 2.25 0 0 1-1.07-1.916V6.75"/>
+</svg> Stay Informed</a></div><button type="button" class="dropbtn-mobile" aria-expanded="false">
+              Contact &amp; Support
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true" data-slot="icon" class="h-5 w-5 flex-none">
+  <path fill-rule="evenodd" d="M5.22 8.22a.75.75 0 0 1 1.06 0L10 11.94l3.72-3.72a.75.75 0 1 1 1.06 1.06l-4.25 4.25a.75.75 0 0 1-1.06 0L5.22 9.28a.75.75 0 0 1 0-1.06Z" clip-rule="evenodd"/>
+</svg>
+            </button>
+            <div class="mobile-menu hidden"><a href="/Services/" class="block rounded-lg py-2 pl-6 pr-3 text-sm font-semibold leading-7 text-dark hover:bg-gray-50 dark:hover:bg-slate-800"><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" aria-hidden="true" data-slot="icon" class="inline-icon mr-2">
+  <path stroke-linecap="round" stroke-linejoin="round" d="M15.59 14.37a6 6 0 0 1-5.84 7.38v-4.8m5.84-2.58a14.98 14.98 0 0 0 6.16-12.12A14.98 14.98 0 0 0 9.631 8.41m5.96 5.96a14.926 14.926 0 0 1-5.841 2.58m-.119-8.54a6 6 0 0 0-7.381 5.84h4.8m2.581-5.84a14.927 14.927 0 0 0-2.58 5.84m2.699 2.7c-.103.021-.207.041-.311.06a15.09 15.09 0 0 1-2.448-2.448 14.9 14.9 0 0 1 .06-.312m-2.24 2.39a4.493 4.493 0 0 0-1.757 4.306 4.493 4.493 0 0 0 4.306-1.758M16.5 9a1.5 1.5 0 1 1-3 0 1.5 1.5 0 0 1 3 0Z"/>
+</svg> Commercial Support</a><a href="/support.html" class="block rounded-lg py-2 pl-6 pr-3 text-sm font-semibold leading-7 text-dark hover:bg-gray-50 dark:hover:bg-slate-800"><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" aria-hidden="true" data-slot="icon" class="inline-icon mr-2">
+  <path stroke-linecap="round" stroke-linejoin="round" d="M16.712 4.33a9.027 9.027 0 0 1 1.652 1.306c.51.51.944 1.064 1.306 1.652M16.712 4.33l-3.448 4.138m3.448-4.138a9.014 9.014 0 0 0-9.424 0M19.67 7.288l-4.138 3.448m4.138-3.448a9.014 9.014 0 0 1 0 9.424m-4.138-5.976a3.736 3.736 0 0 0-.88-1.388 3.737 3.737 0 0 0-1.388-.88m2.268 2.268a3.765 3.765 0 0 1 0 2.528m-2.268-4.796a3.765 3.765 0 0 0-2.528 0m4.796 4.796c-.181.506-.475.982-.88 1.388a3.736 3.736 0 0 1-1.388.88m2.268-2.268 4.138 3.448m0 0a9.027 9.027 0 0 1-1.306 1.652c-.51.51-1.064.944-1.652 1.306m0 0-3.448-4.138m3.448 4.138a9.014 9.014 0 0 1-9.424 0m5.976-4.138a3.765 3.765 0 0 1-2.528 0m0 0a3.736 3.736 0 0 1-1.388-.88 3.737 3.737 0 0 1-.88-1.388m2.268 2.268L7.288 19.67m0 0a9.024 9.024 0 0 1-1.652-1.306 9.027 9.027 0 0 1-1.306-1.652m0 0 4.138-3.448M4.33 16.712a9.014 9.014 0 0 1 0-9.424m4.138 5.976a3.765 3.765 0 0 1 0-2.528m0 0c.181-.506.475-.982.88-1.388a3.736 3.736 0 0 1 1.388-.88m-2.268 2.268L4.33 7.288m6.406 1.18L7.288 4.33m0 0a9.024 9.024 0 0 0-1.652 1.306A9.025 9.025 0 0 0 4.33 7.288"/>
+</svg> Help &amp; Open Source Support</a><a href="/contact.html" class="block rounded-lg py-2 pl-6 pr-3 text-sm font-semibold leading-7 text-dark hover:bg-gray-50 dark:hover:bg-slate-800"><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" aria-hidden="true" data-slot="icon" class="inline-icon mr-2">
+  <path stroke-linecap="round" stroke-linejoin="round" d="M15.75 6a3.75 3.75 0 1 1-7.5 0 3.75 3.75 0 0 1 7.5 0ZM4.501 20.118a7.5 7.5 0 0 1 14.998 0A17.933 17.933 0 0 1 12 21.75c-2.676 0-5.216-.584-7.499-1.632Z"/>
+</svg> Contact a Person</a></div></div>
+        </div>
+        <div class="py-6">
+          <a href="/Foundation/Join" class="-mx-3 block rounded-lg px-3 py-2.5 text-base font-semibold leading-7 text-dark hover:bg-gray-50 dark:hover:bg-slate-800">Become a Member</a>
+          <a href="https://docs.sel4.systems" class="-mx-3 block rounded-lg px-3 py-2.5 text-base font-semibold leading-7 text-dark hover:bg-gray-50 dark:hover:bg-slate-800">Docsite <svg xmlns="http://www.w3.org/2000/svg" fill="none" aria-hidden="true" viewBox="0 0 24 24" stroke="currentColor" data-slot="icon" class="ml-1 inline-icon">
+  <path stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" d="M13.5 6H5.25A2.25 2.25 0 0 0 3 8.25v10.5A2.25 2.25 0 0 0 5.25 21h10.5A2.25 2.25 0 0 0 18 18.75V10.5m-10.5 6L21 3m0 0h-5.25M21 3v5.25"/>
+</svg></a>
+        </div>
+      </div>
+    </div>
+  </div>
+ </div>
+</header>
+    <div class="flex-1 overflow-y-auto">
+      <main id="page-top">
+<!-- background gradients at top and bottom -->
+<div class="relative max-w-7xl py-12 px-6 sm:px-12 mx-auto card-layout ">
+  
+  <div class="absolute inset-x-0 -top-40 -z-10 transform-gpu overflow-hidden blur-3xl sm:-top-[25rem]" aria-hidden="true">
+    <div class="relative left-[calc(50%-11rem)] aspect-1155/678 w-[36.125rem] translate-x-1/2 rotate-[20deg] bg-linear-to-tr from-[#adf676] to-[#44fa9c] opacity-30 sm:left-[calc(50%-30rem)] sm:w-[72.1875rem]" style="clip-path: polygon(74.1% 44.1%, 100% 61.6%, 97.5% 26.9%, 85.5% 0.1%, 80.7% 2%, 72.5% 32.5%, 60.2% 62.4%, 52.4% 68.1%, 47.5% 58.3%, 45.2% 34.5%, 27.5% 76.7%, 0.1% 64.9%, 17.9% 100%, 27.6% 76.8%, 76.1% 97.7%, 74.1% 44.1%)"></div>
+  </div>
+  <div class="absolute inset-x-0 bottom-0 -z-10 transform-gpu overflow-hidden blur-3xl" aria-hidden="true">
+    <div class="relative left-[calc(50%-11rem)] aspect-1155/678 w-[36.125rem] -translate-x-1/2 rotate-[30deg] bg-linear-to-tr from-[#adf676] to-[#8c92ff] opacity-30 sm:left-[calc(50%-30rem)] sm:w-[72.1875rem]" style="clip-path: polygon(74.1% 44.1%, 100% 61.6%, 97.5% 26.9%, 85.5% 0.1%, 80.7% 2%, 72.5% 32.5%, 60.2% 62.4%, 52.4% 68.1%, 47.5% 58.3%, 45.2% 34.5%, 27.5% 76.7%, 0.1% 64.9%, 17.9% 100%, 27.6% 76.8%, 76.1% 97.7%, 74.1% 44.1%)"></div>
+  </div>
+  
+  
+    
+    
+<div class="px-6 lg:px-8 pt-6 sm:pt-8 pb-12 sm:pb-20 section-borders">
+  <div class="mx-auto max-w-4xl text-center">
+    <div class="text-center text-lg font-semibold leading-7 text-f_green-600 dark:text-f_green-400">
+      <a href="/" class="hover:underline">
+      seL4 Home
+      
+      <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" aria-hidden="true" data-slot="icon" class="inline-icon -mt-2">
+  <path stroke-linecap="round" stroke-linejoin="round" d="M9 15 3 9m0 0 6-6M3 9h12a6 6 0 0 1 0 12h-3"/>
+</svg>
+      </a>
+      
+    </div>
+    <h1 class="text-center font-bold tracking-tight text-darkcol dark:text-darkcol_inv text-3xl sm:text-5xl">Tools, Frameworks & Languages</h1>
+    <div class="mt-6 text-center text-base md:text-lg text-lightcol dark:text-lightcol_inv leading-6 md:leading-7 a-underline">
+       <p> Below is a list of available tools, frameworks, Software Development Kits (SDKs), and supported languages for seL4, either provided by the seL4 Foundation or provided by the seL4 community. Some are open source (potentially still in development), while others are commercial.  If you would like an item to be added, please contact us at <a title="foundation@sel4.systems" href="mailto:foundation@sel4.systems">foundation@sel4.systems</a>. </p>
+      
+      
+    </div>
+    
+  </div>
+</div>
+
+  
+<div class="section-borders -mt-12 pt-0">
+  <h2 id="devkits" class="text-center my-16 text-3xl font-bold tracking-tight text-dark md:text-4xl">Development Kits &amp; Component Frameworks</h2>
+
+  <div class="grid grid-cols-1 lg:grid-cols-2 gap-y-24 gap-x-12 lg:gap-x-20 px-10 pt-8 pb-12 sm:pb-20">
+
+    <div class="grid grid-cols-1 relative group  ">
+  
+  <div class="absolute left-1/2">
+    <a href="https://docs.sel4.systems/projects/microkit">
+    <div class="absolute bg-logogreen -top-8 left-1/2 -ml-8 p-4 rounded-full shadow-md">
+      <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" aria-hidden="true" data-slot="icon" class="h-8 w-8">
+  <path stroke-linecap="round" stroke-linejoin="round" d="M14.25 6.087c0-.355.186-.676.401-.959.221-.29.349-.634.349-1.003 0-1.036-1.007-1.875-2.25-1.875s-2.25.84-2.25 1.875c0 .369.128.713.349 1.003.215.283.401.604.401.959v0a.64.64 0 0 1-.657.643 48.39 48.39 0 0 1-4.163-.3c.186 1.613.293 3.25.315 4.907a.656.656 0 0 1-.658.663v0c-.355 0-.676-.186-.959-.401a1.647 1.647 0 0 0-1.003-.349c-1.036 0-1.875 1.007-1.875 2.25s.84 2.25 1.875 2.25c.369 0 .713-.128 1.003-.349.283-.215.604-.401.959-.401v0c.31 0 .555.26.532.57a48.039 48.039 0 0 1-.642 5.056c1.518.19 3.058.309 4.616.354a.64.64 0 0 0 .657-.643v0c0-.355-.186-.676-.401-.959a1.647 1.647 0 0 1-.349-1.003c0-1.035 1.008-1.875 2.25-1.875 1.243 0 2.25.84 2.25 1.875 0 .369-.128.713-.349 1.003-.215.283-.4.604-.4.959v0c0 .333.277.599.61.58a48.1 48.1 0 0 0 5.427-.63 48.05 48.05 0 0 0 .582-4.717.532.532 0 0 0-.533-.57v0c-.355 0-.676.186-.959.401-.29.221-.634.349-1.003.349-1.035 0-1.875-1.007-1.875-2.25s.84-2.25 1.875-2.25c.37 0 .713.128 1.003.349.283.215.604.401.96.401v0a.656.656 0 0 0 .658-.663 48.422 48.422 0 0 0-.37-5.36c-1.886.342-3.81.574-5.766.689a.578.578 0 0 1-.61-.58v0Z"/>
+</svg>
+    </div>
+    </a>
+  </div>
+  
+  <div class="flex flex-col rounded-lg border dark:border-gray-700/80 bg-white dark:bg-darkblue shadow-lg
+              dark:shadow-gray-300/30
+              group-hover:bg-slate-50 dark:group-hover:bg-slate-900
+               overflow-hidden">
+    <h3 class="px-6  pt-12 
+               pb-3 text-center text-base font-semibold leading-7 text-dark
+                ">
+      Microkit
+    </h3>
+    <div class="px-6 pb-5 flex-auto text-base text-light ">
+      <p>
+      Abstraction layer, SDK and tools that simplify development of statically
+      architected seL4-based systems. Focus on high performance and simplicity.
+    </p>
+    <p class="mt-2">
+      In active development. Ready for use, but not all features and
+      configurations supported yet. For mixed-criticality scheduling (MCS)
+      kernel configurations only.
+    </p>
+    <p class="mt-2">
+      Use when feature set is sufficient, and kernel configuration and
+      verification requirements are supported by Microkit for your use case.
+    </p>
+    
+    </div>
+      <a href="https://docs.sel4.systems/projects/microkit">
+        <span class="sr-only">Link to Microkit</span>
+        <span class="absolute inset-0"></span>
+      </a>
+    <div class="px-6 mt-1 pb-5">
+      <div class="text-sm font-semibold text-f_green-600">
+  <div class="flex flex-row gap-y-2 sm:gap-y-4 gap-x-3 flex-wrap mx-auto">
+    <div class="text-xs md:text-sm py-0.5 px-4 rounded-sm border-dotted border-1 border-gray-200 dark:border-gray-400 text-gray-400 flex-none basis-auto mx-auto text-center">
+      Open Source
+    </div>
+    
+    <div class="text-xs md:text-sm sm:right-38 py-0.5 px-4 rounded-sm border-dotted border-1 border-gray-200 dark:border-gray-400 text-gray-400 flex-none basis-auto mx-auto">
+      <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" aria-hidden="true" data-slot="icon" class="h-4 w-4 text-f_green-600 mr-1 inline-icon">
+  <path stroke-linecap="round" stroke-linejoin="round" d="M9 12.75 11.25 15 15 9.75M21 12c0 1.268-.63 2.39-1.593 3.068a3.745 3.745 0 0 1-1.043 3.296 3.745 3.745 0 0 1-3.296 1.043A3.745 3.745 0 0 1 12 21c-1.268 0-2.39-.63-3.068-1.593a3.746 3.746 0 0 1-3.296-1.043 3.745 3.745 0 0 1-1.043-3.296A3.745 3.745 0 0 1 3 12c0-1.268.63-2.39 1.593-3.068a3.745 3.745 0 0 1 1.043-3.296 3.746 3.746 0 0 1 3.296-1.043A3.746 3.746 0 0 1 12 3c1.268 0 2.39.63 3.068 1.593a3.746 3.746 0 0 1 3.296 1.043 3.746 3.746 0 0 1 1.043 3.296A3.745 3.745 0 0 1 21 12Z"/>
+</svg>
+      seL4 Foundation
+    </div>
+    
+  </div>
+  <div class="py-0.5 text-sm font-semibold text-f_green-600 text-center mt-6 mr-2">
+    Learn more
+    &nbsp;
+    <svg xmlns="http://www.w3.org/2000/svg" fill="none" aria-hidden="true" viewBox="0 0 24 24" stroke="currentColor" data-slot="icon" class="inline-icon">
+  <path stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" d="M13.5 6H5.25A2.25 2.25 0 0 0 3 8.25v10.5A2.25 2.25 0 0 0 5.25 21h10.5A2.25 2.25 0 0 0 18 18.75V10.5m-10.5 6L21 3m0 0h-5.25M21 3v5.25"/>
+</svg>
+  </div>
+</div>
+    </div>
+    </div>
+</div>
+
+
+    <div class="grid grid-cols-1 relative group  ">
+  
+  <div class="absolute left-1/2">
+    <a href="https://docs.sel4.systems/projects/camkes/">
+    <div class="absolute bg-logogreen -top-8 left-1/2 -ml-8 p-4 rounded-full shadow-md">
+      <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" aria-hidden="true" data-slot="icon" class="h-8 w-8">
+  <path stroke-linecap="round" stroke-linejoin="round" d="M14.25 6.087c0-.355.186-.676.401-.959.221-.29.349-.634.349-1.003 0-1.036-1.007-1.875-2.25-1.875s-2.25.84-2.25 1.875c0 .369.128.713.349 1.003.215.283.401.604.401.959v0a.64.64 0 0 1-.657.643 48.39 48.39 0 0 1-4.163-.3c.186 1.613.293 3.25.315 4.907a.656.656 0 0 1-.658.663v0c-.355 0-.676-.186-.959-.401a1.647 1.647 0 0 0-1.003-.349c-1.036 0-1.875 1.007-1.875 2.25s.84 2.25 1.875 2.25c.369 0 .713-.128 1.003-.349.283-.215.604-.401.959-.401v0c.31 0 .555.26.532.57a48.039 48.039 0 0 1-.642 5.056c1.518.19 3.058.309 4.616.354a.64.64 0 0 0 .657-.643v0c0-.355-.186-.676-.401-.959a1.647 1.647 0 0 1-.349-1.003c0-1.035 1.008-1.875 2.25-1.875 1.243 0 2.25.84 2.25 1.875 0 .369-.128.713-.349 1.003-.215.283-.4.604-.4.959v0c0 .333.277.599.61.58a48.1 48.1 0 0 0 5.427-.63 48.05 48.05 0 0 0 .582-4.717.532.532 0 0 0-.533-.57v0c-.355 0-.676.186-.959.401-.29.221-.634.349-1.003.349-1.035 0-1.875-1.007-1.875-2.25s.84-2.25 1.875-2.25c.37 0 .713.128 1.003.349.283.215.604.401.96.401v0a.656.656 0 0 0 .658-.663 48.422 48.422 0 0 0-.37-5.36c-1.886.342-3.81.574-5.766.689a.578.578 0 0 1-.61-.58v0Z"/>
+</svg>
+    </div>
+    </a>
+  </div>
+  
+  <div class="flex flex-col rounded-lg border dark:border-gray-700/80 bg-white dark:bg-darkblue shadow-lg
+              dark:shadow-gray-300/30
+              group-hover:bg-slate-50 dark:group-hover:bg-slate-900
+               overflow-hidden">
+    <h3 class="px-6  pt-12 
+               pb-3 text-center text-base font-semibold leading-7 text-dark
+                ">
+      CAmkES
+    </h3>
+    <div class="px-6 pb-5 flex-auto text-base text-light ">
+      <p>
+      Development and runtime component framework for microkernel-based embedded
+      static systems. Eventually to be replaced by Microkit, but still
+      supported. Currently more mature, and feature rich.
+    </p>
+    <p class="mt-2">
+      Use when features not yet supported by Microkit are needed for your
+      project, or verification requirements are not met by the
+      kernel configurations supported by Microkit.
+    </p>
+    </div>
+      <a href="https://docs.sel4.systems/projects/camkes/">
+        <span class="sr-only">Link to CAmkES</span>
+        <span class="absolute inset-0"></span>
+      </a>
+    <div class="px-6 mt-1 pb-5">
+      <div class="text-sm font-semibold text-f_green-600">
+  <div class="flex flex-row gap-y-2 sm:gap-y-4 gap-x-3 flex-wrap mx-auto">
+    <div class="text-xs md:text-sm py-0.5 px-4 rounded-sm border-dotted border-1 border-gray-200 dark:border-gray-400 text-gray-400 flex-none basis-auto mx-auto text-center">
+      Open Source
+    </div>
+    
+    <div class="text-xs md:text-sm sm:right-38 py-0.5 px-4 rounded-sm border-dotted border-1 border-gray-200 dark:border-gray-400 text-gray-400 flex-none basis-auto mx-auto">
+      <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" aria-hidden="true" data-slot="icon" class="h-4 w-4 text-f_green-600 mr-1 inline-icon">
+  <path stroke-linecap="round" stroke-linejoin="round" d="M9 12.75 11.25 15 15 9.75M21 12c0 1.268-.63 2.39-1.593 3.068a3.745 3.745 0 0 1-1.043 3.296 3.745 3.745 0 0 1-3.296 1.043A3.745 3.745 0 0 1 12 21c-1.268 0-2.39-.63-3.068-1.593a3.746 3.746 0 0 1-3.296-1.043 3.745 3.745 0 0 1-1.043-3.296A3.745 3.745 0 0 1 3 12c0-1.268.63-2.39 1.593-3.068a3.745 3.745 0 0 1 1.043-3.296 3.746 3.746 0 0 1 3.296-1.043A3.746 3.746 0 0 1 12 3c1.268 0 2.39.63 3.068 1.593a3.746 3.746 0 0 1 3.296 1.043 3.746 3.746 0 0 1 1.043 3.296A3.745 3.745 0 0 1 21 12Z"/>
+</svg>
+      seL4 Foundation
+    </div>
+    
+  </div>
+  <div class="py-0.5 text-sm font-semibold text-f_green-600 text-center mt-6 mr-2">
+    Learn more
+    &nbsp;
+    <svg xmlns="http://www.w3.org/2000/svg" fill="none" aria-hidden="true" viewBox="0 0 24 24" stroke="currentColor" data-slot="icon" class="inline-icon">
+  <path stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" d="M13.5 6H5.25A2.25 2.25 0 0 0 3 8.25v10.5A2.25 2.25 0 0 0 5.25 21h10.5A2.25 2.25 0 0 0 18 18.75V10.5m-10.5 6L21 3m0 0h-5.25M21 3v5.25"/>
+</svg>
+  </div>
+</div>
+    </div>
+    </div>
+</div>
+
+
+    <div class="grid grid-cols-1 relative group  ">
+  
+  <div class="absolute left-1/2">
+    <a href="https://trustworthy.systems/projects/drivers">
+    <div class="absolute bg-logogreen -top-8 left-1/2 -ml-8 p-4 rounded-full shadow-md">
+      <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" aria-hidden="true" data-slot="icon" class="h-8 w-8">
+  <path stroke-linecap="round" stroke-linejoin="round" d="M14.25 6.087c0-.355.186-.676.401-.959.221-.29.349-.634.349-1.003 0-1.036-1.007-1.875-2.25-1.875s-2.25.84-2.25 1.875c0 .369.128.713.349 1.003.215.283.401.604.401.959v0a.64.64 0 0 1-.657.643 48.39 48.39 0 0 1-4.163-.3c.186 1.613.293 3.25.315 4.907a.656.656 0 0 1-.658.663v0c-.355 0-.676-.186-.959-.401a1.647 1.647 0 0 0-1.003-.349c-1.036 0-1.875 1.007-1.875 2.25s.84 2.25 1.875 2.25c.369 0 .713-.128 1.003-.349.283-.215.604-.401.959-.401v0c.31 0 .555.26.532.57a48.039 48.039 0 0 1-.642 5.056c1.518.19 3.058.309 4.616.354a.64.64 0 0 0 .657-.643v0c0-.355-.186-.676-.401-.959a1.647 1.647 0 0 1-.349-1.003c0-1.035 1.008-1.875 2.25-1.875 1.243 0 2.25.84 2.25 1.875 0 .369-.128.713-.349 1.003-.215.283-.4.604-.4.959v0c0 .333.277.599.61.58a48.1 48.1 0 0 0 5.427-.63 48.05 48.05 0 0 0 .582-4.717.532.532 0 0 0-.533-.57v0c-.355 0-.676.186-.959.401-.29.221-.634.349-1.003.349-1.035 0-1.875-1.007-1.875-2.25s.84-2.25 1.875-2.25c.37 0 .713.128 1.003.349.283.215.604.401.96.401v0a.656.656 0 0 0 .658-.663 48.422 48.422 0 0 0-.37-5.36c-1.886.342-3.81.574-5.766.689a.578.578 0 0 1-.61-.58v0Z"/>
+</svg>
+    </div>
+    </a>
+  </div>
+  
+  <div class="flex flex-col rounded-lg border dark:border-gray-700/80 bg-white dark:bg-darkblue shadow-lg
+              dark:shadow-gray-300/30
+              group-hover:bg-slate-50 dark:group-hover:bg-slate-900
+               overflow-hidden">
+    <h3 class="px-6  pt-12 
+               pb-3 text-center text-base font-semibold leading-7 text-dark
+                ">
+      sDDF
+    </h3>
+    <div class="px-6 pb-5 flex-auto text-base text-light ">
+      <p>
+      A verifiable seL4 device driver framework providing a set of interfaces,
+      designs and tools for developing high-performance, encapsulated device
+      drivers for seL4, developed at UNSW.
+    </p>
+    </div>
+      <a href="https://trustworthy.systems/projects/drivers">
+        <span class="sr-only">Link to sDDF</span>
+        <span class="absolute inset-0"></span>
+      </a>
+    <div class="px-6 mt-1 pb-5">
+      <div class="text-sm font-semibold text-f_green-600">
+  <div class="flex flex-row gap-y-2 sm:gap-y-4 gap-x-3 flex-wrap mx-auto">
+    <div class="text-xs md:text-sm py-0.5 px-4 rounded-sm border-dotted border-1 border-gray-200 dark:border-gray-400 text-gray-400 flex-none basis-auto mx-auto text-center">
+      Open Source
+    </div>
+    
+  </div>
+  <div class="py-0.5 text-sm font-semibold text-f_green-600 text-center mt-6 mr-2">
+    Learn more
+    &nbsp;
+    <svg xmlns="http://www.w3.org/2000/svg" fill="none" aria-hidden="true" viewBox="0 0 24 24" stroke="currentColor" data-slot="icon" class="inline-icon">
+  <path stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" d="M13.5 6H5.25A2.25 2.25 0 0 0 3 8.25v10.5A2.25 2.25 0 0 0 5.25 21h10.5A2.25 2.25 0 0 0 18 18.75V10.5m-10.5 6L21 3m0 0h-5.25M21 3v5.25"/>
+</svg>
+  </div>
+</div>
+    </div>
+    </div>
+</div>
+
+
+    <div class="grid grid-cols-1 relative group  ">
+  
+  <div class="absolute left-1/2">
+    <a href="https://sel4devkit.github.io">
+    <div class="absolute bg-logogreen -top-8 left-1/2 -ml-8 p-4 rounded-full shadow-md">
+      <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" aria-hidden="true" data-slot="icon" class="h-8 w-8">
+  <path stroke-linecap="round" stroke-linejoin="round" d="M12 6.042A8.967 8.967 0 0 0 6 3.75c-1.052 0-2.062.18-3 .512v14.25A8.987 8.987 0 0 1 6 18c2.305 0 4.408.867 6 2.292m0-14.25a8.966 8.966 0 0 1 6-2.292c1.052 0 2.062.18 3 .512v14.25A8.987 8.987 0 0 0 18 18a8.967 8.967 0 0 0-6 2.292m0-14.25v14.25"/>
+</svg>
+    </div>
+    </a>
+  </div>
+  
+  <div class="flex flex-col rounded-lg border dark:border-gray-700/80 bg-white dark:bg-darkblue shadow-lg
+              dark:shadow-gray-300/30
+              group-hover:bg-slate-50 dark:group-hover:bg-slate-900
+               overflow-hidden">
+    <h3 class="px-6  pt-12 
+               pb-3 text-center text-base font-semibold leading-7 text-dark
+                ">
+      seL4 Dev Kit
+    </h3>
+    <div class="px-6 pb-5 flex-auto text-base text-light ">
+      <p>
+      An seL4 development kit aimed at helping complete beginners get started
+      and evaluate seL4 for their needs, developed by Capgemini Engineering and
+      funded by the National Cyber Security Centre (NCSC).
+    </p>
+    </div>
+      <a href="https://sel4devkit.github.io">
+        <span class="sr-only">Link to seL4 Dev Kit</span>
+        <span class="absolute inset-0"></span>
+      </a>
+    <div class="px-6 mt-1 pb-5">
+      <div class="text-sm font-semibold text-f_green-600">
+  <div class="flex flex-row gap-y-2 sm:gap-y-4 gap-x-3 flex-wrap mx-auto">
+    <div class="text-xs md:text-sm py-0.5 px-4 rounded-sm border-dotted border-1 border-gray-200 dark:border-gray-400 text-gray-400 flex-none basis-auto mx-auto text-center">
+      Open Source
+    </div>
+    
+  </div>
+  <div class="py-0.5 text-sm font-semibold text-f_green-600 text-center mt-6 mr-2">
+    Learn more
+    &nbsp;
+    <svg xmlns="http://www.w3.org/2000/svg" fill="none" aria-hidden="true" viewBox="0 0 24 24" stroke="currentColor" data-slot="icon" class="inline-icon">
+  <path stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" d="M13.5 6H5.25A2.25 2.25 0 0 0 3 8.25v10.5A2.25 2.25 0 0 0 5.25 21h10.5A2.25 2.25 0 0 0 18 18.75V10.5m-10.5 6L21 3m0 0h-5.25M21 3v5.25"/>
+</svg>
+  </div>
+</div>
+    </div>
+    </div>
+</div>
+
+
+    <div class="grid grid-cols-1 relative group lg:col-span-2 lg:w-3/4 lg:mx-auto ">
+  
+  <div class="absolute left-1/2">
+    <a href="https://github.com/loonwerks/BriefCASE-Tutorial">
+    <div class="absolute bg-logogreen -top-8 left-1/2 -ml-8 p-4 rounded-full shadow-md">
+      <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" aria-hidden="true" data-slot="icon" class="h-8 w-8">
+  <path stroke-linecap="round" stroke-linejoin="round" d="M9.594 3.94c.09-.542.56-.94 1.11-.94h2.593c.55 0 1.02.398 1.11.94l.213 1.281c.063.374.313.686.645.87.074.04.147.083.22.127.325.196.72.257 1.075.124l1.217-.456a1.125 1.125 0 0 1 1.37.49l1.296 2.247a1.125 1.125 0 0 1-.26 1.431l-1.003.827c-.293.241-.438.613-.43.992a7.723 7.723 0 0 1 0 .255c-.008.378.137.75.43.991l1.004.827c.424.35.534.955.26 1.43l-1.298 2.247a1.125 1.125 0 0 1-1.369.491l-1.217-.456c-.355-.133-.75-.072-1.076.124a6.47 6.47 0 0 1-.22.128c-.331.183-.581.495-.644.869l-.213 1.281c-.09.543-.56.94-1.11.94h-2.594c-.55 0-1.019-.398-1.11-.94l-.213-1.281c-.062-.374-.312-.686-.644-.87a6.52 6.52 0 0 1-.22-.127c-.325-.196-.72-.257-1.076-.124l-1.217.456a1.125 1.125 0 0 1-1.369-.49l-1.297-2.247a1.125 1.125 0 0 1 .26-1.431l1.004-.827c.292-.24.437-.613.43-.991a6.932 6.932 0 0 1 0-.255c.007-.38-.138-.751-.43-.992l-1.004-.827a1.125 1.125 0 0 1-.26-1.43l1.297-2.247a1.125 1.125 0 0 1 1.37-.491l1.216.456c.356.133.751.072 1.076-.124.072-.044.146-.086.22-.128.332-.183.582-.495.644-.869l.214-1.28Z"/>
+  <path stroke-linecap="round" stroke-linejoin="round" d="M15 12a3 3 0 1 1-6 0 3 3 0 0 1 6 0Z"/>
+</svg>
+    </div>
+    </a>
+  </div>
+  
+  <div class="flex flex-col rounded-lg border dark:border-gray-700/80 bg-white dark:bg-darkblue shadow-lg
+              dark:shadow-gray-300/30
+              group-hover:bg-slate-50 dark:group-hover:bg-slate-900
+              lg:col-span-2 lg:w-3/4 lg:mx-auto overflow-hidden">
+    <h3 class="px-6  pt-12 
+               pb-3 text-center text-base font-semibold leading-7 text-dark
+                ">
+      BriefCase
+    </h3>
+    <div class="px-6 pb-5 flex-auto text-base text-light ">
+      <p>
+      A model-based systems engineering environment that can build systems
+      targeting seL4, based on AADL and OSATE, from the DARPA CASE program.
+    </p>
+    </div>
+      <a href="https://github.com/loonwerks/BriefCASE-Tutorial">
+        <span class="sr-only">Link to BriefCase</span>
+        <span class="absolute inset-0"></span>
+      </a>
+    <div class="px-6 mt-1 pb-5">
+      <div class="text-sm font-semibold text-f_green-600">
+  <div class="flex flex-row gap-y-2 sm:gap-y-4 gap-x-3 flex-wrap mx-auto">
+    <div class="text-xs md:text-sm py-0.5 px-4 rounded-sm border-dotted border-1 border-gray-200 dark:border-gray-400 text-gray-400 flex-none basis-auto mx-auto text-center">
+      Open Source
+    </div>
+    
+  </div>
+  <div class="py-0.5 text-sm font-semibold text-f_green-600 text-center mt-6 mr-2">
+    Learn more
+    &nbsp;
+    <svg xmlns="http://www.w3.org/2000/svg" fill="none" aria-hidden="true" viewBox="0 0 24 24" stroke="currentColor" data-slot="icon" class="inline-icon">
+  <path stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" d="M13.5 6H5.25A2.25 2.25 0 0 0 3 8.25v10.5A2.25 2.25 0 0 0 5.25 21h10.5A2.25 2.25 0 0 0 18 18.75V10.5m-10.5 6L21 3m0 0h-5.25M21 3v5.25"/>
+</svg>
+  </div>
+</div>
+    </div>
+    </div>
+</div>
+
+
+  </div>
+</div>
+
+<div class="section-borders -mt-12 pt-0">
+  <h2 class="text-center my-16 text-3xl font-bold tracking-tight text-dark md:text-4xl">Operating Systems</h2>
+
+  <div class="grid grid-cols-1 md:grid-cols-2 gap-y-24 gap-x-12 lg:gap-x-20 px-10 pt-8 pb-12 sm:pb-20">
+
+    <div class="grid grid-cols-1 relative group  ">
+  
+  <div class="absolute left-1/2">
+    <a href="https://trustworthy.systems/projects/LionsOS/">
+    <div class="absolute bg-logogreen -top-8 left-1/2 -ml-8 p-4 rounded-full shadow-md">
+      <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" aria-hidden="true" data-slot="icon" class="h-8 w-8">
+  <path stroke-linecap="round" stroke-linejoin="round" d="M13.5 16.875h3.375m0 0h3.375m-3.375 0V13.5m0 3.375v3.375M6 10.5h2.25a2.25 2.25 0 0 0 2.25-2.25V6a2.25 2.25 0 0 0-2.25-2.25H6A2.25 2.25 0 0 0 3.75 6v2.25A2.25 2.25 0 0 0 6 10.5Zm0 9.75h2.25A2.25 2.25 0 0 0 10.5 18v-2.25a2.25 2.25 0 0 0-2.25-2.25H6a2.25 2.25 0 0 0-2.25 2.25V18A2.25 2.25 0 0 0 6 20.25Zm9.75-9.75H18a2.25 2.25 0 0 0 2.25-2.25V6A2.25 2.25 0 0 0 18 3.75h-2.25A2.25 2.25 0 0 0 13.5 6v2.25a2.25 2.25 0 0 0 2.25 2.25Z"/>
+</svg>
+    </div>
+    </a>
+  </div>
+  
+  <div class="flex flex-col rounded-lg border dark:border-gray-700/80 bg-white dark:bg-darkblue shadow-lg
+              dark:shadow-gray-300/30
+              group-hover:bg-slate-50 dark:group-hover:bg-slate-900
+               overflow-hidden">
+    <h3 class="px-6  pt-12 
+               pb-3 text-center text-base font-semibold leading-7 text-dark
+                ">
+      Lions OS
+    </h3>
+    <div class="px-6 pb-5 flex-auto text-base text-light ">
+      <p>
+      Highly modular, adaptable, verifiable, high-performance OS for statically
+      architected embedded/IoT/cyberphysical systems, developed at UNSW.
+    </p>
+    </div>
+      <a href="https://trustworthy.systems/projects/LionsOS/">
+        <span class="sr-only">Link to Lions OS</span>
+        <span class="absolute inset-0"></span>
+      </a>
+    <div class="px-6 mt-1 pb-5">
+      <div class="text-sm font-semibold text-f_green-600">
+  <div class="flex flex-row gap-y-2 sm:gap-y-4 gap-x-3 flex-wrap mx-auto">
+    <div class="text-xs md:text-sm py-0.5 px-4 rounded-sm border-dotted border-1 border-gray-200 dark:border-gray-400 text-gray-400 flex-none basis-auto mx-auto text-center">
+      Open Source
+    </div>
+    
+  </div>
+  <div class="py-0.5 text-sm font-semibold text-f_green-600 text-center mt-6 mr-2">
+    Learn more
+    &nbsp;
+    <svg xmlns="http://www.w3.org/2000/svg" fill="none" aria-hidden="true" viewBox="0 0 24 24" stroke="currentColor" data-slot="icon" class="inline-icon">
+  <path stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" d="M13.5 6H5.25A2.25 2.25 0 0 0 3 8.25v10.5A2.25 2.25 0 0 0 5.25 21h10.5A2.25 2.25 0 0 0 18 18.75V10.5m-10.5 6L21 3m0 0h-5.25M21 3v5.25"/>
+</svg>
+  </div>
+</div>
+    </div>
+    </div>
+</div>
+
+
+    <div class="grid grid-cols-1 relative group  ">
+  
+  <div class="absolute left-1/2">
+    <a href="https://www.kry10.com/#platform">
+    <div class="absolute bg-logogreen -top-8 left-1/2 -ml-8 p-4 rounded-full shadow-md">
+      <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" aria-hidden="true" data-slot="icon" class="h-8 w-8">
+  <path stroke-linecap="round" stroke-linejoin="round" d="M13.5 16.875h3.375m0 0h3.375m-3.375 0V13.5m0 3.375v3.375M6 10.5h2.25a2.25 2.25 0 0 0 2.25-2.25V6a2.25 2.25 0 0 0-2.25-2.25H6A2.25 2.25 0 0 0 3.75 6v2.25A2.25 2.25 0 0 0 6 10.5Zm0 9.75h2.25A2.25 2.25 0 0 0 10.5 18v-2.25a2.25 2.25 0 0 0-2.25-2.25H6a2.25 2.25 0 0 0-2.25 2.25V18A2.25 2.25 0 0 0 6 20.25Zm9.75-9.75H18a2.25 2.25 0 0 0 2.25-2.25V6A2.25 2.25 0 0 0 18 3.75h-2.25A2.25 2.25 0 0 0 13.5 6v2.25a2.25 2.25 0 0 0 2.25 2.25Z"/>
+</svg>
+    </div>
+    </a>
+  </div>
+  
+  <div class="flex flex-col rounded-lg border dark:border-gray-700/80 bg-white dark:bg-darkblue shadow-lg
+              dark:shadow-gray-300/30
+              group-hover:bg-slate-50 dark:group-hover:bg-slate-900
+               overflow-hidden">
+    <h3 class="px-6  pt-12 
+               pb-3 text-center text-base font-semibold leading-7 text-dark
+                ">
+      KOS
+    </h3>
+    <div class="px-6 pb-5 flex-auto text-base text-light ">
+      <p>
+      Kry10 Operating System (KOS) and Platform, designed for mission critical
+      connected devices and integrated with the Erlang BEAM application
+      environment, developed by Kry10.
+    </p>
+    </div>
+      <a href="https://www.kry10.com/#platform">
+        <span class="sr-only">Link to KOS</span>
+        <span class="absolute inset-0"></span>
+      </a>
+    <div class="px-6 mt-1 pb-5">
+      <div class="text-sm font-semibold text-f_green-600">
+  <div class="flex flex-row gap-y-2 sm:gap-y-4 gap-x-3 flex-wrap mx-auto">
+    <div class="text-xs md:text-sm py-0.5 px-4 rounded-sm border-dotted border-1 border-gray-200 dark:border-gray-400 text-gray-400 flex-none basis-auto mx-auto text-center">
+      Commercial
+    </div>
+    
+  </div>
+  <div class="py-0.5 text-sm font-semibold text-f_green-600 text-center mt-6 mr-2">
+    Learn more
+    &nbsp;
+    <svg xmlns="http://www.w3.org/2000/svg" fill="none" aria-hidden="true" viewBox="0 0 24 24" stroke="currentColor" data-slot="icon" class="inline-icon">
+  <path stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" d="M13.5 6H5.25A2.25 2.25 0 0 0 3 8.25v10.5A2.25 2.25 0 0 0 5.25 21h10.5A2.25 2.25 0 0 0 18 18.75V10.5m-10.5 6L21 3m0 0h-5.25M21 3v5.25"/>
+</svg>
+  </div>
+</div>
+    </div>
+    </div>
+</div>
+
+
+  </div>
+</div>
+
+<div class="section-borders -mt-12 pt-0">
+  <h2 id="virtualisation"
+      class="text-center my-16 text-3xl font-bold tracking-tight text-dark md:text-4xl">Virtualisation</h2>
+
+  <div class="grid grid-cols-1 lg:grid-cols-2 gap-y-24 gap-x-12 lg:gap-x-20 px-10 pt-8 pb-12 sm:pb-20">
+
+    <div class="grid grid-cols-1 relative group  ">
+  
+  <div class="absolute left-1/2">
+    <a href="https://docs.sel4.systems/projects/camkes-vm/">
+    <div class="absolute bg-logogreen -top-8 left-1/2 -ml-8 p-4 rounded-full shadow-md">
+      <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" aria-hidden="true" data-slot="icon" class="h-8 w-8">
+  <path stroke-linecap="round" stroke-linejoin="round" d="M5.25 14.25h13.5m-13.5 0a3 3 0 0 1-3-3m3 3a3 3 0 1 0 0 6h13.5a3 3 0 1 0 0-6m-16.5-3a3 3 0 0 1 3-3h13.5a3 3 0 0 1 3 3m-19.5 0a4.5 4.5 0 0 1 .9-2.7L5.737 5.1a3.375 3.375 0 0 1 2.7-1.35h7.126c1.062 0 2.062.5 2.7 1.35l2.587 3.45a4.5 4.5 0 0 1 .9 2.7m0 0a3 3 0 0 1-3 3m0 3h.008v.008h-.008v-.008Zm0-6h.008v.008h-.008v-.008Zm-3 6h.008v.008h-.008v-.008Zm0-6h.008v.008h-.008v-.008Z"/>
+</svg>
+    </div>
+    </a>
+  </div>
+  
+  <div class="flex flex-col rounded-lg border dark:border-gray-700/80 bg-white dark:bg-darkblue shadow-lg
+              dark:shadow-gray-300/30
+              group-hover:bg-slate-50 dark:group-hover:bg-slate-900
+               overflow-hidden">
+    <h3 class="px-6  pt-12 
+               pb-3 text-center text-base font-semibold leading-7 text-dark
+                ">
+      CAmkES VMM
+    </h3>
+    <div class="px-6 pb-5 flex-auto text-base text-light ">
+      <p>
+        Virtual Machine Monitor on seL4 with CAmkES, with support for AArch32, AArch64, and x64.
+      </p>
+      
+    </div>
+      <a href="https://docs.sel4.systems/projects/camkes-vm/">
+        <span class="sr-only">Link to CAmkES VMM</span>
+        <span class="absolute inset-0"></span>
+      </a>
+    <div class="px-6 mt-1 pb-5">
+      <div class="text-sm font-semibold text-f_green-600">
+  <div class="flex flex-row gap-y-2 sm:gap-y-4 gap-x-3 flex-wrap mx-auto">
+    <div class="text-xs md:text-sm py-0.5 px-4 rounded-sm border-dotted border-1 border-gray-200 dark:border-gray-400 text-gray-400 flex-none basis-auto mx-auto text-center">
+      Open Source
+    </div>
+    
+    <div class="text-xs md:text-sm sm:right-38 py-0.5 px-4 rounded-sm border-dotted border-1 border-gray-200 dark:border-gray-400 text-gray-400 flex-none basis-auto mx-auto">
+      <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" aria-hidden="true" data-slot="icon" class="h-4 w-4 text-f_green-600 mr-1 inline-icon">
+  <path stroke-linecap="round" stroke-linejoin="round" d="M9 12.75 11.25 15 15 9.75M21 12c0 1.268-.63 2.39-1.593 3.068a3.745 3.745 0 0 1-1.043 3.296 3.745 3.745 0 0 1-3.296 1.043A3.745 3.745 0 0 1 12 21c-1.268 0-2.39-.63-3.068-1.593a3.746 3.746 0 0 1-3.296-1.043 3.745 3.745 0 0 1-1.043-3.296A3.745 3.745 0 0 1 3 12c0-1.268.63-2.39 1.593-3.068a3.745 3.745 0 0 1 1.043-3.296 3.746 3.746 0 0 1 3.296-1.043A3.746 3.746 0 0 1 12 3c1.268 0 2.39.63 3.068 1.593a3.746 3.746 0 0 1 3.296 1.043 3.746 3.746 0 0 1 1.043 3.296A3.745 3.745 0 0 1 21 12Z"/>
+</svg>
+      seL4 Foundation
+    </div>
+    
+  </div>
+  <div class="py-0.5 text-sm font-semibold text-f_green-600 text-center mt-6 mr-2">
+    Learn more
+    &nbsp;
+    <svg xmlns="http://www.w3.org/2000/svg" fill="none" aria-hidden="true" viewBox="0 0 24 24" stroke="currentColor" data-slot="icon" class="inline-icon">
+  <path stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" d="M13.5 6H5.25A2.25 2.25 0 0 0 3 8.25v10.5A2.25 2.25 0 0 0 5.25 21h10.5A2.25 2.25 0 0 0 18 18.75V10.5m-10.5 6L21 3m0 0h-5.25M21 3v5.25"/>
+</svg>
+  </div>
+</div>
+    </div>
+    </div>
+</div>
+
+
+    <div class="grid grid-cols-1 relative group  ">
+  
+  <div class="absolute left-1/2">
+    <a href="https://github.com/au-ts/libvmm">
+    <div class="absolute bg-logogreen -top-8 left-1/2 -ml-8 p-4 rounded-full shadow-md">
+      <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" aria-hidden="true" data-slot="icon" class="h-8 w-8">
+  <path stroke-linecap="round" stroke-linejoin="round" d="M5.25 14.25h13.5m-13.5 0a3 3 0 0 1-3-3m3 3a3 3 0 1 0 0 6h13.5a3 3 0 1 0 0-6m-16.5-3a3 3 0 0 1 3-3h13.5a3 3 0 0 1 3 3m-19.5 0a4.5 4.5 0 0 1 .9-2.7L5.737 5.1a3.375 3.375 0 0 1 2.7-1.35h7.126c1.062 0 2.062.5 2.7 1.35l2.587 3.45a4.5 4.5 0 0 1 .9 2.7m0 0a3 3 0 0 1-3 3m0 3h.008v.008h-.008v-.008Zm0-6h.008v.008h-.008v-.008Zm-3 6h.008v.008h-.008v-.008Zm0-6h.008v.008h-.008v-.008Z"/>
+</svg>
+    </div>
+    </a>
+  </div>
+  
+  <div class="flex flex-col rounded-lg border dark:border-gray-700/80 bg-white dark:bg-darkblue shadow-lg
+              dark:shadow-gray-300/30
+              group-hover:bg-slate-50 dark:group-hover:bg-slate-900
+               overflow-hidden">
+    <h3 class="px-6  pt-12 
+               pb-3 text-center text-base font-semibold leading-7 text-dark
+                ">
+      Microkit VMM
+    </h3>
+    <div class="px-6 pb-5 flex-auto text-base text-light ">
+      <p>
+        Virtual Machine Monitor on seL4 with Microkit, currently with support for AArch64 only.
+        RISC-V support is in development.
+      </p>
+      
+    </div>
+      <a href="https://github.com/au-ts/libvmm">
+        <span class="sr-only">Link to Microkit VMM</span>
+        <span class="absolute inset-0"></span>
+      </a>
+    <div class="px-6 mt-1 pb-5">
+      <div class="text-sm font-semibold text-f_green-600">
+  <div class="flex flex-row gap-y-2 sm:gap-y-4 gap-x-3 flex-wrap mx-auto">
+    <div class="text-xs md:text-sm py-0.5 px-4 rounded-sm border-dotted border-1 border-gray-200 dark:border-gray-400 text-gray-400 flex-none basis-auto mx-auto text-center">
+      Open Source
+    </div>
+    
+  </div>
+  <div class="py-0.5 text-sm font-semibold text-f_green-600 text-center mt-6 mr-2">
+    Learn more
+    &nbsp;
+    <svg xmlns="http://www.w3.org/2000/svg" fill="none" aria-hidden="true" viewBox="0 0 24 24" stroke="currentColor" data-slot="icon" class="inline-icon">
+  <path stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" d="M13.5 6H5.25A2.25 2.25 0 0 0 3 8.25v10.5A2.25 2.25 0 0 0 5.25 21h10.5A2.25 2.25 0 0 0 18 18.75V10.5m-10.5 6L21 3m0 0h-5.25M21 3v5.25"/>
+</svg>
+  </div>
+</div>
+    </div>
+    </div>
+</div>
+
+
+    <div class="grid grid-cols-1 relative group lg:mx-auto lg:w-4/5 lg:col-span-2 ">
+  
+  <div class="absolute left-1/2">
+    <a href="https://www.dornerworks.com/vm-composer">
+    <div class="absolute bg-logogreen -top-8 left-1/2 -ml-8 p-4 rounded-full shadow-md">
+      <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" aria-hidden="true" data-slot="icon" class="h-8 w-8">
+  <path stroke-linecap="round" stroke-linejoin="round" d="M5.25 14.25h13.5m-13.5 0a3 3 0 0 1-3-3m3 3a3 3 0 1 0 0 6h13.5a3 3 0 1 0 0-6m-16.5-3a3 3 0 0 1 3-3h13.5a3 3 0 0 1 3 3m-19.5 0a4.5 4.5 0 0 1 .9-2.7L5.737 5.1a3.375 3.375 0 0 1 2.7-1.35h7.126c1.062 0 2.062.5 2.7 1.35l2.587 3.45a4.5 4.5 0 0 1 .9 2.7m0 0a3 3 0 0 1-3 3m0 3h.008v.008h-.008v-.008Zm0-6h.008v.008h-.008v-.008Zm-3 6h.008v.008h-.008v-.008Zm0-6h.008v.008h-.008v-.008Z"/>
+</svg>
+    </div>
+    </a>
+  </div>
+  
+  <div class="flex flex-col rounded-lg border dark:border-gray-700/80 bg-white dark:bg-darkblue shadow-lg
+              dark:shadow-gray-300/30
+              group-hover:bg-slate-50 dark:group-hover:bg-slate-900
+              lg:mx-auto lg:w-4/5 lg:col-span-2 overflow-hidden">
+    <h3 class="px-6  pt-12 
+               pb-3 text-center text-base font-semibold leading-7 text-dark
+                ">
+      VM Composer
+    </h3>
+    <div class="px-6 pb-5 flex-auto text-base text-light ">
+      <p>
+      A Secure Microkernel Virtual Machine (VM) Composer, a modelling tool to
+      develop and deploy virtualised high-assurance systems using a
+      drag-and-drop interface, developed by DornerWorks.
+    </p>
+    </div>
+      <a href="https://www.dornerworks.com/vm-composer">
+        <span class="sr-only">Link to VM Composer</span>
+        <span class="absolute inset-0"></span>
+      </a>
+    <div class="px-6 mt-1 pb-5">
+      <div class="text-sm font-semibold text-f_green-600">
+  <div class="flex flex-row gap-y-2 sm:gap-y-4 gap-x-3 flex-wrap mx-auto">
+    <div class="text-xs md:text-sm py-0.5 px-4 rounded-sm border-dotted border-1 border-gray-200 dark:border-gray-400 text-gray-400 flex-none basis-auto mx-auto text-center">
+      Commercial
+    </div>
+    
+  </div>
+  <div class="py-0.5 text-sm font-semibold text-f_green-600 text-center mt-6 mr-2">
+    Learn more
+    &nbsp;
+    <svg xmlns="http://www.w3.org/2000/svg" fill="none" aria-hidden="true" viewBox="0 0 24 24" stroke="currentColor" data-slot="icon" class="inline-icon">
+  <path stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" d="M13.5 6H5.25A2.25 2.25 0 0 0 3 8.25v10.5A2.25 2.25 0 0 0 5.25 21h10.5A2.25 2.25 0 0 0 18 18.75V10.5m-10.5 6L21 3m0 0h-5.25M21 3v5.25"/>
+</svg>
+  </div>
+</div>
+    </div>
+    </div>
+</div>
+
+
+  </div>
+</div>
+
+
+<div class="section-borders -mt-12 pt-0">
+  <h2 id="languages"
+      class="text-center mt-16  mb-6 text-3xl font-bold tracking-tight text-dark md:text-4xl">Language Support</h2>
+  <p class="text-center mb-6 text-light leading-6 text-base sm:text-lg">
+    C and Rust are the default languages on top of seL4, but other languages
+    are supported, in particular for application-level components.
+
+    seL4 as such is language agnostic. The main effort in using a new
+    programming language on top of seL4 usually lies in providing functionality for
+    a runtime environment and standard library.
+  </p>
+
+  <div class="grid grid-cols-1 md:grid-cols-2 mt-16 gap-y-24 gap-x-12 lg:gap-x-20 px-10 pt-8 pb-12 sm:pb-20">
+
+    <div class="grid grid-cols-1 relative group  ">
+  
+  <div class="absolute left-1/2">
+    <a href="https://docs.sel4.systems/Tutorials/">
+    <div class="absolute bg-logogreen -top-8 left-1/2 -ml-8 p-4 rounded-full shadow-md">
+      <svg xmlns="http://www.w3.org/2000/svg" xmlns:svg="http://www.w3.org/2000/svg" width="89.640671mm" height="93.591774mm" viewBox="0 0 89.64067 93.591774" version="1.1" id="svg814" class="h-8 w-8">
+  <sodipodi:namedview id="namedview816" pagecolor="#ffffff" bordercolor="#000000" borderopacity="0.25" showgrid="false"/>
+  <g id="layer1" transform="translate(-115.31123,-96.087413)">
+    <g aria-label="C" id="text1719" style="font-weight:bold;font-size:123.472px;font-family:'Neue Haas Grotesk Text Pro';-inkscape-font-specification:'Neue Haas Grotesk Text Pro Bold';fill:#a9bacd;stroke-width:0.264583;fill-opacity:1">
+      <path d="m 204.33454,132.38818 c -2.34597,-22.84232 -17.53303,-36.300767 -44.69687,-36.300767 -24.81787,0 -44.32644,17.903437 -44.32644,46.672417 0,28.89245 17.77996,46.91936 47.1663,46.91936 23.45968,0 39.88146,-13.82886 42.47437,-36.79466 h -28.02815 c -1.11124,8.51957 -5.55624,15.06359 -14.94011,15.06359 -14.81664,0 -17.53302,-11.72984 -17.53302,-24.20051 0,-17.16261 6.1736,-25.92912 16.42177,-25.92912 9.13693,0 14.94012,5.30929 15.80442,14.56969 z" style="font-weight:900;font-family:'Helvetica LT Std';-inkscape-font-specification:'Helvetica LT Std Heavy';fill:#000000;fill-opacity:1" id="path1771"/>
+    </g>
+  </g>
+</svg>
+    </div>
+    </a>
+  </div>
+  
+  <div class="flex flex-col rounded-lg border dark:border-gray-700/80 bg-white dark:bg-darkblue shadow-lg
+              dark:shadow-gray-300/30
+              group-hover:bg-slate-50 dark:group-hover:bg-slate-900
+               overflow-hidden">
+    <h3 class="px-6  pt-12 
+               pb-3 text-center text-base font-semibold leading-7 text-dark
+                ">
+      C/C++
+    </h3>
+    <div class="px-6 pb-5 flex-auto text-base text-light ">
+      <p>
+        Comprehensive support for C, including <code>musllibc</code> bindings.
+        Limited support for C++ without standard library.
+      </p>
+    </div>
+      <a href="https://docs.sel4.systems/Tutorials/">
+        <span class="sr-only">Link to C/C++</span>
+        <span class="absolute inset-0"></span>
+      </a>
+    <div class="px-6 mt-1 pb-5">
+      <div class="text-sm font-semibold text-f_green-600">
+  <div class="flex flex-row gap-y-2 sm:gap-y-4 gap-x-3 flex-wrap mx-auto">
+    <div class="text-xs md:text-sm py-0.5 px-4 rounded-sm border-dotted border-1 border-gray-200 dark:border-gray-400 text-gray-400 flex-none basis-auto mx-auto text-center">
+      Open Source
+    </div>
+    
+    <div class="text-xs md:text-sm sm:right-38 py-0.5 px-4 rounded-sm border-dotted border-1 border-gray-200 dark:border-gray-400 text-gray-400 flex-none basis-auto mx-auto">
+      <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" aria-hidden="true" data-slot="icon" class="h-4 w-4 text-f_green-600 mr-1 inline-icon">
+  <path stroke-linecap="round" stroke-linejoin="round" d="M9 12.75 11.25 15 15 9.75M21 12c0 1.268-.63 2.39-1.593 3.068a3.745 3.745 0 0 1-1.043 3.296 3.745 3.745 0 0 1-3.296 1.043A3.745 3.745 0 0 1 12 21c-1.268 0-2.39-.63-3.068-1.593a3.746 3.746 0 0 1-3.296-1.043 3.745 3.745 0 0 1-1.043-3.296A3.745 3.745 0 0 1 3 12c0-1.268.63-2.39 1.593-3.068a3.745 3.745 0 0 1 1.043-3.296 3.746 3.746 0 0 1 3.296-1.043A3.746 3.746 0 0 1 12 3c1.268 0 2.39.63 3.068 1.593a3.746 3.746 0 0 1 3.296 1.043 3.746 3.746 0 0 1 1.043 3.296A3.745 3.745 0 0 1 21 12Z"/>
+</svg>
+      seL4 Foundation
+    </div>
+    
+  </div>
+  <div class="py-0.5 text-sm font-semibold text-f_green-600 text-center mt-6 mr-2">
+    Learn more
+    &nbsp;
+    <svg xmlns="http://www.w3.org/2000/svg" fill="none" aria-hidden="true" viewBox="0 0 24 24" stroke="currentColor" data-slot="icon" class="inline-icon">
+  <path stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" d="M13.5 6H5.25A2.25 2.25 0 0 0 3 8.25v10.5A2.25 2.25 0 0 0 5.25 21h10.5A2.25 2.25 0 0 0 18 18.75V10.5m-10.5 6L21 3m0 0h-5.25M21 3v5.25"/>
+</svg>
+  </div>
+</div>
+    </div>
+    </div>
+</div>
+
+
+    <div class="grid grid-cols-1 relative group  ">
+  
+  <div class="absolute left-1/2">
+    <a href="https://github.com/seL4/rust-sel4">
+    <div class="absolute bg-logogreen -top-8 left-1/2 -ml-8 p-4 rounded-full shadow-md">
+      <svg xmlns="http://www.w3.org/2000/svg" version="1.1" viewBox="0 0 105.22 105.3" class="h-8 w-8">
+  <defs>
+    <style>
+      .st0 {
+        fill-rule: evenodd;
+        stroke: #000;
+        stroke-linecap: round;
+        stroke-linejoin: round;
+        stroke-width: 3px;
+      }
+    </style>
+  </defs>
+  <path d="M52.21,5.12C26.15,5.12,4.94,26.34,4.94,52.39s21.22,47.27,47.27,47.27,47.27-21.22,47.27-47.27S78.26,5.12,52.21,5.12ZM52.14,9.32c1.68.04,3.02,1.42,3.02,3.11,0,1.72-1.39,3.11-3.11,3.11s-3.11-1.39-3.11-3.11c0-1.72,1.39-3.11,3.11-3.11.03,0,.06,0,.09,0ZM59.26,14.44c11.05,2.07,20.63,8.89,26.2,18.66l-3.67,8.28c-.63,1.43.02,3.11,1.44,3.75l7.06,3.13c.22,2.21.25,4.43.08,6.64h-3.93c-.39,0-.55.26-.55.64v1.8c0,4.24-2.39,5.17-4.49,5.4-2,.23-4.21-.84-4.49-2.06-1.18-6.63-3.14-8.04-6.24-10.49,3.85-2.44,7.85-6.05,7.85-10.87,0-5.21-3.57-8.49-6-10.1-3.42-2.25-7.2-2.7-8.22-2.7H23.7c5.61-6.27,13.14-10.52,21.41-12.08l4.79,5.02c1.08,1.13,2.87,1.18,4,.09l5.36-5.11ZM15.06,37.46c1.68.05,3.02,1.43,3.02,3.11,0,1.72-1.39,3.11-3.11,3.11-1.72,0-3.11-1.39-3.11-3.11,0-1.72,1.39-3.11,3.11-3.11.03,0,.06,0,.09,0ZM89.21,37.6c1.68.05,3.02,1.43,3.02,3.11,0,1.72-1.39,3.11-3.11,3.11s-3.11-1.39-3.11-3.11c0-1.72,1.39-3.11,3.11-3.11.03,0,.06,0,.09,0ZM20.92,38.1h5.42v24.44h-10.94c-1.35-4.74-1.77-9.71-1.24-14.61l6.7-2.98c1.43-.64,2.08-2.31,1.44-3.74l-1.38-3.11ZM43.54,38.36h12.91c.67,0,4.71.77,4.71,3.8,0,2.51-3.1,3.41-5.65,3.41h-11.98v-7.21ZM43.54,55.92h9.89c.9,0,4.83.26,6.08,5.28.39,1.54,1.26,6.56,1.85,8.17.59,1.8,2.98,5.4,5.53,5.4h16.14c-1.08,1.45-2.26,2.82-3.54,4.1l-6.57-1.41c-1.53-.33-3.04.65-3.37,2.18l-1.56,7.28c-10.15,4.6-21.8,4.54-31.91-.15l-1.56-7.28c-.33-1.53-1.83-2.51-3.36-2.18l-6.43,1.38c-1.19-1.23-2.3-2.54-3.32-3.92h31.27c.35,0,.59-.06.59-.39v-11.06c0-.32-.24-.39-.59-.39h-9.15v-7.01ZM29.11,81.25c1.68.05,3.02,1.43,3.02,3.11,0,1.72-1.39,3.11-3.11,3.11s-3.11-1.39-3.11-3.11c0-1.72,1.39-3.11,3.11-3.11.03,0,.06,0,.09,0ZM75.16,81.39c1.68.05,3.02,1.43,3.02,3.11,0,1.72-1.39,3.11-3.11,3.11s-3.11-1.39-3.11-3.11c0-1.72,1.39-3.11,3.11-3.11.03,0,.06,0,.09,0Z"/>
+  <path class="st0" d="M96.84,52.39c0,24.65-19.98,44.63-44.63,44.63S7.58,77.04,7.58,52.39h0C7.58,27.74,27.56,7.76,52.21,7.76s44.63,19.98,44.63,44.63h0ZM96,48.08l6.96,4.31-6.96,4.31,5.98,5.59-7.66,2.87,4.78,6.65-8.09,1.32,3.4,7.46-8.19-.29,1.88,7.98-7.98-1.88.29,8.19-7.46-3.4-1.32,8.09-6.65-4.78-2.87,7.66-5.59-5.98-4.31,6.96-4.31-6.96-5.59,5.98-2.87-7.66-6.65,4.78-1.32-8.09-7.46,3.4.29-8.19-7.98,1.88,1.88-7.98-8.19.29,3.4-7.46-8.09-1.32,4.78-6.65-7.66-2.87,5.98-5.59-6.96-4.31,6.96-4.31-5.98-5.59,7.66-2.87-4.78-6.65,8.09-1.32-3.4-7.46,8.19.29-1.88-7.98,7.98,1.88-.29-8.19,7.46,3.4,1.32-8.09,6.65,4.78,2.87-7.66,5.59,5.98,4.31-6.96,4.31,6.96,5.59-5.98,2.87,7.66,6.65-4.78,1.32,8.09,7.46-3.4-.29,8.19,7.98-1.88-1.88,7.98,8.19-.29-3.4,7.46,8.09,1.32-4.78,6.65,7.66,2.87-5.98,5.59Z"/>
+</svg>
+    </div>
+    </a>
+  </div>
+  
+  <div class="flex flex-col rounded-lg border dark:border-gray-700/80 bg-white dark:bg-darkblue shadow-lg
+              dark:shadow-gray-300/30
+              group-hover:bg-slate-50 dark:group-hover:bg-slate-900
+               overflow-hidden">
+    <h3 class="px-6  pt-12 
+               pb-3 text-center text-base font-semibold leading-7 text-dark
+                ">
+      Rust
+    </h3>
+    <div class="px-6 pb-5 flex-auto text-base text-light ">
+      <p>
+      Comprehensive support, including <code>async</code>, for using the Rust
+      programming language on top of seL4 directly or in Microkit.
+      For <code>no_std</code> applications with and without <code>alloc</code>.
+    </p>
+    </div>
+      <a href="https://github.com/seL4/rust-sel4">
+        <span class="sr-only">Link to Rust</span>
+        <span class="absolute inset-0"></span>
+      </a>
+    <div class="px-6 mt-1 pb-5">
+      <div class="text-sm font-semibold text-f_green-600">
+  <div class="flex flex-row gap-y-2 sm:gap-y-4 gap-x-3 flex-wrap mx-auto">
+    <div class="text-xs md:text-sm py-0.5 px-4 rounded-sm border-dotted border-1 border-gray-200 dark:border-gray-400 text-gray-400 flex-none basis-auto mx-auto text-center">
+      Open Source
+    </div>
+    
+    <div class="text-xs md:text-sm sm:right-38 py-0.5 px-4 rounded-sm border-dotted border-1 border-gray-200 dark:border-gray-400 text-gray-400 flex-none basis-auto mx-auto">
+      <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" aria-hidden="true" data-slot="icon" class="h-4 w-4 text-f_green-600 mr-1 inline-icon">
+  <path stroke-linecap="round" stroke-linejoin="round" d="M9 12.75 11.25 15 15 9.75M21 12c0 1.268-.63 2.39-1.593 3.068a3.745 3.745 0 0 1-1.043 3.296 3.745 3.745 0 0 1-3.296 1.043A3.745 3.745 0 0 1 12 21c-1.268 0-2.39-.63-3.068-1.593a3.746 3.746 0 0 1-3.296-1.043 3.745 3.745 0 0 1-1.043-3.296A3.745 3.745 0 0 1 3 12c0-1.268.63-2.39 1.593-3.068a3.745 3.745 0 0 1 1.043-3.296 3.746 3.746 0 0 1 3.296-1.043A3.746 3.746 0 0 1 12 3c1.268 0 2.39.63 3.068 1.593a3.746 3.746 0 0 1 3.296 1.043 3.746 3.746 0 0 1 1.043 3.296A3.745 3.745 0 0 1 21 12Z"/>
+</svg>
+      seL4 Foundation
+    </div>
+    
+  </div>
+  <div class="py-0.5 text-sm font-semibold text-f_green-600 text-center mt-6 mr-2">
+    Learn more
+    &nbsp;
+    <svg xmlns="http://www.w3.org/2000/svg" fill="none" aria-hidden="true" viewBox="0 0 24 24" stroke="currentColor" data-slot="icon" class="inline-icon">
+  <path stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" d="M13.5 6H5.25A2.25 2.25 0 0 0 3 8.25v10.5A2.25 2.25 0 0 0 5.25 21h10.5A2.25 2.25 0 0 0 18 18.75V10.5m-10.5 6L21 3m0 0h-5.25M21 3v5.25"/>
+</svg>
+  </div>
+</div>
+    </div>
+    </div>
+</div>
+
+
+    <div class="grid grid-cols-1 relative group  ">
+  
+  <div class="absolute left-1/2">
+    <a href="https://trustworthy.systems/projects/pancake/">
+    <div class="absolute bg-logogreen -top-8 left-1/2 -ml-8 p-4 rounded-full shadow-md">
+      <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" aria-hidden="true" data-slot="icon" class="h-8 w-8">
+  <path stroke-linecap="round" stroke-linejoin="round" d="M20.25 6.375c0 2.278-3.694 4.125-8.25 4.125S3.75 8.653 3.75 6.375m16.5 0c0-2.278-3.694-4.125-8.25-4.125S3.75 4.097 3.75 6.375m16.5 0v11.25c0 2.278-3.694 4.125-8.25 4.125s-8.25-1.847-8.25-4.125V6.375m16.5 0v3.75m-16.5-3.75v3.75m16.5 0v3.75C20.25 16.153 16.556 18 12 18s-8.25-1.847-8.25-4.125v-3.75m16.5 0c0 2.278-3.694 4.125-8.25 4.125s-8.25-1.847-8.25-4.125"/>
+</svg>
+    </div>
+    </a>
+  </div>
+  
+  <div class="flex flex-col rounded-lg border dark:border-gray-700/80 bg-white dark:bg-darkblue shadow-lg
+              dark:shadow-gray-300/30
+              group-hover:bg-slate-50 dark:group-hover:bg-slate-900
+               overflow-hidden">
+    <h3 class="px-6  pt-12 
+               pb-3 text-center text-base font-semibold leading-7 text-dark
+                ">
+      Pancake
+    </h3>
+    <div class="px-6 pb-5 flex-auto text-base text-light ">
+      <p>
+      Low-level, imperative language with a verified compiler, designed for
+      implementing verifiable device drivers and other OS code.
+    </p>
+    </div>
+      <a href="https://trustworthy.systems/projects/pancake/">
+        <span class="sr-only">Link to Pancake</span>
+        <span class="absolute inset-0"></span>
+      </a>
+    <div class="px-6 mt-1 pb-5">
+      <div class="text-sm font-semibold text-f_green-600">
+  <div class="flex flex-row gap-y-2 sm:gap-y-4 gap-x-3 flex-wrap mx-auto">
+    <div class="text-xs md:text-sm py-0.5 px-4 rounded-sm border-dotted border-1 border-gray-200 dark:border-gray-400 text-gray-400 flex-none basis-auto mx-auto text-center">
+      Open Source
+    </div>
+    
+  </div>
+  <div class="py-0.5 text-sm font-semibold text-f_green-600 text-center mt-6 mr-2">
+    Learn more
+    &nbsp;
+    <svg xmlns="http://www.w3.org/2000/svg" fill="none" aria-hidden="true" viewBox="0 0 24 24" stroke="currentColor" data-slot="icon" class="inline-icon">
+  <path stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" d="M13.5 6H5.25A2.25 2.25 0 0 0 3 8.25v10.5A2.25 2.25 0 0 0 5.25 21h10.5A2.25 2.25 0 0 0 18 18.75V10.5m-10.5 6L21 3m0 0h-5.25M21 3v5.25"/>
+</svg>
+  </div>
+</div>
+    </div>
+    </div>
+</div>
+
+
+    <div class="grid grid-cols-1 relative group  ">
+  
+  <div class="absolute left-1/2">
+    <a href="https://lionsos.org/docs/use/language_support/#micropython">
+    <div class="absolute bg-logogreen -top-8 left-1/2 -ml-8 p-4 rounded-full shadow-md">
+      <svg xmlns:svg="http://www.w3.org/2000/svg" xmlns="http://www.w3.org/2000/svg" version="1.0" id="svg2" x="0px" y="0px" viewBox="0 0 111.16 112.39" style="enable-background:new 0 0 111.16 112.39;" xml:space="preserve" class="h-8 w-8">
+  <style type="text/css">
+	.st0{fill:url(#path1948_00000029767622332605855840000008319985218848776844_);}
+	.st1{fill:url(#path1950_00000121997263265494872440000003804087099205769378_);}
+	.st2{opacity:0.4438;fill:url(#path1894_00000116927435787026454850000012004563209345466802_);enable-background:new    ;}
+</style>
+  <sodipodi:namedview bordercolor="#666666" borderopacity="1.0" gridtolerance="10.0" guidetolerance="10.0" height="40mm" id="base" objecttolerance="10.0" pagecolor="#ffffff" showgrid="false" units="mm" width="210mm"/>
+  <linearGradient id="path1948_00000167396166821038750280000010334512712916414858_" gradientUnits="userSpaceOnUse" x1="734.9045" y1="-293.4356" x2="843.9209" y2="-387.2295" gradientTransform="matrix(0.5625 0 0 -0.568 -416.141 -163.463)">
+    <stop offset="0.0186" style="stop-color:#333333"/>
+    <stop offset="1" style="stop-color:#000000"/>
+  </linearGradient>
+  <path id="path1948" style="fill:url(#path1948_00000167396166821038750280000010334512712916414858_);" d="M54.92,0 c-4.58,0.02-8.96,0.41-12.81,1.09c-11.35,2-13.41,6.2-13.41,13.94v10.22h26.81v3.41H28.7H18.64c-7.79,0-14.62,4.68-16.75,13.59 c-2.46,10.21-2.57,16.59,0,27.25c1.91,7.94,6.46,13.59,14.25,13.59h9.22V70.84c0-8.85,7.66-16.66,16.75-16.66h26.78 c7.45,0,13.41-6.14,13.41-13.62V15.03c0-7.27-6.13-12.72-13.41-13.94C64.28,0.33,59.5-0.02,54.92,0z M40.42,8.22 c2.77,0,5.03,2.3,5.03,5.12c0,2.82-2.26,5.09-5.03,5.09c-2.78,0-5.03-2.28-5.03-5.09C35.39,10.52,37.64,8.22,40.42,8.22z"/>
+  <linearGradient id="path1950_00000051365365435130745040000014940536715459951280_" gradientUnits="userSpaceOnUse" x1="886.0673" y1="-443.9974" x2="847.1376" y2="-388.9187" gradientTransform="matrix(0.5625 0 0 -0.568 -416.141 -163.463)">
+    <stop offset="0" style="stop-color:#4D4D4D"/>
+    <stop offset="1" style="stop-color:#5D5D5D"/>
+  </linearGradient>
+  <path id="path1950" style="fill:url(#path1950_00000051365365435130745040000014940536715459951280_);" d="M85.64,28.66v11.91 c0,9.23-7.83,17-16.75,17H42.11c-7.34,0-13.41,6.28-13.41,13.62v25.53c0,7.27,6.32,11.54,13.41,13.62c8.49,2.5,16.63,2.95,26.78,0 c6.75-1.95,13.41-5.89,13.41-13.62V86.5H55.51v-3.41h26.78H95.7c7.79,0,10.7-5.44,13.41-13.59c2.8-8.4,2.68-16.48,0-27.25 c-1.93-7.76-5.6-13.59-13.41-13.59L85.64,28.66z M70.58,93.31c2.78,0,5.03,2.28,5.03,5.09c0,2.83-2.25,5.12-5.03,5.12 c-2.77,0-5.03-2.3-5.03-5.12C65.54,95.59,67.81,93.31,70.58,93.31z"/>
+  <radialGradient id="path1894_00000154424237791604507090000007026908286778921875_" cx="-2889.2625" cy="-409.7538" r="29.0369" gradientTransform="matrix(1.749057e-08 -0.2399 -1.0547 -3.791546e-07 -376.3373 -565.5692)" gradientUnits="userSpaceOnUse">
+    <stop offset="0" style="stop-color:#B8B8B8;stop-opacity:0.498"/>
+    <stop offset="1" style="stop-color:#7F7F7F;stop-opacity:0"/>
+  </radialGradient>
+  <ellipse id="path1894" style="opacity:0.4438;fill:url(#path1894_00000154424237791604507090000007026908286778921875_);enable-background:new ;" cx="55.82" cy="127.7" rx="35.93" ry="6.97"/>
+</svg>
+    </div>
+    </a>
+  </div>
+  
+  <div class="flex flex-col rounded-lg border dark:border-gray-700/80 bg-white dark:bg-darkblue shadow-lg
+              dark:shadow-gray-300/30
+              group-hover:bg-slate-50 dark:group-hover:bg-slate-900
+               overflow-hidden">
+    <h3 class="px-6  pt-12 
+               pb-3 text-center text-base font-semibold leading-7 text-dark
+                ">
+      Micropython
+    </h3>
+    <div class="px-6 pb-5 flex-auto text-base text-light ">
+      <p>
+      Support for <a href="https://micropython.org">Micropython</a>, a slimmed
+      down version of Python, intended for embedded use cases. Needs
+      higher-level OS services, which are currently supported on Lions OS only.
+    </p>
+    </div>
+      <a href="https://lionsos.org/docs/use/language_support/#micropython">
+        <span class="sr-only">Link to Micropython</span>
+        <span class="absolute inset-0"></span>
+      </a>
+    <div class="px-6 mt-1 pb-5">
+      <div class="text-sm font-semibold text-f_green-600">
+  <div class="flex flex-row gap-y-2 sm:gap-y-4 gap-x-3 flex-wrap mx-auto">
+    <div class="text-xs md:text-sm py-0.5 px-4 rounded-sm border-dotted border-1 border-gray-200 dark:border-gray-400 text-gray-400 flex-none basis-auto mx-auto text-center">
+      Open Source
+    </div>
+    
+  </div>
+  <div class="py-0.5 text-sm font-semibold text-f_green-600 text-center mt-6 mr-2">
+    Learn more
+    &nbsp;
+    <svg xmlns="http://www.w3.org/2000/svg" fill="none" aria-hidden="true" viewBox="0 0 24 24" stroke="currentColor" data-slot="icon" class="inline-icon">
+  <path stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" d="M13.5 6H5.25A2.25 2.25 0 0 0 3 8.25v10.5A2.25 2.25 0 0 0 5.25 21h10.5A2.25 2.25 0 0 0 18 18.75V10.5m-10.5 6L21 3m0 0h-5.25M21 3v5.25"/>
+</svg>
+  </div>
+</div>
+    </div>
+    </div>
+</div>
+
+
+    <div class="grid grid-cols-1 relative group md:col-span-2 md:w-2/3 md:mx-auto ">
+  
+  <div class="absolute left-1/2">
+    <a href="https://www.kry10.com/resources">
+    <div class="absolute bg-logogreen -top-8 left-1/2 -ml-8 p-4 rounded-full shadow-md">
+      <svg xmlns="http://www.w3.org/2000/svg" version="1.1" viewBox="0 0 128 128" class="h-8 w-8">
+  <defs>
+    <style>
+      .st0 {
+        fill: #fff;
+      }
+
+      .st0, .st1, .st2, .st3, .st4, .st5, .st6, .st7, .st8, .st9 {
+        fill-rule: evenodd;
+      }
+
+      .st1 {
+        fill: #ededed;
+        fill-opacity: .6;
+      }
+
+      .st2 {
+        fill: #1e1e1e;
+        fill-opacity: .32;
+      }
+
+      .st3 {
+        fill: url(#linear-gradient);
+      }
+
+      .st4 {
+        fill: url(#linear-gradient1);
+      }
+
+      .st5 {
+        fill: url(#linear-gradient2);
+      }
+
+      .st6 {
+        fill: url(#linear-gradient4);
+      }
+
+      .st7 {
+        fill: url(#linear-gradient5);
+      }
+
+      .st8 {
+        fill: url(#linear-gradient3);
+      }
+
+      .st9 {
+        fill: url(#linear-gradient6);
+      }
+    </style>
+    <linearGradient id="linear-gradient" x1="6841.16" y1="-1733.45" x2="6826.77" y2="-2323.41" gradientTransform="translate(-824.95 -336.8) scale(.13 -.2)" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#d9d9d9"/>
+      <stop offset="1" stop-color="#fff" stop-opacity=".38"/>
+    </linearGradient>
+    <linearGradient id="linear-gradient1" x1="7884.7" y1="-1446.05" x2="7767.04" y2="-1958.88" gradientTransform="translate(-839.84 -320.38) scale(.11 -.23)" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#7a7a7a" stop-opacity=".67"/>
+      <stop offset="1" stop-color="#969696"/>
+    </linearGradient>
+    <linearGradient id="linear-gradient2" x1="7323.86" y1="-1761.38" x2="7323.86" y2="-2146.71" gradientTransform="translate(-831.68 -329.84) scale(.12 -.21)" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#151515" stop-opacity=".76"/>
+      <stop offset="1" stop-color="#b5b5b5" stop-opacity=".28"/>
+    </linearGradient>
+    <linearGradient id="linear-gradient3" x1="4376.02" y1="-2976.68" x2="4555.31" y2="-3337.49" gradientTransform="translate(-772 -372.92) scale(.18 -.14)" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#818181" stop-opacity=".46"/>
+      <stop offset="1" stop-color="#1b1b1b" stop-opacity=".54"/>
+    </linearGradient>
+    <linearGradient id="linear-gradient4" x1="6325.02" y1="-2532.29" x2="6007.37" y2="-2192.94" gradientTransform="translate(-813.32 -347.17) scale(.14 -.18)" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#414141" stop-opacity=".33"/>
+      <stop offset="1" stop-color="#1e1e1e" stop-opacity=".82"/>
+    </linearGradient>
+    <linearGradient id="linear-gradient5" x1="8650.38" y1="-1435.81" x2="8556.15" y2="-1766.92" gradientTransform="translate(-847.73 -309.65) scale(.11 -.24)" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#616161" stop-opacity=".14"/>
+      <stop offset="1" stop-color="#f4f4f4" stop-opacity=".23"/>
+    </linearGradient>
+    <linearGradient id="linear-gradient6" x1="10216.56" y1="-1214.7" x2="9921.13" y2="-1159.1" gradientTransform="translate(-861.44 -286.63) scale(.09 -.28)" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#a3a3a3" stop-opacity=".36"/>
+      <stop offset="1" stop-color="#202020" stop-opacity=".58"/>
+    </linearGradient>
+  </defs>
+  <path class="st3" d="M64.4.5C36.7,13.9,1.9,83.4,30.9,113.9c26.8,33.5,85.4,1.3,68.4-40.5C77.8,37.4,64.3,35.5,64.4.5Z"/>
+  <path class="st4" d="M64.4.2C36.8,13.6,1.9,82.9,31,113.5c10.7,12.4,28,16.5,37.7,9.1,26.4-18.8,7.4-53.1,10.4-78.5-11-10.2-14.9-32.8-14.7-43.9Z"/>
+  <path class="st5" d="M56.7,4.3c-22.3,15.9-28.2,75-24.1,94.2,8.2,48.1,75.2,28.3,69.6-16.5-6-29.2-48.8-39.2-45.5-77.7Z"/>
+  <path class="st8" d="M78.8,49.8c10.4,13.4,12.7,22.6,6.8,27.9-27.7,19.4-61.3,7.4-54-37.3-9.5,22.6-27.1,56.4,11.7,61.2,20.8,3.6,54,2,58.9-16.1-.2-15.9-10.8-22.9-23.4-35.7Z"/>
+  <path class="st6" d="M38.1,36.4c-2.9,21.2,35.1,77.9,58.3,71-17.7,35.6-56.9-21.2-64-41.7,1.5-11,2.2-16.4,5.7-29.3Z"/>
+  <path class="st7" d="M60.4,49.7c.8,7.9,3.9,20.5,0,28.8s-21.7,23.5-16.8,36.8c11.4,24.8,37.1-4.4,36.9-19,1.1-11.8-6.6-38.7-1.8-52.5l-2.2-2.8-13.6-4c-2.2,3.2-3,7.5-2.5,12.7Z"/>
+  <path class="st9" d="M65.3,10.8c-29.3,16.6-17.3,42.6-16,70.8l19.1-55.4c-1.4-5.7-2.3-9.5-3.1-15.4Z"/>
+  <path class="st2" d="M68.3,26.1c-14.8,11.7-14.1,31.3-18.6,54,8.1-21.3,4.1-38.2,18.6-54Z"/>
+  <path class="st0" d="M45.8,119.7c8,1.1,12.1,2.2,12.5,3,.3,4.2-11.1,1.2-12.5-3Z"/>
+  <path class="st1" d="M49.8,10.8c-6.9,7.7-14.4,21.8-18.2,29.7-1,6.5-.5,15.7.6,23.5.9-18.2,7.5-39.2,17.6-53.2Z"/>
+</svg>
+    </div>
+    </a>
+  </div>
+  
+  <div class="flex flex-col rounded-lg border dark:border-gray-700/80 bg-white dark:bg-darkblue shadow-lg
+              dark:shadow-gray-300/30
+              group-hover:bg-slate-50 dark:group-hover:bg-slate-900
+              md:col-span-2 md:w-2/3 md:mx-auto overflow-hidden">
+    <h3 class="px-6  pt-12 
+               pb-3 text-center text-base font-semibold leading-7 text-dark
+                ">
+      Erlang and Elixir
+    </h3>
+    <div class="px-6 pb-5 flex-auto text-base text-light ">
+      <p>
+      Commercial support by Kry10 for the
+      <a href="https://www.erlang.org">Erlang</a> and
+      <a href="https://elixir-lang.org">Elixir</a> languages on
+      <a href="https://www.kry10.com/#platform">KOS</a> on top of seL4.
+    </p>
+    </div>
+      <a href="https://www.kry10.com/resources">
+        <span class="sr-only">Link to Erlang and Elixir</span>
+        <span class="absolute inset-0"></span>
+      </a>
+    <div class="px-6 mt-1 pb-5">
+      <div class="text-sm font-semibold text-f_green-600">
+  <div class="flex flex-row gap-y-2 sm:gap-y-4 gap-x-3 flex-wrap mx-auto">
+    <div class="text-xs md:text-sm py-0.5 px-4 rounded-sm border-dotted border-1 border-gray-200 dark:border-gray-400 text-gray-400 flex-none basis-auto mx-auto text-center">
+      Commercial
+    </div>
+    
+  </div>
+  <div class="py-0.5 text-sm font-semibold text-f_green-600 text-center mt-6 mr-2">
+    Learn more
+    &nbsp;
+    <svg xmlns="http://www.w3.org/2000/svg" fill="none" aria-hidden="true" viewBox="0 0 24 24" stroke="currentColor" data-slot="icon" class="inline-icon">
+  <path stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" d="M13.5 6H5.25A2.25 2.25 0 0 0 3 8.25v10.5A2.25 2.25 0 0 0 5.25 21h10.5A2.25 2.25 0 0 0 18 18.75V10.5m-10.5 6L21 3m0 0h-5.25M21 3v5.25"/>
+</svg>
+  </div>
+</div>
+    </div>
+    </div>
+</div>
+
+
+    </div>
+</div>
+
+</div>
+
+      </main><footer class="bg-gray-900" aria-labelledby="footer-heading">
+  <h2 id="footer-heading" class="sr-only">Footer</h2>
+  <div class="mx-auto max-w-7xl px-6 pb-8 pt-16 sm:pt-24 lg:px-8 lg:pt-32">
+    <div class="ml-10 lg:grid lg:grid-cols-2 lg:gap-8">
+      <div class="space-y-8">
+        <img class="h-12" src="/images/seL4.svg" alt="seL4 logo">
+        <p class="text-sm leading-6 text-gray-300">Proof. Performance. Security.</p>
+        <!-- socials -->
+        <div class="flex space-x-6">
+          <a href="https://www.linkedin.com/company/sel4" title="seL4 on LinkedIn"
+             class="text-gray-500 hover:text-gray-400">
+            <svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" aria-hidden="true" viewBox="0 0 455 455" data-slot="icon" class="h-6 w-6">
+  <path style="fill-rule:evenodd;clip-rule:evenodd;" d="M246.4,204.35v-0.665c-0.136,0.223-0.324,0.446-0.442,0.665H246.4z"/>
+  <path style="fill-rule:evenodd;clip-rule:evenodd;" d="M0,0v455h455V0H0z M141.522,378.002H74.016V174.906h67.506V378.002z M107.769,147.186h-0.446C84.678,147.186,70,131.585,70,112.085c0-19.928,15.107-35.087,38.211-35.087 c23.109,0,37.31,15.159,37.752,35.087C145.963,131.585,131.32,147.186,107.769,147.186z M385,378.002h-67.524V269.345 c0-27.291-9.756-45.92-34.195-45.92c-18.664,0-29.755,12.543-34.641,24.693c-1.776,4.34-2.24,10.373-2.24,16.459v113.426h-67.537 c0,0,0.905-184.043,0-203.096H246.4v28.779c8.973-13.807,24.986-33.547,60.856-33.547c44.437,0,77.744,29.02,77.744,91.398V378.002 z"/>
+</svg>
+          </a>
+          <a href="https://www.youtube.com/@seL4" title="seL4 on YouTube"
+             class="text-gray-500 hover:text-gray-400">
+            <svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" aria-hidden="true" viewBox="0 0 24 24" data-slot="icon" class="h-6 w-6">
+  <path fill-rule="evenodd" d="M19.812 5.418c.861.23 1.538.907 1.768 1.768C21.998 8.746 22 12 22 12s0 3.255-.418 4.814a2.504 2.504 0 0 1-1.768 1.768c-1.56.419-7.814.419-7.814.419s-6.255 0-7.814-.419a2.505 2.505 0 0 1-1.768-1.768C2 15.255 2 12 2 12s0-3.255.417-4.814a2.507 2.507 0 0 1 1.768-1.768C5.744 5 11.998 5 11.998 5s6.255 0 7.814.418ZM15.194 12 10 15V9l5.194 3Z" clip-rule="evenodd"/>
+</svg>
+          </a>
+          <a href="https://github.com/seL4" title="seL4 on GitHub"
+             class="text-gray-500 hover:text-gray-400">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16" fill="currentColor" aria-hidden="true" data-slot="icon" class="h-6 w-6">
+  <path d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.013 8.013 0 0016 8c0-4.42-3.58-8-8-8z"/>
+</svg>
+          </a>
+        </div>
+      </div>
+      <!-- footer menu -->
+      <div class="mt-16 flex flex-wrap gap-8 lg:mt-0"><div class="flex-none">
+          <h3 class="text-md font-semibold leading-6 text-logogreen">Useful Links</h3>
+          <ul class="mt-6 space-y-4"><li>
+              <a href="/About/" class="text-sm leading-6 text-gray-300 hover:text-white">What is seL4?</a>
+            </li><li>
+              <a href="/Foundation/" class="text-sm leading-6 text-gray-300 hover:text-white">seL4 Foundation</a>
+            </li><li>
+              <a href="/Foundation/Join/" class="text-sm leading-6 text-gray-300 hover:text-white">Become a Member</a>
+            </li><li>
+              <a href="/Legal/logo.html" class="text-sm leading-6 text-gray-300 hover:text-white">seL4 Logo</a>
+            </li><li>
+              <a href="/sitemap.html" class="text-sm leading-6 text-gray-300 hover:text-white">Sitemap</a>
+            </li></ul>
+        </div><div class="flex-none">
+          <h3 class="text-md font-semibold leading-6 text-logogreen">Legal</h3>
+          <ul class="mt-6 space-y-4"><li>
+              <a href="/Legal/trademark.html" class="text-sm leading-6 text-gray-300 hover:text-white">seL4 Trademark</a>
+            </li><li>
+              <a href="/Legal/license.html" class="text-sm leading-6 text-gray-300 hover:text-white">seL4 License</a>
+            </li><li>
+              <a href="/Contribute/conduct.html" class="text-sm leading-6 text-gray-300 hover:text-white">Code of Conduct</a>
+            </li><li>
+              <a href="http://www.lfprojects.org/" class="text-sm leading-6 text-gray-300 hover:text-white">Site Policies</a>
+            </li></ul>
+        </div><div class="flex-none">
+          <h3 class="text-md font-semibold leading-6 text-logogreen">Using seL4</h3>
+          <ul class="mt-6 space-y-4"><li>
+              <a href="https://docs.sel4.systems" class="text-sm leading-6 text-gray-300 hover:text-white">Docsite</a>
+            </li><li>
+              <a href="/Info/Docs/seL4-manual-latest.pdf" class="text-sm leading-6 text-gray-300 hover:text-white">Manual</a>
+            </li><li>
+              <a href="https://docs.sel4.systems/Tutorials/" class="text-sm leading-6 text-gray-300 hover:text-white">Tutorials</a>
+            </li><li>
+              <a href="/About/FAQ.html" class="text-sm leading-6 text-gray-300 hover:text-white">FAQ</a>
+            </li></ul>
+        </div></div>
+    </div>
+    <div class="flex flex-row flex-wrap gap-x-3 mt-16 border-t border-white/10 pt-8 sm:mt-20 lg:mt-24">
+      <p class="flex-none max-w-full text-tiny sm:text-xs leading-5 text-gray-400">&copy; 2025 seL4 Project a Series of LF Projects, LLC. seL4 is a trademark of LF Projects, LLC.</p></div>
+  </div>
+</footer>
+
+   </div>
+  </body>
+</html>

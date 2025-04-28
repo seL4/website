@@ -1,0 +1,2495 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>seL4 Summit 2024 Abstracts | seL4</title>
+    <meta name="author" content="seL4 Foundation">
+    <link rel="canonical" href="https://sel4.systems/Summit/2024/abstracts2024.html">
+    <link href="/css/sel4.css?v=1745826246" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+    <link rel=alternate title="Atom Feed" type=application/atom+xml href="/feed.xml">
+    <link rel="apple-touch-icon" sizes="57x57" href="/images/icons/apple-touch-icon-57x57.png">
+    <link rel="apple-touch-icon" sizes="114x114" href="/images/icons/apple-touch-icon-114x114.png">
+    <link rel="apple-touch-icon" sizes="72x72" href="/images/icons/apple-touch-icon-72x72.png">
+    <link rel="apple-touch-icon" sizes="144x144" href="/images/icons/apple-touch-icon-144x144.png">
+    <link rel="apple-touch-icon" sizes="60x60" href="/images/icons/apple-touch-icon-60x60.png">
+    <link rel="apple-touch-icon" sizes="120x120" href="/images/icons/apple-touch-icon-120x120.png">
+    <link rel="apple-touch-icon" sizes="76x76" href="/images/icons/apple-touch-icon-76x76.png">
+    <link rel="apple-touch-icon" sizes="152x152" href="/images/icons/apple-touch-icon-152x152.png">
+    <link rel="icon" type="image/png" href="/images/icons/favicon-96x96.png" sizes="96x96">
+    <link rel="icon" type="image/png" href="/images/icons/favicon-32x32.png" sizes="32x32">
+    <link rel="icon" type="image/png" href="/images/icons/favicon-16x16.png" sizes="16x16">
+    <meta name="application-name" content="&nbsp;">
+    <meta name="msapplication-TileColor" content="#FFFFFF">
+    <meta name="msapplication-TileImage" content="/images/icons/mstile-144x144.png">
+    <meta name="msapplication-square70x70logo" content="/images/icons/mstile-70x70.png">
+    <meta name="msapplication-square150x150logo" content="/images/icons/mstile-150x150.png">
+    <meta name="msapplication-wide310x150logo" content="/images/icons/mstile-310x150.png">
+    <meta name="msapplication-square310x310logo" content="/images/icons/mstile-310x310.png">
+    <link rel="shortcut icon" href="/images/icons/favicon.ico">
+    <script defer src="/js/menu.js"></script>
+
+    <script defer data-domain="sel4.systems" src="https://analytics.sel4.systems/js/script.js"></script>
+  </head>
+  <body class="flex flex-col h-screen dark:bg-[#030020] bg-white"><header class="bg-white dark:bg-darkblue">
+  <nav class="mx-auto flex items-center justify-between px-6 py-2 lg:pt-4 lg:pb-3 mb-2 lg:px-8
+              shadow-md relative z-10 bg-white/90 dark:bg-darkblue/90 backdrop-blur-md" aria-label="Global">
+    <div class="flex lg:flex-none">
+      <a href="/" class="-m-1.5 p-1.5">
+        <span class="sr-only">seL4</span>
+        <img class="h-6 lg:h-8 w-auto" src="/images/seL4.svg" alt="seL4 logo">
+      </a>
+    </div>
+    <div class="flex flex-1"></div>
+
+    <div class="hidden md:flex md:gap-x-3 lg:gap-x-5 xl:gap-x-10"><div class="relative">
+  <a class="dropbtn" aria-expanded="false" href="#">
+    <span>About</span>
+    <span class="hidden lg:inline"> seL4</span>
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true" data-slot="icon" class="drop-icon">
+  <path fill-rule="evenodd" d="M5.22 8.22a.75.75 0 0 1 1.06 0L10 11.94l3.72-3.72a.75.75 0 1 1 1.06 1.06l-4.25 4.25a.75.75 0 0 1-1.06 0L5.22 9.28a.75.75 0 0 1 0-1.06Z" clip-rule="evenodd"/>
+</svg>
+  </a><div class="absolute -left-14 top-full z-10 mt-4 flex w-screen max-w-max px-4 transition ease-in-out duration-200 dropmenu">
+    <div class="w-screen max-w-md flex-auto overflow-hidden rounded-3xl bg-white dark:bg-darkblue text-sm leading-6 shadow-lg ring-1 ring-gray-900/5 dark:ring-gray-100/20 lg:max-w-3xl">
+      <div class="grid grid-cols-1 gap-x-6 gap-y-1 p-4 lg:grid-cols-2">
+<div class="group menu-item-group">
+          <div class="menu-icon-div"><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" aria-hidden="true" data-slot="icon" class="menu-icon">
+  <path stroke-linecap="round" stroke-linejoin="round" d="M12 18v-5.25m0 0a6.01 6.01 0 0 0 1.5-.189m-1.5.189a6.01 6.01 0 0 1-1.5-.189m3.75 7.478a12.06 12.06 0 0 1-4.5 0m3.75 2.383a14.406 14.406 0 0 1-3 0M14.25 18v-.192c0-.983.658-1.823 1.508-2.316a7.5 7.5 0 1 0-7.517 0c.85.493 1.509 1.333 1.509 2.316V18"/>
+</svg></div>
+          <div>
+            <a href="/About/" class="font-semibold text-dark">
+              What is seL4?
+              <span class="absolute inset-0"></span>
+            </a>
+            <p class="mt-1 text-light">History, Fact Sheet, White Paper. How to use seL4 in your system.</p>
+          </div>
+        </div><div class="group menu-item-group">
+          <div class="menu-icon-div"><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" aria-hidden="true" data-slot="icon" class="menu-icon">
+  <path stroke-linecap="round" stroke-linejoin="round" d="M18 18.72a9.094 9.094 0 0 0 3.741-.479 3 3 0 0 0-4.682-2.72m.94 3.198.001.031c0 .225-.012.447-.037.666A11.944 11.944 0 0 1 12 21c-2.17 0-4.207-.576-5.963-1.584A6.062 6.062 0 0 1 6 18.719m12 0a5.971 5.971 0 0 0-.941-3.197m0 0A5.995 5.995 0 0 0 12 12.75a5.995 5.995 0 0 0-5.058 2.772m0 0a3 3 0 0 0-4.681 2.72 8.986 8.986 0 0 0 3.74.477m.94-3.197a5.971 5.971 0 0 0-.94 3.197M15 6.75a3 3 0 1 1-6 0 3 3 0 0 1 6 0Zm6 3a2.25 2.25 0 1 1-4.5 0 2.25 2.25 0 0 1 4.5 0Zm-13.5 0a2.25 2.25 0 1 1-4.5 0 2.25 2.25 0 0 1 4.5 0Z"/>
+</svg></div>
+          <div>
+            <a href="/use.html" class="font-semibold text-dark">
+              Who is using seL4?
+              <span class="absolute inset-0"></span>
+            </a>
+            <p class="mt-1 text-light">Where seL4 is used and deployed world wide</p>
+          </div>
+        </div><div class="group menu-item-group">
+          <div class="menu-icon-div"><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" aria-hidden="true" data-slot="icon" class="menu-icon">
+  <path stroke-linecap="round" stroke-linejoin="round" d="M9 12.75 11.25 15 15 9.75M21 12a9 9 0 1 1-18 0 9 9 0 0 1 18 0Z"/>
+</svg></div>
+          <div>
+            <a href="/Verification/" class="font-semibold text-dark">
+              Verification
+              <span class="absolute inset-0"></span>
+            </a>
+            <p class="mt-1 text-light">seL4 Proofs; implications for seL4-based systems and certification</p>
+          </div>
+        </div><div class="group menu-item-group">
+          <div class="menu-icon-div"><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" aria-hidden="true" data-slot="icon" class="menu-icon">
+  <path stroke-linecap="round" stroke-linejoin="round" d="M2.25 18 9 11.25l4.306 4.306a11.95 11.95 0 0 1 5.814-5.518l2.74-1.22m0 0-5.94-2.281m5.94 2.28-2.28 5.941"/>
+</svg></div>
+          <div>
+            <a href="/roadmap.html" class="font-semibold text-dark">
+              Roadmap
+              <span class="absolute inset-0"></span>
+            </a>
+            <p class="mt-1 text-light">Planned development &amp; verification</p>
+          </div>
+        </div><div class="group menu-item-group">
+          <div class="menu-icon-div"><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" aria-hidden="true" data-slot="icon" class="menu-icon">
+  <path stroke-linecap="round" stroke-linejoin="round" d="m3.75 13.5 10.5-11.25L12 10.5h8.25L9.75 21.75 12 13.5H3.75Z"/>
+</svg></div>
+          <div>
+            <a href="/performance.html" class="font-semibold text-dark">
+              Performance
+              <span class="absolute inset-0"></span>
+            </a>
+            <p class="mt-1 text-light">The numbers on the world&#39;s fastest kernel</p>
+          </div>
+        </div><div class="group menu-item-group">
+          <div class="menu-icon-div"><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" aria-hidden="true" data-slot="icon" class="menu-icon">
+  <path stroke-linecap="round" stroke-linejoin="round" d="M12 3v17.25m0 0c-1.472 0-2.882.265-4.185.75M12 20.25c1.472 0 2.882.265 4.185.75M18.75 4.97A48.416 48.416 0 0 0 12 4.5c-2.291 0-4.545.16-6.75.47m13.5 0c1.01.143 2.01.317 3 .52m-3-.52 2.62 10.726c.122.499-.106 1.028-.589 1.202a5.988 5.988 0 0 1-2.031.352 5.988 5.988 0 0 1-2.031-.352c-.483-.174-.711-.703-.59-1.202L18.75 4.971Zm-16.5.52c.99-.203 1.99-.377 3-.52m0 0 2.62 10.726c.122.499-.106 1.028-.589 1.202a5.989 5.989 0 0 1-2.031.352 5.989 5.989 0 0 1-2.031-.352c-.483-.174-.711-.703-.59-1.202L5.25 4.971Z"/>
+</svg></div>
+          <div>
+            <a href="/Legal/" class="font-semibold text-dark">
+              License, Trademark &amp; Logo
+              <span class="absolute inset-0"></span>
+            </a>
+            <p class="mt-1 text-light">seL4 License and Implications; Trademark Compliance Guide</p>
+          </div>
+        </div><div class="group menu-item-group">
+          <div class="menu-icon-div"><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" aria-hidden="true" data-slot="icon" class="menu-icon">
+  <path stroke-linecap="round" stroke-linejoin="round" d="M8.25 3v1.5M4.5 8.25H3m18 0h-1.5M4.5 12H3m18 0h-1.5m-15 3.75H3m18 0h-1.5M8.25 19.5V21M12 3v1.5m0 15V21m3.75-18v1.5m0 15V21m-9-1.5h10.5a2.25 2.25 0 0 0 2.25-2.25V6.75a2.25 2.25 0 0 0-2.25-2.25H6.75A2.25 2.25 0 0 0 4.5 6.75v10.5a2.25 2.25 0 0 0 2.25 2.25Zm.75-12h9v9h-9v-9Z"/>
+</svg></div>
+          <div>
+            <a href="/platforms.html" class="font-semibold text-dark">
+              Platform Support Overview
+              <span class="absolute inset-0"></span>
+            </a>
+            <p class="mt-1 text-light">Hardware and simulators seL4 runs on</p>
+          </div>
+        </div><div class="group menu-item-group">
+          <div class="menu-icon-div"><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" aria-hidden="true" data-slot="icon" class="menu-icon">
+  <path stroke-linecap="round" stroke-linejoin="round" d="M4.26 10.147a60.438 60.438 0 0 0-.491 6.347A48.62 48.62 0 0 1 12 20.904a48.62 48.62 0 0 1 8.232-4.41 60.46 60.46 0 0 0-.491-6.347m-15.482 0a50.636 50.636 0 0 0-2.658-.813A59.906 59.906 0 0 1 12 3.493a59.903 59.903 0 0 1 10.399 5.84c-.896.248-1.783.52-2.658.814m-15.482 0A50.717 50.717 0 0 1 12 13.489a50.702 50.702 0 0 1 7.74-3.342M6.75 15a.75.75 0 1 0 0-1.5.75.75 0 0 0 0 1.5Zm0 0v-3.675A55.378 55.378 0 0 1 12 8.443m-7.007 11.55A5.981 5.981 0 0 0 6.75 15.75v-1.5"/>
+</svg></div>
+          <div>
+            <a href="/Research/" class="font-semibold text-dark">
+              Research
+              <span class="absolute inset-0"></span>
+            </a>
+            <p class="mt-1 text-light">Seminal seL4 Publications; Ongoing Research; Courses in the Ecosystem</p>
+          </div>
+        </div><div class="group menu-item-group">
+          <div class="menu-icon-div"><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" aria-hidden="true" data-slot="icon" class="menu-icon">
+  <path stroke-linecap="round" stroke-linejoin="round" d="M13.5 16.875h3.375m0 0h3.375m-3.375 0V13.5m0 3.375v3.375M6 10.5h2.25a2.25 2.25 0 0 0 2.25-2.25V6a2.25 2.25 0 0 0-2.25-2.25H6A2.25 2.25 0 0 0 3.75 6v2.25A2.25 2.25 0 0 0 6 10.5Zm0 9.75h2.25A2.25 2.25 0 0 0 10.5 18v-2.25a2.25 2.25 0 0 0-2.25-2.25H6a2.25 2.25 0 0 0-2.25 2.25V18A2.25 2.25 0 0 0 6 20.25Zm9.75-9.75H18a2.25 2.25 0 0 0 2.25-2.25V6A2.25 2.25 0 0 0 18 3.75h-2.25A2.25 2.25 0 0 0 13.5 6v2.25a2.25 2.25 0 0 0 2.25 2.25Z"/>
+</svg></div>
+          <div>
+            <a href="/tools.html" class="font-semibold text-dark">
+              Frameworks &amp; Languages
+              <span class="absolute inset-0"></span>
+            </a>
+            <p class="mt-1 text-light">Frameworks, Tools, OS Personalities, Components, Language Support</p>
+          </div>
+        </div><div class="group menu-item-group">
+          <div class="menu-icon-div"><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" aria-hidden="true" data-slot="icon" class="menu-icon">
+  <path stroke-linecap="round" stroke-linejoin="round" d="M12 21v-8.25M15.75 21v-8.25M8.25 21v-8.25M3 9l9-6 9 6m-1.5 12V10.332A48.36 48.36 0 0 0 12 9.75c-2.551 0-5.056.2-7.5.582V21M3 21h18M12 6.75h.008v.008H12V6.75Z"/>
+</svg></div>
+          <div>
+            <a href="/Foundation/" class="font-semibold text-dark">
+              seL4 Foundation
+              <span class="absolute inset-0"></span>
+            </a>
+            <p class="mt-1 text-light">Members, Board, and Technical Steering Committee</p>
+          </div>
+        </div>
+      </div><div class="grid grid-cols-1 gap-x-6 gap-y-1 p-4 lg:grid-cols-2 bg-gray-50 dark:bg-slate-900"><div class="group menu-item-group hover:bg-gray-100 hover:dark:bg-slate-800">
+          <div class="menu-icon-div"><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" aria-hidden="true" data-slot="icon" class="menu-icon">
+  <path stroke-linecap="round" stroke-linejoin="round" d="M12 6.042A8.967 8.967 0 0 0 6 3.75c-1.052 0-2.062.18-3 .512v14.25A8.987 8.987 0 0 1 6 18c2.305 0 4.408.867 6 2.292m0-14.25a8.966 8.966 0 0 1 6-2.292c1.052 0 2.062.18 3 .512v14.25A8.987 8.987 0 0 0 18 18a8.967 8.967 0 0 0-6 2.292m0-14.25v14.25"/>
+</svg></div>
+          <div>
+            <a href="/Learn/" class="font-semibold text-dark">
+              Manual &amp; Documentation
+              <span class="absolute inset-0"></span>
+            </a>
+            <p class="mt-1 text-light">Manual, Tutorials, Documentation</p>
+          </div>
+        </div><div class="group menu-item-group hover:bg-gray-100 hover:dark:bg-slate-800">
+          <div class="menu-icon-div"><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" aria-hidden="true" data-slot="icon" class="menu-icon">
+  <path stroke-linecap="round" stroke-linejoin="round" d="M9.879 7.519c1.171-1.025 3.071-1.025 4.242 0 1.172 1.025 1.172 2.687 0 3.712-.203.179-.43.326-.67.442-.745.361-1.45.999-1.45 1.827v.75M21 12a9 9 0 1 1-18 0 9 9 0 0 1 18 0Zm-9 5.25h.008v.008H12v-.008Z"/>
+</svg></div>
+          <div>
+            <a href="/About/FAQ.html" class="font-semibold text-dark">
+              FAQ
+              <span class="absolute inset-0"></span>
+            </a>
+            <p class="mt-1 text-light">Frequently Asked Questions</p>
+          </div>
+        </div></div></div>
+  </div>
+</div><div class="relative">
+  <a class="dropbtn" aria-expanded="false" href="#">
+    <span>Contribute</span>
+    <span class="hidden lg:inline"></span>
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true" data-slot="icon" class="drop-icon">
+  <path fill-rule="evenodd" d="M5.22 8.22a.75.75 0 0 1 1.06 0L10 11.94l3.72-3.72a.75.75 0 1 1 1.06 1.06l-4.25 4.25a.75.75 0 0 1-1.06 0L5.22 9.28a.75.75 0 0 1 0-1.06Z" clip-rule="evenodd"/>
+</svg>
+  </a>
+  <div class="menu-one-col dropmenu">
+    <div class="p-4">
+<div class="group menu-item-group">
+          <div class="menu-icon-div"><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" aria-hidden="true" data-slot="icon" class="menu-icon">
+  <path stroke-linecap="round" stroke-linejoin="round" d="M16.023 9.348h4.992v-.001M2.985 19.644v-4.992m0 0h4.992m-4.993 0 3.181 3.183a8.25 8.25 0 0 0 13.803-3.7M4.031 9.865a8.25 8.25 0 0 1 13.803-3.7l3.181 3.182m0-4.991v4.99"/>
+</svg></div>
+          <div>
+            <a href="/Contribute/" class="font-semibold text-dark">
+              Contribution Guidelines
+              <span class="absolute inset-0"></span>
+            </a>
+            <p class="mt-1 text-light">Overview on how to contribute to seL4</p>
+          </div>
+        </div><div class="group menu-item-group">
+          <div class="menu-icon-div"><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" aria-hidden="true" data-slot="icon" class="menu-icon">
+  <path stroke-linecap="round" stroke-linejoin="round" d="M9 12.75 11.25 15 15 9.75m-3-7.036A11.959 11.959 0 0 1 3.598 6 11.99 11.99 0 0 0 3 9.749c0 5.592 3.824 10.29 9 11.623 5.176-1.332 9-6.03 9-11.622 0-1.31-.21-2.571-.598-3.751h-.152c-3.196 0-6.1-1.248-8.25-3.285Z"/>
+</svg></div>
+          <div>
+            <a href="/Contribute/conduct.html" class="font-semibold text-dark">
+              Code of Conduct
+              <span class="absolute inset-0"></span>
+            </a>
+            <p class="mt-1 text-light">Rules for interaction</p>
+          </div>
+        </div><div class="group menu-item-group">
+          <div class="menu-icon-div"><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" aria-hidden="true" data-slot="icon" class="menu-icon">
+  <path stroke-linecap="round" stroke-linejoin="round" d="m6.75 7.5 3 2.25-3 2.25m4.5 0h3m-9 8.25h13.5A2.25 2.25 0 0 0 21 18V6a2.25 2.25 0 0 0-2.25-2.25H5.25A2.25 2.25 0 0 0 3 6v12a2.25 2.25 0 0 0 2.25 2.25Z"/>
+</svg></div>
+          <div>
+            <a href="/Contribute/conventions.html" class="font-semibold text-dark">
+              Coding Conventions &amp; Requirements
+              <span class="absolute inset-0"></span>
+            </a>
+            <p class="mt-1 text-light">Requirements for C Code, Git Commits, Pull Requests</p>
+          </div>
+        </div><div class="group menu-item-group">
+          <div class="menu-icon-div"><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" aria-hidden="true" data-slot="icon" class="menu-icon">
+  <path stroke-linecap="round" stroke-linejoin="round" d="M20.25 8.511c.884.284 1.5 1.128 1.5 2.097v4.286c0 1.136-.847 2.1-1.98 2.193-.34.027-.68.052-1.02.072v3.091l-3-3c-1.354 0-2.694-.055-4.02-.163a2.115 2.115 0 0 1-.825-.242m9.345-8.334a2.126 2.126 0 0 0-.476-.095 48.64 48.64 0 0 0-8.048 0c-1.131.094-1.976 1.057-1.976 2.192v4.286c0 .837.46 1.58 1.155 1.951m9.345-8.334V6.637c0-1.621-1.152-3.026-2.76-3.235A48.455 48.455 0 0 0 11.25 3c-2.115 0-4.198.137-6.24.402-1.608.209-2.76 1.614-2.76 3.235v6.226c0 1.621 1.152 3.026 2.76 3.235.577.075 1.157.14 1.74.194V21l4.155-4.155"/>
+</svg></div>
+          <div>
+            <a href="/Contribute/rfc-process.html" class="font-semibold text-dark">
+              RFC Process
+              <span class="absolute inset-0"></span>
+            </a>
+            <p class="mt-1 text-light">When and how to write an RFC</p>
+          </div>
+        </div><div class="group menu-item-group">
+          <div class="menu-icon-div"><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" aria-hidden="true" data-slot="icon" class="menu-icon">
+  <path stroke-linecap="round" stroke-linejoin="round" d="M11.42 15.17 17.25 21A2.652 2.652 0 0 0 21 17.25l-5.877-5.877M11.42 15.17l2.496-3.03c.317-.384.74-.626 1.208-.766M11.42 15.17l-4.655 5.653a2.548 2.548 0 1 1-3.586-3.586l6.837-5.63m5.108-.233c.55-.164 1.163-.188 1.743-.14a4.5 4.5 0 0 0 4.486-6.336l-3.276 3.277a3.004 3.004 0 0 1-2.25-2.25l3.276-3.276a4.5 4.5 0 0 0-6.336 4.486c.091 1.076-.071 2.264-.904 2.95l-.102.085m-1.745 1.437L5.909 7.5H4.5L2.25 3.75l1.5-1.5L7.5 4.5v1.409l4.26 4.26m-1.745 1.437 1.745-1.437m6.615 8.206L15.75 15.75M4.867 19.125h.008v.008h-.008v-.008Z"/>
+</svg></div>
+          <div>
+            <a href="/Contribute/platform-ports.html" class="font-semibold text-dark">
+              Platform Contributions
+              <span class="absolute inset-0"></span>
+            </a>
+            <p class="mt-1 text-light">Contributing and maintaining a platform port</p>
+          </div>
+        </div><div class="group menu-item-group">
+          <div class="menu-icon-div"><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" aria-hidden="true" data-slot="icon" class="menu-icon">
+  <path stroke-linecap="round" stroke-linejoin="round" d="M15 19.128a9.38 9.38 0 0 0 2.625.372 9.337 9.337 0 0 0 4.121-.952 4.125 4.125 0 0 0-7.533-2.493M15 19.128v-.003c0-1.113-.285-2.16-.786-3.07M15 19.128v.106A12.318 12.318 0 0 1 8.624 21c-2.331 0-4.512-.645-6.374-1.766l-.001-.109a6.375 6.375 0 0 1 11.964-3.07M12 6.375a3.375 3.375 0 1 1-6.75 0 3.375 3.375 0 0 1 6.75 0Zm8.25 2.25a2.625 2.625 0 1 1-5.25 0 2.625 2.625 0 0 1 5.25 0Z"/>
+</svg></div>
+          <div>
+            <a href="/Contribute/roles.html" class="font-semibold text-dark">
+              Development Roles
+              <span class="absolute inset-0"></span>
+            </a>
+            <p class="mt-1 text-light">Contributors, Reviewers, Committers, TSC</p>
+          </div>
+        </div>
+      </div>
+  </div>
+</div><div class="relative">
+  <a class="dropbtn" aria-expanded="false" href="#">
+    <span>News</span>
+    <span class="hidden lg:inline"> &amp; Events</span>
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true" data-slot="icon" class="drop-icon">
+  <path fill-rule="evenodd" d="M5.22 8.22a.75.75 0 0 1 1.06 0L10 11.94l3.72-3.72a.75.75 0 1 1 1.06 1.06l-4.25 4.25a.75.75 0 0 1-1.06 0L5.22 9.28a.75.75 0 0 1 0-1.06Z" clip-rule="evenodd"/>
+</svg>
+  </a>
+  <div class="menu-one-col dropmenu">
+    <div class="p-4">
+<div class="group menu-item-group">
+          <div class="menu-icon-div"><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" aria-hidden="true" data-slot="icon" class="menu-icon">
+  <path stroke-linecap="round" stroke-linejoin="round" d="M10.34 15.84c-.688-.06-1.386-.09-2.09-.09H7.5a4.5 4.5 0 1 1 0-9h.75c.704 0 1.402-.03 2.09-.09m0 9.18c.253.962.584 1.892.985 2.783.247.55.06 1.21-.463 1.511l-.657.38c-.551.318-1.26.117-1.527-.461a20.845 20.845 0 0 1-1.44-4.282m3.102.069a18.03 18.03 0 0 1-.59-4.59c0-1.586.205-3.124.59-4.59m0 9.18a23.848 23.848 0 0 1 8.835 2.535M10.34 6.66a23.847 23.847 0 0 0 8.835-2.535m0 0A23.74 23.74 0 0 0 18.795 3m.38 1.125a23.91 23.91 0 0 1 1.014 5.395m-1.014 8.855c-.118.38-.245.754-.38 1.125m.38-1.125a23.91 23.91 0 0 0 1.014-5.395m0-3.46c.495.413.811 1.035.811 1.73 0 .695-.316 1.317-.811 1.73m0-3.46a24.347 24.347 0 0 1 0 3.46"/>
+</svg></div>
+          <div>
+            <a href="/news/" class="font-semibold text-dark">
+              News
+              <span class="absolute inset-0"></span>
+            </a>
+            <p class="mt-1 text-light">News about seL4 and the seL4 Foundation</p>
+          </div>
+        </div><div class="group menu-item-group">
+          <div class="menu-icon-div"><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" aria-hidden="true" data-slot="icon" class="menu-icon">
+  <path stroke-linecap="round" stroke-linejoin="round" d="M18 18.72a9.094 9.094 0 0 0 3.741-.479 3 3 0 0 0-4.682-2.72m.94 3.198.001.031c0 .225-.012.447-.037.666A11.944 11.944 0 0 1 12 21c-2.17 0-4.207-.576-5.963-1.584A6.062 6.062 0 0 1 6 18.719m12 0a5.971 5.971 0 0 0-.941-3.197m0 0A5.995 5.995 0 0 0 12 12.75a5.995 5.995 0 0 0-5.058 2.772m0 0a3 3 0 0 0-4.681 2.72 8.986 8.986 0 0 0 3.74.477m.94-3.197a5.971 5.971 0 0 0-.94 3.197M15 6.75a3 3 0 1 1-6 0 3 3 0 0 1 6 0Zm6 3a2.25 2.25 0 1 1-4.5 0 2.25 2.25 0 0 1 4.5 0Zm-13.5 0a2.25 2.25 0 1 1-4.5 0 2.25 2.25 0 0 1 4.5 0Z"/>
+</svg></div>
+          <div>
+            <a href="/Summit/2025/" class="font-semibold text-dark">
+              seL4 Summit 2025
+              <span class="absolute inset-0"></span>
+            </a>
+            <p class="mt-1 text-light">The seL4 event of the year</p>
+          </div>
+        </div><div class="group menu-item-group">
+          <div class="menu-icon-div"><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" aria-hidden="true" data-slot="icon" class="menu-icon">
+  <path stroke-linecap="round" stroke-linejoin="round" d="M21 16.811c0 .864-.933 1.406-1.683.977l-7.108-4.061a1.125 1.125 0 0 1 0-1.954l7.108-4.061A1.125 1.125 0 0 1 21 8.689v8.122ZM11.25 16.811c0 .864-.933 1.406-1.683.977l-7.108-4.061a1.125 1.125 0 0 1 0-1.954l7.108-4.061a1.125 1.125 0 0 1 1.683.977v8.122Z"/>
+</svg></div>
+          <div>
+            <a href="/Summit/" class="font-semibold text-dark">
+              Previous seL4 Summits
+              <span class="absolute inset-0"></span>
+            </a>
+            <p class="mt-1 text-light">All seL4 summits since 2022</p>
+          </div>
+        </div><div class="group menu-item-group">
+          <div class="menu-icon-div"><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" aria-hidden="true" data-slot="icon" class="menu-icon">
+  <path stroke-linecap="round" stroke-linejoin="round" d="M21.75 6.75v10.5a2.25 2.25 0 0 1-2.25 2.25h-15a2.25 2.25 0 0 1-2.25-2.25V6.75m19.5 0A2.25 2.25 0 0 0 19.5 4.5h-15a2.25 2.25 0 0 0-2.25 2.25m19.5 0v.243a2.25 2.25 0 0 1-1.07 1.916l-7.5 4.615a2.25 2.25 0 0 1-2.36 0L3.32 8.91a2.25 2.25 0 0 1-1.07-1.916V6.75"/>
+</svg></div>
+          <div>
+            <a href="/stay-informed.html" class="font-semibold text-dark">
+              Stay Informed
+              <span class="absolute inset-0"></span>
+            </a>
+            <p class="mt-1 text-light">Announcement mailing list and other channels to stay informed</p>
+          </div>
+        </div></div>
+      <div class="bg-gray-50 p-8 dark:bg-slate-900">
+        <div class="flex justify-between">
+          <h3 class="text-sm font-semibold leading-6 text-gray-500">Recent news</h3>
+          <a href="/news/" class="text-sm font-semibold leading-6 text-f_green-600">See all <span aria-hidden="true">&rarr;</span></a>
+        </div>
+        <ul class="mt-6 space-y-6"><li class="relative">
+            <time datetime="2025-04-18" class="block text-xs leading-6 text-light">18 Apr 2025</time>
+            <a href="/news/2025.html#member-mep" class="block truncate text-sm font-semibold leading-6 text-dark">
+              MEP joins the seL4 Foundation
+              <span class="absolute inset-0"></span>
+            </a>
+          </li><li class="relative">
+            <time datetime="2025-04-14" class="block text-xs leading-6 text-light">14 Apr 2025</time>
+            <a href="/news/2025.html#summit-2025-register" class="block truncate text-sm font-semibold leading-6 text-dark">
+              Register for the seL4 summit 2025
+              <span class="absolute inset-0"></span>
+            </a>
+          </li><li class="relative">
+            <time datetime="2025-02-17" class="block text-xs leading-6 text-light">17 Feb 2025</time>
+            <a href="/news/2025.html#summit-2025-cfp" class="block truncate text-sm font-semibold leading-6 text-dark">
+              Call For Presentations for the seL4 Summit 2025
+              <span class="absolute inset-0"></span>
+            </a>
+          </li></ul>
+      </div>
+      <div>
+      </div>
+  </div>
+</div><div class="relative">
+  <a class="dropbtn" aria-expanded="false" href="#">
+    <span>Contact</span>
+    <span class="hidden lg:inline"> &amp; Support</span>
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true" data-slot="icon" class="drop-icon">
+  <path fill-rule="evenodd" d="M5.22 8.22a.75.75 0 0 1 1.06 0L10 11.94l3.72-3.72a.75.75 0 1 1 1.06 1.06l-4.25 4.25a.75.75 0 0 1-1.06 0L5.22 9.28a.75.75 0 0 1 0-1.06Z" clip-rule="evenodd"/>
+</svg>
+  </a>
+  <div class="menu-one-col dropmenu">
+    <div class="p-4">
+<div class="group menu-item-group">
+          <div class="menu-icon-div"><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" aria-hidden="true" data-slot="icon" class="menu-icon">
+  <path stroke-linecap="round" stroke-linejoin="round" d="M15.59 14.37a6 6 0 0 1-5.84 7.38v-4.8m5.84-2.58a14.98 14.98 0 0 0 6.16-12.12A14.98 14.98 0 0 0 9.631 8.41m5.96 5.96a14.926 14.926 0 0 1-5.841 2.58m-.119-8.54a6 6 0 0 0-7.381 5.84h4.8m2.581-5.84a14.927 14.927 0 0 0-2.58 5.84m2.699 2.7c-.103.021-.207.041-.311.06a15.09 15.09 0 0 1-2.448-2.448 14.9 14.9 0 0 1 .06-.312m-2.24 2.39a4.493 4.493 0 0 0-1.757 4.306 4.493 4.493 0 0 0 4.306-1.758M16.5 9a1.5 1.5 0 1 1-3 0 1.5 1.5 0 0 1 3 0Z"/>
+</svg></div>
+          <div>
+            <a href="/Services/" class="font-semibold text-dark">
+              Commercial Support
+              <span class="absolute inset-0"></span>
+            </a>
+            <p class="mt-1 text-light">Endorsed Service Providers for seL4</p>
+          </div>
+        </div><div class="group menu-item-group">
+          <div class="menu-icon-div"><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" aria-hidden="true" data-slot="icon" class="menu-icon">
+  <path stroke-linecap="round" stroke-linejoin="round" d="M16.712 4.33a9.027 9.027 0 0 1 1.652 1.306c.51.51.944 1.064 1.306 1.652M16.712 4.33l-3.448 4.138m3.448-4.138a9.014 9.014 0 0 0-9.424 0M19.67 7.288l-4.138 3.448m4.138-3.448a9.014 9.014 0 0 1 0 9.424m-4.138-5.976a3.736 3.736 0 0 0-.88-1.388 3.737 3.737 0 0 0-1.388-.88m2.268 2.268a3.765 3.765 0 0 1 0 2.528m-2.268-4.796a3.765 3.765 0 0 0-2.528 0m4.796 4.796c-.181.506-.475.982-.88 1.388a3.736 3.736 0 0 1-1.388.88m2.268-2.268 4.138 3.448m0 0a9.027 9.027 0 0 1-1.306 1.652c-.51.51-1.064.944-1.652 1.306m0 0-3.448-4.138m3.448 4.138a9.014 9.014 0 0 1-9.424 0m5.976-4.138a3.765 3.765 0 0 1-2.528 0m0 0a3.736 3.736 0 0 1-1.388-.88 3.737 3.737 0 0 1-.88-1.388m2.268 2.268L7.288 19.67m0 0a9.024 9.024 0 0 1-1.652-1.306 9.027 9.027 0 0 1-1.306-1.652m0 0 4.138-3.448M4.33 16.712a9.014 9.014 0 0 1 0-9.424m4.138 5.976a3.765 3.765 0 0 1 0-2.528m0 0c.181-.506.475-.982.88-1.388a3.736 3.736 0 0 1 1.388-.88m-2.268 2.268L4.33 7.288m6.406 1.18L7.288 4.33m0 0a9.024 9.024 0 0 0-1.652 1.306A9.025 9.025 0 0 0 4.33 7.288"/>
+</svg></div>
+          <div>
+            <a href="/support.html" class="font-semibold text-dark">
+              Help &amp; Open Source Support
+              <span class="absolute inset-0"></span>
+            </a>
+            <p class="mt-1 text-light">Mailing lists, Forum, Chat, Developer Hangouts</p>
+          </div>
+        </div><div class="group menu-item-group">
+          <div class="menu-icon-div"><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" aria-hidden="true" data-slot="icon" class="menu-icon">
+  <path stroke-linecap="round" stroke-linejoin="round" d="M15.75 6a3.75 3.75 0 1 1-7.5 0 3.75 3.75 0 0 1 7.5 0ZM4.501 20.118a7.5 7.5 0 0 1 14.998 0A17.933 17.933 0 0 1 12 21.75c-2.676 0-5.216-.584-7.499-1.632Z"/>
+</svg></div>
+          <div>
+            <a href="/contact.html" class="font-semibold text-dark">
+              Contact a Person
+              <span class="absolute inset-0"></span>
+            </a>
+            <p class="mt-1 text-light">seL4 Foundation, Security Contact, Moderation</p>
+          </div>
+        </div>
+      </div>
+  </div>
+</div></div>
+    <div class="hidden md:flex md:flex-1"></div>
+
+    <div class="hidden min-[470px]:flex md:flex-none justify-end">
+      <!-- member button -->
+      <a href="/Foundation/Join/" class="button-outline md:h-8 lg:h-9 md:text-xs lg:text-sm mr-6 md:mr-4 lg:mr-8 xl:mr-10">Become a Member</a>
+
+      <!-- docsite button -->
+      <a href="https://docs.sel4.systems" class="button-outline md:h-8 lg:h-9 md:text-xs lg:text-sm mr-2 lg:mr-6">Docsite
+        <svg xmlns="http://www.w3.org/2000/svg" fill="none" aria-hidden="true" viewBox="0 0 24 24" stroke="currentColor" data-slot="icon" class="inline-icon">
+  <path stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" d="M13.5 6H5.25A2.25 2.25 0 0 0 3 8.25v10.5A2.25 2.25 0 0 0 5.25 21h10.5A2.25 2.25 0 0 0 18 18.75V10.5m-10.5 6L21 3m0 0h-5.25M21 3v5.25"/>
+</svg>
+      </a>
+
+      <!-- github button -->
+      <a href="https://github.com/seL4" class="mr-4 md:mr-0 px-3 pt-1 pb-2 block text-gray-400 hover:text-gray-500 dark:hover:text-gray-300">
+        <span class="sr-only">seL4 on GitHub</span>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16" fill="currentColor" aria-hidden="true" data-slot="icon" class="w-5 h-5 lg:w-6 lg:h-6">
+  <path d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.013 8.013 0 0016 8c0-4.42-3.58-8-8-8z"/>
+</svg>
+      </a>
+    </div>
+
+    <!-- mobile menu hamburger button -->
+    <div class="flex md:hidden">
+      <button type="button" class="-m-2.5 inline-flex items-center justify-center rounded-md p-2.5 text-gray-700 dark:text-gray-300 mobile-drop">
+        <span class="sr-only">Open main menu</span>
+        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" aria-hidden="true" data-slot="icon" class="h-6 w-6">
+  <path stroke-linecap="round" stroke-linejoin="round" d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5"/>
+</svg>
+      </button>
+    </div>
+  </nav><div class="lg:hidden hidden" id="mobile-menu" role="dialog" aria-modal="true">
+  <div class="fixed inset-0 z-10"></div>
+  <div class="fixed inset-y-0 right-0 z-10 w-full overflow-y-auto bg-white dark:bg-darkblue px-6 py-6 sm:max-w-sm sm:ring-1 sm:ring-gray-900/10 dark:sm:ring-gray-100/20">
+    <div class="flex items-center justify-between">
+      <span class="-m-1.5 p-1.5"> </span>
+      <button type="button" class="-m-2.5 rounded-md p-2.5 text-light">
+        <span class="sr-only">Close menu</span>
+        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" aria-hidden="true" data-slot="icon" class="h-6 w-6">
+  <path stroke-linecap="round" stroke-linejoin="round" d="M6 18 18 6M6 6l12 12"/>
+</svg>
+      </button>
+    </div>
+    <div class="mt-6 flow-root">
+      <div class="-my-6 divide-y divide-gray-500/10 dark:divide-gray-200/40">
+        <div class="space-y-2 py-6">
+          <div class="-mx-3"><button type="button" class="dropbtn-mobile" aria-expanded="false">
+              About seL4
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true" data-slot="icon" class="h-5 w-5 flex-none">
+  <path fill-rule="evenodd" d="M5.22 8.22a.75.75 0 0 1 1.06 0L10 11.94l3.72-3.72a.75.75 0 1 1 1.06 1.06l-4.25 4.25a.75.75 0 0 1-1.06 0L5.22 9.28a.75.75 0 0 1 0-1.06Z" clip-rule="evenodd"/>
+</svg>
+            </button>
+            <div class="mobile-menu hidden"><a href="/About/" class="block rounded-lg py-2 pl-6 pr-3 text-sm font-semibold leading-7 text-dark hover:bg-gray-50 dark:hover:bg-slate-800"><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" aria-hidden="true" data-slot="icon" class="inline-icon mr-2">
+  <path stroke-linecap="round" stroke-linejoin="round" d="M12 18v-5.25m0 0a6.01 6.01 0 0 0 1.5-.189m-1.5.189a6.01 6.01 0 0 1-1.5-.189m3.75 7.478a12.06 12.06 0 0 1-4.5 0m3.75 2.383a14.406 14.406 0 0 1-3 0M14.25 18v-.192c0-.983.658-1.823 1.508-2.316a7.5 7.5 0 1 0-7.517 0c.85.493 1.509 1.333 1.509 2.316V18"/>
+</svg> What is seL4?</a><a href="/use.html" class="block rounded-lg py-2 pl-6 pr-3 text-sm font-semibold leading-7 text-dark hover:bg-gray-50 dark:hover:bg-slate-800"><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" aria-hidden="true" data-slot="icon" class="inline-icon mr-2">
+  <path stroke-linecap="round" stroke-linejoin="round" d="M18 18.72a9.094 9.094 0 0 0 3.741-.479 3 3 0 0 0-4.682-2.72m.94 3.198.001.031c0 .225-.012.447-.037.666A11.944 11.944 0 0 1 12 21c-2.17 0-4.207-.576-5.963-1.584A6.062 6.062 0 0 1 6 18.719m12 0a5.971 5.971 0 0 0-.941-3.197m0 0A5.995 5.995 0 0 0 12 12.75a5.995 5.995 0 0 0-5.058 2.772m0 0a3 3 0 0 0-4.681 2.72 8.986 8.986 0 0 0 3.74.477m.94-3.197a5.971 5.971 0 0 0-.94 3.197M15 6.75a3 3 0 1 1-6 0 3 3 0 0 1 6 0Zm6 3a2.25 2.25 0 1 1-4.5 0 2.25 2.25 0 0 1 4.5 0Zm-13.5 0a2.25 2.25 0 1 1-4.5 0 2.25 2.25 0 0 1 4.5 0Z"/>
+</svg> Who is using seL4?</a><a href="/Verification/" class="block rounded-lg py-2 pl-6 pr-3 text-sm font-semibold leading-7 text-dark hover:bg-gray-50 dark:hover:bg-slate-800"><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" aria-hidden="true" data-slot="icon" class="inline-icon mr-2">
+  <path stroke-linecap="round" stroke-linejoin="round" d="M9 12.75 11.25 15 15 9.75M21 12a9 9 0 1 1-18 0 9 9 0 0 1 18 0Z"/>
+</svg> Verification</a><a href="/roadmap.html" class="block rounded-lg py-2 pl-6 pr-3 text-sm font-semibold leading-7 text-dark hover:bg-gray-50 dark:hover:bg-slate-800"><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" aria-hidden="true" data-slot="icon" class="inline-icon mr-2">
+  <path stroke-linecap="round" stroke-linejoin="round" d="M2.25 18 9 11.25l4.306 4.306a11.95 11.95 0 0 1 5.814-5.518l2.74-1.22m0 0-5.94-2.281m5.94 2.28-2.28 5.941"/>
+</svg> Roadmap</a><a href="/performance.html" class="block rounded-lg py-2 pl-6 pr-3 text-sm font-semibold leading-7 text-dark hover:bg-gray-50 dark:hover:bg-slate-800"><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" aria-hidden="true" data-slot="icon" class="inline-icon mr-2">
+  <path stroke-linecap="round" stroke-linejoin="round" d="m3.75 13.5 10.5-11.25L12 10.5h8.25L9.75 21.75 12 13.5H3.75Z"/>
+</svg> Performance</a><a href="/Legal/" class="block rounded-lg py-2 pl-6 pr-3 text-sm font-semibold leading-7 text-dark hover:bg-gray-50 dark:hover:bg-slate-800"><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" aria-hidden="true" data-slot="icon" class="inline-icon mr-2">
+  <path stroke-linecap="round" stroke-linejoin="round" d="M12 3v17.25m0 0c-1.472 0-2.882.265-4.185.75M12 20.25c1.472 0 2.882.265 4.185.75M18.75 4.97A48.416 48.416 0 0 0 12 4.5c-2.291 0-4.545.16-6.75.47m13.5 0c1.01.143 2.01.317 3 .52m-3-.52 2.62 10.726c.122.499-.106 1.028-.589 1.202a5.988 5.988 0 0 1-2.031.352 5.988 5.988 0 0 1-2.031-.352c-.483-.174-.711-.703-.59-1.202L18.75 4.971Zm-16.5.52c.99-.203 1.99-.377 3-.52m0 0 2.62 10.726c.122.499-.106 1.028-.589 1.202a5.989 5.989 0 0 1-2.031.352 5.989 5.989 0 0 1-2.031-.352c-.483-.174-.711-.703-.59-1.202L5.25 4.971Z"/>
+</svg> License, Trademark &amp; Logo</a><a href="/platforms.html" class="block rounded-lg py-2 pl-6 pr-3 text-sm font-semibold leading-7 text-dark hover:bg-gray-50 dark:hover:bg-slate-800"><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" aria-hidden="true" data-slot="icon" class="inline-icon mr-2">
+  <path stroke-linecap="round" stroke-linejoin="round" d="M8.25 3v1.5M4.5 8.25H3m18 0h-1.5M4.5 12H3m18 0h-1.5m-15 3.75H3m18 0h-1.5M8.25 19.5V21M12 3v1.5m0 15V21m3.75-18v1.5m0 15V21m-9-1.5h10.5a2.25 2.25 0 0 0 2.25-2.25V6.75a2.25 2.25 0 0 0-2.25-2.25H6.75A2.25 2.25 0 0 0 4.5 6.75v10.5a2.25 2.25 0 0 0 2.25 2.25Zm.75-12h9v9h-9v-9Z"/>
+</svg> Platform Support Overview</a><a href="/Research/" class="block rounded-lg py-2 pl-6 pr-3 text-sm font-semibold leading-7 text-dark hover:bg-gray-50 dark:hover:bg-slate-800"><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" aria-hidden="true" data-slot="icon" class="inline-icon mr-2">
+  <path stroke-linecap="round" stroke-linejoin="round" d="M4.26 10.147a60.438 60.438 0 0 0-.491 6.347A48.62 48.62 0 0 1 12 20.904a48.62 48.62 0 0 1 8.232-4.41 60.46 60.46 0 0 0-.491-6.347m-15.482 0a50.636 50.636 0 0 0-2.658-.813A59.906 59.906 0 0 1 12 3.493a59.903 59.903 0 0 1 10.399 5.84c-.896.248-1.783.52-2.658.814m-15.482 0A50.717 50.717 0 0 1 12 13.489a50.702 50.702 0 0 1 7.74-3.342M6.75 15a.75.75 0 1 0 0-1.5.75.75 0 0 0 0 1.5Zm0 0v-3.675A55.378 55.378 0 0 1 12 8.443m-7.007 11.55A5.981 5.981 0 0 0 6.75 15.75v-1.5"/>
+</svg> Research</a><a href="/tools.html" class="block rounded-lg py-2 pl-6 pr-3 text-sm font-semibold leading-7 text-dark hover:bg-gray-50 dark:hover:bg-slate-800"><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" aria-hidden="true" data-slot="icon" class="inline-icon mr-2">
+  <path stroke-linecap="round" stroke-linejoin="round" d="M13.5 16.875h3.375m0 0h3.375m-3.375 0V13.5m0 3.375v3.375M6 10.5h2.25a2.25 2.25 0 0 0 2.25-2.25V6a2.25 2.25 0 0 0-2.25-2.25H6A2.25 2.25 0 0 0 3.75 6v2.25A2.25 2.25 0 0 0 6 10.5Zm0 9.75h2.25A2.25 2.25 0 0 0 10.5 18v-2.25a2.25 2.25 0 0 0-2.25-2.25H6a2.25 2.25 0 0 0-2.25 2.25V18A2.25 2.25 0 0 0 6 20.25Zm9.75-9.75H18a2.25 2.25 0 0 0 2.25-2.25V6A2.25 2.25 0 0 0 18 3.75h-2.25A2.25 2.25 0 0 0 13.5 6v2.25a2.25 2.25 0 0 0 2.25 2.25Z"/>
+</svg> Frameworks &amp; Languages</a><a href="/Foundation/" class="block rounded-lg py-2 pl-6 pr-3 text-sm font-semibold leading-7 text-dark hover:bg-gray-50 dark:hover:bg-slate-800"><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" aria-hidden="true" data-slot="icon" class="inline-icon mr-2">
+  <path stroke-linecap="round" stroke-linejoin="round" d="M12 21v-8.25M15.75 21v-8.25M8.25 21v-8.25M3 9l9-6 9 6m-1.5 12V10.332A48.36 48.36 0 0 0 12 9.75c-2.551 0-5.056.2-7.5.582V21M3 21h18M12 6.75h.008v.008H12V6.75Z"/>
+</svg> seL4 Foundation</a><a href="/Learn/" class="block rounded-lg py-2 pl-6 pr-3 text-sm font-semibold leading-7 text-dark hover:bg-gray-50 dark:hover:bg-slate-800"><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" aria-hidden="true" data-slot="icon" class="inline-icon mr-2">
+  <path stroke-linecap="round" stroke-linejoin="round" d="M12 6.042A8.967 8.967 0 0 0 6 3.75c-1.052 0-2.062.18-3 .512v14.25A8.987 8.987 0 0 1 6 18c2.305 0 4.408.867 6 2.292m0-14.25a8.966 8.966 0 0 1 6-2.292c1.052 0 2.062.18 3 .512v14.25A8.987 8.987 0 0 0 18 18a8.967 8.967 0 0 0-6 2.292m0-14.25v14.25"/>
+</svg> Manual &amp; Documentation</a><a href="/About/FAQ.html" class="block rounded-lg py-2 pl-6 pr-3 text-sm font-semibold leading-7 text-dark hover:bg-gray-50 dark:hover:bg-slate-800"><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" aria-hidden="true" data-slot="icon" class="inline-icon mr-2">
+  <path stroke-linecap="round" stroke-linejoin="round" d="M9.879 7.519c1.171-1.025 3.071-1.025 4.242 0 1.172 1.025 1.172 2.687 0 3.712-.203.179-.43.326-.67.442-.745.361-1.45.999-1.45 1.827v.75M21 12a9 9 0 1 1-18 0 9 9 0 0 1 18 0Zm-9 5.25h.008v.008H12v-.008Z"/>
+</svg> FAQ</a></div><button type="button" class="dropbtn-mobile" aria-expanded="false">
+              Contribute
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true" data-slot="icon" class="h-5 w-5 flex-none">
+  <path fill-rule="evenodd" d="M5.22 8.22a.75.75 0 0 1 1.06 0L10 11.94l3.72-3.72a.75.75 0 1 1 1.06 1.06l-4.25 4.25a.75.75 0 0 1-1.06 0L5.22 9.28a.75.75 0 0 1 0-1.06Z" clip-rule="evenodd"/>
+</svg>
+            </button>
+            <div class="mobile-menu hidden"><a href="/Contribute/" class="block rounded-lg py-2 pl-6 pr-3 text-sm font-semibold leading-7 text-dark hover:bg-gray-50 dark:hover:bg-slate-800"><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" aria-hidden="true" data-slot="icon" class="inline-icon mr-2">
+  <path stroke-linecap="round" stroke-linejoin="round" d="M16.023 9.348h4.992v-.001M2.985 19.644v-4.992m0 0h4.992m-4.993 0 3.181 3.183a8.25 8.25 0 0 0 13.803-3.7M4.031 9.865a8.25 8.25 0 0 1 13.803-3.7l3.181 3.182m0-4.991v4.99"/>
+</svg> Contribution Guidelines</a><a href="/Contribute/conduct.html" class="block rounded-lg py-2 pl-6 pr-3 text-sm font-semibold leading-7 text-dark hover:bg-gray-50 dark:hover:bg-slate-800"><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" aria-hidden="true" data-slot="icon" class="inline-icon mr-2">
+  <path stroke-linecap="round" stroke-linejoin="round" d="M9 12.75 11.25 15 15 9.75m-3-7.036A11.959 11.959 0 0 1 3.598 6 11.99 11.99 0 0 0 3 9.749c0 5.592 3.824 10.29 9 11.623 5.176-1.332 9-6.03 9-11.622 0-1.31-.21-2.571-.598-3.751h-.152c-3.196 0-6.1-1.248-8.25-3.285Z"/>
+</svg> Code of Conduct</a><a href="/Contribute/conventions.html" class="block rounded-lg py-2 pl-6 pr-3 text-sm font-semibold leading-7 text-dark hover:bg-gray-50 dark:hover:bg-slate-800"><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" aria-hidden="true" data-slot="icon" class="inline-icon mr-2">
+  <path stroke-linecap="round" stroke-linejoin="round" d="m6.75 7.5 3 2.25-3 2.25m4.5 0h3m-9 8.25h13.5A2.25 2.25 0 0 0 21 18V6a2.25 2.25 0 0 0-2.25-2.25H5.25A2.25 2.25 0 0 0 3 6v12a2.25 2.25 0 0 0 2.25 2.25Z"/>
+</svg> Coding Conventions &amp; Requirements</a><a href="/Contribute/rfc-process.html" class="block rounded-lg py-2 pl-6 pr-3 text-sm font-semibold leading-7 text-dark hover:bg-gray-50 dark:hover:bg-slate-800"><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" aria-hidden="true" data-slot="icon" class="inline-icon mr-2">
+  <path stroke-linecap="round" stroke-linejoin="round" d="M20.25 8.511c.884.284 1.5 1.128 1.5 2.097v4.286c0 1.136-.847 2.1-1.98 2.193-.34.027-.68.052-1.02.072v3.091l-3-3c-1.354 0-2.694-.055-4.02-.163a2.115 2.115 0 0 1-.825-.242m9.345-8.334a2.126 2.126 0 0 0-.476-.095 48.64 48.64 0 0 0-8.048 0c-1.131.094-1.976 1.057-1.976 2.192v4.286c0 .837.46 1.58 1.155 1.951m9.345-8.334V6.637c0-1.621-1.152-3.026-2.76-3.235A48.455 48.455 0 0 0 11.25 3c-2.115 0-4.198.137-6.24.402-1.608.209-2.76 1.614-2.76 3.235v6.226c0 1.621 1.152 3.026 2.76 3.235.577.075 1.157.14 1.74.194V21l4.155-4.155"/>
+</svg> RFC Process</a><a href="/Contribute/platform-ports.html" class="block rounded-lg py-2 pl-6 pr-3 text-sm font-semibold leading-7 text-dark hover:bg-gray-50 dark:hover:bg-slate-800"><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" aria-hidden="true" data-slot="icon" class="inline-icon mr-2">
+  <path stroke-linecap="round" stroke-linejoin="round" d="M11.42 15.17 17.25 21A2.652 2.652 0 0 0 21 17.25l-5.877-5.877M11.42 15.17l2.496-3.03c.317-.384.74-.626 1.208-.766M11.42 15.17l-4.655 5.653a2.548 2.548 0 1 1-3.586-3.586l6.837-5.63m5.108-.233c.55-.164 1.163-.188 1.743-.14a4.5 4.5 0 0 0 4.486-6.336l-3.276 3.277a3.004 3.004 0 0 1-2.25-2.25l3.276-3.276a4.5 4.5 0 0 0-6.336 4.486c.091 1.076-.071 2.264-.904 2.95l-.102.085m-1.745 1.437L5.909 7.5H4.5L2.25 3.75l1.5-1.5L7.5 4.5v1.409l4.26 4.26m-1.745 1.437 1.745-1.437m6.615 8.206L15.75 15.75M4.867 19.125h.008v.008h-.008v-.008Z"/>
+</svg> Platform Contributions</a><a href="/Contribute/roles.html" class="block rounded-lg py-2 pl-6 pr-3 text-sm font-semibold leading-7 text-dark hover:bg-gray-50 dark:hover:bg-slate-800"><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" aria-hidden="true" data-slot="icon" class="inline-icon mr-2">
+  <path stroke-linecap="round" stroke-linejoin="round" d="M15 19.128a9.38 9.38 0 0 0 2.625.372 9.337 9.337 0 0 0 4.121-.952 4.125 4.125 0 0 0-7.533-2.493M15 19.128v-.003c0-1.113-.285-2.16-.786-3.07M15 19.128v.106A12.318 12.318 0 0 1 8.624 21c-2.331 0-4.512-.645-6.374-1.766l-.001-.109a6.375 6.375 0 0 1 11.964-3.07M12 6.375a3.375 3.375 0 1 1-6.75 0 3.375 3.375 0 0 1 6.75 0Zm8.25 2.25a2.625 2.625 0 1 1-5.25 0 2.625 2.625 0 0 1 5.25 0Z"/>
+</svg> Development Roles</a></div><button type="button" class="dropbtn-mobile" aria-expanded="false">
+              News &amp; Events
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true" data-slot="icon" class="h-5 w-5 flex-none">
+  <path fill-rule="evenodd" d="M5.22 8.22a.75.75 0 0 1 1.06 0L10 11.94l3.72-3.72a.75.75 0 1 1 1.06 1.06l-4.25 4.25a.75.75 0 0 1-1.06 0L5.22 9.28a.75.75 0 0 1 0-1.06Z" clip-rule="evenodd"/>
+</svg>
+            </button>
+            <div class="mobile-menu hidden"><a href="/news/" class="block rounded-lg py-2 pl-6 pr-3 text-sm font-semibold leading-7 text-dark hover:bg-gray-50 dark:hover:bg-slate-800"><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" aria-hidden="true" data-slot="icon" class="inline-icon mr-2">
+  <path stroke-linecap="round" stroke-linejoin="round" d="M10.34 15.84c-.688-.06-1.386-.09-2.09-.09H7.5a4.5 4.5 0 1 1 0-9h.75c.704 0 1.402-.03 2.09-.09m0 9.18c.253.962.584 1.892.985 2.783.247.55.06 1.21-.463 1.511l-.657.38c-.551.318-1.26.117-1.527-.461a20.845 20.845 0 0 1-1.44-4.282m3.102.069a18.03 18.03 0 0 1-.59-4.59c0-1.586.205-3.124.59-4.59m0 9.18a23.848 23.848 0 0 1 8.835 2.535M10.34 6.66a23.847 23.847 0 0 0 8.835-2.535m0 0A23.74 23.74 0 0 0 18.795 3m.38 1.125a23.91 23.91 0 0 1 1.014 5.395m-1.014 8.855c-.118.38-.245.754-.38 1.125m.38-1.125a23.91 23.91 0 0 0 1.014-5.395m0-3.46c.495.413.811 1.035.811 1.73 0 .695-.316 1.317-.811 1.73m0-3.46a24.347 24.347 0 0 1 0 3.46"/>
+</svg> News</a><a href="/Summit/2025/" class="block rounded-lg py-2 pl-6 pr-3 text-sm font-semibold leading-7 text-dark hover:bg-gray-50 dark:hover:bg-slate-800"><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" aria-hidden="true" data-slot="icon" class="inline-icon mr-2">
+  <path stroke-linecap="round" stroke-linejoin="round" d="M18 18.72a9.094 9.094 0 0 0 3.741-.479 3 3 0 0 0-4.682-2.72m.94 3.198.001.031c0 .225-.012.447-.037.666A11.944 11.944 0 0 1 12 21c-2.17 0-4.207-.576-5.963-1.584A6.062 6.062 0 0 1 6 18.719m12 0a5.971 5.971 0 0 0-.941-3.197m0 0A5.995 5.995 0 0 0 12 12.75a5.995 5.995 0 0 0-5.058 2.772m0 0a3 3 0 0 0-4.681 2.72 8.986 8.986 0 0 0 3.74.477m.94-3.197a5.971 5.971 0 0 0-.94 3.197M15 6.75a3 3 0 1 1-6 0 3 3 0 0 1 6 0Zm6 3a2.25 2.25 0 1 1-4.5 0 2.25 2.25 0 0 1 4.5 0Zm-13.5 0a2.25 2.25 0 1 1-4.5 0 2.25 2.25 0 0 1 4.5 0Z"/>
+</svg> seL4 Summit 2025</a><a href="/Summit/" class="block rounded-lg py-2 pl-6 pr-3 text-sm font-semibold leading-7 text-dark hover:bg-gray-50 dark:hover:bg-slate-800"><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" aria-hidden="true" data-slot="icon" class="inline-icon mr-2">
+  <path stroke-linecap="round" stroke-linejoin="round" d="M21 16.811c0 .864-.933 1.406-1.683.977l-7.108-4.061a1.125 1.125 0 0 1 0-1.954l7.108-4.061A1.125 1.125 0 0 1 21 8.689v8.122ZM11.25 16.811c0 .864-.933 1.406-1.683.977l-7.108-4.061a1.125 1.125 0 0 1 0-1.954l7.108-4.061a1.125 1.125 0 0 1 1.683.977v8.122Z"/>
+</svg> Previous seL4 Summits</a><a href="/stay-informed.html" class="block rounded-lg py-2 pl-6 pr-3 text-sm font-semibold leading-7 text-dark hover:bg-gray-50 dark:hover:bg-slate-800"><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" aria-hidden="true" data-slot="icon" class="inline-icon mr-2">
+  <path stroke-linecap="round" stroke-linejoin="round" d="M21.75 6.75v10.5a2.25 2.25 0 0 1-2.25 2.25h-15a2.25 2.25 0 0 1-2.25-2.25V6.75m19.5 0A2.25 2.25 0 0 0 19.5 4.5h-15a2.25 2.25 0 0 0-2.25 2.25m19.5 0v.243a2.25 2.25 0 0 1-1.07 1.916l-7.5 4.615a2.25 2.25 0 0 1-2.36 0L3.32 8.91a2.25 2.25 0 0 1-1.07-1.916V6.75"/>
+</svg> Stay Informed</a></div><button type="button" class="dropbtn-mobile" aria-expanded="false">
+              Contact &amp; Support
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true" data-slot="icon" class="h-5 w-5 flex-none">
+  <path fill-rule="evenodd" d="M5.22 8.22a.75.75 0 0 1 1.06 0L10 11.94l3.72-3.72a.75.75 0 1 1 1.06 1.06l-4.25 4.25a.75.75 0 0 1-1.06 0L5.22 9.28a.75.75 0 0 1 0-1.06Z" clip-rule="evenodd"/>
+</svg>
+            </button>
+            <div class="mobile-menu hidden"><a href="/Services/" class="block rounded-lg py-2 pl-6 pr-3 text-sm font-semibold leading-7 text-dark hover:bg-gray-50 dark:hover:bg-slate-800"><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" aria-hidden="true" data-slot="icon" class="inline-icon mr-2">
+  <path stroke-linecap="round" stroke-linejoin="round" d="M15.59 14.37a6 6 0 0 1-5.84 7.38v-4.8m5.84-2.58a14.98 14.98 0 0 0 6.16-12.12A14.98 14.98 0 0 0 9.631 8.41m5.96 5.96a14.926 14.926 0 0 1-5.841 2.58m-.119-8.54a6 6 0 0 0-7.381 5.84h4.8m2.581-5.84a14.927 14.927 0 0 0-2.58 5.84m2.699 2.7c-.103.021-.207.041-.311.06a15.09 15.09 0 0 1-2.448-2.448 14.9 14.9 0 0 1 .06-.312m-2.24 2.39a4.493 4.493 0 0 0-1.757 4.306 4.493 4.493 0 0 0 4.306-1.758M16.5 9a1.5 1.5 0 1 1-3 0 1.5 1.5 0 0 1 3 0Z"/>
+</svg> Commercial Support</a><a href="/support.html" class="block rounded-lg py-2 pl-6 pr-3 text-sm font-semibold leading-7 text-dark hover:bg-gray-50 dark:hover:bg-slate-800"><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" aria-hidden="true" data-slot="icon" class="inline-icon mr-2">
+  <path stroke-linecap="round" stroke-linejoin="round" d="M16.712 4.33a9.027 9.027 0 0 1 1.652 1.306c.51.51.944 1.064 1.306 1.652M16.712 4.33l-3.448 4.138m3.448-4.138a9.014 9.014 0 0 0-9.424 0M19.67 7.288l-4.138 3.448m4.138-3.448a9.014 9.014 0 0 1 0 9.424m-4.138-5.976a3.736 3.736 0 0 0-.88-1.388 3.737 3.737 0 0 0-1.388-.88m2.268 2.268a3.765 3.765 0 0 1 0 2.528m-2.268-4.796a3.765 3.765 0 0 0-2.528 0m4.796 4.796c-.181.506-.475.982-.88 1.388a3.736 3.736 0 0 1-1.388.88m2.268-2.268 4.138 3.448m0 0a9.027 9.027 0 0 1-1.306 1.652c-.51.51-1.064.944-1.652 1.306m0 0-3.448-4.138m3.448 4.138a9.014 9.014 0 0 1-9.424 0m5.976-4.138a3.765 3.765 0 0 1-2.528 0m0 0a3.736 3.736 0 0 1-1.388-.88 3.737 3.737 0 0 1-.88-1.388m2.268 2.268L7.288 19.67m0 0a9.024 9.024 0 0 1-1.652-1.306 9.027 9.027 0 0 1-1.306-1.652m0 0 4.138-3.448M4.33 16.712a9.014 9.014 0 0 1 0-9.424m4.138 5.976a3.765 3.765 0 0 1 0-2.528m0 0c.181-.506.475-.982.88-1.388a3.736 3.736 0 0 1 1.388-.88m-2.268 2.268L4.33 7.288m6.406 1.18L7.288 4.33m0 0a9.024 9.024 0 0 0-1.652 1.306A9.025 9.025 0 0 0 4.33 7.288"/>
+</svg> Help &amp; Open Source Support</a><a href="/contact.html" class="block rounded-lg py-2 pl-6 pr-3 text-sm font-semibold leading-7 text-dark hover:bg-gray-50 dark:hover:bg-slate-800"><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" aria-hidden="true" data-slot="icon" class="inline-icon mr-2">
+  <path stroke-linecap="round" stroke-linejoin="round" d="M15.75 6a3.75 3.75 0 1 1-7.5 0 3.75 3.75 0 0 1 7.5 0ZM4.501 20.118a7.5 7.5 0 0 1 14.998 0A17.933 17.933 0 0 1 12 21.75c-2.676 0-5.216-.584-7.499-1.632Z"/>
+</svg> Contact a Person</a></div></div>
+        </div>
+        <div class="py-6">
+          <a href="/Foundation/Join" class="-mx-3 block rounded-lg px-3 py-2.5 text-base font-semibold leading-7 text-dark hover:bg-gray-50 dark:hover:bg-slate-800">Become a Member</a>
+          <a href="https://docs.sel4.systems" class="-mx-3 block rounded-lg px-3 py-2.5 text-base font-semibold leading-7 text-dark hover:bg-gray-50 dark:hover:bg-slate-800">Docsite <svg xmlns="http://www.w3.org/2000/svg" fill="none" aria-hidden="true" viewBox="0 0 24 24" stroke="currentColor" data-slot="icon" class="ml-1 inline-icon">
+  <path stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" d="M13.5 6H5.25A2.25 2.25 0 0 0 3 8.25v10.5A2.25 2.25 0 0 0 5.25 21h10.5A2.25 2.25 0 0 0 18 18.75V10.5m-10.5 6L21 3m0 0h-5.25M21 3v5.25"/>
+</svg></a>
+        </div>
+      </div>
+    </div>
+  </div>
+ </div>
+</header>
+    <div class="flex-1 overflow-y-auto">
+      <main id="page-top">
+<!-- background gradients at top and bottom -->
+<div class="relative max-w-7xl py-12 px-6 sm:px-12 mx-auto card-layout ">
+  
+  <div class="absolute inset-x-0 -top-40 -z-10 transform-gpu overflow-hidden blur-3xl sm:-top-[25rem]" aria-hidden="true">
+    <div class="relative left-[calc(50%-11rem)] aspect-1155/678 w-[36.125rem] translate-x-1/2 rotate-[20deg] bg-linear-to-tr from-[#adf676] to-[#44fa9c] opacity-30 sm:left-[calc(50%-30rem)] sm:w-[72.1875rem]" style="clip-path: polygon(74.1% 44.1%, 100% 61.6%, 97.5% 26.9%, 85.5% 0.1%, 80.7% 2%, 72.5% 32.5%, 60.2% 62.4%, 52.4% 68.1%, 47.5% 58.3%, 45.2% 34.5%, 27.5% 76.7%, 0.1% 64.9%, 17.9% 100%, 27.6% 76.8%, 76.1% 97.7%, 74.1% 44.1%)"></div>
+  </div>
+  <div class="absolute inset-x-0 bottom-0 -z-10 transform-gpu overflow-hidden blur-3xl" aria-hidden="true">
+    <div class="relative left-[calc(50%-11rem)] aspect-1155/678 w-[36.125rem] -translate-x-1/2 rotate-[30deg] bg-linear-to-tr from-[#adf676] to-[#8c92ff] opacity-30 sm:left-[calc(50%-30rem)] sm:w-[72.1875rem]" style="clip-path: polygon(74.1% 44.1%, 100% 61.6%, 97.5% 26.9%, 85.5% 0.1%, 80.7% 2%, 72.5% 32.5%, 60.2% 62.4%, 52.4% 68.1%, 47.5% 58.3%, 45.2% 34.5%, 27.5% 76.7%, 0.1% 64.9%, 17.9% 100%, 27.6% 76.8%, 76.1% 97.7%, 74.1% 44.1%)"></div>
+  </div>
+  
+  
+    
+    
+<div class="px-6 lg:px-8 pt-6 sm:pt-8 pb-12 sm:pb-20 section-borders">
+  <div class="mx-auto max-w-4xl text-center">
+    <div class="text-center text-lg font-semibold leading-7 text-f_green-600 dark:text-f_green-400">
+      <a href="../2024/program.html" class="hover:underline">
+      seL4 Summit 2024 Program
+      
+      <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" aria-hidden="true" data-slot="icon" class="inline-icon -mt-2">
+  <path stroke-linecap="round" stroke-linejoin="round" d="M9 15 3 9m0 0 6-6M3 9h12a6 6 0 0 1 0 12h-3"/>
+</svg>
+      </a>
+      
+    </div>
+    <h1 class="text-center font-bold tracking-tight text-darkcol dark:text-darkcol_inv text-3xl sm:text-5xl">seL4 Summit 2024 Abstracts</h1>
+    <div class="mt-6 text-center text-base md:text-lg text-lightcol dark:text-lightcol_inv leading-6 md:leading-7 a-underline">
+       <p> The seL4 Summit 2024 features a combination of technical research and development, real-world seL4 deployment insights, in-depth interactive discussions, thought-provoking keynotes, panel discussions, as well as informal a training day and social activities. Videos are available on the <a href="https://www.youtube.com/@seL4">seL4 YouTube channel</a>. </p>
+      
+      
+    </div>
+    
+  </div>
+</div>
+
+  
+  <div id="a-inspecta" class="py-12 mb-5 section-max-w sm:py-16">
+  <div class="mx-auto px-2 sm:px-6 lg:px-8">
+    <div class="mx-auto lg:mx-0">
+      <h2 class="text-xl font-bold tracking-tight text-dark mb-6 sm:text-4xl">Industrial Scale Proof Engineering for Critical Trustworthy Applications (INSPECTA)</h2>
+      <p>
+        <span class="text-gray-800 dark:text-gray-300">Darren Cofer</span>
+        <br>
+        <span class="text-light">Collins Aerospace</span>
+      </p>
+      <article class="theprose -mt-10">
+        <div class="pt-5">
+          <p>
+Formal methods have been successfully deployed at scale in production environments at large internet
+companies, but barriers remain to their adoption by defense companies developing national security
+systems. The goal of the INSPECTA project (part of the DARPA PROVERS program which has just started
+in 2024) is to improve the security of defense and aerospace systems by dramatically improving the
+usability, flexibility, and accessibility of formal methods-based development and verification tools. We
+will leverage memory-safe programming languages (Rust), a provably secure microkernel (seL4), and new
+formal methods tools and make them accessible to the defense industry workforce. These open source
+technologies will be integrated into an aerospace CertDevOps workflow automation processes and
+applied to the development of mission critical systems to demonstrate their usability, practicality, and
+eﬀectiveness. We will demonstrate the tools and workflow by addressing emerging security
+requirements for the Air Launched Eﬀects (ALE) mission computing platform. This will include re-
+architecting the mission sotfware as a collection of virtual machines running legacy code and selected
+high-criticality components, producing an architecture model for the system, porting selected software
+to Rust, building software to run on seL4, and verifying critical safety and security properties. This
+presentation will provide an overview of the PROVERS program objectives, the INSPECTA workflow to be
+developed, and the assurance evidence to be produced.
+</p>
+
+        </div>
+      </article>
+      <div class="flex flex-row gap-x-2 pt-2">
+        
+          <div class="p-2 pb-1">
+            <a href="https://youtu.be/9K22dUeyXm8?si=NvXW3see-AKKVuS1" target="_blank"><img
+      src="/images/icons/youtube_nobckgnd.svg" width="30" alt="YouTube icon"></a>
+          </div>
+        
+        
+          <div class="p-1 mt-2">
+            <a href="slides/inspecta.pdf" class="text-sm text-light underline">Slides</a>
+          </div>
+        
+        <div>
+          <p class="p-1 mt-2">
+          <a href="program.html#p-inspecta" class="text-sm text-light underline">See this talk in the program</a>
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="flex w-full mb-6">
+  <div class="flex-1"></div>
+  <hr class="w-10 h-px bg-gray-200 border-0 dark:bg-gray-600">
+  
+<a href="#page-top" class="relative -mt-3.5 mx-4">
+  <div class="dark:bg-slate-900 hover:bg-slate-100 dark:hover:bg-slate-800 p-1.5 h-7 w-7 rounded-full shadow-xs left-1">
+    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" aria-hidden="true" data-slot="icon" class="h-4 w-4 text-slate-400 dark:text-slate-500">
+  <path stroke-linecap="round" stroke-linejoin="round" d="M12 19.5v-15m0 0-6.75 6.75M12 4.5l6.75 6.75"/>
+</svg>
+  </div>
+</a>
+
+  <hr class="w-10 h-px bg-gray-200 border-0 dark:bg-gray-600">
+  <div class="flex-1"></div>
+</div>
+
+
+
+
+  <div id="a-sel4-verification" class="py-12 mb-5 section-max-w sm:py-16">
+  <div class="mx-auto px-2 sm:px-6 lg:px-8">
+    <div class="mx-auto lg:mx-0">
+      <h2 class="text-xl font-bold tracking-tight text-dark mb-6 sm:text-4xl">seL4 Verification: Status and Plans</h2>
+      <p>
+        <span class="text-gray-800 dark:text-gray-300">Gerwin Klein, June Andronick, Rafal Kolanski, Corey Lewis, Michael McInerney</span>
+        <br>
+        <span class="text-light">Proofcraft</span>
+      </p>
+      <article class="theprose -mt-10">
+        <div class="pt-5">
+          <p>
+    In this talk we will give an overview of Proofcraft's recent milestones, as well as ongoing and future plans for the formal verification of seL4 to support more platforms, architectures, configurations, and features.
+</p>
+<p>
+    In particular, we will report on the completion of the functional correctness proof of seL4 on AArch64. AArch64 is now on par with Arm 32-bit, RISC-V 64-bit and Intel x86 64-bit with respect to functional correctness, the strongest assurance that can be given about the correctness of software. Functional correctness is also the cornerstone of even stronger overall assurance, such as the security properties of integrity and confidentiality, which are next inseL4's AArch64 verification roadmap.
+</p>
+<p>
+    We will further report on where the verification of the seL4 extensions for mixed-criticality systems (MCS) is at, and share our plans for DARPA's PROVERS program where, as part of the INSPECTA team, we are aiming at increasing verification automation and scope while reducing the reliance on formal methods experts.
+</p>
+
+        </div>
+      </article>
+      <div class="flex flex-row gap-x-2 pt-2">
+        
+          <div class="p-2 pb-1">
+            <a href="https://youtu.be/2lFYm7cjMpQ?si=es3uWoBy9ML2XRKJ" target="_blank"><img
+      src="/images/icons/youtube_nobckgnd.svg" width="30" alt="YouTube icon"></a>
+          </div>
+        
+        
+          <div class="p-1 mt-2">
+            <a href="slides/sel4-verification.pdf" class="text-sm text-light underline">Slides</a>
+          </div>
+        
+        <div>
+          <p class="p-1 mt-2">
+          <a href="program.html#p-sel4-verification" class="text-sm text-light underline">See this talk in the program</a>
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="flex w-full mb-6">
+  <div class="flex-1"></div>
+  <hr class="w-10 h-px bg-gray-200 border-0 dark:bg-gray-600">
+  
+<a href="#page-top" class="relative -mt-3.5 mx-4">
+  <div class="dark:bg-slate-900 hover:bg-slate-100 dark:hover:bg-slate-800 p-1.5 h-7 w-7 rounded-full shadow-xs left-1">
+    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" aria-hidden="true" data-slot="icon" class="h-4 w-4 text-slate-400 dark:text-slate-500">
+  <path stroke-linecap="round" stroke-linejoin="round" d="M12 19.5v-15m0 0-6.75 6.75M12 4.5l6.75 6.75"/>
+</svg>
+  </div>
+</a>
+
+  <hr class="w-10 h-px bg-gray-200 border-0 dark:bg-gray-600">
+  <div class="flex-1"></div>
+</div>
+
+
+
+
+  <div id="a-multikernel-roadmap" class="py-12 mb-5 section-max-w sm:py-16">
+  <div class="mx-auto px-2 sm:px-6 lg:px-8">
+    <div class="mx-auto lg:mx-0">
+      <h2 class="text-xl font-bold tracking-tight text-dark mb-6 sm:text-4xl">seL4 multikernel roadmap and concurrency verification</h2>
+      <p>
+        <span class="text-gray-800 dark:text-gray-300">Gerwin Klein, Corey Lewis</span>
+        <br>
+        <span class="text-light">Proofcraft</span>
+      </p>
+      <article class="theprose -mt-10">
+        <div class="pt-5">
+          <p>
+    In this talk we will present Proofcraft's roadmap for producing a verified static multikernel configuration of seL4, allowing the use of multiple CPU cores with one kernel per core. In this roadmap, we are planning to increase formal assurance incrementally, providing a tractable path to multicore verification
+with early usable results for the seL4 community.
+</p>
+<p>
+    Formally proving correctness on a multicore platform requires the ability to model fully concurrent execution, and then prove that any interactions either do not occur or are safe. This requires a new formal model of execution, supporting concurrency reasoning.
+</p>
+<p>
+    We will report on our progress in building such a framework, with the aim to maximise the reuse of existing proofs. We will also present how starting with a static multikernel design is the fastest path to providing the community with an seL4 kernel that allows utilisation of multiple processor cores, opening the path to building multicore seL4-based systems that come with a formal proof of correctness.
+</p>
+
+        </div>
+      </article>
+      <div class="flex flex-row gap-x-2 pt-2">
+        
+          <div class="p-2 pb-1">
+            <a href="https://youtu.be/8JLKtpB1KPM?si=LY6ZDRXleZF5uG7M" target="_blank"><img
+      src="/images/icons/youtube_nobckgnd.svg" width="30" alt="YouTube icon"></a>
+          </div>
+        
+        
+          <div class="p-1 mt-2">
+            <a href="slides/multikernel-roadmap.pdf" class="text-sm text-light underline">Slides</a>
+          </div>
+        
+        <div>
+          <p class="p-1 mt-2">
+          <a href="program.html#p-multikernel-roadmap" class="text-sm text-light underline">See this talk in the program</a>
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="flex w-full mb-6">
+  <div class="flex-1"></div>
+  <hr class="w-10 h-px bg-gray-200 border-0 dark:bg-gray-600">
+  
+<a href="#page-top" class="relative -mt-3.5 mx-4">
+  <div class="dark:bg-slate-900 hover:bg-slate-100 dark:hover:bg-slate-800 p-1.5 h-7 w-7 rounded-full shadow-xs left-1">
+    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" aria-hidden="true" data-slot="icon" class="h-4 w-4 text-slate-400 dark:text-slate-500">
+  <path stroke-linecap="round" stroke-linejoin="round" d="M12 19.5v-15m0 0-6.75 6.75M12 4.5l6.75 6.75"/>
+</svg>
+  </div>
+</a>
+
+  <hr class="w-10 h-px bg-gray-200 border-0 dark:bg-gray-600">
+  <div class="flex-1"></div>
+</div>
+
+
+
+  <div id="a-neutrality" class="py-12 mb-5 section-max-w sm:py-16">
+  <div class="mx-auto px-2 sm:px-6 lg:px-8">
+    <div class="mx-auto lg:mx-0">
+      <h2 class="text-xl font-bold tracking-tight text-dark mb-6 sm:text-4xl">The Neutrality Atoll Hypervisor and the seL4 Multikernel</h2>
+      <p>
+        <span class="text-gray-800 dark:text-gray-300">David Cock, Mathieu Mirmont, Stevens Le Blond</span>
+        <br>
+        <span class="text-light">Neutrality</span>
+      </p>
+      <article class="theprose -mt-10">
+        <div class="pt-5">
+          <p>
+    Neutrality(1) is building the Atoll hypervisor as a high-assurance platform for the secure multitenant virtualisation of workloads which are likely targets of well-resourced attackers. Atoll will use seL4 configured as a multikernel to provide verified isolation between multi-vCPU VMs on datacenter-class hardware containing hundreds of CPU cores, terabytes of main memory, and 100GbE-class self-virtualising (SR-IOV) NICs. This project places seL4 on a wholly new playing field, with orders-of-magnitude increases in hardware performance and the associated scaling challenges, while retaining the full verified assurance of the seL4/ARM stack. In particular, Atoll will provide fully-verified Integrity and Confidentiality between customer VMs, while efficiently handling commercial-scale workloads.
+</p>
+<p>
+    In this talk, we will give an overview of Atoll’s design, and explain how it addresses the challenges unique to this application domain. In particular we will motivate the choice of the multikernel as the ultimate design rather than as a stepping stone on the way to a verified SMP kernel, the benefits and challenges that arise from this choice, and other details of likely interest to others building multi-processor systems on seL4. In particular we will discuss the implications for verification, including on our own verification plan, and where we expect to coordinate with and contribute to the overall seL4 proof roadmap.
+</p>
+<p>
+    (1) https://neutrality.ch/
+</p>
+
+        </div>
+      </article>
+      <div class="flex flex-row gap-x-2 pt-2">
+        
+          <div class="p-2 pb-1">
+            <a href="https://youtu.be/Zw1eeNHZm6Q?si=TkFY384jiyQpbHgA" target="_blank"><img
+      src="/images/icons/youtube_nobckgnd.svg" width="30" alt="YouTube icon"></a>
+          </div>
+        
+        
+        <div>
+          <p class="p-1 mt-2">
+          <a href="program.html#p-neutrality" class="text-sm text-light underline">See this talk in the program</a>
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="flex w-full mb-6">
+  <div class="flex-1"></div>
+  <hr class="w-10 h-px bg-gray-200 border-0 dark:bg-gray-600">
+  
+<a href="#page-top" class="relative -mt-3.5 mx-4">
+  <div class="dark:bg-slate-900 hover:bg-slate-100 dark:hover:bg-slate-800 p-1.5 h-7 w-7 rounded-full shadow-xs left-1">
+    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" aria-hidden="true" data-slot="icon" class="h-4 w-4 text-slate-400 dark:text-slate-500">
+  <path stroke-linecap="round" stroke-linejoin="round" d="M12 19.5v-15m0 0-6.75 6.75M12 4.5l6.75 6.75"/>
+</svg>
+  </div>
+</a>
+
+  <hr class="w-10 h-px bg-gray-200 border-0 dark:bg-gray-600">
+  <div class="flex-1"></div>
+</div>
+
+
+
+
+  <div id="a-lions-os" class="py-12 mb-5 section-max-w sm:py-16">
+  <div class="mx-auto px-2 sm:px-6 lg:px-8">
+    <div class="mx-auto lg:mx-0">
+      <h2 class="text-xl font-bold tracking-tight text-dark mb-6 sm:text-4xl">Lions OS: Secure, fast, adaptable!</h2>
+      <p>
+        <span class="text-gray-800 dark:text-gray-300">Gernot Heiser</span>
+        <br>
+        <span class="text-light">UNSW Sydney</span>
+      </p>
+      <article class="theprose -mt-10">
+        <div class="pt-5">
+          <p>
+    Lions OS is a new, seL4-based, open-source operating systems aimed at the embedded/IoT/cyberphysical space. Based on the Microkit, Lions OS features a static system architecture, i.e. all (potential) components and their (maximum) connectivity are known at system build time. Lions OS is characterised by a highly modular design, driven by the principles of strong separation of concerns and strict adherence to the KISS principle – keep it simple, stupid! The “radical simplicity” design, when done right, enables excellent performance despite the many context switches resulting from the fine-grained modularity. Critically, this modularity, coupled with keeping each module as simple as possible, should enable formal verification of Lions OS.
+</p>
+<p>
+    Taking the KISS principle to the extreme, Lions OS radically departs from the idea of universal policies, adaptable to many different use cases, that characterise most existing OSes. In contrast, Lions OS keeps all policies minimal and specific to the particular use case; it achieves use-case diversity by isolating each policy in an individual module that can be easily rewritten/replaced when a different policy is required.
+</p>
+<p>
+    In the talk I will explain the principles of Lions OS and its design, looking at concrete examples. I will present performance data that show that the approach can work and provide an overview of our current work on verification. This will be complemented by Ivan Velickovic’s talk covering Lions OS from a developer’s point of view, and Rob Sison’s and Courtney Darville’s talks on verifying Lions OS.
+</p>
+
+        </div>
+      </article>
+      <div class="flex flex-row gap-x-2 pt-2">
+        
+          <div class="p-2 pb-1">
+            <a href="https://youtu.be/W8Ka_8kHTj4?si=cLGmYIX8FT80Esb6" target="_blank"><img
+      src="/images/icons/youtube_nobckgnd.svg" width="30" alt="YouTube icon"></a>
+          </div>
+        
+        
+          <div class="p-1 mt-2">
+            <a href="slides/lions-os.pdf" class="text-sm text-light underline">Slides</a>
+          </div>
+        
+        <div>
+          <p class="p-1 mt-2">
+          <a href="program.html#p-lions-os" class="text-sm text-light underline">See this talk in the program</a>
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="flex w-full mb-6">
+  <div class="flex-1"></div>
+  <hr class="w-10 h-px bg-gray-200 border-0 dark:bg-gray-600">
+  
+<a href="#page-top" class="relative -mt-3.5 mx-4">
+  <div class="dark:bg-slate-900 hover:bg-slate-100 dark:hover:bg-slate-800 p-1.5 h-7 w-7 rounded-full shadow-xs left-1">
+    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" aria-hidden="true" data-slot="icon" class="h-4 w-4 text-slate-400 dark:text-slate-500">
+  <path stroke-linecap="round" stroke-linejoin="round" d="M12 19.5v-15m0 0-6.75 6.75M12 4.5l6.75 6.75"/>
+</svg>
+  </div>
+</a>
+
+  <hr class="w-10 h-px bg-gray-200 border-0 dark:bg-gray-600">
+  <div class="flex-1"></div>
+</div>
+
+
+
+
+  <div id="a-lions-os-practise" class="py-12 mb-5 section-max-w sm:py-16">
+  <div class="mx-auto px-2 sm:px-6 lg:px-8">
+    <div class="mx-auto lg:mx-0">
+      <h2 class="text-xl font-bold tracking-tight text-dark mb-6 sm:text-4xl">In and Around Lions OS</h2>
+      <p>
+        <span class="text-gray-800 dark:text-gray-300">Ivan Velickovic</span>
+        <br>
+        <span class="text-light">UNSW Sydney</span>
+      </p>
+      <article class="theprose -mt-10">
+        <div class="pt-5">
+          <p>
+    LionsOS is a new Operating Systems developed at Trustworthy Systems aimed at embedded, IoT, and cyberphysical systems. LionsOS is based on the seL4 Microkit and is desgined to formally verifiable, performant, and adaptable to a wide class of use-cases.
+</p>
+<p>
+    Gernot's talk will discuss the principles and design of LionsOS, while this talk will be focused on aspects of LionsOS from a developer's perspective.
+</p>
+<p>
+    We will dive into what it is like to use LionsOS by showcasing the tooling and surrounding infrastructure that has been created for developing a LionsOS-based system. This will cover topics such as I/O, virtualisation, debugging, profiling, as well as how to put all these pieces together.
+</p>
+
+        </div>
+      </article>
+      <div class="flex flex-row gap-x-2 pt-2">
+        
+          <div class="p-2 pb-1">
+            <a href="https://youtu.be/loPlocTZEp0?si=0NC3iZVvm9bdLdEW" target="_blank"><img
+      src="/images/icons/youtube_nobckgnd.svg" width="30" alt="YouTube icon"></a>
+          </div>
+        
+        
+          <div class="p-1 mt-2">
+            <a href="slides/lions-os-practise.pdf" class="text-sm text-light underline">Slides</a>
+          </div>
+        
+        <div>
+          <p class="p-1 mt-2">
+          <a href="program.html#p-lions-os-practise" class="text-sm text-light underline">See this talk in the program</a>
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="flex w-full mb-6">
+  <div class="flex-1"></div>
+  <hr class="w-10 h-px bg-gray-200 border-0 dark:bg-gray-600">
+  
+<a href="#page-top" class="relative -mt-3.5 mx-4">
+  <div class="dark:bg-slate-900 hover:bg-slate-100 dark:hover:bg-slate-800 p-1.5 h-7 w-7 rounded-full shadow-xs left-1">
+    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" aria-hidden="true" data-slot="icon" class="h-4 w-4 text-slate-400 dark:text-slate-500">
+  <path stroke-linecap="round" stroke-linejoin="round" d="M12 19.5v-15m0 0-6.75 6.75M12 4.5l6.75 6.75"/>
+</svg>
+  </div>
+</a>
+
+  <hr class="w-10 h-px bg-gray-200 border-0 dark:bg-gray-600">
+  <div class="flex-1"></div>
+</div>
+
+
+
+
+  <div id="a-secure-multiserver" class="py-12 mb-5 section-max-w sm:py-16">
+  <div class="mx-auto px-2 sm:px-6 lg:px-8">
+    <div class="mx-auto lg:mx-0">
+      <h2 class="text-xl font-bold tracking-tight text-dark mb-6 sm:text-4xl">The Secure Multiserver Operating System Framework</h2>
+      <p>
+        <span class="text-gray-800 dark:text-gray-300">Alwin Joshy, Kevin Elphinstone, Gernot Heiser, Craig McLaughlin</span>
+        <br>
+        <span class="text-light">UNSW Sydney</span>
+      </p>
+      <article class="theprose -mt-10">
+        <div class="pt-5">
+          <p>
+    Several frameworks, such as CAmkES and the seL4 Microkit, have been built on top of seL4 to enable the development of performant and provably secure operating systems. Most of these have static architectures and use system descriptions that define a complete system including all components and the resources they can access. The system specification is then passed to tools like CapDL, which generate the described system with the correct capability distribution. An important attribute of frameworks like CAmkES and Microkit is that they do not allow this initial distribution to evolve, preventing the runtime transmission of capabilities within an initialized system. This makes them well-suited for static analysis and verification, but comes with the caveat that some behaviours become more difficult or even impossible to represent. In particular, static frameworks are unsuitable for dynamic systems that adhere to complex security policies, especially ones that depend on runtime behaviour, or require functionality such as the ability to create new, sandboxed components, or temporarily transfer privileges between components at runtime.
+</p>
+<p>
+    The Secure Multiserver Operating System (SMOS) project aims to create a secure, dynamic OS framework on top of seL4. Our goal is to enable the development of systems as dynamic as mainstream operating systems like Linux, that allow you to, for example, download and run arbitrary executables, while leveraging the security properties of seL4 to ensure that a global security policy is always correctly upheld. This talk will focus on the key principles behind the design of SMOS, the progress we have made on its implementation, and an overview of some of the challenges we have encountered, both in development and in correctly enforcing a variety of arbitrary, often complex security policies at runtime.
+</p>
+
+        </div>
+      </article>
+      <div class="flex flex-row gap-x-2 pt-2">
+        
+          <div class="p-2 pb-1">
+            <a href="https://youtu.be/KYpIfblpDOM?si=ZEtHJepVQOlT9U5-" target="_blank"><img
+      src="/images/icons/youtube_nobckgnd.svg" width="30" alt="YouTube icon"></a>
+          </div>
+        
+        
+          <div class="p-1 mt-2">
+            <a href="slides/secure-multiserver.pdf" class="text-sm text-light underline">Slides</a>
+          </div>
+        
+        <div>
+          <p class="p-1 mt-2">
+          <a href="program.html#p-secure-multiserver" class="text-sm text-light underline">See this talk in the program</a>
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="flex w-full mb-6">
+  <div class="flex-1"></div>
+  <hr class="w-10 h-px bg-gray-200 border-0 dark:bg-gray-600">
+  
+<a href="#page-top" class="relative -mt-3.5 mx-4">
+  <div class="dark:bg-slate-900 hover:bg-slate-100 dark:hover:bg-slate-800 p-1.5 h-7 w-7 rounded-full shadow-xs left-1">
+    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" aria-hidden="true" data-slot="icon" class="h-4 w-4 text-slate-400 dark:text-slate-500">
+  <path stroke-linecap="round" stroke-linejoin="round" d="M12 19.5v-15m0 0-6.75 6.75M12 4.5l6.75 6.75"/>
+</svg>
+  </div>
+</a>
+
+  <hr class="w-10 h-px bg-gray-200 border-0 dark:bg-gray-600">
+  <div class="flex-1"></div>
+</div>
+
+
+
+
+  <div id="a-running-certified" class="py-12 mb-5 section-max-w sm:py-16">
+  <div class="mx-auto px-2 sm:px-6 lg:px-8">
+    <div class="mx-auto lg:mx-0">
+      <h2 class="text-xl font-bold tracking-tight text-dark mb-6 sm:text-4xl">Running Certified Operating Systems under the seL4 Hypervisor</h2>
+      <p>
+        <span class="text-gray-800 dark:text-gray-300">Chris Guikema</span>
+        <br>
+        <span class="text-light">DornerWorks</span>
+      </p>
+      <article class="theprose -mt-10">
+        <div class="pt-5">
+          <p>
+    Upstream hypervisor support has expanded in recent years to support additional configurations on x86, ARM, and RISC-V. Every upstream example simply runs Linux, which is an excellent use case for highly functional, general purpose computing platforms, however there are other guest Operating Systems that solve different use cases. Running seL4 in Hypervisor mode allows for the untrusted code in Linux to be sandboxed and isolated from trusted components in the system. What if the guest Operating System was fully trusted? Deos is a DO-178C DAL A certified RTOS for Avionics Applications, an area seL4 has struggled to break into. DornerWorks expanded seL4 Hypervisor support to run Deos under the CAmkES VM. This presentation will overview the changes that needed to be made to support a certifiable RTOS guest, how a Hypervisor effects the safety certification considerations of Deos, and the next steps needed to create a certifiable system with seL4.
+</p>
+
+        </div>
+      </article>
+      <div class="flex flex-row gap-x-2 pt-2">
+        
+          <div class="p-2 pb-1">
+            <a href="https://youtu.be/VfsN1PriVK0?si=eKMtEVmrSaAox3LF" target="_blank"><img
+      src="/images/icons/youtube_nobckgnd.svg" width="30" alt="YouTube icon"></a>
+          </div>
+        
+        
+          <div class="p-1 mt-2">
+            <a href="slides/running-certified.pdf" class="text-sm text-light underline">Slides</a>
+          </div>
+        
+        <div>
+          <p class="p-1 mt-2">
+          <a href="program.html#p-running-certified" class="text-sm text-light underline">See this talk in the program</a>
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="flex w-full mb-6">
+  <div class="flex-1"></div>
+  <hr class="w-10 h-px bg-gray-200 border-0 dark:bg-gray-600">
+  
+<a href="#page-top" class="relative -mt-3.5 mx-4">
+  <div class="dark:bg-slate-900 hover:bg-slate-100 dark:hover:bg-slate-800 p-1.5 h-7 w-7 rounded-full shadow-xs left-1">
+    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" aria-hidden="true" data-slot="icon" class="h-4 w-4 text-slate-400 dark:text-slate-500">
+  <path stroke-linecap="round" stroke-linejoin="round" d="M12 19.5v-15m0 0-6.75 6.75M12 4.5l6.75 6.75"/>
+</svg>
+  </div>
+</a>
+
+  <hr class="w-10 h-px bg-gray-200 border-0 dark:bg-gray-600">
+  <div class="flex-1"></div>
+</div>
+
+
+
+
+  <div id="a-cheri-morello" class="py-12 mb-5 section-max-w sm:py-16">
+  <div class="mx-auto px-2 sm:px-6 lg:px-8">
+    <div class="mx-auto lg:mx-0">
+      <h2 class="text-xl font-bold tracking-tight text-dark mb-6 sm:text-4xl">Enhancing seL4’s C/C++ userspace memory safety using CHERI</h2>
+      <p>
+        <span class="text-gray-800 dark:text-gray-300">Hesham Almatary</span>
+        <br>
+        <span class="text-light">Capabilities Limited</span>
+      </p>
+      <article class="theprose -mt-10">
+        <div class="pt-5">
+          <p>
+    seL4 currently provides, formally verified, memory safety guarantees in the kernel and isolation guarantees between seL4's userspace tasks, but there is no safety within a single seL4 task or protection domain itself (e.g., VMs or single-address-space servers such as rumprun). According to a recent Microsoft study, memory safety vulnerabilities account for 70% of all software vulnerabilities. CHERI is a capability-based hardware-software architecture aiming to address memory-safety and software compartmentalisation issues. The goal of this project is to have a complete memory-safe C/C++ seL4-based software stack using CHERI on Morello, without having to re-write the existing seL4 C/C++ userspace libraries (currently over 250 KLoC, using sloc tool) from scratch or formally verify them. This talk will describe the progress of CHERIfying the existing seL4's userspace in order to have complete (spatial) memory and pointer safety.
+</p>
+
+        </div>
+      </article>
+      <div class="flex flex-row gap-x-2 pt-2">
+        
+          <div class="p-2 pb-1">
+            <a href="https://youtu.be/BQhykTrtIwg?si=QttV8mbIB1NE_ui0" target="_blank"><img
+      src="/images/icons/youtube_nobckgnd.svg" width="30" alt="YouTube icon"></a>
+          </div>
+        
+        
+          <div class="p-1 mt-2">
+            <a href="slides/cheri-morello.pdf" class="text-sm text-light underline">Slides</a>
+          </div>
+        
+        <div>
+          <p class="p-1 mt-2">
+          <a href="program.html#p-cheri-morello" class="text-sm text-light underline">See this talk in the program</a>
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="flex w-full mb-6">
+  <div class="flex-1"></div>
+  <hr class="w-10 h-px bg-gray-200 border-0 dark:bg-gray-600">
+  
+<a href="#page-top" class="relative -mt-3.5 mx-4">
+  <div class="dark:bg-slate-900 hover:bg-slate-100 dark:hover:bg-slate-800 p-1.5 h-7 w-7 rounded-full shadow-xs left-1">
+    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" aria-hidden="true" data-slot="icon" class="h-4 w-4 text-slate-400 dark:text-slate-500">
+  <path stroke-linecap="round" stroke-linejoin="round" d="M12 19.5v-15m0 0-6.75 6.75M12 4.5l6.75 6.75"/>
+</svg>
+  </div>
+</a>
+
+  <hr class="w-10 h-px bg-gray-200 border-0 dark:bg-gray-600">
+  <div class="flex-1"></div>
+</div>
+
+
+
+
+  <div id="a-experience-developing" class="py-12 mb-5 section-max-w sm:py-16">
+  <div class="mx-auto px-2 sm:px-6 lg:px-8">
+    <div class="mx-auto lg:mx-0">
+      <h2 class="text-xl font-bold tracking-tight text-dark mb-6 sm:text-4xl">Experience Developing Code for the seL4 Environment</h2>
+      <p>
+        <span class="text-gray-800 dark:text-gray-300">Caitlyn Wilde, Wyeth Greenlaw Rollins, Alain Kägi</span>
+        <br>
+        <span class="text-light">Lewis & Clark College</span>
+      </p>
+      <article class="theprose -mt-10">
+        <div class="pt-5">
+          <p>
+    We have developed a minimal networking stack (Ethernet, IP, UDP, and ICMP) with the overarching goal of proving that it implements its specification correctly. We target our implementation for the embedded market and therefore we have chosen to develop our solution around the seL4 Microkit and the seL4 Device Driver Framework.
+</p>
+<p>
+    In this talk, we report on our experience developing, testing, and characterizing the performance of our implementation using the seL4 ecosystem. We have containerized our development environment to simplify building our application and to support users with differing platforms. In addition to relying on automated theorem prover assistants and model checkers, we have written many unit and integration tests to help write correct software. Using a network benchmark, we show that our solution exhibits competitive, if not superior, performance characteristics both in terms of average behavior and variance.
+</p>
+
+        </div>
+      </article>
+      <div class="flex flex-row gap-x-2 pt-2">
+        
+          <div class="p-2 pb-1">
+            <a href="https://youtu.be/L0EwJ9qOrhE?si=jdLxb0wfcPgNwmWl" target="_blank"><img
+      src="/images/icons/youtube_nobckgnd.svg" width="30" alt="YouTube icon"></a>
+          </div>
+        
+        
+          <div class="p-1 mt-2">
+            <a href="slides/experience-developing.pdf" class="text-sm text-light underline">Slides</a>
+          </div>
+        
+        <div>
+          <p class="p-1 mt-2">
+          <a href="program.html#p-experience-developing" class="text-sm text-light underline">See this talk in the program</a>
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="flex w-full mb-6">
+  <div class="flex-1"></div>
+  <hr class="w-10 h-px bg-gray-200 border-0 dark:bg-gray-600">
+  
+<a href="#page-top" class="relative -mt-3.5 mx-4">
+  <div class="dark:bg-slate-900 hover:bg-slate-100 dark:hover:bg-slate-800 p-1.5 h-7 w-7 rounded-full shadow-xs left-1">
+    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" aria-hidden="true" data-slot="icon" class="h-4 w-4 text-slate-400 dark:text-slate-500">
+  <path stroke-linecap="round" stroke-linejoin="round" d="M12 19.5v-15m0 0-6.75 6.75M12 4.5l6.75 6.75"/>
+</svg>
+  </div>
+</a>
+
+  <hr class="w-10 h-px bg-gray-200 border-0 dark:bg-gray-600">
+  <div class="flex-1"></div>
+</div>
+
+
+
+
+  <div id="a-camkes-to-microkit" class="py-12 mb-5 section-max-w sm:py-16">
+  <div class="mx-auto px-2 sm:px-6 lg:px-8">
+    <div class="mx-auto lg:mx-0">
+      <h2 class="text-xl font-bold tracking-tight text-dark mb-6 sm:text-4xl">Transitioning from CAmkES VMM to MicroKit VMM</h2>
+      <p>
+        <span class="text-gray-800 dark:text-gray-300">Leigha VanderKlok</span>
+        <br>
+        <span class="text-light">DornerWorks</span>
+      </p>
+      <article class="theprose -mt-10">
+        <div class="pt-5">
+          <p>
+    This talk presents an experience report on migrating seL4-based systems from the CAmkES VMM to the Microkit VMM. Microkit is a simple framework and SDK created to enable more efficient designs and lower the barrier to entry to seL4.  The presentation will compare and contrast MicroKit with CAmkES and highlight a few reasons to start using Microkit.  In addition, it will examine how MicroKit can make learning and developing seL4-based systems easier and breakdown roadblocks encountered by new users when porting to a new platform. Finally, we will present our gap analysis between the two VMMs and highlight what still needs to be addressed so users can start developing real-world products.
+</p>
+
+        </div>
+      </article>
+      <div class="flex flex-row gap-x-2 pt-2">
+        
+          <div class="p-2 pb-1">
+            <a href="https://youtu.be/5xE24p-RauQ?si=d6o8cqgVB9FTPpnx" target="_blank"><img
+      src="/images/icons/youtube_nobckgnd.svg" width="30" alt="YouTube icon"></a>
+          </div>
+        
+        
+          <div class="p-1 mt-2">
+            <a href="slides/camkes-to-microkit.pdf" class="text-sm text-light underline">Slides</a>
+          </div>
+        
+        <div>
+          <p class="p-1 mt-2">
+          <a href="program.html#p-camkes-to-microkit" class="text-sm text-light underline">See this talk in the program</a>
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="flex w-full mb-6">
+  <div class="flex-1"></div>
+  <hr class="w-10 h-px bg-gray-200 border-0 dark:bg-gray-600">
+  
+<a href="#page-top" class="relative -mt-3.5 mx-4">
+  <div class="dark:bg-slate-900 hover:bg-slate-100 dark:hover:bg-slate-800 p-1.5 h-7 w-7 rounded-full shadow-xs left-1">
+    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" aria-hidden="true" data-slot="icon" class="h-4 w-4 text-slate-400 dark:text-slate-500">
+  <path stroke-linecap="round" stroke-linejoin="round" d="M12 19.5v-15m0 0-6.75 6.75M12 4.5l6.75 6.75"/>
+</svg>
+  </div>
+</a>
+
+  <hr class="w-10 h-px bg-gray-200 border-0 dark:bg-gray-600">
+  <div class="flex-1"></div>
+</div>
+
+
+
+  <div id="a-foundation-update" class="py-12 mb-5 section-max-w sm:py-16">
+  <div class="mx-auto px-2 sm:px-6 lg:px-8">
+    <div class="mx-auto lg:mx-0">
+      <h2 class="text-xl font-bold tracking-tight text-dark mb-6 sm:text-4xl">seL4 Foundation Update</h2>
+      <p>
+        <span class="text-gray-800 dark:text-gray-300">June Andronick</span>
+        <br>
+        <span class="text-light">seL4 Foundation</span>
+      </p>
+      <article class="theprose -mt-10">
+        <div class="pt-5">
+          <p>
+    In this talk, June Andronick, CEO of the seL4 Foundation, will give a brief overview of the latest updates and future plans for the seL4 Foundation.
+</p>
+<p>
+    The seL4 Foundation is home to the ecosystem of software, developers and adopters for safety- and security-critical systems based on seL4. It was formed in April 2020 as a neutral and community-based organisation that ensures long-term, independent support for seL4 and its ecosystem, and fosters strong community participation and ownership in the ecosystem. It raises funds for continuing and accelerating development, facilitates interoperability, standardisation and sharing of cost for the benefit of all. Its aim is to ensure that seL4 is not only the world’s best secure operating-system technology, but is readily deployable and supported by a diverse and stable ecosystem of services and products.
+</p>
+
+        </div>
+      </article>
+      <div class="flex flex-row gap-x-2 pt-2">
+        
+          <div class="p-2 pb-1">
+            <a href="https://youtu.be/vYUuOgqzOa8?si=X68iNbaVf-SUSWuZ" target="_blank"><img
+      src="/images/icons/youtube_nobckgnd.svg" width="30" alt="YouTube icon"></a>
+          </div>
+        
+        
+          <div class="p-1 mt-2">
+            <a href="slides/foundation-update.pdf" class="text-sm text-light underline">Slides</a>
+          </div>
+        
+        <div>
+          <p class="p-1 mt-2">
+          <a href="program.html#p-foundation-update" class="text-sm text-light underline">See this talk in the program</a>
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="flex w-full mb-6">
+  <div class="flex-1"></div>
+  <hr class="w-10 h-px bg-gray-200 border-0 dark:bg-gray-600">
+  
+<a href="#page-top" class="relative -mt-3.5 mx-4">
+  <div class="dark:bg-slate-900 hover:bg-slate-100 dark:hover:bg-slate-800 p-1.5 h-7 w-7 rounded-full shadow-xs left-1">
+    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" aria-hidden="true" data-slot="icon" class="h-4 w-4 text-slate-400 dark:text-slate-500">
+  <path stroke-linecap="round" stroke-linejoin="round" d="M12 19.5v-15m0 0-6.75 6.75M12 4.5l6.75 6.75"/>
+</svg>
+  </div>
+</a>
+
+  <hr class="w-10 h-px bg-gray-200 border-0 dark:bg-gray-600">
+  <div class="flex-1"></div>
+</div>
+
+
+
+
+
+  <div id="a-first-steps" class="py-12 mb-5 section-max-w sm:py-16">
+  <div class="mx-auto px-2 sm:px-6 lg:px-8">
+    <div class="mx-auto lg:mx-0">
+      <h2 class="text-xl font-bold tracking-tight text-dark mb-6 sm:text-4xl">First steps towards verification of user-space systems</h2>
+      <p>
+        <span class="text-gray-800 dark:text-gray-300">Matthew Brecknell</span>
+        <br>
+        <span class="text-light">Kry10</span>
+      </p>
+      <article class="theprose -mt-10">
+        <div class="pt-5">
+          <p>
+    The Kry10 operating system supports some dynamic behaviours, including incremental updates to running systems. To ensure that the OS always enforces the access controls specified by device owners, we must verify the privileged OS components that manage system resources across updates. Verification will soon be further complicated by the addition of support for multikernel systems, because the OS will need to coordinate resource management across cores.
+</p>
+<p>
+    Concurrency is therefore fundamental to our approach. There is concurrency between the resource managers on different cores, and also between each resource manager and the apps and kernels in the system. We hope to use the structure of the system to avoid fine-grained reasoning as much as possible. But we want a framework which will allow us to prove that such structural reasoning is sound, rather than forcing us to assume it.
+</p>
+<p>
+    Though our plans might be grand, our first steps must be small. In particular, we need experience with techniques and frameworks for reasoning about concurrency.
+</p>
+<p>
+    In this talk, we present our initial experiments with concurent user-space verification. We use the Iris separation logic framework to build an abstract model of a simple system in which components interact using shared memory and notifications, and we prove a simple correctness property. We explain the limitations of this experiment, and how we plan to address them in our next steps.
+</p>
+
+        </div>
+      </article>
+      <div class="flex flex-row gap-x-2 pt-2">
+        
+          <div class="p-2 pb-1">
+            <a href="https://youtu.be/UCj1Qfuifu8?si=q1_b1BaCgivv46FG" target="_blank"><img
+      src="/images/icons/youtube_nobckgnd.svg" width="30" alt="YouTube icon"></a>
+          </div>
+        
+        
+          <div class="p-1 mt-2">
+            <a href="slides/first-steps.pdf" class="text-sm text-light underline">Slides</a>
+          </div>
+        
+        <div>
+          <p class="p-1 mt-2">
+          <a href="program.html#p-first-steps" class="text-sm text-light underline">See this talk in the program</a>
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="flex w-full mb-6">
+  <div class="flex-1"></div>
+  <hr class="w-10 h-px bg-gray-200 border-0 dark:bg-gray-600">
+  
+<a href="#page-top" class="relative -mt-3.5 mx-4">
+  <div class="dark:bg-slate-900 hover:bg-slate-100 dark:hover:bg-slate-800 p-1.5 h-7 w-7 rounded-full shadow-xs left-1">
+    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" aria-hidden="true" data-slot="icon" class="h-4 w-4 text-slate-400 dark:text-slate-500">
+  <path stroke-linecap="round" stroke-linejoin="round" d="M12 19.5v-15m0 0-6.75 6.75M12 4.5l6.75 6.75"/>
+</svg>
+  </div>
+</a>
+
+  <hr class="w-10 h-px bg-gray-200 border-0 dark:bg-gray-600">
+  <div class="flex-1"></div>
+</div>
+
+
+
+
+  <div id="a-generating-trustworthy" class="py-12 mb-5 section-max-w sm:py-16">
+  <div class="mx-auto px-2 sm:px-6 lg:px-8">
+    <div class="mx-auto lg:mx-0">
+      <h2 class="text-xl font-bold tracking-tight text-dark mb-6 sm:text-4xl">Generating Trustworthy Hardware/Software I2C Drivers for Board Management Controllers</h2>
+      <p>
+        <span class="text-gray-800 dark:text-gray-300">Daniel Schwyn, Zikai Liu, Timothy Roscoe</span>
+        <br>
+        <span class="text-light">ETH Zurich</span>
+      </p>
+      <article class="theprose -mt-10">
+        <div class="pt-5">
+          <p>
+    At the heart of every modern server platform sits an embedded system called theboard management controller (BMC) that is responsible for the low-levelfunctioning of the platform. Despite their critical nature, they are generallynot built as trustworthy systems. We have embarked on a journey tocyber-retrofit BMC firmware with seL4 as the kernel. In this talk, we present anupdate on our efforts -- generate trustworthy hardware/software I2C drivers. I2C is a low-level protocol used by BMCs to communicate with many peripherals(e.g. the power regulators). Unlike memory-mapped devices with one-to-oneinterfaces with the BMC, multiple I2C devices may share the same bus. Quirks ofone device can influence the whole assemblage. Therefore, to produce a correctdriver for I2C (and other bus-based protocols), we need to consider thespecifications of not only the controller but all devices on the bus.
+</p>
+<p>
+    We present Efeu, a framework that allows us to specify both the host-side driverand the peripherals. The specifications are composed of layers, which enableefficient modeling of different devices (including those with quirks). Theentire system is then model-checked using SPIN to ensure interoperability. Fromthat, Efeu generates trustworthy drivers in software and hardware. The softwareimplementations target seL4, but could also address other operating systems.Furthermore, when I2C communication speed or CPU usage is a concern, Efeu allowsgenerating hybrid hardware/software drivers, where the hardware part can bematerialized on programmable hardware such as Field Programmable Gate Arrays(FPGAs). We evaluated Efeu-generated I2C stacks on a Zynq MPSoC and show thatmodel-checking the whole system and generating the full stack is not onlypractical but that the resulting implementations can saturate the I2C bus andachieve competitive performance with off-the-shelf solutions.
+</p>
+
+        </div>
+      </article>
+      <div class="flex flex-row gap-x-2 pt-2">
+        
+          <div class="p-2 pb-1">
+            <a href="https://youtu.be/b6t-qkHjgdE?si=deqLKsLIM3n96Z7G" target="_blank"><img
+      src="/images/icons/youtube_nobckgnd.svg" width="30" alt="YouTube icon"></a>
+          </div>
+        
+        
+          <div class="p-1 mt-2">
+            <a href="slides/generating-trustworthy.pdf" class="text-sm text-light underline">Slides</a>
+          </div>
+        
+        <div>
+          <p class="p-1 mt-2">
+          <a href="program.html#p-generating-trustworthy" class="text-sm text-light underline">See this talk in the program</a>
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="flex w-full mb-6">
+  <div class="flex-1"></div>
+  <hr class="w-10 h-px bg-gray-200 border-0 dark:bg-gray-600">
+  
+<a href="#page-top" class="relative -mt-3.5 mx-4">
+  <div class="dark:bg-slate-900 hover:bg-slate-100 dark:hover:bg-slate-800 p-1.5 h-7 w-7 rounded-full shadow-xs left-1">
+    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" aria-hidden="true" data-slot="icon" class="h-4 w-4 text-slate-400 dark:text-slate-500">
+  <path stroke-linecap="round" stroke-linejoin="round" d="M12 19.5v-15m0 0-6.75 6.75M12 4.5l6.75 6.75"/>
+</svg>
+  </div>
+</a>
+
+  <hr class="w-10 h-px bg-gray-200 border-0 dark:bg-gray-600">
+  <div class="flex-1"></div>
+</div>
+
+
+
+
+  <div id="a-using-model" class="py-12 mb-5 section-max-w sm:py-16">
+  <div class="mx-auto px-2 sm:px-6 lg:px-8">
+    <div class="mx-auto lg:mx-0">
+      <h2 class="text-xl font-bold tracking-tight text-dark mb-6 sm:text-4xl">Using Model Checking to Develop and Verify Inter-Component Signalling Protocols</h2>
+      <p>
+        <span class="text-gray-800 dark:text-gray-300">Courtney Darville</span>
+        <br>
+        <span class="text-light">UNSW Sydney</span>
+      </p>
+      <article class="theprose -mt-10">
+        <div class="pt-5">
+          <p>
+    The seL4 Device Driver Framework (sDDF) provides a lightweight library of device drivers and supporting virtualising components which allow clients to securely access and share devices. Each sDDF component is designed to handle one primary concern, and as a result, components have minimal knowledge of the system as a whole and instead communicate only with their direct neighbours. Components are event driven and and require a signal to be scheduled to process incoming data. A signalling protocol is the decision process a component goes through when deciding whether to signal its neighbour.
+</p>
+<p>
+    If a component signals its neighbour unconditionally when data is available, the system progresses without deadlock, however this often results in a large number of unnecessary signals - meaning the receiver was already awake, or had already been signalled but was yet to be scheduled. Designing a signalling protocol that avoids these unnecessary signals, but does not skip any necessary ones can be challenging, since the experimental absence of deadlocks does not necessarily imply deadlock freedom, and if a deadlock is encountered, it can be hard to replicate and understand.
+</p>
+<p>
+    Using formal methods, and in particular model checking, vastly improves the development process of signalling protocols, since the tool can verify for deadlock freedom whilst also producing detailed traces (interleavings of executions) when a deadlock is found. This talk details how the model checker SPIN was used to develop and analyse sDDF signalling protocols, ultimately resulting in a verified protocol that reduces the number of unnecessary signals by 47% when compared to unconditionally signalling.
+</p>
+
+        </div>
+      </article>
+      <div class="flex flex-row gap-x-2 pt-2">
+        
+          <div class="p-2 pb-1">
+            <a href="https://youtu.be/4ESGgf80lcg?si=tEP0Z6bEscupqp5E" target="_blank"><img
+      src="/images/icons/youtube_nobckgnd.svg" width="30" alt="YouTube icon"></a>
+          </div>
+        
+        
+          <div class="p-1 mt-2">
+            <a href="slides/using-model.pdf" class="text-sm text-light underline">Slides</a>
+          </div>
+        
+        <div>
+          <p class="p-1 mt-2">
+          <a href="program.html#p-using-model" class="text-sm text-light underline">See this talk in the program</a>
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="flex w-full mb-6">
+  <div class="flex-1"></div>
+  <hr class="w-10 h-px bg-gray-200 border-0 dark:bg-gray-600">
+  
+<a href="#page-top" class="relative -mt-3.5 mx-4">
+  <div class="dark:bg-slate-900 hover:bg-slate-100 dark:hover:bg-slate-800 p-1.5 h-7 w-7 rounded-full shadow-xs left-1">
+    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" aria-hidden="true" data-slot="icon" class="h-4 w-4 text-slate-400 dark:text-slate-500">
+  <path stroke-linecap="round" stroke-linejoin="round" d="M12 19.5v-15m0 0-6.75 6.75M12 4.5l6.75 6.75"/>
+</svg>
+  </div>
+</a>
+
+  <hr class="w-10 h-px bg-gray-200 border-0 dark:bg-gray-600">
+  <div class="flex-1"></div>
+</div>
+
+
+
+
+  <div id="a-rust-support" class="py-12 mb-5 section-max-w sm:py-16">
+  <div class="mx-auto px-2 sm:px-6 lg:px-8">
+    <div class="mx-auto lg:mx-0">
+      <h2 class="text-xl font-bold tracking-tight text-dark mb-6 sm:text-4xl">Rust Support in seL4 Userspace: Overview and Update</h2>
+      <p>
+        <span class="text-gray-800 dark:text-gray-300">Nick Spinale</span>
+        <br>
+        <span class="text-light">Colias Group, LLC</span>
+      </p>
+      <article class="theprose -mt-10">
+        <div class="pt-5">
+          <p>
+    The development and maintenance of Rust support in seL4 userspace has been an official seL4 Foundation project since last year’s summit. This project’s scope includes libraries for interacting with the seL4 API, higher-level libraries for use in seL4 userspace (e.g. support for asynchronous programming and integration with the seL4 Device Driver Framework), Rust language runtimes for root tasks and Microkit protection domains, modular building blocks for custom seL4 userspace Rust language runtimes, a CapDL system initializer implementation, and an easy-to-use kernel loader. The past year has seen the expansion and refinement of this project’s library offerings, the release of relevant educational materials, and further integration with the rest of the seL4 software ecosystem. In this talk, we will cover progress since last year’s summit, demonstrate how to leverage this work in your own systems, and share our vision and goals for the path ahead.
+</p>
+
+        </div>
+      </article>
+      <div class="flex flex-row gap-x-2 pt-2">
+        
+          <div class="p-2 pb-1">
+            <a href="https://youtu.be/0W5cMTnyBLk?si=WGGVY3qd0PETj8cE" target="_blank"><img
+      src="/images/icons/youtube_nobckgnd.svg" width="30" alt="YouTube icon"></a>
+          </div>
+        
+        
+          <div class="p-1 mt-2">
+            <a href="slides/rust-support.pdf" class="text-sm text-light underline">Slides</a>
+          </div>
+        
+        <div>
+          <p class="p-1 mt-2">
+          <a href="program.html#p-rust-support" class="text-sm text-light underline">See this talk in the program</a>
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="flex w-full mb-6">
+  <div class="flex-1"></div>
+  <hr class="w-10 h-px bg-gray-200 border-0 dark:bg-gray-600">
+  
+<a href="#page-top" class="relative -mt-3.5 mx-4">
+  <div class="dark:bg-slate-900 hover:bg-slate-100 dark:hover:bg-slate-800 p-1.5 h-7 w-7 rounded-full shadow-xs left-1">
+    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" aria-hidden="true" data-slot="icon" class="h-4 w-4 text-slate-400 dark:text-slate-500">
+  <path stroke-linecap="round" stroke-linejoin="round" d="M12 19.5v-15m0 0-6.75 6.75M12 4.5l6.75 6.75"/>
+</svg>
+  </div>
+</a>
+
+  <hr class="w-10 h-px bg-gray-200 border-0 dark:bg-gray-600">
+  <div class="flex-1"></div>
+</div>
+
+
+
+
+  <div id="a-pancake" class="py-12 mb-5 section-max-w sm:py-16">
+  <div class="mx-auto px-2 sm:px-6 lg:px-8">
+    <div class="mx-auto lg:mx-0">
+      <h2 class="text-xl font-bold tracking-tight text-dark mb-6 sm:text-4xl">Pancake: a language for verified systems programming</h2>
+      <p>
+        <span class="text-gray-800 dark:text-gray-300">Miki Tanaka, Johannes Åman Pohjola, Gernot Heiser</span>
+        <br>
+        <span class="text-light">UNSW Sydney</span>
+      </p>
+      <article class="theprose -mt-10">
+        <div class="pt-5">
+          <p>
+    We introduce Pancake, a new language for verifiable, low-level systems programming, especially device drivers. Pancake features a simple type system that makes it attractive to systems programmers, while at the same time aiming to ease the formal verification of code. Pancake has well-defined semantics which the compiler is proven to preserve, meaning that each generated binary code preserves the semantics of its original program. We have now extended Pancake with the shared memory capability which allows the programs to access device registers without escaping to C.
+</p>
+<p>
+    We present the design of the language and its verified compiler, as well as demonstrating its usability, performance and current limitations through case studies of device drivers and related systems components for an seL4-based operating system.
+</p>
+
+        </div>
+      </article>
+      <div class="flex flex-row gap-x-2 pt-2">
+        
+          <div class="p-2 pb-1">
+            <a href="https://youtu.be/uAHVV0Lzopw?si=QbuY_1_Y5IOddxnE" target="_blank"><img
+      src="/images/icons/youtube_nobckgnd.svg" width="30" alt="YouTube icon"></a>
+          </div>
+        
+        
+          <div class="p-1 mt-2">
+            <a href="slides/pancake.pdf" class="text-sm text-light underline">Slides</a>
+          </div>
+        
+        <div>
+          <p class="p-1 mt-2">
+          <a href="program.html#p-pancake" class="text-sm text-light underline">See this talk in the program</a>
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="flex w-full mb-6">
+  <div class="flex-1"></div>
+  <hr class="w-10 h-px bg-gray-200 border-0 dark:bg-gray-600">
+  
+<a href="#page-top" class="relative -mt-3.5 mx-4">
+  <div class="dark:bg-slate-900 hover:bg-slate-100 dark:hover:bg-slate-800 p-1.5 h-7 w-7 rounded-full shadow-xs left-1">
+    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" aria-hidden="true" data-slot="icon" class="h-4 w-4 text-slate-400 dark:text-slate-500">
+  <path stroke-linecap="round" stroke-linejoin="round" d="M12 19.5v-15m0 0-6.75 6.75M12 4.5l6.75 6.75"/>
+</svg>
+  </div>
+</a>
+
+  <hr class="w-10 h-px bg-gray-200 border-0 dark:bg-gray-600">
+  <div class="flex-1"></div>
+</div>
+
+
+
+
+  <div id="a-assured-reserve" class="py-12 mb-5 section-max-w sm:py-16">
+  <div class="mx-auto px-2 sm:px-6 lg:px-8">
+    <div class="mx-auto lg:mx-0">
+      <h2 class="text-xl font-bold tracking-tight text-dark mb-6 sm:text-4xl">Assured Reserve Modes</h2>
+      <p>
+        <span class="text-gray-800 dark:text-gray-300">Ihor Kuz, Lance Joneckis</span>
+        <br>
+        <span class="text-light">Kry10, Idaho National Laboratory</span>
+      </p>
+      <article class="theprose -mt-10">
+        <div class="pt-5">
+          <p>
+    When a digital system is undergoing cyber attack or is failing in some way, it is often necessary to take action different from its usual operating mode. These alternative modes of operation are called Reserve Modes.
+</p>
+<p>
+    There are several challenges in implementing reserve modes in systems. The first challenge is developing a mechanism for defining and loading all modes into a system at boot time and enabling alternative modes as necessary. The second challenge is making these changes without affecting or disturbing parts of the system not involved in the reserve modes. The final and hardest challenge is being able to perform such system level changes with assurance that the reserve modes will be enabled as required and operate as expected, without modification.
+</p>
+<p>
+    This presentation introduces Assured Reserve Modes on the seL4-based Kry10 OS. Assured Reserve Modes are a mechanism for providing reserved modes that successfully address the above challenges - implementing reserved mode functionality and providing assurance that they work correctly.  We explain the concept of reserve modes and provide examples of reserve modes and their benefits, present the Assured Reserve Mode design and implementation, and discuss how to provide the assurance that they require.
+</p>
+
+        </div>
+      </article>
+      <div class="flex flex-row gap-x-2 pt-2">
+        
+          <div class="p-2 pb-1">
+            <a href="https://youtu.be/zIQ-wYjiYSg?si=uODU6MNgt7r3eO2W" target="_blank"><img
+      src="/images/icons/youtube_nobckgnd.svg" width="30" alt="YouTube icon"></a>
+          </div>
+        
+        
+          <div class="p-1 mt-2">
+            <a href="slides/assured-reserve.pdf" class="text-sm text-light underline">Slides</a>
+          </div>
+        
+        <div>
+          <p class="p-1 mt-2">
+          <a href="program.html#p-assured-reserve" class="text-sm text-light underline">See this talk in the program</a>
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="flex w-full mb-6">
+  <div class="flex-1"></div>
+  <hr class="w-10 h-px bg-gray-200 border-0 dark:bg-gray-600">
+  
+<a href="#page-top" class="relative -mt-3.5 mx-4">
+  <div class="dark:bg-slate-900 hover:bg-slate-100 dark:hover:bg-slate-800 p-1.5 h-7 w-7 rounded-full shadow-xs left-1">
+    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" aria-hidden="true" data-slot="icon" class="h-4 w-4 text-slate-400 dark:text-slate-500">
+  <path stroke-linecap="round" stroke-linejoin="round" d="M12 19.5v-15m0 0-6.75 6.75M12 4.5l6.75 6.75"/>
+</svg>
+  </div>
+</a>
+
+  <hr class="w-10 h-px bg-gray-200 border-0 dark:bg-gray-600">
+  <div class="flex-1"></div>
+</div>
+
+
+
+
+  <div id="a-assured-reserve-action" class="py-12 mb-5 section-max-w sm:py-16">
+  <div class="mx-auto px-2 sm:px-6 lg:px-8">
+    <div class="mx-auto lg:mx-0">
+      <h2 class="text-xl font-bold tracking-tight text-dark mb-6 sm:text-4xl">Assured Reserve Modes in Action</h2>
+      <p>
+        <span class="text-gray-800 dark:text-gray-300">Ihor Kuz, Lance Joneckis</span>
+        <br>
+        <span class="text-light">Kry10, Idaho National Laboratory</span>
+      </p>
+      <article class="theprose -mt-10">
+        <div class="pt-5">
+          <p>
+    Assured Reserve Modes are a mechanism that we’ve developed for the seL4-based Kry10 OS that allows a system to switch between pre-configured operating modes at runtime in response to security, safety, and other routine operational events. In this presentation we show the operation of assured reserve modes in action.
+</p>
+<p>
+    We present the Kry10 OS design and implementation of assured reserve modes, demonstrating their application to a representaive industrial control system (based on the Fischertechnik Training Factory 4.0).  The system is exposed to security and safety incidents, which it will detect and then switch into appropriate reserve modes in order to mitigate, resolve, or contain the problem.
+</p>
+<p>
+    This presentation is a companion to the Assured Reserve Modes presentation that describes the assured reserve mode model and mechanism itself.
+</p>
+
+        </div>
+      </article>
+      <div class="flex flex-row gap-x-2 pt-2">
+        
+          <div class="p-2 pb-1">
+            <a href="https://youtu.be/rWksafHHc2I?si=61q9-ff6c3yS4Jax" target="_blank"><img
+      src="/images/icons/youtube_nobckgnd.svg" width="30" alt="YouTube icon"></a>
+          </div>
+        
+        
+          <div class="p-1 mt-2">
+            <a href="slides/assured-reserve.pdf" class="text-sm text-light underline">Slides</a>
+          </div>
+        
+        <div>
+          <p class="p-1 mt-2">
+          <a href="program.html#p-assured-reserve-action" class="text-sm text-light underline">See this talk in the program</a>
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="flex w-full mb-6">
+  <div class="flex-1"></div>
+  <hr class="w-10 h-px bg-gray-200 border-0 dark:bg-gray-600">
+  
+<a href="#page-top" class="relative -mt-3.5 mx-4">
+  <div class="dark:bg-slate-900 hover:bg-slate-100 dark:hover:bg-slate-800 p-1.5 h-7 w-7 rounded-full shadow-xs left-1">
+    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" aria-hidden="true" data-slot="icon" class="h-4 w-4 text-slate-400 dark:text-slate-500">
+  <path stroke-linecap="round" stroke-linejoin="round" d="M12 19.5v-15m0 0-6.75 6.75M12 4.5l6.75 6.75"/>
+</svg>
+  </div>
+</a>
+
+  <hr class="w-10 h-px bg-gray-200 border-0 dark:bg-gray-600">
+  <div class="flex-1"></div>
+</div>
+
+
+
+
+  <div id="a-supporting-container" class="py-12 mb-5 section-max-w sm:py-16">
+  <div class="mx-auto px-2 sm:px-6 lg:px-8">
+    <div class="mx-auto lg:mx-0">
+      <h2 class="text-xl font-bold tracking-tight text-dark mb-6 sm:text-4xl">Supporting container applications on Kry10 OS</h2>
+      <p>
+        <span class="text-gray-800 dark:text-gray-300">Alison Felizzi</span>
+        <br>
+        <span class="text-light">Kry10</span>
+      </p>
+      <article class="theprose -mt-10">
+        <div class="pt-5">
+          <p>
+    Container solutions have been instrumental throughout cloud computing, influencing how developers build and automate their application deployments. A core benefit behind containers is that they provide a standardised abstraction layer of an application's underlying OS infrastructure. These abstractions help isolate an application's code and system dependencies, whilst conveniently packaging said dependencies into images that can be easily revision controlled and managed in CI/CD pipelines. When applying this technology to embedded systems, containers offer the potential for simplifying application development workflows, whilst also providing a useful CI/CD mechanism for deploying software updates to deployed devices. seL4 is uniquely suited to power a modern generation of embedded devices and using containers brings with it modern software development practices that makes it easier to manage fleets of devices.
+</p>
+<p>
+    Deploying containers on embedded systems is not necessarily new and has been demonstrated across various embedded Linux deployments. At Kry10 we recognise the value of using containers and see the conveniences it can bring to a developers workflow and the capabilities it provides for developing update-able and maintainable systems. We've implemented first-class container support in Kry10 OS that allows developers to define and package native and VM-based applications. In this talk, I'll present the design and implementation behind our seL4-based container support. I'll step through how container builds are used to package and deploy different types of applications on Kry10 OS, starting from simple native applications, and as the needs and runtime requirements of the application grow, moving onto more complex microVM-style applications.
+</p>
+
+        </div>
+      </article>
+      <div class="flex flex-row gap-x-2 pt-2">
+        
+          <div class="p-2 pb-1">
+            <a href="https://youtu.be/AaBaefF0eGg?si=mmr3xJg5LDjABuF9" target="_blank"><img
+      src="/images/icons/youtube_nobckgnd.svg" width="30" alt="YouTube icon"></a>
+          </div>
+        
+        
+          <div class="p-1 mt-2">
+            <a href="slides/supporting-container.pdf" class="text-sm text-light underline">Slides</a>
+          </div>
+        
+        <div>
+          <p class="p-1 mt-2">
+          <a href="program.html#p-supporting-container" class="text-sm text-light underline">See this talk in the program</a>
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="flex w-full mb-6">
+  <div class="flex-1"></div>
+  <hr class="w-10 h-px bg-gray-200 border-0 dark:bg-gray-600">
+  
+<a href="#page-top" class="relative -mt-3.5 mx-4">
+  <div class="dark:bg-slate-900 hover:bg-slate-100 dark:hover:bg-slate-800 p-1.5 h-7 w-7 rounded-full shadow-xs left-1">
+    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" aria-hidden="true" data-slot="icon" class="h-4 w-4 text-slate-400 dark:text-slate-500">
+  <path stroke-linecap="round" stroke-linejoin="round" d="M12 19.5v-15m0 0-6.75 6.75M12 4.5l6.75 6.75"/>
+</svg>
+  </div>
+</a>
+
+  <hr class="w-10 h-px bg-gray-200 border-0 dark:bg-gray-600">
+  <div class="flex-1"></div>
+</div>
+
+
+
+
+  <div id="a-exploring-sel4" class="py-12 mb-5 section-max-w sm:py-16">
+  <div class="mx-auto px-2 sm:px-6 lg:px-8">
+    <div class="mx-auto lg:mx-0">
+      <h2 class="text-xl font-bold tracking-tight text-dark mb-6 sm:text-4xl">Exploring an seL4-based Trusted Execution Environment in a RISC-V Platform</h2>
+      <p>
+        <span class="text-gray-800 dark:text-gray-300">Everton de Matos</span>
+        <br>
+        <span class="text-light">TII</span>
+      </p>
+      <article class="theprose -mt-10">
+        <div class="pt-5">
+          <p>
+    The utilization of seL4, a high-assurance microkernel, in a Trusted Execution Environment (TEE) on RISC-V hardware, presents a robust solution for secure computing. This year, we build upon our foundational work with new insights into the performance impacts and enhancements of our TEE.
+</p>
+<p>
+    We present empirical data on the CPU, memory, and I/O performance impacts of having a seL4 TEE on a PolarFire RISC-V platform and run different TEE services performance measurements. The insights into performance nuances, such as the minimal overhead introduced by the seL4 TEE and its operational efficiency in handling cryptographic tasks, solidify the practical benefits of our architecture. Furthermore, we outline ongoing advancements and future directions in enhancing the seL4-based TEE.
+</p>
+
+        </div>
+      </article>
+      <div class="flex flex-row gap-x-2 pt-2">
+        
+          <div class="p-2 pb-1">
+            <a href="https://youtu.be/kRgLIb4eO8U?si=mTZiR1w0ibTAAojM" target="_blank"><img
+      src="/images/icons/youtube_nobckgnd.svg" width="30" alt="YouTube icon"></a>
+          </div>
+        
+        
+          <div class="p-1 mt-2">
+            <a href="slides/exploring-sel4.pdf" class="text-sm text-light underline">Slides</a>
+          </div>
+        
+        <div>
+          <p class="p-1 mt-2">
+          <a href="program.html#p-exploring-sel4" class="text-sm text-light underline">See this talk in the program</a>
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="flex w-full mb-6">
+  <div class="flex-1"></div>
+  <hr class="w-10 h-px bg-gray-200 border-0 dark:bg-gray-600">
+  
+<a href="#page-top" class="relative -mt-3.5 mx-4">
+  <div class="dark:bg-slate-900 hover:bg-slate-100 dark:hover:bg-slate-800 p-1.5 h-7 w-7 rounded-full shadow-xs left-1">
+    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" aria-hidden="true" data-slot="icon" class="h-4 w-4 text-slate-400 dark:text-slate-500">
+  <path stroke-linecap="round" stroke-linejoin="round" d="M12 19.5v-15m0 0-6.75 6.75M12 4.5l6.75 6.75"/>
+</svg>
+  </div>
+</a>
+
+  <hr class="w-10 h-px bg-gray-200 border-0 dark:bg-gray-600">
+  <div class="flex-1"></div>
+</div>
+
+
+
+
+  <div id="a-bridging-academia" class="py-12 mb-5 section-max-w sm:py-16">
+  <div class="mx-auto px-2 sm:px-6 lg:px-8">
+    <div class="mx-auto lg:mx-0">
+      <h2 class="text-xl font-bold tracking-tight text-dark mb-6 sm:text-4xl">Bridging Academia and Industry</h2>
+      <p>
+        <span class="text-gray-800 dark:text-gray-300">Yanyan Shen, Dhammika Elkaduwe</span>
+        <br>
+        <span class="text-light">NIO</span>
+      </p>
+      <article class="theprose -mt-10">
+        <div class="pt-5">
+          <p>
+    A formally-verified microkernel is a great start, and an OS needs more than a microkernel. Over the past years, we have been building a vehicle operating system and toolsets based on seL4 from scratch. It is very challenging, especially when dependability is the top priority. In this talk, we would like to share our experiences along the journey, with an emphasis on the following topics: (1) POSIX or not, that is not a question. To leverage the existing code base and 3rd party libraries, a layered approach is adopted: The system has a core system call layer and a POSIX layer based on the core layer. System components use the core layer. Applications and 3rd party libraries use the POSIX interfaces. (2) Tooling is especially important for development efficiency and system usability. System status monitoring and comprehensive logging are critical since we rely on them to analyze issues remotely. Additionally, a building and integration tool is specifically designed to manage the building and releasing process of the OS and applications. (3) Resource management needs more thoughts. Seasoned system developers are surprised by another form of resource leakage: capability slot leakage. Access control to resources that are not managed by the kernel directly through capabilities also deserves some discussion. (4) Product-level maturity is paramount. We wish that the major OS components could be verified, but at least for now, realistically, various levels of testing are used to stabilize and mature the new OS.
+</p>
+
+        </div>
+      </article>
+      <div class="flex flex-row gap-x-2 pt-2">
+        
+          <div class="p-2 pb-1">
+            <a href="https://youtu.be/2JdaHxf8jrk?si=-NUi4KbYjoqheRhI" target="_blank"><img
+      src="/images/icons/youtube_nobckgnd.svg" width="30" alt="YouTube icon"></a>
+          </div>
+        
+        
+          <div class="p-1 mt-2">
+            <a href="slides/bridging-academia.pdf" class="text-sm text-light underline">Slides</a>
+          </div>
+        
+        <div>
+          <p class="p-1 mt-2">
+          <a href="program.html#p-bridging-academia" class="text-sm text-light underline">See this talk in the program</a>
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="flex w-full mb-6">
+  <div class="flex-1"></div>
+  <hr class="w-10 h-px bg-gray-200 border-0 dark:bg-gray-600">
+  
+<a href="#page-top" class="relative -mt-3.5 mx-4">
+  <div class="dark:bg-slate-900 hover:bg-slate-100 dark:hover:bg-slate-800 p-1.5 h-7 w-7 rounded-full shadow-xs left-1">
+    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" aria-hidden="true" data-slot="icon" class="h-4 w-4 text-slate-400 dark:text-slate-500">
+  <path stroke-linecap="round" stroke-linejoin="round" d="M12 19.5v-15m0 0-6.75 6.75M12 4.5l6.75 6.75"/>
+</svg>
+  </div>
+</a>
+
+  <hr class="w-10 h-px bg-gray-200 border-0 dark:bg-gray-600">
+  <div class="flex-1"></div>
+</div>
+
+
+
+
+  <div id="a-sel4-infrastructure" class="py-12 mb-5 section-max-w sm:py-16">
+  <div class="mx-auto px-2 sm:px-6 lg:px-8">
+    <div class="mx-auto lg:mx-0">
+      <h2 class="text-xl font-bold tracking-tight text-dark mb-6 sm:text-4xl">seL4 Infrastructure: USB and Beyond</h2>
+      <p>
+        <span class="text-gray-800 dark:text-gray-300">Bill Ellis, James Nevell, Stephen Williams, Josh Felmeden, Daniel Storer, Tom Harvey</span>
+        <br>
+        <span class="text-light">Capgemini</span>
+      </p>
+      <article class="theprose -mt-10">
+        <div class="pt-5">
+          <p>
+    Since 2021, a small team at Capgemini have been making contributions toward the seL4 infrastructure, assisting developers in getting started with seL4. Previously, building atop CAmkES, we presented a Developer Kit (from zero to "hello world"), a framework to access the U-boot driver suite, and initial efforts in preparing a native xHCI driver (USB 3.0). Now, we present the conclusion of these efforts.
+</p>
+<p>
+    We transition our entire suite of contributions from CAmkES to Microkit. A greater range of USB device classes are now supported. A simple native HDMI driver is introduced. And we leverage sDDF and VMM, in permitting the secure routing of a selected physical USB device into a guest host. While our primary focus has been the Avnet MaaXBoard, many of these contributions would be readily portable to other platforms. More generally, as our focus on seL4 infrastructure reaches a conclusion, we describe our journey with seL4 thus far, summarising our overall contributions and experiences.
+</p>
+
+        </div>
+      </article>
+      <div class="flex flex-row gap-x-2 pt-2">
+        
+          <div class="p-2 pb-1">
+            <a href="https://youtu.be/-2zvgVGJSc8?si=dbMDCOwWL9T_CKq_" target="_blank"><img
+      src="/images/icons/youtube_nobckgnd.svg" width="30" alt="YouTube icon"></a>
+          </div>
+        
+        
+          <div class="p-1 mt-2">
+            <a href="slides/sel4-infrastructure.pdf" class="text-sm text-light underline">Slides</a>
+          </div>
+        
+        <div>
+          <p class="p-1 mt-2">
+          <a href="program.html#p-sel4-infrastructure" class="text-sm text-light underline">See this talk in the program</a>
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="flex w-full mb-6">
+  <div class="flex-1"></div>
+  <hr class="w-10 h-px bg-gray-200 border-0 dark:bg-gray-600">
+  
+<a href="#page-top" class="relative -mt-3.5 mx-4">
+  <div class="dark:bg-slate-900 hover:bg-slate-100 dark:hover:bg-slate-800 p-1.5 h-7 w-7 rounded-full shadow-xs left-1">
+    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" aria-hidden="true" data-slot="icon" class="h-4 w-4 text-slate-400 dark:text-slate-500">
+  <path stroke-linecap="round" stroke-linejoin="round" d="M12 19.5v-15m0 0-6.75 6.75M12 4.5l6.75 6.75"/>
+</svg>
+  </div>
+</a>
+
+  <hr class="w-10 h-px bg-gray-200 border-0 dark:bg-gray-600">
+  <div class="flex-1"></div>
+</div>
+
+
+
+
+  <div id="a-building-commercial" class="py-12 mb-5 section-max-w sm:py-16">
+  <div class="mx-auto px-2 sm:px-6 lg:px-8">
+    <div class="mx-auto lg:mx-0">
+      <h2 class="text-xl font-bold tracking-tight text-dark mb-6 sm:text-4xl">Building a Commercial Virtualized Mobile Device with seL4 – Part 3</h2>
+      <p>
+        <span class="text-gray-800 dark:text-gray-300">Jason Sebranek</span>
+        <br>
+        <span class="text-light">Cog Systems, Inc.</span>
+      </p>
+      <article class="theprose -mt-10">
+        <div class="pt-5">
+          <p>
+    In 2017 Cog Systems developed a single domain virtualized device on an HTC One A9 smartphone, and successfully validated it against the National Information Assurance Partnership (NIAP) Protection Profile (PP) for Mobile Device Fundamentals (MDF) and registered the device with the National Security Agency (NSA) as an Approved Component under its Commercial Solutions for Classified (CSfC) process. In the past few years we have been building the next-gen version of this solution.
+</p>
+<p>
+    At the 2020 seL4 Summit, Cog Systems presented this effort as a case study in applying seL4 to a product commercialization effort. Since then, the project has experienced multiple and varied challenges, and has not yet been completed. At the 2023 Summit we gave a follow-up presentation detailing the progress, setbacks, and lessons learned of the past few years. Now, in the 2024 continuation of the series, Cog Systems will provide an update and share some of the technical, logistical, and financial challenges we encountered while building a commercial smartphone product with seL4.
+</p>
+
+        </div>
+      </article>
+      <div class="flex flex-row gap-x-2 pt-2">
+        
+          <div class="p-2 pb-1">
+            <a href="https://youtu.be/lI_Rn-riJ-Y?si=iQ_aHjRxVy3iWeHs" target="_blank"><img
+      src="/images/icons/youtube_nobckgnd.svg" width="30" alt="YouTube icon"></a>
+          </div>
+        
+        
+          <div class="p-1 mt-2">
+            <a href="slides/building-commercial.pdf" class="text-sm text-light underline">Slides</a>
+          </div>
+        
+        <div>
+          <p class="p-1 mt-2">
+          <a href="program.html#p-building-commercial" class="text-sm text-light underline">See this talk in the program</a>
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="flex w-full mb-6">
+  <div class="flex-1"></div>
+  <hr class="w-10 h-px bg-gray-200 border-0 dark:bg-gray-600">
+  
+<a href="#page-top" class="relative -mt-3.5 mx-4">
+  <div class="dark:bg-slate-900 hover:bg-slate-100 dark:hover:bg-slate-800 p-1.5 h-7 w-7 rounded-full shadow-xs left-1">
+    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" aria-hidden="true" data-slot="icon" class="h-4 w-4 text-slate-400 dark:text-slate-500">
+  <path stroke-linecap="round" stroke-linejoin="round" d="M12 19.5v-15m0 0-6.75 6.75M12 4.5l6.75 6.75"/>
+</svg>
+  </div>
+</a>
+
+  <hr class="w-10 h-px bg-gray-200 border-0 dark:bg-gray-600">
+  <div class="flex-1"></div>
+</div>
+
+
+
+
+  <div id="a-doing-nix" class="py-12 mb-5 section-max-w sm:py-16">
+  <div class="mx-auto px-2 sm:px-6 lg:px-8">
+    <div class="mx-auto lg:mx-0">
+      <h2 class="text-xl font-bold tracking-tight text-dark mb-6 sm:text-4xl">Doing Nix for seL4: Towards more Infrastructure-as-Code</h2>
+      <p>
+        <span class="text-gray-800 dark:text-gray-300">Wanja Zaeske</span>
+        <br>
+        <span class="text-light">Deutsches Zentrum für Luft- und Raumfahrt (DLR)</span>
+      </p>
+      <article class="theprose -mt-10">
+        <div class="pt-5">
+          <p>
+    Compiling the seL4 kernel itself might be simple, but once more and more of the seL4 ecosystem is involved, transitive dependencies from Python to Haskell complicate things. To tackle this complexity, we added yet another layer on top, a declarative build system that allows to provide all the (transitive-) dependencies from one hand: Nix.
+</p>
+<p>
+    This talk introduces you to the seL4-nix-utils, a collection of Nix expressions to compile but also ease integration and project bring-up with seL4. After a brief introduction to the mechanism behind Nix, we outline the provided Nix expressions and their use-cases. The talk closes with a list of remaining pain-points and a reference to a hands-on you may try after the talk.
+</p>
+
+        </div>
+      </article>
+      <div class="flex flex-row gap-x-2 pt-2">
+        
+          <div class="p-2 pb-1">
+            <a href="https://youtu.be/e12dYR8xhJI?si=ypuzrGQgeg_2vv1C" target="_blank"><img
+      src="/images/icons/youtube_nobckgnd.svg" width="30" alt="YouTube icon"></a>
+          </div>
+        
+        
+          <div class="p-1 mt-2">
+            <a href="slides/doing-nix.pdf" class="text-sm text-light underline">Slides</a>
+          </div>
+        
+        <div>
+          <p class="p-1 mt-2">
+          <a href="program.html#p-doing-nix" class="text-sm text-light underline">See this talk in the program</a>
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="flex w-full mb-6">
+  <div class="flex-1"></div>
+  <hr class="w-10 h-px bg-gray-200 border-0 dark:bg-gray-600">
+  
+<a href="#page-top" class="relative -mt-3.5 mx-4">
+  <div class="dark:bg-slate-900 hover:bg-slate-100 dark:hover:bg-slate-800 p-1.5 h-7 w-7 rounded-full shadow-xs left-1">
+    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" aria-hidden="true" data-slot="icon" class="h-4 w-4 text-slate-400 dark:text-slate-500">
+  <path stroke-linecap="round" stroke-linejoin="round" d="M12 19.5v-15m0 0-6.75 6.75M12 4.5l6.75 6.75"/>
+</svg>
+  </div>
+</a>
+
+  <hr class="w-10 h-px bg-gray-200 border-0 dark:bg-gray-600">
+  <div class="flex-1"></div>
+</div>
+
+
+
+
+  <div id="a-software-defined" class="py-12 mb-5 section-max-w sm:py-16">
+  <div class="mx-auto px-2 sm:px-6 lg:px-8">
+    <div class="mx-auto lg:mx-0">
+      <h2 class="text-xl font-bold tracking-tight text-dark mb-6 sm:text-4xl">seL4 in Software-Defined Vehicles: Vision, Roadmap, and Impact at NIO</h2>
+      <p>
+        <span class="text-gray-800 dark:text-gray-300">Ning Qu</span>
+        <br>
+        <span class="text-light">NIO</span>
+      </p>
+      <article class="theprose -mt-10">
+        <div class="pt-5">
+          <p>
+    The automotive industry is rapidly evolving, with software-defined vehicles (SDVs) at the forefront of this transformation. At NIO, we are leveraging the seL4 microkernel to redefine vehicle architecture, ensuring robust safety, reliability, and performance. This presentation will explore the vision behind integrating seL4 into our SDV platform. We will share the journey of delivering the seL4-based SkyOS-M within the ONVO vehicle on our latest NT3 platform, highlight the significant impact this integration has had on our vehicle design and functionality, and outline our future roadmap beyond the current launch.
+</p>
+
+        </div>
+      </article>
+      <div class="flex flex-row gap-x-2 pt-2">
+        
+          <div class="p-2 pb-1">
+            <a href="https://youtu.be/-I3uenz5Mw0?si=UNAXI76J0Go-NP3X" target="_blank"><img
+      src="/images/icons/youtube_nobckgnd.svg" width="30" alt="YouTube icon"></a>
+          </div>
+        
+        
+          <div class="p-1 mt-2">
+            <a href="slides/software-defined.pdf" class="text-sm text-light underline">Slides</a>
+          </div>
+        
+        <div>
+          <p class="p-1 mt-2">
+          <a href="program.html#p-software-defined" class="text-sm text-light underline">See this talk in the program</a>
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="flex w-full mb-6">
+  <div class="flex-1"></div>
+  <hr class="w-10 h-px bg-gray-200 border-0 dark:bg-gray-600">
+  
+<a href="#page-top" class="relative -mt-3.5 mx-4">
+  <div class="dark:bg-slate-900 hover:bg-slate-100 dark:hover:bg-slate-800 p-1.5 h-7 w-7 rounded-full shadow-xs left-1">
+    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" aria-hidden="true" data-slot="icon" class="h-4 w-4 text-slate-400 dark:text-slate-500">
+  <path stroke-linecap="round" stroke-linejoin="round" d="M12 19.5v-15m0 0-6.75 6.75M12 4.5l6.75 6.75"/>
+</svg>
+  </div>
+</a>
+
+  <hr class="w-10 h-px bg-gray-200 border-0 dark:bg-gray-600">
+  <div class="flex-1"></div>
+</div>
+
+
+
+
+  <div id="a-securing-ros" class="py-12 mb-5 section-max-w sm:py-16">
+  <div class="mx-auto px-2 sm:px-6 lg:px-8">
+    <div class="mx-auto lg:mx-0">
+      <h2 class="text-xl font-bold tracking-tight text-dark mb-6 sm:text-4xl">Securing ROS Systems with seL4</h2>
+      <p>
+        <span class="text-gray-800 dark:text-gray-300">Nathan Studer, Alex Pavey, Zach Clark, Dariusz Mikulski, Cristian Balas, Yale Empie</span>
+        <br>
+        <span class="text-light">DornerWorks, US Army - Ground Vehicle Robotics</span>
+      </p>
+      <article class="theprose -mt-10">
+        <div class="pt-5">
+          <p>
+    ROS (Robotic Operating System), a modular componentized architecture for robot applications, has made it possible to quickly develop and deploy systems utilizing autonomous or human guided robots.  Focusing on ease of use and portability, ROS has enabled a community of developers to create autonomy solutions that were previously restricted to well-funded companies.  However, ROS depends on many services included in a full Linux distribution to function properly.  Beyond the Operating System itself, these distributions contain many unvetted software packages, which when used in high assurance environments, such as factory automation, could present an unacceptable amount of overhead and potential vulnerabilities.
+</p>
+<p>
+    Even in less critical environments, a compromised robot could surreptitiously spy on an end user or subtly/overtly cause harm to the environment in which it operates.  While securing such systems with seL4 seems like an obvious solution, the lack of support for common software APIs and middleware presents a significant hurdle. Once this is overcome wider adoption of seL4 and more resilient robotic systems would be enabled.  This presentation will show how the cyber-retrofit approach is being used to enable secure autonomous operation of an x86 based ground vehicle, how this approach is being extended to enable native seL4 ROS applications, and the barriers to further system hardening.
+</p>
+
+        </div>
+      </article>
+      <div class="flex flex-row gap-x-2 pt-2">
+        
+          <div class="p-2 pb-1">
+            <a href="https://youtu.be/O0SrqPTc_kU?si=O0QqO4aHwVHlmjxg" target="_blank"><img
+      src="/images/icons/youtube_nobckgnd.svg" width="30" alt="YouTube icon"></a>
+          </div>
+        
+        
+          <div class="p-1 mt-2">
+            <a href="slides/securing-ros.pdf" class="text-sm text-light underline">Slides</a>
+          </div>
+        
+        <div>
+          <p class="p-1 mt-2">
+          <a href="program.html#p-securing-ros" class="text-sm text-light underline">See this talk in the program</a>
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="flex w-full mb-6">
+  <div class="flex-1"></div>
+  <hr class="w-10 h-px bg-gray-200 border-0 dark:bg-gray-600">
+  
+<a href="#page-top" class="relative -mt-3.5 mx-4">
+  <div class="dark:bg-slate-900 hover:bg-slate-100 dark:hover:bg-slate-800 p-1.5 h-7 w-7 rounded-full shadow-xs left-1">
+    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" aria-hidden="true" data-slot="icon" class="h-4 w-4 text-slate-400 dark:text-slate-500">
+  <path stroke-linecap="round" stroke-linejoin="round" d="M12 19.5v-15m0 0-6.75 6.75M12 4.5l6.75 6.75"/>
+</svg>
+  </div>
+</a>
+
+  <hr class="w-10 h-px bg-gray-200 border-0 dark:bg-gray-600">
+  <div class="flex-1"></div>
+</div>
+
+
+
+
+
+  <div id="a-hardware-support" class="py-12 mb-5 section-max-w sm:py-16">
+  <div class="mx-auto px-2 sm:px-6 lg:px-8">
+    <div class="mx-auto lg:mx-0">
+      <h2 class="text-xl font-bold tracking-tight text-dark mb-6 sm:text-4xl">Hardware Support for Time Protection</h2>
+      <p>
+        <span class="text-gray-800 dark:text-gray-300">Nils Wistoff, Gernot Heiser, Luca Benini</span>
+        <br>
+        <span class="text-light">ETH Zurich, UNSW Sydney, University of Bologna</span>
+      </p>
+      <article class="theprose -mt-10">
+        <div class="pt-5">
+          <p>
+    Timing channels enable information leakage across address spaces, bypassing an operating system’s security boundaries. They can result from any shared microarchitectural state that depends on previous execution and affects a system’s timing. Closing timing channels (aka “time protection”) requires strict partitioning of microarchitectural state, which is not feasible (or extremely expensive) in current ISAs.
+</p>
+<p>
+    At the 2022 seL4 summit, we presented the custom RISC-V fence.t instruction to temporally partition on-core processor state in CVA6, a simple in-order RV64GC processor. This year’s talk will propose a minimal ISA extension that enables hybrid spatial and temporal partitioning of a complete system-on-chip comprising complex out-of-order CPUs, last-level caches, and DRAMs, making system-wide microarchitectural state a first-class resource that can be managed by the OS. We will highlight hardware design implications in different system components and present preliminary experimental results detailing the efficacy and performance overheads of the proposed solution based on extended hardware systems running seL4.
+</p>
+
+        </div>
+      </article>
+      <div class="flex flex-row gap-x-2 pt-2">
+        
+          <div class="p-2 pb-1">
+            <a href="https://youtu.be/qoInVWmVdeQ?si=gPgv9O3LAtmmjuTp" target="_blank"><img
+      src="/images/icons/youtube_nobckgnd.svg" width="30" alt="YouTube icon"></a>
+          </div>
+        
+        
+          <div class="p-1 mt-2">
+            <a href="slides/hardware-support.pdf" class="text-sm text-light underline">Slides</a>
+          </div>
+        
+        <div>
+          <p class="p-1 mt-2">
+          <a href="program.html#p-hardware-support" class="text-sm text-light underline">See this talk in the program</a>
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="flex w-full mb-6">
+  <div class="flex-1"></div>
+  <hr class="w-10 h-px bg-gray-200 border-0 dark:bg-gray-600">
+  
+<a href="#page-top" class="relative -mt-3.5 mx-4">
+  <div class="dark:bg-slate-900 hover:bg-slate-100 dark:hover:bg-slate-800 p-1.5 h-7 w-7 rounded-full shadow-xs left-1">
+    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" aria-hidden="true" data-slot="icon" class="h-4 w-4 text-slate-400 dark:text-slate-500">
+  <path stroke-linecap="round" stroke-linejoin="round" d="M12 19.5v-15m0 0-6.75 6.75M12 4.5l6.75 6.75"/>
+</svg>
+  </div>
+</a>
+
+  <hr class="w-10 h-px bg-gray-200 border-0 dark:bg-gray-600">
+  <div class="flex-1"></div>
+</div>
+
+
+
+  <div id="a-verification-status" class="py-12 mb-5 section-max-w sm:py-16">
+  <div class="mx-auto px-2 sm:px-6 lg:px-8">
+    <div class="mx-auto lg:mx-0">
+      <h2 class="text-xl font-bold tracking-tight text-dark mb-6 sm:text-4xl">Verification Status of Time Protection and Microkit-based OS Services</h2>
+      <p>
+        <span class="text-gray-800 dark:text-gray-300">Robert Sison</span>
+        <br>
+        <span class="text-light">UNSW Sydney</span>
+      </p>
+      <article class="theprose -mt-10">
+        <div class="pt-5">
+          <p>
+    This talk will give an overview of the status of ongoing and planned research and development at Trustworthy Systems to expand the scope of proofs about seL4-based operating systems in two directions: (1) downwards, to prove that the seL4 kernel implements time protection correctly at the abstract and C specification levels, and (2) upwards, to prove functional specifications of seL4's system calls and on that basis carry out SMT-based automated deductive verification of the user-level seL4 Microkit and Lions OS service components built on top of it. Here I will lay out the research and engineering challenges facing us on both these fronts and the planned subprojects for which we seek talented PhD students, postdocs and engineers to tackle them.
+</p>
+
+        </div>
+      </article>
+      <div class="flex flex-row gap-x-2 pt-2">
+        
+          <div class="p-2 pb-1">
+            <a href="https://youtu.be/7wcFx6OTEL4?si=VMcr1_JS7znZhNMO" target="_blank"><img
+      src="/images/icons/youtube_nobckgnd.svg" width="30" alt="YouTube icon"></a>
+          </div>
+        
+        
+          <div class="p-1 mt-2">
+            <a href="slides/verification-status.pdf" class="text-sm text-light underline">Slides</a>
+          </div>
+        
+        <div>
+          <p class="p-1 mt-2">
+          <a href="program.html#p-verification-status" class="text-sm text-light underline">See this talk in the program</a>
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="flex w-full mb-6">
+  <div class="flex-1"></div>
+  <hr class="w-10 h-px bg-gray-200 border-0 dark:bg-gray-600">
+  
+<a href="#page-top" class="relative -mt-3.5 mx-4">
+  <div class="dark:bg-slate-900 hover:bg-slate-100 dark:hover:bg-slate-800 p-1.5 h-7 w-7 rounded-full shadow-xs left-1">
+    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" aria-hidden="true" data-slot="icon" class="h-4 w-4 text-slate-400 dark:text-slate-500">
+  <path stroke-linecap="round" stroke-linejoin="round" d="M12 19.5v-15m0 0-6.75 6.75M12 4.5l6.75 6.75"/>
+</svg>
+  </div>
+</a>
+
+  <hr class="w-10 h-px bg-gray-200 border-0 dark:bg-gray-600">
+  <div class="flex-1"></div>
+</div>
+
+
+
+  <div id="a-cpu-driver" class="py-12 mb-5 section-max-w sm:py-16">
+  <div class="mx-auto px-2 sm:px-6 lg:px-8">
+    <div class="mx-auto lg:mx-0">
+      <h2 class="text-xl font-bold tracking-tight text-dark mb-6 sm:text-4xl">seL4 as a CPU Driver for an OS for Real Computers</h2>
+      <p>
+        <span class="text-gray-800 dark:text-gray-300">Roman Meier, Zikai Liu, Ben Fiedler, Timothy Roscoe</span>
+        <br>
+        <span class="text-light">ETH Zurich</span>
+      </p>
+      <article class="theprose -mt-10">
+        <div class="pt-5">
+          <p>
+    Modern operating systems&mdash;including seL4&mdash;are written to a fictional model of machine hardware from the 1960s and 1970s: a set of homogeneous cores accessing a common physical address space containing main memory, plus memory-mapped devices. However, modern SoCs and server platforms are really a complex network of heterogeneous cores and intelligent devices, many of which are running their own firmware and "operating systems". The result is a catastrophe of system design, including a plethora of security exploits like remote over-the-air compromises due to weaknesses in WiFi modem firmware. Link: https://googleprojectzero.blogspot.com/2017/04/over-air-exploiting-broadcoms-wi-fi_11.html.
+</p>
+<p>
+    We are building Kirsch, a new OS that solves this problem by embracing and formally capturing the heterogeneity and multiple trust domains of modern hardware. To this end, Kirsch formally models what each hardware context can access using a decoding net representation of the platform (Link "Putting out the hardware dumpster fire", https://doi.org/10.1145/3593856.3595903), which induces a trust relationship between contexts. This trust relationship is the basis for reasoning about isolation, protection and authorization in the system. An seL4 instance can run from, and manage, a region of RAM which is explicitly isolated from untrusted contexts in the system, by using the trust an access information we formally derived. Kirsch thus recovers the power of the seL4 correctness proofs, and we can finally use the seL4 kernel to run truly isolated processes and virtual machines.
+</p>
+
+        </div>
+      </article>
+      <div class="flex flex-row gap-x-2 pt-2">
+        
+          <div class="p-2 pb-1">
+            <a href="https://youtu.be/DGLSJ8m-X2I?si=mbMoB2uYiKJ5_2Cs" target="_blank"><img
+      src="/images/icons/youtube_nobckgnd.svg" width="30" alt="YouTube icon"></a>
+          </div>
+        
+        
+          <div class="p-1 mt-2">
+            <a href="slides/cpu-driver.pdf" class="text-sm text-light underline">Slides</a>
+          </div>
+        
+        <div>
+          <p class="p-1 mt-2">
+          <a href="program.html#p-cpu-driver" class="text-sm text-light underline">See this talk in the program</a>
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="flex w-full mb-6">
+  <div class="flex-1"></div>
+  <hr class="w-10 h-px bg-gray-200 border-0 dark:bg-gray-600">
+  
+<a href="#page-top" class="relative -mt-3.5 mx-4">
+  <div class="dark:bg-slate-900 hover:bg-slate-100 dark:hover:bg-slate-800 p-1.5 h-7 w-7 rounded-full shadow-xs left-1">
+    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" aria-hidden="true" data-slot="icon" class="h-4 w-4 text-slate-400 dark:text-slate-500">
+  <path stroke-linecap="round" stroke-linejoin="round" d="M12 19.5v-15m0 0-6.75 6.75M12 4.5l6.75 6.75"/>
+</svg>
+  </div>
+</a>
+
+  <hr class="w-10 h-px bg-gray-200 border-0 dark:bg-gray-600">
+  <div class="flex-1"></div>
+</div>
+
+
+
+</div>
+
+      </main><footer class="bg-gray-900" aria-labelledby="footer-heading">
+  <h2 id="footer-heading" class="sr-only">Footer</h2>
+  <div class="mx-auto max-w-7xl px-6 pb-8 pt-16 sm:pt-24 lg:px-8 lg:pt-32">
+    <div class="ml-10 lg:grid lg:grid-cols-2 lg:gap-8">
+      <div class="space-y-8">
+        <img class="h-12" src="/images/seL4.svg" alt="seL4 logo">
+        <p class="text-sm leading-6 text-gray-300">Proof. Performance. Security.</p>
+        <!-- socials -->
+        <div class="flex space-x-6">
+          <a href="https://www.linkedin.com/company/sel4" title="seL4 on LinkedIn"
+             class="text-gray-500 hover:text-gray-400">
+            <svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" aria-hidden="true" viewBox="0 0 455 455" data-slot="icon" class="h-6 w-6">
+  <path style="fill-rule:evenodd;clip-rule:evenodd;" d="M246.4,204.35v-0.665c-0.136,0.223-0.324,0.446-0.442,0.665H246.4z"/>
+  <path style="fill-rule:evenodd;clip-rule:evenodd;" d="M0,0v455h455V0H0z M141.522,378.002H74.016V174.906h67.506V378.002z M107.769,147.186h-0.446C84.678,147.186,70,131.585,70,112.085c0-19.928,15.107-35.087,38.211-35.087 c23.109,0,37.31,15.159,37.752,35.087C145.963,131.585,131.32,147.186,107.769,147.186z M385,378.002h-67.524V269.345 c0-27.291-9.756-45.92-34.195-45.92c-18.664,0-29.755,12.543-34.641,24.693c-1.776,4.34-2.24,10.373-2.24,16.459v113.426h-67.537 c0,0,0.905-184.043,0-203.096H246.4v28.779c8.973-13.807,24.986-33.547,60.856-33.547c44.437,0,77.744,29.02,77.744,91.398V378.002 z"/>
+</svg>
+          </a>
+          <a href="https://www.youtube.com/@seL4" title="seL4 on YouTube"
+             class="text-gray-500 hover:text-gray-400">
+            <svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" aria-hidden="true" viewBox="0 0 24 24" data-slot="icon" class="h-6 w-6">
+  <path fill-rule="evenodd" d="M19.812 5.418c.861.23 1.538.907 1.768 1.768C21.998 8.746 22 12 22 12s0 3.255-.418 4.814a2.504 2.504 0 0 1-1.768 1.768c-1.56.419-7.814.419-7.814.419s-6.255 0-7.814-.419a2.505 2.505 0 0 1-1.768-1.768C2 15.255 2 12 2 12s0-3.255.417-4.814a2.507 2.507 0 0 1 1.768-1.768C5.744 5 11.998 5 11.998 5s6.255 0 7.814.418ZM15.194 12 10 15V9l5.194 3Z" clip-rule="evenodd"/>
+</svg>
+          </a>
+          <a href="https://github.com/seL4" title="seL4 on GitHub"
+             class="text-gray-500 hover:text-gray-400">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16" fill="currentColor" aria-hidden="true" data-slot="icon" class="h-6 w-6">
+  <path d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.013 8.013 0 0016 8c0-4.42-3.58-8-8-8z"/>
+</svg>
+          </a>
+        </div>
+      </div>
+      <!-- footer menu -->
+      <div class="mt-16 flex flex-wrap gap-8 lg:mt-0"><div class="flex-none">
+          <h3 class="text-md font-semibold leading-6 text-logogreen">Useful Links</h3>
+          <ul class="mt-6 space-y-4"><li>
+              <a href="/About/" class="text-sm leading-6 text-gray-300 hover:text-white">What is seL4?</a>
+            </li><li>
+              <a href="/Foundation/" class="text-sm leading-6 text-gray-300 hover:text-white">seL4 Foundation</a>
+            </li><li>
+              <a href="/Foundation/Join/" class="text-sm leading-6 text-gray-300 hover:text-white">Become a Member</a>
+            </li><li>
+              <a href="/Legal/logo.html" class="text-sm leading-6 text-gray-300 hover:text-white">seL4 Logo</a>
+            </li><li>
+              <a href="/sitemap.html" class="text-sm leading-6 text-gray-300 hover:text-white">Sitemap</a>
+            </li></ul>
+        </div><div class="flex-none">
+          <h3 class="text-md font-semibold leading-6 text-logogreen">Legal</h3>
+          <ul class="mt-6 space-y-4"><li>
+              <a href="/Legal/trademark.html" class="text-sm leading-6 text-gray-300 hover:text-white">seL4 Trademark</a>
+            </li><li>
+              <a href="/Legal/license.html" class="text-sm leading-6 text-gray-300 hover:text-white">seL4 License</a>
+            </li><li>
+              <a href="/Contribute/conduct.html" class="text-sm leading-6 text-gray-300 hover:text-white">Code of Conduct</a>
+            </li><li>
+              <a href="http://www.lfprojects.org/" class="text-sm leading-6 text-gray-300 hover:text-white">Site Policies</a>
+            </li></ul>
+        </div><div class="flex-none">
+          <h3 class="text-md font-semibold leading-6 text-logogreen">Using seL4</h3>
+          <ul class="mt-6 space-y-4"><li>
+              <a href="https://docs.sel4.systems" class="text-sm leading-6 text-gray-300 hover:text-white">Docsite</a>
+            </li><li>
+              <a href="/Info/Docs/seL4-manual-latest.pdf" class="text-sm leading-6 text-gray-300 hover:text-white">Manual</a>
+            </li><li>
+              <a href="https://docs.sel4.systems/Tutorials/" class="text-sm leading-6 text-gray-300 hover:text-white">Tutorials</a>
+            </li><li>
+              <a href="/About/FAQ.html" class="text-sm leading-6 text-gray-300 hover:text-white">FAQ</a>
+            </li></ul>
+        </div></div>
+    </div>
+    <div class="flex flex-row flex-wrap gap-x-3 mt-16 border-t border-white/10 pt-8 sm:mt-20 lg:mt-24">
+      <p class="flex-none max-w-full text-tiny sm:text-xs leading-5 text-gray-400">&copy; 2025 seL4 Project a Series of LF Projects, LLC. seL4 is a trademark of LF Projects, LLC.</p></div>
+  </div>
+</footer>
+
+   </div>
+  </body>
+</html>

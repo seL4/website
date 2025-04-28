@@ -2,148 +2,654 @@
 <html lang="en">
   <head>
     <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title>News about seL4 and the seL4 Foundation | seL4</title>
-    <meta name="author" content="seL4 Foundation" />
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>seL4 News | seL4</title>
+    <meta name="author" content="seL4 Foundation">
     <link rel="canonical" href="https://sel4.systems/news/2022.html">
-    <link href=/css/bootstrap.min.css rel="stylesheet">
-    <link href=/css/sel4.css rel="stylesheet">
-
-    <link rel="apple-touch-icon" sizes="57x57" href=/images/icons/apple-touch-icon-57x57.png />
-    <link rel="apple-touch-icon" sizes="114x114" href=/images/icons/apple-touch-icon-114x114.png />
-    <link rel="apple-touch-icon" sizes="72x72" href=/images/icons/apple-touch-icon-72x72.png />
-    <link rel="apple-touch-icon" sizes="144x144" href=/images/icons/apple-touch-icon-144x144.png />
-    <link rel="apple-touch-icon" sizes="60x60" href=/images/icons/apple-touch-icon-60x60.png />
-    <link rel="apple-touch-icon" sizes="120x120" href=/images/icons/apple-touch-icon-120x120.png />
-    <link rel="apple-touch-icon" sizes="76x76" href=/images/icons/apple-touch-icon-76x76.png />
-    <link rel="apple-touch-icon" sizes="152x152" href=/images/icons/apple-touch-icon-152x152.png />
-    <link rel="icon" type="image/png" href=/images/icons/favicon-96x96.png sizes="96x96" />
-    <link rel="icon" type="image/png" href=/images/icons/favicon-32x32.png sizes="32x32" />
-    <link rel="icon" type="image/png" href=/images/icons/favicon-16x16.png sizes="16x16" />
-    <meta name="application-name" content="&nbsp;"/>
-    <meta name="msapplication-TileColor" content="#FFFFFF" />
-    <meta name="msapplication-TileImage" content=/images/icons/mstile-144x144.png />
-    <meta name="msapplication-square70x70logo" content=/images/icons/mstile-70x70.png />
-    <meta name="msapplication-square150x150logo" content=/images/icons/mstile-150x150.png />
-    <meta name="msapplication-wide310x150logo" content=/images/icons/mstile-310x150.png />
-    <meta name="msapplication-square310x310logo" content=/images/icons/mstile-310x310.png />
-    <link rel="shortcut icon" href=/images/icons/favicon.ico />
+    <link href="/css/sel4.css?v=1745826246" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+    <link rel=alternate title="Atom Feed" type=application/atom+xml href="/feed.xml">
+    <link rel="apple-touch-icon" sizes="57x57" href="/images/icons/apple-touch-icon-57x57.png">
+    <link rel="apple-touch-icon" sizes="114x114" href="/images/icons/apple-touch-icon-114x114.png">
+    <link rel="apple-touch-icon" sizes="72x72" href="/images/icons/apple-touch-icon-72x72.png">
+    <link rel="apple-touch-icon" sizes="144x144" href="/images/icons/apple-touch-icon-144x144.png">
+    <link rel="apple-touch-icon" sizes="60x60" href="/images/icons/apple-touch-icon-60x60.png">
+    <link rel="apple-touch-icon" sizes="120x120" href="/images/icons/apple-touch-icon-120x120.png">
+    <link rel="apple-touch-icon" sizes="76x76" href="/images/icons/apple-touch-icon-76x76.png">
+    <link rel="apple-touch-icon" sizes="152x152" href="/images/icons/apple-touch-icon-152x152.png">
+    <link rel="icon" type="image/png" href="/images/icons/favicon-96x96.png" sizes="96x96">
+    <link rel="icon" type="image/png" href="/images/icons/favicon-32x32.png" sizes="32x32">
+    <link rel="icon" type="image/png" href="/images/icons/favicon-16x16.png" sizes="16x16">
+    <meta name="application-name" content="&nbsp;">
+    <meta name="msapplication-TileColor" content="#FFFFFF">
+    <meta name="msapplication-TileImage" content="/images/icons/mstile-144x144.png">
+    <meta name="msapplication-square70x70logo" content="/images/icons/mstile-70x70.png">
+    <meta name="msapplication-square150x150logo" content="/images/icons/mstile-150x150.png">
+    <meta name="msapplication-wide310x150logo" content="/images/icons/mstile-310x150.png">
+    <meta name="msapplication-square310x310logo" content="/images/icons/mstile-310x310.png">
+    <link rel="shortcut icon" href="/images/icons/favicon.ico">
+    <script defer src="/js/menu.js"></script>
 
     <script defer data-domain="sel4.systems" src="https://analytics.sel4.systems/js/script.js"></script>
-
   </head>
-  <body>
-  <div id="page-container"><!--to put footer at bottom of page-->
-  <div id="content-wrap"><!--to put footer at bottom of page-->
+  <body class="flex flex-col h-screen dark:bg-[#030020] bg-white"><header class="bg-white dark:bg-darkblue">
+  <nav class="mx-auto flex items-center justify-between px-6 py-2 lg:pt-4 lg:pb-3 mb-2 lg:px-8
+              shadow-md relative z-10 bg-white/90 dark:bg-darkblue/90 backdrop-blur-md" aria-label="Global">
+    <div class="flex lg:flex-none">
+      <a href="/" class="-m-1.5 p-1.5">
+        <span class="sr-only">seL4</span>
+        <img class="h-6 lg:h-8 w-auto" src="/images/seL4.svg" alt="seL4 logo">
+      </a>
+    </div>
+    <div class="flex flex-1"></div>
 
-<div class="container">
-  <div class="header" id="site-header" role="navigation" >
-    <ul class="nav-pills nav pull-right" id="site-navigation">
-		<li class=""><a href="/">Home</a></li><li class="dropdown "><a class="dropdown-toggle" data-toggle="dropdown" href="/About/">What is seL4? <span class="caret"></span></a>
-		<ul class="dropdown-menu">
-		<li class=""><a href="/About/">What is seL4?</a></li>
-		<li class=""><a href="/About/Performance/">Performance</a></li>
-		<li class=""><a href="/About/seL4-whitepaper.pdf">Whitepaper</a></li>
-		</ul></li><li class="dropdown "><a class="dropdown-toggle" data-toggle="dropdown" href="/Foundation/">seL4 Foundation <span class="caret"></span></a>
-		<ul class="dropdown-menu">
-		<li class=""><a href="/Foundation/">About the seL4 Foundation</a></li>
-		<li class=""><a href="/Foundation/Governance/">Governance</a></li>
-		<li class=""><a href="/Foundation/Board/">Governing Board</a></li>
-		<li class=""><a href="/Foundation/TSC/">TSC</a></li>
-		<li class=""><a href="/Foundation/Membership/">Membership</a></li>
-		<li class=""><a href="/Foundation/Join/">Join the Foundation now!</a></li>
-		<li class=""><a href="/Foundation/Services/">Commercial Support</a></li>
-		<li class=""><a href="/Foundation/Summit/2025/">seL4 Summit</a></li>
-		<li class=""><a href="/Foundation/Support/">Support Us</a></li>
-		<li class=""><a href="/Foundation/Trademark/">Trademark</a></li>
-		<li class=""><a href="/Foundation/Jobs/">Jobs in the seL4 ecosystem</a></li>
-		<li class=""><a href="/Foundation/Contact/">Contact the seL4 Foundation</a></li>
-		</ul></li>
-		<li class=""><a href="/contact/">Stay in Touch</a></li><li class="dropdown "><a class="dropdown-toggle" data-toggle="dropdown" href="/Contribute/">Contribute <span class="caret"></span></a>
-		<ul class="dropdown-menu">
-		<li class=""><a href="/Contribute/">Contribute</a></li>
-		<li class=""><a href="https://github.com/seL4">GitHub</a></li>
-		</ul></li>
-		<li class=""><a href="/Use/">Use</a></li>
-		<li class=""><a href="/Learn/">Learn</a></li><li class="dropdown "><a class="dropdown-toggle" data-toggle="dropdown" href="/Info/">More Info <span class="caret"></span></a>
-		<ul class="dropdown-menu">
-		<li class=""><a href="/Info/">More Info</a></li>
-		<li class=""><a href="https://docs.sel4.systems/projects/sel4/frequently-asked-questions.html">FAQ</a></li>
-		<li class=""><a href="https://docs.sel4.systems/projects/roadmap.html">Roadmap</a></li>
-		<li class=""><a href="/Info/more-research.html">Research</a></li>
-		</ul></li>
-		<li class=""><a href="/news/">News</a></li>
-    </ul>
+    <div class="hidden md:flex md:gap-x-3 lg:gap-x-5 xl:gap-x-10"><div class="relative">
+  <a class="dropbtn" aria-expanded="false" href="#">
+    <span>About</span>
+    <span class="hidden lg:inline"> seL4</span>
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true" data-slot="icon" class="drop-icon">
+  <path fill-rule="evenodd" d="M5.22 8.22a.75.75 0 0 1 1.06 0L10 11.94l3.72-3.72a.75.75 0 1 1 1.06 1.06l-4.25 4.25a.75.75 0 0 1-1.06 0L5.22 9.28a.75.75 0 0 1 0-1.06Z" clip-rule="evenodd"/>
+</svg>
+  </a><div class="absolute -left-14 top-full z-10 mt-4 flex w-screen max-w-max px-4 transition ease-in-out duration-200 dropmenu">
+    <div class="w-screen max-w-md flex-auto overflow-hidden rounded-3xl bg-white dark:bg-darkblue text-sm leading-6 shadow-lg ring-1 ring-gray-900/5 dark:ring-gray-100/20 lg:max-w-3xl">
+      <div class="grid grid-cols-1 gap-x-6 gap-y-1 p-4 lg:grid-cols-2">
+<div class="group menu-item-group">
+          <div class="menu-icon-div"><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" aria-hidden="true" data-slot="icon" class="menu-icon">
+  <path stroke-linecap="round" stroke-linejoin="round" d="M12 18v-5.25m0 0a6.01 6.01 0 0 0 1.5-.189m-1.5.189a6.01 6.01 0 0 1-1.5-.189m3.75 7.478a12.06 12.06 0 0 1-4.5 0m3.75 2.383a14.406 14.406 0 0 1-3 0M14.25 18v-.192c0-.983.658-1.823 1.508-2.316a7.5 7.5 0 1 0-7.517 0c.85.493 1.509 1.333 1.509 2.316V18"/>
+</svg></div>
+          <div>
+            <a href="/About/" class="font-semibold text-dark">
+              What is seL4?
+              <span class="absolute inset-0"></span>
+            </a>
+            <p class="mt-1 text-light">History, Fact Sheet, White Paper. How to use seL4 in your system.</p>
+          </div>
+        </div><div class="group menu-item-group">
+          <div class="menu-icon-div"><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" aria-hidden="true" data-slot="icon" class="menu-icon">
+  <path stroke-linecap="round" stroke-linejoin="round" d="M18 18.72a9.094 9.094 0 0 0 3.741-.479 3 3 0 0 0-4.682-2.72m.94 3.198.001.031c0 .225-.012.447-.037.666A11.944 11.944 0 0 1 12 21c-2.17 0-4.207-.576-5.963-1.584A6.062 6.062 0 0 1 6 18.719m12 0a5.971 5.971 0 0 0-.941-3.197m0 0A5.995 5.995 0 0 0 12 12.75a5.995 5.995 0 0 0-5.058 2.772m0 0a3 3 0 0 0-4.681 2.72 8.986 8.986 0 0 0 3.74.477m.94-3.197a5.971 5.971 0 0 0-.94 3.197M15 6.75a3 3 0 1 1-6 0 3 3 0 0 1 6 0Zm6 3a2.25 2.25 0 1 1-4.5 0 2.25 2.25 0 0 1 4.5 0Zm-13.5 0a2.25 2.25 0 1 1-4.5 0 2.25 2.25 0 0 1 4.5 0Z"/>
+</svg></div>
+          <div>
+            <a href="/use.html" class="font-semibold text-dark">
+              Who is using seL4?
+              <span class="absolute inset-0"></span>
+            </a>
+            <p class="mt-1 text-light">Where seL4 is used and deployed world wide</p>
+          </div>
+        </div><div class="group menu-item-group">
+          <div class="menu-icon-div"><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" aria-hidden="true" data-slot="icon" class="menu-icon">
+  <path stroke-linecap="round" stroke-linejoin="round" d="M9 12.75 11.25 15 15 9.75M21 12a9 9 0 1 1-18 0 9 9 0 0 1 18 0Z"/>
+</svg></div>
+          <div>
+            <a href="/Verification/" class="font-semibold text-dark">
+              Verification
+              <span class="absolute inset-0"></span>
+            </a>
+            <p class="mt-1 text-light">seL4 Proofs; implications for seL4-based systems and certification</p>
+          </div>
+        </div><div class="group menu-item-group">
+          <div class="menu-icon-div"><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" aria-hidden="true" data-slot="icon" class="menu-icon">
+  <path stroke-linecap="round" stroke-linejoin="round" d="M2.25 18 9 11.25l4.306 4.306a11.95 11.95 0 0 1 5.814-5.518l2.74-1.22m0 0-5.94-2.281m5.94 2.28-2.28 5.941"/>
+</svg></div>
+          <div>
+            <a href="/roadmap.html" class="font-semibold text-dark">
+              Roadmap
+              <span class="absolute inset-0"></span>
+            </a>
+            <p class="mt-1 text-light">Planned development &amp; verification</p>
+          </div>
+        </div><div class="group menu-item-group">
+          <div class="menu-icon-div"><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" aria-hidden="true" data-slot="icon" class="menu-icon">
+  <path stroke-linecap="round" stroke-linejoin="round" d="m3.75 13.5 10.5-11.25L12 10.5h8.25L9.75 21.75 12 13.5H3.75Z"/>
+</svg></div>
+          <div>
+            <a href="/performance.html" class="font-semibold text-dark">
+              Performance
+              <span class="absolute inset-0"></span>
+            </a>
+            <p class="mt-1 text-light">The numbers on the world&#39;s fastest kernel</p>
+          </div>
+        </div><div class="group menu-item-group">
+          <div class="menu-icon-div"><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" aria-hidden="true" data-slot="icon" class="menu-icon">
+  <path stroke-linecap="round" stroke-linejoin="round" d="M12 3v17.25m0 0c-1.472 0-2.882.265-4.185.75M12 20.25c1.472 0 2.882.265 4.185.75M18.75 4.97A48.416 48.416 0 0 0 12 4.5c-2.291 0-4.545.16-6.75.47m13.5 0c1.01.143 2.01.317 3 .52m-3-.52 2.62 10.726c.122.499-.106 1.028-.589 1.202a5.988 5.988 0 0 1-2.031.352 5.988 5.988 0 0 1-2.031-.352c-.483-.174-.711-.703-.59-1.202L18.75 4.971Zm-16.5.52c.99-.203 1.99-.377 3-.52m0 0 2.62 10.726c.122.499-.106 1.028-.589 1.202a5.989 5.989 0 0 1-2.031.352 5.989 5.989 0 0 1-2.031-.352c-.483-.174-.711-.703-.59-1.202L5.25 4.971Z"/>
+</svg></div>
+          <div>
+            <a href="/Legal/" class="font-semibold text-dark">
+              License, Trademark &amp; Logo
+              <span class="absolute inset-0"></span>
+            </a>
+            <p class="mt-1 text-light">seL4 License and Implications; Trademark Compliance Guide</p>
+          </div>
+        </div><div class="group menu-item-group">
+          <div class="menu-icon-div"><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" aria-hidden="true" data-slot="icon" class="menu-icon">
+  <path stroke-linecap="round" stroke-linejoin="round" d="M8.25 3v1.5M4.5 8.25H3m18 0h-1.5M4.5 12H3m18 0h-1.5m-15 3.75H3m18 0h-1.5M8.25 19.5V21M12 3v1.5m0 15V21m3.75-18v1.5m0 15V21m-9-1.5h10.5a2.25 2.25 0 0 0 2.25-2.25V6.75a2.25 2.25 0 0 0-2.25-2.25H6.75A2.25 2.25 0 0 0 4.5 6.75v10.5a2.25 2.25 0 0 0 2.25 2.25Zm.75-12h9v9h-9v-9Z"/>
+</svg></div>
+          <div>
+            <a href="/platforms.html" class="font-semibold text-dark">
+              Platform Support Overview
+              <span class="absolute inset-0"></span>
+            </a>
+            <p class="mt-1 text-light">Hardware and simulators seL4 runs on</p>
+          </div>
+        </div><div class="group menu-item-group">
+          <div class="menu-icon-div"><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" aria-hidden="true" data-slot="icon" class="menu-icon">
+  <path stroke-linecap="round" stroke-linejoin="round" d="M4.26 10.147a60.438 60.438 0 0 0-.491 6.347A48.62 48.62 0 0 1 12 20.904a48.62 48.62 0 0 1 8.232-4.41 60.46 60.46 0 0 0-.491-6.347m-15.482 0a50.636 50.636 0 0 0-2.658-.813A59.906 59.906 0 0 1 12 3.493a59.903 59.903 0 0 1 10.399 5.84c-.896.248-1.783.52-2.658.814m-15.482 0A50.717 50.717 0 0 1 12 13.489a50.702 50.702 0 0 1 7.74-3.342M6.75 15a.75.75 0 1 0 0-1.5.75.75 0 0 0 0 1.5Zm0 0v-3.675A55.378 55.378 0 0 1 12 8.443m-7.007 11.55A5.981 5.981 0 0 0 6.75 15.75v-1.5"/>
+</svg></div>
+          <div>
+            <a href="/Research/" class="font-semibold text-dark">
+              Research
+              <span class="absolute inset-0"></span>
+            </a>
+            <p class="mt-1 text-light">Seminal seL4 Publications; Ongoing Research; Courses in the Ecosystem</p>
+          </div>
+        </div><div class="group menu-item-group">
+          <div class="menu-icon-div"><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" aria-hidden="true" data-slot="icon" class="menu-icon">
+  <path stroke-linecap="round" stroke-linejoin="round" d="M13.5 16.875h3.375m0 0h3.375m-3.375 0V13.5m0 3.375v3.375M6 10.5h2.25a2.25 2.25 0 0 0 2.25-2.25V6a2.25 2.25 0 0 0-2.25-2.25H6A2.25 2.25 0 0 0 3.75 6v2.25A2.25 2.25 0 0 0 6 10.5Zm0 9.75h2.25A2.25 2.25 0 0 0 10.5 18v-2.25a2.25 2.25 0 0 0-2.25-2.25H6a2.25 2.25 0 0 0-2.25 2.25V18A2.25 2.25 0 0 0 6 20.25Zm9.75-9.75H18a2.25 2.25 0 0 0 2.25-2.25V6A2.25 2.25 0 0 0 18 3.75h-2.25A2.25 2.25 0 0 0 13.5 6v2.25a2.25 2.25 0 0 0 2.25 2.25Z"/>
+</svg></div>
+          <div>
+            <a href="/tools.html" class="font-semibold text-dark">
+              Frameworks &amp; Languages
+              <span class="absolute inset-0"></span>
+            </a>
+            <p class="mt-1 text-light">Frameworks, Tools, OS Personalities, Components, Language Support</p>
+          </div>
+        </div><div class="group menu-item-group">
+          <div class="menu-icon-div"><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" aria-hidden="true" data-slot="icon" class="menu-icon">
+  <path stroke-linecap="round" stroke-linejoin="round" d="M12 21v-8.25M15.75 21v-8.25M8.25 21v-8.25M3 9l9-6 9 6m-1.5 12V10.332A48.36 48.36 0 0 0 12 9.75c-2.551 0-5.056.2-7.5.582V21M3 21h18M12 6.75h.008v.008H12V6.75Z"/>
+</svg></div>
+          <div>
+            <a href="/Foundation/" class="font-semibold text-dark">
+              seL4 Foundation
+              <span class="absolute inset-0"></span>
+            </a>
+            <p class="mt-1 text-light">Members, Board, and Technical Steering Committee</p>
+          </div>
+        </div>
+      </div><div class="grid grid-cols-1 gap-x-6 gap-y-1 p-4 lg:grid-cols-2 bg-gray-50 dark:bg-slate-900"><div class="group menu-item-group hover:bg-gray-100 hover:dark:bg-slate-800">
+          <div class="menu-icon-div"><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" aria-hidden="true" data-slot="icon" class="menu-icon">
+  <path stroke-linecap="round" stroke-linejoin="round" d="M12 6.042A8.967 8.967 0 0 0 6 3.75c-1.052 0-2.062.18-3 .512v14.25A8.987 8.987 0 0 1 6 18c2.305 0 4.408.867 6 2.292m0-14.25a8.966 8.966 0 0 1 6-2.292c1.052 0 2.062.18 3 .512v14.25A8.987 8.987 0 0 0 18 18a8.967 8.967 0 0 0-6 2.292m0-14.25v14.25"/>
+</svg></div>
+          <div>
+            <a href="/Learn/" class="font-semibold text-dark">
+              Manual &amp; Documentation
+              <span class="absolute inset-0"></span>
+            </a>
+            <p class="mt-1 text-light">Manual, Tutorials, Documentation</p>
+          </div>
+        </div><div class="group menu-item-group hover:bg-gray-100 hover:dark:bg-slate-800">
+          <div class="menu-icon-div"><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" aria-hidden="true" data-slot="icon" class="menu-icon">
+  <path stroke-linecap="round" stroke-linejoin="round" d="M9.879 7.519c1.171-1.025 3.071-1.025 4.242 0 1.172 1.025 1.172 2.687 0 3.712-.203.179-.43.326-.67.442-.745.361-1.45.999-1.45 1.827v.75M21 12a9 9 0 1 1-18 0 9 9 0 0 1 18 0Zm-9 5.25h.008v.008H12v-.008Z"/>
+</svg></div>
+          <div>
+            <a href="/About/FAQ.html" class="font-semibold text-dark">
+              FAQ
+              <span class="absolute inset-0"></span>
+            </a>
+            <p class="mt-1 text-light">Frequently Asked Questions</p>
+          </div>
+        </div></div></div>
+  </div>
+</div><div class="relative">
+  <a class="dropbtn" aria-expanded="false" href="#">
+    <span>Contribute</span>
+    <span class="hidden lg:inline"></span>
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true" data-slot="icon" class="drop-icon">
+  <path fill-rule="evenodd" d="M5.22 8.22a.75.75 0 0 1 1.06 0L10 11.94l3.72-3.72a.75.75 0 1 1 1.06 1.06l-4.25 4.25a.75.75 0 0 1-1.06 0L5.22 9.28a.75.75 0 0 1 0-1.06Z" clip-rule="evenodd"/>
+</svg>
+  </a>
+  <div class="menu-one-col dropmenu">
+    <div class="p-4">
+<div class="group menu-item-group">
+          <div class="menu-icon-div"><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" aria-hidden="true" data-slot="icon" class="menu-icon">
+  <path stroke-linecap="round" stroke-linejoin="round" d="M16.023 9.348h4.992v-.001M2.985 19.644v-4.992m0 0h4.992m-4.993 0 3.181 3.183a8.25 8.25 0 0 0 13.803-3.7M4.031 9.865a8.25 8.25 0 0 1 13.803-3.7l3.181 3.182m0-4.991v4.99"/>
+</svg></div>
+          <div>
+            <a href="/Contribute/" class="font-semibold text-dark">
+              Contribution Guidelines
+              <span class="absolute inset-0"></span>
+            </a>
+            <p class="mt-1 text-light">Overview on how to contribute to seL4</p>
+          </div>
+        </div><div class="group menu-item-group">
+          <div class="menu-icon-div"><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" aria-hidden="true" data-slot="icon" class="menu-icon">
+  <path stroke-linecap="round" stroke-linejoin="round" d="M9 12.75 11.25 15 15 9.75m-3-7.036A11.959 11.959 0 0 1 3.598 6 11.99 11.99 0 0 0 3 9.749c0 5.592 3.824 10.29 9 11.623 5.176-1.332 9-6.03 9-11.622 0-1.31-.21-2.571-.598-3.751h-.152c-3.196 0-6.1-1.248-8.25-3.285Z"/>
+</svg></div>
+          <div>
+            <a href="/Contribute/conduct.html" class="font-semibold text-dark">
+              Code of Conduct
+              <span class="absolute inset-0"></span>
+            </a>
+            <p class="mt-1 text-light">Rules for interaction</p>
+          </div>
+        </div><div class="group menu-item-group">
+          <div class="menu-icon-div"><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" aria-hidden="true" data-slot="icon" class="menu-icon">
+  <path stroke-linecap="round" stroke-linejoin="round" d="m6.75 7.5 3 2.25-3 2.25m4.5 0h3m-9 8.25h13.5A2.25 2.25 0 0 0 21 18V6a2.25 2.25 0 0 0-2.25-2.25H5.25A2.25 2.25 0 0 0 3 6v12a2.25 2.25 0 0 0 2.25 2.25Z"/>
+</svg></div>
+          <div>
+            <a href="/Contribute/conventions.html" class="font-semibold text-dark">
+              Coding Conventions &amp; Requirements
+              <span class="absolute inset-0"></span>
+            </a>
+            <p class="mt-1 text-light">Requirements for C Code, Git Commits, Pull Requests</p>
+          </div>
+        </div><div class="group menu-item-group">
+          <div class="menu-icon-div"><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" aria-hidden="true" data-slot="icon" class="menu-icon">
+  <path stroke-linecap="round" stroke-linejoin="round" d="M20.25 8.511c.884.284 1.5 1.128 1.5 2.097v4.286c0 1.136-.847 2.1-1.98 2.193-.34.027-.68.052-1.02.072v3.091l-3-3c-1.354 0-2.694-.055-4.02-.163a2.115 2.115 0 0 1-.825-.242m9.345-8.334a2.126 2.126 0 0 0-.476-.095 48.64 48.64 0 0 0-8.048 0c-1.131.094-1.976 1.057-1.976 2.192v4.286c0 .837.46 1.58 1.155 1.951m9.345-8.334V6.637c0-1.621-1.152-3.026-2.76-3.235A48.455 48.455 0 0 0 11.25 3c-2.115 0-4.198.137-6.24.402-1.608.209-2.76 1.614-2.76 3.235v6.226c0 1.621 1.152 3.026 2.76 3.235.577.075 1.157.14 1.74.194V21l4.155-4.155"/>
+</svg></div>
+          <div>
+            <a href="/Contribute/rfc-process.html" class="font-semibold text-dark">
+              RFC Process
+              <span class="absolute inset-0"></span>
+            </a>
+            <p class="mt-1 text-light">When and how to write an RFC</p>
+          </div>
+        </div><div class="group menu-item-group">
+          <div class="menu-icon-div"><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" aria-hidden="true" data-slot="icon" class="menu-icon">
+  <path stroke-linecap="round" stroke-linejoin="round" d="M11.42 15.17 17.25 21A2.652 2.652 0 0 0 21 17.25l-5.877-5.877M11.42 15.17l2.496-3.03c.317-.384.74-.626 1.208-.766M11.42 15.17l-4.655 5.653a2.548 2.548 0 1 1-3.586-3.586l6.837-5.63m5.108-.233c.55-.164 1.163-.188 1.743-.14a4.5 4.5 0 0 0 4.486-6.336l-3.276 3.277a3.004 3.004 0 0 1-2.25-2.25l3.276-3.276a4.5 4.5 0 0 0-6.336 4.486c.091 1.076-.071 2.264-.904 2.95l-.102.085m-1.745 1.437L5.909 7.5H4.5L2.25 3.75l1.5-1.5L7.5 4.5v1.409l4.26 4.26m-1.745 1.437 1.745-1.437m6.615 8.206L15.75 15.75M4.867 19.125h.008v.008h-.008v-.008Z"/>
+</svg></div>
+          <div>
+            <a href="/Contribute/platform-ports.html" class="font-semibold text-dark">
+              Platform Contributions
+              <span class="absolute inset-0"></span>
+            </a>
+            <p class="mt-1 text-light">Contributing and maintaining a platform port</p>
+          </div>
+        </div><div class="group menu-item-group">
+          <div class="menu-icon-div"><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" aria-hidden="true" data-slot="icon" class="menu-icon">
+  <path stroke-linecap="round" stroke-linejoin="round" d="M15 19.128a9.38 9.38 0 0 0 2.625.372 9.337 9.337 0 0 0 4.121-.952 4.125 4.125 0 0 0-7.533-2.493M15 19.128v-.003c0-1.113-.285-2.16-.786-3.07M15 19.128v.106A12.318 12.318 0 0 1 8.624 21c-2.331 0-4.512-.645-6.374-1.766l-.001-.109a6.375 6.375 0 0 1 11.964-3.07M12 6.375a3.375 3.375 0 1 1-6.75 0 3.375 3.375 0 0 1 6.75 0Zm8.25 2.25a2.625 2.625 0 1 1-5.25 0 2.625 2.625 0 0 1 5.25 0Z"/>
+</svg></div>
+          <div>
+            <a href="/Contribute/roles.html" class="font-semibold text-dark">
+              Development Roles
+              <span class="absolute inset-0"></span>
+            </a>
+            <p class="mt-1 text-light">Contributors, Reviewers, Committers, TSC</p>
+          </div>
+        </div>
+      </div>
+  </div>
+</div><div class="relative">
+  <a class="dropbtn" aria-expanded="false" href="#">
+    <span>News</span>
+    <span class="hidden lg:inline"> &amp; Events</span>
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true" data-slot="icon" class="drop-icon">
+  <path fill-rule="evenodd" d="M5.22 8.22a.75.75 0 0 1 1.06 0L10 11.94l3.72-3.72a.75.75 0 1 1 1.06 1.06l-4.25 4.25a.75.75 0 0 1-1.06 0L5.22 9.28a.75.75 0 0 1 0-1.06Z" clip-rule="evenodd"/>
+</svg>
+  </a>
+  <div class="menu-one-col dropmenu">
+    <div class="p-4">
+<div class="group menu-item-group">
+          <div class="menu-icon-div"><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" aria-hidden="true" data-slot="icon" class="menu-icon">
+  <path stroke-linecap="round" stroke-linejoin="round" d="M10.34 15.84c-.688-.06-1.386-.09-2.09-.09H7.5a4.5 4.5 0 1 1 0-9h.75c.704 0 1.402-.03 2.09-.09m0 9.18c.253.962.584 1.892.985 2.783.247.55.06 1.21-.463 1.511l-.657.38c-.551.318-1.26.117-1.527-.461a20.845 20.845 0 0 1-1.44-4.282m3.102.069a18.03 18.03 0 0 1-.59-4.59c0-1.586.205-3.124.59-4.59m0 9.18a23.848 23.848 0 0 1 8.835 2.535M10.34 6.66a23.847 23.847 0 0 0 8.835-2.535m0 0A23.74 23.74 0 0 0 18.795 3m.38 1.125a23.91 23.91 0 0 1 1.014 5.395m-1.014 8.855c-.118.38-.245.754-.38 1.125m.38-1.125a23.91 23.91 0 0 0 1.014-5.395m0-3.46c.495.413.811 1.035.811 1.73 0 .695-.316 1.317-.811 1.73m0-3.46a24.347 24.347 0 0 1 0 3.46"/>
+</svg></div>
+          <div>
+            <a href="/news/" class="font-semibold text-dark">
+              News
+              <span class="absolute inset-0"></span>
+            </a>
+            <p class="mt-1 text-light">News about seL4 and the seL4 Foundation</p>
+          </div>
+        </div><div class="group menu-item-group">
+          <div class="menu-icon-div"><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" aria-hidden="true" data-slot="icon" class="menu-icon">
+  <path stroke-linecap="round" stroke-linejoin="round" d="M18 18.72a9.094 9.094 0 0 0 3.741-.479 3 3 0 0 0-4.682-2.72m.94 3.198.001.031c0 .225-.012.447-.037.666A11.944 11.944 0 0 1 12 21c-2.17 0-4.207-.576-5.963-1.584A6.062 6.062 0 0 1 6 18.719m12 0a5.971 5.971 0 0 0-.941-3.197m0 0A5.995 5.995 0 0 0 12 12.75a5.995 5.995 0 0 0-5.058 2.772m0 0a3 3 0 0 0-4.681 2.72 8.986 8.986 0 0 0 3.74.477m.94-3.197a5.971 5.971 0 0 0-.94 3.197M15 6.75a3 3 0 1 1-6 0 3 3 0 0 1 6 0Zm6 3a2.25 2.25 0 1 1-4.5 0 2.25 2.25 0 0 1 4.5 0Zm-13.5 0a2.25 2.25 0 1 1-4.5 0 2.25 2.25 0 0 1 4.5 0Z"/>
+</svg></div>
+          <div>
+            <a href="/Summit/2025/" class="font-semibold text-dark">
+              seL4 Summit 2025
+              <span class="absolute inset-0"></span>
+            </a>
+            <p class="mt-1 text-light">The seL4 event of the year</p>
+          </div>
+        </div><div class="group menu-item-group">
+          <div class="menu-icon-div"><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" aria-hidden="true" data-slot="icon" class="menu-icon">
+  <path stroke-linecap="round" stroke-linejoin="round" d="M21 16.811c0 .864-.933 1.406-1.683.977l-7.108-4.061a1.125 1.125 0 0 1 0-1.954l7.108-4.061A1.125 1.125 0 0 1 21 8.689v8.122ZM11.25 16.811c0 .864-.933 1.406-1.683.977l-7.108-4.061a1.125 1.125 0 0 1 0-1.954l7.108-4.061a1.125 1.125 0 0 1 1.683.977v8.122Z"/>
+</svg></div>
+          <div>
+            <a href="/Summit/" class="font-semibold text-dark">
+              Previous seL4 Summits
+              <span class="absolute inset-0"></span>
+            </a>
+            <p class="mt-1 text-light">All seL4 summits since 2022</p>
+          </div>
+        </div><div class="group menu-item-group">
+          <div class="menu-icon-div"><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" aria-hidden="true" data-slot="icon" class="menu-icon">
+  <path stroke-linecap="round" stroke-linejoin="round" d="M21.75 6.75v10.5a2.25 2.25 0 0 1-2.25 2.25h-15a2.25 2.25 0 0 1-2.25-2.25V6.75m19.5 0A2.25 2.25 0 0 0 19.5 4.5h-15a2.25 2.25 0 0 0-2.25 2.25m19.5 0v.243a2.25 2.25 0 0 1-1.07 1.916l-7.5 4.615a2.25 2.25 0 0 1-2.36 0L3.32 8.91a2.25 2.25 0 0 1-1.07-1.916V6.75"/>
+</svg></div>
+          <div>
+            <a href="/stay-informed.html" class="font-semibold text-dark">
+              Stay Informed
+              <span class="absolute inset-0"></span>
+            </a>
+            <p class="mt-1 text-light">Announcement mailing list and other channels to stay informed</p>
+          </div>
+        </div></div>
+      <div class="bg-gray-50 p-8 dark:bg-slate-900">
+        <div class="flex justify-between">
+          <h3 class="text-sm font-semibold leading-6 text-gray-500">Recent news</h3>
+          <a href="/news/" class="text-sm font-semibold leading-6 text-f_green-600">See all <span aria-hidden="true">&rarr;</span></a>
+        </div>
+        <ul class="mt-6 space-y-6"><li class="relative">
+            <time datetime="2025-04-18" class="block text-xs leading-6 text-light">18 Apr 2025</time>
+            <a href="/news/2025.html#member-mep" class="block truncate text-sm font-semibold leading-6 text-dark">
+              MEP joins the seL4 Foundation
+              <span class="absolute inset-0"></span>
+            </a>
+          </li><li class="relative">
+            <time datetime="2025-04-14" class="block text-xs leading-6 text-light">14 Apr 2025</time>
+            <a href="/news/2025.html#summit-2025-register" class="block truncate text-sm font-semibold leading-6 text-dark">
+              Register for the seL4 summit 2025
+              <span class="absolute inset-0"></span>
+            </a>
+          </li><li class="relative">
+            <time datetime="2025-02-17" class="block text-xs leading-6 text-light">17 Feb 2025</time>
+            <a href="/news/2025.html#summit-2025-cfp" class="block truncate text-sm font-semibold leading-6 text-dark">
+              Call For Presentations for the seL4 Summit 2025
+              <span class="absolute inset-0"></span>
+            </a>
+          </li></ul>
+      </div>
+      <div>
+      </div>
+  </div>
+</div><div class="relative">
+  <a class="dropbtn" aria-expanded="false" href="#">
+    <span>Contact</span>
+    <span class="hidden lg:inline"> &amp; Support</span>
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true" data-slot="icon" class="drop-icon">
+  <path fill-rule="evenodd" d="M5.22 8.22a.75.75 0 0 1 1.06 0L10 11.94l3.72-3.72a.75.75 0 1 1 1.06 1.06l-4.25 4.25a.75.75 0 0 1-1.06 0L5.22 9.28a.75.75 0 0 1 0-1.06Z" clip-rule="evenodd"/>
+</svg>
+  </a>
+  <div class="menu-one-col dropmenu">
+    <div class="p-4">
+<div class="group menu-item-group">
+          <div class="menu-icon-div"><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" aria-hidden="true" data-slot="icon" class="menu-icon">
+  <path stroke-linecap="round" stroke-linejoin="round" d="M15.59 14.37a6 6 0 0 1-5.84 7.38v-4.8m5.84-2.58a14.98 14.98 0 0 0 6.16-12.12A14.98 14.98 0 0 0 9.631 8.41m5.96 5.96a14.926 14.926 0 0 1-5.841 2.58m-.119-8.54a6 6 0 0 0-7.381 5.84h4.8m2.581-5.84a14.927 14.927 0 0 0-2.58 5.84m2.699 2.7c-.103.021-.207.041-.311.06a15.09 15.09 0 0 1-2.448-2.448 14.9 14.9 0 0 1 .06-.312m-2.24 2.39a4.493 4.493 0 0 0-1.757 4.306 4.493 4.493 0 0 0 4.306-1.758M16.5 9a1.5 1.5 0 1 1-3 0 1.5 1.5 0 0 1 3 0Z"/>
+</svg></div>
+          <div>
+            <a href="/Services/" class="font-semibold text-dark">
+              Commercial Support
+              <span class="absolute inset-0"></span>
+            </a>
+            <p class="mt-1 text-light">Endorsed Service Providers for seL4</p>
+          </div>
+        </div><div class="group menu-item-group">
+          <div class="menu-icon-div"><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" aria-hidden="true" data-slot="icon" class="menu-icon">
+  <path stroke-linecap="round" stroke-linejoin="round" d="M16.712 4.33a9.027 9.027 0 0 1 1.652 1.306c.51.51.944 1.064 1.306 1.652M16.712 4.33l-3.448 4.138m3.448-4.138a9.014 9.014 0 0 0-9.424 0M19.67 7.288l-4.138 3.448m4.138-3.448a9.014 9.014 0 0 1 0 9.424m-4.138-5.976a3.736 3.736 0 0 0-.88-1.388 3.737 3.737 0 0 0-1.388-.88m2.268 2.268a3.765 3.765 0 0 1 0 2.528m-2.268-4.796a3.765 3.765 0 0 0-2.528 0m4.796 4.796c-.181.506-.475.982-.88 1.388a3.736 3.736 0 0 1-1.388.88m2.268-2.268 4.138 3.448m0 0a9.027 9.027 0 0 1-1.306 1.652c-.51.51-1.064.944-1.652 1.306m0 0-3.448-4.138m3.448 4.138a9.014 9.014 0 0 1-9.424 0m5.976-4.138a3.765 3.765 0 0 1-2.528 0m0 0a3.736 3.736 0 0 1-1.388-.88 3.737 3.737 0 0 1-.88-1.388m2.268 2.268L7.288 19.67m0 0a9.024 9.024 0 0 1-1.652-1.306 9.027 9.027 0 0 1-1.306-1.652m0 0 4.138-3.448M4.33 16.712a9.014 9.014 0 0 1 0-9.424m4.138 5.976a3.765 3.765 0 0 1 0-2.528m0 0c.181-.506.475-.982.88-1.388a3.736 3.736 0 0 1 1.388-.88m-2.268 2.268L4.33 7.288m6.406 1.18L7.288 4.33m0 0a9.024 9.024 0 0 0-1.652 1.306A9.025 9.025 0 0 0 4.33 7.288"/>
+</svg></div>
+          <div>
+            <a href="/support.html" class="font-semibold text-dark">
+              Help &amp; Open Source Support
+              <span class="absolute inset-0"></span>
+            </a>
+            <p class="mt-1 text-light">Mailing lists, Forum, Chat, Developer Hangouts</p>
+          </div>
+        </div><div class="group menu-item-group">
+          <div class="menu-icon-div"><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" aria-hidden="true" data-slot="icon" class="menu-icon">
+  <path stroke-linecap="round" stroke-linejoin="round" d="M15.75 6a3.75 3.75 0 1 1-7.5 0 3.75 3.75 0 0 1 7.5 0ZM4.501 20.118a7.5 7.5 0 0 1 14.998 0A17.933 17.933 0 0 1 12 21.75c-2.676 0-5.216-.584-7.499-1.632Z"/>
+</svg></div>
+          <div>
+            <a href="/contact.html" class="font-semibold text-dark">
+              Contact a Person
+              <span class="absolute inset-0"></span>
+            </a>
+            <p class="mt-1 text-light">seL4 Foundation, Security Contact, Moderation</p>
+          </div>
+        </div>
+      </div>
+  </div>
+</div></div>
+    <div class="hidden md:flex md:flex-1"></div>
+
+    <div class="hidden min-[470px]:flex md:flex-none justify-end">
+      <!-- member button -->
+      <a href="/Foundation/Join/" class="button-outline md:h-8 lg:h-9 md:text-xs lg:text-sm mr-6 md:mr-4 lg:mr-8 xl:mr-10">Become a Member</a>
+
+      <!-- docsite button -->
+      <a href="https://docs.sel4.systems" class="button-outline md:h-8 lg:h-9 md:text-xs lg:text-sm mr-2 lg:mr-6">Docsite
+        <svg xmlns="http://www.w3.org/2000/svg" fill="none" aria-hidden="true" viewBox="0 0 24 24" stroke="currentColor" data-slot="icon" class="inline-icon">
+  <path stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" d="M13.5 6H5.25A2.25 2.25 0 0 0 3 8.25v10.5A2.25 2.25 0 0 0 5.25 21h10.5A2.25 2.25 0 0 0 18 18.75V10.5m-10.5 6L21 3m0 0h-5.25M21 3v5.25"/>
+</svg>
+      </a>
+
+      <!-- github button -->
+      <a href="https://github.com/seL4" class="mr-4 md:mr-0 px-3 pt-1 pb-2 block text-gray-400 hover:text-gray-500 dark:hover:text-gray-300">
+        <span class="sr-only">seL4 on GitHub</span>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16" fill="currentColor" aria-hidden="true" data-slot="icon" class="w-5 h-5 lg:w-6 lg:h-6">
+  <path d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.013 8.013 0 0016 8c0-4.42-3.58-8-8-8z"/>
+</svg>
+      </a>
+    </div>
+
+    <!-- mobile menu hamburger button -->
+    <div class="flex md:hidden">
+      <button type="button" class="-m-2.5 inline-flex items-center justify-center rounded-md p-2.5 text-gray-700 dark:text-gray-300 mobile-drop">
+        <span class="sr-only">Open main menu</span>
+        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" aria-hidden="true" data-slot="icon" class="h-6 w-6">
+  <path stroke-linecap="round" stroke-linejoin="round" d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5"/>
+</svg>
+      </button>
+    </div>
+  </nav><div class="lg:hidden hidden" id="mobile-menu" role="dialog" aria-modal="true">
+  <div class="fixed inset-0 z-10"></div>
+  <div class="fixed inset-y-0 right-0 z-10 w-full overflow-y-auto bg-white dark:bg-darkblue px-6 py-6 sm:max-w-sm sm:ring-1 sm:ring-gray-900/10 dark:sm:ring-gray-100/20">
+    <div class="flex items-center justify-between">
+      <span class="-m-1.5 p-1.5"> </span>
+      <button type="button" class="-m-2.5 rounded-md p-2.5 text-light">
+        <span class="sr-only">Close menu</span>
+        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" aria-hidden="true" data-slot="icon" class="h-6 w-6">
+  <path stroke-linecap="round" stroke-linejoin="round" d="M6 18 18 6M6 6l12 12"/>
+</svg>
+      </button>
+    </div>
+    <div class="mt-6 flow-root">
+      <div class="-my-6 divide-y divide-gray-500/10 dark:divide-gray-200/40">
+        <div class="space-y-2 py-6">
+          <div class="-mx-3"><button type="button" class="dropbtn-mobile" aria-expanded="false">
+              About seL4
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true" data-slot="icon" class="h-5 w-5 flex-none">
+  <path fill-rule="evenodd" d="M5.22 8.22a.75.75 0 0 1 1.06 0L10 11.94l3.72-3.72a.75.75 0 1 1 1.06 1.06l-4.25 4.25a.75.75 0 0 1-1.06 0L5.22 9.28a.75.75 0 0 1 0-1.06Z" clip-rule="evenodd"/>
+</svg>
+            </button>
+            <div class="mobile-menu hidden"><a href="/About/" class="block rounded-lg py-2 pl-6 pr-3 text-sm font-semibold leading-7 text-dark hover:bg-gray-50 dark:hover:bg-slate-800"><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" aria-hidden="true" data-slot="icon" class="inline-icon mr-2">
+  <path stroke-linecap="round" stroke-linejoin="round" d="M12 18v-5.25m0 0a6.01 6.01 0 0 0 1.5-.189m-1.5.189a6.01 6.01 0 0 1-1.5-.189m3.75 7.478a12.06 12.06 0 0 1-4.5 0m3.75 2.383a14.406 14.406 0 0 1-3 0M14.25 18v-.192c0-.983.658-1.823 1.508-2.316a7.5 7.5 0 1 0-7.517 0c.85.493 1.509 1.333 1.509 2.316V18"/>
+</svg> What is seL4?</a><a href="/use.html" class="block rounded-lg py-2 pl-6 pr-3 text-sm font-semibold leading-7 text-dark hover:bg-gray-50 dark:hover:bg-slate-800"><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" aria-hidden="true" data-slot="icon" class="inline-icon mr-2">
+  <path stroke-linecap="round" stroke-linejoin="round" d="M18 18.72a9.094 9.094 0 0 0 3.741-.479 3 3 0 0 0-4.682-2.72m.94 3.198.001.031c0 .225-.012.447-.037.666A11.944 11.944 0 0 1 12 21c-2.17 0-4.207-.576-5.963-1.584A6.062 6.062 0 0 1 6 18.719m12 0a5.971 5.971 0 0 0-.941-3.197m0 0A5.995 5.995 0 0 0 12 12.75a5.995 5.995 0 0 0-5.058 2.772m0 0a3 3 0 0 0-4.681 2.72 8.986 8.986 0 0 0 3.74.477m.94-3.197a5.971 5.971 0 0 0-.94 3.197M15 6.75a3 3 0 1 1-6 0 3 3 0 0 1 6 0Zm6 3a2.25 2.25 0 1 1-4.5 0 2.25 2.25 0 0 1 4.5 0Zm-13.5 0a2.25 2.25 0 1 1-4.5 0 2.25 2.25 0 0 1 4.5 0Z"/>
+</svg> Who is using seL4?</a><a href="/Verification/" class="block rounded-lg py-2 pl-6 pr-3 text-sm font-semibold leading-7 text-dark hover:bg-gray-50 dark:hover:bg-slate-800"><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" aria-hidden="true" data-slot="icon" class="inline-icon mr-2">
+  <path stroke-linecap="round" stroke-linejoin="round" d="M9 12.75 11.25 15 15 9.75M21 12a9 9 0 1 1-18 0 9 9 0 0 1 18 0Z"/>
+</svg> Verification</a><a href="/roadmap.html" class="block rounded-lg py-2 pl-6 pr-3 text-sm font-semibold leading-7 text-dark hover:bg-gray-50 dark:hover:bg-slate-800"><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" aria-hidden="true" data-slot="icon" class="inline-icon mr-2">
+  <path stroke-linecap="round" stroke-linejoin="round" d="M2.25 18 9 11.25l4.306 4.306a11.95 11.95 0 0 1 5.814-5.518l2.74-1.22m0 0-5.94-2.281m5.94 2.28-2.28 5.941"/>
+</svg> Roadmap</a><a href="/performance.html" class="block rounded-lg py-2 pl-6 pr-3 text-sm font-semibold leading-7 text-dark hover:bg-gray-50 dark:hover:bg-slate-800"><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" aria-hidden="true" data-slot="icon" class="inline-icon mr-2">
+  <path stroke-linecap="round" stroke-linejoin="round" d="m3.75 13.5 10.5-11.25L12 10.5h8.25L9.75 21.75 12 13.5H3.75Z"/>
+</svg> Performance</a><a href="/Legal/" class="block rounded-lg py-2 pl-6 pr-3 text-sm font-semibold leading-7 text-dark hover:bg-gray-50 dark:hover:bg-slate-800"><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" aria-hidden="true" data-slot="icon" class="inline-icon mr-2">
+  <path stroke-linecap="round" stroke-linejoin="round" d="M12 3v17.25m0 0c-1.472 0-2.882.265-4.185.75M12 20.25c1.472 0 2.882.265 4.185.75M18.75 4.97A48.416 48.416 0 0 0 12 4.5c-2.291 0-4.545.16-6.75.47m13.5 0c1.01.143 2.01.317 3 .52m-3-.52 2.62 10.726c.122.499-.106 1.028-.589 1.202a5.988 5.988 0 0 1-2.031.352 5.988 5.988 0 0 1-2.031-.352c-.483-.174-.711-.703-.59-1.202L18.75 4.971Zm-16.5.52c.99-.203 1.99-.377 3-.52m0 0 2.62 10.726c.122.499-.106 1.028-.589 1.202a5.989 5.989 0 0 1-2.031.352 5.989 5.989 0 0 1-2.031-.352c-.483-.174-.711-.703-.59-1.202L5.25 4.971Z"/>
+</svg> License, Trademark &amp; Logo</a><a href="/platforms.html" class="block rounded-lg py-2 pl-6 pr-3 text-sm font-semibold leading-7 text-dark hover:bg-gray-50 dark:hover:bg-slate-800"><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" aria-hidden="true" data-slot="icon" class="inline-icon mr-2">
+  <path stroke-linecap="round" stroke-linejoin="round" d="M8.25 3v1.5M4.5 8.25H3m18 0h-1.5M4.5 12H3m18 0h-1.5m-15 3.75H3m18 0h-1.5M8.25 19.5V21M12 3v1.5m0 15V21m3.75-18v1.5m0 15V21m-9-1.5h10.5a2.25 2.25 0 0 0 2.25-2.25V6.75a2.25 2.25 0 0 0-2.25-2.25H6.75A2.25 2.25 0 0 0 4.5 6.75v10.5a2.25 2.25 0 0 0 2.25 2.25Zm.75-12h9v9h-9v-9Z"/>
+</svg> Platform Support Overview</a><a href="/Research/" class="block rounded-lg py-2 pl-6 pr-3 text-sm font-semibold leading-7 text-dark hover:bg-gray-50 dark:hover:bg-slate-800"><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" aria-hidden="true" data-slot="icon" class="inline-icon mr-2">
+  <path stroke-linecap="round" stroke-linejoin="round" d="M4.26 10.147a60.438 60.438 0 0 0-.491 6.347A48.62 48.62 0 0 1 12 20.904a48.62 48.62 0 0 1 8.232-4.41 60.46 60.46 0 0 0-.491-6.347m-15.482 0a50.636 50.636 0 0 0-2.658-.813A59.906 59.906 0 0 1 12 3.493a59.903 59.903 0 0 1 10.399 5.84c-.896.248-1.783.52-2.658.814m-15.482 0A50.717 50.717 0 0 1 12 13.489a50.702 50.702 0 0 1 7.74-3.342M6.75 15a.75.75 0 1 0 0-1.5.75.75 0 0 0 0 1.5Zm0 0v-3.675A55.378 55.378 0 0 1 12 8.443m-7.007 11.55A5.981 5.981 0 0 0 6.75 15.75v-1.5"/>
+</svg> Research</a><a href="/tools.html" class="block rounded-lg py-2 pl-6 pr-3 text-sm font-semibold leading-7 text-dark hover:bg-gray-50 dark:hover:bg-slate-800"><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" aria-hidden="true" data-slot="icon" class="inline-icon mr-2">
+  <path stroke-linecap="round" stroke-linejoin="round" d="M13.5 16.875h3.375m0 0h3.375m-3.375 0V13.5m0 3.375v3.375M6 10.5h2.25a2.25 2.25 0 0 0 2.25-2.25V6a2.25 2.25 0 0 0-2.25-2.25H6A2.25 2.25 0 0 0 3.75 6v2.25A2.25 2.25 0 0 0 6 10.5Zm0 9.75h2.25A2.25 2.25 0 0 0 10.5 18v-2.25a2.25 2.25 0 0 0-2.25-2.25H6a2.25 2.25 0 0 0-2.25 2.25V18A2.25 2.25 0 0 0 6 20.25Zm9.75-9.75H18a2.25 2.25 0 0 0 2.25-2.25V6A2.25 2.25 0 0 0 18 3.75h-2.25A2.25 2.25 0 0 0 13.5 6v2.25a2.25 2.25 0 0 0 2.25 2.25Z"/>
+</svg> Frameworks &amp; Languages</a><a href="/Foundation/" class="block rounded-lg py-2 pl-6 pr-3 text-sm font-semibold leading-7 text-dark hover:bg-gray-50 dark:hover:bg-slate-800"><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" aria-hidden="true" data-slot="icon" class="inline-icon mr-2">
+  <path stroke-linecap="round" stroke-linejoin="round" d="M12 21v-8.25M15.75 21v-8.25M8.25 21v-8.25M3 9l9-6 9 6m-1.5 12V10.332A48.36 48.36 0 0 0 12 9.75c-2.551 0-5.056.2-7.5.582V21M3 21h18M12 6.75h.008v.008H12V6.75Z"/>
+</svg> seL4 Foundation</a><a href="/Learn/" class="block rounded-lg py-2 pl-6 pr-3 text-sm font-semibold leading-7 text-dark hover:bg-gray-50 dark:hover:bg-slate-800"><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" aria-hidden="true" data-slot="icon" class="inline-icon mr-2">
+  <path stroke-linecap="round" stroke-linejoin="round" d="M12 6.042A8.967 8.967 0 0 0 6 3.75c-1.052 0-2.062.18-3 .512v14.25A8.987 8.987 0 0 1 6 18c2.305 0 4.408.867 6 2.292m0-14.25a8.966 8.966 0 0 1 6-2.292c1.052 0 2.062.18 3 .512v14.25A8.987 8.987 0 0 0 18 18a8.967 8.967 0 0 0-6 2.292m0-14.25v14.25"/>
+</svg> Manual &amp; Documentation</a><a href="/About/FAQ.html" class="block rounded-lg py-2 pl-6 pr-3 text-sm font-semibold leading-7 text-dark hover:bg-gray-50 dark:hover:bg-slate-800"><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" aria-hidden="true" data-slot="icon" class="inline-icon mr-2">
+  <path stroke-linecap="round" stroke-linejoin="round" d="M9.879 7.519c1.171-1.025 3.071-1.025 4.242 0 1.172 1.025 1.172 2.687 0 3.712-.203.179-.43.326-.67.442-.745.361-1.45.999-1.45 1.827v.75M21 12a9 9 0 1 1-18 0 9 9 0 0 1 18 0Zm-9 5.25h.008v.008H12v-.008Z"/>
+</svg> FAQ</a></div><button type="button" class="dropbtn-mobile" aria-expanded="false">
+              Contribute
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true" data-slot="icon" class="h-5 w-5 flex-none">
+  <path fill-rule="evenodd" d="M5.22 8.22a.75.75 0 0 1 1.06 0L10 11.94l3.72-3.72a.75.75 0 1 1 1.06 1.06l-4.25 4.25a.75.75 0 0 1-1.06 0L5.22 9.28a.75.75 0 0 1 0-1.06Z" clip-rule="evenodd"/>
+</svg>
+            </button>
+            <div class="mobile-menu hidden"><a href="/Contribute/" class="block rounded-lg py-2 pl-6 pr-3 text-sm font-semibold leading-7 text-dark hover:bg-gray-50 dark:hover:bg-slate-800"><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" aria-hidden="true" data-slot="icon" class="inline-icon mr-2">
+  <path stroke-linecap="round" stroke-linejoin="round" d="M16.023 9.348h4.992v-.001M2.985 19.644v-4.992m0 0h4.992m-4.993 0 3.181 3.183a8.25 8.25 0 0 0 13.803-3.7M4.031 9.865a8.25 8.25 0 0 1 13.803-3.7l3.181 3.182m0-4.991v4.99"/>
+</svg> Contribution Guidelines</a><a href="/Contribute/conduct.html" class="block rounded-lg py-2 pl-6 pr-3 text-sm font-semibold leading-7 text-dark hover:bg-gray-50 dark:hover:bg-slate-800"><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" aria-hidden="true" data-slot="icon" class="inline-icon mr-2">
+  <path stroke-linecap="round" stroke-linejoin="round" d="M9 12.75 11.25 15 15 9.75m-3-7.036A11.959 11.959 0 0 1 3.598 6 11.99 11.99 0 0 0 3 9.749c0 5.592 3.824 10.29 9 11.623 5.176-1.332 9-6.03 9-11.622 0-1.31-.21-2.571-.598-3.751h-.152c-3.196 0-6.1-1.248-8.25-3.285Z"/>
+</svg> Code of Conduct</a><a href="/Contribute/conventions.html" class="block rounded-lg py-2 pl-6 pr-3 text-sm font-semibold leading-7 text-dark hover:bg-gray-50 dark:hover:bg-slate-800"><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" aria-hidden="true" data-slot="icon" class="inline-icon mr-2">
+  <path stroke-linecap="round" stroke-linejoin="round" d="m6.75 7.5 3 2.25-3 2.25m4.5 0h3m-9 8.25h13.5A2.25 2.25 0 0 0 21 18V6a2.25 2.25 0 0 0-2.25-2.25H5.25A2.25 2.25 0 0 0 3 6v12a2.25 2.25 0 0 0 2.25 2.25Z"/>
+</svg> Coding Conventions &amp; Requirements</a><a href="/Contribute/rfc-process.html" class="block rounded-lg py-2 pl-6 pr-3 text-sm font-semibold leading-7 text-dark hover:bg-gray-50 dark:hover:bg-slate-800"><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" aria-hidden="true" data-slot="icon" class="inline-icon mr-2">
+  <path stroke-linecap="round" stroke-linejoin="round" d="M20.25 8.511c.884.284 1.5 1.128 1.5 2.097v4.286c0 1.136-.847 2.1-1.98 2.193-.34.027-.68.052-1.02.072v3.091l-3-3c-1.354 0-2.694-.055-4.02-.163a2.115 2.115 0 0 1-.825-.242m9.345-8.334a2.126 2.126 0 0 0-.476-.095 48.64 48.64 0 0 0-8.048 0c-1.131.094-1.976 1.057-1.976 2.192v4.286c0 .837.46 1.58 1.155 1.951m9.345-8.334V6.637c0-1.621-1.152-3.026-2.76-3.235A48.455 48.455 0 0 0 11.25 3c-2.115 0-4.198.137-6.24.402-1.608.209-2.76 1.614-2.76 3.235v6.226c0 1.621 1.152 3.026 2.76 3.235.577.075 1.157.14 1.74.194V21l4.155-4.155"/>
+</svg> RFC Process</a><a href="/Contribute/platform-ports.html" class="block rounded-lg py-2 pl-6 pr-3 text-sm font-semibold leading-7 text-dark hover:bg-gray-50 dark:hover:bg-slate-800"><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" aria-hidden="true" data-slot="icon" class="inline-icon mr-2">
+  <path stroke-linecap="round" stroke-linejoin="round" d="M11.42 15.17 17.25 21A2.652 2.652 0 0 0 21 17.25l-5.877-5.877M11.42 15.17l2.496-3.03c.317-.384.74-.626 1.208-.766M11.42 15.17l-4.655 5.653a2.548 2.548 0 1 1-3.586-3.586l6.837-5.63m5.108-.233c.55-.164 1.163-.188 1.743-.14a4.5 4.5 0 0 0 4.486-6.336l-3.276 3.277a3.004 3.004 0 0 1-2.25-2.25l3.276-3.276a4.5 4.5 0 0 0-6.336 4.486c.091 1.076-.071 2.264-.904 2.95l-.102.085m-1.745 1.437L5.909 7.5H4.5L2.25 3.75l1.5-1.5L7.5 4.5v1.409l4.26 4.26m-1.745 1.437 1.745-1.437m6.615 8.206L15.75 15.75M4.867 19.125h.008v.008h-.008v-.008Z"/>
+</svg> Platform Contributions</a><a href="/Contribute/roles.html" class="block rounded-lg py-2 pl-6 pr-3 text-sm font-semibold leading-7 text-dark hover:bg-gray-50 dark:hover:bg-slate-800"><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" aria-hidden="true" data-slot="icon" class="inline-icon mr-2">
+  <path stroke-linecap="round" stroke-linejoin="round" d="M15 19.128a9.38 9.38 0 0 0 2.625.372 9.337 9.337 0 0 0 4.121-.952 4.125 4.125 0 0 0-7.533-2.493M15 19.128v-.003c0-1.113-.285-2.16-.786-3.07M15 19.128v.106A12.318 12.318 0 0 1 8.624 21c-2.331 0-4.512-.645-6.374-1.766l-.001-.109a6.375 6.375 0 0 1 11.964-3.07M12 6.375a3.375 3.375 0 1 1-6.75 0 3.375 3.375 0 0 1 6.75 0Zm8.25 2.25a2.625 2.625 0 1 1-5.25 0 2.625 2.625 0 0 1 5.25 0Z"/>
+</svg> Development Roles</a></div><button type="button" class="dropbtn-mobile" aria-expanded="false">
+              News &amp; Events
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true" data-slot="icon" class="h-5 w-5 flex-none">
+  <path fill-rule="evenodd" d="M5.22 8.22a.75.75 0 0 1 1.06 0L10 11.94l3.72-3.72a.75.75 0 1 1 1.06 1.06l-4.25 4.25a.75.75 0 0 1-1.06 0L5.22 9.28a.75.75 0 0 1 0-1.06Z" clip-rule="evenodd"/>
+</svg>
+            </button>
+            <div class="mobile-menu hidden"><a href="/news/" class="block rounded-lg py-2 pl-6 pr-3 text-sm font-semibold leading-7 text-dark hover:bg-gray-50 dark:hover:bg-slate-800"><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" aria-hidden="true" data-slot="icon" class="inline-icon mr-2">
+  <path stroke-linecap="round" stroke-linejoin="round" d="M10.34 15.84c-.688-.06-1.386-.09-2.09-.09H7.5a4.5 4.5 0 1 1 0-9h.75c.704 0 1.402-.03 2.09-.09m0 9.18c.253.962.584 1.892.985 2.783.247.55.06 1.21-.463 1.511l-.657.38c-.551.318-1.26.117-1.527-.461a20.845 20.845 0 0 1-1.44-4.282m3.102.069a18.03 18.03 0 0 1-.59-4.59c0-1.586.205-3.124.59-4.59m0 9.18a23.848 23.848 0 0 1 8.835 2.535M10.34 6.66a23.847 23.847 0 0 0 8.835-2.535m0 0A23.74 23.74 0 0 0 18.795 3m.38 1.125a23.91 23.91 0 0 1 1.014 5.395m-1.014 8.855c-.118.38-.245.754-.38 1.125m.38-1.125a23.91 23.91 0 0 0 1.014-5.395m0-3.46c.495.413.811 1.035.811 1.73 0 .695-.316 1.317-.811 1.73m0-3.46a24.347 24.347 0 0 1 0 3.46"/>
+</svg> News</a><a href="/Summit/2025/" class="block rounded-lg py-2 pl-6 pr-3 text-sm font-semibold leading-7 text-dark hover:bg-gray-50 dark:hover:bg-slate-800"><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" aria-hidden="true" data-slot="icon" class="inline-icon mr-2">
+  <path stroke-linecap="round" stroke-linejoin="round" d="M18 18.72a9.094 9.094 0 0 0 3.741-.479 3 3 0 0 0-4.682-2.72m.94 3.198.001.031c0 .225-.012.447-.037.666A11.944 11.944 0 0 1 12 21c-2.17 0-4.207-.576-5.963-1.584A6.062 6.062 0 0 1 6 18.719m12 0a5.971 5.971 0 0 0-.941-3.197m0 0A5.995 5.995 0 0 0 12 12.75a5.995 5.995 0 0 0-5.058 2.772m0 0a3 3 0 0 0-4.681 2.72 8.986 8.986 0 0 0 3.74.477m.94-3.197a5.971 5.971 0 0 0-.94 3.197M15 6.75a3 3 0 1 1-6 0 3 3 0 0 1 6 0Zm6 3a2.25 2.25 0 1 1-4.5 0 2.25 2.25 0 0 1 4.5 0Zm-13.5 0a2.25 2.25 0 1 1-4.5 0 2.25 2.25 0 0 1 4.5 0Z"/>
+</svg> seL4 Summit 2025</a><a href="/Summit/" class="block rounded-lg py-2 pl-6 pr-3 text-sm font-semibold leading-7 text-dark hover:bg-gray-50 dark:hover:bg-slate-800"><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" aria-hidden="true" data-slot="icon" class="inline-icon mr-2">
+  <path stroke-linecap="round" stroke-linejoin="round" d="M21 16.811c0 .864-.933 1.406-1.683.977l-7.108-4.061a1.125 1.125 0 0 1 0-1.954l7.108-4.061A1.125 1.125 0 0 1 21 8.689v8.122ZM11.25 16.811c0 .864-.933 1.406-1.683.977l-7.108-4.061a1.125 1.125 0 0 1 0-1.954l7.108-4.061a1.125 1.125 0 0 1 1.683.977v8.122Z"/>
+</svg> Previous seL4 Summits</a><a href="/stay-informed.html" class="block rounded-lg py-2 pl-6 pr-3 text-sm font-semibold leading-7 text-dark hover:bg-gray-50 dark:hover:bg-slate-800"><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" aria-hidden="true" data-slot="icon" class="inline-icon mr-2">
+  <path stroke-linecap="round" stroke-linejoin="round" d="M21.75 6.75v10.5a2.25 2.25 0 0 1-2.25 2.25h-15a2.25 2.25 0 0 1-2.25-2.25V6.75m19.5 0A2.25 2.25 0 0 0 19.5 4.5h-15a2.25 2.25 0 0 0-2.25 2.25m19.5 0v.243a2.25 2.25 0 0 1-1.07 1.916l-7.5 4.615a2.25 2.25 0 0 1-2.36 0L3.32 8.91a2.25 2.25 0 0 1-1.07-1.916V6.75"/>
+</svg> Stay Informed</a></div><button type="button" class="dropbtn-mobile" aria-expanded="false">
+              Contact &amp; Support
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true" data-slot="icon" class="h-5 w-5 flex-none">
+  <path fill-rule="evenodd" d="M5.22 8.22a.75.75 0 0 1 1.06 0L10 11.94l3.72-3.72a.75.75 0 1 1 1.06 1.06l-4.25 4.25a.75.75 0 0 1-1.06 0L5.22 9.28a.75.75 0 0 1 0-1.06Z" clip-rule="evenodd"/>
+</svg>
+            </button>
+            <div class="mobile-menu hidden"><a href="/Services/" class="block rounded-lg py-2 pl-6 pr-3 text-sm font-semibold leading-7 text-dark hover:bg-gray-50 dark:hover:bg-slate-800"><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" aria-hidden="true" data-slot="icon" class="inline-icon mr-2">
+  <path stroke-linecap="round" stroke-linejoin="round" d="M15.59 14.37a6 6 0 0 1-5.84 7.38v-4.8m5.84-2.58a14.98 14.98 0 0 0 6.16-12.12A14.98 14.98 0 0 0 9.631 8.41m5.96 5.96a14.926 14.926 0 0 1-5.841 2.58m-.119-8.54a6 6 0 0 0-7.381 5.84h4.8m2.581-5.84a14.927 14.927 0 0 0-2.58 5.84m2.699 2.7c-.103.021-.207.041-.311.06a15.09 15.09 0 0 1-2.448-2.448 14.9 14.9 0 0 1 .06-.312m-2.24 2.39a4.493 4.493 0 0 0-1.757 4.306 4.493 4.493 0 0 0 4.306-1.758M16.5 9a1.5 1.5 0 1 1-3 0 1.5 1.5 0 0 1 3 0Z"/>
+</svg> Commercial Support</a><a href="/support.html" class="block rounded-lg py-2 pl-6 pr-3 text-sm font-semibold leading-7 text-dark hover:bg-gray-50 dark:hover:bg-slate-800"><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" aria-hidden="true" data-slot="icon" class="inline-icon mr-2">
+  <path stroke-linecap="round" stroke-linejoin="round" d="M16.712 4.33a9.027 9.027 0 0 1 1.652 1.306c.51.51.944 1.064 1.306 1.652M16.712 4.33l-3.448 4.138m3.448-4.138a9.014 9.014 0 0 0-9.424 0M19.67 7.288l-4.138 3.448m4.138-3.448a9.014 9.014 0 0 1 0 9.424m-4.138-5.976a3.736 3.736 0 0 0-.88-1.388 3.737 3.737 0 0 0-1.388-.88m2.268 2.268a3.765 3.765 0 0 1 0 2.528m-2.268-4.796a3.765 3.765 0 0 0-2.528 0m4.796 4.796c-.181.506-.475.982-.88 1.388a3.736 3.736 0 0 1-1.388.88m2.268-2.268 4.138 3.448m0 0a9.027 9.027 0 0 1-1.306 1.652c-.51.51-1.064.944-1.652 1.306m0 0-3.448-4.138m3.448 4.138a9.014 9.014 0 0 1-9.424 0m5.976-4.138a3.765 3.765 0 0 1-2.528 0m0 0a3.736 3.736 0 0 1-1.388-.88 3.737 3.737 0 0 1-.88-1.388m2.268 2.268L7.288 19.67m0 0a9.024 9.024 0 0 1-1.652-1.306 9.027 9.027 0 0 1-1.306-1.652m0 0 4.138-3.448M4.33 16.712a9.014 9.014 0 0 1 0-9.424m4.138 5.976a3.765 3.765 0 0 1 0-2.528m0 0c.181-.506.475-.982.88-1.388a3.736 3.736 0 0 1 1.388-.88m-2.268 2.268L4.33 7.288m6.406 1.18L7.288 4.33m0 0a9.024 9.024 0 0 0-1.652 1.306A9.025 9.025 0 0 0 4.33 7.288"/>
+</svg> Help &amp; Open Source Support</a><a href="/contact.html" class="block rounded-lg py-2 pl-6 pr-3 text-sm font-semibold leading-7 text-dark hover:bg-gray-50 dark:hover:bg-slate-800"><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" aria-hidden="true" data-slot="icon" class="inline-icon mr-2">
+  <path stroke-linecap="round" stroke-linejoin="round" d="M15.75 6a3.75 3.75 0 1 1-7.5 0 3.75 3.75 0 0 1 7.5 0ZM4.501 20.118a7.5 7.5 0 0 1 14.998 0A17.933 17.933 0 0 1 12 21.75c-2.676 0-5.216-.584-7.499-1.632Z"/>
+</svg> Contact a Person</a></div></div>
+        </div>
+        <div class="py-6">
+          <a href="/Foundation/Join" class="-mx-3 block rounded-lg px-3 py-2.5 text-base font-semibold leading-7 text-dark hover:bg-gray-50 dark:hover:bg-slate-800">Become a Member</a>
+          <a href="https://docs.sel4.systems" class="-mx-3 block rounded-lg px-3 py-2.5 text-base font-semibold leading-7 text-dark hover:bg-gray-50 dark:hover:bg-slate-800">Docsite <svg xmlns="http://www.w3.org/2000/svg" fill="none" aria-hidden="true" viewBox="0 0 24 24" stroke="currentColor" data-slot="icon" class="ml-1 inline-icon">
+  <path stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" d="M13.5 6H5.25A2.25 2.25 0 0 0 3 8.25v10.5A2.25 2.25 0 0 0 5.25 21h10.5A2.25 2.25 0 0 0 18 18.75V10.5m-10.5 6L21 3m0 0h-5.25M21 3v5.25"/>
+</svg></a>
+        </div>
+      </div>
+    </div>
+  </div>
+ </div>
+</header>
+    <div class="flex-1 overflow-y-auto">
+      <main id="page-top">
+
+
+
+<div class="px-6 lg:px-8 pt-6 sm:pt-8 pb-12 sm:pb-20 section-borders">
+  <div class="mx-auto max-w-4xl text-center">
+    <div class="text-center text-lg font-semibold leading-7 text-f_green-600 dark:text-f_green-400">
+      <a href="/" class="hover:underline">
+      seL4 Home
+      
+      <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" aria-hidden="true" data-slot="icon" class="inline-icon -mt-2">
+  <path stroke-linecap="round" stroke-linejoin="round" d="M9 15 3 9m0 0 6-6M3 9h12a6 6 0 0 1 0 12h-3"/>
+</svg>
+      </a>
+      
+    </div>
+    <h1 class="text-center font-bold tracking-tight text-darkcol dark:text-darkcol_inv text-3xl sm:text-5xl">seL4 News</h1>
+    <div class="mt-6 text-center text-base md:text-lg text-lightcol dark:text-lightcol_inv leading-6 md:leading-7 a-underline">
+      
+<p>News about seL4, the seL4 Foundation, and the seL4 ecosystem.</p>
+<p>Also available as <a type="application/atom+xml" href="/feed.xml">RSS</a> feed.</p>
+<nav class="mt-4">
+      News from other years:
+        <a href="/news/2020.html">2020</a>
+        <a href="/news/2021.html">2021</a>
+       <span class="text-lighter">2022</span>
+        <a href="/news/2023.html">2023</a>
+        <a href="/news/2024.html">2024</a>
+        <a href="/news/2025.html">2025</a>
+</nav>
+
+      
+      
+    </div>
+    
   </div>
 </div>
-<div class="container">
-  <div class="row"><ol class="breadcrumb">
-<li><a href="/">Home</a></li>
-<li><a href="/news/">News</a></li>
-<li><a href="/news/2022.html">2022</a></li>
 
-    </ol></div>
 
-    <a href=/><img style="width:20%; margin-top:20px; vertical-align:top;float:right; margin:10px;"
-                     src=/images/logo-text-white.svg alt='seL4' /></a>
-
-<div class="row" style="margin-left: 0.3em;">
-  <div class="col">
-    <h1>
-      News about
-      <a href="/">seL4</a>
-      and the
-      <a href="/Foundation">seL4 Foundation</a> &mdash; 2022
-    </h1>
-  </div>
-  <div class="col">
-    News from other years:
-      <a href="/news/2020">2020</a>
-      <a href="/news/2021">2021</a>
-     2022
-      <a href="/news/2023">2023</a>
-      <a href="/news/2024">2024</a>
-      <a href="/news/2025">2025</a>
-  </div>
-</div>
-
-<div class="news-item tag-link" id="lf-annual-report">
-  <a href="#lf-annual-report"><span class="tag-span"># </span></a>
-  14 Dec 2022: seL4 features in the Linux Foundation’s 2022 Annual report
-</div>
-<div>
-
-<div style="margin: auto; width: 50%;">
+<article class="max-w-4xl mx-auto mb-12 sm:mb-18 pt-2 pb-8 px-6 lg:px-8 clear-both">
+  <a href="#lf-annual-report" class="text-base sm:text-lg hover:underline text-gray-400 pt-16 lg:pt-20">
+    <time datetime="2022-12-14" id="lf-annual-report">14 Dec 2022</time>
+  </a>
+  <h2 class="mb-8 mt-2 h2-size">seL4 features in the Linux Foundation’s 2022 Annual report</h2>
+  <div class="theprose prose-ul:[ul]:my-2 prose-p:[p]:my-3 prose-li:[li]:my-1.5 max-w-4xl">
+    
+    <div style="margin: auto; width: 50%;">
   <a href="https://www.linuxfoundation.org/resources/publications/linux-foundation-annual-report-2022?hsLang=en">
     <img src="../images/lf-annual-report.png" style="width: 70%;" alt="LF annual report">
   </a>
 </div>
 
-</div>
-<div class="news-finish"></div>
+  </div>
+</article>
 
-<div class="news-item tag-link" id="summit-videos">
-  <a href="#summit-videos"><span class="tag-span"># </span></a>
-  11 Nov 2022: The videos and slides of the seL4 summit 2022 are available online
+
+<div class="flex w-full mb-12 md:mb-24">
+  <div class="flex-1"></div>
+  <hr class="w-10 h-px bg-gray-200 border-0 dark:bg-gray-600">
+  
+<a href="#page-top" class="relative -mt-3.5 mx-4">
+  <div class="dark:bg-slate-900 hover:bg-slate-100 dark:hover:bg-slate-800 p-1.5 h-7 w-7 rounded-full shadow-xs left-1">
+    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" aria-hidden="true" data-slot="icon" class="h-4 w-4 text-slate-400 dark:text-slate-500">
+  <path stroke-linecap="round" stroke-linejoin="round" d="M12 19.5v-15m0 0-6.75 6.75M12 4.5l6.75 6.75"/>
+</svg>
+  </div>
+</a>
+
+  <hr class="w-10 h-px bg-gray-200 border-0 dark:bg-gray-600">
+  <div class="flex-1"></div>
 </div>
-<div>
-<a href="../Foundation/Summit/2022"><img src="/images/sel4-summit-logo.svg" style="width:20%;" class="news-img" alt="seL4 summit"></a>
-<p>Videos of the seL4 summit 2022 are now available on the <a href="https://www.youtube.com/@seL4" target="_blank">seL4 YouTube channel</a>!
+
+
+<article class="max-w-4xl mx-auto mb-12 sm:mb-18 pt-2 pb-8 px-6 lg:px-8 clear-both">
+  <a href="#summit-videos" class="text-base sm:text-lg hover:underline text-gray-400 pt-16 lg:pt-20">
+    <time datetime="2022-11-11" id="summit-videos">11 Nov 2022</time>
+  </a>
+  <h2 class="mb-8 mt-2 h2-size">The videos and slides of the seL4 Summit 2022 are available online</h2>
+  <div class="theprose prose-ul:[ul]:my-2 prose-p:[p]:my-3 prose-li:[li]:my-1.5 max-w-4xl">
+    <a href="/Summit/2022"><img src="/images/sel4-summit-logo.svg" alt="seL4 Summit"
+        class="float-right rounded-xl -mt-1 ml-4 sm:ml-6 lg:-mr-16  p-6 sm:p-8 w-2/5"></a>
+    <p>Videos of the seL4 Summit 2022 are now available on the <a href="https://www.youtube.com/@seL4" target="_blank">seL4 YouTube channel</a>!
 Links and slides can be found on the summit
-<a href="../Foundation/Summit/2022/program">Program</a> and
-<a href="../Foundation/Summit/2022/abstracts2022">Abstracts</a> pages. Thanks to all the
-speakers for making the seL4 summit 2022 a great success!</p>
+<a href="../Summit/2022/program.html">Program</a> and
+<a href="../Summit/2022/abstracts2022.html">Abstracts</a> pages. Thanks to all the
+speakers for making the seL4 Summit 2022 a great success!</p>
 
-</div>
-<div class="news-finish"></div>
+  </div>
+</article>
 
-<div class="news-item tag-link" id="gday-kataos">
-  <a href="#gday-kataos"><span class="tag-span"># </span></a>
-  21 Oct 2022: G'Day KataOS
+
+<div class="flex w-full mb-12 md:mb-24">
+  <div class="flex-1"></div>
+  <hr class="w-10 h-px bg-gray-200 border-0 dark:bg-gray-600">
+  
+<a href="#page-top" class="relative -mt-3.5 mx-4">
+  <div class="dark:bg-slate-900 hover:bg-slate-100 dark:hover:bg-slate-800 p-1.5 h-7 w-7 rounded-full shadow-xs left-1">
+    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" aria-hidden="true" data-slot="icon" class="h-4 w-4 text-slate-400 dark:text-slate-500">
+  <path stroke-linecap="round" stroke-linejoin="round" d="M12 19.5v-15m0 0-6.75 6.75M12 4.5l6.75 6.75"/>
+</svg>
+  </div>
+</a>
+
+  <hr class="w-10 h-px bg-gray-200 border-0 dark:bg-gray-600">
+  <div class="flex-1"></div>
 </div>
-<div>
-<a href="https://www.google.com/"><img src="/Foundation/Membership/LOGOS/google-short.svg" style="width:20%;" class="news-img" alt="Google"></a>
-<p>
+
+
+<article class="max-w-4xl mx-auto mb-12 sm:mb-18 pt-2 pb-8 px-6 lg:px-8 clear-both">
+  <a href="#gday-kataos" class="text-base sm:text-lg hover:underline text-gray-400 pt-16 lg:pt-20">
+    <time datetime="2022-10-21" id="gday-kataos">21 Oct 2022</time>
+  </a>
+  <h2 class="mb-8 mt-2 h2-size">G'Day KataOS</h2>
+  <div class="theprose prose-ul:[ul]:my-2 prose-p:[p]:my-3 prose-li:[li]:my-1.5 max-w-4xl">
+    <a href="https://www.google.com/"><img src="/Foundation/Membership/LOGOS/google-short.svg" alt="Google"
+        class="float-right rounded-xl -mt-1 ml-4 sm:ml-6 lg:-mr-16 bg-white p-6 sm:p-8 w-2/5"></a>
+    <p>
   The seL4 Foundation welcomes the <a
   href="https://opensource.googleblog.com/2022/10/announcing-kataos-and-sparrow.html">open-sourcing
   of core components of KataOS</a> created by our Member <a
@@ -159,17 +665,37 @@ speakers for making the seL4 summit 2022 a great success!</p>
   Rust programs on seL4</a>, which is a hot topic in the seL4 community.
 </p>
 
-</div>
-<div class="news-finish"></div>
+  </div>
+</article>
 
-<div class="news-item tag-link" id="summit-xcalibyte">
-  <a href="#summit-xcalibyte"><span class="tag-span"># </span></a>
-  07 Oct 2022: Thanks Xcalibyte for sponsoring the seL4 Summit 2022
+
+<div class="flex w-full mb-12 md:mb-24">
+  <div class="flex-1"></div>
+  <hr class="w-10 h-px bg-gray-200 border-0 dark:bg-gray-600">
+  
+<a href="#page-top" class="relative -mt-3.5 mx-4">
+  <div class="dark:bg-slate-900 hover:bg-slate-100 dark:hover:bg-slate-800 p-1.5 h-7 w-7 rounded-full shadow-xs left-1">
+    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" aria-hidden="true" data-slot="icon" class="h-4 w-4 text-slate-400 dark:text-slate-500">
+  <path stroke-linecap="round" stroke-linejoin="round" d="M12 19.5v-15m0 0-6.75 6.75M12 4.5l6.75 6.75"/>
+</svg>
+  </div>
+</a>
+
+  <hr class="w-10 h-px bg-gray-200 border-0 dark:bg-gray-600">
+  <div class="flex-1"></div>
 </div>
-<div>
-<a href="https://xcalibyte.com"><img src="/Foundation/Membership/LOGOS/xcalibyte.svg" style="width:15%;" class="news-img" alt="Xcalibyte logo"></a>
-<p>The seL4 Foundation thanks <a href="https://xcalibyte.com">Xcalibyte</a> for becoming a
-Bronze sponsor of the <a href="../Foundation/Summit/2022">seL4 Summit 2022</a>.</p>
+
+
+<article class="max-w-4xl mx-auto mb-12 sm:mb-18 pt-2 pb-8 px-6 lg:px-8 clear-both">
+  <a href="#summit-xcalibyte" class="text-base sm:text-lg hover:underline text-gray-400 pt-16 lg:pt-20">
+    <time datetime="2022-10-07" id="summit-xcalibyte">07 Oct 2022</time>
+  </a>
+  <h2 class="mb-8 mt-2 h2-size">Thanks Xcalibyte for sponsoring the seL4 Summit 2022</h2>
+  <div class="theprose prose-ul:[ul]:my-2 prose-p:[p]:my-3 prose-li:[li]:my-1.5 max-w-4xl">
+    <a href="https://xcalibyte.com"><img src="/Foundation/Membership/LOGOS/xcalibyte.svg" alt="Xcalibyte logo"
+        class="float-right rounded-xl -mt-1 ml-4 sm:ml-6 lg:-mr-16 bg-white p-6 sm:p-8 w-2/5"></a>
+    <p>The seL4 Foundation thanks <a href="https://xcalibyte.com">Xcalibyte</a> for becoming a
+Bronze sponsor of the <a href="../Summit/2022">seL4 Summit 2022</a>.</p>
 
 <p>Xcalibyte’s mission is to improve the quality of software by creating
 easy-to-use tools that help developers build and deploy reliable and secure
@@ -181,77 +707,136 @@ defect detection. We use advanced static code analysis to help reduce costs,
 improve productivity, and ensure software developers in China and all over the
 world have the proper capabilities to develop better, more reliable software.</p>
 
-</div>
-<div class="news-finish"></div>
+  </div>
+</article>
 
-<div class="news-item tag-link" id="summit-panellists">
-  <a href="#summit-panellists"><span class="tag-span"># </span></a>
-  22 Sep 2022: Panellists for seL4 summit announced
-</div>
-<div>
 
-<div>
+<div class="flex w-full mb-12 md:mb-24">
+  <div class="flex-1"></div>
+  <hr class="w-10 h-px bg-gray-200 border-0 dark:bg-gray-600">
+  
+<a href="#page-top" class="relative -mt-3.5 mx-4">
+  <div class="dark:bg-slate-900 hover:bg-slate-100 dark:hover:bg-slate-800 p-1.5 h-7 w-7 rounded-full shadow-xs left-1">
+    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" aria-hidden="true" data-slot="icon" class="h-4 w-4 text-slate-400 dark:text-slate-500">
+  <path stroke-linecap="round" stroke-linejoin="round" d="M12 19.5v-15m0 0-6.75 6.75M12 4.5l6.75 6.75"/>
+</svg>
+  </div>
+</a>
+
+  <hr class="w-10 h-px bg-gray-200 border-0 dark:bg-gray-600">
+  <div class="flex-1"></div>
+</div>
+
+
+<article class="max-w-4xl mx-auto mb-12 sm:mb-18 pt-2 pb-8 px-6 lg:px-8 clear-both">
+  <a href="#summit-panellists" class="text-base sm:text-lg hover:underline text-gray-400 pt-16 lg:pt-20">
+    <time datetime="2022-09-22" id="summit-panellists">22 Sep 2022</time>
+  </a>
+  <h2 class="mb-8 mt-2 h2-size">Panellists for seL4 Summit announced</h2>
+  <div class="theprose prose-ul:[ul]:my-2 prose-p:[p]:my-3 prose-li:[li]:my-1.5 max-w-4xl">
+    
+    <div>
   <p>
     We are very fortunate to welcome four leaders at major funding agencies to participate in a session <a
-      href="../Foundation/Summit/2022/abstracts2022#a-Funding-agencies"><strong>Funding agencies: priorities and
-        vision</strong></a> at the <a href="../Foundation/Summit/2022/">seL4 summit</a>. They will each give their views
+      href="../Summit/2022/abstracts2022.html#a-Funding-agencies"><strong>Funding agencies: priorities and
+        vision</strong></a> at the <a href="../Summit/2022/">seL4 Summit</a>. They will each give their views
     on the priorities and vision of their agency in terms of high-assurance systems.
   </p>
 </div>
-<div class="speakers_grid">
-  <div class="speaker">
-    <div class="speaker_pic">
-      <img src="../images/summit/brad.jpg" alt="William “Brad” Martin" width="140" />
-    </div>
-    <div class="speaker_title" style="text-align:center">
-      <a href="../Foundation/Summit/2022/abstracts2022#a-Funding-agencies-darpa">William “Brad” Martin</a>
-      <br>
-      <a href="https://www.darpa.mil/">DARPA</a>
-    </div>
-  </div>
-  <div class="speaker">
-    <div class="speaker_pic">
-      <img src="../images/summit/paul.jpg" alt="Paul Waller" width="140" />
-    </div>
-    <div class="speaker_title" style="text-align:center">
-      <a href="../Foundation/Summit/2022/abstracts2022#a-Funding-agencies-ncsc">Paul Waller</a>
-      <br>
-      <a href="https://www.ncsc.gov.uk/">NCSC</a>
-    </div>
-  </div>
-  <div class="speaker">
-    <div class="speaker_pic">
-      <img src="../images/summit/cyberagentur.png" alt="Cyberagentur" width="140" />
-    </div>
-    <div class="speaker_title" style="text-align:center">
-      <a href="../Foundation/Summit/2022/abstracts2022#a-Funding-agencies-cyberagentur">Sebastian Jester</a>
-      <br>
-      <a href="https://www.cyberagentur.de/">Cyberagentur</a>
-    </div>
-  </div>
-  <div class="speaker">
-    <div class="speaker_pic">
-      <img src="../images/summit/ticky.jpg" alt="Dr. Shreekant (Ticky) Thakkar" width="140" />
-    </div>
-    <div class="speaker_title" style="text-align:center">
-      <a href="../Foundation/Summit/2022/abstracts2022#a-Funding-agencies-tii">Shreekant (Ticky) Thakkar</a>
-      <br>
-      <a href="https://www.tii.ae/">TII</a>
-    </div>
-  </div>
-</div>
+<div class="not-prose">
+  <ul class="mx-auto mt-20 grid max-w-2xl lg:mx-0 lg:max-w-none
+           grid-cols-2 gap-x-8 gap-y-16 text-center
+           sm:grid-cols-3 md:grid-cols-4
+           
+           ">
+
+  <li>
+  
+  <a href="/Summit/2022/abstracts2022.html#a-Funding-agencies" class="text-dark no-underline! hover:underline!">
+  
+    <img class="mx-auto h-24 w-24 rounded-full" src="/images/summit/brad-square.jpg" alt="Picture of William “Brad” Martin">
+    <p class="mt-6 text-base font-semibold leading-7 tracking-tight text-dark">William “Brad” Martin</p>
+  
+  </a>
+  
+  <p class="text-sm leading-6 text-light"><a href='https://www.darpa.mil/'>DARPA</a></p>
+</li>
+
+
+  <li>
+  
+  <a href="/Summit/2022/abstracts2022.html#a-Funding-agencies" class="text-dark no-underline! hover:underline!">
+  
+    <img class="mx-auto h-24 w-24 rounded-full" src="/images/summit/paul-square.jpg" alt="Picture of Paul Waller">
+    <p class="mt-6 text-base font-semibold leading-7 tracking-tight text-dark">Paul Waller</p>
+  
+  </a>
+  
+  <p class="text-sm leading-6 text-light"><a href='https://www.ncsc.gov.uk/'>NCSC</a></p>
+</li>
+
+
+  <li>
+  
+  <a href="/Summit/2022/abstracts2022.html#a-Funding-agencies" class="text-dark no-underline! hover:underline!">
+  
+    <img class="mx-auto h-24 w-24 rounded-full" src="/images/summit/cyberagentur-square.svg" alt="Picture of Sebastian Jester">
+    <p class="mt-6 text-base font-semibold leading-7 tracking-tight text-dark">Sebastian Jester</p>
+  
+  </a>
+  
+  <p class="text-sm leading-6 text-light"><a href='https://www.cyberagentur.de/'>Cyberagentur</a></p>
+</li>
+
+
+  <li>
+  
+  <a href="/Summit/2022/abstracts2022.html#a-Funding-agencies" class="text-dark no-underline! hover:underline!">
+  
+    <img class="mx-auto h-24 w-24 rounded-full" src="/images/summit/ticky-square.jpg" alt="Picture of Dr. Shreekant (Ticky) Thakkar">
+    <p class="mt-6 text-base font-semibold leading-7 tracking-tight text-dark">Dr. Shreekant (Ticky) Thakkar</p>
+  
+  </a>
+  
+  <p class="text-sm leading-6 text-light"><a href='https://www.tii.ae/'>TII</a></p>
+</li>
+
+</ul>
+
 
 </div>
-<div class="news-finish"></div>
 
-<div class="news-item tag-link" id="summit-dornerworks">
-  <a href="#summit-dornerworks"><span class="tag-span"># </span></a>
-  19 Sep 2022: Thanks DornerWorks for sponsoring the seL4 Summit 2022
+  </div>
+</article>
+
+
+<div class="flex w-full mb-12 md:mb-24">
+  <div class="flex-1"></div>
+  <hr class="w-10 h-px bg-gray-200 border-0 dark:bg-gray-600">
+  
+<a href="#page-top" class="relative -mt-3.5 mx-4">
+  <div class="dark:bg-slate-900 hover:bg-slate-100 dark:hover:bg-slate-800 p-1.5 h-7 w-7 rounded-full shadow-xs left-1">
+    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" aria-hidden="true" data-slot="icon" class="h-4 w-4 text-slate-400 dark:text-slate-500">
+  <path stroke-linecap="round" stroke-linejoin="round" d="M12 19.5v-15m0 0-6.75 6.75M12 4.5l6.75 6.75"/>
+</svg>
+  </div>
+</a>
+
+  <hr class="w-10 h-px bg-gray-200 border-0 dark:bg-gray-600">
+  <div class="flex-1"></div>
 </div>
-<div>
-<a href="https://dornerworks.com/"><img src="/Foundation/Membership/LOGOS/DornerWorks.svg" style="width:20%;" class="news-img" alt="DornerWorks logo"></a>
-<p>The seL4 Foundation thanks <a href="https://dornerworks.com/">DornerWorks</a> for becoming
-a Bronze sponsor of the <a href="../Foundation/Summit/2022/">seL4 Summit 2022</a>.</p>
+
+
+<article class="max-w-4xl mx-auto mb-12 sm:mb-18 pt-2 pb-8 px-6 lg:px-8 clear-both">
+  <a href="#summit-dornerworks" class="text-base sm:text-lg hover:underline text-gray-400 pt-16 lg:pt-20">
+    <time datetime="2022-09-19" id="summit-dornerworks">19 Sep 2022</time>
+  </a>
+  <h2 class="mb-8 mt-2 h2-size">Thanks DornerWorks for sponsoring the seL4 Summit 2022</h2>
+  <div class="theprose prose-ul:[ul]:my-2 prose-p:[p]:my-3 prose-li:[li]:my-1.5 max-w-4xl">
+    <a href="https://dornerworks.com/"><img src="/Foundation/Membership/LOGOS/DornerWorks.svg" alt="DornerWorks logo"
+        class="float-right rounded-xl -mt-1 ml-4 sm:ml-6 lg:-mr-16 bg-white p-6 sm:p-8 w-2/5"></a>
+    <p>The seL4 Foundation thanks <a href="https://dornerworks.com/">DornerWorks</a> for becoming
+a Bronze sponsor of the <a href="../Summit/2022/">seL4 Summit 2022</a>.</p>
 
 <p><a href="https://dornerworks.com/">DornerWorks</a> helps product makers turn their ideas
 into reality with FPGA, hardware, and embedded software engineering expertise.
@@ -263,20 +848,40 @@ guidance of DornerWorks engineers. As a founding member of the seL4 Foundation,
 DornerWorks can accelerate the integration of seL4 as the trusted software base
 for your products.</p>
 
-<p>If you are interesting in sponsoring the seL4 summit 2022, please contact
+<p>If you are interesting in sponsoring the seL4 Summit 2022, please contact
 <a href="mailto:summit@sel4.systems" title="summit@sel4.systems">summit@sel4.systems</a>.</p>
 
-</div>
-<div class="news-finish"></div>
+  </div>
+</article>
 
-<div class="news-item tag-link" id="summit-horizon">
-  <a href="#summit-horizon"><span class="tag-span"># </span></a>
-  09 Sep 2022: Thanks Horizon Robotics for sponsoring the seL4 Summit 2022
+
+<div class="flex w-full mb-12 md:mb-24">
+  <div class="flex-1"></div>
+  <hr class="w-10 h-px bg-gray-200 border-0 dark:bg-gray-600">
+  
+<a href="#page-top" class="relative -mt-3.5 mx-4">
+  <div class="dark:bg-slate-900 hover:bg-slate-100 dark:hover:bg-slate-800 p-1.5 h-7 w-7 rounded-full shadow-xs left-1">
+    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" aria-hidden="true" data-slot="icon" class="h-4 w-4 text-slate-400 dark:text-slate-500">
+  <path stroke-linecap="round" stroke-linejoin="round" d="M12 19.5v-15m0 0-6.75 6.75M12 4.5l6.75 6.75"/>
+</svg>
+  </div>
+</a>
+
+  <hr class="w-10 h-px bg-gray-200 border-0 dark:bg-gray-600">
+  <div class="flex-1"></div>
 </div>
-<div>
-<a href="https://horizon.ai/"><img src="/Foundation/Membership/LOGOS/Horizon_Robotics.svg" style="width:20%;" class="news-img" alt="Horizon Robotics logo"></a>
-<p>The seL4 Foundation thanks <a href="https://horizon.ai/">Horizon Robotics</a> for becoming
-a Bronze sponsor of the <a href="../Foundation/Summit/2022/">seL4 Summit 2022</a>.</p>
+
+
+<article class="max-w-4xl mx-auto mb-12 sm:mb-18 pt-2 pb-8 px-6 lg:px-8 clear-both">
+  <a href="#summit-horizon" class="text-base sm:text-lg hover:underline text-gray-400 pt-16 lg:pt-20">
+    <time datetime="2022-09-09" id="summit-horizon">09 Sep 2022</time>
+  </a>
+  <h2 class="mb-8 mt-2 h2-size">Thanks Horizon Robotics for sponsoring the seL4 Summit 2022</h2>
+  <div class="theprose prose-ul:[ul]:my-2 prose-p:[p]:my-3 prose-li:[li]:my-1.5 max-w-4xl">
+    <a href="https://en.horizon.auto/"><img src="/Foundation/Membership/LOGOS/Horizon_Robotics.svg" alt="Horizon Robotics logo"
+        class="float-right rounded-xl -mt-1 ml-4 sm:ml-6 lg:-mr-16 bg-white p-6 sm:p-8 w-2/5"></a>
+    <p>The seL4 Foundation thanks <a href="https://en.horizon.auto/">Horizon Robotics</a> for becoming
+a Bronze sponsor of the <a href="../Summit/2022/">seL4 Summit 2022</a>.</p>
 
 <p>Horizon Robotics is a leading provider of computing platforms for smart vehicles
 with the mission to make human life safer and better.</p>
@@ -285,19 +890,39 @@ with the mission to make human life safer and better.</p>
 Foundation to build mixed-critical platform and solution for next-generation
 autonomous driving vehicles.</p>
 
-<p>If you are interesting in sponsoring the seL4 summit 2022, please contact
+<p>If you are interesting in sponsoring the seL4 Summit 2022, please contact
 <a href="mailto:summit@sel4.systems" title="summit@sel4.systems">summit@sel4.systems</a>.</p>
 
-</div>
-<div class="news-finish"></div>
+  </div>
+</article>
 
-<div class="news-item tag-link" id="member-spacemit">
-  <a href="#member-spacemit"><span class="tag-span"># </span></a>
-  31 Aug 2022: SpacemiT joins the seL4 Foundation
+
+<div class="flex w-full mb-12 md:mb-24">
+  <div class="flex-1"></div>
+  <hr class="w-10 h-px bg-gray-200 border-0 dark:bg-gray-600">
+  
+<a href="#page-top" class="relative -mt-3.5 mx-4">
+  <div class="dark:bg-slate-900 hover:bg-slate-100 dark:hover:bg-slate-800 p-1.5 h-7 w-7 rounded-full shadow-xs left-1">
+    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" aria-hidden="true" data-slot="icon" class="h-4 w-4 text-slate-400 dark:text-slate-500">
+  <path stroke-linecap="round" stroke-linejoin="round" d="M12 19.5v-15m0 0-6.75 6.75M12 4.5l6.75 6.75"/>
+</svg>
+  </div>
+</a>
+
+  <hr class="w-10 h-px bg-gray-200 border-0 dark:bg-gray-600">
+  <div class="flex-1"></div>
 </div>
-<div>
-<a href="https://spacemit.com/en/"><img src="/Foundation/Membership/LOGOS/SpacemiT.svg" style="width:20%;" class="news-img" alt="SpacemiT"></a>
-<p>The seL4 Foundation welcomes <a href="https://spacemit.com/en/">SpacemiT</a> as a member.</p>
+
+
+<article class="max-w-4xl mx-auto mb-12 sm:mb-18 pt-2 pb-8 px-6 lg:px-8 clear-both">
+  <a href="#member-spacemit" class="text-base sm:text-lg hover:underline text-gray-400 pt-16 lg:pt-20">
+    <time datetime="2022-08-31" id="member-spacemit">31 Aug 2022</time>
+  </a>
+  <h2 class="mb-8 mt-2 h2-size">SpacemiT joins the seL4 Foundation</h2>
+  <div class="theprose prose-ul:[ul]:my-2 prose-p:[p]:my-3 prose-li:[li]:my-1.5 max-w-4xl">
+    <a href="https://spacemit.com/en/"><img src="/Foundation/Membership/LOGOS/SpacemiT.svg" alt="SpacemiT"
+        class="float-right rounded-xl -mt-1 ml-4 sm:ml-6 lg:-mr-16 bg-white p-6 sm:p-8 w-2/5"></a>
+    <p>The seL4 Foundation welcomes <a href="https://spacemit.com/en/">SpacemiT</a> as a member.</p>
 
 <p>SpacemiT, a semiconductor innovation company focusing on high-performance RISC-V
 architecture chips, announced that it has officially joined the seL4 Foundation.
@@ -305,18 +930,38 @@ SpacemiT will work closely with seL4 to promote RISC-V+seL4 and will also focus
 on the security and performance of the operating system, thus assuring
 confidence in the security of the RISC-V architecture.</p>
 
-</div>
-<div class="news-finish"></div>
+  </div>
+</article>
 
-<div class="news-item tag-link" id="registration-open">
-  <a href="#registration-open"><span class="tag-span"># </span></a>
-  15 Aug 2022: Register for the seL4 Summit!
-</div>
-<div>
-<a href="../Foundation/Summit/2022/"><img src="/images/sel4-summit-logo.svg" style="width:20%;" class="news-img" alt="seL4 summit"></a>
-<p>This hybrid event will be held in Munich, Germany, 10-13 October 2022.</p>
 
-<p>The seL4 summit will cover the complete seL4 ecosystem, consisting of the
+<div class="flex w-full mb-12 md:mb-24">
+  <div class="flex-1"></div>
+  <hr class="w-10 h-px bg-gray-200 border-0 dark:bg-gray-600">
+  
+<a href="#page-top" class="relative -mt-3.5 mx-4">
+  <div class="dark:bg-slate-900 hover:bg-slate-100 dark:hover:bg-slate-800 p-1.5 h-7 w-7 rounded-full shadow-xs left-1">
+    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" aria-hidden="true" data-slot="icon" class="h-4 w-4 text-slate-400 dark:text-slate-500">
+  <path stroke-linecap="round" stroke-linejoin="round" d="M12 19.5v-15m0 0-6.75 6.75M12 4.5l6.75 6.75"/>
+</svg>
+  </div>
+</a>
+
+  <hr class="w-10 h-px bg-gray-200 border-0 dark:bg-gray-600">
+  <div class="flex-1"></div>
+</div>
+
+
+<article class="max-w-4xl mx-auto mb-12 sm:mb-18 pt-2 pb-8 px-6 lg:px-8 clear-both">
+  <a href="#registration-open" class="text-base sm:text-lg hover:underline text-gray-400 pt-16 lg:pt-20">
+    <time datetime="2022-08-15" id="registration-open">15 Aug 2022</time>
+  </a>
+  <h2 class="mb-8 mt-2 h2-size">Register for the seL4 Summit!</h2>
+  <div class="theprose prose-ul:[ul]:my-2 prose-p:[p]:my-3 prose-li:[li]:my-1.5 max-w-4xl">
+    <a href="/Summit/2022/"><img src="/images/sel4-summit-logo.svg" alt="seL4 Summit"
+        class="float-right rounded-xl -mt-1 ml-4 sm:ml-6 lg:-mr-16  p-6 sm:p-8 w-2/5"></a>
+    <p>This hybrid event will be held in Munich, Germany, 10-13 October 2022.</p>
+
+<p>The seL4 Summit will cover the complete seL4 ecosystem, consisting of the
 verified microkernel, as well as all seL4-related technology, tools,
 infrastructure, products, projects, and people.</p>
 
@@ -341,54 +986,658 @@ of involvement suits both parties. Mentors are welcome to volunteer for any
 level of involvement.</p>
 
 <div style="text-align: center">
-  <a href="https://hopin.com/events/sel4-summit-2022/registration" class="highlight">Register for the seL4 Summit 2022!</a>
+  <a href="https://hopin.com/events/sel4-summit-2022/registration" class="emph">Register for the seL4 Summit 2022!</a>
 </div>
 
-</div>
-<div class="news-finish"></div>
+  </div>
+</article>
 
-<div class="news-item tag-link" id="member-google">
-  <a href="#member-google"><span class="tag-span"># </span></a>
-  04 Aug 2022: Google joins the seL4 Foundation
+
+<div class="flex w-full mb-12 md:mb-24">
+  <div class="flex-1"></div>
+  <hr class="w-10 h-px bg-gray-200 border-0 dark:bg-gray-600">
+  
+<a href="#page-top" class="relative -mt-3.5 mx-4">
+  <div class="dark:bg-slate-900 hover:bg-slate-100 dark:hover:bg-slate-800 p-1.5 h-7 w-7 rounded-full shadow-xs left-1">
+    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" aria-hidden="true" data-slot="icon" class="h-4 w-4 text-slate-400 dark:text-slate-500">
+  <path stroke-linecap="round" stroke-linejoin="round" d="M12 19.5v-15m0 0-6.75 6.75M12 4.5l6.75 6.75"/>
+</svg>
+  </div>
+</a>
+
+  <hr class="w-10 h-px bg-gray-200 border-0 dark:bg-gray-600">
+  <div class="flex-1"></div>
 </div>
-<div>
-<a href="https://www.google.com/"><img src="/Foundation/Membership/LOGOS/google-short.svg" style="width:20%;" class="news-img" alt="Google logo"></a>
-<p>The seL4 Foundation is pleased to welcome <a href="https://www.google.com/">Google</a> as our latest member.</p>
+
+
+<article class="max-w-4xl mx-auto mb-12 sm:mb-18 pt-2 pb-8 px-6 lg:px-8 clear-both">
+  <a href="#member-google" class="text-base sm:text-lg hover:underline text-gray-400 pt-16 lg:pt-20">
+    <time datetime="2022-08-04" id="member-google">04 Aug 2022</time>
+  </a>
+  <h2 class="mb-8 mt-2 h2-size">Google joins the seL4 Foundation</h2>
+  <div class="theprose prose-ul:[ul]:my-2 prose-p:[p]:my-3 prose-li:[li]:my-1.5 max-w-4xl">
+    <a href="https://www.google.com/"><img src="/Foundation/Membership/LOGOS/google-short.svg" alt="Google logo"
+        class="float-right rounded-xl -mt-1 ml-4 sm:ml-6 lg:-mr-16 bg-white p-6 sm:p-8 w-2/5"></a>
+    <p>The seL4 Foundation is pleased to welcome <a href="https://www.google.com/">Google</a> as our latest member.</p>
 
 <p>We are excited to see their interest in seL4 and look forward to seeing their work with seL4.</p>
 
-</div>
-<div class="news-finish"></div>
+  </div>
+</article>
 
-<div class="news-item tag-link" id="program-online">
-  <a href="#program-online"><span class="tag-span"># </span></a>
-  30 Jun 2022: The seL4 summit Program is available!
+
+<div class="flex w-full mb-12 md:mb-24">
+  <div class="flex-1"></div>
+  <hr class="w-10 h-px bg-gray-200 border-0 dark:bg-gray-600">
+  
+<a href="#page-top" class="relative -mt-3.5 mx-4">
+  <div class="dark:bg-slate-900 hover:bg-slate-100 dark:hover:bg-slate-800 p-1.5 h-7 w-7 rounded-full shadow-xs left-1">
+    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" aria-hidden="true" data-slot="icon" class="h-4 w-4 text-slate-400 dark:text-slate-500">
+  <path stroke-linecap="round" stroke-linejoin="round" d="M12 19.5v-15m0 0-6.75 6.75M12 4.5l6.75 6.75"/>
+</svg>
+  </div>
+</a>
+
+  <hr class="w-10 h-px bg-gray-200 border-0 dark:bg-gray-600">
+  <div class="flex-1"></div>
 </div>
-<div>
-<a href="../Foundation/Summit/2022/"><img src="/images/sel4-summit-logo.svg" style="width:20%;" class="news-img" alt="seL4 summit logo"></a>
-<p>
-  Have a look at the <a href="../Foundation/Summit/2022/program">seL4 summit Program</a>!
+
+
+<article class="max-w-4xl mx-auto mb-12 sm:mb-18 pt-2 pb-8 px-6 lg:px-8 clear-both">
+  <a href="#program-online" class="text-base sm:text-lg hover:underline text-gray-400 pt-16 lg:pt-20">
+    <time datetime="2022-06-30" id="program-online">30 Jun 2022</time>
+  </a>
+  <h2 class="mb-8 mt-2 h2-size">The seL4 Summit Program is available!</h2>
+  <div class="theprose prose-ul:[ul]:my-2 prose-p:[p]:my-3 prose-li:[li]:my-1.5 max-w-4xl">
+    <a href="/Summit/2022/"><img src="/images/sel4-summit-logo.svg" alt="seL4 Summit logo"
+        class="float-right rounded-xl -mt-1 ml-4 sm:ml-6 lg:-mr-16  p-6 sm:p-8 w-2/5"></a>
+    <p>
+  Have a look at the <a href="../Summit/2022/program.html">seL4 Summit Program</a>!
   We have an amazing line-up of cool seL4 work, with a combination of
   technical research and development, experience reports of seL4 in the field,
   technical discussions and Birds-of-a-feather sessions, as well as a whole
   day of seL4 bootcamp with tutorials and training.
 </p>
-<p style="text-align: center;">
-  <a href="../Foundation/Summit/2022/program">
-    <img src="../images/summit/program.svg" style="width: 70%;  padding-left:10px; " alt="seL4 Summit program">
+<div class="mx-auto w-3/4 sm:w-1/2 aspect-4/3">
+  <a href="../Summit/2022/program.html">
+    <svg xmlns="http://www.w3.org/2000/svg" style="background: transparent; background-color: transparent; color-scheme: light dark;" version="1.1" width="100%" height="100%" viewBox="-0.5 -0.5 790 585" content="&lt;mxfile host=&quot;Electron&quot; agent=&quot;Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) draw.io/26.2.2 Chrome/134.0.6998.178 Electron/35.1.2 Safari/537.36&quot; scale=&quot;1&quot; border=&quot;0&quot; version=&quot;26.2.2&quot;&gt;&#10; &lt;diagram name=&quot;Page-1&quot; id=&quot;paY2k2uHaaX1umHqWP7c&quot;&gt;&#10; &lt;mxGraphModel dx=&quot;967&quot; dy=&quot;1145&quot; grid=&quot;1&quot; gridSize=&quot;10&quot; guides=&quot;1&quot; tooltips=&quot;1&quot; connect=&quot;1&quot; arrows=&quot;1&quot; fold=&quot;1&quot; page=&quot;1&quot; pageScale=&quot;1&quot; pageWidth=&quot;827&quot; pageHeight=&quot;1169&quot; math=&quot;0&quot; shadow=&quot;0&quot;&gt;&#10; &lt;root&gt;&#10; &lt;mxCell id=&quot;0&quot; /&gt;&#10; &lt;mxCell id=&quot;1&quot; parent=&quot;0&quot; /&gt;&#10; &lt;mxCell id=&quot;GaKuWDPM29uswf_1zuqV-1&quot; value=&quot;Keynote&quot; style=&quot;rounded=0;whiteSpace=wrap;html=1;fillColor=light-dark(#6497B1,#447995);fontFamily=roboto;fontStyle=0;fontSize=30;strokeColor=none;&quot; parent=&quot;1&quot; vertex=&quot;1&quot;&gt;&#10; &lt;mxGeometry x=&quot;440&quot; y=&quot;140&quot; width=&quot;190&quot; height=&quot;40&quot; as=&quot;geometry&quot; /&gt;&#10; &lt;/mxCell&gt;&#10; &lt;mxCell id=&quot;GaKuWDPM29uswf_1zuqV-2&quot; value=&quot;Talks&quot; style=&quot;rounded=0;whiteSpace=wrap;html=1;fillColor=light-dark(#C0D7E1,#94BBCC);fontFamily=roboto;fontStyle=0;fontSize=30;strokeColor=none;&quot; parent=&quot;1&quot; vertex=&quot;1&quot;&gt;&#10; &lt;mxGeometry x=&quot;440&quot; y=&quot;190&quot; width=&quot;190&quot; height=&quot;60&quot; as=&quot;geometry&quot; /&gt;&#10; &lt;/mxCell&gt;&#10; &lt;mxCell id=&quot;GaKuWDPM29uswf_1zuqV-4&quot; value=&quot;Panel&quot; style=&quot;rounded=0;whiteSpace=wrap;html=1;fillColor=light-dark(#FFDB88,#FFCA5F);fontFamily=roboto;fontStyle=0;fontSize=30;strokeColor=none;&quot; parent=&quot;1&quot; vertex=&quot;1&quot;&gt;&#10; &lt;mxGeometry x=&quot;637&quot; y=&quot;500&quot; width=&quot;190&quot; height=&quot;30&quot; as=&quot;geometry&quot; /&gt;&#10; &lt;/mxCell&gt;&#10; &lt;mxCell id=&quot;GaKuWDPM29uswf_1zuqV-8&quot; value=&quot;Dinner&quot; style=&quot;rounded=0;whiteSpace=wrap;html=1;fillColor=light-dark(#D2EBAB,#96CA50);fontFamily=roboto;fontStyle=0;fontSize=30;strokeColor=none;&quot; parent=&quot;1&quot; vertex=&quot;1&quot;&gt;&#10; &lt;mxGeometry x=&quot;440&quot; y=&quot;565&quot; width=&quot;190&quot; height=&quot;40&quot; as=&quot;geometry&quot; /&gt;&#10; &lt;/mxCell&gt;&#10; &lt;mxCell id=&quot;GaKuWDPM29uswf_1zuqV-14&quot; value=&quot;BoFs&quot; style=&quot;rounded=0;whiteSpace=wrap;html=1;fillColor=light-dark(#FFDB88,#FFCA5F);fontFamily=roboto;fontStyle=0;fontSize=30;strokeColor=none;&quot; parent=&quot;1&quot; vertex=&quot;1&quot;&gt;&#10; &lt;mxGeometry x=&quot;940&quot; y=&quot;220&quot; width=&quot;90&quot; height=&quot;70&quot; as=&quot;geometry&quot; /&gt;&#10; &lt;/mxCell&gt;&#10; &lt;mxCell id=&quot;GaKuWDPM29uswf_1zuqV-16&quot; value=&quot;&amp;lt;div&amp;gt;Tue Oct 11&amp;lt;/div&amp;gt;&quot; style=&quot;rounded=0;whiteSpace=wrap;html=1;fillColor=light-dark(#385378,#385378);fontFamily=roboto;fontStyle=0;fontSize=30;fontColor=light-dark(#d6dbe4, #ededed);strokeColor=none;&quot; parent=&quot;1&quot; vertex=&quot;1&quot;&gt;&#10; &lt;mxGeometry x=&quot;640&quot; y=&quot;80&quot; width=&quot;190&quot; height=&quot;40&quot; as=&quot;geometry&quot; /&gt;&#10; &lt;/mxCell&gt;&#10; &lt;mxCell id=&quot;GaKuWDPM29uswf_1zuqV-23&quot; value=&quot;&amp;lt;div&amp;gt;Wed Oct 12&amp;lt;/div&amp;gt;&quot; style=&quot;rounded=0;whiteSpace=wrap;html=1;fillColor=light-dark(#385378,#385378);fontFamily=roboto;fontStyle=0;fontSize=30;fontColor=light-dark(#d6dbe4, #ededed);strokeColor=none;&quot; parent=&quot;1&quot; vertex=&quot;1&quot;&gt;&#10; &lt;mxGeometry x=&quot;840&quot; y=&quot;80&quot; width=&quot;190&quot; height=&quot;40&quot; as=&quot;geometry&quot; /&gt;&#10; &lt;/mxCell&gt;&#10; &lt;mxCell id=&quot;GaKuWDPM29uswf_1zuqV-24&quot; value=&quot;&amp;lt;div&amp;gt;Thu Oct 13&amp;lt;/div&amp;gt;&quot; style=&quot;rounded=0;whiteSpace=wrap;html=1;fillColor=light-dark(#385378,#385378);fontFamily=roboto;fontStyle=0;fontSize=30;fontColor=light-dark(#d6dbe4, #ededed);strokeColor=none;&quot; parent=&quot;1&quot; vertex=&quot;1&quot;&gt;&#10; &lt;mxGeometry x=&quot;1040&quot; y=&quot;80&quot; width=&quot;190&quot; height=&quot;40&quot; as=&quot;geometry&quot; /&gt;&#10; &lt;/mxCell&gt;&#10; &lt;mxCell id=&quot;GaKuWDPM29uswf_1zuqV-28&quot; value=&quot;Training&quot; style=&quot;rounded=0;whiteSpace=wrap;html=1;fillColor=light-dark(#FFDB88,#FFCA5F);fontFamily=roboto;fontStyle=0;fontSize=30;strokeColor=none;&quot; parent=&quot;1&quot; vertex=&quot;1&quot;&gt;&#10; &lt;mxGeometry x=&quot;1040&quot; y=&quot;140&quot; width=&quot;190&quot; height=&quot;150&quot; as=&quot;geometry&quot; /&gt;&#10; &lt;/mxCell&gt;&#10; &lt;mxCell id=&quot;GaKuWDPM29uswf_1zuqV-30&quot; value=&quot;&amp;lt;div&amp;gt;&amp;lt;font&amp;gt;Day 1&amp;lt;/font&amp;gt;&amp;lt;/div&amp;gt;&quot; style=&quot;rounded=0;whiteSpace=wrap;html=1;fillColor=light-dark(#385378,#385378);fontFamily=roboto;fontStyle=0;fontSize=38;fontColor=light-dark(#d6dbe4, #ededed);strokeColor=none;&quot; parent=&quot;1&quot; vertex=&quot;1&quot;&gt;&#10; &lt;mxGeometry x=&quot;440&quot; y=&quot;20&quot; width=&quot;190&quot; height=&quot;50&quot; as=&quot;geometry&quot; /&gt;&#10; &lt;/mxCell&gt;&#10; &lt;mxCell id=&quot;GaKuWDPM29uswf_1zuqV-31&quot; value=&quot;&amp;lt;div&amp;gt;&amp;lt;font&amp;gt;Day 2&amp;lt;/font&amp;gt;&amp;lt;/div&amp;gt;&quot; style=&quot;rounded=0;whiteSpace=wrap;html=1;fillColor=light-dark(#385378,#385378);fontFamily=roboto;fontStyle=0;fontSize=38;fontColor=light-dark(#d6dbe4, #ededed);strokeColor=none;&quot; parent=&quot;1&quot; vertex=&quot;1&quot;&gt;&#10; &lt;mxGeometry x=&quot;640&quot; y=&quot;20&quot; width=&quot;190&quot; height=&quot;50&quot; as=&quot;geometry&quot; /&gt;&#10; &lt;/mxCell&gt;&#10; &lt;mxCell id=&quot;GaKuWDPM29uswf_1zuqV-32&quot; value=&quot;&amp;lt;div&amp;gt;&amp;lt;font&amp;gt;Day 3&amp;lt;/font&amp;gt;&amp;lt;/div&amp;gt;&quot; style=&quot;rounded=0;whiteSpace=wrap;html=1;fillColor=light-dark(#385378,#385378);fontFamily=roboto;fontStyle=0;fontSize=38;fontColor=light-dark(#d6dbe4, #ededed);strokeColor=none;&quot; parent=&quot;1&quot; vertex=&quot;1&quot;&gt;&#10; &lt;mxGeometry x=&quot;840&quot; y=&quot;20&quot; width=&quot;190&quot; height=&quot;50&quot; as=&quot;geometry&quot; /&gt;&#10; &lt;/mxCell&gt;&#10; &lt;mxCell id=&quot;7UAU9e-Ts3KCN4cGCY1X-1&quot; style=&quot;edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;&quot; parent=&quot;1&quot; source=&quot;GaKuWDPM29uswf_1zuqV-2&quot; target=&quot;GaKuWDPM29uswf_1zuqV-2&quot; edge=&quot;1&quot;&gt;&#10; &lt;mxGeometry relative=&quot;1&quot; as=&quot;geometry&quot; /&gt;&#10; &lt;/mxCell&gt;&#10; &lt;mxCell id=&quot;7UAU9e-Ts3KCN4cGCY1X-5&quot; value=&quot;Talks&quot; style=&quot;rounded=0;whiteSpace=wrap;html=1;fillColor=light-dark(#C0D7E1,#94BBCC);fontFamily=roboto;fontStyle=0;fontSize=30;strokeColor=none;&quot; parent=&quot;1&quot; vertex=&quot;1&quot;&gt;&#10; &lt;mxGeometry x=&quot;440&quot; y=&quot;340&quot; width=&quot;190&quot; height=&quot;100&quot; as=&quot;geometry&quot; /&gt;&#10; &lt;/mxCell&gt;&#10; &lt;mxCell id=&quot;7UAU9e-Ts3KCN4cGCY1X-8&quot; value=&quot;Keynote&quot; style=&quot;rounded=0;whiteSpace=wrap;html=1;fillColor=light-dark(#6497B1,#447995);fontFamily=roboto;fontStyle=0;fontSize=30;strokeColor=none;&quot; parent=&quot;1&quot; vertex=&quot;1&quot;&gt;&#10; &lt;mxGeometry x=&quot;640&quot; y=&quot;140&quot; width=&quot;190&quot; height=&quot;40&quot; as=&quot;geometry&quot; /&gt;&#10; &lt;/mxCell&gt;&#10; &lt;mxCell id=&quot;M1GxF3__IAjpVMbgIJwI-1&quot; value=&quot;&amp;lt;div&amp;gt;Mon Oct 10&amp;lt;/div&amp;gt;&quot; style=&quot;rounded=0;whiteSpace=wrap;html=1;fillColor=light-dark(#385378,#385378);fontFamily=roboto;fontStyle=0;fontSize=30;fontColor=light-dark(#d6dbe4, #ededed);strokeColor=none;&quot; vertex=&quot;1&quot; parent=&quot;1&quot;&gt;&#10; &lt;mxGeometry x=&quot;440&quot; y=&quot;80&quot; width=&quot;190&quot; height=&quot;40&quot; as=&quot;geometry&quot; /&gt;&#10; &lt;/mxCell&gt;&#10; &lt;mxCell id=&quot;M1GxF3__IAjpVMbgIJwI-2&quot; value=&quot;&amp;lt;div&amp;gt;&amp;lt;font&amp;gt;Day 4&amp;lt;/font&amp;gt;&amp;lt;/div&amp;gt;&quot; style=&quot;rounded=0;whiteSpace=wrap;html=1;fillColor=light-dark(#385378,#385378);fontFamily=roboto;fontStyle=0;fontSize=38;fontColor=light-dark(#d6dbe4, #ededed);strokeColor=none;&quot; vertex=&quot;1&quot; parent=&quot;1&quot;&gt;&#10; &lt;mxGeometry x=&quot;1040&quot; y=&quot;20&quot; width=&quot;190&quot; height=&quot;50&quot; as=&quot;geometry&quot; /&gt;&#10; &lt;/mxCell&gt;&#10; &lt;mxCell id=&quot;M1GxF3__IAjpVMbgIJwI-3&quot; value=&quot;AMA&quot; style=&quot;rounded=0;whiteSpace=wrap;html=1;fillColor=light-dark(#FFDB88,#FFCA5F);fontFamily=roboto;fontStyle=0;fontSize=30;strokeColor=none;&quot; vertex=&quot;1&quot; parent=&quot;1&quot;&gt;&#10; &lt;mxGeometry x=&quot;440&quot; y=&quot;260&quot; width=&quot;190&quot; height=&quot;30&quot; as=&quot;geometry&quot; /&gt;&#10; &lt;/mxCell&gt;&#10; &lt;mxCell id=&quot;M1GxF3__IAjpVMbgIJwI-4&quot; value=&quot;Talks&quot; style=&quot;rounded=0;whiteSpace=wrap;html=1;fillColor=light-dark(#C0D7E1,#94BBCC);fontFamily=roboto;fontStyle=0;fontSize=30;strokeColor=none;&quot; vertex=&quot;1&quot; parent=&quot;1&quot;&gt;&#10; &lt;mxGeometry x=&quot;640&quot; y=&quot;190&quot; width=&quot;190&quot; height=&quot;100&quot; as=&quot;geometry&quot; /&gt;&#10; &lt;/mxCell&gt;&#10; &lt;mxCell id=&quot;M1GxF3__IAjpVMbgIJwI-6&quot; value=&quot;Talks&quot; style=&quot;rounded=0;whiteSpace=wrap;html=1;fillColor=light-dark(#C0D7E1,#94BBCC);fontFamily=roboto;fontStyle=0;fontSize=30;strokeColor=none;&quot; vertex=&quot;1&quot; parent=&quot;1&quot;&gt;&#10; &lt;mxGeometry x=&quot;440&quot; y=&quot;460&quot; width=&quot;190&quot; height=&quot;70&quot; as=&quot;geometry&quot; /&gt;&#10; &lt;/mxCell&gt;&#10; &lt;mxCell id=&quot;M1GxF3__IAjpVMbgIJwI-10&quot; value=&quot;Talks&quot; style=&quot;rounded=0;whiteSpace=wrap;html=1;fillColor=light-dark(#C0D7E1,#94BBCC);fontFamily=roboto;fontStyle=0;fontSize=30;strokeColor=none;&quot; vertex=&quot;1&quot; parent=&quot;1&quot;&gt;&#10; &lt;mxGeometry x=&quot;637&quot; y=&quot;340&quot; width=&quot;190&quot; height=&quot;100&quot; as=&quot;geometry&quot; /&gt;&#10; &lt;/mxCell&gt;&#10; &lt;mxCell id=&quot;M1GxF3__IAjpVMbgIJwI-11&quot; value=&quot;Talks&quot; style=&quot;rounded=0;whiteSpace=wrap;html=1;fillColor=light-dark(#C0D7E1,#94BBCC);fontFamily=roboto;fontStyle=0;fontSize=30;strokeColor=none;&quot; vertex=&quot;1&quot; parent=&quot;1&quot;&gt;&#10; &lt;mxGeometry x=&quot;637&quot; y=&quot;460&quot; width=&quot;190&quot; height=&quot;30&quot; as=&quot;geometry&quot; /&gt;&#10; &lt;/mxCell&gt;&#10; &lt;mxCell id=&quot;M1GxF3__IAjpVMbgIJwI-12&quot; value=&quot;seL4 overviews&quot; style=&quot;rounded=0;whiteSpace=wrap;html=1;fillColor=light-dark(#FFDB88,#FFCA5F);fontFamily=roboto;fontStyle=0;fontSize=30;strokeColor=none;&quot; vertex=&quot;1&quot; parent=&quot;1&quot;&gt;&#10; &lt;mxGeometry x=&quot;840&quot; y=&quot;140&quot; width=&quot;190&quot; height=&quot;70&quot; as=&quot;geometry&quot; /&gt;&#10; &lt;/mxCell&gt;&#10; &lt;mxCell id=&quot;M1GxF3__IAjpVMbgIJwI-13&quot; value=&quot;Talks&amp;amp;nbsp;&amp;lt;div&amp;gt;&amp;amp;amp; disc&amp;lt;/div&amp;gt;&quot; style=&quot;rounded=0;whiteSpace=wrap;html=1;fillColor=light-dark(#FFDB88,#FFCA5F);fontFamily=roboto;fontStyle=0;fontSize=27;strokeColor=none;&quot; vertex=&quot;1&quot; parent=&quot;1&quot;&gt;&#10; &lt;mxGeometry x=&quot;840&quot; y=&quot;220&quot; width=&quot;90&quot; height=&quot;70&quot; as=&quot;geometry&quot; /&gt;&#10; &lt;/mxCell&gt;&#10; &lt;mxCell id=&quot;M1GxF3__IAjpVMbgIJwI-14&quot; value=&quot;Talks&quot; style=&quot;rounded=0;whiteSpace=wrap;html=1;fillColor=light-dark(#C0D7E1,#94BBCC);fontFamily=roboto;fontStyle=0;fontSize=30;strokeColor=none;&quot; vertex=&quot;1&quot; parent=&quot;1&quot;&gt;&#10; &lt;mxGeometry x=&quot;840&quot; y=&quot;460&quot; width=&quot;190&quot; height=&quot;70&quot; as=&quot;geometry&quot; /&gt;&#10; &lt;/mxCell&gt;&#10; &lt;mxCell id=&quot;M1GxF3__IAjpVMbgIJwI-16&quot; value=&quot;BoFs&quot; style=&quot;rounded=0;whiteSpace=wrap;html=1;fillColor=light-dark(#FFDB88,#FFCA5F);fontFamily=roboto;fontStyle=0;fontSize=30;strokeColor=none;&quot; vertex=&quot;1&quot; parent=&quot;1&quot;&gt;&#10; &lt;mxGeometry x=&quot;940&quot; y=&quot;340&quot; width=&quot;90&quot; height=&quot;100&quot; as=&quot;geometry&quot; /&gt;&#10; &lt;/mxCell&gt;&#10; &lt;mxCell id=&quot;M1GxF3__IAjpVMbgIJwI-17&quot; value=&quot;Talks&amp;amp;nbsp;&amp;lt;div&amp;gt;&amp;amp;amp; disc&amp;lt;/div&amp;gt;&quot; style=&quot;rounded=0;whiteSpace=wrap;html=1;fillColor=light-dark(#FFDB88,#FFCA5F);fontFamily=roboto;fontStyle=0;fontSize=27;strokeColor=none;&quot; vertex=&quot;1&quot; parent=&quot;1&quot;&gt;&#10; &lt;mxGeometry x=&quot;840&quot; y=&quot;340&quot; width=&quot;90&quot; height=&quot;100&quot; as=&quot;geometry&quot; /&gt;&#10; &lt;/mxCell&gt;&#10; &lt;mxCell id=&quot;M1GxF3__IAjpVMbgIJwI-18&quot; value=&quot;Training&quot; style=&quot;rounded=0;whiteSpace=wrap;html=1;fillColor=light-dark(#FFDB88,#FFCA5F);fontFamily=roboto;fontStyle=0;fontSize=30;strokeColor=none;&quot; vertex=&quot;1&quot; parent=&quot;1&quot;&gt;&#10; &lt;mxGeometry x=&quot;1040&quot; y=&quot;340&quot; width=&quot;190&quot; height=&quot;190&quot; as=&quot;geometry&quot; /&gt;&#10; &lt;/mxCell&gt;&#10; &lt;mxCell id=&quot;M1GxF3__IAjpVMbgIJwI-19&quot; style=&quot;edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;&quot; edge=&quot;1&quot; parent=&quot;1&quot; source=&quot;M1GxF3__IAjpVMbgIJwI-17&quot; target=&quot;M1GxF3__IAjpVMbgIJwI-17&quot;&gt;&#10; &lt;mxGeometry relative=&quot;1&quot; as=&quot;geometry&quot; /&gt;&#10; &lt;/mxCell&gt;&#10; &lt;/root&gt;&#10; &lt;/mxGraphModel&gt;&#10; &lt;/diagram&gt;&#10;&lt;/mxfile&gt;">
+  <g>
+    <g data-cell-id="0">
+      <g data-cell-id="1">
+        <g data-cell-id="GaKuWDPM29uswf_1zuqV-1">
+          <g>
+            <rect x="0" y="120" width="190" height="40" fill="#6497b1" pointer-events="all" style="fill: light-dark(rgb(100, 151, 177), rgb(68, 121, 149));"/>
+          </g>
+          <g>
+            <g transform="translate(-0.5 -0.5)">
+              <switch>
+                <foreignObject style="overflow: visible; text-align: left;" pointer-events="none" width="100%" height="100%" requiredFeatures="http://www.w3.org/TR/SVG11/feature#Extensibility">
+                  <div xmlns="http://www.w3.org/1999/xhtml" style="display: flex; align-items: unsafe center; justify-content: unsafe center; width: 188px; height: 1px; padding-top: 140px; margin-left: 1px;">
+                    <div style="box-sizing: border-box; font-size: 0; text-align: center; color: #000000;">
+                      <div style="display: inline-block; font-size: 30px; font-family: &quot;roboto&quot;; color: light-dark(#000000, #ffffff); line-height: 1.2; pointer-events: all; white-space: normal; word-wrap: normal;">Keynote</div>
+                    </div>
+                  </div>
+                </foreignObject>
+                <text x="95" y="149" fill="light-dark(#000000, #ffffff)" font-family="&quot;roboto&quot;" font-size="30px" text-anchor="middle">Keynote</text>
+              </switch>
+            </g>
+          </g>
+        </g>
+        <g data-cell-id="GaKuWDPM29uswf_1zuqV-2">
+          <g>
+            <rect x="0" y="170" width="190" height="60" fill="#c0d7e1" pointer-events="all" style="fill: light-dark(rgb(192, 215, 225), rgb(148, 187, 204));"/>
+          </g>
+          <g>
+            <g transform="translate(-0.5 -0.5)">
+              <switch>
+                <foreignObject style="overflow: visible; text-align: left;" pointer-events="none" width="100%" height="100%" requiredFeatures="http://www.w3.org/TR/SVG11/feature#Extensibility">
+                  <div xmlns="http://www.w3.org/1999/xhtml" style="display: flex; align-items: unsafe center; justify-content: unsafe center; width: 188px; height: 1px; padding-top: 200px; margin-left: 1px;">
+                    <div style="box-sizing: border-box; font-size: 0; text-align: center; color: #000000;">
+                      <div style="display: inline-block; font-size: 30px; font-family: &quot;roboto&quot;; color: light-dark(#000000, #ffffff); line-height: 1.2; pointer-events: all; white-space: normal; word-wrap: normal;">Talks</div>
+                    </div>
+                  </div>
+                </foreignObject>
+                <text x="95" y="209" fill="light-dark(#000000, #ffffff)" font-family="&quot;roboto&quot;" font-size="30px" text-anchor="middle">Talks</text>
+              </switch>
+            </g>
+          </g>
+        </g>
+        <g data-cell-id="GaKuWDPM29uswf_1zuqV-4">
+          <g>
+            <rect x="197" y="480" width="190" height="30" fill="#ffdb88" pointer-events="all" style="fill: light-dark(rgb(255, 219, 136), rgb(255, 202, 95));"/>
+          </g>
+          <g>
+            <g transform="translate(-0.5 -0.5)">
+              <switch>
+                <foreignObject style="overflow: visible; text-align: left;" pointer-events="none" width="100%" height="100%" requiredFeatures="http://www.w3.org/TR/SVG11/feature#Extensibility">
+                  <div xmlns="http://www.w3.org/1999/xhtml" style="display: flex; align-items: unsafe center; justify-content: unsafe center; width: 188px; height: 1px; padding-top: 495px; margin-left: 198px;">
+                    <div style="box-sizing: border-box; font-size: 0; text-align: center; color: #000000;">
+                      <div style="display: inline-block; font-size: 30px; font-family: &quot;roboto&quot;; color: light-dark(#000000, #ffffff); line-height: 1.2; pointer-events: all; white-space: normal; word-wrap: normal;">Panel</div>
+                    </div>
+                  </div>
+                </foreignObject>
+                <text x="292" y="504" fill="light-dark(#000000, #ffffff)" font-family="&quot;roboto&quot;" font-size="30px" text-anchor="middle">Panel</text>
+              </switch>
+            </g>
+          </g>
+        </g>
+        <g data-cell-id="GaKuWDPM29uswf_1zuqV-8">
+          <g>
+            <rect x="0" y="545" width="190" height="40" fill="#d2ebab" pointer-events="all" style="fill: light-dark(rgb(210, 235, 171), rgb(150, 202, 80));"/>
+          </g>
+          <g>
+            <g transform="translate(-0.5 -0.5)">
+              <switch>
+                <foreignObject style="overflow: visible; text-align: left;" pointer-events="none" width="100%" height="100%" requiredFeatures="http://www.w3.org/TR/SVG11/feature#Extensibility">
+                  <div xmlns="http://www.w3.org/1999/xhtml" style="display: flex; align-items: unsafe center; justify-content: unsafe center; width: 188px; height: 1px; padding-top: 565px; margin-left: 1px;">
+                    <div style="box-sizing: border-box; font-size: 0; text-align: center; color: #000000;">
+                      <div style="display: inline-block; font-size: 30px; font-family: &quot;roboto&quot;; color: light-dark(#000000, #ffffff); line-height: 1.2; pointer-events: all; white-space: normal; word-wrap: normal;">Dinner</div>
+                    </div>
+                  </div>
+                </foreignObject>
+                <text x="95" y="574" fill="light-dark(#000000, #ffffff)" font-family="&quot;roboto&quot;" font-size="30px" text-anchor="middle">Dinner</text>
+              </switch>
+            </g>
+          </g>
+        </g>
+        <g data-cell-id="GaKuWDPM29uswf_1zuqV-14">
+          <g>
+            <rect x="500" y="200" width="90" height="70" fill="#ffdb88" pointer-events="all" style="fill: light-dark(rgb(255, 219, 136), rgb(255, 202, 95));"/>
+          </g>
+          <g>
+            <g transform="translate(-0.5 -0.5)">
+              <switch>
+                <foreignObject style="overflow: visible; text-align: left;" pointer-events="none" width="100%" height="100%" requiredFeatures="http://www.w3.org/TR/SVG11/feature#Extensibility">
+                  <div xmlns="http://www.w3.org/1999/xhtml" style="display: flex; align-items: unsafe center; justify-content: unsafe center; width: 88px; height: 1px; padding-top: 235px; margin-left: 501px;">
+                    <div style="box-sizing: border-box; font-size: 0; text-align: center; color: #000000;">
+                      <div style="display: inline-block; font-size: 30px; font-family: &quot;roboto&quot;; color: light-dark(#000000, #ffffff); line-height: 1.2; pointer-events: all; white-space: normal; word-wrap: normal;">BoFs</div>
+                    </div>
+                  </div>
+                </foreignObject>
+                <text x="545" y="244" fill="light-dark(#000000, #ffffff)" font-family="&quot;roboto&quot;" font-size="30px" text-anchor="middle">BoFs</text>
+              </switch>
+            </g>
+          </g>
+        </g>
+        <g data-cell-id="GaKuWDPM29uswf_1zuqV-16">
+          <g>
+            <rect x="200" y="60" width="190" height="40" fill="#385378" pointer-events="all" style="fill: rgb(56, 83, 120);"/>
+          </g>
+          <g>
+            <g transform="translate(-0.5 -0.5)">
+              <switch>
+                <foreignObject style="overflow: visible; text-align: left;" pointer-events="none" width="100%" height="100%" requiredFeatures="http://www.w3.org/TR/SVG11/feature#Extensibility">
+                  <div xmlns="http://www.w3.org/1999/xhtml" style="display: flex; align-items: unsafe center; justify-content: unsafe center; width: 188px; height: 1px; padding-top: 80px; margin-left: 201px;">
+                    <div style="box-sizing: border-box; font-size: 0; text-align: center; color: #d6dbe4;">
+                      <div style="display: inline-block; font-size: 30px; font-family: &quot;roboto&quot;; color: light-dark(#d6dbe4, #ededed); line-height: 1.2; pointer-events: all; white-space: normal; word-wrap: normal;">
+                        <div>Tue Oct 11</div>
+                      </div>
+                    </div>
+                  </div>
+                </foreignObject>
+                <text x="295" y="89" fill="light-dark(#d6dbe4, #ededed)" font-family="&quot;roboto&quot;" font-size="30px" text-anchor="middle">Tue Oct 11</text>
+              </switch>
+            </g>
+          </g>
+        </g>
+        <g data-cell-id="GaKuWDPM29uswf_1zuqV-23">
+          <g>
+            <rect x="400" y="60" width="190" height="40" fill="#385378" pointer-events="all" style="fill: rgb(56, 83, 120);"/>
+          </g>
+          <g>
+            <g transform="translate(-0.5 -0.5)">
+              <switch>
+                <foreignObject style="overflow: visible; text-align: left;" pointer-events="none" width="100%" height="100%" requiredFeatures="http://www.w3.org/TR/SVG11/feature#Extensibility">
+                  <div xmlns="http://www.w3.org/1999/xhtml" style="display: flex; align-items: unsafe center; justify-content: unsafe center; width: 188px; height: 1px; padding-top: 80px; margin-left: 401px;">
+                    <div style="box-sizing: border-box; font-size: 0; text-align: center; color: #d6dbe4;">
+                      <div style="display: inline-block; font-size: 30px; font-family: &quot;roboto&quot;; color: light-dark(#d6dbe4, #ededed); line-height: 1.2; pointer-events: all; white-space: normal; word-wrap: normal;">
+                        <div>Wed Oct 12</div>
+                      </div>
+                    </div>
+                  </div>
+                </foreignObject>
+                <text x="495" y="89" fill="light-dark(#d6dbe4, #ededed)" font-family="&quot;roboto&quot;" font-size="30px" text-anchor="middle">Wed Oct 12</text>
+              </switch>
+            </g>
+          </g>
+        </g>
+        <g data-cell-id="GaKuWDPM29uswf_1zuqV-24">
+          <g>
+            <rect x="600" y="60" width="190" height="40" fill="#385378" pointer-events="all" style="fill: rgb(56, 83, 120);"/>
+          </g>
+          <g>
+            <g transform="translate(-0.5 -0.5)">
+              <switch>
+                <foreignObject style="overflow: visible; text-align: left;" pointer-events="none" width="100%" height="100%" requiredFeatures="http://www.w3.org/TR/SVG11/feature#Extensibility">
+                  <div xmlns="http://www.w3.org/1999/xhtml" style="display: flex; align-items: unsafe center; justify-content: unsafe center; width: 188px; height: 1px; padding-top: 80px; margin-left: 601px;">
+                    <div style="box-sizing: border-box; font-size: 0; text-align: center; color: #d6dbe4;">
+                      <div style="display: inline-block; font-size: 30px; font-family: &quot;roboto&quot;; color: light-dark(#d6dbe4, #ededed); line-height: 1.2; pointer-events: all; white-space: normal; word-wrap: normal;">
+                        <div>Thu Oct 13</div>
+                      </div>
+                    </div>
+                  </div>
+                </foreignObject>
+                <text x="695" y="89" fill="light-dark(#d6dbe4, #ededed)" font-family="&quot;roboto&quot;" font-size="30px" text-anchor="middle">Thu Oct 13</text>
+              </switch>
+            </g>
+          </g>
+        </g>
+        <g data-cell-id="GaKuWDPM29uswf_1zuqV-28">
+          <g>
+            <rect x="600" y="120" width="190" height="150" fill="#ffdb88" pointer-events="all" style="fill: light-dark(rgb(255, 219, 136), rgb(255, 202, 95));"/>
+          </g>
+          <g>
+            <g transform="translate(-0.5 -0.5)">
+              <switch>
+                <foreignObject style="overflow: visible; text-align: left;" pointer-events="none" width="100%" height="100%" requiredFeatures="http://www.w3.org/TR/SVG11/feature#Extensibility">
+                  <div xmlns="http://www.w3.org/1999/xhtml" style="display: flex; align-items: unsafe center; justify-content: unsafe center; width: 188px; height: 1px; padding-top: 195px; margin-left: 601px;">
+                    <div style="box-sizing: border-box; font-size: 0; text-align: center; color: #000000;">
+                      <div style="display: inline-block; font-size: 30px; font-family: &quot;roboto&quot;; color: light-dark(#000000, #ffffff); line-height: 1.2; pointer-events: all; white-space: normal; word-wrap: normal;">Training</div>
+                    </div>
+                  </div>
+                </foreignObject>
+                <text x="695" y="204" fill="light-dark(#000000, #ffffff)" font-family="&quot;roboto&quot;" font-size="30px" text-anchor="middle">Training</text>
+              </switch>
+            </g>
+          </g>
+        </g>
+        <g data-cell-id="GaKuWDPM29uswf_1zuqV-30">
+          <g>
+            <rect x="0" y="0" width="190" height="50" fill="#385378" pointer-events="all" style="fill: rgb(56, 83, 120);"/>
+          </g>
+          <g>
+            <g transform="translate(-0.5 -0.5)">
+              <switch>
+                <foreignObject style="overflow: visible; text-align: left;" pointer-events="none" width="100%" height="100%" requiredFeatures="http://www.w3.org/TR/SVG11/feature#Extensibility">
+                  <div xmlns="http://www.w3.org/1999/xhtml" style="display: flex; align-items: unsafe center; justify-content: unsafe center; width: 188px; height: 1px; padding-top: 25px; margin-left: 1px;">
+                    <div style="box-sizing: border-box; font-size: 0; text-align: center; color: #d6dbe4;">
+                      <div style="display: inline-block; font-size: 38px; font-family: &quot;roboto&quot;; color: light-dark(#d6dbe4, #ededed); line-height: 1.2; pointer-events: all; white-space: normal; word-wrap: normal;">
+                        <div>
+                          <font>Day 1</font>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </foreignObject>
+                <text x="95" y="36" fill="light-dark(#d6dbe4, #ededed)" font-family="&quot;roboto&quot;" font-size="38px" text-anchor="middle">Day 1</text>
+              </switch>
+            </g>
+          </g>
+        </g>
+        <g data-cell-id="GaKuWDPM29uswf_1zuqV-31">
+          <g>
+            <rect x="200" y="0" width="190" height="50" fill="#385378" pointer-events="all" style="fill: rgb(56, 83, 120);"/>
+          </g>
+          <g>
+            <g transform="translate(-0.5 -0.5)">
+              <switch>
+                <foreignObject style="overflow: visible; text-align: left;" pointer-events="none" width="100%" height="100%" requiredFeatures="http://www.w3.org/TR/SVG11/feature#Extensibility">
+                  <div xmlns="http://www.w3.org/1999/xhtml" style="display: flex; align-items: unsafe center; justify-content: unsafe center; width: 188px; height: 1px; padding-top: 25px; margin-left: 201px;">
+                    <div style="box-sizing: border-box; font-size: 0; text-align: center; color: #d6dbe4;">
+                      <div style="display: inline-block; font-size: 38px; font-family: &quot;roboto&quot;; color: light-dark(#d6dbe4, #ededed); line-height: 1.2; pointer-events: all; white-space: normal; word-wrap: normal;">
+                        <div>
+                          <font>Day 2</font>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </foreignObject>
+                <text x="295" y="36" fill="light-dark(#d6dbe4, #ededed)" font-family="&quot;roboto&quot;" font-size="38px" text-anchor="middle">Day 2</text>
+              </switch>
+            </g>
+          </g>
+        </g>
+        <g data-cell-id="GaKuWDPM29uswf_1zuqV-32">
+          <g>
+            <rect x="400" y="0" width="190" height="50" fill="#385378" pointer-events="all" style="fill: rgb(56, 83, 120);"/>
+          </g>
+          <g>
+            <g transform="translate(-0.5 -0.5)">
+              <switch>
+                <foreignObject style="overflow: visible; text-align: left;" pointer-events="none" width="100%" height="100%" requiredFeatures="http://www.w3.org/TR/SVG11/feature#Extensibility">
+                  <div xmlns="http://www.w3.org/1999/xhtml" style="display: flex; align-items: unsafe center; justify-content: unsafe center; width: 188px; height: 1px; padding-top: 25px; margin-left: 401px;">
+                    <div style="box-sizing: border-box; font-size: 0; text-align: center; color: #d6dbe4;">
+                      <div style="display: inline-block; font-size: 38px; font-family: &quot;roboto&quot;; color: light-dark(#d6dbe4, #ededed); line-height: 1.2; pointer-events: all; white-space: normal; word-wrap: normal;">
+                        <div>
+                          <font>Day 3</font>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </foreignObject>
+                <text x="495" y="36" fill="light-dark(#d6dbe4, #ededed)" font-family="&quot;roboto&quot;" font-size="38px" text-anchor="middle">Day 3</text>
+              </switch>
+            </g>
+          </g>
+        </g>
+        <g data-cell-id="7UAU9e-Ts3KCN4cGCY1X-5">
+          <g>
+            <rect x="0" y="320" width="190" height="100" fill="#c0d7e1" pointer-events="all" style="fill: light-dark(rgb(192, 215, 225), rgb(148, 187, 204));"/>
+          </g>
+          <g>
+            <g transform="translate(-0.5 -0.5)">
+              <switch>
+                <foreignObject style="overflow: visible; text-align: left;" pointer-events="none" width="100%" height="100%" requiredFeatures="http://www.w3.org/TR/SVG11/feature#Extensibility">
+                  <div xmlns="http://www.w3.org/1999/xhtml" style="display: flex; align-items: unsafe center; justify-content: unsafe center; width: 188px; height: 1px; padding-top: 370px; margin-left: 1px;">
+                    <div style="box-sizing: border-box; font-size: 0; text-align: center; color: #000000;">
+                      <div style="display: inline-block; font-size: 30px; font-family: &quot;roboto&quot;; color: light-dark(#000000, #ffffff); line-height: 1.2; pointer-events: all; white-space: normal; word-wrap: normal;">Talks</div>
+                    </div>
+                  </div>
+                </foreignObject>
+                <text x="95" y="379" fill="light-dark(#000000, #ffffff)" font-family="&quot;roboto&quot;" font-size="30px" text-anchor="middle">Talks</text>
+              </switch>
+            </g>
+          </g>
+        </g>
+        <g data-cell-id="7UAU9e-Ts3KCN4cGCY1X-8">
+          <g>
+            <rect x="200" y="120" width="190" height="40" fill="#6497b1" pointer-events="all" style="fill: light-dark(rgb(100, 151, 177), rgb(68, 121, 149));"/>
+          </g>
+          <g>
+            <g transform="translate(-0.5 -0.5)">
+              <switch>
+                <foreignObject style="overflow: visible; text-align: left;" pointer-events="none" width="100%" height="100%" requiredFeatures="http://www.w3.org/TR/SVG11/feature#Extensibility">
+                  <div xmlns="http://www.w3.org/1999/xhtml" style="display: flex; align-items: unsafe center; justify-content: unsafe center; width: 188px; height: 1px; padding-top: 140px; margin-left: 201px;">
+                    <div style="box-sizing: border-box; font-size: 0; text-align: center; color: #000000;">
+                      <div style="display: inline-block; font-size: 30px; font-family: &quot;roboto&quot;; color: light-dark(#000000, #ffffff); line-height: 1.2; pointer-events: all; white-space: normal; word-wrap: normal;">Keynote</div>
+                    </div>
+                  </div>
+                </foreignObject>
+                <text x="295" y="149" fill="light-dark(#000000, #ffffff)" font-family="&quot;roboto&quot;" font-size="30px" text-anchor="middle">Keynote</text>
+              </switch>
+            </g>
+          </g>
+        </g>
+        <g data-cell-id="M1GxF3__IAjpVMbgIJwI-1">
+          <g>
+            <rect x="0" y="60" width="190" height="40" fill="#385378" pointer-events="all" style="fill: rgb(56, 83, 120);"/>
+          </g>
+          <g>
+            <g transform="translate(-0.5 -0.5)">
+              <switch>
+                <foreignObject style="overflow: visible; text-align: left;" pointer-events="none" width="100%" height="100%" requiredFeatures="http://www.w3.org/TR/SVG11/feature#Extensibility">
+                  <div xmlns="http://www.w3.org/1999/xhtml" style="display: flex; align-items: unsafe center; justify-content: unsafe center; width: 188px; height: 1px; padding-top: 80px; margin-left: 1px;">
+                    <div style="box-sizing: border-box; font-size: 0; text-align: center; color: #d6dbe4;">
+                      <div style="display: inline-block; font-size: 30px; font-family: &quot;roboto&quot;; color: light-dark(#d6dbe4, #ededed); line-height: 1.2; pointer-events: all; white-space: normal; word-wrap: normal;">
+                        <div>Mon Oct 10</div>
+                      </div>
+                    </div>
+                  </div>
+                </foreignObject>
+                <text x="95" y="89" fill="light-dark(#d6dbe4, #ededed)" font-family="&quot;roboto&quot;" font-size="30px" text-anchor="middle">Mon Oct 10</text>
+              </switch>
+            </g>
+          </g>
+        </g>
+        <g data-cell-id="M1GxF3__IAjpVMbgIJwI-2">
+          <g>
+            <rect x="600" y="0" width="190" height="50" fill="#385378" pointer-events="all" style="fill: rgb(56, 83, 120);"/>
+          </g>
+          <g>
+            <g transform="translate(-0.5 -0.5)">
+              <switch>
+                <foreignObject style="overflow: visible; text-align: left;" pointer-events="none" width="100%" height="100%" requiredFeatures="http://www.w3.org/TR/SVG11/feature#Extensibility">
+                  <div xmlns="http://www.w3.org/1999/xhtml" style="display: flex; align-items: unsafe center; justify-content: unsafe center; width: 188px; height: 1px; padding-top: 25px; margin-left: 601px;">
+                    <div style="box-sizing: border-box; font-size: 0; text-align: center; color: #d6dbe4;">
+                      <div style="display: inline-block; font-size: 38px; font-family: &quot;roboto&quot;; color: light-dark(#d6dbe4, #ededed); line-height: 1.2; pointer-events: all; white-space: normal; word-wrap: normal;">
+                        <div>
+                          <font>Day 4</font>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </foreignObject>
+                <text x="695" y="36" fill="light-dark(#d6dbe4, #ededed)" font-family="&quot;roboto&quot;" font-size="38px" text-anchor="middle">Day 4</text>
+              </switch>
+            </g>
+          </g>
+        </g>
+        <g data-cell-id="M1GxF3__IAjpVMbgIJwI-3">
+          <g>
+            <rect x="0" y="240" width="190" height="30" fill="#ffdb88" pointer-events="all" style="fill: light-dark(rgb(255, 219, 136), rgb(255, 202, 95));"/>
+          </g>
+          <g>
+            <g transform="translate(-0.5 -0.5)">
+              <switch>
+                <foreignObject style="overflow: visible; text-align: left;" pointer-events="none" width="100%" height="100%" requiredFeatures="http://www.w3.org/TR/SVG11/feature#Extensibility">
+                  <div xmlns="http://www.w3.org/1999/xhtml" style="display: flex; align-items: unsafe center; justify-content: unsafe center; width: 188px; height: 1px; padding-top: 255px; margin-left: 1px;">
+                    <div style="box-sizing: border-box; font-size: 0; text-align: center; color: #000000;">
+                      <div style="display: inline-block; font-size: 30px; font-family: &quot;roboto&quot;; color: light-dark(#000000, #ffffff); line-height: 1.2; pointer-events: all; white-space: normal; word-wrap: normal;">AMA</div>
+                    </div>
+                  </div>
+                </foreignObject>
+                <text x="95" y="264" fill="light-dark(#000000, #ffffff)" font-family="&quot;roboto&quot;" font-size="30px" text-anchor="middle">AMA</text>
+              </switch>
+            </g>
+          </g>
+        </g>
+        <g data-cell-id="M1GxF3__IAjpVMbgIJwI-4">
+          <g>
+            <rect x="200" y="170" width="190" height="100" fill="#c0d7e1" pointer-events="all" style="fill: light-dark(rgb(192, 215, 225), rgb(148, 187, 204));"/>
+          </g>
+          <g>
+            <g transform="translate(-0.5 -0.5)">
+              <switch>
+                <foreignObject style="overflow: visible; text-align: left;" pointer-events="none" width="100%" height="100%" requiredFeatures="http://www.w3.org/TR/SVG11/feature#Extensibility">
+                  <div xmlns="http://www.w3.org/1999/xhtml" style="display: flex; align-items: unsafe center; justify-content: unsafe center; width: 188px; height: 1px; padding-top: 220px; margin-left: 201px;">
+                    <div style="box-sizing: border-box; font-size: 0; text-align: center; color: #000000;">
+                      <div style="display: inline-block; font-size: 30px; font-family: &quot;roboto&quot;; color: light-dark(#000000, #ffffff); line-height: 1.2; pointer-events: all; white-space: normal; word-wrap: normal;">Talks</div>
+                    </div>
+                  </div>
+                </foreignObject>
+                <text x="295" y="229" fill="light-dark(#000000, #ffffff)" font-family="&quot;roboto&quot;" font-size="30px" text-anchor="middle">Talks</text>
+              </switch>
+            </g>
+          </g>
+        </g>
+        <g data-cell-id="M1GxF3__IAjpVMbgIJwI-6">
+          <g>
+            <rect x="0" y="440" width="190" height="70" fill="#c0d7e1" pointer-events="all" style="fill: light-dark(rgb(192, 215, 225), rgb(148, 187, 204));"/>
+          </g>
+          <g>
+            <g transform="translate(-0.5 -0.5)">
+              <switch>
+                <foreignObject style="overflow: visible; text-align: left;" pointer-events="none" width="100%" height="100%" requiredFeatures="http://www.w3.org/TR/SVG11/feature#Extensibility">
+                  <div xmlns="http://www.w3.org/1999/xhtml" style="display: flex; align-items: unsafe center; justify-content: unsafe center; width: 188px; height: 1px; padding-top: 475px; margin-left: 1px;">
+                    <div style="box-sizing: border-box; font-size: 0; text-align: center; color: #000000;">
+                      <div style="display: inline-block; font-size: 30px; font-family: &quot;roboto&quot;; color: light-dark(#000000, #ffffff); line-height: 1.2; pointer-events: all; white-space: normal; word-wrap: normal;">Talks</div>
+                    </div>
+                  </div>
+                </foreignObject>
+                <text x="95" y="484" fill="light-dark(#000000, #ffffff)" font-family="&quot;roboto&quot;" font-size="30px" text-anchor="middle">Talks</text>
+              </switch>
+            </g>
+          </g>
+        </g>
+        <g data-cell-id="M1GxF3__IAjpVMbgIJwI-10">
+          <g>
+            <rect x="197" y="320" width="190" height="100" fill="#c0d7e1" pointer-events="all" style="fill: light-dark(rgb(192, 215, 225), rgb(148, 187, 204));"/>
+          </g>
+          <g>
+            <g transform="translate(-0.5 -0.5)">
+              <switch>
+                <foreignObject style="overflow: visible; text-align: left;" pointer-events="none" width="100%" height="100%" requiredFeatures="http://www.w3.org/TR/SVG11/feature#Extensibility">
+                  <div xmlns="http://www.w3.org/1999/xhtml" style="display: flex; align-items: unsafe center; justify-content: unsafe center; width: 188px; height: 1px; padding-top: 370px; margin-left: 198px;">
+                    <div style="box-sizing: border-box; font-size: 0; text-align: center; color: #000000;">
+                      <div style="display: inline-block; font-size: 30px; font-family: &quot;roboto&quot;; color: light-dark(#000000, #ffffff); line-height: 1.2; pointer-events: all; white-space: normal; word-wrap: normal;">Talks</div>
+                    </div>
+                  </div>
+                </foreignObject>
+                <text x="292" y="379" fill="light-dark(#000000, #ffffff)" font-family="&quot;roboto&quot;" font-size="30px" text-anchor="middle">Talks</text>
+              </switch>
+            </g>
+          </g>
+        </g>
+        <g data-cell-id="M1GxF3__IAjpVMbgIJwI-11">
+          <g>
+            <rect x="197" y="440" width="190" height="30" fill="#c0d7e1" pointer-events="all" style="fill: light-dark(rgb(192, 215, 225), rgb(148, 187, 204));"/>
+          </g>
+          <g>
+            <g transform="translate(-0.5 -0.5)">
+              <switch>
+                <foreignObject style="overflow: visible; text-align: left;" pointer-events="none" width="100%" height="100%" requiredFeatures="http://www.w3.org/TR/SVG11/feature#Extensibility">
+                  <div xmlns="http://www.w3.org/1999/xhtml" style="display: flex; align-items: unsafe center; justify-content: unsafe center; width: 188px; height: 1px; padding-top: 455px; margin-left: 198px;">
+                    <div style="box-sizing: border-box; font-size: 0; text-align: center; color: #000000;">
+                      <div style="display: inline-block; font-size: 30px; font-family: &quot;roboto&quot;; color: light-dark(#000000, #ffffff); line-height: 1.2; pointer-events: all; white-space: normal; word-wrap: normal;">Talks</div>
+                    </div>
+                  </div>
+                </foreignObject>
+                <text x="292" y="464" fill="light-dark(#000000, #ffffff)" font-family="&quot;roboto&quot;" font-size="30px" text-anchor="middle">Talks</text>
+              </switch>
+            </g>
+          </g>
+        </g>
+        <g data-cell-id="M1GxF3__IAjpVMbgIJwI-12">
+          <g>
+            <rect x="400" y="120" width="190" height="70" fill="#ffdb88" pointer-events="all" style="fill: light-dark(rgb(255, 219, 136), rgb(255, 202, 95));"/>
+          </g>
+          <g>
+            <g transform="translate(-0.5 -0.5)">
+              <switch>
+                <foreignObject style="overflow: visible; text-align: left;" pointer-events="none" width="100%" height="100%" requiredFeatures="http://www.w3.org/TR/SVG11/feature#Extensibility">
+                  <div xmlns="http://www.w3.org/1999/xhtml" style="display: flex; align-items: unsafe center; justify-content: unsafe center; width: 188px; height: 1px; padding-top: 155px; margin-left: 401px;">
+                    <div style="box-sizing: border-box; font-size: 0; text-align: center; color: #000000;">
+                      <div style="display: inline-block; font-size: 30px; font-family: &quot;roboto&quot;; color: light-dark(#000000, #ffffff); line-height: 1.2; pointer-events: all; white-space: normal; word-wrap: normal;">seL4 overviews</div>
+                    </div>
+                  </div>
+                </foreignObject>
+                <text x="495" y="164" fill="light-dark(#000000, #ffffff)" font-family="&quot;roboto&quot;" font-size="30px" text-anchor="middle">seL4 overviews</text>
+              </switch>
+            </g>
+          </g>
+        </g>
+        <g data-cell-id="M1GxF3__IAjpVMbgIJwI-13">
+          <g>
+            <rect x="400" y="200" width="90" height="70" fill="#ffdb88" pointer-events="all" style="fill: light-dark(rgb(255, 219, 136), rgb(255, 202, 95));"/>
+          </g>
+          <g>
+            <g transform="translate(-0.5 -0.5)">
+              <switch>
+                <foreignObject style="overflow: visible; text-align: left;" pointer-events="none" width="100%" height="100%" requiredFeatures="http://www.w3.org/TR/SVG11/feature#Extensibility">
+                  <div xmlns="http://www.w3.org/1999/xhtml" style="display: flex; align-items: unsafe center; justify-content: unsafe center; width: 88px; height: 1px; padding-top: 235px; margin-left: 401px;">
+                    <div style="box-sizing: border-box; font-size: 0; text-align: center; color: #000000;">
+                      <div style="display: inline-block; font-size: 27px; font-family: &quot;roboto&quot;; color: light-dark(#000000, #ffffff); line-height: 1.2; pointer-events: all; white-space: normal; word-wrap: normal;">Talks <div>&amp; disc</div></div>
+                    </div>
+                  </div>
+                </foreignObject>
+                <text x="445" y="243" fill="light-dark(#000000, #ffffff)" font-family="&quot;roboto&quot;" font-size="27px" text-anchor="middle">Talks...</text>
+              </switch>
+            </g>
+          </g>
+        </g>
+        <g data-cell-id="M1GxF3__IAjpVMbgIJwI-14">
+          <g>
+            <rect x="400" y="440" width="190" height="70" fill="#c0d7e1" pointer-events="all" style="fill: light-dark(rgb(192, 215, 225), rgb(148, 187, 204));"/>
+          </g>
+          <g>
+            <g transform="translate(-0.5 -0.5)">
+              <switch>
+                <foreignObject style="overflow: visible; text-align: left;" pointer-events="none" width="100%" height="100%" requiredFeatures="http://www.w3.org/TR/SVG11/feature#Extensibility">
+                  <div xmlns="http://www.w3.org/1999/xhtml" style="display: flex; align-items: unsafe center; justify-content: unsafe center; width: 188px; height: 1px; padding-top: 475px; margin-left: 401px;">
+                    <div style="box-sizing: border-box; font-size: 0; text-align: center; color: #000000;">
+                      <div style="display: inline-block; font-size: 30px; font-family: &quot;roboto&quot;; color: light-dark(#000000, #ffffff); line-height: 1.2; pointer-events: all; white-space: normal; word-wrap: normal;">Talks</div>
+                    </div>
+                  </div>
+                </foreignObject>
+                <text x="495" y="484" fill="light-dark(#000000, #ffffff)" font-family="&quot;roboto&quot;" font-size="30px" text-anchor="middle">Talks</text>
+              </switch>
+            </g>
+          </g>
+        </g>
+        <g data-cell-id="M1GxF3__IAjpVMbgIJwI-16">
+          <g>
+            <rect x="500" y="320" width="90" height="100" fill="#ffdb88" pointer-events="all" style="fill: light-dark(rgb(255, 219, 136), rgb(255, 202, 95));"/>
+          </g>
+          <g>
+            <g transform="translate(-0.5 -0.5)">
+              <switch>
+                <foreignObject style="overflow: visible; text-align: left;" pointer-events="none" width="100%" height="100%" requiredFeatures="http://www.w3.org/TR/SVG11/feature#Extensibility">
+                  <div xmlns="http://www.w3.org/1999/xhtml" style="display: flex; align-items: unsafe center; justify-content: unsafe center; width: 88px; height: 1px; padding-top: 370px; margin-left: 501px;">
+                    <div style="box-sizing: border-box; font-size: 0; text-align: center; color: #000000;">
+                      <div style="display: inline-block; font-size: 30px; font-family: &quot;roboto&quot;; color: light-dark(#000000, #ffffff); line-height: 1.2; pointer-events: all; white-space: normal; word-wrap: normal;">BoFs</div>
+                    </div>
+                  </div>
+                </foreignObject>
+                <text x="545" y="379" fill="light-dark(#000000, #ffffff)" font-family="&quot;roboto&quot;" font-size="30px" text-anchor="middle">BoFs</text>
+              </switch>
+            </g>
+          </g>
+        </g>
+        <g data-cell-id="M1GxF3__IAjpVMbgIJwI-17">
+          <g>
+            <rect x="400" y="320" width="90" height="100" fill="#ffdb88" pointer-events="all" style="fill: light-dark(rgb(255, 219, 136), rgb(255, 202, 95));"/>
+          </g>
+          <g>
+            <g transform="translate(-0.5 -0.5)">
+              <switch>
+                <foreignObject style="overflow: visible; text-align: left;" pointer-events="none" width="100%" height="100%" requiredFeatures="http://www.w3.org/TR/SVG11/feature#Extensibility">
+                  <div xmlns="http://www.w3.org/1999/xhtml" style="display: flex; align-items: unsafe center; justify-content: unsafe center; width: 88px; height: 1px; padding-top: 370px; margin-left: 401px;">
+                    <div style="box-sizing: border-box; font-size: 0; text-align: center; color: #000000;">
+                      <div style="display: inline-block; font-size: 27px; font-family: &quot;roboto&quot;; color: light-dark(#000000, #ffffff); line-height: 1.2; pointer-events: all; white-space: normal; word-wrap: normal;">Talks <div>&amp; disc</div></div>
+                    </div>
+                  </div>
+                </foreignObject>
+                <text x="445" y="378" fill="light-dark(#000000, #ffffff)" font-family="&quot;roboto&quot;" font-size="27px" text-anchor="middle">Talks...</text>
+              </switch>
+            </g>
+          </g>
+        </g>
+        <g data-cell-id="M1GxF3__IAjpVMbgIJwI-18">
+          <g>
+            <rect x="600" y="320" width="190" height="190" fill="#ffdb88" pointer-events="all" style="fill: light-dark(rgb(255, 219, 136), rgb(255, 202, 95));"/>
+          </g>
+          <g>
+            <g transform="translate(-0.5 -0.5)">
+              <switch>
+                <foreignObject style="overflow: visible; text-align: left;" pointer-events="none" width="100%" height="100%" requiredFeatures="http://www.w3.org/TR/SVG11/feature#Extensibility">
+                  <div xmlns="http://www.w3.org/1999/xhtml" style="display: flex; align-items: unsafe center; justify-content: unsafe center; width: 188px; height: 1px; padding-top: 415px; margin-left: 601px;">
+                    <div style="box-sizing: border-box; font-size: 0; text-align: center; color: #000000;">
+                      <div style="display: inline-block; font-size: 30px; font-family: &quot;roboto&quot;; color: light-dark(#000000, #ffffff); line-height: 1.2; pointer-events: all; white-space: normal; word-wrap: normal;">Training</div>
+                    </div>
+                  </div>
+                </foreignObject>
+                <text x="695" y="424" fill="light-dark(#000000, #ffffff)" font-family="&quot;roboto&quot;" font-size="30px" text-anchor="middle">Training</text>
+              </switch>
+            </g>
+          </g>
+        </g>
+      </g>
+    </g>
+  </g>
+</svg>
   </a>
-</p>
-
 </div>
-<div class="news-finish"></div>
 
-<div class="news-item tag-link" id="member-latticex">
-  <a href="#member-latticex"><span class="tag-span"># </span></a>
-  17 Jun 2022: LatticeX joins the seL4 Foundation
+  </div>
+</article>
+
+
+<div class="flex w-full mb-12 md:mb-24">
+  <div class="flex-1"></div>
+  <hr class="w-10 h-px bg-gray-200 border-0 dark:bg-gray-600">
+  
+<a href="#page-top" class="relative -mt-3.5 mx-4">
+  <div class="dark:bg-slate-900 hover:bg-slate-100 dark:hover:bg-slate-800 p-1.5 h-7 w-7 rounded-full shadow-xs left-1">
+    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" aria-hidden="true" data-slot="icon" class="h-4 w-4 text-slate-400 dark:text-slate-500">
+  <path stroke-linecap="round" stroke-linejoin="round" d="M12 19.5v-15m0 0-6.75 6.75M12 4.5l6.75 6.75"/>
+</svg>
+  </div>
+</a>
+
+  <hr class="w-10 h-px bg-gray-200 border-0 dark:bg-gray-600">
+  <div class="flex-1"></div>
 </div>
-<div>
-<a href="https://latticex.foundation/"><img src="/Foundation/Membership/LOGOS/latticex.png" style="width:20%;" class="news-img" alt="LatticeX"></a>
-<p>The seL4 Foundation is pleased to welcome <a href="https://latticex.foundation/">Lattice X</a>.</p>
+
+
+<article class="max-w-4xl mx-auto mb-12 sm:mb-18 pt-2 pb-8 px-6 lg:px-8 clear-both">
+  <a href="#member-latticex" class="text-base sm:text-lg hover:underline text-gray-400 pt-16 lg:pt-20">
+    <time datetime="2022-06-17" id="member-latticex">17 Jun 2022</time>
+  </a>
+  <h2 class="mb-8 mt-2 h2-size">LatticeX joins the seL4 Foundation</h2>
+  <div class="theprose prose-ul:[ul]:my-2 prose-p:[p]:my-3 prose-li:[li]:my-1.5 max-w-4xl">
+    <a href="https://latticex.foundation/"><img src="/Foundation/Membership/LOGOS/latticex.png" alt="LatticeX"
+        class="float-right rounded-xl -mt-1 ml-4 sm:ml-6 lg:-mr-16 bg-white p-6 sm:p-8 w-2/5"></a>
+    <p>The seL4 Foundation is pleased to welcome <a href="https://latticex.foundation/">Lattice X</a>.</p>
 
 <p>LatticeX Foundation cultivates academic research, technology advancements and industrial
 applications in the fields that foster the development of LatticeX ecosystem.</p>
@@ -402,41 +1651,80 @@ collaboratively unearth the value of data and benefit from data-value transactio
 Hopefully, we can specialise seL4 technology into the web 3.0 domain from cross chain bridge node OS
 to hardware wallet OS for improving their security and stability.”</p>
 
-</div>
-<div class="news-finish"></div>
+  </div>
+</article>
 
-<div class="news-item tag-link" id="cfp-reminder">
-  <a href="#cfp-reminder"><span class="tag-span"># </span></a>
-  02 May 2022: One week left to propose a talk at the seL4 summit 2022!
-</div>
-<div>
 
-<p>
-  A reminder that you have until Monday 9th of May 2022 to <a href="../Foundation/Summit/2022/cfp">propose a talk</a>
+<div class="flex w-full mb-12 md:mb-24">
+  <div class="flex-1"></div>
+  <hr class="w-10 h-px bg-gray-200 border-0 dark:bg-gray-600">
+  
+<a href="#page-top" class="relative -mt-3.5 mx-4">
+  <div class="dark:bg-slate-900 hover:bg-slate-100 dark:hover:bg-slate-800 p-1.5 h-7 w-7 rounded-full shadow-xs left-1">
+    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" aria-hidden="true" data-slot="icon" class="h-4 w-4 text-slate-400 dark:text-slate-500">
+  <path stroke-linecap="round" stroke-linejoin="round" d="M12 19.5v-15m0 0-6.75 6.75M12 4.5l6.75 6.75"/>
+</svg>
+  </div>
+</a>
+
+  <hr class="w-10 h-px bg-gray-200 border-0 dark:bg-gray-600">
+  <div class="flex-1"></div>
+</div>
+
+
+<article class="max-w-4xl mx-auto mb-12 sm:mb-18 pt-2 pb-8 px-6 lg:px-8 clear-both">
+  <a href="#cfp-reminder" class="text-base sm:text-lg hover:underline text-gray-400 pt-16 lg:pt-20">
+    <time datetime="2022-05-02" id="cfp-reminder">02 May 2022</time>
+  </a>
+  <h2 class="mb-8 mt-2 h2-size">One week left to propose a talk at the seL4 Summit 2022!</h2>
+  <div class="theprose prose-ul:[ul]:my-2 prose-p:[p]:my-3 prose-li:[li]:my-1.5 max-w-4xl">
+    
+    <p>
+  A reminder that you have until Monday 9th of May 2022 to <a href="../Summit/2022/cfp.html">propose a talk</a>
   for the seL4 Summit 2022.
 </p>
-<p>
-  <video width="320" height="240" controls>
+<div>
+  <video controls class="w-full sm:w-2/3 aspect-video mx-auto rounded-lg">
     <source src="sel4-summit-last-call.mp4" type="video/mp4">
     Your browser does not support the video tag.
   </video>
-</p>
-
 </div>
-<div class="news-finish"></div>
 
-<div class="news-item tag-link" id="summit-venue">
-  <a href="#summit-venue"><span class="tag-span"># </span></a>
-  29 Apr 2022: The seL4 Summit 2022 will be in Munich, Germany, on 10-12 Oct 2022
+  </div>
+</article>
+
+
+<div class="flex w-full mb-12 md:mb-24">
+  <div class="flex-1"></div>
+  <hr class="w-10 h-px bg-gray-200 border-0 dark:bg-gray-600">
+  
+<a href="#page-top" class="relative -mt-3.5 mx-4">
+  <div class="dark:bg-slate-900 hover:bg-slate-100 dark:hover:bg-slate-800 p-1.5 h-7 w-7 rounded-full shadow-xs left-1">
+    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" aria-hidden="true" data-slot="icon" class="h-4 w-4 text-slate-400 dark:text-slate-500">
+  <path stroke-linecap="round" stroke-linejoin="round" d="M12 19.5v-15m0 0-6.75 6.75M12 4.5l6.75 6.75"/>
+</svg>
+  </div>
+</a>
+
+  <hr class="w-10 h-px bg-gray-200 border-0 dark:bg-gray-600">
+  <div class="flex-1"></div>
 </div>
-<div>
-<a href="../Foundation/Summit/2022/"><img src="/images/sel4-summit-logo.svg" style="width:20%;" class="news-img" alt="seL4 Summit 2022"></a>
-<p>
+
+
+<article class="max-w-4xl mx-auto mb-12 sm:mb-18 pt-2 pb-8 px-6 lg:px-8 clear-both">
+  <a href="#summit-venue" class="text-base sm:text-lg hover:underline text-gray-400 pt-16 lg:pt-20">
+    <time datetime="2022-04-29" id="summit-venue">29 Apr 2022</time>
+  </a>
+  <h2 class="mb-8 mt-2 h2-size">The seL4 Summit 2022 will be in Munich, Germany, on 10-12 Oct 2022</h2>
+  <div class="theprose prose-ul:[ul]:my-2 prose-p:[p]:my-3 prose-li:[li]:my-1.5 max-w-4xl">
+    <a href="/Summit/2022/"><img src="/images/sel4-summit-logo.svg" alt="seL4 Summit 2022"
+        class="float-right rounded-xl -mt-1 ml-4 sm:ml-6 lg:-mr-16  p-6 sm:p-8 w-2/5"></a>
+    <p>
   It is our pleasure to confirm that the <a
-  href="../Foundation/Summit/2022/">seL4 Summit 2022</a> will be in:
+  href="../Summit/2022/">seL4 Summit 2022</a> will be in:
 </p>
 
-<div class="highlight">
+<div class="emph">
   <p>Munich, Germany in the week of Oct 10th, 2022</p>
 </div>
 
@@ -450,39 +1738,80 @@ to hardware wallet OS for improving their security and stability.”</p>
 
 <p>
   Remember that you have until Monday 9th of May 2022 to
-  <a href="../Foundation/Summit/2022/cfp">propose a talk</a>.
+  <a href="../Summit/2022/cfp.html">propose a talk</a>.
 </p>
 
-<div class="highlight" style="text-align: center">
+<div class="emph" style="text-align: center">
   <p>Share your seL4 work </p>
   <p>Share your seL4 experience </p>
   <p>Share your seL4 thoughts </p>
   <p>Share your seL4 questions </p>
 </div>
-</div>
-<div class="news-finish"></div>
 
-<div class="news-item tag-link" id="tm-2022">
-  <a href="#tm-2022"><span class="tag-span"># </span></a>
-  11 Apr 2022: The seL4<sup>&reg;</sup> trademark is now registered in the US
+  </div>
+</article>
+
+
+<div class="flex w-full mb-12 md:mb-24">
+  <div class="flex-1"></div>
+  <hr class="w-10 h-px bg-gray-200 border-0 dark:bg-gray-600">
+  
+<a href="#page-top" class="relative -mt-3.5 mx-4">
+  <div class="dark:bg-slate-900 hover:bg-slate-100 dark:hover:bg-slate-800 p-1.5 h-7 w-7 rounded-full shadow-xs left-1">
+    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" aria-hidden="true" data-slot="icon" class="h-4 w-4 text-slate-400 dark:text-slate-500">
+  <path stroke-linecap="round" stroke-linejoin="round" d="M12 19.5v-15m0 0-6.75 6.75M12 4.5l6.75 6.75"/>
+</svg>
+  </div>
+</a>
+
+  <hr class="w-10 h-px bg-gray-200 border-0 dark:bg-gray-600">
+  <div class="flex-1"></div>
 </div>
-<div>
-<a href="/"><img src="/images/seL4.svg" style="width:20%;" class="news-img" alt="seL4 logo"></a>
-<p>The Linux Foundation has registered seL4<sup>®</sup> as a trademark in the
+
+
+<article class="max-w-4xl mx-auto mb-12 sm:mb-18 pt-2 pb-8 px-6 lg:px-8 clear-both">
+  <a href="#tm-2022" class="text-base sm:text-lg hover:underline text-gray-400 pt-16 lg:pt-20">
+    <time datetime="2022-04-11" id="tm-2022">11 Apr 2022</time>
+  </a>
+  <h2 class="mb-8 mt-2 h2-size">The seL4<sup>&reg;</sup> trademark is now registered in the US</h2>
+  <div class="theprose prose-ul:[ul]:my-2 prose-p:[p]:my-3 prose-li:[li]:my-1.5 max-w-4xl">
+    <a href="/"><img src="/images/seL4.svg" alt="seL4 logo"
+        class="float-right rounded-xl -mt-1 ml-4 sm:ml-6 lg:-mr-16  p-6 sm:p-8 w-2/5"></a>
+    <p>The Linux Foundation has registered seL4<sup>®</sup> as a trademark in the
 United States and other countries. We encourage the use of the
-<a href="../Foundation/Trademark/logo.html">seL4<sup>®</sup> name and logo</a> in your
-work, following the usage rules <a href="../Foundation/Trademark/">here</a>.</p>
+<a href="../Legal/logo.html">seL4<sup>®</sup> name and logo</a> in your
+work, following the usage rules <a href="../Legal/trademark.html">here</a>.</p>
 
-</div>
-<div class="news-finish"></div>
+  </div>
+</article>
 
-<div class="news-item tag-link" id="agm-2022">
-  <a href="#agm-2022"><span class="tag-span"># </span></a>
-  06 Apr 2022: Our second annual AGM to be held 6 April 2022
+
+<div class="flex w-full mb-12 md:mb-24">
+  <div class="flex-1"></div>
+  <hr class="w-10 h-px bg-gray-200 border-0 dark:bg-gray-600">
+  
+<a href="#page-top" class="relative -mt-3.5 mx-4">
+  <div class="dark:bg-slate-900 hover:bg-slate-100 dark:hover:bg-slate-800 p-1.5 h-7 w-7 rounded-full shadow-xs left-1">
+    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" aria-hidden="true" data-slot="icon" class="h-4 w-4 text-slate-400 dark:text-slate-500">
+  <path stroke-linecap="round" stroke-linejoin="round" d="M12 19.5v-15m0 0-6.75 6.75M12 4.5l6.75 6.75"/>
+</svg>
+  </div>
+</a>
+
+  <hr class="w-10 h-px bg-gray-200 border-0 dark:bg-gray-600">
+  <div class="flex-1"></div>
 </div>
-<div>
-<a href="../Foundation/"><img src="/images/sel4-foundation-logo.svg" style="width:20%;" class="news-img" alt="seL4 Foundation Logo"></a>
-<p>Our second Annual General Meeting (AGM) 6 April 2022. As our membership now is
+
+
+<article class="max-w-4xl mx-auto mb-12 sm:mb-18 pt-2 pb-8 px-6 lg:px-8 clear-both">
+  <a href="#agm-2022" class="text-base sm:text-lg hover:underline text-gray-400 pt-16 lg:pt-20">
+    <time datetime="2022-04-06" id="agm-2022">06 Apr 2022</time>
+  </a>
+  <h2 class="mb-8 mt-2 h2-size">Our second annual AGM to be held 6 April 2022</h2>
+  <div class="theprose prose-ul:[ul]:my-2 prose-p:[p]:my-3 prose-li:[li]:my-1.5 max-w-4xl">
+    <a href="/Foundation/"><img src="/images/sel4-foundation-logo.svg" alt="seL4 Foundation Logo"
+        class="float-right rounded-xl -mt-1 ml-4 sm:ml-6 lg:-mr-16  p-6 sm:p-8 w-2/5"></a>
+    <p>Our second Annual General Meeting (AGM) 6 April 2022. As our membership now is
 truly global, covering New Zealand, Australia, China, the Middle East, Central
 and Western Europe, the US East, Central and West coasts, there is no time that
 is not in the middle of the night for some members. Hence we will hold the AGM
@@ -493,19 +1822,39 @@ in two sessions:</p>
   <li>2022-04-06 23:00 - 2022-04-07 00:30 UTC</li>
 </ul>
 
-</div>
-<div class="news-finish"></div>
+  </div>
+</article>
 
-<div class="news-item tag-link" id="summit-cfp">
-  <a href="#summit-cfp"><span class="tag-span"># </span></a>
-  30 Mar 2022: The Call for Presentations for the seL4 summit 2022 is out!
+
+<div class="flex w-full mb-12 md:mb-24">
+  <div class="flex-1"></div>
+  <hr class="w-10 h-px bg-gray-200 border-0 dark:bg-gray-600">
+  
+<a href="#page-top" class="relative -mt-3.5 mx-4">
+  <div class="dark:bg-slate-900 hover:bg-slate-100 dark:hover:bg-slate-800 p-1.5 h-7 w-7 rounded-full shadow-xs left-1">
+    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" aria-hidden="true" data-slot="icon" class="h-4 w-4 text-slate-400 dark:text-slate-500">
+  <path stroke-linecap="round" stroke-linejoin="round" d="M12 19.5v-15m0 0-6.75 6.75M12 4.5l6.75 6.75"/>
+</svg>
+  </div>
+</a>
+
+  <hr class="w-10 h-px bg-gray-200 border-0 dark:bg-gray-600">
+  <div class="flex-1"></div>
 </div>
-<div>
-<a href="../Foundation/Summit/2022/"><img src="/images/sel4-summit-logo.svg" style="width:20%;" class="news-img" alt="seL4 Summit 2022 Logo"></a>
-<div class="highlight">
+
+
+<article class="max-w-4xl mx-auto mb-12 sm:mb-18 pt-2 pb-8 px-6 lg:px-8 clear-both">
+  <a href="#summit-cfp" class="text-base sm:text-lg hover:underline text-gray-400 pt-16 lg:pt-20">
+    <time datetime="2022-03-30" id="summit-cfp">30 Mar 2022</time>
+  </a>
+  <h2 class="mb-8 mt-2 h2-size">The Call for Presentations for the seL4 Summit 2022 is out!</h2>
+  <div class="theprose prose-ul:[ul]:my-2 prose-p:[p]:my-3 prose-li:[li]:my-1.5 max-w-4xl">
+    <a href="/Summit/2022/"><img src="/images/sel4-summit-logo.svg" alt="seL4 Summit 2022 Logo"
+        class="float-right rounded-xl -mt-1 ml-4 sm:ml-6 lg:-mr-16  p-6 sm:p-8 w-2/5"></a>
+    <div class="emph">
   <h3>
-    We are <a href="../Foundation/Summit/2022/cfp">calling for proposals to present</a> at the <a
-      href="../Foundation/Summit/2022/">seL4 Summit 2022</a>.
+    We are <a href="../Summit/2022/cfp.html">calling for proposals to present</a> at the <a
+      href="../Summit/2022/">seL4 Summit 2022</a>.
   </h3>
   <p>Share your seL4 work </p>
   <p>Share your seL4 experience </p>
@@ -514,47 +1863,249 @@ in two sessions:</p>
 </div>
 
 <p>
-  Check the full <a href="../Foundation/Summit/2022/cfp">Call For Presentations</a>. To propose a
+  Check the full <a href="../Summit/2022/cfp.html">Call For Presentations</a>. To propose a
   talk, send an abstract of <strong>one page or less</strong> <strong>by Monday 9th of May
   2022</strong> to <a title="summit@sel4.systems"
   href="mailto:summit@sel4.systems">summit@sel4.systems</a>.
 </p>
 
-</div>
-<div class="news-finish"></div>
+  </div>
+</article>
 
-<div class="news-item tag-link" id="summit-pc">
-  <a href="#summit-pc"><span class="tag-span"># </span></a>
-  18 Mar 2022: Meet the Program Committee of the seL4 summit 2022!
+
+<div class="flex w-full mb-12 md:mb-24">
+  <div class="flex-1"></div>
+  <hr class="w-10 h-px bg-gray-200 border-0 dark:bg-gray-600">
+  
+<a href="#page-top" class="relative -mt-3.5 mx-4">
+  <div class="dark:bg-slate-900 hover:bg-slate-100 dark:hover:bg-slate-800 p-1.5 h-7 w-7 rounded-full shadow-xs left-1">
+    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" aria-hidden="true" data-slot="icon" class="h-4 w-4 text-slate-400 dark:text-slate-500">
+  <path stroke-linecap="round" stroke-linejoin="round" d="M12 19.5v-15m0 0-6.75 6.75M12 4.5l6.75 6.75"/>
+</svg>
+  </div>
+</a>
+
+  <hr class="w-10 h-px bg-gray-200 border-0 dark:bg-gray-600">
+  <div class="flex-1"></div>
 </div>
-<div>
-<a href="../Foundation/Summit/2022/"><img src="/images/sel4-summit-logo.svg" style="width:20%;" class="news-img" alt="seL4 Summit 2022 Logo"></a>
-<p>
+
+
+<article class="max-w-4xl mx-auto mb-12 sm:mb-18 pt-2 pb-8 px-6 lg:px-8 clear-both">
+  <a href="#summit-pc" class="text-base sm:text-lg hover:underline text-gray-400 pt-16 lg:pt-20">
+    <time datetime="2022-03-18" id="summit-pc">18 Mar 2022</time>
+  </a>
+  <h2 class="mb-8 mt-2 h2-size">Meet the Program Committee of the seL4 Summit 2022!</h2>
+  <div class="theprose prose-ul:[ul]:my-2 prose-p:[p]:my-3 prose-li:[li]:my-1.5 max-w-4xl">
+    <a href="/Summit/2022/"><img src="/images/sel4-summit-logo.svg" alt="seL4 Summit 2022 Logo"
+        class="float-right rounded-xl -mt-1 ml-4 sm:ml-6 lg:-mr-16  p-6 sm:p-8 w-2/5"></a>
+    <p>
   The seL4 Foundation is excited to have gathered a top notch team of people to
-  serve as <a href="../Foundation/Summit/2022">PC members for the seL4 summit
+  serve as <a href="../Summit/2022">PC members for the seL4 Summit
   2022</a>. They come from across the the seL4 ecosystem: users, contributors,
   committers, experts, advocates, researchers, and engineers.
 </p>
 <p>
   <strong>Stay tuned for the Call for Presentation soon!</strong>
 </p>
-<p style="text-align: center;">
-  <a href="../Foundation/Summit/2022">
-    <img src="../images/summit/pc22.png" style="width: 60%;  padding-left:10px;"
-         alt="PC for seL4 Summit 2022">
+
+<div class="not-prose clear-both">
+<ul class="mx-auto mt-20 grid max-w-2xl lg:mx-0 lg:max-w-none
+           grid-cols-2 gap-x-8 gap-y-16 text-center
+           sm:grid-cols-3 md:grid-cols-4
+           
+           ">
+
+  <li>
+  
+  <a href="https://proofcraft.systems/#june" class="text-dark no-underline! hover:underline!">
+  
+    <img class="mx-auto h-24 w-24 rounded-full" src="/Foundation/Board/TS-June-square.jpg" alt="Picture of June Andronick<br>(co-chair)">
+    <p class="mt-6 text-base font-semibold leading-7 tracking-tight text-dark">June Andronick<br>(co-chair)</p>
+  
   </a>
-</p>
+  
+  <p class="text-sm leading-6 text-light">Proofcraft</p>
+</li>
+
+
+  <li>
+  
+  <a href="http://loonwerks.com/people/darren-cofer.html" class="text-dark no-underline! hover:underline!">
+  
+    <img class="mx-auto h-24 w-24 rounded-full" src="/images/summit/darren-square.jpg" alt="Picture of Darren Cofer<br>(co-chair)">
+    <p class="mt-6 text-base font-semibold leading-7 tracking-tight text-dark">Darren Cofer<br>(co-chair)</p>
+  
+  </a>
+  
+  <p class="text-sm leading-6 text-light">Collins Aerospace</p>
+</li>
+
+
+  <li>
+  
+  <a href="https://www.linkedin.com/in/annamlyons/" class="text-dark no-underline! hover:underline!">
+  
+    <img class="mx-auto h-24 w-24 rounded-full" src="/images/tsc/anna.png" alt="Picture of Anna Lyons">
+    <p class="mt-6 text-base font-semibold leading-7 tracking-tight text-dark">Anna Lyons</p>
+  
+  </a>
+  
+  <p class="text-sm leading-6 text-light"></p>
+</li>
+
+
+  <li>
+  
+  <a href="https://www.linkedin.com/in/axelheider" class="text-dark no-underline! hover:underline!">
+  
+    <img class="mx-auto h-24 w-24 rounded-full" src="/images/summit/axel-square.jpg" alt="Picture of Axel Heider">
+    <p class="mt-6 text-base font-semibold leading-7 tracking-tight text-dark">Axel Heider</p>
+  
+  </a>
+  
+  <p class="text-sm leading-6 text-light">HENSOLDT Cyber</p>
+</li>
+
+
+  <li>
+  
+  <a href="https://trustworthy.systems/people/?cn=Gernot+Heiser" class="text-dark no-underline! hover:underline!">
+  
+    <img class="mx-auto h-24 w-24 rounded-full" src="/Foundation/Board/TS-Gernot-square.jpg" alt="Picture of Gernot Heiser">
+    <p class="mt-6 text-base font-semibold leading-7 tracking-tight text-dark">Gernot Heiser</p>
+  
+  </a>
+  
+  <p class="text-sm leading-6 text-light">UNSW</p>
+</li>
+
+
+  <li>
+  
+  <a href="https://trustworthy.systems/people/?cn=Ihor+Kuz" class="text-dark no-underline! hover:underline!">
+  
+    <img class="mx-auto h-24 w-24 rounded-full" src="/images/tsc/ihor-square.jpg" alt="Picture of Ihor Kuz">
+    <p class="mt-6 text-base font-semibold leading-7 tracking-tight text-dark">Ihor Kuz</p>
+  
+  </a>
+  
+  <p class="text-sm leading-6 text-light">Kry10</p>
+</li>
+
+
+  <li>
+  
+  <a href="https://en.wikipedia.org/wiki/John_Launchbury" class="text-dark no-underline! hover:underline!">
+  
+    <img class="mx-auto h-24 w-24 rounded-full" src="/images/summit/john-l.jpg" alt="Picture of John Launchbury">
+    <p class="mt-6 text-base font-semibold leading-7 tracking-tight text-dark">John Launchbury</p>
+  
+  </a>
+  
+  <p class="text-sm leading-6 text-light">Galois</p>
+</li>
+
+
+  <li>
+  
+  <a href="https://www.linkedin.com/in/kent-mcleod-1703a757" class="text-dark no-underline! hover:underline!">
+  
+    <img class="mx-auto h-24 w-24 rounded-full" src="/images/tsc/kent-square.jpg" alt="Picture of Kent Mcleod">
+    <p class="mt-6 text-base font-semibold leading-7 tracking-tight text-dark">Kent Mcleod</p>
+  
+  </a>
+  
+  <p class="text-sm leading-6 text-light">Kry10</p>
+</li>
+
+
+  <li>
+  
+  <a href="https://nickspinale.com" class="text-dark no-underline! hover:underline!">
+  
+    <img class="mx-auto h-24 w-24 rounded-full" src="/images/summit/nick.jpg" alt="Picture of Nick Spinale">
+    <p class="mt-6 text-base font-semibold leading-7 tracking-tight text-dark">Nick Spinale</p>
+  
+  </a>
+  
+  <p class="text-sm leading-6 text-light">Colias Group</p>
+</li>
+
+
+  <li>
+  
+  <a href="https://perry.alexander.name" class="text-dark no-underline! hover:underline!">
+  
+    <img class="mx-auto h-24 w-24 rounded-full" src="/images/summit/perry-square.jpg" alt="Picture of Perry Alexander">
+    <p class="mt-6 text-base font-semibold leading-7 tracking-tight text-dark">Perry Alexander</p>
+  
+  </a>
+  
+  <p class="text-sm leading-6 text-light">The University of Kansas</p>
+</li>
+
+
+  <li>
+  
+  <a href="https://www.linkedin.com/in/robbie-vanvossen-gr/" class="text-dark no-underline! hover:underline!">
+  
+    <img class="mx-auto h-24 w-24 rounded-full" src="/images/summit/robbie.png" alt="Picture of Robbie VanVossen">
+    <p class="mt-6 text-base font-semibold leading-7 tracking-tight text-dark">Robbie VanVossen</p>
+  
+  </a>
+  
+  <p class="text-sm leading-6 text-light">DornerWorks</p>
+</li>
+
+
+  <li>
+  
+  <a href="https://galois.com/team/todd-carpenter/" class="text-dark no-underline! hover:underline!">
+  
+    <img class="mx-auto h-24 w-24 rounded-full" src="/images/summit/todd.jpg" alt="Picture of Todd Carpenter">
+    <p class="mt-6 text-base font-semibold leading-7 tracking-tight text-dark">Todd Carpenter</p>
+  
+  </a>
+  
+  <p class="text-sm leading-6 text-light">Galois</p>
+</li>
+
+
+</ul>
+
 
 </div>
-<div class="news-finish"></div>
 
-<div class="news-item tag-link" id="board-member-olivier">
-  <a href="#board-member-olivier"><span class="tag-span"># </span></a>
-  14 Mar 2022: Olivier Engelkes is Hensoldt Cyber's new representative on the seL4 Board
+  </div>
+</article>
+
+
+<div class="flex w-full mb-12 md:mb-24">
+  <div class="flex-1"></div>
+  <hr class="w-10 h-px bg-gray-200 border-0 dark:bg-gray-600">
+  
+<a href="#page-top" class="relative -mt-3.5 mx-4">
+  <div class="dark:bg-slate-900 hover:bg-slate-100 dark:hover:bg-slate-800 p-1.5 h-7 w-7 rounded-full shadow-xs left-1">
+    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" aria-hidden="true" data-slot="icon" class="h-4 w-4 text-slate-400 dark:text-slate-500">
+  <path stroke-linecap="round" stroke-linejoin="round" d="M12 19.5v-15m0 0-6.75 6.75M12 4.5l6.75 6.75"/>
+</svg>
+  </div>
+</a>
+
+  <hr class="w-10 h-px bg-gray-200 border-0 dark:bg-gray-600">
+  <div class="flex-1"></div>
 </div>
-<div>
-<a href="https://de.linkedin.com/in/olivier-engelkes-6393b1a"><img src="/Foundation/Board/HC-Olivier.jpg" style="width:20%;" class="news-img" alt="Olivier Engelkes"></a>
-<p>The seL4 Foundation is pleased to welcome <a href="https://de.linkedin.com/in/olivier-engelkes-6393b1a">Olivier
+
+
+<article class="max-w-4xl mx-auto mb-12 sm:mb-18 pt-2 pb-8 px-6 lg:px-8 clear-both">
+  <a href="#board-member-olivier" class="text-base sm:text-lg hover:underline text-gray-400 pt-16 lg:pt-20">
+    <time datetime="2022-03-14" id="board-member-olivier">14 Mar 2022</time>
+  </a>
+  <h2 class="mb-8 mt-2 h2-size">Olivier Engelkes is Hensoldt Cyber's new representative on the seL4 Board</h2>
+  <div class="theprose prose-ul:[ul]:my-2 prose-p:[p]:my-3 prose-li:[li]:my-1.5 max-w-4xl">
+    <a href="https://de.linkedin.com/in/olivier-engelkes-6393b1a"><img src="/Foundation/Board/HC-Olivier.jpg" alt="Olivier Engelkes"
+        class="float-right rounded-xl -mt-1 ml-4 sm:ml-6 lg:-mr-16 rounded-xl w-2/5"></a>
+    <p>The seL4 Foundation is pleased to welcome <a href="https://de.linkedin.com/in/olivier-engelkes-6393b1a">Olivier
 Engelkes</a> as Hensoldt
 Cyber’s new representative on the <a href="../Foundation/Board">seL4 Foundation Board</a>.</p>
 
@@ -566,16 +2117,36 @@ processor that is protected from supply-chain attacks. Olivier replaces Sascha
 Kegreiß as HENSOLDT Cyber’s representative on the <a href="../Foundation/Board">seL4 Foundation
 Board</a>.</p>
 
-</div>
-<div class="news-finish"></div>
+  </div>
+</article>
 
-<div class="news-item tag-link" id="member-ncsc">
-  <a href="#member-ncsc"><span class="tag-span"># </span></a>
-  02 Feb 2022: NCSC joins the seL4 Foundation
+
+<div class="flex w-full mb-12 md:mb-24">
+  <div class="flex-1"></div>
+  <hr class="w-10 h-px bg-gray-200 border-0 dark:bg-gray-600">
+  
+<a href="#page-top" class="relative -mt-3.5 mx-4">
+  <div class="dark:bg-slate-900 hover:bg-slate-100 dark:hover:bg-slate-800 p-1.5 h-7 w-7 rounded-full shadow-xs left-1">
+    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" aria-hidden="true" data-slot="icon" class="h-4 w-4 text-slate-400 dark:text-slate-500">
+  <path stroke-linecap="round" stroke-linejoin="round" d="M12 19.5v-15m0 0-6.75 6.75M12 4.5l6.75 6.75"/>
+</svg>
+  </div>
+</a>
+
+  <hr class="w-10 h-px bg-gray-200 border-0 dark:bg-gray-600">
+  <div class="flex-1"></div>
 </div>
-<div>
-<a href="https://www.ncsc.gov.uk/"><img src="/Foundation/Membership/LOGOS/NCSC.png" style="width:20%;" class="news-img" alt="NCSC Logo"></a>
-<p>The seL4 Foundation is pleased to welcome the UK’s
+
+
+<article class="max-w-4xl mx-auto mb-12 sm:mb-18 pt-2 pb-8 px-6 lg:px-8 clear-both">
+  <a href="#member-ncsc" class="text-base sm:text-lg hover:underline text-gray-400 pt-16 lg:pt-20">
+    <time datetime="2022-02-02" id="member-ncsc">02 Feb 2022</time>
+  </a>
+  <h2 class="mb-8 mt-2 h2-size">NCSC joins the seL4 Foundation</h2>
+  <div class="theprose prose-ul:[ul]:my-2 prose-p:[p]:my-3 prose-li:[li]:my-1.5 max-w-4xl">
+    <a href="https://www.ncsc.gov.uk/"><img src="/Foundation/Membership/LOGOS/NCSC.png" alt="NCSC Logo"
+        class="float-right rounded-xl -mt-1 ml-4 sm:ml-6 lg:-mr-16 bg-white p-6 sm:p-8 w-2/5"></a>
+    <p>The seL4 Foundation is pleased to welcome the UK’s
 <a href="https://www.ncsc.gov.uk">National Cyber Security Centre (NCSC)</a>.</p>
 
 <p>The NCSC, the UK’s technical authority on cyber security, uses the seL4
@@ -588,16 +2159,36 @@ high-assurance devices. We support the long-term stability of the seL4
 microkernel ecosystem and are looking at opportunities to develop our use cases
 for it.”</p>
 
-</div>
-<div class="news-finish"></div>
+  </div>
+</article>
 
-<div class="news-item tag-link" id="summit-bid-host">
-  <a href="#summit-bid-host"><span class="tag-span"># </span></a>
-  01 Feb 2022: Call for bids to host the seL4 Summit 2022!
+
+<div class="flex w-full mb-12 md:mb-24">
+  <div class="flex-1"></div>
+  <hr class="w-10 h-px bg-gray-200 border-0 dark:bg-gray-600">
+  
+<a href="#page-top" class="relative -mt-3.5 mx-4">
+  <div class="dark:bg-slate-900 hover:bg-slate-100 dark:hover:bg-slate-800 p-1.5 h-7 w-7 rounded-full shadow-xs left-1">
+    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" aria-hidden="true" data-slot="icon" class="h-4 w-4 text-slate-400 dark:text-slate-500">
+  <path stroke-linecap="round" stroke-linejoin="round" d="M12 19.5v-15m0 0-6.75 6.75M12 4.5l6.75 6.75"/>
+</svg>
+  </div>
+</a>
+
+  <hr class="w-10 h-px bg-gray-200 border-0 dark:bg-gray-600">
+  <div class="flex-1"></div>
 </div>
-<div>
-<a href="../Foundation/Summit/2022/"><img src="/images/seL4.svg" style="width:20%;" class="news-img" alt="seL4 summit"></a>
-<p>The seL4 Foundation will be organising the fourth edition of the seL4 Summit, in
+
+
+<article class="max-w-4xl mx-auto mb-12 sm:mb-18 pt-2 pb-8 px-6 lg:px-8 clear-both">
+  <a href="#summit-bid-host" class="text-base sm:text-lg hover:underline text-gray-400 pt-16 lg:pt-20">
+    <time datetime="2022-02-01" id="summit-bid-host">01 Feb 2022</time>
+  </a>
+  <h2 class="mb-8 mt-2 h2-size">Call for bids to host the seL4 Summit 2022!</h2>
+  <div class="theprose prose-ul:[ul]:my-2 prose-p:[p]:my-3 prose-li:[li]:my-1.5 max-w-4xl">
+    <a href="/Summit/2022/"><img src="/images/seL4.svg" alt="seL4 Summit"
+        class="float-right rounded-xl -mt-1 ml-4 sm:ml-6 lg:-mr-16  p-6 sm:p-8 w-2/5"></a>
+    <p>The seL4 Foundation will be organising the fourth edition of the seL4 Summit, in
 October 2022.</p>
 
 <p>A Program Committee will be in charge of the technical side (more on that soon)
@@ -607,90 +2198,137 @@ and an Hosting Team will be in charge of organising the event.</p>
 
 <p><strong>Bids should be sent to <a href="mailto:summit@sel4.systems" title="summit@sel4.systems">summit@sel4.systems</a> before 22 February 2022.</strong></p>
 
-<p>More information <a href="../Foundation/Summit/2022/">here</a>.</p>
+<p>More information <a href="../Summit/2022/">here</a>.</p>
 
-</div>
-<div class="news-finish"></div>
+  </div>
+</article>
 
-<div class="news-item tag-link" id="kry10-endorsement">
-  <a href="#kry10-endorsement"><span class="tag-span"># </span></a>
-  28 Jan 2022: Kry10 receives interim endorsement as a Trusted Service Provider
+
+<div class="flex w-full mb-12 md:mb-24">
+  <div class="flex-1"></div>
+  <hr class="w-10 h-px bg-gray-200 border-0 dark:bg-gray-600">
+  
+<a href="#page-top" class="relative -mt-3.5 mx-4">
+  <div class="dark:bg-slate-900 hover:bg-slate-100 dark:hover:bg-slate-800 p-1.5 h-7 w-7 rounded-full shadow-xs left-1">
+    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" aria-hidden="true" data-slot="icon" class="h-4 w-4 text-slate-400 dark:text-slate-500">
+  <path stroke-linecap="round" stroke-linejoin="round" d="M12 19.5v-15m0 0-6.75 6.75M12 4.5l6.75 6.75"/>
+</svg>
+  </div>
+</a>
+
+  <hr class="w-10 h-px bg-gray-200 border-0 dark:bg-gray-600">
+  <div class="flex-1"></div>
 </div>
-<div>
-<a href="https://www.kry10.com/"><img src="/Foundation/Membership/LOGOS/Kry10.svg" style="width:20%;" class="news-img" alt="Kry10 Logo"></a>
-<p>The seL4 Foundation has awarded Interim Endorsement to Kry10 as a Trusted
+
+
+<article class="max-w-4xl mx-auto mb-12 sm:mb-18 pt-2 pb-8 px-6 lg:px-8 clear-both">
+  <a href="#kry10-endorsement" class="text-base sm:text-lg hover:underline text-gray-400 pt-16 lg:pt-20">
+    <time datetime="2022-01-28" id="kry10-endorsement">28 Jan 2022</time>
+  </a>
+  <h2 class="mb-8 mt-2 h2-size">Kry10 receives interim endorsement as a Trusted Service Provider</h2>
+  <div class="theprose prose-ul:[ul]:my-2 prose-p:[p]:my-3 prose-li:[li]:my-1.5 max-w-4xl">
+    <a href="https://www.kry10.com/"><img src="/Foundation/Membership/LOGOS/Kry10.svg" alt="Kry10 Logo"
+        class="float-right rounded-xl -mt-1 ml-4 sm:ml-6 lg:-mr-16 bg-white p-6 sm:p-8 w-2/5"></a>
+    <p>The seL4 Foundation has awarded Interim Endorsement to Kry10 as a Trusted
 Service Provider.</p>
 
-<p>More on our <a href="../Foundation/Services/">Services, Training and Products</a> page.</p>
+<p>More on our <a href="../Services/">Services, Training and Products</a> page.</p>
 
-</div>
-<div class="news-finish"></div>
-
-
-<div class="divider"></div>
-</div><!-- container -->
-</div><!--content-wrap-->
-<footer class="page-footer small pt-3" id="footer"> <!-- footer -->
-  <div class="container">
-    <!-- for mobile screens -->
-    <div class="text-center visible-xs">
-      <!--
-Copyright 2024 seL4 Project a Series of LF Projects, LLC.
-SPDX-License-Identifier: CC-BY-SA-4.0
--->
-<a href="https://fosstodon.org/@sel4"><img style="height:36px; padding-right:5px; padding-top:2px; padding-bottom:2px;" src=/images/icons/mastodon.svg alt="mastodon icon"></a>
-<a href="https://www.youtube.com/@seL4"><img style="height:36px; padding-top:2px; padding-bottom:2px;" src=/images/icons/youtube.svg alt="youtube icon"></a>
-<a href="https://www.linkedin.com/company/sel4"><img style="height:36px; padding-left:5px; padding-top:2px; padding-bottom:2px;" src=/images/icons/linkedin.svg alt="linkedin icon"></a>
-
-      <br>
-      <br>
-      <!--
-Copyright 2024 seL4 Project a Series of LF Projects, LLC.
-SPDX-License-Identifier: CC-BY-SA-4.0
--->
-
-Copyright &copy; 2025 seL4 Project a Series of LF Projects, LLC.<br/>
-seL4 is a trademark of LF Projects, LLC.<br/>
-For trademark usage guidelines, privacy and cookie policies,
-and other applicable policies, as well as terms and conditions
-governing this web site, please see
-<a href="http://www.lfprojects.org/">www.lfprojects.org</a>
-and the <a href=/Foundation/Trademark/>trademark guidelines</a>.
-
-    </div>
-    <div class="row">
-      <!-- for screens larger than mobiles -->
-      <div class="col-xs-6 hidden-xs">
-        <!--
-Copyright 2024 seL4 Project a Series of LF Projects, LLC.
-SPDX-License-Identifier: CC-BY-SA-4.0
--->
-
-Copyright &copy; 2025 seL4 Project a Series of LF Projects, LLC.<br/>
-seL4 is a trademark of LF Projects, LLC.<br/>
-For trademark usage guidelines, privacy and cookie policies,
-and other applicable policies, as well as terms and conditions
-governing this web site, please see
-<a href="http://www.lfprojects.org/">www.lfprojects.org</a>
-and the <a href=/Foundation/Trademark/>trademark guidelines</a>.
-
-      </div>
-      <div class="col-xs-6 text-right hidden-xs">
-        <!--
-Copyright 2024 seL4 Project a Series of LF Projects, LLC.
-SPDX-License-Identifier: CC-BY-SA-4.0
--->
-<a href="https://fosstodon.org/@sel4"><img style="height:36px; padding-right:5px; padding-top:2px; padding-bottom:2px;" src=/images/icons/mastodon.svg alt="mastodon icon"></a>
-<a href="https://www.youtube.com/@seL4"><img style="height:36px; padding-top:2px; padding-bottom:2px;" src=/images/icons/youtube.svg alt="youtube icon"></a>
-<a href="https://www.linkedin.com/company/sel4"><img style="height:36px; padding-left:5px; padding-top:2px; padding-bottom:2px;" src=/images/icons/linkedin.svg alt="linkedin icon"></a>
-
-      </div>
-    </div>
   </div>
-</footer> <!-- footer -->
-<!-- wrapper -->
-<script src=/js/jquery.min.js></script>
-<script src=/js/bootstrap.min.js></script>
-</div><!--page-container-->
-</body>
+</article>
+
+
+<div class="flex w-full mb-12 md:mb-24">
+  <div class="flex-1"></div>
+  <hr class="w-10 h-px bg-gray-200 border-0 dark:bg-gray-600">
+  
+<a href="#page-top" class="relative -mt-3.5 mx-4">
+  <div class="dark:bg-slate-900 hover:bg-slate-100 dark:hover:bg-slate-800 p-1.5 h-7 w-7 rounded-full shadow-xs left-1">
+    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" aria-hidden="true" data-slot="icon" class="h-4 w-4 text-slate-400 dark:text-slate-500">
+  <path stroke-linecap="round" stroke-linejoin="round" d="M12 19.5v-15m0 0-6.75 6.75M12 4.5l6.75 6.75"/>
+</svg>
+  </div>
+</a>
+
+  <hr class="w-10 h-px bg-gray-200 border-0 dark:bg-gray-600">
+  <div class="flex-1"></div>
+</div>
+
+
+
+      </main><footer class="bg-gray-900" aria-labelledby="footer-heading">
+  <h2 id="footer-heading" class="sr-only">Footer</h2>
+  <div class="mx-auto max-w-7xl px-6 pb-8 pt-16 sm:pt-24 lg:px-8 lg:pt-32">
+    <div class="ml-10 lg:grid lg:grid-cols-2 lg:gap-8">
+      <div class="space-y-8">
+        <img class="h-12" src="/images/seL4.svg" alt="seL4 logo">
+        <p class="text-sm leading-6 text-gray-300">Proof. Performance. Security.</p>
+        <!-- socials -->
+        <div class="flex space-x-6">
+          <a href="https://www.linkedin.com/company/sel4" title="seL4 on LinkedIn"
+             class="text-gray-500 hover:text-gray-400">
+            <svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" aria-hidden="true" viewBox="0 0 455 455" data-slot="icon" class="h-6 w-6">
+  <path style="fill-rule:evenodd;clip-rule:evenodd;" d="M246.4,204.35v-0.665c-0.136,0.223-0.324,0.446-0.442,0.665H246.4z"/>
+  <path style="fill-rule:evenodd;clip-rule:evenodd;" d="M0,0v455h455V0H0z M141.522,378.002H74.016V174.906h67.506V378.002z M107.769,147.186h-0.446C84.678,147.186,70,131.585,70,112.085c0-19.928,15.107-35.087,38.211-35.087 c23.109,0,37.31,15.159,37.752,35.087C145.963,131.585,131.32,147.186,107.769,147.186z M385,378.002h-67.524V269.345 c0-27.291-9.756-45.92-34.195-45.92c-18.664,0-29.755,12.543-34.641,24.693c-1.776,4.34-2.24,10.373-2.24,16.459v113.426h-67.537 c0,0,0.905-184.043,0-203.096H246.4v28.779c8.973-13.807,24.986-33.547,60.856-33.547c44.437,0,77.744,29.02,77.744,91.398V378.002 z"/>
+</svg>
+          </a>
+          <a href="https://www.youtube.com/@seL4" title="seL4 on YouTube"
+             class="text-gray-500 hover:text-gray-400">
+            <svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" aria-hidden="true" viewBox="0 0 24 24" data-slot="icon" class="h-6 w-6">
+  <path fill-rule="evenodd" d="M19.812 5.418c.861.23 1.538.907 1.768 1.768C21.998 8.746 22 12 22 12s0 3.255-.418 4.814a2.504 2.504 0 0 1-1.768 1.768c-1.56.419-7.814.419-7.814.419s-6.255 0-7.814-.419a2.505 2.505 0 0 1-1.768-1.768C2 15.255 2 12 2 12s0-3.255.417-4.814a2.507 2.507 0 0 1 1.768-1.768C5.744 5 11.998 5 11.998 5s6.255 0 7.814.418ZM15.194 12 10 15V9l5.194 3Z" clip-rule="evenodd"/>
+</svg>
+          </a>
+          <a href="https://github.com/seL4" title="seL4 on GitHub"
+             class="text-gray-500 hover:text-gray-400">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16" fill="currentColor" aria-hidden="true" data-slot="icon" class="h-6 w-6">
+  <path d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.013 8.013 0 0016 8c0-4.42-3.58-8-8-8z"/>
+</svg>
+          </a>
+        </div>
+      </div>
+      <!-- footer menu -->
+      <div class="mt-16 flex flex-wrap gap-8 lg:mt-0"><div class="flex-none">
+          <h3 class="text-md font-semibold leading-6 text-logogreen">Useful Links</h3>
+          <ul class="mt-6 space-y-4"><li>
+              <a href="/About/" class="text-sm leading-6 text-gray-300 hover:text-white">What is seL4?</a>
+            </li><li>
+              <a href="/Foundation/" class="text-sm leading-6 text-gray-300 hover:text-white">seL4 Foundation</a>
+            </li><li>
+              <a href="/Foundation/Join/" class="text-sm leading-6 text-gray-300 hover:text-white">Become a Member</a>
+            </li><li>
+              <a href="/Legal/logo.html" class="text-sm leading-6 text-gray-300 hover:text-white">seL4 Logo</a>
+            </li><li>
+              <a href="/sitemap.html" class="text-sm leading-6 text-gray-300 hover:text-white">Sitemap</a>
+            </li></ul>
+        </div><div class="flex-none">
+          <h3 class="text-md font-semibold leading-6 text-logogreen">Legal</h3>
+          <ul class="mt-6 space-y-4"><li>
+              <a href="/Legal/trademark.html" class="text-sm leading-6 text-gray-300 hover:text-white">seL4 Trademark</a>
+            </li><li>
+              <a href="/Legal/license.html" class="text-sm leading-6 text-gray-300 hover:text-white">seL4 License</a>
+            </li><li>
+              <a href="/Contribute/conduct.html" class="text-sm leading-6 text-gray-300 hover:text-white">Code of Conduct</a>
+            </li><li>
+              <a href="http://www.lfprojects.org/" class="text-sm leading-6 text-gray-300 hover:text-white">Site Policies</a>
+            </li></ul>
+        </div><div class="flex-none">
+          <h3 class="text-md font-semibold leading-6 text-logogreen">Using seL4</h3>
+          <ul class="mt-6 space-y-4"><li>
+              <a href="https://docs.sel4.systems" class="text-sm leading-6 text-gray-300 hover:text-white">Docsite</a>
+            </li><li>
+              <a href="/Info/Docs/seL4-manual-latest.pdf" class="text-sm leading-6 text-gray-300 hover:text-white">Manual</a>
+            </li><li>
+              <a href="https://docs.sel4.systems/Tutorials/" class="text-sm leading-6 text-gray-300 hover:text-white">Tutorials</a>
+            </li><li>
+              <a href="/About/FAQ.html" class="text-sm leading-6 text-gray-300 hover:text-white">FAQ</a>
+            </li></ul>
+        </div></div>
+    </div>
+    <div class="flex flex-row flex-wrap gap-x-3 mt-16 border-t border-white/10 pt-8 sm:mt-20 lg:mt-24">
+      <p class="flex-none max-w-full text-tiny sm:text-xs leading-5 text-gray-400">&copy; 2025 seL4 Project a Series of LF Projects, LLC. seL4 is a trademark of LF Projects, LLC.</p></div>
+  </div>
+</footer>
+
+   </div>
+  </body>
 </html>

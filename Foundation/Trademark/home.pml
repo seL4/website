@@ -2,10 +2,10 @@
 <html lang="en-US">
   <meta charset="utf-8">
   <title>Redirecting&hellip;</title>
-  <link rel="canonical" href="https://sel4.systems/Foundation/Trademark/">
-  <script>location="https://sel4.systems/Foundation/Trademark/"</script>
-  <meta http-equiv="refresh" content="0; url=https://sel4.systems/Foundation/Trademark/">
+  <link rel="canonical" href="https://sel4.systems/Legal/trademark.html">
+  <script>location="https://sel4.systems/Legal/trademark.html"</script>
+  <meta http-equiv="refresh" content="0; url=https://sel4.systems/Legal/trademark.html">
   <meta name="robots" content="noindex">
   <h1>Redirecting&hellip;</h1>
-  <a href="https://sel4.systems/Foundation/Trademark/">Click here if you are not redirected.</a>
+  <a href="https://sel4.systems/Legal/trademark.html">Click here if you are not redirected.</a>
 </html>
