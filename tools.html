@@ -109,7 +109,7 @@ layout: card
   <div class="grid grid-cols-1 md:grid-cols-2 gap-y-24 gap-x-12 lg:gap-x-20 px-10 pt-8 pb-12 sm:pb-20">
 
     {% include card_tool.html
-    title="Lions OS"
+    title="LionsOS"
     icon="squares-plus"
     type="Open Source"
     foundation=false
@@ -117,6 +117,7 @@ layout: card
     body='<p>
       Highly modular, adaptable, verifiable, high-performance OS for statically
       architected embedded/IoT/cyberphysical systems, developed at UNSW.
+      Based on Microkit.
     </p>'
     %}
 
@@ -155,13 +156,13 @@ layout: card
       %}
 
     {% include card_tool.html
-      title="Microkit VMM"
+      title="libvmm"
       icon="server-stack"
       type="Open Source"
       foundation=false
       link="https://github.com/au-ts/libvmm"
       body='<p>
-        Virtual Machine Monitor on seL4 with Microkit, currently with support for AArch64 only.
+        Virtual Machine Monitor library on seL4 using Microkit, currently with support for AArch64 only.
         RISC-V support is in development.
       </p>
       '
@@ -245,7 +246,7 @@ layout: card
     body='<p>
       Support for <a href="https://micropython.org">Micropython</a>, a slimmed
       down version of Python, intended for embedded use cases. Needs
-      higher-level OS services, which are currently supported on Lions OS only.
+      higher-level OS services, which are currently supported on LionsOS only.
     </p>'
     %}
 
