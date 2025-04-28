@@ -25,6 +25,13 @@ SPDX-License-Identifier = "BSD-2-Clause"
 
 [[annotations]]
 path = [
+    "js/3d-force-graph@1.73.6.js"
+]
+SPDX-FileCopyrightText = "2025 Vasco Asturiano"
+SPDX-License-Identifier = "MIT"
+
+[[annotations]]
+path = [
     "images/icons/android*.png",
     "images/icons/apple-touch-icon*.png",
     "images/icons/mstile*.png",
