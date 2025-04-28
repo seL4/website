@@ -51,7 +51,7 @@ debug: JEKYLL_ENV := development
 debug: serve
 
 preview: JEKYLL_ENV := development
-preview: BUILD_OPTS := --config "_config.yml,_proofcraft.yml" $(BUILD_OPTS)
+preview: BUILD_OPTS := --config "_config.yml,_preview.yml" $(BUILD_OPTS)
 preview: build
 
 on_seL4: BUILD_OPTS := --config "_config.yml,_on_seL4.yml" $(BUILD_OPTS)
