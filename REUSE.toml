@@ -13,6 +13,7 @@ path = [
     "_data/members.json",
     "_data/platforms.json",
     "_data/sponsors.json",
+    "_data/benchmarks.json",
     "_includes/menu.html",
     ".bundle/config",
     "Gemfile.lock",
