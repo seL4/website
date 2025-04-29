@@ -5,15 +5,17 @@
       "Avnet MaaXBoard",
       "BeagleBoard",
       "BeagleBone Black",
-      "IMX8MM-EVK",
+      "i.MX8MM-EVK",
+      "i.MX8MP-EVK",
+      "i.MX8MQ-EVK",
       "Odroid-C2",
-      "Odroid-C",
+      "Odroid-C4",
       "OdroidX",
       "OdroidXU",
       "OdroidXU4",
-      "Raspberry Pi 3b",
+      "Raspberry Pi 3B",
       "Raspberry Pi 4B",
-      "Rockpro64",
+      "ROCKPro64",
       "Sabre Lite",
       "TK1",
       "TK1-SOM",
@@ -21,8 +23,7 @@
       "TX2",
       "Ultra96v2",
       "Zynq ZCU102",
-      "Zynq-7000",
-      "IMX8MQ"
+      "Zynq-7000"
     ]
   ],
   [
