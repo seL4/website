@@ -47,10 +47,6 @@
       "name"
     ],
     [
-      "Clock",
-      "clock"
-    ],
-    [
       "Compiler",
       "compiler"
     ],
@@ -69,9 +65,9 @@
         "name": "A9/i.MX6/Sabre",
         "clock": "1.0 GHz",
         "compiler": "arm-linux-gnueabi-gcc GNU 10.2.1",
-        "ipc": [
-          594,
-          13
+        "irq": [
+          590,
+          14
         ],
         "call": [
           316,
@@ -79,11 +75,11 @@
         ],
         "reply": [
           334,
-          2
+          1
         ],
         "notify": [
-          850,
-          13
+          859,
+          17
         ],
         "build_command": "init-build.sh -DFASTPATH=TRUE -DHARDWARE=TRUE -DFAULT=TRUE -DAARCH32=TRUE -DPLATFORM=sabre"
       },
@@ -95,21 +91,21 @@
         "name": "i7-4770/Haswell",
         "clock": "3.4 GHz",
         "compiler": "gcc GNU 10.2.1",
-        "ipc": [
-          1568,
-          262
+        "irq": [
+          1640,
+          255
         ],
         "call": [
-          594,
-          15
+          593,
+          13
         ],
         "reply": [
-          605,
-          15
+          593,
+          13
         ],
         "notify": [
-          1324,
-          7
+          1323,
+          5
         ],
         "build_command": "init-build.sh -DFASTPATH=TRUE -DHARDWARE=TRUE -DFAULT=TRUE -DPLATFORM=x86_64"
       },
@@ -119,24 +115,24 @@
         "isa": "x86_64",
         "mode": 64,
         "name": "i7-6700/Skylake",
-        "note": "(without meltdown mitigation)",
+        "note": "without meltdown mitigation",
         "clock": "3.4 GHz",
         "compiler": "gcc GNU 10.2.1",
-        "ipc": [
-          1517,
-          193
+        "irq": [
+          1472,
+          200
         ],
         "call": [
           385,
-          3
+          4
         ],
         "reply": [
-          380,
-          3
+          383,
+          4
         ],
         "notify": [
-          768,
-          9
+          749,
+          11
         ],
         "build_command": "init-build.sh -DKernelSkimWindow=FALSE -DFASTPATH=TRUE -DHARDWARE=TRUE -DFAULT=TRUE -DPLATFORM=x86_64"
       },
@@ -148,21 +144,21 @@
         "name": "A57/Tx1/Jetson",
         "clock": "1.9 GHz",
         "compiler": "aarch64-linux-gnu-gcc GNU 10.2.1",
-        "ipc": [
+        "irq": [
           736,
           6
         ],
         "call": [
-          408,
-          11
+          405,
+          9
         ],
         "reply": [
           416,
-          0
+          1
         ],
         "notify": [
-          936,
-          7
+          881,
+          11
         ],
         "build_command": "init-build.sh -DFASTPATH=TRUE -DHARDWARE=TRUE -DFAULT=TRUE -DAARCH64=TRUE -DPLATFORM=tx1"
       },
@@ -174,21 +170,21 @@
         "name": "U54-MC/SiFive Freedom U540/Hifive",
         "clock": "1.5 GHz",
         "compiler": "riscv64-unknown-elf-gcc GNU 8.3.0",
-        "ipc": [
-          1001,
-          37
+        "irq": [
+          1039,
+          89
         ],
         "call": [
-          803,
-          85
+          813,
+          91
         ],
         "reply": [
-          826,
-          73
+          830,
+          85
         ],
         "notify": [
-          1526,
-          81
+          1697,
+          78
         ],
         "build_command": "init-build.sh -DFASTPATH=TRUE -DHARDWARE=FALSE -DFAULT=FALSE -DRISCV64=TRUE -DPLATFORM=hifive"
       }
@@ -202,8 +198,8 @@
         "name": "A9/i.MX6/Sabre",
         "clock": "1.0 GHz",
         "compiler": "arm-linux-gnueabi-gcc GNU 10.2.1",
-        "ipc": [
-          775,
+        "irq": [
+          773,
           13
         ],
         "call": [
@@ -215,7 +211,7 @@
           2
         ],
         "notify": [
-          1153,
+          1145,
           13
         ],
         "build_command": "init-build.sh -DFASTPATH=TRUE -DHARDWARE=TRUE -DFAULT=TRUE -DAARCH32=TRUE -DPLATFORM=sabre -DMCS=TRUE"
@@ -228,21 +224,21 @@
         "name": "i7-4770/Haswell",
         "clock": "3.4 GHz",
         "compiler": "gcc GNU 10.2.1",
-        "ipc": [
-          1956,
-          415
+        "irq": [
+          1999,
+          418
         ],
         "call": [
-          599,
-          17
+          606,
+          13
         ],
         "reply": [
-          603,
+          602,
           12
         ],
         "notify": [
-          1571,
-          11
+          1573,
+          14
         ],
         "build_command": "init-build.sh -DFASTPATH=TRUE -DHARDWARE=TRUE -DFAULT=TRUE -DPLATFORM=x86_64 -DMCS=TRUE"
       },
@@ -252,24 +248,24 @@
         "isa": "x86_64",
         "mode": 64,
         "name": "i7-6700/Skylake",
-        "note": "(without meltdown mitigation)",
+        "note": "without meltdown mitigation",
         "clock": "3.4 GHz",
         "compiler": "gcc GNU 10.2.1",
-        "ipc": [
+        "irq": [
           1824,
-          333
+          322
         ],
         "call": [
-          390,
-          3
+          388,
+          2
         ],
         "reply": [
-          417,
-          6
+          414,
+          7
         ],
         "notify": [
           1054,
-          13
+          9
         ],
         "build_command": "init-build.sh -DKernelSkimWindow=FALSE -DMCS=TRUE -DFASTPATH=TRUE -DHARDWARE=TRUE -DFAULT=TRUE -DPLATFORM=x86_64"
       },
@@ -281,9 +277,9 @@
         "name": "A57/Tx1/Jetson",
         "clock": "1.9 GHz",
         "compiler": "aarch64-linux-gnu-gcc GNU 10.2.1",
-        "ipc": [
-          925,
-          66
+        "irq": [
+          932,
+          72
         ],
         "call": [
           419,
@@ -294,8 +290,8 @@
           2
         ],
         "notify": [
-          1023,
-          11
+          1021,
+          25
         ],
         "build_command": "init-build.sh -DFASTPATH=TRUE -DHARDWARE=TRUE -DFAULT=TRUE -DAARCH64=TRUE -DPLATFORM=tx1 -DMCS=TRUE"
       },
@@ -307,24 +303,25 @@
         "name": "U54-MC/SiFive Freedom U540/Hifive",
         "clock": "1.5 GHz",
         "compiler": "riscv64-unknown-elf-gcc GNU 8.3.0",
-        "ipc": [
-          3348,
-          89
+        "irq": [
+          3373,
+          121
         ],
         "call": [
-          711,
-          110
+          677,
+          20
         ],
         "reply": [
-          731,
-          51
+          747,
+          84
         ],
         "notify": [
-          4256,
-          227
+          4211,
+          161
         ],
         "build_command": "init-build.sh -DFASTPATH=TRUE -DHARDWARE=FALSE -DFAULT=FALSE -DRISCV64=TRUE -DPLATFORM=hifive -DMCS=TRUE"
       }
     ]
-  }
+  },
+  "sha": "4cf8e02"
 }

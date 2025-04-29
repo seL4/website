@@ -1,0 +1,35 @@
+{%- comment %}
+Copyright 2025 seL4 Project a Series of LF Projects, LLC.
+SPDX-License-Identifier: CC-BY-SA-4.0
+{% endcomment -%}
+{%- assign cols = site.data.benchmarks.comp_cols -%}
+{%- assign data = site.data.benchmarks.data[include.section] -%}
+<h3 class="h3-size text-dark mt-12 mb-6 max-w-4xl mx-auto">{{include.section}}</h3>
+<div class="w-full overflow-x-auto">
+  <table class="data-table">
+    <thead>
+      <tr>
+        {%- for col in cols %}
+        <th scope="col">{{ col[0] }}</th>
+        {%- endfor %}
+      </tr>
+    </thead>
+    <tbody>
+      {%- for row in data %}
+      <tr>
+        {%- for col in cols %}
+        {%-   assign key = col[1] %}
+        {%-   if key == "mode" %}
+        {%-     assign class="data-table-right" %}
+        {%-   elsif key == "build_command" %}
+        {%-     assign class="monospace" %}
+        {%-   else %}
+        {%-     assign class="" %}
+        {%-   endif %}
+        <td class="{{class}}">{{ row[key] }}</td>
+        {%- endfor %}
+      </tr>
+      {%- endfor %}
+    </tbody>
+  </table>
+</div>
