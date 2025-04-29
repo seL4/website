@@ -2605,6 +2605,12 @@
   .w-52 {
     width: calc(var(--spacing) * 52);
   }
+  .w-\[4ex\] {
+    width: 4ex;
+  }
+  .w-\[8ex\] {
+    width: 8ex;
+  }
   .w-\[10ex\] {
     width: 10ex;
   }
