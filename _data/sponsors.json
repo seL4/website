@@ -1,4 +1,14 @@
 {
+  "summit-2025":
+    {
+    "bronze": [
+        {
+          "name": "Collins Aerospace",
+          "logo": "Collins_Aerospace_Logo.svg",
+          "url": "https://www.collinsaerospace.com"
+        }
+      ]
+    },
   "summit-2024":
     {
       "gold": [
