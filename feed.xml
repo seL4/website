@@ -10,7 +10,45 @@
   <description>News feed about seL4, the seL4 Foundation, and the seL4 ecosystem.</description>
   <link rel="alternate">https://sel4.systems/news/</link>
   <link rel="self">https://sel4.systems/feed.xml</link>
-  <updated>Mon, 28 Apr 2025 00:00:00 +0000</updated>
+  <updated>Fri, 02 May 2025 00:00:00 +0000</updated>
+  <rights>Copyright 2025 seL4 Foundation</rights>
+  <entry>
+    <title>Welcome Collins, Bronze sponsor of the seL4 Summit 2025</title>
+    <link rel="alternate" type="text/html" href="https://sel4.systems/news/2025.html#summit-collins"/>
+    <id>https://sel4.systems/news/2025.html#summit-collins</id>
+    <published>Fri, 02 May 2025 00:00:00 +0000</published>
+    <updated>Fri, 02 May 2025 00:00:00 +0000</updated>
+    <content type="html">
+      &lt;p&gt;
+  The seL4 Foundation thanks &lt;a href=&quot;https://www.collinsaerospace.com&quot;&gt;Collins
+  Aerospace&lt;/a&gt; for becoming a sponsor of the seL4 Summit 2025. Collins
+  Aerospace has generously sponsored the seL4 summit every year since 2023.
+&lt;/p&gt;
+&lt;p&gt;
+  &lt;a href=&quot;https://www.collinsaerospace.com&quot;&gt;Collins Aerospace&lt;/a&gt;, part of seL4
+  Foundation member &lt;a href=&quot;https://www.rtx.com&quot;&gt;RTX&lt;/a&gt;, has been a long-time
+  core participant in the seL4 ecosystem. Collins was a prime contractor in the
+  DARPA HACMS program which demonstrated the seL4-based incremental cyber
+  retrofit of autonomous military vehicles. This was a major milestone in the
+  growth of seL4, demonstrating that it protects against cyber attacks on real
+  systems in operation. The same team also led the follow-on DARPA CASE program,
+  aiming at designed-in cyber-resiliency, including the seL4-based framework for
+  verified initialisation and configuration of systems architectures.
+&lt;/p&gt;
+&lt;p&gt;
+  Collins Aerospace is now leading a team on the DARPA PROVERS program which has
+  a goal of enhancing the security of defense and aerospace systems by
+  dramatically improving the usability, flexibility, and accessibility of formal
+  methods-based development and verification tools, and targeting seL4 as an
+  implementation platform.
+&lt;/p&gt;
+&lt;p&gt;
+  See &lt;a href=&quot;https://events.linuxfoundation.org/sel4-summit/sponsor/&quot;&gt;here&lt;/a&gt;
+  if you are interested in sponsoring the &lt;a href=&quot;../Summit/2025&quot;&gt;seL4 Summit
+  2025&lt;/a&gt;.
+&lt;/p&gt;
+    </content>
+  </entry>
   <rights>Copyright 2025 seL4 Foundation</rights>
   <entry>
     <title>The new seL4 website is live!</title>
@@ -420,30 +458,6 @@ for Tuesday 2 Sep 2025. Stay tuned for more info!&lt;/p&gt;
     platform for modern vehicles based on seL4.
 &lt;/p&gt;
 
-    </content>
-  </entry>
-  <rights>Copyright 2025 seL4 Foundation</rights>
-  <entry>
-    <title>Lewis &amp; Clark College joins the seL4 Foundation</title>
-    <link rel="alternate" type="text/html" href="https://sel4.systems/news/2024.html#member-lewis-clark"/>
-    <id>https://sel4.systems/news/2024.html#member-lewis-clark</id>
-    <published>Mon, 30 Sep 2024 00:00:00 +0000</published>
-    <updated>Mon, 30 Sep 2024 00:00:00 +0000</updated>
-    <content type="html">
-      &lt;p&gt;
-    The seL4 Foundation is pleased to welcome &lt;a
-    href=&quot;https://www.lclark.edu/&quot;&gt;Lewis &amp;amp; Clark College&lt;/a&gt; as our latest
-    &lt;a href=&quot;../Foundation/Membership&quot;&gt;member&lt;/a&gt;.
-&lt;/p&gt;
-&lt;p&gt;
-    Lewis &amp;amp; Clark is a private, liberal arts college located in the Pacific
-    Northwest of the United States. In our mathematical sciences department, we
-    are pursuing the goal of making single-function connected devices more
-    secure. Towards this end, we are proving a minimal, pure IPv6 networking
-    stack implementation correct. We rely on seL4&apos;s infrastructure (i.e.,
-    microkernel, Microkit, and device driver framework) as well as seL4&apos;s
-    methodologies (e.g., proofs verified by Isabelle/HOL).
-&lt;/p&gt;
     </content>
   </entry>
 </feed>
