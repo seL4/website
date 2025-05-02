@@ -24,10 +24,10 @@ SPDX-License-Identifier: CC-BY-SA-4.0
   {% else %}
   <div>
   {% endif %}
-    <span class="text-light text-sm sm:text-base">{{include.time}}</span>
-    {% if include.type %}
-    <br>
-    <span class="text-gray-500 text-sm sm:text-base">{{include.type}}</span>
+    <span class="text-light">{{include.time}}</span>
+    {% if include.type and include.type != "Talk" and include.type != "Welcome" %}
+      <br>
+      <span class="text-gray-500">{{include.type}}</span>
     {% endif %}
   </div>
 
