@@ -6,6 +6,7 @@ anchor: adventium-joins
 
 link: https://www.adventiumlabs.com
 img: Foundation/Membership/LOGOS/adventium-labs.svg
+width: 30%
 alt: Adventium Labs logo
 ---
 

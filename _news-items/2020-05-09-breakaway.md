@@ -5,6 +5,7 @@ title: "Breakaway Consulting joins the seL4 Foundation!"
 anchor: breakaway-joins
 
 img: /Foundation/Membership/LOGOS/Brkawy.png
+width: 30%
 alt: Breakaway logo
 link: https://brkawy.com
 ---

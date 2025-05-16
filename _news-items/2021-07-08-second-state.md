@@ -6,6 +6,7 @@ anchor: member-second-state
 link: https://secondstate.io
 img: /Foundation/Membership/LOGOS/secondstate.svg
 alt: Second State logo
+width: 15%
 ---
 
 The seL4 Foundation [Second State](https://secondstate.io) as a member.

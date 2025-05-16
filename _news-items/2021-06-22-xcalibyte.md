@@ -6,6 +6,7 @@ anchor: member-xcalibyte
 
 link: https://xcalibyte.com
 img: /Foundation/Membership/LOGOS/xcalibyte.svg
+width: 15%
 alt: Xcalibyte logo
 ---
 
