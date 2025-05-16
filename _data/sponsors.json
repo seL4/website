@@ -6,6 +6,11 @@
           "name": "Collins Aerospace",
           "logo": "Collins_Aerospace_Logo.svg",
           "url": "https://www.collinsaerospace.com"
+        },
+        {
+          "name": "UNSW Sydney",
+          "logo": "UNSW.svg",
+          "url": "https://unsw.edu.au"
         }
       ]
     },
