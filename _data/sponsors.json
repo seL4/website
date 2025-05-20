@@ -1,6 +1,13 @@
 {
   "summit-2025":
     {
+      "silver": [
+        {
+          "name": "Proofcraft",
+          "logo": "proofcraft.svg",
+          "url": "https://proofcraft.systems"
+        }
+        ],
     "bronze": [
         {
           "name": "Collins Aerospace",
