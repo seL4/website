@@ -3,6 +3,11 @@
     {
       "silver": [
         {
+          "name": "Apple",
+          "logo": "apple.svg",
+          "url": "https://apple.com/"
+        },
+        {
           "name": "Proofcraft",
           "logo": "proofcraft.svg",
           "url": "https://proofcraft.systems"
