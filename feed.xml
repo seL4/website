@@ -10,7 +10,36 @@
   <description>News feed about seL4, the seL4 Foundation, and the seL4 ecosystem.</description>
   <link rel="alternate">https://sel4.systems/news/</link>
   <link rel="self">https://sel4.systems/feed.xml</link>
-  <updated>Mon, 19 May 2025 00:00:00 +0000</updated>
+  <updated>Wed, 21 May 2025 00:00:00 +0000</updated>
+  <rights>Copyright 2025 seL4 Foundation</rights>
+  <entry>
+    <title>Thank you Proofcraft, Silver sponsor of the seL4 Summit 2025</title>
+    <link rel="alternate" type="text/html" href="https://sel4.systems/news/2025.html#sponsor25-proofcraft"/>
+    <id>https://sel4.systems/news/2025.html#sponsor25-proofcraft</id>
+    <published>Wed, 21 May 2025 00:00:00 +0000</published>
+    <updated>Wed, 21 May 2025 00:00:00 +0000</updated>
+    <content type="html">
+      &lt;p&gt;
+  The seL4 Foundation thanks &lt;a href=&quot;https://proofcraft.systems&quot;&gt;Proofcraft&lt;/a&gt;
+  for becoming a Silver sponsor of the &lt;a href=&quot;../Summit/2025&quot;&gt;seL4
+  Summit 2025&lt;/a&gt;.
+&lt;/p&gt;
+&lt;p&gt;
+  Founded by the seL4 verification leaders, &lt;a
+  href=&quot;https://proofcraft.systems&quot;&gt;Proofcraft&lt;/a&gt; offers commercial support
+  and projects in formal verification in general, and involving seL4
+  specifically. By applying mathematical machine-checked software verification,
+  Proofcraft increases critical software systems&apos; reliability, safety and
+  security, for a verified future.
+&lt;/p&gt;
+&lt;p&gt;
+  See &lt;a href=&quot;https://events.linuxfoundation.org/sel4-summit/sponsor/&quot;&gt;here&lt;/a&gt;
+  if you are interested in sponsoring the  &lt;a href=&quot;../Summit/2025&quot;&gt;seL4 Summit
+    2025&lt;/a&gt;.
+&lt;/p&gt;
+
+    </content>
+  </entry>
   <rights>Copyright 2025 seL4 Foundation</rights>
   <entry>
     <title>Thank you UNSW, Bronze sponsor of the seL4 Summit 2025</title>
@@ -46,7 +75,8 @@
 &lt;/p&gt;
 &lt;p&gt;
   See &lt;a href=&quot;https://events.linuxfoundation.org/sel4-summit/sponsor/&quot;&gt;here&lt;/a&gt;
-  if you are interested in sponsoring the seL4 Summit 2025.
+  if you are interested in sponsoring the &lt;a href=&quot;../Summit/2025&quot;&gt;seL4 Summit
+    2025&lt;/a&gt;.
 &lt;/p&gt;
 
     </content>
@@ -453,26 +483,6 @@ for Tuesday 2 Sep 2025. Stay tuned for more info!&lt;/p&gt;
   href=&quot;../Summit/2024/program.html&quot;&gt;Program&lt;/a&gt; and &lt;a
   href=&quot;../Summit/2024/abstracts2024.html&quot;&gt;Abstracts&lt;/a&gt; pages. Thanks to
   all the speakers for making the seL4 Summit 2024 a great success!
-&lt;/p&gt;
-
-    </content>
-  </entry>
-  <rights>Copyright 2025 seL4 Foundation</rights>
-  <entry>
-    <title>seL4 Summit 2024 Anniversary Panel Session</title>
-    <link rel="alternate" type="text/html" href="https://sel4.systems/news/2024.html#panel24"/>
-    <id>https://sel4.systems/news/2024.html#panel24</id>
-    <published>Fri, 11 Oct 2024 00:00:00 +0000</published>
-    <updated>Fri, 11 Oct 2024 00:00:00 +0000</updated>
-    <content type="html">
-      &lt;p&gt;
-    seL4 celebrated &lt;a href=&quot;/news/2024.html#sel4-day&quot;&gt;three key anniversaries in 2024&lt;/a&gt;. To celebrate these key anniversaries, a special panel will gather at the &lt;a href=&quot;/Summit/2024&quot;&gt;seL4 Summit 2024&lt;/a&gt; to reflect on the journey over the past 20 years and discuss the future ahead.
-&lt;/p&gt;
-&lt;p&gt;
-    The panel will cover the journey from the early days (2004-2009) to the developments over the years (2009-present), and then look to the future, with key players outlining their visions for seL4 in the next 20 years. The panel will be a mix of in-person anecdotes, videos, and quotes, including participants from Collins Aerospace, DARPA, Dornerworks, Kry10, Proofcraft, The University of Melbourne and UNSW.
-&lt;/p&gt;
-&lt;p&gt;
-    The panel will be moderated by Nick Spinale from Colias Group, LLC.
 &lt;/p&gt;
 
     </content>
