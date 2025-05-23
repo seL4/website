@@ -8,7 +8,7 @@ sub: '
 <p>
   The seL4 Summit 2025 will feature a combination of technical research and development, real-world seL4 deployment
   insights, in-depth interactive discussions, thought-provoking keynotes, panel discussions, as well as informal
-  social activities. Videos will be made available on the <a
+  <a href="#social">social activities</a>. Videos will be made available on the <a
     href="https://www.youtube.com/@seL4">seL4 YouTube channel</a> after the event.
 </p>'
 layout: card
@@ -31,3 +31,50 @@ layout: card
 </h3>
 
 {% include section-end-without-up-arrow.html %}
+
+<!-- Social Activities section -->
+{% include section-start.html
+  id = "social"
+  heading = "Social Activities"
+  intro = ""
+%}
+
+<div>
+<ul role="list" class="space-y-12 divide-y divide-gray-200 dark:text-light xl:col-span-3">
+
+  {% include summit-list-item.html
+    img = "/images/summit/prague-old-town.jpg"
+    alt = "Prague Old Town"
+    heading = "Prague Old Town & Josefov Walking Tour"
+    text = 'June will take a group on the Old Town walking tour.
+    <br>
+    <strong>Date:</strong> Tuesday Sep 2, 2pm<br>
+    <strong>Cost:</strong> Free, but bookings are essential. Guides earn their money with tips.<br>
+    <strong>Details:</strong> Find out more on the <a
+    href="https://freewalkingtourprague.eu/tours/free/prague-old-town">
+    free walking tour website</a><br>
+    <strong>Location: </strong><a
+    href="https://maps.app.goo.gl/k2sTRK61mMoUYKCV6">Powder Tower
+    Tower</a>'
+  %}
+
+  {% include summit-list-item.html
+    img = "/images/summit/prague-clock.jpg"
+    alt = "Prague Astronomical Clock Tower"
+    heading = "Prague Astronomical Clock Tour"
+    text = '[Person] will take a group to see the Prague Astronomical Clock
+    Tower.<br>
+    <strong>Date:</strong>Tuesday Sep 2, 1:45pm, for a tour starting at 2pm<br>
+    <strong>Cost:</strong> 350 CZK (~16 USD) entry + 150 CZK (~7 USD) for the
+    Circuit A guided tour.<br>
+    <strong>Details:</strong> Find out more on the <a
+    href="https://prague.eu/en/objevujte/old-town-hall-with-astronomical-clock-staromestska-radnice-s-orlojem/">
+    official website</a><br>
+    <strong>Location: </strong>Ticket Office on the ground floor of the <a
+    href="https://maps.app.goo.gl/yEHvAGiYjzyrSCLt8">Astronomical Clock
+    Tower</a>'
+  %}
+
+</ul>
+</div>
+{% include section-end.html %}
