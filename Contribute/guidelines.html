@@ -1,0 +1,87 @@
+---
+# Copyright 2020 seL4 Project a Series of LF Projects, LLC.
+# SPDX-License-Identifier: CC-BY-SA-4.0
+title: Contributing to seL4
+sub: '
+  <p>We welcome and encourage community contribution to the seL4 ecosystem.
+     Given the application areas of seL4, quality control and assurance are
+     imperative. Read on to learn how and where you can contribute, and how to get
+     your contributions accepted.</p>
+  <img src="../images/code-skewed.png" alt="screenshot of seL4 code"
+       class="mt-8 p-4 w-2/3 mx-auto">
+  '
+layout: card
+redirect_from: /Contribute/home.pml
+pre: "Contribution overview"
+pre_link: "./"
+---
+
+<div class="theprose [&_h2]:text-left mx-auto -mt-10 mb-18 sm:mb-24">
+
+<h3>We welcome contributions to all aspects of the seL4 ecosystem:</h3>
+
+<ul>
+  <li class="list-tick">Code and documentation contributions via pull requests on
+    <a href="https://github.com/seL4">GitHub</a>. You should be aware of the seL4
+    <a href="{% link Contribute/conventions.html %}">coding conventions and
+    requirements</a> and the <a href="dco.html">developer certificate of
+    origin</a>.  See <a href="#code">more details below.</a>
+  </li>
+  <li class="list-tick">Design and API contributions via the
+    <a href="{% link Contribute/rfc-process.md %}">Request for Comments (RFC) process</a></li>
+  <li class="list-tick">Asking questions and helping out others on
+    <a href="{% link support.html %}">our community channels</a></li>
+</ul>
+
+The <a href="{% link Contribute/conduct.md %}">seL4 code of conduct</a> applies
+to all contributions.
+
+
+<h2 id="code">Code, Proofs, and Documentation</h2>
+
+<p>
+  Code, proof, and documentation contributions are via pull requests on
+  repositories in the <a href="https://github.com/seL4">seL4 GitHub org</a>. To
+  increase the likelihood that your pull request receives interest and reviews,
+  please follow the guidelines on the page for
+  <a href="{% link Contribute/conventions.html %}">coding conventions and
+  requirements</a>. The <a href="dco.html">developer certificate of origin</a>
+  requirement applies to all pull requests, including documentation and proof
+  contributions.
+</p>
+<p>In general, quality assurance requirements are highest for kernel
+contributions. They are more standard and faster-paced for user-level frameworks
+and libraries.</p>
+<p>
+  Note that larger changes, such as an architecture port, or adding a new
+  feature to the kernel, requires a
+  <a href="{% link Contribute/rfc-process.md %}">RFC</a> first, in which you
+  describe the change and
+  get feedback from the community. Contributions to user-level frameworks and
+  libraries are less formal, but we still recommend that you discuss any larger
+  contributions <a href="{% link support.html %}">with the community</a>
+  before starting work on them.
+</p>
+
+<p>
+  Anyone can help review pull requests, but only people that have been granted the
+  <a href="{% link Contribute/roles.md %}">Committer</a> role by the
+  <a href="{% link Foundation/TSC/index.html %}">Technical Steering
+  Committee</a> can merge them. Committers are the people responsible for maintaining
+  the quality and correctness of the code.
+</p>
+
+
+<p>
+  For the specific case of contributing a platform port, please read
+  the <a href="{% link Contribute/platform-ports.md %}">platform contributions
+  guide</a>.
+  The <a href="https://docs.sel4.systems">seL4 docsite</a> has additional
+  guidance for <a
+  href="https://docs.sel4.systems/projects/sel4/kernel-contribution.html">kernel
+  contributions</a>, as well as <a
+  href="https://docs.sel4.systems/processes/docs-contributing.html">guidance</a>
+  for contributing to the docsite itself.
+</p>
+
+</div>

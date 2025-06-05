@@ -6,6 +6,8 @@ sub: "How to contribute a platform port and what it means
       to be a long-term platform maintainer."
 img: /images/circuit-boards.png
 img_alt: "Collection of different types of embedded CPU modules"
+pre: "Contribution overview"
+pre_link: "./"
 ---
 
 While it is exciting to see seL4 running on as many platforms as possible,

@@ -7,6 +7,8 @@ sub: The seL4 Foundation defines the roles of Contributor, Reviewer,
      Committer, System Admin, and TSC member for seL4 development.
 svg: _icons/users.svg
 svg_class: "text-logogreen mx-auto w-1/5 stroke-1"
+pre: "Contribution overview"
+pre_link: "./"
 ---
 
 Apart from Contributor, which anyone can be, you can become a member of any of
