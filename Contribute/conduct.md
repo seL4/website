@@ -5,6 +5,8 @@ title: seL4 Code of Conduct
 sub: "Be nice, considerate, and constructive."
 img: /images/stone-with-a-painted-smile.jpg
 img_class: "w-2/3 mx-auto rounded-lg object-cover aspect-16/9"
+pre: "Contribution overview"
+pre_link: "./"
 ---
 
 ## Conduct
