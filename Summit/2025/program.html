@@ -21,13 +21,338 @@ layout: card
   heading = "Program-at-a-glance"
 %}
 
-
 <div class="w-full md:w-3/4 lg:w-3/4 mt-8 mx-auto aspect-5/2">
   {% svg /images/summit/program-early-2025.drawio.svg width="100%" %}
 </div>
 
-<h3 class="pt-20 pb-20 text-center h3-size text-dark">
-  Detailed program coming soon. Stay tuned!
-</h3>
-
 {% include section-end-without-up-arrow.html %}
+
+
+
+<!-- Main Program section -->
+{% include section-start.html
+  id = "program"
+  heading = "Main Program"
+  intro = '
+    <p>
+      All times are local time in Prague, Czech Republic (GMT+2). <!--Session chairs shown on right.-->
+    </p>
+    <p>
+      See the <a href="https://events.linuxfoundation.org/sel4-summit/program/schedule/">Schedule</a> on LF Events.
+    </p>
+    '
+%}
+
+{% include prelim-program-start.html %}
+
+  {% include prelim-program-item.html
+    day = "1"
+    date = "3 September 2025"
+  %}
+
+  {% include prelim-program-item.html
+    chair = ""
+    num-talks = 2
+    time = "9:00 - 9:10"
+    title = "Welcome"
+    presenter = "Nick Spinale"
+    affiliation = "Colias Group"
+  %}
+
+  {% include prelim-program-item.html
+    id = ""
+    time = "9:10 - 10:00"
+    type = "Keynote"
+    title = "TBD"
+    presenter = "TBD"
+    affiliation = "TBD"
+  %}
+
+  {% include prelim-program-item.html
+    break = "Break"
+  %}
+
+  {% include prelim-program-item.html
+    id = ""
+    time = "10:30 - 11:00"
+    title = "The next 700 verified seL4 platforms"
+    presenter = "Gerwin Klein"
+    affiliation = "Proofcraft"
+  %}
+
+  {% include prelim-program-item.html
+    id = ""
+    time = "10:30 - 11:00"
+    title = "Model-based Development for seL4 Microkit/Rust with Integrated Formal Methods using HAMR"
+    presenter = "John Hatcliff"
+    affiliation = "Kansas State University"
+  %}
+
+  {% include prelim-program-item.html
+    id = ""
+    time = "11:00 - 11:30"
+    title = "Verified ZynqMP DMA Driver in Concurrent Separation Logic"
+    presenter = "Gordon Stewart"
+    affiliation = "Riverside Research"
+  %}
+
+  {% include prelim-program-item.html
+    id = ""
+    time = "11:30 - 12:00"
+    title = "seL4 on Big Iron: Experiences and recommendations from Neutrality's Atoll hypervisor"
+    presenter = "David Cock"
+    affiliation = "Neutrality"
+  %}
+
+  {% include prelim-program-item.html
+    break = "Lunch"
+  %}
+
+  {% include prelim-program-item.html
+    id = ""
+    time = "13:30- 14:15"
+    title = "Science, Engineering, Craft, Magic - Revolutions in the field of Software"
+    presenter = "Boyd Multerer"
+    affiliation = "Kry10"
+  %}
+
+  {% include prelim-program-item.html
+    id = ""
+    time = "14:15 - 14:30"
+    title = "A program logic for seL4-based system verification"
+    presenter = "Matt Brecknell"
+    affiliation = "Kry10"
+  %}
+
+  {% include prelim-program-item.html
+    id = ""
+    time = "14:30 - 14:45"
+    title = "A Verified, High-Performance, IPv6 Network Stack"
+    presenter = "Alain Kägi"
+    affiliation = "Lewis & Clark College"
+  %}
+
+  {% include prelim-program-item.html
+    id = ""
+    time = "14:45 - 15:00"
+    title = "Improving Confidential Computing with seL4: A Promising Guest OS Solution"
+    presenter = "Alexander Weidinger"
+    affiliation = "Fraunhofer AISEC"
+  %}
+
+  {% include prelim-program-item.html
+    break = "Break"
+  %}
+
+  {% include prelim-program-item.html
+    id = ""
+    time = "15:30 - 16:00"
+    title = "Towards Dependable System Services on seL4"
+    presenter = "Yanyan Shen"
+    affiliation = "NIO"
+  %}
+
+  {% include prelim-program-item.html
+    id = ""
+    time = "16:00 - 16:30"
+    title = "Porting NASA's core Flight System to Magnetite on seL4"
+    presenter = "Juliana Furgala"
+    affiliation = "MIT Lincoln Laboratory"
+  %}
+
+  {% include prelim-program-item.html
+    id = ""
+    time = "16:30 - 17:00"
+    title = "Integration of seL4 in a Flight Vehicle Mission System"
+    presenter = "Juliana Furgala"
+    affiliation = "MIT Lincoln Laboratory"
+  %}
+
+  {% include prelim-program-item.html
+    event = "Reception @ Červený Jelen 18:00"
+  %}
+
+  {% include prelim-program-item.html
+    day = "2"
+    date = "4 September 2025"
+  %}
+
+  {% include prelim-program-item.html
+    id = ""
+    time = "9:00 - 9:45"
+    title = "Panel"
+  %}
+
+  {% include prelim-program-item.html
+    id = ""
+    time = "9:45 - 10:00"
+    title = "seL4 Foundation update"
+    presenter = "June Andronick"
+    affiliation = "seL 4 Foundation"
+  %}
+
+  {% include prelim-program-item.html
+    break = "Break"
+  %}
+
+  {% include prelim-program-item.html
+    id = ""
+    time = "10:30 - 11:00"
+    title = "FPGA based Accelerators w/ Microkit"
+    presenter = "Wanja Zaeske"
+    affiliation = "German Aerospace Center (DLR)"
+  %}
+
+  {% include prelim-program-item.html
+    id = ""
+    time = "11:00 - 11:30"
+    title = "A highly dynamic OS based on Genode and seL4"
+    presenter = "Alexander Boettcher"
+    affiliation = "Genode Labs"
+  %}
+
+  {% include prelim-program-item.html
+    id = ""
+    time = "11:30 - 12:00"
+    title = "CellulOS: An OS for comparing Isolation Mechanisms"
+    presenter = "Sid Agrawal"
+    affiliation = "University of British Columbia"
+  %}
+
+  {% include prelim-program-item.html
+    break = "Lunch"
+  %}
+
+  {% include prelim-program-item.html
+    id = ""
+    time = "13:30 - 13:45"
+    title = "Rust-based drivers and applications on seL4"
+    presenter = "Robbie VanVossen"
+    affiliation = "DornerWorks"
+  %}
+
+  {% include prelim-program-item.html
+    id = ""
+    time = "13:45 - 14:00"
+    title = "Porting seL4 to the RISC-V SoC, toward a Secure and High-Performance RISC-V AI Platform"
+    presenter = "Yuning Liang"
+    affiliation = "Deep Computing"
+  %}
+
+  {% include prelim-program-item.html
+    id = ""
+    time = "14:00 - 14:15"
+    title = "SureVoice Solid"
+    presenter = "Peter de Ridder"
+    affiliation = "MEP"
+  %}
+
+  {% include prelim-program-item.html
+    id = ""
+    type = "Deep Dive"
+    time = "14:15 - 15:00"
+    title = "Trustworthy Systems R&D Update"
+    presenter = "Gernot Heiser"
+    affiliation = "UNSW Sydney"
+  %}
+
+  {% include prelim-program-item.html
+    break = "Break"
+  %}
+
+  {% include prelim-program-item.html
+    id = ""
+    time = "15:30 - 16:00"
+    title = "Verifying Kernel–Userland Integration for LionsOS"
+    presenter = "Rob Sison"
+    affiliation = "UNSW Sydney"
+  %}
+
+  {% include prelim-program-item.html
+    id = ""
+    time = "16:00 - 16:30"
+    title = "Verifying Device Drivers with Pancake"
+    presenter = "Junming Zhao"
+    affiliation = "UNSW Sydney"
+  %}
+
+  {% include prelim-program-item.html
+    id = ""
+    time = "16:30 - 17:00"
+    title = "Dividing Timelines to Verify seL4 Applications"
+    presenter = "Thomas Sewell"
+    affiliation = "UNSW Sydney"
+  %}
+
+  {% include prelim-program-item.html
+    day = "3"
+    date = "5 September 2025"
+  %}
+
+  {% include prelim-program-item.html
+    id = ""
+    time = "9:00 - 9:50"
+    type = "Keynote"
+    title = "TBD"
+    presenter = "Sebastian Jester"
+    affiliation = "Cyberagentur"
+  %}
+
+  {% include prelim-program-item.html
+    id = ""
+    time = "9:50 - 10:00"
+    title = "Announcements"
+    presenter = "June Andronick"
+    affiliation = "seL4 Foundation"
+  %}
+
+  {% include prelim-program-item.html
+    break = "Break"
+  %}
+
+  {% include prelim-program-item.html
+    id = ""
+    type = "Deep Dive"
+    time = "10:30 - 11:30"
+    title = "Demystifying the seL4 specification"
+    presenter = "Mathieu Paturel, Matt Brecknell"
+    affiliation = "UNSW Sydney, Kry10"
+  %}
+
+  {% include prelim-program-item.html
+    id = ""
+    time = "11:30 - 12:00"
+    title = "A Deep Dive into seL4’s Binary Verification Story"
+    presenter = "Nick Spinale"
+    affiliation = "Colias Group"
+  %}
+
+  {% include prelim-program-item.html
+    break = "Lunch"
+  %}
+
+  {% include prelim-program-item.html
+    time = "13:30 - 14:15"
+    title = "BoFs"
+  %}
+
+  {% include prelim-program-item.html
+    time = "14:15 -  15:00"
+    title = "BoFs"
+  %}
+
+  {% include prelim-program-item.html
+    time = "15:00 - 15:15"
+    title = "BoF Wrap-up"
+  %}
+
+  {% include prelim-program-item.html
+    id = ""
+    time = "15:15 - 15:30"
+    title = "Concluding Remarks"
+    presenter = "Robbie VanVossen"
+    affiliation = "DornerWorks"
+  %}
+
+{% include program-end.html %}
+{% include section-end.html %}
