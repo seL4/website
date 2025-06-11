@@ -52,6 +52,35 @@ redirect_from: /Foundation/Summit/2025/index.html
 {% include summit-about.html %}
 
 
+<!-- Keynotes section -->
+{% include section-start.html
+  id = "keynotes"
+  heading = "Keynotes"
+%}
+<div class="mt-6 sm:mt-12">
+{% include bio-items-start.html %}
+{% include keynote-item.html
+  name = "John Hatcliff"
+  role = "University Distinguished Professor"
+  img = "/images/summit/john-h-square.jpg"
+  affiliation = "Kansas State University"
+  affiliation_link = "https://www.k-state.edu/"
+  abstract-title = "Model-based Development for seL4 Microkit/Rust with Integrated Formal Methods using HAMR"
+  abstract-link = "abstracts2025.html#a-model-based"
+%}
+{% include keynote-item.html
+  name = "Sebastian Jester"
+  role = "Head of Secure Hardware and Supply Chains"
+  img = "/images/summit/"
+  affiliation = "Cyberagentur"
+  affiliation_link = "https://www.cyberagentur.de/en/"
+  abstract-title = ""
+  abstract-link = "abstracts2024.html#a-cyberagentur"
+  %}
+{% include bio-items-end.html %}
+</div>
+{% include section-end.html %}
+
 
  <!-- PC section -->
  {% include section-start.html
