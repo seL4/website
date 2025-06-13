@@ -1,0 +1,25 @@
+<p>
+  At the 2024 summit we presented Atoll, a new seL4-based hypervisor  platform
+  built from the ground up to achieve seL4-level provable isolation  between
+  client VMs in a cloud hosting environment. Atoll differs from most  existing
+  seL4 applications in targeting "big iron" machines: servers with  hundreds of
+  cores, terabytes of main memory, and hundreds of Gbps of  network bandwidth.
+  This presents some unique challenges, and stresses the  seL4 model and
+  implementation in new and sometimes unexpected ways.
+</p>
+<p>
+  In this talk, we will report our experiences after a year of intensive design
+  and  development and present recommendations for the future direction of seL4
+  to support such machines. We will focus particularly on both the benefits and
+  limitations of the statically-partitioned multikernel model (the agreed path
+  to multicore seL4): which limitations can be easily worked around, which take
+  more effort, and which may require changes in seL4 itself.
+</p>
+<p>
+  We will cover the essential aspects of hardware support for modern self
+  virtualising architectures. This includes SR-IOV, first-class IOMMU support,
+  interrupt virtualisation, and the secure and correct initialisation of a
+  (mostly)  static seL4 system from a dynamic boot environment e.g. ACPI and
+  UEFI. We  intend this presentation to serve as an entry point for an in-depth
+  discussion  of the future of seL4 on modern non-embedded hardware.
+</p>
