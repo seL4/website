@@ -1,0 +1,33 @@
+<p>
+  We are all familiar with the verification of the seL4 kernel, completed in
+  2009, and the growth of a community of developers building systems on top of
+  seL4. Many of these systems themselves contain verified components or have a
+  verified design. The challenge of assembling a multi-component seL4
+  application that is verified in total, to the same standard as the kernel
+  itself, remains to be solved.
+</p>
+<p>
+  A crucial part of the challenge is concurrency. The kernel is never preempted,
+  and so, on a single-threaded CPU, it runs without any concurrency concerns.
+  Its verification can ignore concurrency and treat kernel entry events as
+  “black box” transitions from input state to output state. User level tasks
+  cannot avoid concurrency. Even on a single-threaded CPU, they may be
+  preempted, and exist within the appearance of a concurrent environment.
+  Verification of user level tasks in context requires a concurrent semantics,
+  which is much more complicated.
+</p>
+<p>
+  This talk is about one specific aspect of the problem. We would like the user
+  level concurrent semantics to mesh with the verified kernel semantics, with,
+  for instance, the meaning of system calls connected to their meaning in the
+  kernel API. For these purposes, the existing “black box” treatment of the
+  kernel creates some complications. A system call at user level triggers a
+  kernel entry, but the resulting kernel execution may perform other tasks in
+  addition to handling the system call.
+</p>
+<p>
+  We aim to address this by introducing a new variant of the seL4 abstract spec
+  that splits compound events. I will report on our progress in verifying that
+  the variant abstract spec is equivalent, and outline our plan to use this
+  alternative specification to construct a multi-timeline system semantics.
+</p>

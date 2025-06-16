@@ -1,0 +1,31 @@
+<p>
+  This talk reports on advances in the development of a key building block
+  towards the grand vision of end-to-end verification of a real world OS at
+  UNSW’s Trustworthy Systems group – the integration of kernel and userland
+  verification efforts – as part of verifying the trusted computing base of the
+  seL4 Microkernel-based LionsOS.
+</p>
+<p>
+  While recent work on the verification of seL4 Device Driver Framework
+  components written in Pancake has demonstrated the suitability of SMT
+  solver-based automated theorem proving for trusted userland OS code, a
+  specification gap remains between such verifications and those of kernel code
+  because of the abstraction needed to make the former tractable and the detail
+  needed to make the latter accurate.
+</p>
+<p>
+  Such a gap arises between our SMT solver-based verification of the seL4
+  Microkit, a trusted library LionsOS uses to manage and implement communication
+  between userland OS services, and the well known Isabelle/HOL verification of
+  the seL4 kernel on which these run. The Microkit as verified relies on seL4’s
+  system calls that it invokes fulfilling particular functional properties and
+  maintaining certain system configuration invariants as abstracted for
+  Microkit-specific concepts.
+</p>
+<p>
+  However, seL4 has never been verified to implement such system call-specific
+  properties to a suitable abstraction level, and no prior OS verification work
+  has bridged this gap for system calls that block on the actions of other
+  processes. I will report on our progress in bridging these gaps for seL4’s
+  system calls and developing approaches to compose the needed formal proofs.
+</p>
