@@ -9,13 +9,6 @@
       "name": "NIO",
       "logo": "NIO.svg",
       "url": "http://nio.com/"
-    },
-    {
-      "name": "UNSW Sydney",
-      "logo": "UNSW.svg",
-      "url": "https://unsw.edu.au/",
-      "founding": true,
-      "endorsed": true
     }
   ],
   "general": [
@@ -116,6 +109,13 @@
       "name": "University of Kansas",
       "logo": "ku-institute.svg",
       "url": "https://ku.edu/"
+    },
+    {
+      "name": "UNSW Sydney",
+      "logo": "UNSW.svg",
+      "url": "https://unsw.edu.au/",
+      "founding": true,
+      "endorsed": true
     }
   ]
 }
