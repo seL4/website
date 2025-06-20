@@ -8,7 +8,7 @@ sub: '
 <p>
   The seL4 Summit 2025 will feature a combination of technical research and development, real-world seL4 deployment
   insights, in-depth interactive discussions, thought-provoking keynotes, panel discussions, as well as informal
-  social activities. Videos will be made available on the <a
+  <a href="#social">social activities</a>. Videos will be made available on the <a
     href="https://www.youtube.com/@seL4">seL4 YouTube channel</a> after the event.
 </p>'
 layout: card
@@ -339,4 +339,84 @@ layout: card
   %}
 
 {% include program-end.html %}
+{% include section-end.html %}
+
+<!-- Social Activities section -->
+{% include section-start.html
+  id = "social"
+  heading = "Social Activities"
+  intro = "A number of social activities are being organised for Tuesday Sep 2,
+  prior to the summit. The idea is that at least one person (whose name is
+  mentioned below) will do this activity at the set time. You're welcome to book
+  yourself directly using the link provided, and do the activity at the same
+  time. Please note that some activities are free, and others are available for
+  purchase either online or onsite."
+  %}
+
+<div>
+<ul role="list" class="space-y-12 divide-y divide-gray-200 dark:text-light xl:col-span-3">
+
+  {% include summit-list-item.html
+    img = "/images/summit/prague-old-town.jpg"
+    alt = "Prague Old Town"
+    heading = "Prague Old Town & Josefov Walking Tour"
+    text = 'Join <a href="https://proofcraft.systems/#june">June Andronick</a> on a walking tour of the old town.<br><br>
+    <strong>Date:</strong> Tuesday Sep 2, 2025<br>
+    <strong>Time:</strong> 2pm<br>
+    <strong>Cost:</strong> Free, but <a href="https://freewalkingtourprague.eu/tours/free/prague-old-town">bookings</a> are essential. Guides earn their money with tips.<br>
+    <strong>Details:</strong> <a
+    href="https://freewalkingtourprague.eu/tours/free/prague-old-town">
+    Free walking tour website</a><br>
+    <strong>Location: </strong><a
+    href="https://maps.app.goo.gl/k2sTRK61mMoUYKCV6">Powder Tower
+    Tower</a>'
+  %}
+
+  {% include summit-list-item.html
+    img = "/images/summit/prague-castle.jpg"
+    alt = "Prague Castle"
+    heading = "Prague Castle"
+    text = 'Visit the Prague Castle with [Person].<br><br>
+    <strong>Date:</strong> Tuesday Sep 2, 2025<br>
+    <strong>Time:</strong> 2pm<br>
+    <strong>Cost:</strong> ~20 USD, book <a href="https://www.ticketportal.cz/event/PRAZSKY-HRAD-2025-PRAGUE-CASTLE-2025?imedium=search">online</a>.<br>
+    <strong>Details:</strong> Visiting the <a
+    href="https://www.hrad.cz/en/prague-castle-for-visitors">castle</a><br>
+    <strong>Location: </strong><a
+    href="https://maps.app.goo.gl/FwhgnYsLwpjdWzpP7">Prague Castle</a>'
+  %}
+
+  {% include summit-list-item.html
+    img = "/images/summit/prague-clock.jpg"
+    alt = "Prague Astronomical Clock Tower"
+    heading = "Prague Astronomical Clock Tower"
+    text = 'Join [Person] for a guided tour Prague Astronomical Clock Tower.<br><br>
+    <strong>Date:</strong> Tuesday Sep 2, 2025<br>
+    <strong>Time:</strong> 1:45pm, for a tour starting at 2pm<br>
+    <strong>Cost:</strong> ~16 USD entry + ~7 USD for the guided tour.<br>
+    <strong>Details:</strong> <a
+    href="https://prague.eu/en/objevujte/old-town-hall-with-astronomical-clock-staromestska-radnice-s-orlojem/">
+    Official website</a><br>
+    <strong>Location: </strong>Ticket Office on the ground floor of the <a
+    href="https://maps.app.goo.gl/yEHvAGiYjzyrSCLt8">Astronomical Clock
+    Tower</a>'
+  %}
+
+  {% include summit-list-item.html
+    img = "/images/summit/prague-river.jpg"
+    alt = "Prague River"
+    heading = "Prague Sightseeing Cruise"
+    text = 'Do the Prague River sightseeing cruise with [Person].<br><br>
+    <strong>Date:</strong> Tuesday Sep 2, 2025<br>
+    <strong>Time:</strong> 2pm<br>
+    <strong>Cost:</strong> Tickets from ~21 USD<br>
+    <strong>Details:</strong> Find out more on the <a
+    href="https://www.prague-boats.cz/one-hour-river-cruise">
+    cruise website</a><br>
+    <strong>Location: </strong><a
+    href="https://maps.app.goo.gl/EBjaujbvhoYFPCW26">Prague Boats</a>'
+  %}
+
+</ul>
+</div>
 {% include section-end.html %}
