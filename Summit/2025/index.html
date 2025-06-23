@@ -10,9 +10,9 @@ redirect_from: /Foundation/Summit/2025/index.html
 {% include summit-heading.html
   about = 'The seL4 Summit is the annual international summit on the seL4
   microkernel and associated technology, tools, infrastructure, products,
-  projects, and people. The <a href="#pc">program committee</a> will assemble
-  thought-provoking talks, keynotes and discussions. Stay tuned! The seL4 Summit
-  is made possible thanks to our <a href="#sponsors">sponsors</a>.'
+  projects, and people. The <a href="#pc">program committee</a> assembles
+  thought-provoking talks, <a href="#keynotes">keynotes</a> and discussions. The
+  seL4 Summit is made possible thanks to our <a href="#sponsors">sponsors</a>.'
   city = "Prague"
   date = "3 - 5 September 2025"
   reg-link = "https://events.linuxfoundation.org/sel4-summit/register/"
@@ -42,7 +42,7 @@ redirect_from: /Foundation/Summit/2025/index.html
   center=true
   icon="book-open"
   title="Program"
-  body="Preliminary program of the seL4 Summit 2025."
+  body="Program of the seL4 Summit 2025."
   link="program.html"
   %}
 </div>
@@ -51,6 +51,35 @@ redirect_from: /Foundation/Summit/2025/index.html
 <!-- About the summit section -->
 {% include summit-about.html %}
 
+
+<!-- Keynotes section -->
+{% include section-start.html
+  id = "keynotes"
+  heading = "Keynotes"
+%}
+<div class="mt-6 sm:mt-12">
+{% include bio-items-start.html %}
+{% include keynote-item.html
+  name = "John Hatcliff"
+  role = "University Distinguished Professor"
+  img = "/images/summit/john-h-square.jpg"
+  affiliation = "Kansas State University"
+  affiliation_link = "https://www.k-state.edu/"
+  abstract-title = "Model-based Development for seL4 Microkit/Rust with Integrated Formal Methods using HAMR"
+  abstract-link = "abstracts2025.html#a-model-based"
+%}
+{% include keynote-item.html
+  name = "Sebastian Jester"
+  role = "Head of Secure Hardware and Supply Chains"
+  img = "/images/summit/cyberagentur-avatar.svg"
+  affiliation = "Cyberagentur"
+  affiliation_link = "https://www.cyberagentur.de/en/"
+  abstract-title = "Formally verified IT – Germany’s next cybersecurity paradigm"
+  abstract-link = "abstracts2025.html#a-cyberagentur"
+  %}
+{% include bio-items-end.html %}
+</div>
+{% include section-end.html %}
 
 
  <!-- PC section -->

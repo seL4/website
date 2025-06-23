@@ -8,7 +8,7 @@ sub: '
 <p>
   The seL4 Summit 2025 will feature a combination of technical research and development, real-world seL4 deployment
   insights, in-depth interactive discussions, thought-provoking keynotes, panel discussions, as well as informal
-  social activities. Videos will be made available on the <a
+  <a href="#social">social activities</a>. Videos will be made available on the <a
     href="https://www.youtube.com/@seL4">seL4 YouTube channel</a> after the event.
 </p>'
 layout: card
@@ -21,13 +21,423 @@ layout: card
   heading = "Program-at-a-glance"
 %}
 
-
 <div class="w-full md:w-3/4 lg:w-3/4 mt-8 mx-auto aspect-5/2">
-  {% svg /images/summit/program-early-2025.drawio.svg width="100%" %}
+  {% svg /images/summit/program-at-a-glance-2025.drawio.svg width="100%" %}
 </div>
 
-<h3 class="pt-20 pb-20 text-center h3-size text-dark">
-  Detailed program coming soon. Stay tuned!
-</h3>
-
 {% include section-end-without-up-arrow.html %}
+
+
+
+<!-- Main Program section -->
+{% include section-start.html
+  id = "program"
+  heading = "Main Program"
+  intro = '
+    <p>
+      All times are local time in Prague, Czech Republic (GMT+2). <!--Session chairs shown on right.-->
+    </p>
+    <p>
+      See the <a href="https://events.linuxfoundation.org/sel4-summit/program/schedule/">Schedule</a> on LF Events.
+    </p>
+    <p>
+      Timing of sessions and room locations are subject to change.
+    </p>
+    '
+%}
+
+{% include prelim-program-start.html %}
+
+  {% include prelim-program-item.html
+    day = "1"
+    date = "3 September 2025"
+  %}
+
+  {% include prelim-program-item.html
+    chair = ""
+    num-talks = 2
+    time = "9:00 - 9:10"
+    title = "Welcome"
+    presenter = "Nick Spinale"
+    affiliation = "Colias Group"
+  %}
+
+  {% include prelim-program-item.html
+    id = "p-model-based"
+    time = "9:10 - 10:00"
+    type = "Keynote"
+    title = "Model-based Development for seL4 Microkit/Rust with Integrated Formal Methods using HAMR"
+    presenter = "John Hatcliff, Jason Belt, Robby, Stefan Hallerstede, Robert VanVossen, Junaid Babar"
+    affiliation = "Kansas State University, Aarhus University, Dornerworks, Collins Aerospace"
+    abstract = "abstracts2025.html#a-model-based"
+  %}
+
+  {% include prelim-program-item.html
+    break = "Break"
+  %}
+
+  {% include prelim-program-item.html
+    id = "p-next-700"
+    time = "10:30 - 11:00"
+    title = "The next 700 verified seL4 platforms"
+    presenter = "Gerwin Klein"
+    affiliation = "Proofcraft"
+  %}
+
+  {% include prelim-program-item.html
+    id = "p-fpga-based"
+    time = "11:00 - 11:30"
+    title = "FPGA based Accelerators w/ Microkit"
+    presenter = "Wanja Zaeske on behalf of Vincent Janson"
+    affiliation = "German Aerospace Center (DLR)"
+  %}
+
+  {% include prelim-program-item.html
+    id = "p-big-iron"
+    time = "11:30 - 12:00"
+    title = "seL4 on Big Iron: Experiences and recommendations from Neutrality's Atoll hypervisor"
+    presenter = "David Cock"
+    affiliation = "Neutrality"
+  %}
+
+  {% include prelim-program-item.html
+    break = "Lunch"
+  %}
+
+  {% include prelim-program-item.html
+    id = "p-science-engineering"
+    time = "13:30 - 14:15"
+    title = "Science, Engineering, Craft, Magic - Revolutions in the field of Software"
+    presenter = "Boyd Multerer"
+    affiliation = "Kry10"
+  %}
+
+  {% include prelim-program-item.html
+    id = "p-program-logic"
+    time = "14:15 - 14:30"
+    title = "A program logic for seL4-based system verification"
+    presenter = "Matt Brecknell"
+    affiliation = "Kry10"
+  %}
+
+  {% include prelim-program-item.html
+    id = "p-verified-high"
+    time = "14:30 - 14:45"
+    title = "A Verified, High-Performance, IPv6 Network Stack"
+    presenter = "Alain Kägi, Daniel Neshyba-Rowe, Caitlyn Wilde"
+    affiliation = "Lewis & Clark College"
+  %}
+
+  {% include prelim-program-item.html
+    id = "p-verified-zynqmp"
+    time = "14:45 - 15:15"
+    title = "Verified ZynqMP DMA Driver in Concurrent Separation Logic"
+    presenter = "Gordon Stewart"
+    affiliation = "Riverside Research"
+  %}
+
+  {% include prelim-program-item.html
+    break = "Break"
+  %}
+
+  {% include prelim-program-item.html
+    id = "p-towards-dependable"
+    time = "15:45 - 16:15"
+    title = "Towards Dependable System Services on seL4"
+    presenter = "Yanyan Shen, Dhammika Elkaduwe"
+    affiliation = "NIO"
+  %}
+
+  {% include prelim-program-item.html
+    id = "p-porting-nasa"
+    time = "16:15 - 16:45"
+    title = "Porting NASA's core Flight System to Magnetite on seL4"
+    presenter = "Juliana Furgala, Samuel Jero"
+    affiliation = "MIT Lincoln Laboratory"
+  %}
+
+  {% include prelim-program-item.html
+    id = "p-integration-sel4"
+    time = "16:45 - 17:15"
+    title = "Integration of seL4 in a Flight Vehicle Mission System"
+    presenter = "Darren Cofer"
+    affiliation = "Collins Aerospace"
+  %}
+
+  {% include prelim-program-item.html
+    event = "Reception @ Červený Jelen 18:30"
+  %}
+
+  {% include prelim-program-item.html
+    day = "2"
+    date = "4 September 2025"
+  %}
+
+  {% include prelim-program-item.html
+    id = "p-panel"
+    time = "9:00 - 9:45"
+    title = "Panel"
+  %}
+
+  {% include prelim-program-item.html
+    id = "p-foundation-update"
+    time = "9:45 - 10:00"
+    title = "seL4 Foundation update"
+    presenter = "June Andronick"
+    affiliation = "seL4 Foundation"
+  %}
+
+  {% include prelim-program-item.html
+    break = "Break"
+  %}
+
+  {% include prelim-program-item.html
+    id = "p-sculpt-os"
+    time = "10:30 - 11:00"
+    title = "Sculpt OS - a dynamic general-purpose OS powered by Genode on seL4"
+    presenter = "Alexander Boettcher, Sebastian Sumpf"
+    affiliation = "Genode Labs"
+  %}
+
+  {% include prelim-program-item.html
+    id = "p-cellulos"
+    time = "11:00 - 11:30"
+    title = "CellulOS: An OS for comparing Isolation Mechanisms"
+    presenter = "Sid Agrawal, Arya Stevinson, Linh Pham, Ethan Xu, Shaurya Patel, Hugo Lefeuvre, Aastha Mehta, Reto Achermann, Margo Seltzer"
+    affiliation = "University of British Columbia, Oracle, Hammerspace"
+  %}
+
+  {% include prelim-program-item.html
+    id = "p-improving-confidential"
+    time = "11:30 - 11:45"
+    title = "Improving Confidential Computing with seL4: A Promising Guest OS Solution"
+    presenter = "Alexander Weidinger"
+    affiliation = "Fraunhofer AISEC"
+  %}
+
+  {% include prelim-program-item.html
+    break = "Lunch"
+  %}
+
+  {% include prelim-program-item.html
+    id = "p-rust-based"
+    time = "13:30 - 13:45"
+    title = "Rust-based drivers and verified rust applications on seL4"
+    presenter = "Robbie VanVossen"
+    affiliation = "DornerWorks"
+  %}
+
+  {% include prelim-program-item.html
+    id = "p-porting-sel4"
+    time = "13:45 - 14:00"
+    title = "Porting seL4 to the RISC-V SoC, toward a Secure and High-Performance RISC-V AI Platform"
+    presenter = "Yuning Liang"
+    affiliation = "Deep Computing"
+  %}
+
+  {% include prelim-program-item.html
+    id = "p-surevoice"
+    time = "14:00 - 14:15"
+    title = "SureVoice Solid"
+    presenter = "Peter de Ridder"
+    affiliation = "MEP"
+  %}
+
+  {% include prelim-program-item.html
+    id = "p-trustworthy-systems"
+    type = "Deep Dive"
+    time = "14:15 - 15:00"
+    title = "Trustworthy Systems R&D Update"
+    presenter = "Gernot Heiser"
+    affiliation = "UNSW Sydney"
+  %}
+
+  {% include prelim-program-item.html
+    break = "Break"
+  %}
+
+  {% include prelim-program-item.html
+    id = "p-dividing-timelines"
+    time = "15:30 - 16:15"
+    title = "Dividing Timelines to Verify seL4 Applications"
+    presenter = "Thomas Sewell"
+    affiliation = "UNSW Sydney"
+  %}
+
+  {% include prelim-program-item.html
+    id = "p-verifying-device"
+    time = "16:15 - 16:45"
+    title = "Verifying Device Drivers with Pancake"
+    presenter = "Junming Zhao"
+    affiliation = "UNSW Sydney"
+  %}
+
+  {% include prelim-program-item.html
+    day = "3"
+    date = "5 September 2025"
+  %}
+
+  {% include prelim-program-item.html
+    id = "p-cyberagentur"
+    time = "9:00 - 9:50"
+    type = "Keynote"
+    title = "Ecosystem formally verifiable IT – provable Cybersecurity (EvIT)"
+    presenter = "Sebastian Jester"
+    affiliation = "Cyberagentur"
+    abstract = "abstracts2025.html#a-cyberagentur"
+  %}
+
+  {% include prelim-program-item.html
+    time = "9:50 - 10:00"
+    title = "Announcements"
+    presenter = "June Andronick"
+    affiliation = "seL4 Foundation"
+  %}
+
+  {% include prelim-program-item.html
+    break = "Break"
+  %}
+
+  {% include prelim-program-item.html
+    id = "p-demystifying"
+    type = "Deep Dive"
+    time = "10:30 - 11:30"
+    title = "Demystifying the seL4 specification"
+    presenter = "Mathieu Paturel"
+    affiliation = "UNSW Sydney"
+  %}
+
+  {% include prelim-program-item.html
+    id = "p-binary-verification"
+    time = "11:30 - 12:00"
+    title = "A Deep Dive into seL4’s Binary Verification Story"
+    presenter = "Nick Spinale"
+    affiliation = "Colias Group"
+  %}
+
+  {% include prelim-program-item.html
+    break = "Lunch"
+  %}
+
+  {% include prelim-program-item.html
+    time = "13:30 - 14:15"
+    title = "BoFs"
+  %}
+
+  {% include prelim-program-item.html
+    time = "14:15 -  15:00"
+    title = "BoFs"
+  %}
+
+  {% include prelim-program-item.html
+    time = "15:00 - 15:15"
+    title = "BoF Wrap-up"
+  %}
+
+  {% include prelim-program-item.html
+    time = "15:15 - 15:30"
+    title = "Concluding Remarks"
+    presenter = "Robbie VanVossen"
+    affiliation = "DornerWorks"
+  %}
+
+{% include program-end.html %}
+{% include section-end.html %}
+
+<!-- Social Activities section -->
+{% include section-start.html
+  id = "social"
+  heading = "Social Activities"
+  intro = "A number of informal social activities are being organised for
+  Tuesday Sep 2, prior to the summit. The idea is that at least one person
+  (whose name is mentioned below) will do this activity at the set time. You're
+  welcome to book yourself directly using the link provided, and do the activity
+  at the same time. Please note that some activities are free, and others are
+  available for purchase either online or onsite."
+  %}
+
+<div>
+<ul role="list" class="space-y-12 divide-y divide-gray-200 dark:text-light xl:col-span-3">
+
+  {% include summit-list-item.html
+    img = "/images/summit/prague-old-town.jpg"
+    alt = "Prague Old Town"
+    heading = "Prague Old Town & Josefov Walking Tour"
+    text = 'Join <a href="https://proofcraft.systems/#june">June Andronick</a> on a walking tour of the old town.<br><br>
+    <strong>Date:</strong> Tuesday Sep 2, 2025<br>
+    <strong>Time:</strong> 2pm<br>
+    <strong>Cost:</strong> Free, but <a href="https://freewalkingtourprague.eu/tours/free/prague-old-town">bookings</a> are essential. Guides earn their money with tips.<br>
+    <strong>Details:</strong> <a
+    href="https://freewalkingtourprague.eu/tours/free/prague-old-town">
+    Free walking tour website</a><br>
+    <strong>Location: </strong><a
+    href="https://maps.app.goo.gl/k2sTRK61mMoUYKCV6">Powder Tower
+    Tower</a>'
+  %}
+
+  {% include summit-list-item.html
+    img = "/images/summit/prague-castle.jpg"
+    alt = "Prague Castle"
+    heading = "Prague Castle"
+    text = 'Visit the Prague Castle.
+    <br><br>
+    We&apos;re looking for a volunteer to be the
+    point of contact for this activity. Please email <a
+    href="mailto:summit@sel4.systems">summit@sel4.systems</a> if you&apos;re
+    interested.
+    <br><br>
+    <strong>Date:</strong> Tuesday Sep 2, 2025<br>
+    <strong>Time:</strong> 2pm<br>
+    <strong>Cost:</strong> ~20 USD, book <a href="https://www.ticketportal.cz/event/PRAZSKY-HRAD-2025-PRAGUE-CASTLE-2025?imedium=search">online</a>.<br>
+    <strong>Details:</strong> Visiting the <a
+    href="https://www.hrad.cz/en/prague-castle-for-visitors">castle</a><br>
+    <strong>Location: </strong><a
+    href="https://maps.app.goo.gl/FwhgnYsLwpjdWzpP7">Prague Castle</a>'
+  %}
+
+  {% include summit-list-item.html
+    img = "/images/summit/prague-clock.jpg"
+    alt = "Prague Astronomical Clock Tower"
+    heading = "Prague Astronomical Clock Tower"
+    text = 'Go on a guided tour of the Prague Astronomical Clock Tower.
+    <br><br>
+    We&apos;re looking for a volunteer to be the
+    point of contact for this activity. Please email <a
+    href="mailto:summit@sel4.systems">summit@sel4.systems</a> if you&apos;re
+    interested.
+    <br><br>
+    <strong>Date:</strong> Tuesday Sep 2, 2025<br>
+    <strong>Time:</strong> 1:45pm, for a tour starting at 2pm<br>
+    <strong>Cost:</strong> ~16 USD entry + ~7 USD for the guided tour.<br>
+    <strong>Details:</strong> <a
+    href="https://prague.eu/en/objevujte/old-town-hall-with-astronomical-clock-staromestska-radnice-s-orlojem/">
+    Official website</a><br>
+    <strong>Location: </strong>Ticket Office on the ground floor of the <a
+    href="https://maps.app.goo.gl/yEHvAGiYjzyrSCLt8">Astronomical Clock
+    Tower</a>'
+  %}
+
+  {% include summit-list-item.html
+    img = "/images/summit/prague-river.jpg"
+    alt = "Prague River"
+    heading = "Prague Sightseeing Cruise"
+    text = 'Join the Prague River sightseeing cruise.
+    <br><br>
+    We&apos;re looking for a volunteer to be the
+    point of contact for this activity. Please email <a
+    href="mailto:summit@sel4.systems">summit@sel4.systems</a> if you&apos;re
+    interested.
+    <br><br>
+    <strong>Date:</strong> Tuesday Sep 2, 2025<br>
+    <strong>Time:</strong> 2pm<br>
+    <strong>Cost:</strong> Tickets from ~21 USD<br>
+    <strong>Details:</strong> Find out more on the <a
+    href="https://www.prague-boats.cz/one-hour-river-cruise">
+    cruise website</a><br>
+    <strong>Location: </strong><a
+    href="https://maps.app.goo.gl/EBjaujbvhoYFPCW26">Prague Boats</a>'
+  %}
+
+</ul>
+</div>
+{% include section-end.html %}
