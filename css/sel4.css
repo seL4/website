@@ -2497,14 +2497,14 @@
   .h-\[5\.5rem\] {
     height: 5.5rem;
   }
-  .h-\[35rem\] {
-    height: 35rem;
-  }
   .h-\[100px\] {
     height: 100px;
   }
   .h-\[18rem\] {
     height: 18rem;
+  }
+  .h-\[35rem\] {
+    height: 35rem;
   }
   .h-\[calc\(100vh-7rem\)\] {
     height: calc(100vh - 7rem);
@@ -2754,6 +2754,9 @@
   }
   .grid-cols-2 {
     grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+  .grid-cols-3 {
+    grid-template-columns: repeat(3, minmax(0, 1fr));
   }
   .grid-cols-4 {
     grid-template-columns: repeat(4, minmax(0, 1fr));
