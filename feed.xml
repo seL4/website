@@ -10,7 +10,39 @@
   <description>News feed about seL4, the seL4 Foundation, and the seL4 ecosystem.</description>
   <link rel="alternate">https://sel4.systems/news/</link>
   <link rel="self">https://sel4.systems/feed.xml</link>
-  <updated>Mon, 23 Jun 2025 00:00:00 +0000</updated>
+  <updated>Wed, 16 Jul 2025 00:00:00 +0000</updated>
+  <rights>Copyright 2025 seL4 Foundation</rights>
+  <entry>
+    <title>The new seL4 docsite is live!</title>
+    <link rel="alternate" type="text/html" href="https://sel4.systems/news/2025.html"/>
+    <id>https://sel4.systems/news/2025.html</id>
+    <published>Wed, 16 Jul 2025 00:00:00 +0000</published>
+    <updated>Wed, 16 Jul 2025 00:00:00 +0000</updated>
+    <content type="html">
+      &lt;p&gt;
+  We are excited to announce the launch of the new &lt;a
+  href=&quot;https://docs.sel4.systems/&quot;&gt;seL4 docsite&lt;/a&gt;! This redesigned
+  documentation site for the main seL4-related technologies provides a new
+  structure and layout, improved navigation and access to information.
+&lt;/p&gt;
+
+&lt;p&gt;
+  The docsite content will continue to evolve with incremental updates and
+  maintenance, and we welcome contributions from the community on documentation,
+  tutorials and manuals.
+&lt;/p&gt;
+
+&lt;p&gt;
+  We thank &lt;a href=&quot;https://www.ncsc.gov.uk/&quot;&gt;NCSC&lt;/a&gt; for their funding of this
+  project, which follows their support of the development of the new &lt;a href=&quot;/&quot;&gt;seL4 website&lt;/a&gt;.
+&lt;/p&gt;
+
+&lt;p&gt;
+  We welcome your feedback and we hope you enjoy the new site!
+&lt;/p&gt;
+
+    </content>
+  </entry>
   <rights>Copyright 2025 seL4 Foundation</rights>
   <entry>
     <title>The seL4 Summit 2025 Program and Keynotes</title>
@@ -731,33 +763,6 @@ for Tuesday 2 Sep 2025. Stay tuned for more info!&lt;/p&gt;
 
 &lt;p class=&quot;pt-6 sm:pt-8&quot;&gt;
   We will announce a Call for Presentations in the coming weeks. Stay tuned!
-&lt;/p&gt;
-
-    </content>
-  </entry>
-  <rights>Copyright 2025 seL4 Foundation</rights>
-  <entry>
-    <title>Cyberagentur joins the seL4 Foundation</title>
-    <link rel="alternate" type="text/html" href="https://sel4.systems/news/2025.html#member-cyberagentur"/>
-    <id>https://sel4.systems/news/2025.html#member-cyberagentur</id>
-    <published>Mon, 20 Jan 2025 00:00:00 +0000</published>
-    <updated>Mon, 20 Jan 2025 00:00:00 +0000</updated>
-    <content type="html">
-      &lt;p&gt;
-    The seL4 Foundation is pleased to welcome Germany&apos;s &lt;a
-    href=&quot;https://www.cyberagentur.de/en/&quot;&gt;Cyberagentur&lt;/a&gt; as
-    &lt;a href=&quot;/Foundation/Membership&quot;&gt;Associate
-    Member&lt;/a&gt;, coinciding with the &lt;a
-    href=&quot;https://www.cyberagentur.de/presse/ein-meilenstein-fuer-it-sicherheit-in-deutschland/&quot;&gt;launch&lt;/a&gt;
-    of five projects in its research program on an “Ecosystem of formally
-    verified IT &amp;mdash; provable cybersecurity (EvIT)”.
-&lt;/p&gt;
-&lt;p&gt;Two of the projects include
-    work enhancing seL4. The Cyberagentur is joining the seL4 Foundation to
-    underline the importance of this approach for making both highly complex IT
-    systems and critical infrastructures more secure and to attract further
-    supporters. The Cyberagentur funds cybersecurity research projects with a
-    high risk and a very high potential of disruption.
 &lt;/p&gt;
 
     </content>
