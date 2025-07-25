@@ -136,6 +136,10 @@ redirect_from: /Foundation/Summit/2025/index.html
 {% include sep-header.html text = "Bronze" %}
 {%- assign sponsors = site.data.sponsors.summit-2025.bronze | sort_natural: "name" -%}
 {%- include sponsor-info.html -%}
+
+{% include sep-header.html text = "Reception" %}
+{%- assign sponsors = site.data.sponsors.summit-2025.reception | sort_natural: "name" -%}
+{%- include sponsor-info.html -%}
 </div>
 
 {% include section-end.html %}
