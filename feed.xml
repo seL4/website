@@ -10,7 +10,38 @@
   <description>News feed about seL4, the seL4 Foundation, and the seL4 ecosystem.</description>
   <link rel="alternate">https://sel4.systems/news/</link>
   <link rel="self">https://sel4.systems/feed.xml</link>
-  <updated>Wed, 16 Jul 2025 00:00:00 +0000</updated>
+  <updated>Tue, 29 Jul 2025 00:00:00 +0000</updated>
+  <rights>Copyright 2025 seL4 Foundation</rights>
+  <entry>
+    <title>Happy seL4 day!</title>
+    <link rel="alternate" type="text/html" href="https://sel4.systems/news/2025.html#sel4-day"/>
+    <id>https://sel4.systems/news/2025.html#sel4-day</id>
+    <published>Tue, 29 Jul 2025 00:00:00 +0000</published>
+    <updated>Tue, 29 Jul 2025 00:00:00 +0000</updated>
+    <content type="html">
+      &lt;p&gt;
+  On July 29, 2009, the last &quot;sorry&quot; of the seL4 functional correctness proof
+  was eliminated. A &quot;sorry&quot; is an assumed theorem lacking a complete proof. &quot;0
+  sorries&quot; meant there was nothing left to prove: the project was finished. We
+  now celebrate this day every year to mark the seL4 day, when the world&amp;apos;s
+  first formally verified kernel with a machine-checked code-level proof came
+  into existence.
+&lt;/p&gt;
+&lt;p&gt;
+  In July 2014, on the 29th to make the &quot;seL4 day&quot; a double-celebratory day,
+  the seL4 code and proofs became open source, paving the way to the
+  widespread &lt;a href=&quot;/use.html&quot;&gt;use&lt;/a&gt;
+  it enjoys today.
+&lt;/p&gt;
+&lt;p class=&quot;mt-8&quot;&gt;
+  A big thank-you to all for your continued support!
+&lt;/p&gt;
+&lt;p&gt;
+  Learn more about the &lt;a href=&quot;/About/history.html&quot;&gt;history&lt;/a&gt; of seL4.
+&lt;/p&gt;
+
+    </content>
+  </entry>
   <rights>Copyright 2025 seL4 Foundation</rights>
   <entry>
     <title>The new seL4 docsite is live!</title>
@@ -554,215 +585,6 @@ for Tuesday 2 Sep 2025. Stay tuned for more info!&lt;/p&gt;
 &lt;p&gt;
   Also note the &lt;a href=&quot;/Summit/2025/cfp.html#deployment&quot;&gt;open
   invitation for a 5-minute slot to talk about your seL4 deployment.&lt;/a&gt;
-&lt;/p&gt;
-
-    </content>
-  </entry>
-  <rights>Copyright 2025 seL4 Foundation</rights>
-  <entry>
-    <title>Location, Dates and Program Committee of the seL4 Summit 2025</title>
-    <link rel="alternate" type="text/html" href="https://sel4.systems/news/2025.html#summit-2025-pc"/>
-    <id>https://sel4.systems/news/2025.html#summit-2025-pc</id>
-    <published>Wed, 12 Feb 2025 00:00:00 +0000</published>
-    <updated>Wed, 12 Feb 2025 00:00:00 +0000</updated>
-    <content type="html">
-      &lt;p&gt;
-  We are pleased to announce that the &lt;a href=&quot;/Summit/2025/&quot;&gt;seL4 Summit 2025&lt;/a&gt; will be held in
-&lt;/p&gt;
-&lt;p class=&quot;emph text-center&quot;&gt;
-    Prague, Czech Republic, 3 - 5 September 2025.
-&lt;/p&gt;
-
-&lt;p class=&quot;pt-6 sm:pt-8&quot;&gt;
-    &lt;strong&gt;Meet the Program Committee&lt;/strong&gt;
-&lt;/p&gt;
-&lt;p&gt;
-  Our team comes
-  from various parts of the seL4 ecosystem: users, contributors, committers,
-  experts, advocates, researchers, and engineers.
-&lt;/p&gt;
-
-&lt;div class=&quot;not-prose&quot;&gt;
-&lt;ul class=&quot;mx-auto mt-20 grid max-w-2xl lg:mx-0 lg:max-w-none
-           grid-cols-2 gap-x-8 gap-y-16 text-center
-           sm:grid-cols-3 md:grid-cols-4
-           
-           &quot;&gt;
-
-&lt;li&gt;
-  
-  &lt;a href=&quot;https://nickspinale.com&quot; class=&quot;text-dark no-underline! hover:underline!&quot;&gt;
-  
-    &lt;img class=&quot;mx-auto h-24 w-24 rounded-full&quot; src=&quot;/images/summit/nick.jpg&quot; alt=&quot;Picture of Nick Spinale&lt;br&gt;(co-chair)&quot;&gt;
-    &lt;p class=&quot;mt-6 text-base font-semibold leading-7 tracking-tight text-dark&quot;&gt;Nick Spinale&lt;br&gt;(co-chair)&lt;/p&gt;
-  
-  &lt;/a&gt;
-  
-  &lt;p class=&quot;text-sm leading-6 text-light&quot;&gt;Colias Group&lt;/p&gt;
-&lt;/li&gt;
-
-
-&lt;li&gt;
-  
-  &lt;a href=&quot;https://www.linkedin.com/in/robbie-vanvossen-gr/&quot; class=&quot;text-dark no-underline! hover:underline!&quot;&gt;
-  
-    &lt;img class=&quot;mx-auto h-24 w-24 rounded-full&quot; src=&quot;/images/summit/robbie.png&quot; alt=&quot;Picture of Robbie VanVossen&lt;br&gt;(co-chair)&quot;&gt;
-    &lt;p class=&quot;mt-6 text-base font-semibold leading-7 tracking-tight text-dark&quot;&gt;Robbie VanVossen&lt;br&gt;(co-chair)&lt;/p&gt;
-  
-  &lt;/a&gt;
-  
-  &lt;p class=&quot;text-sm leading-6 text-light&quot;&gt;DornerWorks&lt;/p&gt;
-&lt;/li&gt;
-
-
-&lt;li&gt;
-  
-  &lt;a href=&quot;https://www.ncsc.gov.uk/&quot; class=&quot;text-dark no-underline! hover:underline!&quot;&gt;
-  
-    &lt;img class=&quot;mx-auto h-24 w-24 rounded-full&quot; src=&quot;/images/summit/person-pc.svg&quot; alt=&quot;Picture of Adam&quot;&gt;
-    &lt;p class=&quot;mt-6 text-base font-semibold leading-7 tracking-tight text-dark&quot;&gt;Adam&lt;/p&gt;
-  
-  &lt;/a&gt;
-  
-  &lt;p class=&quot;text-sm leading-6 text-light&quot;&gt;NCSC&lt;/p&gt;
-&lt;/li&gt;
-
-
-&lt;li&gt;
-  
-  &lt;a href=&quot;https://trustworthy.systems/people/?cn=Corey+Lewis&quot; class=&quot;text-dark no-underline! hover:underline!&quot;&gt;
-  
-    &lt;img class=&quot;mx-auto h-24 w-24 rounded-full&quot; src=&quot;/images/summit/corey-square.jpg&quot; alt=&quot;Picture of Corey Lewis&quot;&gt;
-    &lt;p class=&quot;mt-6 text-base font-semibold leading-7 tracking-tight text-dark&quot;&gt;Corey Lewis&lt;/p&gt;
-  
-  &lt;/a&gt;
-  
-  &lt;p class=&quot;text-sm leading-6 text-light&quot;&gt;Proofcraft&lt;/p&gt;
-&lt;/li&gt;
-
-
-&lt;li&gt;
-  
-  &lt;a href=&quot;https://www.linkedin.com/in/courtneydarville3141/&quot; class=&quot;text-dark no-underline! hover:underline!&quot;&gt;
-  
-    &lt;img class=&quot;mx-auto h-24 w-24 rounded-full&quot; src=&quot;/images/summit/courtney.jpg&quot; alt=&quot;Picture of Courtney Darville&quot;&gt;
-    &lt;p class=&quot;mt-6 text-base font-semibold leading-7 tracking-tight text-dark&quot;&gt;Courtney Darville&lt;/p&gt;
-  
-  &lt;/a&gt;
-  
-  &lt;p class=&quot;text-sm leading-6 text-light&quot;&gt;UNSW Sydney&lt;/p&gt;
-&lt;/li&gt;
-
-
-&lt;li&gt;
-  
-  &lt;a href=&quot;https://loonwerks.com/people/david-hardin.html&quot; class=&quot;text-dark no-underline! hover:underline!&quot;&gt;
-  
-    &lt;img class=&quot;mx-auto h-24 w-24 rounded-full&quot; src=&quot;/images/summit/david-square.jpg&quot; alt=&quot;Picture of David Hardin&quot;&gt;
-    &lt;p class=&quot;mt-6 text-base font-semibold leading-7 tracking-tight text-dark&quot;&gt;David Hardin&lt;/p&gt;
-  
-  &lt;/a&gt;
-  
-  &lt;p class=&quot;text-sm leading-6 text-light&quot;&gt;Collins&lt;/p&gt;
-&lt;/li&gt;
-
-
-&lt;li&gt;
-  
-  &lt;a href=&quot;https://evermatos.com/&quot; class=&quot;text-dark no-underline! hover:underline!&quot;&gt;
-  
-    &lt;img class=&quot;mx-auto h-24 w-24 rounded-full&quot; src=&quot;/images/summit/everton-square.jpg&quot; alt=&quot;Picture of Everton de Matos&quot;&gt;
-    &lt;p class=&quot;mt-6 text-base font-semibold leading-7 tracking-tight text-dark&quot;&gt;Everton de Matos&lt;/p&gt;
-  
-  &lt;/a&gt;
-  
-  &lt;p class=&quot;text-sm leading-6 text-light&quot;&gt;TII&lt;/p&gt;
-&lt;/li&gt;
-
-
-&lt;li&gt;
-  
-  &lt;a href=&quot;https://trustworthy.systems/people/?cn=Gernot+Heiser&quot; class=&quot;text-dark no-underline! hover:underline!&quot;&gt;
-  
-    &lt;img class=&quot;mx-auto h-24 w-24 rounded-full&quot; src=&quot;/images/summit/gernot.jpg&quot; alt=&quot;Picture of Gernot Heiser&quot;&gt;
-    &lt;p class=&quot;mt-6 text-base font-semibold leading-7 tracking-tight text-dark&quot;&gt;Gernot Heiser&lt;/p&gt;
-  
-  &lt;/a&gt;
-  
-  &lt;p class=&quot;text-sm leading-6 text-light&quot;&gt;UNSW Sydney&lt;/p&gt;
-&lt;/li&gt;
-
-
-&lt;li&gt;
-  
-  &lt;a href=&quot;https://www.ll.mit.edu/biographies/juliana-furgala&quot; class=&quot;text-dark no-underline! hover:underline!&quot;&gt;
-  
-    &lt;img class=&quot;mx-auto h-24 w-24 rounded-full&quot; src=&quot;/images/summit/juliana-square.jpg&quot; alt=&quot;Picture of Juliana Furgala&quot;&gt;
-    &lt;p class=&quot;mt-6 text-base font-semibold leading-7 tracking-tight text-dark&quot;&gt;Juliana Furgala&lt;/p&gt;
-  
-  &lt;/a&gt;
-  
-  &lt;p class=&quot;text-sm leading-6 text-light&quot;&gt;MIT Lincoln Laboratory&lt;/p&gt;
-&lt;/li&gt;
-
-
-&lt;li&gt;
-  
-  &lt;a href=&quot;https://www.linkedin.com/in/leigha-vanderklok-b5038a166/&quot; class=&quot;text-dark no-underline! hover:underline!&quot;&gt;
-  
-    &lt;img class=&quot;mx-auto h-24 w-24 rounded-full&quot; src=&quot;/images/summit/leigha-square.jpg&quot; alt=&quot;Picture of Leigha VanderKlok&quot;&gt;
-    &lt;p class=&quot;mt-6 text-base font-semibold leading-7 tracking-tight text-dark&quot;&gt;Leigha VanderKlok&lt;/p&gt;
-  
-  &lt;/a&gt;
-  
-  &lt;p class=&quot;text-sm leading-6 text-light&quot;&gt;DornerWorks&lt;/p&gt;
-&lt;/li&gt;
-
-
-&lt;li&gt;
-  
-  &lt;a href=&quot;https://www.linkedin.com/in/lucy-parker-13a484253/&quot; class=&quot;text-dark no-underline! hover:underline!&quot;&gt;
-  
-    &lt;img class=&quot;mx-auto h-24 w-24 rounded-full&quot; src=&quot;/images/summit/lucy-square.jpg&quot; alt=&quot;Picture of Lucy Parker&quot;&gt;
-    &lt;p class=&quot;mt-6 text-base font-semibold leading-7 tracking-tight text-dark&quot;&gt;Lucy Parker&lt;/p&gt;
-  
-  &lt;/a&gt;
-  
-  &lt;p class=&quot;text-sm leading-6 text-light&quot;&gt;&lt;/p&gt;
-&lt;/li&gt;
-
-
-&lt;li&gt;
-  
-  &lt;a href=&quot;https://www.linkedin.com/in/mbrcknl/&quot; class=&quot;text-dark no-underline! hover:underline!&quot;&gt;
-  
-    &lt;img class=&quot;mx-auto h-24 w-24 rounded-full&quot; src=&quot;/images/tsc/matthew.jpg&quot; alt=&quot;Picture of Matthew Brecknell&quot;&gt;
-    &lt;p class=&quot;mt-6 text-base font-semibold leading-7 tracking-tight text-dark&quot;&gt;Matthew Brecknell&lt;/p&gt;
-  
-  &lt;/a&gt;
-  
-  &lt;p class=&quot;text-sm leading-6 text-light&quot;&gt;Kry10&lt;/p&gt;
-&lt;/li&gt;
-
-
-&lt;li&gt;
-  
-  &lt;a href=&quot;https://au.linkedin.com/in/yanyan-shen-1495547&quot; class=&quot;text-dark no-underline! hover:underline!&quot;&gt;
-  
-    &lt;img class=&quot;mx-auto h-24 w-24 rounded-full&quot; src=&quot;/images/summit/yanyan-square.jpg&quot; alt=&quot;Picture of Yanyan Shen&quot;&gt;
-    &lt;p class=&quot;mt-6 text-base font-semibold leading-7 tracking-tight text-dark&quot;&gt;Yanyan Shen&lt;/p&gt;
-  
-  &lt;/a&gt;
-  
-  &lt;p class=&quot;text-sm leading-6 text-light&quot;&gt;NIO&lt;/p&gt;
-&lt;/li&gt;
-
-&lt;/ul&gt;
-
-&lt;/div&gt;
-
-&lt;p class=&quot;pt-6 sm:pt-8&quot;&gt;
-  We will announce a Call for Presentations in the coming weeks. Stay tuned!
 &lt;/p&gt;
 
     </content>
