@@ -34,9 +34,8 @@ The role does not confer membership or voting rights in the TSC.
 
 Current reviewers are:
 
+- Julia B., UNSW
 - Christopher Guikema, Dornerworks
-- Alwin Joshy, UNSW
-- Benno Leslie, Breakaway Consulting
 
 
 ## Committer
