@@ -10,7 +10,115 @@
   <description>News feed about seL4, the seL4 Foundation, and the seL4 ecosystem.</description>
   <link rel="alternate">https://sel4.systems/news/</link>
   <link rel="self">https://sel4.systems/feed.xml</link>
-  <updated>Tue, 29 Jul 2025 00:00:00 +0000</updated>
+  <updated>Fri, 01 Aug 2025 00:00:00 +0000</updated>
+  <rights>Copyright 2025 seL4 Foundation</rights>
+  <entry>
+    <title>Panellists for seL4 Summit announced</title>
+    <link rel="alternate" type="text/html" href="https://sel4.systems/news/2025.html#panellists25"/>
+    <id>https://sel4.systems/news/2025.html#panellists25</id>
+    <published>Fri, 01 Aug 2025 00:00:00 +0000</published>
+    <updated>Fri, 01 Aug 2025 00:00:00 +0000</updated>
+    <content type="html">
+      &lt;p&gt;
+  We are very fortunate to welcome five industry leaders to
+  participate at the &lt;a href=&quot;/Summit/2025/&quot;&gt;seL4 Summit
+  2025&lt;/a&gt;, in a session &lt;a href=&quot;/Summit/2025/abstracts2025.html#a-panel&quot;&gt;Building a business case for using a verified kernel&lt;/a&gt;:
+  Collins Aerospace, DornerWorks, Kry10, NIO, and MEP. The
+  panel will be moderated by Juliana Furgala from MIT Lincoln Laboratory.
+&lt;/p&gt;
+
+&lt;div class=&quot;not-prose&quot;&gt;
+&lt;ul class=&quot;mx-auto mt-20 grid max-w-2xl lg:mx-0 lg:max-w-none
+           grid-cols-2 gap-x-8 gap-y-16 text-center
+           sm:grid-cols-3 md:grid-cols-4
+           
+           &quot;&gt;
+
+
+&lt;li&gt;
+  
+  &lt;a href=&quot;/Summit/2025/abstracts2025.html#a-panel-collins&quot; class=&quot;text-dark no-underline! hover:underline!&quot;&gt;
+  
+    &lt;img class=&quot;mx-auto h-24 w-24 rounded-full&quot; src=&quot;/images/summit/dcofer-2022-2-small.jpg&quot; alt=&quot;Picture of Darren Cofer&quot;&gt;
+    &lt;p class=&quot;mt-6 text-base font-semibold leading-7 tracking-tight text-dark&quot;&gt;Darren Cofer&lt;/p&gt;
+  
+  &lt;/a&gt;
+  
+  &lt;p class=&quot;text-sm leading-6 text-light&quot;&gt;&lt;a href=&apos;https://www.collinsaerospace.com&apos;&gt;Collins Aerospace&lt;/a&gt;&lt;/p&gt;
+&lt;/li&gt;
+
+
+&lt;li&gt;
+  
+  &lt;a href=&quot;/Summit/2025/abstracts2025.html#a-panel-dornerworks&quot; class=&quot;text-dark no-underline! hover:underline!&quot;&gt;
+  
+    &lt;img class=&quot;mx-auto h-24 w-24 rounded-full&quot; src=&quot;/images/summit/robbie.png&quot; alt=&quot;Picture of Robbie VanVossen&quot;&gt;
+    &lt;p class=&quot;mt-6 text-base font-semibold leading-7 tracking-tight text-dark&quot;&gt;Robbie VanVossen&lt;/p&gt;
+  
+  &lt;/a&gt;
+  
+  &lt;p class=&quot;text-sm leading-6 text-light&quot;&gt;&lt;a href=&apos;https://www.dornerworks.com/&apos;&gt;DornerWorks&lt;/a&gt;&lt;/p&gt;
+&lt;/li&gt;
+
+
+&lt;li&gt;
+  
+  &lt;a href=&quot;/Summit/2025/abstracts2025.html#a-panel-kry10&quot; class=&quot;text-dark no-underline! hover:underline!&quot;&gt;
+  
+    &lt;img class=&quot;mx-auto h-24 w-24 rounded-full&quot; src=&quot;/images/summit/boyd.jpg&quot; alt=&quot;Picture of Boyd Multerer&quot;&gt;
+    &lt;p class=&quot;mt-6 text-base font-semibold leading-7 tracking-tight text-dark&quot;&gt;Boyd Multerer&lt;/p&gt;
+  
+  &lt;/a&gt;
+  
+  &lt;p class=&quot;text-sm leading-6 text-light&quot;&gt;&lt;a href=&apos;https://www.kry10.com/&apos;&gt;Kry10&lt;/a&gt;&lt;/p&gt;
+&lt;/li&gt;
+
+
+&lt;li&gt;
+  
+  &lt;a href=&quot;/Summit/2025/abstracts2025.html#a-panel-mep&quot; class=&quot;text-dark no-underline! hover:underline!&quot;&gt;
+  
+    &lt;img class=&quot;mx-auto h-24 w-24 rounded-full&quot; src=&quot;/images/summit/peter-square.jpg&quot; alt=&quot;Picture of Peter de Ridder&quot;&gt;
+    &lt;p class=&quot;mt-6 text-base font-semibold leading-7 tracking-tight text-dark&quot;&gt;Peter de Ridder&lt;/p&gt;
+  
+  &lt;/a&gt;
+  
+  &lt;p class=&quot;text-sm leading-6 text-light&quot;&gt;&lt;a href=&apos;https://www.mep-info.com/&apos;&gt;MEP&lt;/a&gt;&lt;/p&gt;
+&lt;/li&gt;
+
+
+&lt;li&gt;
+  
+  &lt;a href=&quot;/Summit/2025/abstracts2025.html#a-panel-nio&quot; class=&quot;text-dark no-underline! hover:underline!&quot;&gt;
+  
+    &lt;img class=&quot;mx-auto h-24 w-24 rounded-full&quot; src=&quot;/images/summit/yanyan-square.jpg&quot; alt=&quot;Picture of Yanyan Shen&quot;&gt;
+    &lt;p class=&quot;mt-6 text-base font-semibold leading-7 tracking-tight text-dark&quot;&gt;Yanyan Shen&lt;/p&gt;
+  
+  &lt;/a&gt;
+  
+  &lt;p class=&quot;text-sm leading-6 text-light&quot;&gt;&lt;a href=&apos;https://www.nio.com&apos;&gt;NIO&lt;/a&gt;&lt;/p&gt;
+&lt;/li&gt;
+
+
+&lt;li&gt;
+  
+  &lt;a href=&quot;/Summit/2025/abstracts2025.html#a-panel-mit&quot; class=&quot;text-dark no-underline! hover:underline!&quot;&gt;
+  
+    &lt;img class=&quot;mx-auto h-24 w-24 rounded-full&quot; src=&quot;/images/summit/juliana-square.jpg&quot; alt=&quot;Picture of Juliana Furgala&lt;br&gt;(Moderator)&quot;&gt;
+    &lt;p class=&quot;mt-6 text-base font-semibold leading-7 tracking-tight text-dark&quot;&gt;Juliana Furgala&lt;br&gt;(Moderator)&lt;/p&gt;
+  
+  &lt;/a&gt;
+  
+  &lt;p class=&quot;text-sm leading-6 text-light&quot;&gt;&lt;a href=&apos;https://www.ll.mit.edu/&apos;&gt;MIT Lincoln Laboratory&lt;/a&gt;&lt;/p&gt;
+&lt;/li&gt;
+
+&lt;/ul&gt;
+
+
+&lt;/div&gt;
+
+    </content>
+  </entry>
   <rights>Copyright 2025 seL4 Foundation</rights>
   <entry>
     <title>Happy seL4 day!</title>
@@ -560,32 +668,6 @@ infrastructure, products, projects, and people.&lt;/p&gt;
 
 &lt;p&gt;A number of informal social activities will be organised by the seL4 community
 for Tuesday 2 Sep 2025. Stay tuned for more info!&lt;/p&gt;
-
-    </content>
-  </entry>
-  <rights>Copyright 2025 seL4 Foundation</rights>
-  <entry>
-    <title>Call For Presentations for the seL4 Summit 2025</title>
-    <link rel="alternate" type="text/html" href="https://sel4.systems/news/2025.html#summit-2025-cfp"/>
-    <id>https://sel4.systems/news/2025.html#summit-2025-cfp</id>
-    <published>Mon, 17 Feb 2025 00:00:00 +0000</published>
-    <updated>Mon, 17 Feb 2025 00:00:00 +0000</updated>
-    <content type="html">
-      &lt;ul&gt;
-  &lt;li&gt;Share your seL4 work&lt;/li&gt;
-  &lt;li&gt;Share your seL4 experience&lt;/li&gt;
-  &lt;li&gt;Share your seL4 thoughts&lt;/li&gt;
-&lt;/ul&gt;
-&lt;p&gt;
-  Check the full &lt;a href=&quot;/Summit/2025/cfp.html&quot;&gt;Call For
-  Presentations&lt;/a&gt;. To propose a talk, upload an abstract of one page or less
-  by &lt;strong&gt;21 April 2025&lt;/strong&gt; to the
-  &lt;strong&gt;&lt;a href=&quot;https://form.jotform.com/250436091673861&quot;&gt;submission portal&lt;/a&gt;&lt;/strong&gt;.
-&lt;/p&gt;
-&lt;p&gt;
-  Also note the &lt;a href=&quot;/Summit/2025/cfp.html#deployment&quot;&gt;open
-  invitation for a 5-minute slot to talk about your seL4 deployment.&lt;/a&gt;
-&lt;/p&gt;
 
     </content>
   </entry>
