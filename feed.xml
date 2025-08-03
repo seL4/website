@@ -10,7 +10,27 @@
   <description>News feed about seL4, the seL4 Foundation, and the seL4 ecosystem.</description>
   <link rel="alternate">https://sel4.systems/news/</link>
   <link rel="self">https://sel4.systems/feed.xml</link>
-  <updated>Fri, 01 Aug 2025 00:00:00 +0000</updated>
+  <updated>Mon, 04 Aug 2025 00:00:00 +0000</updated>
+  <rights>Copyright 2025 seL4 Foundation</rights>
+  <entry>
+    <title>The Trusted Computing Center of Excellence™ joins the seL4 Foundation</title>
+    <link rel="alternate" type="text/html" href="https://sel4.systems/news/2025.html#member-tccoe"/>
+    <id>https://sel4.systems/news/2025.html#member-tccoe</id>
+    <published>Mon, 04 Aug 2025 00:00:00 +0000</published>
+    <updated>Mon, 04 Aug 2025 00:00:00 +0000</updated>
+    <content type="html">
+      &lt;p&gt;
+    The seL4 Foundation is pleased to welcome the &lt;a
+    href=&quot;https://trustedcomputingcoe.org/&quot;&gt;Trusted Computing Center of Excellence (TCCoE)&lt;/a&gt; as
+    &lt;a href=&quot;/Foundation/Membership&quot;&gt;Associate
+    Member&lt;/a&gt;.
+&lt;/p&gt;
+&lt;p&gt;
+    The Trusted Computing Center of Excellence™ (TCCoE) not-for-profit organization’s purpose is to lower barriers to adoption and facilitate the principled development and deployment of software and systems for which there is strong evidence of trustworthiness, including use of formal methods. Needs of the U.S. and allied defense, intelligence and security communities are our priorities. A major thrust is seL4®. While our colleagues at the seL4 Foundation focus on the code and formal proofs of the open source seL4® microkernel and closely related artifacts, the TCCoE focuses on curated software distributions (kernel, libraries, drivers, configurations, etc.) as bases of stable supported platforms on which to build trustworthy systems.
+&lt;/p&gt;
+
+    </content>
+  </entry>
   <rights>Copyright 2025 seL4 Foundation</rights>
   <entry>
     <title>Panellists for seL4 Summit announced</title>
@@ -635,39 +655,6 @@
     Solid&lt;/a&gt;, runs on seL4 at its heart. MEP has chosen seL4 for process
     separation to achieve 24/7 availability.
 &lt;/p&gt;
-
-    </content>
-  </entry>
-  <rights>Copyright 2025 seL4 Foundation</rights>
-  <entry>
-    <title>Register for the seL4 summit 2025</title>
-    <link rel="alternate" type="text/html" href="https://sel4.systems/news/2025.html#summit-2025-register"/>
-    <id>https://sel4.systems/news/2025.html#summit-2025-register</id>
-    <published>Mon, 14 Apr 2025 00:00:00 +0000</published>
-    <updated>Mon, 14 Apr 2025 00:00:00 +0000</updated>
-    <content type="html">
-      &lt;p&gt;The &lt;a href=&quot;../Summit/2025&quot;&gt;seL4 summit 2025&lt;/a&gt; will be held in Prague,
-Czech Republic, 3 - 5 September 2025.&lt;/p&gt;
-
-&lt;p&gt;The seL4 summit will cover the complete seL4 ecosystem, consisting of the
-verified microkernel, as well as all seL4-related technology, tools,
-infrastructure, products, projects, and people.&lt;/p&gt;
-
-&lt;p&gt;Tickets include:&lt;/p&gt;
-
-&lt;ul&gt;
-  &lt;li&gt;Participation in the 3-day conference, including talks, keynotes, seL4 updates
-&amp;amp; discussions&lt;/li&gt;
-  &lt;li&gt;Networking with other seL4 experts and enthusiasts&lt;/li&gt;
-  &lt;li&gt;Reception and dinner&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;p&gt;&lt;strong&gt;&lt;a href=&quot;https://events.linuxfoundation.org/sel4-summit/register/&quot;&gt;Register here&lt;/a&gt;&lt;/strong&gt;&lt;/p&gt;
-
-&lt;p&gt;The early bird cut-off date is 3 August 2025.&lt;/p&gt;
-
-&lt;p&gt;A number of informal social activities will be organised by the seL4 community
-for Tuesday 2 Sep 2025. Stay tuned for more info!&lt;/p&gt;
 
     </content>
   </entry>
