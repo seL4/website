@@ -1,0 +1,27 @@
+{%- comment %}
+Copyright 2025 seL4 Project a Series of LF Projects, LLC
+SPDX-License-Identifier: CC-BY-SA-4.0
+{% endcomment -%}
+
+<div class="-mt-14 sm:-mt-20 text-center text-base sm:text-lg text-light leading-6 sm:leading-7 a-underline">
+  <div class="mx-auto max-w-4xl text-center">
+    {% if include.about %}
+    <p>
+      {{include.about}}
+    </p>
+    {% else %}
+    <p>
+      The seL4 Summit gathers the seL4 community to learn, share and connect. The program committee solicits talks on a wide range of seL4-related <a href="#topics">topics</a>, as well as lightning talks on <a href="#deployment">seL4 deployment</a>.
+    </p>
+    {% endif %}
+  </div>
+  {% if include.submit-link %}
+    <div class="flex justify-center items-center gap-x-5 mt-5 mb-20">
+      {% if include.submit-link %}
+        <a href="{{include.submit-link}}" class="button-outline px-10">Submit</a>
+      {% endif %}
+    </div>
+  {% else %}
+    <div class="mb-20"></div>
+  {% endif %}
+</div>
