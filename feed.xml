@@ -10,7 +10,34 @@
   <description>News feed about seL4, the seL4 Foundation, and the seL4 ecosystem.</description>
   <link rel="alternate">https://sel4.systems/news/</link>
   <link rel="self">https://sel4.systems/feed.xml</link>
-  <updated>Mon, 04 Aug 2025 00:00:00 +0000</updated>
+  <updated>Wed, 06 Aug 2025 00:00:00 +0000</updated>
+  <rights>Copyright 2025 seL4 Foundation</rights>
+  <entry>
+    <title>Thank you Riverside Research, sponsor of the seL4 Summit 2025 reception</title>
+    <link rel="alternate" type="text/html" href="https://sel4.systems/news/2025.html#sponsor25-riverside"/>
+    <id>https://sel4.systems/news/2025.html#sponsor25-riverside</id>
+    <published>Wed, 06 Aug 2025 00:00:00 +0000</published>
+    <updated>Wed, 06 Aug 2025 00:00:00 +0000</updated>
+    <content type="html">
+      &lt;p&gt;
+  The seL4 Foundation thanks &lt;a href=&quot;https://www.riversideresearch.org/&quot;&gt;Riverside Research&lt;/a&gt;
+  for sponsoring the &lt;a href=&quot;/Summit/2025/&quot;&gt;seL4
+  Summit 2025&lt;/a&gt; reception.
+&lt;/p&gt;
+&lt;p&gt;
+  Riverside Research &lt;a href=&quot;https://www.riversideresearch.org/insights/riverside-research-acquires-cog-systems-to-strengthen-cyber-resilience-and-secure-virtualization-capabilities&quot;&gt;recently acquired&lt;/a&gt; Cog Systems, a &lt;a href=&quot;/Foundation/Membership&quot;&gt;Founding Member&lt;/a&gt; of the &lt;a href=&quot;/Foundation&quot;&gt;seL4 Foundation&lt;/a&gt;.
+&lt;/p&gt;
+&lt;p&gt;
+  Riverside Research is a national security nonprofit serving the DOD and Intelligence Community. Through the company&apos;s Open Innovation Center (OIC), it invests in multidisciplinary research and development and encourages collaboration. Riverside Research&apos;s areas of expertise include Object and Activity Detection; Accelerated AI/ML; Zero Trust; Open Architectures; Computational Electromagnetics; Plasma Physics; Precision Timing; Terahertz Imaging; Commercial Intelligence, Surveillance, and Reconnaissance (ISR); Collection Planning; and more. Learn more at &lt;a href=&quot;https://www.riversideresearch.org&quot;&gt;www.riversideresearch.org&lt;/a&gt;.
+&lt;/p&gt;
+&lt;p&gt;
+  See &lt;a href=&quot;https://events.linuxfoundation.org/sel4-summit/sponsor/&quot;&gt;here&lt;/a&gt;
+  if you are interested in sponsoring the  &lt;a href=&quot;/Summit/2025/&quot;&gt;seL4 Summit
+    2025&lt;/a&gt;.
+&lt;/p&gt;
+
+    </content>
+  </entry>
   <rights>Copyright 2025 seL4 Foundation</rights>
   <entry>
     <title>The Trusted Computing Center of Excellence™ joins the seL4 Foundation</title>
@@ -633,27 +660,6 @@
 
 &lt;p&gt;
   We welcome your feedback and we hope you enjoy the new site!
-&lt;/p&gt;
-
-    </content>
-  </entry>
-  <rights>Copyright 2025 seL4 Foundation</rights>
-  <entry>
-    <title>MEP joins the seL4 Foundation</title>
-    <link rel="alternate" type="text/html" href="https://sel4.systems/news/2025.html#member-mep"/>
-    <id>https://sel4.systems/news/2025.html#member-mep</id>
-    <published>Fri, 18 Apr 2025 00:00:00 +0000</published>
-    <updated>Fri, 18 Apr 2025 00:00:00 +0000</updated>
-    <content type="html">
-      &lt;p&gt;
-    The seL4 Foundation is pleased to welcome &lt;a
-    href=&quot;https://www.mep-info.com/&quot;&gt;MEP&lt;/a&gt; as a &lt;a
-    href=&quot;../Foundation/Membership&quot;&gt;Member&lt;/a&gt;. MEP is a voice communications
-    supplier for Air Traffic and Maritime critical communications worldwide. Its
-    Voice Communication System, the &lt;a
-    href=&quot;https://www.mep-info.com/products/surevoice-solid&quot;&gt;SureVoice
-    Solid&lt;/a&gt;, runs on seL4 at its heart. MEP has chosen seL4 for process
-    separation to achieve 24/7 availability.
 &lt;/p&gt;
 
     </content>
