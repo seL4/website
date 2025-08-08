@@ -6,7 +6,7 @@
     <title>seL4 Summit 2025 Abstracts | seL4</title>
     <meta name="author" content="seL4 Foundation">
     <link rel="canonical" href="https://sel4.systems/Summit/2025/abstracts2025.html">
-    <link href="/css/sel4.css?v=1754598578" rel="stylesheet">
+    <link href="/css/sel4.css?v=1754614556" rel="stylesheet">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
@@ -588,9 +588,9 @@
     <div class="mx-auto lg:mx-0">
       <h2 class="text-xl font-bold tracking-tight text-dark mb-6 sm:text-4xl">Model-based Development for seL4 Microkit/Rust with Integrated Formal Methods using HAMR</h2>
       <p>
-        <span class="text-gray-800 dark:text-gray-300">John Hatcliff</span>
+        <span class="text-gray-800 dark:text-gray-300">John Hatcliff, Jason Belt, Robby, Stefan Hallerstede, Robert VanVossen, Junaid Babar</span>
         <br>
-        <span class="text-light">Kansas State University</span>
+        <span class="text-light">Kansas State University, Aarhus University, Dornerworks, Collins Aerospace</span>
       </p>
       <article class="theprose -mt-10">
         <div class="pt-5">
@@ -598,61 +598,66 @@
   Collaborators:
 </p>
 <ul>
-  <li>Kansas State University/Aarhus University – Robby, Jason
-  Belt, Stefan Hallerstede</li>
-  <li>Collins Aerospace – Darren Cofer, Isaac Amundson,
-  Junaid Babar, David Hardin</li>
+  <li>Kansas State University/Aarhus University – Robby, Jason Belt, Stefan
+  Hallerstede</li>
+  <li>Collins Aerospace – Darren Cofer, Isaac Amundson, Junaid Babar, David
+  Hardin</li>
   <li>Dornerworks – Robert VanVossen, Nathan Studer</li>
   <li>UNSW – Gernot Heiser, Robert Sison</li>
-  <li>ProofCraft – Gerwin Klein, Rafal
-  Kolanski, June Andronick</li>
+  <li>ProofCraft – Gerwin Klein, Rafal Kolanski, June Andronick</li>
 </ul>
 <p>
-The Collins Aerospace INSPECTA project (part of the DARPA PROVERS program) aims
-to provide a model-based development tool chain for seL4 with integrated formal
-methods. The High Assurance Modeling and Rapid engineering for embedded systems
-(HAMR) framework, whose development is led by researchers at Kansas State
-University, is a key part of the INSPECTA tool chain. Developed on the DARPA
-CASE project within Collins Aerospace team and on other US Department of Defense
-projects led by Galois, HAMR originally supported system modeling using the SAE
-standard AADL modeling language. On these projects, HAMR generated
-infrastructure code and application code thread skeletons in C and in Slang (a
-safety-critical subset of Scala developed at Kansas State University). HAMR
-supported system deployments on the Java Virtual Machine (JVM), Linux, and the
-seL4 micro-kernel using CAmkES. HAMR supported the GUMBO AADL contract language
-(jointly developed by KSU and Galois) that enabled engineers to formally specify
-interface behaviors of AADL thread components using familiar contract-based
-idioms. These model-level contracts were translated as part of HAMR’s code
-generation to code-level contracts (allowing SMT-based tools to verify that user
-application code conforms to contracts) and executable contracts (enabling
-testing frameworks to use these as test oracles and run-time monitoring to use
-them as run-time checks on thread input/output behavior). In this talk, we
-describe a number of new capabilities of HAMR developed on the INSPECTA project.
-First, the modeling layer of HAMR has been extended to support SysMLv2 – a new
-version of the widely-used
+  The Collins Aerospace INSPECTA project (part of the DARPA PROVERS program)
+  aims to provide a  model-based development tool chain for seL4 with integrated
+  formal methods. The High Assurance  Modeling and Rapid engineering for
+  embedded systems (HAMR) framework, whose development is led by  researchers at
+  Kansas State University, is a key part of the INSPECTA tool chain. Developed
+  on the  DARPA CASE project within Collins Aerospace team and on other US
+  Department of Defense projects led  by Galois, HAMR originally supported
+  system modeling using the SAE standard AADL modeling language.  On these
+  projects, HAMR generated infrastructure code and application code thread
+  skeletons in C and in  Slang (a safety-critical subset of Scala developed at
+  Kansas State University). HAMR supported system  deployments on the Java
+  Virtual Machine (JVM), Linux, and the seL4 micro-kernel using CAmkES. HAMR
+  supported the GUMBO AADL contract language (jointly developed by KSU and
+  Galois) that enabled  engineers to formally specify interface behaviors of
+  AADL thread components using familiar contract-based  idioms. These
+  model-level contracts were translated as part of HAMR’s code generation to
+  code-level  contracts (allowing SMT-based tools to verify that user
+  application code conforms to contracts) and  executable contracts (enabling
+  testing frameworks to use these as test oracles and run-time monitoring to use
+  them as run-time checks on thread input/output behavior).
 </p>
 <p>
-SysML modeling language standardized by the Object Modeling Group (OMG). We
-describe how HAMR- supported AADL-based specifications and tooling, including
-the GUMBO contract language, are being integrated within SysMLv2 modeling
-environments, including the SysIDE extension for VSCode. Second, we have
-extended HAMR’s code generation to support the Rust programming language and
-seL4 microkit. This provides both C and Rust-based development on seL4 with both
-CAmkES and microkit. For example, Rust implementations of SysMLv2/AADL threads
-can be deployed in seL4 microkit protection domains, with auto-generated
-microkit system description files and developer-facing microkit APIs for
-threading and channel communication. Finally, we have added contract generation
-support in Rust code for both formal contracts for the Verus verification tool
-and Rust executable contracts. The talk will provide short demos of all of these
-features – including showing Verus verification of seL4-deployed Rust thread
-component application code conformance to HAMR-generated contracts and automated
-property-based testing of Rust thread component code against HAMR-generated
-executable contracts. These new capabilities of HAMR are being applied by
-Dornerworks and Collins Aerospace engineers on military applications including
-mission control software for UAVs. HAMR is available under an open-source
-license, and the project website includes an example repository and collection
-of videos, tutorials, and classroom lecture materials (also suited for workforce
-training).
+  In this talk, we describe a number of new capabilities of HAMR developed on
+  the INSPECTA project. First,  the modeling layer of HAMR has been extended to
+  support SysMLv2 – a new version of the widely-used  SysML modeling language
+  standardized by the Object Modeling Group (OMG). We describe how HAMR
+  supported AADL-based specifications and tooling, including the GUMBO contract
+  language, are being  integrated within SysMLv2 modeling environments,
+  including the SysIDE extension for VSCode. Second,  we have extended HAMR’s
+  code generation to support the Rust programming language and seL4 microkit.
+  This provides both C and Rust-based development on seL4 with both CAmkES and
+  microkit. For example,  Rust implementations of SysMLv2/AADL threads can be
+  deployed in seL4 microkit protection domains,  with auto-generated microkit
+  system description files and developer-facing microkit APIs for threading and
+  channel communication. Finally, we have added contract generation support in
+  Rust code for both formal  contracts for the Verus verification tool and Rust
+  executable contracts. The talk will provide short demos  of all of these
+  features – including showing Verus verification of seL4-deployed Rust thread
+  component  application code conformance to HAMR-generated contracts and
+  automated property-based testing of Rust  thread component code against
+  HAMR-generated executable contracts.
+</p>
+<p>
+    These new capabilities of HAMR are being applied by Dornerworks and Collins
+    Aerospace engineers on  military applications including mission control
+    software for UAVs.
+</p>
+<p>
+  HAMR is available under an open-source license, and the project website
+  includes an example repository and collection of videos, tutorials, and
+  classroom lecture materials (also suited for workforce training).
 </p>
         </div>
       </article>
@@ -662,6 +667,721 @@ training).
         <div>
           <p class="p-1 mt-2">
           <a href="program.html#p-model-based" class="text-sm text-light underline">See this talk in the program</a>
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="flex w-full mb-6">
+  <div class="flex-1"></div>
+  <hr class="w-10 h-px bg-gray-200 border-0 dark:bg-gray-600">
+  
+<a href="#page-top" class="relative -mt-3.5 mx-4">
+  <div class="dark:bg-slate-900 hover:bg-slate-100 dark:hover:bg-slate-800 p-1.5 h-7 w-7 rounded-full shadow-xs left-1">
+    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" aria-hidden="true" data-slot="icon" class="h-4 w-4 text-slate-400 dark:text-slate-500">
+  <path stroke-linecap="round" stroke-linejoin="round" d="M12 19.5v-15m0 0-6.75 6.75M12 4.5l6.75 6.75"/>
+</svg>
+  </div>
+</a>
+
+  <hr class="w-10 h-px bg-gray-200 border-0 dark:bg-gray-600">
+  <div class="flex-1"></div>
+</div>
+
+
+
+<div id="a-next-700" class="py-12 mb-5 section-max-w sm:py-16">
+  <div class="mx-auto px-2 sm:px-6 lg:px-8">
+    <div class="mx-auto lg:mx-0">
+      <h2 class="text-xl font-bold tracking-tight text-dark mb-6 sm:text-4xl">The next 700 verified seL4 platforms</h2>
+      <p>
+        <span class="text-gray-800 dark:text-gray-300">Gerwin Klein</span>
+        <br>
+        <span class="text-light">Proofcraft</span>
+      </p>
+      <article class="theprose -mt-10">
+        <div class="pt-5">
+          <p>
+  The proportion of Arm platforms for which seL4 is verified has increased from
+  13% to 90% in the last year. In addition, over the same period, a new platform
+  port has been added where seL4’s proofs hold without any involvement from
+  proof engineers, i.e. at zero verification cost.
+</p>
+<p>
+This effort is part of the goal to reduce the reliance on formal verification
+experts in DARPA’s PROVERS program, where Proofcraft is part of the INSPECTA
+team led by Collins Aerospace. Proofcraft will deliver several streams of work
+to reduce the reliance on proof experts when using seL4 as a trustworthy
+foundation in security and safety-critical systems. One of these streams is the
+generalisation and automation of platform port verification. Porting seL4 to a
+new platform involves determining which architecture the platform runs on (e.g.,
+Arm v7, Intel x64, or RISC-V 64), which devices are included, at which memory
+addresses they reside, etc. These lead to configuration parameters for the
+kernel and the definition of a set of constants.
+</p>
+<p>
+At the start of the project, the seL4 proofs were intricately dependent on these
+configu ration constants and parameters. This resulted in the need to involve a
+verification expert to update the proofs for even simple changes. This explains
+the low proportion of verified configurations: when INSPECTA started, seL4’s
+formal proofs held for only 5 platforms, one per main architecture (Arm 32-bit,
+Arm 32-bit HYP, Arm 64-bit HYP, RISC-V and Intel), while seL4 was supported
+across 29 platforms (22 for Arm, 5 for RISC-V and 2 for Intel), and more than
+120 configuration options.
+</p>
+<p>
+In the talk we will explain the automation, abstraction and parametrisation
+techniques we are developing to make the seL4 proofs generic in a number of
+parameters. This will deliver two main outcomes: firstly, developers will be
+able to choose freely between boards supported by seL4 without being unduly
+constrained by formal verification support for their system; secondly, companies
+porting seL4 to a new specific board will be able to benefit from seL4 proofs at
+zero extra effort and without verification expertise.
+</p>
+        </div>
+      </article>
+      <div class="flex flex-row gap-x-2 pt-2">
+        
+        
+        <div>
+          <p class="p-1 mt-2">
+          <a href="program.html#p-next-700" class="text-sm text-light underline">See this talk in the program</a>
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="flex w-full mb-6">
+  <div class="flex-1"></div>
+  <hr class="w-10 h-px bg-gray-200 border-0 dark:bg-gray-600">
+  
+<a href="#page-top" class="relative -mt-3.5 mx-4">
+  <div class="dark:bg-slate-900 hover:bg-slate-100 dark:hover:bg-slate-800 p-1.5 h-7 w-7 rounded-full shadow-xs left-1">
+    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" aria-hidden="true" data-slot="icon" class="h-4 w-4 text-slate-400 dark:text-slate-500">
+  <path stroke-linecap="round" stroke-linejoin="round" d="M12 19.5v-15m0 0-6.75 6.75M12 4.5l6.75 6.75"/>
+</svg>
+  </div>
+</a>
+
+  <hr class="w-10 h-px bg-gray-200 border-0 dark:bg-gray-600">
+  <div class="flex-1"></div>
+</div>
+
+
+
+<div id="a-fpga-based" class="py-12 mb-5 section-max-w sm:py-16">
+  <div class="mx-auto px-2 sm:px-6 lg:px-8">
+    <div class="mx-auto lg:mx-0">
+      <h2 class="text-xl font-bold tracking-tight text-dark mb-6 sm:text-4xl">FPGA based Accelerators w/ Microkit</h2>
+      <p>
+        <span class="text-gray-800 dark:text-gray-300">Wanja Zaeske on behalf of Vincent Janson</span>
+        <br>
+        <span class="text-light">German Aerospace Center (DLR)</span>
+      </p>
+      <article class="theprose -mt-10">
+        <div class="pt-5">
+          <p>
+  The adoption of Machine Learning (ML) algorithms in the aviation domain raises
+  the need for high performance computing solutions that satisfy domain
+  intrinsic safety demands. Heterogeneous  computing System on Chips (SoCs) –
+  systems containing a classical Central Processing Unit (CPU) and a Field
+  Programmable Gate Array (FPGA) – can satisfy the computing demands by
+  offloading  computationally intensive tasks from the CPU to dedicated hardware
+  accelerators on the FPGA,  while both CPU and FPGA comply with aviation safety
+  standards. The typically static configuration of accelerators limits the
+  overall system flexibility, making dynamic accelerator configuration
+  desirable.
+</p>
+<p>
+  This presentation aims to establish a Reconfigurable Computing (RC) hypervisor
+  that facilitates the  outsourcing of acceleration tasks and introduces
+  hardware reconfiguration capabilities, all while  maintaining safety and high
+  performance.
+</p>
+<p>
+This work designs and implements a hypervisor extension that attaches to a
+classical software  hypervisor (Microkit on top of seL4) and provides both
+acceleration support and reconfiguration  capabilities of the FPGA resource. On
+the hardware side, the extension connects to a custom designed hardware-based
+hypervisor, which manages acceleration and reconfiguration tasks locally.  On
+the software side, it provides an interface for user applications to access the
+acceleration  capabilities. Interactions between user applications and the
+hypervisor in the software domain,  between the accelerator and the hardware
+hypervisor circuit in the hardware domain, and between  the software and
+hardware domains themselves are thoroughly considered to consolidate the overall
+design. A proof-of-concept demonstrator of the RC hypervisor is evaluated for
+performance and  compliance with aviation safety standards.
+</p>
+        </div>
+      </article>
+      <div class="flex flex-row gap-x-2 pt-2">
+        
+        
+        <div>
+          <p class="p-1 mt-2">
+          <a href="program.html#p-fpga-based" class="text-sm text-light underline">See this talk in the program</a>
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="flex w-full mb-6">
+  <div class="flex-1"></div>
+  <hr class="w-10 h-px bg-gray-200 border-0 dark:bg-gray-600">
+  
+<a href="#page-top" class="relative -mt-3.5 mx-4">
+  <div class="dark:bg-slate-900 hover:bg-slate-100 dark:hover:bg-slate-800 p-1.5 h-7 w-7 rounded-full shadow-xs left-1">
+    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" aria-hidden="true" data-slot="icon" class="h-4 w-4 text-slate-400 dark:text-slate-500">
+  <path stroke-linecap="round" stroke-linejoin="round" d="M12 19.5v-15m0 0-6.75 6.75M12 4.5l6.75 6.75"/>
+</svg>
+  </div>
+</a>
+
+  <hr class="w-10 h-px bg-gray-200 border-0 dark:bg-gray-600">
+  <div class="flex-1"></div>
+</div>
+
+
+
+<div id="a-big-iron" class="py-12 mb-5 section-max-w sm:py-16">
+  <div class="mx-auto px-2 sm:px-6 lg:px-8">
+    <div class="mx-auto lg:mx-0">
+      <h2 class="text-xl font-bold tracking-tight text-dark mb-6 sm:text-4xl">seL4 on Big Iron: Experiences and recommendations from Neutrality's Atoll hypervisor</h2>
+      <p>
+        <span class="text-gray-800 dark:text-gray-300">David Cock</span>
+        <br>
+        <span class="text-light">Neutrality</span>
+      </p>
+      <article class="theprose -mt-10">
+        <div class="pt-5">
+          <p>
+  At the 2024 summit we presented Atoll, a new seL4-based hypervisor  platform
+  built from the ground up to achieve seL4-level provable isolation  between
+  client VMs in a cloud hosting environment. Atoll differs from most  existing
+  seL4 applications in targeting "big iron" machines: servers with  hundreds of
+  cores, terabytes of main memory, and hundreds of Gbps of  network bandwidth.
+  This presents some unique challenges, and stresses the  seL4 model and
+  implementation in new and sometimes unexpected ways.
+</p>
+<p>
+  In this talk, we will report our experiences after a year of intensive design
+  and  development and present recommendations for the future direction of seL4
+  to support such machines. We will focus particularly on both the benefits and
+  limitations of the statically-partitioned multikernel model (the agreed path
+  to multicore seL4): which limitations can be easily worked around, which take
+  more effort, and which may require changes in seL4 itself.
+</p>
+<p>
+  We will cover the essential aspects of hardware support for modern self
+  virtualising architectures. This includes SR-IOV, first-class IOMMU support,
+  interrupt virtualisation, and the secure and correct initialisation of a
+  (mostly)  static seL4 system from a dynamic boot environment e.g. ACPI and
+  UEFI. We  intend this presentation to serve as an entry point for an in-depth
+  discussion  of the future of seL4 on modern non-embedded hardware.
+</p>
+        </div>
+      </article>
+      <div class="flex flex-row gap-x-2 pt-2">
+        
+        
+        <div>
+          <p class="p-1 mt-2">
+          <a href="program.html#p-big-iron" class="text-sm text-light underline">See this talk in the program</a>
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="flex w-full mb-6">
+  <div class="flex-1"></div>
+  <hr class="w-10 h-px bg-gray-200 border-0 dark:bg-gray-600">
+  
+<a href="#page-top" class="relative -mt-3.5 mx-4">
+  <div class="dark:bg-slate-900 hover:bg-slate-100 dark:hover:bg-slate-800 p-1.5 h-7 w-7 rounded-full shadow-xs left-1">
+    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" aria-hidden="true" data-slot="icon" class="h-4 w-4 text-slate-400 dark:text-slate-500">
+  <path stroke-linecap="round" stroke-linejoin="round" d="M12 19.5v-15m0 0-6.75 6.75M12 4.5l6.75 6.75"/>
+</svg>
+  </div>
+</a>
+
+  <hr class="w-10 h-px bg-gray-200 border-0 dark:bg-gray-600">
+  <div class="flex-1"></div>
+</div>
+
+
+
+<div id="a-program-logic" class="py-12 mb-5 section-max-w sm:py-16">
+  <div class="mx-auto px-2 sm:px-6 lg:px-8">
+    <div class="mx-auto lg:mx-0">
+      <h2 class="text-xl font-bold tracking-tight text-dark mb-6 sm:text-4xl">A program logic for seL4-based system verification</h2>
+      <p>
+        <span class="text-gray-800 dark:text-gray-300">Matt Brecknell</span>
+        <br>
+        <span class="text-light">Kry10</span>
+      </p>
+      <article class="theprose -mt-10">
+        <div class="pt-5">
+          <p>
+  Using seL4, we can build systems that include both critical and untrusted
+  user-space  components, with high confidence that there can be no unintended
+  interactions  between components. But how do we gain confidence that critical
+  components and  their composition correctly implement system requirements? To
+  answer this, Kry10 is  developing a framework for verifying systems of
+  user-space components running on  seL4.
+</p>
+<p>
+We have several goals for our framework:
+</p>
+<ul>
+  <li>Write specifications as abstract programs, and prove that implementations
+  respect them.</li>
+  <li>Reason compositionally about components and subsystems that execute
+  concurrently, and that are intended to run indefinitely.</li>
+  <li>Reason about systems that create and destroy seL4 kernel objects.</li>
+  <li>Reflect seL4's separation guarantees into the reasoning principles of the
+  logic.</li>
+</ul>
+<p>
+  As in the seL4 verification, we write abstract specifications as programs
+  shallowly embedded in an interactive theorem prover, and aim to prove
+  functional correctness by  refinement. However, to describe processes that run
+  indefinitely, and their interactions  with their environments, we use a
+  coinductive construction in the style of interaction  trees.
+</p>
+<p>
+  For reasoning about compositions of components and their interactions, we aim
+  to  support a combination of techniques from process algebra and separation
+  logic. We are  using the base logic of Iris, a concurrent separation logic
+  implemented in the Rocq  Prover. However, we are building our own program
+  logic, so that we can model threads  that are waiting to be unblocked or
+  scheduled, as well as threads that can be deleted.
+</p>
+<p>
+  Our framework is work in progress. In this talk, we'll describe what we have
+  so far, and  our plans for further development. Currently, we are focussing on
+  finding the right  concepts for verifying system safety properties up to
+  functional correctness and  integrity. In future, we aim for a program logic
+  that is faithful to the seL4 abstract  specification, at least for the
+  subclass of system configurations of interest to Kry10.
+</p>
+<p>
+  This work is funded by the Agentur für Innovation in Cybersicherheit GmbH
+  (Cyberagentur), Germany.
+</p>
+        </div>
+      </article>
+      <div class="flex flex-row gap-x-2 pt-2">
+        
+        
+        <div>
+          <p class="p-1 mt-2">
+          <a href="program.html#p-program-logic" class="text-sm text-light underline">See this talk in the program</a>
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="flex w-full mb-6">
+  <div class="flex-1"></div>
+  <hr class="w-10 h-px bg-gray-200 border-0 dark:bg-gray-600">
+  
+<a href="#page-top" class="relative -mt-3.5 mx-4">
+  <div class="dark:bg-slate-900 hover:bg-slate-100 dark:hover:bg-slate-800 p-1.5 h-7 w-7 rounded-full shadow-xs left-1">
+    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" aria-hidden="true" data-slot="icon" class="h-4 w-4 text-slate-400 dark:text-slate-500">
+  <path stroke-linecap="round" stroke-linejoin="round" d="M12 19.5v-15m0 0-6.75 6.75M12 4.5l6.75 6.75"/>
+</svg>
+  </div>
+</a>
+
+  <hr class="w-10 h-px bg-gray-200 border-0 dark:bg-gray-600">
+  <div class="flex-1"></div>
+</div>
+
+
+
+<div id="a-verified-high" class="py-12 mb-5 section-max-w sm:py-16">
+  <div class="mx-auto px-2 sm:px-6 lg:px-8">
+    <div class="mx-auto lg:mx-0">
+      <h2 class="text-xl font-bold tracking-tight text-dark mb-6 sm:text-4xl">A Verified, High-Performance, IPv6 Network Stack</h2>
+      <p>
+        <span class="text-gray-800 dark:text-gray-300">Alain Kägi, Daniel Neshyba-Rowe</span>
+        <br>
+        <span class="text-light">Lewis & Clark College</span>
+      </p>
+      <article class="theprose -mt-10">
+        <div class="pt-5">
+          <p>
+  We report on our effort to verify a high-performance, portable, pure IPv6
+  network stack written in C. Currently, our stack includes compliant
+  implementations of the Ethernet, IPv6, UDP, and ICMPv6 layers. Our
+  verification efforts center on showing our C implementation is a refinement of
+  an abstract specification manually derived from official prose-based
+  specifications. We developed our proof with Isabelle/HOL using the AutoCorres2
+  framework.
+</p>
+        </div>
+      </article>
+      <div class="flex flex-row gap-x-2 pt-2">
+        
+        
+        <div>
+          <p class="p-1 mt-2">
+          <a href="program.html#p-verified-high" class="text-sm text-light underline">See this talk in the program</a>
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="flex w-full mb-6">
+  <div class="flex-1"></div>
+  <hr class="w-10 h-px bg-gray-200 border-0 dark:bg-gray-600">
+  
+<a href="#page-top" class="relative -mt-3.5 mx-4">
+  <div class="dark:bg-slate-900 hover:bg-slate-100 dark:hover:bg-slate-800 p-1.5 h-7 w-7 rounded-full shadow-xs left-1">
+    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" aria-hidden="true" data-slot="icon" class="h-4 w-4 text-slate-400 dark:text-slate-500">
+  <path stroke-linecap="round" stroke-linejoin="round" d="M12 19.5v-15m0 0-6.75 6.75M12 4.5l6.75 6.75"/>
+</svg>
+  </div>
+</a>
+
+  <hr class="w-10 h-px bg-gray-200 border-0 dark:bg-gray-600">
+  <div class="flex-1"></div>
+</div>
+
+
+
+<div id="a-verified-zynqmp" class="py-12 mb-5 section-max-w sm:py-16">
+  <div class="mx-auto px-2 sm:px-6 lg:px-8">
+    <div class="mx-auto lg:mx-0">
+      <h2 class="text-xl font-bold tracking-tight text-dark mb-6 sm:text-4xl">Verified ZynqMP DMA Driver in Concurrent Separation Logic</h2>
+      <p>
+        <span class="text-gray-800 dark:text-gray-300">Gordon Stewart</span>
+        <br>
+        <span class="text-light">Riverside Research</span>
+      </p>
+      <article class="theprose -mt-10">
+        <div class="pt-5">
+          <p>
+  This talk presents an approach to device driver verification using separation
+  logic developed at BlueRock Security. Using the PL011 UART and simple-mode
+  ZynqMP DMA devices as examples, the talk will demonstrate how to use
+  Iris-style ghost state and invariants to embed the operational semantics of
+  devices in the specifications of MMIO operations. The proof of each driver
+  sets up a device protocol showing how the state of the device evolves over
+  time, e.g. from DMA copy to DMA idle. Each driver proof also establishes that
+  the combined behavior of the device and the driver preserve this invariant.
+  The proofs are built using BlueRock Security's BRiCk program logic for
+  concurrent C++. The talk will touch on potential applications of device
+  protocols within the seL4 ecosystem.
+</p>
+        </div>
+      </article>
+      <div class="flex flex-row gap-x-2 pt-2">
+        
+        
+        <div>
+          <p class="p-1 mt-2">
+          <a href="program.html#p-verified-zynqmp" class="text-sm text-light underline">See this talk in the program</a>
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="flex w-full mb-6">
+  <div class="flex-1"></div>
+  <hr class="w-10 h-px bg-gray-200 border-0 dark:bg-gray-600">
+  
+<a href="#page-top" class="relative -mt-3.5 mx-4">
+  <div class="dark:bg-slate-900 hover:bg-slate-100 dark:hover:bg-slate-800 p-1.5 h-7 w-7 rounded-full shadow-xs left-1">
+    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" aria-hidden="true" data-slot="icon" class="h-4 w-4 text-slate-400 dark:text-slate-500">
+  <path stroke-linecap="round" stroke-linejoin="round" d="M12 19.5v-15m0 0-6.75 6.75M12 4.5l6.75 6.75"/>
+</svg>
+  </div>
+</a>
+
+  <hr class="w-10 h-px bg-gray-200 border-0 dark:bg-gray-600">
+  <div class="flex-1"></div>
+</div>
+
+
+
+<div id="a-science-engineering" class="py-12 mb-5 section-max-w sm:py-16">
+  <div class="mx-auto px-2 sm:px-6 lg:px-8">
+    <div class="mx-auto lg:mx-0">
+      <h2 class="text-xl font-bold tracking-tight text-dark mb-6 sm:text-4xl">Science, Engineering, Craft, Magic - Revolutions in the field of Software</h2>
+      <p>
+        <span class="text-gray-800 dark:text-gray-300">Boyd Multerer</span>
+        <br>
+        <span class="text-light">Kry10</span>
+      </p>
+      <article class="theprose -mt-10">
+        <div class="pt-5">
+          <p>
+  There are two, simultaneous revolutions happening in the world software right
+  now. The obvious one, which gets most of the attention, money, and talk-time
+  is Artificial Intelligence. The other, which is just as momentous a change, is
+  Formal Methods at scale.
+</p>
+<p>
+  The collective We in this community may have differences of opinion on the
+  details, but collectively We are the cutting edge of the Formal Methods
+  revolution. What we are creating together is no less than the field of
+  Software Engineering, which thus far has been craftwork.
+</p>
+<p>
+  This talk comes in two parts. First, we define and explore Science,
+  Engineering, Craftwork, and Magic, and why the field of software development
+  has misapplied the terms.
+</p>
+<p>
+  The second part gets real about why formal proofs are required, implications
+  that has on OS design, and more importantly system design.
+</p>
+<p>
+  Safety Critical devices, whether in civilian infrastructure, mobility, or
+  defense depends more than ever on complex software. The implications on
+  certification are profound and that is the key to understanding how to move
+  beyond academic and narrow deployments that community currently supports.
+  </p>
+        </div>
+      </article>
+      <div class="flex flex-row gap-x-2 pt-2">
+        
+        
+        <div>
+          <p class="p-1 mt-2">
+          <a href="program.html#p-science-engineering" class="text-sm text-light underline">See this talk in the program</a>
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="flex w-full mb-6">
+  <div class="flex-1"></div>
+  <hr class="w-10 h-px bg-gray-200 border-0 dark:bg-gray-600">
+  
+<a href="#page-top" class="relative -mt-3.5 mx-4">
+  <div class="dark:bg-slate-900 hover:bg-slate-100 dark:hover:bg-slate-800 p-1.5 h-7 w-7 rounded-full shadow-xs left-1">
+    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" aria-hidden="true" data-slot="icon" class="h-4 w-4 text-slate-400 dark:text-slate-500">
+  <path stroke-linecap="round" stroke-linejoin="round" d="M12 19.5v-15m0 0-6.75 6.75M12 4.5l6.75 6.75"/>
+</svg>
+  </div>
+</a>
+
+  <hr class="w-10 h-px bg-gray-200 border-0 dark:bg-gray-600">
+  <div class="flex-1"></div>
+</div>
+
+
+
+<div id="a-towards-dependable" class="py-12 mb-5 section-max-w sm:py-16">
+  <div class="mx-auto px-2 sm:px-6 lg:px-8">
+    <div class="mx-auto lg:mx-0">
+      <h2 class="text-xl font-bold tracking-tight text-dark mb-6 sm:text-4xl">Towards Dependable System Services on seL4</h2>
+      <p>
+        <span class="text-gray-800 dark:text-gray-300">Yanyan Shen, Dhammika Elkaduwe</span>
+        <br>
+        <span class="text-light">NIO</span>
+      </p>
+      <article class="theprose -mt-10">
+        <div class="pt-5">
+          <p>
+  The seL4 microkernel is a solid foundation for building fault-tolerant systems: a failed system component is unlikely to completely bring down the whole system, and potentially there is an opportunity to restart the failed component and restore its normal service. However, deploying the detection and recovery mechanisms on a dynamic system is still challenging for the following reasons:
+</p>
+<ol>
+  <li>Accurate and low-overhead fault detection is tricky. The monitor and the components being monitored should minimise interference. For instance, the monitor should be able to check if a component is alive, but the monitor's normal execution must not be interfered by the component.</li>
+  <li>Restarting drivers is straight-forward, since they usually only talk with a few servers. However, a system server, such as a file server, shared by applications keeps some states of its clients. Thus, it is not trivial to recover the states if the server is restarted. Furthermore, all the clients need to reconnect with the new server instance and restart the interrupted requests transparently.</li>
+  <li>Some kernel supports may be needed. For instance, when a server fails, the kernel needs to wake up the clients that are still waiting on the reply caps so that the clients can perform the recovery steps as well.</li>
+</ol>
+<p>
+  In this talk, we will present the progress of building dependable system services on seL4, discuss the approaches dealing with the challenges above, and learn the insights from the audiences.
+</p>
+        </div>
+      </article>
+      <div class="flex flex-row gap-x-2 pt-2">
+        
+        
+        <div>
+          <p class="p-1 mt-2">
+          <a href="program.html#p-towards-dependable" class="text-sm text-light underline">See this talk in the program</a>
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="flex w-full mb-6">
+  <div class="flex-1"></div>
+  <hr class="w-10 h-px bg-gray-200 border-0 dark:bg-gray-600">
+  
+<a href="#page-top" class="relative -mt-3.5 mx-4">
+  <div class="dark:bg-slate-900 hover:bg-slate-100 dark:hover:bg-slate-800 p-1.5 h-7 w-7 rounded-full shadow-xs left-1">
+    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" aria-hidden="true" data-slot="icon" class="h-4 w-4 text-slate-400 dark:text-slate-500">
+  <path stroke-linecap="round" stroke-linejoin="round" d="M12 19.5v-15m0 0-6.75 6.75M12 4.5l6.75 6.75"/>
+</svg>
+  </div>
+</a>
+
+  <hr class="w-10 h-px bg-gray-200 border-0 dark:bg-gray-600">
+  <div class="flex-1"></div>
+</div>
+
+
+
+<div id="a-porting-nasa" class="py-12 mb-5 section-max-w sm:py-16">
+  <div class="mx-auto px-2 sm:px-6 lg:px-8">
+    <div class="mx-auto lg:mx-0">
+      <h2 class="text-xl font-bold tracking-tight text-dark mb-6 sm:text-4xl">Porting NASA's core Flight System to Magnetite on seL4</h2>
+      <p>
+        <span class="text-gray-800 dark:text-gray-300">Juliana Furgala, Samuel Jero</span>
+        <br>
+        <span class="text-light">MIT Lincoln Laboratory</span>
+      </p>
+      <article class="theprose -mt-10">
+        <div class="pt-5">
+          <p>
+  Embedded systems are everywhere from public u+li+es to personal smart watches.
+  These  systems have increasingly been targets for malicious ac+vity by both
+  criminal and na+on state  actors. One par+cularly challenging subdomain of
+  embedded systems is space systems, due to  the harsh environmental challenges
+  (e.g., radia+on and temperature), the inability to get  physical access once
+  launched, and the cost and cri+cal func+onality of these systems. Keeping
+  satellites running relies heavily on resilient and secure soJware. While
+  making this soJware  resilient has historically been important for these
+  systems, security has received liMle  considera+on to date. As a result,
+  several years ago we started a series of efforts to secure these  systems. One
+  of our first projects was an aMempt to port NASA’s core Flight SoJware (cFS),
+  a  widely used satellite flight soJware, to seL4, to provide a secure
+  founda+on for satellite  systems.
+</p>
+<p>
+  NASA’s core Flight SoJware (cFS) was developed by NASA Goddard over 20 years
+  ago. Today it is  widely deployed and used on scores of government and
+  academic space missions, including  NASA Artemis and the Roman Space
+  Telescope. cFS is open source and is s+ll under ac+ve  development. Its
+  primary purpose is to provide a message bus and suite of reusable
+  applica+ons. These components form the core of a system’s flight soJware and
+  can be easily  extended with a given mission’s func+onality. Given its
+  extensive use in space systems, cFS runs  on many plaXorms and opera+ng
+  systems including Linux and VxWorks; this is made possible  thanks to an
+  extensive Opera+ng System Abstrac+on Layer or OSAL.
+</p>
+<p>
+  Our analysis of the features cFS requires from an opera+ng system as well as
+  the kind of  environment it expects on a spacecraJ led us to conclude that a
+  real opera+ng system was  desirable. The func+onality expected by cFS includes
+  synchroniza+on primi+ves like mutexes  and semaphores, message queues, +mers
+  and +me keeping facili+es, as well as some means of  logging and network
+  communica+on. Addi+onally, cFS envisions an environment where new  processes
+  and threads can be started on command. This analysis led us to realize that
+  while the  actual por+ng of cFS would be rela+vely easy thanks to its OSAL
+  abstrac+on layer, significant  func+onality needed to be created on top of
+  seL4. This ul+mately led us to the crea+on of the  Magne+te Opera+ng System.
+</p>
+<p>
+  This talk will focus on our analysis of the features required for cFS, our
+  experience implemen+ng  that func+onality and por+ng cFS to an seL4-based
+  system, and how this led us to create the  Magne+te opera+ng system.
+</p>
+        </div>
+      </article>
+      <div class="flex flex-row gap-x-2 pt-2">
+        
+        
+        <div>
+          <p class="p-1 mt-2">
+          <a href="program.html#p-porting-nasa" class="text-sm text-light underline">See this talk in the program</a>
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="flex w-full mb-6">
+  <div class="flex-1"></div>
+  <hr class="w-10 h-px bg-gray-200 border-0 dark:bg-gray-600">
+  
+<a href="#page-top" class="relative -mt-3.5 mx-4">
+  <div class="dark:bg-slate-900 hover:bg-slate-100 dark:hover:bg-slate-800 p-1.5 h-7 w-7 rounded-full shadow-xs left-1">
+    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" aria-hidden="true" data-slot="icon" class="h-4 w-4 text-slate-400 dark:text-slate-500">
+  <path stroke-linecap="round" stroke-linejoin="round" d="M12 19.5v-15m0 0-6.75 6.75M12 4.5l6.75 6.75"/>
+</svg>
+  </div>
+</a>
+
+  <hr class="w-10 h-px bg-gray-200 border-0 dark:bg-gray-600">
+  <div class="flex-1"></div>
+</div>
+
+
+
+<div id="a-integration-sel4" class="py-12 mb-5 section-max-w sm:py-16">
+  <div class="mx-auto px-2 sm:px-6 lg:px-8">
+    <div class="mx-auto lg:mx-0">
+      <h2 class="text-xl font-bold tracking-tight text-dark mb-6 sm:text-4xl">Integration of seL4 in a Flight Vehicle Mission System</h2>
+      <p>
+        <span class="text-gray-800 dark:text-gray-300">Darren Cofer</span>
+        <br>
+        <span class="text-light">Collins Aerospace</span>
+      </p>
+      <article class="theprose -mt-10">
+        <div class="pt-5">
+          <p>
+  The goal of the INSPECTA project (part of the DARPA PROVERS program which
+  started in 2024) is to improve the security of defense and aerospace systems
+  by dramatically improving the usability, flexibility, and accessibility of
+  formal methods-based development and verification tools. We will demonstrate
+  the formal methods tools and workflow created on the program by addressing
+  emerging security requirements for a Collins mission computing platform for
+  unmanned air vehicles under development for military applications. This
+  includes re-architecting the mission software as a collection of virtual
+  machines running legacy code and selected high-criticality components,
+  producing an architecture model for the system, porting selected software to
+  Rust, building software to run on seL4,and verifying critical safety and
+  security properties.
+</p>
+<p>
+  The team has completed our initial integration of seL4 with the Collins
+  RapidEdge Collaborative Mission Autonomy software. The integrated software was
+  able to successfully execute in hardware-in-the-loop simulation one of the
+  autonomous multi-UAV missions flown last year at the US Army EDGE24 event. The
+  RapidEdge software was run without modification in a secure virtual machine
+  hosted on seL4, providing guaranteed isolation and control over all input and
+  output interfaces.
+</p>
+<p>
+  This successful integration and demonstration provide the basis for further
+  application of formal methods technologies in the coming phases of the PROVERS
+  program and will result in verified cyber-resilience for the LE mission
+  system. In addition to describing the integration and test effort, we will
+  report on lessons learned, gaps identified, and next steps for the project.
+</p>
+        </div>
+      </article>
+      <div class="flex flex-row gap-x-2 pt-2">
+        
+        
+        <div>
+          <p class="p-1 mt-2">
+          <a href="program.html#p-integration-sel4" class="text-sm text-light underline">See this talk in the program</a>
           </p>
         </div>
       </div>
@@ -891,6 +1611,575 @@ training).
 
 
 
+<div id="a-sculpt-os" class="py-12 mb-5 section-max-w sm:py-16">
+  <div class="mx-auto px-2 sm:px-6 lg:px-8">
+    <div class="mx-auto lg:mx-0">
+      <h2 class="text-xl font-bold tracking-tight text-dark mb-6 sm:text-4xl">Sculpt OS - a dynamic general-purpose OS powered by Genode on seL4</h2>
+      <p>
+        <span class="text-gray-800 dark:text-gray-300">Alexander Boettcher, Sebastian Sumpf</span>
+        <br>
+        <span class="text-light">Genode Labs</span>
+      </p>
+      <article class="theprose -mt-10">
+        <div class="pt-5">
+          <p>
+  The Genode operating system framework [1] is an open-source tool kit, with
+  quarterly releases per year since 2008 [2], for building component-based
+  operating systems. It scales from rather static embedded appliances to highly
+  dynamic general-purpose computing as showcased by Sculpt OS.
+</p>
+<p>
+  Sculpt OS [3][4] is an open-source general-purpose OS with two releases per
+  year since 2018 [5]. It combines Genode's microkernel architecture,
+  capability-based security, sandboxed device drivers, and virtual machines in a
+  unique dynamic interactive operating system. It runs on commodity PC notebooks
+  and ARM devices, in particular consumer focused devices like the PinePhone
+  cellphone [6], the MNT Reform notebook [7] and on the MNT Pocket Reform mini
+  notebook [8]. Features like on target updates and federated package
+  provisioning of components make the Sculpt OS a enjoyable day-to-day OS for
+  the Genode community.
+</p>
+<p>
+  Since its inception, the Genode framework supports various microkernels, e.g.
+  various L4 kernels, even Linux and in particular seL4 since 2015 [9]. Even so
+  seL4 is not supported with Sculpt OS officially, it's nevertheless in reach.
+  Is it? As part of an experimental Sculpt OS demo image [10], it became clear,
+  that several loose ends need to be picked up [11].
+</p>
+<p>
+  The talk will present the progress and the current state of Genode on seL4 and
+  Sculpt OS in particular. The presentation will be given live on a Sculpt OS
+  running on the seL4 kernel. Several typical general purpose use-cases and
+  characteristic features of Sculpt OS will be demonstrated in order to give the
+  audience an impression of the current interactive state of Sculpt OS on seL4.
+</p>
+<p>
+[1] <a href="https://www.genode.org">https://www.genode.org</a>
+<br>[2] <a
+href="https://www.genode.org/documentation/release-notes/index">https://www.genode.org/documentation/release-notes/index</a>
+<br>[3] <a
+href="https://www.genode.org/download/sculpt">https://www.genode.org/download/sculpt</a>
+<br>[4] <a
+href="https://genode.org/documentation/articles/sculpt-25-04">https://genode.org/documentation/articles/sculpt-25-04</a>
+<br>[5] <a
+href="https://genode.org/download/sculpt-archive">https://genode.org/download/sculpt-archive</a>
+<br>[6] <a
+href="https://genodians.org/nfeske/2024-02-15-fosdem-aftermath">https://genodians.org/nfeske/2024-02-15-fosdem-aftermath</a>
+<br>[7] <a
+href="https://genodians.org/skalk/2023-06-07-sculpt-23.04-mnt-reform2">https://genodians.org/skalk/2023-06-07-sculpt-23.04-mnt-reform2</a>
+<br>[8] <a
+href="https://genodians.org/jws/2024-11-25-sculpt_mnt_pocket">https://genodians.org/jws/2024-11-25-sculpt_mnt_pocket</a>
+<br>[9] <a
+href="https://archive.fosdem.org/2016/schedule/event/microkernels_genode_sel4">https://archive.fosdem.org/2016/schedule/event/microkernels_genode_sel4</a>
+<br>[10] <a
+href="https://fosdem.org/2025/schedule/event/fosdem-2025-5768-celebrating-kernel-diversity-with-genode">https://fosdem.org/2025/schedule/event/fosdem-2025-5768-celebrating-kernel-diversity-with-genode</a>
+<br>[11] <a
+href="https://genode.org/documentation/release-notes/25.05#Improved_support_for_the_seL4_kernel">https://genode.org/documentation/release-notes/25.05#Improved_support_for_the_seL4_kernel</a>
+</p>
+        </div>
+      </article>
+      <div class="flex flex-row gap-x-2 pt-2">
+        
+        
+        <div>
+          <p class="p-1 mt-2">
+          <a href="program.html#p-sculpt-os" class="text-sm text-light underline">See this talk in the program</a>
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="flex w-full mb-6">
+  <div class="flex-1"></div>
+  <hr class="w-10 h-px bg-gray-200 border-0 dark:bg-gray-600">
+  
+<a href="#page-top" class="relative -mt-3.5 mx-4">
+  <div class="dark:bg-slate-900 hover:bg-slate-100 dark:hover:bg-slate-800 p-1.5 h-7 w-7 rounded-full shadow-xs left-1">
+    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" aria-hidden="true" data-slot="icon" class="h-4 w-4 text-slate-400 dark:text-slate-500">
+  <path stroke-linecap="round" stroke-linejoin="round" d="M12 19.5v-15m0 0-6.75 6.75M12 4.5l6.75 6.75"/>
+</svg>
+  </div>
+</a>
+
+  <hr class="w-10 h-px bg-gray-200 border-0 dark:bg-gray-600">
+  <div class="flex-1"></div>
+</div>
+
+
+
+<div id="a-cellulos" class="py-12 mb-5 section-max-w sm:py-16">
+  <div class="mx-auto px-2 sm:px-6 lg:px-8">
+    <div class="mx-auto lg:mx-0">
+      <h2 class="text-xl font-bold tracking-tight text-dark mb-6 sm:text-4xl">CellulOS: An OS for comparing Isolation Mechanisms</h2>
+      <p>
+        <span class="text-gray-800 dark:text-gray-300">Sid Agrawal, Arya Stevinson, Linh Pham, Ethan Xu, Shaurya Patel, Hugo Lefeuvre, Aastha Mehta, Reto Achermann, Margo Seltze</span>
+        <br>
+        <span class="text-light">University of British Columbia, Oracle, Hammerspace</span>
+      </p>
+      <article class="theprose -mt-10">
+        <div class="pt-5">
+          <p>
+  Several mechanisms exist to isolate applications (e.g., processes, VMs,
+  containers, lwC).
+</p>
+<p>
+  However, there is no precise way to describe the differences in the resource
+  isolation provided by each one, making it difficult to compare these
+  mechanisms.
+</p>
+<p>
+  We introduce CellulOS, a custom-built seL4-based operating system that exposes
+  protection domain state in a manner that enables developers and infrastructure
+  providers to reason about the resources shared between two protection domains.
+  The state is exposed as proposed in the Osmosis model.
+</p>
+<p>
+  OSmosis is a formal model that allows developers and infrastructure providers
+  to reason about the resources shared between two protection domains. It
+  represents resources, protection domains, and their relationships as a graph.
+  Queries on this graph return sets of resources and/or protection domains,
+  revealing information about confidentiality, integrity, and availability.
+  Using these queries, we define a protection domain’s trusted computing base,
+  identifying the domains upon which it relies, and its impact boundary,
+  identifying those domains affected by a faulty or malicious domain.
+</p>
+<p>
+   The talk will cover CellulOS's architecture, the application of the OSmosis
+   model to its design, its current capabilities as an OS, and how a
+   capability-based uKernel facilitates the application of OSmosis to an OS. We
+   will also discuss the challenges faced in bootstrapping an seL4 project from
+   the perspective of a small group of graduate students, the extensive support
+   provided by the seL4 community, an overview of the components we ported (VMM,
+   SQLite, xv6FS, block driver), and our design for deadlock avoidance.
+</p>
+<p>
+  Wiki for CellulOS: https://cellulosdocs.readthedocs.io/en/cellulos/index.html
+</p>
+        </div>
+      </article>
+      <div class="flex flex-row gap-x-2 pt-2">
+        
+        
+        <div>
+          <p class="p-1 mt-2">
+          <a href="program.html#p-cellulos" class="text-sm text-light underline">See this talk in the program</a>
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="flex w-full mb-6">
+  <div class="flex-1"></div>
+  <hr class="w-10 h-px bg-gray-200 border-0 dark:bg-gray-600">
+  
+<a href="#page-top" class="relative -mt-3.5 mx-4">
+  <div class="dark:bg-slate-900 hover:bg-slate-100 dark:hover:bg-slate-800 p-1.5 h-7 w-7 rounded-full shadow-xs left-1">
+    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" aria-hidden="true" data-slot="icon" class="h-4 w-4 text-slate-400 dark:text-slate-500">
+  <path stroke-linecap="round" stroke-linejoin="round" d="M12 19.5v-15m0 0-6.75 6.75M12 4.5l6.75 6.75"/>
+</svg>
+  </div>
+</a>
+
+  <hr class="w-10 h-px bg-gray-200 border-0 dark:bg-gray-600">
+  <div class="flex-1"></div>
+</div>
+
+
+
+<div id="a-rust-based" class="py-12 mb-5 section-max-w sm:py-16">
+  <div class="mx-auto px-2 sm:px-6 lg:px-8">
+    <div class="mx-auto lg:mx-0">
+      <h2 class="text-xl font-bold tracking-tight text-dark mb-6 sm:text-4xl">Rust-based drivers and verified rust applications on seL4</h2>
+      <p>
+        <span class="text-gray-800 dark:text-gray-300">Robbie VanVossen</span>
+        <br>
+        <span class="text-light">DornerWorks</span>
+      </p>
+      <article class="theprose -mt-10">
+        <div class="pt-5">
+          <p>
+  While the seL4 microkernel provides exceptional guarantees due to its formal
+  verification, that isn’t always enough on its own to meet high-assurance
+  requirements. Some user applications built on top of the microkernel will need
+  stronger confidence than just the known isolation from other applications.
+  There are multiple ways to improve confidence in the correctness of an
+  application, such as using a memory-safe language, thorough testing, and
+  formal verification. I have created an seL4-based system that utilizes a
+  firewall application written in Rust. The application eventually used all of
+  these approaches to gain high confidence in its functional correctness.
+</p>
+<p>
+  The system was generated with Kansas State University’s (KSU’s) HAMR toolchain
+  which connects a Rust-based, low-level ethernet driver via the firewall to a
+  VM. This allows for the ethernet device and driver to be fully isolated from
+  the VM and for security functionality to be completely separate from the
+  implementation of the VM.
+</p>
+<p>
+  I will discuss the evolution of this system and the firewall application. I
+  will discuss the benefits provided by HAMR as well as some of the challenges
+  of using the tool, with special focus on the model and the GUMBO contracts
+  that help formalize the requirements into specification which can be used for
+  test generation and formal verification. I will provide further details about
+  the property-based testing and the verification effort utilizing Verus,
+  including some metrics that were gathered on the code and the effort.
+</p>
+        </div>
+      </article>
+      <div class="flex flex-row gap-x-2 pt-2">
+        
+        
+        <div>
+          <p class="p-1 mt-2">
+          <a href="program.html#p-rust-based" class="text-sm text-light underline">See this talk in the program</a>
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="flex w-full mb-6">
+  <div class="flex-1"></div>
+  <hr class="w-10 h-px bg-gray-200 border-0 dark:bg-gray-600">
+  
+<a href="#page-top" class="relative -mt-3.5 mx-4">
+  <div class="dark:bg-slate-900 hover:bg-slate-100 dark:hover:bg-slate-800 p-1.5 h-7 w-7 rounded-full shadow-xs left-1">
+    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" aria-hidden="true" data-slot="icon" class="h-4 w-4 text-slate-400 dark:text-slate-500">
+  <path stroke-linecap="round" stroke-linejoin="round" d="M12 19.5v-15m0 0-6.75 6.75M12 4.5l6.75 6.75"/>
+</svg>
+  </div>
+</a>
+
+  <hr class="w-10 h-px bg-gray-200 border-0 dark:bg-gray-600">
+  <div class="flex-1"></div>
+</div>
+
+
+
+<div id="a-surevoice" class="py-12 mb-5 section-max-w sm:py-16">
+  <div class="mx-auto px-2 sm:px-6 lg:px-8">
+    <div class="mx-auto lg:mx-0">
+      <h2 class="text-xl font-bold tracking-tight text-dark mb-6 sm:text-4xl">SureVoice Solid</h2>
+      <p>
+        <span class="text-gray-800 dark:text-gray-300">Peter de Ridder</span>
+        <br>
+        <span class="text-light">MEP</span>
+      </p>
+      <article class="theprose -mt-10">
+        <div class="pt-5">
+          <p>
+  SureVoice Solid is running at the heart of the SureVoice Voice Control System
+  (VCS), used by air traffic and maritime controllers to communicate with pilots
+  and captains of ships. MEP is a company developing and supplying voice
+  communication systems for critical applications in the Maritime and Aviation
+  sectors worldwide. MEP has chosen to run SureVoice on seL4 to guarantee 24/7
+  availability. The seL4 platform provides the separation of functionalities in
+  the SureVoice Solid to ensure safety and secure operation.
+</p>
+<p>
+  This talk will explain why we choosen seL4, how we handle mixed criticality
+  and modular software on top of seL4, and the platform it is running on.
+</p>
+        </div>
+      </article>
+      <div class="flex flex-row gap-x-2 pt-2">
+        
+        
+        <div>
+          <p class="p-1 mt-2">
+          <a href="program.html#p-surevoice" class="text-sm text-light underline">See this talk in the program</a>
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="flex w-full mb-6">
+  <div class="flex-1"></div>
+  <hr class="w-10 h-px bg-gray-200 border-0 dark:bg-gray-600">
+  
+<a href="#page-top" class="relative -mt-3.5 mx-4">
+  <div class="dark:bg-slate-900 hover:bg-slate-100 dark:hover:bg-slate-800 p-1.5 h-7 w-7 rounded-full shadow-xs left-1">
+    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" aria-hidden="true" data-slot="icon" class="h-4 w-4 text-slate-400 dark:text-slate-500">
+  <path stroke-linecap="round" stroke-linejoin="round" d="M12 19.5v-15m0 0-6.75 6.75M12 4.5l6.75 6.75"/>
+</svg>
+  </div>
+</a>
+
+  <hr class="w-10 h-px bg-gray-200 border-0 dark:bg-gray-600">
+  <div class="flex-1"></div>
+</div>
+
+
+
+<div id="a-trustworthy-systems" class="py-12 mb-5 section-max-w sm:py-16">
+  <div class="mx-auto px-2 sm:px-6 lg:px-8">
+    <div class="mx-auto lg:mx-0">
+      <h2 class="text-xl font-bold tracking-tight text-dark mb-6 sm:text-4xl">Trustworthy Systems R&D Update</h2>
+      <p>
+        <span class="text-gray-800 dark:text-gray-300">Gernot Heiser</span>
+        <br>
+        <span class="text-light">UNSW Sydney</span>
+      </p>
+      <article class="theprose -mt-10">
+        <div class="pt-5">
+          <p>
+  This talk will discuss recent and on-going seL4-related research and de- velopment at UNSW’s Trustworthy Systems group. It will provide a general overview and then focus on the system side of our current work, to be com- plemented by Thomas Sewell’s and Junming Zhao’s talks that will focus on verification activities.
+</p>
+<p>
+  Specifically this talk will cover work on kernel enhancements required for energy and thermal management, including on- and off-lining of cores and the implied migration of threads between cores. This is complemented by extensions of the Microkit.
+</p>
+<p>
+  I will further cover or work on maturing the seL4 device driver frame-work (sDDF), including further performance improvements and new device classes, and progress on LionsOS and what we have learnt about inherent per- formance limitations (or lack thereof) of modular microkernel-based OSes.
+I will also cover early-stage work on two other projects:
+</p>
+<ol>
+  <li>Carrels: Secure micro-services on seL4, and</li>
+  <li>Djawula: Provably secure, general-purpose OS on seL4.</li>
+</ol>
+        </div>
+      </article>
+      <div class="flex flex-row gap-x-2 pt-2">
+        
+        
+        <div>
+          <p class="p-1 mt-2">
+          <a href="program.html#p-trustworthy-systems" class="text-sm text-light underline">See this talk in the program</a>
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="flex w-full mb-6">
+  <div class="flex-1"></div>
+  <hr class="w-10 h-px bg-gray-200 border-0 dark:bg-gray-600">
+  
+<a href="#page-top" class="relative -mt-3.5 mx-4">
+  <div class="dark:bg-slate-900 hover:bg-slate-100 dark:hover:bg-slate-800 p-1.5 h-7 w-7 rounded-full shadow-xs left-1">
+    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" aria-hidden="true" data-slot="icon" class="h-4 w-4 text-slate-400 dark:text-slate-500">
+  <path stroke-linecap="round" stroke-linejoin="round" d="M12 19.5v-15m0 0-6.75 6.75M12 4.5l6.75 6.75"/>
+</svg>
+  </div>
+</a>
+
+  <hr class="w-10 h-px bg-gray-200 border-0 dark:bg-gray-600">
+  <div class="flex-1"></div>
+</div>
+
+
+
+<div id="a-dividing-timelines" class="py-12 mb-5 section-max-w sm:py-16">
+  <div class="mx-auto px-2 sm:px-6 lg:px-8">
+    <div class="mx-auto lg:mx-0">
+      <h2 class="text-xl font-bold tracking-tight text-dark mb-6 sm:text-4xl">Dividing Timelines to Verify seL4 Applications</h2>
+      <p>
+        <span class="text-gray-800 dark:text-gray-300">Thomas Sewell</span>
+        <br>
+        <span class="text-light">UNSW Sydney</span>
+      </p>
+      <article class="theprose -mt-10">
+        <div class="pt-5">
+          <p>
+  We are all familiar with the verification of the seL4 kernel, completed in
+  2009, and the growth of a community of developers building systems on top of
+  seL4. Many of these systems themselves contain verified components or have a
+  verified design. The challenge of assembling a multi-component seL4
+  application that is verified in total, to the same standard as the kernel
+  itself, remains to be solved.
+</p>
+<p>
+  A crucial part of the challenge is concurrency. The kernel is never preempted,
+  and so, on a single-threaded CPU, it runs without any concurrency concerns.
+  Its verification can ignore concurrency and treat kernel entry events as
+  “black box” transitions from input state to output state. User level tasks
+  cannot avoid concurrency. Even on a single-threaded CPU, they may be
+  preempted, and exist within the appearance of a concurrent environment.
+  Verification of user level tasks in context requires a concurrent semantics,
+  which is much more complicated.
+</p>
+<p>
+  This talk is about one specific aspect of the problem. We would like the user
+  level concurrent semantics to mesh with the verified kernel semantics, with,
+  for instance, the meaning of system calls connected to their meaning in the
+  kernel API. For these purposes, the existing “black box” treatment of the
+  kernel creates some complications. A system call at user level triggers a
+  kernel entry, but the resulting kernel execution may perform other tasks in
+  addition to handling the system call.
+</p>
+<p>
+  We aim to address this by introducing a new variant of the seL4 abstract spec
+  that splits compound events. I will report on our progress in verifying that
+  the variant abstract spec is equivalent, and outline our plan to use this
+  alternative specification to construct a multi-timeline system semantics.
+</p>
+        </div>
+      </article>
+      <div class="flex flex-row gap-x-2 pt-2">
+        
+        
+        <div>
+          <p class="p-1 mt-2">
+          <a href="program.html#p-dividing-timelines" class="text-sm text-light underline">See this talk in the program</a>
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="flex w-full mb-6">
+  <div class="flex-1"></div>
+  <hr class="w-10 h-px bg-gray-200 border-0 dark:bg-gray-600">
+  
+<a href="#page-top" class="relative -mt-3.5 mx-4">
+  <div class="dark:bg-slate-900 hover:bg-slate-100 dark:hover:bg-slate-800 p-1.5 h-7 w-7 rounded-full shadow-xs left-1">
+    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" aria-hidden="true" data-slot="icon" class="h-4 w-4 text-slate-400 dark:text-slate-500">
+  <path stroke-linecap="round" stroke-linejoin="round" d="M12 19.5v-15m0 0-6.75 6.75M12 4.5l6.75 6.75"/>
+</svg>
+  </div>
+</a>
+
+  <hr class="w-10 h-px bg-gray-200 border-0 dark:bg-gray-600">
+  <div class="flex-1"></div>
+</div>
+
+
+
+<div id="a-verifying-device" class="py-12 mb-5 section-max-w sm:py-16">
+  <div class="mx-auto px-2 sm:px-6 lg:px-8">
+    <div class="mx-auto lg:mx-0">
+      <h2 class="text-xl font-bold tracking-tight text-dark mb-6 sm:text-4xl">Verifying Device Drivers with Pancake</h2>
+      <p>
+        <span class="text-gray-800 dark:text-gray-300">Junming Zhao</span>
+        <br>
+        <span class="text-light">UNSW Sydney</span>
+      </p>
+      <article class="theprose -mt-10">
+        <div class="pt-5">
+          <p>
+  Device driver bugs are the leading cause of OS compromises, and their formal
+  verification is therefore highly desirable. To the best of our knowledge, no
+  realistic  and performant driver has been verified for a non-trivial device.
+</p>
+<p>
+  In 2024 seL4 Summit, we introduced Pancake, an imperative language for system
+  programming that features a verified compiler and a well-defined, verification
+  friendly semantics. We now have integrated Pancake into Viper SMT verification
+  infrastructure via an automatic transpiler to establish end-to-end functional
+  correctness for Pancake programs. We have formally verified a performant
+  real-world  Ethernet driver using this framework.
+</p>
+<p>
+  In this talk, we present the driver verification workflow, Viper front-end
+  encodings  for Pancake, the verified device driver performance and the future
+  challenges to  extend the framework to other seL4-based system components.
+</p>
+        </div>
+      </article>
+      <div class="flex flex-row gap-x-2 pt-2">
+        
+        
+        <div>
+          <p class="p-1 mt-2">
+          <a href="program.html#p-verifying-device" class="text-sm text-light underline">See this talk in the program</a>
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="flex w-full mb-6">
+  <div class="flex-1"></div>
+  <hr class="w-10 h-px bg-gray-200 border-0 dark:bg-gray-600">
+  
+<a href="#page-top" class="relative -mt-3.5 mx-4">
+  <div class="dark:bg-slate-900 hover:bg-slate-100 dark:hover:bg-slate-800 p-1.5 h-7 w-7 rounded-full shadow-xs left-1">
+    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" aria-hidden="true" data-slot="icon" class="h-4 w-4 text-slate-400 dark:text-slate-500">
+  <path stroke-linecap="round" stroke-linejoin="round" d="M12 19.5v-15m0 0-6.75 6.75M12 4.5l6.75 6.75"/>
+</svg>
+  </div>
+</a>
+
+  <hr class="w-10 h-px bg-gray-200 border-0 dark:bg-gray-600">
+  <div class="flex-1"></div>
+</div>
+
+
+
+<div id="a-improving-confidential" class="py-12 mb-5 section-max-w sm:py-16">
+  <div class="mx-auto px-2 sm:px-6 lg:px-8">
+    <div class="mx-auto lg:mx-0">
+      <h2 class="text-xl font-bold tracking-tight text-dark mb-6 sm:text-4xl">Improving Confidential Computing with seL4: A Promising Guest OS Solution</h2>
+      <p>
+        <span class="text-gray-800 dark:text-gray-300">Alexander Weidinger</span>
+        <br>
+        <span class="text-light">Fraunhofer AISEC</span>
+      </p>
+      <article class="theprose -mt-10">
+        <div class="pt-5">
+          <p>
+  In the realm of Confidential Computing, the advent of technologies such as AMD
+  SEV-SNP, Intel TDX, Arm CCA, and RISC-V COVE introduces essential protection
+  capabilities to the cloud. While these innovations significantly bolster VM
+  security against hypervisors, communication endpoints of the VMs still leave
+  an open attack surface for malicious actors. Traditional monolithic guest
+  OSes, particularly Linux, exacerbate these risks due to their large code size
+  and kernel-space drivers, which are attractive targets for attackers. Drivers
+  in the Linux kernel generally treat the hardware/hypervisor to be trustworthy
+  and don't consider that path in the attacker model.
+</p>
+<p>
+  This talk proposes the use of seL4, a microkernel with user-space drivers, as
+  a more suitable guest OS for Confidential VMs (CVMs). With its small code size
+  and formal verification, seL4 presents a robust alternative that reduces the
+  attack surface.
+</p>
+<p>
+  The current state of the endeavor for one specific technology will be
+  discussed, as well as remaining tasks, potential use-cases and possible steps
+  forward.
+</p>
+        </div>
+      </article>
+      <div class="flex flex-row gap-x-2 pt-2">
+        
+        
+        <div>
+          <p class="p-1 mt-2">
+          <a href="program.html#p-improving-confidential" class="text-sm text-light underline">See this talk in the program</a>
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="flex w-full mb-6">
+  <div class="flex-1"></div>
+  <hr class="w-10 h-px bg-gray-200 border-0 dark:bg-gray-600">
+  
+<a href="#page-top" class="relative -mt-3.5 mx-4">
+  <div class="dark:bg-slate-900 hover:bg-slate-100 dark:hover:bg-slate-800 p-1.5 h-7 w-7 rounded-full shadow-xs left-1">
+    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" aria-hidden="true" data-slot="icon" class="h-4 w-4 text-slate-400 dark:text-slate-500">
+  <path stroke-linecap="round" stroke-linejoin="round" d="M12 19.5v-15m0 0-6.75 6.75M12 4.5l6.75 6.75"/>
+</svg>
+  </div>
+</a>
+
+  <hr class="w-10 h-px bg-gray-200 border-0 dark:bg-gray-600">
+  <div class="flex-1"></div>
+</div>
+
+
 
 <div id="a-cyberagentur" class="py-12 mb-5 section-max-w sm:py-16">
   <div class="mx-auto px-2 sm:px-6 lg:px-8">
@@ -931,6 +2220,7 @@ training).
   formal verification as an alternative to certification. I would like to
   kickstart a debate on whether that is feasible and likely to succeed.
 </p>
+
         </div>
       </article>
       <div class="flex flex-row gap-x-2 pt-2">
@@ -962,6 +2252,74 @@ training).
   <div class="flex-1"></div>
 </div>
 
+
+
+<div id="a-binary-verification" class="py-12 mb-5 section-max-w sm:py-16">
+  <div class="mx-auto px-2 sm:px-6 lg:px-8">
+    <div class="mx-auto lg:mx-0">
+      <h2 class="text-xl font-bold tracking-tight text-dark mb-6 sm:text-4xl">A Deep Dive into seL4’s Binary Verification Story</h2>
+      <p>
+        <span class="text-gray-800 dark:text-gray-300">Nick Spinale</span>
+        <br>
+        <span class="text-light">Colias Group</span>
+      </p>
+      <article class="theprose -mt-10">
+        <div class="pt-5">
+          <p>
+  seL4’s functional correctness proofs certify that the kernel’s C
+  implementation is a refinement of its abstract specification. Binary
+  verification refers to the process of certifying that the compiled kernel
+  binary is a refinement of its C implementation, completing the kernel’s
+  end-to-end functional correctness argument and providing assurance that the
+  kernel’s security properties are satisfied all the way down to the binary
+  level. In particular, binary verification enables us to remove the compiler
+  from our trusted computing base, eliminating concerns about bugs in
+  sophisticated compiler optimization passes or differences between the
+  compiler’s C semantics and those used by the functional correctness proofs.
+</p>
+<p>
+  seL4’s binary verification toolchain consists of three components: a verified
+  decompiler that lifts assembly into a common interchange language called
+  SydTV-GL; a verified translator that lowers C into SydTV-GL; and a tool that
+  leverages SMT solvers to verify refinement between the two. The former
+  component comes from Magnus Myreen and the HOL4 community, while the latter
+  two come from Thomas Sewell and the seL4 community.
+</p>
+<p>
+  In this presentation, we will explore the design of this toolchain and report
+  on our engineering efforts, funded by the seL4 Foundation, to maintain,
+  improve, and extend it.
+</p>
+        </div>
+      </article>
+      <div class="flex flex-row gap-x-2 pt-2">
+        
+        
+        <div>
+          <p class="p-1 mt-2">
+          <a href="program.html#p-binary-verification" class="text-sm text-light underline">See this talk in the program</a>
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="flex w-full mb-6">
+  <div class="flex-1"></div>
+  <hr class="w-10 h-px bg-gray-200 border-0 dark:bg-gray-600">
+  
+<a href="#page-top" class="relative -mt-3.5 mx-4">
+  <div class="dark:bg-slate-900 hover:bg-slate-100 dark:hover:bg-slate-800 p-1.5 h-7 w-7 rounded-full shadow-xs left-1">
+    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" aria-hidden="true" data-slot="icon" class="h-4 w-4 text-slate-400 dark:text-slate-500">
+  <path stroke-linecap="round" stroke-linejoin="round" d="M12 19.5v-15m0 0-6.75 6.75M12 4.5l6.75 6.75"/>
+</svg>
+  </div>
+</a>
+
+  <hr class="w-10 h-px bg-gray-200 border-0 dark:bg-gray-600">
+  <div class="flex-1"></div>
+</div>
 
 
 </div>
