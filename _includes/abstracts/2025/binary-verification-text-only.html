@@ -1,0 +1,25 @@
+<p>
+  seL4’s functional correctness proofs certify that the kernel’s C
+  implementation is a refinement of its abstract specification. Binary
+  verification refers to the process of certifying that the compiled kernel
+  binary is a refinement of its C implementation, completing the kernel’s
+  end-to-end functional correctness argument and providing assurance that the
+  kernel’s security properties are satisfied all the way down to the binary
+  level. In particular, binary verification enables us to remove the compiler
+  from our trusted computing base, eliminating concerns about bugs in
+  sophisticated compiler optimization passes or differences between the
+  compiler’s C semantics and those used by the functional correctness proofs.
+</p>
+<p>
+  seL4’s binary verification toolchain consists of three components: a verified
+  decompiler that lifts assembly into a common interchange language called
+  SydTV-GL; a verified translator that lowers C into SydTV-GL; and a tool that
+  leverages SMT solvers to verify refinement between the two. The former
+  component comes from Magnus Myreen and the HOL4 community, while the latter
+  two come from Thomas Sewell and the seL4 community.
+</p>
+<p>
+  In this presentation, we will explore the design of this toolchain and report
+  on our engineering efforts, funded by the seL4 Foundation, to maintain,
+  improve, and extend it.
+</p>

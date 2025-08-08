@@ -1,0 +1,18 @@
+<p>
+  Device driver bugs are the leading cause of OS compromises, and their formal
+  verification is therefore highly desirable. To the best of our knowledge, no
+  realistic  and performant driver has been verified for a non-trivial device.
+</p>
+<p>
+  In 2024 seL4 Summit, we introduced Pancake, an imperative language for system
+  programming that features a verified compiler and a well-defined, verification
+  friendly semantics. We now have integrated Pancake into Viper SMT verification
+  infrastructure via an automatic transpiler to establish end-to-end functional
+  correctness for Pancake programs. We have formally verified a performant
+  real-world  Ethernet driver using this framework.
+</p>
+<p>
+  In this talk, we present the driver verification workflow, Viper front-end
+  encodings  for Pancake, the verified device driver performance and the future
+  challenges to  extend the framework to other seL4-based system components.
+</p>

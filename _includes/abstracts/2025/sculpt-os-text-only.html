@@ -1,0 +1,54 @@
+<p>
+  The Genode operating system framework [1] is an open-source tool kit, with
+  quarterly releases per year since 2008 [2], for building component-based
+  operating systems. It scales from rather static embedded appliances to highly
+  dynamic general-purpose computing as showcased by Sculpt OS.
+</p>
+<p>
+  Sculpt OS [3][4] is an open-source general-purpose OS with two releases per
+  year since 2018 [5]. It combines Genode's microkernel architecture,
+  capability-based security, sandboxed device drivers, and virtual machines in a
+  unique dynamic interactive operating system. It runs on commodity PC notebooks
+  and ARM devices, in particular consumer focused devices like the PinePhone
+  cellphone [6], the MNT Reform notebook [7] and on the MNT Pocket Reform mini
+  notebook [8]. Features like on target updates and federated package
+  provisioning of components make the Sculpt OS a enjoyable day-to-day OS for
+  the Genode community.
+</p>
+<p>
+  Since its inception, the Genode framework supports various microkernels, e.g.
+  various L4 kernels, even Linux and in particular seL4 since 2015 [9]. Even so
+  seL4 is not supported with Sculpt OS officially, it's nevertheless in reach.
+  Is it? As part of an experimental Sculpt OS demo image [10], it became clear,
+  that several loose ends need to be picked up [11].
+</p>
+<p>
+  The talk will present the progress and the current state of Genode on seL4 and
+  Sculpt OS in particular. The presentation will be given live on a Sculpt OS
+  running on the seL4 kernel. Several typical general purpose use-cases and
+  characteristic features of Sculpt OS will be demonstrated in order to give the
+  audience an impression of the current interactive state of Sculpt OS on seL4.
+</p>
+<p>
+[1] <a href="https://www.genode.org">https://www.genode.org</a>
+<br>[2] <a
+href="https://www.genode.org/documentation/release-notes/index">https://www.genode.org/documentation/release-notes/index</a>
+<br>[3] <a
+href="https://www.genode.org/download/sculpt">https://www.genode.org/download/sculpt</a>
+<br>[4] <a
+href="https://genode.org/documentation/articles/sculpt-25-04">https://genode.org/documentation/articles/sculpt-25-04</a>
+<br>[5] <a
+href="https://genode.org/download/sculpt-archive">https://genode.org/download/sculpt-archive</a>
+<br>[6] <a
+href="https://genodians.org/nfeske/2024-02-15-fosdem-aftermath">https://genodians.org/nfeske/2024-02-15-fosdem-aftermath</a>
+<br>[7] <a
+href="https://genodians.org/skalk/2023-06-07-sculpt-23.04-mnt-reform2">https://genodians.org/skalk/2023-06-07-sculpt-23.04-mnt-reform2</a>
+<br>[8] <a
+href="https://genodians.org/jws/2024-11-25-sculpt_mnt_pocket">https://genodians.org/jws/2024-11-25-sculpt_mnt_pocket</a>
+<br>[9] <a
+href="https://archive.fosdem.org/2016/schedule/event/microkernels_genode_sel4">https://archive.fosdem.org/2016/schedule/event/microkernels_genode_sel4</a>
+<br>[10] <a
+href="https://fosdem.org/2025/schedule/event/fosdem-2025-5768-celebrating-kernel-diversity-with-genode">https://fosdem.org/2025/schedule/event/fosdem-2025-5768-celebrating-kernel-diversity-with-genode</a>
+<br>[11] <a
+href="https://genode.org/documentation/release-notes/25.05#Improved_support_for_the_seL4_kernel">https://genode.org/documentation/release-notes/25.05#Improved_support_for_the_seL4_kernel</a>
+</p>

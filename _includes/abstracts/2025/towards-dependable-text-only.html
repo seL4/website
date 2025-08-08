@@ -1,0 +1,11 @@
+<p>
+  The seL4 microkernel is a solid foundation for building fault-tolerant systems: a failed system component is unlikely to completely bring down the whole system, and potentially there is an opportunity to restart the failed component and restore its normal service. However, deploying the detection and recovery mechanisms on a dynamic system is still challenging for the following reasons:
+</p>
+<ol>
+  <li>Accurate and low-overhead fault detection is tricky. The monitor and the components being monitored should minimise interference. For instance, the monitor should be able to check if a component is alive, but the monitor's normal execution must not be interfered by the component.</li>
+  <li>Restarting drivers is straight-forward, since they usually only talk with a few servers. However, a system server, such as a file server, shared by applications keeps some states of its clients. Thus, it is not trivial to recover the states if the server is restarted. Furthermore, all the clients need to reconnect with the new server instance and restart the interrupted requests transparently.</li>
+  <li>Some kernel supports may be needed. For instance, when a server fails, the kernel needs to wake up the clients that are still waiting on the reply caps so that the clients can perform the recovery steps as well.</li>
+</ol>
+<p>
+  In this talk, we will present the progress of building dependable system services on seL4, discuss the approaches dealing with the challenges above, and learn the insights from the audiences.
+</p>
