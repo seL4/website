@@ -46,15 +46,15 @@ layout: card
     '
 %}
 
-{% include prelim-program-start.html %}
+{% include program-start.html %}
 
-  {% include prelim-program-item.html
+  {% include program-item.html
     day = "1"
     date = "3 September 2025"
   %}
 
-  {% include prelim-program-item.html
-    chair = ""
+  {% include program-item.html
+    chair = "Nick Spinale"
     num-talks = 2
     time = "9:00 - 9:10"
     title = "Welcome"
@@ -62,7 +62,7 @@ layout: card
     affiliation = "Colias Group"
   %}
 
-  {% include prelim-program-item.html
+  {% include program-item.html
     id = "p-model-based"
     time = "9:10 - 10:00"
     type = "Keynote"
@@ -72,11 +72,13 @@ layout: card
     abstract = "abstracts2025.html#a-model-based"
   %}
 
-  {% include prelim-program-item.html
+  {% include program-item.html
     break = "Break"
   %}
 
-  {% include prelim-program-item.html
+  {% include program-item.html
+    chair = "Matt Brecknell"
+    num-talks = 3
     id = "p-next-700"
     time = "10:30 - 11:00"
     title = "The next 700 verified seL4 platforms"
@@ -85,7 +87,7 @@ layout: card
     abstract = "abstracts2025.html#a-next-700"
   %}
 
-  {% include prelim-program-item.html
+  {% include program-item.html
     id = "p-fpga-based"
     time = "11:00 - 11:30"
     title = "FPGA based Accelerators w/ Microkit"
@@ -94,7 +96,7 @@ layout: card
     abstract = "abstracts2025.html#a-fpga-based"
   %}
 
-  {% include prelim-program-item.html
+  {% include program-item.html
     id = "p-big-iron"
     time = "11:30 - 12:00"
     title = "seL4 on Big Iron: Experiences and recommendations from Neutrality's Atoll hypervisor"
@@ -103,11 +105,13 @@ layout: card
     abstract = "abstracts2025.html#a-big-iron"
   %}
 
-  {% include prelim-program-item.html
+  {% include program-item.html
     break = "Lunch"
   %}
 
-  {% include prelim-program-item.html
+  {% include program-item.html
+    chair = "Gerwin Klein"
+    num-talks = 4
     id = "p-program-logic"
     time = "13:30 - 13:45"
     title = "A program logic for seL4-based system verification"
@@ -116,7 +120,7 @@ layout: card
     abstract = "abstracts2025.html#a-program-logic"
   %}
 
-  {% include prelim-program-item.html
+  {% include program-item.html
     id = "p-verified-high"
     time = "13:45 - 14:00"
     title = "A Verified, High-Performance, IPv6 Network Stack"
@@ -125,7 +129,7 @@ layout: card
     abstract = "abstracts2025.html#a-verified-high"
   %}
 
-  {% include prelim-program-item.html
+  {% include program-item.html
     id = "p-verified-zynqmp"
     time = "14:00 - 14:30"
     title = "Verified ZynqMP DMA Driver in Concurrent Separation Logic"
@@ -134,7 +138,7 @@ layout: card
     abstract = "abstracts2025.html#a-verified-zynqmp"
   %}
 
-  {% include prelim-program-item.html
+  {% include program-item.html
     id = "p-science-engineering"
     time = "14:30 - 15:15"
     title = "Science, Engineering, Craft, Magic - Revolutions in the field of Software"
@@ -143,11 +147,13 @@ layout: card
     abstract = "abstracts2025.html#a-science-engineering"
   %}
 
-  {% include prelim-program-item.html
+  {% include program-item.html
     break = "Break"
   %}
 
-  {% include prelim-program-item.html
+  {% include program-item.html
+    chair = "Gernot Heiser"
+    num-talks = 3
     id = "p-towards-dependable"
     time = "15:45 - 16:15"
     title = "Towards Dependable System Services on seL4"
@@ -156,7 +162,7 @@ layout: card
     abstract = "abstracts2025.html#a-towards-dependable"
   %}
 
-  {% include prelim-program-item.html
+  {% include program-item.html
     id = "p-porting-nasa"
     time = "16:15 - 16:45"
     title = "Porting NASA's core Flight System to Magnetite on seL4"
@@ -165,7 +171,7 @@ layout: card
     abstract = "abstracts2025.html#a-porting-nasa"
   %}
 
-  {% include prelim-program-item.html
+  {% include program-item.html
     id = "p-integration-sel4"
     time = "16:45 - 17:15"
     title = "Integration of seL4 in a Flight Vehicle Mission System"
@@ -174,16 +180,18 @@ layout: card
     abstract = "abstracts2025.html#a-integration-sel4"
   %}
 
-  {% include prelim-program-item.html
+  {% include program-item.html
     event = "Reception @ Červený Jelen 18:30"
   %}
 
-  {% include prelim-program-item.html
+  {% include program-item.html
     day = "2"
     date = "4 September 2025"
   %}
 
-  {% include prelim-program-item.html
+  {% include program-item.html
+    chair = "Juliana Furgala"
+    num-talks = 2
     id = "p-panel"
     time = "9:00 - 9:45"
     type = "Panel"
@@ -194,19 +202,22 @@ layout: card
     abstract = "abstracts2025.html#a-panel"
   %}
 
-  {% include prelim-program-item.html
+  {% include program-item.html
     id = "p-foundation-update"
     time = "9:45 - 10:00"
     title = "seL4 Foundation update"
     presenter = "June Andronick"
     affiliation = "seL4 Foundation"
+    abstract = "abstracts2025.html#a-foundation-update"
   %}
 
-  {% include prelim-program-item.html
+  {% include program-item.html
     break = "Break"
   %}
 
-  {% include prelim-program-item.html
+  {% include program-item.html
+    chair = "Lucy Fletcher"
+    num-talks = 3
     id = "p-sculpt-os"
     time = "10:30 - 11:00"
     title = "Sculpt OS - a dynamic general-purpose OS powered by Genode on seL4"
@@ -215,7 +226,7 @@ layout: card
     abstract = "abstracts2025.html#a-sculpt-os"
   %}
 
-  {% include prelim-program-item.html
+  {% include program-item.html
     id = "p-cellulos"
     time = "11:00 - 11:30"
     title = "CellulOS: An OS for comparing Isolation Mechanisms"
@@ -224,7 +235,7 @@ layout: card
     abstract = "abstracts2025.html#a-cellulos"
   %}
 
-  {% include prelim-program-item.html
+  {% include program-item.html
     id = "p-rust-based"
     time = "11:30 - 12:00"
     title = "Rust-based drivers and verified rust applications on seL4"
@@ -233,11 +244,13 @@ layout: card
     abstract = "abstracts2025.html#a-rust-based"
   %}
 
-  {% include prelim-program-item.html
+  {% include program-item.html
     break = "Lunch"
   %}
 
-  {% include prelim-program-item.html
+  {% include program-item.html
+    chair = "Darren Cofer"
+    num-talks = 3
     id = "p-porting-sel4"
     time = "13:30 - 13:45"
     title = "Porting seL4 to the RISC-V SoC, toward a Secure and High-Performance RISC-V AI Platform"
@@ -245,7 +258,7 @@ layout: card
     affiliation = "Deep Computing"
   %}
 
-  {% include prelim-program-item.html
+  {% include program-item.html
     id = "p-surevoice"
     time = "13:45 - 14:00"
     title = "SureVoice Solid"
@@ -254,7 +267,7 @@ layout: card
     abstract = "abstracts2025.html#a-surevoice"
   %}
 
-  {% include prelim-program-item.html
+  {% include program-item.html
     id = "p-trustworthy-systems"
     type = "Deep Dive"
     time = "14:00 - 15:00"
@@ -264,11 +277,13 @@ layout: card
     abstract = "abstracts2025.html#a-trustworthy-systems"
   %}
 
-  {% include prelim-program-item.html
+  {% include program-item.html
     break = "Break"
   %}
 
-  {% include prelim-program-item.html
+  {% include program-item.html
+    chair = "David Cock"
+    num-talks = 3
     id = "p-dividing-timelines"
     time = "15:30 - 16:15"
     title = "Dividing Timelines to Verify seL4 Applications"
@@ -277,7 +292,7 @@ layout: card
     abstract = "abstracts2025.html#a-dividing-timelines"
   %}
 
-  {% include prelim-program-item.html
+  {% include program-item.html
     id = "p-verifying-device"
     time = "16:15 - 16:45"
     title = "Verifying Device Drivers with Pancake"
@@ -286,7 +301,7 @@ layout: card
     abstract = "abstracts2025.html#a-verifying-device"
   %}
 
-  {% include prelim-program-item.html
+  {% include program-item.html
     id = "p-improving-confidential"
     time = "16:45 - 17:00"
     title = "Improving Confidential Computing with seL4: A Promising Guest OS Solution"
@@ -295,12 +310,14 @@ layout: card
     abstract = "abstracts2025.html#a-improving-confidential"
   %}
 
-  {% include prelim-program-item.html
+  {% include program-item.html
     day = "3"
     date = "5 September 2025"
   %}
 
-  {% include prelim-program-item.html
+  {% include program-item.html
+    chair = "Robbie VanVossen"
+    num-talks = 2
     id = "p-cyberagentur"
     time = "9:00 - 9:50"
     type = "Keynote"
@@ -310,18 +327,20 @@ layout: card
     abstract = "abstracts2025.html#a-cyberagentur"
   %}
 
-  {% include prelim-program-item.html
+  {% include program-item.html
     time = "9:50 - 10:00"
     title = "Announcements"
     presenter = "June Andronick"
     affiliation = "seL4 Foundation"
   %}
 
-  {% include prelim-program-item.html
+  {% include program-item.html
     break = "Break"
   %}
 
-  {% include prelim-program-item.html
+  {% include program-item.html
+    chair = "Thomas Sewell"
+    num-talks = 2
     id = "p-binary-verification"
     time = "10:30 - 11:00"
     title = "A Deep Dive into seL4’s Binary Verification Story"
@@ -330,31 +349,33 @@ layout: card
     abstract = "abstracts2025.html#a-binary-verification"
   %}
 
-  {% include prelim-program-item.html
+  {% include program-item.html
     time = "11:00 - 11:15"
     title = "Discussion, BoF Teasers"
   %}
 
-  {% include prelim-program-item.html
+  {% include program-item.html
     time = "11:15 - 12:00"
     title = "BoFs"
   %}
 
-  {% include prelim-program-item.html
+  {% include program-item.html
     break = "Lunch"
   %}
 
-  {% include prelim-program-item.html
+  {% include program-item.html
+    chair = "Robbie VanVossen"
+    num-talks = 3
     time = "13:30 -  14:15"
     title = "BoFs"
   %}
 
-  {% include prelim-program-item.html
+  {% include program-item.html
     time = "14:15 - 14:30"
     title = "BoF Wrap-up"
   %}
 
-  {% include prelim-program-item.html
+  {% include program-item.html
     time = "14:30 - 14:45"
     title = "Concluding Remarks"
     presenter = "Robbie VanVossen"
