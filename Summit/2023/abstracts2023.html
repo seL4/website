@@ -6,7 +6,7 @@
     <title>seL4 Summit 2023 Abstracts | seL4</title>
     <meta name="author" content="seL4 Foundation">
     <link rel="canonical" href="https://sel4.systems/Summit/2023/abstracts2023.html">
-    <link href="/css/sel4.css?v=1755593640" rel="stylesheet">
+    <link href="/css/sel4.css?v=1755671930" rel="stylesheet">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
@@ -592,7 +592,7 @@
         <br>
         <span class="text-light">NCSC</span>
       </p>
-      <article class="theprose -mt-10">
+      <article class="theprose">
         <div class="pt-5">
           <p>
 In both the safety and security industries, high levels of product assurance are sought to mitigate the risk of product failure. Often this means that software developers need to demonstrate that all functions do what they are supposed to do, the product does not do anything it is not supposed to do, and that the product is free from all known bugs and vulnerabilities.
@@ -653,7 +653,7 @@ Accepting that the assurance effort should be commensurate with the criticality 
         <br>
         <span class="text-light">Kry10</span>
       </p>
-      <article class="theprose -mt-10">
+      <article class="theprose">
         <div class="pt-5">
           <p>
     The current state of the art in seL4-based system design is to statically partition system resources into unprivileged components. Components may synchronise and communicate with each other, but otherwise only have rights to their own resources. For such static systems, the seL4 security theorems guarantee that seL4 correctly enforces access controls, and does not allow any component to gain new rights. The main benefit of this approach is that it automatically gives strong guarantees about component isolation, without further verification effort, and these can be used to support arguments about fault tolerance and security.
@@ -719,7 +719,7 @@ This talk will report on our initial work on this challenge. We'll discuss our a
         <br>
         <span class="text-light">Los Alamos National Laboratory</span>
       </p>
-      <article class="theprose -mt-10">
+      <article class="theprose">
         <div class="pt-5">
           <p>
 With the rise in high profile attacks against safety and security critical systems, formal methods are being considered as a defensive option across many domains, such as with critical infrastructure, since they can prove that software behaves exactly according to specification, therefore minimizing software vulnerabilities. Unfortunately, there has been slow adoption of this technology due to technical (e.g., performance limitation of verification tools) and non-technical (e.g., unfamiliarity with concepts, difficult to implement) reasons. We propose an analysis of the interface between formally (checking software against specifications) and non-formally verified components, to better understand the impacts to system robustness. This work has the potential to be transformational by enabling wider adoption of this defensive measure.
@@ -782,7 +782,7 @@ This talk is relevant to the seL4 scope because it covers an seL4 experience rep
         <br>
         <span class="text-light">Proofcraft</span>
       </p>
-      <article class="theprose -mt-10">
+      <article class="theprose">
         <div class="pt-5">
           <p>
     The seL4 microkernel is the world’s most highly assured OS kernel. Keeping this claim true is hard work. The formal verification journey of the seL4 microkernel is nearing two decades, and still has a busy roadmap for the years ahead. It started as a research project aiming for a highly challenging problem with the potential of significant impact. Today, the seL4 proofs represent more than a million lines of formal proofs that have been continuously maintained over a system that has evolved considerably, with significant new features being added in response to increased interest and adoption from numerous sectors.
@@ -851,7 +851,7 @@ This talk is relevant to the seL4 scope because it covers an seL4 experience rep
         <br>
         <span class="text-light">Kry10</span>
       </p>
-      <article class="theprose -mt-10">
+      <article class="theprose">
         <div class="pt-5">
           <p>
 Multicore systems with verified seL4 is just around the corner with multikernels - kernel state is isolated on each core and avoid kernel-mode concurrency for easier verification. Does this mean that it's not possible to support multicore at user level? Let's find out by investigating whether it's possible to efficiently support virtualizing SMP virtual machines
@@ -912,7 +912,7 @@ This talk will detail how to construct such a system, the work involved and exam
         <br>
         <span class="text-light">Kry10</span>
       </p>
-      <article class="theprose -mt-10">
+      <article class="theprose">
         <div class="pt-5">
           <p>
 Most seL4 systems are multi-server systems - consisting of numerous user-level components that communicate amongst each other. These systems often rely on isolation and restricted communication between components to provide assurance about security and safety properties while minimising the trust put into individual components. For such assurance it is usually necessary to analyse the information and control flow in the systems in order to get an understanding of the isolation (or protection) domains and how the system could behave at runtime. This is something that we are interested in doing for the seL4-based Kry10 OS as well.
@@ -972,7 +972,7 @@ There has been past work looking at analysing static seL4-based systems for vari
         <br>
         <span class="text-light">TII</span>
       </p>
-      <article class="theprose -mt-10">
+      <article class="theprose">
         <div class="pt-5">
           <p>
 Virtualization enables multiple virtual machines (VMs) to operate on a single physical machine, each with its own operating system, applications, and data, while sharing the underlying physical resources of the host machine. seL4 is a microkernel-based operating system that provides a high-assurance, secure, and efficient platform for the deployment of critical systems. It can be utilized as a hypervisor, providing a minimal and scalable infrastructure for virtualized environments, making it well-suited for use in embedded and real-time systems and high-assurance security-critical systems that require virtualization.
@@ -1039,7 +1039,7 @@ Our approach provides a flexible and scalable solution for critical systems, add
         <br>
         <span class="text-light">UNSW</span>
       </p>
-      <article class="theprose -mt-10">
+      <article class="theprose">
         <div class="pt-5">
           <p>
 A lack of a good approach to I/O is one of the primary barriers to uptake for seL4. Unfortunately, there’s a distinct lack of guidance, along with too many poor performing solutions that don’t make good use of seL4. We believe a thoughtful design can, and should, demonstrate performance competitive with Linux. We present such a design in the seL4 Device Driver framework (sDDF). Its simple design prioritises a strong separation of concerns by using multiple isolated components, each with a single task in the pipeline, that communicate via a low-overhead, asynchronous transport layer. It’s presently focused on networking systems, and comparison against Linux already shows that simplicity wins. This talk will revisit the design of the sDDF, and discuss ongoing work to further evaluate and optimise the framework for device sharing.
@@ -1096,7 +1096,7 @@ A lack of a good approach to I/O is one of the primary barriers to uptake for se
         <br>
         <span class="text-light">UNSW</span>
       </p>
-      <article class="theprose -mt-10">
+      <article class="theprose">
         <div class="pt-5">
           <p>
 I will given an overview of seL4-related research and development at Trustworthy Systems.
@@ -1168,7 +1168,7 @@ I will finally give an update on our work on verified Time Protection, the princ
         <br>
         <span class="text-light">DornerWorks</span>
       </p>
-      <article class="theprose -mt-10">
+      <article class="theprose">
         <div class="pt-5">
           <p>
 Sandboxing legacy code provides a low barrier approach for developers to start implementing systems in the seL4 ecosystem. However, these legacy applications often need to communicate with each other to function properly. seL4 provides a means of communication between virtual machines via a software implementation of an ethernet device called virtio-net, which currently suffers from performance and stability problems. These performance and stability issues present a barrier to adoption of seL4 for multiple markets. DornerWorks will present an overview of the seL4 virtio-net implementation, the challenges using it, how DornerWorks improved it in the mainline, and performance benchmarks which include our IP solution to increase performance by a factor of 40.
@@ -1225,7 +1225,7 @@ Sandboxing legacy code provides a low barrier approach for developers to start i
         <br>
         <span class="text-light">Capgemini Engineering</span>
       </p>
-      <article class="theprose -mt-10">
+      <article class="theprose">
         <div class="pt-5">
           <p>
 At the 2022 seL4 summit, our colleagues presented a framework allowing u-boot drivers to be used in seL4. This submission presents follow on work, with the goal of improving seL4 USB support. Specifically, by writing a native xHCI driver and stack for use in seL4.
@@ -1288,7 +1288,7 @@ We also present an experience report detailing our development with seL4 as a te
         <br>
         <span class="text-light">Kry10</span>
       </p>
-      <article class="theprose -mt-10">
+      <article class="theprose">
         <div class="pt-5">
           <p>
 A reliable OS needs to make sure that it, and the software that runs on it, keeps running and is always available.
@@ -1354,7 +1354,7 @@ We’ve applied this “let it crash” approach in the sel4-based Kry10 OS. In 
         <br>
         <span class="text-light">Kry10</span>
       </p>
-      <article class="theprose -mt-10">
+      <article class="theprose">
         <div class="pt-5">
           <p>
 Boyd Multerer, Founder and CEO of Kry10 will talk about the role of seL4 as a one of the critical ingredients for addressing the “real world” requirements and high level of assurance required by their critical systems.  Boyd will talk about the importance of the continued innovation around seL4 and the additional platform services platform work Kry10 is doing to need to deliver addition of seL4 and the new work underway as a key ingredient to any broader platform for critical systems and the importance of new investments done and the critical role that seL4 plays as Boyd will emphasize role of seL4 and the Kry10 Platform. Hear about the design principles of the KRy10 Platform Kry10 Platform that caters to the real-world demands of critical systems.  Don't miss this opportunity to learn about the exciting advancements in seL4 and the Kry10 Platform and its potential to support the real-world challenges faced by critical systems.
@@ -1411,7 +1411,7 @@ Boyd Multerer, Founder and CEO of Kry10 will talk about the role of seL4 as a on
         <br>
         <span class="text-light">Google</span>
       </p>
-      <article class="theprose -mt-10">
+      <article class="theprose">
         <div class="pt-5">
           <p>
 CantripOS is an open source operating system purpose-built to run ML workloads for embedded systems. It is being developed as part of Google’s project Sparrow, whose charter is to build a low-power embedded platform for ML applications with a focus on security and privacy. CantripOS is built in the Rust programming language1, runs under the seL4 microkernel2, and uses a modified CAmkES framework3. This allows CantripOS to run dynamically loaded applications in a controlled sandbox, while still retaining the benefits of a statically designed system. This paper describes the system design, modifications made to seL4 and CAmkES, and future directions. All the work described here is publicly available on GitHub4.
@@ -1468,7 +1468,7 @@ CantripOS is an open source operating system purpose-built to run ML workloads f
         <br>
         <span class="text-light">MIT Lincoln Laboratory</span>
       </p>
-      <article class="theprose -mt-10">
+      <article class="theprose">
         <div class="pt-5">
           <p>
 What if the isolation that seL4 provides could be applied at a fine-grained level to individual processes? Frequently seL4 is used as a hypervisor but at MIT Lincoln Laboratory, we explored the potential of seL4 as a foundational block in a new security-focused operating system. Magnetite is a suite of performant, secure-by-design, real-time OS services built upon the formally-verified microkernel seL4 and written in Rust, a memory-safe language. Magnetite offers a feature-rich API for both legacy C and new Rust applications to engage with its variety of resource types, which extend seL4’s capability-based system to provide common OS services. Magnetite is built upon the Principle of Least Privilege (PoLP) to limit trust and time of trust, and also adheres to strong isolation properties with self-contained processes and system services, and isolated domains known as silos.
@@ -1525,7 +1525,7 @@ What if the isolation that seL4 provides could be applied at a fine-grained leve
         <br>
         <span class="text-light">Gapfruit</span>
       </p>
-      <article class="theprose -mt-10">
+      <article class="theprose">
         <div class="pt-5">
           <p>
 This talk will demonstrate how Gapfruit OS [0], an operating system built with the Genode Framework [1], can be deployed for edge computing in industrial IoT environments. Genode is an operating system framework that supports seL4.
@@ -1606,7 +1606,7 @@ I will then showcase a live demo demonstrating the zero-touch provisioning capab
         <br>
         <span class="text-light">Colias Group</span>
       </p>
-      <article class="theprose -mt-10">
+      <article class="theprose">
         <div class="pt-5">
           <p>
 The Rust programming language and ecosystem provide memory safety and enhance developer productivity even at lower levels of the software stack. This talk outlines our efforts, funded by the seL4 Foundation, to apply Rust to seL4 userspace and facilitate its use in the seL4 software ecosystem. This talk will cover new bodies of Rust code related to libsel4, the seL4 Core Platform, and CapDL; information about how to integrate, extend, and contribute to this work; and our vision and roadmap moving forward.
@@ -1663,7 +1663,7 @@ The Rust programming language and ecosystem provide memory safety and enhance de
         <br>
         <span class="text-light">UNSW</span>
       </p>
-      <article class="theprose -mt-10">
+      <article class="theprose">
         <div class="pt-5">
           <p>
 The seL4 Microkit is an operating system framework on top of seL4 that aims to provide minimal abstractions to make it easier to build statically structured systems on seL4, while still leveraging the kernel’s benefits of security and performance. Since the 2022 seL4 Summit, seL4CP has become more mature and is seeing wider use. At Trustworthy Systems, seL4CP is the basis of much of our work, including the seL4 Device Driver Framework and other OS services such as a virtual machine monitor. The goal of this talk is to give you an understanding of seL4CP and surrounding developments by covering three topics:
@@ -1720,7 +1720,7 @@ The seL4 Microkit is an operating system framework on top of seL4 that aims to p
         <br>
         <span class="text-light">Galois</span>
       </p>
-      <article class="theprose -mt-10">
+      <article class="theprose">
         <div class="pt-5">
           <p>
 A natural way to perform hardware abstraction in SeL4 is to create a dedicated driver component. Writing such hardware driver components in SeL4 Core Platform for Rust is currently a manual process. Assuming a Rust library to perform register manipulation, etc. already exists (say, as an implementation of embedded-hal traits), it is still necessary to:
@@ -1793,7 +1793,7 @@ We will present conclusions and examples developed as part of this work.
         <br>
         <span class="text-light">UNSW, Gapfruit, Kry10, MIT Lincoln Laboratory</span>
       </p>
-      <article class="theprose -mt-10">
+      <article class="theprose">
         <div class="pt-5">
           <h3 id="a-panel-unsw">
   Gernot Heiser, Leader, Trustworthy Systems at UNSW Sydney
@@ -1905,7 +1905,7 @@ trustworthiness.
         <br>
         <span class="text-light">DornerWorks</span>
       </p>
-      <article class="theprose -mt-10">
+      <article class="theprose">
         <div class="pt-5">
           <p>
     The royalty-free, open-source RISC-V is an ideal ISA for the high-assurance seL4 microkernel since the formal proof requires definitive understanding of its underlying architecture. DornerWorks’ use-case generally utilizes virtualization with seL4 to provide a secure platform which allows for cyber-retrofit, rapid deployment, and cyber resilience. Virtualization is an area where RISC-V is immature. The hypervisor (H) extension has been ratified, but there are still no commercially available silicon processors that support the extension. The Rocket Chip is a soft-core RISC-V implementation which can be instantiated on an FPGA and is essentially equivalent to a real silicon processor. DornerWorks bridged the gap between the seL4 VMM running on QEMU and running on actual silicon by getting a seL4 VMM running, for the first time, on a Rocket Chip instantiation which has the hypervisor extensions implemented. This presentation will provide an overview of the Rocket Chip, the RISC-V H extension, the effort that went into getting the seL4 VMM to run on Rocket Chip, and thoughts on the next steps for seL4 virtualization on RISC-V platforms.
@@ -1962,7 +1962,7 @@ trustworthiness.
         <br>
         <span class="text-light">Mission Critical Applications</span>
       </p>
-      <article class="theprose -mt-10">
+      <article class="theprose">
         <div class="pt-5">
           <p>
 seL4 has a formally-proven kernel, but the safe and secure operation of a system built on seL4 depends on the correct operation of the user-level tasks that implement the system policies, services, and device drivers needed by the application, as well as on the correct operation of the application tasks. Running an seL4 system on a processor with CHERI extensions brings the extra assurance of the capability architecture to these user-level tasks, and thus increases the assurance of the overall application.
@@ -2025,7 +2025,7 @@ This paper will report on the progress of the project, and discuss the requireme
         <br>
         <span class="text-light">Galois</span>
       </p>
-      <article class="theprose -mt-10">
+      <article class="theprose">
         <div class="pt-5">
           <p>
 Despite the fact that numerous components and subsystems have been developed on top of or with seL4 over the past few years, sponsored mainly by DoD SBIR grants, seL4 does not have a high-assurance network stack. In earlier work on the HACMS project, Galois integrated an off-the-shelf TCP stack into a seL4 platform. Many other organizations have done something similar, either by shiming in existing low-assurance network code that has poor provenance and no rigorous assurance, or by using the Linux environment to provide networking features. To the best of our knowledge, there is currently no high assurance network stack readily available for embedded systems.
@@ -2088,7 +2088,7 @@ This summer, we used Prognosis framework, offering automated closed-box learning
         <br>
         <span class="text-light">Lewis & Clark College</span>
       </p>
-      <article class="theprose -mt-10">
+      <article class="theprose">
         <div class="pt-5">
           <p>
 We are completing the implementation of a minimal, pure IPv6 network stack optimized to run on IoT endpoints connected to a network through a Layer 2 Ethernet interface. This implementation supports only the minimal set of protocols (IEEE 802.3, ICMP, IP, and UDP) to provide efficient UDP-based communication between an IoT endpoint and any other host.
@@ -2151,7 +2151,7 @@ In this talk, we report on our progress implementing and verifying this networki
         <br>
         <span class="text-light">Horizon Robotics</span>
       </p>
-      <article class="theprose -mt-10">
+      <article class="theprose">
         <div class="pt-5">
           <p>
 The IOMMU Stage-2 only scheme (the view of IOMMU Stage-2 is as same as the MMU's) is simple, and seems good at most of time, but in order to go further for a more unrestricted and finely controlled Stage-1, we can apply the classic virtio scheme for IOMMU. The only extra important thing that needs to be done in virtio-smmu backend is managing relationships between messages in virtqueue and IOMMU or VSpace capabilities.
@@ -2223,7 +2223,7 @@ By hosting the installation/uninstallation of the Stage-1 context root, bring mu
         <br>
         <span class="text-light">NIO</span>
       </p>
-      <article class="theprose -mt-10">
+      <article class="theprose">
         <div class="pt-5">
           <p>
 This talk provides a brief introduction of NIO – a global smart EV company, and discusses how automotive industry evolves towards software defined vehicle, and how OS could play a key role in this transition, and shares what NIO’s vision and progress of building a vehicle OS using seL4.
@@ -2280,7 +2280,7 @@ This talk provides a brief introduction of NIO – a global smart EV company, an
         <br>
         <span class="text-light">TII</span>
       </p>
-      <article class="theprose -mt-10">
+      <article class="theprose">
         <div class="pt-5">
           <p>
 In today's digital age, when cyber threats are everywhere, the importance of building robust and secure systems cannot be overstated. This presentation dives deep into the initiatives undertaken by the Secure Systems Research Center (SSRC). We'll shed light on our collaborations, projects, and the novel solutions we've pioneered to tackle pressing cyber challenges. The SSRC is a pillar among the ten research centers that comprise the Technology Innovation Institute (TII). Situated in Abu Dhabi, TII aims to lead the way in tech research, focusing on critical areas in the digital world today. In this presentation, we will discuss our latest work and how tools like the seL4 microkernel help make our systems even more secure. By the end of this session, attendees will gain a panoramic view of SSRC's achievements over the past year. We'll also offer a glimpse into the future, outlining our strategic plans and emphasizing SSRC's commitment to pushing the barriers of tech security.
@@ -2337,7 +2337,7 @@ In today's digital age, when cyber threats are everywhere, the importance of bui
         <br>
         <span class="text-light">NIO, Kry10, TII, Kry10</span>
       </p>
-      <article class="theprose -mt-10">
+      <article class="theprose">
         <div class="pt-5">
           <p>
     This session will include a community update from Kent McLeod, Kry10, and SIG updates from Matt Brecknell, Kry10, Yanyan Shen, NIO, and Everton DeMatos, TII. There will also be opportunity for discussion.
@@ -2413,7 +2413,7 @@ In today's digital age, when cyber threats are everywhere, the importance of bui
         <br>
         <span class="text-light">Horizon Robotics</span>
       </p>
-      <article class="theprose -mt-10">
+      <article class="theprose">
         <div class="pt-5">
           <p>
     Virtualization technology was widely used in X86 Cloud Server. There are various mature finetunes work was done for GuestOS Performance and High Availability Recovery.
@@ -2486,7 +2486,7 @@ Note: Linux GOS basic system can recover less in 500ms, Linux GOS with an actual
         <br>
         <span class="text-light">Cog Systems</span>
       </p>
-      <article class="theprose -mt-10">
+      <article class="theprose">
         <div class="pt-5">
           <p>
 Cog Systems, Inc. specializes in developing secure solutions leveraging virtualization on connected mobile devices. Cog Systems has developed a Virtualized Mobile Device (VMD) architecture and has placed the seL4 microkernel and Virtual Machine Manager (VMM) at its heart. Thus, the VMD is built on a Type-1 hypervisor which manages physical device hardware and acts as a very small Trusted Computing Base (TCB).
@@ -2549,7 +2549,7 @@ At the 2020 seL4 Summit, Cog Systems presented this effort as a case study in ap
         <br>
         <span class="text-light">TII</span>
       </p>
-      <article class="theprose -mt-10">
+      <article class="theprose">
         <div class="pt-5">
           <p>
     The use of Trusted Execution Environments (TEEs) is becoming increasingly common in the design of secure systems. TEEs provide a secure execution environment for sensitive applications and data, ensuring that they are protected from attacks and unauthorized access. TEEs are typically implemented as a separate execution environment within a system, with their own hardware and software resources that are isolated from the rest of the system. The trend towards the use of TEEs is driven by the increasing sophistication of cyber-attacks and the need for more robust security solutions. As such, the use of TEEs is becoming increasingly important in the design of secure systems, and technologies such as seL4 and RISC-V are playing a key role in their development.
@@ -2609,7 +2609,7 @@ At the 2020 seL4 Summit, Cog Systems presented this effort as a case study in ap
         <br>
         <span class="text-light">University of Kansas</span>
       </p>
-      <article class="theprose -mt-10">
+      <article class="theprose">
         <div class="pt-5">
           <p>
 This application-in-development leverages the seL4 proofs to provide assurance for the trustworthy and remote attestation of a Linux VM. By focusing on a Linux VM running on an ODROID XU4 platform, this work demonstrates the potential of seL4-based remote attestation across different hardware architectures and platforms.

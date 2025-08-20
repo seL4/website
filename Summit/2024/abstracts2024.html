@@ -6,7 +6,7 @@
     <title>seL4 Summit 2024 Abstracts | seL4</title>
     <meta name="author" content="seL4 Foundation">
     <link rel="canonical" href="https://sel4.systems/Summit/2024/abstracts2024.html">
-    <link href="/css/sel4.css?v=1755593640" rel="stylesheet">
+    <link href="/css/sel4.css?v=1755671930" rel="stylesheet">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
@@ -592,7 +592,7 @@
         <br>
         <span class="text-light">Collins Aerospace</span>
       </p>
-      <article class="theprose -mt-10">
+      <article class="theprose">
         <div class="pt-5">
           <p>
 Formal methods have been successfully deployed at scale in production environments at large internet
@@ -665,7 +665,7 @@ developed, and the assurance evidence to be produced.
         <br>
         <span class="text-light">Proofcraft</span>
       </p>
-      <article class="theprose -mt-10">
+      <article class="theprose">
         <div class="pt-5">
           <p>
     In this talk we will give an overview of Proofcraft's recent milestones, as well as ongoing and future plans for the formal verification of seL4 to support more platforms, architectures, configurations, and features.
@@ -729,7 +729,7 @@ developed, and the assurance evidence to be produced.
         <br>
         <span class="text-light">Proofcraft</span>
       </p>
-      <article class="theprose -mt-10">
+      <article class="theprose">
         <div class="pt-5">
           <p>
     In this talk we will present Proofcraft's roadmap for producing a verified static multikernel configuration of seL4, allowing the use of multiple CPU cores with one kernel per core. In this roadmap, we are planning to increase formal assurance incrementally, providing a tractable path to multicore verification
@@ -793,7 +793,7 @@ with early usable results for the seL4 community.
         <br>
         <span class="text-light">Neutrality</span>
       </p>
-      <article class="theprose -mt-10">
+      <article class="theprose">
         <div class="pt-5">
           <p>
     Neutrality(1) is building the Atoll hypervisor as a high-assurance platform for the secure multitenant virtualisation of workloads which are likely targets of well-resourced attackers. Atoll will use seL4 configured as a multikernel to provide verified isolation between multi-vCPU VMs on datacenter-class hardware containing hundreds of CPU cores, terabytes of main memory, and 100GbE-class self-virtualising (SR-IOV) NICs. This project places seL4 on a wholly new playing field, with orders-of-magnitude increases in hardware performance and the associated scaling challenges, while retaining the full verified assurance of the seL4/ARM stack. In particular, Atoll will provide fully-verified Integrity and Confidentiality between customer VMs, while efficiently handling commercial-scale workloads.
@@ -853,7 +853,7 @@ with early usable results for the seL4 community.
         <br>
         <span class="text-light">UNSW Sydney</span>
       </p>
-      <article class="theprose -mt-10">
+      <article class="theprose">
         <div class="pt-5">
           <p>
     Lions OS is a new, seL4-based, open-source operating systems aimed at the embedded/IoT/cyberphysical space. Based on the Microkit, Lions OS features a static system architecture, i.e. all (potential) components and their (maximum) connectivity are known at system build time. Lions OS is characterised by a highly modular design, driven by the principles of strong separation of concerns and strict adherence to the KISS principle – keep it simple, stupid! The “radical simplicity” design, when done right, enables excellent performance despite the many context switches resulting from the fine-grained modularity. Critically, this modularity, coupled with keeping each module as simple as possible, should enable formal verification of Lions OS.
@@ -917,7 +917,7 @@ with early usable results for the seL4 community.
         <br>
         <span class="text-light">UNSW Sydney</span>
       </p>
-      <article class="theprose -mt-10">
+      <article class="theprose">
         <div class="pt-5">
           <p>
     LionsOS is a new Operating Systems developed at Trustworthy Systems aimed at embedded, IoT, and cyberphysical systems. LionsOS is based on the seL4 Microkit and is desgined to formally verifiable, performant, and adaptable to a wide class of use-cases.
@@ -981,7 +981,7 @@ with early usable results for the seL4 community.
         <br>
         <span class="text-light">UNSW Sydney</span>
       </p>
-      <article class="theprose -mt-10">
+      <article class="theprose">
         <div class="pt-5">
           <p>
     Several frameworks, such as CAmkES and the seL4 Microkit, have been built on top of seL4 to enable the development of performant and provably secure operating systems. Most of these have static architectures and use system descriptions that define a complete system including all components and the resources they can access. The system specification is then passed to tools like CapDL, which generate the described system with the correct capability distribution. An important attribute of frameworks like CAmkES and Microkit is that they do not allow this initial distribution to evolve, preventing the runtime transmission of capabilities within an initialized system. This makes them well-suited for static analysis and verification, but comes with the caveat that some behaviours become more difficult or even impossible to represent. In particular, static frameworks are unsuitable for dynamic systems that adhere to complex security policies, especially ones that depend on runtime behaviour, or require functionality such as the ability to create new, sandboxed components, or temporarily transfer privileges between components at runtime.
@@ -1042,7 +1042,7 @@ with early usable results for the seL4 community.
         <br>
         <span class="text-light">DornerWorks</span>
       </p>
-      <article class="theprose -mt-10">
+      <article class="theprose">
         <div class="pt-5">
           <p>
     Upstream hypervisor support has expanded in recent years to support additional configurations on x86, ARM, and RISC-V. Every upstream example simply runs Linux, which is an excellent use case for highly functional, general purpose computing platforms, however there are other guest Operating Systems that solve different use cases. Running seL4 in Hypervisor mode allows for the untrusted code in Linux to be sandboxed and isolated from trusted components in the system. What if the guest Operating System was fully trusted? Deos is a DO-178C DAL A certified RTOS for Avionics Applications, an area seL4 has struggled to break into. DornerWorks expanded seL4 Hypervisor support to run Deos under the CAmkES VM. This presentation will overview the changes that needed to be made to support a certifiable RTOS guest, how a Hypervisor effects the safety certification considerations of Deos, and the next steps needed to create a certifiable system with seL4.
@@ -1100,7 +1100,7 @@ with early usable results for the seL4 community.
         <br>
         <span class="text-light">Capabilities Limited</span>
       </p>
-      <article class="theprose -mt-10">
+      <article class="theprose">
         <div class="pt-5">
           <p>
     seL4 currently provides, formally verified, memory safety guarantees in the kernel and isolation guarantees between seL4's userspace tasks, but there is no safety within a single seL4 task or protection domain itself (e.g., VMs or single-address-space servers such as rumprun). According to a recent Microsoft study, memory safety vulnerabilities account for 70% of all software vulnerabilities. CHERI is a capability-based hardware-software architecture aiming to address memory-safety and software compartmentalisation issues. The goal of this project is to have a complete memory-safe C/C++ seL4-based software stack using CHERI on Morello, without having to re-write the existing seL4 C/C++ userspace libraries (currently over 250 KLoC, using sloc tool) from scratch or formally verify them. This talk will describe the progress of CHERIfying the existing seL4's userspace in order to have complete (spatial) memory and pointer safety.
@@ -1158,7 +1158,7 @@ with early usable results for the seL4 community.
         <br>
         <span class="text-light">Lewis & Clark College</span>
       </p>
-      <article class="theprose -mt-10">
+      <article class="theprose">
         <div class="pt-5">
           <p>
     We have developed a minimal networking stack (Ethernet, IP, UDP, and ICMP) with the overarching goal of proving that it implements its specification correctly. We target our implementation for the embedded market and therefore we have chosen to develop our solution around the seL4 Microkit and the seL4 Device Driver Framework.
@@ -1219,7 +1219,7 @@ with early usable results for the seL4 community.
         <br>
         <span class="text-light">DornerWorks</span>
       </p>
-      <article class="theprose -mt-10">
+      <article class="theprose">
         <div class="pt-5">
           <p>
     This talk presents an experience report on migrating seL4-based systems from the CAmkES VMM to the Microkit VMM. Microkit is a simple framework and SDK created to enable more efficient designs and lower the barrier to entry to seL4.  The presentation will compare and contrast MicroKit with CAmkES and highlight a few reasons to start using Microkit.  In addition, it will examine how MicroKit can make learning and developing seL4-based systems easier and breakdown roadblocks encountered by new users when porting to a new platform. Finally, we will present our gap analysis between the two VMMs and highlight what still needs to be addressed so users can start developing real-world products.
@@ -1276,7 +1276,7 @@ with early usable results for the seL4 community.
         <br>
         <span class="text-light">seL4 Foundation</span>
       </p>
-      <article class="theprose -mt-10">
+      <article class="theprose">
         <div class="pt-5">
           <p>
     In this talk, June Andronick, CEO of the seL4 Foundation, will give a brief overview of the latest updates and future plans for the seL4 Foundation.
@@ -1338,7 +1338,7 @@ with early usable results for the seL4 community.
         <br>
         <span class="text-light">Kry10</span>
       </p>
-      <article class="theprose -mt-10">
+      <article class="theprose">
         <div class="pt-5">
           <p>
     The Kry10 operating system supports some dynamic behaviours, including incremental updates to running systems. To ensure that the OS always enforces the access controls specified by device owners, we must verify the privileged OS components that manage system resources across updates. Verification will soon be further complicated by the addition of support for multikernel systems, because the OS will need to coordinate resource management across cores.
@@ -1405,7 +1405,7 @@ with early usable results for the seL4 community.
         <br>
         <span class="text-light">ETH Zurich</span>
       </p>
-      <article class="theprose -mt-10">
+      <article class="theprose">
         <div class="pt-5">
           <p>
     At the heart of every modern server platform sits an embedded system called theboard management controller (BMC) that is responsible for the low-levelfunctioning of the platform. Despite their critical nature, they are generallynot built as trustworthy systems. We have embarked on a journey tocyber-retrofit BMC firmware with seL4 as the kernel. In this talk, we present anupdate on our efforts -- generate trustworthy hardware/software I2C drivers. I2C is a low-level protocol used by BMCs to communicate with many peripherals(e.g. the power regulators). Unlike memory-mapped devices with one-to-oneinterfaces with the BMC, multiple I2C devices may share the same bus. Quirks ofone device can influence the whole assemblage. Therefore, to produce a correctdriver for I2C (and other bus-based protocols), we need to consider thespecifications of not only the controller but all devices on the bus.
@@ -1466,7 +1466,7 @@ with early usable results for the seL4 community.
         <br>
         <span class="text-light">UNSW Sydney</span>
       </p>
-      <article class="theprose -mt-10">
+      <article class="theprose">
         <div class="pt-5">
           <p>
     The seL4 Device Driver Framework (sDDF) provides a lightweight library of device drivers and supporting virtualising components which allow clients to securely access and share devices. Each sDDF component is designed to handle one primary concern, and as a result, components have minimal knowledge of the system as a whole and instead communicate only with their direct neighbours. Components are event driven and and require a signal to be scheduled to process incoming data. A signalling protocol is the decision process a component goes through when deciding whether to signal its neighbour.
@@ -1530,7 +1530,7 @@ with early usable results for the seL4 community.
         <br>
         <span class="text-light">Colias Group, LLC</span>
       </p>
-      <article class="theprose -mt-10">
+      <article class="theprose">
         <div class="pt-5">
           <p>
     The development and maintenance of Rust support in seL4 userspace has been an official seL4 Foundation project since last year’s summit. This project’s scope includes libraries for interacting with the seL4 API, higher-level libraries for use in seL4 userspace (e.g. support for asynchronous programming and integration with the seL4 Device Driver Framework), Rust language runtimes for root tasks and Microkit protection domains, modular building blocks for custom seL4 userspace Rust language runtimes, a CapDL system initializer implementation, and an easy-to-use kernel loader. The past year has seen the expansion and refinement of this project’s library offerings, the release of relevant educational materials, and further integration with the rest of the seL4 software ecosystem. In this talk, we will cover progress since last year’s summit, demonstrate how to leverage this work in your own systems, and share our vision and goals for the path ahead.
@@ -1588,7 +1588,7 @@ with early usable results for the seL4 community.
         <br>
         <span class="text-light">UNSW Sydney</span>
       </p>
-      <article class="theprose -mt-10">
+      <article class="theprose">
         <div class="pt-5">
           <p>
     We introduce Pancake, a new language for verifiable, low-level systems programming, especially device drivers. Pancake features a simple type system that makes it attractive to systems programmers, while at the same time aiming to ease the formal verification of code. Pancake has well-defined semantics which the compiler is proven to preserve, meaning that each generated binary code preserves the semantics of its original program. We have now extended Pancake with the shared memory capability which allows the programs to access device registers without escaping to C.
@@ -1649,7 +1649,7 @@ with early usable results for the seL4 community.
         <br>
         <span class="text-light">Kry10, Idaho National Laboratory</span>
       </p>
-      <article class="theprose -mt-10">
+      <article class="theprose">
         <div class="pt-5">
           <p>
     When a digital system is undergoing cyber attack or is failing in some way, it is often necessary to take action different from its usual operating mode. These alternative modes of operation are called Reserve Modes.
@@ -1713,7 +1713,7 @@ with early usable results for the seL4 community.
         <br>
         <span class="text-light">Kry10, Idaho National Laboratory</span>
       </p>
-      <article class="theprose -mt-10">
+      <article class="theprose">
         <div class="pt-5">
           <p>
     Assured Reserve Modes are a mechanism that we’ve developed for the seL4-based Kry10 OS that allows a system to switch between pre-configured operating modes at runtime in response to security, safety, and other routine operational events. In this presentation we show the operation of assured reserve modes in action.
@@ -1777,7 +1777,7 @@ with early usable results for the seL4 community.
         <br>
         <span class="text-light">Kry10</span>
       </p>
-      <article class="theprose -mt-10">
+      <article class="theprose">
         <div class="pt-5">
           <p>
     Container solutions have been instrumental throughout cloud computing, influencing how developers build and automate their application deployments. A core benefit behind containers is that they provide a standardised abstraction layer of an application's underlying OS infrastructure. These abstractions help isolate an application's code and system dependencies, whilst conveniently packaging said dependencies into images that can be easily revision controlled and managed in CI/CD pipelines. When applying this technology to embedded systems, containers offer the potential for simplifying application development workflows, whilst also providing a useful CI/CD mechanism for deploying software updates to deployed devices. seL4 is uniquely suited to power a modern generation of embedded devices and using containers brings with it modern software development practices that makes it easier to manage fleets of devices.
@@ -1838,7 +1838,7 @@ with early usable results for the seL4 community.
         <br>
         <span class="text-light">TII</span>
       </p>
-      <article class="theprose -mt-10">
+      <article class="theprose">
         <div class="pt-5">
           <p>
     The utilization of seL4, a high-assurance microkernel, in a Trusted Execution Environment (TEE) on RISC-V hardware, presents a robust solution for secure computing. This year, we build upon our foundational work with new insights into the performance impacts and enhancements of our TEE.
@@ -1899,7 +1899,7 @@ with early usable results for the seL4 community.
         <br>
         <span class="text-light">NIO</span>
       </p>
-      <article class="theprose -mt-10">
+      <article class="theprose">
         <div class="pt-5">
           <p>
     A formally-verified microkernel is a great start, and an OS needs more than a microkernel. Over the past years, we have been building a vehicle operating system and toolsets based on seL4 from scratch. It is very challenging, especially when dependability is the top priority. In this talk, we would like to share our experiences along the journey, with an emphasis on the following topics: (1) POSIX or not, that is not a question. To leverage the existing code base and 3rd party libraries, a layered approach is adopted: The system has a core system call layer and a POSIX layer based on the core layer. System components use the core layer. Applications and 3rd party libraries use the POSIX interfaces. (2) Tooling is especially important for development efficiency and system usability. System status monitoring and comprehensive logging are critical since we rely on them to analyze issues remotely. Additionally, a building and integration tool is specifically designed to manage the building and releasing process of the OS and applications. (3) Resource management needs more thoughts. Seasoned system developers are surprised by another form of resource leakage: capability slot leakage. Access control to resources that are not managed by the kernel directly through capabilities also deserves some discussion. (4) Product-level maturity is paramount. We wish that the major OS components could be verified, but at least for now, realistically, various levels of testing are used to stabilize and mature the new OS.
@@ -1957,7 +1957,7 @@ with early usable results for the seL4 community.
         <br>
         <span class="text-light">Capgemini</span>
       </p>
-      <article class="theprose -mt-10">
+      <article class="theprose">
         <div class="pt-5">
           <p>
     Since 2021, a small team at Capgemini have been making contributions toward the seL4 infrastructure, assisting developers in getting started with seL4. Previously, building atop CAmkES, we presented a Developer Kit (from zero to "hello world"), a framework to access the U-boot driver suite, and initial efforts in preparing a native xHCI driver (USB 3.0). Now, we present the conclusion of these efforts.
@@ -2018,7 +2018,7 @@ with early usable results for the seL4 community.
         <br>
         <span class="text-light">Cog Systems, Inc.</span>
       </p>
-      <article class="theprose -mt-10">
+      <article class="theprose">
         <div class="pt-5">
           <p>
     In 2017 Cog Systems developed a single domain virtualized device on an HTC One A9 smartphone, and successfully validated it against the National Information Assurance Partnership (NIAP) Protection Profile (PP) for Mobile Device Fundamentals (MDF) and registered the device with the National Security Agency (NSA) as an Approved Component under its Commercial Solutions for Classified (CSfC) process. In the past few years we have been building the next-gen version of this solution.
@@ -2079,7 +2079,7 @@ with early usable results for the seL4 community.
         <br>
         <span class="text-light">Deutsches Zentrum für Luft- und Raumfahrt (DLR)</span>
       </p>
-      <article class="theprose -mt-10">
+      <article class="theprose">
         <div class="pt-5">
           <p>
     Compiling the seL4 kernel itself might be simple, but once more and more of the seL4 ecosystem is involved, transitive dependencies from Python to Haskell complicate things. To tackle this complexity, we added yet another layer on top, a declarative build system that allows to provide all the (transitive-) dependencies from one hand: Nix.
@@ -2140,7 +2140,7 @@ with early usable results for the seL4 community.
         <br>
         <span class="text-light">NIO</span>
       </p>
-      <article class="theprose -mt-10">
+      <article class="theprose">
         <div class="pt-5">
           <p>
     The automotive industry is rapidly evolving, with software-defined vehicles (SDVs) at the forefront of this transformation. At NIO, we are leveraging the seL4 microkernel to redefine vehicle architecture, ensuring robust safety, reliability, and performance. This presentation will explore the vision behind integrating seL4 into our SDV platform. We will share the journey of delivering the seL4-based SkyOS-M within the ONVO vehicle on our latest NT3 platform, highlight the significant impact this integration has had on our vehicle design and functionality, and outline our future roadmap beyond the current launch.
@@ -2198,7 +2198,7 @@ with early usable results for the seL4 community.
         <br>
         <span class="text-light">DornerWorks, US Army - Ground Vehicle Robotics</span>
       </p>
-      <article class="theprose -mt-10">
+      <article class="theprose">
         <div class="pt-5">
           <p>
     ROS (Robotic Operating System), a modular componentized architecture for robot applications, has made it possible to quickly develop and deploy systems utilizing autonomous or human guided robots.  Focusing on ease of use and portability, ROS has enabled a community of developers to create autonomy solutions that were previously restricted to well-funded companies.  However, ROS depends on many services included in a full Linux distribution to function properly.  Beyond the Operating System itself, these distributions contain many unvetted software packages, which when used in high assurance environments, such as factory automation, could present an unacceptable amount of overhead and potential vulnerabilities.
@@ -2260,7 +2260,7 @@ with early usable results for the seL4 community.
         <br>
         <span class="text-light">ETH Zurich, UNSW Sydney, University of Bologna</span>
       </p>
-      <article class="theprose -mt-10">
+      <article class="theprose">
         <div class="pt-5">
           <p>
     Timing channels enable information leakage across address spaces, bypassing an operating system’s security boundaries. They can result from any shared microarchitectural state that depends on previous execution and affects a system’s timing. Closing timing channels (aka “time protection”) requires strict partitioning of microarchitectural state, which is not feasible (or extremely expensive) in current ISAs.
@@ -2320,7 +2320,7 @@ with early usable results for the seL4 community.
         <br>
         <span class="text-light">UNSW Sydney</span>
       </p>
-      <article class="theprose -mt-10">
+      <article class="theprose">
         <div class="pt-5">
           <p>
     This talk will give an overview of the status of ongoing and planned research and development at Trustworthy Systems to expand the scope of proofs about seL4-based operating systems in two directions: (1) downwards, to prove that the seL4 kernel implements time protection correctly at the abstract and C specification levels, and (2) upwards, to prove functional specifications of seL4's system calls and on that basis carry out SMT-based automated deductive verification of the user-level seL4 Microkit and Lions OS service components built on top of it. Here I will lay out the research and engineering challenges facing us on both these fronts and the planned subprojects for which we seek talented PhD students, postdocs and engineers to tackle them.
@@ -2377,7 +2377,7 @@ with early usable results for the seL4 community.
         <br>
         <span class="text-light">ETH Zurich</span>
       </p>
-      <article class="theprose -mt-10">
+      <article class="theprose">
         <div class="pt-5">
           <p>
     Modern operating systems&mdash;including seL4&mdash;are written to a fictional model of machine hardware from the 1960s and 1970s: a set of homogeneous cores accessing a common physical address space containing main memory, plus memory-mapped devices. However, modern SoCs and server platforms are really a complex network of heterogeneous cores and intelligent devices, many of which are running their own firmware and "operating systems". The result is a catastrophe of system design, including a plethora of security exploits like remote over-the-air compromises due to weaknesses in WiFi modem firmware. Link: https://googleprojectzero.blogspot.com/2017/04/over-air-exploiting-broadcoms-wi-fi_11.html.
