@@ -6,7 +6,7 @@
     <title>seL4 Summit 2025 Abstracts | seL4</title>
     <meta name="author" content="seL4 Foundation">
     <link rel="canonical" href="https://sel4.systems/Summit/2025/abstracts2025.html">
-    <link href="/css/sel4.css?v=1756072600" rel="stylesheet">
+    <link href="/css/sel4.css?v=1756272682" rel="stylesheet">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
@@ -1009,59 +1009,6 @@ We have several goals for our framework:
 
 
 
-<div id="a-verified-high" class="py-12 mb-5 section-max-w sm:py-16">
-  <div class="mx-auto px-2 sm:px-6 lg:px-8">
-    <div class="mx-auto lg:mx-0">
-      <h2 class="text-xl font-bold tracking-tight text-dark mb-6 sm:text-4xl">A Verified, High-Performance, IPv6 Network Stack</h2>
-      <p>
-        <span class="text-gray-800 dark:text-gray-300">Alain Kägi, Daniel Neshyba-Rowe</span>
-        <br>
-        <span class="text-light">Lewis & Clark College</span>
-      </p>
-      <article class="theprose">
-        <div class="pt-5">
-          <p>
-  We report on our effort to verify a high-performance, portable, pure IPv6
-  network stack written in C. Currently, our stack includes compliant
-  implementations of the Ethernet, IPv6, UDP, and ICMPv6 layers. Our
-  verification efforts center on showing our C implementation is a refinement of
-  an abstract specification manually derived from official prose-based
-  specifications. We developed our proof with Isabelle/HOL using the AutoCorres2
-  framework.
-</p>
-        </div>
-      </article>
-      <div class="flex flex-row gap-x-2 pt-2">
-        
-        
-        <div>
-          <p class="p-1 mt-2">
-          <a href="program.html#p-verified-high" class="text-sm text-light underline">See this talk in the program</a>
-          </p>
-        </div>
-      </div>
-    </div>
-  </div>
-</div>
-
-<div class="flex w-full mb-6">
-  <div class="flex-1"></div>
-  <hr class="w-10 h-px bg-gray-200 border-0 dark:bg-gray-600">
-  
-<a href="#page-top" class="relative -mt-3.5 mx-4">
-  <div class="dark:bg-slate-900 hover:bg-slate-100 dark:hover:bg-slate-800 p-1.5 h-7 w-7 rounded-full shadow-xs left-1">
-    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" aria-hidden="true" data-slot="icon" class="h-4 w-4 text-slate-400 dark:text-slate-500">
-  <path stroke-linecap="round" stroke-linejoin="round" d="M12 19.5v-15m0 0-6.75 6.75M12 4.5l6.75 6.75"/>
-</svg>
-  </div>
-</a>
-
-  <hr class="w-10 h-px bg-gray-200 border-0 dark:bg-gray-600">
-  <div class="flex-1"></div>
-</div>
-
-
-
 <div id="a-verified-zynqmp" class="py-12 mb-5 section-max-w sm:py-16">
   <div class="mx-auto px-2 sm:px-6 lg:px-8">
     <div class="mx-auto lg:mx-0">
@@ -1257,49 +1204,27 @@ We have several goals for our framework:
       <article class="theprose">
         <div class="pt-5">
           <p>
-  Embedded systems are everywhere from public utlities to personal smart
-  watches. These systems have increasingly been targets for malicious activity
-  by both criminal and nation state actors. One particularly challenging
-  subdomain of embedded systems is space systems, due to the harsh environmental
-  challenges (e.g., radiation and temperature), the inability to get physical
-  access once launched, and the cost and critical functionality of these
-  systems. Keeping satellites running relies heavily on resilient and secure
-  software. While making this software resilient has historically been important
-  for these systems, security has received little consideration to date. As a
-  result, several years ago we started a series of efforts to secure these
-  systems. One of our first projects was an attempt to port NASA’s core Flight
-  Software (cFS), a widely-used satellite flight software, to seL4, to provide a
-  secure foundation for satellite systems.
+  Embedded systems are increasingly targeted by both criminal and nation state
+  actors. One particularly challenging subdomain for embedded systems is space,
+  posing additional concerns in the form of a harsh environment (e.g., radiation
+  and temperature), inability to get physical access once launched, and tight
+  coupling between hardware and software. Satellites need resilient software to
+  face these challenges and yet software security has received little
+  consideration to date.
 </p>
 <p>
-  NASA’s core Flight Software (cFS) was developed by NASA Goddard over 20 years
-  ago. Today it is widely deployed and used on scores of government and academic
-  space missions, including NASA Artemis and the Roman Space Telescope. cFS is
-  open source and is still under active development. Its primary purpose is to
-  provide a message bus and suite of reusable applications. These components
-  form the core of a system’s flight software and can be easily extended with a
-  given mission’s functionality. Given its extensive use in space systems, cFS
-  runs on many platforms and operating systems including Linux and VxWorks; this
-  is made possible thanks to an extensive Operating System Abstraction Layer or
-  OSAL.
-</p>
-<p>
-  Our analysis of the features cFS requires from an operating system as well as
-  the kind of environment it expects on a spacecraft led us to conclude that a
-  real operating system was desirable. The functionality expected by cFS
-  includes synchronization primitives like mutexes and semaphores, message
-  queues, timers and time keeping facilities, as well as some means of logging
-  and network communication. Additionally, cFS envisions an environment where
-  new processes and threads can be started on command. This analysis led us to
-  realize that while the actual porting of cFS would be relatively easy thanks
-  to its OSAL abstraction layer, significant functionality needed to be created
-  on top of seL4. This ultimately led us to the creation of the Magnetite
-  Operating System.
+  As a result, several years ago we ported NASA’s core Flight Software (cFS) to
+  seL4 to provide a secure foundation for satellite systems. cFS was developed
+  by NASA Goddard over 20 years ago and is now widely deployed for scores of
+  space missions (e.g., NASA Artemis, the Roman Space Telescope). Our analysis
+  of cFS and its assumptions about its host OS led us to conclude that despite
+  expected porting ease with the OS abstraction layer, significant functionality
+  needed to be created on top of seL4.
 </p>
 <p>
   This talk will focus on our analysis of the features required for cFS, our
   experience implementing that functionality and porting cFS to an seL4-based
-  system, and how this led us to create the Magnetite Operating System.
+  system, and how this led us to create the initial Magnetite operating system.
 </p>
         </div>
       </article>
@@ -1922,6 +1847,59 @@ href="https://genode.org/documentation/release-notes/25.05#Improved_support_for_
 
 
 
+<div id="a-verified-high" class="py-12 mb-5 section-max-w sm:py-16">
+  <div class="mx-auto px-2 sm:px-6 lg:px-8">
+    <div class="mx-auto lg:mx-0">
+      <h2 class="text-xl font-bold tracking-tight text-dark mb-6 sm:text-4xl">A Verified, High-Performance, IPv6 Network Stack</h2>
+      <p>
+        <span class="text-gray-800 dark:text-gray-300">Alain Kägi, Daniel Neshyba-Rowe</span>
+        <br>
+        <span class="text-light">Lewis & Clark College</span>
+      </p>
+      <article class="theprose">
+        <div class="pt-5">
+          <p>
+  We report on our effort to verify a high-performance, portable, pure IPv6
+  network stack written in C. Currently, our stack includes compliant
+  implementations of the Ethernet, IPv6, UDP, and ICMPv6 layers. Our
+  verification efforts center on showing our C implementation is a refinement of
+  an abstract specification manually derived from official prose-based
+  specifications. We developed our proof with Isabelle/HOL using the AutoCorres2
+  framework.
+</p>
+        </div>
+      </article>
+      <div class="flex flex-row gap-x-2 pt-2">
+        
+        
+        <div>
+          <p class="p-1 mt-2">
+          <a href="program.html#p-verified-high" class="text-sm text-light underline">See this talk in the program</a>
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="flex w-full mb-6">
+  <div class="flex-1"></div>
+  <hr class="w-10 h-px bg-gray-200 border-0 dark:bg-gray-600">
+  
+<a href="#page-top" class="relative -mt-3.5 mx-4">
+  <div class="dark:bg-slate-900 hover:bg-slate-100 dark:hover:bg-slate-800 p-1.5 h-7 w-7 rounded-full shadow-xs left-1">
+    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" aria-hidden="true" data-slot="icon" class="h-4 w-4 text-slate-400 dark:text-slate-500">
+  <path stroke-linecap="round" stroke-linejoin="round" d="M12 19.5v-15m0 0-6.75 6.75M12 4.5l6.75 6.75"/>
+</svg>
+  </div>
+</a>
+
+  <hr class="w-10 h-px bg-gray-200 border-0 dark:bg-gray-600">
+  <div class="flex-1"></div>
+</div>
+
+
+
 <div id="a-surevoice" class="py-12 mb-5 section-max-w sm:py-16">
   <div class="mx-auto px-2 sm:px-6 lg:px-8">
     <div class="mx-auto lg:mx-0">
@@ -1991,14 +1969,24 @@ href="https://genode.org/documentation/release-notes/25.05#Improved_support_for_
       <article class="theprose">
         <div class="pt-5">
           <p>
-  This talk will discuss recent and on-going seL4-related research and de- velopment at UNSW’s Trustworthy Systems group. It will provide a general overview and then focus on the system side of our current work, to be com- plemented by Thomas Sewell’s and Junming Zhao’s talks that will focus on verification activities.
+  This talk will discuss recent and ongoing seL4-related research and
+  development at UNSW’s Trustworthy Systems group. It will provide a general
+  overview and then focus on the system side of our current work, to be
+  complemented by Thomas Sewell’s and Junming Zhao’s talks that will focus on
+  verification activities.
 </p>
 <p>
-  Specifically this talk will cover work on kernel enhancements required for energy and thermal management, including on- and off-lining of cores and the implied migration of threads between cores. This is complemented by extensions of the Microkit.
+  Specifically this talk will cover work on kernel enhancements required for
+  energy and thermal management, including on- and off-lining of cores and the
+  implied migration of threads between cores. This is complemented by extensions
+  of the Microkit.
 </p>
 <p>
-  I will further cover or work on maturing the seL4 device driver frame-work (sDDF), including further performance improvements and new device classes, and progress on LionsOS and what we have learnt about inherent per- formance limitations (or lack thereof) of modular microkernel-based OSes.
-I will also cover early-stage work on two other projects:
+  I will further cover or work on maturing the seL4 device driver framework
+  (sDDF), including further performance improvements and new device classes, and
+  progress on LionsOS and what we have learnt about inherent performance
+  limitations (or lack thereof) of modular microkernel-based OSes. I will also
+  cover early-stage work on two other projects:
 </p>
 <ol>
   <li>Carrels: Secure micro-services on seL4, and</li>
