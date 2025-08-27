@@ -1,45 +1,23 @@
 <p>
-  Embedded systems are everywhere from public utlities to personal smart
-  watches. These systems have increasingly been targets for malicious activity
-  by both criminal and nation state actors. One particularly challenging
-  subdomain of embedded systems is space systems, due to the harsh environmental
-  challenges (e.g., radiation and temperature), the inability to get physical
-  access once launched, and the cost and critical functionality of these
-  systems. Keeping satellites running relies heavily on resilient and secure
-  software. While making this software resilient has historically been important
-  for these systems, security has received little consideration to date. As a
-  result, several years ago we started a series of efforts to secure these
-  systems. One of our first projects was an attempt to port NASA’s core Flight
-  Software (cFS), a widely-used satellite flight software, to seL4, to provide a
-  secure foundation for satellite systems.
+  Embedded systems are increasingly targeted by both criminal and nation state
+  actors. One particularly challenging subdomain for embedded systems is space,
+  posing additional concerns in the form of a harsh environment (e.g., radiation
+  and temperature), inability to get physical access once launched, and tight
+  coupling between hardware and software. Satellites need resilient software to
+  face these challenges and yet software security has received little
+  consideration to date.
 </p>
 <p>
-  NASA’s core Flight Software (cFS) was developed by NASA Goddard over 20 years
-  ago. Today it is widely deployed and used on scores of government and academic
-  space missions, including NASA Artemis and the Roman Space Telescope. cFS is
-  open source and is still under active development. Its primary purpose is to
-  provide a message bus and suite of reusable applications. These components
-  form the core of a system’s flight software and can be easily extended with a
-  given mission’s functionality. Given its extensive use in space systems, cFS
-  runs on many platforms and operating systems including Linux and VxWorks; this
-  is made possible thanks to an extensive Operating System Abstraction Layer or
-  OSAL.
-</p>
-<p>
-  Our analysis of the features cFS requires from an operating system as well as
-  the kind of environment it expects on a spacecraft led us to conclude that a
-  real operating system was desirable. The functionality expected by cFS
-  includes synchronization primitives like mutexes and semaphores, message
-  queues, timers and time keeping facilities, as well as some means of logging
-  and network communication. Additionally, cFS envisions an environment where
-  new processes and threads can be started on command. This analysis led us to
-  realize that while the actual porting of cFS would be relatively easy thanks
-  to its OSAL abstraction layer, significant functionality needed to be created
-  on top of seL4. This ultimately led us to the creation of the Magnetite
-  Operating System.
+  As a result, several years ago we ported NASA’s core Flight Software (cFS) to
+  seL4 to provide a secure foundation for satellite systems. cFS was developed
+  by NASA Goddard over 20 years ago and is now widely deployed for scores of
+  space missions (e.g., NASA Artemis, the Roman Space Telescope). Our analysis
+  of cFS and its assumptions about its host OS led us to conclude that despite
+  expected porting ease with the OS abstraction layer, significant functionality
+  needed to be created on top of seL4.
 </p>
 <p>
   This talk will focus on our analysis of the features required for cFS, our
   experience implementing that functionality and porting cFS to an seL4-based
-  system, and how this led us to create the Magnetite Operating System.
+  system, and how this led us to create the initial Magnetite operating system.
 </p>
