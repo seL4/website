@@ -1,0 +1,54 @@
+<p>
+  This talk presents our work porting the seL4 microkernel to a 64 bit 8-core
+  RISC-V AI SoC, a high-performance RISC-V platform designed for AI
+  applications. The RISC-V SoC integrates a powerful RISC-V CPU cluster with a
+  dedicated NPU, making it an ideal candidate for secure and efficient AI
+  workloads at the edge.We will walk through the process of bringing up seL4 on
+  this platform, including:
+</p>
+<ul>
+  <li>Lessons learned while building seL4 on ESWIN:
+    <ul>
+      <li>Timer Incompatibility: The seL4 test TIMER0001 failed initially.
+      Resolution involved explicitly disabling the timer test for
+      KernelPlatformHifiveP550, as the platform lacked a complete ltimer
+      implementation.
+        </li>
+        <li>Docker Permissions: Building the image inside the Docker environment
+        required elevated privileges. The user encountered permission issues
+        accessing the Docker daemon socket and fixed it via:sudo setfacl --modify
+        user:$USER:rw /var/run/docker.sock
+        </li>
+        <li>Missing Headers (e.g., serial.h): Some platform-specific headers such
+        as serial.h were not properly included. This was resolved by manually
+        copying files from the HiFive-specific
+        directory:projects/util_libs/libplatsupport/plat_include/hifive-p550/
+        </li>
+        <li>Platform Customization: The platform was not natively supported by
+        upstream seL4, so additional build-time customization and patching were
+        needed (e.g., modifying build scripts and manually verifying hardware
+        compatibility).
+        </li>
+    </ul>
+    </li>
+  <li>How was seL4 used after the port to DC-ROMA RISC-V AI PC
+    <ul>
+      <li>Building the system using sel4test-manifest with PLATFORM=hifive-p550
+      and -DRISCV64=1.</li>
+      <li>Booting the seL4 test image via U-Boot on the ESWIN board using: load
+      mmc 1:1 0x92000000 /kernel.dtb load mmc 1:1 0x90000000
+      /sel4test-driver-image-riscv-hifive-p550 bootm 0x90000000 - 0x92000000</li>
+      <li>The system booted successfully on the board, with basic functionality
+      verified through seL4's standard test cases. Additionally, modifications
+      were made to the CMakeLists.txt to disable the timer test on
+      KernelPlatformHifiveP550, which was necessary to pass all other tests.</li>
+    </ul>
+  </li>
+</ul>
+<p>
+  Our goal is to enable the seL4 developer community to take advantage of modern
+  RISC-V AI chips, while also opening up the RISC-V SoC to secure OS research
+  and real-world deployment scenarios. The talk will include lessons learned,
+  performance observations, and ideas for further collaboration with the seL4
+  ecosystem.
+</p>
