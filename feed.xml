@@ -10,7 +10,26 @@
   <description>News feed about seL4, the seL4 Foundation, and the seL4 ecosystem.</description>
   <link rel="alternate">https://sel4.systems/news/</link>
   <link rel="self">https://sel4.systems/feed.xml</link>
-  <updated>Wed, 06 Aug 2025 00:00:00 +0000</updated>
+  <updated>Wed, 17 Sep 2025 00:00:00 +0000</updated>
+  <rights>Copyright 2025 seL4 Foundation</rights>
+  <entry>
+    <title>The videos and slides of the seL4 Summit 2025 are available online</title>
+    <link rel="alternate" type="text/html" href="https://sel4.systems/news/2025.html#summit-videos"/>
+    <id>https://sel4.systems/news/2025.html#summit-videos</id>
+    <published>Wed, 17 Sep 2025 00:00:00 +0000</published>
+    <updated>Wed, 17 Sep 2025 00:00:00 +0000</updated>
+    <content type="html">
+      &lt;p&gt;
+  Videos of the &lt;a href=&quot;/Summit/2025/&quot;&gt;seL4 Summit
+  2025&lt;/a&gt; are now available on the &lt;a href=&quot;https://www.youtube.com/@seL4&quot;
+  target=&quot;_blank&quot;&gt;seL4 YouTube channel&lt;/a&gt;! Links and slides can be found on the
+  summit &lt;a href=&quot;/Summit/2025/program.html&quot;&gt;Program&lt;/a&gt;
+  and &lt;a href=&quot;/Summit/2025/abstracts2025.html&quot;&gt;Abstracts&lt;/a&gt; pages. Thanks to all the speakers for making the seL4 Summit
+  2025 a great &lt;a href=&quot;/Summit/2025/#gallery&quot;&gt;success!&lt;/a&gt;
+&lt;/p&gt;
+
+    </content>
+  </entry>
   <rights>Copyright 2025 seL4 Foundation</rights>
   <entry>
     <title>Thank you Riverside Research, sponsor of the seL4 Summit 2025 reception</title>
@@ -629,39 +648,6 @@
   if you are interested in sponsoring the &lt;a href=&quot;../Summit/2025&quot;&gt;seL4 Summit
   2025&lt;/a&gt;.
 &lt;/p&gt;
-    </content>
-  </entry>
-  <rights>Copyright 2025 seL4 Foundation</rights>
-  <entry>
-    <title>The new seL4 website is live!</title>
-    <link rel="alternate" type="text/html" href="https://sel4.systems/news/2025.html"/>
-    <id>https://sel4.systems/news/2025.html</id>
-    <published>Mon, 28 Apr 2025 00:00:00 +0000</published>
-    <updated>Mon, 28 Apr 2025 00:00:00 +0000</updated>
-    <content type="html">
-      &lt;p&gt;
-  We are excited to announce the launch of the new seL4 website! The redesigned
-  site is streamlined for easy access and navigation, with updated content
-  accessible to a broader audience, and new material expanding the scope of
-  topics and information related to seL4 and its ecosystem.
-&lt;/p&gt;
-
-&lt;p&gt;
-  We thank &lt;a href=&quot;https://www.ncsc.gov.uk/&quot;&gt;NCSC&lt;/a&gt; for their funding of this
-  project, &lt;a href=&quot;https://proofcraft.systems&quot;&gt;Proofcraft&lt;/a&gt; and &lt;a href=&quot;/Foundation&quot;&gt;the seL4 Foundation&lt;/a&gt; for its execution,
-  and the community members who provided input and feedback throughout the
-  project.
-&lt;/p&gt;
-
-&lt;p&gt;
-  Stay tuned for the revamp of the &lt;a href=&quot;https://docs.sel4.systems&quot;&gt;seL4
-  docsite&lt;/a&gt;.
-&lt;/p&gt;
-
-&lt;p&gt;
-  We welcome your feedback and we hope you enjoy the new site!
-&lt;/p&gt;
-
     </content>
   </entry>
 </feed>
