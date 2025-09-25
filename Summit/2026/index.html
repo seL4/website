@@ -1,0 +1,67 @@
+---
+# Copyright 2020 seL4 Project a Series of LF Projects, LLC.
+# SPDX-License-Identifier: CC-BY-SA-4.0
+title: seL4 Summit 2026
+layout: card
+pre: "Other years"
+pre_link: "../"
+redirect_from: /Foundation/Summit/2026/index.html
+---
+{% include summit-heading.html
+  about = 'The seL4 Summit is the annual international summit on the seL4
+  microkernel and associated technology, tools, infrastructure, products,
+  projects, and people. The <a href="#pc">program committee</a> assembles
+  thought-provoking talks, keynotes and panel discussions.'
+  city = "<mark>TBD<mark>"
+  date = "<mark>TBD<mark> 2026"
+%}
+
+
+
+
+<div class="card-grid-3">
+
+  {% include card.html
+  icon="user"
+  title="Call for Presentations"
+  body="Share your seL4 work, experiences and thoughts at the seL4 Summit 2026."
+  link="cfp.html"
+  %}
+
+  {% include card.html
+  icon="building-library"
+  title="Registration, Location & Venue"
+  body="Information about location, venue and travel."
+  %}
+
+  {% include card.html
+  center=true
+  icon="book-open"
+  title="Program"
+  body="Coming soon."
+  %}
+</div>
+
+
+<!-- About the summit section -->
+{% include summit-about.html %}
+
+
+
+ <!-- PC section -->
+ {% include section-start.html
+  id = "pc"
+  heading = "Program Committee"
+  intro = '
+      <p>
+        The Program Committee is made up of members from various parts of the seL4 ecosystem: users, contributors,
+        committers, experts, advocates, researchers, and engineers.
+      </p>'
+%}
+
+{% include 2026-pc.html %}
+
+{% include section-end.html %}
+
+
+
