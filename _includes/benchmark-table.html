@@ -15,9 +15,9 @@ SPDX-License-Identifier: CC-BY-SA-4.0
           <th scope="col" class="w-2/5" colspan="1">{{ cols[2][0] }}</th>
           <th scope="col" class="text-center w-[8ex]" colspan="1">{{ cols[3][0] }}</th>
           <th scope="col" class="text-center" colspan="2">{{ cols[5][0] }}</th>
-          <th scope="col" class="text-center" colspan="2">{{ cols[4][0] }}</th>
           <th scope="col" class="text-center" colspan="2">{{ cols[6][0] }}</th>
           <th scope="col" class="text-center" colspan="2">{{ cols[7][0] }}</th>
+          <th scope="col" class="text-center" colspan="2">{{ cols[4][0] }}</th>
         </tr>
       </thead>
       <tbody>
@@ -27,14 +27,14 @@ SPDX-License-Identifier: CC-BY-SA-4.0
           <td class="data-table-right">{{row.mode}}</td>
           <td>{{row.name}}{% if row.note %}<sup>*</sup>{% endif %}</td>
           <td class="data-table-right">{{row.clock}}</td>
-          <td class="data-mean">{{row.irq[0]}}</td>
-          <td class="data-stddev">({{row.irq[1]}})</td>
           <td class="data-mean">{{row.call[0]}}</td>
           <td class="data-stddev">({{row.call[1]}})</td>
           <td class="data-mean">{{row.reply[0]}}</td>
           <td class="data-stddev">({{row.reply[1]}})</td>
           <td class="data-mean">{{row.notify[0]}}</td>
           <td class="data-stddev">({{row.notify[1]}})</td>
+          <td class="data-mean">{{row.irq[0]}}</td>
+          <td class="data-stddev">({{row.irq[1]}})</td>
         </tr>
         {%- endfor %}
       </tbody>
