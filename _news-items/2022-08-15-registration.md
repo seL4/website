@@ -33,8 +33,3 @@ volunteer mentors. Participating attendees will be introduced to their
 counterparts during the summit, and will carry on afterwards with whatever level
 of involvement suits both parties. Mentors are welcome to volunteer for any
 level of involvement.
-
-<div style="text-align: center">
-  <a href="https://hopin.com/events/sel4-summit-2022/registration"
-     class="emph" >Register for the seL4 Summit 2022!</a>
-</div>
