@@ -77,6 +77,7 @@ IGNORE_URLS += www.linkedin.com/in/
 IGNORE_URLS += dl.acm.org/doi/10.1145/224056.224075
 IGNORE_URLS += softwareengineering.stackexchange.com/questions/99543
 IGNORE_URLS += www.hrad.cz/en/prague-castle-for-visitors
+IGNORE_URLS += ieee.org
 
 sep:= /,/
 empty:=
