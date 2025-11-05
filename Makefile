@@ -78,6 +78,7 @@ IGNORE_URLS += dl.acm.org/doi/10.1145/224056.224075
 IGNORE_URLS += softwareengineering.stackexchange.com/questions/99543
 IGNORE_URLS += www.hrad.cz/en/prague-castle-for-visitors
 IGNORE_URLS += ieee.org
+IGNORE_URLS += sel4summit2025.sched.com
 
 sep:= /,/
 empty:=
