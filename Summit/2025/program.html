@@ -38,7 +38,7 @@ layout: card
       All times are local time in Prague, Czech Republic (GMT+2). <!--Session chairs shown on right.-->
     </p>
     <p>
-      See the <a href="https://events.linuxfoundation.org/sel4-summit/program/schedule/">Schedule</a> on LF Events.
+      See the <a href="https://sel4summit2025.sched.com">Schedule</a> on LF Events.
     </p>
     <p>
       Timing of sessions and room locations are subject to change.
@@ -46,23 +46,25 @@ layout: card
     '
 %}
 
-{% include prelim-program-start.html %}
+{% include program-start.html %}
 
-  {% include prelim-program-item.html
+  {% include program-item.html
     day = "1"
     date = "3 September 2025"
   %}
 
-  {% include prelim-program-item.html
-    chair = ""
+  {% include program-item.html
+    chair = "Nick Spinale"
     num-talks = 2
     time = "9:00 - 9:10"
     title = "Welcome"
     presenter = "Nick Spinale"
     affiliation = "Colias Group"
+    youtube = "https://youtu.be/Z-UdkAuFYdA?si=DlPHSo1-UUu64ZYY"
+    slides = "slides/welcome.pdf"
   %}
 
-  {% include prelim-program-item.html
+  {% include program-item.html
     id = "p-model-based"
     time = "9:10 - 10:00"
     type = "Keynote"
@@ -70,271 +72,369 @@ layout: card
     presenter = "John Hatcliff, Jason Belt, Robby, Stefan Hallerstede, Robert VanVossen, Junaid Babar"
     affiliation = "Kansas State University, Aarhus University, Dornerworks, Collins Aerospace"
     abstract = "abstracts2025.html#a-model-based"
+    youtube = "https://youtu.be/gP1klZJi04U?si=eHY7uzUBex29t_lC"
+    slides = "slides/model-based.pdf"
   %}
 
-  {% include prelim-program-item.html
+  {% include program-item.html
     break = "Break"
   %}
 
-  {% include prelim-program-item.html
+  {% include program-item.html
+    chair = "Matt Brecknell"
+    num-talks = 3
     id = "p-next-700"
     time = "10:30 - 11:00"
     title = "The next 700 verified seL4 platforms"
     presenter = "Gerwin Klein"
     affiliation = "Proofcraft"
+    abstract = "abstracts2025.html#a-next-700"
+    youtube = "https://youtu.be/pxeaNUvReos?si=OJwskCjRQr2BN4XW"
+    slides = "slides/next-700.pdf"
   %}
 
-  {% include prelim-program-item.html
-    id = "p-fpga-based"
+  {% include program-item.html
+    id = "p-reconfigurable-partitioned"
     time = "11:00 - 11:30"
-    title = "FPGA based Accelerators w/ Microkit"
+    title = "Reconfigurable Partitioned Hardware Acceleration for Safety-Critical Applications"
     presenter = "Wanja Zaeske on behalf of Vincent Janson"
     affiliation = "German Aerospace Center (DLR)"
+    abstract = "abstracts2025.html#a-reconfigurable-partitioned"
+    youtube = "https://youtu.be/PmjLbFHNffE?si=w3XU4lvwDu4__8CI"
+    slides = "slides/reconfigurable-partitioned.pdf"
   %}
 
-  {% include prelim-program-item.html
+  {% include program-item.html
     id = "p-big-iron"
     time = "11:30 - 12:00"
     title = "seL4 on Big Iron: Experiences and recommendations from Neutrality's Atoll hypervisor"
     presenter = "David Cock"
     affiliation = "Neutrality"
+    abstract = "abstracts2025.html#a-big-iron"
+    youtube = "https://youtu.be/VfX1DPvmQeg?si=cVspOxYNWm6ns3Wk"
+    slides = "slides/big-iron.pdf"
   %}
 
-  {% include prelim-program-item.html
+  {% include program-item.html
     break = "Lunch"
   %}
 
-  {% include prelim-program-item.html
+  {% include program-item.html
+    chair = "Gerwin Klein"
+    num-talks = 4
     id = "p-program-logic"
-    time = "13:30 - 13:45"
+    time = "13:30 - 14:00"
     title = "A program logic for seL4-based system verification"
     presenter = "Matt Brecknell"
     affiliation = "Kry10"
+    abstract = "abstracts2025.html#a-program-logic"
+    youtube = "https://youtu.be/cTCqxa8NGhg?si=YmDPQIJurM8R6q-y"
+    slides = "slides/program-logic.pdf"
   %}
 
-  {% include prelim-program-item.html
-    id = "p-verified-high"
-    time = "13:45 - 14:00"
-    title = "A Verified, High-Performance, IPv6 Network Stack"
-    presenter = "Alain Kägi, Daniel Neshyba-Rowe"
-    affiliation = "Lewis & Clark College"
-  %}
-
-  {% include prelim-program-item.html
+  {% include program-item.html
     id = "p-verified-zynqmp"
     time = "14:00 - 14:30"
     title = "Verified ZynqMP DMA Driver in Concurrent Separation Logic"
     presenter = "Gordon Stewart"
     affiliation = "Riverside Research"
+    abstract = "abstracts2025.html#a-verified-zynqmp"
+    youtube = "https://youtu.be/uevu6YDpg9E?si=Mf65T54ie17xhkUh"
+    slides = "slides/verified-zynqmp.pdf"
   %}
 
-  {% include prelim-program-item.html
+  {% include program-item.html
     id = "p-science-engineering"
     time = "14:30 - 15:15"
     title = "Science, Engineering, Craft, Magic - Revolutions in the field of Software"
     presenter = "Boyd Multerer"
     affiliation = "Kry10"
+    abstract = "abstracts2025.html#a-science-engineering"
+    youtube = "https://youtu.be/G7_b3MBSw7w?si=F6YyhBABIXFK4fNb"
+    slides = "slides/science-engineering.pdf"
   %}
 
-  {% include prelim-program-item.html
+  {% include program-item.html
     break = "Break"
   %}
 
-  {% include prelim-program-item.html
+  {% include program-item.html
+    chair = "Gernot Heiser"
+    num-talks = 3
     id = "p-towards-dependable"
     time = "15:45 - 16:15"
     title = "Towards Dependable System Services on seL4"
     presenter = "Yanyan Shen, Dhammika Elkaduwe"
     affiliation = "NIO"
+    abstract = "abstracts2025.html#a-towards-dependable"
+    youtube = "https://youtu.be/88AmFInuTho?si=NIgAd_-OuqwT85je"
+    slides = "slides/towards-dependable.pdf"
   %}
 
-  {% include prelim-program-item.html
+  {% include program-item.html
     id = "p-porting-nasa"
     time = "16:15 - 16:45"
     title = "Porting NASA's core Flight System to Magnetite on seL4"
     presenter = "Juliana Furgala, Samuel Jero"
     affiliation = "MIT Lincoln Laboratory"
+    abstract = "abstracts2025.html#a-porting-nasa"
+    youtube = "https://youtu.be/QiX6If5v010?si=bXthn0m5scVBymWn"
+    slides = "slides/porting-nasa.pdf"
   %}
 
-  {% include prelim-program-item.html
+  {% include program-item.html
     id = "p-integration-sel4"
     time = "16:45 - 17:15"
     title = "Integration of seL4 in a Flight Vehicle Mission System"
     presenter = "Darren Cofer"
     affiliation = "Collins Aerospace"
+    abstract = "abstracts2025.html#a-integration-sel4"
+    youtube = "https://youtu.be/-LPHpvgbj2Q?si=fiaGS-NfyFwa76lS"
+    slides = "slides/integration-sel4.pdf"
   %}
 
-  {% include prelim-program-item.html
+  {% include program-item.html
     event = "Reception @ Červený Jelen 18:30"
   %}
 
-  {% include prelim-program-item.html
+  {% include program-item.html
     day = "2"
     date = "4 September 2025"
   %}
 
-  {% include prelim-program-item.html
+  {% include program-item.html
+    chair = "Juliana Furgala"
+    num-talks = 2
     id = "p-panel"
     time = "9:00 - 9:45"
-    title = "Panel"
+    type = "Panel"
+    title = "Building a business case for using a verified kernel"
+    presenter = "Darren Cofer, Robbie VanVossen, Boyd Multerer, Peter de Ridder,
+    Yanyan Shen, Juliana Furgala (moderator)"
+    affiliation = "Collins Aerospace, DornerWorks, Kry10, MEP,  NIO, MIT Lincoln Laboratory"
+    abstract = "abstracts2025.html#a-panel"
+    youtube = "https://youtu.be/heDjFCHeSxA?si=bovt1VCUpiXha6GJ"
   %}
 
-  {% include prelim-program-item.html
+  {% include program-item.html
     id = "p-foundation-update"
     time = "9:45 - 10:00"
     title = "seL4 Foundation update"
     presenter = "June Andronick"
     affiliation = "seL4 Foundation"
+    abstract = "abstracts2025.html#a-foundation-update"
+    youtube = "https://youtu.be/N8JjiyBfHsE?si=j4JKT-BvGm39_jR9"
+    slides = "slides/foundation-update.pdf"
   %}
 
-  {% include prelim-program-item.html
+  {% include program-item.html
     break = "Break"
   %}
 
-  {% include prelim-program-item.html
+  {% include program-item.html
+    chair = "Lucy Fletcher"
+    num-talks = 3
     id = "p-sculpt-os"
     time = "10:30 - 11:00"
     title = "Sculpt OS - a dynamic general-purpose OS powered by Genode on seL4"
     presenter = "Alexander Boettcher, Sebastian Sumpf"
     affiliation = "Genode Labs"
+    abstract = "abstracts2025.html#a-sculpt-os"
+    youtube = "https://youtu.be/N624i4X1UDw?si=zmnCgHQpWgKzGRYe"
+    slides = "slides/sculpt-os.pdf"
   %}
 
-  {% include prelim-program-item.html
+  {% include program-item.html
     id = "p-cellulos"
     time = "11:00 - 11:30"
     title = "CellulOS: An OS for comparing Isolation Mechanisms"
     presenter = "Sid Agrawal, Arya Stevinson, Linh Pham, Ethan Xu, Shaurya Patel, Hugo Lefeuvre, Aastha Mehta, Reto Achermann, Margo Seltzer"
     affiliation = "University of British Columbia, Oracle, Hammerspace"
+    abstract = "abstracts2025.html#a-cellulos"
+    youtube = "https://youtu.be/KDZpBvh7Y08?si=ajYw9zFiTqGIACPV"
+    slides = "slides/cellulos.pdf"
   %}
 
-  {% include prelim-program-item.html
+  {% include program-item.html
     id = "p-rust-based"
     time = "11:30 - 12:00"
     title = "Rust-based drivers and verified rust applications on seL4"
     presenter = "Robbie VanVossen"
     affiliation = "DornerWorks"
+    abstract = "abstracts2025.html#a-rust-based"
+    youtube = "https://youtu.be/XYbKgS1rwyA?si=YYytPb6P3FGQ5WbI"
+    slides = "slides/rust-based.pdf"
   %}
 
-  {% include prelim-program-item.html
+  {% include program-item.html
     break = "Lunch"
   %}
 
-  {% include prelim-program-item.html
-    id = "p-porting-sel4"
+  {% include program-item.html
+    chair = "Darren Cofer"
+    num-talks = 3
+    id = "p-verified-high"
     time = "13:30 - 13:45"
-    title = "Porting seL4 to the RISC-V SoC, toward a Secure and High-Performance RISC-V AI Platform"
-    presenter = "Yuning Liang"
-    affiliation = "Deep Computing"
+    title = "A Verified, High-Performance, IPv6 Network Stack"
+    presenter = "Alain Kägi, Daniel Neshyba-Rowe"
+    affiliation = "Lewis & Clark College"
+    abstract = "abstracts2025.html#a-verified-high"
+    youtube = "https://youtu.be/nF-76BAOPeM?si=laWpgpqRLzPLlZ_1"
+    slides = "slides/verified-high.pdf"
   %}
 
-  {% include prelim-program-item.html
+  {% include program-item.html
     id = "p-surevoice"
     time = "13:45 - 14:00"
     title = "SureVoice Solid"
     presenter = "Peter de Ridder"
     affiliation = "MEP"
+    abstract = "abstracts2025.html#a-surevoice"
+    youtube = "https://youtu.be/uNKScOyfB2g?si=gxgL0Ozb4eb6Cdp3"
+    slides = "slides/surevoice.pdf"
   %}
 
-  {% include prelim-program-item.html
+  {% include program-item.html
     id = "p-trustworthy-systems"
     type = "Deep Dive"
     time = "14:00 - 15:00"
     title = "Trustworthy Systems R&D Update"
     presenter = "Gernot Heiser"
     affiliation = "UNSW Sydney"
+    abstract = "abstracts2025.html#a-trustworthy-systems"
+    youtube = "https://youtu.be/wP48V34lDhk?si=df-gU3xSY3dU8pk_"
+    slides = "slides/trustworthy-systems.pdf"
   %}
 
-  {% include prelim-program-item.html
+  {% include program-item.html
     break = "Break"
   %}
 
-  {% include prelim-program-item.html
-    id = "p-dividing-timelines"
+  {% include program-item.html
+    chair = "David Cock"
+    num-talks = 3
+    id = "p-splitting-sel4"
     time = "15:30 - 16:15"
-    title = "Dividing Timelines to Verify seL4 Applications"
-    presenter = "Thomas Sewell"
+    title = "Splitting the seL4 Specification<br>Verifying Kernel–Userland Integration
+    for LionsOS"
+    presenter = "Thomas Sewell, Rob Sison"
     affiliation = "UNSW Sydney"
+    abstract = "abstracts2025.html#a-splitting-sel4"
+    youtube = "https://youtu.be/4n0H_ODM16s?si=VisyyEUdbIXuayBS"
+    slides = "slides/splitting-sel4.pdf"
   %}
 
-  {% include prelim-program-item.html
+  {% include program-item.html
     id = "p-verifying-device"
     time = "16:15 - 16:45"
     title = "Verifying Device Drivers with Pancake"
     presenter = "Junming Zhao"
     affiliation = "UNSW Sydney"
+    abstract = "abstracts2025.html#a-verifying-device"
+    youtube = "https://youtu.be/fgtXrSGcuc4?si=JG2DI0ur8e7Oa_3W"
+    slides = "slides/verifying-device.pdf"
   %}
 
-  {% include prelim-program-item.html
+  {% include program-item.html
     id = "p-improving-confidential"
     time = "16:45 - 17:00"
     title = "Improving Confidential Computing with seL4: A Promising Guest OS Solution"
     presenter = "Alexander Weidinger"
     affiliation = "Fraunhofer AISEC"
+    abstract = "abstracts2025.html#a-improving-confidential"
+    youtube = "https://youtu.be/yHBnurJfVU4?si=FP6gsGKy74UOaPS7"
+    slides = "slides/improving-confidential.pdf"
   %}
 
-  {% include prelim-program-item.html
+  {% include program-item.html
+    time = "17:00 - 17:15"
+    title = "Announcements"
+    presenter = "June Andronick"
+    affiliation = "seL4 Foundation"
+    youtube = "https://youtu.be/1a7EUIJGUas?si=dhgUz6ukI9E4RD8T"
+    slides = "slides/announcements.pdf"
+  %}
+
+  {% include program-item.html
     day = "3"
     date = "5 September 2025"
   %}
 
-  {% include prelim-program-item.html
+  {% include program-item.html
+    chair = "Robbie VanVossen"
+    num-talks = 2
     id = "p-cyberagentur"
     time = "9:00 - 9:50"
     type = "Keynote"
     title = "Ecosystem formally verifiable IT – provable Cybersecurity (EvIT)"
-    presenter = "Sebastian Jester"
+    presenter = "Christoph Hof"
     affiliation = "Cyberagentur"
     abstract = "abstracts2025.html#a-cyberagentur"
+    youtube = "https://youtu.be/uXmRCHWv2KE?si=ZcVLRIHmme-JG2di"
+    slides = "slides/cyberagentur.pdf"
   %}
 
-  {% include prelim-program-item.html
-    time = "9:50 - 10:00"
-    title = "Announcements"
-    presenter = "June Andronick"
-    affiliation = "seL4 Foundation"
+  {% include program-item.html
+    id = "p-porting-sel4"
+    time = "9:50 - 10:05"
+    title = "Porting seL4 to the RISC-V SoC, toward a Secure and High-Performance RISC-V AI Platform"
+    presenter = "Yuning Liang"
+    affiliation = "Deep Computing"
+    abstract = "abstracts2025.html#a-porting-sel4"
+    youtube = "https://youtu.be/-OLRBGV1YRs?si=xtOF_i_jp9B6pjw3"
+    slides = "slides/porting-sel4.pdf"
   %}
 
-  {% include prelim-program-item.html
+  {% include program-item.html
     break = "Break"
   %}
 
-  {% include prelim-program-item.html
+  {% include program-item.html
+    chair = "Thomas Sewell"
+    num-talks = 3
     id = "p-binary-verification"
     time = "10:30 - 11:00"
     title = "A Deep Dive into seL4’s Binary Verification Story"
     presenter = "Nick Spinale"
     affiliation = "Colias Group"
+    abstract = "abstracts2025.html#a-binary-verification"
+    youtube = "https://youtu.be/5mDDJhD_vC4?si=KkCLuv1OmRcXclku"
+    slides = "slides/binary-verification.pdf"
   %}
 
-  {% include prelim-program-item.html
+  {% include program-item.html
     time = "11:00 - 11:15"
     title = "Discussion, BoF Teasers"
   %}
 
-  {% include prelim-program-item.html
+  {% include program-item.html
     time = "11:15 - 12:00"
     title = "BoFs"
   %}
 
-  {% include prelim-program-item.html
+  {% include program-item.html
     break = "Lunch"
   %}
 
-  {% include prelim-program-item.html
+  {% include program-item.html
+    chair = "Robbie VanVossen"
+    num-talks = 3
     time = "13:30 -  14:15"
     title = "BoFs"
   %}
 
-  {% include prelim-program-item.html
+  {% include program-item.html
     time = "14:15 - 14:30"
     title = "BoF Wrap-up"
+    youtube = "https://youtu.be/0v-M_QBnkDI?si=k9SxiU4S-TWv-gks"
   %}
 
-  {% include prelim-program-item.html
+  {% include program-item.html
     time = "14:30 - 14:45"
     title = "Concluding Remarks"
     presenter = "Robbie VanVossen"
     affiliation = "DornerWorks"
+    youtube = "https://youtu.be/eSM23ixXefg?si=N3o8_6sg0ydvP_wd"
   %}
 
 {% include program-end.html %}
@@ -395,12 +495,7 @@ layout: card
     img = "/images/summit/prague-clock.jpg"
     alt = "Prague Astronomical Clock Tower"
     heading = "Prague Astronomical Clock Tower"
-    text = 'Go on a guided tour of the Prague Astronomical Clock Tower.
-    <br><br>
-    We&apos;re looking for a volunteer to be the
-    point of contact for this activity. Please email <a
-    href="mailto:summit@sel4.systems">summit@sel4.systems</a> if you&apos;re
-    interested.
+    text = 'Join <a href="https://nickspinale.com/">Nick Spinale</a> on a guided tour of the Prague Astronomical Clock Tower.
     <br><br>
     <strong>Date:</strong> Tuesday Sep 2, 2025<br>
     <strong>Time:</strong> 1:45pm, for a tour starting at 2pm<br>

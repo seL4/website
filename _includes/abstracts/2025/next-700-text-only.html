@@ -1,0 +1,37 @@
+<p>
+  The proportion of Arm platforms for which seL4 is verified has increased from
+  13% to 90% in the last year. In addition, over the same period, a new platform
+  port has been added where seL4’s proofs hold without any involvement from
+  proof engineers, i.e. at zero verification cost.
+</p>
+<p>
+This effort is part of the goal to reduce the reliance on formal verification
+experts in DARPA’s PROVERS program, where Proofcraft is part of the INSPECTA
+team led by Collins Aerospace. Proofcraft will deliver several streams of work
+to reduce the reliance on proof experts when using seL4 as a trustworthy
+foundation in security and safety-critical systems. One of these streams is the
+generalisation and automation of platform port verification. Porting seL4 to a
+new platform involves determining which architecture the platform runs on (e.g.,
+Arm v7, Intel x64, or RISC-V 64), which devices are included, at which memory
+addresses they reside, etc. These lead to configuration parameters for the
+kernel and the definition of a set of constants.
+</p>
+<p>
+At the start of the project, the seL4 proofs were intricately dependent on these
+configu ration constants and parameters. This resulted in the need to involve a
+verification expert to update the proofs for even simple changes. This explains
+the low proportion of verified configurations: when INSPECTA started, seL4’s
+formal proofs held for only 5 platforms, one per main architecture (Arm 32-bit,
+Arm 32-bit HYP, Arm 64-bit HYP, RISC-V and Intel), while seL4 was supported
+across 29 platforms (22 for Arm, 5 for RISC-V and 2 for Intel), and more than
+120 configuration options.
+</p>
+<p>
+In the talk we will explain the automation, abstraction and parametrisation
+techniques we are developing to make the seL4 proofs generic in a number of
+parameters. This will deliver two main outcomes: firstly, developers will be
+able to choose freely between boards supported by seL4 without being unduly
+constrained by formal verification support for their system; secondly, companies
+porting seL4 to a new specific board will be able to benefit from seL4 proofs at
+zero extra effort and without verification expertise.
+</p>

@@ -2,59 +2,64 @@
   Collaborators:
 </p>
 <ul>
-  <li>Kansas State University/Aarhus University – Robby, Jason
-  Belt, Stefan Hallerstede</li>
-  <li>Collins Aerospace – Darren Cofer, Isaac Amundson,
-  Junaid Babar, David Hardin</li>
+  <li>Kansas State University/Aarhus University – Robby, Jason Belt, Stefan
+  Hallerstede</li>
+  <li>Collins Aerospace – Darren Cofer, Isaac Amundson, Junaid Babar, David
+  Hardin</li>
   <li>Dornerworks – Robert VanVossen, Nathan Studer</li>
   <li>UNSW – Gernot Heiser, Robert Sison</li>
-  <li>ProofCraft – Gerwin Klein, Rafal
-  Kolanski, June Andronick</li>
+  <li>ProofCraft – Gerwin Klein, Rafal Kolanski, June Andronick</li>
 </ul>
 <p>
-The Collins Aerospace INSPECTA project (part of the DARPA PROVERS program) aims
-to provide a model-based development tool chain for seL4 with integrated formal
-methods. The High Assurance Modeling and Rapid engineering for embedded systems
-(HAMR) framework, whose development is led by researchers at Kansas State
-University, is a key part of the INSPECTA tool chain. Developed on the DARPA
-CASE project within Collins Aerospace team and on other US Department of Defense
-projects led by Galois, HAMR originally supported system modeling using the SAE
-standard AADL modeling language. On these projects, HAMR generated
-infrastructure code and application code thread skeletons in C and in Slang (a
-safety-critical subset of Scala developed at Kansas State University). HAMR
-supported system deployments on the Java Virtual Machine (JVM), Linux, and the
-seL4 micro-kernel using CAmkES. HAMR supported the GUMBO AADL contract language
-(jointly developed by KSU and Galois) that enabled engineers to formally specify
-interface behaviors of AADL thread components using familiar contract-based
-idioms. These model-level contracts were translated as part of HAMR’s code
-generation to code-level contracts (allowing SMT-based tools to verify that user
-application code conforms to contracts) and executable contracts (enabling
-testing frameworks to use these as test oracles and run-time monitoring to use
-them as run-time checks on thread input/output behavior). In this talk, we
-describe a number of new capabilities of HAMR developed on the INSPECTA project.
-First, the modeling layer of HAMR has been extended to support SysMLv2 – a new
-version of the widely-used
+  The Collins Aerospace INSPECTA project (part of the DARPA PROVERS program)
+  aims to provide a  model-based development tool chain for seL4 with integrated
+  formal methods. The High Assurance  Modeling and Rapid engineering for
+  embedded systems (HAMR) framework, whose development is led by  researchers at
+  Kansas State University, is a key part of the INSPECTA tool chain. Developed
+  on the  DARPA CASE project within Collins Aerospace team and on other US
+  Department of Defense projects led  by Galois, HAMR originally supported
+  system modeling using the SAE standard AADL modeling language.  On these
+  projects, HAMR generated infrastructure code and application code thread
+  skeletons in C and in  Slang (a safety-critical subset of Scala developed at
+  Kansas State University). HAMR supported system  deployments on the Java
+  Virtual Machine (JVM), Linux, and the seL4 micro-kernel using CAmkES. HAMR
+  supported the GUMBO AADL contract language (jointly developed by KSU and
+  Galois) that enabled  engineers to formally specify interface behaviors of
+  AADL thread components using familiar contract-based  idioms. These
+  model-level contracts were translated as part of HAMR’s code generation to
+  code-level  contracts (allowing SMT-based tools to verify that user
+  application code conforms to contracts) and  executable contracts (enabling
+  testing frameworks to use these as test oracles and run-time monitoring to use
+  them as run-time checks on thread input/output behavior).
 </p>
 <p>
-SysML modeling language standardized by the Object Modeling Group (OMG). We
-describe how HAMR- supported AADL-based specifications and tooling, including
-the GUMBO contract language, are being integrated within SysMLv2 modeling
-environments, including the SysIDE extension for VSCode. Second, we have
-extended HAMR’s code generation to support the Rust programming language and
-seL4 microkit. This provides both C and Rust-based development on seL4 with both
-CAmkES and microkit. For example, Rust implementations of SysMLv2/AADL threads
-can be deployed in seL4 microkit protection domains, with auto-generated
-microkit system description files and developer-facing microkit APIs for
-threading and channel communication. Finally, we have added contract generation
-support in Rust code for both formal contracts for the Verus verification tool
-and Rust executable contracts. The talk will provide short demos of all of these
-features – including showing Verus verification of seL4-deployed Rust thread
-component application code conformance to HAMR-generated contracts and automated
-property-based testing of Rust thread component code against HAMR-generated
-executable contracts. These new capabilities of HAMR are being applied by
-Dornerworks and Collins Aerospace engineers on military applications including
-mission control software for UAVs. HAMR is available under an open-source
-license, and the project website includes an example repository and collection
-of videos, tutorials, and classroom lecture materials (also suited for workforce
-training).
+  In this talk, we describe a number of new capabilities of HAMR developed on
+  the INSPECTA project. First,  the modeling layer of HAMR has been extended to
+  support SysMLv2 – a new version of the widely-used  SysML modeling language
+  standardized by the Object Modeling Group (OMG). We describe how HAMR
+  supported AADL-based specifications and tooling, including the GUMBO contract
+  language, are being  integrated within SysMLv2 modeling environments,
+  including the SysIDE extension for VSCode. Second,  we have extended HAMR’s
+  code generation to support the Rust programming language and seL4 microkit.
+  This provides both C and Rust-based development on seL4 with both CAmkES and
+  microkit. For example,  Rust implementations of SysMLv2/AADL threads can be
+  deployed in seL4 microkit protection domains,  with auto-generated microkit
+  system description files and developer-facing microkit APIs for threading and
+  channel communication. Finally, we have added contract generation support in
+  Rust code for both formal  contracts for the Verus verification tool and Rust
+  executable contracts. The talk will provide short demos  of all of these
+  features – including showing Verus verification of seL4-deployed Rust thread
+  component  application code conformance to HAMR-generated contracts and
+  automated property-based testing of Rust  thread component code against
+  HAMR-generated executable contracts.
+</p>
+<p>
+    These new capabilities of HAMR are being applied by Dornerworks and Collins
+    Aerospace engineers on  military applications including mission control
+    software for UAVs.
+</p>
+<p>
+  HAMR is available under an open-source license, and the project website
+  includes an example repository and collection of videos, tutorials, and
+  classroom lecture materials (also suited for workforce training).
 </p>

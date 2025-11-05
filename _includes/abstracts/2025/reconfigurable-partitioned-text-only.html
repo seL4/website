@@ -1,0 +1,32 @@
+<p>
+  The adoption of Machine Learning (ML) algorithms in the aviation domain raises
+  the need for high performance computing solutions that satisfy domain
+  intrinsic safety demands. Heterogeneous  computing System on Chips (SoCs) –
+  systems containing a classical Central Processing Unit (CPU) and a Field
+  Programmable Gate Array (FPGA) – can satisfy the computing demands by
+  offloading  computationally intensive tasks from the CPU to dedicated hardware
+  accelerators on the FPGA,  while both CPU and FPGA comply with aviation safety
+  standards. The typically static configuration of accelerators limits the
+  overall system flexibility, making dynamic accelerator configuration
+  desirable.
+</p>
+<p>
+  This presentation aims to establish a Reconfigurable Computing (RC) hypervisor
+  that facilitates the  outsourcing of acceleration tasks and introduces
+  hardware reconfiguration capabilities, all while  maintaining safety and high
+  performance.
+</p>
+<p>
+This work designs and implements a hypervisor extension that attaches to a
+classical software  hypervisor (Microkit on top of seL4) and provides both
+acceleration support and reconfiguration  capabilities of the FPGA resource. On
+the hardware side, the extension connects to a custom designed hardware-based
+hypervisor, which manages acceleration and reconfiguration tasks locally.  On
+the software side, it provides an interface for user applications to access the
+acceleration  capabilities. Interactions between user applications and the
+hypervisor in the software domain,  between the accelerator and the hardware
+hypervisor circuit in the hardware domain, and between  the software and
+hardware domains themselves are thoroughly considered to consolidate the overall
+design. A proof-of-concept demonstrator of the RC hypervisor is evaluated for
+performance and  compliance with aviation safety standards.
+</p>

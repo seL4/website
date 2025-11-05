@@ -9,6 +9,7 @@ sub: '
   The seL4 Summit 2025 features a combination of technical research and development, real-world seL4 deployment
   insights, in-depth interactive discussions, thought-provoking keynotes, panel discussions, as well as informal social activities.
 </p>'
+layout: card
 ---
 
 
@@ -17,17 +18,285 @@ sub: '
   time = "9:10 - 10:00"
   type = "Keynote"
   title = "Model-based Development for seL4 Microkit/Rust with Integrated Formal Methods using HAMR"
-  presenter = "John Hatcliff"
-  affiliation = "Kansas State University"
+  presenter = "John Hatcliff, Jason Belt, Robby, Stefan Hallerstede, Robert VanVossen, Junaid Babar"
+  affiliation = "Kansas State University, Aarhus University, Dornerworks, Collins Aerospace"
   text = "abstracts/2025/model-based-text-only.html"
+  youtube = "https://youtu.be/gP1klZJi04U?si=eHY7uzUBex29t_lC"
+  slides = "slides/model-based.pdf"
 %}
+
+
+{% include abstract-item.html
+  id = "next-700"
+  time = "10:30 - 11:00"
+  title = "The next 700 verified seL4 platforms"
+  presenter = "Gerwin Klein"
+  affiliation = "Proofcraft"
+  text = "abstracts/2025/next-700-text-only.html"
+  youtube = "https://youtu.be/pxeaNUvReos?si=OJwskCjRQr2BN4XW"
+  slides = "slides/next-700.pdf"
+%}
+
+
+{% include abstract-item.html
+  id = "reconfigurable-partitioned"
+  time = "11:00	- 11:30"
+  title = "Reconfigurable Partitioned Hardware Acceleration for Safety-Critical Applications"
+  presenter = "Wanja Zaeske on behalf of Vincent Janson"
+  affiliation = "German Aerospace Center (DLR)"
+  text = "abstracts/2025/reconfigurable-partitioned-text-only.html"
+  youtube = "https://youtu.be/PmjLbFHNffE?si=w3XU4lvwDu4__8CI"
+  slides = "slides/reconfigurable-partitioned.pdf"
+%}
+
+
+{% include abstract-item.html
+  id = "big-iron"
+  time = "11:30	- 12:00"
+  title = "seL4 on Big Iron: Experiences and recommendations from Neutrality's Atoll hypervisor"
+  presenter = "David Cock"
+  affiliation = "Neutrality"
+  text = "abstracts/2025/big-iron-text-only.html"
+  youtube = "https://youtu.be/VfX1DPvmQeg?si=cVspOxYNWm6ns3Wk"
+  slides = "slides/big-iron.pdf"
+%}
+
+
+{% include abstract-item.html
+  id = "program-logic"
+  time = "13:30 - 14:00"
+  title = "A program logic for seL4-based system verification"
+  presenter = "Matt Brecknell"
+  affiliation = "Kry10"
+  text = "abstracts/2025/program-logic-text-only.html"
+  youtube = "https://youtu.be/cTCqxa8NGhg?si=YmDPQIJurM8R6q-y"
+  slides = "slides/program-logic.pdf"
+%}
+
+
+{% include abstract-item.html
+  id = "verified-zynqmp"
+  time = "14:00 - 14:30"
+  title = "Verified ZynqMP DMA Driver in Concurrent Separation Logic"
+  presenter = "Gordon Stewart"
+  affiliation = "Riverside Research"
+  text = "abstracts/2025/verified-zynqmp-text-only.html"
+  youtube = "https://youtu.be/uevu6YDpg9E?si=Mf65T54ie17xhkUh"
+  slides = "slides/verified-zynqmp.pdf"
+%}
+
+
+{% include abstract-item.html
+  id = "science-engineering"
+  time = "14:30 - 15:15"
+  title = "Science, Engineering, Craft, Magic - Revolutions in the field of Software"
+  presenter = "Boyd Multerer"
+  affiliation = "Kry10"
+  text = "abstracts/2025/science-engineering-text-only.html"
+  youtube = "https://youtu.be/G7_b3MBSw7w?si=F6YyhBABIXFK4fNb"
+  slides = "slides/science-engineering.pdf"
+%}
+
+
+{% include abstract-item.html
+  id = "towards-dependable"
+  time = "15:45	- 16:15"
+  title = "Towards Dependable System Services on seL4"
+  presenter = "Yanyan Shen, Dhammika Elkaduwe"
+  affiliation = "NIO"
+  text = "abstracts/2025/towards-dependable-text-only.html"
+  youtube = "https://youtu.be/88AmFInuTho?si=NIgAd_-OuqwT85je"
+  slides = "slides/towards-dependable.pdf"
+%}
+
+
+{% include abstract-item.html
+  id = "porting-nasa"
+  time = "16:15	- 16:45"
+  title = "Porting NASA's core Flight System to Magnetite on seL4"
+  presenter = "Juliana Furgala, Samuel Jero"
+  affiliation = "MIT Lincoln Laboratory"
+  text = "abstracts/2025/porting-nasa-text-only.html"
+  youtube = "https://youtu.be/QiX6If5v010?si=bXthn0m5scVBymWn"
+  slides = "slides/porting-nasa.pdf"
+%}
+
+
+{% include abstract-item.html
+  id = "integration-sel4"
+  time = "16:45	- 17:15"
+  title = "Integration of seL4 in a Flight Vehicle Mission System"
+  presenter = "Darren Cofer"
+  affiliation = "Collins Aerospace"
+  text = "abstracts/2025/integration-sel4-text-only.html"
+  youtube = "https://youtu.be/-LPHpvgbj2Q?si=fiaGS-NfyFwa76lS"
+  slides = "slides/integration-sel4.pdf"
+%}
+
+
+{% include abstract-item.html
+  id = "panel"
+  time = "9:00 - 9:45"
+  type = "Panel"
+  title = "Panel: Building a business case for using a verified kernel"
+  presenter = "Darren Cofer, Robbie VanVossen, Boyd Multerer, Peter de Ridder,  Yanyan Shen, Juliana Furgala (moderator)"
+  affiliation = "Collins Aerospace, DornerWorks, Kry10, MEP, NIO, MIT Lincoln Laboratory"
+  text = "abstracts/2025/panel-text-only.html"
+  youtube = "https://youtu.be/heDjFCHeSxA?si=bovt1VCUpiXha6GJ"
+%}
+
+
+{% include abstract-item.html
+  id = "foundation-update"
+  time = "9:45 - 10:00"
+  title = "seL4 Foundation update"
+  presenter = "June Andronick"
+  affiliation = "seL4 Foundation"
+  text = "abstracts/2025/foundation-update-text-only.html"
+  youtube = "https://youtu.be/N8JjiyBfHsE?si=j4JKT-BvGm39_jR9"
+  slides = "slides/foundation-update.pdf"
+%}
+
+
+{% include abstract-item.html
+  id = "sculpt-os"
+  time = "10:30	- 11:00"
+  title = "Sculpt OS - a dynamic general-purpose OS powered by Genode on seL4"
+  presenter = "Alexander Boettcher, Sebastian Sumpf"
+  affiliation = "Genode Labs"
+  text = "abstracts/2025/sculpt-os-text-only.html"
+  youtube = "https://youtu.be/N624i4X1UDw?si=zmnCgHQpWgKzGRYe"
+  slides = "slides/sculpt-os.pdf"
+%}
+
+
+{% include abstract-item.html
+  id = "cellulos"
+  time = "11:00	- 11:30"
+  title = "CellulOS: An OS for comparing Isolation Mechanisms"
+  presenter = "Sid Agrawal, Arya Stevinson, Linh Pham, Ethan Xu, Shaurya Patel, Hugo Lefeuvre, Aastha Mehta, Reto Achermann, Margo Seltze"
+  affiliation = "University of British Columbia, Oracle, Hammerspace"
+  text = "abstracts/2025/cellulos-text-only.html"
+  youtube = "https://youtu.be/KDZpBvh7Y08?si=ajYw9zFiTqGIACPV"
+  slides = "slides/cellulos.pdf"
+%}
+
+
+{% include abstract-item.html
+  id = "rust-based"
+  time = "11:30 - 12:00"
+  title = "Rust-based drivers and verified rust applications on seL4"
+  presenter = "Robbie VanVossen"
+  affiliation = "DornerWorks"
+  text = "abstracts/2025/rust-based-text-only.html"
+  youtube = "https://youtu.be/XYbKgS1rwyA?si=YYytPb6P3FGQ5WbI"
+  slides = "slides/rust-based.pdf"
+%}
+
+
+{% include abstract-item.html
+  id = "verified-high"
+  time = "13:30 - 13:45"
+  title = "A Verified, High-Performance, IPv6 Network Stack"
+  presenter = "Alain Kägi, Daniel Neshyba-Rowe"
+  affiliation = "Lewis & Clark College"
+  text = "abstracts/2025/verified-high-text-only.html"
+  youtube = "https://youtu.be/nF-76BAOPeM?si=laWpgpqRLzPLlZ_1"
+  slides = "slides/verified-high.pdf"
+%}
+
+{% include abstract-item.html
+  id = "surevoice"
+  time = "13:45 - 14:00"
+  title = "SureVoice Solid"
+  presenter = "Peter de Ridder"
+  affiliation = "MEP"
+  text = "abstracts/2025/surevoice-text-only.html"
+  youtube = "https://youtu.be/uNKScOyfB2g?si=gxgL0Ozb4eb6Cdp3"
+  slides = "slides/surevoice.pdf"
+%}
+
+
+{% include abstract-item.html
+  id = "trustworthy-systems"
+  time = "14:00 - 15:00"
+  title = "Trustworthy Systems R&D Update"
+  presenter = "Gernot Heiser"
+  affiliation = "UNSW Sydney"
+  text = "abstracts/2025/trustworthy-systems-text-only.html"
+  youtube = "https://youtu.be/wP48V34lDhk?si=df-gU3xSY3dU8pk_"
+  slides = "slides/trustworthy-systems.pdf"
+%}
+
+
+{% include abstract-item.html
+  id = "splitting-sel4"
+  time = "15:30	- 16:15"
+  title = "Splitting the seL4 Specification<br>Verifying Kernel–Userland Integration
+  for LionsOS"
+  presenter = "Thomas Sewell, Rob Sison"
+  affiliation = "UNSW Sydney"
+  text = "abstracts/2025/splitting-sel4-text-only.html"
+  youtube = "https://youtu.be/4n0H_ODM16s?si=VisyyEUdbIXuayBS"
+  slides = "slides/splitting-sel4.pdf"
+%}
+
+
+{% include abstract-item.html
+  id = "verifying-device"
+  time = "16:15	- 16:45"
+  title = "Verifying Device Drivers with Pancake"
+  presenter = "Junming Zhao"
+  affiliation = "UNSW Sydney"
+  text = "abstracts/2025/verifying-device-text-only.html"
+  youtube = "https://youtu.be/fgtXrSGcuc4?si=JG2DI0ur8e7Oa_3W"
+  slides = "slides/verifying-device.pdf"
+%}
+
+
+{% include abstract-item.html
+  id = "improving-confidential"
+  time = "16:45 - 17:00"
+  title = "Improving Confidential Computing with seL4: A Promising Guest OS Solution"
+  presenter = "Alexander Weidinger"
+  affiliation = "Fraunhofer AISEC"
+  text = "abstracts/2025/improving-confidential-text-only.html"
+  youtube = "https://youtu.be/yHBnurJfVU4?si=FP6gsGKy74UOaPS7"
+  slides = "slides/improving-confidential.pdf"
+%}
+
 
 {% include abstract-item.html
   id = "cyberagentur"
   time = "9:00 - 9:50"
   type = "Keynote"
   title = "Formally verified IT – Germany’s next cybersecurity paradigm"
-  presenter = "Sebastian Jester"
+  presenter = "Christoph Hof"
   affiliation = "Cyberagentur"
   text = "abstracts/2025/cyberagentur-text-only.html"
+  youtube = "https://youtu.be/uXmRCHWv2KE?si=ZcVLRIHmme-JG2di"
+  slides = "slides/cyberagentur.pdf"
+%}
+
+
+{% include abstract-item.html
+  id = "porting-sel4"
+  time = "9:50 - 10:05"
+  title = "Porting seL4 to the RISC-V SoC, toward a Secure and High-Performance RISC-V AI Platform"
+  presenter = "Yuning Liang"
+  affiliation = "Deep Computing"
+  text = "abstracts/2025/porting-sel4-text-only.html"
+  youtube = "https://youtu.be/-OLRBGV1YRs?si=xtOF_i_jp9B6pjw3"
+  slides = "slides/porting-sel4.pdf"
+%}
+
+{% include abstract-item.html
+  id = "binary-verification"
+  time = "10:30	- 11:00"
+  title = "A Deep Dive into seL4’s Binary Verification Story"
+  presenter = "Nick Spinale"
+  affiliation = "Colias Group"
+  text = "abstracts/2025/binary-verification-text-only.html"
+  youtube = "https://youtu.be/5mDDJhD_vC4?si=KkCLuv1OmRcXclku"
+  slides = "slides/binary-verification.pdf"
 %}

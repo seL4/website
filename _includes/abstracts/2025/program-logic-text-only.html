@@ -1,0 +1,47 @@
+<p>
+  Using seL4, we can build systems that include both critical and untrusted
+  user-space  components, with high confidence that there can be no unintended
+  interactions  between components. But how do we gain confidence that critical
+  components and  their composition correctly implement system requirements? To
+  answer this, Kry10 is  developing a framework for verifying systems of
+  user-space components running on  seL4.
+</p>
+<p>
+We have several goals for our framework:
+</p>
+<ul>
+  <li>Write specifications as abstract programs, and prove that implementations
+  respect them.</li>
+  <li>Reason compositionally about components and subsystems that execute
+  concurrently, and that are intended to run indefinitely.</li>
+  <li>Reason about systems that create and destroy seL4 kernel objects.</li>
+  <li>Reflect seL4's separation guarantees into the reasoning principles of the
+  logic.</li>
+</ul>
+<p>
+  As in the seL4 verification, we write abstract specifications as programs
+  shallowly embedded in an interactive theorem prover, and aim to prove
+  functional correctness by  refinement. However, to describe processes that run
+  indefinitely, and their interactions  with their environments, we use a
+  coinductive construction in the style of interaction  trees.
+</p>
+<p>
+  For reasoning about compositions of components and their interactions, we aim
+  to  support a combination of techniques from process algebra and separation
+  logic. We are  using the base logic of Iris, a concurrent separation logic
+  implemented in the Rocq  Prover. However, we are building our own program
+  logic, so that we can model threads  that are waiting to be unblocked or
+  scheduled, as well as threads that can be deleted.
+</p>
+<p>
+  Our framework is work in progress. In this talk, we'll describe what we have
+  so far, and  our plans for further development. Currently, we are focussing on
+  finding the right  concepts for verifying system safety properties up to
+  functional correctness and  integrity. In future, we aim for a program logic
+  that is faithful to the seL4 abstract  specification, at least for the
+  subclass of system configurations of interest to Kry10.
+</p>
+<p>
+  This work is funded by the Agentur für Innovation in Cybersicherheit GmbH
+  (Cyberagentur), Germany.
+</p>

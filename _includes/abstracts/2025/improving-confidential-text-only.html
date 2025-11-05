@@ -1,0 +1,22 @@
+<p>
+  In the realm of Confidential Computing, the advent of technologies such as AMD
+  SEV-SNP, Intel TDX, Arm CCA, and RISC-V COVE introduces essential protection
+  capabilities to the cloud. While these innovations significantly bolster VM
+  security against hypervisors, communication endpoints of the VMs still leave
+  an open attack surface for malicious actors. Traditional monolithic guest
+  OSes, particularly Linux, exacerbate these risks due to their large code size
+  and kernel-space drivers, which are attractive targets for attackers. Drivers
+  in the Linux kernel generally treat the hardware/hypervisor to be trustworthy
+  and don't consider that path in the attacker model.
+</p>
+<p>
+  This talk proposes the use of seL4, a microkernel with user-space drivers, as
+  a more suitable guest OS for Confidential VMs (CVMs). With its small code size
+  and formal verification, seL4 presents a robust alternative that reduces the
+  attack surface.
+</p>
+<p>
+  The current state of the endeavor for one specific technology will be
+  discussed, as well as remaining tasks, potential use-cases and possible steps
+  forward.
+</p>

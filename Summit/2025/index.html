@@ -11,12 +11,11 @@ redirect_from: /Foundation/Summit/2025/index.html
   about = 'The seL4 Summit is the annual international summit on the seL4
   microkernel and associated technology, tools, infrastructure, products,
   projects, and people. The <a href="#pc">program committee</a> assembles
-  thought-provoking talks, <a href="#keynotes">keynotes</a> and discussions. The
-  seL4 Summit is made possible thanks to our <a href="#sponsors">sponsors</a>.'
+  thought-provoking talks, <a href="#keynotes">keynotes</a> and <a
+  href="#panel">panel discussions</a>. The seL4 Summit is made possible thanks
+  to our <a href="#sponsors">sponsors</a>.'
   city = "Prague"
   date = "3 - 5 September 2025"
-  reg-link = "https://events.linuxfoundation.org/sel4-summit/register/"
-  sponsor-link = "https://events.linuxfoundation.org/sel4-summit/sponsor/"
 %}
 
 
@@ -42,7 +41,7 @@ redirect_from: /Foundation/Summit/2025/index.html
   center=true
   icon="book-open"
   title="Program"
-  body="Program of the seL4 Summit 2025."
+  body="Program, abstracts and videos of the seL4 Summit 2025."
   link="program.html"
   %}
 </div>
@@ -69,9 +68,9 @@ redirect_from: /Foundation/Summit/2025/index.html
   abstract-link = "abstracts2025.html#a-model-based"
 %}
 {% include keynote-item.html
-  name = "Sebastian Jester"
-  role = "Head of Secure Hardware and Supply Chains"
-  img = "/images/summit/cyberagentur-avatar.svg"
+  name = "Christoph Hof"
+  role = "Head of Cyberagentur's Dresden Project Office"
+  img = "/images/summit/christoph-square.jpg"
   affiliation = "Cyberagentur"
   affiliation_link = "https://www.cyberagentur.de/en/"
   abstract-title = "Formally verified IT – Germany’s next cybersecurity paradigm"
@@ -81,6 +80,26 @@ redirect_from: /Foundation/Summit/2025/index.html
 </div>
 {% include section-end.html %}
 
+
+<!-- Panel section -->
+{% include section-start.html
+  id = "panel"
+  heading = "Panel: Building a business case for using a
+  verified kernel"
+  intro = '
+    <p>
+      We are very fortunate to welcome five industry leaders to
+      participate at the seL4 Summit 2025, in a session <a
+      href="abstracts2025.html#a-panel">Building a business case for using a
+      verified kernel</a> Collins Aerospace, DornerWorks, Kry10, NIO,  and MEP. The
+      panel will be moderated by Juliana Furgala from MIT Lincoln Laboratory.
+    </p>
+  '
+%}
+
+{% include panel-2025.html %}
+
+{% include section-end.html %}
 
  <!-- PC section -->
  {% include section-start.html
@@ -115,6 +134,49 @@ redirect_from: /Foundation/Summit/2025/index.html
 {% include sep-header.html text = "Bronze" %}
 {%- assign sponsors = site.data.sponsors.summit-2025.bronze | sort_natural: "name" -%}
 {%- include sponsor-info.html -%}
+
+{% include sep-header.html text = "Reception" %}
+{%- assign sponsors = site.data.sponsors.summit-2025.reception | sort_natural: "name" -%}
+{%- include sponsor-info.html -%}
 </div>
 
+{% include section-end.html %}
+
+<!-- Gallery section -->
+{% include section-start.html
+  id = "gallery"
+  heading = "Gallery"
+%}
+
+<div class="mx-auto section-max-w grid grid-cols-4 gap-4 place-items-center mt-10">
+  <div class="col-span-4"><img src="../../images/summit/summit-2025-8.jpg" alt="seL4 Summit 2025"
+    class="rounded bg-gray-900/5 shadow-lg">
+  </div>
+  <div class="col-span-1"><img src="../../images/summit/summit-2025-9.jpg" alt="seL4 Summit 2025"
+    class="rounded bg-gray-900/5 shadow-lg">
+  </div>
+  <div class="col-span-1"><img src="../../images/summit/summit-2025-6.jpg" alt="seL4 Summit 2025"
+    class="rounded bg-gray-900/5 shadow-lg">
+  </div>
+  <div class="col-span-1"><img src="../../images/summit/summit-2025-7.jpg" alt="seL4 Summit 2025"
+    class="rounded bg-gray-900/5 shadow-lg">
+  </div>
+  <div class="col-span-1"><img src="../../images/summit/summit-2025-4.jpg" alt="seL4 Summit 2025"
+    class="rounded bg-gray-900/5 shadow-lg">
+  </div>
+  <div class="col-span-2 row-span-2"><img src="../../images/summit/summit-2025-1.jpg" alt="seL4 Summit 2025"
+    class="rounded bg-gray-900/5 shadow-lg">
+  </div>
+  <div class="col-span-2 row-span-1"><img src="../../images/summit/summit-2025-5.jpg" alt="seL4 Summit 2025"
+    class="rounded bg-gray-900/5 shadow-lg">
+  </div>
+  <div class="col-span-2 row-span-1"><img src="../../images/summit/summit-2025-3.jpg" alt="seL4 Summit 2025"
+    class="rounded bg-gray-900/5 shadow-lg">
+  </div>
+  <div class="col-span-4 row-span-1"><img src="../../images/summit/summit-2025-2.jpg" alt="seL4 Summit 2025"
+    class="rounded bg-gray-900/5 shadow-lg">
+  </div>
+
+
+</div>
 {% include section-end.html %}

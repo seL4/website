@@ -1,0 +1,23 @@
+<p>
+  Embedded systems are increasingly targeted by both criminal and nation state
+  actors. One particularly challenging subdomain for embedded systems is space,
+  posing additional concerns in the form of a harsh environment (e.g., radiation
+  and temperature), inability to get physical access once launched, and tight
+  coupling between hardware and software. Satellites need resilient software to
+  face these challenges and yet software security has received little
+  consideration to date.
+</p>
+<p>
+  As a result, several years ago we ported NASA’s core Flight Software (cFS) to
+  seL4 to provide a secure foundation for satellite systems. cFS was developed
+  by NASA Goddard over 20 years ago and is now widely deployed for scores of
+  space missions (e.g., NASA Artemis, the Roman Space Telescope). Our analysis
+  of cFS and its assumptions about its host OS led us to conclude that despite
+  expected porting ease with the OS abstraction layer, significant functionality
+  needed to be created on top of seL4.
+</p>
+<p>
+  This talk will focus on our analysis of the features required for cFS, our
+  experience implementing that functionality and porting cFS to an seL4-based
+  system, and how this led us to create the initial Magnetite operating system.
+</p>

@@ -1,0 +1,37 @@
+<p>
+  Several mechanisms exist to isolate applications (e.g., processes, VMs,
+  containers, lwC).
+</p>
+<p>
+  However, there is no precise way to describe the differences in the resource
+  isolation provided by each one, making it difficult to compare these
+  mechanisms.
+</p>
+<p>
+  We introduce CellulOS, a custom-built seL4-based operating system that exposes
+  protection domain state in a manner that enables developers and infrastructure
+  providers to reason about the resources shared between two protection domains.
+  The state is exposed as proposed in the Osmosis model.
+</p>
+<p>
+  OSmosis is a formal model that allows developers and infrastructure providers
+  to reason about the resources shared between two protection domains. It
+  represents resources, protection domains, and their relationships as a graph.
+  Queries on this graph return sets of resources and/or protection domains,
+  revealing information about confidentiality, integrity, and availability.
+  Using these queries, we define a protection domain’s trusted computing base,
+  identifying the domains upon which it relies, and its impact boundary,
+  identifying those domains affected by a faulty or malicious domain.
+</p>
+<p>
+   The talk will cover CellulOS's architecture, the application of the OSmosis
+   model to its design, its current capabilities as an OS, and how a
+   capability-based uKernel facilitates the application of OSmosis to an OS. We
+   will also discuss the challenges faced in bootstrapping an seL4 project from
+   the perspective of a small group of graduate students, the extensive support
+   provided by the seL4 community, an overview of the components we ported (VMM,
+   SQLite, xv6FS, block driver), and our design for deadlock avoidance.
+</p>
+<p>
+  Wiki for CellulOS: https://cellulosdocs.readthedocs.io/en/cellulos/index.html
+</p>

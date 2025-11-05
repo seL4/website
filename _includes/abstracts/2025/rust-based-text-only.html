@@ -1,0 +1,27 @@
+<p>
+  While the seL4 microkernel provides exceptional guarantees due to its formal
+  verification, that isn’t always enough on its own to meet high-assurance
+  requirements. Some user applications built on top of the microkernel will need
+  stronger confidence than just the known isolation from other applications.
+  There are multiple ways to improve confidence in the correctness of an
+  application, such as using a memory-safe language, thorough testing, and
+  formal verification. I have created an seL4-based system that utilizes a
+  firewall application written in Rust. The application eventually used all of
+  these approaches to gain high confidence in its functional correctness.
+</p>
+<p>
+  The system was generated with Kansas State University’s (KSU’s) HAMR toolchain
+  which connects a Rust-based, low-level ethernet driver via the firewall to a
+  VM. This allows for the ethernet device and driver to be fully isolated from
+  the VM and for security functionality to be completely separate from the
+  implementation of the VM.
+</p>
+<p>
+  I will discuss the evolution of this system and the firewall application. I
+  will discuss the benefits provided by HAMR as well as some of the challenges
+  of using the tool, with special focus on the model and the GUMBO contracts
+  that help formalize the requirements into specification which can be used for
+  test generation and formal verification. I will provide further details about
+  the property-based testing and the verification effort utilizing Verus,
+  including some metrics that were gathered on the code and the effort.
+</p>

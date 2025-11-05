@@ -1,0 +1,13 @@
+<p>
+  This talk presents an approach to device driver verification using separation
+  logic developed at BlueRock Security. Using the PL011 UART and simple-mode
+  ZynqMP DMA devices as examples, the talk will demonstrate how to use
+  Iris-style ghost state and invariants to embed the operational semantics of
+  devices in the specifications of MMIO operations. The proof of each driver
+  sets up a device protocol showing how the state of the device evolves over
+  time, e.g. from DMA copy to DMA idle. Each driver proof also establishes that
+  the combined behavior of the device and the driver preserve this invariant.
+  The proofs are built using BlueRock Security's BRiCk program logic for
+  concurrent C++. The talk will touch on potential applications of device
+  protocols within the seL4 ecosystem.
+</p>
