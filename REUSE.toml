@@ -47,6 +47,7 @@ path = [
     "Foundation/Board/Minutes/*.pdf",
     "Foundation/Board/seL4_Foundation_Fund_Charter.pdf",
     "Foundation/Join/Directed_Fund_Participation_Agreement.pdf",
+    "Foundation/Governance/*pdf",
     "About/seL4-whitepaper.pdf",
     "About/whitepaper.svg",
     "security.asc",
