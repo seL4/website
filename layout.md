@@ -153,8 +153,8 @@ layout, e.g.:
      title = "Premium"
      title_colour = "bg-[#385378] text-white"
      title_class = tc
-     link_text = "Join via Linux Foundation"
-     link = "https://joinnow.platform.linuxfoundation.org/?project=seL4"
+     link_text = "Join"
+     link = "Foundation/Join/membership-form"
      body = '
      <p class="mt-2">
       <strong>Guaranteed board seat</strong>
