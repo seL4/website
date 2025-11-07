@@ -1,0 +1,22 @@
+{%- comment %}
+Copyright 2025 seL4 Project a Series of LF Projects, LLC
+SPDX-License-Identifier: CC-BY-SA-4.0
+{% endcomment -%}
+
+{% assign affiliation = '<a href="' | append: include.affiliation_link | append: '">'
+  | append: include.affiliation
+  | append: '</a>' %}
+{% assign details = "<em>" | append: include.role | append: ", "
+| append: affiliation | append: "</em>" %}
+
+<li class="flex flex-col gap-10 pb-10 sm:flex-row">
+  <img class="ml-0 mr-auto w-52 sm:aspect-4/5 h-52 flex-none rounded-2xl bg-white object-cover"
+       src="{{include.img | relative_url}}" alt="{{include.name}}">
+  <div class="max-w-xl flex-auto">
+    <p class="text-lg font-semibold leading-8 tracking-tight text-dark">{{include.name}}</p>
+    <p class="text-base leading-7 text-light">{{details}}</p>
+    <div class="mt-6 text-base leading-7 text-light">
+      {{include.text}}
+    </div>
+  </div>
+</li>
