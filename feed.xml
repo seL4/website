@@ -10,7 +10,76 @@
   <description>News feed about seL4, the seL4 Foundation, and the seL4 ecosystem.</description>
   <link rel="alternate">https://sel4.systems/news/</link>
   <link rel="self">https://sel4.systems/feed.xml</link>
-  <updated>Wed, 17 Sep 2025 00:00:00 +0000</updated>
+  <updated>Fri, 07 Nov 2025 00:00:00 +0000</updated>
+  <rights>Copyright 2025 seL4 Foundation</rights>
+  <entry>
+    <title>Next summit will be in Vancouver! Meet its co-chairs</title>
+    <link rel="alternate" type="text/html" href="https://sel4.systems/news/2025.html#summit-co-chairs"/>
+    <id>https://sel4.systems/news/2025.html#summit-co-chairs</id>
+    <published>Fri, 07 Nov 2025 00:00:00 +0000</published>
+    <updated>Fri, 07 Nov 2025 00:00:00 +0000</updated>
+    <content type="html">
+      &lt;p&gt;
+  We are thrilled to announce our co-chairs, Lucy Fletcher and Robbie VanVossen,
+  for the seL4 summit 2026, which will be held in Vancouver, late August - early
+  September (dates TBC).
+&lt;/p&gt;
+
+&lt;ul class=&quot;space-y-12 divide-y divide-gray-200 dark:divide-gray-700 xl:col-span-3&quot;&gt;
+
+
+  
+
+
+&lt;li class=&quot;flex flex-col gap-10 pb-10 sm:flex-row&quot;&gt;
+  &lt;img class=&quot;ml-0 mr-auto w-52 sm:aspect-4/5 h-52 flex-none rounded-2xl bg-white object-cover&quot;
+       src=&quot;/images/summit/lucy-square.jpg&quot; alt=&quot;Lucy Fletcher&quot;&gt;
+  &lt;div class=&quot;max-w-xl flex-auto&quot;&gt;
+    &lt;p class=&quot;text-lg font-semibold leading-8 tracking-tight text-dark&quot;&gt;Lucy Fletcher&lt;/p&gt;
+    &lt;p class=&quot;text-base leading-7 text-light&quot;&gt;&lt;em&gt;Software Engineer, &lt;a href=&quot;https://apple.com&quot;&gt;Apple&lt;/a&gt;&lt;/em&gt;&lt;/p&gt;
+    &lt;div class=&quot;mt-6 text-base leading-7 text-light&quot;&gt;
+      Lucy Fletcher is a software engineer at Apple based in Sydney, Australia,
+    working on L4 microkernels and the surrounding ecosystems. Before joining
+    Apple, she studied Computer Science at UNSW and worked with the Trustworthy
+    Systems group, where she focused on the design and development of the seL4
+    device driver framework. Lucy is passionate about giving back to the seL4
+    community and supporting its continued growth.
+    &lt;/div&gt;
+  &lt;/div&gt;
+&lt;/li&gt;
+
+  
+
+
+&lt;li class=&quot;flex flex-col gap-10 pb-10 sm:flex-row&quot;&gt;
+  &lt;img class=&quot;ml-0 mr-auto w-52 sm:aspect-4/5 h-52 flex-none rounded-2xl bg-white object-cover&quot;
+       src=&quot;/images/summit/robbie.png&quot; alt=&quot;Robbie VanVossen&quot;&gt;
+  &lt;div class=&quot;max-w-xl flex-auto&quot;&gt;
+    &lt;p class=&quot;text-lg font-semibold leading-8 tracking-tight text-dark&quot;&gt;Robbie VanVossen&lt;/p&gt;
+    &lt;p class=&quot;text-base leading-7 text-light&quot;&gt;&lt;em&gt;seL4 Technical Lead, &lt;a href=&quot;https://www.dornerworks.com/&quot;&gt;DornerWorks&lt;/a&gt;&lt;/em&gt;&lt;/p&gt;
+    &lt;div class=&quot;mt-6 text-base leading-7 text-light&quot;&gt;
+      Robbie VanVossen is an employee of DornerWorks, has 12 years of experience in
+    embedded hypervisors, and 10 years of experience with the seL4 microkernel.
+    His work and leadership led to the development of aarch64 virtualization
+    support across the seL4 ecosystem, both in the microkernel and the user-space
+    libraries. He has also developed multiple projects using the Rust language,
+    including embedded implementations of device drivers and applications. He has
+    strong interests in embedded security, virtualization, seL4, and Rust.
+    &lt;/div&gt;
+  &lt;/div&gt;
+&lt;/li&gt;
+
+
+&lt;/ul&gt;
+
+
+&lt;div&gt;
+&lt;p&gt;
+  We look forward to welcoming the community at the seL4 summit 2026!
+&lt;/p&gt;
+&lt;/div&gt;
+    </content>
+  </entry>
   <rights>Copyright 2025 seL4 Foundation</rights>
   <entry>
     <title>The videos and slides of the seL4 Summit 2025 are available online</title>
@@ -610,44 +679,6 @@
     2025&lt;/a&gt;.
 &lt;/p&gt;
 
-    </content>
-  </entry>
-  <rights>Copyright 2025 seL4 Foundation</rights>
-  <entry>
-    <title>Thank you Collins, Bronze sponsor of the seL4 Summit 2025</title>
-    <link rel="alternate" type="text/html" href="https://sel4.systems/news/2025.html#summit-collins"/>
-    <id>https://sel4.systems/news/2025.html#summit-collins</id>
-    <published>Fri, 02 May 2025 00:00:00 +0000</published>
-    <updated>Fri, 02 May 2025 00:00:00 +0000</updated>
-    <content type="html">
-      &lt;p&gt;
-  The seL4 Foundation thanks &lt;a href=&quot;https://www.collinsaerospace.com&quot;&gt;Collins
-  Aerospace&lt;/a&gt; for becoming a sponsor of the seL4 Summit 2025. Collins
-  Aerospace has generously sponsored the seL4 summit every year since 2023.
-&lt;/p&gt;
-&lt;p&gt;
-  &lt;a href=&quot;https://www.collinsaerospace.com&quot;&gt;Collins Aerospace&lt;/a&gt;, part of seL4
-  Foundation member &lt;a href=&quot;https://www.rtx.com&quot;&gt;RTX&lt;/a&gt;, has been a long-time
-  core participant in the seL4 ecosystem. Collins was a prime contractor in the
-  DARPA HACMS program which demonstrated the seL4-based incremental cyber
-  retrofit of autonomous military vehicles. This was a major milestone in the
-  growth of seL4, demonstrating that it protects against cyber attacks on real
-  systems in operation. The same team also led the follow-on DARPA CASE program,
-  aiming at designed-in cyber-resiliency, including the seL4-based framework for
-  verified initialisation and configuration of systems architectures.
-&lt;/p&gt;
-&lt;p&gt;
-  Collins Aerospace is now leading a team on the DARPA PROVERS program which has
-  a goal of enhancing the security of defense and aerospace systems by
-  dramatically improving the usability, flexibility, and accessibility of formal
-  methods-based development and verification tools, and targeting seL4 as an
-  implementation platform.
-&lt;/p&gt;
-&lt;p&gt;
-  See &lt;a href=&quot;https://events.linuxfoundation.org/sel4-summit/sponsor/&quot;&gt;here&lt;/a&gt;
-  if you are interested in sponsoring the &lt;a href=&quot;../Summit/2025&quot;&gt;seL4 Summit
-  2025&lt;/a&gt;.
-&lt;/p&gt;
     </content>
   </entry>
 </feed>
