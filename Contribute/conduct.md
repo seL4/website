@@ -21,7 +21,7 @@ pre_link: "./"
 * We will exclude you from interaction if you insult, demean or harass
   anyone. That is not welcome behaviour. We interpret the term
   "harassment" as including the definition in the [Citizen Code of
-  Conduct](https://github.com/stumpsyn/policies/blob/master/citizen_code_of_conduct.md#4-unacceptable-behavior);
+  Conduct](https://github.com/stumpsyn/policies/blob/7caa4699ba74e341a46b3266d4610af477ba2c3d/citizen_code_of_conduct.md#4-unacceptable-behavior);
   if you have any lack of clarity about what might be included in that
   concept, please read their definition. In particular, we don't
   tolerate behavior that excludes people in socially marginalized
