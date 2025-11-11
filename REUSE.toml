@@ -116,6 +116,7 @@ SPDX-License-Identifier = "LicenseRef-PhotoLicence"
 path = [
   "Foundation/Membership/LOGOS/**",
   "Summit/2024/Sponsors/*.svg",
+  "images/Genode_logo_text.png"
 ]
 SPDX-FileCopyrightText = "Various. Each logo is copyright to the organisation owning that logo."
 SPDX-License-Identifier = "LicenseRef-PhotoLicence"

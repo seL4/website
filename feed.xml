@@ -10,7 +10,25 @@
   <description>News feed about seL4, the seL4 Foundation, and the seL4 ecosystem.</description>
   <link rel="alternate">https://sel4.systems/news/</link>
   <link rel="self">https://sel4.systems/feed.xml</link>
-  <updated>Fri, 07 Nov 2025 00:00:00 +0000</updated>
+  <updated>Sat, 08 Nov 2025 00:00:00 +0000</updated>
+  <rights>Copyright 2025 seL4 Foundation</rights>
+  <entry>
+    <title>Genode Sculpt runs on seL4</title>
+    <link rel="alternate" type="text/html" href="https://sel4.systems/news/2025.html#sculpt"/>
+    <id>https://sel4.systems/news/2025.html#sculpt</id>
+    <published>Sat, 08 Nov 2025 00:00:00 +0000</published>
+    <updated>Sat, 08 Nov 2025 00:00:00 +0000</updated>
+    <content type="html">
+      &lt;p&gt;Genode Labs have released &lt;a href=&quot;https://genodians.org/alex-ab/2025-11-02-sculpt-multi-kernel&quot;&gt;Sculpt
+OS 25.10&lt;/a&gt; with an (unofficial and experimental) variant running on
+seL4. Sculpt is a general-purpose OS that combines Genode&apos;s
+microkernel architecture, capability-based security, sandboxed
+device drivers, and virtual machines in a novel operating system
+for commodity PC hardware and the PinePhone. Sculpt is used as
+day-to-day OS by the Genode developers.&lt;/p&gt;
+
+    </content>
+  </entry>
   <rights>Copyright 2025 seL4 Foundation</rights>
   <entry>
     <title>Next summit will be in Vancouver! Meet its co-chairs</title>
@@ -635,47 +653,6 @@
 &lt;p&gt;
   See &lt;a href=&quot;https://events.linuxfoundation.org/sel4-summit/sponsor/&quot;&gt;here&lt;/a&gt;
   if you are interested in sponsoring the  &lt;a href=&quot;../Summit/2025&quot;&gt;seL4 Summit
-    2025&lt;/a&gt;.
-&lt;/p&gt;
-
-    </content>
-  </entry>
-  <rights>Copyright 2025 seL4 Foundation</rights>
-  <entry>
-    <title>Thank you UNSW, Bronze sponsor of the seL4 Summit 2025</title>
-    <link rel="alternate" type="text/html" href="https://sel4.systems/news/2025.html#sponsor25-unsw"/>
-    <id>https://sel4.systems/news/2025.html#sponsor25-unsw</id>
-    <published>Mon, 19 May 2025 00:00:00 +0000</published>
-    <updated>Mon, 19 May 2025 00:00:00 +0000</updated>
-    <content type="html">
-      &lt;p&gt;
-  The seL4 Foundation thanks &lt;a href=&quot;https://unsw.edu.au&quot;&gt;UNSW Sydney&lt;/a&gt; for
-  becoming a Bronze sponsor of the &lt;a href=&quot;../Summit/2025&quot;&gt;seL4
-  Summit 2025&lt;/a&gt;.
-&lt;/p&gt;
-&lt;p&gt;
-  seL4 was created by the &lt;a href=&quot;https://trustworthy.systems/&quot;&gt;Trustworthy
-  Systems (TS)&lt;/a&gt; team, which is now part of the &lt;a
-  href=&quot;https://unsw.edu.au&quot;&gt;UNSW&lt;/a&gt;, a founding member of the seL4 Foundation.
-&lt;/p&gt;
-&lt;p&gt;
-  The team has a track record of designing and implementing systems software for
-  performance and reliability, and using rigorous formal methods to prove that
-  they meet their security and reliability goals. Their aims are to:
-&lt;/p&gt;
-&lt;ul&gt;
-  &lt;li&gt;shift the software industry away from ad-hoc, unreliable engineering
-  practices, and towards more principled and trustworthy methods; and&lt;/li&gt;
-  &lt;li&gt;make verified software a default choice, especially in safety- and
-  security-critical systems.&lt;/li&gt;
-&lt;/ul&gt;
-&lt;p&gt;
-  The team works with government and commercial partners, as well as the broader
-  software engineering community, to drive this change.
-&lt;/p&gt;
-&lt;p&gt;
-  See &lt;a href=&quot;https://events.linuxfoundation.org/sel4-summit/sponsor/&quot;&gt;here&lt;/a&gt;
-  if you are interested in sponsoring the &lt;a href=&quot;../Summit/2025&quot;&gt;seL4 Summit
     2025&lt;/a&gt;.
 &lt;/p&gt;
 
