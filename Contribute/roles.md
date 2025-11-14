@@ -58,9 +58,7 @@ people:
 - Johannes Åman Pohjohla, UNSW
 - Robert Sison, UNSW
 - Miki Tanaka, UNSW
-- Ivan Velickovic, UNSW
 - Jingyao Zhou, UNSW
-- Indan Zupancic
 
 
 ## System Admin
