@@ -5032,11 +5032,6 @@
       grid-template-columns: repeat(5, minmax(0, 1fr));
     }
   }
-  .xl\:grid-cols-6 {
-    @media (width >= 80rem) {
-      grid-template-columns: repeat(6, minmax(0, 1fr));
-    }
-  }
   .xl\:grid-cols-\[20rem_auto\] {
     @media (width >= 80rem) {
       grid-template-columns: 20rem auto;
