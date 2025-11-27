@@ -10,7 +10,41 @@
   <description>News feed about seL4, the seL4 Foundation, and the seL4 ecosystem.</description>
   <link rel="alternate">https://sel4.systems/news/</link>
   <link rel="self">https://sel4.systems/feed.xml</link>
-  <updated>Sat, 08 Nov 2025 00:00:00 +0000</updated>
+  <updated>Wed, 26 Nov 2025 00:00:00 +0000</updated>
+  <rights>Copyright 2025 seL4 Foundation</rights>
+  <entry>
+    <title>New seL4 release available</title>
+    <link rel="alternate" type="text/html" href="https://sel4.systems/news/2025.html"/>
+    <id>https://sel4.systems/news/2025.html</id>
+    <published>Wed, 26 Nov 2025 00:00:00 +0000</published>
+    <updated>Wed, 26 Nov 2025 00:00:00 +0000</updated>
+    <content type="html">
+      &lt;p&gt;We’re pleased to announce the release of&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;&lt;a href=&quot;https://docs.sel4.systems/releases/sel4/14.0.0&quot;&gt;seL4 14.0.0&lt;/a&gt;: The seL4
+microkernel&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;https://docs.sel4.systems/releases/microkit/2.1.0&quot;&gt;Microkit 2.1.0&lt;/a&gt;: The seL4
+Microkit for building static-architecture systems&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;https://docs.sel4.systems/releases/camkes/camkes-3.11.1&quot;&gt;CAmkES 3.11.1&lt;/a&gt;:
+Component Architecture for microkernel-based Embedded Systems&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;https://docs.sel4.systems/releases/capdl/0.4.0&quot;&gt;capDL 0.4.0&lt;/a&gt;: Tools for
+generating, parsing and loading capability distribution specifications&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;https://github.com/seL4/rust-sel4/releases/tag/v3.0.0&quot;&gt;rust-sel4 3.0.0&lt;/a&gt;: Rust
+support for seL4 userspace. See the Rust section on the
+&lt;a href=&quot;https://docs.sel4.systems/projects/rust/&quot;&gt;seL4 docsite&lt;/a&gt; for more
+information.&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;seL4 14.0.0 and the corresponding Rust support come with new features and will
+require updates if you are using the seL4 API directly. Microkit and CAmkES
+abstract those and should not require any update of user code compared to
+Microkit 2.0.1 and CAmkES 3.11.1.&lt;/p&gt;
+
+&lt;p&gt;Enjoy!&lt;/p&gt;
+
+    </content>
+  </entry>
   <rights>Copyright 2025 seL4 Foundation</rights>
   <entry>
     <title>Genode Sculpt runs on seL4</title>
@@ -625,35 +659,6 @@ day-to-day OS by the Genode developers.&lt;/p&gt;
   the German Federal Government and is funded by the Federal Ministry of Defence
   and the Federal Ministry of the Interior. The Cyberagentur is
   an associate member of the seL4 Foundation.
-&lt;/p&gt;
-
-    </content>
-  </entry>
-  <rights>Copyright 2025 seL4 Foundation</rights>
-  <entry>
-    <title>Thank you Proofcraft, Silver sponsor of the seL4 Summit 2025</title>
-    <link rel="alternate" type="text/html" href="https://sel4.systems/news/2025.html#sponsor25-proofcraft"/>
-    <id>https://sel4.systems/news/2025.html#sponsor25-proofcraft</id>
-    <published>Wed, 21 May 2025 00:00:00 +0000</published>
-    <updated>Wed, 21 May 2025 00:00:00 +0000</updated>
-    <content type="html">
-      &lt;p&gt;
-  The seL4 Foundation thanks &lt;a href=&quot;https://proofcraft.systems&quot;&gt;Proofcraft&lt;/a&gt;
-  for becoming a Silver sponsor of the &lt;a href=&quot;../Summit/2025&quot;&gt;seL4
-  Summit 2025&lt;/a&gt;.
-&lt;/p&gt;
-&lt;p&gt;
-  Founded by the seL4 verification leaders, &lt;a
-  href=&quot;https://proofcraft.systems&quot;&gt;Proofcraft&lt;/a&gt; offers commercial support
-  and projects in formal verification in general, and involving seL4
-  specifically. By applying mathematical machine-checked software verification,
-  Proofcraft increases critical software systems&apos; reliability, safety and
-  security, for a verified future.
-&lt;/p&gt;
-&lt;p&gt;
-  See &lt;a href=&quot;https://events.linuxfoundation.org/sel4-summit/sponsor/&quot;&gt;here&lt;/a&gt;
-  if you are interested in sponsoring the  &lt;a href=&quot;../Summit/2025&quot;&gt;seL4 Summit
-    2025&lt;/a&gt;.
 &lt;/p&gt;
 
     </content>

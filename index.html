@@ -6,7 +6,7 @@
     <title>The seL4 Microkernel | seL4</title>
     <meta name="author" content="seL4 Foundation">
     <link rel="canonical" href="https://sel4.systems/">
-    <link href="/css/sel4.css?v=1764208670" rel="stylesheet">
+    <link href="/css/sel4.css?v=1764213495" rel="stylesheet">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
@@ -342,6 +342,12 @@
           <a href="/news/" class="text-sm font-semibold leading-6 text-f_green-600">See all <span aria-hidden="true">&rarr;</span></a>
         </div>
         <ul class="mt-6 space-y-6"><li class="relative">
+            <time datetime="2025-11-26" class="block text-xs leading-6 text-light">26 Nov 2025</time>
+            <a href="/news/2025.html#11-26" class="block truncate text-sm font-semibold leading-6 text-dark">
+              New seL4 release available
+              <span class="absolute inset-0"></span>
+            </a>
+          </li><li class="relative">
             <time datetime="2025-11-08" class="block text-xs leading-6 text-light">08 Nov 2025</time>
             <a href="/news/2025.html#sculpt" class="block truncate text-sm font-semibold leading-6 text-dark">
               Genode Sculpt runs on seL4
@@ -351,12 +357,6 @@
             <time datetime="2025-11-07" class="block text-xs leading-6 text-light">07 Nov 2025</time>
             <a href="/news/2025.html#summit-co-chairs" class="block truncate text-sm font-semibold leading-6 text-dark">
               Next summit will be in Vancouver! Meet its co-chairs
-              <span class="absolute inset-0"></span>
-            </a>
-          </li><li class="relative">
-            <time datetime="2025-09-17" class="block text-xs leading-6 text-light">17 Sep 2025</time>
-            <a href="/news/2025.html#summit-videos" class="block truncate text-sm font-semibold leading-6 text-dark">
-              The videos and slides of the seL4 Summit 2025 are available online
               <span class="absolute inset-0"></span>
             </a>
           </li></ul>
@@ -1074,6 +1074,56 @@
         
         <div class="relative flex items-start space-x-3">
           <div class="relative">
+            <a href="/news/#11-26">
+              <div class="-mt-3 p-2 bg-slate-200 dark:bg-slate-600 rounded-full"><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" aria-hidden="true" data-slot="icon" class="block h-8 w-8">
+  <path stroke-linecap="round" stroke-linejoin="round" d="M10.34 15.84c-.688-.06-1.386-.09-2.09-.09H7.5a4.5 4.5 0 1 1 0-9h.75c.704 0 1.402-.03 2.09-.09m0 9.18c.253.962.584 1.892.985 2.783.247.55.06 1.21-.463 1.511l-.657.38c-.551.318-1.26.117-1.527-.461a20.845 20.845 0 0 1-1.44-4.282m3.102.069a18.03 18.03 0 0 1-.59-4.59c0-1.586.205-3.124.59-4.59m0 9.18a23.848 23.848 0 0 1 8.835 2.535M10.34 6.66a23.847 23.847 0 0 0 8.835-2.535m0 0A23.74 23.74 0 0 0 18.795 3m.38 1.125a23.91 23.91 0 0 1 1.014 5.395m-1.014 8.855c-.118.38-.245.754-.38 1.125m.38-1.125a23.91 23.91 0 0 0 1.014-5.395m0-3.46c.495.413.811 1.035.811 1.73 0 .695-.316 1.317-.811 1.73m0-3.46a24.347 24.347 0 0 1 0 3.46"/>
+</svg></div>
+            </a>
+          </div>
+          <div class="min-w-0 flex-1">
+            <div>
+              <div class="text-sm">
+                <a href="/news/#11-26" class="font-medium text-dark hover:underline">New seL4 release available&nbsp;&rightarrow;</a>
+              </div>
+              <p class="mt-0.5 text-sm text-gray-500 dark:text-gray-600">26 Nov 2025</p>
+            </div>
+            <div class="mt-2 text-sm text-gray-700 dark:text-gray-500 line-clamp-2">
+              <p>We’re pleased to announce the release of</p>
+
+<ul>
+  <li><a href="https://docs.sel4.systems/releases/sel4/14.0.0">seL4 14.0.0</a>: The seL4
+microkernel</li>
+  <li><a href="https://docs.sel4.systems/releases/microkit/2.1.0">Microkit 2.1.0</a>: The seL4
+Microkit for building static-architecture systems</li>
+  <li><a href="https://docs.sel4.systems/releases/camkes/camkes-3.11.1">CAmkES 3.11.1</a>:
+Component Architecture for microkernel-based Embedded Systems</li>
+  <li><a href="https://docs.sel4.systems/releases/capdl/0.4.0">capDL 0.4.0</a>: Tools for
+generating, parsing and loading capability distribution specifications</li>
+  <li><a href="https://github.com/seL4/rust-sel4/releases/tag/v3.0.0">rust-sel4 3.0.0</a>: Rust
+support for seL4 userspace. See the Rust section on the
+<a href="https://docs.sel4.systems/projects/rust/">seL4 docsite</a> for more
+information.</li>
+</ul>
+
+<p>seL4 14.0.0 and the corresponding Rust support come with new features and will
+require updates if you are using the seL4 API directly. Microkit and CAmkES
+abstract those and should not require any update of user code compared to
+Microkit 2.0.1 and CAmkES 3.11.1.</p>
+
+<p>Enjoy!</p>
+
+            </div>
+          </div>
+        </div>
+      </div>
+    </li><li>
+      <div class="relative pb-8">
+        
+        <span class="absolute left-6 top-5 -ml-px h-full w-0.5 bg-slate-200 dark:bg-slate-600"
+          aria-hidden="true"></span>
+        
+        <div class="relative flex items-start space-x-3">
+          <div class="relative">
             <a href="/news/#sculpt">
               <div class="-mt-3 p-2 bg-slate-200 dark:bg-slate-600 rounded-full"><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" aria-hidden="true" data-slot="icon" class="block h-8 w-8">
   <path stroke-linecap="round" stroke-linejoin="round" d="M10.34 15.84c-.688-.06-1.386-.09-2.09-.09H7.5a4.5 4.5 0 1 1 0-9h.75c.704 0 1.402-.03 2.09-.09m0 9.18c.253.962.584 1.892.985 2.783.247.55.06 1.21-.463 1.511l-.657.38c-.551.318-1.26.117-1.527-.461a20.845 20.845 0 0 1-1.44-4.282m3.102.069a18.03 18.03 0 0 1-.59-4.59c0-1.586.205-3.124.59-4.59m0 9.18a23.848 23.848 0 0 1 8.835 2.535M10.34 6.66a23.847 23.847 0 0 0 8.835-2.535m0 0A23.74 23.74 0 0 0 18.795 3m.38 1.125a23.91 23.91 0 0 1 1.014 5.395m-1.014 8.855c-.118.38-.245.754-.38 1.125m.38-1.125a23.91 23.91 0 0 0 1.014-5.395m0-3.46c.495.413.811 1.035.811 1.73 0 .695-.316 1.317-.811 1.73m0-3.46a24.347 24.347 0 0 1 0 3.46"/>
@@ -1102,9 +1152,6 @@ day-to-day OS by the Genode developers.</p>
       </div>
     </li><li>
       <div class="relative pb-8">
-        
-        <span class="absolute left-6 top-5 -ml-px h-full w-0.5 bg-slate-200 dark:bg-slate-600"
-          aria-hidden="true"></span>
         
         <div class="relative flex items-start space-x-3">
           <div class="relative">
@@ -1181,38 +1228,6 @@ day-to-day OS by the Genode developers.</p>
   We look forward to welcoming the community at the seL4 summit 2026!
 </p>
 </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </li><li>
-      <div class="relative pb-8">
-        
-        <div class="relative flex items-start space-x-3">
-          <div class="relative">
-            <a href="/news/#summit-videos">
-              <div class="-mt-3 p-2 bg-slate-200 dark:bg-slate-600 rounded-full"><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" aria-hidden="true" data-slot="icon" class="block h-8 w-8">
-  <path stroke-linecap="round" stroke-linejoin="round" d="M10.34 15.84c-.688-.06-1.386-.09-2.09-.09H7.5a4.5 4.5 0 1 1 0-9h.75c.704 0 1.402-.03 2.09-.09m0 9.18c.253.962.584 1.892.985 2.783.247.55.06 1.21-.463 1.511l-.657.38c-.551.318-1.26.117-1.527-.461a20.845 20.845 0 0 1-1.44-4.282m3.102.069a18.03 18.03 0 0 1-.59-4.59c0-1.586.205-3.124.59-4.59m0 9.18a23.848 23.848 0 0 1 8.835 2.535M10.34 6.66a23.847 23.847 0 0 0 8.835-2.535m0 0A23.74 23.74 0 0 0 18.795 3m.38 1.125a23.91 23.91 0 0 1 1.014 5.395m-1.014 8.855c-.118.38-.245.754-.38 1.125m.38-1.125a23.91 23.91 0 0 0 1.014-5.395m0-3.46c.495.413.811 1.035.811 1.73 0 .695-.316 1.317-.811 1.73m0-3.46a24.347 24.347 0 0 1 0 3.46"/>
-</svg></div>
-            </a>
-          </div>
-          <div class="min-w-0 flex-1">
-            <div>
-              <div class="text-sm">
-                <a href="/news/#summit-videos" class="font-medium text-dark hover:underline">The videos and slides of the seL4 Summit 2025 are available online&nbsp;&rightarrow;</a>
-              </div>
-              <p class="mt-0.5 text-sm text-gray-500 dark:text-gray-600">17 Sep 2025</p>
-            </div>
-            <div class="mt-2 text-sm text-gray-700 dark:text-gray-500 line-clamp-2">
-              <p>
-  Videos of the <a href="/Summit/2025/">seL4 Summit
-  2025</a> are now available on the <a href="https://www.youtube.com/@seL4"
-  target="_blank">seL4 YouTube channel</a>! Links and slides can be found on the
-  summit <a href="/Summit/2025/program.html">Program</a>
-  and <a href="/Summit/2025/abstracts2025.html">Abstracts</a> pages. Thanks to all the speakers for making the seL4 Summit
-  2025 a great <a href="/Summit/2025/#gallery">success!</a>
-</p>
-
             </div>
           </div>
         </div>
