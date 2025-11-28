@@ -6,7 +6,7 @@
     <title>About this webserver | seL4</title>
     <meta name="author" content="seL4 Foundation">
     <link rel="canonical" href="https://sel4.systems/About/webserver.html">
-    <link href="/css/sel4.css?v=1764276873" rel="stylesheet">
+    <link href="/css/sel4.css?v=1764290021" rel="stylesheet">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
@@ -579,14 +579,7 @@
       
       <article class="section-borders mx-auto theprose -mt-8">
       
-        <div class="mx-10 mb-6 float-right w-1/2">
-  <a href="seL4-whitepaper.pdf">
-  <img src="./webserver.svg" alt="Webserver architecture
-         diagram" />
-  </a>
-</div>
-
-<div>
+        <div>
     <p>
       This website runs on <a href="https://lionsos.org">LionsOS</a>,
       an operating system for embedded systems.  LionsOS is in turn
@@ -597,6 +590,10 @@
       the <a href="https://trustworthy.systems/projects/drivers">seL4
       Device Driver Framework</a>.
     </p>
+    <div class="bg-white p-white rounded-lg">
+      <img src="./webserver.svg" alt="Webserver architecture
+           diagram" />
+    </div>
     <p>
       Source for the system is
       in <a href="https://github.com/au-ts/lionsos">the LionsOS</a>
@@ -604,15 +601,15 @@
     </p>
     <p>
       The hardware is
-      an <a href="https://www.hardkernel.com/shop/odroid-c4/">Odroid
-      C4</a>, a quad-core Cortex A55 running at 1.2GHz with 4G of DDR4
+      an <a href="https://www.hardkernel.com/shop/odroid-c4/">Odroid-C4</a>,
+      a quad-core Cortex A55 running at 1.2GHz with 4G of DDR4
       RAM and a Gigabit ethernet.  We are using only one of the cores.
     </p>
     <p>
       For ease of update, the website content is stored on an NFS
       server.  It is built from content
-      on <a href="https://github.com/seL4/website">github.com</a> and
-      deployed to the NFS server as updates are accepted into the
+      on the <a href="https://github.com/seL4/website">GitHub repository</a>
+      and deployed to the NFS server as updates are accepted into the
       tree.
     </p>
     <p>
