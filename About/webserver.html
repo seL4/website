@@ -13,13 +13,6 @@ sub: '
 redirect_from: /Info/Website/index.html
 ---
 
-<div class="mx-10 mb-6 float-right w-1/2">
-  <a href="seL4-whitepaper.pdf">
-  <img src="./webserver.svg" alt="Webserver architecture
-         diagram" />
-  </a>
-</div>
-
 <div>
     <p>
       This website runs on <a href="https://lionsos.org">LionsOS</a>,
@@ -31,6 +24,10 @@ redirect_from: /Info/Website/index.html
       the <a href="https://trustworthy.systems/projects/drivers">seL4
       Device Driver Framework</a>.
     </p>
+    <div class="bg-white p-white rounded-lg">
+      <img src="./webserver.svg" alt="Webserver architecture
+           diagram" />
+    </div>
     <p>
       Source for the system is
       in <a href="https://github.com/au-ts/lionsos">the LionsOS</a>
@@ -38,15 +35,15 @@ redirect_from: /Info/Website/index.html
     </p>
     <p>
       The hardware is
-      an <a href="https://www.hardkernel.com/shop/odroid-c4/">Odroid
-      C4</a>, a quad-core Cortex A55 running at 1.2GHz with 4G of DDR4
+      an <a href="https://www.hardkernel.com/shop/odroid-c4/">Odroid-C4</a>,
+      a quad-core Cortex A55 running at 1.2GHz with 4G of DDR4
       RAM and a Gigabit ethernet.  We are using only one of the cores.
     </p>
     <p>
       For ease of update, the website content is stored on an NFS
       server.  It is built from content
-      on <a href="https://github.com/seL4/website">github.com</a> and
-      deployed to the NFS server as updates are accepted into the
+      on the <a href="https://github.com/seL4/website">GitHub repository</a>
+      and deployed to the NFS server as updates are accepted into the
       tree.
     </p>
     <p>
