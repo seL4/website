@@ -10,7 +10,202 @@
   <description>News feed about seL4, the seL4 Foundation, and the seL4 ecosystem.</description>
   <link rel="alternate">https://sel4.systems/news/</link>
   <link rel="self">https://sel4.systems/feed.xml</link>
-  <updated>Wed, 26 Nov 2025 00:00:00 +0000</updated>
+  <updated>Mon, 15 Dec 2025 00:00:00 +0000</updated>
+  <rights>Copyright 2025 seL4 Foundation</rights>
+  <entry>
+    <title>Location, Dates and Program Committee of the seL4 Summit 2026</title>
+    <link rel="alternate" type="text/html" href="https://sel4.systems/news/2025.html#summit-2026-pc"/>
+    <id>https://sel4.systems/news/2025.html#summit-2026-pc</id>
+    <published>Mon, 15 Dec 2025 00:00:00 +0000</published>
+    <updated>Mon, 15 Dec 2025 00:00:00 +0000</updated>
+    <content type="html">
+      &lt;p&gt;
+  We are pleased to announce that the &lt;a href=&quot;/Summit/2026/&quot;&gt;seL4 Summit 2026&lt;/a&gt; will be held in &lt;span class=&quot;font-bold&quot;&gt;Vancouver,
+  Canada, 1 - 3 September&lt;/span&gt; (informal social activities on 31 August).
+&lt;/p&gt;
+
+&lt;p class=&quot;pt-6 sm:pt-8&quot;&gt;
+    &lt;strong&gt;Meet the Program Committee&lt;/strong&gt;
+&lt;/p&gt;
+&lt;p&gt;
+  Our team comes from various parts of the seL4 ecosystem: users, contributors,
+  committers, experts, advocates, researchers, and engineers.
+&lt;/p&gt;
+
+&lt;div class=&quot;not-prose&quot;&gt;
+&lt;ul class=&quot;mx-auto mt-20 grid max-w-2xl lg:mx-0 lg:max-w-none
+           grid-cols-2 gap-x-8 gap-y-16 text-center
+           sm:grid-cols-3 md:grid-cols-4
+           
+           &quot;&gt;
+
+
+&lt;li&gt;
+  
+  &lt;a href=&quot;https://www.linkedin.com/in/robbie-vanvossen-gr/&quot; class=&quot;text-dark no-underline! hover:underline!&quot;&gt;
+  
+    &lt;img class=&quot;mx-auto h-24 w-24 rounded-full&quot; src=&quot;/images/summit/robbie.png&quot; alt=&quot;Picture of Robbie VanVossen&lt;br&gt;(co-chair)&quot;&gt;
+    &lt;p class=&quot;mt-6 text-base font-semibold leading-7 tracking-tight text-dark&quot;&gt;Robbie VanVossen&lt;br&gt;(co-chair)&lt;/p&gt;
+  
+  &lt;/a&gt;
+  
+  &lt;p class=&quot;text-sm leading-6 text-light&quot;&gt;DornerWorks&lt;/p&gt;
+&lt;/li&gt;
+
+
+&lt;li&gt;
+  
+  &lt;a href=&quot;https://www.linkedin.com/in/lucy-fletcher-13a484253/?utm_source=share&amp;utm_campaign=share_via&amp;utm_content=profile&amp;utm_medium=ios_app&quot; class=&quot;text-dark no-underline! hover:underline!&quot;&gt;
+  
+    &lt;img class=&quot;mx-auto h-24 w-24 rounded-full&quot; src=&quot;/images/summit/lucy-square.jpg&quot; alt=&quot;Picture of Lucy Fletcher&lt;br&gt;(co-chair)&quot;&gt;
+    &lt;p class=&quot;mt-6 text-base font-semibold leading-7 tracking-tight text-dark&quot;&gt;Lucy Fletcher&lt;br&gt;(co-chair)&lt;/p&gt;
+  
+  &lt;/a&gt;
+  
+  &lt;p class=&quot;text-sm leading-6 text-light&quot;&gt;Apple&lt;/p&gt;
+&lt;/li&gt;
+
+
+&lt;li&gt;
+  
+  &lt;a href=&quot;https://www.ncsc.gov.uk/&quot; class=&quot;text-dark no-underline! hover:underline!&quot;&gt;
+  
+    &lt;img class=&quot;mx-auto h-24 w-24 rounded-full&quot; src=&quot;/images/summit/person-pc.svg&quot; alt=&quot;Picture of Adam&quot;&gt;
+    &lt;p class=&quot;mt-6 text-base font-semibold leading-7 tracking-tight text-dark&quot;&gt;Adam&lt;/p&gt;
+  
+  &lt;/a&gt;
+  
+  &lt;p class=&quot;text-sm leading-6 text-light&quot;&gt;NCSC&lt;/p&gt;
+&lt;/li&gt;
+
+
+&lt;li&gt;
+  
+  &lt;a href=&quot;https://trustworthy.systems/people/?cn=Corey+Lewis&quot; class=&quot;text-dark no-underline! hover:underline!&quot;&gt;
+  
+    &lt;img class=&quot;mx-auto h-24 w-24 rounded-full&quot; src=&quot;/images/summit/corey-square.jpg&quot; alt=&quot;Picture of Corey Lewis&quot;&gt;
+    &lt;p class=&quot;mt-6 text-base font-semibold leading-7 tracking-tight text-dark&quot;&gt;Corey Lewis&lt;/p&gt;
+  
+  &lt;/a&gt;
+  
+  &lt;p class=&quot;text-sm leading-6 text-light&quot;&gt;Proofcraft&lt;/p&gt;
+&lt;/li&gt;
+
+
+&lt;li&gt;
+  
+  &lt;a href=&quot;https://neutrality.ch/people/&quot; class=&quot;text-dark no-underline! hover:underline!&quot;&gt;
+  
+    &lt;img class=&quot;mx-auto h-24 w-24 rounded-full&quot; src=&quot;/images/summit/david-c-square.jpg&quot; alt=&quot;Picture of David Cock&quot;&gt;
+    &lt;p class=&quot;mt-6 text-base font-semibold leading-7 tracking-tight text-dark&quot;&gt;David Cock&lt;/p&gt;
+  
+  &lt;/a&gt;
+  
+  &lt;p class=&quot;text-sm leading-6 text-light&quot;&gt;Neutrality&lt;/p&gt;
+&lt;/li&gt;
+
+
+&lt;li&gt;
+  
+  &lt;a href=&quot;https://loonwerks.com/people/david-hardin.html&quot; class=&quot;text-dark no-underline! hover:underline!&quot;&gt;
+  
+    &lt;img class=&quot;mx-auto h-24 w-24 rounded-full&quot; src=&quot;/images/summit/david-square.jpg&quot; alt=&quot;Picture of David Hardin&quot;&gt;
+    &lt;p class=&quot;mt-6 text-base font-semibold leading-7 tracking-tight text-dark&quot;&gt;David Hardin&lt;/p&gt;
+  
+  &lt;/a&gt;
+  
+  &lt;p class=&quot;text-sm leading-6 text-light&quot;&gt;Collins&lt;/p&gt;
+&lt;/li&gt;
+
+
+&lt;li&gt;
+  
+  &lt;a href=&quot;https://trustworthy.systems/people/?cn=Gernot+Heiser&quot; class=&quot;text-dark no-underline! hover:underline!&quot;&gt;
+  
+    &lt;img class=&quot;mx-auto h-24 w-24 rounded-full&quot; src=&quot;/images/summit/gernot.jpg&quot; alt=&quot;Picture of Gernot Heiser&quot;&gt;
+    &lt;p class=&quot;mt-6 text-base font-semibold leading-7 tracking-tight text-dark&quot;&gt;Gernot Heiser&lt;/p&gt;
+  
+  &lt;/a&gt;
+  
+  &lt;p class=&quot;text-sm leading-6 text-light&quot;&gt;UNSW Sydney&lt;/p&gt;
+&lt;/li&gt;
+
+
+&lt;li&gt;
+  
+  &lt;a href=&quot;https://www.ll.mit.edu/biographies/juliana-furgala&quot; class=&quot;text-dark no-underline! hover:underline!&quot;&gt;
+  
+    &lt;img class=&quot;mx-auto h-24 w-24 rounded-full&quot; src=&quot;/images/summit/juliana-square.jpg&quot; alt=&quot;Picture of Juliana Furgala&quot;&gt;
+    &lt;p class=&quot;mt-6 text-base font-semibold leading-7 tracking-tight text-dark&quot;&gt;Juliana Furgala&lt;/p&gt;
+  
+  &lt;/a&gt;
+  
+  &lt;p class=&quot;text-sm leading-6 text-light&quot;&gt;MIT Lincoln Laboratory&lt;/p&gt;
+&lt;/li&gt;
+
+
+&lt;li&gt;
+  
+  &lt;a href=&quot;https://www.linkedin.com/in/leigha-vanderklok-b5038a166/&quot; class=&quot;text-dark no-underline! hover:underline!&quot;&gt;
+  
+    &lt;img class=&quot;mx-auto h-24 w-24 rounded-full&quot; src=&quot;/images/summit/leigha-square.jpg&quot; alt=&quot;Picture of Leigha VanderKlok&quot;&gt;
+    &lt;p class=&quot;mt-6 text-base font-semibold leading-7 tracking-tight text-dark&quot;&gt;Leigha VanderKlok&lt;/p&gt;
+  
+  &lt;/a&gt;
+  
+  &lt;p class=&quot;text-sm leading-6 text-light&quot;&gt;DornerWorks&lt;/p&gt;
+&lt;/li&gt;
+
+
+&lt;li&gt;
+  
+  &lt;a href=&quot;https://www.linkedin.com/in/lesley-rossouw-a6ab451b6/&quot; class=&quot;text-dark no-underline! hover:underline!&quot;&gt;
+  
+    &lt;img class=&quot;mx-auto h-24 w-24 rounded-full&quot; src=&quot;/images/summit/lesley-square.jpg&quot; alt=&quot;Picture of Lesley Rossouw&quot;&gt;
+    &lt;p class=&quot;mt-6 text-base font-semibold leading-7 tracking-tight text-dark&quot;&gt;Lesley Rossouw&lt;/p&gt;
+  
+  &lt;/a&gt;
+  
+  &lt;p class=&quot;text-sm leading-6 text-light&quot;&gt;UNSW Sydney&lt;/p&gt;
+&lt;/li&gt;
+
+
+&lt;li&gt;
+  
+  &lt;a href=&quot;https://www.linkedin.com/in/mpdehnel/&quot; class=&quot;text-dark no-underline! hover:underline!&quot;&gt;
+  
+    &lt;img class=&quot;mx-auto h-24 w-24 rounded-full&quot; src=&quot;/images/summit/martin-square.jpg&quot; alt=&quot;Picture of Martin Dehnel-Wild&quot;&gt;
+    &lt;p class=&quot;mt-6 text-base font-semibold leading-7 tracking-tight text-dark&quot;&gt;Martin Dehnel-Wild&lt;/p&gt;
+  
+  &lt;/a&gt;
+  
+  &lt;p class=&quot;text-sm leading-6 text-light&quot;&gt;Kry10&lt;/p&gt;
+&lt;/li&gt;
+
+
+&lt;li&gt;
+  
+  &lt;a href=&quot;https://nickspinale.com&quot; class=&quot;text-dark no-underline! hover:underline!&quot;&gt;
+  
+    &lt;img class=&quot;mx-auto h-24 w-24 rounded-full&quot; src=&quot;/images/summit/nick.jpg&quot; alt=&quot;Picture of Nick Spinale&quot;&gt;
+    &lt;p class=&quot;mt-6 text-base font-semibold leading-7 tracking-tight text-dark&quot;&gt;Nick Spinale&lt;/p&gt;
+  
+  &lt;/a&gt;
+  
+  &lt;p class=&quot;text-sm leading-6 text-light&quot;&gt;Colias Group&lt;/p&gt;
+&lt;/li&gt;
+
+
+&lt;/ul&gt;
+
+&lt;/div&gt;
+
+&lt;p class=&quot;pt-10 sm:pt-8&quot;&gt;
+  We will announce a Call for Presentations early in 2026. Stay tuned!
+&lt;/p&gt;
+
+    </content>
+  </entry>
   <rights>Copyright 2025 seL4 Foundation</rights>
   <entry>
     <title>New seL4 release available</title>
@@ -365,300 +560,6 @@ day-to-day OS by the Genode developers.&lt;/p&gt;
 
 &lt;p&gt;
   We welcome your feedback and we hope you enjoy the new site!
-&lt;/p&gt;
-
-    </content>
-  </entry>
-  <rights>Copyright 2025 seL4 Foundation</rights>
-  <entry>
-    <title>The seL4 Summit 2025 Program and Keynotes</title>
-    <link rel="alternate" type="text/html" href="https://sel4.systems/news/2025.html#summit-program-2025"/>
-    <id>https://sel4.systems/news/2025.html#summit-program-2025</id>
-    <published>Mon, 23 Jun 2025 00:00:00 +0000</published>
-    <updated>Mon, 23 Jun 2025 00:00:00 +0000</updated>
-    <content type="html">
-      &lt;p&gt;
-  Have a look at the &lt;a href=&quot;/Summit/2025/program.html&quot;&gt;program&lt;/a&gt; of the &lt;a href=&quot;/Summit/2025/&quot;&gt;seL4 Summit 2025&lt;/a&gt;. We have a great line-up of
-  interesting seL4 work, with a combination of technical research and
-  development, experience reports of seL4 in the field, technical discussions
-  and birds-of-a-feather sessions.
-&lt;/p&gt;
-
-&lt;div class=&quot;w-full md:w-3/4 lg:w-3/4 mt-8 mx-auto aspect-5/2&quot;&gt;
-    &lt;a href=&quot;/Summit/2025/program.html&quot;&gt;
-    &lt;svg xmlns=&quot;http://www.w3.org/2000/svg&quot; style=&quot;background: transparent; background-color: transparent; color-scheme: light dark;&quot; version=&quot;1.1&quot; width=&quot;100%&quot; height=&quot;100%&quot; viewBox=&quot;-0.5 -0.5 790 490&quot; content=&quot;&amp;lt;mxfile host=&amp;quot;Electron&amp;quot; agent=&amp;quot;Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) draw.io/28.0.6 Chrome/138.0.7204.100 Electron/37.2.3 Safari/537.36&amp;quot; scale=&amp;quot;1&amp;quot; border=&amp;quot;0&amp;quot; version=&amp;quot;28.0.6&amp;quot;&amp;gt;&amp;#10; &amp;lt;diagram name=&amp;quot;Page-1&amp;quot; id=&amp;quot;paY2k2uHaaX1umHqWP7c&amp;quot;&amp;gt;&amp;#10; &amp;lt;mxGraphModel dx=&amp;quot;970&amp;quot; dy=&amp;quot;716&amp;quot; grid=&amp;quot;1&amp;quot; gridSize=&amp;quot;10&amp;quot; guides=&amp;quot;1&amp;quot; tooltips=&amp;quot;1&amp;quot; connect=&amp;quot;1&amp;quot; arrows=&amp;quot;1&amp;quot; fold=&amp;quot;1&amp;quot; page=&amp;quot;1&amp;quot; pageScale=&amp;quot;1&amp;quot; pageWidth=&amp;quot;827&amp;quot; pageHeight=&amp;quot;1169&amp;quot; math=&amp;quot;0&amp;quot; shadow=&amp;quot;0&amp;quot;&amp;gt;&amp;#10; &amp;lt;root&amp;gt;&amp;#10; &amp;lt;mxCell id=&amp;quot;0&amp;quot; /&amp;gt;&amp;#10; &amp;lt;mxCell id=&amp;quot;1&amp;quot; parent=&amp;quot;0&amp;quot; /&amp;gt;&amp;#10; &amp;lt;mxCell id=&amp;quot;GaKuWDPM29uswf_1zuqV-1&amp;quot; value=&amp;quot;Keynote&amp;quot; style=&amp;quot;rounded=0;fillColor=light-dark(#6497B1,#447995);fontFamily=roboto;fontStyle=0;fontSize=26;strokeColor=none;&amp;quot; parent=&amp;quot;1&amp;quot; vertex=&amp;quot;1&amp;quot;&amp;gt;&amp;#10; &amp;lt;mxGeometry x=&amp;quot;440&amp;quot; y=&amp;quot;140&amp;quot; width=&amp;quot;190&amp;quot; height=&amp;quot;40&amp;quot; as=&amp;quot;geometry&amp;quot; /&amp;gt;&amp;#10; &amp;lt;/mxCell&amp;gt;&amp;#10; &amp;lt;mxCell id=&amp;quot;GaKuWDPM29uswf_1zuqV-2&amp;quot; value=&amp;quot;Talks&amp;quot; style=&amp;quot;rounded=0;fillColor=light-dark(#C0D7E1,#94BBCC);fontFamily=roboto;fontStyle=0;fontSize=26;strokeColor=none;&amp;quot; parent=&amp;quot;1&amp;quot; vertex=&amp;quot;1&amp;quot;&amp;gt;&amp;#10; &amp;lt;mxGeometry x=&amp;quot;440&amp;quot; y=&amp;quot;190&amp;quot; width=&amp;quot;190&amp;quot; height=&amp;quot;70&amp;quot; as=&amp;quot;geometry&amp;quot; /&amp;gt;&amp;#10; &amp;lt;/mxCell&amp;gt;&amp;#10; &amp;lt;mxCell id=&amp;quot;GaKuWDPM29uswf_1zuqV-4&amp;quot; value=&amp;quot;Panel&amp;quot; style=&amp;quot;rounded=0;fillColor=light-dark(#FFDB88,#FFCA5F);fontFamily=roboto;fontStyle=0;fontSize=26;strokeColor=none;&amp;quot; parent=&amp;quot;1&amp;quot; vertex=&amp;quot;1&amp;quot;&amp;gt;&amp;#10; &amp;lt;mxGeometry x=&amp;quot;640&amp;quot; y=&amp;quot;140&amp;quot; width=&amp;quot;190&amp;quot; height=&amp;quot;40&amp;quot; as=&amp;quot;geometry&amp;quot; /&amp;gt;&amp;#10; &amp;lt;/mxCell&amp;gt;&amp;#10; &amp;lt;mxCell id=&amp;quot;GaKuWDPM29uswf_1zuqV-5&amp;quot; value=&amp;quot;Talks&amp;quot; style=&amp;quot;rounded=0;fillColor=light-dark(#C0D7E1,#94BBCC);fontFamily=roboto;fontStyle=0;fontSize=26;strokeColor=none;&amp;quot; parent=&amp;quot;1&amp;quot; vertex=&amp;quot;1&amp;quot;&amp;gt;&amp;#10; &amp;lt;mxGeometry x=&amp;quot;440&amp;quot; y=&amp;quot;300&amp;quot; width=&amp;quot;190&amp;quot; height=&amp;quot;70&amp;quot; as=&amp;quot;geometry&amp;quot; /&amp;gt;&amp;#10; &amp;lt;/mxCell&amp;gt;&amp;#10; &amp;lt;mxCell id=&amp;quot;GaKuWDPM29uswf_1zuqV-6&amp;quot; value=&amp;quot;Talks&amp;quot; style=&amp;quot;rounded=0;fillColor=light-dark(#C0D7E1,#94BBCC);fontFamily=roboto;fontStyle=0;fontSize=26;strokeColor=none;&amp;quot; parent=&amp;quot;1&amp;quot; vertex=&amp;quot;1&amp;quot;&amp;gt;&amp;#10; &amp;lt;mxGeometry x=&amp;quot;440&amp;quot; y=&amp;quot;380&amp;quot; width=&amp;quot;190&amp;quot; height=&amp;quot;70&amp;quot; as=&amp;quot;geometry&amp;quot; /&amp;gt;&amp;#10; &amp;lt;/mxCell&amp;gt;&amp;#10; &amp;lt;mxCell id=&amp;quot;GaKuWDPM29uswf_1zuqV-7&amp;quot; value=&amp;quot;Reception&amp;quot; style=&amp;quot;rounded=0;fillColor=light-dark(#D2EBAB,#96CA50);fontFamily=roboto;fontStyle=0;fontSize=26;strokeColor=none;&amp;quot; parent=&amp;quot;1&amp;quot; vertex=&amp;quot;1&amp;quot;&amp;gt;&amp;#10; &amp;lt;mxGeometry x=&amp;quot;440&amp;quot; y=&amp;quot;470&amp;quot; width=&amp;quot;190&amp;quot; height=&amp;quot;40&amp;quot; as=&amp;quot;geometry&amp;quot; /&amp;gt;&amp;#10; &amp;lt;/mxCell&amp;gt;&amp;#10; &amp;lt;mxCell id=&amp;quot;GaKuWDPM29uswf_1zuqV-9&amp;quot; value=&amp;quot;Talks&amp;quot; style=&amp;quot;rounded=0;fillColor=light-dark(#C0D7E1,#94BBCC);fontFamily=roboto;fontStyle=0;fontSize=26;strokeColor=none;&amp;quot; parent=&amp;quot;1&amp;quot; vertex=&amp;quot;1&amp;quot;&amp;gt;&amp;#10; &amp;lt;mxGeometry x=&amp;quot;640&amp;quot; y=&amp;quot;300&amp;quot; width=&amp;quot;190&amp;quot; height=&amp;quot;70&amp;quot; as=&amp;quot;geometry&amp;quot; /&amp;gt;&amp;#10; &amp;lt;/mxCell&amp;gt;&amp;#10; &amp;lt;mxCell id=&amp;quot;GaKuWDPM29uswf_1zuqV-10&amp;quot; value=&amp;quot;Talks&amp;quot; style=&amp;quot;rounded=0;fillColor=light-dark(#C0D7E1,#94BBCC);fontFamily=roboto;fontStyle=0;fontSize=26;strokeColor=none;&amp;quot; parent=&amp;quot;1&amp;quot; vertex=&amp;quot;1&amp;quot;&amp;gt;&amp;#10; &amp;lt;mxGeometry x=&amp;quot;640&amp;quot; y=&amp;quot;380&amp;quot; width=&amp;quot;190&amp;quot; height=&amp;quot;70&amp;quot; as=&amp;quot;geometry&amp;quot; /&amp;gt;&amp;#10; &amp;lt;/mxCell&amp;gt;&amp;#10; &amp;lt;mxCell id=&amp;quot;GaKuWDPM29uswf_1zuqV-11&amp;quot; value=&amp;quot;Talks&amp;quot; style=&amp;quot;rounded=0;fillColor=light-dark(#C0D7E1,#94BBCC);fontFamily=roboto;fontStyle=0;fontSize=26;strokeColor=none;&amp;quot; parent=&amp;quot;1&amp;quot; vertex=&amp;quot;1&amp;quot;&amp;gt;&amp;#10; &amp;lt;mxGeometry x=&amp;quot;640&amp;quot; y=&amp;quot;190&amp;quot; width=&amp;quot;190&amp;quot; height=&amp;quot;70&amp;quot; as=&amp;quot;geometry&amp;quot; /&amp;gt;&amp;#10; &amp;lt;/mxCell&amp;gt;&amp;#10; &amp;lt;mxCell id=&amp;quot;GaKuWDPM29uswf_1zuqV-13&amp;quot; value=&amp;quot;Talks&amp;quot; style=&amp;quot;rounded=0;fillColor=light-dark(#C0D7E1,#94BBCC);fontFamily=roboto;fontStyle=0;fontSize=26;strokeColor=none;imageAspect=1;resizeHeight=0;&amp;quot; parent=&amp;quot;1&amp;quot; vertex=&amp;quot;1&amp;quot;&amp;gt;&amp;#10; &amp;lt;mxGeometry x=&amp;quot;840&amp;quot; y=&amp;quot;190&amp;quot; width=&amp;quot;190&amp;quot; height=&amp;quot;35&amp;quot; as=&amp;quot;geometry&amp;quot; /&amp;gt;&amp;#10; &amp;lt;/mxCell&amp;gt;&amp;#10; &amp;lt;mxCell id=&amp;quot;GaKuWDPM29uswf_1zuqV-14&amp;quot; value=&amp;quot;BoFs&amp;quot; style=&amp;quot;rounded=0;fillColor=light-dark(#FFDB88,#FFCA5F);fontFamily=roboto;fontStyle=0;fontSize=26;strokeColor=none;&amp;quot; parent=&amp;quot;1&amp;quot; vertex=&amp;quot;1&amp;quot;&amp;gt;&amp;#10; &amp;lt;mxGeometry x=&amp;quot;840&amp;quot; y=&amp;quot;300&amp;quot; width=&amp;quot;190&amp;quot; height=&amp;quot;70&amp;quot; as=&amp;quot;geometry&amp;quot; /&amp;gt;&amp;#10; &amp;lt;/mxCell&amp;gt;&amp;#10; &amp;lt;mxCell id=&amp;quot;GaKuWDPM29uswf_1zuqV-15&amp;quot; value=&amp;quot;BoFs&amp;quot; style=&amp;quot;rounded=0;fillColor=light-dark(#FFDB88,#FFCA5F);fontFamily=roboto;fontStyle=0;fontSize=26;strokeColor=none;&amp;quot; parent=&amp;quot;1&amp;quot; vertex=&amp;quot;1&amp;quot;&amp;gt;&amp;#10; &amp;lt;mxGeometry x=&amp;quot;840&amp;quot; y=&amp;quot;225&amp;quot; width=&amp;quot;190&amp;quot; height=&amp;quot;35&amp;quot; as=&amp;quot;geometry&amp;quot; /&amp;gt;&amp;#10; &amp;lt;/mxCell&amp;gt;&amp;#10; &amp;lt;mxCell id=&amp;quot;GaKuWDPM29uswf_1zuqV-16&amp;quot; value=&amp;quot;Wed Sep 3&amp;quot; style=&amp;quot;rounded=0;fillColor=light-dark(#385378,#385378);fontFamily=roboto;fontStyle=0;fontSize=26;fontColor=light-dark(#d6dbe4, #ededed);strokeColor=none;&amp;quot; parent=&amp;quot;1&amp;quot; vertex=&amp;quot;1&amp;quot;&amp;gt;&amp;#10; &amp;lt;mxGeometry x=&amp;quot;440&amp;quot; y=&amp;quot;80&amp;quot; width=&amp;quot;190&amp;quot; height=&amp;quot;40&amp;quot; as=&amp;quot;geometry&amp;quot; /&amp;gt;&amp;#10; &amp;lt;/mxCell&amp;gt;&amp;#10; &amp;lt;mxCell id=&amp;quot;GaKuWDPM29uswf_1zuqV-21&amp;quot; value=&amp;quot;Tue Sep 2&amp;quot; style=&amp;quot;rounded=0;fillColor=light-dark(#385378,#385378);fontFamily=roboto;fontStyle=0;fontSize=26;fontColor=light-dark(#d6dbe4, #ededed);strokeColor=none;&amp;quot; parent=&amp;quot;1&amp;quot; vertex=&amp;quot;1&amp;quot;&amp;gt;&amp;#10; &amp;lt;mxGeometry x=&amp;quot;240&amp;quot; y=&amp;quot;80&amp;quot; width=&amp;quot;190&amp;quot; height=&amp;quot;40&amp;quot; as=&amp;quot;geometry&amp;quot; /&amp;gt;&amp;#10; &amp;lt;/mxCell&amp;gt;&amp;#10; &amp;lt;mxCell id=&amp;quot;GaKuWDPM29uswf_1zuqV-23&amp;quot; value=&amp;quot;Thu Sep 4&amp;quot; style=&amp;quot;rounded=0;fillColor=light-dark(#385378,#385378);fontFamily=roboto;fontStyle=0;fontSize=26;fontColor=light-dark(#d6dbe4, #ededed);strokeColor=none;&amp;quot; parent=&amp;quot;1&amp;quot; vertex=&amp;quot;1&amp;quot;&amp;gt;&amp;#10; &amp;lt;mxGeometry x=&amp;quot;640&amp;quot; y=&amp;quot;80&amp;quot; width=&amp;quot;190&amp;quot; height=&amp;quot;40&amp;quot; as=&amp;quot;geometry&amp;quot; /&amp;gt;&amp;#10; &amp;lt;/mxCell&amp;gt;&amp;#10; &amp;lt;mxCell id=&amp;quot;GaKuWDPM29uswf_1zuqV-24&amp;quot; value=&amp;quot;Fri Sep 5&amp;quot; style=&amp;quot;rounded=0;fillColor=light-dark(#385378,#385378);fontFamily=roboto;fontStyle=0;fontSize=26;fontColor=light-dark(#d6dbe4, #ededed);strokeColor=none;&amp;quot; parent=&amp;quot;1&amp;quot; vertex=&amp;quot;1&amp;quot;&amp;gt;&amp;#10; &amp;lt;mxGeometry x=&amp;quot;840&amp;quot; y=&amp;quot;80&amp;quot; width=&amp;quot;190&amp;quot; height=&amp;quot;40&amp;quot; as=&amp;quot;geometry&amp;quot; /&amp;gt;&amp;#10; &amp;lt;/mxCell&amp;gt;&amp;#10; &amp;lt;mxCell id=&amp;quot;GaKuWDPM29uswf_1zuqV-26&amp;quot; value=&amp;quot;Informal&amp;amp;#xa;Social&amp;amp;#xa;Activities&amp;quot; style=&amp;quot;rounded=0;fillColor=light-dark(#D2EBAB,#96CA50);fontFamily=roboto;fontStyle=0;fontSize=26;strokeColor=none;&amp;quot; parent=&amp;quot;1&amp;quot; vertex=&amp;quot;1&amp;quot;&amp;gt;&amp;#10; &amp;lt;mxGeometry x=&amp;quot;240&amp;quot; y=&amp;quot;300&amp;quot; width=&amp;quot;190&amp;quot; height=&amp;quot;210&amp;quot; as=&amp;quot;geometry&amp;quot; /&amp;gt;&amp;#10; &amp;lt;/mxCell&amp;gt;&amp;#10; &amp;lt;mxCell id=&amp;quot;GaKuWDPM29uswf_1zuqV-29&amp;quot; value=&amp;quot;Keynote&amp;quot; style=&amp;quot;rounded=0;fillColor=light-dark(#6497B1,#447995);fontFamily=roboto;fontStyle=0;fontSize=26;strokeColor=none;&amp;quot; parent=&amp;quot;1&amp;quot; vertex=&amp;quot;1&amp;quot;&amp;gt;&amp;#10; &amp;lt;mxGeometry x=&amp;quot;840&amp;quot; y=&amp;quot;140&amp;quot; width=&amp;quot;190&amp;quot; height=&amp;quot;40&amp;quot; as=&amp;quot;geometry&amp;quot; /&amp;gt;&amp;#10; &amp;lt;/mxCell&amp;gt;&amp;#10; &amp;lt;mxCell id=&amp;quot;GaKuWDPM29uswf_1zuqV-30&amp;quot; value=&amp;quot;Day 1&amp;quot; style=&amp;quot;rounded=0;fillColor=light-dark(#385378,#385378);fontFamily=roboto;fontStyle=0;fontSize=34;fontColor=light-dark(#d6dbe4, #ededed);strokeColor=none;&amp;quot; parent=&amp;quot;1&amp;quot; vertex=&amp;quot;1&amp;quot;&amp;gt;&amp;#10; &amp;lt;mxGeometry x=&amp;quot;440&amp;quot; y=&amp;quot;20&amp;quot; width=&amp;quot;190&amp;quot; height=&amp;quot;50&amp;quot; as=&amp;quot;geometry&amp;quot; /&amp;gt;&amp;#10; &amp;lt;/mxCell&amp;gt;&amp;#10; &amp;lt;mxCell id=&amp;quot;GaKuWDPM29uswf_1zuqV-31&amp;quot; value=&amp;quot;Day 2&amp;quot; style=&amp;quot;rounded=0;fillColor=light-dark(#385378,#385378);fontFamily=roboto;fontStyle=0;fontSize=34;fontColor=light-dark(#d6dbe4, #ededed);strokeColor=none;&amp;quot; parent=&amp;quot;1&amp;quot; vertex=&amp;quot;1&amp;quot;&amp;gt;&amp;#10; &amp;lt;mxGeometry x=&amp;quot;640&amp;quot; y=&amp;quot;20&amp;quot; width=&amp;quot;190&amp;quot; height=&amp;quot;50&amp;quot; as=&amp;quot;geometry&amp;quot; /&amp;gt;&amp;#10; &amp;lt;/mxCell&amp;gt;&amp;#10; &amp;lt;mxCell id=&amp;quot;GaKuWDPM29uswf_1zuqV-32&amp;quot; value=&amp;quot;Day 3&amp;quot; style=&amp;quot;rounded=0;fillColor=light-dark(#385378,#385378);fontFamily=roboto;fontStyle=0;fontSize=34;fontColor=light-dark(#d6dbe4, #ededed);strokeColor=none;&amp;quot; parent=&amp;quot;1&amp;quot; vertex=&amp;quot;1&amp;quot;&amp;gt;&amp;#10; &amp;lt;mxGeometry x=&amp;quot;840&amp;quot; y=&amp;quot;20&amp;quot; width=&amp;quot;190&amp;quot; height=&amp;quot;50&amp;quot; as=&amp;quot;geometry&amp;quot; /&amp;gt;&amp;#10; &amp;lt;/mxCell&amp;gt;&amp;#10; &amp;lt;/root&amp;gt;&amp;#10; &amp;lt;/mxGraphModel&amp;gt;&amp;#10; &amp;lt;/diagram&amp;gt;&amp;#10;&amp;lt;/mxfile&amp;gt;&quot;&gt;
-  &lt;g&gt;
-    &lt;g data-cell-id=&quot;0&quot;&gt;
-      &lt;g data-cell-id=&quot;1&quot;&gt;
-        &lt;g data-cell-id=&quot;GaKuWDPM29uswf_1zuqV-1&quot;&gt;
-          &lt;g&gt;
-            &lt;rect x=&quot;200&quot; y=&quot;120&quot; width=&quot;190&quot; height=&quot;40&quot; fill=&quot;#6497b1&quot; pointer-events=&quot;all&quot; style=&quot;fill: light-dark(rgb(100, 151, 177), rgb(68, 121, 149));&quot;/&gt;
-          &lt;/g&gt;
-          &lt;g&gt;
-            &lt;g fill=&quot;#000000&quot; font-family=&quot;roboto&quot; text-anchor=&quot;middle&quot; font-size=&quot;26px&quot; style=&quot;fill: light-dark(rgb(0, 0, 0), rgb(255, 255, 255));&quot;&gt;
-              &lt;text x=&quot;295&quot; y=&quot;152&quot;&gt;Keynote&lt;/text&gt;
-            &lt;/g&gt;
-          &lt;/g&gt;
-        &lt;/g&gt;
-        &lt;g data-cell-id=&quot;GaKuWDPM29uswf_1zuqV-2&quot;&gt;
-          &lt;g&gt;
-            &lt;rect x=&quot;200&quot; y=&quot;170&quot; width=&quot;190&quot; height=&quot;70&quot; fill=&quot;#c0d7e1&quot; pointer-events=&quot;all&quot; style=&quot;fill: light-dark(rgb(192, 215, 225), rgb(148, 187, 204));&quot;/&gt;
-          &lt;/g&gt;
-          &lt;g&gt;
-            &lt;g fill=&quot;#000000&quot; font-family=&quot;roboto&quot; text-anchor=&quot;middle&quot; font-size=&quot;26px&quot; style=&quot;fill: light-dark(rgb(0, 0, 0), rgb(255, 255, 255));&quot;&gt;
-              &lt;text x=&quot;295&quot; y=&quot;217&quot;&gt;Talks&lt;/text&gt;
-            &lt;/g&gt;
-          &lt;/g&gt;
-        &lt;/g&gt;
-        &lt;g data-cell-id=&quot;GaKuWDPM29uswf_1zuqV-4&quot;&gt;
-          &lt;g&gt;
-            &lt;rect x=&quot;400&quot; y=&quot;120&quot; width=&quot;190&quot; height=&quot;40&quot; fill=&quot;#ffdb88&quot; pointer-events=&quot;all&quot; style=&quot;fill: light-dark(rgb(255, 219, 136), rgb(255, 202, 95));&quot;/&gt;
-          &lt;/g&gt;
-          &lt;g&gt;
-            &lt;g fill=&quot;#000000&quot; font-family=&quot;roboto&quot; text-anchor=&quot;middle&quot; font-size=&quot;26px&quot; style=&quot;fill: light-dark(rgb(0, 0, 0), rgb(255, 255, 255));&quot;&gt;
-              &lt;text x=&quot;495&quot; y=&quot;152&quot;&gt;Panel&lt;/text&gt;
-            &lt;/g&gt;
-          &lt;/g&gt;
-        &lt;/g&gt;
-        &lt;g data-cell-id=&quot;GaKuWDPM29uswf_1zuqV-5&quot;&gt;
-          &lt;g&gt;
-            &lt;rect x=&quot;200&quot; y=&quot;280&quot; width=&quot;190&quot; height=&quot;70&quot; fill=&quot;#c0d7e1&quot; pointer-events=&quot;all&quot; style=&quot;fill: light-dark(rgb(192, 215, 225), rgb(148, 187, 204));&quot;/&gt;
-          &lt;/g&gt;
-          &lt;g&gt;
-            &lt;g fill=&quot;#000000&quot; font-family=&quot;roboto&quot; text-anchor=&quot;middle&quot; font-size=&quot;26px&quot; style=&quot;fill: light-dark(rgb(0, 0, 0), rgb(255, 255, 255));&quot;&gt;
-              &lt;text x=&quot;295&quot; y=&quot;327&quot;&gt;Talks&lt;/text&gt;
-            &lt;/g&gt;
-          &lt;/g&gt;
-        &lt;/g&gt;
-        &lt;g data-cell-id=&quot;GaKuWDPM29uswf_1zuqV-6&quot;&gt;
-          &lt;g&gt;
-            &lt;rect x=&quot;200&quot; y=&quot;360&quot; width=&quot;190&quot; height=&quot;70&quot; fill=&quot;#c0d7e1&quot; pointer-events=&quot;all&quot; style=&quot;fill: light-dark(rgb(192, 215, 225), rgb(148, 187, 204));&quot;/&gt;
-          &lt;/g&gt;
-          &lt;g&gt;
-            &lt;g fill=&quot;#000000&quot; font-family=&quot;roboto&quot; text-anchor=&quot;middle&quot; font-size=&quot;26px&quot; style=&quot;fill: light-dark(rgb(0, 0, 0), rgb(255, 255, 255));&quot;&gt;
-              &lt;text x=&quot;295&quot; y=&quot;407&quot;&gt;Talks&lt;/text&gt;
-            &lt;/g&gt;
-          &lt;/g&gt;
-        &lt;/g&gt;
-        &lt;g data-cell-id=&quot;GaKuWDPM29uswf_1zuqV-7&quot;&gt;
-          &lt;g&gt;
-            &lt;rect x=&quot;200&quot; y=&quot;450&quot; width=&quot;190&quot; height=&quot;40&quot; fill=&quot;#d2ebab&quot; pointer-events=&quot;all&quot; style=&quot;fill: light-dark(rgb(210, 235, 171), rgb(150, 202, 80));&quot;/&gt;
-          &lt;/g&gt;
-          &lt;g&gt;
-            &lt;g fill=&quot;#000000&quot; font-family=&quot;roboto&quot; text-anchor=&quot;middle&quot; font-size=&quot;26px&quot; style=&quot;fill: light-dark(rgb(0, 0, 0), rgb(255, 255, 255));&quot;&gt;
-              &lt;text x=&quot;295&quot; y=&quot;482&quot;&gt;Reception&lt;/text&gt;
-            &lt;/g&gt;
-          &lt;/g&gt;
-        &lt;/g&gt;
-        &lt;g data-cell-id=&quot;GaKuWDPM29uswf_1zuqV-9&quot;&gt;
-          &lt;g&gt;
-            &lt;rect x=&quot;400&quot; y=&quot;280&quot; width=&quot;190&quot; height=&quot;70&quot; fill=&quot;#c0d7e1&quot; pointer-events=&quot;all&quot; style=&quot;fill: light-dark(rgb(192, 215, 225), rgb(148, 187, 204));&quot;/&gt;
-          &lt;/g&gt;
-          &lt;g&gt;
-            &lt;g fill=&quot;#000000&quot; font-family=&quot;roboto&quot; text-anchor=&quot;middle&quot; font-size=&quot;26px&quot; style=&quot;fill: light-dark(rgb(0, 0, 0), rgb(255, 255, 255));&quot;&gt;
-              &lt;text x=&quot;495&quot; y=&quot;327&quot;&gt;Talks&lt;/text&gt;
-            &lt;/g&gt;
-          &lt;/g&gt;
-        &lt;/g&gt;
-        &lt;g data-cell-id=&quot;GaKuWDPM29uswf_1zuqV-10&quot;&gt;
-          &lt;g&gt;
-            &lt;rect x=&quot;400&quot; y=&quot;360&quot; width=&quot;190&quot; height=&quot;70&quot; fill=&quot;#c0d7e1&quot; pointer-events=&quot;all&quot; style=&quot;fill: light-dark(rgb(192, 215, 225), rgb(148, 187, 204));&quot;/&gt;
-          &lt;/g&gt;
-          &lt;g&gt;
-            &lt;g fill=&quot;#000000&quot; font-family=&quot;roboto&quot; text-anchor=&quot;middle&quot; font-size=&quot;26px&quot; style=&quot;fill: light-dark(rgb(0, 0, 0), rgb(255, 255, 255));&quot;&gt;
-              &lt;text x=&quot;495&quot; y=&quot;407&quot;&gt;Talks&lt;/text&gt;
-            &lt;/g&gt;
-          &lt;/g&gt;
-        &lt;/g&gt;
-        &lt;g data-cell-id=&quot;GaKuWDPM29uswf_1zuqV-11&quot;&gt;
-          &lt;g&gt;
-            &lt;rect x=&quot;400&quot; y=&quot;170&quot; width=&quot;190&quot; height=&quot;70&quot; fill=&quot;#c0d7e1&quot; pointer-events=&quot;all&quot; style=&quot;fill: light-dark(rgb(192, 215, 225), rgb(148, 187, 204));&quot;/&gt;
-          &lt;/g&gt;
-          &lt;g&gt;
-            &lt;g fill=&quot;#000000&quot; font-family=&quot;roboto&quot; text-anchor=&quot;middle&quot; font-size=&quot;26px&quot; style=&quot;fill: light-dark(rgb(0, 0, 0), rgb(255, 255, 255));&quot;&gt;
-              &lt;text x=&quot;495&quot; y=&quot;217&quot;&gt;Talks&lt;/text&gt;
-            &lt;/g&gt;
-          &lt;/g&gt;
-        &lt;/g&gt;
-        &lt;g data-cell-id=&quot;GaKuWDPM29uswf_1zuqV-13&quot;&gt;
-          &lt;g&gt;
-            &lt;rect x=&quot;600&quot; y=&quot;170&quot; width=&quot;190&quot; height=&quot;35&quot; fill=&quot;#c0d7e1&quot; pointer-events=&quot;all&quot; style=&quot;fill: light-dark(rgb(192, 215, 225), rgb(148, 187, 204));&quot;/&gt;
-          &lt;/g&gt;
-          &lt;g&gt;
-            &lt;g fill=&quot;#000000&quot; font-family=&quot;roboto&quot; text-anchor=&quot;middle&quot; font-size=&quot;26px&quot; style=&quot;fill: light-dark(rgb(0, 0, 0), rgb(255, 255, 255));&quot;&gt;
-              &lt;text x=&quot;695&quot; y=&quot;199.5&quot;&gt;Talks&lt;/text&gt;
-            &lt;/g&gt;
-          &lt;/g&gt;
-        &lt;/g&gt;
-        &lt;g data-cell-id=&quot;GaKuWDPM29uswf_1zuqV-14&quot;&gt;
-          &lt;g&gt;
-            &lt;rect x=&quot;600&quot; y=&quot;280&quot; width=&quot;190&quot; height=&quot;70&quot; fill=&quot;#ffdb88&quot; pointer-events=&quot;all&quot; style=&quot;fill: light-dark(rgb(255, 219, 136), rgb(255, 202, 95));&quot;/&gt;
-          &lt;/g&gt;
-          &lt;g&gt;
-            &lt;g fill=&quot;#000000&quot; font-family=&quot;roboto&quot; text-anchor=&quot;middle&quot; font-size=&quot;26px&quot; style=&quot;fill: light-dark(rgb(0, 0, 0), rgb(255, 255, 255));&quot;&gt;
-              &lt;text x=&quot;695&quot; y=&quot;327&quot;&gt;BoFs&lt;/text&gt;
-            &lt;/g&gt;
-          &lt;/g&gt;
-        &lt;/g&gt;
-        &lt;g data-cell-id=&quot;GaKuWDPM29uswf_1zuqV-15&quot;&gt;
-          &lt;g&gt;
-            &lt;rect x=&quot;600&quot; y=&quot;205&quot; width=&quot;190&quot; height=&quot;35&quot; fill=&quot;#ffdb88&quot; pointer-events=&quot;all&quot; style=&quot;fill: light-dark(rgb(255, 219, 136), rgb(255, 202, 95));&quot;/&gt;
-          &lt;/g&gt;
-          &lt;g&gt;
-            &lt;g fill=&quot;#000000&quot; font-family=&quot;roboto&quot; text-anchor=&quot;middle&quot; font-size=&quot;26px&quot; style=&quot;fill: light-dark(rgb(0, 0, 0), rgb(255, 255, 255));&quot;&gt;
-              &lt;text x=&quot;695&quot; y=&quot;234.5&quot;&gt;BoFs&lt;/text&gt;
-            &lt;/g&gt;
-          &lt;/g&gt;
-        &lt;/g&gt;
-        &lt;g data-cell-id=&quot;GaKuWDPM29uswf_1zuqV-16&quot;&gt;
-          &lt;g&gt;
-            &lt;rect x=&quot;200&quot; y=&quot;60&quot; width=&quot;190&quot; height=&quot;40&quot; fill=&quot;#385378&quot; pointer-events=&quot;all&quot; style=&quot;fill: rgb(56, 83, 120);&quot;/&gt;
-          &lt;/g&gt;
-          &lt;g&gt;
-            &lt;g fill=&quot;#d6dbe4&quot; font-family=&quot;roboto&quot; text-anchor=&quot;middle&quot; font-size=&quot;26px&quot; style=&quot;fill: light-dark(rgb(214, 219, 228), rgb(237, 237, 237));&quot;&gt;
-              &lt;text x=&quot;295&quot; y=&quot;92&quot;&gt;Wed Sep 3&lt;/text&gt;
-            &lt;/g&gt;
-          &lt;/g&gt;
-        &lt;/g&gt;
-        &lt;g data-cell-id=&quot;GaKuWDPM29uswf_1zuqV-21&quot;&gt;
-          &lt;g&gt;
-            &lt;rect x=&quot;0&quot; y=&quot;60&quot; width=&quot;190&quot; height=&quot;40&quot; fill=&quot;#385378&quot; pointer-events=&quot;all&quot; style=&quot;fill: rgb(56, 83, 120);&quot;/&gt;
-          &lt;/g&gt;
-          &lt;g&gt;
-            &lt;g fill=&quot;#d6dbe4&quot; font-family=&quot;roboto&quot; text-anchor=&quot;middle&quot; font-size=&quot;26px&quot; style=&quot;fill: light-dark(rgb(214, 219, 228), rgb(237, 237, 237));&quot;&gt;
-              &lt;text x=&quot;95&quot; y=&quot;92&quot;&gt;Tue Sep 2&lt;/text&gt;
-            &lt;/g&gt;
-          &lt;/g&gt;
-        &lt;/g&gt;
-        &lt;g data-cell-id=&quot;GaKuWDPM29uswf_1zuqV-23&quot;&gt;
-          &lt;g&gt;
-            &lt;rect x=&quot;400&quot; y=&quot;60&quot; width=&quot;190&quot; height=&quot;40&quot; fill=&quot;#385378&quot; pointer-events=&quot;all&quot; style=&quot;fill: rgb(56, 83, 120);&quot;/&gt;
-          &lt;/g&gt;
-          &lt;g&gt;
-            &lt;g fill=&quot;#d6dbe4&quot; font-family=&quot;roboto&quot; text-anchor=&quot;middle&quot; font-size=&quot;26px&quot; style=&quot;fill: light-dark(rgb(214, 219, 228), rgb(237, 237, 237));&quot;&gt;
-              &lt;text x=&quot;495&quot; y=&quot;92&quot;&gt;Thu Sep 4&lt;/text&gt;
-            &lt;/g&gt;
-          &lt;/g&gt;
-        &lt;/g&gt;
-        &lt;g data-cell-id=&quot;GaKuWDPM29uswf_1zuqV-24&quot;&gt;
-          &lt;g&gt;
-            &lt;rect x=&quot;600&quot; y=&quot;60&quot; width=&quot;190&quot; height=&quot;40&quot; fill=&quot;#385378&quot; pointer-events=&quot;all&quot; style=&quot;fill: rgb(56, 83, 120);&quot;/&gt;
-          &lt;/g&gt;
-          &lt;g&gt;
-            &lt;g fill=&quot;#d6dbe4&quot; font-family=&quot;roboto&quot; text-anchor=&quot;middle&quot; font-size=&quot;26px&quot; style=&quot;fill: light-dark(rgb(214, 219, 228), rgb(237, 237, 237));&quot;&gt;
-              &lt;text x=&quot;695&quot; y=&quot;92&quot;&gt;Fri Sep 5&lt;/text&gt;
-            &lt;/g&gt;
-          &lt;/g&gt;
-        &lt;/g&gt;
-        &lt;g data-cell-id=&quot;GaKuWDPM29uswf_1zuqV-26&quot;&gt;
-          &lt;g&gt;
-            &lt;rect x=&quot;0&quot; y=&quot;280&quot; width=&quot;190&quot; height=&quot;210&quot; fill=&quot;#d2ebab&quot; pointer-events=&quot;all&quot; style=&quot;fill: light-dark(rgb(210, 235, 171), rgb(150, 202, 80));&quot;/&gt;
-          &lt;/g&gt;
-          &lt;g&gt;
-            &lt;g fill=&quot;#000000&quot; font-family=&quot;roboto&quot; text-anchor=&quot;middle&quot; font-size=&quot;26px&quot; style=&quot;fill: light-dark(rgb(0, 0, 0), rgb(255, 255, 255));&quot;&gt;
-              &lt;text x=&quot;95&quot; y=&quot;366&quot;&gt;Informal&lt;/text&gt;
-              &lt;text x=&quot;95&quot; y=&quot;397&quot;&gt;Social&lt;/text&gt;
-              &lt;text x=&quot;95&quot; y=&quot;428&quot;&gt;Activities&lt;/text&gt;
-            &lt;/g&gt;
-          &lt;/g&gt;
-        &lt;/g&gt;
-        &lt;g data-cell-id=&quot;GaKuWDPM29uswf_1zuqV-29&quot;&gt;
-          &lt;g&gt;
-            &lt;rect x=&quot;600&quot; y=&quot;120&quot; width=&quot;190&quot; height=&quot;40&quot; fill=&quot;#6497b1&quot; pointer-events=&quot;all&quot; style=&quot;fill: light-dark(rgb(100, 151, 177), rgb(68, 121, 149));&quot;/&gt;
-          &lt;/g&gt;
-          &lt;g&gt;
-            &lt;g fill=&quot;#000000&quot; font-family=&quot;roboto&quot; text-anchor=&quot;middle&quot; font-size=&quot;26px&quot; style=&quot;fill: light-dark(rgb(0, 0, 0), rgb(255, 255, 255));&quot;&gt;
-              &lt;text x=&quot;695&quot; y=&quot;152&quot;&gt;Keynote&lt;/text&gt;
-            &lt;/g&gt;
-          &lt;/g&gt;
-        &lt;/g&gt;
-        &lt;g data-cell-id=&quot;GaKuWDPM29uswf_1zuqV-30&quot;&gt;
-          &lt;g&gt;
-            &lt;rect x=&quot;200&quot; y=&quot;0&quot; width=&quot;190&quot; height=&quot;50&quot; fill=&quot;#385378&quot; pointer-events=&quot;all&quot; style=&quot;fill: rgb(56, 83, 120);&quot;/&gt;
-          &lt;/g&gt;
-          &lt;g&gt;
-            &lt;g fill=&quot;#d6dbe4&quot; font-family=&quot;roboto&quot; text-anchor=&quot;middle&quot; font-size=&quot;34px&quot; style=&quot;fill: light-dark(rgb(214, 219, 228), rgb(237, 237, 237));&quot;&gt;
-              &lt;text x=&quot;295&quot; y=&quot;41&quot;&gt;Day 1&lt;/text&gt;
-            &lt;/g&gt;
-          &lt;/g&gt;
-        &lt;/g&gt;
-        &lt;g data-cell-id=&quot;GaKuWDPM29uswf_1zuqV-31&quot;&gt;
-          &lt;g&gt;
-            &lt;rect x=&quot;400&quot; y=&quot;0&quot; width=&quot;190&quot; height=&quot;50&quot; fill=&quot;#385378&quot; pointer-events=&quot;all&quot; style=&quot;fill: rgb(56, 83, 120);&quot;/&gt;
-          &lt;/g&gt;
-          &lt;g&gt;
-            &lt;g fill=&quot;#d6dbe4&quot; font-family=&quot;roboto&quot; text-anchor=&quot;middle&quot; font-size=&quot;34px&quot; style=&quot;fill: light-dark(rgb(214, 219, 228), rgb(237, 237, 237));&quot;&gt;
-              &lt;text x=&quot;495&quot; y=&quot;41&quot;&gt;Day 2&lt;/text&gt;
-            &lt;/g&gt;
-          &lt;/g&gt;
-        &lt;/g&gt;
-        &lt;g data-cell-id=&quot;GaKuWDPM29uswf_1zuqV-32&quot;&gt;
-          &lt;g&gt;
-            &lt;rect x=&quot;600&quot; y=&quot;0&quot; width=&quot;190&quot; height=&quot;50&quot; fill=&quot;#385378&quot; pointer-events=&quot;all&quot; style=&quot;fill: rgb(56, 83, 120);&quot;/&gt;
-          &lt;/g&gt;
-          &lt;g&gt;
-            &lt;g fill=&quot;#d6dbe4&quot; font-family=&quot;roboto&quot; text-anchor=&quot;middle&quot; font-size=&quot;34px&quot; style=&quot;fill: light-dark(rgb(214, 219, 228), rgb(237, 237, 237));&quot;&gt;
-              &lt;text x=&quot;695&quot; y=&quot;41&quot;&gt;Day 3&lt;/text&gt;
-            &lt;/g&gt;
-          &lt;/g&gt;
-        &lt;/g&gt;
-      &lt;/g&gt;
-    &lt;/g&gt;
-  &lt;/g&gt;
-&lt;/svg&gt;
-  &lt;/a&gt;
-&lt;/div&gt;
-
-&lt;p class=&quot;text-center&quot;&gt;
-  Program at a glance. Go to the &lt;a href=&quot;/Summit/2025/program.html&quot;&gt;full
-  program&lt;/a&gt;.
-&lt;/p&gt;
-
-&lt;h3&gt;Keynotes&lt;/h3&gt;
-&lt;p&gt;
-  We are pleased to announce that the two keynotes for the &lt;a href=&quot;/Summit/2025/&quot;&gt;seL4 Summit 2025&lt;/a&gt;
-  will be &lt;strong&gt;&lt;a
-  href=&quot;https://www.cs.ksu.edu/about/people/faculty/hatcliff/&quot;&gt;John
-  Hatcliff&lt;/a&gt;&lt;/strong&gt; from
-  &lt;strong&gt;&lt;a href=&quot;https://www.k-state.edu/&quot;&gt;Kansas State
-  University&lt;/a&gt;&lt;/strong&gt; and
-  &lt;strong&gt;&lt;a href=&quot;https://www.linkedin.com/in/sebastianjester/&quot;&gt;Sebastian
-  Jester&lt;/a&gt;&lt;/strong&gt; from
-  &lt;strong&gt;&lt;a href=&quot;https://www.cyberagentur.de/&quot;&gt;Cyberagentur&lt;/a&gt;&lt;/strong&gt;. John
-  will talk about &lt;a href=&quot;/Summit/2025/abstracts2025.html#a-model-based&quot;&gt;Model-based Development
-  for seL4 Microkit/Rust with Integrated Formal Methods using HAMR&lt;/a&gt;
-  and Sebastian about&lt;a href=&quot;/Summit/2025/abstracts2025.html#a-cyberagentur&quot;&gt;Formally verified IT –
-  Germany’s next cybersecurity paradigm&lt;/a&gt;.
-&lt;/p&gt;
-&lt;p class=&quot;pt-6&quot;&gt;
-  &lt;img src=&quot;../images/summit/john-h-square.jpg&quot; class=&quot;float-right rounded-xl
-  w-1/3 ml-6 mt-0&quot; alt=&quot;Photo of John Hatcliff&quot;&gt;
-  &lt;strong&gt;Dr. John Hatcliff&lt;/strong&gt; is a University Distinguished Professor and
-  Lucas-Rathbone Professor of  Engineering at Kansas State University working in
-  the areas of safety-critical systems, software  architectures, and software
-  verification and certification. He leads the Laboratory on Specification,
-  Analysis, and Transformation of Software (SAnToS Lab), whose research has been
-  funded by national  funding agencies and companies including Department of
-  Defense, National Science Foundation,  DARPA, Department of Homeland Security,
-  US Army, NASA, NIH, ARO, Air Force Office of Scientific  Research, SEI,
-  Collins Aerospace, Galois, and Lockheed Martin.
-&lt;/p&gt;
-&lt;p class=&quot;pt-6&quot;&gt;
-  &lt;img src=&quot;../images/summit/cyberagentur-avatar.svg&quot; class=&quot;float-right
-  rounded-xl w-1/3 ml-6 mt-0&quot; alt=&quot;Cyberagentur avatar&quot;&gt;
-  &lt;strong&gt;Sebastian Jester&lt;/strong&gt; is Head of Secure Hardware and Supply Chains
-  at the Agentur für Innovation in der Cybersicherheit (Cyberagentur), which he
-  joined in 2022. He is on leave from Germany’s Federal Ministry of Research,
-  Technology and Space, latterly responsible for microelectronics R&amp;D policy at
-  the national and EU level. He holds a doctorate in astronomy from the
-  University of Heidelberg and a Master of Physics from the University of
-  Oxford. The &lt;a href=&quot;https://www.cyberagentur.de/en/&quot;&gt;Cyberagentur&lt;/a&gt; funds
-  high-risk research and development projects with a high disruptive potential
-  in the field of cybersecurity. The Cyberagentur’s goal is to advance internal
-  and external security and technological sovereignty. It was created in 2020 by
-  the German Federal Government and is funded by the Federal Ministry of Defence
-  and the Federal Ministry of the Interior. The Cyberagentur is
-  an associate member of the seL4 Foundation.
 &lt;/p&gt;
 
     </content>
