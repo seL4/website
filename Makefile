@@ -81,6 +81,7 @@ IGNORE_URLS += ieee.org
 IGNORE_URLS += sel4summit2025.sched.com
 IGNORE_URLS += acm.org
 IGNORE_URLS += awards.acm.org
+IGNORE_URLS += www.leopoldina.org/en/members/member-list/detail/gernot-heiser
 
 sep:= /,/
 empty:=
