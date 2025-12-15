@@ -8,21 +8,24 @@
       "i.MX8MM-EVK",
       "i.MX8MP-EVK",
       "i.MX8MQ-EVK",
+      "i.MX93-EVK",
       "Odroid-C2",
       "Odroid-C4",
-      "OdroidX",
       "OdroidXU",
       "OdroidXU4",
       "Raspberry Pi 3B",
       "Raspberry Pi 4B",
       "ROCKPro64",
+      "Rock3b",
       "Sabre Lite",
       "TK1",
       "TK1-SOM",
+      "TQMa8XQP 1GB",
       "TX1",
       "TX2",
       "Ultra96v2",
       "Zynq ZCU102",
+      "Zynq ZCU106",
       "Zynq-7000"
     ]
   ],
@@ -30,9 +33,12 @@
     "RISC-V",
     [
       "Ariane",
+      "Banana Pi BPI-F3",
       "Cheshire",
+      "Hifive Premier P550",
       "HiFive Unleashed",
       "Microchip PolarFire",
+      "Pine64 Star64",
       "Rocketchip"
     ]
   ],
