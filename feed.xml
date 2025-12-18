@@ -10,7 +10,44 @@
   <description>News feed about seL4, the seL4 Foundation, and the seL4 ecosystem.</description>
   <link rel="alternate">https://sel4.systems/news/</link>
   <link rel="self">https://sel4.systems/feed.xml</link>
-  <updated>Mon, 15 Dec 2025 00:00:00 +0000</updated>
+  <updated>Wed, 17 Dec 2025 00:00:00 +0000</updated>
+  <rights>Copyright 2025 seL4 Foundation</rights>
+  <entry>
+    <title>The seL4 Foundation transitions to an Independant Structure</title>
+    <link rel="alternate" type="text/html" href="https://sel4.systems/news/2025.html#sel4-international"/>
+    <id>https://sel4.systems/news/2025.html#sel4-international</id>
+    <published>Wed, 17 Dec 2025 00:00:00 +0000</published>
+    <updated>Wed, 17 Dec 2025 00:00:00 +0000</updated>
+    <content type="html">
+      &lt;p&gt;
+  The &lt;a href=&quot;/Foundation/index.html&quot;&gt;seL4
+  Foundation&lt;/a&gt;, launched in 2020 as a project under the Linux Foundation, has
+  benefited from early support in governance, trademarks, and operations. As the
+  community has grown, the seL4 &lt;a href=&quot;/Foundation/Board/index.html&quot;&gt;Board&lt;/a&gt; has determined that greater independence will better
+  serve its members and long-term goals.
+&lt;/p&gt;
+
+&lt;p&gt;
+  To support broader outreach and stronger community engagement, the seL4
+  Foundation has transitioned to a new, independent legal entity, established as
+  a Swiss-registered non-profit association (Verein). The purpose, principles and
+  internal structure remain unchanged. Switzerland was chosen for its neutrality
+  and its well-established framework for international non-profits, a model also
+  used by organizations such as RISC-V International.
+&lt;/p&gt;
+
+&lt;p&gt;
+  This strategic move is set to position the seL4 Foundation for continued
+  growth and improved accessibility for its global community.
+&lt;/p&gt;
+
+
+&lt;p&gt;
+  If you are not already a member, &lt;a href=&quot;/Foundation/Join/index.html&quot;&gt;join now&lt;/a&gt; to shape the future of the seL4 ecosystem!
+&lt;/p&gt;
+
+    </content>
+  </entry>
   <rights>Copyright 2025 seL4 Foundation</rights>
   <entry>
     <title>Location, Dates and Program Committee of the seL4 Summit 2026</title>
@@ -528,38 +565,6 @@ day-to-day OS by the Genode developers.&lt;/p&gt;
 &lt;/p&gt;
 &lt;p&gt;
   Learn more about the &lt;a href=&quot;/About/history.html&quot;&gt;history&lt;/a&gt; of seL4.
-&lt;/p&gt;
-
-    </content>
-  </entry>
-  <rights>Copyright 2025 seL4 Foundation</rights>
-  <entry>
-    <title>The new seL4 docsite is live!</title>
-    <link rel="alternate" type="text/html" href="https://sel4.systems/news/2025.html"/>
-    <id>https://sel4.systems/news/2025.html</id>
-    <published>Wed, 16 Jul 2025 00:00:00 +0000</published>
-    <updated>Wed, 16 Jul 2025 00:00:00 +0000</updated>
-    <content type="html">
-      &lt;p&gt;
-  We are excited to announce the launch of the new &lt;a
-  href=&quot;https://docs.sel4.systems/&quot;&gt;seL4 docsite&lt;/a&gt;! This redesigned
-  documentation site for the main seL4-related technologies provides a new
-  structure and layout, improved navigation and easier access to information.
-&lt;/p&gt;
-
-&lt;p&gt;
-  The docsite content will continue to evolve with updates and maintenance, and
-  we welcome contributions from the community on documentation, tutorials and
-  manuals.
-&lt;/p&gt;
-
-&lt;p&gt;
-  We thank &lt;a href=&quot;https://www.ncsc.gov.uk/&quot;&gt;NCSC&lt;/a&gt; for their funding of this
-  project, which follows their support of the development of the new &lt;a href=&quot;/&quot;&gt;seL4 website&lt;/a&gt;.
-&lt;/p&gt;
-
-&lt;p&gt;
-  We welcome your feedback and we hope you enjoy the new site!
 &lt;/p&gt;
 
     </content>
