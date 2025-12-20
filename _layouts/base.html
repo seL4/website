@@ -39,9 +39,6 @@ Use a query string with the time of the last build to cache bust site CSS file.
     <meta name="msapplication-square310x310logo" content="{{ '/images/icons/mstile-310x310.png' | relative_url }}">
     <link rel="shortcut icon" href="{{ '/images/icons/favicon.ico' | relative_url }}">
     <script defer src="{{ '/js/menu.js' | relative_url }}"></script>
-{% if jekyll.environment == "production" %}
-    <script defer data-domain="sel4.systems" src="https://analytics.sel4.systems/js/script.js"></script>
-{%- endif -%}
 {%- if page.extra-script-src -%}
 {%   for src in page.extra-script-src %}
     <script defer src="{{ src }}" ></script>
