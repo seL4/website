@@ -21,8 +21,12 @@ SPDX-License-Identifier: CC-BY-SA-4.0
       <ul class="{{logo-grid}}">
 {%- for member in members %}
         <li class="mx-8">
-            <img src="{{ '/Foundation/Membership/LOGOS/' | append: member.logo | relative_url }}"
-                 alt="{{ member.name }}" class="w-[158px] h-[100px] object-contain max-w-none">
+            {%- if member.logo.size > 0 -%}
+                  <img src="{{ '/Foundation/Membership/LOGOS/' | append: member.logo | relative_url }}"
+                       alt="{{ member.name }}" class="w-[158px] h-[100px] object-contain max-w-none">
+            {%- else -%}
+                  <p class="mt-6 text-lg font-semi-bold text-center w-[11rem]">{{ member.name }}</p>
+            {%- endif -%}
         </li>
 {%- endfor -%}
       </ul>
@@ -30,8 +34,12 @@ SPDX-License-Identifier: CC-BY-SA-4.0
       <ul class="{{logo-grid}}" aria-hidden="true">
 {%- for member in members %}
         <li class="mx-8">
-          <img src="{{ '/Foundation/Membership/LOGOS/' | append: member.logo | relative_url }}"
-              alt="{{ member.name }}" class="w-[158px] h-[100px] object-contain max-w-none">
+            {%- if member.logo.size > 0 -%}
+            <img src="{{ '/Foundation/Membership/LOGOS/' | append: member.logo | relative_url }}"
+                 alt="{{ member.name }}" class="w-[158px] h-[100px] object-contain max-w-none">
+            {%- else -%}
+                  <p class="mt-6 text-lg font-semi-bold text-center w-[11rem]">{{ member.name }}</p>
+            {%- endif -%}
         </li>
 {%- endfor -%}
       </ul>
