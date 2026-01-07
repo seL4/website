@@ -18,13 +18,6 @@
       "url": "https://apple.com/"
     },
     {
-      "name": "Cog Systems Inc",
-      "logo": "Cog.jpg",
-      "url": "https://cog.systems/",
-      "founding": true,
-      "endorsed": true
-    },
-    {
       "name": "DornerWorks Ltd",
       "logo": "DornerWorks.svg",
       "url": "https://www.dornerworks.com",
@@ -104,6 +97,11 @@
       "name": "TU Munich",
       "logo": "",
       "url": "https://www.tum.de/en"
+    },
+    {
+      "name": "Riverside Research Institute",
+      "logo": "",
+      "url": "https://www.riversideresearch.org/"
     },
     {
       "name": "University of Kansas",
