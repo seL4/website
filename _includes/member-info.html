@@ -16,12 +16,8 @@ SPDX-License-Identifier: CC-BY-SA-4.0
 {%-   assign logo = "/Foundation/Membership/LOGOS/" | append: member.logo | relative_url -%}
   <div class="text-gray-600 mt-16 sm:mt-0">
     <a href="{{ member.url }}">
-    <div class="mx-auto h-[5.5rem] w-[11rem] flex align-middle items-center">
-      {%- if member.logo.size > 0 -%}
-        <img class="object-scale-down" src="{{ logo }}" alt="{{ member.name }}" title="{{ member.name }}">
-      {%- else -%}
-        <p class="mt-6 text-lg font-semi-bold text-center w-[11rem]">{{ member.name }}</p>
-      {%- endif -%}
+    <div class="mx-auto h-[5.5rem] w-[11rem] flex align-middle justify-center">
+      <img class="object-scale-down" src="{{ logo }}" alt="{{ member.name }}" title="{{ member.name }}">
     </div>
     <!-- div class="mt-6 text-lg font-semi-bold text-center">{{ member.name }}</div -->
     </a>
