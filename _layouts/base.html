@@ -48,7 +48,7 @@ Use a query string with the time of the last build to cache bust site CSS file.
   <body class="flex flex-col h-screen {%unless page.nodark%}dark:bg-[#030020]{%endunless%} bg-white">
 {%- assign menu = site.data.menu -%}
 {% include header.html %}
-    <div class="flex-1 overflow-y-auto">
+    <div class="flex-1">
       <main id="page-top">
 {{ content }}
       </main>
