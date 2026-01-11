@@ -7,7 +7,7 @@ Use a query string with the time of the last build to cache bust site CSS file.
 {% endcomment -%}
 {%- assign cache_bust = site.time | date:'?v=%s' -%}
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" class="overflow-y-hidden">
   <head>
     <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
