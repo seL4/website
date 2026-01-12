@@ -2637,6 +2637,9 @@
   .overflow-y-auto {
     overflow-y: auto;
   }
+  .overflow-y-hidden {
+    overflow-y: hidden;
+  }
   .button {
     border-radius: var(--radius-md);
     background-color: var(--color-slate-600);
