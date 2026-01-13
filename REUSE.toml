@@ -47,13 +47,18 @@ path = [
     "Foundation/Board/Minutes/*.pdf",
     "Foundation/Board/seL4_Foundation_Fund_Charter.pdf",
     "Foundation/Join/Directed_Fund_Participation_Agreement.pdf",
-    "Foundation/Join/seL4_Association_Membership_Agreement.pdf",
-    "Foundation/Governance/*pdf",
     "About/seL4-whitepaper.pdf",
     "About/whitepaper.svg",
     "security.asc",
 ]
 SPDX-FileCopyrightText = "2020 seL4 Project a Series of LF Projects, LLC."
+SPDX-License-Identifier = "CC-BY-SA-4.0"
+[[annotations]]
+path = [
+    "Foundation/Join/seL4_Association_Membership_Agreement.pdf",
+    "Foundation/Governance/*pdf",
+]
+SPDX-FileCopyrightText = "2025 seL4 International."
 SPDX-License-Identifier = "CC-BY-SA-4.0"
 
 
