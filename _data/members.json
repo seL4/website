@@ -89,6 +89,11 @@
       "url": "https://riscv.org/"
     },
     {
+      "name": "Riverside Research Institute",
+      "logo": "riverside-research.svg",
+      "url": "https://www.riversideresearch.org/"
+    },
+    {
       "name": "Trusted Computing Center of Excellence™",
       "logo": "TCCoE.svg",
       "url": "https://trustedcomputingcoe.org/"
@@ -97,11 +102,6 @@
       "name": "TU Munich",
       "logo": "TU-Munich-text.svg",
       "url": "https://www.tum.de/en"
-    },
-    {
-      "name": "Riverside Research Institute",
-      "logo": "riverside-research.svg",
-      "url": "https://www.riversideresearch.org/"
     },
     {
       "name": "University of Kansas",
