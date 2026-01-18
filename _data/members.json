@@ -18,13 +18,6 @@
       "url": "https://apple.com/"
     },
     {
-      "name": "Cog Systems Inc",
-      "logo": "Cog.jpg",
-      "url": "https://cog.systems/",
-      "founding": true,
-      "endorsed": true
-    },
-    {
       "name": "DornerWorks Ltd",
       "logo": "DornerWorks.svg",
       "url": "https://www.dornerworks.com",
@@ -101,18 +94,13 @@
       "url": "https://www.riversideresearch.org/"
     },
     {
-      "name": "Technology Innovation Institute",
-      "logo": "TII.jpg",
-      "url": "https://www.tii.ae/"
-    },
-    {
       "name": "Trusted Computing Center of Excellence™",
       "logo": "TCCoE.svg",
       "url": "https://trustedcomputingcoe.org/"
     },
       {
       "name": "TU Munich",
-      "logo": "TU-Munich.svg",
+      "logo": "TU-Munich-text.svg",
       "url": "https://www.tum.de/en"
     },
     {
