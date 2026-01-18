@@ -10,7 +10,37 @@
   <description>News feed about seL4, the seL4 Foundation, and the seL4 ecosystem.</description>
   <link rel="alternate">https://sel4.systems/news/</link>
   <link rel="self">https://sel4.systems/feed.xml</link>
-  <updated>Wed, 17 Dec 2025 00:00:00 +0000</updated>
+  <updated>Mon, 19 Jan 2026 00:00:00 +0000</updated>
+  <rights>Copyright 2026 seL4 Foundation</rights>
+  <entry>
+    <title>Riverside Research joins the seL4 Foundation</title>
+    <link rel="alternate" type="text/html" href="https://sel4.systems/news/2026.html"/>
+    <id>https://sel4.systems/news/2026.html</id>
+    <published>Mon, 19 Jan 2026 00:00:00 +0000</published>
+    <updated>Mon, 19 Jan 2026 00:00:00 +0000</updated>
+    <content type="html">
+      &lt;p&gt;
+  The &lt;a href=&quot;/Foundation&quot;&gt;seL4 Foundation&lt;/a&gt; is
+  pleased to welcome &lt;a href=&quot;https://www.riversideresearch.org/&quot;&gt;Riverside
+  Research&lt;/a&gt; as an &lt;a
+  href=&quot;/Foundation/Membership&quot;&gt;Associate Member&lt;/a&gt;.
+&lt;/p&gt;
+&lt;p&gt;
+  Riverside Research acquired Cog Systems, a founding member of the seL4
+  Foundation in 2025 and continues their work using seL4 within High Assurance
+  systems. Riverside Research is a national security nonprofit serving the DOD
+  and Intelligence Community. Through the company&apos;s Open Innovation Center
+  (OIC), it invests in multidisciplinary research and development and encourages
+  collaboration. Riverside Research&apos;s areas of expertise include Object and
+  Activity Detection; Accelerated AI/ML; Zero Trust; Open Architectures;
+  Computational Electromagnetics; Plasma Physics; Precision Timing; Terahertz
+  Imaging; Commercial Intelligence, Surveillance, and Reconnaissance (ISR);
+  Collection Planning; and more. Learn more at &lt;a
+  href=&quot;https://www.riversideresearch.org/&quot;&gt;www.riversideresearch.org&lt;/a&gt;.
+&lt;/p&gt;
+
+    </content>
+  </entry>
   <rights>Copyright 2026 seL4 Foundation</rights>
   <entry>
     <title>The seL4 Foundation transitions to an Independant Structure</title>
@@ -535,37 +565,6 @@ day-to-day OS by the Genode developers.&lt;/p&gt;
 
 
 &lt;/div&gt;
-
-    </content>
-  </entry>
-  <rights>Copyright 2026 seL4 Foundation</rights>
-  <entry>
-    <title>Happy seL4 day!</title>
-    <link rel="alternate" type="text/html" href="https://sel4.systems/news/2025.html#sel4-day"/>
-    <id>https://sel4.systems/news/2025.html#sel4-day</id>
-    <published>Tue, 29 Jul 2025 00:00:00 +0000</published>
-    <updated>Tue, 29 Jul 2025 00:00:00 +0000</updated>
-    <content type="html">
-      &lt;p&gt;
-  On July 29, 2009, the last &quot;sorry&quot; of the seL4 functional correctness proof
-  was eliminated. A &quot;sorry&quot; is an assumed theorem lacking a complete proof. &quot;0
-  sorries&quot; meant there was nothing left to prove: the project was finished. We
-  now celebrate this day every year to mark the seL4 day, when the world&amp;apos;s
-  first formally verified kernel with a machine-checked code-level proof came
-  into existence.
-&lt;/p&gt;
-&lt;p&gt;
-  In July 2014, on the 29th to make the &quot;seL4 day&quot; a double-celebratory day,
-  the seL4 code and proofs became open source, paving the way to the
-  widespread &lt;a href=&quot;/use.html&quot;&gt;use&lt;/a&gt;
-  it enjoys today.
-&lt;/p&gt;
-&lt;p class=&quot;mt-8&quot;&gt;
-  A big thank-you to all for your continued support!
-&lt;/p&gt;
-&lt;p&gt;
-  Learn more about the &lt;a href=&quot;/About/history.html&quot;&gt;history&lt;/a&gt; of seL4.
-&lt;/p&gt;
 
     </content>
   </entry>
