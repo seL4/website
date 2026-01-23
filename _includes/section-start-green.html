@@ -1,0 +1,15 @@
+{%- comment %}
+Copyright 2025 Proofcraft Pty Ltd
+SPDX-License-Identifier: CC-BY-SA-4.0
+{% endcomment -%}
+
+<div class="px-0 sm:px-4 lg:px-8 mx-auto {{include.margins}}">
+  <div class="section-max-w">
+    <h2 {% if include.id -%} id="{{include.id}}" {%-endif%} class="h2-size max-w-2xl text-f_green-600">{{include.heading}}</h2>
+    <div class="[&_p]:mt-6 [&_p]: text-f_green-600 [&_p]:sm:text-lg [&_p]:leading-8">
+      {{include.intro}}
+    </div>
+{% if include.body-max-w %}
+  </div>
+  <div class="mx-auto {{include.body-max-w}}">
+{% endif %}
