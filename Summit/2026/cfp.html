@@ -3,9 +3,9 @@
   <head>
     <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>What the Proofs Assume | seL4</title>
+    <title>Call for Presentations | seL4</title>
     <meta name="author" content="seL4 Foundation">
-    <link rel="canonical" href="https://sel4.systems/Verification/assumptions.html">
+    <link rel="canonical" href="https://sel4.systems/Summit/2026/cfp.html">
     <link href="/css/sel4.css?v=1769151816" rel="stylesheet">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -562,7 +562,7 @@
   <div class="mx-auto max-w-4xl text-center">
     <div class="text-center text-lg font-semibold leading-7 text-f_green-600 dark:text-f_green-400">
       <a href="./" class="hover:underline">
-      Verification
+      The seL4 Summit 2026
       
       <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" aria-hidden="true" data-slot="icon" class="inline-icon -mt-2">
   <path stroke-linecap="round" stroke-linejoin="round" d="M9 15 3 9m0 0 6-6M3 9h12a6 6 0 0 1 0 12h-3"/>
@@ -570,11 +570,9 @@
       </a>
       
     </div>
-    <h1 class="text-center font-bold tracking-tight text-darkcol dark:text-darkcol_inv text-3xl sm:text-5xl">What the Proofs Assume</h1>
+    <h1 class="text-center font-bold tracking-tight text-darkcol dark:text-darkcol_inv text-3xl sm:text-5xl">Call for Presentations</h1>
     <div class="mt-6 text-center text-base md:text-lg text-lightcol dark:text-lightcol_inv leading-6 md:leading-7 a-underline">
-      This page defines in high-level language what the seL4 proofs assume. It is aimed at an audience with a technical background, but does not assume any expertise in formal verification.
       
-      <img src="/images/screenshot-kernel-elf.png" alt="" class="mt-8 rounded-lg mx-auto w-2/3 mx-auto">
       
       
     </div>
@@ -583,120 +581,82 @@
 </div>
 
   
+<div class="-mt-14 sm:-mt-20 text-center text-base sm:text-lg text-light leading-6 sm:leading-7 a-underline">
+  <div class="mx-auto max-w-4xl text-center">
+    
+    <p>
+      The seL4 Summit gathers the seL4 community to learn, share and connect. The program committee solicits talks on a wide range of seL4-related <a href="#topics">topics</a>.
+    </p>
+    
+  </div>
+  
+    <div class="mb-20"></div>
+  
+</div>
+
+
+
+<!-- Important dates section -->
 <div class="px-0 sm:px-4 lg:px-8 mx-auto ">
   <div class="section-max-w">
-    <h2  class="h2-size max-w-2xl">The Assumptions</h2>
+    <h2 id="dates" class="h2-size max-w-2xl">Important Dates</h2>
     <div class="[&_p]:mt-6 [&_p]:text-base [&_p]:sm:text-lg [&_p]:leading-8 [&_p]:text-light">
       
+  
     </div>
 
 
-
-<div class="theprose">
-<p>
-  With a proof in formal logic, it is important to understand what
-  its basic assumptions are, because this is where fault can still
-  occur. Our proof about the seL4 microkernel goes down to the
-  level of the C code, and for some architectures even to the binary code.
-</p>
-<p>
-  Assumptions are not limitations or problems. Being able to
-  clearly state an exhaustive list of assumptions means that the work
-  needed to fully trust a system is massively reduced from looking at
-  many thousands of lines of code to a number of small, specific,
-  and easy to understand pieces. They are the following:
-</p>
-<ul>
-  <li>
-    <b>Assembly:</b> the seL4 kernel, like all operating system
-    kernels, contains some assembly code, about 340 lines of ARM
-    assembly in our case, and a similar amount for other architectures.
-    For seL4, this concerns mainly entry to
-    and exit from the kernel, as well as direct hardware accesses.
-    For the proof, we assume this code is correct.
-  </li>
-  <li>
-    <b>Hardware:</b> we assume the hardware works correctly. In
-    practice, this means the hardware is assumed not to be tampered
-    with, and working according to specification. It also means, it
-    must be run within its operating conditions.
-  </li>
-  <li>
-    <b>Hardware management:</b> the proof makes only the most
-    minimal assumptions on the underlying hardware. It abstracts
-    from cache consistency, cache colouring and TLB (translation
-    lookaside buffer) management. The proof assumes these functions
-    are implemented correctly in the assembly layer mentioned above
-    and that the hardware works as advertised. The proof also
-    assumes that especially these three hardware management
-    functions do not have any effect on the behaviour of the
-    kernel. This is true if they are used correctly. The proofs
-    state these machine interface assumptions explicitly in
-    formal logic.
-  </li>
-  <li>
-    <b>Boot code:</b> the proof currently is about the operation of
-    the kernel after it has been loaded correctly into memory and
-    brought into a consistent, minimal initial state. This leaves
-    out about 1,200 lines of the code base that a kernel programmer
-    would usually consider to be part of the kernel.
-  </li>
-  <li>
-    <b>Virtual memory:</b> under the standard of 'normal' formal
-    verification projects, virtual memory does <em>not</em> need to
-    be considered an assumption of this proof. However, the degree
-    of assurance is lower than for other parts of our proof where
-    we reason from first principle. In more detail, virtual memory
-    is the hardware mechanism that the kernel uses to protect
-    itself from user programs and user programs from each other.
-    This part is fully verified. However, virtual memory introduces
-    a complication, because it can affect how the kernel itself
-    accesses memory. Our execution model assumes a certain standard
-    behaviour of memory while the kernel executes, and we justify
-    this assumption by proving the necessary conditions on kernel
-    behaviour. The thing is: you have to trust us that we got
-    <em>all</em> necessary conditions and that we got them right.
-    Our machine-checked proof doesn't force us to be complete at
-    this point. In short, in this part of the proof, unlike the
-    other parts, the proof is not from first principles and there
-    is potential for human error.
-  </li>
-  <li>
-    <b>DMA:</b> we assume that the CPU and MMU are the only devices that access
-    memory directly. The proof can correctly ignore memory-mapped registers of
-    devices, but has to assume that DMA devices are either not present or do not
-    misbehave, for instance by overwriting the kernel. In practise this means,
-    that while normal user-level drivers cannot break kernel security, drivers
-    for DMA enabled devices can and must be formally verified for the proof to
-    carry over. Note that user-level drivers will generally be given access to
-    memory-mapped hardware registers, and on some architectures writing to
-    read-only hardware registers may generate failures that could halt the
-    system. Such drivers must be verified or or wrapped by a verified component
-    that validates such accesses to satisfy the proof assumptions. Check out the
-    <a href="../About/FAQ.html#what-about-dma">FAQ entry</a> on DMA for what
-    this means in practice.
-  </li>
-  <li>
-    <b>Information side-channels:</b> this assumption applies to
-    the confidentiality proof only and is not present for
-    functional correctness or integrity. The assumption is that the
-    binary-level model of the hardware captures all relevant
-    information channels. We know this not to be the case. This is
-    not a problem for the validity of the confidentiality proof,
-    but means that its conclusion (that secrets do not leak) holds
-    only for the channels visible in the model. This is a standard
-    situation in information flow proofs: they can never be
-    absolute. As mentioned above, in practice the proof covers all
-    in-kernel storage channels but does not cover timing channels
-  </li>
-</ul>
-<p>
-  Note that we <em>do not</em> need to trust the compiler and linker any more on
-  architectures that are supported by our binary verification. Their output is
-  formally verified for seL4 by an automatic tool if the kernel is compiled with
-  the correct compiler settings that can be configured in the build system.
-</p>
+<div class="theprose dark:text-light">
+  <ul>
+    <li><strong>Abstracts due: 20 April 2026</strong></li>
+    <li>Notification of decisions: 1 June 2026</li>
+    <li>Summit: 1 - 3 September 2026</li>
+  </ul>
 </div>
+</div>
+  
+  <div class="py-12"></div>
+  
+</div>
+
+
+
+<!-- Overview section -->
+<div class="px-0 sm:px-4 lg:px-8 mx-auto ">
+  <div class="section-max-w">
+    <h2 id="overview" class="h2-size max-w-2xl">Overview</h2>
+    <div class="[&_p]:mt-6 [&_p]:text-base [&_p]:sm:text-lg [&_p]:leading-8 [&_p]:text-light">
+      
+      <div class="theprose dark:text-light">
+      <p>
+        The <a href="./">seL4 Summit</a> aims at gathering the seL4 community to
+        <strong>learn</strong>, <strong>share</strong>, and <strong>connect</strong>:
+      </p>
+      <ul>
+        <li>
+          <strong>learn</strong> about the seL4 technology, its latest progress, use,
+          successes, challenges, plans;
+        </li>
+        <li>
+          <strong>share</strong> exciting seL4 development, research, experience,
+          applications in the real world;
+        </li>
+        <li>
+          <strong>connect</strong> with other seL4 developers, users, providers,
+          supporters, potential partners, and enthusiasts.
+        </li>
+      </ul>
+      <p>
+        The seL4 Summit covers the complete seL4 ecosystem, consisting of the verified
+        microkernel, as well as all seL4-related technology, tools, infrastructure,
+        products, projects, and people.
+      </p>
+      <p>
+        The seL4 Summit 2026 will be in Vancouver, Canada.
+      </p>
+    </div>
+    </div>
+
 
 </div>
 </div>
@@ -720,86 +680,275 @@
 
 
 
+
+<!-- New section -->
 <div class="px-0 sm:px-4 lg:px-8 mx-auto ">
   <div class="section-max-w">
-    <h2  class="h2-size max-w-2xl">What do these assumptions mean?</h2>
-    <div class="[&_p]:mt-6 [&_p]:text-base [&_p]:sm:text-lg [&_p]:leading-8 [&_p]:text-light">
+    <h2 id="new" class="h2-size max-w-2xl text-f_green-600">New!</h2>
+    <div class="[&_p]:mt-6 [&_p]: text-f_green-600 [&_p]:sm:text-lg [&_p]:leading-8">
       
+    <div>
+      <p class="mb-5">
+        The 2026 edition of the seL4 summit will feature a full first day
+      dedicated to applications of seL4-based systems, high-level overviews of the
+      technology, and perspectives on formally verified software in the real world.
+      This will be followed by Days 2 and 3 focusing on more technical development,
+      research, reports, and discussions.
+      </p>
+      <p class="mb-25">
+        We are particularly keen to welcome people who are new to seL4 or still
+        developing their familiarity with the technology. The event will offer an
+        ideal opportunity to gain a high-level view of the landscape and ecosystem
+        of seL4 and its associated tools, frameworks and languages, as well as
+        formally verified software in general, and to take stock of the latest
+        updates.
+      </p>
+    </div>
     </div>
 
 
-
-<div class="theprose">
-<p>
-  The reduced proof assumptions mean that we do not need to trust the compiler
-  or linker, but there may still be faults remaining in specific low-level parts
-  of the kernel (TLB, cache handling, handwritten assembly, boot code). These
-  parts are thoroughly manually reviewed.
-</p>
-<p>
-  These specific assumptions are not a limitation of the general formal
-  verification approach. In theory, it is possible to eliminate all of them:
-  there are at least two research groups that have demonstrated successful
-  formal verification of assembly code and low-level hardware management
-  functions and we have ourselves proved an earlier version of the boot code
-  correct down to the level of a precise, executable specification. There are
-  still significant scientific challenges in unifying all of these into a single
-  framework, but it is clear at this point that it can be done.
-</p>
-<p>
-  With all the purity and strength of mathematical proof it is easy
-  to get carried away. There is a fundamental theoretical limit of
-  formal verification and other verification techniques such as testing:
-  there will always be some bottom level of
-  assumptions about the physical world left and these assumptions
-  have to be validated by other means. Mathematical proof is proof
-  as long as it talks about formal concepts. It is when assumptions
-  connect to reality where things may still fail. Albert Einstein
-  is quoted as saying "As far as the laws of mathematics refer to
-  reality, they are not certain; and as far as they are certain,
-  they do not refer to reality." For instance, if the hardware is
-  faulty, or if a cosmic ray randomly changes memory, the
-  correctness predictions of our proof do not apply. Neither do any
-  traditional tests or verification methods help against cosmic
-  rays, but it is important to keep in mind that even with
-  mathematical proof, there are no absolute guarantees about the
-  physical world.
-</p>
-<p>
-  There are two other assumptions that we do not include in the
-  list above, because they are of a different kind:
-</p>
-<ul>
-  <li>We assume the axioms of higher-order logic are logically
-  consistent.
-  </li>
-  <li>We assume our prover checks this particular proof correctly.
-  </li>
-</ul>
-<p>
-  The first is a fundamental question of formal logic. If this is not true,
-  mathematics in general has a much bigger problem than one verified OS kernel.
-  The second is more interesting, but equally unlikely to be false.
-</p>
-<p>
-  From security properties down to C code, we use the proof assistant <a
-  href="https://isabelle.in.tum.de">Isabelle/HOL</a>. This prover belongs to the
-  so-called LCF family of provers and is engineered to minimise the code that
-  needs to trusted for the proof to be correct. It also supports external proof
-  checking by a separate small checking tool. There is no absolute guarantee
-  that the proof is correct, but in general humans are good at creating proofs,
-  computers are <em>very good</em> at checking them. It is an easy problem for
-  computers. If you are worried about the proof, be worried about the
-  assumptions in the first part. They are much more likely to cause problems.
-</p>
-<p>
-  From C code to binary code, we employ a set of automated widely-used
-  verification tools. These are: SONOLAR, Z3, Isabelle/HOL, and HOL4. While Z3
-  and SONOLAR do not provide the same level of assurance as Isabelle/HOL and
-  HOL4. The combination of these tools still achieves a very high standard of
-  assurance for this last verification step.
-</p>
 </div>
+</div>
+
+
+<div class="flex w-full py-12 sm:py-24">
+  <div class="flex-1"></div>
+  <hr class="w-10 h-px bg-gray-200 border-0 dark:bg-gray-600">
+  
+<a href="#page-top" class="relative -mt-3.5 mx-4">
+  <div class="dark:bg-slate-900 hover:bg-slate-100 dark:hover:bg-slate-800 p-1.5 h-7 w-7 rounded-full shadow-xs left-1">
+    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" aria-hidden="true" data-slot="icon" class="h-4 w-4 text-slate-400 dark:text-slate-500">
+  <path stroke-linecap="round" stroke-linejoin="round" d="M12 19.5v-15m0 0-6.75 6.75M12 4.5l6.75 6.75"/>
+</svg>
+  </div>
+</a>
+
+  <hr class="w-10 h-px bg-gray-200 border-0 dark:bg-gray-600">
+  <div class="flex-1"></div>
+</div>
+
+
+
+
+<!-- Topics section -->
+<div class="px-0 sm:px-4 lg:px-8 mx-auto ">
+  <div class="section-max-w">
+    <h2 id="topics" class="h2-size max-w-2xl">Themes & Topics</h2>
+    <div class="[&_p]:mt-6 [&_p]:text-base [&_p]:sm:text-lg [&_p]:leading-8 [&_p]:text-light">
+      
+    <div class="theprose dark:text-light">
+    <p>
+      The <a href="./#pc">Program Committee</a> solicits proposals on any
+      seL4-related topic, or any topic related to verified software that would
+      be relevant to the seL4 community, in particular on the following themes:
+    </p>
+    <ul>
+      <li>vision, lessons-learned, roadmaps for verified software deployments</li>
+      <li>use-cases, deployments, experiences</li>
+      <li>walk-throughs and demos of tools, frameworks, systems</li>
+      <li>early work, crazy ideas, out-of-the-box thinking</li>
+      <li>technical progress, updates, breakthroughs</li>
+    </ul>
+    <p>
+      The format can be a regular talk, short talk, poster, or a walk-through/demo.
+    </p>
+    <p>
+      The topics of interest include any of the below, where “seL4” relates to the kernel itself or any tool, framework, language, components, or system related to seL4 or verified software:
+    </p>
+    <ul>
+      <li>
+        seL4 experience reports
+          <ul>
+          <li>
+          experience with deploying seL4 in the field, in commercial/deployed products
+          </li>
+          <li>
+          experience with teaching seL4
+          </li>
+          <li>
+          experience with seL4 in certification schemes and application of industry standards
+          </li>
+          <li>
+          experience with “building a business case for using a verified kernel”
+          </li>
+          <li>
+          experience with porting software from other OSes
+          </li>
+          </ul>
+        </li>
+        <li>
+          seL4 and assurance
+            <ul>
+            <li>
+            application-level verification leveraging seL4 proofs
+            </li>
+            <li>
+            correctness, spatial separation, temporal separation, and real-time proofs
+            </li>
+            <li>
+            formalised interface between or composition of kernel-level proofs and user-level proofs
+            </li>
+            <li>
+            verification engineering at scale, scaling verification productivity
+            </li>
+            <li>
+            security/safety impact/assurance/certification for an seL4-based system
+            </li>
+            </ul>
+          </li>
+          <li>
+          seL4 on-going and planned R&D, mature or early stage
+            <ul>
+            <li>
+            seL4 research efforts
+            </li>
+            <li>
+            seL4 development efforts
+            </li>
+            <li>
+            work-in-progress seL4 development
+            </li>
+            <li>
+            student work on seL4
+            </li>
+            <li>
+            new/missing/next-gen kernel mechanisms
+            </li>
+            <li>
+            seL4-related roadmaps: what you plan to work on and when
+            </li>
+            <li>
+            seL4 grand challenges
+            </li>
+            <li>
+            OS frameworks and services
+            </li>
+            <li>
+            seL4 userland with programming language support beyond C
+            </li>
+            <li>
+            high performance systems based on seL4: pushing the boundaries
+            </li>
+            <li>
+            early work/new ideas/initial experiments with seL4
+            </li>
+            </ul>
+          </li>
+          <li>
+          seL4 and hardware
+            <ul>
+            <li>
+            ports to new hardware platforms or architectures
+            </li>
+            <li>
+            multicore systems
+            </li>
+            <li>
+            virtualisation
+            </li>
+            <li>
+            new/proposed hardware features or architectures, which could also enable or broaden the scope of formal reasoning (e.g. about time protection)
+            </li>
+            <li>
+            seL4 in embedded processors on FPGAs, and impact of assured separation
+            </li>
+            <li>
+            IOMMU solutions for various hardware architectures and impact for seL4
+            </li>
+            <li>
+            device driver development, porting, reuse, frameworks, verification
+            </li>
+            </ul>
+          </li>
+        </ul>
+  </div>
+    </div>
+
+
+</div>
+</div>
+
+
+<div class="flex w-full py-12 sm:py-24">
+  <div class="flex-1"></div>
+  <hr class="w-10 h-px bg-gray-200 border-0 dark:bg-gray-600">
+  
+<a href="#page-top" class="relative -mt-3.5 mx-4">
+  <div class="dark:bg-slate-900 hover:bg-slate-100 dark:hover:bg-slate-800 p-1.5 h-7 w-7 rounded-full shadow-xs left-1">
+    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" aria-hidden="true" data-slot="icon" class="h-4 w-4 text-slate-400 dark:text-slate-500">
+  <path stroke-linecap="round" stroke-linejoin="round" d="M12 19.5v-15m0 0-6.75 6.75M12 4.5l6.75 6.75"/>
+</svg>
+  </div>
+</a>
+
+  <hr class="w-10 h-px bg-gray-200 border-0 dark:bg-gray-600">
+  <div class="flex-1"></div>
+</div>
+
+
+
+
+<!-- Submission section -->
+<div class="px-0 sm:px-4 lg:px-8 mx-auto ">
+  <div class="section-max-w">
+    <h2 id="submissions" class="h2-size max-w-2xl">Submissions</h2>
+    <div class="[&_p]:mt-6 [&_p]:text-base [&_p]:sm:text-lg [&_p]:leading-8 [&_p]:text-light">
+      
+    <p>
+      If you would like to propose a presentation, please upload an abstract of
+      <strong>one page or less</strong> for your proposed presentation
+      <strong>by 20 April 2026</strong> on the <strong><a
+      href="https://form.jotform.com/260147181364858">submission
+      portal</a></strong>. Abstracts should indicate why the talk fits the scope
+      of the seL4 Summit. Notifications of accepted presentations will be made
+      by 1 June 2026.
+    </p>
+    <p>
+      If you&apos;d love to hear about some specific work from other people in
+      the community, we encourage you to reach out to them to incite them to
+      submit a proposal. :-) Alternatively, let us know at <a
+      title="summit@sel4.systems"
+      href="mailto:summit@sel4.systems">summit@sel4.systems</a>.
+    </p>
+    </div>
+
+
+</div>
+</div>
+
+
+<div class="flex w-full py-12 sm:py-24">
+  <div class="flex-1"></div>
+  <hr class="w-10 h-px bg-gray-200 border-0 dark:bg-gray-600">
+  
+<a href="#page-top" class="relative -mt-3.5 mx-4">
+  <div class="dark:bg-slate-900 hover:bg-slate-100 dark:hover:bg-slate-800 p-1.5 h-7 w-7 rounded-full shadow-xs left-1">
+    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" aria-hidden="true" data-slot="icon" class="h-4 w-4 text-slate-400 dark:text-slate-500">
+  <path stroke-linecap="round" stroke-linejoin="round" d="M12 19.5v-15m0 0-6.75 6.75M12 4.5l6.75 6.75"/>
+</svg>
+  </div>
+</a>
+
+  <hr class="w-10 h-px bg-gray-200 border-0 dark:bg-gray-600">
+  <div class="flex-1"></div>
+</div>
+
+
+
+
+
+<!-- Contact section -->
+<div class="px-0 sm:px-4 lg:px-8 mx-auto ">
+  <div class="section-max-w">
+    <h2 id="contact" class="h2-size max-w-2xl">Contact</h2>
+    <div class="[&_p]:mt-6 [&_p]:text-base [&_p]:sm:text-lg [&_p]:leading-8 [&_p]:text-light">
+      
+  <p>
+    If you have questions, please do not hesitate to contact the seL4 Foundation summit team at <a
+      title="summit@sel4.systems" href="mailto:summit@sel4.systems">summit@sel4.systems</a>.
+  </p>
+    </div>
+
 
 </div>
 </div>

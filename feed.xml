@@ -10,7 +10,80 @@
   <description>News feed about seL4, the seL4 Foundation, and the seL4 ecosystem.</description>
   <link rel="alternate">https://sel4.systems/news/</link>
   <link rel="self">https://sel4.systems/feed.xml</link>
-  <updated>Mon, 19 Jan 2026 00:00:00 +0000</updated>
+  <updated>Fri, 23 Jan 2026 00:00:00 +0000</updated>
+  <rights>Copyright 2026 seL4 Foundation</rights>
+  <entry>
+    <title>Call For Presentations for the seL4 Summit 2026</title>
+    <link rel="alternate" type="text/html" href="https://sel4.systems/news/2026.html"/>
+    <id>https://sel4.systems/news/2026.html</id>
+    <published>Fri, 23 Jan 2026 00:00:00 +0000</published>
+    <updated>Fri, 23 Jan 2026 00:00:00 +0000</updated>
+    <content type="html">
+      &lt;div class=&quot;mt-10&quot;&gt;
+  &lt;p&gt;
+    You can now &lt;a href=&quot;/Summit/2026/cfp.html&quot;&gt;submit a
+    proposal&lt;/a&gt; for the seL4 Summit 2026, to be held in Vancouver September
+    1-3.
+  &lt;/p&gt;
+&lt;/div&gt;
+
+&lt;div class=&quot;text-f_green-600&quot;&gt;
+  &lt;p class=&quot;font-semibold text-2xl&quot;&gt;
+    NEW!
+  &lt;/p&gt;
+  &lt;p&gt;
+    The 2026 edition of the seL4 summit will feature a &lt;strong&gt;&lt;span
+    class=&quot;text-f_green-600&quot;&gt;full first day&lt;/span&gt;&lt;/strong&gt; dedicated to
+    &lt;strong&gt;&lt;span class=&quot;text-f_green-600&quot;&gt;applications, overviews, and
+    perspectives&lt;/span&gt;&lt;/strong&gt; on seL4-based systems and  formally verified
+    software in the real world. This will be followed by Days 2 and 3 focusing
+    on more technical development, research, reports, and discussions.
+  &lt;/p&gt;
+  &lt;p&gt;
+    We are particularly keen to &lt;strong&gt;&lt;span class=&quot;text-f_green-600&quot;&gt;welcome
+    people who are new to seL4&lt;/span&gt;&lt;/strong&gt; or still developing their
+    familiarity with the technology. The event will offer an &lt;strong&gt;&lt;span
+    class=&quot;text-f_green-600&quot;&gt;ideal opportunity to gain a high-level view of the
+    landscape and ecosystem&lt;/span&gt;&lt;/strong&gt; of seL4 and its associated tools,
+    frameworks and languages, as well as formally verified software in general,
+    and to take stock of the latest updates.
+  &lt;/p&gt;
+&lt;/div&gt;
+&lt;div class=&quot;mt-10&quot;&gt;
+  &lt;p&gt;
+    The program includes a wide range of seL4-related themes and topics:
+  &lt;/p&gt;
+  &lt;p&gt;
+    Themes
+  &lt;/p&gt;
+  &lt;ul&gt;
+    &lt;li&gt;visions, lessons-learned, roadmaps for verified software deployments&lt;/li&gt;
+    &lt;li&gt;use-cases, deployments, experiences&lt;/li&gt;
+    &lt;li&gt;walk-throughs and demos of tools, frameworks, systems&lt;/li&gt;
+    &lt;li&gt;early work, crazy ideas, out-of-the-box thinking&lt;/li&gt;
+    &lt;li&gt;technical progress, updates, breakthroughs&lt;/li&gt;
+  &lt;/ul&gt;
+  &lt;p&gt;
+    Topics
+  &lt;/p&gt;
+  &lt;ul&gt;
+    &lt;li&gt;seL4 experience reports&lt;/li&gt;
+    &lt;li&gt;seL4 and assurance&lt;/li&gt;
+    &lt;li&gt;seL4 on-going and planned R&amp;D, mature of early stage&lt;/li&gt;
+    &lt;li&gt;seL4 and hardware&lt;/li&gt;
+  &lt;/ul&gt;
+&lt;/div&gt;
+&lt;div class=&quot;mt-10&quot;&gt;
+  &lt;p&gt;
+    Check the full &lt;a href=&quot;/Summit/2026/cfp.html&quot;&gt;Call For
+    Presentations&lt;/a&gt;. To propose a talk, upload an abstract of one page or less
+    by &lt;strong&gt;20 April 2026&lt;/strong&gt; to the
+    &lt;strong&gt;&lt;a href=&quot;https://form.jotform.com/260147181364858&quot;&gt;submission portal&lt;/a&gt;&lt;/strong&gt;.
+  &lt;/p&gt;
+&lt;/div&gt;
+
+    </content>
+  </entry>
   <rights>Copyright 2026 seL4 Foundation</rights>
   <entry>
     <title>Riverside Research joins the seL4 Foundation</title>
@@ -457,114 +530,6 @@ day-to-day OS by the Genode developers.&lt;/p&gt;
 &lt;p&gt;
     The Trusted Computing Center of Excellence™ (TCCoE) not-for-profit organization’s purpose is to lower barriers to adoption and facilitate the principled development and deployment of software and systems for which there is strong evidence of trustworthiness, including use of formal methods. Needs of the U.S. and allied defense, intelligence and security communities are our priorities. A major thrust is seL4®. While our colleagues at the seL4 Foundation focus on the code and formal proofs of the open source seL4® microkernel and closely related artifacts, the TCCoE focuses on curated software distributions (kernel, libraries, drivers, configurations, etc.) as bases of stable supported platforms on which to build trustworthy systems.
 &lt;/p&gt;
-
-    </content>
-  </entry>
-  <rights>Copyright 2026 seL4 Foundation</rights>
-  <entry>
-    <title>Panellists for seL4 Summit announced</title>
-    <link rel="alternate" type="text/html" href="https://sel4.systems/news/2025.html#panellists25"/>
-    <id>https://sel4.systems/news/2025.html#panellists25</id>
-    <published>Fri, 01 Aug 2025 00:00:00 +0000</published>
-    <updated>Fri, 01 Aug 2025 00:00:00 +0000</updated>
-    <content type="html">
-      &lt;p&gt;
-  We are very fortunate to welcome five industry leaders to
-  participate at the &lt;a href=&quot;/Summit/2025/&quot;&gt;seL4 Summit
-  2025&lt;/a&gt;, in a session &lt;a href=&quot;/Summit/2025/abstracts2025.html#a-panel&quot;&gt;Building a business case for using a verified kernel&lt;/a&gt;:
-  Collins Aerospace, DornerWorks, Kry10, NIO, and MEP. The
-  panel will be moderated by Juliana Furgala from MIT Lincoln Laboratory.
-&lt;/p&gt;
-
-&lt;div class=&quot;not-prose&quot;&gt;
-&lt;ul class=&quot;mx-auto mt-20 grid max-w-2xl lg:mx-0 lg:max-w-none
-           grid-cols-2 gap-x-8 gap-y-16 text-center
-           sm:grid-cols-3 md:grid-cols-4
-           
-           &quot;&gt;
-
-
-&lt;li&gt;
-  
-  &lt;a href=&quot;/Summit/2025/abstracts2025.html#a-panel-collins&quot; class=&quot;text-dark no-underline! hover:underline!&quot;&gt;
-  
-    &lt;img class=&quot;mx-auto h-24 w-24 rounded-full&quot; src=&quot;/images/summit/dcofer-2022-2-small.jpg&quot; alt=&quot;Picture of Darren Cofer&quot;&gt;
-    &lt;p class=&quot;mt-6 text-base font-semibold leading-7 tracking-tight text-dark&quot;&gt;Darren Cofer&lt;/p&gt;
-  
-  &lt;/a&gt;
-  
-  &lt;p class=&quot;text-sm leading-6 text-light&quot;&gt;&lt;a href=&apos;https://www.collinsaerospace.com&apos;&gt;Collins Aerospace&lt;/a&gt;&lt;/p&gt;
-&lt;/li&gt;
-
-
-&lt;li&gt;
-  
-  &lt;a href=&quot;/Summit/2025/abstracts2025.html#a-panel-dornerworks&quot; class=&quot;text-dark no-underline! hover:underline!&quot;&gt;
-  
-    &lt;img class=&quot;mx-auto h-24 w-24 rounded-full&quot; src=&quot;/images/summit/robbie.png&quot; alt=&quot;Picture of Robbie VanVossen&quot;&gt;
-    &lt;p class=&quot;mt-6 text-base font-semibold leading-7 tracking-tight text-dark&quot;&gt;Robbie VanVossen&lt;/p&gt;
-  
-  &lt;/a&gt;
-  
-  &lt;p class=&quot;text-sm leading-6 text-light&quot;&gt;&lt;a href=&apos;https://www.dornerworks.com/&apos;&gt;DornerWorks&lt;/a&gt;&lt;/p&gt;
-&lt;/li&gt;
-
-
-&lt;li&gt;
-  
-  &lt;a href=&quot;/Summit/2025/abstracts2025.html#a-panel-kry10&quot; class=&quot;text-dark no-underline! hover:underline!&quot;&gt;
-  
-    &lt;img class=&quot;mx-auto h-24 w-24 rounded-full&quot; src=&quot;/images/summit/boyd.jpg&quot; alt=&quot;Picture of Boyd Multerer&quot;&gt;
-    &lt;p class=&quot;mt-6 text-base font-semibold leading-7 tracking-tight text-dark&quot;&gt;Boyd Multerer&lt;/p&gt;
-  
-  &lt;/a&gt;
-  
-  &lt;p class=&quot;text-sm leading-6 text-light&quot;&gt;&lt;a href=&apos;https://www.kry10.com/&apos;&gt;Kry10&lt;/a&gt;&lt;/p&gt;
-&lt;/li&gt;
-
-
-&lt;li&gt;
-  
-  &lt;a href=&quot;/Summit/2025/abstracts2025.html#a-panel-mep&quot; class=&quot;text-dark no-underline! hover:underline!&quot;&gt;
-  
-    &lt;img class=&quot;mx-auto h-24 w-24 rounded-full&quot; src=&quot;/images/summit/peter-square.jpg&quot; alt=&quot;Picture of Peter de Ridder&quot;&gt;
-    &lt;p class=&quot;mt-6 text-base font-semibold leading-7 tracking-tight text-dark&quot;&gt;Peter de Ridder&lt;/p&gt;
-  
-  &lt;/a&gt;
-  
-  &lt;p class=&quot;text-sm leading-6 text-light&quot;&gt;&lt;a href=&apos;https://www.mep-info.com/&apos;&gt;MEP&lt;/a&gt;&lt;/p&gt;
-&lt;/li&gt;
-
-
-&lt;li&gt;
-  
-  &lt;a href=&quot;/Summit/2025/abstracts2025.html#a-panel-nio&quot; class=&quot;text-dark no-underline! hover:underline!&quot;&gt;
-  
-    &lt;img class=&quot;mx-auto h-24 w-24 rounded-full&quot; src=&quot;/images/summit/yanyan-square.jpg&quot; alt=&quot;Picture of Yanyan Shen&quot;&gt;
-    &lt;p class=&quot;mt-6 text-base font-semibold leading-7 tracking-tight text-dark&quot;&gt;Yanyan Shen&lt;/p&gt;
-  
-  &lt;/a&gt;
-  
-  &lt;p class=&quot;text-sm leading-6 text-light&quot;&gt;&lt;a href=&apos;https://www.nio.com&apos;&gt;NIO&lt;/a&gt;&lt;/p&gt;
-&lt;/li&gt;
-
-
-&lt;li&gt;
-  
-  &lt;a href=&quot;/Summit/2025/abstracts2025.html#a-panel-mit&quot; class=&quot;text-dark no-underline! hover:underline!&quot;&gt;
-  
-    &lt;img class=&quot;mx-auto h-24 w-24 rounded-full&quot; src=&quot;/images/summit/juliana-square.jpg&quot; alt=&quot;Picture of Juliana Furgala&lt;br&gt;(Moderator)&quot;&gt;
-    &lt;p class=&quot;mt-6 text-base font-semibold leading-7 tracking-tight text-dark&quot;&gt;Juliana Furgala&lt;br&gt;(Moderator)&lt;/p&gt;
-  
-  &lt;/a&gt;
-  
-  &lt;p class=&quot;text-sm leading-6 text-light&quot;&gt;&lt;a href=&apos;https://www.ll.mit.edu/&apos;&gt;MIT Lincoln Laboratory&lt;/a&gt;&lt;/p&gt;
-&lt;/li&gt;
-
-&lt;/ul&gt;
-
-
-&lt;/div&gt;
 
     </content>
   </entry>

@@ -3,9 +3,9 @@
   <head>
     <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>What the Proofs Assume | seL4</title>
+    <title>seL4 Summit 2026 Program | seL4</title>
     <meta name="author" content="seL4 Foundation">
-    <link rel="canonical" href="https://sel4.systems/Verification/assumptions.html">
+    <link rel="canonical" href="https://sel4.systems/Summit/2026/program.html">
     <link href="/css/sel4.css?v=1769151816" rel="stylesheet">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -562,7 +562,7 @@
   <div class="mx-auto max-w-4xl text-center">
     <div class="text-center text-lg font-semibold leading-7 text-f_green-600 dark:text-f_green-400">
       <a href="./" class="hover:underline">
-      Verification
+      The seL4 Summit 2026
       
       <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" aria-hidden="true" data-slot="icon" class="inline-icon -mt-2">
   <path stroke-linecap="round" stroke-linejoin="round" d="M9 15 3 9m0 0 6-6M3 9h12a6 6 0 0 1 0 12h-3"/>
@@ -570,11 +570,9 @@
       </a>
       
     </div>
-    <h1 class="text-center font-bold tracking-tight text-darkcol dark:text-darkcol_inv text-3xl sm:text-5xl">What the Proofs Assume</h1>
+    <h1 class="text-center font-bold tracking-tight text-darkcol dark:text-darkcol_inv text-3xl sm:text-5xl">seL4 Summit 2026 Program</h1>
     <div class="mt-6 text-center text-base md:text-lg text-lightcol dark:text-lightcol_inv leading-6 md:leading-7 a-underline">
-      This page defines in high-level language what the seL4 proofs assume. It is aimed at an audience with a technical background, but does not assume any expertise in formal verification.
-      
-      <img src="/images/screenshot-kernel-elf.png" alt="" class="mt-8 rounded-lg mx-auto w-2/3 mx-auto">
+       <p> The seL4 Summit 2026 will feature a combination of technical research and development, real-world seL4 deployment insights, in-depth interactive discussions, thought-provoking keynotes, panel discussions, as well as informal social activities. Videos will be made available on the <a href="https://www.youtube.com/@seL4">seL4 YouTube channel</a> after the event. </p>
       
       
     </div>
@@ -583,119 +581,176 @@
 </div>
 
   
+<div class="-mt-30">
+<div class="section-max-w mt-14 sm:mt-20 mb-7 sm:mb-10 text-center text-base text-f_green-600 sm:text-lg text-light leading-6 sm:leading-7 a-underline">
+  <p class="-mt-5 mb-5 font-semibold text-2xl">
+    New!
+  </p>
+  <p class="mb-25">
+    The 2026 edition of the seL4 summit will feature a full first day dedicated
+    to applications, overviews, and perspectives on seL4-based systems and
+    formally verified software in the real world. This will be followed by Days
+    2 and 3 focusing on more technical development, research, reports, and
+    discussions. The event will offer an ideal opportunity for people new to
+    seL4 or who are still developing their familiarity to gain a high-level view
+    of the landscape and ecosystem.
+  </p>
+</div>
+
+</div>
+
+<!-- Program-at-a-glance section -->
 <div class="px-0 sm:px-4 lg:px-8 mx-auto ">
   <div class="section-max-w">
-    <h2  class="h2-size max-w-2xl">The Assumptions</h2>
+    <h2 id="program-at-a-glance" class="h2-size max-w-2xl">Program-at-a-glance</h2>
     <div class="[&_p]:mt-6 [&_p]:text-base [&_p]:sm:text-lg [&_p]:leading-8 [&_p]:text-light">
       
     </div>
 
 
 
-<div class="theprose">
-<p>
-  With a proof in formal logic, it is important to understand what
-  its basic assumptions are, because this is where fault can still
-  occur. Our proof about the seL4 microkernel goes down to the
-  level of the C code, and for some architectures even to the binary code.
-</p>
-<p>
-  Assumptions are not limitations or problems. Being able to
-  clearly state an exhaustive list of assumptions means that the work
-  needed to fully trust a system is massively reduced from looking at
-  many thousands of lines of code to a number of small, specific,
-  and easy to understand pieces. They are the following:
-</p>
-<ul>
-  <li>
-    <b>Assembly:</b> the seL4 kernel, like all operating system
-    kernels, contains some assembly code, about 340 lines of ARM
-    assembly in our case, and a similar amount for other architectures.
-    For seL4, this concerns mainly entry to
-    and exit from the kernel, as well as direct hardware accesses.
-    For the proof, we assume this code is correct.
-  </li>
-  <li>
-    <b>Hardware:</b> we assume the hardware works correctly. In
-    practice, this means the hardware is assumed not to be tampered
-    with, and working according to specification. It also means, it
-    must be run within its operating conditions.
-  </li>
-  <li>
-    <b>Hardware management:</b> the proof makes only the most
-    minimal assumptions on the underlying hardware. It abstracts
-    from cache consistency, cache colouring and TLB (translation
-    lookaside buffer) management. The proof assumes these functions
-    are implemented correctly in the assembly layer mentioned above
-    and that the hardware works as advertised. The proof also
-    assumes that especially these three hardware management
-    functions do not have any effect on the behaviour of the
-    kernel. This is true if they are used correctly. The proofs
-    state these machine interface assumptions explicitly in
-    formal logic.
-  </li>
-  <li>
-    <b>Boot code:</b> the proof currently is about the operation of
-    the kernel after it has been loaded correctly into memory and
-    brought into a consistent, minimal initial state. This leaves
-    out about 1,200 lines of the code base that a kernel programmer
-    would usually consider to be part of the kernel.
-  </li>
-  <li>
-    <b>Virtual memory:</b> under the standard of 'normal' formal
-    verification projects, virtual memory does <em>not</em> need to
-    be considered an assumption of this proof. However, the degree
-    of assurance is lower than for other parts of our proof where
-    we reason from first principle. In more detail, virtual memory
-    is the hardware mechanism that the kernel uses to protect
-    itself from user programs and user programs from each other.
-    This part is fully verified. However, virtual memory introduces
-    a complication, because it can affect how the kernel itself
-    accesses memory. Our execution model assumes a certain standard
-    behaviour of memory while the kernel executes, and we justify
-    this assumption by proving the necessary conditions on kernel
-    behaviour. The thing is: you have to trust us that we got
-    <em>all</em> necessary conditions and that we got them right.
-    Our machine-checked proof doesn't force us to be complete at
-    this point. In short, in this part of the proof, unlike the
-    other parts, the proof is not from first principles and there
-    is potential for human error.
-  </li>
-  <li>
-    <b>DMA:</b> we assume that the CPU and MMU are the only devices that access
-    memory directly. The proof can correctly ignore memory-mapped registers of
-    devices, but has to assume that DMA devices are either not present or do not
-    misbehave, for instance by overwriting the kernel. In practise this means,
-    that while normal user-level drivers cannot break kernel security, drivers
-    for DMA enabled devices can and must be formally verified for the proof to
-    carry over. Note that user-level drivers will generally be given access to
-    memory-mapped hardware registers, and on some architectures writing to
-    read-only hardware registers may generate failures that could halt the
-    system. Such drivers must be verified or or wrapped by a verified component
-    that validates such accesses to satisfy the proof assumptions. Check out the
-    <a href="../About/FAQ.html#what-about-dma">FAQ entry</a> on DMA for what
-    this means in practice.
-  </li>
-  <li>
-    <b>Information side-channels:</b> this assumption applies to
-    the confidentiality proof only and is not present for
-    functional correctness or integrity. The assumption is that the
-    binary-level model of the hardware captures all relevant
-    information channels. We know this not to be the case. This is
-    not a problem for the validity of the confidentiality proof,
-    but means that its conclusion (that secrets do not leak) holds
-    only for the channels visible in the model. This is a standard
-    situation in information flow proofs: they can never be
-    absolute. As mentioned above, in practice the proof covers all
-    in-kernel storage channels but does not cover timing channels
-  </li>
-</ul>
-<p>
-  Note that we <em>do not</em> need to trust the compiler and linker any more on
-  architectures that are supported by our binary verification. Their output is
-  formally verified for seL4 by an automatic tool if the kernel is compiled with
-  the correct compiler settings that can be configured in the build system.
-</p>
+<div class="w-full md:w-3/4 lg:w-3/4 mt-8 mx-auto aspect-5/2">
+  <svg xmlns="http://www.w3.org/2000/svg" style="background: transparent; background-color: transparent; color-scheme: light dark;" version="1.1" width="100%" height="100%" viewBox="0 0 790 490" content="&lt;mxfile host=&quot;app.diagrams.net&quot; agent=&quot;Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/143.0.0.0 Safari/537.36&quot; version=&quot;29.3.2&quot;&gt;&#10; &lt;diagram name=&quot;Page-1&quot; id=&quot;vnLSUGy38cPuyNHt7b2f&quot;&gt;&#10; &lt;mxGraphModel dx=&quot;957&quot; dy=&quot;641&quot; grid=&quot;1&quot; gridSize=&quot;10&quot; guides=&quot;1&quot; tooltips=&quot;1&quot; connect=&quot;1&quot; arrows=&quot;1&quot; fold=&quot;1&quot; page=&quot;1&quot; pageScale=&quot;1&quot; pageWidth=&quot;850&quot; pageHeight=&quot;1100&quot; math=&quot;0&quot; shadow=&quot;0&quot;&gt;&#10; &lt;root&gt;&#10; &lt;mxCell id=&quot;0&quot; /&gt;&#10; &lt;mxCell id=&quot;1&quot; parent=&quot;0&quot; /&gt;&#10; &lt;mxCell id=&quot;Yvs-J3TOg6n32_sm5Zv9-1&quot; parent=&quot;1&quot; style=&quot;rounded=0;fillColor=#e1d5e7;fontFamily=roboto;fontStyle=0;fontSize=26;strokeColor=none;&quot; value=&quot;Applications,&amp;#xa;Overviews&amp;#xa;&amp;amp;&amp;#xa;Perspectives&quot; vertex=&quot;1&quot;&gt;&#10; &lt;mxGeometry height=&quot;310&quot; width=&quot;190&quot; x=&quot;240&quot; y=&quot;170&quot; as=&quot;geometry&quot; /&gt;&#10; &lt;/mxCell&gt;&#10; &lt;mxCell id=&quot;Yvs-J3TOg6n32_sm5Zv9-6&quot; parent=&quot;1&quot; style=&quot;rounded=0;fillColor=light-dark(#D2EBAB,#96CA50);fontFamily=roboto;fontStyle=0;fontSize=26;strokeColor=none;&quot; value=&quot;Dinner&quot; vertex=&quot;1&quot;&gt;&#10; &lt;mxGeometry height=&quot;40&quot; width=&quot;190&quot; x=&quot;240&quot; y=&quot;500&quot; as=&quot;geometry&quot; /&gt;&#10; &lt;/mxCell&gt;&#10; &lt;mxCell id=&quot;Yvs-J3TOg6n32_sm5Zv9-9&quot; parent=&quot;1&quot; style=&quot;rounded=0;fillColor=light-dark(#C0D7E1,#94BBCC);fontFamily=roboto;fontStyle=0;fontSize=26;strokeColor=none;&quot; value=&quot;Development,&amp;#xa;Research,&amp;#xa;Reports&amp;#xa;&amp;amp;&amp;#xa;Discussions&quot; vertex=&quot;1&quot;&gt;&#10; &lt;mxGeometry height=&quot;310&quot; width=&quot;190&quot; x=&quot;440&quot; y=&quot;170&quot; as=&quot;geometry&quot; /&gt;&#10; &lt;/mxCell&gt;&#10; &lt;mxCell id=&quot;Yvs-J3TOg6n32_sm5Zv9-13&quot; parent=&quot;1&quot; style=&quot;rounded=0;fillColor=light-dark(#385378,#385378);fontFamily=roboto;fontStyle=0;fontSize=26;fontColor=light-dark(#d6dbe4, #ededed);strokeColor=none;&quot; value=&quot;Tue Sep 1&quot; vertex=&quot;1&quot;&gt;&#10; &lt;mxGeometry height=&quot;40&quot; width=&quot;190&quot; x=&quot;240&quot; y=&quot;110&quot; as=&quot;geometry&quot; /&gt;&#10; &lt;/mxCell&gt;&#10; &lt;mxCell id=&quot;Yvs-J3TOg6n32_sm5Zv9-14&quot; parent=&quot;1&quot; style=&quot;rounded=0;fillColor=light-dark(#385378,#385378);fontFamily=roboto;fontStyle=0;fontSize=26;fontColor=light-dark(#d6dbe4, #ededed);strokeColor=none;&quot; value=&quot;Mon Aug 31&quot; vertex=&quot;1&quot;&gt;&#10; &lt;mxGeometry height=&quot;40&quot; width=&quot;190&quot; x=&quot;40&quot; y=&quot;110&quot; as=&quot;geometry&quot; /&gt;&#10; &lt;/mxCell&gt;&#10; &lt;mxCell id=&quot;Yvs-J3TOg6n32_sm5Zv9-15&quot; parent=&quot;1&quot; style=&quot;rounded=0;fillColor=light-dark(#385378,#385378);fontFamily=roboto;fontStyle=0;fontSize=26;fontColor=light-dark(#d6dbe4, #ededed);strokeColor=none;&quot; value=&quot;Wed Sep 2&quot; vertex=&quot;1&quot;&gt;&#10; &lt;mxGeometry height=&quot;40&quot; width=&quot;190&quot; x=&quot;440&quot; y=&quot;110&quot; as=&quot;geometry&quot; /&gt;&#10; &lt;/mxCell&gt;&#10; &lt;mxCell id=&quot;Yvs-J3TOg6n32_sm5Zv9-16&quot; parent=&quot;1&quot; style=&quot;rounded=0;fillColor=light-dark(#385378,#385378);fontFamily=roboto;fontStyle=0;fontSize=26;fontColor=light-dark(#d6dbe4, #ededed);strokeColor=none;&quot; value=&quot;Fri Sep 3&quot; vertex=&quot;1&quot;&gt;&#10; &lt;mxGeometry height=&quot;40&quot; width=&quot;190&quot; x=&quot;640&quot; y=&quot;110&quot; as=&quot;geometry&quot; /&gt;&#10; &lt;/mxCell&gt;&#10; &lt;mxCell id=&quot;Yvs-J3TOg6n32_sm5Zv9-17&quot; parent=&quot;1&quot; style=&quot;rounded=0;fillColor=light-dark(#D2EBAB,#96CA50);fontFamily=roboto;fontStyle=0;fontSize=26;strokeColor=none;&quot; value=&quot;Informal&amp;#xa;Social&amp;#xa;Activities&quot; vertex=&quot;1&quot;&gt;&#10; &lt;mxGeometry height=&quot;210&quot; width=&quot;190&quot; x=&quot;40&quot; y=&quot;330&quot; as=&quot;geometry&quot; /&gt;&#10; &lt;/mxCell&gt;&#10; &lt;mxCell id=&quot;Yvs-J3TOg6n32_sm5Zv9-19&quot; parent=&quot;1&quot; style=&quot;rounded=0;fillColor=light-dark(#385378,#385378);fontFamily=roboto;fontStyle=0;fontSize=34;fontColor=light-dark(#d6dbe4, #ededed);strokeColor=none;&quot; value=&quot;Day 1&quot; vertex=&quot;1&quot;&gt;&#10; &lt;mxGeometry height=&quot;50&quot; width=&quot;190&quot; x=&quot;240&quot; y=&quot;50&quot; as=&quot;geometry&quot; /&gt;&#10; &lt;/mxCell&gt;&#10; &lt;mxCell id=&quot;Yvs-J3TOg6n32_sm5Zv9-20&quot; parent=&quot;1&quot; style=&quot;rounded=0;fillColor=light-dark(#385378,#385378);fontFamily=roboto;fontStyle=0;fontSize=34;fontColor=light-dark(#d6dbe4, #ededed);strokeColor=none;&quot; value=&quot;Day 2&quot; vertex=&quot;1&quot;&gt;&#10; &lt;mxGeometry height=&quot;50&quot; width=&quot;190&quot; x=&quot;440&quot; y=&quot;50&quot; as=&quot;geometry&quot; /&gt;&#10; &lt;/mxCell&gt;&#10; &lt;mxCell id=&quot;Yvs-J3TOg6n32_sm5Zv9-21&quot; parent=&quot;1&quot; style=&quot;rounded=0;fillColor=light-dark(#385378,#385378);fontFamily=roboto;fontStyle=0;fontSize=34;fontColor=light-dark(#d6dbe4, #ededed);strokeColor=none;&quot; value=&quot;Day 3&quot; vertex=&quot;1&quot;&gt;&#10; &lt;mxGeometry height=&quot;50&quot; width=&quot;190&quot; x=&quot;640&quot; y=&quot;50&quot; as=&quot;geometry&quot; /&gt;&#10; &lt;/mxCell&gt;&#10; &lt;mxCell id=&quot;JTQsx1d-b1zgZmdPj7uW-1&quot; parent=&quot;1&quot; style=&quot;rounded=0;fillColor=light-dark(#C0D7E1,#94BBCC);fontFamily=roboto;fontStyle=0;fontSize=26;strokeColor=none;&quot; value=&quot;Development,&amp;#xa;Research,&amp;#xa;Reports&amp;#xa;&amp;amp;&amp;#xa;Discussions&quot; vertex=&quot;1&quot;&gt;&#10; &lt;mxGeometry height=&quot;310&quot; width=&quot;190&quot; x=&quot;640&quot; y=&quot;170&quot; as=&quot;geometry&quot; /&gt;&#10; &lt;/mxCell&gt;&#10; &lt;/root&gt;&#10; &lt;/mxGraphModel&gt;&#10; &lt;/diagram&gt;&#10;&lt;/mxfile&gt;">
+  <g>
+    <g data-cell-id="0">
+      <g data-cell-id="1">
+        <g data-cell-id="Yvs-J3TOg6n32_sm5Zv9-1">
+          <g transform="translate(0.5,0.5)">
+            <rect x="200" y="120" width="190" height="310" fill="#e1d5e7" pointer-events="all" style="fill: light-dark(rgb(225, 213, 231), rgb(57, 47, 63));"/>
+          </g>
+          <g>
+            <g fill="#000000" font-family="roboto" text-anchor="middle" font-size="26px" style="fill: light-dark(rgb(0, 0, 0), rgb(255, 255, 255));">
+              <text x="295" y="240.5">Applications,</text>
+              <text x="295" y="271.5">Overviews</text>
+              <text x="295" y="302.5">&amp;</text>
+              <text x="295" y="333.5">Perspectives</text>
+            </g>
+          </g>
+        </g>
+        <g data-cell-id="Yvs-J3TOg6n32_sm5Zv9-6">
+          <g transform="translate(0.5,0.5)">
+            <rect x="200" y="450" width="190" height="40" fill="#d2ebab" pointer-events="all" style="fill: light-dark(rgb(210, 235, 171), rgb(150, 202, 80));"/>
+          </g>
+          <g>
+            <g fill="#000000" font-family="roboto" text-anchor="middle" font-size="26px" style="fill: light-dark(rgb(0, 0, 0), rgb(255, 255, 255));">
+              <text x="295" y="482">Dinner</text>
+            </g>
+          </g>
+        </g>
+        <g data-cell-id="Yvs-J3TOg6n32_sm5Zv9-9">
+          <g transform="translate(0.5,0.5)">
+            <rect x="400" y="120" width="190" height="310" fill="#c0d7e1" pointer-events="all" style="fill: light-dark(rgb(192, 215, 225), rgb(148, 187, 204));"/>
+          </g>
+          <g>
+            <g fill="#000000" font-family="roboto" text-anchor="middle" font-size="26px" style="fill: light-dark(rgb(0, 0, 0), rgb(255, 255, 255));">
+              <text x="495" y="225">Development,</text>
+              <text x="495" y="256">Research,</text>
+              <text x="495" y="287">Reports</text>
+              <text x="495" y="318">&amp;</text>
+              <text x="495" y="349">Discussions</text>
+            </g>
+          </g>
+        </g>
+        <g data-cell-id="Yvs-J3TOg6n32_sm5Zv9-13">
+          <g transform="translate(0.5,0.5)">
+            <rect x="200" y="60" width="190" height="40" fill="#385378" pointer-events="all" style="fill: rgb(56, 83, 120);"/>
+          </g>
+          <g>
+            <g fill="#d6dbe4" font-family="roboto" text-anchor="middle" font-size="26px" style="fill: light-dark(rgb(214, 219, 228), rgb(237, 237, 237));">
+              <text x="295" y="92">Tue Sep 1</text>
+            </g>
+          </g>
+        </g>
+        <g data-cell-id="Yvs-J3TOg6n32_sm5Zv9-14">
+          <g transform="translate(0.5,0.5)">
+            <rect x="0" y="60" width="190" height="40" fill="#385378" pointer-events="all" style="fill: rgb(56, 83, 120);"/>
+          </g>
+          <g>
+            <g fill="#d6dbe4" font-family="roboto" text-anchor="middle" font-size="26px" style="fill: light-dark(rgb(214, 219, 228), rgb(237, 237, 237));">
+              <text x="95" y="92">Mon Aug 31</text>
+            </g>
+          </g>
+        </g>
+        <g data-cell-id="Yvs-J3TOg6n32_sm5Zv9-15">
+          <g transform="translate(0.5,0.5)">
+            <rect x="400" y="60" width="190" height="40" fill="#385378" pointer-events="all" style="fill: rgb(56, 83, 120);"/>
+          </g>
+          <g>
+            <g fill="#d6dbe4" font-family="roboto" text-anchor="middle" font-size="26px" style="fill: light-dark(rgb(214, 219, 228), rgb(237, 237, 237));">
+              <text x="495" y="92">Wed Sep 2</text>
+            </g>
+          </g>
+        </g>
+        <g data-cell-id="Yvs-J3TOg6n32_sm5Zv9-16">
+          <g transform="translate(0.5,0.5)">
+            <rect x="600" y="60" width="190" height="40" fill="#385378" pointer-events="all" style="fill: rgb(56, 83, 120);"/>
+          </g>
+          <g>
+            <g fill="#d6dbe4" font-family="roboto" text-anchor="middle" font-size="26px" style="fill: light-dark(rgb(214, 219, 228), rgb(237, 237, 237));">
+              <text x="695" y="92">Fri Sep 3</text>
+            </g>
+          </g>
+        </g>
+        <g data-cell-id="Yvs-J3TOg6n32_sm5Zv9-17">
+          <g transform="translate(0.5,0.5)">
+            <rect x="0" y="280" width="190" height="210" fill="#d2ebab" pointer-events="all" style="fill: light-dark(rgb(210, 235, 171), rgb(150, 202, 80));"/>
+          </g>
+          <g>
+            <g fill="#000000" font-family="roboto" text-anchor="middle" font-size="26px" style="fill: light-dark(rgb(0, 0, 0), rgb(255, 255, 255));">
+              <text x="95" y="366">Informal</text>
+              <text x="95" y="397">Social</text>
+              <text x="95" y="428">Activities</text>
+            </g>
+          </g>
+        </g>
+        <g data-cell-id="Yvs-J3TOg6n32_sm5Zv9-19">
+          <g transform="translate(0.5,0.5)">
+            <rect x="200" y="0" width="190" height="50" fill="#385378" pointer-events="all" style="fill: rgb(56, 83, 120);"/>
+          </g>
+          <g>
+            <g fill="#d6dbe4" font-family="roboto" text-anchor="middle" font-size="34px" style="fill: light-dark(rgb(214, 219, 228), rgb(237, 237, 237));">
+              <text x="295" y="41">Day 1</text>
+            </g>
+          </g>
+        </g>
+        <g data-cell-id="Yvs-J3TOg6n32_sm5Zv9-20">
+          <g transform="translate(0.5,0.5)">
+            <rect x="400" y="0" width="190" height="50" fill="#385378" pointer-events="all" style="fill: rgb(56, 83, 120);"/>
+          </g>
+          <g>
+            <g fill="#d6dbe4" font-family="roboto" text-anchor="middle" font-size="34px" style="fill: light-dark(rgb(214, 219, 228), rgb(237, 237, 237));">
+              <text x="495" y="41">Day 2</text>
+            </g>
+          </g>
+        </g>
+        <g data-cell-id="Yvs-J3TOg6n32_sm5Zv9-21">
+          <g transform="translate(0.5,0.5)">
+            <rect x="600" y="0" width="190" height="50" fill="#385378" pointer-events="all" style="fill: rgb(56, 83, 120);"/>
+          </g>
+          <g>
+            <g fill="#d6dbe4" font-family="roboto" text-anchor="middle" font-size="34px" style="fill: light-dark(rgb(214, 219, 228), rgb(237, 237, 237));">
+              <text x="695" y="41">Day 3</text>
+            </g>
+          </g>
+        </g>
+        <g data-cell-id="JTQsx1d-b1zgZmdPj7uW-1">
+          <g transform="translate(0.5,0.5)">
+            <rect x="600" y="120" width="190" height="310" fill="#c0d7e1" pointer-events="all" style="fill: light-dark(rgb(192, 215, 225), rgb(148, 187, 204));"/>
+          </g>
+          <g>
+            <g fill="#000000" font-family="roboto" text-anchor="middle" font-size="26px" style="fill: light-dark(rgb(0, 0, 0), rgb(255, 255, 255));">
+              <text x="695" y="225">Development,</text>
+              <text x="695" y="256">Research,</text>
+              <text x="695" y="287">Reports</text>
+              <text x="695" y="318">&amp;</text>
+              <text x="695" y="349">Discussions</text>
+            </g>
+          </g>
+        </g>
+      </g>
+    </g>
+  </g>
+</svg>
 </div>
 
 </div>
@@ -720,86 +775,53 @@
 
 
 
+<!-- Main Program section -->
 <div class="px-0 sm:px-4 lg:px-8 mx-auto ">
   <div class="section-max-w">
-    <h2  class="h2-size max-w-2xl">What do these assumptions mean?</h2>
+    <h2 id="program" class="h2-size max-w-2xl">Main Program</h2>
     <div class="[&_p]:mt-6 [&_p]:text-base [&_p]:sm:text-lg [&_p]:leading-8 [&_p]:text-light">
       
+    <p>
+      Coming soon. Stay tuned!
+    </p>
     </div>
 
 
 
-<div class="theprose">
-<p>
-  The reduced proof assumptions mean that we do not need to trust the compiler
-  or linker, but there may still be faults remaining in specific low-level parts
-  of the kernel (TLB, cache handling, handwritten assembly, boot code). These
-  parts are thoroughly manually reviewed.
-</p>
-<p>
-  These specific assumptions are not a limitation of the general formal
-  verification approach. In theory, it is possible to eliminate all of them:
-  there are at least two research groups that have demonstrated successful
-  formal verification of assembly code and low-level hardware management
-  functions and we have ourselves proved an earlier version of the boot code
-  correct down to the level of a precise, executable specification. There are
-  still significant scientific challenges in unifying all of these into a single
-  framework, but it is clear at this point that it can be done.
-</p>
-<p>
-  With all the purity and strength of mathematical proof it is easy
-  to get carried away. There is a fundamental theoretical limit of
-  formal verification and other verification techniques such as testing:
-  there will always be some bottom level of
-  assumptions about the physical world left and these assumptions
-  have to be validated by other means. Mathematical proof is proof
-  as long as it talks about formal concepts. It is when assumptions
-  connect to reality where things may still fail. Albert Einstein
-  is quoted as saying "As far as the laws of mathematics refer to
-  reality, they are not certain; and as far as they are certain,
-  they do not refer to reality." For instance, if the hardware is
-  faulty, or if a cosmic ray randomly changes memory, the
-  correctness predictions of our proof do not apply. Neither do any
-  traditional tests or verification methods help against cosmic
-  rays, but it is important to keep in mind that even with
-  mathematical proof, there are no absolute guarantees about the
-  physical world.
-</p>
-<p>
-  There are two other assumptions that we do not include in the
-  list above, because they are of a different kind:
-</p>
-<ul>
-  <li>We assume the axioms of higher-order logic are logically
-  consistent.
-  </li>
-  <li>We assume our prover checks this particular proof correctly.
-  </li>
-</ul>
-<p>
-  The first is a fundamental question of formal logic. If this is not true,
-  mathematics in general has a much bigger problem than one verified OS kernel.
-  The second is more interesting, but equally unlikely to be false.
-</p>
-<p>
-  From security properties down to C code, we use the proof assistant <a
-  href="https://isabelle.in.tum.de">Isabelle/HOL</a>. This prover belongs to the
-  so-called LCF family of provers and is engineered to minimise the code that
-  needs to trusted for the proof to be correct. It also supports external proof
-  checking by a separate small checking tool. There is no absolute guarantee
-  that the proof is correct, but in general humans are good at creating proofs,
-  computers are <em>very good</em> at checking them. It is an easy problem for
-  computers. If you are worried about the proof, be worried about the
-  assumptions in the first part. They are much more likely to cause problems.
-</p>
-<p>
-  From C code to binary code, we employ a set of automated widely-used
-  verification tools. These are: SONOLAR, Z3, Isabelle/HOL, and HOL4. While Z3
-  and SONOLAR do not provide the same level of assurance as Isabelle/HOL and
-  HOL4. The combination of these tools still achieves a very high standard of
-  assurance for this last verification step.
-</p>
 </div>
+</div>
+
+
+<div class="flex w-full py-12 sm:py-24">
+  <div class="flex-1"></div>
+  <hr class="w-10 h-px bg-gray-200 border-0 dark:bg-gray-600">
+  
+<a href="#page-top" class="relative -mt-3.5 mx-4">
+  <div class="dark:bg-slate-900 hover:bg-slate-100 dark:hover:bg-slate-800 p-1.5 h-7 w-7 rounded-full shadow-xs left-1">
+    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" aria-hidden="true" data-slot="icon" class="h-4 w-4 text-slate-400 dark:text-slate-500">
+  <path stroke-linecap="round" stroke-linejoin="round" d="M12 19.5v-15m0 0-6.75 6.75M12 4.5l6.75 6.75"/>
+</svg>
+  </div>
+</a>
+
+  <hr class="w-10 h-px bg-gray-200 border-0 dark:bg-gray-600">
+  <div class="flex-1"></div>
+</div>
+
+
+
+<!-- Social Activities section -->
+<div class="px-0 sm:px-4 lg:px-8 mx-auto ">
+  <div class="section-max-w">
+    <h2 id="social" class="h2-size max-w-2xl">Social Activities</h2>
+    <div class="[&_p]:mt-6 [&_p]:text-base [&_p]:sm:text-lg [&_p]:leading-8 [&_p]:text-light">
+      
+    <p>
+      Coming soon. Stay tuned!
+    </p>
+    </div>
+
+
 
 </div>
 </div>
