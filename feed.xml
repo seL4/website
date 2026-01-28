@@ -10,7 +10,39 @@
   <description>News feed about seL4, the seL4 Foundation, and the seL4 ecosystem.</description>
   <link rel="alternate">https://sel4.systems/news/</link>
   <link rel="self">https://sel4.systems/feed.xml</link>
-  <updated>Fri, 23 Jan 2026 00:00:00 +0000</updated>
+  <updated>Fri, 30 Jan 2026 00:00:00 +0000</updated>
+  <rights>Copyright 2026 seL4 Foundation</rights>
+  <entry>
+    <title>Fraunhofer AISEC joins the seL4 Foundation</title>
+    <link rel="alternate" type="text/html" href="https://sel4.systems/news/2026.html"/>
+    <id>https://sel4.systems/news/2026.html</id>
+    <published>Fri, 30 Jan 2026 00:00:00 +0000</published>
+    <updated>Fri, 30 Jan 2026 00:00:00 +0000</updated>
+    <content type="html">
+      &lt;p&gt;
+  The &lt;a href=&quot;/Foundation&quot;&gt;seL4 Foundation&lt;/a&gt; is
+  pleased to welcome the Fraunhofer Institute for Applied and Integrated
+  Security AISEC as our latest &lt;a href=&quot;/Foundation/Membership&quot;&gt;Associate Member&lt;/a&gt;.
+&lt;/p&gt;
+&lt;p&gt;
+  &lt;a href=&quot;https://www.aisec.fraunhofer.de/en.html&quot;&gt;Fraunhofer AISEC&lt;/a&gt; is
+  considered one of the world-leading institutions for applied research in
+  cybersecurity. Around 230 highly qualified researchers develop customized
+  security concepts and solutions for commercial businesses and the public
+  sector, boosting the overall competitiveness of clients and partners.
+  Fraunhofer AISEC designs solutions for enhanced data security and effective
+  defense against cybercrimes such as corporate espionage and tampering attacks.
+  The institute&apos;s portfolio ranges from embedded and hardware security,
+  automotive and mobile security to security solutions for industry and
+  automation.
+&lt;/p&gt;
+&lt;p&gt;
+  Fraunhofer AISEC is exploring the use of the seL4 microkernel and its
+  ecosystem to build strictly separated, resilient embedded and IoT systems.
+&lt;/p&gt;
+
+    </content>
+  </entry>
   <rights>Copyright 2026 seL4 Foundation</rights>
   <entry>
     <title>Call For Presentations for the seL4 Summit 2026</title>
@@ -509,26 +541,6 @@ day-to-day OS by the Genode developers.&lt;/p&gt;
   See &lt;a href=&quot;https://events.linuxfoundation.org/sel4-summit/sponsor/&quot;&gt;here&lt;/a&gt;
   if you are interested in sponsoring the  &lt;a href=&quot;/Summit/2025/&quot;&gt;seL4 Summit
     2025&lt;/a&gt;.
-&lt;/p&gt;
-
-    </content>
-  </entry>
-  <rights>Copyright 2026 seL4 Foundation</rights>
-  <entry>
-    <title>The Trusted Computing Center of Excellence™ joins the seL4 Foundation</title>
-    <link rel="alternate" type="text/html" href="https://sel4.systems/news/2025.html#member-tccoe"/>
-    <id>https://sel4.systems/news/2025.html#member-tccoe</id>
-    <published>Mon, 04 Aug 2025 00:00:00 +0000</published>
-    <updated>Mon, 04 Aug 2025 00:00:00 +0000</updated>
-    <content type="html">
-      &lt;p&gt;
-    The seL4 Foundation is pleased to welcome the &lt;a
-    href=&quot;https://trustedcomputingcoe.org/&quot;&gt;Trusted Computing Center of Excellence (TCCoE)&lt;/a&gt; as
-    &lt;a href=&quot;/Foundation/Membership&quot;&gt;Associate
-    Member&lt;/a&gt;.
-&lt;/p&gt;
-&lt;p&gt;
-    The Trusted Computing Center of Excellence™ (TCCoE) not-for-profit organization’s purpose is to lower barriers to adoption and facilitate the principled development and deployment of software and systems for which there is strong evidence of trustworthiness, including use of formal methods. Needs of the U.S. and allied defense, intelligence and security communities are our priorities. A major thrust is seL4®. While our colleagues at the seL4 Foundation focus on the code and formal proofs of the open source seL4® microkernel and closely related artifacts, the TCCoE focuses on curated software distributions (kernel, libraries, drivers, configurations, etc.) as bases of stable supported platforms on which to build trustworthy systems.
 &lt;/p&gt;
 
     </content>
