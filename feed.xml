@@ -10,14 +10,14 @@
   <description>News feed about seL4, the seL4 Foundation, and the seL4 ecosystem.</description>
   <link rel="alternate">https://sel4.systems/news/</link>
   <link rel="self">https://sel4.systems/feed.xml</link>
-  <updated>Fri, 30 Jan 2026 00:00:00 +0000</updated>
+  <updated>Wed, 28 Jan 2026 00:00:00 +0000</updated>
   <rights>Copyright 2026 seL4 Foundation</rights>
   <entry>
     <title>Fraunhofer AISEC joins the seL4 Foundation</title>
     <link rel="alternate" type="text/html" href="https://sel4.systems/news/2026.html"/>
     <id>https://sel4.systems/news/2026.html</id>
-    <published>Fri, 30 Jan 2026 00:00:00 +0000</published>
-    <updated>Fri, 30 Jan 2026 00:00:00 +0000</updated>
+    <published>Wed, 28 Jan 2026 00:00:00 +0000</published>
+    <updated>Wed, 28 Jan 2026 00:00:00 +0000</updated>
     <content type="html">
       &lt;p&gt;
   The &lt;a href=&quot;/Foundation&quot;&gt;seL4 Foundation&lt;/a&gt; is
