@@ -19,9 +19,9 @@ SPDX-License-Identifier: CC-BY-SA-4.0
         <a href="{{include.submit-link}}" class="button-outline px-10">Submit</a>
       {% else %}
         <a href="{{include.reg-link}}" class="button-outline px-10">Register</a>
-        {% if include.sponsor-link %}
-          <a href="{{include.sponsor-link}}" class="button-outline px-10">Sponsor</a>
-        {% endif %}
+      {% endif %}
+      {% if include.sponsor-link %}
+        <a href="{{include.sponsor-link}}" class="button-outline px-10">Sponsor</a>
       {% endif %}
     </div>
 
