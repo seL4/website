@@ -211,9 +211,12 @@ SPDX-License-Identifier = "LicenseRef-Shutterstock"
 
 [[annotations]]
 path = [
+    "images/capilano-bridge.jpg",
     "images/industrial-control.jpg",
     "images/spacex.jpg",
-    "images/windmill.jpg",
+    "images/stanley-park-seawall.jpg",
+    "images/vancouver-art-gallery.jpg",
+    "images/windmill.jpg"
 ]
 SPDX-FileCopyrightText = "Copyright Unsplash"
 SPDX-License-Identifier = "LicenseRef-unsplash"
