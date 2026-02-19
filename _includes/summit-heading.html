@@ -17,7 +17,8 @@ SPDX-License-Identifier: CC-BY-SA-4.0
     <div class="flex justify-center items-center gap-x-5 mt-5 mb-20">
       {% if include.submit-link %}
         <a href="{{include.submit-link}}" class="button-outline px-10">Submit</a>
-      {% else %}
+      {% endif %}
+      {% if include.reg-link %}
         <a href="{{include.reg-link}}" class="button-outline px-10">Register</a>
       {% endif %}
       {% if include.sponsor-link %}
