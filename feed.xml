@@ -10,7 +10,49 @@
   <description>News feed about seL4, the seL4 Foundation, and the seL4 ecosystem.</description>
   <link rel="alternate">https://sel4.systems/news/</link>
   <link rel="self">https://sel4.systems/feed.xml</link>
-  <updated>Wed, 28 Jan 2026 00:00:00 +0000</updated>
+  <updated>Mon, 23 Feb 2026 00:00:00 +0000</updated>
+  <rights>Copyright 2026 seL4 Foundation</rights>
+  <entry>
+    <title>Registration open for the seL4 summit 2026</title>
+    <link rel="alternate" type="text/html" href="https://sel4.systems/news/2026.html"/>
+    <id>https://sel4.systems/news/2026.html</id>
+    <published>Mon, 23 Feb 2026 00:00:00 +0000</published>
+    <updated>Mon, 23 Feb 2026 00:00:00 +0000</updated>
+    <content type="html">
+      &lt;p&gt;We have an exciting new format for 2026! A full first day dedicated to applications, overviews, and perspectives on seL4-based systems and formally verified software in the real world. Followed by two days of technical talks and discussion on development, research, and experience reports.&lt;/p&gt;
+
+&lt;p&gt;If you’re new to seL4 or still developing your familiarity with the technology, this is an ideal opportunity to get a high-level view of the landscape and ecosystem.&lt;/p&gt;
+
+&lt;p&gt;The &lt;a href=&quot;../Summit/2026&quot;&gt;seL4 summit 2026&lt;/a&gt; will be in Vancouver, Canada, on 1 - 3 September 2026.&lt;/p&gt;
+
+&lt;p&gt;Come hear about:&lt;/p&gt;
+&lt;ul&gt;
+  &lt;li&gt;vision, lessons-learned, roadmaps for verified software deployments;&lt;/li&gt;
+  &lt;li&gt;use-cases, deployments, experiences;&lt;/li&gt;
+  &lt;li&gt;walk-throughs and demos of tools, frameworks, systems;&lt;/li&gt;
+  &lt;li&gt;early work, crazy ideas, out-of-the-box thinking;&lt;/li&gt;
+  &lt;li&gt;technical progress, updates, breakthroughs.&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;And join us for one of the informal &lt;a href=&quot;../Summit/2026/program.html#social&quot;&gt;social activities&lt;/a&gt; on Monday 31 August 2026, for a fun gathering before the event starts!&lt;/p&gt;
+
+&lt;p&gt;If you have any cool work/idea/project/product related to seL4, don’t forget to submit a &lt;a href=&quot;../Summit/2026/cfp.html&quot;&gt;talk proposal&lt;/a&gt;.&lt;/p&gt;
+
+&lt;p&gt;Tickets include:&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;Participation in the 3-day conference, including talks, keynotes, seL4 updates
+&amp;amp; discussions&lt;/li&gt;
+  &lt;li&gt;Networking with other seL4 experts and enthusiasts&lt;/li&gt;
+  &lt;li&gt;Dinner&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;&lt;strong&gt;&lt;a href=&quot;https://events.linuxfoundation.org/sel4-summit/register/&quot;&gt;Register here&lt;/a&gt;&lt;/strong&gt;&lt;/p&gt;
+
+&lt;p&gt;The early bird cut-off date is 31 July 2026.&lt;/p&gt;
+
+    </content>
+  </entry>
   <rights>Copyright 2026 seL4 Foundation</rights>
   <entry>
     <title>Fraunhofer AISEC joins the seL4 Foundation</title>
@@ -514,33 +556,6 @@ day-to-day OS by the Genode developers.&lt;/p&gt;
   summit &lt;a href=&quot;/Summit/2025/program.html&quot;&gt;Program&lt;/a&gt;
   and &lt;a href=&quot;/Summit/2025/abstracts2025.html&quot;&gt;Abstracts&lt;/a&gt; pages. Thanks to all the speakers for making the seL4 Summit
   2025 a great &lt;a href=&quot;/Summit/2025/#gallery&quot;&gt;success!&lt;/a&gt;
-&lt;/p&gt;
-
-    </content>
-  </entry>
-  <rights>Copyright 2026 seL4 Foundation</rights>
-  <entry>
-    <title>Thank you Riverside Research, sponsor of the seL4 Summit 2025 reception</title>
-    <link rel="alternate" type="text/html" href="https://sel4.systems/news/2025.html#sponsor25-riverside"/>
-    <id>https://sel4.systems/news/2025.html#sponsor25-riverside</id>
-    <published>Wed, 06 Aug 2025 00:00:00 +0000</published>
-    <updated>Wed, 06 Aug 2025 00:00:00 +0000</updated>
-    <content type="html">
-      &lt;p&gt;
-  The seL4 Foundation thanks &lt;a href=&quot;https://www.riversideresearch.org/&quot;&gt;Riverside Research&lt;/a&gt;
-  for sponsoring the &lt;a href=&quot;/Summit/2025/&quot;&gt;seL4
-  Summit 2025&lt;/a&gt; reception.
-&lt;/p&gt;
-&lt;p&gt;
-  Riverside Research &lt;a href=&quot;https://www.riversideresearch.org/insights/riverside-research-acquires-cog-systems-to-strengthen-cyber-resilience-and-secure-virtualization-capabilities&quot;&gt;recently acquired&lt;/a&gt; Cog Systems, a &lt;a href=&quot;/Foundation/Membership&quot;&gt;Founding Member&lt;/a&gt; of the &lt;a href=&quot;/Foundation&quot;&gt;seL4 Foundation&lt;/a&gt;.
-&lt;/p&gt;
-&lt;p&gt;
-  Riverside Research is a national security nonprofit serving the DOD and Intelligence Community. Through the company&apos;s Open Innovation Center (OIC), it invests in multidisciplinary research and development and encourages collaboration. Riverside Research&apos;s areas of expertise include Object and Activity Detection; Accelerated AI/ML; Zero Trust; Open Architectures; Computational Electromagnetics; Plasma Physics; Precision Timing; Terahertz Imaging; Commercial Intelligence, Surveillance, and Reconnaissance (ISR); Collection Planning; and more. Learn more at &lt;a href=&quot;https://www.riversideresearch.org&quot;&gt;www.riversideresearch.org&lt;/a&gt;.
-&lt;/p&gt;
-&lt;p&gt;
-  See &lt;a href=&quot;https://events.linuxfoundation.org/sel4-summit/sponsor/&quot;&gt;here&lt;/a&gt;
-  if you are interested in sponsoring the  &lt;a href=&quot;/Summit/2025/&quot;&gt;seL4 Summit
-    2025&lt;/a&gt;.
 &lt;/p&gt;
 
     </content>
