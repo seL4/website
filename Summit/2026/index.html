@@ -11,7 +11,7 @@ redirect_from: /Foundation/Summit/2026/index.html
   about = 'The seL4 Summit is the annual international summit on the seL4
   microkernel and associated technology, tools, infrastructure, products,
   projects, and people. The <a href="#pc">program committee</a> assembles
-  thought-provoking talks, keynotes and panel discussions.'
+  thought-provoking talks, <a href="#keynotes">keynotes</a>, <a href="#voices-nearby">"voices from nearby",</a> and panel discussions.'
   city = "Vancouver, Canada"
   date = "1 - 3 September 2026"
   submit-link = "https://form.jotform.com/260147181364858"
@@ -53,6 +53,85 @@ redirect_from: /Foundation/Summit/2026/index.html
 {% include summit-about.html %}
 
 
+<!-- Keynotes section -->
+{% include section-start.html
+  id = "keynotes"
+  heading = "Keynotes"
+%}
+
+<div class="mt-6 sm:mt-12">
+{% include bio-items-start.html %}
+
+<!-- TODO: ADD FOR EACH KEYNOTE
+  affiliation = ""
+  affiliation_link = ""
+  abstract-title = ""
+  abstract-link = "" -->
+
+
+{% include keynote-item.html
+  name = "<a href='https://www.linkedin.com/in/anjanarajan/'>Anjana Rajan</a>"
+  role = "Former Assistant National Cyber Director at The White House"
+  img = "/images/summit/anjana-square.jpg"
+  abstract-title = "Talk details coming soon!"
+%}
+{% include keynote-item.html
+  name = "<a href='https://www.linkedin.com/in/mpdehnel/''>Martin Dehnel-Wild</a>"
+  role = "Technical Director & Principal Security Researcher"
+  img = "/images/summit/martin-square.jpg"
+  affiliation = "Kry10"
+  affiliation_link = "https://www.kry10.com/"
+  abstract-title = "Talk details coming soon!"
+%}
+{% include bio-items-end.html %}
+
+</div>
+{% include section-end.html %}
+
+
+<!-- Voices from Nearby section -->
+{% include section-start.html
+  id = "voices-nearby"
+  heading = "Voices from Nearby"
+  intro = '
+      <p>
+          The summit will feature a full first day dedicated to applications,
+          overviews, and perspectives on seL4-based systems and formally
+          verified software in the real world. This will include a session on
+          "Voices from Nearby," with two industry experts who work in areas that
+          are adjacent to the core seL4 areas.
+      </p>'
+%}
+
+<div class="mt-6 sm:mt-12">
+{% include bio-items-start.html %}
+
+<!-- TODO: ADD FOR EACH SPEAKER
+  abstract-title = ""
+  abstract-link = "" -->
+
+{% include keynote-item.html
+  name = "<a href='https://loonwerks.com/people/david-hardin.html'>David Hardin</a>"
+  role = "Associate Director of Systems Engineering"
+  img = "/images/summit/david-square.jpg"
+  affiliation = "Collins Aerospace"
+  affiliation_link = "https://www.rtx.com/collinsaerospace"
+  abstract-title = "Talk details coming soon!"
+%}
+{% include keynote-item.html
+  name = "<a href='https://www.linkedin.com/in/alistair-woodman-51934433/'>Alistair Woodman</a>"
+  role = "Board Member"
+  img = "/images/summit/alistair.jpg"
+  affiliation = "Erlang Ecosystem Foundation"
+  affiliation_link = "https://erlef.org/"
+  abstract-title = "Talk details coming soon!"
+%}
+{% include bio-items-end.html %}
+
+</div>
+{% include section-end.html %}
+
+
 
  <!-- PC section -->
  {% include section-start.html
@@ -60,8 +139,9 @@ redirect_from: /Foundation/Summit/2026/index.html
   heading = "Program Committee"
   intro = '
       <p>
-        The Program Committee is made up of members from various parts of the seL4 ecosystem: users, contributors,
-        committers, experts, advocates, researchers, and engineers.
+        The Program Committee is made up of members from various parts of the
+        seL4 ecosystem: users, contributors, committers, experts, advocates,
+        researchers, and engineers.
       </p>'
 %}
 
