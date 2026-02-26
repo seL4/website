@@ -82,6 +82,7 @@ IGNORE_URLS += sel4summit2025.sched.com
 IGNORE_URLS += acm.org
 IGNORE_URLS += awards.acm.org
 IGNORE_URLS += www.leopoldina.org/en/members/member-list/detail/gernot-heiser
+IGNORE_URLS += vancouver.ca/parks-recreation-culture/stanley-park-seawall.aspx
 
 sep:= /,/
 empty:=
