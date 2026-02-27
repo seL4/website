@@ -1,11 +1,6 @@
 {
   "premium": [
     {
-      "name": "Jump Trading",
-      "logo": "Jump-Trading.svg",
-      "url": "https://jumptrading.com/"
-    },
-    {
       "name": "NIO",
       "logo": "NIO.svg",
       "url": "http://nio.com/"
@@ -50,6 +45,11 @@
       "name": "RTX Corporation",
       "logo": "rtx-vertical.svg",
       "url": "https://www.rtx.com/"
+    },
+    {
+      "name": "Skykraft Pty Ltd",
+      "logo": "skykraft.svg",
+      "url": "https://www.skykraft.com.au/"
     }
   ],
   "associate": [

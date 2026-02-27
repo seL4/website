@@ -2,7 +2,10 @@
 Copyright 2025 Proofcraft Pty Ltd
 SPDX-License-Identifier: CC-BY-SA-4.0
 {% endcomment -%}
-{%- if members.size == 2 -%}
+{%- if members.size == 1 -%}
+{%- assign lg = "lg:grid-cols-1" -%}
+{%- assign md = "md:grid-cols-1" -%}
+{%- else if members.size == 2 -%}
 {%- assign lg = "lg:grid-cols-2" -%}
 {%- assign md = "md:grid-cols-2" -%}
 {%- else -%}
