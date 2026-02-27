@@ -19,13 +19,24 @@
     <published>Mon, 23 Feb 2026 00:00:00 +0000</published>
     <updated>Mon, 23 Feb 2026 00:00:00 +0000</updated>
     <content type="html">
-      &lt;p&gt;We have an exciting new format for 2026! A full first day dedicated to applications, overviews, and perspectives on seL4-based systems and formally verified software in the real world. Followed by two days of technical talks and discussion on development, research, and experience reports.&lt;/p&gt;
-
-&lt;p&gt;If you’re new to seL4 or still developing your familiarity with the technology, this is an ideal opportunity to get a high-level view of the landscape and ecosystem.&lt;/p&gt;
-
-&lt;p&gt;The &lt;a href=&quot;../Summit/2026&quot;&gt;seL4 summit 2026&lt;/a&gt; will be in Vancouver, Canada, on 1 - 3 September 2026.&lt;/p&gt;
-
-&lt;p&gt;Come hear about:&lt;/p&gt;
+      &lt;p&gt;
+  We have an exciting new format for 2026! A full first day dedicated to
+  applications, overviews, and perspectives on seL4-based systems and formally
+  verified software in the real world. Followed by two days of technical talks
+  and discussion on development, research, and experience reports.
+&lt;/p&gt;
+&lt;p&gt;
+  If you&apos;re new to seL4 or still developing your familiarity with the
+  technology, this is an ideal opportunity to get a high-level view of the
+  landscape and ecosystem.
+&lt;/p&gt;
+&lt;p&gt;
+  The &lt;a href=&quot;/Summit/2026/&quot;&gt;seL4 summit
+  2026&lt;/a&gt; will be in Vancouver, Canada, on 1 - 3 September 2026.
+&lt;/p&gt;
+&lt;p&gt;
+  Come hear about:
+&lt;/p&gt;
 &lt;ul&gt;
   &lt;li&gt;vision, lessons-learned, roadmaps for verified software deployments;&lt;/li&gt;
   &lt;li&gt;use-cases, deployments, experiences;&lt;/li&gt;
@@ -33,23 +44,32 @@
   &lt;li&gt;early work, crazy ideas, out-of-the-box thinking;&lt;/li&gt;
   &lt;li&gt;technical progress, updates, breakthroughs.&lt;/li&gt;
 &lt;/ul&gt;
-
-&lt;p&gt;And join us for one of the informal &lt;a href=&quot;../Summit/2026/program.html#social&quot;&gt;social activities&lt;/a&gt; on Monday 31 August 2026, for a fun gathering before the event starts!&lt;/p&gt;
-
-&lt;p&gt;If you have any cool work/idea/project/product related to seL4, don’t forget to submit a &lt;a href=&quot;../Summit/2026/cfp.html&quot;&gt;talk proposal&lt;/a&gt;.&lt;/p&gt;
-
-&lt;p&gt;Tickets include:&lt;/p&gt;
-
+&lt;p&gt;
+  And join us for one of the informal &lt;a href=&quot;/Summit/2026/program.html#social&quot;&gt;social activities&lt;/a&gt; on
+  Monday 31 August 2026, for a fun gathering before the event starts!
+&lt;/p&gt;
+&lt;p&gt;
+  If you have any cool work/idea/project/product related to seL4, don&apos;t forget
+  to submit a &lt;a href=&quot;/Summit/2026/program.html&quot;&gt;talk
+  proposal&lt;/a&gt;.
+&lt;/p&gt;
+&lt;p&gt;
+  Tickets include:
+&lt;/p&gt;
 &lt;ul&gt;
-  &lt;li&gt;Participation in the 3-day conference, including talks, keynotes, seL4 updates
-&amp;amp; discussions&lt;/li&gt;
+  &lt;li&gt;Participation in the 3-day conference, including talks, keynotes, seL4
+  updates &amp; discussions&lt;/li&gt;
   &lt;li&gt;Networking with other seL4 experts and enthusiasts&lt;/li&gt;
   &lt;li&gt;Dinner&lt;/li&gt;
 &lt;/ul&gt;
-
-&lt;p&gt;&lt;strong&gt;&lt;a href=&quot;https://events.linuxfoundation.org/sel4-summit/register/&quot;&gt;Register here&lt;/a&gt;&lt;/strong&gt;&lt;/p&gt;
-
-&lt;p&gt;The early bird cut-off date is 31 July 2026.&lt;/p&gt;
+&lt;p&gt;
+  &lt;strong&gt;&lt;a
+  href=&quot;https://events.linuxfoundation.org/sel4-summit/register/&quot;&gt;Register
+  here&lt;/a&gt;&lt;/strong&gt;
+&lt;/p&gt;
+&lt;p&gt;
+  The early bird cut-off date is 31 July 2026.
+&lt;/p&gt;
 
     </content>
   </entry>
