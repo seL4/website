@@ -1,4 +1,14 @@
 {
+  "summit-2026":
+    {
+      "reception": [
+      {
+        "name": "Riverside Research",
+        "logo": "riverside-research.svg",
+        "url": "https://www.riversideresearch.org/"
+      }
+      ]
+    },
   "summit-2025":
     {
       "silver": [
