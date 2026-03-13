@@ -10,7 +10,41 @@
   <description>News feed about seL4, the seL4 Foundation, and the seL4 ecosystem.</description>
   <link rel="alternate">https://sel4.systems/news/</link>
   <link rel="self">https://sel4.systems/feed.xml</link>
-  <updated>Mon, 23 Feb 2026 00:00:00 +0000</updated>
+  <updated>Fri, 13 Mar 2026 00:00:00 +0000</updated>
+  <rights>Copyright 2026 seL4 Foundation</rights>
+  <entry>
+    <title>Neutrality joins the seL4 Foundation</title>
+    <link rel="alternate" type="text/html" href="https://sel4.systems/news/2026.html"/>
+    <id>https://sel4.systems/news/2026.html</id>
+    <published>Fri, 13 Mar 2026 00:00:00 +0000</published>
+    <updated>Fri, 13 Mar 2026 00:00:00 +0000</updated>
+    <content type="html">
+      &lt;p&gt;
+  We are pleased to welcome a new &lt;a href=&quot;/Foundation/Membership/&quot;&gt;member&lt;/a&gt; - &lt;a
+  href=&quot;https://neutrality.ch/&quot;&gt;Neutrality&lt;/a&gt; - to the &lt;a href=&quot;/Foundation&quot;&gt;seL4 Foundation&lt;/a&gt;.
+&lt;/p&gt;
+&lt;p&gt;
+  Designed for organisations that cannot compromise on trust, Neutrality is
+  building Atoll, a formally-verified, secure, European-sovereign virtualisation
+  and cloud hosting platform. Atoll provides a mathematical proof of isolation
+  between customer workloads, delivering a new level of assurance. Atoll builds
+  on the foundation provided by the formally-verified seL4 microkernel,
+  extending its formal correctness proof and platform support to securely run
+  colocated commercial workloads handling sensitive data on commodity hardware.
+&lt;/p&gt;
+&lt;p&gt;
+  Neutrality combines cutting-edge research in Systems, Formal Methods, and
+  Security with a world class engineering team to provide organisations
+  unprecedented levels of trust in their most critical systems.
+&lt;/p&gt;
+&lt;p&gt;
+  Joining the seL4 Foundation enables the team at Neutrality to collaborate with
+  the global community advancing the seL4 microkernel and formally verified,
+  high-assurance computing.
+&lt;/p&gt;
+
+    </content>
+  </entry>
   <rights>Copyright 2026 seL4 Foundation</rights>
   <entry>
     <title>Registration open for the seL4 summit 2026</title>
@@ -559,25 +593,6 @@ day-to-day OS by the Genode developers.&lt;/p&gt;
   We look forward to welcoming the community at the seL4 summit 2026!
 &lt;/p&gt;
 &lt;/div&gt;
-    </content>
-  </entry>
-  <rights>Copyright 2026 seL4 Foundation</rights>
-  <entry>
-    <title>The videos and slides of the seL4 Summit 2025 are available online</title>
-    <link rel="alternate" type="text/html" href="https://sel4.systems/news/2025.html#summit-videos"/>
-    <id>https://sel4.systems/news/2025.html#summit-videos</id>
-    <published>Wed, 17 Sep 2025 00:00:00 +0000</published>
-    <updated>Wed, 17 Sep 2025 00:00:00 +0000</updated>
-    <content type="html">
-      &lt;p&gt;
-  Videos of the &lt;a href=&quot;/Summit/2025/&quot;&gt;seL4 Summit
-  2025&lt;/a&gt; are now available on the &lt;a href=&quot;https://www.youtube.com/@seL4&quot;
-  target=&quot;_blank&quot;&gt;seL4 YouTube channel&lt;/a&gt;! Links and slides can be found on the
-  summit &lt;a href=&quot;/Summit/2025/program.html&quot;&gt;Program&lt;/a&gt;
-  and &lt;a href=&quot;/Summit/2025/abstracts2025.html&quot;&gt;Abstracts&lt;/a&gt; pages. Thanks to all the speakers for making the seL4 Summit
-  2025 a great &lt;a href=&quot;/Summit/2025/#gallery&quot;&gt;success!&lt;/a&gt;
-&lt;/p&gt;
-
     </content>
   </entry>
 </feed>
