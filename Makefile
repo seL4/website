@@ -91,6 +91,7 @@ IGNORE_EXP:= $(subst $(space),$(sep),$(IGNORE_URLS))
 
 HTMLPROOFEROPT := --swap-urls '^https\://sel4.systems:http\://localhost\:4000'
 HTMLPROOFEROPT += --enforce-https=false --only-4xx --disable-external=false
+HTMLPROOFEROPT += --ignore-status-codes '429,403'
 HTMLPROOFEROPT += --ignore-urls '/$(IGNORE_EXP)/'
 
 checklinks:
