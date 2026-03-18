@@ -2455,6 +2455,9 @@
   .grid-cols-\[30\%_40\%_30\%\] {
     grid-template-columns: 30% 40% 30%;
   }
+  .grid-rows-1 {
+    grid-template-rows: repeat(1, minmax(0, 1fr));
+  }
   .flex-col {
     flex-direction: column;
   }
