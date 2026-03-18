@@ -6,8 +6,12 @@ SPDX-License-Identifier: CC-BY-SA-4.0
 {% assign affiliation = '<a href="' | append: include.affiliation_link | append: '">'
   | append: include.affiliation
   | append: '</a>' %}
-{% assign details = "<em>" | append: include.role | append: ", "
-| append: affiliation | append: "</em>" %}
+{% if include.affiliation %}
+  {% assign details = "<em>" | append: include.role | append: ", "
+  | append: affiliation | append: "</em>" %}
+{% else %}
+{% assign details = "<em>" | append: include.role | append: "</em>" %}
+{% endif %}
 
 <li class="flex flex-col gap-10 pb-10 sm:flex-row">
   <img class="ml-0 mr-auto w-52 sm:aspect-4/5 h-52 flex-none rounded-2xl bg-white object-cover"
@@ -15,11 +19,17 @@ SPDX-License-Identifier: CC-BY-SA-4.0
   <div class="max-w-xl flex-auto">
     <p class="text-lg font-semibold leading-8 tracking-tight text-dark">{{include.name}}</p>
     <p class="text-base leading-7 text-light">{{details}}</p>
-    <a href="{{include.abstract-link}}">
+    {% if include.abstract-link %}
+      <a href="{{include.abstract-link}}">
+        <p class="text-lg leading-8 tracking-tight text-gray-900 mt-10 dark:underline dark:text-light">
+          {{include.abstract-title}}
+        </p>
+      </a>
+    {% else %}
       <p class="text-lg leading-8 tracking-tight text-gray-900 mt-10 dark:underline dark:text-light">
         {{include.abstract-title}}
       </p>
-    </a>
+    {% endif %}
     <div class="mt-6 text-base leading-7 text-light">
       {{include.text}}
     </div>
