@@ -6,7 +6,7 @@
     <title>seL4 News | seL4</title>
     <meta name="author" content="seL4 Foundation">
     <link rel="canonical" href="https://sel4.systems/news/2026.html">
-    <link href="/css/sel4.css?v=1774934647" rel="stylesheet">
+    <link href="/css/sel4.css?v=1774948733" rel="stylesheet">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
@@ -339,6 +339,12 @@
           <a href="/news/" class="text-sm font-semibold leading-6 text-f_green-600">See all <span aria-hidden="true">&rarr;</span></a>
         </div>
         <ul class="mt-6 space-y-6"><li class="relative">
+            <time datetime="2026-03-31" class="block text-xs leading-6 text-light">31 Mar 2026</time>
+            <a href="/news/2026.html#03-31" class="block truncate text-sm font-semibold leading-6 text-dark">
+              New seL4 release available
+              <span class="absolute inset-0"></span>
+            </a>
+          </li><li class="relative">
             <time datetime="2026-03-18" class="block text-xs leading-6 text-light">18 Mar 2026</time>
             <a href="/news/2026.html#03-18" class="block truncate text-sm font-semibold leading-6 text-dark">
               The seL4 Summit 2026 Keynotes and "Voices from Nearby"
@@ -348,12 +354,6 @@
             <time datetime="2026-03-13" class="block text-xs leading-6 text-light">13 Mar 2026</time>
             <a href="/news/2026.html#03-13" class="block truncate text-sm font-semibold leading-6 text-dark">
               Neutrality joins the seL4 Foundation
-              <span class="absolute inset-0"></span>
-            </a>
-          </li><li class="relative">
-            <time datetime="2026-02-23" class="block text-xs leading-6 text-light">23 Feb 2026</time>
-            <a href="/news/2026.html#02-23" class="block truncate text-sm font-semibold leading-6 text-dark">
-              Registration open for the seL4 summit 2026
               <span class="absolute inset-0"></span>
             </a>
           </li></ul>
@@ -581,6 +581,60 @@
     </div>
     
   </div>
+</div>
+
+
+<article class="max-w-4xl mx-auto mb-12 sm:mb-18 pt-2 pb-8 px-6 lg:px-8 clear-both">
+  <a href="#03-31" class="text-base sm:text-lg hover:underline text-gray-400 pt-16 lg:pt-20">
+    <time datetime="2026-03-31" id="03-31">31 Mar 2026</time>
+  </a>
+  <h2 class="mb-8 mt-2 h2-size">New seL4 release available</h2>
+  <div class="theprose prose-ul:[ul]:my-2 prose-p:[p]:my-3 prose-li:[li]:my-1.5 max-w-4xl">
+    <img src="/images/seL4.svg" alt="seL4 logo"
+        class="float-right rounded-xl -mt-1 ml-4 sm:ml-6 lg:-mr-16  p-6 sm:p-8 w-2/5">
+    <p>We’re pleased to announce the release of</p>
+
+<ul>
+  <li><a href="https://docs.sel4.systems/releases/sel4/15.0.0">seL4 15.0.0</a>: The seL4
+microkernel</li>
+  <li><a href="https://docs.sel4.systems/releases/microkit/2.2.0">Microkit 2.2.0</a>: The seL4
+Microkit for building static-architecture systems</li>
+  <li><a href="https://docs.sel4.systems/releases/camkes/camkes-3.12.0">CAmkES 3.12.0</a>:
+Component Architecture for microkernel-based Embedded Systems</li>
+  <li><a href="https://docs.sel4.systems/releases/capdl/0.5.0">capDL 0.5.0</a>: Tools for
+generating, parsing and loading capability distribution specifications</li>
+  <li><a href="https://github.com/seL4/rust-sel4/releases/tag/v4.0.0">rust-sel4 4.0.0</a>: Rust
+support for seL4 userspace. See the Rust section on the
+<a href="https://docs.sel4.systems/projects/rust/">seL4 docsite</a> for more
+information.</li>
+</ul>
+
+<p>seL4 15.0.0 and the corresponding Rust support come with new features and will
+require updates if you are using the seL4 API directly. CAmkES and the capDL
+tool add domain schedules as a new feature and applications will need updates if
+they use the seL4 domain scheduler. The Microkit release should not require any
+update of user code compared to Microkit 2.1.0.</p>
+
+<p>Enjoy!</p>
+
+  </div>
+</article>
+
+
+<div class="flex w-full mb-12 md:mb-24">
+  <div class="flex-1"></div>
+  <hr class="w-10 h-px bg-gray-200 border-0 dark:bg-gray-600">
+  
+<a href="#page-top" class="relative -mt-3.5 mx-4">
+  <div class="dark:bg-slate-900 hover:bg-slate-100 dark:hover:bg-slate-800 p-1.5 h-7 w-7 rounded-full shadow-xs left-1">
+    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" aria-hidden="true" data-slot="icon" class="h-4 w-4 text-slate-400 dark:text-slate-500">
+  <path stroke-linecap="round" stroke-linejoin="round" d="M12 19.5v-15m0 0-6.75 6.75M12 4.5l6.75 6.75"/>
+</svg>
+  </div>
+</a>
+
+  <hr class="w-10 h-px bg-gray-200 border-0 dark:bg-gray-600">
+  <div class="flex-1"></div>
 </div>
 
 
