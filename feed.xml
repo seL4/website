@@ -10,7 +10,35 @@
   <description>News feed about seL4, the seL4 Foundation, and the seL4 ecosystem.</description>
   <link rel="alternate">https://sel4.systems/news/</link>
   <link rel="self">https://sel4.systems/feed.xml</link>
-  <updated>Wed, 15 Apr 2026 00:00:00 +0000</updated>
+  <updated>Fri, 17 Apr 2026 00:00:00 +0000</updated>
+  <rights>Copyright 2026 seL4 Foundation</rights>
+  <entry>
+    <title>Thank you Proofcraft, silver sponsor of the seL4 Summit 2026</title>
+    <link rel="alternate" type="text/html" href="https://sel4.systems/news/2026.html"/>
+    <id>https://sel4.systems/news/2026.html</id>
+    <published>Fri, 17 Apr 2026 00:00:00 +0000</published>
+    <updated>Fri, 17 Apr 2026 00:00:00 +0000</updated>
+    <content type="html">
+      &lt;p&gt;
+  The seL4 Foundation thanks &lt;a
+  href=&quot;https://proofcraft.systems&quot;&gt;Proofcraft&lt;/a&gt;, silver sponsor of the &lt;a
+  href=&quot;/Summit/2026/&quot;&gt;seL4 Summit 2026&lt;/a&gt;.
+&lt;/p&gt;
+&lt;p&gt;
+  Founded by the seL4 verification leaders, &lt;a
+  href=&quot;https://proofcraft.systems&quot;&gt;Proofcraft&lt;/a&gt; offers commercial support
+  and projects in formal verification in general, and involving seL4
+  specifically. By applying mathematical machine-checked software verification,
+  Proofcraft increases critical software systems&apos; reliability, safety and
+  security, for a verified future.
+&lt;/p&gt;
+&lt;p&gt;
+  See &lt;a href=&quot;https://events.linuxfoundation.org/sel4-summit/sponsor/&quot;&gt;here&lt;/a&gt;
+  if you are interested in sponsoring the  &lt;a href=&quot;/Summit/2026/&quot;&gt;seL4 Summit 2026&lt;/a&gt;.
+&lt;/p&gt;
+
+    </content>
+  </entry>
   <rights>Copyright 2026 seL4 Foundation</rights>
   <entry>
     <title>Thank you Riverside Research, sponsor of the seL4 Summit 2026 reception</title>
@@ -421,201 +449,6 @@ update of user code compared to Microkit 2.1.0.&lt;/p&gt;
 
 &lt;p&gt;
   If you are not already a member, &lt;a href=&quot;/Foundation/Join/index.html&quot;&gt;join now&lt;/a&gt; to shape the future of the seL4 ecosystem!
-&lt;/p&gt;
-
-    </content>
-  </entry>
-  <rights>Copyright 2026 seL4 Foundation</rights>
-  <entry>
-    <title>Location, Dates and Program Committee of the seL4 Summit 2026</title>
-    <link rel="alternate" type="text/html" href="https://sel4.systems/news/2025.html#summit-2026-pc"/>
-    <id>https://sel4.systems/news/2025.html#summit-2026-pc</id>
-    <published>Mon, 15 Dec 2025 00:00:00 +0000</published>
-    <updated>Mon, 15 Dec 2025 00:00:00 +0000</updated>
-    <content type="html">
-      &lt;p&gt;
-  We are pleased to announce that the &lt;a href=&quot;/Summit/2026/&quot;&gt;seL4 Summit 2026&lt;/a&gt; will be held in &lt;span class=&quot;font-bold&quot;&gt;Vancouver,
-  Canada, 1 - 3 September&lt;/span&gt; (informal social activities on 31 August).
-&lt;/p&gt;
-
-&lt;p class=&quot;pt-6 sm:pt-8&quot;&gt;
-    &lt;strong&gt;Meet the Program Committee&lt;/strong&gt;
-&lt;/p&gt;
-&lt;p&gt;
-  Our team comes from various parts of the seL4 ecosystem: users, contributors,
-  committers, experts, advocates, researchers, and engineers.
-&lt;/p&gt;
-
-&lt;div class=&quot;not-prose&quot;&gt;
-&lt;ul class=&quot;mx-auto mt-20 grid max-w-2xl lg:mx-0 lg:max-w-none
-           grid-cols-2 gap-x-8 gap-y-16 text-center
-           sm:grid-cols-3 md:grid-cols-4
-           
-           &quot;&gt;
-
-
-&lt;li&gt;
-  
-  &lt;a href=&quot;https://www.linkedin.com/in/robbie-vanvossen-gr/&quot; class=&quot;text-dark no-underline! hover:underline!&quot;&gt;
-  
-    &lt;img class=&quot;mx-auto h-24 w-24 rounded-full&quot; src=&quot;/images/summit/robbie.png&quot; alt=&quot;Picture of Robbie VanVossen&lt;br&gt;(co-chair)&quot;&gt;
-    &lt;p class=&quot;mt-6 text-base font-semibold leading-7 tracking-tight text-dark&quot;&gt;Robbie VanVossen&lt;br&gt;(co-chair)&lt;/p&gt;
-  
-  &lt;/a&gt;
-  
-  &lt;p class=&quot;text-sm leading-6 text-light&quot;&gt;DornerWorks&lt;/p&gt;
-&lt;/li&gt;
-
-
-&lt;li&gt;
-  
-  &lt;a href=&quot;https://www.linkedin.com/in/lucy-fletcher-13a484253/?utm_source=share&amp;utm_campaign=share_via&amp;utm_content=profile&amp;utm_medium=ios_app&quot; class=&quot;text-dark no-underline! hover:underline!&quot;&gt;
-  
-    &lt;img class=&quot;mx-auto h-24 w-24 rounded-full&quot; src=&quot;/images/summit/lucy-square.jpg&quot; alt=&quot;Picture of Lucy Fletcher&lt;br&gt;(co-chair)&quot;&gt;
-    &lt;p class=&quot;mt-6 text-base font-semibold leading-7 tracking-tight text-dark&quot;&gt;Lucy Fletcher&lt;br&gt;(co-chair)&lt;/p&gt;
-  
-  &lt;/a&gt;
-  
-  &lt;p class=&quot;text-sm leading-6 text-light&quot;&gt;Apple&lt;/p&gt;
-&lt;/li&gt;
-
-
-&lt;li&gt;
-  
-  &lt;a href=&quot;https://www.ncsc.gov.uk/&quot; class=&quot;text-dark no-underline! hover:underline!&quot;&gt;
-  
-    &lt;img class=&quot;mx-auto h-24 w-24 rounded-full&quot; src=&quot;/images/summit/person-pc.svg&quot; alt=&quot;Picture of Adam&quot;&gt;
-    &lt;p class=&quot;mt-6 text-base font-semibold leading-7 tracking-tight text-dark&quot;&gt;Adam&lt;/p&gt;
-  
-  &lt;/a&gt;
-  
-  &lt;p class=&quot;text-sm leading-6 text-light&quot;&gt;NCSC&lt;/p&gt;
-&lt;/li&gt;
-
-
-&lt;li&gt;
-  
-  &lt;a href=&quot;https://trustworthy.systems/people/?cn=Corey+Lewis&quot; class=&quot;text-dark no-underline! hover:underline!&quot;&gt;
-  
-    &lt;img class=&quot;mx-auto h-24 w-24 rounded-full&quot; src=&quot;/images/summit/corey-square.jpg&quot; alt=&quot;Picture of Corey Lewis&quot;&gt;
-    &lt;p class=&quot;mt-6 text-base font-semibold leading-7 tracking-tight text-dark&quot;&gt;Corey Lewis&lt;/p&gt;
-  
-  &lt;/a&gt;
-  
-  &lt;p class=&quot;text-sm leading-6 text-light&quot;&gt;Proofcraft&lt;/p&gt;
-&lt;/li&gt;
-
-
-&lt;li&gt;
-  
-  &lt;a href=&quot;https://neutrality.ch/people/&quot; class=&quot;text-dark no-underline! hover:underline!&quot;&gt;
-  
-    &lt;img class=&quot;mx-auto h-24 w-24 rounded-full&quot; src=&quot;/images/summit/david-c-square.jpg&quot; alt=&quot;Picture of David Cock&quot;&gt;
-    &lt;p class=&quot;mt-6 text-base font-semibold leading-7 tracking-tight text-dark&quot;&gt;David Cock&lt;/p&gt;
-  
-  &lt;/a&gt;
-  
-  &lt;p class=&quot;text-sm leading-6 text-light&quot;&gt;Neutrality&lt;/p&gt;
-&lt;/li&gt;
-
-
-&lt;li&gt;
-  
-  &lt;a href=&quot;https://loonwerks.com/people/david-hardin.html&quot; class=&quot;text-dark no-underline! hover:underline!&quot;&gt;
-  
-    &lt;img class=&quot;mx-auto h-24 w-24 rounded-full&quot; src=&quot;/images/summit/david-square.jpg&quot; alt=&quot;Picture of David Hardin&quot;&gt;
-    &lt;p class=&quot;mt-6 text-base font-semibold leading-7 tracking-tight text-dark&quot;&gt;David Hardin&lt;/p&gt;
-  
-  &lt;/a&gt;
-  
-  &lt;p class=&quot;text-sm leading-6 text-light&quot;&gt;Collins&lt;/p&gt;
-&lt;/li&gt;
-
-
-&lt;li&gt;
-  
-  &lt;a href=&quot;https://trustworthy.systems/people/?cn=Gernot+Heiser&quot; class=&quot;text-dark no-underline! hover:underline!&quot;&gt;
-  
-    &lt;img class=&quot;mx-auto h-24 w-24 rounded-full&quot; src=&quot;/images/summit/gernot.jpg&quot; alt=&quot;Picture of Gernot Heiser&quot;&gt;
-    &lt;p class=&quot;mt-6 text-base font-semibold leading-7 tracking-tight text-dark&quot;&gt;Gernot Heiser&lt;/p&gt;
-  
-  &lt;/a&gt;
-  
-  &lt;p class=&quot;text-sm leading-6 text-light&quot;&gt;UNSW Sydney&lt;/p&gt;
-&lt;/li&gt;
-
-
-&lt;li&gt;
-  
-  &lt;a href=&quot;https://www.ll.mit.edu/biographies/juliana-furgala&quot; class=&quot;text-dark no-underline! hover:underline!&quot;&gt;
-  
-    &lt;img class=&quot;mx-auto h-24 w-24 rounded-full&quot; src=&quot;/images/summit/juliana-square.jpg&quot; alt=&quot;Picture of Juliana Furgala&quot;&gt;
-    &lt;p class=&quot;mt-6 text-base font-semibold leading-7 tracking-tight text-dark&quot;&gt;Juliana Furgala&lt;/p&gt;
-  
-  &lt;/a&gt;
-  
-  &lt;p class=&quot;text-sm leading-6 text-light&quot;&gt;MIT Lincoln Laboratory&lt;/p&gt;
-&lt;/li&gt;
-
-
-&lt;li&gt;
-  
-  &lt;a href=&quot;https://www.linkedin.com/in/leigha-vanderklok-b5038a166/&quot; class=&quot;text-dark no-underline! hover:underline!&quot;&gt;
-  
-    &lt;img class=&quot;mx-auto h-24 w-24 rounded-full&quot; src=&quot;/images/summit/leigha-square.jpg&quot; alt=&quot;Picture of Leigha VanderKlok&quot;&gt;
-    &lt;p class=&quot;mt-6 text-base font-semibold leading-7 tracking-tight text-dark&quot;&gt;Leigha VanderKlok&lt;/p&gt;
-  
-  &lt;/a&gt;
-  
-  &lt;p class=&quot;text-sm leading-6 text-light&quot;&gt;DornerWorks&lt;/p&gt;
-&lt;/li&gt;
-
-
-&lt;li&gt;
-  
-  &lt;a href=&quot;https://www.linkedin.com/in/lesley-rossouw-a6ab451b6/&quot; class=&quot;text-dark no-underline! hover:underline!&quot;&gt;
-  
-    &lt;img class=&quot;mx-auto h-24 w-24 rounded-full&quot; src=&quot;/images/summit/lesley-square.jpg&quot; alt=&quot;Picture of Lesley Rossouw&quot;&gt;
-    &lt;p class=&quot;mt-6 text-base font-semibold leading-7 tracking-tight text-dark&quot;&gt;Lesley Rossouw&lt;/p&gt;
-  
-  &lt;/a&gt;
-  
-  &lt;p class=&quot;text-sm leading-6 text-light&quot;&gt;UNSW Sydney&lt;/p&gt;
-&lt;/li&gt;
-
-
-&lt;li&gt;
-  
-  &lt;a href=&quot;https://www.linkedin.com/in/mpdehnel/&quot; class=&quot;text-dark no-underline! hover:underline!&quot;&gt;
-  
-    &lt;img class=&quot;mx-auto h-24 w-24 rounded-full&quot; src=&quot;/images/summit/martin-square.jpg&quot; alt=&quot;Picture of Martin Dehnel-Wild&quot;&gt;
-    &lt;p class=&quot;mt-6 text-base font-semibold leading-7 tracking-tight text-dark&quot;&gt;Martin Dehnel-Wild&lt;/p&gt;
-  
-  &lt;/a&gt;
-  
-  &lt;p class=&quot;text-sm leading-6 text-light&quot;&gt;Kry10&lt;/p&gt;
-&lt;/li&gt;
-
-
-&lt;li&gt;
-  
-  &lt;a href=&quot;https://nickspinale.com&quot; class=&quot;text-dark no-underline! hover:underline!&quot;&gt;
-  
-    &lt;img class=&quot;mx-auto h-24 w-24 rounded-full&quot; src=&quot;/images/summit/nick.jpg&quot; alt=&quot;Picture of Nick Spinale&quot;&gt;
-    &lt;p class=&quot;mt-6 text-base font-semibold leading-7 tracking-tight text-dark&quot;&gt;Nick Spinale&lt;/p&gt;
-  
-  &lt;/a&gt;
-  
-  &lt;p class=&quot;text-sm leading-6 text-light&quot;&gt;Colias Group&lt;/p&gt;
-&lt;/li&gt;
-
-
-&lt;/ul&gt;
-
-&lt;/div&gt;
-
-&lt;p class=&quot;pt-10 sm:pt-8&quot;&gt;
-  We will announce a Call for Presentations early in 2026. Stay tuned!
 &lt;/p&gt;
 
     </content>
