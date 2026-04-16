@@ -157,10 +157,13 @@ redirect_from: /Foundation/Summit/2026/index.html
 %}
 
 <div class="mt-2 sm:mt-4">
+  {% include sep-header.html text = "Silver" %}
+  {%- assign sponsors = site.data.sponsors.summit-2026.silver | sort_natural: "name" -%}
+  {%- include sponsor-info.html -%}
 
-{% include sep-header.html text = "Reception" %}
-{%- assign sponsors = site.data.sponsors.summit-2026.reception | sort_natural: "name" -%}
-{%- include sponsor-info.html -%}
+  {% include sep-header.html text = "Reception" %}
+  {%- assign sponsors = site.data.sponsors.summit-2026.reception | sort_natural: "name" -%}
+  {%- include sponsor-info.html -%}
 </div>
 
 {% include section-end.html %}
