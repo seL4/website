@@ -1,0 +1,29 @@
+<p>
+  The Robot Operating System (ROS) is widely adopted on various robotic platforms, including military robotic ground vehicles. However, it was not designed for performance and determinism requirements or for the safety and security required for the execution of critical missions. The Robotic Technology Kernel (RTK) is a ROS-based autonomy software library for S&T development that provides a set of common robotics capabilities across a variety of Army platforms. This RTK-over-ROS-over-Linux stack possesses the large resource overhead and attack surface manifested by Linux and its software applications such as ROS; hence an attacker may use a known vulnerability for Ubuntu to gain a footprint on the vehicle, causing disastrous consequences (e.g., crash). Unfortunately, unmanned ground vehicles, when running ROS, fundamentally lack the necessary security, resilience, and performance.
+</p>
+<p>
+  To tackle this challenge, Trusted ST is developing the Assured Robotics Embedded Systems and Applications in Ground Vehicles (ARSENAL) solution. The ARSENAL effort will result in a modular, open, and secure ROS2 stack (newer version of ROS that contains RTK) on military embedded platforms that will have the following capabilities.
+</p>
+<ul>
+  <li>
+    Enables multiple design and configuration options over the seL4 microkernel (as a separation kernel to provide software-level isolation) to support various platform resources and mission requirements (e.g., latency, space, throughput, etc.), which will significantly improve interoperability and configurability. ARSENAL can support the conventional ROS2 configuration with reduced attack surface (Option 1 with DDS and minimized Linux kernel on seL4), and minimized configuration (Option 2, DDS/ROS2 on seL4) to run mission applications with minimal platform resource requirements.
+  </li>
+  <li>
+    Ports mission essential application modules over simplified DDS/ROS2 (Option 2) by leveraging ROS2/DDS interoperability and analyzing software dependencies, resource/performance requirements, and mission needs. The ported robotics application maintains mission critical functionalities (e.g., tele-operation) and eliminates non-mission critical functions (e.g., visualization) to reduce size and memory/latency overhead while fully leveraging DDS/ROS2 compatibility and supporting cross-platform, cross-controller capabilities.
+  </li>
+  <li>
+    Provides strong security services and checks, including memory separation and process isolation, data flow monitor, intrusion detection, and policy enforcement to thwart known and unknown cyber vulnerabilities as applicable and needed in DoD use cases, including teleoperation, autonomy, and swarm.
+  </li>
+  <li>
+    Enables secure inter- and intra-communication by providing cryptographic solutions on top of the open data transport layer (e.g., inter-process communication, or IPC, and data distribution service, or DDS). All data exchanges among multiple robotic applications within a platform and between external platforms can be encrypted with TLS to significantly increase the level of data and information protection.
+  </li>
+</ul>
+<p>
+  We have performed design analyses and made design decisions; developed a proof-of-concept of running ROS2 in reduced OS (Option 1); and developed a proof-of-concept of running native ROS2 with DDS (Option 2). We will further develop and mature the technology, comprising four main thrusts: (1) completing the integration of DDS and ROS2 on top of seL4; (2) developing security capabilities; (3) upgrading software and tooling that includes transition from CAmkES to Microkit; and (4) performing capability demonstration.
+</p>
+<p>
+  The ARSENAL solution (1) takes advantage of open-source ROS2 and seL4 for cost-effective development and adoption, and (2) fully utilizes the deployed ROS2 stack in various UGVs for easy deployment and interoperability. ARSENAL will provide unprecedented, holistic security and resilience for Army UGVs, and therefore fundamentally improve the state of the art of the various autonomy stack and capabilities.  Due to its open, modular, and standard-based design and implementation, the ARSENAL stack can be deployed on many unmanned systems to protect mission critical assets with minimal configuration changes.
+</p>
+<p>
+  We will present our seL4 experience and applications to build security and resilience for these unmanned systems in the real world, and therefore the talk proposal fits the scope of the seL4 Summit.
+</p>

@@ -1,0 +1,21 @@
+<p>
+  While sel4 provides a sound foundation upon which to build, it remains the case that applications can be built that are on their own unsound, insecure and unsafe. The work to develop applications needs rigorous, accessible tool support in order to more quickly build and deploy assured software systems. For decades, formal methods have been acknowledged as a very powerful set of techniques with potential to significantly improve the speed and quality of software deployment but usually requiring the use of rare and often expensive skills to deploy effectively.
+</p>
+<p>
+  For this presentation, we used an open problem statement by Abrial [1] referred to as the ‘Steam Boiler’. The case study was implemented using a team of professional software engineers and commercially supported tools. The presentation will highlight how the Abrial informal specification was used as the basis for the development of a set of System Requirements using structured English and how formalism can be introduced through software requirements, design and code and used as the basis for automatic, independent formal verification. The exploration of desired properties at the requirements level is explored formally. The final aspect discussed is the potential for formal verification of the Executable Object Code exploiting a formalised Instruction Set Architecture in the same graph language used by the sel4 project.
+</p>
+<p>
+  Indeed, the sel4 graph language is also used, at least partially, in automatic verification of source code against design and in design against requirements. The possible claims for certification credit are also discussed. While the example sector is nuclear, we have used a more accessible and more widely understood software standard from the aerospace sector, DO-178C [2], as amended through use of DO-333 [2], the formal methods supplement. A summary of the claims will be provided, including limitations and how tool qualification using DO-330 [4] can be used to support certification. Finally, metrics are presented, including the hours of effort expended on development, verification and an example is given on how quickly changes can be incorporated showing just how agile the techniques are and the consequent impact on time to market could be.
+</p>
+<p>
+  [1] Abrial, J-R.: Steam-Boiler Control Specification Problem. In: Abrial, J-R., Borger, E., Langmaack, H.: (eds.) Formal Methods for Industrial Applications 1996, LNCS State-of-theArt Survey, pp. 500–509. Springer, Heidelberg (1996).
+</p>
+<p>
+  [2] DO-178C: Software Considerations in Airborne Systems and Equipment Certification, Issue C, 13th December 2011.
+</p>
+<p>
+  [3] DO-333: Formal Methods Supplement to ED-12C/DO-178C and ED-109A/DO-278A, 13th December 2011
+</p>
+<p>
+  [4] DO-330: Software Tool Qualification Considerations, 13th December 2011.
+</p>

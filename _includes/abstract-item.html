@@ -12,6 +12,9 @@ SPDX-License-Identifier: CC-BY-SA-4.0
         <br>
         <span class="text-light">{{include.affiliation}}</span>
       </p>
+      {% if include.info %}
+      {{ include.info }}
+      {% endif %}
       <article class="theprose">
         <div class="pt-5">
           {% include {{ include.text }} %}
