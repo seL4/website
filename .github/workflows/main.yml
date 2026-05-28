@@ -21,7 +21,7 @@ jobs:
       validator_msg:      ${{ steps.msg.outputs.validator_msg }}
       linkcheck_msg:      ${{ steps.linkmsg.outputs.linkcheck_msg }}
     steps:
-      - uses: actions/checkout@v4
+      - uses: actions/checkout@v6
 
       # sets up ruby accourding to .ruby-version and caches bundler deps
       - name: Ruby setup
@@ -30,7 +30,7 @@ jobs:
           bundler-cache: true
 
       - name: Node setup
-        uses: actions/setup-node@v4
+        uses: actions/setup-node@v6
         with:
           node-version: 22
           cache: 'npm'
@@ -175,7 +175,7 @@ jobs:
           echo "$MSG"
 
       - name: Leave comment with link to site, and results of checks
-        uses: actions/github-script@v7
+        uses: actions/github-script@v9
         if: github.repository_owner == 'seL4' && github.event.pull_request.head.repo.full_name == 'seL4/website'
         with:
           github-token: ${{secrets.GITHUB_TOKEN}}
