@@ -17,17 +17,17 @@ jobs:
     name: Build site
     runs-on: ubuntu-latest
     steps:
-    - uses: actions/checkout@v4
+    - uses: actions/checkout@v6
     - uses: ruby/setup-ruby@v1 # sets up ruby according to .ruby-version and caches bundler deps
       with:
         bundler-cache: true
-    - uses: actions/setup-node@v4
+    - uses: actions/setup-node@v6
       with:
         node-version: 22
         cache: 'npm'
     - run: make build JEKYLL_ENV=production
     - run: tar -cvf site.tar _site/
-    - uses: actions/upload-artifact@v4
+    - uses: actions/upload-artifact@v7
       with:
         name: site
         path: site.tar
@@ -36,17 +36,17 @@ jobs:
     name: Build site (seL4)
     runs-on: ubuntu-latest
     steps:
-    - uses: actions/checkout@v4
+    - uses: actions/checkout@v6
     - uses: ruby/setup-ruby@v1 # sets up ruby according to .ruby-version and caches bundler deps
       with:
         bundler-cache: true
-    - uses: actions/setup-node@v4
+    - uses: actions/setup-node@v6
       with:
         node-version: 22
         cache: 'npm'
     - run: make on_seL4 JEKYLL_ENV=production
     - run: tar -cvf site.tar _site_on_seL4/
-    - uses: actions/upload-artifact@v4
+    - uses: actions/upload-artifact@v7
       with:
         name: site-seL4
         path: site.tar
@@ -60,13 +60,13 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: Get site
-        uses: actions/download-artifact@v4
+        uses: actions/download-artifact@v8
         with:
           name: site-seL4
       - name: Unpack
         run: tar -xvf site.tar
       - name: Set up SSH agent
-        uses: webfactory/ssh-agent@v0.9.0
+        uses: webfactory/ssh-agent@v0.10.0
         with:
           ssh-private-key: ${{ secrets.WEB_DEPLOY_KEY }}
       - name: Add host keys
@@ -87,13 +87,13 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: Get site
-        uses: actions/download-artifact@v4
+        uses: actions/download-artifact@v8
         with:
           name: site
       - name: Unpack
         run: tar -xvf site.tar
       - name: Set up ssh agent
-        uses: webfactory/ssh-agent@v0.9.0
+        uses: webfactory/ssh-agent@v0.10.0
         with:
           ssh-private-key: ${{ secrets.WEB_DEPLOY_KEY }}
       - name: Add host keys
@@ -113,14 +113,14 @@ jobs:
     name: 'Deploy gh_pages branch'
     runs-on: ubuntu-latest
     steps:
-    - uses: actions/checkout@v4
+    - uses: actions/checkout@v6
       with:
         ref: gh-pages
         token: ${{ secrets.PRIV_REPO_TOKEN }}
     # for removing files, we need to start fresh; this does not remove dot-files
     # leaves .nojekyll in place
     - run: rm -rf *
-    - uses: actions/download-artifact@v4
+    - uses: actions/download-artifact@v8
       with:
         name: site
     - run: tar -xvf site.tar

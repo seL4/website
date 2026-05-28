@@ -15,7 +15,7 @@ jobs:
     name: "Clean up PR preview"
     runs-on: 'ubuntu-latest'
     steps:
-      - uses: actions/checkout@v4
+      - uses: actions/checkout@v6
         with:
           repository: seL4/website_pr_hosting
           ssh-key: ${{ secrets.ACTIONS_DEPLOY_KEY }}
