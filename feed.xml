@@ -10,7 +10,38 @@
   <description>News feed about seL4, the seL4 Foundation, and the seL4 ecosystem.</description>
   <link rel="alternate">https://sel4.systems/news/</link>
   <link rel="self">https://sel4.systems/feed.xml</link>
-  <updated>Fri, 17 Apr 2026 00:00:00 +0000</updated>
+  <updated>Mon, 01 Jun 2026 00:00:00 +0000</updated>
+  <rights>Copyright 2026 seL4 Foundation</rights>
+  <entry>
+    <title>Gapfruit joins the seL4 Foundation</title>
+    <link rel="alternate" type="text/html" href="https://sel4.systems/news/2026.html"/>
+    <id>https://sel4.systems/news/2026.html</id>
+    <published>Mon, 01 Jun 2026 00:00:00 +0000</published>
+    <updated>Mon, 01 Jun 2026 00:00:00 +0000</updated>
+    <content type="html">
+      &lt;p&gt;
+  We are pleased to welcome a new &lt;a href=&quot;/Foundation/Membership/&quot;&gt;member&lt;/a&gt; - &lt;a href=&quot;https://www.gapfruit.com/&quot;&gt;Gapfruit&lt;/a&gt;
+  - to the &lt;a href=&quot;/Foundation&quot;&gt;seL4 Foundation&lt;/a&gt;.
+&lt;/p&gt;
+&lt;p&gt;
+  Gapfruit is a Swiss technology company building trustworthy foundations for
+  the systems society depends on - from industrial controls to energy
+  infrastructure. To achieve this, Gapfruit combines microkernel operating
+  systems with capability-based security and hardware-rooted trust - an approach
+  grounded in standards from the &lt;a
+  href=&quot;https://trustedcomputinggroup.org/&quot;&gt;Trusted Computing Group&lt;/a&gt;.
+  Together, these technologies enable resilient, verifiable device operations
+  for the critical systems that underpin modern infrastructure. By joining the
+  seL4 Foundation, we aim to advance high-assurance computing in critical
+  infrastructure and collaborate with the global seL4 community to make
+  trustworthy systems the standard - not the exception.
+&lt;/p&gt;
+&lt;p&gt;
+  Learn more about Gapfruit&apos;s work in their contributions to previous seL4
+  summit &lt;a href=&quot;/Summit/2023/abstracts2023.html#a-panel&quot;&gt;panels&lt;/a&gt; and &lt;a href=&quot;/Summit/2023/abstracts2023.html#a-showcase-microkernel&quot;&gt;talks&lt;/a&gt;.
+&lt;/p&gt;
+    </content>
+  </entry>
   <rights>Copyright 2026 seL4 Foundation</rights>
   <entry>
     <title>Thank you Proofcraft, silver sponsor of the seL4 Summit 2026</title>
@@ -412,43 +443,6 @@ update of user code compared to Microkit 2.1.0.&lt;/p&gt;
   Imaging; Commercial Intelligence, Surveillance, and Reconnaissance (ISR);
   Collection Planning; and more. Learn more at &lt;a
   href=&quot;https://www.riversideresearch.org/&quot;&gt;www.riversideresearch.org&lt;/a&gt;.
-&lt;/p&gt;
-
-    </content>
-  </entry>
-  <rights>Copyright 2026 seL4 Foundation</rights>
-  <entry>
-    <title>The seL4 Foundation transitions to an Independant Structure</title>
-    <link rel="alternate" type="text/html" href="https://sel4.systems/news/2025.html#sel4-international"/>
-    <id>https://sel4.systems/news/2025.html#sel4-international</id>
-    <published>Wed, 17 Dec 2025 00:00:00 +0000</published>
-    <updated>Wed, 17 Dec 2025 00:00:00 +0000</updated>
-    <content type="html">
-      &lt;p&gt;
-  The &lt;a href=&quot;/Foundation/index.html&quot;&gt;seL4
-  Foundation&lt;/a&gt;, launched in 2020 as a project under the Linux Foundation, has
-  benefited from early support in governance, trademarks, and operations. As the
-  community has grown, the seL4 &lt;a href=&quot;/Foundation/Board/index.html&quot;&gt;Board&lt;/a&gt; has determined that greater independence will better
-  serve its members and long-term goals.
-&lt;/p&gt;
-
-&lt;p&gt;
-  To support broader outreach and stronger community engagement, the seL4
-  Foundation has transitioned to a new, independent legal entity, established as
-  a Swiss-registered non-profit association (Verein). The purpose, principles and
-  internal structure remain unchanged. Switzerland was chosen for its neutrality
-  and its well-established framework for international non-profits, a model also
-  used by organizations such as RISC-V International.
-&lt;/p&gt;
-
-&lt;p&gt;
-  This strategic move is set to position the seL4 Foundation for continued
-  growth and improved accessibility for its global community.
-&lt;/p&gt;
-
-
-&lt;p&gt;
-  If you are not already a member, &lt;a href=&quot;/Foundation/Join/index.html&quot;&gt;join now&lt;/a&gt; to shape the future of the seL4 ecosystem!
 &lt;/p&gt;
 
     </content>
