@@ -34,7 +34,9 @@ SPDX-License-Identifier: CC-BY-SA-4.0
         {% endif %}
         <div>
           <p class="p-1 mt-2">
-          <a href="program.html#p-{{include.id}}" class="text-sm text-light underline">See this talk in the program</a>
+            {% if include.id %}
+              <a href="program.html#p-{{include.id}}" class="text-sm text-light underline">See this talk in the program</a>
+            {% endif %}
           </p>
         </div>
       </div>
