@@ -8,44 +8,43 @@ SPDX-License-Identifier: CC-BY-SA-4.0
 {% else %}
   <div class="py-12 mb-5 section-max-w sm:py-16">
 {% endif %}
-  <div class="py-12 mb-5 section-max-w sm:py-16">
-    <div class="mx-auto px-2 sm:px-6 lg:px-8">
-      <div class="mx-auto lg:mx-0">
-        <h2 class="text-xl font-bold tracking-tight text-dark mb-6 sm:text-4xl">{{include.title}}</h2>
-        <p>
-          <span class="text-gray-800 dark:text-gray-300">{{include.presenter}}</span>
-          <br>
-          <span class="text-light">{{include.affiliation}}</span>
-        </p>
-        {% if include.info %}
-        {{ include.info }}
+  <div class="mx-auto px-2 sm:px-6 lg:px-8">
+    <div class="mx-auto lg:mx-0">
+      <h2 class="text-xl font-bold tracking-tight text-dark mb-6 sm:text-4xl">{{include.title}}</h2>
+      <p>
+        <span class="text-gray-800 dark:text-gray-300">{{include.presenter}}</span>
+        <br>
+        <span class="text-light">{{include.affiliation}}</span>
+      </p>
+      {% if include.info %}
+      {{ include.info }}
+      {% endif %}
+      <article class="theprose">
+        <div class="pt-5">
+          {% include {{ include.text }} %}
+        </div>
+      </article>
+      <div class="flex flex-row gap-x-2 pt-2">
+        {% if include.youtube %}
+          <div class="p-2 pb-1">
+            <a href="{{include.youtube}}" target="_blank"><img
+      src="{{ '/images/icons/youtube_nobckgnd.svg' | relative_url }}" width="30" alt="YouTube icon"></a>
+          </div>
         {% endif %}
-        <article class="theprose">
-          <div class="pt-5">
-            {% include {{ include.text }} %}
+        {% if include.slides %}
+          <div class="p-1 mt-2">
+            <a href="{{include.slides}}" class="text-sm text-light underline">Slides</a>
           </div>
-        </article>
-        <div class="flex flex-row gap-x-2 pt-2">
-          {% if include.youtube %}
-            <div class="p-2 pb-1">
-              <a href="{{include.youtube}}" target="_blank"><img
-        src="{{ '/images/icons/youtube_nobckgnd.svg' | relative_url }}" width="30" alt="YouTube icon"></a>
-            </div>
-          {% endif %}
-          {% if include.slides %}
-            <div class="p-1 mt-2">
-              <a href="{{include.slides}}" class="text-sm text-light underline">Slides</a>
-            </div>
-          {% endif %}
-          <div>
-            <p class="p-1 mt-2">
-              {% if include.id %}
-                <a href="program.html#p-{{include.id}}" class="text-sm text-light underline">See this talk in the program</a>
-              {% endif %}
-            </p>
-          </div>
+        {% endif %}
+        <div>
+          <p class="p-1 mt-2">
+            {% if include.id %}
+              <a href="program.html#p-{{include.id}}" class="text-sm text-light underline">See this talk in the program</a>
+            {% endif %}
+          </p>
         </div>
       </div>
     </div>
   </div>
-  {% include centered-up-button.html margin="mb-0 sm:mb-6" %}
+</div>
+{% include centered-up-button.html margin="mb-0 sm:mb-6" %}
