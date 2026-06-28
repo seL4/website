@@ -12,6 +12,18 @@ sub: '
 layout: card
 ---
 
+{% include abstract-buttons.html
+  keynotes = "keynotes"
+  voices = "voices"
+  talks = "talks"
+  posters = "posters"
+%}
+
+{% include abstract-heading.html
+  id = "keynotes"
+  heading = "Keynotes"
+%}
+
 {% include abstract-item.html
   id = "age-software"
   time = "9:10 - 10:00"
@@ -20,6 +32,36 @@ layout: card
   presenter = "Anjana Rajan"
   affiliation = "Atalanta"
   text = "abstracts/2026/age-software-text-only.html"
+%}
+
+{% include abstract-item.html
+  id = "proof-product"
+  time = "9:00 - 9:50"
+  type = "Keynote"
+  title = "From Proof to Product: Why Formal Methods Is Finally Ready"
+  presenter = "Martin Dehnel-Wild"
+  affiliation = "Kry10"
+  text = "abstracts/2026/proof-product-text-only.html"
+%}
+
+{% include abstract-heading.html
+  id = "voices"
+  heading = "Voices from Nearby"
+%}
+
+{% include abstract-item.html
+  id = "trends-formal"
+  time = "14:00 - 14:30"
+  type = "Voices from Nearby"
+  title = "Trends in Formal Verification for Real-World Applications and Their Implications for the seL4 Ecosystem"
+  presenter = "David Hardin"
+  affiliation = "Collins Aerospace"
+  text = "abstracts/2026/trends-formal-text-only.html"
+%}
+
+{% include abstract-heading.html
+  id = "talks"
+  heading = "Talks"
 %}
 
 {% include abstract-item.html
@@ -43,16 +85,6 @@ layout: card
 %}
 
 {% include abstract-item.html
-  id = "trends-formal"
-  time = "14:00 - 14:30"
-  type = "Voices from Nearby"
-  title = "Trends in Formal Verification for Real-World Applications and Their Implications for the seL4 Ecosystem"
-  presenter = "David Hardin"
-  affiliation = "Collins Aerospace"
-  text = "abstracts/2026/trends-formal-text-only.html"
-%}
-
-{% include abstract-item.html
   id = "kry10-os"
   time = "14:30 - 15:00"
   type = "Talk"
@@ -70,16 +102,6 @@ layout: card
   presenter = "June Andronick"
   affiliation = "Proofcraft and seL4 Foundation"
   text = "abstracts/2026/formal-verification-text-only.html"
-%}
-
-{% include abstract-item.html
-  id = "proof-product"
-  time = "9:00 - 9:50"
-  type = "Keynote"
-  title = "From Proof to Product: Why Formal Methods Is Finally Ready"
-  presenter = "Martin Dehnel-Wild"
-  affiliation = "Kry10"
-  text = "abstracts/2026/proof-product-text-only.html"
 %}
 
 {% include abstract-item.html
@@ -294,15 +316,11 @@ layout: card
 %}
 
 
-
-<div class="mx-auto px-2 sm:px-6 lg:px-8 section-max-w ">
-  <div class="mx-auto lg:mx-0">
-    <h2 class="text-xl font-bold tracking-tight text-dark mb-6 sm:text-4xl" id="posters">
-      Posters
-    </h2>
-    <p>Poster sessions will held during lunch on Days 2 & 3.</p>
-  </div>
-</div>
+{% include abstract-heading.html
+  id = "posters"
+  heading = "Posters"
+  info = "Poster sessions will held during lunch on Days 2 & 3"
+%}
 
 {% include abstract-item.html
   title = "Rethinking seL4 Multicore architecture: SMP vs. multikernel"

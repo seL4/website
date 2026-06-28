@@ -1,0 +1,17 @@
+{%- comment %}
+Copyright 2026 seL4 Project a Series of LF Projects, LLC
+SPDX-License-Identifier: CC-BY-SA-4.0
+{% endcomment -%}
+
+<div class="mx-auto px-2 sm:px-6 lg:px-8 section-max-w">
+  <div class="mx-auto lg:mx-0">
+    <h2 class="text-xl font-bold tracking-tight text-dark mb-6 sm:text-4xl" id="{{ include.id }}">
+      {{include.heading}}
+    </h2>
+    {% if include.info %}
+    <p>
+      {{include.info}}
+    </p>
+    {% endif %}
+  </div>
+</div>
