@@ -11,26 +11,25 @@ link: https://proofcraft.systems
 
 <p>
 <a href="https://proofcraft.systems">Proofcraft</a> achieved a significant
-years-long milestone in the seL4 verification roadmap: the MCS configuration of
-seL4, providing support for mixed-criticality systems, is
-now <a href="https://proofcraft.systems/news-2026/#2026-06-29">proved to be
-correct on RISC-V</a>.
+ milestone in the seL4 verification roadmap that was years in the making: the
+ MCS configuration of seL4, providing support for mixed-criticality systems, is
+ now <a href="https://proofcraft.systems/news-2026/#2026-06-29">proved to be
+ correct on RISC-V</a>.
 </p>
 
 
 <p>
-This configuration is the largest new seL4 feature, indispensable for real-time
-applications such as automotive uses cases. It contains wide-ranging changes to
-the kernel's implementation and API (Application Programming Interface). Its
-verification therefore required considerable effort and has been a priority in
-the seL4 roadmap for a long time.
+This configuration is the largest new seL4 feature, indispensable for mixed
+criticality real-time applications such as automotive uses cases. It contains
+wide-ranging changes to the kernel's implementation and API. Its verification
+therefore required considerable effort and has been a priority in the seL4
+roadmap for a long time.
 </p>
 
 <p>
-Proofcraft has now completed, for the very first time, the verification of
-functional correctness for seL4 with MCS. Functional correctness is the largest
-and most central proof in the <a href="{{ '/Verification/proofs.html' |
-relative_url }}">seL4 verification stack</a>. The proof targets the RISC-V
-architecture and will now be ported to the Arm 64-bit architecture, as part of
-DARPA's PROVERS program.
+Proofcraft has now completed the verification of functional correctness for seL4
+with MCS. Functional correctness is the largest and most central proof in
+the <a href="{{ '/Verification/proofs.html' | relative_url }}">seL4 verification
+stack</a>. The proof targets the RISC-V architecture and will now be ported to
+the Arm 64-bit architecture, as part of DARPA's PROVERS program.
 </p>
