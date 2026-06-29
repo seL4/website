@@ -6,7 +6,7 @@
     <title>seL4 News | seL4</title>
     <meta name="author" content="seL4 Foundation">
     <link rel="canonical" href="https://sel4.systems/news/2026.html">
-    <link href="/css/sel4.css?v=1782714258" rel="stylesheet">
+    <link href="/css/sel4.css?v=1782718537" rel="stylesheet">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
@@ -339,6 +339,12 @@
           <a href="/news/" class="text-sm font-semibold leading-6 text-f_green-600">See all <span aria-hidden="true">&rarr;</span></a>
         </div>
         <ul class="mt-6 space-y-6"><li class="relative">
+            <time datetime="2026-06-29" class="block text-xs leading-6 text-light">29 Jun 2026</time>
+            <a href="/news/2026.html#mcs26" class="block truncate text-sm font-semibold leading-6 text-dark">
+              Functional correctness proof for MCS seL4 completed on RISC-V
+              <span class="absolute inset-0"></span>
+            </a>
+          </li><li class="relative">
             <time datetime="2026-06-01" class="block text-xs leading-6 text-light">01 Jun 2026</time>
             <a href="/news/2026.html#06-01" class="block truncate text-sm font-semibold leading-6 text-dark">
               Gapfruit joins the seL4 Foundation
@@ -348,12 +354,6 @@
             <time datetime="2026-04-17" class="block text-xs leading-6 text-light">17 Apr 2026</time>
             <a href="/news/2026.html#04-17" class="block truncate text-sm font-semibold leading-6 text-dark">
               Thank you Proofcraft, silver sponsor of the seL4 Summit 2026
-              <span class="absolute inset-0"></span>
-            </a>
-          </li><li class="relative">
-            <time datetime="2026-04-15" class="block text-xs leading-6 text-light">15 Apr 2026</time>
-            <a href="/news/2026.html#04-15" class="block truncate text-sm font-semibold leading-6 text-dark">
-              Thank you Riverside Research, sponsor of the seL4 Summit 2026 reception
               <span class="absolute inset-0"></span>
             </a>
           </li></ul>
@@ -581,6 +581,59 @@
     </div>
     
   </div>
+</div>
+
+
+<article class="max-w-4xl mx-auto mb-12 sm:mb-18 pt-2 pb-8 px-6 lg:px-8 clear-both">
+  <a href="#mcs26" class="text-base sm:text-lg hover:underline text-gray-400 pt-16 lg:pt-20">
+    <time datetime="2026-06-29" id="mcs26">29 Jun 2026</time>
+  </a>
+  <h2 class="mb-8 mt-2 h2-size">Functional correctness proof for MCS seL4 completed on RISC-V</h2>
+  <div class="theprose prose-ul:[ul]:my-2 prose-p:[p]:my-3 prose-li:[li]:my-1.5 max-w-4xl">
+    <a href="https://proofcraft.systems"><img src="/Foundation/Membership/LOGOS/proofcraft.svg" alt="Proofcraft Logo"
+        class="float-right rounded-xl -mt-1 ml-4 sm:ml-6 lg:-mr-16 bg-white p-6 sm:p-8 w-2/5"></a>
+    <p>
+<a href="https://proofcraft.systems">Proofcraft</a> achieved a significant
+ milestone in the seL4 verification roadmap that was years in the making: the
+ MCS configuration of seL4, providing support for mixed-criticality systems, is
+ now <a href="https://proofcraft.systems/news-2026/#2026-06-29">proved to be
+ correct on RISC-V</a>.
+</p>
+
+
+<p>
+This configuration is the largest new seL4 feature, indispensable for mixed
+criticality real-time applications such as automotive uses cases. It contains
+wide-ranging changes to the kernel's implementation and API. Its verification
+therefore required considerable effort and has been a priority in the seL4
+roadmap for a long time.
+</p>
+
+<p>
+Proofcraft has now completed the verification of functional correctness for seL4
+with MCS. Functional correctness is the largest and most central proof in
+the <a href="/Verification/proofs.html">seL4 verification
+stack</a>. The proof targets the RISC-V architecture and will now be ported to
+the Arm 64-bit architecture, as part of DARPA's PROVERS program.
+</p>
+  </div>
+</article>
+
+
+<div class="flex w-full mb-12 md:mb-24">
+  <div class="flex-1"></div>
+  <hr class="w-10 h-px bg-gray-200 border-0 dark:bg-gray-600">
+  
+<a href="#page-top" class="relative -mt-3.5 mx-4">
+  <div class="dark:bg-slate-900 hover:bg-slate-100 dark:hover:bg-slate-800 p-1.5 h-7 w-7 rounded-full shadow-xs left-1">
+    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" aria-hidden="true" data-slot="icon" class="h-4 w-4 text-slate-400 dark:text-slate-500">
+  <path stroke-linecap="round" stroke-linejoin="round" d="M12 19.5v-15m0 0-6.75 6.75M12 4.5l6.75 6.75"/>
+</svg>
+  </div>
+</a>
+
+  <hr class="w-10 h-px bg-gray-200 border-0 dark:bg-gray-600">
+  <div class="flex-1"></div>
 </div>
 
 

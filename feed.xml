@@ -10,7 +10,41 @@
   <description>News feed about seL4, the seL4 Foundation, and the seL4 ecosystem.</description>
   <link rel="alternate">https://sel4.systems/news/</link>
   <link rel="self">https://sel4.systems/feed.xml</link>
-  <updated>Mon, 01 Jun 2026 00:00:00 +0000</updated>
+  <updated>Mon, 29 Jun 2026 00:00:00 +0000</updated>
+  <rights>Copyright 2026 seL4 Foundation</rights>
+  <entry>
+    <title>Functional correctness proof for MCS seL4 completed on RISC-V</title>
+    <link rel="alternate" type="text/html" href="https://sel4.systems/news/2026.html#mcs26"/>
+    <id>https://sel4.systems/news/2026.html#mcs26</id>
+    <published>Mon, 29 Jun 2026 00:00:00 +0000</published>
+    <updated>Mon, 29 Jun 2026 00:00:00 +0000</updated>
+    <content type="html">
+      &lt;p&gt;
+&lt;a href=&quot;https://proofcraft.systems&quot;&gt;Proofcraft&lt;/a&gt; achieved a significant
+ milestone in the seL4 verification roadmap that was years in the making: the
+ MCS configuration of seL4, providing support for mixed-criticality systems, is
+ now &lt;a href=&quot;https://proofcraft.systems/news-2026/#2026-06-29&quot;&gt;proved to be
+ correct on RISC-V&lt;/a&gt;.
+&lt;/p&gt;
+
+
+&lt;p&gt;
+This configuration is the largest new seL4 feature, indispensable for mixed
+criticality real-time applications such as automotive uses cases. It contains
+wide-ranging changes to the kernel&apos;s implementation and API. Its verification
+therefore required considerable effort and has been a priority in the seL4
+roadmap for a long time.
+&lt;/p&gt;
+
+&lt;p&gt;
+Proofcraft has now completed the verification of functional correctness for seL4
+with MCS. Functional correctness is the largest and most central proof in
+the &lt;a href=&quot;/Verification/proofs.html&quot;&gt;seL4 verification
+stack&lt;/a&gt;. The proof targets the RISC-V architecture and will now be ported to
+the Arm 64-bit architecture, as part of DARPA&apos;s PROVERS program.
+&lt;/p&gt;
+    </content>
+  </entry>
   <rights>Copyright 2026 seL4 Foundation</rights>
   <entry>
     <title>Gapfruit joins the seL4 Foundation</title>
@@ -414,36 +448,6 @@ update of user code compared to Microkit 2.1.0.&lt;/p&gt;
     &lt;strong&gt;&lt;a href=&quot;https://form.jotform.com/260147181364858&quot;&gt;submission portal&lt;/a&gt;&lt;/strong&gt;.
   &lt;/p&gt;
 &lt;/div&gt;
-
-    </content>
-  </entry>
-  <rights>Copyright 2026 seL4 Foundation</rights>
-  <entry>
-    <title>Riverside Research joins the seL4 Foundation</title>
-    <link rel="alternate" type="text/html" href="https://sel4.systems/news/2026.html"/>
-    <id>https://sel4.systems/news/2026.html</id>
-    <published>Mon, 19 Jan 2026 00:00:00 +0000</published>
-    <updated>Mon, 19 Jan 2026 00:00:00 +0000</updated>
-    <content type="html">
-      &lt;p&gt;
-  The &lt;a href=&quot;/Foundation&quot;&gt;seL4 Foundation&lt;/a&gt; is
-  pleased to welcome &lt;a href=&quot;https://www.riversideresearch.org/&quot;&gt;Riverside
-  Research&lt;/a&gt; as an &lt;a
-  href=&quot;/Foundation/Membership&quot;&gt;Associate Member&lt;/a&gt;.
-&lt;/p&gt;
-&lt;p&gt;
-  Riverside Research acquired Cog Systems, a founding member of the seL4
-  Foundation in 2025 and continues their work using seL4 within High Assurance
-  systems. Riverside Research is a national security nonprofit serving the DOD
-  and Intelligence Community. Through the company&apos;s Open Innovation Center
-  (OIC), it invests in multidisciplinary research and development and encourages
-  collaboration. Riverside Research&apos;s areas of expertise include Object and
-  Activity Detection; Accelerated AI/ML; Zero Trust; Open Architectures;
-  Computational Electromagnetics; Plasma Physics; Precision Timing; Terahertz
-  Imaging; Commercial Intelligence, Surveillance, and Reconnaissance (ISR);
-  Collection Planning; and more. Learn more at &lt;a
-  href=&quot;https://www.riversideresearch.org/&quot;&gt;www.riversideresearch.org&lt;/a&gt;.
-&lt;/p&gt;
 
     </content>
   </entry>
