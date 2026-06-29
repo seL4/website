@@ -1,0 +1,148 @@
+---
+# Copyright 2026 seL4 Project a Series of LF Projects, LLC.
+# SPDX-License-Identifier: CC-BY-SA-4.0
+title: "Join the seL4 Foundation"
+pre: "Become a Member"
+sub: '
+Join the seL4 Foundation (a Swiss Association under the legal name "seL4
+International") by entering your organisation&apos;s details below. We will review the information
+provided and send you a Membership Agreement for signature.
+'
+pre_link: "./"
+layout: card
+---
+
+
+{% include section-start.html
+  id = "agreement"
+  heading = "Agreements and Governance"
+  intro = '
+    <p>
+      Before joining, please review the <a href="seL4_Association_Membership_Agreement.pdf">Membership
+      Agreement</a> (for review only, not for signing), and the <a title="Articles of Association"
+      href="../Governance/seL4_Association_AoA.pdf"> Articles of Association</a>, the <a title="Rules of Operations" href="../Governance/seL4_Association_RoO.pdf"> Rules of Operations</a>, and
+      the <a title="Good Standing Policy" href="../Governance/seL4_good_standing_policy.pdf">Good Standing Policy</a>. If you have any questions, please contact <a title="foundation@sel4.systems" href="mailto:foundation@sel4.systems">foundation@sel4.systems</a>.
+    </p>'
+%}
+
+{% include section-end.html %}
+
+{% include section-start.html
+  id = "details"
+  heading = "Organisation Details"
+  intro = '
+    <p>
+      Please enter your organisation&apos;s details below to generate a membership agreement.
+    </p>
+    <p>
+      The information submitted will be used to assess, approve and manage the membership of the entity, namely to (a) generate the contract, which will be sent to the provided signatory contact; (b) send invoices to the provided billing contact; (c) send AGM and voting notices to the primary contact; for the duration that the entity is a Member of seL4 International. This information can be updated anytime by contacting <a title="foundation@sel4.systems" href="mailto:foundation@sel4.systems">foundation@sel4.systems</a>.
+    </p>
+    '
+%}
+
+{% include section-end.html %}
+
+{% include section-start.html
+  id = "join"
+  heading = "Join Now"
+%}
+
+<div class="my-20 section-max-w md:min-w-2xl">
+
+  <input type="radio" id="tab-general" name="membership-toggle" class="peer/gen hidden" checked />
+  <input type="radio" id="tab-associate" name="membership-toggle" class="peer/assoc hidden" />
+
+  <label for="tab-general" class="button-outline inline-block select-none cursor-pointer transition-all duration-200 mb-4 mr-2
+    px-3.5 py text-sm font-semibold rounded-md
+    peer-checked/gen:!bg-accentdark peer-checked/gen:!text-white peer-checked/gen:!border-transparent peer-checked/gen:shadow-md">
+    Premium & General
+  </label>
+
+  <label for="tab-associate" class="button-outline inline-block select-none cursor-pointer transition-all duration-200 mb-4
+    px-3.5 text-sm font-semibold rounded-md
+    peer-checked/assoc:!bg-accentdark peer-checked/assoc:!text-white peer-checked/assoc:!border-transparent peer-checked/assoc:shadow-md">
+    Associate
+  </label>
+
+
+  <!-- PREMIUM AND GENERAL -->
+  <div class="hidden peer-checked/gen:block bg-white rounded-sm shadow-md p-4">
+
+    {% include membership-question.html
+      heading = "Company name"
+      info = "Legal name of the entity applying for membership"
+      type = "text"
+    %}
+
+    {% include membership-tiers.html %}
+
+    {% include membership-question.html
+      heading = "Primary contact"
+      info = "The who person will act as the primary voting contact unless a different assignment is requested by email at a later date."
+      label1 = "Name"
+      type1 = "text"
+      label2 = "Email"
+      type2 = "email"
+    %}
+
+    {% include membership-question.html
+      heading = "Legal (signatory) contact"
+      info = "The person who will officially execute or sign the membership agreement."
+      label1 = "Name"
+      type1 = "text"
+      label2 = "Title"
+      type2 = "text"
+      label3 = "Email"
+      type3 = "email"
+    %}
+
+    {% include membership-question.html
+      heading = "Billing contact"
+      info = "The person who will handle billing and payments."
+      label1 = "Name"
+      type1 = "text"
+      label2 = "Email"
+      type2 = "email"
+      address = "Address"
+
+    %}
+
+    {% include membership-po.html %}
+
+    {% include membership-submit.html %}
+
+  </div>
+
+  <!-- ASSOCIATE -->
+  <div class="hidden peer-checked/assoc:block bg-white rounded-sm shadow-md p-4">
+    {% include membership-question.html
+      heading = "Company name"
+      info = "Legal name of the entity applying for membership"
+      type = "text"
+    %}
+
+    {% include membership-question.html
+      heading = "Primary contact"
+      info = "The who person will act as the primary voting contact unless a different assignment is requested by email at a later date."
+      label1 = "Name"
+      type1 = "text"
+      label2 = "Email"
+      type2 = "email"
+    %}
+
+    {% include membership-question.html
+      heading = "Legal (signatory) contact"
+      info = "The person who will officially execute or sign the membership agreement."
+      label1 = "Name"
+      type1 = "text"
+      label2 = "Title"
+      type2 = "text"
+      label3 = "Email"
+      type3 = "email"
+    %}
+
+    {% include membership-submit.html %}
+  </div>
+</div>
+
+{% include section-end.html %}
