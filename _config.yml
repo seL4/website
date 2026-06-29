@@ -12,6 +12,9 @@ baseurl: "" # the subpath of your site, e.g. /blog
 git_repo: https://github.com/seL4/website
 github_username: seL4
 
+membership_api_url: "/api/submit-membership"
+friendly_captcha_sitekey: FCMH0EJFD85J3QQ9
+
 collections:
   - "news-items"
 
