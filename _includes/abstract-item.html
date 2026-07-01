@@ -3,7 +3,11 @@ Copyright 2025 seL4 Project a Series of LF Projects, LLC
 SPDX-License-Identifier: CC-BY-SA-4.0
 {% endcomment -%}
 
-<div id="a-{{ include.id }}" class="py-12 mb-5 section-max-w sm:py-16">
+{% if include.id %}
+  <div id="a-{{ include.id }}" class="py-12 mb-5 section-max-w sm:py-16">
+{% else %}
+  <div class="py-12 mb-5 section-max-w sm:py-16">
+{% endif %}
   <div class="mx-auto px-2 sm:px-6 lg:px-8">
     <div class="mx-auto lg:mx-0">
       <h2 class="text-xl font-bold tracking-tight text-dark mb-6 sm:text-4xl">{{include.title}}</h2>
@@ -12,6 +16,9 @@ SPDX-License-Identifier: CC-BY-SA-4.0
         <br>
         <span class="text-light">{{include.affiliation}}</span>
       </p>
+      {% if include.info %}
+      {{ include.info }}
+      {% endif %}
       <article class="theprose">
         <div class="pt-5">
           {% include {{ include.text }} %}
@@ -31,10 +38,17 @@ SPDX-License-Identifier: CC-BY-SA-4.0
         {% endif %}
         <div>
           <p class="p-1 mt-2">
-          <a href="program.html#p-{{include.id}}" class="text-sm text-light underline">See this talk in the program</a>
+            {% if include.id %}
+              <a href="program.html#p-{{include.id}}" class="text-sm text-light underline">See this talk in the program</a>
+            {% endif %}
           </p>
         </div>
       </div>
+      {% if include.posters %}
+      <div>
+        {{ include.posters }}
+      </div>
+      {% endif %}
     </div>
   </div>
 </div>

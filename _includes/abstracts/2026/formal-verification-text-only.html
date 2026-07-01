@@ -1,0 +1,15 @@
+<p>
+  In this talk I will report on my contributions to add “Formal Verification” as a requirement to mitigate security risks in the new European Harmonised standards, in the context of the Cyber Resilience Act (CRA). Namely, I have submitted 3 contributions to the Operating System harmonised standard, and all three contributions have now been accepted. The standard is still in the finalisation process, but so far no changes have been requested on my contributions.
+</p>
+<p>
+  The Cyber Resilience Act (CRA) is a regulatory framework of the European Union (EU) for hardware and software products that are made available on the EU market. The CRAentered into force in December 2024 and will be fully applicable as of December 2027, with some provisions starting to apply earlier. During that time, the EU has commissioned European standardisation bodies (namely CEN, CENELEC, and ETSI) to define so-called “harmonised standards” for the CRA. Using a harmonised standard gives a “presumption of conformity”, meaning any product that follows the standard will be assumed by the authorities to comply with the CRA’s legal requirements.
+</p>
+<p>
+  For the CRA, the EU has requested the development of 41 harmonised standards, split into horizontal standards (which apply across all products) and vertical standards (product-specific). One of the vertical standards being developed is specific to Operating Systems (standard number EN-304-626). Each standard defines a list of requirements, and proposes a list of mitigations to address these requirements.
+</p>
+<p>
+  Before my contributions, Formal Verification did not appear at all in the OS standard (and most other standards). This had 2 major implications. Firstly, it meant that the standard was not pushing for what is today the demonstrated highest assurance for critical software, with practical and effective impact. For seL4, this meant that being formally verified would not differentiate it from other OSes with lower assurance, when it comes to being compliant with EU regulations. Secondly, it meant that the effort spent on formal verification would actually be penalised. Indeed, a formally verified product, to be compliant, would still require additional effort to produce lower assurance evidence, such as being checked for memory errors using a source code analysis tool, or being implemented in a memory safe language.
+</p>
+<p>
+  My contributions consist of 3 new mitigations where Formal Verification shall be used to establish: (1) functional correctness; (2) integrity; and (3) confidentiality. With these additions to the OS standard, the CRA will be more in-line with the state-of-the-art approach to cyber resiliency, and seL4’s unique differentiator can continue to be a key advantage for a more secure software world.
+</p>

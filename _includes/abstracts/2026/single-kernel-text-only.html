@@ -1,0 +1,6 @@
+<p>
+  Riverside Research presents an seL4 prototype called SKMS: Single Kernel Multicore seL4. SKMS is a proof-of-concept implementation of a previously proposed multicore microkernel architecture [1] for seL4 microkernel on x86. The current POC implements three basic elements of seL4 functionality: memory isolation, remote system calls, and remote scheduling. Memory isolation puts usperspace processes into address spaces with no mappings to the seL4 kernel, remote system calls forward requests from these processes (loaded on other cores) over to the single kernel core, and remote scheduling allows the kernel scheduler to choose processes for the remote cores. A preliminary design idea for leveraging this architecture in “proving” a version of seL4 that can schedule processes across many cores is presented for community feedback.
+</p>
+<p>
+  [1] Scott Brookes and Stephen Taylor. 2016. Rethinking operating system design: asymmetric multiprocessing for security and performance. In Proceedings of the 2016 New Security Paradigms Workshop (NSPW '16). Association for Computing Machinery, New York, NY, USA, 68–79. <a href="https://doi.org/10.1145/3011883.3011886">https://doi.org/10.1145/3011883.3011886</a>
+</p>
