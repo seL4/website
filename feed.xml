@@ -10,7 +10,259 @@
   <description>News feed about seL4, the seL4 Foundation, and the seL4 ecosystem.</description>
   <link rel="alternate">https://sel4.systems/news/</link>
   <link rel="self">https://sel4.systems/feed.xml</link>
-  <updated>Mon, 29 Jun 2026 00:00:00 +0000</updated>
+  <updated>Wed, 01 Jul 2026 00:00:00 +0000</updated>
+  <rights>Copyright 2026 seL4 Foundation</rights>
+  <entry>
+    <title>The seL4 Summit 2026 Program and Abstracts</title>
+    <link rel="alternate" type="text/html" href="https://sel4.systems/news/2026.html#summit-program-2026"/>
+    <id>https://sel4.systems/news/2026.html#summit-program-2026</id>
+    <published>Wed, 01 Jul 2026 00:00:00 +0000</published>
+    <updated>Wed, 01 Jul 2026 00:00:00 +0000</updated>
+    <content type="html">
+      &lt;p&gt;
+  The &lt;a href=&quot;/Summit/2026/program.html&quot;&gt;program&lt;/a&gt;  of the &lt;a href=&quot;/Summit/2026&quot;&gt;seL4 Summit 2026&lt;/a&gt; is now available!
+&lt;/p&gt;
+&lt;p&gt;
+  The 2026 edition of the seL4 summit features a full first day dedicated to high-level overviews and perspectives, followed by Days 2 and 3 focusing on more technical insights and updates. Have a look at the &lt;a href=&quot;/Summit/2026/abstracts2026.html&quot;&gt;abstracts&lt;/a&gt; from our exciting keynotes and voices-from-nearby presenters, and the great line-up of interesting seL4-related research, development, field reports and technical discussions.
+&lt;/p&gt;
+&lt;p&gt;
+  The event will offer an ideal opportunity for people new to seL4 and to formally verified systems to increase their understanding of the landscape and ecosystem, and meet with seL4 developers, adopters and enthusiasts. Don&apos;t forget to &lt;a href=&quot;https://events.linuxfoundation.org/sel4-summit/register/&quot;&gt;register&lt;/a&gt; and see you soon in Vancouver.
+&lt;p&gt;
+
+&lt;div class=&quot;w-full md:w-3/4 lg:w-3/4 mt-10 mb-10 mx-auto aspect-5/2&quot;&gt;
+    &lt;a href=&quot;/Summit/2026/program.html&quot;&gt;
+    &lt;svg xmlns=&quot;http://www.w3.org/2000/svg&quot; xmlns:svg=&quot;http://www.w3.org/2000/svg&quot; version=&quot;1.1&quot; width=&quot;100%&quot; height=&quot;100%&quot; viewBox=&quot;0 0 792.41669 440.75&quot; content=&quot;&amp;lt;mxfile host=&amp;quot;app.diagrams.net&amp;quot; agent=&amp;quot;Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/143.0.0.0 Safari/537.36&amp;quot; version=&amp;quot;29.3.2&amp;quot;&amp;gt;&amp;#10; &amp;lt;diagram name=&amp;quot;Page-1&amp;quot; id=&amp;quot;vnLSUGy38cPuyNHt7b2f&amp;quot;&amp;gt;&amp;#10; &amp;lt;mxGraphModel dx=&amp;quot;957&amp;quot; dy=&amp;quot;641&amp;quot; grid=&amp;quot;1&amp;quot; gridSize=&amp;quot;10&amp;quot; guides=&amp;quot;1&amp;quot; tooltips=&amp;quot;1&amp;quot; connect=&amp;quot;1&amp;quot; arrows=&amp;quot;1&amp;quot; fold=&amp;quot;1&amp;quot; page=&amp;quot;1&amp;quot; pageScale=&amp;quot;1&amp;quot; pageWidth=&amp;quot;850&amp;quot; pageHeight=&amp;quot;1100&amp;quot; math=&amp;quot;0&amp;quot; shadow=&amp;quot;0&amp;quot;&amp;gt;&amp;#10; &amp;lt;root&amp;gt;&amp;#10; &amp;lt;mxCell id=&amp;quot;0&amp;quot; /&amp;gt;&amp;#10; &amp;lt;mxCell id=&amp;quot;1&amp;quot; parent=&amp;quot;0&amp;quot; /&amp;gt;&amp;#10; &amp;lt;mxCell id=&amp;quot;Yvs-J3TOg6n32_sm5Zv9-1&amp;quot; parent=&amp;quot;1&amp;quot; style=&amp;quot;rounded=0;fillColor=#e1d5e7;fontFamily=roboto;fontStyle=0;fontSize=26;strokeColor=none;&amp;quot; value=&amp;quot;Applications,&amp;amp;#xa;Overviews&amp;amp;#xa;&amp;amp;amp;&amp;amp;#xa;Perspectives&amp;quot; vertex=&amp;quot;1&amp;quot;&amp;gt;&amp;#10; &amp;lt;mxGeometry height=&amp;quot;310&amp;quot; width=&amp;quot;190&amp;quot; x=&amp;quot;240&amp;quot; y=&amp;quot;170&amp;quot; as=&amp;quot;geometry&amp;quot; /&amp;gt;&amp;#10; &amp;lt;/mxCell&amp;gt;&amp;#10; &amp;lt;mxCell id=&amp;quot;Yvs-J3TOg6n32_sm5Zv9-6&amp;quot; parent=&amp;quot;1&amp;quot; style=&amp;quot;rounded=0;fillColor=light-dark(#D2EBAB,#96CA50);fontFamily=roboto;fontStyle=0;fontSize=26;strokeColor=none;&amp;quot; value=&amp;quot;Dinner&amp;quot; vertex=&amp;quot;1&amp;quot;&amp;gt;&amp;#10; &amp;lt;mxGeometry height=&amp;quot;40&amp;quot; width=&amp;quot;190&amp;quot; x=&amp;quot;240&amp;quot; y=&amp;quot;500&amp;quot; as=&amp;quot;geometry&amp;quot; /&amp;gt;&amp;#10; &amp;lt;/mxCell&amp;gt;&amp;#10; &amp;lt;mxCell id=&amp;quot;Yvs-J3TOg6n32_sm5Zv9-9&amp;quot; parent=&amp;quot;1&amp;quot; style=&amp;quot;rounded=0;fillColor=light-dark(#C0D7E1,#94BBCC);fontFamily=roboto;fontStyle=0;fontSize=26;strokeColor=none;&amp;quot; value=&amp;quot;Development,&amp;amp;#xa;Research,&amp;amp;#xa;Reports&amp;amp;#xa;&amp;amp;amp;&amp;amp;#xa;Discussions&amp;quot; vertex=&amp;quot;1&amp;quot;&amp;gt;&amp;#10; &amp;lt;mxGeometry height=&amp;quot;310&amp;quot; width=&amp;quot;190&amp;quot; x=&amp;quot;440&amp;quot; y=&amp;quot;170&amp;quot; as=&amp;quot;geometry&amp;quot; /&amp;gt;&amp;#10; &amp;lt;/mxCell&amp;gt;&amp;#10; &amp;lt;mxCell id=&amp;quot;Yvs-J3TOg6n32_sm5Zv9-13&amp;quot; parent=&amp;quot;1&amp;quot; style=&amp;quot;rounded=0;fillColor=light-dark(#385378,#385378);fontFamily=roboto;fontStyle=0;fontSize=26;fontColor=light-dark(#d6dbe4, #ededed);strokeColor=none;&amp;quot; value=&amp;quot;Tue Sep 1&amp;quot; vertex=&amp;quot;1&amp;quot;&amp;gt;&amp;#10; &amp;lt;mxGeometry height=&amp;quot;40&amp;quot; width=&amp;quot;190&amp;quot; x=&amp;quot;240&amp;quot; y=&amp;quot;110&amp;quot; as=&amp;quot;geometry&amp;quot; /&amp;gt;&amp;#10; &amp;lt;/mxCell&amp;gt;&amp;#10; &amp;lt;mxCell id=&amp;quot;Yvs-J3TOg6n32_sm5Zv9-14&amp;quot; parent=&amp;quot;1&amp;quot; style=&amp;quot;rounded=0;fillColor=light-dark(#385378,#385378);fontFamily=roboto;fontStyle=0;fontSize=26;fontColor=light-dark(#d6dbe4, #ededed);strokeColor=none;&amp;quot; value=&amp;quot;Mon Aug 31&amp;quot; vertex=&amp;quot;1&amp;quot;&amp;gt;&amp;#10; &amp;lt;mxGeometry height=&amp;quot;40&amp;quot; width=&amp;quot;190&amp;quot; x=&amp;quot;40&amp;quot; y=&amp;quot;110&amp;quot; as=&amp;quot;geometry&amp;quot; /&amp;gt;&amp;#10; &amp;lt;/mxCell&amp;gt;&amp;#10; &amp;lt;mxCell id=&amp;quot;Yvs-J3TOg6n32_sm5Zv9-15&amp;quot; parent=&amp;quot;1&amp;quot; style=&amp;quot;rounded=0;fillColor=light-dark(#385378,#385378);fontFamily=roboto;fontStyle=0;fontSize=26;fontColor=light-dark(#d6dbe4, #ededed);strokeColor=none;&amp;quot; value=&amp;quot;Wed Sep 2&amp;quot; vertex=&amp;quot;1&amp;quot;&amp;gt;&amp;#10; &amp;lt;mxGeometry height=&amp;quot;40&amp;quot; width=&amp;quot;190&amp;quot; x=&amp;quot;440&amp;quot; y=&amp;quot;110&amp;quot; as=&amp;quot;geometry&amp;quot; /&amp;gt;&amp;#10; &amp;lt;/mxCell&amp;gt;&amp;#10; &amp;lt;mxCell id=&amp;quot;Yvs-J3TOg6n32_sm5Zv9-16&amp;quot; parent=&amp;quot;1&amp;quot; style=&amp;quot;rounded=0;fillColor=light-dark(#385378,#385378);fontFamily=roboto;fontStyle=0;fontSize=26;fontColor=light-dark(#d6dbe4, #ededed);strokeColor=none;&amp;quot; value=&amp;quot;Fri Sep 3&amp;quot; vertex=&amp;quot;1&amp;quot;&amp;gt;&amp;#10; &amp;lt;mxGeometry height=&amp;quot;40&amp;quot; width=&amp;quot;190&amp;quot; x=&amp;quot;640&amp;quot; y=&amp;quot;110&amp;quot; as=&amp;quot;geometry&amp;quot; /&amp;gt;&amp;#10; &amp;lt;/mxCell&amp;gt;&amp;#10; &amp;lt;mxCell id=&amp;quot;Yvs-J3TOg6n32_sm5Zv9-17&amp;quot; parent=&amp;quot;1&amp;quot; style=&amp;quot;rounded=0;fillColor=light-dark(#D2EBAB,#96CA50);fontFamily=roboto;fontStyle=0;fontSize=26;strokeColor=none;&amp;quot; value=&amp;quot;Informal&amp;amp;#xa;Social&amp;amp;#xa;Activities&amp;quot; vertex=&amp;quot;1&amp;quot;&amp;gt;&amp;#10; &amp;lt;mxGeometry height=&amp;quot;210&amp;quot; width=&amp;quot;190&amp;quot; x=&amp;quot;40&amp;quot; y=&amp;quot;330&amp;quot; as=&amp;quot;geometry&amp;quot; /&amp;gt;&amp;#10; &amp;lt;/mxCell&amp;gt;&amp;#10; &amp;lt;mxCell id=&amp;quot;Yvs-J3TOg6n32_sm5Zv9-19&amp;quot; parent=&amp;quot;1&amp;quot; style=&amp;quot;rounded=0;fillColor=light-dark(#385378,#385378);fontFamily=roboto;fontStyle=0;fontSize=34;fontColor=light-dark(#d6dbe4, #ededed);strokeColor=none;&amp;quot; value=&amp;quot;Day 1&amp;quot; vertex=&amp;quot;1&amp;quot;&amp;gt;&amp;#10; &amp;lt;mxGeometry height=&amp;quot;50&amp;quot; width=&amp;quot;190&amp;quot; x=&amp;quot;240&amp;quot; y=&amp;quot;50&amp;quot; as=&amp;quot;geometry&amp;quot; /&amp;gt;&amp;#10; &amp;lt;/mxCell&amp;gt;&amp;#10; &amp;lt;mxCell id=&amp;quot;Yvs-J3TOg6n32_sm5Zv9-20&amp;quot; parent=&amp;quot;1&amp;quot; style=&amp;quot;rounded=0;fillColor=light-dark(#385378,#385378);fontFamily=roboto;fontStyle=0;fontSize=34;fontColor=light-dark(#d6dbe4, #ededed);strokeColor=none;&amp;quot; value=&amp;quot;Day 2&amp;quot; vertex=&amp;quot;1&amp;quot;&amp;gt;&amp;#10; &amp;lt;mxGeometry height=&amp;quot;50&amp;quot; width=&amp;quot;190&amp;quot; x=&amp;quot;440&amp;quot; y=&amp;quot;50&amp;quot; as=&amp;quot;geometry&amp;quot; /&amp;gt;&amp;#10; &amp;lt;/mxCell&amp;gt;&amp;#10; &amp;lt;mxCell id=&amp;quot;Yvs-J3TOg6n32_sm5Zv9-21&amp;quot; parent=&amp;quot;1&amp;quot; style=&amp;quot;rounded=0;fillColor=light-dark(#385378,#385378);fontFamily=roboto;fontStyle=0;fontSize=34;fontColor=light-dark(#d6dbe4, #ededed);strokeColor=none;&amp;quot; value=&amp;quot;Day 3&amp;quot; vertex=&amp;quot;1&amp;quot;&amp;gt;&amp;#10; &amp;lt;mxGeometry height=&amp;quot;50&amp;quot; width=&amp;quot;190&amp;quot; x=&amp;quot;640&amp;quot; y=&amp;quot;50&amp;quot; as=&amp;quot;geometry&amp;quot; /&amp;gt;&amp;#10; &amp;lt;/mxCell&amp;gt;&amp;#10; &amp;lt;mxCell id=&amp;quot;JTQsx1d-b1zgZmdPj7uW-1&amp;quot; parent=&amp;quot;1&amp;quot; style=&amp;quot;rounded=0;fillColor=light-dark(#C0D7E1,#94BBCC);fontFamily=roboto;fontStyle=0;fontSize=26;strokeColor=none;&amp;quot; value=&amp;quot;Development,&amp;amp;#xa;Research,&amp;amp;#xa;Reports&amp;amp;#xa;&amp;amp;amp;&amp;amp;#xa;Discussions&amp;quot; vertex=&amp;quot;1&amp;quot;&amp;gt;&amp;#10; &amp;lt;mxGeometry height=&amp;quot;310&amp;quot; width=&amp;quot;190&amp;quot; x=&amp;quot;640&amp;quot; y=&amp;quot;170&amp;quot; as=&amp;quot;geometry&amp;quot; /&amp;gt;&amp;#10; &amp;lt;/mxCell&amp;gt;&amp;#10; &amp;lt;/root&amp;gt;&amp;#10; &amp;lt;/mxGraphModel&amp;gt;&amp;#10; &amp;lt;/diagram&amp;gt;&amp;#10;&amp;lt;/mxfile&amp;gt;&quot; id=&quot;svg60&quot; xml:space=&quot;preserve&quot;&gt;
+  &lt;sodipodi:namedview id=&quot;namedview60&quot; pagecolor=&quot;#ffffff&quot; bordercolor=&quot;#000000&quot; borderopacity=&quot;0.25&quot;/&gt;
+  &lt;g id=&quot;g61&quot; transform=&quot;translate(1.91667,0.24999667)&quot;&gt;
+    &lt;rect fill=&quot;#ffffff&quot; width=&quot;100%&quot; height=&quot;100%&quot; x=&quot;0&quot; y=&quot;0&quot; id=&quot;rect1&quot;/&gt;
+    &lt;g id=&quot;g65&quot; transform=&quot;translate(-1.91667,-0.24999667)&quot;&gt;
+      &lt;rect fill=&quot;#ffffff&quot; width=&quot;100%&quot; height=&quot;100%&quot; x=&quot;0&quot; y=&quot;0&quot; id=&quot;rect1-6&quot;/&gt;
+      &lt;g id=&quot;g73&quot;&gt;
+        &lt;g data-cell-id=&quot;0&quot; id=&quot;g72&quot;&gt;
+          &lt;g data-cell-id=&quot;1&quot; id=&quot;g71&quot;&gt;
+            &lt;g data-cell-id=&quot;DBtUXKYY8ZC7aqgYdBf2-6&quot; id=&quot;g6&quot;&gt;
+              &lt;g transform=&quot;translate(0.5,0.5)&quot; id=&quot;g2&quot;&gt;
+                &lt;rect x=&quot;200&quot; y=&quot;400&quot; width=&quot;190&quot; height=&quot;40&quot; fill=&quot;#d2ebab&quot; stroke=&quot;none&quot; pointer-events=&quot;all&quot; id=&quot;rect2&quot;/&gt;
+              &lt;/g&gt;
+              &lt;g id=&quot;g5&quot;&gt;
+                &lt;g fill=&quot;#000000&quot; font-family=&quot;roboto&quot; text-anchor=&quot;middle&quot; font-size=&quot;26px&quot; id=&quot;g4&quot;&gt;
+                  &lt;g transform=&quot;translate(295,432)&quot; id=&quot;g3&quot;&gt;
+                    &lt;text id=&quot;text2&quot;&gt;
+                      &lt;tspan id=&quot;tspan2&quot;&gt;Dinner&lt;/tspan&gt;
+                    &lt;/text&gt;
+                  &lt;/g&gt;
+                &lt;/g&gt;
+              &lt;/g&gt;
+            &lt;/g&gt;
+            &lt;g data-cell-id=&quot;DBtUXKYY8ZC7aqgYdBf2-9&quot; id=&quot;g14&quot;&gt;
+              &lt;g transform=&quot;translate(0.5,0.5)&quot; id=&quot;g7&quot;&gt;
+                &lt;rect x=&quot;400&quot; y=&quot;120&quot; width=&quot;190&quot; height=&quot;260&quot; fill=&quot;#c0d7e1&quot; stroke=&quot;none&quot; pointer-events=&quot;all&quot; id=&quot;rect6&quot;/&gt;
+              &lt;/g&gt;
+              &lt;g id=&quot;g13&quot;&gt;
+                &lt;g fill=&quot;#000000&quot; font-family=&quot;roboto&quot; text-anchor=&quot;middle&quot; data-blockTextHeight=&quot;156&quot; font-size=&quot;26px&quot; id=&quot;g12&quot;&gt;
+                  &lt;g transform=&quot;translate(495,172)&quot; id=&quot;g11&quot;&gt;
+                    &lt;text y=&quot;26&quot; data-line-font-size=&quot;26&quot; x=&quot;0&quot; id=&quot;text7&quot;&gt;
+                      &lt;tspan id=&quot;tspan7&quot;&gt;Development,&lt;/tspan&gt;
+                    &lt;/text&gt;
+                    &lt;text y=&quot;57.200001&quot; data-line-font-size=&quot;26&quot; x=&quot;0&quot; id=&quot;text8&quot;&gt;
+                      &lt;tspan id=&quot;tspan8&quot;&gt;Research,&lt;/tspan&gt;
+                    &lt;/text&gt;
+                    &lt;text y=&quot;88.400002&quot; data-line-font-size=&quot;26&quot; x=&quot;0&quot; id=&quot;text9&quot;&gt;
+                      &lt;tspan id=&quot;tspan9&quot;&gt;Reports &lt;/tspan&gt;
+                    &lt;/text&gt;
+                    &lt;text y=&quot;119.6&quot; data-line-font-size=&quot;26&quot; x=&quot;0&quot; id=&quot;text10&quot;&gt;
+                      &lt;tspan id=&quot;tspan10&quot;&gt;&amp;amp;&lt;/tspan&gt;
+                    &lt;/text&gt;
+                    &lt;text y=&quot;150.8&quot; data-line-font-size=&quot;26&quot; x=&quot;0&quot; id=&quot;text11&quot;&gt;
+                      &lt;tspan id=&quot;tspan11&quot;&gt;Discussions&lt;/tspan&gt;
+                    &lt;/text&gt;
+                  &lt;/g&gt;
+                &lt;/g&gt;
+              &lt;/g&gt;
+            &lt;/g&gt;
+            &lt;g data-cell-id=&quot;DBtUXKYY8ZC7aqgYdBf2-13&quot; id=&quot;g19&quot;&gt;
+              &lt;g transform=&quot;translate(0.5,0.5)&quot; id=&quot;g15&quot;&gt;
+                &lt;rect x=&quot;200&quot; y=&quot;60&quot; width=&quot;190&quot; height=&quot;40&quot; fill=&quot;#385378&quot; stroke=&quot;none&quot; pointer-events=&quot;all&quot; style=&quot;fill:#385378&quot; id=&quot;rect14&quot;/&gt;
+              &lt;/g&gt;
+              &lt;g id=&quot;g18&quot;&gt;
+                &lt;g fill=&quot;#d6dbe4&quot; font-family=&quot;roboto&quot; text-anchor=&quot;middle&quot; font-size=&quot;26px&quot; id=&quot;g17&quot;&gt;
+                  &lt;g transform=&quot;translate(295,92)&quot; id=&quot;g16&quot;&gt;
+                    &lt;text id=&quot;text15&quot;&gt;
+                      &lt;tspan id=&quot;tspan15&quot;&gt;Tue Sep 1&lt;/tspan&gt;
+                    &lt;/text&gt;
+                  &lt;/g&gt;
+                &lt;/g&gt;
+              &lt;/g&gt;
+            &lt;/g&gt;
+            &lt;g data-cell-id=&quot;DBtUXKYY8ZC7aqgYdBf2-14&quot; id=&quot;g24&quot;&gt;
+              &lt;g transform=&quot;translate(0.5,0.5)&quot; id=&quot;g20&quot;&gt;
+                &lt;rect x=&quot;0&quot; y=&quot;60&quot; width=&quot;190&quot; height=&quot;40&quot; fill=&quot;#385378&quot; stroke=&quot;none&quot; pointer-events=&quot;all&quot; style=&quot;fill:#385378&quot; id=&quot;rect19&quot;/&gt;
+              &lt;/g&gt;
+              &lt;g id=&quot;g23&quot;&gt;
+                &lt;g fill=&quot;#d6dbe4&quot; font-family=&quot;roboto&quot; text-anchor=&quot;middle&quot; font-size=&quot;26px&quot; id=&quot;g22&quot;&gt;
+                  &lt;g transform=&quot;translate(95,92)&quot; id=&quot;g21&quot;&gt;
+                    &lt;text id=&quot;text20&quot;&gt;
+                      &lt;tspan id=&quot;tspan20&quot;&gt;Mon Aug 31&lt;/tspan&gt;
+                    &lt;/text&gt;
+                  &lt;/g&gt;
+                &lt;/g&gt;
+              &lt;/g&gt;
+            &lt;/g&gt;
+            &lt;g data-cell-id=&quot;DBtUXKYY8ZC7aqgYdBf2-15&quot; id=&quot;g29&quot;&gt;
+              &lt;g transform=&quot;translate(0.5,0.5)&quot; id=&quot;g25&quot;&gt;
+                &lt;rect x=&quot;400&quot; y=&quot;60&quot; width=&quot;190&quot; height=&quot;40&quot; fill=&quot;#385378&quot; stroke=&quot;none&quot; pointer-events=&quot;all&quot; style=&quot;fill:#385378&quot; id=&quot;rect24&quot;/&gt;
+              &lt;/g&gt;
+              &lt;g id=&quot;g28&quot;&gt;
+                &lt;g fill=&quot;#d6dbe4&quot; font-family=&quot;roboto&quot; text-anchor=&quot;middle&quot; font-size=&quot;26px&quot; id=&quot;g27&quot;&gt;
+                  &lt;g transform=&quot;translate(495,92)&quot; id=&quot;g26&quot;&gt;
+                    &lt;text id=&quot;text25&quot;&gt;
+                      &lt;tspan id=&quot;tspan25&quot;&gt;Wed Sep 2&lt;/tspan&gt;
+                    &lt;/text&gt;
+                  &lt;/g&gt;
+                &lt;/g&gt;
+              &lt;/g&gt;
+            &lt;/g&gt;
+            &lt;g data-cell-id=&quot;DBtUXKYY8ZC7aqgYdBf2-16&quot; id=&quot;g34&quot;&gt;
+              &lt;g transform=&quot;translate(0.5,0.5)&quot; id=&quot;g30&quot;&gt;
+                &lt;rect x=&quot;600&quot; y=&quot;60&quot; width=&quot;190&quot; height=&quot;40&quot; fill=&quot;#385378&quot; stroke=&quot;none&quot; pointer-events=&quot;all&quot; style=&quot;fill:#385378&quot; id=&quot;rect29&quot;/&gt;
+              &lt;/g&gt;
+              &lt;g id=&quot;g33&quot;&gt;
+                &lt;g fill=&quot;#d6dbe4&quot; font-family=&quot;roboto&quot; text-anchor=&quot;middle&quot; font-size=&quot;26px&quot; id=&quot;g32&quot;&gt;
+                  &lt;g transform=&quot;translate(695,92)&quot; id=&quot;g31&quot;&gt;
+                    &lt;text id=&quot;text30&quot;&gt;
+                      &lt;tspan id=&quot;tspan30&quot;&gt;Thu Sep 3&lt;/tspan&gt;
+                    &lt;/text&gt;
+                  &lt;/g&gt;
+                &lt;/g&gt;
+              &lt;/g&gt;
+            &lt;/g&gt;
+            &lt;g data-cell-id=&quot;DBtUXKYY8ZC7aqgYdBf2-17&quot; id=&quot;g40&quot;&gt;
+              &lt;g transform=&quot;translate(0.5,0.5)&quot; id=&quot;g35&quot;&gt;
+                &lt;rect x=&quot;0&quot; y=&quot;230&quot; width=&quot;190&quot; height=&quot;210&quot; fill=&quot;#d2ebab&quot; stroke=&quot;none&quot; pointer-events=&quot;all&quot; id=&quot;rect34&quot;/&gt;
+              &lt;/g&gt;
+              &lt;g id=&quot;g39&quot;&gt;
+                &lt;g fill=&quot;#000000&quot; font-family=&quot;roboto&quot; text-anchor=&quot;middle&quot; data-blockTextHeight=&quot;93.60000000000001&quot; font-size=&quot;26px&quot; id=&quot;g38&quot;&gt;
+                  &lt;g transform=&quot;translate(95,288.2)&quot; id=&quot;g37&quot;&gt;
+                    &lt;text y=&quot;26&quot; data-line-font-size=&quot;26&quot; x=&quot;0&quot; id=&quot;text35&quot;&gt;
+                      &lt;tspan id=&quot;tspan35&quot;&gt;Informal&lt;/tspan&gt;
+                    &lt;/text&gt;
+                    &lt;text y=&quot;57.200001&quot; data-line-font-size=&quot;26&quot; x=&quot;0&quot; id=&quot;text36&quot;&gt;
+                      &lt;tspan id=&quot;tspan36&quot;&gt;Social&lt;/tspan&gt;
+                    &lt;/text&gt;
+                    &lt;text y=&quot;88.400002&quot; data-line-font-size=&quot;26&quot; x=&quot;0&quot; id=&quot;text37&quot;&gt;
+                      &lt;tspan id=&quot;tspan37&quot;&gt;Activities&lt;/tspan&gt;
+                    &lt;/text&gt;
+                  &lt;/g&gt;
+                &lt;/g&gt;
+              &lt;/g&gt;
+            &lt;/g&gt;
+            &lt;g data-cell-id=&quot;DBtUXKYY8ZC7aqgYdBf2-19&quot; id=&quot;g45&quot;&gt;
+              &lt;g transform=&quot;translate(0.5,0.5)&quot; id=&quot;g41&quot;&gt;
+                &lt;rect x=&quot;200&quot; y=&quot;0&quot; width=&quot;190&quot; height=&quot;50&quot; fill=&quot;#385378&quot; stroke=&quot;none&quot; pointer-events=&quot;all&quot; style=&quot;fill:#385378&quot; id=&quot;rect40&quot;/&gt;
+              &lt;/g&gt;
+              &lt;g id=&quot;g44&quot;&gt;
+                &lt;g fill=&quot;#d6dbe4&quot; font-family=&quot;roboto&quot; text-anchor=&quot;middle&quot; font-size=&quot;34px&quot; id=&quot;g43&quot;&gt;
+                  &lt;g transform=&quot;translate(295,41)&quot; id=&quot;g42&quot;&gt;
+                    &lt;text id=&quot;text41&quot;&gt;
+                      &lt;tspan id=&quot;tspan41&quot;&gt;Day 1&lt;/tspan&gt;
+                    &lt;/text&gt;
+                  &lt;/g&gt;
+                &lt;/g&gt;
+              &lt;/g&gt;
+            &lt;/g&gt;
+            &lt;g data-cell-id=&quot;DBtUXKYY8ZC7aqgYdBf2-20&quot; id=&quot;g50&quot;&gt;
+              &lt;g transform=&quot;translate(0.5,0.5)&quot; id=&quot;g46&quot;&gt;
+                &lt;rect x=&quot;400&quot; y=&quot;0&quot; width=&quot;190&quot; height=&quot;50&quot; fill=&quot;#385378&quot; stroke=&quot;none&quot; pointer-events=&quot;all&quot; style=&quot;fill:#385378&quot; id=&quot;rect45&quot;/&gt;
+              &lt;/g&gt;
+              &lt;g id=&quot;g49&quot;&gt;
+                &lt;g fill=&quot;#d6dbe4&quot; font-family=&quot;roboto&quot; text-anchor=&quot;middle&quot; font-size=&quot;34px&quot; id=&quot;g48&quot;&gt;
+                  &lt;g transform=&quot;translate(495,41)&quot; id=&quot;g47&quot;&gt;
+                    &lt;text id=&quot;text46&quot;&gt;
+                      &lt;tspan id=&quot;tspan46&quot;&gt;Day 2&lt;/tspan&gt;
+                    &lt;/text&gt;
+                  &lt;/g&gt;
+                &lt;/g&gt;
+              &lt;/g&gt;
+            &lt;/g&gt;
+            &lt;g data-cell-id=&quot;DBtUXKYY8ZC7aqgYdBf2-21&quot; id=&quot;g55&quot;&gt;
+              &lt;g transform=&quot;translate(0.5,0.5)&quot; id=&quot;g51&quot;&gt;
+                &lt;rect x=&quot;600&quot; y=&quot;0&quot; width=&quot;190&quot; height=&quot;50&quot; fill=&quot;#385378&quot; stroke=&quot;none&quot; pointer-events=&quot;all&quot; style=&quot;fill:#385378&quot; id=&quot;rect50&quot;/&gt;
+              &lt;/g&gt;
+              &lt;g id=&quot;g54&quot;&gt;
+                &lt;g fill=&quot;#d6dbe4&quot; font-family=&quot;roboto&quot; text-anchor=&quot;middle&quot; font-size=&quot;34px&quot; id=&quot;g53&quot;&gt;
+                  &lt;g transform=&quot;translate(695,41)&quot; id=&quot;g52&quot;&gt;
+                    &lt;text id=&quot;text51&quot;&gt;
+                      &lt;tspan id=&quot;tspan51&quot;&gt;Day 3&lt;/tspan&gt;
+                    &lt;/text&gt;
+                  &lt;/g&gt;
+                &lt;/g&gt;
+              &lt;/g&gt;
+            &lt;/g&gt;
+            &lt;g data-cell-id=&quot;DBtUXKYY8ZC7aqgYdBf2-24&quot; id=&quot;g63&quot;&gt;
+              &lt;g transform=&quot;translate(0.5,0.5)&quot; id=&quot;g56&quot;&gt;
+                &lt;rect x=&quot;600&quot; y=&quot;120&quot; width=&quot;190&quot; height=&quot;260&quot; fill=&quot;#c0d7e1&quot; stroke=&quot;none&quot; pointer-events=&quot;all&quot; id=&quot;rect55&quot;/&gt;
+              &lt;/g&gt;
+              &lt;g id=&quot;g62&quot;&gt;
+                &lt;g fill=&quot;#000000&quot; font-family=&quot;roboto&quot; text-anchor=&quot;middle&quot; data-blockTextHeight=&quot;156&quot; font-size=&quot;26px&quot; id=&quot;g61-2&quot;&gt;
+                  &lt;g transform=&quot;translate(695,172)&quot; id=&quot;g60&quot;&gt;
+                    &lt;text y=&quot;26&quot; data-line-font-size=&quot;26&quot; x=&quot;0&quot; id=&quot;text56&quot;&gt;
+                      &lt;tspan id=&quot;tspan56&quot;&gt;Development,&lt;/tspan&gt;
+                    &lt;/text&gt;
+                    &lt;text y=&quot;57.200001&quot; data-line-font-size=&quot;26&quot; x=&quot;0&quot; id=&quot;text57&quot;&gt;
+                      &lt;tspan id=&quot;tspan57&quot;&gt;Research,&lt;/tspan&gt;
+                    &lt;/text&gt;
+                    &lt;text y=&quot;88.400002&quot; data-line-font-size=&quot;26&quot; x=&quot;0&quot; id=&quot;text58&quot;&gt;
+                      &lt;tspan id=&quot;tspan58&quot;&gt;Reports &lt;/tspan&gt;
+                    &lt;/text&gt;
+                    &lt;text y=&quot;119.6&quot; data-line-font-size=&quot;26&quot; x=&quot;0&quot; id=&quot;text59&quot;&gt;
+                      &lt;tspan id=&quot;tspan59&quot;&gt;&amp;amp;&lt;/tspan&gt;
+                    &lt;/text&gt;
+                    &lt;text y=&quot;150.8&quot; data-line-font-size=&quot;26&quot; x=&quot;0&quot; id=&quot;text60&quot;&gt;
+                      &lt;tspan id=&quot;tspan60&quot;&gt;Discussions&lt;/tspan&gt;
+                    &lt;/text&gt;
+                  &lt;/g&gt;
+                &lt;/g&gt;
+              &lt;/g&gt;
+            &lt;/g&gt;
+            &lt;g data-cell-id=&quot;TNBEagq9y8Wiq4CNqpp_-1&quot; id=&quot;g70&quot;&gt;
+              &lt;g transform=&quot;translate(0.5,0.5)&quot; id=&quot;g64&quot;&gt;
+                &lt;rect x=&quot;200&quot; y=&quot;120&quot; width=&quot;190&quot; height=&quot;260&quot; fill=&quot;#e1d5e7&quot; stroke=&quot;none&quot; pointer-events=&quot;all&quot; id=&quot;rect63&quot;/&gt;
+              &lt;/g&gt;
+              &lt;g id=&quot;g69&quot;&gt;
+                &lt;g fill=&quot;#000000&quot; font-family=&quot;roboto&quot; text-anchor=&quot;middle&quot; data-blockTextHeight=&quot;124.80000000000001&quot; font-size=&quot;26px&quot; id=&quot;g68&quot;&gt;
+                  &lt;g transform=&quot;translate(295,187.6)&quot; id=&quot;g67&quot;&gt;
+                    &lt;text y=&quot;26&quot; data-line-font-size=&quot;26&quot; x=&quot;0&quot; id=&quot;text64&quot;&gt;
+                      &lt;tspan id=&quot;tspan64&quot;&gt;Applications,&lt;/tspan&gt;
+                    &lt;/text&gt;
+                    &lt;text y=&quot;57.200001&quot; data-line-font-size=&quot;26&quot; x=&quot;0&quot; id=&quot;text65&quot;&gt;
+                      &lt;tspan id=&quot;tspan65&quot;&gt;Overviews&lt;/tspan&gt;
+                    &lt;/text&gt;
+                    &lt;text y=&quot;88.400002&quot; data-line-font-size=&quot;26&quot; x=&quot;0&quot; id=&quot;text66&quot;&gt;
+                      &lt;tspan id=&quot;tspan66&quot;&gt;&amp;amp;&lt;/tspan&gt;
+                    &lt;/text&gt;
+                    &lt;text y=&quot;119.6&quot; data-line-font-size=&quot;26&quot; x=&quot;0&quot; id=&quot;text67&quot;&gt;
+                      &lt;tspan id=&quot;tspan67&quot;&gt;Perspectives&lt;/tspan&gt;
+                    &lt;/text&gt;
+                  &lt;/g&gt;
+                &lt;/g&gt;
+              &lt;/g&gt;
+            &lt;/g&gt;
+          &lt;/g&gt;
+        &lt;/g&gt;
+      &lt;/g&gt;
+    &lt;/g&gt;
+  &lt;/g&gt;
+&lt;/svg&gt;
+  &lt;/a&gt;
+&lt;/div&gt;
+
+&lt;p class=&quot;text-center&quot;&gt;
+  Program at a glance. Go to the &lt;a href=&quot;/Summit/2026/program.html&quot;&gt;full
+  program&lt;/a&gt;.
+&lt;/p&gt;
+
+    </content>
+  </entry>
   <rights>Copyright 2026 seL4 Foundation</rights>
   <entry>
     <title>Functional correctness proof for MCS seL4 completed on RISC-V</title>
@@ -375,79 +627,6 @@ update of user code compared to Microkit 2.1.0.&lt;/p&gt;
   Fraunhofer AISEC is exploring the use of the seL4 microkernel and its
   ecosystem to build strictly separated, resilient embedded and IoT systems.
 &lt;/p&gt;
-
-    </content>
-  </entry>
-  <rights>Copyright 2026 seL4 Foundation</rights>
-  <entry>
-    <title>Call For Presentations for the seL4 Summit 2026</title>
-    <link rel="alternate" type="text/html" href="https://sel4.systems/news/2026.html"/>
-    <id>https://sel4.systems/news/2026.html</id>
-    <published>Fri, 23 Jan 2026 00:00:00 +0000</published>
-    <updated>Fri, 23 Jan 2026 00:00:00 +0000</updated>
-    <content type="html">
-      &lt;div class=&quot;mt-10&quot;&gt;
-  &lt;p&gt;
-    You can now &lt;a href=&quot;/Summit/2026/cfp.html&quot;&gt;submit a
-    proposal&lt;/a&gt; for the seL4 Summit 2026, to be held in Vancouver September
-    1-3.
-  &lt;/p&gt;
-&lt;/div&gt;
-
-&lt;div class=&quot;text-f_green-600&quot;&gt;
-  &lt;p class=&quot;font-semibold text-2xl&quot;&gt;
-    NEW!
-  &lt;/p&gt;
-  &lt;p&gt;
-    The 2026 edition of the seL4 summit will feature a &lt;strong&gt;&lt;span
-    class=&quot;text-f_green-600&quot;&gt;full first day&lt;/span&gt;&lt;/strong&gt; dedicated to
-    &lt;strong&gt;&lt;span class=&quot;text-f_green-600&quot;&gt;applications, overviews, and
-    perspectives&lt;/span&gt;&lt;/strong&gt; on seL4-based systems and  formally verified
-    software in the real world. This will be followed by Days 2 and 3 focusing
-    on more technical development, research, reports, and discussions.
-  &lt;/p&gt;
-  &lt;p&gt;
-    We are particularly keen to &lt;strong&gt;&lt;span class=&quot;text-f_green-600&quot;&gt;welcome
-    people who are new to seL4&lt;/span&gt;&lt;/strong&gt; or still developing their
-    familiarity with the technology. The event will offer an &lt;strong&gt;&lt;span
-    class=&quot;text-f_green-600&quot;&gt;ideal opportunity to gain a high-level view of the
-    landscape and ecosystem&lt;/span&gt;&lt;/strong&gt; of seL4 and its associated tools,
-    frameworks and languages, as well as formally verified software in general,
-    and to take stock of the latest updates.
-  &lt;/p&gt;
-&lt;/div&gt;
-&lt;div class=&quot;mt-10&quot;&gt;
-  &lt;p&gt;
-    The program includes a wide range of seL4-related themes and topics:
-  &lt;/p&gt;
-  &lt;p&gt;
-    Themes
-  &lt;/p&gt;
-  &lt;ul&gt;
-    &lt;li&gt;visions, lessons-learned, roadmaps for verified software deployments&lt;/li&gt;
-    &lt;li&gt;use-cases, deployments, experiences&lt;/li&gt;
-    &lt;li&gt;walk-throughs and demos of tools, frameworks, systems&lt;/li&gt;
-    &lt;li&gt;early work, crazy ideas, out-of-the-box thinking&lt;/li&gt;
-    &lt;li&gt;technical progress, updates, breakthroughs&lt;/li&gt;
-  &lt;/ul&gt;
-  &lt;p&gt;
-    Topics
-  &lt;/p&gt;
-  &lt;ul&gt;
-    &lt;li&gt;seL4 experience reports&lt;/li&gt;
-    &lt;li&gt;seL4 and assurance&lt;/li&gt;
-    &lt;li&gt;seL4 on-going and planned R&amp;D, mature of early stage&lt;/li&gt;
-    &lt;li&gt;seL4 and hardware&lt;/li&gt;
-  &lt;/ul&gt;
-&lt;/div&gt;
-&lt;div class=&quot;mt-10&quot;&gt;
-  &lt;p&gt;
-    Check the full &lt;a href=&quot;/Summit/2026/cfp.html&quot;&gt;Call For
-    Presentations&lt;/a&gt;. To propose a talk, upload an abstract of one page or less
-    by &lt;strong&gt;20 April 2026&lt;/strong&gt; to the
-    &lt;strong&gt;&lt;a href=&quot;https://form.jotform.com/260147181364858&quot;&gt;submission portal&lt;/a&gt;&lt;/strong&gt;.
-  &lt;/p&gt;
-&lt;/div&gt;
 
     </content>
   </entry>

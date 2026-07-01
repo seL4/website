@@ -2747,6 +2747,9 @@
   .bg-\[\#385378\] {
     background-color: #385378;
   }
+  .bg-\[rgba\(150\,202\,79\,0\.1\)\] {
+    background-color: rgba(150,202,79,0.1);
+  }
   .bg-darkblue {
     background-color: #030020;
   }
@@ -5183,6 +5186,11 @@
   .dark\:bg-\[\#030020\] {
     @media (prefers-color-scheme: dark) {
       background-color: #030020;
+    }
+  }
+  .dark\:bg-\[rgba\(150\,202\,79\,\.3\)\] {
+    @media (prefers-color-scheme: dark) {
+      background-color: rgba(150,202,79,.3);
     }
   }
   .dark\:bg-darkblue {
