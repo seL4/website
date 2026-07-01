@@ -6,7 +6,7 @@
     <title>seL4 Summit 2026 Abstracts | seL4</title>
     <meta name="author" content="seL4 Foundation">
     <link rel="canonical" href="https://sel4.systems/Summit/2026/abstracts2026.html">
-    <link href="/css/sel4.css?v=1782882980" rel="stylesheet">
+    <link href="/css/sel4.css?v=1782886505" rel="stylesheet">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
@@ -732,6 +732,71 @@
     
   </div>
 </div>
+
+
+  <div id="a-staying-red" class="py-12 mb-5 section-max-w sm:py-16">
+
+  <div class="mx-auto px-2 sm:px-6 lg:px-8">
+    <div class="mx-auto lg:mx-0">
+      <h2 class="text-xl font-bold tracking-tight text-dark mb-6 sm:text-4xl">“Staying in the Red Queen&apos;s Race”: Organizing Small and Medium Sized FOSS Communities in a World of Regulations and AI</h2>
+      <p>
+        <span class="text-gray-800 dark:text-gray-300">Alistair Woodman</span>
+        <br>
+        <span class="text-light">Erlang Ecosystem Foundation</span>
+      </p>
+      
+      <article class="theprose">
+        <div class="pt-5">
+          <p>
+  In this 'Voices from Nearby' session, I will provide thoughts and insights into how the Erlang Ecosystem Foundation (EEF) has been self-organizing to survive and thrive for the foreseeable future.
+</p>
+<p>
+  The EEF was founded in 2019 as a not-for-profit primarily focused on community marketing and outreach to the next generation of programmers to get involved with functional programming and the BEAM ecosystem. Elixir, Erlang and Gleam programmers all feel that they have 'reached the promise land' and express high degrees of satisfaction with the community and development environment.
+</p>
+<p>
+  This 'bucolic idyll' was disrupted over the last couple of years by a couple of external forces: i) In late 2022, I first read an early draft of the EU's Cyber Resiliency Act (CRA); and ii) AI powered analysis of code went from annoying AI-slop in early 2025 to unearthing critical vulnerabilities in early 2026.
+</p>
+<p>
+  Fortunately the EEF's board and community leaders recognized these disruptions early and we started to rally around the idea that the EEF needed to drastically expanding its scope and mission if our community was going to survive and remain relevant going forward. Failing to step up to the challenge could lead to an 'extiction event' for our languages and libraries as serious commercially-usable technology.
+</p>
+<p>
+  I will walk you through the decisions and actions we took and are making in order to stay relevant. This talk will give you a sense and perspective of what FOSS communities will need to do just to stay in 'the Red Queen's race'.
+</p>
+        </div>
+      </article>
+      <div class="flex flex-row gap-x-2 pt-2">
+        
+        
+        <div>
+          <p class="p-1 mt-2">
+            
+              <a href="program.html#p-staying-red" class="text-sm text-light underline">See this talk in the program</a>
+            
+          </p>
+        </div>
+      </div>
+      
+    </div>
+  </div>
+</div>
+
+<div class="flex w-full mb-6">
+  <div class="flex-1"></div>
+  <hr class="w-10 h-px bg-gray-200 border-0 dark:bg-gray-600">
+  
+<a href="#page-top" class="relative -mt-3.5 mx-4">
+  <div class="dark:bg-slate-900 hover:bg-slate-100 dark:hover:bg-slate-800 p-1.5 h-7 w-7 rounded-full shadow-xs left-1">
+    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" aria-hidden="true" data-slot="icon" class="h-4 w-4 text-slate-400 dark:text-slate-500">
+  <path stroke-linecap="round" stroke-linejoin="round" d="M12 19.5v-15m0 0-6.75 6.75M12 4.5l6.75 6.75"/>
+</svg>
+  </div>
+</a>
+
+  <hr class="w-10 h-px bg-gray-200 border-0 dark:bg-gray-600">
+  <div class="flex-1"></div>
+</div>
+
+
 
 
   <div id="a-trends-formal" class="py-12 mb-5 section-max-w sm:py-16">
@@ -1922,10 +1987,10 @@ Updates on verification work will be provided by Miki Tanaka and Rob Sison in th
       <article class="theprose">
         <div class="pt-5">
           <p>
-  In its current form, the initialization code of the seL4 kernel dictates the policy of how resources are discovered and what capabilities are created at boot time, making it hard to integrate into existing boot infrastructure. Wepropose to delegate this policy to a pre-boot component and introduce both an interface and mechanisms for pre-boot infrastructure to communicate resources to the kernel and userspace. Not only does this pave the way for booting seL4 in a multikernel configuration where not all the nodes use the same resources, it also provides a cleaner separation between verified and unverified code.
+  In its current form, the initialization code of the seL4 kernel dictates the policy of how resources are discovered and what capabilities are created at boot time, making it hard to integrate into existing boot infrastructure. We propose to delegate this policy to a pre-boot component and introduce both an interface and mechanisms for pre-boot infrastructure to communicate resources to the kernel and userspace. Not only does this pave the way for booting seL4 in a multikernel configuration where not all the nodes use the same resources, it also provides a cleaner separation between verified and unverified code.
 </p>
 <p>
-  Contrary to the rest of the design of seL4, the boot code makes several policy decisions. On x86 for example, the kernel expects to be booted in protected mode. This is the case when loaded with GRUB. All modern server platforms have an EFI pre-boot environment, which leaves the CPU already in long mode (Intel-speak for 64bit mode). On Arm platforms the physical memory regions are extracted from a device tree at compile time. While device trees are the standard for embedded systems, Arm server platforms also use EFI, which provides a memorymapthatisonlyknownatruntime. Thingswillget even morecomplicated with partitioned multikernel configurations, where the resources of the nodes need to be disjoint, and the global memory map provided by the firmware does not have enough information for the kernel to create the right capabilities. In such a setting, there will also be shared frames that userspace components use to communicate between cores. These are resources that the kernel does not touch but should just be passing to userspace. Currently, the seL4 ecosystem does not have a mechanism to pass resources at addresses that are not statically known to userspace.
+  Contrary to the rest of the design of seL4, the boot code makes several policy decisions. On x86 for example, the kernel expects to be booted in protected mode. This is the case when loaded with GRUB. All modern server platforms have an EFI pre-boot environment, which leaves the CPU already in long mode (Intel-speak for 64bit mode). On Arm platforms the physical memory regions are extracted from a device tree at compile time. While device trees are the standard for embedded systems, Arm server platforms also use EFI, which provides a memory map that is only known at runtime. Things will get even more complicated with partitioned multikernel configurations, where the resources of the nodes need to be disjoint, and the global memory map provided by the firmware does not have enough information for the kernel to create the right capabilities. In such a setting, there will also be shared frames that userspace components use to communicate between cores. These are resources that the kernel does not touch but should just be passing to userspace. Currently, the seL4 ecosystem does not have a mechanism to pass resources at addresses that are not statically known to userspace.
 </p>
 <p>
   One could of course add support to the kernel for all these cases that currently are not covered. We however argue, that like any other policy, a microkernel should not make these decisions but offer a mechanism that is general enough to cover all potential use cases. We therefore propose to remove all code that decides which resources are used by the kernel and what capabilities are created from the initialization of the kernel. Instead, the kernel should be getting this information from a pre-boot environment that can be tailored to specific use cases. We therefore propose a boot protocol where the kernel expects to be handed a resource map. To cover the case of pre-boot allocated resources that need to be passed to userspace, we propose to add support for named resources to CapDL. A statically created specification can e.g., specify a specific slot in a CSpace to be populated with a capability to such a resource. The rootserver will then get a mapping from these names to CPointers from the kernel and can distribute the capabilities accordingly.
