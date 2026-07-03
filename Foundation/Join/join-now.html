@@ -11,10 +11,35 @@ provided and send you a Membership Agreement for signature.
 pre_link: "./"
 layout: card
 ---
-<h1></h1>
-<p>
 
-</p>
+
+<!-- TODO: move down! -->
+<div class="p-6">
+  <input type="radio" id="tab-general" name="membership-toggle" class="peer/gen hidden" checked />
+  <input type="radio" id="tab-associate" name="membership-toggle" class="peer/assoc hidden" />
+
+  <label for="tab-general" class="button-outline inline-block select-none cursor-pointer transition-all duration-200 mb-4 mr-2
+    px-3.5 py-2.5 text-sm font-semibold rounded-md
+    peer-checked/gen:!bg-accentdark peer-checked/gen:!text-white peer-checked/gen:!border-transparent peer-checked/gen:shadow-md">
+    Premium & General
+  </label>
+
+  <label for="tab-associate" class="button-outline inline-block select-none cursor-pointer transition-all duration-200 mb-4
+    px-3.5 py-2.5 text-sm font-semibold rounded-md
+    peer-checked/assoc:!bg-accentdark peer-checked/assoc:!text-white peer-checked/assoc:!border-transparent peer-checked/assoc:shadow-md">
+    Associate
+  </label>
+
+  <div class="hidden peer-checked/gen:block p-4 bg-green-100 text-green-800 rounded">
+    <strong>General Content:</strong> Both the button style swap and this panel are now working perfectly together.
+  </div>
+
+  <div class="hidden peer-checked/assoc:block p-4 bg-purple-100 text-purple-800 rounded">
+    <strong>Associate Content:</strong> This panel appears instantly when clicked.
+  </div>
+</div>
+
+
 
 {% include section-start.html
   id = "agreement"
@@ -44,25 +69,5 @@ layout: card
 %}
 
 
-<div class="p-6">
-  <div class="mb-4 flex gap-2">
-
-    <div class="flex has-[:checked]:button transition-all duration-200 rounded button-outline text-accentdark">
-      <input type="radio" id="show-general" name="div-toggle" class="hidden" checked />
-      <label for="show-general" class="select-none cursor-pointer px-4 py-2 font-semibold">
-        General
-      </label>
-    </div>
-
-    <div class="flex has-[:checked]:button transition-all duration-200 rounded button-outline text-accentdark">
-      <input type="radio" id="show-associate" name="div-toggle" class="hidden" />
-      <label for="show-associate" class="select-none cursor-pointer px-4 py-2 font-semibold">
-        Associate
-      </label>
-    </div>
-
-  </div>
-
-  </div>
 
 
