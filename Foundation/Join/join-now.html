@@ -13,19 +13,19 @@ layout: card
 ---
 
 <!-- TODO: move down! -->
-<div class="section-max-w mb-20">
+<div class="mb-20 section-max-w md:min-w-2xl">
 
   <input type="radio" id="tab-general" name="membership-toggle" class="peer/gen hidden" checked />
   <input type="radio" id="tab-associate" name="membership-toggle" class="peer/assoc hidden" />
 
   <label for="tab-general" class="button-outline inline-block select-none cursor-pointer transition-all duration-200 mb-4 mr-2
-    px-3.5 py-2.5 text-sm font-semibold rounded-md
+    px-3.5 py text-sm font-semibold rounded-md
     peer-checked/gen:!bg-accentdark peer-checked/gen:!text-white peer-checked/gen:!border-transparent peer-checked/gen:shadow-md">
     Premium & General
   </label>
 
   <label for="tab-associate" class="button-outline inline-block select-none cursor-pointer transition-all duration-200 mb-4
-    px-3.5 py-2.5 text-sm font-semibold rounded-md
+    px-3.5 text-sm font-semibold rounded-md
     peer-checked/assoc:!bg-accentdark peer-checked/assoc:!text-white peer-checked/assoc:!border-transparent peer-checked/assoc:shadow-md">
     Associate
   </label>
@@ -40,41 +40,7 @@ layout: card
       type = "text"
     %}
 
-    <p class="text-left font-semibold py-3 mt-10">Membership Level</p>
-
-    <table class="mb-10 min-w-2xl">
-      <thead>
-        <tr class="text-center text-sm text-white bg-f_green-600">
-          <th class="py-5"> </th>
-          <th class="py-5">Tier</th>
-          <th class="py-5">Consolidated Employees</th>
-          <th class="py-5">Annual Membership Fees</th>
-        </tr>
-      </thead>
-      <tbody class="text-xs text-center sm:text-sm">
-        {%- assign memberships = site.data.memberships -%}
-        {%- for membership in memberships -%}
-        <tr class="text-center text-sm group cursor-pointer transition-colors hover:bg-gray-50 has-[:checked]:bg-green-50 has-[:checked]:text-black">
-          <td class="whitespace-normal px-5 py-5">
-            <input
-              type="radio"
-              name="membership_selection" class="accent-green-700"
-              value='{{ membership.id }}'
-            />
-          </td>
-          <td>
-            {{ membership.tier }}
-          </td>
-          <td>
-            {{ membership.employees }}
-          </td>
-          <td>
-            {{ membership.fees }}
-          </td>
-        </tr>
-        {%- endfor -%}
-      </tbody>
-    </table>
+    {% include membership-tiers.html %}
 
     {% include membership-question.html
       heading = "Primary contact"
@@ -103,42 +69,51 @@ layout: card
       type1 = "text"
       label2 = "Email"
       type2 = "email"
-      label3 = "Address"
-      type3 = "text"
+      address = "Address"
 
     %}
 
+    {% include membership-po.html %}
 
-    <div class="grid grid-cols-3 text-sm">
-      <div class="font-semibold ml-20">PO required:</div>
-      <div class="mx-5">
-        <input
-          type="radio"
-          name="po_selection" class="accent-green-700"
-          value='1'
-        />
-        <span>Yes</span>
-      </div>
-      <div class="-ml-5">
-        <input
-          type="radio"
-          name="po_selection" class="accent-green-700"
-          value='2'
-        />
-        <span>No</span>
-      </div>
+    {% include membership-submit.html %}
 
-    </div>
-
+  </div>
 
   <!-- ASSOCIATE -->
-  <div class="hidden peer-checked/assoc:block p-4 bg-purple-100 text-purple-800 rounded">
-    Associate Content
+  <div class="hidden peer-checked/assoc:block bg-white rounded-sm shadow-md p-4">
+    {% include membership-question.html
+      heading = "Company name"
+      info = "Legal name of the entity applying for membership"
+      type = "text"
+    %}
+
+    {% include membership-question.html
+      heading = "Primary contact"
+      info = "The who person will act as the primary voting contact unless a different assignment is requested by email at a later date."
+      label1 = "Name"
+      type1 = "text"
+      label2 = "Email"
+      type2 = "email"
+    %}
+
+    {% include membership-question.html
+      heading = "Legal (signatory) contact"
+      info = "The person who will officially execute or sign the membership agreement."
+      label1 = "Name"
+      type1 = "text"
+      label2 = "Title"
+      type2 = "text"
+      label3 = "Email"
+      type3 = "email"
+    %}
+
+    {% include membership-submit.html %}
+
   </div>
 
 </div>
 
-{% include section-end.html %}
+
 
 
 

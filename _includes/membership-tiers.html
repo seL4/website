@@ -1,0 +1,39 @@
+{%- comment %}
+Copyright 2026 seL4 Project a Series of LF Projects, LLC
+SPDX-License-Identifier: CC-BY-SA-4.0
+{% endcomment -%}
+
+<p class="text-left font-semibold py-3 mt-10">Membership Level</p>
+<table class="mb-10 min-w-2xl">
+  <thead>
+    <tr class="text-center text-sm text-white bg-f_green-600">
+      <th class="py-5"> </th>
+      <th class="py-5">Tier</th>
+      <th class="py-5">Consolidated Employees</th>
+      <th class="py-5">Annual Membership Fees</th>
+    </tr>
+  </thead>
+  <tbody class="text-xs text-center sm:text-sm">
+    {%- assign memberships = site.data.memberships -%}
+    {%- for membership in memberships -%}
+    <tr class="text-center text-sm group cursor-pointer transition-colors hover:bg-gray-50 has-[:checked]:bg-green-50 has-[:checked]:text-black">
+      <td class="whitespace-normal px-5 py-5">
+        <input
+          type="radio"
+          name="membership_selection" class="accent-green-700"
+          value='{{ membership.id }}'
+        />
+      </td>
+      <td>
+        {{ membership.tier }}
+      </td>
+      <td>
+        {{ membership.employees }}
+      </td>
+      <td>
+        {{ membership.fees }}
+      </td>
+    </tr>
+    {%- endfor -%}
+  </tbody>
+</table>

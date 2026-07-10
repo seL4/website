@@ -4,45 +4,55 @@ SPDX-License-Identifier: CC-BY-SA-4.0
 {% endcomment -%}
 
 <div class="mt-1 mb-9">
-  <p class = "text-left font-semibold py-3">{{ include.heading }}</p>
+  <p class = "text-left font-semibold py-3 mt-10">{{ include.heading }}</p>
   <p class = "mb-2 text-sm mx-2">{{ include.info }}</p>
 
   <!-- single textbox for input with no label, e.g. company name -->
   {% if include.type %}
   <input
       type = "{{ include.type }}"
-      class = "text-left bg-neutral-100 min-w-2xl border border-none p-2 focus:outline-green-700"
+      class = "text-left bg-neutral-100 min-w-11/12 text-sm border border-none p-2 focus:outline-green-700  "
       required>
   {% endif %}
 
   <!-- text boxes with labels, e.g. contact details -->
   <div class="grid grid-cols-7 gap-x-1 gap-y-2">
     {% if include.label1 %}
-      <div class="text-sm font-semibold ml-10 mt-2 text-right mr-1">{{ include.label1 }}</div>
+      <div class="text-sm font-semibold mt-2 text-right mr-1 sm:ml-10">{{ include.label1 }}</div>
       <div class="col-span-6">
         <input
           type = "{{ include.type1 }}"
-          class = "text-left bg-neutral-100 min-w-xl border border-none p-2 focus:outline-green-700"
+          class = "text-left bg-neutral-100 min-w-11/12 text-sm border border-none p-2 focus:outline-green-700 sm:text-base"
           required>
       </div>
     {% endif %}
     {% if include.label2 %}
-      <div class="text-sm font-semibold ml-10 mt-2 text-right mr-1">{{ include.label2 }}</div>
+    <div class="text-sm font-semibold mt-2 text-right mr-1 sm:ml-10">{{ include.label2 }}</div>
       <div class="col-span-6">
         <input
           type = "{{ include.type2 }}"
-          class = "text-left bg-neutral-100 min-w-xl border border-none p-2 focus:outline-green-700"
+          class = "text-left bg-neutral-100 min-w-11/12 text-sm border border-none p-2 focus:outline-green-700 sm:text-base"
           required>
       </div>
     {% endif %}
     {% if include.label3 %}
-    <div class="text-sm font-semibold ml-10 mt-2 text-right mr-1">{{ include.label3 }}</div>
+    <div class="text-sm font-semibold mt-2 text-right mr-1 sm:ml-10">{{ include.label3 }}</div>
       <div class="col-span-6">
         <input
           type = "{{ include.type3 }}"
-          class = "text-left bg-neutral-100 min-w-xl border border-none p-2 focus:outline-green-700"
+          class = "text-left bg-neutral-100 min-w-11/12 text-sm border border-none p-2 focus:outline-green-700 sm:text-base"
           required>
       </div>
     {% endif %}
-  </div>
+
+  {% if include.address %}
+    <div class="text-sm font-semibold mt-2 text-right mr-1 sm:ml-10">{{ include.address }}</div>
+      <div class="col-span-6">
+        <textarea
+          rows = "4"
+          class = "text-left bg-neutral-100 min-w-11/12 text-sm border border-none p-2 focus:outline-green-700 sm:text-base"
+          required>
+        </textarea>
+      </div>
+  {% endif %}
 </div>
