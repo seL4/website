@@ -8,14 +8,13 @@ pre_link: "../"
 redirect_from: /Foundation/Summit/2026/index.html
 ---
 {% include summit-heading.html
-
   about = 'The seL4 Summit is the annual international summit on the seL4
   microkernel and associated technology, tools, infrastructure, products,
   projects, and people. The <a href="#pc">program committee</a> assembles
   thought-provoking talks, <a href="#keynotes">keynotes</a>, <a
-  href="#voices-nearby">"voices from nearby",</a> and panel discussions. The
-  seL4 Summit is made possible thanks to our <a href="#sponsors">sponsors</a>.'
-
+  href="#voices-nearby">"voices from nearby",</a> and <a href="#panel">panel
+  discussions</a>. The seL4 Summit is made possible thanks to our <a
+  href="#sponsors">sponsors</a>.'
   city = "Vancouver, Canada"
   date = "1 - 3 September 2026"
   reg-link = "https://events.linuxfoundation.org/sel4-summit/register/"
@@ -65,12 +64,6 @@ redirect_from: /Foundation/Summit/2026/index.html
 <div class="mt-6 sm:mt-12">
 {% include bio-items-start.html %}
 
-<!-- TODO: ADD FOR EACH KEYNOTE
-  affiliation = ""
-  affiliation_link = ""
-  abstract-title = ""
-  abstract-link = "" -->
-
 
 {% include keynote-item.html
   name = "<a href='https://www.linkedin.com/in/anjanarajan/'>Anjana Rajan</a>"
@@ -94,7 +87,6 @@ redirect_from: /Foundation/Summit/2026/index.html
 
 </div>
 {% include section-end.html %}
-
 
 <!-- Voices from Nearby section -->
 {% include section-start.html
@@ -136,6 +128,28 @@ redirect_from: /Foundation/Summit/2026/index.html
 </div>
 {% include section-end.html %}
 
+
+<!-- Panel section -->
+{% include section-start.html
+  id = "panel"
+  heading = "Panel: Building a business case for using a
+  verified kernel"
+  intro = '
+    <p>
+      We are very fortunate to welcome five industry leaders to participate at
+      the seL4 Summit 2026, in a session on <a
+      href="abstracts2026.html#a-panel">Certification, Compliance and Policies:
+      enabler or barrier to innovation?</a>: Darren Cofer (Collins Aerospace),
+      Peter Davies (Thales) Jonathan Marshall (SafeShark) Anjana Rajan
+      (Atalanta), and James Sharp (Defence Science and Technology Laboratory).
+      The panel will be moderated by Martin Dehnel-Wild (Kry10).
+    </p>
+  '
+%}
+
+{% include panel-2026.html %}
+
+{% include section-end.html %}
 
 
  <!-- PC section -->
