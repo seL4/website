@@ -10,7 +10,116 @@
   <description>News feed about seL4, the seL4 Foundation, and the seL4 ecosystem.</description>
   <link rel="alternate">https://sel4.systems/news/</link>
   <link rel="self">https://sel4.systems/feed.xml</link>
-  <updated>Wed, 01 Jul 2026 00:00:00 +0000</updated>
+  <updated>Wed, 22 Jul 2026 00:00:00 +0000</updated>
+  <rights>Copyright 2026 seL4 Foundation</rights>
+  <entry>
+    <title>Panellists for seL4 Summit announced</title>
+    <link rel="alternate" type="text/html" href="https://sel4.systems/news/2026.html#panellists26"/>
+    <id>https://sel4.systems/news/2026.html#panellists26</id>
+    <published>Wed, 22 Jul 2026 00:00:00 +0000</published>
+    <updated>Wed, 22 Jul 2026 00:00:00 +0000</updated>
+    <content type="html">
+      &lt;p&gt;
+  We are very fortunate to welcome five industry leaders to participate at the
+  &lt;a href=&quot;/Summit/2026/&quot;&gt;seL4 Summit 2026&lt;/a&gt;, in a
+  session on &lt;a href=&quot;/Summit/2026/abstracts2026.html#a-panel&quot;&gt;Certification, Compliance and Policies: enabler or barrier to
+  innovation?&lt;/a&gt;: Darren Cofer, Peter Davies,
+  Jonathan Marshall, Anjana Rajan, and James Sharp. The panel will be moderated by
+  Martin Dehnel-Wild.
+&lt;/p&gt;
+
+&lt;div class=&quot;not-prose&quot;&gt;
+&lt;ul class=&quot;mx-auto mt-20 grid max-w-2xl lg:mx-0 lg:max-w-none
+           grid-cols-2 gap-x-8 gap-y-16 text-center
+           sm:grid-cols-3 md:grid-cols-4
+           
+           &quot;&gt;
+
+
+&lt;li&gt;
+  
+  &lt;a href=&quot;/Summit/2026/abstracts2026.html#a-panel-darren&quot; class=&quot;text-dark no-underline! hover:underline!&quot;&gt;
+  
+    &lt;img class=&quot;mx-auto h-24 w-24 rounded-full&quot; src=&quot;/images/summit/dcofer-2022-2-small.jpg&quot; alt=&quot;Picture of Darren Cofer&quot;&gt;
+    &lt;p class=&quot;mt-6 text-base font-semibold leading-7 tracking-tight text-dark&quot;&gt;Darren Cofer&lt;/p&gt;
+  
+  &lt;/a&gt;
+  
+  &lt;p class=&quot;text-sm leading-6 text-light&quot;&gt;&lt;a href=&apos;https://www.collinsaerospace.com&apos;&gt;Collins Aerospace&lt;/a&gt;&lt;/p&gt;
+&lt;/li&gt;
+
+
+&lt;li&gt;
+  
+  &lt;a href=&quot;/Summit/2026/abstracts2026.html#a-panel-peter&quot; class=&quot;text-dark no-underline! hover:underline!&quot;&gt;
+  
+    &lt;img class=&quot;mx-auto h-24 w-24 rounded-full&quot; src=&quot;/images/summit/peter-davies-square.png&quot; alt=&quot;Picture of Peter Davies&quot;&gt;
+    &lt;p class=&quot;mt-6 text-base font-semibold leading-7 tracking-tight text-dark&quot;&gt;Peter Davies&lt;/p&gt;
+  
+  &lt;/a&gt;
+  
+  &lt;p class=&quot;text-sm leading-6 text-light&quot;&gt;&lt;a href=&apos;https://www.thalesgroup.com/en&apos;&gt;Thales&lt;/a&gt;&lt;/p&gt;
+&lt;/li&gt;
+
+
+&lt;li&gt;
+  
+  &lt;a href=&quot;/Summit/2026/abstracts2026.html#a-panel-jonathan&quot; class=&quot;text-dark no-underline! hover:underline!&quot;&gt;
+  
+    &lt;img class=&quot;mx-auto h-24 w-24 rounded-full&quot; src=&quot;/images/summit/jonathan-square.png&quot; alt=&quot;Picture of Jonathan Marshall&quot;&gt;
+    &lt;p class=&quot;mt-6 text-base font-semibold leading-7 tracking-tight text-dark&quot;&gt;Jonathan Marshall&lt;/p&gt;
+  
+  &lt;/a&gt;
+  
+  &lt;p class=&quot;text-sm leading-6 text-light&quot;&gt;&lt;a href=&apos;https://www.safeshark.co.uk/&apos;&gt;SafeShark&lt;/a&gt;&lt;/p&gt;
+&lt;/li&gt;
+
+
+&lt;li&gt;
+  
+  &lt;a href=&quot;/Summit/2026/abstracts2026.html#a-panel-anjana&quot; class=&quot;text-dark no-underline! hover:underline!&quot;&gt;
+  
+    &lt;img class=&quot;mx-auto h-24 w-24 rounded-full&quot; src=&quot;/images/summit/anjana-square.jpg&quot; alt=&quot;Picture of Anjana Rajan&quot;&gt;
+    &lt;p class=&quot;mt-6 text-base font-semibold leading-7 tracking-tight text-dark&quot;&gt;Anjana Rajan&lt;/p&gt;
+  
+  &lt;/a&gt;
+  
+  &lt;p class=&quot;text-sm leading-6 text-light&quot;&gt;&lt;a href=&apos;https://www.atalanta.tech/&apos;&gt;Atalanta&lt;/a&gt;&lt;/p&gt;
+&lt;/li&gt;
+
+
+&lt;li&gt;
+  
+  &lt;a href=&quot;/Summit/2026/abstracts2026.html#a-panel-james&quot; class=&quot;text-dark no-underline! hover:underline!&quot;&gt;
+  
+    &lt;img class=&quot;mx-auto h-24 w-24 rounded-full&quot; src=&quot;/images/summit/james-square.png&quot; alt=&quot;Picture of James Sharp&quot;&gt;
+    &lt;p class=&quot;mt-6 text-base font-semibold leading-7 tracking-tight text-dark&quot;&gt;James Sharp&lt;/p&gt;
+  
+  &lt;/a&gt;
+  
+  &lt;p class=&quot;text-sm leading-6 text-light&quot;&gt;&lt;a href=&apos;https://www.gov.uk/government/organisations/defence-science-and-technology-laboratory&apos;&gt;Defence Science and Technology Laboratory (Dstl)&lt;/a&gt;&lt;/p&gt;
+&lt;/li&gt;
+
+
+&lt;li&gt;
+  
+  &lt;a href=&quot;/Summit/2026/abstracts2026.html#a-panel-martin&quot; class=&quot;text-dark no-underline! hover:underline!&quot;&gt;
+  
+    &lt;img class=&quot;mx-auto h-24 w-24 rounded-full&quot; src=&quot;/images/summit/martin-square.jpg&quot; alt=&quot;Picture of Martin Dehnel-Wild, Kry10&lt;br&gt;(Moderator)&quot;&gt;
+    &lt;p class=&quot;mt-6 text-base font-semibold leading-7 tracking-tight text-dark&quot;&gt;Martin Dehnel-Wild, Kry10&lt;br&gt;(Moderator)&lt;/p&gt;
+  
+  &lt;/a&gt;
+  
+  &lt;p class=&quot;text-sm leading-6 text-light&quot;&gt;&lt;a href=&apos;https://www.kry10.com/&apos;&gt;Kry10&lt;/a&gt;&lt;/p&gt;
+&lt;/li&gt;
+
+&lt;/ul&gt;
+
+
+&lt;/div&gt;
+
+    </content>
+  </entry>
   <rights>Copyright 2026 seL4 Foundation</rights>
   <entry>
     <title>The seL4 Summit 2026 Program and Abstracts</title>
@@ -594,38 +703,6 @@ update of user code compared to Microkit 2.1.0.&lt;/p&gt;
 &lt;/p&gt;
 &lt;p&gt;
   The early bird cut-off date is 31 July 2026.
-&lt;/p&gt;
-
-    </content>
-  </entry>
-  <rights>Copyright 2026 seL4 Foundation</rights>
-  <entry>
-    <title>Fraunhofer AISEC joins the seL4 Foundation</title>
-    <link rel="alternate" type="text/html" href="https://sel4.systems/news/2026.html"/>
-    <id>https://sel4.systems/news/2026.html</id>
-    <published>Wed, 28 Jan 2026 00:00:00 +0000</published>
-    <updated>Wed, 28 Jan 2026 00:00:00 +0000</updated>
-    <content type="html">
-      &lt;p&gt;
-  The &lt;a href=&quot;/Foundation&quot;&gt;seL4 Foundation&lt;/a&gt; is
-  pleased to welcome the Fraunhofer Institute for Applied and Integrated
-  Security AISEC as our latest &lt;a href=&quot;/Foundation/Membership&quot;&gt;Associate Member&lt;/a&gt;.
-&lt;/p&gt;
-&lt;p&gt;
-  &lt;a href=&quot;https://www.aisec.fraunhofer.de/en.html&quot;&gt;Fraunhofer AISEC&lt;/a&gt; is
-  considered one of the world-leading institutions for applied research in
-  cybersecurity. Around 230 highly qualified researchers develop customized
-  security concepts and solutions for commercial businesses and the public
-  sector, boosting the overall competitiveness of clients and partners.
-  Fraunhofer AISEC designs solutions for enhanced data security and effective
-  defense against cybercrimes such as corporate espionage and tampering attacks.
-  The institute&apos;s portfolio ranges from embedded and hardware security,
-  automotive and mobile security to security solutions for industry and
-  automation.
-&lt;/p&gt;
-&lt;p&gt;
-  Fraunhofer AISEC is exploring the use of the seL4 microkernel and its
-  ecosystem to build strictly separated, resilient embedded and IoT systems.
 &lt;/p&gt;
 
     </content>
