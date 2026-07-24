@@ -15,7 +15,8 @@ SPDX-License-Identifier: CC-BY-SA-4.0
   {% if include.type %}
   <input
       type = "{{ include.type }}"
-      class = "text-left bg-neutral-100 min-w-11/12 text-sm border border-none p-2 focus:outline-green-700  "
+      class = "text-left bg-neutral-100 min-w-11/12 text-sm border border-none p-2 focus:outline-green-700"
+      autocomplete="off"
       required>
   {% endif %}
 
@@ -27,6 +28,7 @@ SPDX-License-Identifier: CC-BY-SA-4.0
         <input
           type = "{{ include.type1 }}"
           class = "text-left bg-neutral-100 min-w-11/12 text-sm border border-none p-2 focus:outline-green-700 sm:text-base"
+          autocomplete="off"
           required>
       </div>
     {% endif %}
@@ -36,6 +38,7 @@ SPDX-License-Identifier: CC-BY-SA-4.0
         <input
           type = "{{ include.type2 }}"
           class = "text-left bg-neutral-100 min-w-11/12 text-sm border border-none p-2 focus:outline-green-700 sm:text-base"
+          autocomplete="off"
           required>
       </div>
     {% endif %}
@@ -45,6 +48,7 @@ SPDX-License-Identifier: CC-BY-SA-4.0
         <input
           type = "{{ include.type3 }}"
           class = "text-left bg-neutral-100 min-w-11/12 text-sm border border-none p-2 focus:outline-green-700 sm:text-base"
+          autocomplete="off"
           required>
       </div>
     {% endif %}
@@ -55,6 +59,7 @@ SPDX-License-Identifier: CC-BY-SA-4.0
         <textarea
           rows = "4"
           class = "text-left bg-neutral-100 min-w-11/12 text-sm border border-none p-2 focus:outline-green-700 sm:text-base"
+          autocomplete="off"
           required>
         </textarea>
       </div>
