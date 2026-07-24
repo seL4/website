@@ -11,7 +11,7 @@ path = [
     "_data/menu.json",
     "_data/footer.json",
     "_data/members.json",
-    "_data/membership-tiers.json",
+    "_data/memberships.json",
     "_data/platforms.json",
     "_data/sponsors.json",
     "_data/benchmarks.json",
