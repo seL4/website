@@ -71,23 +71,23 @@
         ],
         "call": [
           367,
-          2
+          3
         ],
         "reply": [
           351,
           3
         ],
         "notify": [
-          1025,
-          16
+          1026,
+          17
         ],
         "call_fpu": [
-          487,
-          2
+          488,
+          3
         ],
         "reply_fpu": [
           465,
-          2
+          3
         ],
         "build_command": "init-build.sh -DFASTPATH=TRUE -DHARDWARE=TRUE -DFAULT=TRUE -DITERATIONS=5 -DAARCH32=TRUE -DPLATFORM=sabre"
       },
@@ -100,28 +100,28 @@
         "clock": "3.4 GHz",
         "compiler": "gcc GNU 14.2.0",
         "irq": [
-          1677,
-          48
+          1669,
+          51
         ],
         "call": [
-          776,
+          777,
           6
         ],
         "reply": [
           643,
-          9
+          7
         ],
         "notify": [
-          1495,
+          1493,
           16
         ],
         "call_fpu": [
-          820,
-          12
+          817,
+          9
         ],
         "reply_fpu": [
-          822,
-          8
+          825,
+          11
         ],
         "build_command": "init-build.sh -DFASTPATH=TRUE -DHARDWARE=TRUE -DFAULT=TRUE -DITERATIONS=5 -DPLATFORM=x86_64"
       },
@@ -135,28 +135,28 @@
         "clock": "3.4 GHz",
         "compiler": "gcc GNU 14.2.0",
         "irq": [
-          1655,
-          61
+          1668,
+          56
         ],
         "call": [
           717,
           30
         ],
         "reply": [
-          575,
-          3
+          576,
+          2
         ],
         "notify": [
-          755,
-          6
+          754,
+          5
         ],
         "call_fpu": [
-          786,
+          788,
           3
         ],
         "reply_fpu": [
-          810,
-          4
+          813,
+          3
         ],
         "build_command": "init-build.sh -DKernelSkimWindow=FALSE -DFASTPATH=TRUE -DHARDWARE=TRUE -DFAULT=TRUE -DITERATIONS=5 -DPLATFORM=x86_64"
       },
@@ -169,7 +169,7 @@
         "clock": "1.9 GHz",
         "compiler": "aarch64-linux-gnu-gcc GNU 14.2.0",
         "irq": [
-          884,
+          885,
           3
         ],
         "call": [
@@ -181,8 +181,8 @@
           0
         ],
         "notify": [
-          1054,
-          16
+          1052,
+          19
         ],
         "call_fpu": [
           594,
@@ -203,28 +203,28 @@
         "clock": "1.5 GHz",
         "compiler": "riscv64-unknown-elf-gcc GNU 14.2.0",
         "irq": [
-          799,
-          65
+          801,
+          51
         ],
         "call": [
-          667,
-          23
+          695,
+          68
         ],
         "reply": [
-          762,
-          108
+          731,
+          18
         ],
         "notify": [
-          1178,
-          6
+          1194,
+          4
         ],
         "call_fpu": [
-          810,
-          86
+          803,
+          96
         ],
         "reply_fpu": [
-          865,
-          113
+          824,
+          51
         ],
         "build_command": "init-build.sh -DFASTPATH=TRUE -DHARDWARE=FALSE -DFAULT=FALSE -DITERATIONS=5 -DRISCV64=TRUE -DPLATFORM=hifive"
       }
@@ -239,27 +239,27 @@
         "clock": "1.0 GHz",
         "compiler": "arm-linux-gnueabi-gcc GNU 14.2.0",
         "irq": [
-          993,
-          16
+          990,
+          17
         ],
         "call": [
-          351,
-          16
+          365,
+          29
         ],
         "reply": [
-          380,
+          381,
           2
         ],
         "notify": [
-          1323,
-          17
+          1321,
+          16
         ],
         "call_fpu": [
-          481,
-          19
+          488,
+          26
         ],
         "reply_fpu": [
-          492,
+          491,
           5
         ],
         "build_command": "init-build.sh -DFASTPATH=TRUE -DHARDWARE=TRUE -DFAULT=TRUE -DITERATIONS=5 -DAARCH32=TRUE -DPLATFORM=sabre -DMCS=TRUE"
@@ -273,28 +273,28 @@
         "clock": "3.4 GHz",
         "compiler": "gcc GNU 14.2.0",
         "irq": [
-          2074,
-          49
+          2017,
+          45
         ],
         "call": [
-          784,
-          7
-        ],
-        "reply": [
-          655,
+          785,
           2
         ],
-        "notify": [
-          1769,
-          12
-        ],
-        "call_fpu": [
-          819,
+        "reply": [
+          653,
           7
         ],
+        "notify": [
+          1775,
+          15
+        ],
+        "call_fpu": [
+          824,
+          13
+        ],
         "reply_fpu": [
-          846,
-          12
+          848,
+          13
         ],
         "build_command": "init-build.sh -DFASTPATH=TRUE -DHARDWARE=TRUE -DFAULT=TRUE -DITERATIONS=5 -DPLATFORM=x86_64 -DMCS=TRUE"
       },
@@ -308,27 +308,27 @@
         "clock": "3.4 GHz",
         "compiler": "gcc GNU 14.2.0",
         "irq": [
-          1955,
-          57
+          2017,
+          63
         ],
         "call": [
-          747,
-          34
+          745,
+          33
         ],
         "reply": [
-          637,
+          640,
           2
         ],
         "notify": [
           1067,
-          7
+          6
         ],
         "call_fpu": [
-          812,
-          3
+          811,
+          2
         ],
         "reply_fpu": [
-          872,
+          876,
           2
         ],
         "build_command": "init-build.sh -DKernelSkimWindow=FALSE -DMCS=TRUE -DFASTPATH=TRUE -DHARDWARE=TRUE -DFAULT=TRUE -DITERATIONS=5 -DPLATFORM=x86_64"
@@ -342,8 +342,8 @@
         "clock": "1.9 GHz",
         "compiler": "aarch64-linux-gnu-gcc GNU 14.2.0",
         "irq": [
-          1012,
-          4
+          1011,
+          3
         ],
         "call": [
           428,
@@ -354,7 +354,7 @@
           0
         ],
         "notify": [
-          1133,
+          1124,
           1
         ],
         "call_fpu": [
@@ -363,7 +363,7 @@
         ],
         "reply_fpu": [
           621,
-          1
+          0
         ],
         "build_command": "init-build.sh -DFASTPATH=TRUE -DHARDWARE=TRUE -DFAULT=TRUE -DITERATIONS=5 -DAARCH64=TRUE -DPLATFORM=tx1 -DMCS=TRUE"
       },
@@ -376,28 +376,28 @@
         "clock": "1.5 GHz",
         "compiler": "riscv64-unknown-elf-gcc GNU 14.2.0",
         "irq": [
-          3659,
-          136
+          3600,
+          75
         ],
         "call": [
-          731,
-          88
+          708,
+          65
         ],
         "reply": [
-          838,
-          96
+          829,
+          101
         ],
         "notify": [
-          3950,
-          95
+          3964,
+          104
         ],
         "call_fpu": [
-          827,
-          52
+          818,
+          23
         ],
         "reply_fpu": [
-          900,
-          74
+          871,
+          22
         ],
         "build_command": "init-build.sh -DFASTPATH=TRUE -DHARDWARE=FALSE -DFAULT=FALSE -DITERATIONS=5 -DRISCV64=TRUE -DPLATFORM=hifive -DMCS=TRUE"
       }
