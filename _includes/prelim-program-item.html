@@ -53,8 +53,11 @@ SPDX-License-Identifier: CC-BY-SA-4.0
 
       {% if include.presenter %}
         <br>
-        <span class="text-dark text-sm sm:text-base">{{include.presenter}}</span>,
-        <span class="text-light text-sm sm:text-base">{{include.affiliation}}</span>
+        <span class="text-dark text-sm sm:text-base">{{include.presenter}}</span>
+        {% if include.affiliation %}
+          ,
+          <span class="text-light text-sm sm:text-base">{{include.affiliation}}</span>
+        {% endif %}
       {% endif %}
 
       {% if include.info %}
