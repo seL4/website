@@ -12,7 +12,6 @@ pre_link: "./"
 layout: card
 ---
 
-
 {% include section-start.html
   id = "agreement"
   heading = "Agreements and Governance"
@@ -114,6 +113,9 @@ layout: card
 
     {% include membership-po.html %}
 
+    <!-- CAPTCHA -->
+    {% include membership-captcha.html %}
+
     {% include membership-submit.html %}
 
   </div>
@@ -145,6 +147,9 @@ layout: card
       label3 = "Email"
       type3 = "email"
     %}
+
+    <!-- CAPTCHA -->
+     {% include membership-captcha.html %}
 
     {% include membership-submit.html %}
   </div>
