@@ -1,0 +1,76 @@
+{%- comment %}
+Copyright 2026 seL4 Project a Series of LF Projects, LLC
+SPDX-License-Identifier: CC-BY-SA-4.0
+{% endcomment -%}
+
+<!-- <script type="module" src="https://cdn.jsdelivr.net/npm/@friendlycaptcha/sdk@0.2.0/site.min.js" async defer></script>
+<script nomodule src="https://cdn.jsdelivr.net/npm/@friendlycaptcha/sdk@0.2.0/site.compat.min.js" async defer></script>
+
+<div class="flex items-center justify-center my-10">
+  <div class="frc-captcha" data-sitekey="FCMQDHD5NMOKR1Q0"></div>
+</div> -->
+
+
+
+<!-- Friendly Captcha v2 SDK -->
+<script type="module" src="https://cdn.jsdelivr.net/npm/@friendlycaptcha/sdk@0.1.31/site.min.js" async defer></script>
+
+<!-- Captcha Widget Component -->
+<div class="flex items-center justify-center my-10">
+  <div
+    class="frc-captcha"
+    data-sitekey="{{ site.friendly_captcha_sitekey | default: 'FCMQDHD5NMOKR1Q0' }}"
+    data-start="auto">
+  </div>
+</div>
+
+<script>
+  document.addEventListener("DOMContentLoaded", function () {
+    // Locate the parent form containing this captcha component
+    const captchaElement = document.querySelector(".frc-captcha");
+    if (!captchaElement) return;
+
+    const parentForm = captchaElement.closest("form");
+    if (!parentForm) return;
+
+    parentForm.addEventListener("submit", async function (e) {
+      e.preventDefault();
+
+      const formData = new FormData(parentForm);
+      // Friendly Captcha inserts this response parameter into the form automatically
+      const solutionToken = formData.get("frc-captcha-response");
+
+      if (!solutionToken) {
+        alert("Please complete the captcha challenge before submitting.");
+        return;
+      }
+
+      // Convert FormData into a standard JSON payload
+      const payload = Object.fromEntries(formData.entries());
+      payload.solutionToken = solutionToken;
+
+      try {
+        // Point this to your running Node.js endpoint / serverless route
+        const response = await fetch("http://localhost:3000/api/verify-membership", {
+          method: "POST",
+          headers: {
+            "Content-Type": "application/json"
+          },
+          body: JSON.stringify(payload)
+        });
+
+        const result = await response.json();
+
+        if (response.ok && result.success) {
+          alert("Membership submission received successfully!");
+          parentForm.reset();
+        } else {
+          alert("Verification failed: " + (result.message || "Invalid Captcha Token"));
+        }
+      } catch (err) {
+        console.error("Submission error:", err);
+        alert("An error occurred while attempting to submit the form.");
+      }
+    });
+  });
+</script>
