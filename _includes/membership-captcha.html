@@ -3,17 +3,10 @@ Copyright 2026 seL4 Project a Series of LF Projects, LLC
 SPDX-License-Identifier: CC-BY-SA-4.0
 {% endcomment -%}
 
-<!-- <script type="module" src="https://cdn.jsdelivr.net/npm/@friendlycaptcha/sdk@0.2.0/site.min.js" async defer></script>
-<script nomodule src="https://cdn.jsdelivr.net/npm/@friendlycaptcha/sdk@0.2.0/site.compat.min.js" async defer></script>
-
-<div class="flex items-center justify-center my-10">
-  <div class="frc-captcha" data-sitekey="FCMQDHD5NMOKR1Q0"></div>
-</div> -->
-
-
 
 <!-- Friendly Captcha v2 SDK -->
-<script type="module" src="https://cdn.jsdelivr.net/npm/@friendlycaptcha/sdk@0.1.31/site.min.js" async defer></script>
+<script type="module" src="https://cdn.jsdelivr.net/npm/@friendlycaptcha/sdk@0.2.0/site.min.js" async defer></script>
+<script nomodule src="https://cdn.jsdelivr.net/npm/@friendlycaptcha/sdk@0.2.0/site.compat.min.js" async defer></script>
 
 <!-- Captcha Widget Component -->
 <div class="flex items-center justify-center my-10">
@@ -66,6 +59,12 @@ SPDX-License-Identifier: CC-BY-SA-4.0
           parentForm.reset();
         } else {
           alert("Verification failed: " + (result.message || "Invalid Captcha Token"));
+          return response.status(400).json({
+            success: false,
+            message: "Captcha verification failed.",
+            error_code: verifyData.error?.error_code,
+            detail: verifyData.error?.detail
+          });
         }
       } catch (err) {
         console.error("Submission error:", err);
