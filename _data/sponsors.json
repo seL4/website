@@ -21,6 +21,13 @@
         "logo": "riverside-research.svg",
         "url": "https://www.riversideresearch.org/"
       }
+      ],
+      "break": [
+      {
+        "name": "DornerWorks",
+        "logo": "DornerWorks.svg",
+        "url": "https://dornerworks.com/"
+      }
       ]
     },
   "summit-2025":
