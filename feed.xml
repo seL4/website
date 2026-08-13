@@ -10,7 +10,26 @@
   <description>News feed about seL4, the seL4 Foundation, and the seL4 ecosystem.</description>
   <link rel="alternate">https://sel4.systems/news/</link>
   <link rel="self">https://sel4.systems/feed.xml</link>
-  <updated>Wed, 29 Jul 2026 00:00:00 +0000</updated>
+  <updated>Fri, 14 Aug 2026 00:00:00 +0000</updated>
+  <rights>Copyright 2026 seL4 Foundation</rights>
+  <entry>
+    <title>Thank you DornerWorks, sponsor of the seL4 Summit 2026 AM &amp; PM Break</title>
+    <link rel="alternate" type="text/html" href="https://sel4.systems/news/2026.html"/>
+    <id>https://sel4.systems/news/2026.html</id>
+    <published>Fri, 14 Aug 2026 00:00:00 +0000</published>
+    <updated>Fri, 14 Aug 2026 00:00:00 +0000</updated>
+    <content type="html">
+      &lt;p&gt;
+  The seL4 Foundation thanks &lt;a
+  href=&quot;https://dornerworks.com/&quot;&gt;DornerWorks&lt;/a&gt;, sponsor of the &lt;a
+  href=&quot;/Summit/2026/&quot;&gt;seL4 Summit 2026&lt;/a&gt; AM &amp; PM Break.
+&lt;/p&gt;
+&lt;p&gt;
+  &lt;a href=&quot;https://dornerworks.com&quot;&gt;DornerWorks&lt;/a&gt; is an embedded technology partner, a founding member of the  &lt;a href=&quot;/Foundation/&quot;&gt;seL4 Foundation&lt;/a&gt;, and one of its &lt;a href=&quot;/Services/&quot;&gt;endorsed service providers&lt;/a&gt;. Our dedicated team of seL4 experts helps organizations accelerate the integration of seL4 as the trusted software foundation for secure, safety-critical embedded systems and products.
+&lt;/p&gt;
+
+    </content>
+  </entry>
   <rights>Copyright 2026 seL4 Foundation</rights>
   <entry>
     <title>Happy seL4 day!</title>
@@ -596,85 +615,6 @@ update of user code compared to Microkit 2.1.0.&lt;/p&gt;
 
 &lt;p&gt;Enjoy!&lt;/p&gt;
 
-    </content>
-  </entry>
-  <rights>Copyright 2026 seL4 Foundation</rights>
-  <entry>
-    <title>The seL4 Summit 2026 Keynotes and &quot;Voices from Nearby&quot;</title>
-    <link rel="alternate" type="text/html" href="https://sel4.systems/news/2026.html"/>
-    <id>https://sel4.systems/news/2026.html</id>
-    <published>Wed, 18 Mar 2026 00:00:00 +0000</published>
-    <updated>Wed, 18 Mar 2026 00:00:00 +0000</updated>
-    <content type="html">
-      &lt;h3&gt;Keynotes&lt;/h3&gt;
-&lt;p&gt;
-  We are pleased to announce that we have two outstanding keynotes for the &lt;a
-  href=&quot;/Summit/2026/&quot;&gt;seL4 Summit 2026&lt;/a&gt;: &lt;strong&gt;&lt;a href=&quot;https://www.linkedin.com/in/anjanarajan/&quot;&gt;Anjana
-  Rajan&lt;/a&gt;&lt;/strong&gt;, Former Assistant National Cyber Director at The White
-  House, and &lt;strong&gt;&lt;a href=&quot;https://www.linkedin.com/in/mpdehnel/&quot;&gt;Martin
-  Dehnel-Wild&lt;/a&gt;&lt;/strong&gt;, Chief Scientist
-  at Kry10. Abstracts coming soon — stay tuned!
-&lt;/p&gt;
-&lt;div class=&quot;grid grid-rows-1 w-2/3 sm:grid-cols-2 gap-10 mt-5&quot;&gt;
-  &lt;div&gt;
-    &lt;p&gt;
-      &lt;img src=&quot;../images/summit/anjana-square.jpg&quot; class=&quot;rounded-xl w-full
-      ml-1 mt-0&quot; alt=&quot;Photo of Anjana Rajan&quot;&gt;
-      &lt;a href=&quot;https://www.linkedin.com/in/anjanarajan/&quot;&gt;&lt;strong&gt;Anjana
-      Rajan&lt;/strong&gt;&lt;/a&gt;&lt;br&gt;Former Assistant National Cyber Director at The
-      White House.
-    &lt;/p&gt;
-  &lt;/div&gt;
-  &lt;div&gt;
-    &lt;p&gt;
-      &lt;img src=&quot;../images/summit/martin-square.jpg&quot; class=&quot;float-right
-      rounded-xl w-full ml-1 mt-0&quot; alt=&quot;Photo of Martin Dehnel-Wild&quot;&gt;
-      &lt;a href=&quot;https://www.linkedin.com/in/mpdehnel/&quot;&gt;&lt;strong&gt;Martin
-      Dehnel-Wild&lt;/strong&gt;&lt;/a&gt;&lt;br&gt;Chief Scientist at Kry10.
-    &lt;/p&gt;
-  &lt;/div&gt;
-&lt;/div&gt;
-
-&lt;h3&gt;&quot;Voices from Nearby&quot;&lt;/h3&gt;
-&lt;p&gt;
-  This year, the summit will feature a full first day dedicated to applications,
-  overviews, and perspectives on seL4-based systems and formally verified
-  software in the real world. This will include a session on &quot;Voices from
-  Nearby,&quot; with industry experts who work in or share their thoughts on
-  areas that are adjacent to the core seL4 areas. &lt;a
-  href=&quot;https://www.linkedin.com/in/alistair-woodman-51934433/&quot;&gt;Alistair
-  Woodmand&lt;/a&gt;, Board Member of the Erlang Ecosystem Foundation, will share
-  his insights on the European Cyber Resiliency Act and implications for open
-  source software, and &lt;a
-  href=&quot;https://loonwerks.com/people/david-hardin.html&quot;&gt;David Hardin&lt;/a&gt;,
-  Associate Director of Systems Engineering at Collins Aerospace, will give
-  an overview on trends in real-world formal verification. Details coming soon!
-&lt;/p&gt;
-&lt;div class=&quot;grid grid-rows-1 w-2/3 sm:grid-cols-2 gap-10 mt-5&quot;&gt;
-&lt;div&gt;
-    &lt;p&gt;
-      &lt;img src=&quot;../images/summit/alistair.jpg&quot; class=&quot;float-right rounded-xl
-      w-full ml-1 mt-0&quot; alt=&quot;Photo of Alistair Woodman&quot;&gt;
-      &lt;strong&gt;&lt;a
-      href=&quot;https://www.linkedin.com/in/alistair-woodman-51934433/&quot;&gt;Alistair
-      Woodmand&lt;/a&gt;&lt;/strong&gt;&lt;br&gt;Board Member of the Erlang Ecosystem Foundation.
-    &lt;/p&gt;
-  &lt;/div&gt;
-  &lt;div&gt;
-    &lt;p&gt;
-      &lt;img src=&quot;../images/summit/david-square.jpg&quot; class=&quot;rounded-xl w-full ml-1
-      mt-0&quot; alt=&quot;Photo of David Hardin&quot;&gt;
-      &lt;strong&gt;&lt;a href=&quot;https://loonwerks.com/people/david-hardin.html&quot;&gt;David
-      Hardin&lt;/a&gt;&lt;/strong&gt;&lt;br&gt;Associate Director of Systems Engineering at
-      Collins Aerospace.
-    &lt;/p&gt;
-  &lt;/div&gt;
-&lt;/div&gt;
-
-&lt;div class=&quot;mt-10&quot;&gt;
-  &lt;a href=&quot;https://events.linuxfoundation.org/sel4-summit/register/&quot;&gt;Register&lt;/a&gt;
-  for the seL4 summit 2026, or &lt;a href=&quot;/Summit/2026/cfp&quot;&gt;submit&lt;/a&gt; a talk proposal.
-&lt;/div&gt;
     </content>
   </entry>
 </feed>
