@@ -183,6 +183,10 @@ redirect_from: /Foundation/Summit/2026/index.html
   {%- assign sponsors = site.data.sponsors.summit-2026.silver | sort_natural: "name" -%}
   {%- include sponsor-info.html -%}
 
+  {% include sep-header.html text = "Bronze" %}
+  {%- assign sponsors = site.data.sponsors.summit-2026.bronze | sort_natural: "name" -%}
+  {%- include sponsor-info.html -%}
+
   {% include sep-header.html text = "Dinner" %}
   {%- assign sponsors = site.data.sponsors.summit-2026.dinner | sort_natural: "name" -%}
   {%- include sponsor-info.html -%}
