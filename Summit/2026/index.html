@@ -186,6 +186,10 @@ redirect_from: /Foundation/Summit/2026/index.html
   {% include sep-header.html text = "Dinner" %}
   {%- assign sponsors = site.data.sponsors.summit-2026.dinner | sort_natural: "name" -%}
   {%- include sponsor-info.html -%}
+
+  {% include sep-header.html text = "AM & PM Break" %}
+  {%- assign sponsors = site.data.sponsors.summit-2026.break | sort_natural: "name" -%}
+  {%- include sponsor-info.html -%}
 </div>
 
 {% include section-end.html %}
