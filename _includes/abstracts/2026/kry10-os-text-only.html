@@ -1,0 +1,12 @@
+<p>
+  As a step toward building safety certified systems on the seL4-based Kry10 OS (KOS) we have developed a Software Safety Manual for KOS. This safety manual provides procedures and guidelines for using KOS and its features to develop safety critical systems in such a way that they could be certified.
+</p>
+<p>
+  In general, such systems consist of some core functionality (e.g. run a machine) and some safety-related functionality (e.g. stop the machine if a person is too near). The safety-related functionality is “safety critical”, which means that the systems that implement it should be resistant to failure, even in the presence of known and unknown hazards. Software safety certification is concerned with providing assurance that the risk of these safety-related systems failing has been reduced to an acceptable level.
+</p>
+<p>
+  In a KOS system much of that assurance can be gained from the isolation provided by KOS and the underlying, formally verified, seL4 microkernel. Additional assurance is gained from KOS features such as process supervision, process start and restart, process supervision and monitoring, process resource management, etc. Our safety manual walks through the process of creating a safety-related system and then ensuring that the safety functionality is itself safe. The steps for doing this are: 1) develop the core functionality; 2) develop the safety-related functionality; 3) protect the safety-related functionality from hazards including: memory corruption, process corruption, faulty inputs, faulty outputs, etc.
+</p>
+<p>
+  In this presentation we will discuss and describe this process, illustrating with concrete examples how it can be applied to real working systems.
+</p>

@@ -40,12 +40,513 @@ layout: card
   heading = "Main Program"
   intro = '
     <p>
-      Coming soon. Stay tuned! In the meantime, check out our <a
-      href="../2026/#keynotes">keynote speakers</a> and the <a
-      href="../2026/#voices-nearby">"voices from nearby" talks</a> by our
-      industry experts.
-    </p>'
+      All times are local time in Vancouver, Canada (GMT-7). <!--Session chairs shown on right.-->
+    </p>
+    <p>
+      See the <a href="https://sel4summit2026.sched.com">Schedule</a> on LF Events.
+    </p>
+    <p>
+      Timing of sessions and room locations are subject to change.
+    </p>
+    <p>
+      View all <a href="abstracts2026.html">abstracts</a>.
+    '
 %}
+
+{% include program-start.html %}
+
+  {% include program-item.html
+    day = "1"
+    date = "1 September 2026"
+  %}
+
+  {% include program-item.html
+    session = "Keynote"
+  %}
+
+  {% include program-item.html
+    chair = "Robbie VanVossen"
+    time = "9:00 - 9:10"
+    title = "Welcome"
+    presenter = "Robbie VanVossen"
+    affiliation = "Dornerworks"
+  %}
+
+  {% include program-item.html
+    id = "p-age-software"
+    time = "9:10 - 10:00"
+    type = "Keynote"
+    title = "The Age of Software Understanding"
+    presenter = "Anjana Rajan"
+    affiliation = "Atalanta"
+    abstract = "abstracts2026.html#a-age-software"
+  %}
+
+  {% include program-item.html
+    break = "Break"
+  %}
+
+  {% include program-item.html
+    session = "Overviews, insights, safety, compliance"
+  %}
+
+  {% include program-item.html
+    chair = "Gernot Heiser"
+    id = "p-sel4-what"
+    time = "10:30 - 11:30"
+    type = ""
+    title = "seL4: What, Why, Who and Where?"
+    presenter = "June Andronick"
+    affiliation = "Proofcraft and seL4 Foundation"
+    abstract = "abstracts2026.html#a-sel4-what"
+  %}
+
+  {% include program-item.html
+    id = "p-ncsc"
+    time = "11:30 - 12:00"
+    type = ""
+    title = "10 Years of seL4 at NCSC"
+    presenter = "Adam W1"
+    affiliation = "NCSC"
+    abstract = "abstracts2026.html#a-ncsc"
+  %}
+
+  {% include program-item.html
+    break = "Lunch"
+  %}
+
+  {% include program-item.html
+    chair = "Nick Spinale"
+    id = "p-staying-red"
+    time = "13:30 - 14:00"
+    type = "Voices from Nearby"
+    title = '“Staying in the Red Queen&apos;s Race”: Organizing Small and Medium Sized FOSS Communities in a World of Regulations and AI'
+    presenter = "Alistair Woodman"
+    affiliation = "Erlang Ecosystem Foundation"
+    abstract = "abstracts2026.html#a-staying-red"
+  %}
+
+  {% include program-item.html
+    id = "p-trends-formal"
+    time = "14:00 - 14:30"
+    type = "Voices from Nearby"
+    title = "Trends in Formal Verification for Real-World Applications and Their Implications for the seL4 Ecosystem"
+    presenter = "David Hardin"
+    affiliation = "Collins Aerospace"
+    abstract = "abstracts2026.html#a-trends-formal"
+  %}
+
+  {% include program-item.html
+    id = "p-kry10-os"
+    time = "14:30 - 15:00"
+     type = ""
+    title = "Kry10 OS Software Safety Manual"
+    presenter = "Ihor Kuz"
+    affiliation = "Kry10"
+    abstract = "abstracts2026.html#a-kry10-os"
+  %}
+
+  {% include program-item.html
+    break = "Break"
+  %}
+
+  {% include program-item.html
+    chair = "Martin Dehnel-Wild"
+    id = "p-navigating-cyber"
+    time = "15:30 - 15:45"
+    type = ""
+    title = "Navigating the Cyber Resilience Act: Real-World Lessons in Securing Connected Products"
+    presenter = "Jonathan Marshall"
+    affiliation = "SafeShark"
+    abstract = "abstracts2026.html#a-navigating-cyber"
+  %}
+
+  {% include program-item.html
+    id = "p-formal-verification"
+    time = "15:45 - 16:00"
+    type = ""
+    title = "Formal Verification now in European Cyber Resiliency standard for OS"
+    presenter = "June Andronick"
+    affiliation = "Proofcraft and seL4 Foundation"
+    abstract = "abstracts2026.html#a-formal-verification"
+  %}
+
+  {% include program-item.html
+    id = "p-panel"
+    time = "16:00 - 17:00"
+    type = "Panel"
+    title = "Certification, Compliance and Policies: enabler or barrier to innovation?"
+    info = '
+      <br><a href="abstracts2026.html#a-panel-darren"><span class="text-dark text-sm sm:text-base">Darren Cofer</span>, <span class="text-light text-sm sm:text-base"> Collins Aerospace</span></a>
+      <br><a href="abstracts2026.html#a-panel-peter"><span class="text-dark text-sm sm:text-base">Peter Davies</span>, <span class="text-light text-sm sm:text-base"> Thales</span></a>
+      <br><a href="abstracts2026.html#a-panel-jonathan"><span class="text-dark text-sm sm:text-base">Jonathan Marshall</span>, <span class="text-light text-sm sm:text-base">SafeShark</span></a>
+      <br><a href="abstracts2026.html#a-panel-june"><span class="text-dark text-sm sm:text-base">June Andronick</span>, <span class="text-light text-sm sm:text-base">Proofcraft and seL4 Foundation</span></a>
+      <br><a href="abstracts2026.html#a-panel-james"><span class="text-dark text-sm sm:text-base">James Sharp</span>, <span class="text-light text-sm sm:text-base">Defence Science and Technology Laboratory (Dstl)</span></a>
+      <br><a href="abstracts2026.html#a-panel-martin"><span class="text-dark text-sm sm:text-base">Martin Dehnel-Wild</span>, <span class="text-light text-sm sm:text-base">Kry10 (moderator)</span></a>
+        '
+    abstract = "abstracts2026.html#a-panel"
+  %}
+
+
+  {% include program-item.html
+    time = "17:00 - 17:10"
+    type = ""
+    title = "Closing Remarks"
+
+  %}
+
+  {% include program-item.html
+    event = "Dinner @ Chambar, 18:30"
+  %}
+
+  {% include program-item.html
+    day = "2"
+    date = "2 September 2026"
+  %}
+
+  {% include program-item.html
+    session = "Keynote"
+  %}
+
+  {% include program-item.html
+    chair = "Lucy Fletcher"
+    id = "p-proof-product"
+    time = "9:00 - 9:50"
+    type = "Keynote"
+    title = "From Proof to Product: Why Formal Methods Is Finally Ready"
+    presenter = "Martin Dehnel-Wild"
+    affiliation = "Kry10"
+    abstract = "abstracts2026.html#a-proof-product"
+  %}
+
+  {% include program-item.html
+    time = "9:50 - 10:00"
+    type = ""
+    title = "Announcements"
+    presenter = "June Andronick"
+    affiliation = "Proofcraft and seL4 Foundation"
+  %}
+
+  {% include program-item.html
+    break = "Break"
+  %}
+
+  {% include program-item.html
+    session = "seL4 in use"
+  %}
+
+  {% include program-item.html
+    chair = "Lesley Rossouw"
+    id = "p-cyber-hardened"
+    time = "10:30 - 11:00"
+    type = ""
+    title = "Cyber-Hardened Satellite Software (CHSS) VMM"
+    presenter = "Robbie VanVossen"
+    affiliation = "Dornerworks"
+    abstract = "abstracts2026.html#a-cyber-hardened"
+  %}
+
+  {% include program-item.html
+    id = "p-throwing-sel4"
+    time = "11:00 - 11:15"
+    type = ""
+    title = "Throwing seL4 on the Throwbot 3 Robot"
+    presenter = "Nathan Studer"
+    affiliation = "Dornerworks"
+    abstract = "abstracts2026.html#a-throwing-sel4"
+  %}
+
+  {% include program-item.html
+    id = "p-assured-robotics"
+    time = "11:15 - 11:30"
+    type = ""
+    title = "Assured Robotics Embedded Systems and Applications in Ground Vehicles (ARSENAL)"
+    presenter = "Dave Lide, Jason H. Li, KJ Kwak, Biruk Sintayehu"
+    affiliation = "Trusted Science and Technology (Trusted ST)"
+    info = "<br><span class='text-dark text-sm sm:text-base'>Paul Pazandak,</span> <span class='text-light text-sm sm:text-base'>Real-Time Innovations (RTI)</span>"
+    abstract = "abstracts2026.html#a-assured-robotics"
+  %}
+
+  {% include program-item.html
+    id = "p-evolving-legacy"
+    time = "11:30 - 11:45"
+    type = ""
+    title = "Evolving Legacy Systems Towards Strong Spatial and Temporal Isolation with seL4"
+    presenter = "Philipp Scholl"
+    affiliation = "ABB Corporate Research"
+    abstract = "abstracts2026.html#a-evolving-legacy"
+  %}
+
+  {% include program-item.html
+    id = "p-tsdx"
+    time = "11:45 - 12:00"
+    type = ""
+    title = "tSDX - Reference Architecture for Software Defined X"
+    presenter = "Nils Brand"
+    affiliation = "Fraunhofer IESE"
+    abstract = "abstracts2026.html#a-tsdx"
+
+  %}
+
+  {% include program-item.html
+    id = "p-posters-day2"
+    break = "Lunch with <a href='abstracts2026.html#posters'><span class='underline'>Poster Session</span></a>"
+  %}
+
+  {% include program-item.html
+    session = "Advances in seL4 security verification and R&D"
+  %}
+
+  {% include program-item.html
+    chair = "David Hardin"
+    id = "p-sel4-security"
+    time = "13:30 - 14:00"
+    type = ""
+    title = "seL4's Security Proofs"
+    presenter = "Ryan Barry"
+    affiliation = "Proofcraft"
+    abstract = "abstracts2026.html#a-sel4-security"
+  %}
+
+  {% include program-item.html
+    id = "p-trustworthy-systems"
+    time = "14:00 - 14:30"
+    type = ""
+    title = "Trustworthy Systems R&D Update"
+    presenter = "Gernot Heiser"
+    affiliation = "UNSW Sydney"
+    abstract = "abstracts2026.html#a-trustworthy-systems"
+  %}
+
+  {% include program-item.html
+    id = "p-time-protection"
+    time = "14:30 - 15:00"
+    type = ""
+    title = "Where are we with Time Protection? Verification and cross-domain communication update"
+    presenter = "Rob Sison"
+    affiliation = "UNSW Sydney"
+    abstract = "abstracts2026.html#a-time-protection"
+  %}
+
+  {% include program-item.html
+    break = "Break"
+  %}
+
+  {% include program-item.html
+    session = "OS components (implementation and verification)"
+  %}
+
+  {% include program-item.html
+    chair = "Adam W1"
+    id = "p-pancake"
+    time = "15:30 - 16:00"
+    type = ""
+    title = "Pancake Updates"
+    presenter = "Miki Tanaka"
+    affiliation = "UNSW Sydney"
+    abstract = "abstracts2026.html#a-pancake"
+  %}
+
+  {% include program-item.html
+    id = "p-verifying-sel4"
+    time = "16:00 - 16:15"
+    type = ""
+    title = "Verifying seL4 device drivers with CN"
+    presenter = "Gus O'Hanley"
+    affiliation = "Galois"
+    abstract = "abstracts2026.html#a-verifying-sel4"
+  %}
+
+  {% include program-item.html
+    id = "p-formalising-device"
+    time = "16:15 - 16:45"
+    type = ""
+    title = "Formalising device protocols for sDDF driver verification"
+    presenter = "Liam Murphy"
+    affiliation = "UNSW Sydney"
+    abstract = "abstracts2026.html#a-formalising-device"
+  %}
+
+  {% include program-item.html
+    id = "p-verification-udp"
+    time = "16:45 - 17:00"
+    type = ""
+    title = "Verification of a UDP Implementation: Challenges and Solutions"
+    presenter = "Daniel Neshyba-Rowe"
+    affiliation = "Lewis & Clark College"
+    abstract = "abstracts2026.html#a-verification-udp"
+  %}
+
+  {% include program-item.html
+    time = "17:00 - 17:10"
+    title = "Closing Remarks"
+  %}
+
+  {% include program-item.html
+    day = "3"
+    date = "3 September 2026"
+  %}
+
+  {% include program-item.html
+    session = "Learning from the TSC and walk-through"
+  %}
+
+  {% include program-item.html
+    chair = "Darren Cofer"
+    time = "9:00 - 9:30"
+    type = "Panel"
+    title = "'Ask Me Anything' with the TSC"
+    presenter = "Darren Cofer"
+    affiliation = "Collins Aerospace (moderator)"
+  %}
+
+  {% include program-item.html
+    id = "p-simplifying-microkit"
+    time = "9:30 - 10:00"
+    type = "Walk-through"
+    title = "Simplifying Microkit System Composition with Acacia"
+    presenter = "Lesley Rossouw"
+    affiliation = "UNSW Sydney"
+    abstract = "abstracts2026.html#a-simplifying-microkit"
+  %}
+
+  {% include program-item.html
+    break = "Break"
+  %}
+
+  {% include program-item.html
+    session = "seL4 explorations and proposals"
+  %}
+
+  {% include program-item.html
+    chair = "Juliana	Furgala"
+    id = "p-policy-free"
+    time = "10:30 - 11:00"
+    type = ""
+    title = "A policy-free boot process for seL4"
+    presenter = "Daniel Schwyn"
+    affiliation = "Neutrality"
+    abstract = "abstracts2026.html#a-policy-free"
+  %}
+
+  {% include program-item.html
+    id = "p-carrels"
+    time = "11:00 - 11:30"
+    type = ""
+    title = "Carrels: Secure, high-performance microservice on seL4"
+    presenter = "Guangtao Zhu"
+    affiliation = "UNSW Sydney"
+    abstract = "abstracts2026.html#a-carrels"
+  %}
+
+  {% include program-item.html
+    id = "p-single-kernel"
+    time = "11:30 - 11:45"
+    type = ""
+    title = "Single Kernel Multicore seL4"
+    presenter = "Scott Brookes, Gordon Stewart, David Swasey"
+    affiliation = "Riverside Research"
+    abstract = "abstracts2026.html#a-single-kernel"
+  %}
+
+  {% include program-item.html
+    id = "p-booting-windows"
+    time = "11:45 - 12:00"
+    type = ""
+    title = "Booting Windows on an x86-64 seL4-based VMM"
+    presenter = "Bill Nguyen"
+    affiliation = "UNSW Sydney"
+    abstract = "abstracts2026.html#a-booting-windows"
+  %}
+
+  {% include program-item.html
+    id = "p-posters-day3"
+    break = "Lunch with <a href='abstracts2026.html#posters'><span class='underline'>Poster Session</span></a>"
+  %}
+
+  {% include program-item.html
+    session = "Frameworks and analyses"
+  %}
+
+  {% include program-item.html
+    chair = "Ihor Kuz"
+    id = "p-rigorous-agentic"
+    time = "13:30 - 14:00"
+    type = ""
+    title = "Rigorous Agentic Systems Engineering for seL4 using HAMR"
+    presenter = "John Hatcliff"
+    affiliation = "Kansas State University"
+    abstract = "abstracts2026.html#a-rigorous-agentic"
+  %}
+
+  {% include program-item.html
+    id = "p-efficient-user-level"
+    time = "14:00 - 14:15"
+    type = ""
+    title = "Efficient User-level Physical Memory Management on seL4"
+    presenter = "Guangtao Zhu"
+    affiliation = "UNSW Sydney"
+    abstract = "abstracts2026.html#a-efficient-user-level"
+  %}
+
+  {% include program-item.html
+    id = "p-modelling-performance"
+    time = "14:15 - 14:30"
+    type = ""
+    title = "Modelling and performance analysis of Ethernet on LionsOS"
+    presenter = "Lesley Rossouw"
+    affiliation = "UNSW Sydney"
+    abstract = "abstracts2026.html#a-modelling-performance"
+  %}
+
+  {% include program-item.html
+    id = "p-building-safe"
+    time = "14:30 - 14:45"
+    type = ""
+    title = "Building safe display diodes with seL4"
+    presenter = "Andrew Ruef"
+    affiliation = "Institute for Defense Analyses"
+    abstract = "abstracts2026.html#a-building-safe"
+  %}
+
+  {% include program-item.html
+    break = "Break"
+  %}
+
+  {% include program-item.html
+    session = "Discussions"
+  %}
+
+  {% include program-item.html
+    chair = "Lucy Fletcher & Robbie VanVossen"
+    time = "15:15 - 16:00"
+    title = "BoFs"
+  %}
+
+  {% include program-item.html
+    break = "Break"
+  %}
+
+  {% include program-item.html
+    chair = "Lucy Fletcher & Robbie VanVossen"
+    time = "16:15 - 17:00"
+    title = "BoFs"
+  %}
+
+  {% include program-item.html
+    time = "17:00 - 17:15"
+    title = "BoF wrap-up"
+  %}
+
+  {% include program-item.html
+    time = "17:15 - 17:25"
+    type = ""
+    title = "Closing Remarks"
+    presenter = "Lucy Fletcher"
+    affiliation = "Apple"
+  %}
+
+{% include program-end.html %}
 
 {% include section-end.html %}
 
@@ -53,12 +554,12 @@ layout: card
 {% include section-start.html
   id = "social"
   heading = "Social Activities"
-  intro = "A number of informal social activities are being organised for Monday
+  intro = "<p>A number of informal social activities are being organised for Monday
   Aug 31, prior to the summit. The idea is that at least one person (whose name
   is mentioned below) will do this activity at the set time. You're welcome to
   book yourself directly using the link provided, and do the activity at the
   same time. Please note that some activities are free, and others are available
-  for purchase either online or onsite."
+  for purchase either online or onsite.</p>"
   %}
 
 <div>
@@ -70,11 +571,10 @@ layout: card
     heading = "Capilano Suspension Bridge Park"
     text = 'Join <a href="https://proofcraft.systems/#june">June
     Andronick</a> for a trip to the Capilano Suspension Bridge Park.<br><br>
-    A free shuttle will leave from the front of the hotel. Details to be
-    confirmed.
+    A free shuttle will leave from the front of the hotel. We&apos;ll aim to take the shuttle from the Hyatt Regency Vancouver at 1:20pm, arriving at the Capilano Suspension Bridge Park around 1:40pm. Further details on the <a href="https://www.capbridge.com/shuttle-schedule/">shuttle schedule</a>.
     <br><br>
     <strong>Date:</strong> Monday Aug 31, 2026<br>
-    <strong>Time:</strong> 2pm<br>
+    <strong>Time:</strong> 2pm (leaving the <a href="https://maps.app.goo.gl/oWqk19x7TQH3MzXx9">Hyatt Regency Vancouver</a> at 1:20pm)<br>
     <strong>Cost:</strong> $75.00 CAD per person, senior/student/child discounts available<br>
     <strong>Details:</strong> <a
     href="https://www.capbridge.com/">
@@ -87,10 +587,8 @@ layout: card
     img = "/images/summit/stanley-park-seawall.jpg"
     alt = "Stanley Park Seawall"
     heading = "Stanley Park Seawall Walk"
-    text = 'We&apos;re looking for a volunteer to be the
-    point of contact for this activity. Please email <a
-    href="mailto:summit@sel4.systems">summit@sel4.systems</a> if you&apos;re
-    interested.<br><br>
+    text = 'Join <a
+    href="mailto:lucyfletcher544@gmail.com">Lucy Fletcher</a> for the Seawall walk.<br><br>
     <strong>Date:</strong> Monday Aug 31, 2026<br>
     <strong>Time:</strong> 2pm<br>
     <strong>Cost:</strong> Free<br>
@@ -105,10 +603,8 @@ layout: card
     img = "/images/summit/vancouver-art-gallery.jpg"
     alt = "Vancouver Art Gallery"
     heading = "Vancouver Art Gallery"
-    text = 'We&apos;re looking for a volunteer to be the
-    point of contact for this activity. Please email <a
-    href="mailto:summit@sel4.systems">summit@sel4.systems</a> if you&apos;re
-    interested.<br><br>
+    text = 'Join <a
+    href="mailto:vanvossr@gmail.com">Robbie VanVossen</a> at the Vancouver Art Gallery.<br><br>
     <strong>Date:</strong> Monday Aug 31, 2026<br>
     <strong>Time:</strong> 2pm<br>
     <strong>Cost:</strong> $35.00 CAD per person, free entrance for children<br>

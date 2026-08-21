@@ -1,0 +1,12 @@
+<p>
+  Historically, open-source Virtual Machine Monitors (VMMs) built on seL4 have focused largely on Linux guest OS support. Booting a closed-source operating system like Windows on a custom x86-64 VMM introduces a unique set of development hurdles.
+</p>
+<p>
+  This talk details the engineering effort behind LionsOS to achieve a fully functional x86-64 VMMcapable of running modern Windows and desktop Linux distributions. We will explore the technical realities of this architectural leap, focusing on the distinct challenges encountered when virtualising Windows. Specifically contrasting the predictable boot process of Linux with the strict firmware assumptions and opaqueness of a Windows guest.
+</p>
+<p>
+  Beyond the boot sequence, we will unpack how we tackled these hurdles, detailing the low-level virtualisation and driver solutions required to make this work.
+</p>
+<p>
+  The talk will conclude with a live demonstration of LionsOS successfully booting into a functional Windows desktop environment.
+</p>

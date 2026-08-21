@@ -8,18 +8,16 @@ pre_link: "../"
 redirect_from: /Foundation/Summit/2026/index.html
 ---
 {% include summit-heading.html
-
   about = 'The seL4 Summit is the annual international summit on the seL4
   microkernel and associated technology, tools, infrastructure, products,
   projects, and people. The <a href="#pc">program committee</a> assembles
   thought-provoking talks, <a href="#keynotes">keynotes</a>, <a
-  href="#voices-nearby">"voices from nearby",</a> and panel discussions. The
-  seL4 Summit is made possible thanks to our <a href="#sponsors">sponsors</a>.'
-
+  href="#voices-nearby">"voices from nearby",</a> and <a href="#panel">panel
+  discussions</a>. The seL4 Summit is made possible thanks to our <a
+  href="#sponsors">sponsors</a>.'
   city = "Vancouver, Canada"
   date = "1 - 3 September 2026"
   reg-link = "https://events.linuxfoundation.org/sel4-summit/register/"
-  sponsor-link = "https://events.linuxfoundation.org/sel4-summit/sponsor/"
 %}
 
 {% include summit-new-format.html
@@ -46,7 +44,7 @@ redirect_from: /Foundation/Summit/2026/index.html
   center=true
   icon="book-open"
   title="Program"
-  body="Program of the seL4 Summit 2026."
+  body="Program and abstracts of the seL4 Summit 2026."
   link="program.html"
   %}
 </div>
@@ -65,18 +63,15 @@ redirect_from: /Foundation/Summit/2026/index.html
 <div class="mt-6 sm:mt-12">
 {% include bio-items-start.html %}
 
-<!-- TODO: ADD FOR EACH KEYNOTE
-  affiliation = ""
-  affiliation_link = ""
-  abstract-title = ""
-  abstract-link = "" -->
-
 
 {% include keynote-item.html
   name = "<a href='https://www.linkedin.com/in/anjanarajan/'>Anjana Rajan</a>"
-  role = "Former Assistant National Cyber Director at The White House"
+  role = " CEO & Co-Founder"
   img = "/images/summit/anjana-square.jpg"
-  abstract-title = "Talk details coming soon!"
+  affiliation = "Atalanta"
+  affiliation_link = "https://www.atalanta.tech/"
+  abstract-title = "The Age of Software Understanding"
+  abstract-link = "abstracts2026.html#a-age-software"
 %}
 {% include keynote-item.html
   name = "<a href='https://www.linkedin.com/in/mpdehnel/'>Martin Dehnel-Wild</a>"
@@ -84,13 +79,13 @@ redirect_from: /Foundation/Summit/2026/index.html
   img = "/images/summit/martin-square.jpg"
   affiliation = "Kry10"
   affiliation_link = "https://www.kry10.com/"
-  abstract-title = "Talk details coming soon!"
+  abstract-title = "From Proof to Product: Why Formal Methods Is Finally Ready"
+  abstract-link = "abstracts2026.html#a-proof-product"
 %}
 {% include bio-items-end.html %}
 
 </div>
 {% include section-end.html %}
-
 
 <!-- Voices from Nearby section -->
 {% include section-start.html
@@ -115,7 +110,8 @@ redirect_from: /Foundation/Summit/2026/index.html
   img = "/images/summit/alistair.jpg"
   affiliation = "Erlang Ecosystem Foundation"
   affiliation_link = "https://erlef.org/"
-  abstract-title = "Talk details coming soon!"
+  abstract-title = '“Staying in the Red Queen&apos;s Race”: Organizing Small and Medium Sized FOSS Communities in a World of Regulations and AI'
+  abstract-link = "abstracts2026.html#a-staying-red"
 %}
 {% include keynote-item.html
   name = "<a href='https://loonwerks.com/people/david-hardin.html'>David Hardin</a>"
@@ -123,13 +119,37 @@ redirect_from: /Foundation/Summit/2026/index.html
   img = "/images/summit/david-square.jpg"
   affiliation = "Collins Aerospace"
   affiliation_link = "https://www.rtx.com/collinsaerospace"
-  abstract-title = "Talk details coming soon!"
+  abstract-title = "Trends in Formal Verification for Real-World Applications and Their Implications for the seL4 Ecosystem"
+  abstract-link = "abstracts2026.html#a-trends-formal"
 %}
 {% include bio-items-end.html %}
 
 </div>
 {% include section-end.html %}
 
+
+<!-- Panel section -->
+{% include section-start.html
+  id = "panel"
+  heading = "Panel: Building a business case for using a
+  verified kernel"
+  intro = '
+    <p>
+      We are very fortunate to welcome five industry leaders to participate at
+      the seL4 Summit 2026, in a session on <a
+      href="abstracts2026.html#a-panel">Certification, Compliance and Policies:
+      enabler or barrier to innovation?</a>: Darren Cofer (Collins Aerospace),
+      Peter Davies (Thales), Jonathan Marshall (SafeShark), June Andronick
+      (Proofcraft and seL4 Foundation), and James Sharp (Defence Science and
+      Technology Laboratory). The panel will be moderated by Martin Dehnel-Wild
+      (Kry10).
+    </p>
+  '
+%}
+
+{% include panel-2026.html %}
+
+{% include section-end.html %}
 
 
  <!-- PC section -->
@@ -164,8 +184,16 @@ redirect_from: /Foundation/Summit/2026/index.html
   {%- assign sponsors = site.data.sponsors.summit-2026.silver | sort_natural: "name" -%}
   {%- include sponsor-info.html -%}
 
-  {% include sep-header.html text = "Reception" %}
-  {%- assign sponsors = site.data.sponsors.summit-2026.reception | sort_natural: "name" -%}
+  {% include sep-header.html text = "Bronze" %}
+  {%- assign sponsors = site.data.sponsors.summit-2026.bronze | sort_natural: "name" -%}
+  {%- include sponsor-info.html -%}
+
+  {% include sep-header.html text = "Dinner" %}
+  {%- assign sponsors = site.data.sponsors.summit-2026.dinner | sort_natural: "name" -%}
+  {%- include sponsor-info.html -%}
+
+  {% include sep-header.html text = "AM & PM Break" %}
+  {%- assign sponsors = site.data.sponsors.summit-2026.break | sort_natural: "name" -%}
   {%- include sponsor-info.html -%}
 </div>
 

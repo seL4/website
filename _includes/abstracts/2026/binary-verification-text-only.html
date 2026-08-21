@@ -1,0 +1,6 @@
+<p>
+  seL4’s functional correctness proofs certify that the kernel’s C implementation is a refinement of its abstract specification. Binary verification refers to the process of certifying that the compiled kernel binary is a refinement of its C implementation, completing the kernel’s end-to-end functional correctness argument and providing assurance that the kernel’s security properties are satisfied all the way down to the binary level. In particular, binary verification enables us to remove the compiler from our trusted computing base, eliminating concerns about bugs in sophisticated compiler optimization passes or differences between the compiler’s C semantics and those used by the functional correctness proofs.
+</p>
+<p>
+  Binary verification for seL4 was originally achieved by Thomas Sewell et al. with the construction of a novel automatic binary verification toolchain. With funding from the seL4 Foundation, we have picked up where they left off to strengthen, extend, and generalize this toolchain. This poster will lay out the toolchain’s design and report on our objectives and results.
+</p>

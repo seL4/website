@@ -1,0 +1,22 @@
+{%- comment %}
+Copyright 2026 seL4 Project a Series of LF Projects, LLC
+SPDX-License-Identifier: CC-BY-SA-4.0
+{% endcomment -%}
+
+<div class="flex flex-col lg:flex-row justify-center items-center lg:gap-x-5 gap-y-5 lg:mt-5 mb-20">
+  {% if include.keynotes %}
+    <a href="#keynotes" class="button-outline px-10">Keynotes</a>
+  {% endif %}
+  {% if include.voices %}
+    <a href="#voices" class="button-outline px-10">Voices from Nearby</a>
+  {% endif %}
+  {% if include.panel %}
+    <a href="#panel" class="button-outline px-10">Panel</a>
+  {% endif %}
+  {% if include.talks %}
+    <a href="#talks" class="button-outline px-10">Talks</a>
+  {% endif %}
+  {% if include.posters %}
+    <a href="#posters" class="button-outline px-10">Posters</a>
+  {% endif %}
+</div>

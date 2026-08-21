@@ -1,0 +1,9 @@
+<p>
+  seL4’s flagship proof is functional correctness, which states that the C code behaves according to its abstract specification. This talk introduces the next layer in the assurance stack– seL4’s security proofs. We will present an overview of what they are, how they are structured, and where they fit into past, present, and future work at Proofcraft.
+</p>
+<p>
+  The CIA triad of properties– confidentiality, integrity, and availability– is the foundation of information security, and the target of seL4’s security proofs. These proofs establish that seL4’s specification, and by extension its implementation, prevents an application running on top from: modifying data without authorisation (integrity); interfering with another application’s resource access (availability); and learning information without authorisation (confidentiality). Together, the three guarantee isolation between applications in critical systems, preventing attacks and bugs in non-critical components from propagating to critical ones.
+</p>
+<p>
+  As part of a broader push towards a full proof stack for seL4 on 64-bit Arm, we recently extended the security proofs to AArch64. Among other architectural differences, this introduced two objects that were new to seL4’s security proofs: VCPUs, which provide virtual CPUs to guest operating systems under a hypervisor, and FPUs, which enable perthread floating point operations. Unlike other objects in memory, the contents of VCPUs and FPUs are loaded into physical registers whose contents may persist between context switches. This introduces new complexity in a security context, and required novel proof techniques to accommodate them.
+</p>

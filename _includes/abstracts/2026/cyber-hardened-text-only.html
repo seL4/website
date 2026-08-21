@@ -1,0 +1,21 @@
+<p>
+  MIT Lincoln Laboratory and the Space Cyber-Resiliency group at Air Force Research Laboratory-Space Vehicles Directorate (AFRL/RV) have created a software platform called Cyber-Hardened Satellite Software (CHSS). “CHSS is a mission-agnostic spaceflight software platform whose functionality was inspired by NASA’s core Flight System but with an emphasis on cyber-resiliency. Most notably, CHSS offers security without sacrificing performance.”1 CHSS utilizes Magnetite, which is a secure OS built on top of the seL4 Microkernel. Magnetite and CHSS components are written in Rust, which provides memory safety and type safety at the OS and application level. This stack provides a safe and secure foundation to create cyber-resilient satellite systems.
+</p>
+<p>
+  Adoption of new technologies, especially ones such as CHSS which are a paradigm shift in the way things have been done for satellites, can be quite difficult. AFRL/RV recognized that adoption should be made incremental to have the fastest transition. DornerWorks is working on a Phase II SBIR from SPACEWERX that addresses this in 2 ways:
+</p>
+<p>
+  1. Update VM Composer to target CHSS systems to make system configuration much simpler.
+</p>
+<p>
+  2. Write a VMM in Rust for CHSS to allow a VM to host legacy software which can be incrementally ported to CHSS.
+</p>
+<p>
+  VM Composer is a GUI tool for defining virtualized systems on top of seL4. By adding CHSS awareness to the tool, the manual steps for system integrators and developers can be significantly reduced. VM Composer is a way to visualize a system and architect security appropriate for mission risk acceptance.
+</p>
+<p>
+  The VMM provides a way to run the entire legacy code in a sandbox. It can be adapted to communicate with the overall CHSS system and then each app that needs to be cyberhardened can be ported over to CHSS and removed from the VM, one-by-one. Most importantly, the developer has a fully functional system at each step, allowing for incremental launches and deployments as the software is hardened. It also allows for lower criticality software to remain in the VM for deployment.
+</p>
+<p>
+  This talk will give further background on CHSS, discuss the progress that has been made in the two major tasks, and further discuss the iterative porting process of legacy satellite flight software and/or mission software.
+</p>
