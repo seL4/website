@@ -1,0 +1,30 @@
+---
+# Copyright 2026 seL4 Project a Series of LF Projects, LLC.
+# SPDX-License-Identifier: CC-BY-SA-4.0
+title: seL4 security proofs now complete on AArch64
+
+img: /Foundation/Membership/LOGOS/proofcraft.svg
+alt: Proofcraft Logo
+link: https://proofcraft.systems
+---
+
+<p>
+The verification of seL4 on the 64-bit Arm architecture has reached another
+milestone. After completing the proofs of
+<a href="https://proofcraft.systems/news-2024/#2024-04-01">functional
+correctness</a> and
+<a href="https://proofcraft.systems/news-2025/#2025-04-29">integrity</a>,
+<a href="https://proofcraft.systems">Proofcraft</a> has now established the
+proof that seL4 enforces
+<a href="https://sel4.systems/Verification/proofs.html">confidentiality</a> on
+AArch64, providing a formal mathematical proof that the kernel prevents an
+application running on top of seL4 from learning information without
+authorisation.
+</p>
+
+<p>
+This milestone completes the formal proof that the seL4 implementation code on
+AArch64 enforces security isolation of the applications running on top. This
+isolation prevents attacks on non-critical applications from propagating to
+critical applications and compromising them.
+</p>
