@@ -1,0 +1,12 @@
+<p>
+  seL4, the world’s first formally verified microkernel, has demonstrated exceptional reliability in security- and safety-critical systems. However, its use in large-scale, server-class environments remains underexplored, especially for dynamic workloads such as microservices.
+</p>
+<p>
+  In this talk, we present Carrels, a secure and high-performance platform for lightweight, dynamic applications on seL4. Carrels explores whether seL4 can serve as a practical foundation for microservice-style workloads, which require strong isolation together with dynamic deployment, destruction, and migration at runtime.
+</p>
+<p>
+  Carrels is built on LionsOS, a highly modular, high-performance seL4-based operating system designed with formal verification in mind. In Carrels, microservice applications are encapsulated in a prototype container abstraction: a secure isolation domain whose lifecycle can change dynamically. We implement this abstraction using LionsOS modules, demonstrating how a largely static seL4-based system can be extended into a semi-dynamic platform for dynamic applications.
+</p>
+<p>
+  We will present the design and implementation of Carrels, including its security model, container lifecycle management, and resource management. We will also share preliminary performance results, showing that Carrels can support microservice workloads with low overhead while preserving strong isolation guarantees, including small trusted computing base and fine-grained access control.
+</p>

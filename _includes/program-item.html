@@ -5,6 +5,12 @@ SPDX-License-Identifier: CC-BY-SA-4.0
 
 {% if include.break %}
   <div class="bg-slate-200 dark:bg-slate-700 col-span-4 text-gray-800 dark:text-gray-300 p-2">
+    {% if include.id %}
+    <div id="{{ include.id }}">
+    {% else %}
+    <div>
+    {% endif %}
+    </div>
     {{include.break}}
   </div>
 
@@ -16,6 +22,11 @@ SPDX-License-Identifier: CC-BY-SA-4.0
 {% elsif include.event %}
   <div class="bg-slate-200 dark:bg-slate-700 col-span-4 text-gray-800 dark:text-gray-300 p-2">
     <em>{{include.event}}</em>
+  </div>
+
+  {% elsif include.session %}
+  <div class="bg-[rgba(150,202,79,0.1)] dark:bg-[rgba(150,202,79,.3)] col-span-4 text-black dark:text-white p-2 text-center">
+    <em>{{include.session}}</em>
   </div>
 
 {% else %}
@@ -42,8 +53,16 @@ SPDX-License-Identifier: CC-BY-SA-4.0
 
       {% if include.presenter %}
         <br>
-        <span class="text-dark text-sm sm:text-base">{{include.presenter}}</span>,
+        {% if include.affiliation %}
+        <span class="text-dark text-sm sm:text-base">{{include.presenter}}, </span>
         <span class="text-light text-sm sm:text-base">{{include.affiliation}}</span>
+        {% else %}
+        <span  class="text-dark text-sm sm:text-base">{{include.presenter}}</span>
+        {% endif %}
+      {% endif %}
+
+      {% if include.info %}
+      {{ include.info }}
       {% endif %}
 
 
@@ -66,10 +85,6 @@ SPDX-License-Identifier: CC-BY-SA-4.0
           </div>
         {% endif %}
       </div>
-
-      {% if include.info %}
-      {{ include.info }}
-      {% endif %}
 
   </div>
   <div class="text-right">

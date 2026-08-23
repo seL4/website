@@ -1,0 +1,15 @@
+<p>
+  While sDDF provides a framework for verification of new drivers with the Pancake language, and driver synthesis, the vast majority of current systems relies on proprietary hardware, and existing drivers written in C.
+</p>
+<p>
+  In our project with DORNERWORKS we were tasked with verifying an ethernet driver for a deployed system. The ethernet device was similar to Intel e100 hardware. Given the relatively new sDDF framework and Pancake language, and the tight project timeline and budget constraints, we decided to verify an already existing driver, with CN verification tool.
+</p>
+<p>
+  CN was developed by The REMS group at University of Cambridge, and significantly matured during the PROVERS project. CN targets the C language, and lets users specify properties for the functions.
+</p>
+<p>
+  We were able to verify both the driver and a device model reverse engineered from the Intel driver datasheet. We had to stub out the seL4 system calls, including minimal specifications.
+</p>
+<p>
+  We believe this contribution bridges the gap between legacy drivers, and the future where drivers are synthesised and guaranteed to be correct.
+</p>

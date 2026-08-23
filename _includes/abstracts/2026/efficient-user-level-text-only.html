@@ -1,0 +1,12 @@
+<p>
+  seL4 gives user-level systems a great deal of control over hardware resources through capability-protected kernel abstractions. This is powerful, but it also means that performance depends heavily on how user-level resource management is designed.
+</p>
+<p>
+  In this talk, we use physical memory management as a case study. We show that the wrong design can make dynamic memory allocation expensive by placing capability-related operations and metadata bookkeeping directly on the allocation critical path.
+</p>
+<p>
+  We then present a different design: keep the fast path small, and move capability-heavy functions out of the critical path whenever it can be prepared ahead of time or handled asynchronously. We implement this idea in the seL4 library OS and compare it with baseline designs.
+</p>
+<p>
+  The results show that efficient dynamic memory management is practical on seL4, but only if the memory manager is designed to respect the cost structure of capability-based systems.
+</p>

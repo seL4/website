@@ -15,11 +15,25 @@
           "url": "https://proofcraft.systems"
         }
         ],
-      "reception": [
+      "bronze": [
+        {
+          "name": "UNSW Sydney",
+          "logo": "UNSW.svg",
+          "url": "https://unsw.edu.au"
+        }
+      ],
+      "dinner": [
       {
         "name": "Riverside Research",
         "logo": "riverside-research.svg",
         "url": "https://www.riversideresearch.org/"
+      }
+      ],
+      "break": [
+      {
+        "name": "DornerWorks",
+        "logo": "DornerWorks.svg",
+        "url": "https://dornerworks.com/"
       }
       ]
     },

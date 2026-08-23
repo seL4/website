@@ -1,0 +1,12 @@
+<p>
+  seL4’s multicore story has long been built around SMP with a big kernel lock (BKL). For the low-core-count platforms where seL4 was traditionally deployed, this was a reasonable choice: syscall critical sections are short, and BKL was expected to scale well enough.
+</p>
+<p>
+  Our results suggest that this tradeoff should be revisited. Because seL4 syscalls are so cheap to begin with, the cost of in-kernel concurrency control becomes highly visible. We show that SMP with a BKL can add around 50% overhead to critical seL4 operations.
+</p>
+<p>
+  In this talk, we present both this evaluation and a multikernel alternative for seL4, i.e., running an independent kernel on each core. The multikernel design avoids in-kernel locking, delivers better scalability than SMP, and retains low syscall overhead as unicore.
+</p>
+<p>
+  We also discuss the broader implications of this design shift, including what it means for thread migration, resource management, and the overall programming model of seL4 systems.
+</p>
