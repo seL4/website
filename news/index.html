@@ -6,7 +6,7 @@
     <title>seL4 News | seL4</title>
     <meta name="author" content="seL4 Foundation">
     <link rel="canonical" href="https://sel4.systems/news/">
-    <link href="/css/sel4.css?v=1787290718" rel="stylesheet">
+    <link href="/css/sel4.css?v=1787565140" rel="stylesheet">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
@@ -339,6 +339,12 @@
           <a href="/news/" class="text-sm font-semibold leading-6 text-f_green-600">See all <span aria-hidden="true">&rarr;</span></a>
         </div>
         <ul class="mt-6 space-y-6"><li class="relative">
+            <time datetime="2026-08-24" class="block text-xs leading-6 text-light">24 Aug 2026</time>
+            <a href="/news/2026.html#08-24" class="block truncate text-sm font-semibold leading-6 text-dark">
+              seL4 security proofs now complete on AArch64
+              <span class="absolute inset-0"></span>
+            </a>
+          </li><li class="relative">
             <time datetime="2026-08-17" class="block text-xs leading-6 text-light">17 Aug 2026</time>
             <a href="/news/2026.html#08-17" class="block truncate text-sm font-semibold leading-6 text-dark">
               Thank you UNSW Sydney, bronze sponsor of the seL4 Summit 2026
@@ -348,12 +354,6 @@
             <time datetime="2026-08-14" class="block text-xs leading-6 text-light">14 Aug 2026</time>
             <a href="/news/2026.html#08-14" class="block truncate text-sm font-semibold leading-6 text-dark">
               Thank you DornerWorks, sponsor of the seL4 Summit 2026 AM & PM Break
-              <span class="absolute inset-0"></span>
-            </a>
-          </li><li class="relative">
-            <time datetime="2026-07-29" class="block text-xs leading-6 text-light">29 Jul 2026</time>
-            <a href="/news/2026.html#sel4-day" class="block truncate text-sm font-semibold leading-6 text-dark">
-              Happy seL4 day!
               <span class="absolute inset-0"></span>
             </a>
           </li></ul>
@@ -581,6 +581,57 @@
     </div>
     
   </div>
+</div>
+
+
+<article class="max-w-4xl mx-auto mb-12 sm:mb-18 pt-2 pb-8 px-6 lg:px-8 clear-both">
+  <a href="#08-24" class="text-base sm:text-lg hover:underline text-gray-400 pt-16 lg:pt-20">
+    <time datetime="2026-08-24" id="08-24">24 Aug 2026</time>
+  </a>
+  <h2 class="mb-8 mt-2 h2-size">seL4 security proofs now complete on AArch64</h2>
+  <div class="theprose prose-ul:[ul]:my-2 prose-p:[p]:my-3 prose-li:[li]:my-1.5 max-w-4xl">
+    <a href="https://proofcraft.systems"><img src="/Foundation/Membership/LOGOS/proofcraft.svg" alt="Proofcraft Logo"
+        class="float-right rounded-xl -mt-1 ml-4 sm:ml-6 lg:-mr-16 bg-white p-6 sm:p-8 w-2/5"></a>
+    <p>
+The verification of seL4 on the 64-bit Arm architecture has reached another
+milestone. After completing the proofs of
+<a href="https://proofcraft.systems/news-2024/#2024-04-01">functional
+correctness</a> and
+<a href="https://proofcraft.systems/news-2025/#2025-04-29">integrity</a>,
+<a href="https://proofcraft.systems">Proofcraft</a> has now established the
+proof that seL4 enforces
+<a href="https://proofcraft.systems/news-2026/#2026-08-21">confidentiality</a> on
+AArch64, providing a formal mathematical proof that the kernel prevents an
+application running on top of seL4 from learning information without
+authorisation.
+</p>
+
+<p>
+This milestone completes the formal proof that the seL4 implementation code on
+AArch64 enforces security isolation of the applications running on top (under
+the assumptions listed
+<a href="/Verification/assumptions.html">here</a>). This
+isolation prevents attacks on non-critical applications from propagating to
+critical applications and compromising them.
+</p>
+  </div>
+</article>
+
+
+<div class="flex w-full mb-12 md:mb-24">
+  <div class="flex-1"></div>
+  <hr class="w-10 h-px bg-gray-200 border-0 dark:bg-gray-600">
+  
+<a href="#page-top" class="relative -mt-3.5 mx-4">
+  <div class="dark:bg-slate-900 hover:bg-slate-100 dark:hover:bg-slate-800 p-1.5 h-7 w-7 rounded-full shadow-xs left-1">
+    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" aria-hidden="true" data-slot="icon" class="h-4 w-4 text-slate-400 dark:text-slate-500">
+  <path stroke-linecap="round" stroke-linejoin="round" d="M12 19.5v-15m0 0-6.75 6.75M12 4.5l6.75 6.75"/>
+</svg>
+  </div>
+</a>
+
+  <hr class="w-10 h-px bg-gray-200 border-0 dark:bg-gray-600">
+  <div class="flex-1"></div>
 </div>
 
 
