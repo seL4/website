@@ -7,4 +7,4 @@ Text logos (SVG) are generated using Inkscape with the following settings:
 - Font size: 36
 - Fill colour: R 115; G 121; B 133; A 100
 - Stroke colour: None
-- Size: resize to content
+- Size: place in white rectangle size 86x50mm
