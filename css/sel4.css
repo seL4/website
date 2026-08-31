@@ -1677,9 +1677,6 @@
   .-mt-14 {
     margin-top: calc(var(--spacing) * -14);
   }
-  .-mt-30 {
-    margin-top: calc(var(--spacing) * -30);
-  }
   .mt-0 {
     margin-top: 0px;
   }
@@ -3665,6 +3662,9 @@
     }
     .sm\:-mt-20 {
       margin-top: calc(var(--spacing) * -20);
+    }
+    .sm\:-mt-30 {
+      margin-top: calc(var(--spacing) * -30);
     }
     .sm\:-mt-74 {
       margin-top: calc(var(--spacing) * -74);
