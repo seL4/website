@@ -316,6 +316,7 @@ redirect_from: /home.pml
         .enableNodeDrag(false)
         .enableNavigationControls(true)
         .showNavInfo(false);
+    Graph.controls().maxDistance = 2500;
 
     addEventListener("resize", _ => {
       const el = document.getElementById('the_div');
