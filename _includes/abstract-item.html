@@ -38,6 +38,11 @@ SPDX-License-Identifier: CC-BY-SA-4.0
             <a href="{{include.slides}}" class="text-sm text-light underline">Slides</a>
           </div>
         {% endif %}
+        {% if include.poster %}
+          <div class="p-1 mt-2 mb-5">
+            <a href="{{include.poster}}" class="text-sm text-light underline">Poster</a>
+          </div>
+        {% endif %}
         <div>
           <p class="p-1 mt-2">
             {% if include.id %}
@@ -46,9 +51,9 @@ SPDX-License-Identifier: CC-BY-SA-4.0
           </p>
         </div>
       </div>
-      {% if include.posters %}
+      {% if include.postersession %}
       <div>
-        {{ include.posters }}
+        {{ include.postersession }}
       </div>
       {% endif %}
     </div>
