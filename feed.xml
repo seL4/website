@@ -10,7 +10,27 @@
   <description>News feed about seL4, the seL4 Foundation, and the seL4 ecosystem.</description>
   <link rel="alternate">https://sel4.systems/news/</link>
   <link rel="self">https://sel4.systems/feed.xml</link>
-  <updated>Mon, 24 Aug 2026 00:00:00 +0000</updated>
+  <updated>Wed, 16 Sep 2026 00:00:00 +0000</updated>
+  <rights>Copyright 2026 seL4 Foundation</rights>
+  <entry>
+    <title>The videos and slides of the seL4 Summit 2026 are available online</title>
+    <link rel="alternate" type="text/html" href="https://sel4.systems/news/2026.html#summit-videos"/>
+    <id>https://sel4.systems/news/2026.html#summit-videos</id>
+    <published>Wed, 16 Sep 2026 00:00:00 +0000</published>
+    <updated>Wed, 16 Sep 2026 00:00:00 +0000</updated>
+    <content type="html">
+      &lt;p&gt;
+  Videos of the &lt;a href=&quot;/Summit/2026/&quot;&gt;seL4 Summit
+  2026&lt;/a&gt; are now available on the &lt;a href=&quot;https://www.youtube.com/playlist?list=PLd7rrADYxxQQ&quot;
+  target=&quot;_blank&quot;&gt;seL4 YouTube channel&lt;/a&gt;! Links, slides, and posters can be
+  found on the summit &lt;a href=&quot;/Summit/2026/program.html&quot;&gt;Program&lt;/a&gt;
+  and &lt;a href=&quot;/Summit/2026/abstracts2026.html&quot;&gt;Abstracts&lt;/a&gt; pages. Thanks to all the speakers for making the seL4 Summit
+  2026 a great &lt;a href=&quot;/Summit/2026/#gallery&quot;&gt;success!&lt;/a&gt;
+  &lt;img src=&quot;../images/summit/summit-2026-7.jpg&quot; alt=&quot;seL4 Summit 2026&quot; class=&quot;rounded bg-gray-900/5 shadow-lg&quot;&gt;
+&lt;/p&gt;
+
+    </content>
+  </entry>
   <rights>Copyright 2026 seL4 Foundation</rights>
   <entry>
     <title>seL4 security proofs now complete on AArch64</title>
@@ -588,34 +608,6 @@ the Arm 64-bit architecture, as part of DARPA&apos;s PROVERS program.
   Learn more about Gapfruit&apos;s work in their contributions to previous seL4
   summit &lt;a href=&quot;/Summit/2023/abstracts2023.html#a-panel&quot;&gt;panels&lt;/a&gt; and &lt;a href=&quot;/Summit/2023/abstracts2023.html#a-showcase-microkernel&quot;&gt;talks&lt;/a&gt;.
 &lt;/p&gt;
-    </content>
-  </entry>
-  <rights>Copyright 2026 seL4 Foundation</rights>
-  <entry>
-    <title>Thank you Proofcraft, silver sponsor of the seL4 Summit 2026</title>
-    <link rel="alternate" type="text/html" href="https://sel4.systems/news/2026.html"/>
-    <id>https://sel4.systems/news/2026.html</id>
-    <published>Fri, 17 Apr 2026 00:00:00 +0000</published>
-    <updated>Fri, 17 Apr 2026 00:00:00 +0000</updated>
-    <content type="html">
-      &lt;p&gt;
-  The seL4 Foundation thanks &lt;a
-  href=&quot;https://proofcraft.systems&quot;&gt;Proofcraft&lt;/a&gt;, silver sponsor of the &lt;a
-  href=&quot;/Summit/2026/&quot;&gt;seL4 Summit 2026&lt;/a&gt;.
-&lt;/p&gt;
-&lt;p&gt;
-  Founded by the seL4 verification leaders, &lt;a
-  href=&quot;https://proofcraft.systems&quot;&gt;Proofcraft&lt;/a&gt; offers commercial support
-  and projects in formal verification in general, and involving seL4
-  specifically. By applying mathematical machine-checked software verification,
-  Proofcraft increases critical software systems&apos; reliability, safety and
-  security, for a verified future.
-&lt;/p&gt;
-&lt;p&gt;
-  See &lt;a href=&quot;https://events.linuxfoundation.org/sel4-summit/sponsor/&quot;&gt;here&lt;/a&gt;
-  if you are interested in sponsoring the  &lt;a href=&quot;/Summit/2026/&quot;&gt;seL4 Summit 2026&lt;/a&gt;.
-&lt;/p&gt;
-
     </content>
   </entry>
 </feed>
