@@ -10,7 +10,27 @@
   <description>News feed about seL4, the seL4 Foundation, and the seL4 ecosystem.</description>
   <link rel="alternate">https://sel4.systems/news/</link>
   <link rel="self">https://sel4.systems/feed.xml</link>
-  <updated>Wed, 16 Sep 2026 00:00:00 +0000</updated>
+  <updated>Fri, 18 Sep 2026 00:00:00 +0000</updated>
+  <rights>Copyright 2026 seL4 Foundation</rights>
+  <entry>
+    <title>The Australian National University joins seL4 Foundation</title>
+    <link rel="alternate" type="text/html" href="https://sel4.systems/news/2026.html"/>
+    <id>https://sel4.systems/news/2026.html</id>
+    <published>Fri, 18 Sep 2026 00:00:00 +0000</published>
+    <updated>Fri, 18 Sep 2026 00:00:00 +0000</updated>
+    <content type="html">
+      &lt;p&gt;
+  The &lt;a href=&quot;/Foundation&quot;&gt;seL4 Foundation&lt;/a&gt; is pleased to welcome the &lt;a href=&quot;https://www.anu.edu.au/&quot;&gt;Australian National University (ANU)&lt;/a&gt; as an &lt;a href=&quot;/Foundation/Membership/&quot;&gt;Associate Member&lt;/a&gt;. ANU&apos;s School of Computing has a longstanding connection to seL4, and ANU researchers have contributed to seL4&apos;s &lt;a href=&quot;/About/history.html&quot;&gt;original verification efforts&lt;/a&gt; and &lt;a href=&quot;https://www.darpa.mil/research/programs/high-assurance-cyber-military-systems&quot;&gt;DARPA&apos;s HACMS program&lt;/a&gt;.
+&lt;/p&gt;
+&lt;p&gt;
+  This research contribution continues to grow through a broader concentration of formal methods and programming-languages expertise at ANU. Current work involves the development of programming languages for use with the &lt;a href=&quot;https://docs.sel4.systems/projects/microkit/&quot;&gt;seL4 Microkit&lt;/a&gt;.
+&lt;/p&gt;
+&lt;p&gt;
+  The membership strengthens active collaborations between ANU&apos;s School of Computing and fellow Australian-based member organisations on the development of secure technology based on the seL4 ecosystem.
+&lt;/p&gt;
+
+    </content>
+  </entry>
   <rights>Copyright 2026 seL4 Foundation</rights>
   <entry>
     <title>The videos and slides of the seL4 Summit 2026 are available online</title>
@@ -576,37 +596,6 @@ with MCS. Functional correctness is the largest and most central proof in
 the &lt;a href=&quot;/Verification/proofs.html&quot;&gt;seL4 verification
 stack&lt;/a&gt;. The proof targets the RISC-V architecture and will now be ported to
 the Arm 64-bit architecture, as part of DARPA&apos;s PROVERS program.
-&lt;/p&gt;
-    </content>
-  </entry>
-  <rights>Copyright 2026 seL4 Foundation</rights>
-  <entry>
-    <title>Gapfruit joins the seL4 Foundation</title>
-    <link rel="alternate" type="text/html" href="https://sel4.systems/news/2026.html"/>
-    <id>https://sel4.systems/news/2026.html</id>
-    <published>Mon, 01 Jun 2026 00:00:00 +0000</published>
-    <updated>Mon, 01 Jun 2026 00:00:00 +0000</updated>
-    <content type="html">
-      &lt;p&gt;
-  We are pleased to welcome a new &lt;a href=&quot;/Foundation/Membership/&quot;&gt;member&lt;/a&gt; - &lt;a href=&quot;https://www.gapfruit.com/&quot;&gt;Gapfruit&lt;/a&gt;
-  - to the &lt;a href=&quot;/Foundation&quot;&gt;seL4 Foundation&lt;/a&gt;.
-&lt;/p&gt;
-&lt;p&gt;
-  Gapfruit is a Swiss technology company building trustworthy foundations for
-  the systems society depends on - from industrial controls to energy
-  infrastructure. To achieve this, Gapfruit combines microkernel operating
-  systems with capability-based security and hardware-rooted trust - an approach
-  grounded in standards from the &lt;a
-  href=&quot;https://trustedcomputinggroup.org/&quot;&gt;Trusted Computing Group&lt;/a&gt;.
-  Together, these technologies enable resilient, verifiable device operations
-  for the critical systems that underpin modern infrastructure. By joining the
-  seL4 Foundation, we aim to advance high-assurance computing in critical
-  infrastructure and collaborate with the global seL4 community to make
-  trustworthy systems the standard - not the exception.
-&lt;/p&gt;
-&lt;p&gt;
-  Learn more about Gapfruit&apos;s work in their contributions to previous seL4
-  summit &lt;a href=&quot;/Summit/2023/abstracts2023.html#a-panel&quot;&gt;panels&lt;/a&gt; and &lt;a href=&quot;/Summit/2023/abstracts2023.html#a-showcase-microkernel&quot;&gt;talks&lt;/a&gt;.
 &lt;/p&gt;
     </content>
   </entry>
