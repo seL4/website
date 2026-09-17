@@ -59,6 +59,11 @@
   ],
   "associate": [
     {
+      "name": "Australian National University",
+      "logo": "anu.svg",
+      "url": "https://www.anu.edu.au/"
+    },
+    {
       "name": "Autoware Foundation",
       "logo": "autoware.svg",
       "url": "https://autoware.org/"
