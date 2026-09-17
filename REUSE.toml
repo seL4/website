@@ -94,6 +94,7 @@ SPDX-License-Identifier = "CC-BY-SA-4.0"
 path = [
   "_includes/abstracts/*/*.html",
   "Summit/*/slides/*.pdf",
+  "Summit/*/posters/*.pdf",
 ]
 SPDX-FileCopyrightText = "Various. Each abstract and slide set is copyright of the talk author."
 SPDX-License-Identifier = "CC-BY-SA-4.0"
