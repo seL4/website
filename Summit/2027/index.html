@@ -1,0 +1,87 @@
+---
+# Copyright 2020 seL4 Project a Series of LF Projects, LLC.
+# SPDX-License-Identifier: CC-BY-SA-4.0
+title: seL4 Summit 2027
+layout: card
+pre: "Other years"
+pre_link: "../"
+redirect_from: /Foundation/Summit/2027/index.html
+---
+{% include summit-heading.html
+  about = 'The seL4 Summit is the annual international summit on the seL4
+  microkernel and associated technology, tools, infrastructure, products,
+  projects, and people. The program committee <a href="#co-chairs">co-chairs</a> assemble
+  thought-provoking talks, keynotes, "voices from nearby" and panel
+  discussions.'
+  stay-tuned = "stay tuned"
+  city = "Sydney, Australia"
+  date = "late Sep / early Oct 2027 (TBC)"
+%}
+
+
+
+<div class="card-grid-3 mt-40">
+
+  {% include card.html
+  icon="user"
+  title="Call for Presentations"
+  body="Share your seL4 work, experiences and thoughts at the seL4 Summit 2027."
+  info = "Coming soon"
+  %}
+
+  {% include card.html
+  icon="building-library"
+  title="Registration, Location & Venue"
+  body="Information about location, venue and travel."
+  info = "Coming soon"
+  %}
+
+  {% include card.html
+  center=true
+  icon="book-open"
+  title="Program"
+  body="Program and abstracts of the seL4 Summit 2027."
+  info = "Coming soon"
+  %}
+</div>
+
+
+<!-- About the summit section -->
+{% include summit-about-extended.html %}
+
+<!-- co-chairs section -->
+<!-- replace later with PC -->
+
+{% include section-start.html
+  id = "co-chairs"
+  heading = "Co-chairs"
+%}
+
+<div class="mt-6 sm:mt-12">
+  {% include bio-items-start.html %}
+  {% include co-chair-item.html
+    name = "Martin Dehnel-Wild"
+    role = "Chief Scientist"
+    img = "/images/summit/martin-square.jpg"
+    affiliation = "Kry10"
+    affiliation_link = "https://www.kry10.com/"
+    text = "Dr Martin Dehnel-Wild is Chief Scientist of Kry10, where he leads R&D and heads up Kry10’s UK & European office. He has a DPhil (PhD) in Computer Science from the University of Oxford, where he researched interactive and automated theorem proving for security protocols. Prior to Kry10 he set up and led the UK Government’s formal methods (“provable security”) team, bringing rigorous, automated assurance tooling and techniques to the UK’s most critical and highest security systems. Most of his work over the last 10+ years has focused on pulling formal-methods based tools for software, hardware, and cryptography through to use by regular developers, promoting uptake and use across industry, government, and academia."
+    %}
+  {% include co-chair-item.html
+    name = "Lucy Fletcher"
+    role = "Software Engineer"
+    img = "/images/summit/lucy-square.jpg"
+    affiliation = "Apple"
+    affiliation_link = "https://apple.com"
+    text = "Lucy Fletcher is a software engineer at Apple based in Sydney, Australia,
+    working on L4 microkernels and the surrounding ecosystems. Before joining
+    Apple, she studied Computer Science at UNSW and worked with the Trustworthy
+    Systems group, where she focused on the design and development of the seL4
+    device driver framework. Lucy is passionate about giving back to the seL4
+    community and supporting its continued growth."
+  %}
+  {% include bio-items-end.html %}
+
+  </div>
+
+{% include section-end.html %}
