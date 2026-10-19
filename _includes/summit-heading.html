@@ -7,6 +7,11 @@ SPDX-License-Identifier: CC-BY-SA-4.0
   <p>
     {{include.about}}
   </p>
+  {% if include.stay-tuned %}
+    <p>
+      Stay tuned by following us on <a href="https://www.linkedin.com/company/sel4">LinkedIn</a> or subscribing to the <a type="application/atom+xml" href="{{ '/feed.xml' | relative_url }}">RSS</a> for our <a href="{{ '/news' | relative_url }}">News</a> page.
+    </p>
+  {% endif %}
   <div class="mt-5 mb-5">
     <img class="w-52 mx-auto" src="../../images/sel4-summit-logo.svg" alt="seL4 Summit">
   </div>
