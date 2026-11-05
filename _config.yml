@@ -8,6 +8,8 @@ title: seL4
 description: "The seL4 main website.  Pull requests are welcome."
 url: "https://sel4.systems"
 static_url: "https://sel4.systems"
+# placeholder
+membership_api_url: "http://localhost:3000/api/submit-membership"
 baseurl: "" # the subpath of your site, e.g. /blog
 git_repo: https://github.com/seL4/website
 github_username: seL4

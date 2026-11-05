@@ -1,5 +1,5 @@
 ---
-# Copyright 2026 seL4 Project a Series of LF Projects, LLC.
+# Copyright 2026 seL4 International
 # SPDX-License-Identifier: CC-BY-SA-4.0
 title: "Join the seL4 Foundation"
 pre: "Become a Member"
@@ -10,6 +10,8 @@ provided and send you a Membership Agreement for signature.
 '
 pre_link: "./"
 layout: card
+extra-script-src:
+- /js/membership-form.js
 ---
 
 {% include section-start.html
@@ -49,37 +51,45 @@ layout: card
 <div class="my-20 section-max-w md:min-w-2xl">
 
   <!-- TAB 1: PREMIUM & GENERAL - INPUT & LABEL -->
-  <input type="radio" id="tab-general" name="membership-toggle" class="peer/gen hidden" checked />
+  <input type="radio" id="tab-general" name="membership-toggle" class="peer/gen sr-only" checked />
   <label for="tab-general" class="inline-block select-none cursor-pointer transition-all duration-200 ml-5 mr-1
     px-3.5 py-2 text-sm font-semibold rounded-t-md !rounded-b-none border border-gray-200 bg-gray-50 text-gray-700
     peer-checked/gen:!bg-accentdark peer-checked/gen:!text-white peer-checked/gen:!border-gray-200 peer-checked/gen:!shadow-none
     relative z-10 -mb-px
-    peer-checked/gen:after:content-[''] peer-checked/gen:after:absolute peer-checked/gen:after:bottom-0 peer-checked/gen:after:left-0 peer-checked/gen:after:right-0 peer-checked/gen:after:h-[2px] peer-checked/gen:after:bg-accent-dark">
-    Premium & General
+    peer-checked/gen:after:content-[''] peer-checked/gen:after:absolute peer-checked/gen:after:bottom-0 peer-checked/gen:after:left-0 peer-checked/gen:after:right-0 peer-checked/gen:after:h-[2px] peer-checked/gen:after:bg-accentdark
+    peer-focus-visible/gen:outline-2 peer-focus-visible/gen:outline-f_green-700">
+    Premium &amp; General
   </label>
 
   <!-- TAB 2: ASSOCIATE - INPUT & LABEL -->
-  <input type="radio" id="tab-associate" name="membership-toggle" class="peer/assoc hidden" />
+  <input type="radio" id="tab-associate" name="membership-toggle" class="peer/assoc sr-only" />
   <label for="tab-associate" class="inline-block select-none cursor-pointer transition-all duration-200
     px-3.5 py-2 text-sm font-semibold rounded-t-md !rounded-b-none border border-gray-200 bg-gray-50 text-gray-700
     peer-checked/assoc:!bg-accentdark peer-checked/assoc:!text-white peer-checked/assoc:!border-gray-200 peer-checked/assoc:!shadow-none
     relative z-10 -mb-px
-    peer-checked/assoc:after:content-[''] peer-checked/assoc:after:absolute peer-checked/assoc:after:bottom-0 peer-checked/assoc:after:left-0 peer-checked/assoc:after:right-0 peer-checked/assoc:after:h-[2px] peer-checked/assoc:after:bg-accent-dark">
+    peer-checked/assoc:after:content-[''] peer-checked/assoc:after:absolute peer-checked/assoc:after:bottom-0 peer-checked/assoc:after:left-0 peer-checked/assoc:after:right-0 peer-checked/assoc:after:h-[2px] peer-checked/assoc:after:bg-accentdark
+    peer-focus-visible/assoc:outline-2 peer-focus-visible/assoc:outline-f_green-700">
     Associate
   </label>
 
 
   <!-- PREMIUM AND GENERAL -->
-  <div class="hidden peer-checked/gen:block bg-white border border-gray-200 rounded-b-md rounded-tr-md p-4 relative z-0">
+  <form
+    data-endpoint="{{ site.membership_api_url }}"
+    class="hidden peer-checked/gen:block bg-white border border-gray-200 rounded-b-md rounded-tr-md p-4 relative z-0">
+    <input type="hidden" name="membership_type" value="general">
 
     <p class="mb-2 text-sm mx-2">
       For premium and general members
     </p>
     <p class="mb-10 text-sm mx-2">
       Please fill this form to join as a Premium member or General member (see
-      <a href="../Join#tiers" target="_blank">Membership Tiers</a>).
+      <a href="./#tiers" target="_blank">Membership Tiers</a>).
     </p>
     {% include membership-question.html
+      form = "general"
+      section = "company"
+      autocomplete = "organization"
       heading = "Company name"
       info = "Legal name of the entity applying for membership"
       type = "text"
@@ -88,6 +98,8 @@ layout: card
     {% include membership-tiers.html %}
 
     {% include membership-question.html
+      form = "general"
+      section = "primary"
       heading = "Primary contact"
       info = "The person who will act as the primary voting contact unless a different assignment is requested by email at a later date."
       label1 = "Name"
@@ -97,6 +109,8 @@ layout: card
     %}
 
     {% include membership-question.html
+      form = "general"
+      section = "legal"
       heading = "Legal (signatory) contact"
       info = "The person who will officially execute or sign the membership agreement."
       label1 = "Name"
@@ -108,6 +122,8 @@ layout: card
     %}
 
     {% include membership-question.html
+      form = "general"
+      section = "billing"
       heading = "Billing contact"
       info = "The person who will handle billing and payments."
       label1 = "Name"
@@ -115,7 +131,6 @@ layout: card
       label2 = "Email"
       type2 = "email"
       address = "Address"
-
     %}
 
     {% include membership-po.html %}
@@ -123,24 +138,32 @@ layout: card
     <!-- CAPTCHA -->
     {% include membership-captcha.html %}
 
-    {% include membership-submit-general.html %}
+    {% include membership-submit.html %}
 
-  </div>
+  </form>
 
   <!-- ASSOCIATE -->
-  <div class="hidden peer-checked/assoc:block bg-white border border-gray-200 rounded-b-md rounded-tr-md p-4 relative z-0">
+  <form
+    data-endpoint="{{ site.membership_api_url }}"
+    class="hidden peer-checked/assoc:block bg-white border border-gray-200 rounded-b-md rounded-tr-md p-4 relative z-0">
+    <input type="hidden" name="membership_type" value="associate">
     <p class="mb-10 text-sm mx-2">
       Please fill this form to join as an Associate member. Only use this form for non-profits and government entities (see
-      <a href="../Join#tiers" target="_blank">Membership Tiers</a>).
+      <a href="./#tiers" target="_blank">Membership Tiers</a>).
     </p>
 
     {% include membership-question.html
+      form = "associate"
+      section = "company"
+      autocomplete = "organization"
       heading = "Company name"
       info = "Legal name of the entity applying for membership"
       type = "text"
     %}
 
     {% include membership-question.html
+      form = "associate"
+      section = "primary"
       heading = "Primary contact"
       info = "The person who will act as the primary voting contact unless a different assignment is requested by email at a later date."
       label1 = "Name"
@@ -150,6 +173,8 @@ layout: card
     %}
 
     {% include membership-question.html
+      form = "associate"
+      section = "legal"
       heading = "Legal (signatory) contact"
       info = "The person who will officially execute or sign the membership agreement."
       label1 = "Name"
@@ -161,10 +186,14 @@ layout: card
     %}
 
     <!-- CAPTCHA -->
-     {% include membership-captcha.html %}
+    {% include membership-captcha.html %}
 
-    {% include membership-submit-associate.html %}
-  </div>
+    {% include membership-submit.html %}
+  </form>
 </div>
+
+<!-- Friendly Captcha v2 SDK -->
+<script type="module" src="https://cdn.jsdelivr.net/npm/@friendlycaptcha/sdk@0.2.0/site.min.js"></script>
+<script nomodule src="https://cdn.jsdelivr.net/npm/@friendlycaptcha/sdk@0.2.0/site.compat.min.js" async defer></script>
 
 {% include section-end.html %}

@@ -1,23 +1,24 @@
 {%- comment %}
-Copyright 2026 seL4 Project a Series of LF Projects, LLC
+Copyright 2026 seL4 International
 SPDX-License-Identifier: CC-BY-SA-4.0
 {% endcomment -%}
-<div class="flex gap-4 mt-10 text-sm justify-center items-center">
-  <div class="font-semibold">PO required:</div>
-  <div>
+<div class="flex gap-4 mt-10 text-sm justify-center items-center" role="radiogroup" aria-labelledby="po-required">
+  <div id="po-required" class="font-semibold">PO required:</div>
+  <label class="cursor-pointer">
     <input
       type="radio"
-      name="po_selection" class="accent-green-700"
-      value='1'
+      name="po_selection" class="accent-f_green-700"
+      value="yes"
+      required
     />
     <span>Yes</span>
-  </div>
-  <div>
+  </label>
+  <label class="cursor-pointer">
     <input
       type="radio"
-      name="po_selection" class="accent-green-700"
-      value='2'
+      name="po_selection" class="accent-f_green-700"
+      value="no"
     />
     <span>No</span>
-  </div>
+  </label>
 </div>

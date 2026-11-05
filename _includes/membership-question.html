@@ -1,68 +1,81 @@
 {%- comment %}
 Copyright 2026 seL4 Project a Series of LF Projects, LLC
 SPDX-License-Identifier: CC-BY-SA-4.0
+
+A form question (single input or group of labelled contact fields).
+
+  form:         which form this is in, for unique ids
+  section:      field name, or prefix of the field names for a contact group
+  heading:      heading (=label if it is a single input)
+  info:         description text below heading
+  type:         input type if it is a single input (empty otherwise)
+  autocomplete: autofill token if it is a single input (empty otherwise)
+  label1-3:     "Name", "Title" or "Email" for contact fields; Title is optional
+  type1-3:      input types of contact fields
+  address:      label of optional address field
+
+Each contact group has an own autofill section so that browsers can keep them separate.
 {% endcomment -%}
 
+{% assign id = include.form | append: "-" | append: include.section %}
+{% assign section = "section-" | append: include.section %}
+{% assign input_class = "text-left bg-neutral-100 min-w-11/12 text-sm border border-none p-2 focus:outline-f_green-700" %}
+{% assign label_class = "text-sm font-semibold mt-2 text-right mr-1 sm:ml-2" %}
+{%- if include.type %}
 <div class="mt-1 mb-9">
-  {% if include.heading == "Company name" %}
-    <p class = "text-left font-semibold py-3 mt-2">{{ include.heading }}</p>
-  {% else %}
-  <p class = "text-left font-semibold py-3 mt-10">{{ include.heading }}</p>
-  {% endif %}
-  <p class = "mb-2 text-sm mx-2">{{ include.info }}</p>
+  <label for="{{ id }}" class="block text-left font-semibold py-3 mt-2">{{ include.heading }}</label>
+  <p class="mb-2 text-sm mx-2">{{ include.info }}</p>
 
-  <!-- single textbox for input with no label, e.g. company name -->
-  {% if include.type %}
   <input
-      type = "{{ include.type }}"
-      class = "text-left bg-neutral-100 min-w-11/12 text-sm border border-none p-2 focus:outline-green-700"
-      autocomplete="off"
+      type="{{ include.type }}"
+      id="{{ id }}"
+      name="{{ include.section }}"
+      class="{{ input_class }}"
+      autocomplete="{{ include.autocomplete }}"
       required>
-  {% endif %}
+</div>
+{%- else %}
+<div class="mt-1 mb-9" role="group" aria-labelledby="{{ id }}-heading">
+  <p id="{{ id }}-heading" class="text-left font-semibold py-3 mt-10">{{ include.heading }}</p>
+  <p class="mb-2 text-sm mx-2">{{ include.info }}</p>
 
-  <!-- text boxes with labels, e.g. contact details -->
   <div class="grid grid-cols-7 gap-x-2 gap-y-2">
-    {% if include.label1 %}
-      <div class="text-sm font-semibold mt-2 text-right mr-1 sm:ml-2">{{ include.label1 }}</div>
-      <div class="col-span-6">
-        <input
-          type = "{{ include.type1 }}"
-          class = "text-left bg-neutral-100 min-w-11/12 text-sm border border-none p-2 focus:outline-green-700 sm:text-base"
-          autocomplete="off"
-          required>
-      </div>
-    {% endif %}
-    {% if include.label2 %}
-    <div class="text-sm font-semibold mt-2 text-right mr-1 sm:ml-2">{{ include.label2 }}</div>
-      <div class="col-span-6">
-        <input
-          type = "{{ include.type2 }}"
-          class = "text-left bg-neutral-100 min-w-11/12 text-sm border border-none p-2 focus:outline-green-700 sm:text-base"
-          autocomplete="off"
-          required>
-      </div>
-    {% endif %}
-    {% if include.label3 %}
-    <div class="text-sm font-semibold mt-2 text-right mr-1 sm:ml-2">{{ include.label3 }}</div>
-      <div class="col-span-6">
-        <input
-          type = "{{ include.type3 }}"
-          class = "text-left bg-neutral-100 min-w-11/12 text-sm border border-none p-2 focus:outline-green-700 sm:text-base"
-          autocomplete="off"
-          required>
-      </div>
-    {% endif %}
-
-  {% if include.address %}
-    <div class="text-sm font-semibold mt-2 text-right mr-1 sm:ml-2">{{ include.address }}</div>
-      <div class="col-span-6">
-        <textarea
-          rows = "4"
-          class = "text-left bg-neutral-100 min-w-11/12 text-sm border border-none p-2 focus:outline-green-700 sm:text-base"
-          autocomplete="off"
-          required>
-        </textarea>
-      </div>
-  {% endif %}
+    {%- for n in (1..3) %}
+      {%- assign label_key = "label" | append: n -%}
+      {%- assign type_key = "type" | append: n -%}
+      {%- assign label = include[label_key] -%}
+      {%- if label -%}
+        {%- assign field = label | downcase -%}
+        {%- assign token = field -%}
+        {%- if field == "title" -%}
+          {%- assign token = "organization-title" -%}
+        {%- endif %}
+    <label for="{{ id }}-{{ field }}" class="{{ label_class }}">{{ label }}</label>
+    <div class="col-span-6">
+      <input
+        type="{{ include[type_key] }}"
+        id="{{ id }}-{{ field }}"
+        name="{{ include.section }}_{{ field }}"
+        class="{{ input_class }} sm:text-base"
+        autocomplete="{{ section }} {{ token }}"
+        {%- unless field == "title" %}
+        required
+        {%- endunless %}>
+    </div>
+      {%- endif -%}
+    {%- endfor -%}
+    {%- if include.address %}
+    <label for="{{ id }}-address" class="{{ label_class }}">{{ include.address }}</label>
+    <div class="col-span-6">
+      <textarea
+        rows="4"
+        id="{{ id }}-address"
+        name="{{ include.section }}_address"
+        class="{{ input_class }} sm:text-base"
+        autocomplete="{{ section }} street-address"
+        required></textarea>
+    </div>
+    {%- endif %}
   </div>
 </div>
+{%- endif %}
