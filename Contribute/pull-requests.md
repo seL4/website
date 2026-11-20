@@ -92,7 +92,7 @@ pull request.
 Please do not use LLMs for pull requests or issue texts. Be considerate of
 reviewer and maintainer time. Reviewers for this code base are not willing to
 review LLM-generated code, nor are they inclined to wade through walls of
-incomprehensible LLM-generated text. Please use your own words and be concise.
+LLM-generated text. Please use your own words and be concise.
 
 LLM-generated issues and PRs may be closed without further discussion.
 
