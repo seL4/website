@@ -87,6 +87,18 @@ pull request.
 - Pull requests require at least one approving review to be merged,
   and usually should aim for 2 reviews on each non-trivial pull request.
 
+### Use of LLMs for Pull Requests
+
+Please do not use LLMs for pull requests or issue texts. Be considerate of
+reviewer and maintainer time. Reviewers for this code base are not willing to
+review LLM-generated code, nor are they inclined to wade through walls of
+LLM-generated text. Please use your own words and be concise.
+
+LLM-generated issues and PRs may be closed without further discussion.
+
+If you have found a serious issue using LLMs, we are still interested in the
+results and reproduction of those issues. We would appreciate a human summary.
+
 ## During Review
 
 Always follow the [seL4 Code of Conduct][Conduct].
