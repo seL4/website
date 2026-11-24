@@ -1725,6 +1725,9 @@
   .mt-32 {
     margin-top: calc(var(--spacing) * 32);
   }
+  .mt-40 {
+    margin-top: calc(var(--spacing) * 40);
+  }
   .mr-1 {
     margin-right: var(--spacing);
   }
