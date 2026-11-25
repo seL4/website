@@ -4122,9 +4122,6 @@
     .lg\:col-span-2 {
       grid-column: span 2 / span 2;
     }
-    .lg\:col-start-2 {
-      grid-column-start: 2;
-    }
     .lg\:mx-0 {
       margin-inline: 0px;
     }
